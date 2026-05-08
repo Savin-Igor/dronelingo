@@ -1,6 +1,8 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { BreadcrumbSchema } from "@/components/learn/Breadcrumb";
 import { MarkLessonVisited } from "@/components/learn/MarkLessonVisited";
 import { localize } from "@/lib/localize";
 import { prisma } from "@/lib/prisma";
@@ -13,6 +15,7 @@ export default async function LessonPage({
   params: Promise<{ locale: string; topic: string; lesson: string }>;
 }) {
   const { locale, topic: topicSlug, lesson: lessonSlug } = await params;
+  const tLearn = await getTranslations({ locale, namespace: "learn" });
 
   const topic = await prisma.topic.findUnique({
     where: { slug: topicSlug },
@@ -30,6 +33,20 @@ export default async function LessonPage({
 
   return (
     <main className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 py-12 lg:grid-cols-[16rem_minmax(0,1fr)]">
+      <BreadcrumbSchema
+        locale={locale}
+        crumbs={[
+          { name: tLearn("title"), path: "/learn" },
+          {
+            name: localize(topic.title, locale),
+            path: `/learn/${topic.slug}`,
+          },
+          {
+            name: localize(lesson.title, locale),
+            path: `/learn/${topic.slug}/${lesson.slug}`,
+          },
+        ]}
+      />
       <aside className="lg:sticky lg:top-12 lg:self-start">
         <Link
           href={`/learn/${topic.slug}`}

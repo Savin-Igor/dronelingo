@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { BreadcrumbSchema } from "@/components/learn/Breadcrumb";
 import {
   TopicLessonList,
   type LessonListItem,
@@ -43,6 +44,16 @@ export default async function TopicPage({
         title={localize(topic.title, locale)}
         description={localize(topic.summary, locale)}
         lessons={lessons.map((l) => ({ slug: l.slug, title: l.title }))}
+      />
+      <BreadcrumbSchema
+        locale={locale}
+        crumbs={[
+          { name: t("title"), path: "/learn" },
+          {
+            name: localize(topic.title, locale),
+            path: `/learn/${topic.slug}`,
+          },
+        ]}
       />
       <Link href="/learn" className="text-sm text-gray-500 hover:text-gray-900">
         ← {t("title")}
