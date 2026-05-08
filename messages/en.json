@@ -147,6 +147,11 @@
       "description": "Nature of the service, Pass Guarantee, user responsibilities, dronelingo liability limits."
     }
   },
+  "notFound": {
+    "title": "Page not found",
+    "body": "This route does not exist. It may have moved or been removed.",
+    "cta": "Back to home"
+  },
   "consent": {
     "title": "Privacy",
     "body": "This site keeps your progress in browser storage and — with your consent — uses cookie-free Plausible analytics. Details:",

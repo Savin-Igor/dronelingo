@@ -1,12 +1,19 @@
 import { ExamFacts } from "@/components/landing/ExamFacts";
 import { Hero } from "@/components/landing/Hero";
 import { HowItWorks } from "@/components/landing/HowItWorks";
+import { StructuredData } from "@/components/landing/StructuredData";
 import { ValueProp } from "@/components/landing/ValueProp";
 import { WhyDronelingo } from "@/components/landing/WhyDronelingo";
 
-export default function HomePage() {
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   return (
     <main className="bg-white text-gray-900">
+      <StructuredData locale={locale} />
       <Hero />
       <ValueProp />
       <HowItWorks />
