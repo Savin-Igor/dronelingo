@@ -1,6 +1,58 @@
 {
-  "home": {
-    "title": "dronelingo",
-    "tagline": "Prepare for the EASA A1/A3 drone exam"
+  "landing": {
+    "hero": {
+      "title": "Pass your EASA A1/A3 drone exam — first try.",
+      "sub": "Free to learn. Pay €19 only after you pass the official exam at e.caa.gov.lv.",
+      "ctaPrimary": "Start learning",
+      "ctaSecondary": "How it works"
+    },
+    "valueProp": "Free to learn. €19 only after you pass.",
+    "howItWorks": {
+      "heading": "How it works",
+      "learn": {
+        "title": "Learn",
+        "body": "9 EASA topics in plain language. Lessons in Latvian, English, and Russian."
+      },
+      "practice": {
+        "title": "Practice",
+        "body": "Answer real-style questions. Take mock exams until you consistently score 80%+."
+      },
+      "pass": {
+        "title": "Pass — then pay",
+        "body": "Take the free official A1/A3 exam at e.caa.gov.lv. Pay €19 only after you pass. Don't pass — don't pay."
+      }
+    },
+    "why": {
+      "heading": "Why dronelingo",
+      "localFirst": {
+        "title": "Latvian-first",
+        "body": "Built for the Latvian process — registration at e.caa.gov.lv, A1/A3 exam, real CAA wording."
+      },
+      "passOrFree": {
+        "title": "Pass or free",
+        "body": "If you don't pass, you don't pay. We're aligned with your goal."
+      },
+      "euAligned": {
+        "title": "EU regulation aligned",
+        "body": "Content cites the actual rules — Reg (EU) 2019/947 and EASA Easy Access Rules — not generic drone trivia."
+      }
+    },
+    "facts": {
+      "heading": "What the official exam looks like",
+      "questions": "40 questions",
+      "duration": "40 minutes",
+      "threshold": "≥75% to pass",
+      "cost": "Free",
+      "location": "Online at e.caa.gov.lv",
+      "validity": "Certificate valid 5 years, recognised across the EU",
+      "source": "Source: CAA Latvia, droni.caa.gov.lv"
+    },
+    "footer": {
+      "tagline": "EASA A1/A3 drone exam prep — Latvia first.",
+      "guide": "Registration guide",
+      "faq": "FAQ",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
   }
 }

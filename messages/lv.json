@@ -1,6 +1,58 @@
 {
-  "home": {
-    "title": "dronelingo",
-    "tagline": "Sagatavojies EASA A1/A3 droniem eksāmenam"
+  "landing": {
+    "hero": {
+      "title": "Sagatavojies EASA A1/A3 droniem eksāmenam — un nokārto to pirmajā reizē.",
+      "sub": "Mācies bez maksas. Maksā €19 tikai tad, kad nokārto oficiālo eksāmenu vietnē e.caa.gov.lv.",
+      "ctaPrimary": "Sākt mācīties",
+      "ctaSecondary": "Kā tas darbojas"
+    },
+    "valueProp": "Bez maksas mācīties. €19 tikai pēc sekmīgi nokārtota eksāmena.",
+    "howItWorks": {
+      "heading": "Kā tas darbojas",
+      "learn": {
+        "title": "Mācies",
+        "body": "9 EASA tēmas vienkāršā valodā. Materiāli latviešu, angļu un krievu valodā."
+      },
+      "practice": {
+        "title": "Trenējies",
+        "body": "Atbildi uz reāla stila jautājumiem. Pildi simulētos eksāmenus, līdz stabili sasniedz 80 %+."
+      },
+      "pass": {
+        "title": "Nokārto — tad maksā",
+        "body": "Nokārto bezmaksas oficiālo A1/A3 eksāmenu vietnē e.caa.gov.lv. Maksā €19 tikai pēc sekmīgas nokārtošanas. Neizdevās — nemaksā."
+      }
+    },
+    "why": {
+      "heading": "Kāpēc dronelingo",
+      "localFirst": {
+        "title": "Latvijai veidots",
+        "body": "Pielāgots Latvijas procesam — reģistrācijai vietnē e.caa.gov.lv, A1/A3 eksāmenam, reālajai CAA valodai."
+      },
+      "passOrFree": {
+        "title": "Nokārto vai bez maksas",
+        "body": "Ja neizdodas, nemaksā. Mūsu mērķis sakrīt ar tavu."
+      },
+      "euAligned": {
+        "title": "Saskaņots ar ES regulām",
+        "body": "Saturs balstīts īstajā regulējumā — Regula (ES) 2019/947 un EASA Easy Access Rules — nevis vispārīgos faktos."
+      }
+    },
+    "facts": {
+      "heading": "Kā izskatās oficiālais eksāmens",
+      "questions": "40 jautājumi",
+      "duration": "40 minūtes",
+      "threshold": "≥75 % pareizu atbilžu",
+      "cost": "Bezmaksas",
+      "location": "Tiešsaistē — e.caa.gov.lv",
+      "validity": "Apliecinājums derīgs 5 gadus, atzīts visā ES",
+      "source": "Avots: CAA Latvija, droni.caa.gov.lv"
+    },
+    "footer": {
+      "tagline": "EASA A1/A3 droniem eksāmenam — Latvijai vispirms.",
+      "guide": "Reģistrācijas ceļvedis",
+      "faq": "BUJ",
+      "privacy": "Privātums",
+      "terms": "Lietošanas noteikumi"
+    }
   }
 }
