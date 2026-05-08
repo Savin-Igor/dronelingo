@@ -14,8 +14,23 @@
 Из брейншторма (`docs/plan.md` §6) выбран **тезис B — Pass Guarantee**:
 
 - Учиться **бесплатно**.
-- **€19–29 разово** после подтверждения сдачи (Wallet-pass / скан сертификата).
+- **€19 разово** после подтверждения сдачи (загрузка PDF сертификата).
 - Маркетинговая линия: «Сдашь A1/A3 с первого раза — или платишь ноль».
+
+### Локализация
+
+| Tier | Языки | Перевод |
+|------|-------|--------|
+| **Default** | **`lv`** (латышский) | основной целевой рынок — Латвия |
+| **Tier 1** (human-translated, MVP) | `lv`, `en`, `ru` | UI + контент уроков + банк вопросов |
+| **Tier 2** (auto-translated + human review) | остальные 21 язык ЕС: bg, cs, da, de, el, es, et, fi, fr, ga, hr, hu, it, lt, mt, nl, pl, pt, ro, sk, sl, sv | UI через автоперевод (DeepL); контент уроков fallback на `en`; flag `verified=false` |
+| **Fallback** | непереведённое | `en` |
+
+Архитектурно: все строки UI через `next-intl` или `next-i18next`; контент (Lesson, Question) — multilingual columns с `null = fallback`.
+
+### Платежи
+
+**MVP — заглушка (без Stripe)**. На `/claim` после загрузки сертификата UI имитирует Stripe Checkout (статичная страница «Проверка платежа... ✅ Спасибо!»), бэкенд просто проставляет `Certificate.paidAt = now`. Реальная интеграция Stripe / Lemon Squeezy — после M4 по фидбеку.
 
 Тезис A (Compliance Companion) и C (Operator OS) — за рамками MVP.
 
@@ -42,7 +57,9 @@
 | База данных | **PostgreSQL 16** (Docker локально, Hetzner palpalych prod) |
 | ORM | **Prisma** (`make push` для dev, `migrate` для prod) |
 | Аутентификация | **NextAuth.js** (email magic link + Google) |
-| Платежи | **Stripe Checkout** (one-time, без подписок) |
+| i18n | **next-intl** (App Router-friendly), 24 языка ЕС, default `lv` |
+| Автоперевод (Tier 2) | **DeepL API** для UI; контент Tier 2 — fallback на `en` |
+| Платежи | **Заглушка** в MVP (имитация Stripe Checkout, без реального процессинга). После MVP — Stripe или Lemon Squeezy |
 | Email | **Resend** (transactional) |
 | Хранилище | Локальная файловая система контейнера (`/mnt/data/dronelingo` на VPS) |
 | CI/CD | **GitHub Actions** (готово в commit 2f101fa) |
@@ -84,7 +101,7 @@ model User {
   id            String   @id @default(cuid())
   email         String   @unique
   name          String?
-  locale        String   @default("ru")    // "ru" | "en" | "lv"
+  locale        String   @default("lv")    // ISO 639-1: lv | en | ru | de | fr | ...
   createdAt     DateTime @default(now())
   attempts      Attempt[]
   examResults   ExamResult[]
@@ -94,10 +111,8 @@ model User {
 model Topic {
   id          String     @id           // "air-safety", "airspace", ...
   order       Int                      // 1..9
-  slugLv      String     @unique
-  titleRu     String
-  titleEn     String
-  titleLv     String
+  slug        String     @unique       // language-neutral, e.g. "air-safety"
+  titles      Json       // {lv:"...", en:"...", ru:"...", de:"...", ...}; missing keys → fallback to en
   lessons     Lesson[]
   questions   Question[]
 }
@@ -108,10 +123,8 @@ model Lesson {
   topic       Topic    @relation(fields: [topicId], references: [id])
   order       Int
   slug        String   @unique
-  titleRu     String
-  titleEn     String
-  bodyRuMdx   String   // MDX content
-  bodyEnMdx   String
+  titles      Json     // {lv, en, ru, ...}
+  bodyMdx     Json     // {lv:"...", en:"...", ru:"...", de?:"..."}; missing → fallback en
   estMinutes  Int      @default(5)
   sources     Json     // [{title, url, page}]
 }
@@ -122,11 +135,9 @@ model Question {
   topic        Topic    @relation(fields: [topicId], references: [id])
   bank         String                              // "A1A3" | "A2" | "STS"
   difficulty   Int      @default(1)                // 1..3
-  stemRu       String
-  stemEn       String
-  options      Json     // [{key:"A", textRu, textEn, isCorrect}]
-  rationaleRu  String
-  rationaleEn  String
+  stems        Json     // {lv, en, ru, ...}
+  options      Json     // [{key:"A", texts:{lv,en,ru,...}, isCorrect}]
+  rationales   Json     // {lv, en, ru, ...}
   sourceRef    String                              // "Reg 2019/947 Art. UAS.OPEN.060"
   active       Boolean  @default(true)
 }
@@ -221,23 +232,27 @@ model Certificate {        // загруженный пользователем 
 ✅ Knowledge base (49 файлов)
 ✅ Сервер palpalych готов (mirroring MezaData/ALTEKO)
 
-### M1 — Skeleton + контент-pipeline (1–2 недели)
+### M1 — Skeleton + контент-pipeline + i18n (1–2 недели)
 
-**Цель:** запустить пустую страницу на проде через `make release`. Контент уже в БД.
+**Цель:** запустить лендинг на 3 языках на проде через `make release`. Контент-импорт работает.
 
 - [ ] `npx create-next-app@latest .` — Next.js 15 + Tailwind + TypeScript
-- [ ] `prisma init` + schema (раздел 3)
+- [ ] `prisma init` + schema (раздел 3) — JSON-поля для multilingual
 - [ ] NextAuth (email magic link через Resend)
-- [ ] Главный layout, шапка, футер, switcher RU/EN, mobile-first
+- [ ] **i18n setup**: `next-intl` с App Router, `[locale]` segment, default `lv`
+- [ ] Locale-detection: `Accept-Language` header → fallback `en` для не-Tier1
+- [ ] Языковой switcher в header: dropdown с 24 флагами ЕС
+- [ ] Шапка/футер/layout, mobile-first
+- [ ] Translation files: `messages/lv.json`, `en.json`, `ru.json` (human); `de/fr/...` (DeepL auto, помечены `verified=false`)
 - [ ] **Контент-импортёр** `scripts/import-content.ts`:
-  - Парсит MDX из `content/lessons/`
-  - Парсит вопросы из YAML/JSON в `content/questions/`
+  - Парсит MDX из `content/lessons/<slug>/{lv,en,ru}.mdx`
+  - Парсит вопросы из YAML в `content/questions/<topic>.yml` (multilingual fields)
   - Загружает в БД (Topic, Lesson, Question)
   - Идемпотентен (UPSERT по slug/id)
-- [ ] Лендинг: hero, fee value prop, CTA «Начать бесплатно»
+- [ ] Лендинг: hero, value prop («бесплатно учиться, €19 если сдашь»), CTA «Начать бесплатно»
 - [ ] Деплой через `make release v=0.1.0` → palpalych
 
-**Acceptance:** dronelingo.eu загружается, есть страница «о проекте».
+**Acceptance:** `dronelingo.eu`, `dronelingo.eu/en`, `dronelingo.eu/ru` рендерятся; switcher работает.
 
 ### M2 — Уроки + одиночный тренажёр (2 недели)
 
@@ -269,11 +284,12 @@ model Certificate {        // загруженный пользователем 
 - [ ] Маршрут `/claim` — пользователь указывает «я сдал реальный экзамен»:
   - Загрузить PDF сертификата
   - OR ввести `LVA-RP-############` + дату сдачи
-  - Stripe Checkout на €29
-  - При успехе: записать `Certificate.paidAt`, отправить «спасибо» письмо
+  - **Заглушка-checkout** на €19: статичная страница «Проверяем платёж...» → `Certificate.paidAt = now`
+  - Отправить «спасибо» письмо
+- [ ] **Payment abstraction**: `processPayment(userId, €19)` — интерфейс с одной реализацией `StubProvider`. Когда подключим Stripe — добавится `StripeProvider` без изменения вызывающего кода.
 - [ ] (V0) Верификация сертификата ручная — оператор проверяет PDF в админке. Автоверификация через CAA API — post-MVP.
 
-**Acceptance:** пользователь может пройти mock-экзамен → получить score → загрузить сертификат → оплатить.
+**Acceptance:** пользователь может пройти mock-экзамен → получить score → загрузить сертификат → пройти заглушку платежа → получить email.
 
 ### M4 — Гайд по регистрации + полировка (1–2 недели)
 
@@ -312,8 +328,8 @@ model Certificate {        // загруженный пользователем 
 | Завершили хотя бы 1 mock-экзамен | ≥ 30 |
 | Pass-rate последнего mock у платящих | ≥ 80 % |
 | Загрузок реального сертификата | ≥ 10 |
-| Конверсия в оплату (€29 после сдачи) | ≥ 60 % загрузивших |
-| Чистая выручка / месяц | ≥ €200 (10 × €29 минус Stripe fees) |
+| Прохождение заглушки checkout (€19) | ≥ 60 % загрузивших |
+| Сигнал готовности к реальной выручке | 10 × €19 = ~€190 → имеет смысл подключать Stripe |
 | NPS (анкета после оплаты) | ≥ 40 |
 
 Если pass-rate < 60 % или конверсия < 30 % — пересматриваем тезис.
@@ -347,30 +363,36 @@ model Certificate {        // загруженный пользователем 
 | **Дублирующие платформы** (DronuEksāmeni.lv, EU Drone Port) | Высокая | Среднее | Дифференциация: бесплатный вход + Pass Guarantee + русский язык |
 | **CAA публикует свой бесплатный курс** | Низкая | Очень высокое | Уже опубликован — `e.caa.gov.lv` сам по себе бесплатен. Наша ценность не в курсе, а в ясности и удобном UX |
 | **GDPR-комплаенс ошибка** (хранение PDF сертификатов) | Средняя | Высокое | Сразу: privacy policy + DPA + минимальный сбор данных; через 2 года автоудаление; не индексируем сертификаты публично |
-| **Stripe заморозка** при первой оплате | Низкая | Среднее | Тестовый платёж от знакомого; альтернатива — Lemon Squeezy |
+| **Реальный Stripe не подключён в MVP** | — | — | Намеренно: валидируем что пользователи готовы платить (доходят до checkout-заглушки) **до** интеграции |
 | **Хостинг palpalych упадёт** | Низкая | Среднее | Бэкапы Postgres ежедневно, GitHub Actions может задеплоить на любой VPS |
 | **Я не дойду до M3 за 5 недель** | Средняя | Среднее | Жёсткий timeboxing: M2 за 2 нед, M3 за 2 нед; если задержка — режем уроки до 9 (по 1 на тему) |
 
 ---
 
-## 9. Открытые вопросы (требуют решения до M2)
+## 9. Решения (зафиксированы 2026-05-08)
 
-1. **Цена:** €19 или €29? Тестировать A/B на лендинге уже в M1?
-2. **Язык MVP:** RU + EN, или только RU? (RU — целевая первая волна по плану)
-3. **Mock-экзамен реплика:** копировать ли стиль e.caa.gov.lv 1:1 или делать свой? (Юридический риск минимален, но имитация — серая зона)
-4. **Domain:** dronelingo.eu уже куплен? Если нет — DNS на M1.
-5. **Stripe vs Lemon Squeezy** — кто проще для one-time €29 без подписки?
-6. **Sentry / Plausible** — подключаем сразу в M1 или после M3?
-7. **Лицензия проекта** (в README — TBD).
+| # | Вопрос | Решение |
+|---|--------|---------|
+| 1 | Стратегия | ✅ **тезис B — Pass Guarantee** |
+| 2 | Цена | **€19** разово (после сдачи) |
+| 3 | Платежи | **Заглушка** в MVP, без реального процессинга |
+| 4 | Default локаль | **`lv`** (латышский) |
+| 5 | Tier 1 (human) | **lv, en, ru** |
+| 6 | Tier 2 (auto + fallback) | **остальные 21 язык ЕС** через DeepL, fallback на en |
+| 7 | Mock-экзамен реплика | стиль приближен к `e.caa.gov.lv`, но не piксel-perfect 1:1 |
 
----
+## 10. Открытые вопросы (для M4+)
 
-## 10. Что нужно от продакт-владельца сейчас
+1. **Domain:** `dronelingo.eu` уже куплен? Если нет — DNS на M1.
+2. **Sentry / Plausible** — подключаем сразу в M1 или после M3?
+3. **Реальный платёжный провайдер** — Stripe или Lemon Squeezy? (после ≥10 прохождений заглушки)
+4. **Tier 2 переводов** — перевод пользовательского контента (Lesson MDX) на 21 язык авто = ~€100–500 разово через DeepL API; делать сразу в M2 или ждать спроса?
+5. **Лицензия проекта** (в README — TBD).
 
-Для перехода в M1 нужны решения по:
+## 11. Бюджет M1
 
-1. ✅ / ❌ — **тезис B (Pass Guarantee)** как стратегия MVP
-2. Цена: **€19** или **€29**?
-3. Язык MVP: **RU only** / **RU + EN**?
-4. **Sprint length** и таймлайн: 5 недель до M4 — реалистично?
-5. **Бюджет M1**: домен (~€20/год), Resend (~€0/free tier), Stripe (~0), VPS palpalych (~уже оплачен) → ~ €20 на старт.
+- домен `dronelingo.eu` (~€20/год)
+- Resend (free tier до 3k emails/мес)
+- VPS palpalych (уже оплачен, shared с MezaData/ALTEKO)
+- DeepL API free tier (500k символов/мес — хватает на UI всех 24 языков)
+- **Итого: ~€20 на старт**
