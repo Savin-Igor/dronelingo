@@ -145,10 +145,18 @@ export function ExamResultView() {
         )}
       </section>
 
-      <div className="mt-8 flex justify-center">
+      <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        {result.passed && (
+          <Link
+            href="/claim"
+            className="rounded-md bg-green-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-green-500"
+          >
+            {t("claimCta")} →
+          </Link>
+        )}
         <Link
           href="/exam"
-          className="rounded-md bg-gray-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-gray-700"
+          className="rounded-md border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-50"
         >
           {t("retake")}
         </Link>

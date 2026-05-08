@@ -17,10 +17,14 @@ export default async function TopicPage({
 }) {
   const { locale, topic: topicSlug } = await params;
   const t = await getTranslations({ locale, namespace: "learn" });
+  const tPractice = await getTranslations({ locale, namespace: "practice" });
 
   const topic = await prisma.topic.findUnique({
     where: { slug: topicSlug },
-    include: { lessons: { orderBy: { ord: "asc" } } },
+    include: {
+      lessons: { orderBy: { ord: "asc" } },
+      _count: { select: { questions: true } },
+    },
   });
   if (!topic) notFound();
 
@@ -40,6 +44,17 @@ export default async function TopicPage({
       </h1>
       <p className="mt-2 text-gray-600">{localize(topic.summary, locale)}</p>
       <TopicLessonList topicSlug={topic.slug} lessons={lessons} />
+
+      {topic._count.questions > 0 && (
+        <div className="mt-10 flex justify-center">
+          <Link
+            href={`/practice/${topic.slug}`}
+            className="rounded-md bg-gray-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-gray-700"
+          >
+            {tPractice("ctaFromTopic")} →
+          </Link>
+        </div>
+      )}
     </main>
   );
 }

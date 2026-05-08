@@ -81,7 +81,8 @@
     "score": "Pareizi {correct} no {total} ({percent}%)",
     "questionOf": "Jautājums {current} no {total}",
     "allDone": "Esi izgājis visus šīs tēmas jautājumus.",
-    "anonymousNote": "Atbildes glabājas tikai šajā pārlūkā — bez reģistrācijas."
+    "anonymousNote": "Atbildes glabājas tikai šajā pārlūkā — bez reģistrācijas.",
+    "ctaFromTopic": "Trenējies šajā tēmā"
   },
   "exam": {
     "title": "Pārbaudes eksāmens",
@@ -118,6 +119,7 @@
     "noMisses": "Visas atbildes pareizas — lieliski!",
     "retake": "Sākt jaunu eksāmenu",
     "noResult": "Pēdējais eksāmens nav atrasts. Sāc no jauna.",
+    "claimCta": "Pieprasīt Pass Guarantee",
     "durationLabel": "Ilgums: {minutes} min",
     "history": {
       "heading": "Tavi pēdējie eksāmeni",

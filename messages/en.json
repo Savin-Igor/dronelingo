@@ -81,7 +81,8 @@
     "score": "{correct} of {total} correct ({percent}%)",
     "questionOf": "Question {current} of {total}",
     "allDone": "You've gone through all questions in this topic.",
-    "anonymousNote": "Answers are kept only in this browser — no sign-up needed."
+    "anonymousNote": "Answers are kept only in this browser — no sign-up needed.",
+    "ctaFromTopic": "Practice this topic"
   },
   "exam": {
     "title": "Mock exam",
@@ -118,6 +119,7 @@
     "noMisses": "Every answer correct — excellent!",
     "retake": "Take another exam",
     "noResult": "No recent exam found. Start a new one.",
+    "claimCta": "Claim Pass Guarantee",
     "durationLabel": "Duration: {minutes} min",
     "history": {
       "heading": "Your recent exams",

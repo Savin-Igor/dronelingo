@@ -3,6 +3,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { ConsentBanner } from "@/components/ConsentBanner";
+import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/Header";
 import { Plausible } from "@/components/Plausible";
 import { env } from "@/env";
@@ -50,8 +51,11 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className="antialiased">
         <NextIntlClientProvider>
-          <Header />
-          {children}
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <div className="flex-1">{children}</div>
+            <Footer />
+          </div>
           <ConsentBanner />
           {plausibleDomain ? <Plausible domain={plausibleDomain} /> : null}
         </NextIntlClientProvider>
