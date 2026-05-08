@@ -127,6 +127,30 @@
       "notReady": "More to learn — keep practising."
     }
   },
+  "meta": {
+    "guide": {
+      "title": "Registration guide",
+      "description": "8 steps from 0 to A1/A3 certificate: e.caa.gov.lv registration, exam, marking, insurance."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "description": "Answers about Pass Guarantee, certificate validity, registration in Latvia, and content freshness."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "description": "How dronelingo handles browser storage and the optional checkout email — under GDPR."
+    },
+    "terms": {
+      "title": "Terms of use",
+      "description": "Nature of the service, Pass Guarantee, user responsibilities, dronelingo liability limits."
+    }
+  },
+  "consent": {
+    "title": "Privacy",
+    "body": "This site keeps your progress in browser storage and — with your consent — uses cookie-free Plausible analytics. Details:",
+    "privacyLink": "privacy policy",
+    "accept": "Got it"
+  },
   "claim": {
     "title": "Claim your €19 — Pass Guarantee",
     "subtitle": "Once you have passed the official A1/A3 exam, upload your certificate or enter your registration number — then complete the €19 checkout.",

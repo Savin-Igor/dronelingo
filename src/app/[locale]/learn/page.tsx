@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import {
   LearnTopicsList,
@@ -5,8 +6,24 @@ import {
 } from "@/components/learn/LearnTopicsList";
 import { localize } from "@/lib/localize";
 import { prisma } from "@/lib/prisma";
+import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "learn" });
+  return buildMetadata({
+    locale,
+    path: "/learn",
+    title: `${t("title")} — dronelingo`,
+    description: t("subtitle"),
+  });
+}
 
 export default async function LearnIndex({
   params,

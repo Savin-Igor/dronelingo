@@ -127,6 +127,30 @@
       "notReady": "Vēl ir, ko mācīties — turpini trenēties."
     }
   },
+  "meta": {
+    "guide": {
+      "title": "Reģistrācijas ceļvedis",
+      "description": "8 soļi no 0 līdz A1/A3 sertifikātam: e.caa.gov.lv reģistrācija, eksāmens, marķēšana, apdrošināšana."
+    },
+    "faq": {
+      "title": "Biežāk uzdotie jautājumi",
+      "description": "Atbildes par Pass Guarantee, sertifikāta derīgumu, reģistrāciju Latvijā un avotu aktualitāti."
+    },
+    "privacy": {
+      "title": "Privātuma politika",
+      "description": "Kā dronelingo apstrādā lokālo glabātuvi un e-pastu maksājumam — saskaņā ar GDPR."
+    },
+    "terms": {
+      "title": "Lietošanas noteikumi",
+      "description": "Pakalpojuma būtība, Pass Guarantee, lietotāja un dronelingo atbildība."
+    }
+  },
+  "consent": {
+    "title": "Privātums",
+    "body": "Šī vietne saglabā tavu progresu pārlūka glabātuvē un — ja tu piekrīti — izmanto bezsīkdatņu Plausible analītiku. Sīkāk:",
+    "privacyLink": "privātuma politika",
+    "accept": "Sapratu"
+  },
   "claim": {
     "title": "Saņem savu €19 — Pass Guarantee",
     "subtitle": "Ja oficiālais A1/A3 eksāmens nokārtots, augšupielādē apliecību vai ievadi reģistrācijas numuru — un noslēdz €19 maksājumu.",

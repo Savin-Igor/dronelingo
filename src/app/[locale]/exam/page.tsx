@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { ExamHistorySection } from "@/components/exam/ExamHistorySection";
@@ -6,8 +7,24 @@ import {
   EXAM_PASS_THRESHOLD,
   EXAM_TOTAL_QUESTIONS,
 } from "@/lib/exam";
+import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "exam" });
+  return buildMetadata({
+    locale,
+    path: "/exam",
+    title: `${t("title")} — dronelingo`,
+    description: t("subtitle"),
+  });
+}
 
 export default async function ExamStart({
   params,

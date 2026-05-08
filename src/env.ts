@@ -13,7 +13,10 @@ export const env = createEnv({
     EMAIL_FROM: z.string().optional(),
     ADMIN_EMAIL: z.string().email().optional(),
   },
-  client: {},
+  client: {
+    NEXT_PUBLIC_SITE_URL: z.string().url().default("https://dronelingo.eu"),
+    NEXT_PUBLIC_PLAUSIBLE_DOMAIN: z.string().optional(),
+  },
   runtimeEnv: {
     DATABASE_URL: process.env.DATABASE_URL,
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
@@ -24,6 +27,8 @@ export const env = createEnv({
     EMAIL_SERVER_PASSWORD: process.env.EMAIL_SERVER_PASSWORD,
     EMAIL_FROM: process.env.EMAIL_FROM,
     ADMIN_EMAIL: process.env.ADMIN_EMAIL,
+    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
+    NEXT_PUBLIC_PLAUSIBLE_DOMAIN: process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN,
   },
   skipValidation: process.env.SKIP_ENV_VALIDATION === "true",
 });

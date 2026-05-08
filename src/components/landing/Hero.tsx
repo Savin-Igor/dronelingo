@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export function Hero() {
   const t = useTranslations("landing.hero");
@@ -11,12 +12,12 @@ export function Hero() {
         </h1>
         <p className="mt-6 text-lg text-gray-600">{t("sub")}</p>
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <a
-            href="#how-it-works"
+          <Link
+            href="/learn"
             className="inline-flex items-center justify-center rounded-md bg-gray-900 px-6 py-3 text-sm font-medium text-white hover:bg-gray-800"
           >
             {t("ctaPrimary")}
-          </a>
+          </Link>
           <a
             href="#how-it-works"
             className="inline-flex items-center justify-center rounded-md border border-gray-300 px-6 py-3 text-sm font-medium text-gray-900 hover:bg-gray-50"
