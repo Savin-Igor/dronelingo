@@ -2,7 +2,8 @@
   "nav": {
     "learn": "Mācies",
     "practice": "Trenējies",
-    "exam": "Eksāmens"
+    "exam": "Eksāmens",
+    "claim": "Saņemt"
   },
   "landing": {
     "hero": {
@@ -124,6 +125,36 @@
       "ready": "Esi gatavs reālajam eksāmenam (≥80 % pēdējos 3 mēģinājumos).",
       "almostReady": "Tuvojies — vēl daži treniņi un būsi gatavs.",
       "notReady": "Vēl ir, ko mācīties — turpini trenēties."
+    }
+  },
+  "claim": {
+    "title": "Saņem savu €19 — Pass Guarantee",
+    "subtitle": "Ja oficiālais A1/A3 eksāmens nokārtots, augšupielādē apliecību vai ievadi reģistrācijas numuru — un noslēdz €19 maksājumu.",
+    "kindHeading": "Kā apliecināt nokārtošanu",
+    "kindPdf": "Augšupielādēt PDF apliecību no e.caa.gov.lv",
+    "kindCaaId": "Ievadīt CAA Latvia reģistrācijas numuru",
+    "fileLabel": "PDF apliecība (max 5 MB)",
+    "fileHint": "Lejupielādē PDF no e.caa.gov.lv pēc nokārtošanas.",
+    "fileSelected": "Izvēlēts: {name}",
+    "caaIdLabel": "Reģistrācijas numurs",
+    "caaIdPlaceholder": "LVA-RP-############",
+    "caaIdHint": "Formāts: LVA-RP- un 12 cipari (piem., LVA-RP-123456789012).",
+    "emailLabel": "E-pasts paldies vēstulei",
+    "emailPlaceholder": "tava@vēstule.lv",
+    "checkout": {
+      "heading": "Stub-checkout (€19)",
+      "note": "Šis ir Stripe formas iztēlošana — reālais Stripe tiks pieslēgts pēc ≥10 sekmīgi pabeigtām stub-checkout plūsmām.",
+      "amount": "€19,00",
+      "pay": "Maksāt €19",
+      "processing": "Apstrādā...",
+      "success": "Maksājums veiksmīgs ✓",
+      "successBody": "Paldies! Esi devis svarīgu signālu — ka Pass Guarantee modelis darbojas. Reālā summa netika ieturēta.",
+      "back": "Atpakaļ uz eksāmenu"
+    },
+    "errors": {
+      "missing": "Vajag PDF apliecību vai reģistrācijas numuru.",
+      "caaIdFormat": "Reģistrācijas numuram jābūt formātā LVA-RP-############.",
+      "fileTooLarge": "Fails pārsniedz 5 MB."
     }
   }
 }

@@ -30,6 +30,12 @@ export function Header() {
             >
               {t("exam")}
             </Link>
+            <Link
+              href="/claim"
+              className="text-gray-600 hover:text-gray-900"
+            >
+              {t("claim")}
+            </Link>
           </nav>
         </div>
         <LocaleSwitcher />
