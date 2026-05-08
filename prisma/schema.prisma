@@ -1,0 +1,22 @@
+// Prisma schema for dronelingo.eu.
+//
+// Skeleton scope: only User. Topic/Lesson/Question/Attempt/ExamResult/Certificate
+// land in a follow-up issue with multilingual Json fields (see CLAUDE.md).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  locale    String   @default("lv")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

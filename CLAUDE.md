@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository status
 
-**Pre-development.** No application code exists yet — only infrastructure (Dockerfile, compose, Makefile, CI/Deploy workflows) and the knowledge base. CI/deploy jobs auto-skip via `if: hashFiles('package.json') != ''` until the first Node.js code lands.
+**Skeleton landed (M1 step 1).** Next.js 15 + Prisma 6 + next-intl + `/api/health` are in place; CI no longer auto-skips. NextAuth is installed but not wired (waits on Resend domain — issue #3). Only the `User` Prisma model exists; the rest of the content schema (Topic/Lesson/Question/Attempt/ExamResult/Certificate) is a follow-up.
 
 The product is `dronelingo.eu` — an EASA A1/A3 drone certification prep platform (initial market: Latvia).
 

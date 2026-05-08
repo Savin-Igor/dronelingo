@@ -17,14 +17,14 @@
 - Хостинг: shared VPS `palpalych` (Hetzner) — `/opt/dronelingo/`, `/mnt/data/dronelingo/`.
 - Контент-маршрут: 9 тем экзамена A1/A3 → ~27 уроков → ~150 вопросов → mock-экзамен 40 Q / 40 min / 75 %.
 - Источник тематики и вопросов — `docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md` + `test-samples/A1-A3-question-bank.md`.
-- Pass Guarantee: пользователь после реального экзамена загружает PDF сертификата → Stripe Checkout €29 → ручная верификация в админке.
+- Pass Guarantee: пользователь после реального экзамена загружает PDF сертификата → stub-checkout €19 → ручная верификация в админке.
 
 ## Steps
 
 ### M1 — Skeleton + i18n + контент-pipeline (1–2 недели)
 1. `npx create-next-app .` — Next.js 15, App Router, Tailwind, TS.
 2. `prisma init` + schema: `User` (default locale `lv`), `Topic`, `Lesson`, `Question`, `Attempt`, `ExamResult`, `Certificate` — multilingual поля как `Json {lv,en,ru,...}` с fallback на `en`.
-3. NextAuth: email magic link + Google.
+3. NextAuth: email magic link через Resend (Google и прочие провайдеры — после MVP, при необходимости).
 4. **next-intl** с `[locale]` segment, default `lv`; switcher на 24 ЕС языка; Accept-Language detection.
 5. Translation files: `lv/en/ru` human; `de/fr/...` DeepL auto + `verified=false`.
 6. `scripts/import-content.ts` — импортёр MDX (`content/lessons/<slug>/{lv,en,ru}.mdx`) + YAML вопросов в БД (UPSERT).
