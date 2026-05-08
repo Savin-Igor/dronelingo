@@ -23,6 +23,18 @@ dist/
 build/
 .cache/
 coverage/
+.next/
+*.tsbuildinfo
+
+# Local Docker volumes (Postgres, uploads)
+data/
+backups/
+
+# Local tooling
+.playwright-mcp/
+.claude/worktrees/
+.firecrawl/
+.mcp.json
 
 # Python
 __pycache__/

@@ -1,0 +1,69 @@
+name: CI
+
+# Runs on every PR and push to main. Production deploy is tag-driven (deploy.yml).
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+# Cancel in-flight runs on the same ref.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    # Skip when there's no Node project yet — the repo currently ships only
+    # documentation. Remove this guard once package.json lands on main.
+    if: hashFiles('package.json') != ''
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: dronelingo_test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/dronelingo_test
+      NEXTAUTH_SECRET: test-secret-min-32-chars-long-here
+      NEXTAUTH_URL: http://localhost:3000
+      SKIP_ENV_VALIDATION: "true"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Prisma client
+        run: npx prisma generate
+        if: hashFiles('prisma/schema.prisma') != ''
+
+      - name: Run migrations
+        run: npx prisma migrate deploy
+        if: hashFiles('prisma/migrations/**') != ''
+
+      - name: Type check
+        run: npm run type-check
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build

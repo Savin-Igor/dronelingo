@@ -1,0 +1,42 @@
+# LOCAL DEVELOPMENT compose — Postgres + Mailhog.
+#
+# This file is for local dev only. Production uses docker-compose.yml at the
+# repo root, which pulls a pre-built image from GHCR and bind-mounts to
+# /mnt/data/dronelingo/*. See docs/DEPLOY.md.
+#
+# Usage:
+#   make dev          — daily: bring up db, sync schema, run npm dev on host
+#   make dev-setup    — first time: + seed
+#   make stop         — stop dev containers
+#
+# Local app port: 3000 (host). Production port on the shared VPS: 3030.
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: dronelingo
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    ports:
+      # 5434 on host: 5432 is often busy locally, 5433 is ALTEKO. Pick the next one.
+      - "5434:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # Mailhog — local SMTP server + web UI for viewing sent emails.
+  # SMTP:    localhost:1026  (no auth)
+  # Web UI:  http://localhost:8026
+  # Different ports from MezaData (1025/8025) and ALTEKO (1025/8025) so multiple
+  # local dev environments can coexist on the same host.
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - "1026:1025"
+      - "8026:8025"
+    restart: "no"

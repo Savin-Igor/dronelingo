@@ -1,0 +1,60 @@
+# Production compose for dronelingo on the shared Hetzner VPS.
+# Deploy path: /opt/dronelingo/
+# Secrets:     /opt/dronelingo/.env  (rewritten from GitHub Secrets on every deploy)
+#
+# Reverse proxy: host nginx (80/443, Certbot SSL) → 127.0.0.1:3030 → app:3000
+#
+# Port allocation on the shared server:
+#   3010 — MezaData
+#   3020 — ALTEKO
+#   3030 — dronelingo      ← this project
+#   3040+ — future projects
+#
+# Data lives on the Hetzner Volume (/mnt/data) so it survives server rebuild.
+#
+# First-time server setup: see docs/DEPLOY.md.
+
+services:
+  app:
+    image: ghcr.io/${GITHUB_REPOSITORY:-savin-igor/dronelingo}:${IMAGE_TAG:-latest}
+    restart: unless-stopped
+    init: true
+    ports:
+      - "127.0.0.1:3030:3000"
+    env_file: .env
+    depends_on:
+      db:
+        condition: service_healthy
+    entrypoint: ["/docker-entrypoint.sh"]
+    command: ["node", "server.js"]
+    # /api/health probes Postgres SELECT 1 and returns 503 when DB is unreachable —
+    # covers liveness + readiness in one endpoint. Add this route to the app.
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:3000/api/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      start_period: 30s
+      retries: 3
+    # Resource caps for a 4 GB shared VPS (alongside MezaData and ALTEKO).
+    mem_limit: 512m
+    cpus: 0.75
+
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: dronelingo
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      # Hetzner Volume bind — survives docker prune and server rebuild.
+      # First-time setup creates this dir owned by uid 70 (alpine postgres).
+      - /mnt/data/dronelingo/postgres:/var/lib/postgresql/data
+    # No port exposure — only the app talks to db on the internal network.
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    mem_limit: 384m
+    cpus: 0.5
