@@ -1,7 +1,8 @@
 // Prisma schema for dronelingo.eu.
 //
-// Skeleton scope: only User. Topic/Lesson/Question/Attempt/ExamResult/Certificate
-// land in a follow-up issue with multilingual Json fields (see CLAUDE.md).
+// Multilingual content fields are Json columns shaped {lv, en, ru, ...} with
+// `en` as the runtime fallback. See CLAUDE.md for the localization contract.
+// Every Question must carry a sourceRef pointing into docs/knowledge/.
 
 generator client {
   provider = "prisma-client-js"
@@ -19,4 +20,105 @@ model User {
   locale    String   @default("lv")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  attempts     Attempt[]
+  examResults  ExamResult[]
+  certificates Certificate[]
+}
+
+model Topic {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  ord       Int
+  title     Json
+  summary   Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  lessons   Lesson[]
+  questions Question[]
+
+  @@index([ord])
+}
+
+model Lesson {
+  id        String   @id @default(cuid())
+  topicId   String
+  topic     Topic    @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  slug      String
+  ord       Int
+  title     Json
+  bodyMdx   Json
+  sourceRef String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([topicId, slug])
+  @@index([topicId, ord])
+}
+
+model Question {
+  id              String   @id @default(cuid())
+  topicId         String
+  topic           Topic    @relation(fields: [topicId], references: [id], onDelete: Restrict)
+  stem            Json
+  options         Json
+  correctOptionId String
+  explanation     Json
+  sourceRef       String
+  difficulty      Int?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  attempts Attempt[]
+
+  @@index([topicId])
+}
+
+model Attempt {
+  id               String   @id @default(cuid())
+  userId           String
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  questionId       String
+  question         Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  selectedOptionId String
+  isCorrect        Boolean
+  createdAt        DateTime @default(now())
+
+  @@index([userId, createdAt(sort: Desc)])
+  @@index([userId, questionId])
+}
+
+model ExamResult {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  score       Int
+  total       Int
+  passed      Boolean
+  perTopic    Json
+  durationSec Int
+  takenAt     DateTime @default(now())
+
+  @@index([userId, takenAt(sort: Desc)])
+}
+
+enum CertificateKind {
+  PDF
+  CAA_ID
+}
+
+model Certificate {
+  id         String          @id @default(cuid())
+  userId     String
+  user       User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  kind       CertificateKind
+  fileUrl    String?
+  caaIdRef   String?
+  verifiedAt DateTime?
+  paidAt     DateTime?
+  createdAt  DateTime        @default(now())
+  updatedAt  DateTime        @updatedAt
+
+  @@index([userId])
 }
