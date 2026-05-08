@@ -31,6 +31,8 @@
     "eslint-config-next": "15.5.18",
     "prisma": "6.19.3",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "tsx": "^4.21.0",
+    "typescript": "^5",
+    "yaml": "^2.8.4"
   }
 }

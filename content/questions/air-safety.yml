@@ -1,0 +1,75 @@
+- id: as-001
+  stem:
+    lv: Ko nozīmē "tieša redzamība" (VLOS) Atvērtajā kategorijā?
+    en: What does "visual line of sight" (VLOS) mean in the Open category?
+    ru: Что означает «прямая видимость» (VLOS) в Открытой категории?
+  options:
+    - id: a
+      text:
+        lv: Pilots redz gaisa kuģi bez palīglīdzekļiem (briles atļautas).
+        en: The pilot sees the aircraft unaided (corrective glasses are allowed).
+        ru: Пилот видит аппарат без вспомогательных средств (очки для коррекции допустимы).
+    - id: b
+      text:
+        lv: Pilots seko gaisa kuģim caur FPV brillēm.
+        en: The pilot follows the aircraft through FPV goggles.
+        ru: Пилот следит за аппаратом через FPV-очки.
+    - id: c
+      text:
+        lv: Pilots zina UAS atrašanās vietu pēc telefona kartes.
+        en: The pilot knows the UAS position from a phone map.
+        ru: Пилот знает местоположение по карте на телефоне.
+  correctOptionId: a
+  explanation:
+    lv: >
+      VLOS prasa, lai pilots redzētu gaisa kuģi neapbruņotu aci un spētu
+      noteikt tā stāvokli un kustības virzienu. Briles atļautas, binokļi un
+      ekrāni — nē.
+    en: >
+      VLOS requires the pilot to see the aircraft with the unaided eye and
+      to determine its attitude and direction of travel. Corrective glasses
+      are allowed; binoculars and screens are not.
+    ru: >
+      VLOS требует, чтобы пилот видел аппарат невооружённым глазом и мог
+      определить его положение и направление движения. Очки для коррекции
+      допустимы, бинокли и экраны — нет.
+  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(3)"
+  difficulty: 1
+
+- id: as-002
+  stem:
+    lv: Kāpēc FPV lidojumiem Atvērtajā kategorijā nepieciešams novērotājs?
+    en: Why must FPV flights in the Open category have an observer?
+    ru: Зачем FPV-полёт в Открытой категории требует наблюдателя?
+  options:
+    - id: a
+      text:
+        lv: Lai nestu rezerves baterijas.
+        en: To carry spare batteries.
+        ru: Чтобы носить запасные аккумуляторы.
+    - id: b
+      text:
+        lv: Lai uzturētu situācijas apzināšanos par gaisa telpu ap UAS.
+        en: To maintain situational awareness of the airspace around the UAS.
+        ru: Чтобы поддерживать ситуационную осведомлённость о воздушной обстановке вокруг UAS.
+    - id: c
+      text:
+        lv: Lai vēlāk atskaņotu video ierakstu.
+        en: To replay the video later.
+        ru: Чтобы позже воспроизводить видеозапись.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Pilots, kurš skatās FPV brillēs, neredz apkārtējo gaisa telpu.
+      Novērotājs stāv blakus pilotam un seko gaisa telpai, lai nodrošinātu
+      separāciju no citiem gaisa kuģiem un šķēršļiem.
+    en: >
+      A pilot wearing FPV goggles cannot see the surrounding airspace. The
+      observer stands next to the pilot and watches the airspace to ensure
+      separation from other aircraft and obstacles.
+    ru: >
+      Пилот в FPV-очках не видит окружающее воздушное пространство.
+      Наблюдатель стоит рядом и следит за воздушной обстановкой, обеспечивая
+      разделение от других участников и препятствий.
+  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(2)(a)"
+  difficulty: 1

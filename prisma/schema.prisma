@@ -59,6 +59,7 @@ model Lesson {
 
 model Question {
   id              String   @id @default(cuid())
+  externalId      String   @unique
   topicId         String
   topic           Topic    @relation(fields: [topicId], references: [id], onDelete: Restrict)
   stem            Json

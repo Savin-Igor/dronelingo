@@ -1,7 +1,7 @@
 .PHONY: \
   dev dev-setup stop logs shell \
   db-up db-down \
-  migrate migrate-deploy push studio backup \
+  migrate migrate-deploy push studio backup import-content \
   build clean \
   check \
   release deploy help
@@ -56,6 +56,9 @@ backup: ## Backup local DB to ./backups/
 	@mkdir -p backups
 	$(DC) exec -T db pg_dump -U postgres dronelingo > backups/backup-$$(date +%Y%m%d-%H%M%S).sql
 	@echo "Backup saved to backups/"
+
+import-content: ## Import content/ (topics, lessons, questions) into local DB
+	npx tsx scripts/import-content.ts
 
 ##@ Build
 
