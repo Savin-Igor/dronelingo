@@ -1,0 +1,42 @@
+# UAS cyber security
+
+A UAS is a connected computer system — pilot, drone, mobile app,
+manufacturer cloud. Each is a potential attack vector.
+
+## Basic hygiene
+
+- **Change the factory password** on the mobile app and account.
+- **Update firmware** only from the official manufacturer channel.
+- **Do not connect the UAS to unknown Wi-Fi** (public hotspots, forum
+  "demo" networks).
+- **Store account passwords** in a password manager, not in plain
+  text.
+
+## GNSS jamming and spoofing
+
+- **Jamming** — RF noise drowns out the GPS signal; the UAS loses
+  position lock. Sign: sudden RTH failure or a typical "grey map" in
+  city centres.
+- **Spoofing** — fake GPS signals redirect the UAS. Sign: position
+  jumps to an implausible spot (kilometres off).
+
+Latvia is seeing more such events, especially near the eastern border.
+**First action:** switch to manual mode, land safely.
+**Second action:** report to CAA Latvia.
+
+## Data privacy on the UAS
+
+A camera-equipped UAS **stores video locally on SD or in the cloud**.
+Make sure:
+
+- the SD card is encrypted if the content is sensitive;
+- the cloud account is protected with 2FA;
+- videos are deleted after the required retention window.
+
+## Occurrence reporting
+
+If a credible attack on the account or UAS firmware is suspected, it
+is a **voluntary report** at `e.caa.gov.lv/incidents`.
+
+> **Source:** ENISA Good Practices for UAS cyber security (2022);
+> ENISA threat report — GNSS spoofing/jamming.

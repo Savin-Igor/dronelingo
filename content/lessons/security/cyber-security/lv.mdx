@@ -1,0 +1,41 @@
+# UAS kiberdrošība
+
+UAS ir savienots datorsistēmu komplekss — pilots, drons, mobilā
+lietotne, ražotāja mākoņserveris. Katrs no šiem ir potenciāls
+uzbrukuma vektors.
+
+## Pamata higiēna
+
+- **Maini rūpnīcas paroli** mobilajā lietotnē un kontā.
+- **Atjaunini firmware** tikai no oficiālā ražotāja kanāla.
+- **Nepievieno UAS nezināmiem Wi-Fi tīkliem** (publiskie hotspot, foruma
+  "demo" tīkli).
+- **Glabā konta paroli** parolu pārvaldniekā, ne tekstā.
+
+## GNSS jamming un spoofing
+
+- **Jamming** — radioviļņi pārklāj GPS signālu, UAS zaudē pozīcijas
+  fiksāciju. Pazīme: pēkšņs RTH atteikums vai pilsētas centrā tipiska
+  "pelēka karte".
+- **Spoofing** — viltus GPS signāli noved UAS uz citu vietu. Pazīme:
+  UAS rāda neticamu pozīciju (vairāki km nost no realitātes).
+
+Latvijā šādi notikumi tiek arvien biežāk reģistrēti, īpaši pierobežas
+zonās. **Pirmā darbība:** pārslēdz uz manuālo režīmu, nolaiž droši.
+**Otrā darbība:** ziņo CAA Latvia.
+
+## Datu privātums uz UAS
+
+UAS, kas raksta video, **glabā lokāli SD kartē vai mākonī**. Pārliecinies:
+
+- SD karte ir šifrēta, ja saturs ir sensitīvs;
+- mākoņa konts ir aizsargāts ar 2FA;
+- video tiek dzēsts pēc nepieciešamā glabāšanas perioda.
+
+## Atgadījuma ziņošana
+
+Ja konta vai UAS firmware uzbrukums ir pamatoti aizdomīgs, tas ir
+**brīvprātīgi ziņojams atgadījums** (`e.caa.gov.lv/incidents`).
+
+> **Avots:** ENISA Good Practices for UAS cyber security (2022);
+> ENISA threat report — GNSS spoofing/jamming.
