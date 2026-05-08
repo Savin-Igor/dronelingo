@@ -5,6 +5,7 @@ import {
   TopicLessonList,
   type LessonListItem,
 } from "@/components/learn/TopicLessonList";
+import { TopicSchema } from "@/components/learn/TopicSchema";
 import { localize } from "@/lib/localize";
 import { prisma } from "@/lib/prisma";
 
@@ -36,6 +37,13 @@ export default async function TopicPage({
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-12">
+      <TopicSchema
+        locale={locale}
+        slug={topic.slug}
+        title={localize(topic.title, locale)}
+        description={localize(topic.summary, locale)}
+        lessons={lessons.map((l) => ({ slug: l.slug, title: l.title }))}
+      />
       <Link href="/learn" className="text-sm text-gray-500 hover:text-gray-900">
         ← {t("title")}
       </Link>
