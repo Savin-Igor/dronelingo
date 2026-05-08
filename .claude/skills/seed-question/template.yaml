@@ -1,0 +1,40 @@
+# EASA A1/A3 exam question.
+# Imported by scripts/import-content.ts → Question table (Prisma).
+# Locales: lv default; lv/en/ru Tier 1 (human); 21 EU langs Tier 2 (DeepL).
+# `en` is the documented fallback — it is mandatory.
+
+topic: ""              # one of TOPICS.md slugs
+slug: ""               # kebab-case, unique within topic
+sourceRef: ""          # human citation, e.g. "Reg 2019/947 Art. UAS.OPEN.040"
+sourceFile: ""         # path under docs/knowledge/, e.g. "eu-regulations/EU-2019-947-implementing-regulation-EN.pdf"
+difficulty: medium     # easy | medium | hard
+
+stems:
+  en: ""
+  # lv: ""
+  # ru: ""
+
+options:
+  - key: A
+    isCorrect: false
+    texts:
+      en: ""
+      # lv: ""
+      # ru: ""
+  - key: B
+    isCorrect: false
+    texts:
+      en: ""
+  - key: C
+    isCorrect: false
+    texts:
+      en: ""
+  - key: D
+    isCorrect: false
+    texts:
+      en: ""
+
+rationales:
+  en: ""
+  # lv: ""
+  # ru: ""
