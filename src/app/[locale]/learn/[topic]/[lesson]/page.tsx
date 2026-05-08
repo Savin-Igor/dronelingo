@@ -1,6 +1,7 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
+import { MarkLessonVisited } from "@/components/learn/MarkLessonVisited";
 import { localize } from "@/lib/localize";
 import { prisma } from "@/lib/prisma";
 
@@ -64,6 +65,7 @@ export default async function LessonPage({
       </aside>
 
       <div>
+        <MarkLessonVisited lessonId={lesson.id} />
         <article className="prose prose-gray max-w-none">
           <MDXRemote source={body} />
         </article>
