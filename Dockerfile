@@ -41,6 +41,9 @@ COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
+# Static MDX content read at request time by `src/lib/static-page.ts`.
+COPY --from=builder --chown=nextjs:nodejs /app/content/static ./content/static
+
 # Prisma artefacts at runtime (migrate deploy needs the schema + CLI).
 COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma

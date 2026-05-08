@@ -1,6 +1,14 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 const LINKS = ["guide", "faq", "privacy", "terms"] as const;
+
+const HREF: Record<(typeof LINKS)[number], string> = {
+  guide: "/guide",
+  faq: "/faq",
+  privacy: "/privacy",
+  terms: "/terms",
+};
 
 export function Footer() {
   const t = useTranslations("landing.footer");
@@ -15,9 +23,9 @@ export function Footer() {
         <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-700">
           {LINKS.map((link) => (
             <li key={link}>
-              <a href="#" className="hover:text-gray-900">
+              <Link href={HREF[link]} className="hover:text-gray-900">
                 {t(link)}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
