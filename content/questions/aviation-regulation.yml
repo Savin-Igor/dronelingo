@@ -107,3 +107,76 @@
       не задаёт более низкий предел.
   sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020/030/040(2)"
   difficulty: 1
+
+- id: ar-004
+  stem:
+    lv: Kura ES regula nosaka UAS klašu (C0–C6) tehniskās prasības?
+    en: Which EU regulation lays down the technical requirements for UAS classes (C0–C6)?
+    ru: Какой регламент ЕС задаёт технические требования к классам UAS (C0–C6)?
+  options:
+    - id: a
+      text:
+        lv: Regula (ES) 2019/945.
+        en: Regulation (EU) 2019/945.
+        ru: Регламент (ЕС) 2019/945.
+    - id: b
+      text:
+        lv: Regula (ES) 2019/947.
+        en: Regulation (EU) 2019/947.
+        ru: Регламент (ЕС) 2019/947.
+    - id: c
+      text:
+        lv: Regula (ES) 376/2014.
+        en: Regulation (EU) 376/2014.
+        ru: Регламент (ЕС) 376/2014.
+  correctOptionId: a
+  explanation:
+    lv: >
+      2019/945 ir tehniskās prasības (klases C0–C6, CE marķējums).
+      2019/947 attiecas uz operācijām. 376/2014 — par atgadījumu
+      ziņošanu.
+    en: >
+      2019/945 covers technical requirements (C0–C6 classes, CE
+      marking). 2019/947 concerns operations. 376/2014 is about
+      occurrence reporting.
+    ru: >
+      2019/945 — технические требования (классы C0–C6, маркировка CE).
+      2019/947 — об эксплуатации. 376/2014 — об уведомлениях о
+      происшествиях.
+  sourceRef: "Reg (EU) 2019/945 — Technical requirements for UAS"
+  difficulty: 1
+
+- id: ar-005
+  stem:
+    lv: Kuri Latvijas MK noteikumi nosaka UAS pilota kvalifikācijas kārtību?
+    en: Which Latvian Cabinet Regulation governs UAS pilot qualification?
+    ru: Какие правила Кабинета министров Латвии регулируют квалификацию пилота UAS?
+  options:
+    - id: a
+      text:
+        lv: MK noteikumi Nr. 436.
+        en: Cabinet Regulation No. 436.
+        ru: Правила КМ № 436.
+    - id: b
+      text:
+        lv: MK noteikumi Nr. 248.
+        en: Cabinet Regulation No. 248.
+        ru: Правила КМ № 248.
+    - id: c
+      text:
+        lv: MK noteikumi Nr. 627.
+        en: Cabinet Regulation No. 627.
+        ru: Правила КМ № 627.
+  correctOptionId: a
+  explanation:
+    lv: >
+      MK Nr. 436 ir par UAS pilota kvalifikāciju. MK Nr. 248 — par
+      lidojuma noteikumiem; MK Nr. 627 — par modeļa lidaparātu klubiem.
+    en: >
+      Cabinet Reg. No. 436 covers UAS pilot qualification. No. 248 sets
+      flight rules; No. 627 deals with model-aircraft clubs.
+    ru: >
+      Правила КМ № 436 — о квалификации пилота UAS. № 248 — о правилах
+      полётов; № 627 — о клубах авиамоделистов.
+  sourceRef: "MK noteikumi Nr. 436 (Latvia) — UAS pilot qualification"
+  difficulty: 3

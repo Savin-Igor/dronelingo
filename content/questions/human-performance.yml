@@ -105,3 +105,80 @@
       рядом с пилотом.
   sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(2)(a); EASA HF guidance"
   difficulty: 2
+
+- id: hp-004
+  stem:
+    lv: Kāds redzes efekts rodas, ilgi skatoties tukšā debesī bez fiksācijas punkta?
+    en: What visual effect arises from prolonged looking at empty sky without a fixation point?
+    ru: Какой зрительный эффект возникает при долгом взгляде на пустое небо без точки фиксации?
+  options:
+    - id: a
+      text:
+        lv: Empty-field myopia — acs fokusējas uz ~1–2 m, palaižot tālus objektus.
+        en: Empty-field myopia — the eye refocuses to ~1–2 m, missing distant objects.
+        ru: Empty-field myopia — глаз перефокусируется на ~1–2 м, упуская далёкие объекты.
+    - id: b
+      text:
+        lv: Spilgtuma adaptācija (uzlabota nakts redzeslauks).
+        en: Brightness adaptation (improved night vision).
+        ru: Яркостная адаптация (улучшение ночного зрения).
+    - id: c
+      text:
+        lv: Krāsu konstantums.
+        en: Colour constancy.
+        ru: Постоянство цвета.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Empty-field myopia ir labi dokumentēts efekts: bez fiksācijas
+      punkta acs fokusējas tuvu, kas apgrūtina tālu objektu (tostarp
+      drona) noteikšanu. Aktīva skenēšana to novērš.
+    en: >
+      Empty-field myopia is a well-documented effect: without a
+      fixation point the eye focuses near, which makes distant objects
+      (including the drone) hard to detect. Active scanning prevents
+      it.
+    ru: >
+      Empty-field myopia — известный эффект: без точки фиксации глаз
+      фокусируется близко, что мешает видеть далёкие объекты (включая
+      дрон). Активное сканирование его предотвращает.
+  sourceRef: "FAA AC 60-22; EASA Easy Access Rules — Vision and perception"
+  difficulty: 3
+
+- id: hp-005
+  stem:
+    lv: Kā rīkoties, ja IMSAFE pārbaude konstatē "F — fatigue" ar tikai 4 h miega?
+    en: What to do if IMSAFE flags "F — fatigue" with only 4 h of sleep?
+    ru: Что делать, если IMSAFE отмечает «F — усталость» при сне всего 4 часа?
+  options:
+    - id: a
+      text:
+        lv: Atlikt lidojumu vai paļauties uz atpūtušos novērotāju.
+        en: Postpone the flight or rely on a rested observer.
+        ru: Отложить полёт или положиться на отдохнувшего наблюдателя.
+    - id: b
+      text:
+        lv: Iedzert kafiju un sākt lidojumu.
+        en: Drink coffee and start flying.
+        ru: Выпить кофе и начать полёт.
+    - id: c
+      text:
+        lv: Lidot — nogurums neietekmē tālvadības pilotu.
+        en: Fly — fatigue does not affect a remote pilot.
+        ru: Лететь — усталость не влияет на пилота-оператора.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Nogurums samazina reakcijas ātrumu un uzmanības spektru.
+      Profesionālā disciplīna prasa pārcelt lidojumu — kofeīns
+      neaizvieto miegu.
+    en: >
+      Fatigue degrades reaction time and attention. Professional
+      discipline calls for postponing the flight — caffeine does not
+      replace sleep.
+    ru: >
+      Усталость снижает скорость реакции и спектр внимания.
+      Профессиональная дисциплина требует отложить полёт — кофеин не
+      заменяет сон.
+  sourceRef: "ICAO Doc 9966 — Manual for Fatigue Management"
+  difficulty: 2

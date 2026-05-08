@@ -107,3 +107,75 @@
       В Открытой A1 максимальное расстояние Follow-Me — 50 м от пилота.
   sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020(1)(a) — follow-me mode"
   difficulty: 2
+
+- id: op-004
+  stem:
+    lv: Kā uzglabāt Li-Po bateriju, ja to neplāno lietot tuvākajās 2 nedēļās?
+    en: How to store a Li-Po battery if it will not be used for the next 2 weeks?
+    ru: Как хранить Li-Po аккумулятор, если он не будет использоваться 2 недели?
+  options:
+    - id: a
+      text:
+        lv: Uzlādētu līdz 50–60 % (storage charge).
+        en: Charged to 50–60 % (storage charge).
+        ru: Заряженным до 50–60 % (storage charge).
+    - id: b
+      text:
+        lv: Pilnībā uzlādētu līdz 100 %.
+        en: Fully charged to 100 %.
+        ru: Полностью заряженным до 100 %.
+    - id: c
+      text:
+        lv: Pilnībā izlādētu līdz 0 %.
+        en: Fully discharged to 0 %.
+        ru: Полностью разряженным до 0 %.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Li-Po šūnas degradē, ja tās ilgstoši turot ārpus 3,7–3,85 V/šūnu
+      diapazona. Storage charge (50–60 %) maksimizē kalpošanas laiku.
+    en: >
+      Li-Po cells degrade if held for long periods outside the
+      3.7–3.85 V/cell range. Storage charge (50–60 %) maximises shelf
+      life.
+    ru: >
+      Li-Po элементы деградируют при долгом хранении вне 3,7–3,85 V на
+      ячейку. Storage charge (50–60 %) максимизирует срок службы.
+  sourceRef: "Manufacturer guidance (DJI / Autel); IEEE 1725 battery guidelines"
+  difficulty: 2
+
+- id: op-005
+  stem:
+    lv: Ko pirmām kārtām dara, ja UAS lidojuma laikā parādās "low battery" brīdinājums?
+    en: What is the first action when a "low battery" warning appears in flight?
+    ru: Какое первое действие при появлении предупреждения «low battery» в полёте?
+  options:
+    - id: a
+      text:
+        lv: Pārtrauc misiju un nolaiž drošā vietā.
+        en: Abort the mission and land at a safe spot.
+        ru: Прервать миссию и сесть в безопасном месте.
+    - id: b
+      text:
+        lv: Turpina misiju — drons pats nolaidīsies.
+        en: Continue the mission — the drone will land itself.
+        ru: Продолжать миссию — дрон сядет сам.
+    - id: c
+      text:
+        lv: Aktivē FPV režīmu, lai sasniegtu mērķi ātrāk.
+        en: Switch to FPV to reach the target faster.
+        ru: Включить FPV, чтобы быстрее достичь цели.
+  correctOptionId: a
+  explanation:
+    lv: >
+      "Low battery" nozīmē, ka pilots zaudē rezervi rīkoties; misija
+      jāpārtrauc un drons jānolaiž drošā vietā vai jāatgriež RTH.
+    en: >
+      "Low battery" means the pilot is losing manoeuvre reserves; the
+      mission must be aborted and the drone landed safely or returned
+      via RTH.
+    ru: >
+      «Low battery» означает потерю запаса манёвра; миссия прерывается
+      и дрон садится в безопасном месте или возвращается через RTH.
+  sourceRef: "EASA Easy Access Rules — Emergency procedures"
+  difficulty: 1

@@ -108,3 +108,78 @@
       или 20 млн евро — что больше.
   sourceRef: "Reg (EU) 2016/679 (GDPR) Art. 83(5)"
   difficulty: 2
+
+- id: pr-004
+  stem:
+    lv: Kāds GDPR pamatojums visdrošāk attiecas uz tehniskā objekta apsekošanas drona lidojumu?
+    en: Which GDPR lawful basis most safely fits a technical-site inspection drone flight?
+    ru: Какое правовое основание GDPR безопаснее всего подходит для осмотра технического объекта?
+  options:
+    - id: a
+      text:
+        lv: Leģitīmas intereses (Art. 6(1)(f)).
+        en: Legitimate interests (Art. 6(1)(f)).
+        ru: Законные интересы (ст. 6(1)(f)).
+    - id: b
+      text:
+        lv: Līgums (Art. 6(1)(b)).
+        en: Contract (Art. 6(1)(b)).
+        ru: Договор (ст. 6(1)(b)).
+    - id: c
+      text:
+        lv: Vitālas intereses (Art. 6(1)(d)).
+        en: Vital interests (Art. 6(1)(d)).
+        ru: Жизненно важные интересы (ст. 6(1)(d)).
+  correctOptionId: a
+  explanation:
+    lv: >
+      Tehniskās apsekošanas, kur cilvēki kadrā ir nejauši, parasti
+      pamatojas uz leģitīmām interesēm. Pilotam jāveic interešu
+      līdzsvara tests un jādokumentē rezultāts.
+    en: >
+      Technical inspection where people in frame are incidental
+      typically relies on legitimate interests. The pilot must run a
+      balancing test and document the outcome.
+    ru: >
+      Осмотр техники, при котором люди в кадре случайны, обычно
+      опирается на законные интересы. Пилот должен провести тест
+      баланса и зафиксировать результат.
+  sourceRef: "Reg (EU) 2016/679 (GDPR) Art. 6(1)(f); EDPB Guidelines 06/2020"
+  difficulty: 3
+
+- id: pr-005
+  stem:
+    lv: Kā apzīmē objektu, kuru aizliegts fotografēt vai filmēt bez saskaņošanas?
+    en: How is a site marked that is forbidden to photograph or film without authorisation?
+    ru: Как обозначен объект, который запрещено фотографировать или снимать без согласования?
+  options:
+    - id: a
+      text:
+        lv: Ar zīmi "BEZ SASKAŅOŠANAS FOTOGRAFĒT, FILMĒT AIZLIEGTS".
+        en: With a sign "BEZ SASKAŅOŠANAS FOTOGRAFĒT, FILMĒT AIZLIEGTS".
+        ru: Знаком «BEZ SASKAŅOŠANAS FOTOGRAFĒT, FILMĒT AIZLIEGTS».
+    - id: b
+      text:
+        lv: Ar trīsstūri.
+        en: With a triangle.
+        ru: Треугольником.
+    - id: c
+      text:
+        lv: Ar dzeltenu līniju.
+        en: With a yellow line.
+        ru: Жёлтой линией.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Latvijā kritiskās infrastruktūras objektus apzīmē ar šo tieši
+      formulēto zīmi. Filmēšana bez saskaņošanas ir administratīvi
+      sodāma.
+    en: >
+      In Latvia critical-infrastructure sites carry that exact wording.
+      Filming without authorisation is an administrative offence.
+    ru: >
+      В Латвии объекты критической инфраструктуры маркируются именно
+      такой надписью. Съёмка без согласования — административное
+      правонарушение.
+  sourceRef: "Latvia: critical-infrastructure protection rules; CAA Latvia guidance"
+  difficulty: 3

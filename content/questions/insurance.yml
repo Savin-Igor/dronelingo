@@ -104,3 +104,75 @@
       Правилам КМ № 447. Добровольное страхование всё же рекомендуется.
   sourceRef: "MK noteikumi Nr. 447 (10.07.2018) — exemption for C0"
   difficulty: 2
+
+- id: in-004
+  stem:
+    lv: Kāds ir minimālais segums Specifiskās kategorijas UAS lidojumam < 500 kg?
+    en: What is the minimum cover for a Specific-category UAS flight under 500 kg?
+    ru: Каков минимум покрытия для полёта UAS Специальной категории < 500 кг?
+  options:
+    - id: a
+      text:
+        lv: 750 000 SDR.
+        en: 750 000 SDR.
+        ru: 750 000 SDR.
+    - id: b
+      text:
+        lv: 50 000 EUR.
+        en: €50 000.
+        ru: 50 000 EUR.
+    - id: c
+      text:
+        lv: 1 000 000 EUR.
+        en: €1 000 000.
+        ru: 1 000 000 EUR.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Specifiskās kategorijas operatoriem ar UAS < 500 kg piemēro
+      Regulu (EK) 785/2004 — 750 000 SDR.
+    en: >
+      Specific-category operators with UAS < 500 kg fall under
+      Reg (EC) 785/2004 — 750 000 SDR.
+    ru: >
+      Операторы Специальной категории с UAS < 500 кг подпадают под
+      Регл. (ЕС) 785/2004 — 750 000 SDR.
+  sourceRef: "Reg (EC) 785/2004 — air carriers' liability minima"
+  difficulty: 3
+
+- id: in-005
+  stem:
+    lv: Kas notiek, ja CAA Latvia inspektors konstatē, ka operatoram nav apdrošināšanas?
+    en: What happens if a CAA Latvia inspector finds an operator without insurance?
+    ru: Что происходит, если инспектор CAA Latvia обнаружит, что у оператора нет страховки?
+  options:
+    - id: a
+      text:
+        lv: Operators saņem administratīvo sodu un nedrīkst lidot.
+        en: The operator is fined and not allowed to fly.
+        ru: Оператор получает административный штраф и не вправе летать.
+    - id: b
+      text:
+        lv: Inspektors ieteic apdrošināšanu un atstāj operatoru lidot.
+        en: The inspector recommends insurance and lets the operator fly on.
+        ru: Инспектор рекомендует оформить и позволяет летать дальше.
+    - id: c
+      text:
+        lv: Nekādu seku — civiltiesiska atbildība ir brīvprātīga.
+        en: No consequences — third-party liability is voluntary.
+        ru: Никаких последствий — гражданская ответственность добровольна.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Bez derīgas civiltiesiskās polises operators nav kvalificēts
+      lidojumam. Lidojums tiek pārtraukts, un piemēro administratīvo
+      sodu.
+    en: >
+      Without a valid third-party policy the operator is not qualified
+      to fly. The flight is grounded and an administrative fine is
+      imposed.
+    ru: >
+      Без действующего полиса оператор не имеет права летать. Полёт
+      прекращается и налагается административный штраф.
+  sourceRef: "Latvian Aviation Law; MK noteikumi Nr. 447"
+  difficulty: 2

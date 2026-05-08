@@ -111,3 +111,77 @@
       результат умышленных действий.
   sourceRef: "Reg (EU) 376/2014 Art. 16 — protection of reporters"
   difficulty: 2
+
+- id: se-004
+  stem:
+    lv: Ko nozīmē GPS spoofing ar UAS uzbrukuma kontekstā?
+    en: What does GPS spoofing mean in the context of a UAS attack?
+    ru: Что такое GPS spoofing в контексте атаки на UAS?
+  options:
+    - id: a
+      text:
+        lv: Viltus GPS signālu pārraide, lai dronu novirzītu citā vietā.
+        en: Broadcasting fake GPS signals to redirect the drone to a different location.
+        ru: Передача поддельных GPS-сигналов, чтобы увести дрон в другое место.
+    - id: b
+      text:
+        lv: Akumulatora pārkaršana.
+        en: Battery overheating.
+        ru: Перегрев аккумулятора.
+    - id: c
+      text:
+        lv: Programmatūras versijas atjaunošana.
+        en: Updating firmware.
+        ru: Обновление прошивки.
+  correctOptionId: a
+  explanation:
+    lv: >
+      GPS spoofing maldina UAS GPS uztvērēju ar viltus pozīciju
+      signāliem. Tas ir atšķirībā no jamming, kas dzēš signālu pavisam.
+    en: >
+      GPS spoofing feeds the UAS GPS receiver false position signals.
+      This is distinct from jamming, which suppresses the signal
+      entirely.
+    ru: >
+      GPS spoofing подменяет GPS-приёмнику сигналы ложной позиции. Это
+      отличается от jamming, который полностью подавляет сигнал.
+  sourceRef: "ENISA threat report — GNSS spoofing/jamming"
+  difficulty: 3
+
+- id: se-005
+  stem:
+    lv: Kura no šīm ir laba prakse UAS kiberdrošībā?
+    en: Which of the following is good UAS cyber security practice?
+    ru: Что из перечисленного — хорошая практика кибербезопасности UAS?
+  options:
+    - id: a
+      text:
+        lv: Mainīt rūpnīcas paroli un atjaunināt firmware oficiāli.
+        en: Change the factory password and update firmware officially.
+        ru: Сменить заводской пароль и обновлять прошивку официально.
+    - id: b
+      text:
+        lv: Pievienot dronu nezināmam Wi-Fi tīklam.
+        en: Connect the drone to an unknown Wi-Fi network.
+        ru: Подключать дрон к незнакомой Wi-Fi сети.
+    - id: c
+      text:
+        lv: Lejupielādēt firmware no foruma.
+        en: Download firmware from a forum.
+        ru: Скачивать прошивку с форума.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Rūpnīcas paroles maiņa un oficiālu firmware atjauninājumu
+      izmantošana ir pamata higiēna. Foruma firmware un nezināmi tīkli
+      ir uzbrukumu vektori.
+    en: >
+      Changing the factory password and using official firmware
+      updates is basic hygiene. Forum firmware and unknown networks are
+      attack vectors.
+    ru: >
+      Смена заводского пароля и официальные обновления прошивки —
+      базовая гигиена. Прошивки с форумов и незнакомые сети — векторы
+      атак.
+  sourceRef: "ENISA Good Practices for UAS cyber security"
+  difficulty: 1

@@ -106,3 +106,75 @@
       запрещает > 160 Wh.
   sourceRef: "IATA Lithium Battery Guidance; Reg (EU) 2019/945 — battery safety"
   difficulty: 3
+
+- id: ug-004
+  stem:
+    lv: Kāds ir maksimālais ātrums C0 klases UAS?
+    en: What is the maximum speed of a C0 class UAS?
+    ru: Какова максимальная скорость UAS класса C0?
+  options:
+    - id: a
+      text:
+        lv: 19 m/s.
+        en: 19 m/s.
+        ru: 19 м/с.
+    - id: b
+      text:
+        lv: 30 m/s.
+        en: 30 m/s.
+        ru: 30 м/с.
+    - id: c
+      text:
+        lv: 50 m/s.
+        en: 50 m/s.
+        ru: 50 м/с.
+  correctOptionId: a
+  explanation:
+    lv: >
+      C0 klases drošības prasības ietver maksimālo ātrumu 19 m/s
+      (≈68 km/h), lai mazinātu trieciena enerģiju, ja drons nokļūst
+      saskarē ar cilvēku.
+    en: >
+      C0 class safety requirements include a 19 m/s (≈68 km/h) cap to
+      limit impact energy if the drone strikes a person.
+    ru: >
+      Требования безопасности класса C0 включают предел скорости
+      19 м/с (≈68 км/ч), чтобы снизить энергию удара при столкновении
+      с человеком.
+  sourceRef: "Reg (EU) 2019/945 Annex Part 1 — C0(2)"
+  difficulty: 2
+
+- id: ug-005
+  stem:
+    lv: Kāda klase atbilst legacy dronam < 250 g, kas nav marķēts?
+    en: Which class does an unmarked legacy drone < 250 g map to?
+    ru: К какому классу относится немаркированный legacy-дрон < 250 г?
+  options:
+    - id: a
+      text:
+        lv: A1 kā C0 ekvivalents.
+        en: A1 as the C0 equivalent.
+        ru: A1 как эквивалент C0.
+    - id: b
+      text:
+        lv: A2 kā C2 ekvivalents.
+        en: A2 as the C2 equivalent.
+        ru: A2 как эквивалент C2.
+    - id: c
+      text:
+        lv: A3 kā C3 ekvivalents.
+        en: A3 as the C3 equivalent.
+        ru: A3 как эквивалент C3.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Pārejas noteikumos legacy droni bez marķējuma tiek pielīdzināti
+      pēc masas: < 250 g lido kā C0 (A1), < 25 kg — kā C3 (A3).
+    en: >
+      Transitional rules map unmarked legacy drones by mass: < 250 g
+      flies as C0 (A1), < 25 kg as C3 (A3).
+    ru: >
+      Переходные правила сопоставляют немаркированные legacy-дроны по
+      массе: < 250 г летает как C0 (A1), < 25 кг — как C3 (A3).
+  sourceRef: "Reg (EU) 2019/947 Art. 22 — transitional provisions"
+  difficulty: 2

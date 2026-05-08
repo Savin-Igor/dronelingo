@@ -1,7 +1,8 @@
 {
   "nav": {
     "learn": "Learn",
-    "practice": "Practice"
+    "practice": "Practice",
+    "exam": "Exam"
   },
   "landing": {
     "hero": {
@@ -80,5 +81,49 @@
     "questionOf": "Question {current} of {total}",
     "allDone": "You've gone through all questions in this topic.",
     "anonymousNote": "Answers are kept only in this browser — no sign-up needed."
+  },
+  "exam": {
+    "title": "Mock exam",
+    "subtitle": "Mirrors the official A1/A3 exam at e.caa.gov.lv. If you consistently score 80%+, you are ready for the real exam.",
+    "rules": {
+      "heading": "Rules",
+      "questions": "40 questions covering all 9 EASA topics",
+      "duration": "40 minutes",
+      "threshold": "≥75% correct to pass",
+      "navigation": "You can navigate between questions and change answers until you submit",
+      "anonymous": "Results are kept only in this browser — no sign-up needed"
+    },
+    "start": "Start exam",
+    "timeLeft": "Time left",
+    "questionOf": "Question {current} of {total}",
+    "prev": "Previous",
+    "next": "Next",
+    "submit": "Submit exam",
+    "confirmSubmitTitle": "Submit exam?",
+    "confirmSubmitBody": "Once submitted, answers cannot be changed.",
+    "confirmYes": "Submit",
+    "confirmNo": "Go back",
+    "unansweredOne": "Unanswered: {count}",
+    "unansweredMany": "Unanswered: {count}",
+    "timeUp": "Time is up — submitting exam.",
+    "leaveWarning": "The exam is not yet submitted. Leave anyway?",
+    "passed": "Passed ({percent}%)",
+    "failed": "Not passed ({percent}%)",
+    "score": "{correct} of {total} correct",
+    "thresholdLabel": "Pass threshold: {threshold}%",
+    "perTopic": "Per-topic breakdown",
+    "perTopicScore": "{correct} / {total}",
+    "missed": "Missed questions",
+    "noMisses": "Every answer correct — excellent!",
+    "retake": "Take another exam",
+    "noResult": "No recent exam found. Start a new one.",
+    "durationLabel": "Duration: {minutes} min",
+    "history": {
+      "heading": "Your recent exams",
+      "empty": "No exam history yet.",
+      "ready": "You are ready for the real exam (≥80% on the last 3 attempts).",
+      "almostReady": "Getting close — a few more practice runs and you'll be ready.",
+      "notReady": "More to learn — keep practising."
+    }
   }
 }

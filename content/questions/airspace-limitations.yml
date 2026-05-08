@@ -108,3 +108,77 @@
       скоплениями).
   sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020/030/040 — altitude limit"
   difficulty: 2
+
+- id: al-004
+  stem:
+    lv: Kura zona Latvijā kopš 2025. gada ir slēgta Atvērtās kategorijas lidojumiem?
+    en: Which zone in Latvia has been closed to Open-category flights since 2025?
+    ru: Какая зона в Латвии с 2025 года закрыта для полётов Открытой категории?
+  options:
+    - id: a
+      text:
+        lv: EVR17 Border East.
+        en: EVR17 Border East.
+        ru: EVR17 Border East.
+    - id: b
+      text:
+        lv: Rīgas centra parks.
+        en: Riga central park.
+        ru: Рижский центральный парк.
+    - id: c
+      text:
+        lv: Jūrmalas pludmales zona.
+        en: Jūrmala beach zone.
+        ru: Зона пляжей Юрмалы.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Robežzona EVR17 Border East gar Latvijas-Krievijas un Latvijas-
+      Baltkrievijas robežu kopš 2025. gada ir slēgta Atvērtās
+      kategorijas lidojumiem.
+    en: >
+      The EVR17 Border East zone along the Latvia-Russia and
+      Latvia-Belarus border has been closed to Open-category flights
+      since 2025.
+    ru: >
+      Приграничная зона EVR17 Border East вдоль границы Латвии с
+      Россией и Беларусью с 2025 года закрыта для полётов Открытой
+      категории.
+  sourceRef: "CAA Latvia — airspace.lv/drones; EVR17 Border East NOTAM (2025)"
+  difficulty: 2
+
+- id: al-005
+  stem:
+    lv: Kāds datu formāts tiek izmantots ģeogrāfiskās informētības (geo-awareness) ielādei?
+    en: Which data format is used for geo-awareness uploads?
+    ru: Какой формат данных используется для загрузки geo-awareness?
+  options:
+    - id: a
+      text:
+        lv: ED-269 (JSON).
+        en: ED-269 (JSON).
+        ru: ED-269 (JSON).
+    - id: b
+      text:
+        lv: GPX.
+        en: GPX.
+        ru: GPX.
+    - id: c
+      text:
+        lv: KML.
+        en: KML.
+        ru: KML.
+  correctOptionId: a
+  explanation:
+    lv: >
+      EUROCAE ED-269 ir standarts UAS ģeogrāfiskās informētības datiem —
+      JSON formātā. Latvijā tos publicē `ais.lgs.lv/page/UAS_geozones`.
+    en: >
+      EUROCAE ED-269 is the standard for UAS geo-awareness data, in
+      JSON. In Latvia they are published at
+      `ais.lgs.lv/page/UAS_geozones`.
+    ru: >
+      EUROCAE ED-269 — стандарт данных geo-awareness для UAS, в JSON.
+      В Латвии публикуются на `ais.lgs.lv/page/UAS_geozones`.
+  sourceRef: "EUROCAE ED-269; ais.lgs.lv/page/UAS_geozones"
+  difficulty: 3

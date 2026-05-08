@@ -73,3 +73,114 @@
       разделение от других участников и препятствий.
   sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(2)(a)"
   difficulty: 1
+
+- id: as-003
+  stem:
+    lv: Kāds ir lidojuma maksimālais augstums Atvērtajā kategorijā virs apkārtējās zemes?
+    en: What is the maximum flight altitude in the Open category above ground?
+    ru: Какова максимальная высота полёта в Открытой категории над землёй?
+  options:
+    - id: a
+      text:
+        lv: 50 m.
+        en: 50 m.
+        ru: 50 м.
+    - id: b
+      text:
+        lv: 120 m.
+        en: 120 m.
+        ru: 120 м.
+    - id: c
+      text:
+        lv: 300 m.
+        en: 300 m.
+        ru: 300 м.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Atvērtās kategorijas robeža ir 120 m virs zemes vai ūdens
+      virsmas. Vietējā UGZ var noteikt zemāku robežu, bet ne augstāku.
+    en: >
+      The Open-category cap is 120 m above ground or water. A local UGZ
+      can lower it, never raise it.
+    ru: >
+      Предел Открытой категории — 120 м над землёй или водой. Локальная
+      UGZ может только понизить, но не поднять его.
+  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020/030/040(2)"
+  difficulty: 1
+
+- id: as-004
+  stem:
+    lv: Vai Atvērtajā kategorijā ir atļauts lidot virs cilvēku pulcēšanās vietām?
+    en: Is overflight of assemblies of people allowed in the Open category?
+    ru: Разрешён ли пролёт над скоплениями людей в Открытой категории?
+  options:
+    - id: a
+      text:
+        lv: Nē — nekādā Atvērtās kategorijas apakškategorijā tas nav atļauts.
+        en: No — it is not allowed in any Open subcategory.
+        ru: Нет — это не разрешено ни в одной из подкатегорий Открытой.
+    - id: b
+      text:
+        lv: Jā, ja drons ir vieglāks par 250 g.
+        en: Yes, if the drone is below 250 g.
+        ru: Да, если дрон легче 250 г.
+    - id: c
+      text:
+        lv: Jā, ja pilotam ir A2 kompetences apliecība.
+        en: Yes, if the pilot holds an A2 competence certificate.
+        ru: Да, если у пилота есть сертификат A2.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Aizliegums lidot virs cilvēku pulcēšanās ir Atvērtās kategorijas
+      iekšējais ierobežojums, kas attiecas uz visām apakškategorijām un
+      visām UAS klasēm.
+    en: >
+      The ban on overflight of assemblies is intrinsic to the Open
+      category and applies to every subcategory and every UAS class.
+    ru: >
+      Запрет полётов над скоплениями людей — внутреннее ограничение
+      Открытой категории, действующее для всех подкатегорий и классов
+      UAS.
+  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.010(1); Annex Part A"
+  difficulty: 2
+
+- id: as-005
+  stem:
+    lv: Cik liela ir minimālā horizontālā distance no nepiederošām personām A3 apakškategorijā?
+    en: What is the minimum horizontal distance from uninvolved persons in A3?
+    ru: Какова минимальная горизонтальная дистанция от посторонних в A3?
+  options:
+    - id: a
+      text:
+        lv: 30 m, vai 1:1 noteikums (≥ lidojuma augstumam).
+        en: 30 m, or the 1:1 rule (≥ flight altitude).
+        ru: 30 м, либо правило 1:1 (≥ высоте полёта).
+    - id: b
+      text:
+        lv: 5 m.
+        en: 5 m.
+        ru: 5 м.
+    - id: c
+      text:
+        lv: 150 m.
+        en: 150 m.
+        ru: 150 м.
+  correctOptionId: a
+  explanation:
+    lv: >
+      A3 prasa vismaz 30 m no nepiederošām personām vai 1:1 noteikumu —
+      horizontālā distance ne mazāka par lidojuma augstumu. 150 m ir
+      attālums no apdzīvotām zonām, ne no atsevišķām personām.
+    en: >
+      A3 requires at least 30 m from uninvolved persons or the 1:1
+      rule — horizontal distance not less than flight altitude. 150 m
+      is the distance from residential / commercial areas, not from
+      individuals.
+    ru: >
+      A3 требует не менее 30 м от посторонних или правило 1:1 —
+      горизонтальная дистанция не меньше высоты полёта. 150 м — это
+      расстояние от жилых/коммерческих зон, не от отдельных лиц.
+  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.040(1)(b)"
+  difficulty: 2

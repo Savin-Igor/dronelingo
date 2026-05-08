@@ -1,7 +1,8 @@
 {
   "nav": {
     "learn": "Mācies",
-    "practice": "Trenējies"
+    "practice": "Trenējies",
+    "exam": "Eksāmens"
   },
   "landing": {
     "hero": {
@@ -80,5 +81,49 @@
     "questionOf": "Jautājums {current} no {total}",
     "allDone": "Esi izgājis visus šīs tēmas jautājumus.",
     "anonymousNote": "Atbildes glabājas tikai šajā pārlūkā — bez reģistrācijas."
+  },
+  "exam": {
+    "title": "Pārbaudes eksāmens",
+    "subtitle": "Imitē oficiālo A1/A3 eksāmenu vietnē e.caa.gov.lv. Ja stabili sasniedz 80 %+, esi gatavs reālajam eksāmenam.",
+    "rules": {
+      "heading": "Noteikumi",
+      "questions": "40 jautājumi, kas aptver visas 9 EASA tēmas",
+      "duration": "40 minūtes",
+      "threshold": "≥75 % pareizu atbilžu, lai nokārtotu",
+      "navigation": "Vari pārvietoties starp jautājumiem un mainīt atbildes līdz iesniegšanai",
+      "anonymous": "Rezultāti glabājas tikai šajā pārlūkā — bez reģistrācijas"
+    },
+    "start": "Sākt eksāmenu",
+    "timeLeft": "Laiks atlicis",
+    "questionOf": "Jautājums {current} no {total}",
+    "prev": "Iepriekšējais",
+    "next": "Nākamais",
+    "submit": "Iesniegt eksāmenu",
+    "confirmSubmitTitle": "Iesniegt eksāmenu?",
+    "confirmSubmitBody": "Pēc iesniegšanas atbildes vairs nevar mainīt.",
+    "confirmYes": "Iesniegt",
+    "confirmNo": "Atgriezties",
+    "unansweredOne": "Neatbildēts: {count}",
+    "unansweredMany": "Neatbildēti: {count}",
+    "timeUp": "Laiks beidzies — iesniedzu eksāmenu.",
+    "leaveWarning": "Eksāmens vēl nav iesniegts. Tiešām iziet?",
+    "passed": "Nokārtoji ({percent} %)",
+    "failed": "Nenokārtoji ({percent} %)",
+    "score": "Pareizi {correct} no {total}",
+    "thresholdLabel": "Slieksnis: {threshold} %",
+    "perTopic": "Sadalījums pa tēmām",
+    "perTopicScore": "{correct} / {total}",
+    "missed": "Nepareizi atbildētie jautājumi",
+    "noMisses": "Visas atbildes pareizas — lieliski!",
+    "retake": "Sākt jaunu eksāmenu",
+    "noResult": "Pēdējais eksāmens nav atrasts. Sāc no jauna.",
+    "durationLabel": "Ilgums: {minutes} min",
+    "history": {
+      "heading": "Tavi pēdējie eksāmeni",
+      "empty": "Vēl nav eksāmenu vēstures.",
+      "ready": "Esi gatavs reālajam eksāmenam (≥80 % pēdējos 3 mēģinājumos).",
+      "almostReady": "Tuvojies — vēl daži treniņi un būsi gatavs.",
+      "notReady": "Vēl ir, ko mācīties — turpini trenēties."
+    }
   }
 }
