@@ -6,6 +6,7 @@ import { ConsentBanner } from "@/components/ConsentBanner";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/Header";
 import { Plausible } from "@/components/Plausible";
+import { SkipToContent } from "@/components/SkipToContent";
 import { env } from "@/env";
 import { routing } from "@/i18n/routing";
 import { SITE_NAME, SITE_URL, buildMetadata } from "@/lib/seo";
@@ -51,9 +52,12 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className="antialiased">
         <NextIntlClientProvider>
+          <SkipToContent />
           <div className="flex min-h-screen flex-col">
             <Header />
-            <div className="flex-1">{children}</div>
+            <div id="main" className="flex-1">
+              {children}
+            </div>
             <Footer />
           </div>
           <ConsentBanner />

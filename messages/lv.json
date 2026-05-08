@@ -147,6 +147,9 @@
       "description": "Pakalpojuma būtība, Pass Guarantee, lietotāja un dronelingo atbildība."
     }
   },
+  "a11y": {
+    "skipToContent": "Pāriet uz saturu"
+  },
   "notFound": {
     "title": "Lapa nav atrasta",
     "body": "Šis maršruts neeksistē. Iespējams, tas tika pārvietots vai dzēsts.",
