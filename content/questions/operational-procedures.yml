@@ -1,0 +1,109 @@
+- id: op-001
+  stem:
+    lv: Kas obligāti jāpārbauda pirms katra lidojuma attiecībā uz baterijām?
+    en: What must be verified for the batteries before every flight?
+    ru: Что обязательно проверять у аккумуляторов перед каждым полётом?
+  options:
+    - id: a
+      text:
+        lv: Uzlādes līmenis, fiziskā stāvokļa pārbaude (nav uzpūstas), temperatūra.
+        en: Charge level, physical condition (not swollen), temperature.
+        ru: Уровень заряда, физическое состояние (не вздуты), температура.
+    - id: b
+      text:
+        lv: Tikai uzlādes līmenis.
+        en: Charge level only.
+        ru: Только уровень заряда.
+    - id: c
+      text:
+        lv: Tikai sērijas numurs.
+        en: Serial number only.
+        ru: Только серийный номер.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Li-Po baterijas ir Atvērtās kategorijas drona kritiskais elements.
+      Uzpūsta baterija var aizdegties; pārāk auksta vai karsta — nedos
+      paredzamo jaudu.
+    en: >
+      Li-Po batteries are the critical element of an Open-category drone.
+      A swollen battery can ignite; one that is too cold or too hot will
+      not deliver predictable power.
+    ru: >
+      Li-Po аккумуляторы — критический элемент дрона Открытой категории.
+      Вздутый может загореться; слишком холодный или горячий не даст
+      предсказуемую мощность.
+  sourceRef: "EASA Easy Access Rules — Operational procedures; manufacturer manuals"
+  difficulty: 1
+
+- id: op-002
+  stem:
+    lv: Ko UAS pilots pirmām kārtām dara, ja zaudē vadības saiti (lost link)?
+    en: What is the pilot's first action when the control link is lost?
+    ru: Какое первое действие пилота при потере канала управления?
+  options:
+    - id: a
+      text:
+        lv: Paļaujas uz UAS iepriekš iestatīto fail-safe (RTH vai kontrolēta nolaišanās).
+        en: Rely on the UAS's pre-set fail-safe (RTH or controlled descent).
+        ru: Полагаться на заранее заданный fail-safe UAS (RTH или контролируемый спуск).
+    - id: b
+      text:
+        lv: Skrien zem drona un mēģina to noķert.
+        en: Run beneath the drone and try to catch it.
+        ru: Бежать под дрон и пытаться его поймать.
+    - id: c
+      text:
+        lv: Atvieno baterijas paku tālvadības pultī.
+        en: Disconnect the battery in the remote controller.
+        ru: Отключить аккумулятор в пульте управления.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Lost link gadījumā UAS izmanto iepriekš iestatīto fail-safe — RTH
+      vai kontrolētu nolaišanos. Pilots pārliecinās, ka šie iestatījumi
+      ir pareizi pirms lidojuma.
+    en: >
+      On lost link the UAS executes its pre-set fail-safe — RTH or
+      controlled descent. The pilot validates these settings before
+      flight.
+    ru: >
+      При потере связи UAS выполняет заранее заданный fail-safe — RTH
+      или контролируемый спуск. Пилот должен проверять эти настройки до
+      полёта.
+  sourceRef: "EASA Easy Access Rules — Emergency procedures"
+  difficulty: 2
+
+- id: op-003
+  stem:
+    lv: Kāds ir Follow-Me režīma maksimālais attālums no pilota A1 apakškategorijā?
+    en: What is the maximum Follow-Me distance from the pilot in A1?
+    ru: Какова максимальная дистанция режима Follow-Me от пилота в A1?
+  options:
+    - id: a
+      text:
+        lv: 50 m.
+        en: 50 m.
+        ru: 50 м.
+    - id: b
+      text:
+        lv: 120 m.
+        en: 120 m.
+        ru: 120 м.
+    - id: c
+      text:
+        lv: 500 m.
+        en: 500 m.
+        ru: 500 м.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Atvērtajā A1 apakškategorijā Follow-Me režīma maksimālais attālums
+      ir 50 m no tālvadības pilota.
+    en: >
+      In Open A1 the Follow-Me distance is capped at 50 m from the
+      remote pilot.
+    ru: >
+      В Открытой A1 максимальное расстояние Follow-Me — 50 м от пилота.
+  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020(1)(a) — follow-me mode"
+  difficulty: 2

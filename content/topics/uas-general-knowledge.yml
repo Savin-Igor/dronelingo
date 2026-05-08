@@ -1,0 +1,16 @@
+slug: uas-general-knowledge
+ord: 6
+title:
+  lv: Vispārīgas zināšanas par UAS
+  en: UAS general knowledge
+  ru: Общие знания об UAS
+summary:
+  lv: >
+    UAS klases C0–C6, galvenie konstrukcijas elementi, baterijas, masa un
+    centra punkts, Direct Remote ID un ģeogrāfiskā informētība.
+  en: >
+    UAS classes C0–C6, main structural elements, batteries, mass and CG,
+    Direct Remote ID and geo-awareness.
+  ru: >
+    Классы UAS C0–C6, основные конструктивные элементы, аккумуляторы, масса
+    и центровка, Direct Remote ID и геоинформированность.

@@ -1,0 +1,107 @@
+- id: hp-001
+  stem:
+    lv: Ko nozīmē burts "S" IMSAFE pašpārbaudē?
+    en: What does the letter "S" stand for in the IMSAFE self-check?
+    ru: Что означает буква "S" в самопроверке IMSAFE?
+  options:
+    - id: a
+      text:
+        lv: Stress.
+        en: Stress.
+        ru: Стресс.
+    - id: b
+      text:
+        lv: Speed.
+        en: Speed.
+        ru: Скорость.
+    - id: c
+      text:
+        lv: Safety.
+        en: Safety.
+        ru: Безопасность.
+  correctOptionId: a
+  explanation:
+    lv: >
+      IMSAFE = Illness, Medication, Stress, Alcohol, Fatigue, Eating.
+      "S" ir Stress.
+    en: >
+      IMSAFE = Illness, Medication, Stress, Alcohol, Fatigue, Eating.
+      "S" stands for Stress.
+    ru: >
+      IMSAFE = Illness, Medication, Stress, Alcohol, Fatigue, Eating.
+      "S" — это Stress (стресс).
+  sourceRef: "EASA Easy Access Rules for UAS — Human performance limitations"
+  difficulty: 1
+
+- id: hp-002
+  stem:
+    lv: Cik stundu pirms lidojuma nedrīkst lietot alkoholu ("bottle to throttle")?
+    en: How many hours before flight is alcohol prohibited ("bottle to throttle")?
+    ru: За сколько часов до полёта запрещён алкоголь («bottle to throttle»)?
+  options:
+    - id: a
+      text:
+        lv: 2 stundas.
+        en: 2 hours.
+        ru: 2 часа.
+    - id: b
+      text:
+        lv: 8 stundas.
+        en: 8 hours.
+        ru: 8 часов.
+    - id: c
+      text:
+        lv: 24 stundas.
+        en: 24 hours.
+        ru: 24 часа.
+  correctOptionId: b
+  explanation:
+    lv: >
+      "Bottle to throttle" robeža ir 8 stundas. Praksē rekomendēts
+      ilgāks intervāls atkarībā no patērētā daudzuma.
+    en: >
+      The "bottle to throttle" rule is 8 hours. In practice a longer
+      interval is recommended depending on the amount consumed.
+    ru: >
+      «Bottle to throttle» — 8 часов. На практике рекомендуется больший
+      интервал в зависимости от количества выпитого.
+  sourceRef: "EASA Easy Access Rules — Human performance, alcohol; ICAO Annex 2"
+  difficulty: 2
+
+- id: hp-003
+  stem:
+    lv: Kāpēc vienlaicīga FPV brillēs un VLOS nav iespējama vienam pilotam?
+    en: Why can one pilot not maintain FPV (in goggles) and VLOS at the same time?
+    ru: Почему один пилот не может одновременно вести полёт в FPV и VLOS?
+  options:
+    - id: a
+      text:
+        lv: Tāpēc, ka brilles aizsedz redzamību apkārtējai gaisa telpai.
+        en: Because the goggles block the view of the surrounding airspace.
+        ru: Потому что очки блокируют обзор окружающей воздушной обстановки.
+    - id: b
+      text:
+        lv: Tāpēc, ka FPV signāls ir vājāks par WiFi.
+        en: Because the FPV signal is weaker than WiFi.
+        ru: Потому что сигнал FPV слабее WiFi.
+    - id: c
+      text:
+        lv: Tāpēc, ka kamera nepārraida HDR.
+        en: Because the camera does not transmit HDR.
+        ru: Потому что камера не передаёт HDR.
+  correctOptionId: a
+  explanation:
+    lv: >
+      FPV brilles aizsedz dabisko skatu uz UAS un apkārtējo gaisa telpu.
+      Tāpēc Atvērtajā kategorijā FPV ir atļauts tikai ar UAS novērotāju
+      blakus pilotam.
+    en: >
+      FPV goggles obstruct the natural view of the UAS and surrounding
+      airspace. Hence in Open category FPV is allowed only with a UAS
+      observer next to the pilot.
+    ru: >
+      FPV-очки закрывают естественный обзор UAS и воздушной обстановки.
+      Поэтому в Открытой категории FPV допустим только с наблюдателем
+      рядом с пилотом.
+  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(2)(a); EASA HF guidance"
+  difficulty: 2

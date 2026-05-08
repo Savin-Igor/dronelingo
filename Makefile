@@ -58,7 +58,7 @@ backup: ## Backup local DB to ./backups/
 	@echo "Backup saved to backups/"
 
 import-content: ## Import content/ (topics, lessons, questions) into local DB
-	npx tsx scripts/import-content.ts
+	set -a && . ./.env.local && set +a && npx tsx scripts/import-content.ts
 
 ##@ Build
 

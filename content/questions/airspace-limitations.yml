@@ -1,0 +1,110 @@
+- id: al-001
+  stem:
+    lv: Kur Latvijā ir vienīgais juridiski saistošais avots par UAS ģeogrāfiskām zonām?
+    en: Where is the only legally binding source for UAS geographical zones in Latvia?
+    ru: Где единственный юридически обязательный источник по геозонам UAS в Латвии?
+  options:
+    - id: a
+      text:
+        lv: Mobilā lietotne, ko piedāvā drona ražotājs.
+        en: A mobile app provided by the drone manufacturer.
+        ru: Мобильное приложение производителя дрона.
+    - id: b
+      text:
+        lv: airspace.lv/drones (CAA Latvia).
+        en: airspace.lv/drones (CAA Latvia).
+        ru: airspace.lv/drones (CAA Latvia).
+    - id: c
+      text:
+        lv: Google Maps slāņi par lidostām.
+        en: Google Maps overlays of airports.
+        ru: Слои Google Maps по аэропортам.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Tikai `airspace.lv/drones` (CAA Latvia) ir juridiski saistoša UGZ
+      datu bāze. Trešo pušu lietotnes parasti izmanto to pašu datu kopu,
+      bet pēdējā vārda nav.
+    en: >
+      Only `airspace.lv/drones` (CAA Latvia) is the legally binding UGZ
+      dataset. Third-party apps usually consume the same data but are
+      not the final word.
+    ru: >
+      Только `airspace.lv/drones` (CAA Latvia) — юридически обязательная
+      база UGZ. Сторонние приложения обычно используют те же данные, но
+      не являются последней инстанцией.
+  sourceRef: "Reg (EU) 2019/947 Art. 15; airspace.lv/drones"
+  difficulty: 1
+
+- id: al-002
+  stem:
+    lv: Kopš 2025. gada 1. janvāra — kas obligāti jāiesniedz lidojumam ierobežotā UGZ?
+    en: Since 1 January 2025, what must be submitted for a flight in a restricted UGZ?
+    ru: С 1 января 2025 года что обязательно подаётся для полёта в ограниченной UGZ?
+  options:
+    - id: a
+      text:
+        lv: BGKIS lidojuma pieteikums.
+        en: A BGKIS flight application.
+        ru: Заявка на полёт в системе BGKIS.
+    - id: b
+      text:
+        lv: SMS uz CAA Latvia.
+        en: An SMS to CAA Latvia.
+        ru: SMS в CAA Latvia.
+    - id: c
+      text:
+        lv: E-pasts vietējai pašvaldībai.
+        en: An e-mail to the local municipality.
+        ru: Электронное письмо в местное самоуправление.
+  correctOptionId: a
+  explanation:
+    lv: >
+      No 2025-01-01 lidojumiem ierobežotās UGZ obligāts ir BGKIS
+      pieteikums. Bez apstiprināta pieteikuma lidojums ir nelikumīgs.
+    en: >
+      Since 2025-01-01, flights in restricted UGZ require a BGKIS
+      application. Without approval the flight is illegal.
+    ru: >
+      С 2025-01-01 для полётов в ограниченных UGZ обязательна заявка
+      BGKIS. Без одобрения полёт незаконен.
+  sourceRef: "CAA Latvia — BGKIS rules effective 2025-01-01"
+  difficulty: 1
+
+- id: al-003
+  stem:
+    lv: Vai UGZ atļauja ļauj pārsniegt 120 m augstuma robežu?
+    en: Does a UGZ authorisation allow exceeding the 120 m altitude limit?
+    ru: Разрешает ли UGZ-авторизация превышать предел 120 м?
+  options:
+    - id: a
+      text:
+        lv: Jā, tāpēc UGZ atļauja ir tik vērtīga.
+        en: Yes, that is why a UGZ authorisation is so valuable.
+        ru: Да, поэтому разрешение UGZ так ценно.
+    - id: b
+      text:
+        lv: Nē — 120 m ir Atvērtās kategorijas iekšējā robeža un tā paliek spēkā.
+        en: No — 120 m is an intrinsic Open-category limit and stays in force.
+        ru: Нет — 120 м — внутренняя граница Открытой категории, она остаётся в силе.
+    - id: c
+      text:
+        lv: Jā, ja drons ir vieglāks par 250 g.
+        en: Yes, if the drone is lighter than 250 g.
+        ru: Да, если дрон легче 250 г.
+  correctOptionId: b
+  explanation:
+    lv: >
+      UGZ atļauja paplašina pieejamību uzdotajai zonai, bet nepaplašina
+      Atvērtās kategorijas iekšējās robežas (120 m, VLOS, aizliegums
+      lidot virs pulcēšanās).
+    en: >
+      A UGZ authorisation expands access to a given zone but does not
+      expand intrinsic Open-category limits (120 m, VLOS, no flight
+      over assemblies).
+    ru: >
+      Разрешение UGZ расширяет доступ к зоне, но не расширяет внутренние
+      ограничения Открытой категории (120 м, VLOS, запрет над
+      скоплениями).
+  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020/030/040 — altitude limit"
+  difficulty: 2

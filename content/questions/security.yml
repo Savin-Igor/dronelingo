@@ -1,0 +1,113 @@
+- id: se-001
+  stem:
+    lv: Cik stundu laikā jāziņo par tuvtrāpījumu ar pilotētu gaisa kuģi?
+    en: Within how many hours must a near-miss with a manned aircraft be reported?
+    ru: В течение скольких часов нужно сообщить о сближении с пилотируемым воздушным судном?
+  options:
+    - id: a
+      text:
+        lv: 24 stundu.
+        en: 24 hours.
+        ru: 24 часов.
+    - id: b
+      text:
+        lv: 72 stundu.
+        en: 72 hours.
+        ru: 72 часов.
+    - id: c
+      text:
+        lv: 30 dienu.
+        en: 30 days.
+        ru: 30 дней.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Saskaņā ar Regulu (ES) 376/2014 obligāts ziņojums jāiesniedz 72
+      stundu laikā par notikumiem ar smagu savainojumu vai
+      tuvtrāpījumu/sadursmi ar pilotētu gaisa kuģi.
+    en: >
+      Under Reg (EU) 376/2014 a mandatory report must be filed within
+      72 hours for events involving serious injury or near-miss/collision
+      with a manned aircraft.
+    ru: >
+      Согласно Регл. (ЕС) 376/2014 обязательное уведомление подаётся в
+      течение 72 часов о событиях с тяжёлым травмированием или
+      сближением/столкновением с пилотируемым воздушным судном.
+  sourceRef: "Reg (EU) 376/2014 — occurrence reporting in civil aviation"
+  difficulty: 1
+
+- id: se-002
+  stem:
+    lv: Kur Latvijā iesniedz UAS atgadījumu ziņojumu?
+    en: Where in Latvia is a UAS occurrence report submitted?
+    ru: Куда в Латвии подаётся уведомление о происшествии UAS?
+  options:
+    - id: a
+      text:
+        lv: e.caa.gov.lv/incidents.
+        en: e.caa.gov.lv/incidents.
+        ru: e.caa.gov.lv/incidents.
+    - id: b
+      text:
+        lv: Datu valsts inspekcija.
+        en: Datu valsts inspekcija.
+        ru: Datu valsts inspekcija.
+    - id: c
+      text:
+        lv: 112 (ārkārtas dienesti).
+        en: 112 (emergency services).
+        ru: 112 (экстренные службы).
+  correctOptionId: a
+  explanation:
+    lv: >
+      Atgadījumu ziņojumi tiek iesniegti CAA Latvia portālā
+      `e.caa.gov.lv/incidents`. Plašāka ECCAIRS ziņošana — caur
+      `aviationreporting.eu`.
+    en: >
+      Occurrence reports are filed at the CAA Latvia portal
+      `e.caa.gov.lv/incidents`. EU-wide ECCAIRS reporting goes via
+      `aviationreporting.eu`.
+    ru: >
+      Уведомления подаются через портал CAA Latvia
+      `e.caa.gov.lv/incidents`. На уровне ЕС — через
+      `aviationreporting.eu` (ECCAIRS).
+  sourceRef: "CAA Latvia — e.caa.gov.lv/incidents; Reg (EU) 376/2014"
+  difficulty: 1
+
+- id: se-003
+  stem:
+    lv: Kāds ir galvenais ieguvums no "just culture" pieejas atgadījumu ziņošanā?
+    en: What is the main benefit of "just culture" in occurrence reporting?
+    ru: Какова главная цель подхода «just culture» в уведомлениях о происшествиях?
+  options:
+    - id: a
+      text:
+        lv: Aizsargā ziņotāju no krimināltiesiskām sekām, ja vien nav tīšas neuzmanības.
+        en: It protects the reporter from criminal consequences absent deliberate misconduct.
+        ru: Защищает заявителя от уголовных последствий при отсутствии умышленных действий.
+    - id: b
+      text:
+        lv: Ziņotājs saņem finansiālu balvu.
+        en: The reporter receives a financial reward.
+        ru: Заявитель получает денежное вознаграждение.
+    - id: c
+      text:
+        lv: Ziņojumi tiek publicēti ar pilnu vārdu.
+        en: Reports are published under the reporter's full name.
+        ru: Уведомления публикуются с полным именем заявителя.
+  correctOptionId: a
+  explanation:
+    lv: >
+      "Just culture" princips Regulā 376/2014 izveidots, lai veicinātu
+      atklātu ziņošanu — ziņotāju neapsūdz, ja notikums nav noticis
+      tīšas neuzmanības rezultātā.
+    en: >
+      The "just culture" principle in Reg 376/2014 promotes open
+      reporting — the reporter is not prosecuted unless the event
+      resulted from deliberate misconduct.
+    ru: >
+      Принцип «just culture» в Регл. 376/2014 стимулирует открытое
+      информирование — заявителя не преследуют, если событие не
+      результат умышленных действий.
+  sourceRef: "Reg (EU) 376/2014 Art. 16 — protection of reporters"
+  difficulty: 2

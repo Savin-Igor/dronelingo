@@ -1,0 +1,106 @@
+- id: in-001
+  stem:
+    lv: Kāds ir minimālais civiltiesiskās apdrošināšanas segums Latvijā A1 (C1) lidojumiem?
+    en: What is the minimum third-party liability cover in Latvia for A1 (C1) flights?
+    ru: Каков минимум страхования гражданской ответственности в Латвии для полётов A1 (C1)?
+  options:
+    - id: a
+      text:
+        lv: 50 000 EUR.
+        en: €50 000.
+        ru: 50 000 EUR.
+    - id: b
+      text:
+        lv: 1 000 EUR.
+        en: €1 000.
+        ru: 1 000 EUR.
+    - id: c
+      text:
+        lv: Nav obligāts.
+        en: Not required.
+        ru: Не обязателен.
+  correctOptionId: a
+  explanation:
+    lv: >
+      MK noteikumi Nr. 447 nosaka 50 000 EUR minimumu A1 (C1), A2 un A3
+      līdz 20 kg masai. Bezklasveida < 250 g (C0) lidojumiem
+      apdrošināšana nav obligāta.
+    en: >
+      Cabinet Reg. No. 447 sets a €50 000 minimum for A1 (C1), A2 and
+      A3 up to 20 kg. C0 (< 250 g) flights are exempt.
+    ru: >
+      Правила КМ № 447 устанавливают минимум 50 000 EUR для A1 (C1), A2
+      и A3 до 20 кг. C0 (< 250 г) от обязательного страхования
+      освобождён.
+  sourceRef: "MK noteikumi Nr. 447 (10.07.2018)"
+  difficulty: 2
+
+- id: in-002
+  stem:
+    lv: Vai obligātā apdrošināšana sedz paša UAS bojājumus (hull)?
+    en: Does mandatory insurance cover damage to the UAS itself (hull)?
+    ru: Покрывает ли обязательное страхование ущерб самому UAS (hull)?
+  options:
+    - id: a
+      text:
+        lv: Nē — obligātā apdrošināšana sedz tikai trešo personu zaudējumus.
+        en: No — mandatory insurance covers only third-party loss.
+        ru: Нет — обязательное страхование покрывает только третьих лиц.
+    - id: b
+      text:
+        lv: Jā, vienmēr.
+        en: Yes, always.
+        ru: Да, всегда.
+    - id: c
+      text:
+        lv: Tikai komerciālajiem operatoriem.
+        en: Only for commercial operators.
+        ru: Только для коммерческих операторов.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Obligātā polise sedz trešo personu dzīvības, veselības un mantas
+      zaudējumus. Paša UAS bojājumi ir brīvprātīgs hull-segums.
+    en: >
+      The mandatory policy covers third-party bodily and property loss.
+      Damage to the UAS itself is voluntary hull cover.
+    ru: >
+      Обязательный полис покрывает вред жизни/здоровью/имуществу третьих
+      лиц. Ущерб самому UAS — добровольное hull-страхование.
+  sourceRef: "MK noteikumi Nr. 447; Reg (EC) 785/2004"
+  difficulty: 2
+
+- id: in-003
+  stem:
+    lv: Kuram UAS lidojumam Latvijā apdrošināšana NAV obligāta?
+    en: For which UAS flight in Latvia is insurance NOT mandatory?
+    ru: Для какого полёта UAS в Латвии страхование НЕ обязательно?
+  options:
+    - id: a
+      text:
+        lv: C0 (< 250 g) atpūtas lidojums.
+        en: C0 (< 250 g) recreational flight.
+        ru: Развлекательный полёт C0 (< 250 г).
+    - id: b
+      text:
+        lv: A2 ar C2 dronu.
+        en: A2 with a C2 drone.
+        ru: A2 с C2-дроном.
+    - id: c
+      text:
+        lv: A3 ar C3 dronu.
+        en: A3 with a C3 drone.
+        ru: A3 с C3-дроном.
+  correctOptionId: a
+  explanation:
+    lv: >
+      C0 (< 250 g) lidojumiem MK noteikumi Nr. 447 neuzliek obligāto
+      apdrošināšanu. Tomēr brīvprātīgi to ieteicams iegādāties.
+    en: >
+      C0 (< 250 g) flights are exempt from the mandatory insurance under
+      Cabinet Reg. No. 447. Voluntary cover is still recommended.
+    ru: >
+      Полёты C0 (< 250 г) освобождены от обязательного страхования по
+      Правилам КМ № 447. Добровольное страхование всё же рекомендуется.
+  sourceRef: "MK noteikumi Nr. 447 (10.07.2018) — exemption for C0"
+  difficulty: 2

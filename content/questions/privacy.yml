@@ -1,0 +1,110 @@
+- id: pr-001
+  stem:
+    lv: Kura institūcija ir UAS datu aizsardzības uzraugs Latvijā?
+    en: Which authority supervises UAS data protection in Latvia?
+    ru: Какой орган надзирает за защитой данных UAS в Латвии?
+  options:
+    - id: a
+      text:
+        lv: Datu valsts inspekcija (DVI).
+        en: Datu valsts inspekcija (DVI).
+        ru: Datu valsts inspekcija (DVI).
+    - id: b
+      text:
+        lv: Civilās aviācijas aģentūra (CAA Latvia).
+        en: Civil Aviation Agency (CAA Latvia).
+        ru: Агентство гражданской авиации (CAA Latvia).
+    - id: c
+      text:
+        lv: Valsts robežsardze.
+        en: State Border Guard.
+        ru: Государственная пограничная служба.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Datu aizsardzības uzraudzību Latvijā veic Datu valsts inspekcija
+      (DVI). CAA Latvia uzrauga aviācijas drošības prasības, ne datu
+      aizsardzību.
+    en: >
+      Data protection supervision in Latvia is the role of Datu valsts
+      inspekcija (DVI). CAA Latvia oversees aviation safety requirements,
+      not data protection.
+    ru: >
+      Надзор за защитой данных в Латвии ведёт Datu valsts inspekcija
+      (DVI). CAA Latvia надзирает за безопасностью авиации, а не за
+      данными.
+  sourceRef: "GDPR Art. 51; Latvian Personal Data Processing Law"
+  difficulty: 1
+
+- id: pr-002
+  stem:
+    lv: Vai automašīnas valsts numurs uzskatāms par personas datiem GDPR izpratnē?
+    en: Is a vehicle licence plate personal data under GDPR?
+    ru: Является ли автомобильный номер персональными данными по GDPR?
+  options:
+    - id: a
+      text:
+        lv: Jā, jo to var sasaistīt ar konkrētu personu.
+        en: Yes, because it can be linked to a specific person.
+        ru: Да, его можно связать с конкретным лицом.
+    - id: b
+      text:
+        lv: Nē, jo numurs ir publisks.
+        en: No, because the plate is public.
+        ru: Нет, потому что номер публичен.
+    - id: c
+      text:
+        lv: Tikai komercreģistrācijai.
+        en: Only for commercial registrations.
+        ru: Только для коммерческих регистраций.
+  correctOptionId: a
+  explanation:
+    lv: >
+      GDPR personas dati ir jebkura informācija, kas ļauj identificēt
+      personu — tieši vai netieši. Numurs ir reģistrēts uz fiziskas
+      personas un tādēļ ir personas dati.
+    en: >
+      Under GDPR personal data is any information that allows identifying
+      a person — directly or indirectly. A plate is registered to a
+      natural person and therefore is personal data.
+    ru: >
+      По GDPR персональные данные — любая информация, позволяющая
+      идентифицировать лицо прямо или косвенно. Номер привязан к
+      физическому лицу и потому является персональными данными.
+  sourceRef: "Reg (EU) 2016/679 (GDPR) Art. 4(1)"
+  difficulty: 2
+
+- id: pr-003
+  stem:
+    lv: Cik liels var būt maksimālais GDPR sods?
+    en: What is the maximum GDPR fine?
+    ru: Каков максимальный штраф по GDPR?
+  options:
+    - id: a
+      text:
+        lv: 4 % no gada apgrozījuma vai 20 milj. EUR (lielākā summa).
+        en: 4 % of annual turnover or €20 million (whichever is higher).
+        ru: 4 % годового оборота или 20 млн евро (что больше).
+    - id: b
+      text:
+        lv: 100 EUR par incidentu.
+        en: €100 per incident.
+        ru: 100 евро за инцидент.
+    - id: c
+      text:
+        lv: 1000 EUR.
+        en: €1000.
+        ru: 1000 евро.
+  correctOptionId: a
+  explanation:
+    lv: >
+      GDPR Art. 83 paredz maksimumu 4 % no globālā gada apgrozījuma vai
+      20 milj. EUR, atkarībā no tā, kura summa ir lielāka.
+    en: >
+      GDPR Art. 83 sets the cap at 4 % of global annual turnover or
+      €20 million, whichever is higher.
+    ru: >
+      Ст. 83 GDPR устанавливает потолок: 4 % мирового годового оборота
+      или 20 млн евро — что больше.
+  sourceRef: "Reg (EU) 2016/679 (GDPR) Art. 83(5)"
+  difficulty: 2

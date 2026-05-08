@@ -1,0 +1,109 @@
+- id: ar-001
+  stem:
+    lv: Kura ES regula nosaka UAS ekspluatācijas noteikumus (operācijas)?
+    en: Which EU regulation lays down UAS operational rules?
+    ru: Какой регламент ЕС задаёт правила эксплуатации UAS?
+  options:
+    - id: a
+      text:
+        lv: Regula (ES) 2019/947.
+        en: Regulation (EU) 2019/947.
+        ru: Регламент (ЕС) 2019/947.
+    - id: b
+      text:
+        lv: Regula (ES) 2019/945.
+        en: Regulation (EU) 2019/945.
+        ru: Регламент (ЕС) 2019/945.
+    - id: c
+      text:
+        lv: Regula (ES) 2018/1139.
+        en: Regulation (EU) 2018/1139.
+        ru: Регламент (ЕС) 2018/1139.
+  correctOptionId: a
+  explanation:
+    lv: >
+      2019/947 ir par operācijām (Open / Specific / Certified). 2019/945
+      ir par UAS tehniskajām prasībām (klases C0–C6). 2018/1139 ir
+      pamatregula par EASA.
+    en: >
+      2019/947 covers operations (Open / Specific / Certified). 2019/945
+      covers UAS technical requirements (C0–C6 classes). 2018/1139 is
+      the basic EASA regulation.
+    ru: >
+      2019/947 — об эксплуатации (Open / Specific / Certified). 2019/945
+      — о технических требованиях к UAS (классы C0–C6). 2018/1139 —
+      базовый регламент по EASA.
+  sourceRef: "Reg (EU) 2019/947 — Operations; Reg (EU) 2019/945 — Technical; Reg 2018/1139 — Basic"
+  difficulty: 1
+
+- id: ar-002
+  stem:
+    lv: Kurā kategorijā ir jāveic SORA riska novērtējums vai jāizmanto STS standarta scenārijs?
+    en: In which category is a SORA risk assessment or an STS standard scenario required?
+    ru: В какой категории требуется оценка риска SORA или стандартный сценарий STS?
+  options:
+    - id: a
+      text:
+        lv: Atvērtā.
+        en: Open.
+        ru: Открытая.
+    - id: b
+      text:
+        lv: Specifiskā.
+        en: Specific.
+        ru: Специальная.
+    - id: c
+      text:
+        lv: Sertificētā.
+        en: Certified.
+        ru: Сертифицированная.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Specifiskā kategorija prasa SORA vai STS. Atvērtajā nav iepriekšējas
+      atļaujas. Sertificētā prasa pilnu UAS un operatora sertifikāciju.
+    en: >
+      The Specific category requires SORA or STS. Open requires no prior
+      authorisation. Certified requires full UAS and operator
+      certification.
+    ru: >
+      Специальная требует SORA или STS. Открытая — без предварительного
+      разрешения. Сертифицированная — полная сертификация UAS и
+      оператора.
+  sourceRef: "Reg (EU) 2019/947 Art. 5; AMC1 Article 11 — SORA"
+  difficulty: 2
+
+- id: ar-003
+  stem:
+    lv: Kāds ir Atvērtās kategorijas maksimālais UAS lidojuma augstums virs zemes?
+    en: What is the maximum UAS altitude above ground in the Open category?
+    ru: Какова максимальная высота полёта UAS над землёй в Открытой категории?
+  options:
+    - id: a
+      text:
+        lv: 50 m.
+        en: 50 m.
+        ru: 50 м.
+    - id: b
+      text:
+        lv: 120 m.
+        en: 120 m.
+        ru: 120 м.
+    - id: c
+      text:
+        lv: 150 m.
+        en: 150 m.
+        ru: 150 м.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Atvērtās kategorijas augstums ir 120 m virs zemes vai ūdens
+      virsmas, ja vien UGZ neuzliek zemāku ierobežojumu.
+    en: >
+      Open-category altitude is 120 m above ground or water, unless a
+      UGZ imposes a lower cap.
+    ru: >
+      Высота Открытой категории — 120 м над землёй или водой, если UGZ
+      не задаёт более низкий предел.
+  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020/030/040(2)"
+  difficulty: 1

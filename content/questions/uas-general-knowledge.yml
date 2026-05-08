@@ -1,0 +1,108 @@
+- id: ug-001
+  stem:
+    lv: Kāda ir maksimālā C0 klases UAS masa?
+    en: What is the maximum mass of a C0 class UAS?
+    ru: Какова максимальная масса UAS класса C0?
+  options:
+    - id: a
+      text:
+        lv: Mazāk par 250 g.
+        en: Less than 250 g.
+        ru: Менее 250 г.
+    - id: b
+      text:
+        lv: Mazāk par 900 g.
+        en: Less than 900 g.
+        ru: Менее 900 г.
+    - id: c
+      text:
+        lv: Mazāk par 4 kg.
+        en: Less than 4 kg.
+        ru: Менее 4 кг.
+  correctOptionId: a
+  explanation:
+    lv: >
+      C0 klase ir UAS masā < 250 g (un maks. ātrums 19 m/s). Tas atbilst
+      A1 apakškategorijai un ir vienīgais, ko atļauts izmantot virs
+      atsevišķām nepiederošām personām.
+    en: >
+      C0 class is < 250 g (and max speed 19 m/s). It maps to A1 and is
+      the only class allowed over individual uninvolved persons.
+    ru: >
+      Класс C0 — < 250 г (и макс. скорость 19 м/с). Соответствует A1 и
+      единственный, разрешённый над отдельными посторонними людьми.
+  sourceRef: "Reg (EU) 2019/945 Annex Part 1 — C0 requirements"
+  difficulty: 1
+
+- id: ug-002
+  stem:
+    lv: Kura UAS klase NAV jāaprīko ar Direct Remote ID?
+    en: Which UAS class is NOT required to have Direct Remote ID?
+    ru: Какой класс UAS НЕ обязан иметь Direct Remote ID?
+  options:
+    - id: a
+      text:
+        lv: C0 (< 250 g).
+        en: C0 (< 250 g).
+        ru: C0 (< 250 г).
+    - id: b
+      text:
+        lv: C1.
+        en: C1.
+        ru: C1.
+    - id: c
+      text:
+        lv: C2.
+        en: C2.
+        ru: C2.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Direct Remote ID ir obligāts klasēm C1, C2, C3. C0 nav prasības,
+      jo tas ir zemākā riska klase.
+    en: >
+      Direct Remote ID is mandatory for C1, C2, C3. C0 is exempt as the
+      lowest-risk class.
+    ru: >
+      Direct Remote ID обязателен для C1, C2, C3. C0 освобождён как
+      самый низкорисковый класс.
+  sourceRef: "Reg (EU) 2019/945 Annex Parts 2–4 — Direct Remote ID requirement"
+  difficulty: 2
+
+- id: ug-003
+  stem:
+    lv: Kāds enerģijas daudzums (Wh) ir Li-Po baterijai 4S 5000 mAh (≈ 14,8 V)?
+    en: How much energy (Wh) does a 4S 5000 mAh (≈ 14.8 V) Li-Po battery hold?
+    ru: Сколько энергии (Wh) содержит Li-Po аккумулятор 4S 5000 mAh (≈ 14,8 V)?
+  options:
+    - id: a
+      text:
+        lv: ≈ 74 Wh.
+        en: ≈ 74 Wh.
+        ru: ≈ 74 Wh.
+    - id: b
+      text:
+        lv: ≈ 5 Wh.
+        en: ≈ 5 Wh.
+        ru: ≈ 5 Wh.
+    - id: c
+      text:
+        lv: ≈ 740 Wh.
+        en: ≈ 740 Wh.
+        ru: ≈ 740 Wh.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Wh = Ah × V = 5,0 × 14,8 ≈ 74 Wh. Tas ir svarīgi aviopārvadājumiem:
+      lielākā daļa avioliniju neatļauj pārvadāt baterijas virs 100 Wh
+      bagāžā vai virs 160 Wh nemaz.
+    en: >
+      Wh = Ah × V = 5.0 × 14.8 ≈ 74 Wh. This matters for air travel:
+      most airlines limit batteries above 100 Wh in baggage and forbid
+      anything above 160 Wh.
+    ru: >
+      Wh = Ah × V = 5,0 × 14,8 ≈ 74 Wh. Это важно для авиаперевозки:
+      большинство авиакомпаний ограничивает > 100 Wh в багаже и
+      запрещает > 160 Wh.
+  sourceRef: "IATA Lithium Battery Guidance; Reg (EU) 2019/945 — battery safety"
+  difficulty: 3
