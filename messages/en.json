@@ -1,4 +1,8 @@
 {
+  "nav": {
+    "learn": "Learn",
+    "practice": "Practice"
+  },
   "landing": {
     "hero": {
       "title": "Pass your EASA A1/A3 drone exam — first try.",
@@ -54,5 +58,27 @@
       "privacy": "Privacy",
       "terms": "Terms"
     }
+  },
+  "learn": {
+    "title": "Learn",
+    "subtitle": "Nine topics that prepare you for Latvia's A1/A3 exam.",
+    "back": "Back"
+  },
+  "practice": {
+    "title": "Practice",
+    "subtitle": "Pick a topic to start practising. Answers stay in your browser — no sign-up needed.",
+    "questionCount": "{count} questions",
+    "noQuestions": "No questions yet for this topic.",
+    "checkAnswer": "Check answer",
+    "next": "Next question",
+    "restart": "Start over",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "explanation": "Explanation",
+    "source": "Source",
+    "score": "{correct} of {total} correct ({percent}%)",
+    "questionOf": "Question {current} of {total}",
+    "allDone": "You've gone through all questions in this topic.",
+    "anonymousNote": "Answers are kept only in this browser — no sign-up needed."
   }
 }

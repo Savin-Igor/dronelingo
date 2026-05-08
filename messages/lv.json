@@ -1,4 +1,8 @@
 {
+  "nav": {
+    "learn": "Mācies",
+    "practice": "Trenējies"
+  },
   "landing": {
     "hero": {
       "title": "Sagatavojies EASA A1/A3 droniem eksāmenam — un nokārto to pirmajā reizē.",
@@ -54,5 +58,27 @@
       "privacy": "Privātums",
       "terms": "Lietošanas noteikumi"
     }
+  },
+  "learn": {
+    "title": "Mācies",
+    "subtitle": "9 tēmas, kas sagatavo Latvijas A1/A3 eksāmenam.",
+    "back": "Atpakaļ"
+  },
+  "practice": {
+    "title": "Trenējies",
+    "subtitle": "Izvēlies tēmu, lai sāktu trenēties. Atbildes glabājas pārlūkprogrammā — bez reģistrācijas.",
+    "questionCount": "{count} jautājumi",
+    "noQuestions": "Šai tēmai vēl nav jautājumu.",
+    "checkAnswer": "Pārbaudīt atbildi",
+    "next": "Nākamais jautājums",
+    "restart": "Sākt no jauna",
+    "correct": "Pareizi",
+    "incorrect": "Nepareizi",
+    "explanation": "Skaidrojums",
+    "source": "Avots",
+    "score": "Pareizi {correct} no {total} ({percent}%)",
+    "questionOf": "Jautājums {current} no {total}",
+    "allDone": "Esi izgājis visus šīs tēmas jautājumus.",
+    "anonymousNote": "Atbildes glabājas tikai šajā pārlūkā — bez reģistrācijas."
   }
 }
