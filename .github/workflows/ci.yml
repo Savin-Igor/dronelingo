@@ -15,9 +15,6 @@ concurrency:
 jobs:
   ci:
     runs-on: ubuntu-latest
-    # Skip when there's no Node project yet — the repo currently ships only
-    # documentation. Remove this guard once package.json lands on main.
-    if: hashFiles('package.json') != ''
 
     services:
       postgres:

@@ -22,10 +22,6 @@ jobs:
   build:
     name: Build & push image
     runs-on: ubuntu-latest
-    # Skip until application code (and Dockerfile that references real source)
-    # actually exists. The Dockerfile is committed early, but `docker build`
-    # would fail without package.json. Drop this guard after first code commit.
-    if: hashFiles('package.json') != ''
     permissions:
       contents: read
       packages: write
