@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -11,6 +12,24 @@ import { env } from "@/env";
 import { routing } from "@/i18n/routing";
 import { SITE_NAME, SITE_URL, buildMetadata } from "@/lib/seo";
 import "../globals.css";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+  display: "swap",
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -48,8 +67,14 @@ export default async function LocaleLayout({
 
   const plausibleDomain = env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
 
+  const fontVars = [
+    spaceGrotesk.variable,
+    inter.variable,
+    jetbrainsMono.variable,
+  ].join(" ");
+
   return (
-    <html lang={locale}>
+    <html lang={locale} className={fontVars}>
       <body className="antialiased">
         <NextIntlClientProvider>
           <SkipToContent />
