@@ -37,43 +37,55 @@ export default async function PracticeIndex({
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-12">
-      <h1 className="text-3xl font-semibold text-gray-900">{t("title")}</h1>
-      <p className="mt-2 text-gray-600">{t("subtitle")}</p>
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
+        Drills
+      </p>
+      <h1 className="mt-2 font-display text-3xl font-semibold text-hud-white">
+        {t("title")}
+      </h1>
+      <p className="mt-2 text-sm text-telemetry">{t("subtitle")}</p>
 
-      <ul className="mt-8 space-y-3">
-        {topics.map((topic) => {
+      <ul className="mt-8 divide-y divide-horizon rounded-sm border border-horizon">
+        {topics.map((topic, i) => {
           const count = topic._count.questions;
           const disabled = count === 0;
           return (
-            <li
-              key={topic.id}
-              className="rounded-lg border border-gray-200 bg-white"
-            >
+            <li key={topic.id}>
               {disabled ? (
-                <div className="flex items-center justify-between p-5 opacity-50">
-                  <div>
-                    <h2 className="text-lg font-semibold text-gray-900">
-                      {localize(topic.title, locale)}
-                    </h2>
-                    <p className="mt-1 text-sm text-gray-500">
-                      {t("noQuestions")}
-                    </p>
+                <div className="flex items-center justify-between p-5 opacity-30">
+                  <div className="flex items-center gap-3">
+                    <span className="font-mono text-xs text-muted">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <div>
+                      <p className="text-sm font-medium text-hud-white">
+                        {localize(topic.title, locale)}
+                      </p>
+                      <p className="mt-0.5 font-mono text-xs text-muted">
+                        {t("noQuestions")}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ) : (
                 <Link
                   href={`/practice/${topic.slug}`}
-                  className="flex items-center justify-between p-5 hover:bg-gray-50"
+                  className="flex items-center justify-between p-5 transition-colors hover:bg-hull/50"
                 >
-                  <div>
-                    <h2 className="text-lg font-semibold text-gray-900">
-                      {localize(topic.title, locale)}
-                    </h2>
-                    <p className="mt-1 text-sm text-gray-500">
-                      {t("questionCount", { count })}
-                    </p>
+                  <div className="flex items-center gap-3">
+                    <span className="font-mono text-xs text-muted">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <div>
+                      <p className="text-sm font-medium text-hud-white">
+                        {localize(topic.title, locale)}
+                      </p>
+                      <p className="mt-0.5 font-mono text-xs text-muted">
+                        {t("questionCount", { count })}
+                      </p>
+                    </div>
                   </div>
-                  <span aria-hidden className="text-gray-400">
+                  <span className="font-mono text-xs text-muted" aria-hidden>
                     →
                   </span>
                 </Link>

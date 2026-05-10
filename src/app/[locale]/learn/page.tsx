@@ -46,8 +46,13 @@ export default async function LearnIndex({
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-12">
-      <h1 className="text-3xl font-semibold text-gray-900">{t("title")}</h1>
-      <p className="mt-2 text-gray-600">{t("subtitle")}</p>
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
+        Flight plan
+      </p>
+      <h1 className="mt-2 font-display text-3xl font-semibold text-hud-white">
+        {t("title")}
+      </h1>
+      <p className="mt-2 text-sm text-telemetry">{t("subtitle")}</p>
       <LearnTopicsList topics={items} />
     </main>
   );

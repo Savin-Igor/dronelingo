@@ -27,12 +27,13 @@ export default async function LessonPage({
   if (index === -1) notFound();
   const lesson = topic.lessons[index];
   const prev = index > 0 ? topic.lessons[index - 1] : null;
-  const next = index < topic.lessons.length - 1 ? topic.lessons[index + 1] : null;
+  const next =
+    index < topic.lessons.length - 1 ? topic.lessons[index + 1] : null;
 
   const body = localize(lesson.bodyMdx, locale);
 
   return (
-    <main className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 py-12 lg:grid-cols-[16rem_minmax(0,1fr)]">
+    <main className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 py-12 lg:grid-cols-[15rem_minmax(0,1fr)]">
       <BreadcrumbSchema
         locale={locale}
         crumbs={[
@@ -47,31 +48,37 @@ export default async function LessonPage({
           },
         ]}
       />
-      <aside className="lg:sticky lg:top-12 lg:self-start">
+
+      {/* ── Sidebar ─────────────────────────────────────────────────── */}
+      <aside className="lg:sticky lg:top-20 lg:self-start">
         <Link
           href={`/learn/${topic.slug}`}
-          className="text-sm text-gray-500 hover:text-gray-900"
+          className="font-mono text-xs text-muted transition-colors hover:text-telemetry"
         >
           ← {localize(topic.title, locale)}
         </Link>
-        <nav className="mt-6">
-          <h2 className="text-xs font-semibold uppercase tracking-wider text-gray-400">
+
+        <nav className="mt-5" aria-label="Lessons in this sector">
+          <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
             {localize(topic.title, locale)}
-          </h2>
-          <ol className="mt-3 space-y-1">
-            {topic.lessons.map((l) => {
+          </p>
+          <ol className="mt-3 space-y-0.5">
+            {topic.lessons.map((l, i) => {
               const isActive = l.slug === lessonSlug;
               return (
                 <li key={l.id}>
                   <Link
                     href={`/learn/${topic.slug}/${l.slug}`}
                     aria-current={isActive ? "page" : undefined}
-                    className={
+                    className={`flex items-center gap-2 rounded-sm px-3 py-2 text-sm transition-colors ${
                       isActive
-                        ? "block rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-900"
-                        : "block rounded-md px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900"
-                    }
+                        ? "border-l-2 border-cyan-pulse bg-hull/80 text-hud-white"
+                        : "text-telemetry hover:bg-hull/40 hover:text-hud-white"
+                    }`}
                   >
+                    <span className="w-5 shrink-0 font-mono text-xs text-muted">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
                     {localize(l.title, locale)}
                   </Link>
                 </li>
@@ -81,31 +88,31 @@ export default async function LessonPage({
         </nav>
       </aside>
 
+      {/* ── Content ─────────────────────────────────────────────────── */}
       <div>
         <MarkLessonVisited lessonId={lesson.id} />
-        <article className="prose prose-gray max-w-none">
+
+        <article className="prose prose-dronelingo max-w-none">
           <MDXRemote source={body} />
         </article>
 
         {lesson.sourceRef ? (
-          <p className="mt-12 border-t border-gray-200 pt-6 text-sm text-gray-500">
+          <p className="mt-12 border-t border-horizon pt-6 font-mono text-xs text-muted">
             {lesson.sourceRef}
           </p>
         ) : null}
 
         <nav
           aria-label="Lesson navigation"
-          className="mt-12 grid grid-cols-2 gap-4 border-t border-gray-200 pt-6"
+          className="mt-12 grid grid-cols-2 gap-3 border-t border-horizon pt-6"
         >
           {prev ? (
             <Link
               href={`/learn/${topic.slug}/${prev.slug}`}
-              className="rounded-lg border border-gray-200 p-4 hover:border-gray-300 hover:bg-gray-50"
+              className="rounded-sm border border-horizon p-4 transition-colors hover:border-signal hover:bg-hull/50"
             >
-              <span className="text-xs uppercase tracking-wider text-gray-400">
-                ←
-              </span>
-              <span className="mt-1 block text-sm font-medium text-gray-900">
+              <span className="font-mono text-xs text-muted">←</span>
+              <span className="mt-1 block text-sm font-medium text-telemetry">
                 {localize(prev.title, locale)}
               </span>
             </Link>
@@ -115,12 +122,10 @@ export default async function LessonPage({
           {next ? (
             <Link
               href={`/learn/${topic.slug}/${next.slug}`}
-              className="rounded-lg border border-gray-200 p-4 text-right hover:border-gray-300 hover:bg-gray-50"
+              className="rounded-sm border border-horizon p-4 text-right transition-colors hover:border-signal hover:bg-hull/50"
             >
-              <span className="text-xs uppercase tracking-wider text-gray-400">
-                →
-              </span>
-              <span className="mt-1 block text-sm font-medium text-gray-900">
+              <span className="font-mono text-xs text-muted">→</span>
+              <span className="mt-1 block text-sm font-medium text-telemetry">
                 {localize(next.title, locale)}
               </span>
             </Link>

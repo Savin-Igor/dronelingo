@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 export type TrainerQuestion = {
@@ -38,6 +39,7 @@ function writeAttempt(attempt: StoredAttempt) {
   const all = readAttempts();
   all.push(attempt);
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(all));
+  window.dispatchEvent(new Event("dronelingo:attempts-changed"));
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -75,15 +77,18 @@ export function Trainer({ questions }: { questions: TrainerQuestion[] }) {
     return Math.round((sessionCorrect / sessionTotal) * 100);
   }, [sessionCorrect, sessionTotal]);
 
-  if (order.length === 0) {
-    return null;
-  }
+  if (order.length === 0) return null;
 
   if (finished) {
     return (
-      <section className="mt-8 rounded-xl border border-gray-200 bg-white p-8 text-center">
-        <p className="text-lg font-medium text-gray-900">{t("allDone")}</p>
-        <p className="mt-3 text-sm text-gray-600">
+      <section className="mt-8 rounded-sm border border-horizon bg-cockpit p-8 text-center">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
+          Session complete
+        </p>
+        <p className="mt-4 font-display text-3xl font-semibold text-hud-white">
+          {accuracy}%
+        </p>
+        <p className="mt-2 font-mono text-xs text-muted">
           {t("score", {
             correct: sessionCorrect,
             total: sessionTotal,
@@ -100,7 +105,7 @@ export function Trainer({ questions }: { questions: TrainerQuestion[] }) {
             setSessionCorrect(0);
             setSessionTotal(0);
           }}
-          className="mt-6 inline-flex rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-700"
+          className="mt-8 inline-flex items-center justify-center rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-5 py-2.5 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void"
         >
           {t("restart")}
         </button>
@@ -116,11 +121,7 @@ export function Trainer({ questions }: { questions: TrainerQuestion[] }) {
     setRevealed(true);
     setSessionCorrect((c) => c + (correct ? 1 : 0));
     setSessionTotal((tot) => tot + 1);
-    writeAttempt({
-      questionId: current.id,
-      isCorrect: correct,
-      ts: Date.now(),
-    });
+    writeAttempt({ questionId: current.id, isCorrect: correct, ts: Date.now() });
   }
 
   function next() {
@@ -131,99 +132,127 @@ export function Trainer({ questions }: { questions: TrainerQuestion[] }) {
 
   return (
     <section className="mt-8">
-      <div className="flex items-center justify-between text-sm text-gray-500">
-        <span>
+      {/* Progress header */}
+      <div className="flex items-center justify-between">
+        <span className="font-mono text-xs text-muted">
           {t("questionOf", { current: index + 1, total: order.length })}
         </span>
         {sessionTotal > 0 && (
-          <span>
-            {t("score", {
-              correct: sessionCorrect,
-              total: sessionTotal,
-              percent: accuracy,
-            })}
+          <span
+            className={`font-mono text-xs font-semibold ${
+              accuracy >= 75 ? "text-green-clear" : accuracy >= 50 ? "text-amber-alert" : "text-red-danger"
+            }`}
+          >
+            {accuracy}% {t("score", { correct: sessionCorrect, total: sessionTotal, percent: accuracy })}
           </span>
         )}
       </div>
 
-      <article className="mt-4 rounded-xl border border-gray-200 bg-white p-6">
-        <h2 className="text-lg font-medium text-gray-900">{current.stem}</h2>
+      {/* Thin progress bar */}
+      <div className="mt-2 h-0.5 w-full overflow-hidden rounded-full bg-grid">
+        <div
+          className="h-full rounded-full bg-cyan-pulse transition-all"
+          style={{ width: `${((index) / order.length) * 100}%` }}
+          aria-hidden
+        />
+      </div>
 
-        <ul className="mt-6 space-y-3">
+      {/* Question card */}
+      <article className="mt-4 rounded-sm border border-cyan-pulse/15 bg-cockpit p-6">
+        <h2 className="text-base font-medium leading-relaxed text-hud-white">
+          {current.stem}
+        </h2>
+
+        <ul className="mt-5 space-y-2">
           {current.options.map((opt) => {
             const isSelected = selected === opt.id;
             const isRight = revealed && opt.id === current.correctOptionId;
             const isWrong =
               revealed && isSelected && opt.id !== current.correctOptionId;
-            const baseClasses =
-              "flex w-full items-start gap-3 rounded-lg border p-4 text-left text-sm transition";
+
             const stateClasses = isRight
-              ? "border-green-400 bg-green-50 text-green-900"
+              ? "border-green-clear bg-green-clear/10 text-green-clear"
               : isWrong
-                ? "border-red-400 bg-red-50 text-red-900"
+                ? "border-red-danger bg-red-danger/10 text-red-danger"
                 : isSelected
-                  ? "border-gray-900 bg-gray-50 text-gray-900"
-                  : "border-gray-200 bg-white text-gray-700 hover:border-gray-300";
+                  ? "border-cyan-pulse/60 bg-signal/20 text-hud-white"
+                  : "border-horizon bg-cockpit text-telemetry hover:border-cyan-pulse/30 hover:text-hud-white";
+
             return (
               <li key={opt.id}>
-                <button
-                  type="button"
-                  disabled={revealed}
-                  onClick={() => setSelected(opt.id)}
-                  aria-pressed={isSelected}
-                  className={`${baseClasses} ${stateClasses} ${
-                    revealed ? "cursor-default" : "cursor-pointer"
-                  }`}
-                >
-                  <span
-                    className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-current text-xs font-semibold"
-                    aria-hidden
+                <LazyMotion features={domAnimation}>
+                  <m.button
+                    type="button"
+                    disabled={revealed}
+                    onClick={() => setSelected(opt.id)}
+                    aria-pressed={isSelected}
+                    animate={
+                      revealed && isWrong
+                        ? { x: [-4, 4, -3, 3, -2, 2, 0] }
+                        : revealed && isRight
+                          ? { scale: [1, 1.015, 1] }
+                          : {}
+                    }
+                    transition={{ duration: 0.3 }}
+                    className={`flex w-full items-start gap-3 rounded-sm border p-4 text-left text-sm transition-colors ${stateClasses} ${
+                      revealed ? "cursor-default" : "cursor-pointer"
+                    }`}
                   >
-                    {opt.id.toUpperCase()}
-                  </span>
-                  <span className="flex-1">{opt.text}</span>
-                </button>
+                    <span
+                      className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-sm border border-current font-mono text-xs font-semibold"
+                      aria-hidden
+                    >
+                      {opt.id.toUpperCase()}
+                    </span>
+                    <span className="flex-1">{opt.text}</span>
+                  </m.button>
+                </LazyMotion>
               </li>
             );
           })}
         </ul>
 
+        {/* Explanation */}
         {revealed && (
-          <div
-            className={`mt-6 rounded-lg p-4 text-sm ${
-              isCorrect
-                ? "bg-green-50 text-green-900"
-                : "bg-red-50 text-red-900"
-            }`}
-            role="status"
-          >
-            <p className="font-semibold">
-              {isCorrect ? t("correct") : t("incorrect")}
-            </p>
-            <p className="mt-2 whitespace-pre-line text-gray-800">
-              {current.explanation}
-            </p>
-            <p className="mt-3 text-xs text-gray-500">
-              {t("source")}: {current.sourceRef}
-            </p>
-          </div>
+          <LazyMotion features={domAnimation}>
+            <m.div
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className={`mt-5 rounded-sm border-l-2 p-4 text-sm ${
+                isCorrect
+                  ? "border-green-clear bg-green-clear/10"
+                  : "border-red-danger bg-red-danger/10"
+              }`}
+              role="status"
+            >
+              <p className={`font-mono text-xs font-semibold uppercase tracking-wider ${isCorrect ? "text-green-clear" : "text-red-danger"}`}>
+                {isCorrect ? t("correct") : t("incorrect")}
+              </p>
+              <p className="mt-2 leading-relaxed text-telemetry">
+                {current.explanation}
+              </p>
+              <p className="mt-3 font-mono text-xs text-muted">
+                {t("source")}: {current.sourceRef}
+              </p>
+            </m.div>
+          </LazyMotion>
         )}
-
-        <div className="mt-6 flex justify-end">
+        <div className="mt-5 flex justify-end">
           {revealed ? (
             <button
               type="button"
               onClick={next}
-              className="rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-700"
+              className="rounded-sm border border-horizon bg-hull px-4 py-2 text-sm font-medium text-hud-white transition-colors hover:border-signal"
             >
-              {t("next")}
+              {t("next")} →
             </button>
           ) : (
             <button
               type="button"
               onClick={check}
               disabled={selected === null}
-              className="rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-700 disabled:cursor-not-allowed disabled:opacity-40"
+              className="rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-4 py-2 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void disabled:cursor-not-allowed disabled:opacity-30"
             >
               {t("checkAnswer")}
             </button>

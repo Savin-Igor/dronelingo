@@ -12,36 +12,53 @@ export type TopicListItem = {
 
 export function LearnTopicsList({ topics }: { topics: TopicListItem[] }) {
   const progress = useProgress();
+
   return (
-    <ul className="mt-8 space-y-4">
-      {topics.map((topic) => {
+    <ul className="mt-8 space-y-3">
+      {topics.map((topic, i) => {
         const total = topic.lessonIds.length;
         const visited = topic.lessonIds.filter((id) => progress[id]).length;
         const percent = total === 0 ? 0 : Math.round((visited / total) * 100);
+        const done = visited === total && total > 0;
+
         return (
-          <li
-            key={topic.slug}
-            className="rounded-lg border border-gray-200 bg-white p-5"
-          >
-            <Link href={`/learn/${topic.slug}`} className="block">
-              <div className="flex items-baseline justify-between gap-4">
-                <h2 className="text-xl font-semibold text-gray-900">
-                  {topic.title}
-                </h2>
-                {total > 0 && (
-                  <span className="text-xs text-gray-500">
-                    {visited} / {total}
+          <li key={topic.slug}>
+            <Link
+              href={`/learn/${topic.slug}`}
+              className="group block rounded-sm border border-horizon bg-cockpit p-5 transition-colors hover:border-cyan-pulse/30"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex items-baseline gap-3">
+                  <span className="font-mono text-xs font-semibold text-muted">
+                    {String(i + 1).padStart(2, "0")}
                   </span>
-                )}
+                  <h2 className="font-display text-lg font-semibold text-hud-white">
+                    {topic.title}
+                  </h2>
+                </div>
+                <div className="flex shrink-0 items-center gap-2">
+                  {done && (
+                    <span className="font-mono text-xs text-green-clear">✓</span>
+                  )}
+                  {total > 0 && (
+                    <span className="font-mono text-xs text-muted">
+                      {visited}/{total}
+                    </span>
+                  )}
+                </div>
               </div>
-              <p className="mt-2 text-gray-600">{topic.summary}</p>
+
+              <p className="mt-2 text-sm leading-relaxed text-telemetry">
+                {topic.summary}
+              </p>
+
               {total > 0 && (
                 <div
-                  className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-gray-100"
+                  className="mt-4 h-0.5 w-full overflow-hidden rounded-full bg-grid"
                   aria-hidden
                 >
                   <div
-                    className="h-full bg-green-500 transition-all"
+                    className="h-full rounded-full bg-cyan-pulse transition-all"
                     style={{ width: `${percent}%` }}
                   />
                 </div>

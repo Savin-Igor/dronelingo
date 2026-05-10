@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { ConsentBanner } from "@/components/ConsentBanner";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/Header";
+import { ClientWrapper } from "@/components/layout/ClientWrapper";
 import { Plausible } from "@/components/Plausible";
 import { SkipToContent } from "@/components/SkipToContent";
 import { env } from "@/env";
@@ -81,7 +82,7 @@ export default async function LocaleLayout({
           <div className="flex min-h-screen flex-col">
             <Header />
             <div id="main" className="flex-1">
-              {children}
+              <ClientWrapper>{children}</ClientWrapper>
             </div>
             <Footer />
           </div>

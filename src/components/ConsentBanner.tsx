@@ -28,15 +28,15 @@ export function ConsentBanner() {
     <div
       role="dialog"
       aria-label={t("title")}
-      className="fixed inset-x-4 bottom-4 z-40 mx-auto max-w-2xl rounded-xl border border-gray-200 bg-white p-4 shadow-lg sm:flex sm:items-start sm:gap-4"
+      className="fixed inset-x-4 bottom-4 z-40 mx-auto max-w-2xl rounded-sm border border-horizon bg-hull/95 p-4 shadow-lg backdrop-blur-xl sm:flex sm:items-start sm:gap-4"
     >
-      <div className="flex-1 text-sm text-gray-700">
-        <p className="font-medium text-gray-900">{t("title")}</p>
+      <div className="flex-1 text-sm text-telemetry">
+        <p className="font-medium text-hud-white">{t("title")}</p>
         <p className="mt-1">
           {t("body")}{" "}
           <Link
             href="/privacy"
-            className="underline underline-offset-2 hover:text-gray-900"
+            className="text-cyan-pulse underline underline-offset-2 hover:text-cyan-dim"
           >
             {t("privacyLink")}
           </Link>
@@ -47,7 +47,7 @@ export function ConsentBanner() {
         <button
           type="button"
           onClick={accept}
-          className="rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-700"
+          className="rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-4 py-2 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void"
         >
           {t("accept")}
         </button>

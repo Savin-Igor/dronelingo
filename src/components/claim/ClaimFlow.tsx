@@ -67,16 +67,14 @@ export function ClaimFlow() {
 
   if (success) {
     return (
-      <section className="rounded-xl border border-green-300 bg-green-50 p-8 text-center">
-        <p className="text-2xl font-semibold text-green-900">
+      <section className="rounded-sm border border-green-clear/30 bg-green-clear/10 p-8 text-center">
+        <p className="font-display text-2xl font-semibold text-green-clear">
           {t("checkout.success")}
         </p>
-        <p className="mt-3 text-sm text-green-900/80">
-          {t("checkout.successBody")}
-        </p>
+        <p className="mt-3 text-sm text-telemetry">{t("checkout.successBody")}</p>
         <Link
           href="/exam"
-          className="mt-6 inline-flex rounded-md bg-gray-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-gray-700"
+          className="mt-6 inline-flex rounded-sm border border-horizon px-5 py-2.5 text-sm font-medium text-telemetry transition-colors hover:border-signal hover:text-hud-white"
         >
           {t("checkout.back")}
         </Link>
@@ -86,11 +84,17 @@ export function ClaimFlow() {
 
   return (
     <>
-      <h1 className="text-3xl font-semibold text-gray-900">{t("title")}</h1>
-      <p className="mt-2 text-gray-600">{t("subtitle")}</p>
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
+        Pilot license
+      </p>
+      <h1 className="mt-2 font-display text-3xl font-semibold text-hud-white">
+        {t("title")}
+      </h1>
+      <p className="mt-2 text-sm text-telemetry">{t("subtitle")}</p>
 
-      <section className="mt-8 rounded-xl border border-gray-200 bg-white p-6">
-        <h2 className="text-lg font-semibold text-gray-900">
+      {/* ── Verification method ─────────────────────────────────────── */}
+      <section className="mt-6 rounded-sm border border-horizon bg-cockpit p-6">
+        <h2 className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
           {t("kindHeading")}
         </h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -106,12 +110,12 @@ export function ClaimFlow() {
           />
         </div>
 
-        <div className="mt-6 space-y-4">
+        <div className="mt-6 space-y-5">
           {kind === "PDF" ? (
             <div>
               <label
                 htmlFor="claim-file"
-                className="text-sm font-medium text-gray-900"
+                className="font-mono text-xs uppercase tracking-widest text-telemetry"
               >
                 {t("fileLabel")}
               </label>
@@ -120,11 +124,11 @@ export function ClaimFlow() {
                 type="file"
                 accept="application/pdf"
                 onChange={(e) => setFile(e.target.files?.[0] ?? null)}
-                className="mt-2 block w-full text-sm text-gray-700 file:mr-4 file:rounded-md file:border-0 file:bg-gray-900 file:px-4 file:py-2 file:text-sm file:font-medium file:text-white hover:file:bg-gray-700"
+                className="mt-2 block w-full text-sm text-telemetry file:mr-4 file:cursor-pointer file:rounded-sm file:border file:border-cyan-pulse/40 file:bg-cyan-pulse/10 file:px-4 file:py-2 file:text-sm file:font-medium file:text-cyan-pulse hover:file:bg-cyan-pulse/20"
               />
-              <p className="mt-2 text-xs text-gray-500">{t("fileHint")}</p>
+              <p className="mt-2 font-mono text-xs text-muted">{t("fileHint")}</p>
               {file && (
-                <p className="mt-1 text-xs text-gray-700">
+                <p className="mt-1 font-mono text-xs text-green-clear">
                   {t("fileSelected", { name: file.name })}
                 </p>
               )}
@@ -133,7 +137,7 @@ export function ClaimFlow() {
             <div>
               <label
                 htmlFor="claim-caa-id"
-                className="text-sm font-medium text-gray-900"
+                className="font-mono text-xs uppercase tracking-widest text-telemetry"
               >
                 {t("caaIdLabel")}
               </label>
@@ -143,16 +147,16 @@ export function ClaimFlow() {
                 value={caaId}
                 onChange={(e) => setCaaId(e.target.value)}
                 placeholder={t("caaIdPlaceholder")}
-                className="mt-2 block w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-gray-900 focus:outline-none"
+                className="mt-2 block w-full rounded-sm border border-horizon bg-hull px-3 py-2.5 font-mono text-sm text-hud-white placeholder:text-muted focus:border-cyan-pulse/50 focus:outline-none"
               />
-              <p className="mt-2 text-xs text-gray-500">{t("caaIdHint")}</p>
+              <p className="mt-2 font-mono text-xs text-muted">{t("caaIdHint")}</p>
             </div>
           )}
 
           <div>
             <label
               htmlFor="claim-email"
-              className="text-sm font-medium text-gray-900"
+              className="font-mono text-xs uppercase tracking-widest text-telemetry"
             >
               {t("emailLabel")}
             </label>
@@ -162,38 +166,37 @@ export function ClaimFlow() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder={t("emailPlaceholder")}
-              className="mt-2 block w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-gray-900 focus:outline-none"
+              className="mt-2 block w-full rounded-sm border border-horizon bg-hull px-3 py-2.5 text-sm text-hud-white placeholder:text-muted focus:border-cyan-pulse/50 focus:outline-none"
             />
           </div>
         </div>
       </section>
 
-      <section className="mt-6 rounded-xl border border-gray-200 bg-white p-6">
-        <h2 className="text-lg font-semibold text-gray-900">
+      {/* ── Payment ─────────────────────────────────────────────────── */}
+      <section className="mt-4 rounded-sm border border-horizon bg-cockpit p-6">
+        <h2 className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
           {t("checkout.heading")}
         </h2>
-        <p className="mt-2 text-xs text-gray-500">{t("checkout.note")}</p>
+        <p className="mt-2 font-mono text-xs text-muted">{t("checkout.note")}</p>
 
-        <div className="mt-4 flex items-center justify-between rounded-md bg-gray-50 p-4">
-          <span className="text-sm text-gray-700">
-            dronelingo Pass Guarantee
-          </span>
-          <span className="text-base font-semibold text-gray-900">
+        <div className="mt-4 flex items-center justify-between rounded-sm border border-horizon bg-hull px-4 py-3">
+          <span className="text-sm text-telemetry">dronelingo Pass Guarantee</span>
+          <span className="font-mono text-base font-semibold text-hud-white">
             {t("checkout.amount")}
           </span>
         </div>
 
         {error && (
-          <p className="mt-4 rounded-md bg-red-50 p-3 text-sm text-red-900">
-            {error}
-          </p>
+          <div className="mt-4 border-l-2 border-red-danger bg-red-danger/10 p-3">
+            <p className="text-sm text-red-danger">{error}</p>
+          </div>
         )}
 
         <button
           type="button"
           onClick={handlePay}
           disabled={processing}
-          className="mt-6 w-full rounded-md bg-gray-900 px-5 py-3 text-sm font-medium text-white hover:bg-gray-700 disabled:cursor-not-allowed disabled:opacity-50"
+          className="mt-5 w-full rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-5 py-3 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void disabled:cursor-not-allowed disabled:opacity-40"
         >
           {processing ? t("checkout.processing") : t("checkout.pay")}
         </button>
@@ -216,10 +219,10 @@ function KindButton({
       type="button"
       onClick={onClick}
       aria-pressed={active}
-      className={`rounded-lg border p-4 text-left text-sm font-medium transition ${
+      className={`rounded-sm border p-4 text-left text-sm font-medium transition-colors ${
         active
-          ? "border-gray-900 bg-gray-50 text-gray-900"
-          : "border-gray-200 bg-white text-gray-700 hover:border-gray-300"
+          ? "border-cyan-pulse/50 bg-signal/20 text-hud-white"
+          : "border-horizon bg-cockpit text-telemetry hover:border-signal hover:text-hud-white"
       }`}
     >
       {label}

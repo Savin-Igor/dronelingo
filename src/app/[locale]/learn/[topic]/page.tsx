@@ -49,26 +49,34 @@ export default async function TopicPage({
         locale={locale}
         crumbs={[
           { name: t("title"), path: "/learn" },
-          {
-            name: localize(topic.title, locale),
-            path: `/learn/${topic.slug}`,
-          },
+          { name: localize(topic.title, locale), path: `/learn/${topic.slug}` },
         ]}
       />
-      <Link href="/learn" className="text-sm text-gray-500 hover:text-gray-900">
+
+      <Link
+        href="/learn"
+        className="font-mono text-xs text-muted transition-colors hover:text-telemetry"
+      >
         ← {t("title")}
       </Link>
-      <h1 className="mt-4 text-3xl font-semibold text-gray-900">
+
+      <p className="mt-4 font-mono text-xs uppercase tracking-widest text-cyan-pulse">
+        Sector
+      </p>
+      <h1 className="mt-1 font-display text-3xl font-semibold text-hud-white">
         {localize(topic.title, locale)}
       </h1>
-      <p className="mt-2 text-gray-600">{localize(topic.summary, locale)}</p>
+      <p className="mt-2 text-sm leading-relaxed text-telemetry">
+        {localize(topic.summary, locale)}
+      </p>
+
       <TopicLessonList topicSlug={topic.slug} lessons={lessons} />
 
       {topic._count.questions > 0 && (
         <div className="mt-10 flex justify-center">
           <Link
             href={`/practice/${topic.slug}`}
-            className="rounded-md bg-gray-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-gray-700"
+            className="inline-flex items-center justify-center rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-5 py-2.5 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void"
           >
             {tPractice("ctaFromTopic")} →
           </Link>

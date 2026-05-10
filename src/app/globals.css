@@ -86,6 +86,27 @@ body {
   animation: timer-blink 0.5s ease-in-out infinite;
 }
 
+/* ── MDX / typography dark theme ─────────────────────────────────────────── */
+/* Use class="prose prose-dronelingo max-w-none" on MDX article elements.     */
+.prose-dronelingo {
+  --tw-prose-body:          #8899BB;
+  --tw-prose-headings:      #E8EFF8;
+  --tw-prose-lead:          #8899BB;
+  --tw-prose-links:         #00D4FF;
+  --tw-prose-bold:          #E8EFF8;
+  --tw-prose-counters:      #4A5E80;
+  --tw-prose-bullets:       #4A5E80;
+  --tw-prose-hr:            #243357;
+  --tw-prose-quotes:        #8899BB;
+  --tw-prose-quote-borders: #243357;
+  --tw-prose-captions:      #4A5E80;
+  --tw-prose-code:          #00D4FF;
+  --tw-prose-pre-code:      #E8EFF8;
+  --tw-prose-pre-bg:        #131B2E;
+  --tw-prose-th-borders:    #243357;
+  --tw-prose-td-borders:    #1E2D48;
+}
+
 /* ── Reduced motion ───────────────────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

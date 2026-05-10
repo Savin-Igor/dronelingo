@@ -17,29 +17,42 @@ export function TopicLessonList({
   lessons: LessonListItem[];
 }) {
   const progress = useProgress();
+
   return (
-    <ul className="mt-8 space-y-3">
-      {lessons.map((lesson) => {
+    <ul className="mt-6 divide-y divide-horizon rounded-sm border border-horizon">
+      {lessons.map((lesson, i) => {
         const visited = Boolean(progress[lesson.id]);
         return (
-          <li
-            key={lesson.id}
-            className="flex items-center justify-between rounded-md border border-gray-200 bg-white p-4"
-          >
+          <li key={lesson.id}>
             <Link
               href={`/learn/${topicSlug}/${lesson.slug}`}
-              className="text-base font-medium text-gray-900 hover:underline"
+              className="flex items-center justify-between gap-4 px-4 py-3.5 transition-colors hover:bg-hull/60"
             >
-              {lesson.title}
+              <div className="flex items-center gap-3">
+                <span className="w-6 shrink-0 font-mono text-xs text-muted">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span
+                  className={`text-sm font-medium ${
+                    visited ? "text-telemetry" : "text-hud-white"
+                  }`}
+                >
+                  {lesson.title}
+                </span>
+              </div>
+              {visited ? (
+                <span
+                  aria-label="visited"
+                  className="shrink-0 font-mono text-xs text-green-clear"
+                >
+                  ✓
+                </span>
+              ) : (
+                <span className="shrink-0 font-mono text-xs text-muted" aria-hidden>
+                  →
+                </span>
+              )}
             </Link>
-            {visited && (
-              <span
-                aria-label="visited"
-                className="ml-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-100 text-green-700"
-              >
-                ✓
-              </span>
-            )}
           </li>
         );
       })}

@@ -33,7 +33,7 @@ export default async function FaqPage({
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-12">
-      <article className="prose prose-gray max-w-none">
+      <article className="prose prose-dronelingo max-w-none">
         <MDXRemote source={body} />
       </article>
     </main>
