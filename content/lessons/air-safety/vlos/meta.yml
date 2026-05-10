@@ -5,3 +5,13 @@ title:
   en: Visual line of sight (VLOS)
   ru: Прямая видимость (VLOS)
 sourceRef: "EASA Easy Access Rules for UAS, Reg (EU) 2019/947 — UAS.OPEN.060(3)"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

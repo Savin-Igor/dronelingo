@@ -39,12 +39,38 @@ const TopicYaml = z.object({
   summary: Multilingual,
 });
 
+// Lesson anatomy block ids — the 9 blocks defined in academy-vision.md.
+const LessonBlockId = z.enum([
+  "missionBriefing",
+  "cinematicScene",
+  "core",
+  "artefact",
+  "scenario",
+  "memoryAnchor",
+  "commonMistakes",
+  "miniQuiz",
+  "debrief",
+]);
+
 const LessonMetaYaml = z.object({
   slug: z.string().regex(/^[a-z0-9-]+$/),
   ord: z.number().int().nonnegative(),
   title: Multilingual,
   sourceRef: z.string().min(1).optional(),
+  // Declared list of academy blocks present in this lesson's MDX. Used for
+  // analytics on how many of the 9 blocks the lesson actually exposes;
+  // ≥5 of 9 is the acceptance bar from the vision document.
+  blocks: z.array(LessonBlockId).optional(),
 });
+
+const CognitiveLevel = z.enum(["recall", "apply", "analyze"]);
+const ScenarioType = z.enum([
+  "factual",
+  "map",
+  "numeric",
+  "decision",
+  "regulatory",
+]);
 
 const QuestionYaml = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
@@ -56,11 +82,23 @@ const QuestionYaml = z.object({
         text: Multilingual,
       }),
     )
-    .min(2),
+    // 2 minimum during the 3 → 4 option migration; new questions must use 4.
+    .min(2)
+    .max(4),
   correctOptionId: z.string(),
   explanation: Multilingual,
+  // Per-distractor rationale, keyed by optionId. Authoring rule (validated
+  // below in importQuestions): every wrong option should have an entry, and
+  // the correctOptionId must NOT appear here.
+  distractorRationales: z.record(z.string(), Multilingual).optional(),
   sourceRef: z.string().min(1),
   difficulty: z.number().int().min(1).max(5).optional(),
+  cognitiveLevel: CognitiveLevel.optional(),
+  scenarioType: ScenarioType.optional(),
+  lessonSectionRef: z
+    .string()
+    .regex(/^[a-z0-9-]+\/[a-z0-9-]+(#[a-z0-9-]+)?$/)
+    .optional(),
 });
 
 const QuestionsYaml = z.array(QuestionYaml);
@@ -179,6 +217,9 @@ async function importLessons(
       const existing = await prisma.lesson.findUnique({
         where: { topicId_slug: { topicId, slug: meta.slug } },
       });
+      const blocks = meta.blocks
+        ? (meta.blocks as unknown as Prisma.InputJsonValue)
+        : Prisma.JsonNull;
       await prisma.lesson.upsert({
         where: { topicId_slug: { topicId, slug: meta.slug } },
         create: {
@@ -188,12 +229,14 @@ async function importLessons(
           title: meta.title as Prisma.InputJsonValue,
           bodyMdx: bodyMdx as Prisma.InputJsonValue,
           sourceRef: meta.sourceRef ?? null,
+          blocks,
         },
         update: {
           ord: meta.ord,
           title: meta.title as Prisma.InputJsonValue,
           bodyMdx: bodyMdx as Prisma.InputJsonValue,
           sourceRef: meta.sourceRef ?? null,
+          blocks,
         },
       });
       total++;
@@ -233,6 +276,24 @@ async function importQuestions(
           `Question ${q.id} in ${file}: correctOptionId "${q.correctOptionId}" is not in options [${optionIds.join(", ")}]`,
         );
       }
+      if (q.distractorRationales) {
+        for (const key of Object.keys(q.distractorRationales)) {
+          if (!optionIds.includes(key)) {
+            throw new Error(
+              `Question ${q.id} in ${file}: distractorRationales has unknown optionId "${key}"`,
+            );
+          }
+          if (key === q.correctOptionId) {
+            throw new Error(
+              `Question ${q.id} in ${file}: distractorRationales must not include the correct option "${key}"`,
+            );
+          }
+        }
+      }
+
+      const distractorRationales = q.distractorRationales
+        ? (q.distractorRationales as unknown as Prisma.InputJsonValue)
+        : Prisma.JsonNull;
 
       const existing = await prisma.question.findUnique({
         where: { externalId: q.id },
@@ -246,8 +307,12 @@ async function importQuestions(
           options: q.options as unknown as Prisma.InputJsonValue,
           correctOptionId: q.correctOptionId,
           explanation: q.explanation as Prisma.InputJsonValue,
+          distractorRationales,
           sourceRef: q.sourceRef,
           difficulty: q.difficulty ?? null,
+          cognitiveLevel: q.cognitiveLevel ?? null,
+          scenarioType: q.scenarioType ?? null,
+          lessonSectionRef: q.lessonSectionRef ?? null,
         },
         update: {
           topicId,
@@ -255,8 +320,12 @@ async function importQuestions(
           options: q.options as unknown as Prisma.InputJsonValue,
           correctOptionId: q.correctOptionId,
           explanation: q.explanation as Prisma.InputJsonValue,
+          distractorRationales,
           sourceRef: q.sourceRef,
           difficulty: q.difficulty ?? null,
+          cognitiveLevel: q.cognitiveLevel ?? null,
+          scenarioType: q.scenarioType ?? null,
+          lessonSectionRef: q.lessonSectionRef ?? null,
         },
       });
       total++;

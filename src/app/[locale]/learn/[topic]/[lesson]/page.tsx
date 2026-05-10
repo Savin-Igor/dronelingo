@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { BreadcrumbSchema } from "@/components/learn/Breadcrumb";
 import { MarkLessonVisited } from "@/components/learn/MarkLessonVisited";
+import { lessonComponents } from "@/components/lesson";
 import { localize } from "@/lib/localize";
 import { prisma } from "@/lib/prisma";
 
@@ -93,7 +94,7 @@ export default async function LessonPage({
         <MarkLessonVisited lessonId={lesson.id} />
 
         <article className="prose prose-dronelingo max-w-none">
-          <MDXRemote source={body} />
+          <MDXRemote source={body} components={lessonComponents} />
         </article>
 
         {lesson.sourceRef ? (
