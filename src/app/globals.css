@@ -72,6 +72,20 @@ body {
   50%       { opacity: 0.15; }
 }
 
+/* Score ring fill — reads --ring-from / --ring-to set via inline style */
+@keyframes ring-fill {
+  from { stroke-dashoffset: var(--ring-from, 340); }
+  to   { stroke-dashoffset: var(--ring-to, 0); }
+}
+
+/* Timer state helpers */
+.animate-timer-warn {
+  animation: timer-pulse 1.2s ease-in-out infinite;
+}
+.animate-timer-crit {
+  animation: timer-blink 0.5s ease-in-out infinite;
+}
+
 /* ── Reduced motion ───────────────────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

@@ -130,7 +130,7 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
 
   if (questions.length === 0) {
     return (
-      <p className="text-center text-gray-500">{t("noResult")}</p>
+      <p className="text-center text-telemetry">{t("noResult")}</p>
     );
   }
 
@@ -138,42 +138,55 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
     setAnswers((prev) => ({ ...prev, [current.id]: optId }));
   }
 
-  const timerWarning = secLeft <= 60;
+  const timerCritical = secLeft <= 60;
+  const timerWarning = secLeft <= 300 && !timerCritical;
+
+  const timerClass = timerCritical
+    ? "animate-timer-crit rounded-sm bg-red-danger/10 px-3 py-1 font-mono text-sm font-semibold text-red-danger"
+    : timerWarning
+      ? "animate-timer-warn rounded-sm bg-amber-alert/10 px-3 py-1 font-mono text-sm font-semibold text-amber-alert"
+      : "rounded-sm bg-hull px-3 py-1 font-mono text-sm font-semibold text-telemetry";
 
   return (
     <>
-      <header className="flex items-center justify-between border-b border-gray-200 pb-4">
-        <h1 className="text-lg font-semibold text-gray-900">{t("title")}</h1>
-        <div
-          className={`rounded-md px-3 py-1.5 text-sm font-medium ${
-            timerWarning
-              ? "bg-red-100 text-red-900"
-              : "bg-gray-100 text-gray-900"
-          }`}
-          aria-live="polite"
-        >
-          {t("timeLeft")}: {formatTime(secLeft)}
+      {/* ── Sticky exam sub-header ───────────────────────────────────── */}
+      <div className="sticky top-14 z-20 -mx-6 mb-6 border-b border-horizon bg-cockpit/95 px-6 py-3 backdrop-blur-sm">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <span className="font-mono text-xs uppercase tracking-widest text-muted">
+              {t("title")}
+            </span>
+            <span className="font-mono text-xs text-muted">
+              {t("questionOf", { current: index + 1, total })}
+            </span>
+          </div>
+          <div className={timerClass} aria-live="polite">
+            {formatTime(secLeft)}
+          </div>
         </div>
-      </header>
+      </div>
 
-      <div className="mt-6 flex items-center justify-between text-sm text-gray-500">
-        <span>{t("questionOf", { current: index + 1, total })}</span>
-        <span>
-          {unanswered === 1
-            ? t("unansweredOne", { count: unanswered })
-            : t("unansweredMany", { count: unanswered })}
+      {/* ── Unanswered counter ────────────────────────────────────────── */}
+      <div className="mb-4 flex justify-end">
+        <span className="font-mono text-xs text-muted">
+          {unanswered === 0
+            ? "All answered"
+            : unanswered === 1
+              ? t("unansweredOne", { count: unanswered })
+              : t("unansweredMany", { count: unanswered })}
         </span>
       </div>
 
-      <article className="mt-4 rounded-xl border border-gray-200 bg-white p-6">
-        <p className="text-xs font-semibold uppercase tracking-wider text-gray-400">
+      {/* ── Question card ─────────────────────────────────────────────── */}
+      <article className="rounded-sm border border-cyan-pulse/15 bg-cockpit p-6">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
           {current.topicTitle}
         </p>
-        <h2 className="mt-2 text-lg font-medium text-gray-900">
+        <h2 className="mt-3 text-base font-medium leading-relaxed text-hud-white">
           {current.stem}
         </h2>
 
-        <ul className="mt-6 space-y-3">
+        <ul className="mt-6 space-y-2">
           {current.options.map((opt) => {
             const isSelected = answers[current.id] === opt.id;
             return (
@@ -182,14 +195,14 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
                   type="button"
                   onClick={() => pick(opt.id)}
                   aria-pressed={isSelected}
-                  className={`flex w-full items-start gap-3 rounded-lg border p-4 text-left text-sm transition ${
+                  className={`flex w-full items-start gap-3 rounded-sm border p-4 text-left text-sm transition-colors ${
                     isSelected
-                      ? "border-gray-900 bg-gray-50 text-gray-900"
-                      : "border-gray-200 bg-white text-gray-700 hover:border-gray-300"
+                      ? "border-cyan-pulse/60 bg-signal/20 text-hud-white"
+                      : "border-horizon bg-cockpit text-telemetry hover:border-cyan-pulse/30 hover:text-hud-white"
                   }`}
                 >
                   <span
-                    className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-current text-xs font-semibold"
+                    className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-sm border border-current font-mono text-xs font-semibold"
                     aria-hidden
                   >
                     {opt.id.toUpperCase()}
@@ -202,12 +215,13 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
         </ul>
       </article>
 
-      <nav className="mt-6 flex items-center justify-between">
+      {/* ── Prev / Next navigation ────────────────────────────────────── */}
+      <nav className="mt-4 flex items-center justify-between">
         <button
           type="button"
           onClick={() => setIndex((i) => Math.max(0, i - 1))}
           disabled={index === 0}
-          className="rounded-md border border-gray-200 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-40"
+          className="rounded-sm border border-horizon px-4 py-2 text-sm font-medium text-telemetry transition-colors hover:border-signal hover:text-hud-white disabled:cursor-not-allowed disabled:opacity-30"
         >
           ← {t("prev")}
         </button>
@@ -216,7 +230,7 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
           <button
             type="button"
             onClick={() => setIndex((i) => Math.min(total - 1, i + 1))}
-            className="rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-700"
+            className="rounded-sm border border-horizon bg-hull px-4 py-2 text-sm font-medium text-hud-white transition-colors hover:border-signal"
           >
             {t("next")} →
           </button>
@@ -224,70 +238,82 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
           <button
             type="button"
             onClick={() => setShowConfirm(true)}
-            className="rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-500"
+            className="rounded-sm border border-green-clear/40 bg-green-clear/10 px-4 py-2 text-sm font-medium text-green-clear transition-colors hover:bg-green-clear/20"
           >
             {t("submit")}
           </button>
         )}
       </nav>
 
-      <ol className="mt-8 grid grid-cols-10 gap-2 text-xs">
-        {questions.map((q, i) => {
-          const answered = Boolean(answers[q.id]);
-          const isActive = i === index;
-          return (
-            <li key={q.id}>
-              <button
-                type="button"
-                onClick={() => setIndex(i)}
-                aria-current={isActive ? "true" : undefined}
-                className={`flex h-8 w-full items-center justify-center rounded-md border text-xs font-medium ${
-                  isActive
-                    ? "border-gray-900 bg-gray-900 text-white"
-                    : answered
-                      ? "border-gray-300 bg-gray-100 text-gray-900"
-                      : "border-gray-200 bg-white text-gray-400 hover:border-gray-300"
-                }`}
-              >
-                {i + 1}
-              </button>
-            </li>
-          );
-        })}
-      </ol>
+      {/* ── Question navigation grid ──────────────────────────────────── */}
+      <div className="mt-8">
+        <p className="mb-3 font-mono text-xs uppercase tracking-widest text-muted">
+          Navigation
+        </p>
+        <ol className="grid grid-cols-10 gap-1.5">
+          {questions.map((q, i) => {
+            const answered = Boolean(answers[q.id]);
+            const isActive = i === index;
+            return (
+              <li key={q.id}>
+                <button
+                  type="button"
+                  onClick={() => setIndex(i)}
+                  aria-current={isActive ? "true" : undefined}
+                  className={`flex h-8 w-full items-center justify-center rounded-sm border font-mono text-xs font-medium transition-colors ${
+                    isActive
+                      ? "border-cyan-pulse bg-cyan-pulse text-void"
+                      : answered
+                        ? "border-cyan-pulse/30 bg-signal/30 text-cyan-pulse"
+                        : "border-horizon bg-cockpit text-muted hover:border-signal"
+                  }`}
+                >
+                  {i + 1}
+                </button>
+              </li>
+            );
+          })}
+        </ol>
+      </div>
 
+      {/* ── Submit confirmation modal ─────────────────────────────────── */}
       {showConfirm && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-void/80 p-4 backdrop-blur-sm"
           role="dialog"
           aria-modal="true"
         >
-          <div className="w-full max-w-md rounded-xl bg-white p-6 shadow-xl">
-            <h2 className="text-lg font-semibold text-gray-900">
+          <div className="w-full max-w-md rounded-sm border border-horizon bg-hull p-6 shadow-xl">
+            <h2 className="font-display text-lg font-semibold text-hud-white">
               {t("confirmSubmitTitle")}
             </h2>
-            <p className="mt-2 text-sm text-gray-600">
+            <p className="mt-2 text-sm text-telemetry">
               {t("confirmSubmitBody")}
             </p>
             {unanswered > 0 && (
-              <p className="mt-3 rounded-md bg-amber-50 p-3 text-sm text-amber-900">
-                {unanswered === 1
-                  ? t("unansweredOne", { count: unanswered })
-                  : t("unansweredMany", { count: unanswered })}
-              </p>
+              <div className="mt-4 border-l-2 border-amber-alert bg-amber-alert/10 p-3">
+                <p className="text-sm text-amber-alert">
+                  {unanswered === 1
+                    ? t("unansweredOne", { count: unanswered })
+                    : t("unansweredMany", { count: unanswered })}
+                </p>
+                <p className="mt-1 font-mono text-xs text-muted">
+                  Unanswered questions count as wrong.
+                </p>
+              </div>
             )}
             <div className="mt-6 flex justify-end gap-3">
               <button
                 type="button"
                 onClick={() => setShowConfirm(false)}
-                className="rounded-md border border-gray-200 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+                className="rounded-sm border border-horizon px-4 py-2 text-sm font-medium text-telemetry transition-colors hover:border-signal hover:text-hud-white"
               >
                 {t("confirmNo")}
               </button>
               <button
                 type="button"
                 onClick={submit}
-                className="rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-500"
+                className="rounded-sm border border-green-clear/40 bg-green-clear/10 px-4 py-2 text-sm font-medium text-green-clear transition-colors hover:bg-green-clear/20"
               >
                 {t("confirmYes")}
               </button>

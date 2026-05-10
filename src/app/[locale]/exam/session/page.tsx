@@ -12,7 +12,7 @@ export default async function ExamSessionPage({
   const questions = await buildStratifiedExam(locale);
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-12">
+    <main className="mx-auto max-w-3xl px-6 pb-12 pt-6">
       <ExamSession questions={questions} />
     </main>
   );

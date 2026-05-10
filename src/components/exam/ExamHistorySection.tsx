@@ -33,44 +33,45 @@ export function ExamHistorySection() {
     return null;
   }
 
+  const readinessTone =
+    readiness === "ready"
+      ? "border-l-2 border-green-clear bg-green-clear/10 text-green-clear"
+      : readiness === "almost"
+        ? "border-l-2 border-amber-alert bg-amber-alert/10 text-amber-alert"
+        : "border-l-2 border-horizon bg-hull text-telemetry";
+
   const readinessLabel =
     readiness === "ready"
       ? t("history.ready")
       : readiness === "almost"
         ? t("history.almostReady")
         : t("history.notReady");
-  const readinessTone =
-    readiness === "ready"
-      ? "bg-green-50 text-green-900"
-      : readiness === "almost"
-        ? "bg-amber-50 text-amber-900"
-        : "bg-gray-50 text-gray-700";
 
   return (
-    <section className="mt-8 rounded-xl border border-gray-200 bg-white p-6">
-      <h2 className="text-lg font-semibold text-gray-900">
+    <section className="mt-4 rounded-sm border border-horizon bg-cockpit p-6">
+      <h2 className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
         {t("history.heading")}
       </h2>
-      <p className={`mt-3 rounded-md p-3 text-sm ${readinessTone}`}>
+
+      <div className={`mt-4 p-3 text-sm ${readinessTone}`}>
         {readinessLabel}
-      </p>
-      <ul className="mt-4 divide-y divide-gray-100 text-sm">
+      </div>
+
+      <ul className="mt-4 divide-y divide-horizon text-sm">
         {recent.map((r) => {
           const percent = Math.round((r.correct / r.total) * 100);
           return (
             <li
               key={r.id}
-              className="flex items-center justify-between py-2"
+              className="flex items-center justify-between py-2.5"
             >
-              <span className="text-gray-500">
-                {new Date(r.takenAt).toLocaleString()}
+              <span className="font-mono text-xs text-muted">
+                {new Date(r.takenAt).toLocaleDateString()}
               </span>
               <span
-                className={
-                  r.passed
-                    ? "font-medium text-green-700"
-                    : "font-medium text-red-700"
-                }
+                className={`font-mono text-xs font-semibold ${
+                  r.passed ? "text-green-clear" : "text-red-danger"
+                }`}
               >
                 {r.correct}/{r.total} ({percent}%)
               </span>
