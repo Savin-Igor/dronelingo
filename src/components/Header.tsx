@@ -1,40 +1,32 @@
-import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { LocaleSwitcher } from "./LocaleSwitcher";
+import { MobileDrawer } from "./MobileDrawer";
+import { NavLinks } from "./NavLinks";
 
 export function Header() {
-  const t = useTranslations("nav");
   return (
-    <header className="border-b border-gray-200 bg-white">
-      <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-6 gap-y-3 px-6 py-4">
-        <Link href="/" className="text-base font-semibold text-gray-900">
-          dronelingo
+    <header className="sticky top-0 z-30 border-b border-horizon bg-cockpit/90 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-5xl items-center justify-between gap-6 px-6 py-4">
+        <Link
+          href="/"
+          className="flex items-center gap-1.5 font-display text-base font-semibold tracking-widest text-hud-white"
+        >
+          DRONELINGO
+          <span className="h-1.5 w-1.5 rounded-full bg-cyan-pulse" aria-hidden />
         </Link>
+
         <nav
-          className="order-3 flex w-full items-center gap-4 overflow-x-auto text-sm sm:order-2 sm:w-auto sm:gap-6"
+          className="hidden items-center gap-6 sm:flex"
           aria-label="Primary"
         >
-          <Link href="/learn" className="text-gray-600 hover:text-gray-900">
-            {t("learn")}
-          </Link>
-          <Link
-            href="/practice"
-            className="text-gray-600 hover:text-gray-900"
-          >
-            {t("practice")}
-          </Link>
-          <Link href="/exam" className="text-gray-600 hover:text-gray-900">
-            {t("exam")}
-          </Link>
-          <Link
-            href="/claim"
-            className="text-gray-600 hover:text-gray-900"
-          >
-            {t("claim")}
-          </Link>
+          <NavLinks />
         </nav>
-        <div className="order-2 sm:order-3">
-          <LocaleSwitcher />
+
+        <div className="flex items-center gap-4">
+          <div className="hidden sm:block">
+            <LocaleSwitcher />
+          </div>
+          <MobileDrawer />
         </div>
       </div>
     </header>
