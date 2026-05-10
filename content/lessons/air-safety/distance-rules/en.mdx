@@ -1,36 +1,140 @@
 # Distance from uninvolved persons
 
-Open-category limits depend on the subcategory and UAS class.
+<MissionBriefing objective="After this lesson you will know exactly how close you can fly to people in A1, A2, and A3 — and why flying over a crowd is always forbidden regardless of drone size.">
+Distance rules are the most-failed topic on the A1/A3 exam. The table looks simple.
+The exam questions are designed to catch every shortcut you tried to take.
+</MissionBriefing>
 
-## A1 — over people (with caveats)
+<CinematicScene
+  src="/lessons/distance-rules-a1-a2-a3.png"
+  alt="A1/A2/A3 sub-category distance rules comparison infographic"
+  caption="Diagram · distance-rules-overview"
+/>
 
-| Class | Rule |
-|-------|------|
-| **C0** (< 250 g) | Overflight of individuals allowed; **never** over assemblies |
-| **C1** | "Reasonably expected not to fly over uninvolved persons" |
+## A1 — The closest you can get
 
-C1 does not fly directly over people; if someone enters the path,
-abort or divert.
+A1 is designed for light drones that cause minimal harm if they fall.
+But **no sub-category** removes the crowd rule.
 
-## A2 — close to people (5 m / 30 m)
+| Class | Max weight | Distance to individuals | Assemblies |
+|-------|-----------|------------------------|-----------|
+| **C0** | < 250 g | Over individuals — **OK** | **Never** |
+| **C1** | < 900 g | "Reasonably expected not to fly over" | **Never** |
+
+"Reasonably expected" means: if there's a person ahead, you route around them.
+If someone walks into your path, you abort.
+C1 is not a licence to hover over a sunbather.
+
+## A2 — When you need to get closer
+
+A2 exists for professional work near people. It requires a separate competence certificate (theory + practical declaration) beyond A1/A3.
 
 | Mode | Minimum horizontal distance |
-|------|------------------------------|
-| C2 in low-speed (≤ 3 m/s) | **5 m** |
-| C2 normal | **30 m** |
+|------|-----|
+| C2 in **low-speed mode** (≤ 3 m/s) | **5 m** |
+| C2 **normal speed** | **30 m** |
 
-A2 requires a **competence certificate** (extra exam after A1/A3).
+Low-speed mode is a mandatory hardware feature of C2 drones. You must activate it **before** closing to 5 m, not after.
 
-## A3 — far from people (1:1 rule)
+## A3 — Far from civilisation
 
-- ≥ **30 m** from uninvolved persons or **1:1** (≥ flight altitude).
-- ≥ **150 m** from residential / commercial / industrial areas.
-- ≥ a "2-second flight distance" at max speed.
+A3 is for larger drones (up to 25 kg) operating away from people, in areas that are genuinely uninhabited.
 
-## Assemblies
+<Artefact
+  src="/lessons/altitude-distance-rule.png"
+  alt="The 1:1 rule: horizontal distance equals flight altitude, minimum 30m"
+  description="Diagram showing drone at 60m AGL with 60m horizontal distance on each side to uninvolved persons. Second example: 40m altitude gives 40m distance requirement."
+  caption="Diagram · 1-to-1-rule"
+/>
 
-**Overflight of assemblies of people is forbidden in every Open
-subcategory** regardless of UAS class.
+Three limits apply simultaneously — you must respect all three:
 
-> **Source:** Reg (EU) 2019/947 UAS.OPEN.020/030/040; EASA Easy Access
-> Rules for UAS — Subcategories A1 / A2 / A3.
+1. **1:1 rule** — horizontal distance to uninvolved persons ≥ flight altitude, minimum 30 m
+2. **150 m** from any residential, commercial, industrial, or recreational area
+3. **2-second flight distance** at max speed (crash-stop buffer)
+
+If you are at 80 m altitude, the 1:1 rule requires ≥ 80 m to people.
+The 30 m floor still applies at very low altitudes.
+
+## The one rule that never changes
+
+<MemoryAnchor
+  rule="Overflight of assemblies of people is forbidden in every Open subcategory."
+  hint="C0 under 250 g, C1, C2, C3 — doesn't matter. Crowd below = land or stay away."
+/>
+
+An "assembly of people" is not legally defined as a specific head count. Courts interpret it as any gathering where participants cannot easily move away from a drone overhead — a street market, a sports game, a concert, even a busy café terrace.
+
+<Scenario title="A wedding photographer asks you to fly a C1 (780 g) over the ceremony for an overhead shot. Is this permitted?">
+**No.** A wedding ceremony is an assembly of people. C1 is still subject to the "no overflight of assemblies" rule in A1. The weight of the drone does not override this limit.
+
+The only legal overhead shot of a crowd in the Open category would require an operating permit in the Specific category — which is a different regulatory path entirely.
+</Scenario>
+
+<CommonMistakes>
+- Thinking C0 (< 250 g) allows flights over crowds — the assembly rule applies to all Open sub-categories.
+- Confusing the 1:1 rule with a 1 m per kg formula — it has nothing to do with drone weight.
+- Activating low-speed mode mid-approach to 5 m instead of before.
+- Applying A1 rules while operating a C2 drone — your drone class determines which sub-category applies, not what you prefer.
+- Thinking 150 m from residential areas means 150 m from every individual building — it means the **area**, not the fence line of a single house.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "dr-q1",
+    stem: "You are flying a C0 drone (190 g) over a public park. A group of 30 people is having a picnic directly below you. Is this permitted?",
+    options: [
+      { id: "a", text: "Yes — C0 drones under 250 g may fly over individuals." },
+      { id: "b", text: "Yes — the park is a public open space, not a controlled area." },
+      { id: "c", text: "No — assemblies of people are forbidden in all Open sub-categories." },
+      { id: "d", text: "Yes — if the flight is below 30 m." },
+    ],
+    correctOptionId: "c",
+    explanation: "The assembly rule (no overflight of gatherings of people) applies to every Open sub-category, including A1 with C0 drones. The 250 g exemption allows overflight of individuals only — not assemblies.",
+    distractorRationales: {
+      a: "C0 allows overflight of individuals, not assemblies. A picnic group is an assembly.",
+      b: "The type of space does not override the assembly rule.",
+      d: "Altitude does not create an exception to the assembly rule.",
+    },
+  },
+  {
+    id: "dr-q2",
+    stem: "Flying in A3 at 60 m altitude. What is the minimum horizontal distance you must keep from uninvolved persons?",
+    options: [
+      { id: "a", text: "30 m — the fixed A3 minimum." },
+      { id: "b", text: "60 m — the 1:1 rule equals flight altitude." },
+      { id: "c", text: "120 m — double the altitude for safety." },
+      { id: "d", text: "150 m — same as the residential area distance." },
+    ],
+    correctOptionId: "b",
+    explanation: "The 1:1 rule requires horizontal distance ≥ flight altitude. At 60 m, that means ≥ 60 m. The 30 m is a floor that applies when flying very low (e.g. at 10 m altitude, you still need 30 m, not 10 m).",
+    distractorRationales: {
+      a: "30 m is the minimum floor, but 1:1 applies at 60 m altitude, making the required distance 60 m.",
+      c: "The rule is 1:1, not 2:1.",
+      d: "150 m is a separate rule for distance from inhabited areas — not from individuals.",
+    },
+  },
+  {
+    id: "dr-q3",
+    stem: "An A2 pilot with a C2 drone wants to photograph a construction worker at 4 m distance. They activate low-speed mode on approach. Is this permitted?",
+    options: [
+      { id: "a", text: "No — A2 minimum distance is 30 m at all times." },
+      { id: "b", text: "No — low-speed mode only applies to C3 drones." },
+      { id: "c", text: "Yes — C2 in low-speed mode reduces the minimum to 5 m." },
+      { id: "d", text: "Yes — uninvolved persons at a worksite are not 'uninvolved'." },
+    ],
+    correctOptionId: "c",
+    explanation: "C2 drones in confirmed low-speed mode (≤ 3 m/s) may close to 5 m from uninvolved persons. A construction worker in the operating area is an uninvolved person unless they are part of the flight crew.",
+    distractorRationales: {
+      a: "30 m is the normal-speed minimum for C2. Low-speed mode changes this to 5 m.",
+      b: "Low-speed mode is a C2 hardware requirement, not a C3 feature.",
+      d: "Workers at a location are not crew unless specifically briefed and assigned a role in the operation.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["as-003"]}>
+You now know the complete distance matrix for A1, A2, and A3 — and why the crowd rule applies regardless of drone weight.
+
+Next: the **1:1 rule deep-dive** covers how to estimate distances in the field without a tape measure, and what the 150 m residential zone means in practice for urban operations.
+</Debrief>

@@ -6,8 +6,8 @@ premise of the category collapses the moment you stop seeing the aircraft.
 </MissionBriefing>
 
 <CinematicScene
+  src="/lessons/vlos-scene-1.png"
   alt="A pilot stands in a flat field at dawn, eyes on a small drone roughly 150 m away. The drone is a barely-visible speck with motion blur."
-  prompt="Style: cinematic, photoreal, aviation-grade. Cool blue-grey palette, dark slate. Pilot silhouette, eyes on drone ~150 m away. Dawn light, foreground sharp, mid-field haze. The frame teaches what VLOS at 150 m actually looks like. 16:9."
   caption="Scene · vlos-scene-1"
 />
 
@@ -25,19 +25,11 @@ for VLOS distance — there is only "can the pilot still tell which way it's
 pointing?"
 
 <Artefact
+  src="/lessons/vlos-cone-diagram.png"
+  alt="VLOS coverage cone — drone inside is legal, drone outside is not"
   description="Diagram of a pilot at the origin with a cone of visual coverage extending forward. A drone inside the cone is labelled 'VLOS'. A second drone outside the cone is labelled 'lost — outside Open category'. A vertical 120 m ceiling is drawn across the cone."
   caption="Diagram · vlos-cone-1"
->
-  <div className="grid gap-3 text-sm">
-    <p className="text-hud-white">VLOS coverage cone (top-down)</p>
-    <ul className="space-y-1 text-telemetry">
-      <li>· Pilot at origin, eyes forward.</li>
-      <li>· Aircraft inside cone → VLOS holds.</li>
-      <li>· Aircraft outside cone → Open-category flight has ended.</li>
-      <li>· Cone shrinks with haze, distance, aircraft size.</li>
-    </ul>
-  </div>
-</Artefact>
+/>
 
 ## First-person view (FPV) is not VLOS
 
