@@ -186,12 +186,14 @@ export function ExamResultView() {
       {/* ── CTAs ─────────────────────────────────────────────────────── */}
       <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
         {result.passed && (
-          <Link
-            href="/claim"
+          <a
+            href="https://e.caa.gov.lv"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-5 py-2.5 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void"
           >
-            {t("claimCta")} →
-          </Link>
+            {t("claimCta")}
+          </a>
         )}
         <Link
           href="/exam"

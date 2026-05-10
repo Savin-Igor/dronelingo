@@ -2,17 +2,16 @@
   "nav": {
     "learn": "Learn",
     "practice": "Practice",
-    "exam": "Exam",
-    "claim": "Claim"
+    "exam": "Exam"
   },
   "landing": {
     "hero": {
       "title": "Pass your EASA A1/A3 drone exam — first try.",
-      "sub": "Free to learn. Pay €19 only after you pass the official exam at e.caa.gov.lv.",
-      "ctaPrimary": "Start learning",
+      "sub": "First topic free. Full access to all 9 topics, practice drills, and mock exams — €19 one-time.",
+      "ctaPrimary": "Try free",
       "ctaSecondary": "How it works"
     },
-    "valueProp": "Free to learn. €19 only after you pass.",
+    "valueProp": "First topic free. Full access for €19 — no subscription.",
     "howItWorks": {
       "heading": "How it works",
       "learn": {
@@ -24,8 +23,8 @@
         "body": "Answer real-style questions. Take mock exams until you consistently score 80%+."
       },
       "pass": {
-        "title": "Pass — then pay",
-        "body": "Take the free official A1/A3 exam at e.caa.gov.lv. Pay €19 only after you pass. Don't pass — don't pay."
+        "title": "Get certified",
+        "body": "Take the official A1/A3 exam at e.caa.gov.lv — you are fully prepared. The exam itself is free at the CAA portal."
       }
     },
     "why": {
@@ -35,8 +34,8 @@
         "body": "Built for the Latvian process — registration at e.caa.gov.lv, A1/A3 exam, real CAA wording."
       },
       "passOrFree": {
-        "title": "Pass or free",
-        "body": "If you don't pass, you don't pay. We're aligned with your goal."
+        "title": "One-time, no subscription",
+        "body": "€19 once. No monthly fees, no renewals, no upsells. Full access is yours to keep."
       },
       "euAligned": {
         "title": "EU regulation aligned",
@@ -119,7 +118,7 @@
     "noMisses": "Every answer correct — excellent!",
     "retake": "Take another exam",
     "noResult": "No recent exam found. Start a new one.",
-    "claimCta": "Claim Pass Guarantee",
+    "claimCta": "Go to e.caa.gov.lv →",
     "durationLabel": "Duration: {minutes} min",
     "history": {
       "heading": "Your recent exams",
@@ -161,34 +160,22 @@
     "privacyLink": "privacy policy",
     "accept": "Got it"
   },
-  "claim": {
-    "title": "Claim your €19 — Pass Guarantee",
-    "subtitle": "Once you have passed the official A1/A3 exam, upload your certificate or enter your registration number — then complete the €19 checkout.",
-    "kindHeading": "How to prove the pass",
-    "kindPdf": "Upload PDF certificate from e.caa.gov.lv",
-    "kindCaaId": "Enter your CAA Latvia registration number",
-    "fileLabel": "PDF certificate (max 5 MB)",
-    "fileHint": "Download the PDF from e.caa.gov.lv after passing.",
-    "fileSelected": "Selected: {name}",
-    "caaIdLabel": "Registration number",
-    "caaIdPlaceholder": "LVA-RP-############",
-    "caaIdHint": "Format: LVA-RP- followed by 12 digits (e.g. LVA-RP-123456789012).",
-    "emailLabel": "Email for the thank-you note",
-    "emailPlaceholder": "you@example.com",
-    "checkout": {
-      "heading": "Stub-checkout (€19)",
-      "note": "This is a Stripe-shaped stub — real Stripe will be wired up after ≥10 successfully completed stub-checkout flows.",
-      "amount": "€19.00",
-      "pay": "Pay €19",
-      "processing": "Processing...",
-      "success": "Payment successful ✓",
-      "successBody": "Thank you! You just gave us the strongest possible signal — that the Pass Guarantee model works. No real money was charged.",
-      "back": "Back to exam"
-    },
-    "errors": {
-      "missing": "Provide a PDF certificate or a registration number.",
-      "caaIdFormat": "Registration number must be in the form LVA-RP-############.",
-      "fileTooLarge": "File exceeds 5 MB."
-    }
+  "access": {
+    "gateTitle": "Full access required",
+    "gateBody": "Get full access to all lessons, practice drills, and mock exams.",
+    "gateCta": "Get full access — €19",
+    "freeNote": "Air Safety topic is always free."
+  },
+  "pricing": {
+    "title": "Unlock the full platform",
+    "subtitle": "First topic free. Pay once to unlock everything.",
+    "includedHeading": "Full access includes",
+    "payHeading": "One-time payment",
+    "productName": "dronelingo — Full Access",
+    "emailLabel": "Email (optional — for receipt)",
+    "pay": "Get full access — €19 →",
+    "processing": "Processing...",
+    "stubNote": "Stub checkout — no real charge.",
+    "freeNote": "Air Safety topic is always free — no payment needed."
   }
 }

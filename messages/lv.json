@@ -2,17 +2,16 @@
   "nav": {
     "learn": "Mācies",
     "practice": "Trenējies",
-    "exam": "Eksāmens",
-    "claim": "Saņemt"
+    "exam": "Eksāmens"
   },
   "landing": {
     "hero": {
       "title": "Sagatavojies EASA A1/A3 droniem eksāmenam — un nokārto to pirmajā reizē.",
-      "sub": "Mācies bez maksas. Maksā €19 tikai tad, kad nokārto oficiālo eksāmenu vietnē e.caa.gov.lv.",
-      "ctaPrimary": "Sākt mācīties",
+      "sub": "Pirmā tēma bez maksas. Pilna piekļuve visām 9 tēmām, treniņiem un simulētajiem eksāmeniem — €19 vienreiz.",
+      "ctaPrimary": "Izmēģināt bez maksas",
       "ctaSecondary": "Kā tas darbojas"
     },
-    "valueProp": "Bez maksas mācīties. €19 tikai pēc sekmīgi nokārtota eksāmena.",
+    "valueProp": "Pirmā tēma bez maksas. Pilna piekļuve par €19 — bez abonēšanas.",
     "howItWorks": {
       "heading": "Kā tas darbojas",
       "learn": {
@@ -24,8 +23,8 @@
         "body": "Atbildi uz reāla stila jautājumiem. Pildi simulētos eksāmenus, līdz stabili sasniedz 80 %+."
       },
       "pass": {
-        "title": "Nokārto — tad maksā",
-        "body": "Nokārto bezmaksas oficiālo A1/A3 eksāmenu vietnē e.caa.gov.lv. Maksā €19 tikai pēc sekmīgas nokārtošanas. Neizdevās — nemaksā."
+        "title": "Nokārto eksāmenu",
+        "body": "Nokārto oficiālo A1/A3 eksāmenu vietnē e.caa.gov.lv — esi pilnībā sagatavots. Eksāmens CAA portālā ir bez maksas."
       }
     },
     "why": {
@@ -35,8 +34,8 @@
         "body": "Pielāgots Latvijas procesam — reģistrācijai vietnē e.caa.gov.lv, A1/A3 eksāmenam, reālajai CAA valodai."
       },
       "passOrFree": {
-        "title": "Nokārto vai bez maksas",
-        "body": "Ja neizdodas, nemaksā. Mūsu mērķis sakrīt ar tavu."
+        "title": "Vienreizējs maksājums",
+        "body": "€19 vienreiz. Bez ikmēneša maksas, bez atjaunošanas, bez papildu piedāvājumiem. Piekļuve paliek uz visiem laikiem."
       },
       "euAligned": {
         "title": "Saskaņots ar ES regulām",
@@ -119,7 +118,7 @@
     "noMisses": "Visas atbildes pareizas — lieliski!",
     "retake": "Sākt jaunu eksāmenu",
     "noResult": "Pēdējais eksāmens nav atrasts. Sāc no jauna.",
-    "claimCta": "Pieprasīt Pass Guarantee",
+    "claimCta": "Doties uz e.caa.gov.lv →",
     "durationLabel": "Ilgums: {minutes} min",
     "history": {
       "heading": "Tavi pēdējie eksāmeni",
@@ -161,34 +160,22 @@
     "privacyLink": "privātuma politika",
     "accept": "Sapratu"
   },
-  "claim": {
-    "title": "Saņem savu €19 — Pass Guarantee",
-    "subtitle": "Ja oficiālais A1/A3 eksāmens nokārtots, augšupielādē apliecību vai ievadi reģistrācijas numuru — un noslēdz €19 maksājumu.",
-    "kindHeading": "Kā apliecināt nokārtošanu",
-    "kindPdf": "Augšupielādēt PDF apliecību no e.caa.gov.lv",
-    "kindCaaId": "Ievadīt CAA Latvia reģistrācijas numuru",
-    "fileLabel": "PDF apliecība (max 5 MB)",
-    "fileHint": "Lejupielādē PDF no e.caa.gov.lv pēc nokārtošanas.",
-    "fileSelected": "Izvēlēts: {name}",
-    "caaIdLabel": "Reģistrācijas numurs",
-    "caaIdPlaceholder": "LVA-RP-############",
-    "caaIdHint": "Formāts: LVA-RP- un 12 cipari (piem., LVA-RP-123456789012).",
-    "emailLabel": "E-pasts paldies vēstulei",
-    "emailPlaceholder": "tava@vēstule.lv",
-    "checkout": {
-      "heading": "Stub-checkout (€19)",
-      "note": "Šis ir Stripe formas iztēlošana — reālais Stripe tiks pieslēgts pēc ≥10 sekmīgi pabeigtām stub-checkout plūsmām.",
-      "amount": "€19,00",
-      "pay": "Maksāt €19",
-      "processing": "Apstrādā...",
-      "success": "Maksājums veiksmīgs ✓",
-      "successBody": "Paldies! Esi devis svarīgu signālu — ka Pass Guarantee modelis darbojas. Reālā summa netika ieturēta.",
-      "back": "Atpakaļ uz eksāmenu"
-    },
-    "errors": {
-      "missing": "Vajag PDF apliecību vai reģistrācijas numuru.",
-      "caaIdFormat": "Reģistrācijas numuram jābūt formātā LVA-RP-############.",
-      "fileTooLarge": "Fails pārsniedz 5 MB."
-    }
+  "access": {
+    "gateTitle": "Nepieciešama pilna piekļuve",
+    "gateBody": "Iegūsti pilnu piekļuvi visām nodarbībām, treniņiem un eksāmeniem.",
+    "gateCta": "Iegūt pilnu piekļuvi — €19",
+    "freeNote": "Gaisa drošības tēma vienmēr ir bez maksas."
+  },
+  "pricing": {
+    "title": "Atslēdz visu platformu",
+    "subtitle": "Pirmā tēma bez maksas. Maksā vienreiz, lai atslēgtu visu.",
+    "includedHeading": "Pilna piekļuve ietver",
+    "payHeading": "Vienreizējs maksājums",
+    "productName": "dronelingo — Pilna piekļuve",
+    "emailLabel": "E-pasts (neobligāti — čekiem)",
+    "pay": "Iegūt pilnu piekļuvi — €19 →",
+    "processing": "Apstrādā...",
+    "stubNote": "Stub checkout — reāla maksa netiek ieturēta.",
+    "freeNote": "Gaisa drošības tēma vienmēr ir bez maksas."
   }
 }

@@ -2,9 +2,11 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { AccessGate } from "@/components/access/AccessGate";
 import { BreadcrumbSchema } from "@/components/learn/Breadcrumb";
 import { MarkLessonVisited } from "@/components/learn/MarkLessonVisited";
 import { lessonComponents } from "@/components/lesson";
+import { isFreeTopic } from "@/lib/access";
 import { localize } from "@/lib/localize";
 import { prisma } from "@/lib/prisma";
 
@@ -32,6 +34,7 @@ export default async function LessonPage({
     index < topic.lessons.length - 1 ? topic.lessons[index + 1] : null;
 
   const body = localize(lesson.bodyMdx, locale);
+  const free = isFreeTopic(topicSlug);
 
   return (
     <main className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 py-12 lg:grid-cols-[15rem_minmax(0,1fr)]">
@@ -91,11 +94,19 @@ export default async function LessonPage({
 
       {/* ── Content ─────────────────────────────────────────────────── */}
       <div>
-        <MarkLessonVisited lessonId={lesson.id} />
+        {free && <MarkLessonVisited lessonId={lesson.id} />}
 
-        <article className="prose prose-dronelingo max-w-none">
-          <MDXRemote source={body} components={lessonComponents} />
-        </article>
+        {free ? (
+          <article className="prose prose-dronelingo max-w-none">
+            <MDXRemote source={body} components={lessonComponents} />
+          </article>
+        ) : (
+          <AccessGate>
+            <article className="prose prose-dronelingo max-w-none">
+              <MDXRemote source={body} components={lessonComponents} />
+            </article>
+          </AccessGate>
+        )}
 
         {lesson.sourceRef ? (
           <p className="mt-12 border-t border-horizon pt-6 font-mono text-xs text-muted">

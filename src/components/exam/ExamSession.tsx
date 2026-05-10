@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { LazyMotion, domAnimation, m, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
 import {
@@ -277,13 +278,25 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
       </div>
 
       {/* ── Submit confirmation modal ─────────────────────────────────── */}
-      {showConfirm && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-void/80 p-4 backdrop-blur-sm"
-          role="dialog"
-          aria-modal="true"
-        >
-          <div className="w-full max-w-md rounded-sm border border-horizon bg-hull p-6 shadow-xl">
+      <LazyMotion features={domAnimation}>
+        <AnimatePresence>
+          {showConfirm && (
+            <m.div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-void/80 p-4 backdrop-blur-sm"
+              role="dialog"
+              aria-modal="true"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.15 }}
+            >
+          <m.div
+            className="w-full max-w-md rounded-sm border border-horizon bg-hull p-6 shadow-xl"
+            initial={{ scale: 0.95, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.95, opacity: 0 }}
+            transition={{ duration: 0.18, ease: "easeOut" }}
+          >
             <h2 className="font-display text-lg font-semibold text-hud-white">
               {t("confirmSubmitTitle")}
             </h2>
@@ -318,9 +331,11 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
                 {t("confirmYes")}
               </button>
             </div>
-          </div>
-        </div>
-      )}
+          </m.div>
+            </m.div>
+          )}
+        </AnimatePresence>
+      </LazyMotion>
     </>
   );
 }

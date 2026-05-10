@@ -7,7 +7,7 @@ const PUBLIC_PATHS = [
   "/learn",
   "/practice",
   "/exam",
-  "/claim",
+  "/pricing",
   "/guide",
   "/faq",
   "/privacy",
@@ -19,8 +19,8 @@ const PRIORITY: Record<string, number> = {
   "/learn": 0.9,
   "/practice": 0.8,
   "/exam": 0.8,
-  "/claim": 0.7,
-  "/guide": 0.9,
+  "/pricing": 0.9,
+  "/guide": 0.8,
   "/faq": 0.6,
 };
 

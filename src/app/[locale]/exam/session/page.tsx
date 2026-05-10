@@ -1,3 +1,4 @@
+import { AccessGate } from "@/components/access/AccessGate";
 import { ExamSession } from "@/components/exam/ExamSession";
 import { buildStratifiedExam } from "@/lib/exam";
 
@@ -13,7 +14,9 @@ export default async function ExamSessionPage({
 
   return (
     <main className="mx-auto max-w-3xl px-6 pb-12 pt-6">
-      <ExamSession questions={questions} />
+      <AccessGate>
+        <ExamSession questions={questions} />
+      </AccessGate>
     </main>
   );
 }

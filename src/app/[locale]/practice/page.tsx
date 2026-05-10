@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { FREE_TOPIC_SLUG } from "@/lib/access";
 import { localize } from "@/lib/localize";
 import { prisma } from "@/lib/prisma";
 import { buildMetadata } from "@/lib/seo";
@@ -49,6 +50,9 @@ export default async function PracticeIndex({
         {topics.map((topic, i) => {
           const count = topic._count.questions;
           const disabled = count === 0;
+          const free = topic.slug === FREE_TOPIC_SLUG;
+          const href = free ? `/practice/${topic.slug}` : "/pricing";
+
           return (
             <li key={topic.id}>
               {disabled ? (
@@ -69,7 +73,7 @@ export default async function PracticeIndex({
                 </div>
               ) : (
                 <Link
-                  href={`/practice/${topic.slug}`}
+                  href={href}
                   className="flex items-center justify-between p-5 transition-colors hover:bg-hull/50"
                 >
                   <div className="flex items-center gap-3">
@@ -85,9 +89,18 @@ export default async function PracticeIndex({
                       </p>
                     </div>
                   </div>
-                  <span className="font-mono text-xs text-muted" aria-hidden>
-                    →
-                  </span>
+                  <div className="flex items-center gap-2">
+                    {free ? (
+                      <span className="rounded-sm border border-green-clear/30 bg-green-clear/10 px-1.5 py-0.5 font-mono text-xs text-green-clear">
+                        FREE
+                      </span>
+                    ) : (
+                      <span className="font-mono text-xs text-muted">🔒</span>
+                    )}
+                    <span className="font-mono text-xs text-muted" aria-hidden>
+                      →
+                    </span>
+                  </div>
                 </Link>
               )}
             </li>

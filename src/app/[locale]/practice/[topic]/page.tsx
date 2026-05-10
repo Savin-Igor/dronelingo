@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { AccessGate } from "@/components/access/AccessGate";
+import { Trainer, type TrainerQuestion } from "@/components/practice/Trainer";
+import { isFreeTopic } from "@/lib/access";
 import { localize } from "@/lib/localize";
 import { prisma } from "@/lib/prisma";
-import { Trainer, type TrainerQuestion } from "@/components/practice/Trainer";
 
 export const dynamic = "force-dynamic";
 
@@ -34,6 +36,8 @@ export default async function PracticeTopicPage({
   });
   if (!topic) notFound();
 
+  const free = isFreeTopic(topicSlug);
+
   const questions: TrainerQuestion[] = topic.questions.map((q) => ({
     id: q.id,
     externalId: q.externalId,
@@ -44,8 +48,8 @@ export default async function PracticeTopicPage({
     sourceRef: q.sourceRef,
   }));
 
-  return (
-    <main className="mx-auto max-w-3xl px-6 py-12">
+  const content = (
+    <>
       <Link
         href="/practice"
         className="font-mono text-xs text-muted transition-colors hover:text-telemetry"
@@ -67,6 +71,12 @@ export default async function PracticeTopicPage({
       ) : (
         <Trainer questions={questions} />
       )}
+    </>
+  );
+
+  return (
+    <main className="mx-auto max-w-3xl px-6 py-12">
+      {free ? content : <AccessGate>{content}</AccessGate>}
     </main>
   );
 }
