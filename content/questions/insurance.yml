@@ -176,3 +176,66 @@
       прекращается и налагается административный штраф.
   sourceRef: "Latvian Aviation Law; MK noteikumi Nr. 447"
   difficulty: 2
+
+- id: in-006
+  stem:
+    lv: Pilots ar obligāto civiltiesiskās atbildības polisi un hull apdrošināšanu (€200 pašriska) zaudē dronu lidojuma laikā — tas krīt kanālā, tiek applūdināts un iznīcināts. Neviens nav ievainots. Kādi zaudējumi tiek atlīdzināti?
+    en: A pilot with mandatory third-party liability insurance and hull insurance (€200 deductible) loses their drone mid-flight — it falls into a canal, floods, and is destroyed. No one was injured. Which losses are covered?
+    ru: У пилота есть обязательное страхование ответственности перед третьими лицами и страхование корпуса (€200 франшизы). Дрон падает в канал, тонет и уничтожен. Никто не пострадал. Какие убытки покрываются?
+  options:
+    - id: a
+      text:
+        lv: Obligātā polise atlīdzina drona vērtību; hull polise nav nepieciešama.
+        en: The mandatory policy covers the drone value; hull is not needed.
+        ru: Обязательный полис покрывает стоимость дрона; hull не нужен.
+    - id: b
+      text:
+        lv: Neviena no polisēm — ūdens bojājums ir izslēgts no visām polisēm.
+        en: Neither policy — water damage is excluded from all policies.
+        ru: Ни один полис — водный ущерб исключён из всех полисов.
+    - id: c
+      text:
+        lv: Hull polise atlīdzina drona vērtību mīnus €200 pašrisks; obligātā polise neko neatlīdzina (nav trešo personu zaudējumu).
+        en: Hull insurance covers the drone value minus the €200 deductible; mandatory policy covers nothing (no third-party loss).
+        ru: Страхование корпуса покрывает стоимость дрона минус €200 франшизы; обязательный полис ничего не покрывает (нет ущерба третьим лицам).
+    - id: d
+      text:
+        lv: Abas polises kopā atlīdzina pilnu drona vērtību.
+        en: Both policies together cover the full drone value.
+        ru: Оба полиса вместе покрывают полную стоимость дрона.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Hull polise sedz drona bojājumus — tā atlīdzinās drona aizstāšanas
+      izmaksas mīnus €200 pašrisks. Obligātā civiltiesiskās atbildības
+      polise sedz trešo personu zaudējumus — šajā gadījumā neviens nav
+      ievainots un nav trešo personu īpašuma bojājumu, tāpēc obligātā polise
+      neko neizmaksā.
+    en: >
+      Hull insurance covers damage to the drone — it will pay the drone
+      replacement cost minus the €200 deductible. The mandatory third-party
+      liability policy covers third-party losses — in this case no one was
+      injured and there was no third-party property damage, so the mandatory
+      policy pays nothing.
+    ru: >
+      Страхование корпуса покрывает ущерб дрону — оно возместит стоимость
+      замены дрона за вычетом €200 франшизы. Обязательный полис покрывает
+      ущерб третьим лицам — в данном случае никто не пострадал и ущерба
+      имуществу третьих лиц нет, поэтому обязательный полис ничего не платит.
+  distractorRationales:
+    a:
+      lv: Obligātā polise nekad nesedz drona bojājumus. Hull polise ir tas, kas atlīdzina drona vērtību — obligātā ir tikai par trešo personu zaudējumiem.
+      en: The mandatory policy never covers drone damage. Hull is what covers the drone value — mandatory covers only third-party losses.
+      ru: Обязательный полис никогда не покрывает ущерб дрону. Hull покрывает стоимость дрона — обязательный только третьих лиц.
+    b:
+      lv: Hull polise parasti ietver ūdens bojājumus. Pārbaudiet polises nosacījumus, bet ūdens bojājums nav automātiski izslēgts.
+      en: Hull policies typically include water damage. Check the policy terms, but water damage is not automatically excluded.
+      ru: Полисы hull обычно включают водный ущерб. Проверьте условия полиса, но водный ущерб не исключается автоматически.
+    d:
+      lv: Abas polises kopā neatlīdzina "pilnu vērtību" — obligātā polise neko neizmaksā (nav trešo personu zaudējumu), un hull polise izmaksā drona vērtību mīnus pašrisks.
+      en: Both policies together do not cover "full value" — the mandatory policy pays nothing (no third-party loss), and hull pays the drone value minus deductible.
+      ru: Оба полиса вместе не покрывают «полную стоимость» — обязательный ничего не платит (нет ущерба третьим лицам), hull платит стоимость дрона минус франшиза.
+  sourceRef: "MK noteikumi Nr. 447; Reg (EC) 785/2004 — hull vs third-party insurance"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision

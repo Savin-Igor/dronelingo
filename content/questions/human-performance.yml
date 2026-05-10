@@ -182,3 +182,191 @@
       заменяет сон.
   sourceRef: "ICAO Doc 9966 — Manual for Fatigue Management"
   difficulty: 2
+
+- id: hp-006
+  stem:
+    lv: Pilots ierodas darba uzņēmumā un konstatē, ka primārajai tālvadības pultij baterija ir tukša. Ir tikai rezerves pults, kuru pilots nav iepriekš izmantojis. Kāda veida stress tas ir?
+    en: A pilot arrives at a commercial job and discovers the primary controller battery is dead. Only an unfamiliar backup controller is available. What type of stress is this?
+    ru: Пилот приезжает на коммерческую съёмку и обнаруживает, что аккумулятор основного пульта разряжен. Есть только незнакомый резервный пульт. Какой это тип стресса?
+  options:
+    - id: a
+      text:
+        lv: Hronisks stress.
+        en: Chronic stress.
+        ru: Хронический стресс.
+    - id: b
+      text:
+        lv: Akūts stress.
+        en: Acute stress.
+        ru: Острый стресс.
+    - id: c
+      text:
+        lv: Tehnisks stress.
+        en: Technical stress.
+        ru: Технический стресс.
+    - id: d
+      text:
+        lv: Šāda situācija nerada nozīmīgu stresu pieredzējušiem pilotiem.
+        en: This situation does not cause significant stress for experienced pilots.
+        ru: Такая ситуация не вызывает значительного стресса у опытных пилотов.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Tehnisks stress rodas no nepazīstamas vai nestrādājošas tehniskās
+      iekārtas — jauns drona modelis, ierīces kļūme, nevēlama aparatūras
+      maiņa. Rezerves pults, kuru pilots nav izmantojis, ir tehnisks stress.
+      Tas ietekmē pat pieredzējušus pilotus, tāpēc IMSAFE jāvērtē pirms
+      katra lidojuma.
+    en: >
+      Technical stress arises from unfamiliar or malfunctioning technical
+      equipment — a new drone model, device failure, unexpected hardware
+      change. An unfamiliar backup controller is technical stress. It affects
+      even experienced pilots, which is why IMSAFE must be assessed before
+      every flight.
+    ru: >
+      Технический стресс возникает из-за незнакомого или неисправного
+      оборудования — новая модель дрона, сбой устройства, неожиданная смена
+      аппаратуры. Незнакомый резервный пульт — технический стресс. Он
+      затрагивает даже опытных пилотов, поэтому IMSAFE нужно оценивать
+      перед каждым полётом.
+  distractorRationales:
+    a:
+      lv: Hronisks stress uzkrājas dienu un nedēļu laikā — pastāvīga darba slodze, miega trūkums, personiskās problēmas. Šis ir situatīvs, tūlītējs stress.
+      en: Chronic stress accumulates over days and weeks — sustained workload, poor sleep, personal circumstances. This is situational, immediate stress.
+      ru: Хронический стресс накапливается дни и недели — длительная нагрузка, недосып, личные проблемы. Это ситуативный, немедленный стресс.
+    b:
+      lv: Akūts stress ir tūlītējs situatīvs spiediens — klients kavējas, veldze laikā, sociāls vai laika spiediens. Tehniskas iekārtas problēma ir tehnisks, nevis akūts stress.
+      en: Acute stress is immediate situational pressure — a late client, time pressure, social or schedule pressure. A technical equipment problem is technical, not acute, stress.
+      ru: "Острый стресс — это немедленное ситуативное давление: задержка клиента, давление времени, социальное или плановое давление. Проблема с техническим оборудованием — это технический, а не острый стресс."
+    d:
+      lv: Pieredzējuši piloti arī piedzīvo tehnisku stresu ar nepazīstamu aprīkojumu — pieredze samazina stresu, bet to nenovērš pilnīgi.
+      en: Experienced pilots also experience technical stress with unfamiliar equipment — experience reduces but does not eliminate stress.
+      ru: Опытные пилоты тоже испытывают технический стресс при работе с незнакомым оборудованием — опыт снижает, но не устраняет стресс.
+  sourceRef: "EASA Easy Access Rules for UAS — Human performance limitations"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: hp-007
+  stem:
+    lv: Pilots ir nomodā 18 stundas. Aptuveni kādam alkohola koncentrācijas ekvivalentam asinīs (pēc BAC) tas atbilst?
+    en: A pilot has been awake for 18 hours. This corresponds approximately to what blood-alcohol concentration (BAC) equivalent?
+    ru: Пилот не спит 18 часов. Это приблизительно соответствует какому эквиваленту концентрации алкоголя в крови (BAC)?
+  options:
+    - id: a
+      text:
+        lv: 0,2 ‰ — virs nulles.
+        en: 0.2 ‰ — slightly above zero.
+        ru: 0,2 ‰ — немного выше нуля.
+    - id: b
+      text:
+        lv: 0,5 ‰ — Latvijā pieļaujamais vadīšanas limits.
+        en: 0.5 ‰ — the Latvian legal driving limit.
+        ru: 0,5 ‰ — допустимый предел вождения в Латвии.
+    - id: c
+      text:
+        lv: Virs 0,5 ‰, tuvojoties 0,8 ‰.
+        en: Above 0.5 ‰, approaching 0.8 ‰.
+        ru: Выше 0,5 ‰, приближаясь к 0,8 ‰.
+    - id: d
+      text:
+        lv: Nav ievērojama ietekme — organisms pielāgojas ilgai nomoda periodam.
+        en: No significant impairment — the body adapts to extended wakefulness.
+        ru: Нет значительного нарушения — организм адаптируется к длительному бодрствованию.
+  correctOptionId: c
+  explanation:
+    lv: >
+      0,5 ‰ BAC ekvivalents parasti tiek saistīts ar ~16 stundu nomodā.
+      18 stundas pārsniedz šo slieksni — atbilstošs ekvivalents ir virs
+      0,5 ‰, tuvojoties 0,8 ‰. Organisms nepielāgojas ilgstošai
+      nomodā uzturēšanai — veiktspēja turpina degradēties.
+    en: >
+      The 0.5 ‰ BAC equivalent is typically associated with ~16 hours awake.
+      18 hours exceeds this threshold — the corresponding equivalent is above
+      0.5 ‰, approaching 0.8 ‰. The body does not adapt to extended
+      wakefulness — performance continues to degrade.
+    ru: >
+      Эквивалент BAC 0,5 ‰ обычно связывают с ~16 часами без сна. 18 часов
+      превышают этот порог — соответствующий эквивалент выше 0,5 ‰,
+      приближаясь к 0,8 ‰. Организм не адаптируется к длительному
+      бодрствованию — производительность продолжает снижаться.
+  distractorRationales:
+    a:
+      lv: 0,2 ‰ atbilst vieglai nogurdinātībai — ievērojami mazāk par 16 stundu nomodā. 18 stundas ir ievērojami augstāka iedarbība.
+      en: 0.2 ‰ corresponds to mild tiredness — well short of 16 hours awake. 18 hours is a significantly higher level of impairment.
+      ru: 0,2 ‰ соответствует лёгкой усталости — значительно меньше 16 часов без сна. 18 часов — значительно более высокий уровень нарушения.
+    b:
+      lv: 0,5 ‰ ekvivalents ir saistīts ar ~16 stundu nomodā. 18 stundas pārsniedz šo slieksni — ietekme ir lielāka.
+      en: The 0.5 ‰ equivalent is associated with ~16 hours awake. 18 hours exceeds this threshold — the impairment is greater.
+      ru: Эквивалент 0,5 ‰ связан с ~16 часами без сна. 18 часов превышают этот порог — нарушение сильнее.
+    d:
+      lv: Organisms nepielāgojas — kognitīvā veiktspēja turpina pasliktināties lineāri bez miega. Pielāgošanas mīts ir dokumentēts kā neprecīzs.
+      en: The body does not adapt — cognitive performance continues to degrade linearly without sleep. The adaptation myth is documented as inaccurate.
+      ru: Организм не адаптируется — когнитивные способности продолжают линейно ухудшаться без сна. Миф об адаптации задокументирован как неточный.
+  sourceRef: "ICAO Doc 9966; Dawson & Reid (1997) — wakefulness and BAC equivalence"
+  difficulty: 3
+  cognitiveLevel: recall
+  scenarioType: numeric
+
+- id: hp-008
+  stem:
+    lv: Kurš no šiem apraksta VISAS trīs pilota pašpārbaudes jautājumu tēmas pirms lidojuma?
+    en: Which of these describes ALL three pilot self-test question topics before a flight?
+    ru: Какой из вариантов описывает ВСЕ три темы самопроверки пилота перед полётом?
+  options:
+    - id: a
+      text:
+        lv: Vai es zinu lidojuma maršrutu? Vai akumulatori uzlādēti? Vai laikapstākļi ir labvēlīgi?
+        en: Do I know the flight route? Are the batteries charged? Is the weather favourable?
+        ru: Знаю ли я маршрут? Заряжены ли аккумуляторы? Благоприятна ли погода?
+    - id: b
+      text:
+        lv: Vai es varu pieņemt droš lēmumu laika spiedienā? Vai mana uzmanība ir šim lidojumam? Vai esmu gatavs pārtraukt misiju, ja nepieciešams?
+        en: Can I make a safe decision under pressure right now? Is my attention on this flight? Am I ready to abort if needed?
+        ru: Могу ли я сейчас принять безопасное решение под давлением? Моё внимание на этом полёте? Готов ли я прервать миссию при необходимости?
+    - id: c
+      text:
+        lv: Vai man ir A1/A3 sertifikāts? Vai apdrošināšana ir spēkā? Vai drona marķējums ir pareizs?
+        en: Do I hold an A1/A3 certificate? Is insurance current? Is the drone marking correct?
+        ru: Есть ли у меня сертификат A1/A3? Действует ли страховка? Правильна ли маркировка дрона?
+    - id: d
+      text:
+        lv: Vai BGKIS pieteikums apstiprināts? Vai laikapstākļi atbilst prasībām? Vai drons atjauno GPS savienojumu?
+        en: Is the BGKIS application approved? Is weather within limits? Is the drone acquiring GPS?
+        ru: Одобрена ли заявка BGKIS? Погода в пределах нормы? Получает ли дрон GPS?
+  correctOptionId: b
+  explanation:
+    lv: >
+      Trīs pašpārbaudes jautājumi pirms lidojuma: (1) Vai es varu pieņemt drošu
+      lēmumu laika spiedienā tieši tagad? (2) Vai mana uzmanība ir šim
+      lidojumam — vai arī uz daudzām citām lietām? (3) Vai esmu gatavs
+      pārtraukt misiju, ja kaut kas noiet greizi? Ja kāda atbilde ir "nē" vai
+      "domāju, ka jā" — tas ir "nē".
+    en: >
+      The three pre-flight self-test questions: (1) Can I make a safe decision
+      under time pressure right now? (2) Is my attention on this flight — or on
+      several other things? (3) Am I ready to abort the mission if something
+      goes wrong? If any answer is "no" or "I think so" — that counts as "no".
+    ru: >
+      Три вопроса самопроверки перед полётом: (1) Могу ли я прямо сейчас
+      принять безопасное решение под временным давлением? (2) Моё внимание на
+      этом полёте — или на нескольких других вещах? (3) Готов ли я прервать
+      миссию, если что-то пойдёт не так? Если любой ответ «нет» или «думаю,
+      да» — это «нет».
+  distractorRationales:
+    a:
+      lv: Šie ir pirmslido vides un aparatūras pārbaudes jautājumi, nevis pilota pašpārbaudē iekļautie jautājumi par kognitīvo gatavību.
+      en: These are pre-flight environment and hardware check questions, not the pilot self-test questions about cognitive readiness.
+      ru: Это вопросы предполётной проверки окружающей среды и оборудования, а не вопросы самопроверки пилота о когнитивной готовности.
+    c:
+      lv: Sertifikāts, apdrošināšana un marķējums ir atbilstības pārbaudes — tos nevajadzētu jaukt ar kognitīvās gatavības pašpārbaudi.
+      en: Certificate, insurance, and marking are compliance checks — they should not be confused with the cognitive readiness self-test.
+      ru: Сертификат, страховка и маркировка — проверки соответствия, их не следует путать с самопроверкой когнитивной готовности.
+    d:
+      lv: BGKIS, laikapstākļi un GPS — vides pārbaudes pirms lidojuma, nevis kognitīvās pašpārbaudes jautājumi.
+      en: BGKIS, weather, and GPS are pre-flight environment checks, not cognitive self-test questions.
+      ru: BGKIS, погода и GPS — предполётные проверки окружающей среды, а не вопросы когнитивной самопроверки.
+  sourceRef: "EASA Easy Access Rules — Human performance; ICAO Doc 9966"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: factual

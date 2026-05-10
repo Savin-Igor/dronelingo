@@ -185,3 +185,137 @@
       атак.
   sourceRef: "ENISA Good Practices for UAS cyber security"
   difficulty: 1
+
+- id: se-006
+  stem:
+    lv: Lidojuma laikā kartes attēls pārvēršas pelēks un satelītu skaits krīt uz nulli. Drons aktivē RTH. Kāds ir visticamākais kiberuzbrukuma veids?
+    en: Mid-flight, the map display goes grey and the satellite count drops to zero. The drone activates RTH. What cyber threat is most likely?
+    ru: В середине полёта карта сереет, количество спутников падает до нуля. Дрон активирует RTH. Какая кибератака наиболее вероятна?
+  options:
+    - id: a
+      text:
+        lv: GNSS spoofing — viltus pozīcijas signāls novirza UAS.
+        en: GNSS spoofing — fake position signals redirect the UAS.
+        ru: GNSS spoofing — поддельные сигналы позиции перенаправляют UAS.
+    - id: b
+      text:
+        lv: GNSS jamming — RF troksnis nomāc GPS signālu joslu, izraisot signāla zudumu.
+        en: GNSS jamming — RF noise suppresses the GPS signal band, causing signal loss.
+        ru: GNSS jamming — радиопомехи подавляют полосу GPS-сигнала, вызывая потерю сигнала.
+    - id: c
+      text:
+        lv: Firmware uzlaušana — drona programmatūra ir sabojāta.
+        en: Firmware hack — the drone software has been corrupted.
+        ru: Взлом прошивки — программное обеспечение дрона повреждено.
+    - id: d
+      text:
+        lv: Wi-Fi uzbrukums — pults ir atvienota.
+        en: Wi-Fi attack — the controller has been disconnected.
+        ru: Wi-Fi атака — пульт управления отключён.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Pelēka karte un satelītu skaita kritums uz nulli ir GNSS jamming pazīmes
+      — signāls tiek pilnībā nomākts. Spoofing, gluži pretēji, parāda viltotu
+      pozīciju (nevis signāla zudumu) — karte rāda atrašanās vietu, bet tā ir
+      nepareiza. RTH aktivēšana bez GPS ir iezīmēta drona atbilde uz pozīcijas
+      zudumu.
+    en: >
+      A grey map and satellite count dropping to zero are signatures of GNSS
+      jamming — the signal is fully suppressed. Spoofing, by contrast, shows a
+      false position (not signal loss) — the map shows a location, but it is
+      wrong. RTH activating without GPS is the drone's designed response to
+      position loss.
+    ru: >
+      Серая карта и падение числа спутников до нуля — признаки GNSS jamming:
+      сигнал полностью подавлен. Spoofing, напротив, показывает ложную позицию
+      (не потерю сигнала) — карта показывает местоположение, но неверное.
+      Активация RTH без GPS — штатная реакция дрона на потерю позиции.
+  distractorRationales:
+    a:
+      lv: Spoofing parāda viltotu pozīciju, nevis signāla zudumu. Kartes pelēkošana un satelītu krišanās uz nulli norāda uz pilnīgu signāla zudumu — tas ir jamming.
+      en: Spoofing shows a false position, not signal loss. A greying map and satellite count dropping to zero indicate total signal loss — that is jamming.
+      ru: Spoofing показывает ложную позицию, а не потерю сигнала. Потемнение карты и падение спутников до нуля указывают на полную потерю сигнала — это jamming.
+    c:
+      lv: Firmware uzlaušana ietekmē drona uzvedību vai drošības iestatījumus, bet parasti neizraisa tūlītēju GPS signāla zudumu un pelēku karti.
+      en: Firmware hacking affects drone behaviour or safety settings but does not typically cause an immediate GPS signal loss and grey map.
+      ru: Взлом прошивки влияет на поведение дрона или настройки безопасности, но обычно не вызывает немедленную потерю GPS-сигнала и потемнение карты.
+    d:
+      lv: Wi-Fi uzbrukums var traucēt vadības saiti, bet ne GPS satelītu signālu. Pelēka karte un satelītu zudums ir GPS slāņa problēma, nevis vadības saites problēma.
+      en: A Wi-Fi attack can disrupt the control link but not the GPS satellite signal. A grey map and satellite loss is a GPS layer issue, not a control link issue.
+      ru: Wi-Fi атака может нарушить канал управления, но не GPS-сигнал спутника. Серая карта и потеря спутников — проблема уровня GPS, а не канала управления.
+  sourceRef: "ENISA threat report — GNSS spoofing/jamming; EASA UAS security"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: se-007
+  stem:
+    lv: Lidojuma laikā drons zaudē datu saiti 30 sekundes. Fail-safe aktivējas un drons drošā kārtā atgriežas. Nav ievainojumu, nav pilotētu gaisa kuģu tuvumā. Kāds ir ziņošanas pienākums?
+    en: Mid-flight the drone loses the data link for 30 seconds. Fail-safe activates and the drone returns safely. No injuries, no manned aircraft nearby. What is the reporting obligation?
+    ru: В середине полёта дрон теряет канал данных на 30 секунд. Fail-safe активируется, дрон возвращается безопасно. Травм нет, пилотируемых воздушных судов рядом нет. Каково обязательство по уведомлению?
+  options:
+    - id: a
+      text:
+        lv: Obligāts ziņojums 72 stundu laikā — jebkura fail-safe aktivēšana ir obligāta.
+        en: Mandatory report within 72 hours — any fail-safe activation is mandatory.
+        ru: Обязательный отчёт в течение 72 часов — любая активация fail-safe обязательна.
+    - id: b
+      text:
+        lv: Nav ziņošanas — notikums noslēdzās bez sekām.
+        en: No report — the event concluded without consequences.
+        ru: Без отчёта — событие завершилось без последствий.
+    - id: c
+      text:
+        lv: Brīvprātīgs ziņojums — notikums ir drošībai nozīmīgs (saites zudums, fail-safe aktivēšana), bet neizpilda nevienu no trim obligātajiem ierosinātājiem.
+        en: Voluntary report — the event is safety-relevant (link loss, fail-safe activation) but does not meet any of the three mandatory triggers.
+        ru: Добровольный отчёт — событие важно для безопасности (потеря связи, активация fail-safe), но не соответствует ни одному из трёх обязательных триггеров.
+    - id: d
+      text:
+        lv: Ziņojums tikai tad, ja fail-safe nebija pareizi konfigurēts.
+        en: Report only if the fail-safe was not correctly configured.
+        ru: Отчёт только если fail-safe был неверно настроен.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Trīs obligātie ierosinātāji ir: (1) smags savainojums vai bojāeja,
+      (2) tuvtrāpījums vai sadursme ar pilotētu gaisa kuģi, (3) sadursme ar
+      kritisko infrastruktūru. Datu saites zudums un fail-safe aktivēšana ar
+      drošu atgriešanos neatbilst nevienam no tiem. Tomēr notikums ir drošībai
+      nozīmīgs — saites zudums ir atkārtotas kļūmes priekšvēstnesis — un
+      brīvprātīgs ziņojums ir ieteicams.
+    en: >
+      The three mandatory triggers are: (1) serious injury or fatality, (2)
+      near-miss or collision with a manned aircraft, (3) collision with critical
+      infrastructure. A data link loss and fail-safe activation with a safe
+      return does not meet any of them. However the event is safety-relevant —
+      a link loss is a precursor to repeated failures — and a voluntary report
+      is recommended.
+    ru: >
+      Три обязательных триггера: (1) тяжёлая травма или гибель, (2)
+      сближение или столкновение с пилотируемым воздушным судном, (3)
+      столкновение с критической инфраструктурой. Потеря канала данных и
+      активация fail-safe с безопасным возвратом не соответствует ни одному.
+      Однако событие важно для безопасности — потеря связи предвещает
+      повторные отказы — и добровольный отчёт рекомендуется.
+  distractorRationales:
+    a:
+      lv: Fail-safe aktivēšana nav pati par sevi obligāts ziņošanas ierosinātājs. Obligātie ierosinātāji ir ievainojumi, pilotētu gaisa kuģu sadursme vai kritiskās infrastruktūras sadursme.
+      en: Fail-safe activation is not itself a mandatory reporting trigger. The mandatory triggers are injury, manned aircraft near-miss/collision, or critical infrastructure collision.
+      ru: Активация fail-safe сама по себе не является обязательным триггером уведомления. Обязательные триггеры — травма, сближение/столкновение с пилотируемым судном или критической инфраструктурой.
+    b:
+      lv: >-
+        "Bez sekām" nenozīmē "bez nozīmes drošībā". Datu saites zudums ir
+        drošībai nozīmīgs notikums, kura ziņošana veicina drošības datu bāzes uzlabošanu.
+      en: >-
+        "No consequences" does not mean "no safety significance". A data link
+        loss is a safety-relevant event whose voluntary reporting contributes to safety database improvement.
+      ru: ««Без последствий» не означает «без значения для безопасности». Потеря канала данных — событие, важное для безопасности, добровольное уведомление о котором способствует улучшению базы данных безопасности.
+    d:
+      lv: Ziņošanas pienākums nav atkarīgs no fail-safe konfigurācijas. Šajā gadījumā fail-safe darbojās pareizi — tas nemazina brīvprātīgās ziņošanas vērtību.
+      en: The reporting obligation does not depend on fail-safe configuration. In this case the fail-safe worked correctly — this does not reduce the value of voluntary reporting.
+      ru: Обязательство по уведомлению не зависит от конфигурации fail-safe. В данном случае fail-safe сработал правильно — это не уменьшает ценность добровольного уведомления.
+  sourceRef: "Reg (EU) 376/2014 — mandatory vs voluntary occurrence reporting"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision

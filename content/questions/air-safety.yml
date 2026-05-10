@@ -184,3 +184,421 @@
       расстояние от жилых/коммерческих зон, не от отдельных лиц.
   sourceRef: "Reg (EU) 2019/947 UAS.OPEN.040(1)(b)"
   difficulty: 2
+
+- id: as-006
+  stem:
+    lv: Pilots filmē piekrastes krauju no 400 m attāluma. Drons ir tikko pamanāms — mazs punkts debesīs. Vai VLOS tiek ievērots?
+    en: A pilot films a coastal cliff from 400 m. The drone is barely visible — a small dot in the sky. Is VLOS maintained?
+    ru: Пилот снимает прибрежный утёс с расстояния 400 м. Дрон едва виден — маленькая точка в небе. Соблюдается ли VLOS?
+  options:
+    - id: a
+      text:
+        lv: Jā — drons ir redzams, tātad VLOS ir ievērots.
+        en: Yes — the drone is visible, so VLOS is maintained.
+        ru: Да — дрон виден, значит VLOS соблюдается.
+    - id: b
+      text:
+        lv: Nē — VLOS prasa neapšaubāmu vizuālu kontroli pār attieksmi un kursu, ne tikai redzamību.
+        en: No — VLOS requires unambiguous visual control of attitude and course, not merely visibility.
+        ru: Нет — VLOS требует однозначного визуального контроля ориентации и курса, а не просто видимости.
+    - id: c
+      text:
+        lv: Jā — ražotāja lietotne rāda drona atrašanās vietu kartē.
+        en: Yes — the manufacturer app shows the drone's position on a map.
+        ru: Да — приложение производителя показывает положение дрона на карте.
+    - id: d
+      text:
+        lv: Tikai tad, ja pilots izmanto binokli.
+        en: Only if the pilot uses binoculars.
+        ru: Только если пилот использует бинокль.
+  correctOptionId: b
+  explanation:
+    lv: >
+      VLOS nozīmē, ka pilots spēj nepārtraukti un bez palīglīdzekļiem noteikt
+      UAS atrašanās vietu, augstumu, ātrumu un kustības virzienu. "Tikko pamanāms"
+      neatbilst šim standartam — vizuālajai kontrolei jābūt neapšaubāmai.
+    en: >
+      VLOS requires the pilot to continuously and unaided determine the UAS
+      position, altitude, speed, and direction of travel. "Barely visible" does
+      not meet this standard — visual control must be unambiguous.
+    ru: >
+      VLOS означает, что пилот способен непрерывно и без вспомогательных
+      средств определять положение, высоту, скорость и направление движения
+      UAS. «Едва виден» этому стандарту не соответствует.
+  distractorRationales:
+    a:
+      lv: Vienkārša redzamība bez spējas noteikt attieksmi un kursu nav pietiekama VLOS ievērošanai.
+      en: Mere visibility without the ability to determine attitude and course is insufficient for VLOS.
+      ru: Простой видимости без возможности определить ориентацию и курс недостаточно для VLOS.
+    c:
+      lv: Kartes rādīšana lietotnē ir GPS pozīcija, ne vizuālā kontrole. VLOS neaizstāj ar digitāliem rīkiem.
+      en: The app map shows a GPS position, not visual control. VLOS cannot be substituted with digital tools.
+      ru: Карта приложения показывает GPS-позицию, а не визуальный контроль. VLOS нельзя заменить цифровыми инструментами.
+    d:
+      lv: Binoklis ir palīglīdzeklis — VLOS ir tieši definēts kā "neapbruņotas acs" prasība (brilles atļautas, binokļi nav).
+      en: Binoculars are an aid — VLOS is explicitly defined as an "unaided eye" requirement (corrective glasses allowed, binoculars are not).
+      ru: Бинокль — вспомогательное средство. VLOS явно определён как требование «невооружённым глазом» (очки для коррекции допустимы, бинокли — нет).
+  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(3); EASA AMC1 UAS.OPEN.060"
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-007
+  stem:
+    lv: Pilots ar C1 klases dronu vēlas filmēt atklāta futbola mača skatītājus no 50 m augstuma. Tribīnēs ir 300 cilvēki. Kāda ir pareizā darbība?
+    en: A pilot with a C1 drone wants to film spectators at an outdoor football match from 50 m altitude. There are 300 people in the stands. What is the correct action?
+    ru: Пилот с дроном C1 хочет снимать зрителей открытого футбольного матча с высоты 50 м. На трибунах 300 человек. Какое правильное действие?
+  options:
+    - id: a
+      text:
+        lv: Lidot — C1 ir vislīdzīgākais klasei un atļauts A1 apakškategorijā.
+        en: Fly — C1 is the lightest class and is allowed in A1.
+        ru: Лететь — C1 — лёгкий класс, разрешён в A1.
+    - id: b
+      text:
+        lv: Lidot, ja augstums ir virs 100 m.
+        en: Fly if altitude is above 100 m.
+        ru: Лететь, если высота выше 100 м.
+    - id: c
+      text:
+        lv: Nelidot — lidojumi virs cilvēku pulcēšanās vietām ir aizliegti visā Atvērtajā kategorijā.
+        en: Do not fly — overflights of assemblies of people are prohibited across the entire Open category.
+        ru: Не летать — полёты над скоплениями людей запрещены во всей Открытой категории.
+    - id: d
+      text:
+        lv: Lidot, ja organizators devis rakstveida atļauju.
+        en: Fly if the organiser has given written permission.
+        ru: Лететь, если организатор дал письменное разрешение.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Lidojums virs cilvēku pulcēšanās vietām ir absolūts aizliegums Atvērtajā
+      kategorijā — tas attiecas uz visām apakškategorijām (A1, A2, A3) un visām
+      UAS klasēm (C0–C4). Ne klase, ne sertifikāts, ne organizatora atļauja
+      neaizstāj šo aizliegumu.
+    en: >
+      Overflight of assemblies of people is an absolute prohibition across the
+      entire Open category — it applies to all subcategories (A1, A2, A3) and
+      all UAS classes (C0–C4). No class, certificate, or organiser permission
+      overrides this prohibition.
+    ru: >
+      Полёт над скоплениями людей — абсолютный запрет во всей Открытой
+      категории, для всех подкатегорий (A1, A2, A3) и классов (C0–C4). Никакой
+      класс, сертификат или разрешение организатора не отменяет этот запрет.
+  distractorRationales:
+    a:
+      lv: C1 atļauj A1 operācijas, bet A1 neatļauj lidot virs cilvēku pulcēšanās vietām. Klases priekšrocības neattiecas uz pulcēšanās aizliegumu.
+      en: C1 permits A1 operations, but A1 does not permit overflights of assemblies. The class privileges do not override the assembly prohibition.
+      ru: C1 разрешает A1-операции, но A1 не допускает полётов над скоплениями. Привилегии класса не отменяют запрет.
+    b:
+      lv: Augstums nemaina pulcēšanās aizliegumu — tas ir absolūts neatkarīgi no lidojuma augstuma.
+      en: Altitude does not modify the assembly prohibition — it is absolute regardless of flight altitude.
+      ru: Высота не меняет запрет на скопления — он абсолютен вне зависимости от высоты полёта.
+    d:
+      lv: Organizatora atļauja ir privātpersonas piekrišana, nevis regulatīvā atļauja. Regulā nav paredzēta iespēja atcelt šo aizliegumu ar privātu atļauju.
+      en: An organiser's permission is private consent, not a regulatory authorisation. The regulation provides no mechanism to waive this prohibition via private permission.
+      ru: Разрешение организатора — это частное согласие, а не регуляторное разрешение. Правила не предусматривают отмены этого запрета частным образом.
+  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.010(1); UAS.OPEN.020/030/040"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-008
+  stem:
+    lv: Pilots grib lidot netālu no 95 m augsta torņa. Horizontālā distance no torņa ir mazāka par torņa augstumu. Kāds ir maksimālais pieļaujamais lidojuma augstums?
+    en: A pilot wants to fly near a 95 m tall tower. The horizontal distance to the tower is less than the tower height. What is the maximum permitted flight altitude?
+    ru: Пилот хочет летать рядом с башней высотой 95 м. Горизонтальное расстояние до башни меньше высоты башни. Какова максимально допустимая высота полёта?
+  options:
+    - id: a
+      text:
+        lv: 120 m — Atvērtās kategorijas augstuma robeža.
+        en: 120 m — the Open-category altitude limit.
+        ru: 120 м — предел высоты Открытой категории.
+    - id: b
+      text:
+        lv: 95 m — torņa augstums.
+        en: 95 m — the tower height.
+        ru: 95 м — высота башни.
+    - id: c
+      text:
+        lv: 110 m — torņa augstums + 15 m pagarinājums.
+        en: 110 m — tower height + 15 m extension.
+        ru: 110 м — высота башни + расширение 15 м.
+    - id: d
+      text:
+        lv: 50 m — rezerves augstums blakus šķēršļiem.
+        en: 50 m — conservative altitude near obstacles.
+        ru: 50 м — консервативная высота рядом с препятствиями.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Reg 2019/947 paredz augstuma robežu 15 m virs augstākā fiksētā šķēršļa
+      100 m rādiusā no UAS, kad pilots darbojas noteiktos apstākļos netālu no
+      infrastruktūras. Ja tornis ir 95 m un horizontālā distance ir mazāka par
+      torņa augstumu, maksimālais pieļaujamais augstums ir 95 + 15 = 110 m.
+    en: >
+      Reg 2019/947 provides a 15 m altitude extension above the highest fixed
+      obstacle within 100 m of the UAS when the pilot operates near
+      infrastructure under specific conditions. Tower at 95 m + 15 m extension
+      = 110 m maximum.
+    ru: >
+      Регл. 2019/947 предусматривает расширение высоты на 15 м над самым
+      высоким неподвижным препятствием в радиусе 100 м от UAS при работе
+      вблизи инфраструктуры. Башня 95 м + 15 м = 110 м максимально.
+  distractorRationales:
+    a:
+      lv: 120 m ir standarta Atvērtās kategorijas robeža, bet šajā gadījumā netālu no šķēršļa tiek piemērota +15 m taisna kārtula, nevis standarta robeža.
+      en: 120 m is the standard Open-category cap, but here the +15 m structure rule applies rather than the standard cap.
+      ru: 120 м — стандартный предел Открытой категории, но здесь применяется правило +15 м к строению, а не стандартный предел.
+    b:
+      lv: Torņa augstums ir pamats, bet regulā atļauta +15 m pagarinājums virs šī augstuma, lai ļautu pilotam darboties netālu no infrastruktūras.
+      en: The tower height is the base, but the regulation allows a +15 m extension above that height to permit operations near infrastructure.
+      ru: Высота башни — базовое значение, но правила допускают расширение +15 м сверх, чтобы обеспечить работу вблизи инфраструктуры.
+    d:
+      lv: 50 m ir piesardzīga prakse, bet nav juridiski noteikta robeža šajā gadījumā. 110 m ir reglamentētais maksimums.
+      en: 50 m is cautious practice but not the legally defined limit in this case. 110 m is the regulated maximum.
+      ru: 50 м — осторожная практика, но не юридически установленный предел в данном случае. 110 м — регламентированный максимум.
+  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.020/030/040(2)(b) — altitude extension near structures"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: numeric
+
+- id: as-009
+  stem:
+    lv: C0 drona pilots šķērso parka ceļu, kur atsevišķas personas staigā turpat apakšā. Pilotam nav C1 sertifikāta, tikai reģistrācija kā operators. Vai lidojums ir likumīgs?
+    en: A C0 drone pilot crosses a park path where isolated individuals are walking directly below. The pilot holds no C1 certificate, only operator registration. Is the flight legal?
+    ru: Пилот C0-дрона пролетает над парковой дорожкой, по которой идут отдельные люди. Пилот не имеет сертификата C1, только регистрацию оператора. Законен ли полёт?
+  options:
+    - id: a
+      text:
+        lv: Nē — pilotam nav nepieciešamā sertifikāta.
+        en: No — the pilot lacks the required certificate.
+        ru: Нет — у пилота нет необходимого сертификата.
+    - id: b
+      text:
+        lv: Jā — C0 ir vienīgā klase, kurai atļauts pārlaisties virs atsevišķām nepiederošām personām, un C0 pilotam nav nepieciešams sertifikāts.
+        en: Yes — C0 is the only class allowed to overfly isolated uninvolved individuals, and C0 requires no pilot certificate.
+        ru: Да — C0 единственный класс, которому разрешено пролетать над отдельными посторонними, и C0 не требует сертификата пилота.
+    - id: c
+      text:
+        lv: Jā, bet tikai zem 50 m augstumā.
+        en: Yes, but only below 50 m altitude.
+        ru: Да, но только ниже 50 м.
+    - id: d
+      text:
+        lv: Nē — šāds lidojums prasa rakstisku piekrišanu no personām apakšā.
+        en: No — such a flight requires written consent from the individuals below.
+        ru: Нет — такой полёт требует письменного согласия от людей внизу.
+  correctOptionId: b
+  explanation:
+    lv: >
+      C0 ir vienīgā klase A1 apakškategorijā, kurai atļauts pārlaisties virs
+      atsevišķām nepiederošām personām (nevis pulcēšanās). Pilotam nav
+      nepieciešams tālvadības pilota sertifikāts C0 operācijām, tikai operators
+      jāreģistrē, ja drona masa vai aprīkojums to prasa.
+    en: >
+      C0 is the only class in A1 permitted to overfly isolated uninvolved
+      individuals (not assemblies). No pilot certificate is required for C0
+      operations — only operator registration where required by mass or
+      equipment.
+    ru: >
+      C0 — единственный класс в A1, которому разрешено пролетать над отдельными
+      посторонними (не скоплениями). Сертификат пилота для C0 не требуется —
+      только регистрация оператора там, где она обязательна по массе или
+      оборудованию.
+  distractorRationales:
+    a:
+      lv: C0 operācijām sertifikāts nav obligāts — tas ir C0 klases priekšrocība. Sertifikāts nepieciešams C1 un augstākām klasēm.
+      en: No certificate is required for C0 — this is the C0 class privilege. A certificate is required for C1 and above.
+      ru: Для C0 сертификат не обязателен — это преимущество класса. Сертификат нужен для C1 и выше.
+    c:
+      lv: Augstuma ierobežojums nav saistīts ar atļauju pārlaisties virs personām. Drīkst pārlaisties līdz 120 m robežai.
+      en: The altitude limit is not linked to the permission to overfly individuals. The 120 m cap still applies.
+      ru: Ограничение по высоте не связано с разрешением летать над людьми. Применяется стандартный предел 120 м.
+    d:
+      lv: Piekrišana no atsevišķām personām nav prasīta C0 pārlidojumam. Pulcēšanās aizliegums ir absolūts, bet atsevišķas personas ir atļautas ar C0.
+      en: Consent from isolated individuals is not required for C0 overflights. The assembly prohibition is absolute; individual persons are permitted with C0.
+      ru: Согласие отдельных людей не требуется для C0. Запрет на скопления абсолютен, но отдельные люди разрешены для C0.
+  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020(1)(c); Reg (EU) 2019/945 Part 1 — C0"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-010
+  stem:
+    lv: Lidojuma laikā drons aizlido aiz koku rindas un kļūst vizuāli nepieejams. GPS rāda atrašanās vietu un lietotne darbojas normāli. Ko pilotam darīt?
+    en: During flight the drone flies behind a tree line and becomes visually inaccessible. GPS shows the position and the app works normally. What must the pilot do?
+    ru: Во время полёта дрон улетает за деревья и становится визуально недоступен. GPS показывает положение, приложение работает нормально. Что должен сделать пилот?
+  options:
+    - id: a
+      text:
+        lv: Turpināt lidojumu — GPS un lietotnes dati aizvieto VLOS.
+        en: Continue — GPS and app data substitute for VLOS.
+        ru: Продолжать — данные GPS и приложения заменяют VLOS.
+    - id: b
+      text:
+        lv: Aktivēt FPV režīmu, lai uzturētu situācijas apzināšanos.
+        en: Activate FPV mode to maintain situational awareness.
+        ru: Включить FPV для поддержания ситуационной осведомлённости.
+    - id: c
+      text:
+        lv: Nekavējoties atgriezt dronu VLOS robežās.
+        en: Return the drone to VLOS immediately.
+        ru: Немедленно вернуть дрон в зону VLOS.
+    - id: d
+      text:
+        lv: Turpināt, ja novērotājs var redzēt dronu no citas vietas.
+        en: Continue if an observer can see the drone from another position.
+        ru: Продолжать, если наблюдатель видит дрон с другой позиции.
+  correctOptionId: c
+  explanation:
+    lv: >
+      VLOS ir nepārtraukta prasība visā lidojumā. GPS un digitālie rīki
+      neaizvieto vizuālo kontroli. Tiklīdz drons kļūst vizuāli nepieejams,
+      pilots pārkāpj VLOS prasību un ir jāatjauno redzamība.
+    en: >
+      VLOS is a continuous requirement throughout the flight. GPS and digital
+      tools do not substitute for visual control. Once the drone is visually
+      inaccessible, the pilot is violating VLOS and must restore visibility.
+    ru: >
+      VLOS — непрерывное требование на протяжении всего полёта. GPS и цифровые
+      инструменты не заменяют визуальный контроль. Как только дрон стал
+      визуально недоступен, пилот нарушает VLOS и обязан восстановить
+      видимость.
+  distractorRationales:
+    a:
+      lv: GPS un lietotnes dati nodrošina pozīciju informāciju, bet ne vizuālo kontroli pār attieksmi un orientāciju, ko prasa VLOS.
+      en: GPS and app data provide position information but not the visual control of attitude and orientation that VLOS requires.
+      ru: GPS и данные приложения дают информацию о положении, но не визуальный контроль ориентации, который требует VLOS.
+    b:
+      lv: FPV paplašina pilota uztveri, bet nav VLOS aizstājējs — tas ir atsevišķs darba režīms ar savām prasībām (novērotājs).
+      en: FPV extends the pilot's perception but is not a VLOS substitute — it is a separate operating mode with its own requirements (observer).
+      ru: FPV расширяет восприятие пилота, но не заменяет VLOS — это отдельный режим со своими требованиями (наблюдатель).
+    d:
+      lv: Atklātajā kategorijā nav paredzēts darba veids ar novērotāju atsevišķā vietā (bez FPV brilles). Novērotāja loma ir stāvēt blakus pilotam, nevis aizstāt VLOS no attālas vietas.
+      en: Open category does not provide for operation with a separated observer (without FPV). The observer's role is to stand next to the pilot, not to substitute VLOS from a remote position.
+      ru: Открытая категория не предусматривает работу с наблюдателем на отдельной позиции (без FPV). Роль наблюдателя — стоять рядом с пилотом, а не заменять VLOS с удалённой точки.
+  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(3); AMC1 UAS.OPEN.060"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-011
+  stem:
+    lv: Kura UAS klase ir VIENĪGĀ, kurai nav jāatbilst Direct Remote ID prasībai?
+    en: Which UAS class is the ONLY one exempt from the Direct Remote ID requirement?
+    ru: Какой класс UAS является ЕДИНСТВЕННЫМ, освобождённым от требования Direct Remote ID?
+  options:
+    - id: a
+      text:
+        lv: C1.
+        en: C1.
+        ru: C1.
+    - id: b
+      text:
+        lv: C2.
+        en: C2.
+        ru: C2.
+    - id: c
+      text:
+        lv: C4.
+        en: C4.
+        ru: C4.
+    - id: d
+      text:
+        lv: C0.
+        en: C0.
+        ru: C0.
+  correctOptionId: d
+  explanation:
+    lv: >
+      C0 klase (< 250 g, maks. ātrums 19 m/s) ir atbrīvota no Direct Remote ID
+      prasības, jo tā pārstāv zemākā riska kategoriju. C1, C2, C3 ir obligāta
+      Direct Remote ID. C4 klases prasības atšķiras — tam nav autonomo
+      lidojumu režīmu.
+    en: >
+      C0 class (< 250 g, max 19 m/s) is exempt from Direct Remote ID as the
+      lowest-risk class. C1, C2, C3 require Direct Remote ID. C4 has different
+      requirements — it is manual-only with no autonomous modes.
+    ru: >
+      Класс C0 (< 250 г, макс. 19 м/с) освобождён от Direct Remote ID как
+      низкорисковый. C1, C2, C3 требуют Direct Remote ID. C4 имеет особые
+      требования — только ручное управление.
+  distractorRationales:
+    a:
+      lv: C1 klasei ir obligāts Direct Remote ID — tas ir viena no galvenajām C1 drošības prasībām.
+      en: C1 requires Direct Remote ID — it is one of the core C1 safety requirements.
+      ru: C1 требует Direct Remote ID — это одно из ключевых требований безопасности C1.
+    b:
+      lv: C2 klasei ir obligāts Direct Remote ID — tas ļauj identifikāciju tuvākās apkārtnes zonās un atvieglot uzraudzību.
+      en: C2 requires Direct Remote ID — it enables identification in close-range operating areas and supports oversight.
+      ru: C2 требует Direct Remote ID — это обеспечивает идентификацию в зонах близкого контакта.
+    c:
+      lv: C4 klasei nav autonomo lidojumu režīmu, bet tam ir obligāts Direct Remote ID, lai nodrošinātu identifikāciju A3 zonās.
+      en: C4 has no autonomous modes but still requires Direct Remote ID to enable identification in A3 zones.
+      ru: C4 не имеет автономных режимов, но всё равно требует Direct Remote ID для идентификации в зонах A3.
+  sourceRef: "Reg (EU) 2019/945 Annex Parts 1–5 — Remote ID requirements per class"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: factual
+
+- id: as-012
+  stem:
+    lv: Pilots A3 apakškategorijā lido 70 m augstumā. Cik liela ir minimālā horizontālā distance no nepiederošām personām pēc 1:1 noteikuma?
+    en: A pilot in A3 is flying at 70 m altitude. What is the minimum horizontal distance from uninvolved persons under the 1:1 rule?
+    ru: Пилот в A3 летит на высоте 70 м. Какова минимальная горизонтальная дистанция от посторонних по правилу 1:1?
+  options:
+    - id: a
+      text:
+        lv: 30 m — minimālā A3 distance neatkarīgi no augstuma.
+        en: 30 m — the minimum A3 distance regardless of altitude.
+        ru: 30 м — минимальная дистанция A3 вне зависимости от высоты.
+    - id: b
+      text:
+        lv: 70 m — 1:1 noteikums nosaka distance ≥ lidojuma augstumam.
+        en: 70 m — the 1:1 rule sets distance ≥ flight altitude.
+        ru: 70 м — правило 1:1 задаёт дистанцию ≥ высоте полёта.
+    - id: c
+      text:
+        lv: 35 m — puse no lidojuma augstuma.
+        en: 35 m — half the flight altitude.
+        ru: 35 м — половина высоты полёта.
+    - id: d
+      text:
+        lv: 150 m — A3 distance no apdzīvotām zonām.
+        en: 150 m — the A3 distance from inhabited areas.
+        ru: 150 м — дистанция A3 от жилых зон.
+  correctOptionId: b
+  explanation:
+    lv: >
+      A3 apakškategorijā distance no nepiederošām personām ir vismaz 30 m VAI
+      1:1 noteikums — horizontālā distance ne mazāka par lidojuma augstumu —
+      kas ir lielāks. Pie 70 m augstuma 1:1 nosaka 70 m, kas ir lielāks par
+      minimālo 30 m, tātad 70 m ir pareizā atbilde.
+    en: >
+      In A3 the distance from uninvolved persons is at least 30 m OR the 1:1
+      rule — horizontal distance not less than flight altitude — whichever is
+      greater. At 70 m altitude, 1:1 yields 70 m which exceeds the 30 m
+      minimum, so 70 m is correct.
+    ru: >
+      В A3 дистанция от посторонних — не менее 30 м ИЛИ правило 1:1 —
+      горизонтальная дистанция не меньше высоты полёта — что больше. При
+      высоте 70 м правило 1:1 даёт 70 м, что превышает минимум 30 м,
+      следовательно, правильный ответ — 70 м.
+  distractorRationales:
+    a:
+      lv: 30 m ir minimums, bet tikai tad, ja lidojuma augstums ir ≤ 30 m. Pie 70 m augstuma 1:1 noteikums nosaka 70 m.
+      en: 30 m is the minimum but only when flight altitude is ≤ 30 m. At 70 m altitude the 1:1 rule sets 70 m.
+      ru: 30 м — минимум, но только если высота полёта ≤ 30 м. При 70 м правило 1:1 устанавливает 70 м.
+    c:
+      lv: 1:1 noteikums nozīmē distance = augstums, nevis puse no augstuma. Nav 1:0,5 noteikuma.
+      en: The 1:1 rule means distance equals altitude, not half the altitude. There is no 1:0.5 rule.
+      ru: Правило 1:1 означает дистанция = высота, а не половина высоты. Правила 1:0,5 не существует.
+    d:
+      lv: 150 m ir minimālā distance no apdzīvotām, komerciālām, rūpnieciskām vai atpūtas zonām — ne no atsevišķām personām. Personas tiek regulētas ar 30 m / 1:1 noteikumu.
+      en: 150 m is the minimum distance from residential, commercial, industrial, or recreational areas — not from individual persons. Persons are governed by the 30 m / 1:1 rule.
+      ru: 150 м — минимальная дистанция от жилых, коммерческих, промышленных или рекреационных зон, а не от отдельных людей. Люди регулируются правилом 30 м / 1:1.
+  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.040(1)(b)"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: numeric

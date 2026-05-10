@@ -182,3 +182,312 @@
       В Латвии публикуются на `ais.lgs.lv/page/UAS_geozones`.
   sourceRef: "EUROCAE ED-269; ais.lgs.lv/page/UAS_geozones"
   difficulty: 3
+
+- id: al-006
+  stem:
+    lv: Pilots pārbauda airspace.lv/drones rīta pusdienlaikā un neredz ierobežojumus. Vai pietiek ar to pirms lidojuma pēcpusdienā?
+    en: A pilot checks airspace.lv/drones at noon and sees no restrictions. Is this sufficient before an afternoon flight?
+    ru: Пилот проверяет airspace.lv/drones в полдень и не видит ограничений. Достаточно ли этого перед полётом во второй половине дня?
+  options:
+    - id: a
+      text:
+        lv: Jā — UGZ dati ir stabili un mainās reti.
+        en: Yes — UGZ data is stable and changes rarely.
+        ru: Да — данные UGZ стабильны и редко меняются.
+    - id: b
+      text:
+        lv: Nē — papildus jāpārbauda NOTAM, jo tie var noteikt pagaidu ierobežojumus (militārās mācības, avārijas operācijas, aviošovi).
+        en: No — NOTAMs must also be checked, as they may establish temporary restrictions (military exercises, emergency operations, airshows).
+        ru: Нет — необходимо также проверить NOTAM, поскольку они могут устанавливать временные ограничения (военные учения, аварийные операции, авиашоу).
+    - id: c
+      text:
+        lv: Jā, ja pilots šajā vietā ir lidojis iepriekš bez problēmām.
+        en: Yes, if the pilot has flown at this site before without issues.
+        ru: Да, если пилот ранее летал здесь без проблем.
+    - id: d
+      text:
+        lv: Pietiek pārbaudīt drona ražotāja lietotni.
+        en: Checking the drone manufacturer's app is sufficient.
+        ru: Достаточно проверить приложение производителя дрона.
+  correctOptionId: b
+  explanation:
+    lv: >
+      UGZ dati aptver pastāvīgās zonas, bet NOTAM satur pagaidu informāciju —
+      militārās mācības, glābšanas operācijas, aviašovus, ārkārtas situācijas —
+      kas var noteikt papildu ierobežojumus. Pirmreizēja pārbaude dienā ar
+      turpmāko NOTAM ignorēšanu nav pietiekama pirms pēcpusdienas lidojuma.
+    en: >
+      UGZ data covers permanent zones, but NOTAMs contain temporary information
+      — military exercises, rescue operations, airshows, emergencies — that may
+      impose additional restrictions. A one-time morning check without checking
+      NOTAMs is insufficient before an afternoon flight.
+    ru: >
+      Данные UGZ охватывают постоянные зоны, но NOTAM содержат временную
+      информацию — военные учения, спасательные операции, авиашоу, аварийные
+      ситуации — которые могут вводить дополнительные ограничения.
+  distractorRationales:
+    a:
+      lv: UGZ zonas var mainīties, turklāt NOTAM ievieš pagaidu ierobežojumus, kas nav atspoguļoti UGZ slānī.
+      en: UGZ zones can change, and NOTAMs introduce temporary restrictions not reflected in the UGZ layer.
+      ru: Зоны UGZ могут меняться, а NOTAM вводят временные ограничения, не отражённые в слое UGZ.
+    c:
+      lv: Iepriekšēja pieredze vietā neliecina, ka šodien nebūs pagaidu ierobežojumu. Katrs lidojums prasa pārbaudi.
+      en: Prior experience at a site provides no assurance that today has no temporary restrictions. Each flight requires a check.
+      ru: Предыдущий опыт на месте не гарантирует отсутствия временных ограничений сегодня. Каждый полёт требует проверки.
+    d:
+      lv: Ražotāja lietotnes bieži izmanto to pašu UGZ datu kopu, bet var nebūt aktuālas un neatvieto juridiski saistošo avotu — airspace.lv — un NOTAM sistēmu.
+      en: Manufacturer apps often use the same UGZ dataset but may not be current and do not substitute for the legally binding source — airspace.lv — and the NOTAM system.
+      ru: Приложения производителей часто используют те же данные UGZ, но могут быть устаревшими и не заменяют юридически обязательный источник — airspace.lv — и систему NOTAM.
+  sourceRef: "Reg (EU) 2019/947 Art. 15; CAA Latvia NOTAM service"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: al-007
+  stem:
+    lv: Pilots plāno lidojumu 5 km no Rīgas lidostas sliekšņa, 80 m augstumā. Rīgas lidostas CTR pastāvīgi pārklāj šo teritoriju. Ko pilotam darīt?
+    en: A pilot plans a flight 5 km from the Riga airport threshold, at 80 m altitude. Riga airport CTR permanently covers this area. What must the pilot do?
+    ru: Пилот планирует полёт в 5 км от порога ВПП Рижского аэропорта на высоте 80 м. CTR Рижского аэропорта постоянно охватывает эту территорию. Что должен сделать пилот?
+  options:
+    - id: a
+      text:
+        lv: Lidot brīvi — 5 km attālums ir ārpus standarta 3 km aizsargjoslas.
+        en: Fly freely — 5 km distance is outside the standard 3 km buffer.
+        ru: Летать свободно — расстояние 5 км за пределами стандартного буфера 3 км.
+    - id: b
+      text:
+        lv: Iesniegt BGKIS pieteikumu un gaidīt apstiprinājumu pirms lidojuma.
+        en: Submit a BGKIS application and wait for approval before flying.
+        ru: Подать заявку в BGKIS и дождаться одобрения перед полётом.
+    - id: c
+      text:
+        lv: Lidot zem 50 m augstuma — tas ir automātiski atļauts CTR.
+        en: Fly below 50 m altitude — that is automatically permitted in CTR.
+        ru: Летать ниже 50 м — это автоматически разрешено в CTR.
+    - id: d
+      text:
+        lv: Sazināties tieši ar gaisa satiksmes vadību (ATC) pa telefonu.
+        en: Contact air traffic control (ATC) directly by phone.
+        ru: Связаться напрямую с диспетчерской службой по телефону.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Rīgas lidostas CTR pārklāj lielu platību. Jebkurš lidojums ierobežotā
+      UGZ (kas ietver CTR) prasa BGKIS pieteikumu un apstiprinājumu. Nav
+      automātiskas "drošas attāluma" vai "drošas augstuma" izņēmuma
+      Atvērtajā kategorijā CTR iekšienē.
+    en: >
+      Riga airport CTR covers a large area. Any flight in a restricted UGZ
+      (which includes the CTR) requires a BGKIS application and approval.
+      There is no automatic "safe distance" or "safe altitude" exemption
+      within CTR in the Open category.
+    ru: >
+      CTR Рижского аэропорта охватывает большую зону. Любой полёт в
+      ограниченной UGZ (включая CTR) требует заявки в BGKIS и одобрения.
+      Автоматических исключений по «безопасному расстоянию» или «безопасной
+      высоте» внутри CTR для Открытой категории нет.
+  distractorRationales:
+    a:
+      lv: CTR robeža nav standarta 3 km — Rīgas CTR aptver ievērojami plašāku teritoriju. Jebkura pozīcija CTR iekšienē prasa apstiprinājumu.
+      en: CTR boundary is not a standard 3 km — Riga CTR covers a substantially larger area. Any position inside CTR requires approval.
+      ru: Граница CTR не равна стандартным 3 км — CTR Риги охватывает значительно большую территорию. Любая позиция внутри CTR требует одобрения.
+    c:
+      lv: Nav automātiskas augstuma izņēmuma CTR iekšienē. Visi lidojumi CTR prasa BGKIS apstiprinājumu neatkarīgi no augstuma.
+      en: There is no automatic altitude exemption inside CTR. All flights within CTR require BGKIS approval regardless of altitude.
+      ru: Автоматических исключений по высоте внутри CTR нет. Все полёты в CTR требуют одобрения BGKIS вне зависимости от высоты.
+    d:
+      lv: Tieša saziņa ar ATC pa telefonu nav Latvijas procedūra UAS pieteikumiem. Obligātais kanāls ir BGKIS — e.caa.gov.lv.
+      en: Direct phone contact with ATC is not the Latvian procedure for UAS applications. The required channel is BGKIS — e.caa.gov.lv.
+      ru: Прямой телефонный контакт с ATC — не латвийская процедура для заявок UAS. Обязательный канал — BGKIS через e.caa.gov.lv.
+  sourceRef: "CAA Latvia BGKIS requirements; Riga CTR — airspace.lv/drones"
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: al-008
+  stem:
+    lv: Kādos apstākļos pilots var pārsniegt 120 m standarta augstuma robežu Atvērtajā kategorijā?
+    en: Under what conditions may a pilot exceed the 120 m standard altitude limit in the Open category?
+    ru: При каких условиях пилот может превысить стандартный предел 120 м в Открытой категории?
+  options:
+    - id: a
+      text:
+        lv: Nekad — 120 m ir absolūts augstuma limits.
+        en: Never — 120 m is an absolute altitude limit.
+        ru: Никогда — 120 м — абсолютный предел высоты.
+    - id: b
+      text:
+        lv: Pie infrastruktūras objekta (ēkas, antenu masta utt.), kas ir augstāks par 105 m, lidojot 1:1 horizontālā attālumā — līdz šķērsļa augstumam + 15 m.
+        en: Near an infrastructure structure (building, antenna mast, etc.) taller than 105 m, flying within 1:1 horizontal distance — up to the structure height + 15 m.
+        ru: Рядом с объектом инфраструктуры (здание, антенная мачта и т. д.) выше 105 м, летя в горизонтальном расстоянии 1:1 — до высоты объекта + 15 м.
+    - id: c
+      text:
+        lv: Ja operators ir reģistrēts kā komercoperators.
+        en: If the operator is registered as a commercial operator.
+        ru: Если оператор зарегистрирован как коммерческий.
+    - id: d
+      text:
+        lv: Ja pilots ir ieguvis A2 kompetences sertifikātu.
+        en: If the pilot holds the A2 competence certificate.
+        ru: Если у пилота есть сертификат компетентности A2.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Reg 2019/947 paredz pagarinājumu virs 120 m tikai pie augstiem mākslīgiem
+      šķēršļiem: ja UAS darbojas 1:1 horizontālā attālumā no šķēršļa, kas
+      augstāks par 105 m, pilots var lidot līdz šķēršļa augstumam + 15 m.
+      Šī izņēmuma nav automātiski — tas attiecas uz infrastruktūras apkopšanu
+      vai inspekciju.
+    en: >
+      Reg 2019/947 provides the above-120 m extension only near tall artificial
+      structures: when the UAS operates within a 1:1 horizontal distance of a
+      structure taller than 105 m, the pilot may fly up to structure height + 15 m.
+      This is not automatic — it applies to infrastructure maintenance or inspection
+      operations.
+    ru: >
+      Регл. 2019/947 предусматривает превышение 120 м только вблизи высоких
+      искусственных препятствий: когда UAS работает в горизонтальном расстоянии
+      1:1 от объекта выше 105 м, пилот может летать до высоты объекта + 15 м.
+      Это не автоматически — применяется к техническому обслуживанию или
+      инспекции инфраструктуры.
+  distractorRationales:
+    a:
+      lv: 120 m ir standarta robeža, bet regulā ir paredzēts šķērsļa pagarinājums (+15 m) konkrētos apstākļos.
+      en: 120 m is the standard limit but the regulation provides the structure extension (+15 m) under specific conditions.
+      ru: 120 м — стандартный предел, но правила предусматривают расширение (+15 м) в конкретных условиях.
+    c:
+      lv: Komerciālā reģistrācija neietekmē augstuma limitu. Limits ir tehniski-tiesisks, ne komerciāls.
+      en: Commercial registration does not affect the altitude limit. The limit is technical-regulatory, not commercial.
+      ru: Коммерческая регистрация не влияет на предел высоты. Предел технико-правовой, не коммерческий.
+    d:
+      lv: A2 sertifikāts attiecas uz horizontālajām distancēm no personām, nevis augstuma robežas paplašinājumu.
+      en: The A2 certificate concerns horizontal distances from persons, not altitude limit extension.
+      ru: Сертификат A2 касается горизонтальных дистанций от людей, а не расширения предела высоты.
+  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020/030/040(2)(b)"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: regulatory
+
+- id: al-009
+  stem:
+    lv: Pilota plānotajā lidojuma zonā ir sācies meža ugunsgrēks. Ārkārtas dienesti (helikopteri, gaisa tilpnes lidaparāti) darbojas apkārtnē. Kāda ir pareizā rīcība?
+    en: In the pilot's planned flight area, a forest fire has broken out. Emergency services (helicopters, water bombers) are operating nearby. What is the correct action?
+    ru: В планируемой зоне полёта вспыхнул лесной пожар. В районе работают экстренные службы (вертолёты, самолёты-водосброс). Каково правильное действие?
+  options:
+    - id: a
+      text:
+        lv: Lidot zemāk par ārkārtas kuģiem un turpināt plānoto misiju.
+        en: Fly below the emergency aircraft and continue the planned mission.
+        ru: Летать ниже аварийных воздушных судов и продолжать запланированную миссию.
+    - id: b
+      text:
+        lv: Pārbaudīt NOTAM vai pagaidu gaisa telpas ierobežojumus un nelidot, ja zona ir ierobežota vai ja ārkārtas dienesti darbojas tiešā tuvumā.
+        en: Check for NOTAMs or temporary airspace restrictions and do not fly if the area is restricted or emergency services are operating in close proximity.
+        ru: Проверить NOTAM или временные ограничения воздушного пространства и не летать, если зона ограничена или экстренные службы работают в непосредственной близости.
+    - id: c
+      text:
+        lv: Lidot — UAS ir mazs un neuzskatāms par draudu.
+        en: Fly — a UAS is small and not considered a threat.
+        ru: Лететь — UAS маленький и не считается угрозой.
+    - id: d
+      text:
+        lv: Sazināties ar meža ugunsgrēka komandieri un saņemt verbālu atļauju.
+        en: Contact the forest fire commander and get verbal permission.
+        ru: Связаться с командиром тушения пожара и получить устное разрешение.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Ārkārtas operācijas bieži ietver pagaidu NOTAM vai ārkārtas gaisa telpas
+      ierobežojumus. Pilotam jāpārbauda aktuālie NOTAM un jāatturas no
+      lidojuma, ja tuvumā darbojas ārkārtas dienesti — UAS var traucēt
+      helikopteru vai gaisa tilpnes operācijām ar letālām sekām.
+    en: >
+      Emergency operations often involve temporary NOTAMs or emergency airspace
+      restrictions. The pilot must check current NOTAMs and refrain from flying
+      if emergency services are operating nearby — a UAS can disrupt helicopter
+      or water-bomber operations with fatal consequences.
+    ru: >
+      Аварийные операции часто сопровождаются временными NOTAM или аварийными
+      ограничениями воздушного пространства. Пилот обязан проверить текущие
+      NOTAM и воздержаться от полёта, если в районе работают экстренные
+      службы — UAS может помешать вертолётам или самолётам-водосбросам с
+      фатальными последствиями.
+  distractorRationales:
+    a:
+      lv: Ārkārtas dienesti bieži strādā dažādos augstumos, arī ļoti zemās lidojuma trajektorijās. Drona klātbūtne ārkārtas zonā var izraisīt operāciju pārtraukumu vai sadursmi.
+      en: Emergency services frequently work at various altitudes, including very low flight paths. A drone present in the emergency zone can cause operational disruption or collision.
+      ru: Аварийные службы работают на различных высотах, включая очень низкие. Присутствие дрона в зоне аварии может нарушить операцию или вызвать столкновение.
+    c:
+      lv: UAS lielums nenovērš sadursmes risku ar zemā augstumā lidojošiem helikopteriem vai gaisa tilpnes lidaparātiem. Ir dokumentētas sadursmes ar drona nozares vēsturē.
+      en: UAS size does not remove the collision risk with low-flying helicopters or water bombers. Collisions with drones have been documented in aviation history.
+      ru: Размер UAS не исключает риска столкновения с низколетящими вертолётами или водосбросами. В истории авиации зафиксированы столкновения с дронами.
+    d:
+      lv: Ugunsgrēka komandiera verbālā atļauja nav juridisks mehānisms gaisa telpas atvēršanai. Tikai kompetentā iestāde (CAA Latvia) var atcelt gaisa telpas ierobežojumu.
+      en: The fire commander's verbal permission is not a legal mechanism for opening airspace. Only the competent authority (CAA Latvia) can lift an airspace restriction.
+      ru: Устное разрешение командира пожаротушения не является юридическим механизмом открытия воздушного пространства. Только компетентный орган (CAA Latvia) может снять ограничение.
+  sourceRef: "Reg (EU) 2019/947 Art. 15; CAA Latvia NOTAM service"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: al-010
+  stem:
+    lv: Kāda ir ED-269 geo-awareness datu kopu galvenā funkcija UAS sistēmās?
+    en: What is the primary function of the ED-269 geo-awareness dataset in UAS systems?
+    ru: Какова основная функция набора данных geo-awareness ED-269 в системах UAS?
+  options:
+    - id: a
+      text:
+        lv: Nodrošināt navigācijas kartes pilotam.
+        en: Provide navigation maps for the pilot.
+        ru: Обеспечивать навигационные карты для пилота.
+    - id: b
+      text:
+        lv: Informēt UAS par ierobežotajām ģeogrāfiskajām zonām un automātiski brīdināt vai apturēt lidojumu zonās, kur tas nav atļauts.
+        en: Inform the UAS of restricted geographic zones and automatically warn or prevent flight in areas where it is not permitted.
+        ru: Информировать UAS об ограниченных географических зонах и автоматически предупреждать или предотвращать полёт в запрещённых зонах.
+    - id: c
+      text:
+        lv: Nodrošināt reāllaika laikapstākļu informāciju.
+        en: Provide real-time weather information.
+        ru: Предоставлять данные о погоде в реальном времени.
+    - id: d
+      text:
+        lv: Reģistrēt lidojuma datus mākoņglabātavā.
+        en: Log flight data to cloud storage.
+        ru: Записывать данные полёта в облачное хранилище.
+  correctOptionId: b
+  explanation:
+    lv: >
+      EUROCAE ED-269 standarts definē ģeogrāfiskās informētības datu kopu
+      formātu, ko UAS izmanto, lai automātiski identificētu ierobežotās zonas,
+      brīdinātu pilotu vai apturētu lidojumu. Latvijā šīs datu kopas publicē
+      ais.lgs.lv portālā. Datu kopu jāatjaunina regulāri, lai reflektētu
+      izmaiņas UGZ zonēs.
+    en: >
+      EUROCAE ED-269 defines the format of geo-awareness datasets that UAS use
+      to automatically identify restricted zones, warn the pilot, or prevent
+      flight entry. In Latvia these datasets are published at ais.lgs.lv. The
+      dataset must be updated regularly to reflect changes in UGZ zones.
+    ru: >
+      EUROCAE ED-269 определяет формат наборов данных geo-awareness, которые
+      UAS использует для автоматической идентификации ограниченных зон,
+      предупреждения пилота или предотвращения входа. В Латвии эти данные
+      публикуются на ais.lgs.lv. Набор данных должен регулярно обновляться.
+  distractorRationales:
+    a:
+      lv: Navigācijas kartes pilotam nodrošina lietotnes UI slānis, nevis ED-269 datu kopa. ED-269 ir mašīnlasāms zonēšanas datu formāts, nevis vizuāla karte.
+      en: Navigation maps for the pilot are provided by the app UI layer, not the ED-269 dataset. ED-269 is a machine-readable zoning data format, not a visual map.
+      ru: Навигационные карты для пилота обеспечивает UI-слой приложения, а не набор данных ED-269. ED-269 — машиночитаемый формат данных зонирования, а не визуальная карта.
+    c:
+      lv: Laikapstākļu informācija nāk no meteoroloģiskajiem pakalpojumiem, nevis no ED-269. Geo-awareness attiecas tikai uz ģeogrāfiskajām ierobežojumu zonām.
+      en: Weather information comes from meteorological services, not ED-269. Geo-awareness relates only to geographic restriction zones.
+      ru: Погодная информация поступает от метеорологических служб, а не от ED-269. Geo-awareness касается только географических зон ограничений.
+    d:
+      lv: Lidojuma datu reģistrēšana ir atsevišķa funkcija, ko pārvalda UAS datu žurnālēšanas sistēma, nevis geo-awareness datu kopa.
+      en: Flight data logging is a separate function managed by the UAS data logging system, not the geo-awareness dataset.
+      ru: Регистрация данных полёта — отдельная функция, управляемая системой логирования UAS, а не набором данных geo-awareness.
+  sourceRef: "EUROCAE ED-269; Reg (EU) 2019/947 Art. 15 — geo-awareness"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: factual
