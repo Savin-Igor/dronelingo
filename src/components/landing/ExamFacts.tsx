@@ -1,36 +1,48 @@
 import { useTranslations } from "next-intl";
 
-// Cited facts. Source for all: docs/knowledge/latvia-caa/web-snapshots/02-a1-a3-online-exam.md
-// (CAA Latvia, droni.caa.gov.lv, captured 2026-05-08).
+// Labels are display-only constants. Full descriptive text comes from translations.
+// Source: docs/knowledge/latvia-caa/web-snapshots/02-a1-a3-online-exam.md
 const FACTS = [
-  "questions",
-  "duration",
-  "threshold",
-  "cost",
-  "location",
-  "validity",
+  { metric: "40", label: "QUESTIONS" },
+  { metric: "40", label: "MINUTES" },
+  { metric: "≥75%", label: "PASS THRESHOLD" },
+  { metric: "FREE", label: "TO STUDY" },
+  { metric: "ONLINE", label: "CAA LATVIA" },
+  { metric: "5 YRS", label: "EU VALIDITY" },
 ] as const;
 
 export function ExamFacts() {
   const t = useTranslations("landing.facts");
 
   return (
-    <section className="px-6 py-20">
+    <section className="px-6 py-24">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-center text-3xl font-semibold text-gray-900">
+        <p className="text-center font-mono text-xs uppercase tracking-[0.25em] text-cyan-pulse">
+          The exam
+        </p>
+        <h2 className="mt-3 text-center font-display text-3xl font-semibold text-hud-white">
           {t("heading")}
         </h2>
-        <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+        <ul className="mt-14 grid grid-cols-2 divide-x divide-y divide-horizon border border-horizon sm:grid-cols-3">
           {FACTS.map((fact) => (
             <li
-              key={fact}
-              className="rounded-md border border-gray-200 px-5 py-4 text-gray-700"
+              key={fact.label}
+              className="flex flex-col gap-1 px-6 py-5 transition-colors hover:bg-hull/50"
             >
-              {t(fact)}
+              <span className="font-mono text-2xl font-semibold text-hud-white sm:text-3xl">
+                {fact.metric}
+              </span>
+              <span className="font-mono text-xs uppercase tracking-widest text-muted">
+                {fact.label}
+              </span>
             </li>
           ))}
         </ul>
-        <p className="mt-8 text-center text-sm text-gray-500">{t("source")}</p>
+
+        <p className="mt-6 text-center font-mono text-xs text-muted">
+          {t("source")}
+        </p>
       </div>
     </section>
   );

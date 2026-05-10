@@ -15,15 +15,18 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-gray-200 bg-white px-6 py-12">
-      <div className="mx-auto flex max-w-5xl flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm text-gray-500">
-          © {year} dronelingo · {t("tagline")}
+    <footer className="border-t border-horizon bg-hull px-6 py-10">
+      <div className="mx-auto flex max-w-5xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <p className="font-mono text-xs text-muted">
+          © {year} DRONELINGO &nbsp;·&nbsp; {t("tagline")}
         </p>
-        <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-700">
+        <ul className="flex flex-wrap gap-x-5 gap-y-2">
           {LINKS.map((link) => (
             <li key={link}>
-              <Link href={HREF[link]} className="hover:text-gray-900">
+              <Link
+                href={HREF[link]}
+                className="text-xs text-muted transition-colors hover:text-telemetry"
+              >
                 {t(link)}
               </Link>
             </li>

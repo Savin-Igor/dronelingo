@@ -12,7 +12,7 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   return (
-    <main className="bg-white text-gray-900">
+    <main>
       <StructuredData locale={locale} />
       <Hero />
       <ValueProp />
