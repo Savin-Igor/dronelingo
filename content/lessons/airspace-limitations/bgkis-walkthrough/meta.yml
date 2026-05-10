@@ -1,0 +1,17 @@
+slug: bgkis-walkthrough
+ord: 3
+title:
+  lv: BGKIS pieteikuma iesniegšana — soli pa solim
+  en: Filing a BGKIS notification — step by step
+  ru: Подача заявки BGKIS — пошаговое руководство
+sourceRef: "CAA Latvia BGKIS rules effective 2025-01-01; MK Nr. 248 §53, §73; airspace.lv/drones"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

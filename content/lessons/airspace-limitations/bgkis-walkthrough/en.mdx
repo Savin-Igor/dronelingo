@@ -1,0 +1,153 @@
+# Filing a BGKIS notification — step by step
+
+<MissionBriefing objective="After this lesson you will be able to check a zone on airspace.lv, read the zone colours correctly, and submit a BGKIS flight notification before any flight in a restricted UAS geographical zone in Latvia.">
+Since 1 January 2025 a BGKIS notification is not optional theory — it is a mandatory operational skill. No approved notification, no legal flight in a restricted zone.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/airspace-lv-interface.png"
+  alt="Stylised airspace.lv/drones map interface showing Latvia with colour-coded zones: green unrestricted, amber conditional, red prohibited, with a zone info panel"
+  caption="Interface · airspace.lv/drones map"
+/>
+
+## What is BGKIS and why it became mandatory
+
+**BGKIS** (Bāzes ģeotelpiskās informācijas kontroļu un informēšanas par situāciju sistēma — Base Geospatial Control and Situational Awareness System) is the CAA Latvia portal at [e.caa.gov.lv](https://e.caa.gov.lv) through which pilots submit flight notifications for restricted UAS Geographical Zones (UGZ).
+
+Before 1 January 2025 notifications were voluntary in most zones. Cabinet Regulation No. 248 (§53, §73) made them **mandatory**: any flight in a restricted UGZ requires a submitted and approved BGKIS notification before takeoff.
+
+A denied or unanswered notification means no legal flight — not even a short hover.
+
+## Step 1: Check the zone on airspace.lv/drones
+
+Open **airspace.lv/drones** and navigate to your planned flight location. The map shows every UAS Geographical Zone in Latvia.
+
+<Artefact
+  description="Zone colour legend: green = no restriction, amber = notification required via BGKIS, red = prohibited for Open category, grey hatch = CTR airport zone requiring BGKIS"
+  caption="Legend · zone colours"
+>
+  <div className="grid gap-2 text-sm text-telemetry">
+    {[
+      ["bg-green-clear/20 border-green-clear", "Green", "No restriction — no notification needed in Open category."],
+      ["bg-amber-alert/20 border-amber-alert", "Amber / Yellow", "Conditional — flight requires a submitted and approved BGKIS notification."],
+      ["bg-red-danger/20 border-red-danger", "Red", "Prohibited — Open-category flights not permitted at all."],
+      ["bg-muted/20 border-muted", "Grey hatch", "CTR / airport zone — BGKIS notification required; may include altitude limits."],
+    ].map(([cls, colour, desc]) => (
+      <div key={colour} className={`flex gap-3 items-start border-l-2 pl-2 ${cls}`}>
+        <span className="font-mono text-xs w-20 shrink-0 text-hud-white">{colour}</span>
+        <span>{desc}</span>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+Click any zone to open its info panel. Record:
+- **Zone identifier** (e.g. EVR-D-017)
+- **Zone type** (Restricted, Conditional, Prohibited)
+- **Zone manager** (CAA Latvia, airport, military, municipality)
+- **Altitude limits** (lower and upper bounds)
+- **Active hours** (permanent or time-window based)
+
+## Step 2: Determine whether a notification is needed
+
+| Zone type | Required action |
+|-----------|----------------|
+| No restriction (green) | No notification needed — fly within Open-category rules |
+| Conditional (amber) | Submit BGKIS notification and wait for approval |
+| Prohibited (red) | Do not fly in Open category — no notification possible |
+| CTR / airport (grey) | Submit BGKIS notification and wait for approval |
+
+**EVR17 Border East** — the zone along the Latvia-Russia and Latvia-Belarus border — is permanently closed to Open-category flights since 2025. No notification will be approved.
+
+## Step 3: Submit the BGKIS notification
+
+Log in to **e.caa.gov.lv** with your operator registration credentials. Navigate to **BGKIS → New notification**.
+
+Fill in the form:
+
+1. **Date and time window** — exact start and end time. Allow enough time for approval (same-day approvals are possible but not guaranteed; plan 24 h ahead for non-urgent flights).
+2. **Location** — enter GPS coordinates or draw the flight polygon on the embedded map. Define the maximum altitude (AGL).
+3. **UAS registration number** — your operator registration ID from CAA Latvia.
+4. **Purpose** — brief description (commercial photography, survey, hobby, inspection, etc.).
+5. **Emergency contact** — your phone number during the flight.
+
+Submit the form. You will receive a reference number immediately.
+
+## Step 4: Wait for approval — do not take off without it
+
+Approval is issued by the zone manager (CAA Latvia, airport authority, military, etc.). Check the BGKIS portal for status:
+
+- **Pending** — wait; do not take off.
+- **Approved** — take off within the approved time window only.
+- **Denied** — do not fly. If denied without explanation, contact the zone manager.
+
+An approval for Tuesday 14:00–16:00 does **not** carry over to Wednesday. Each new flight window requires a new notification.
+
+## Step 5: Fly within the approved window
+
+During the flight:
+- Stay within the geographic boundary and altitude stated in the notification.
+- Have the approval reference number accessible (screenshot or print) — an inspector may request it.
+- If you need to extend the time window, submit a new notification before the old one expires.
+
+<Scenario title="You check airspace.lv and see your planned filming location sits inside an amber zone managed by CAA Latvia. You plan to fly tomorrow at 10:00. What do you do today?">
+**Submit the BGKIS notification today.** Log in to e.caa.gov.lv, create a notification for tomorrow's time window (e.g. 09:45–11:15 to include setup time), define the flight polygon and maximum altitude, and submit.
+
+Do not wait until tomorrow morning — same-day approvals are not guaranteed. If the notification is still pending at 09:45 tomorrow, you cannot legally take off. The professional approach: submit 24 hours ahead and monitor the portal for status.
+</Scenario>
+
+<MemoryAnchor
+  rule="Check airspace.lv → identify zone type → amber/CTR = submit BGKIS at e.caa.gov.lv → wait for approval → fly only in approved window."
+  hint="BGKIS approval is time-specific. Every new flight window needs its own notification."
+/>
+
+<CommonMistakes>
+- Submitting the notification and taking off before approval arrives — pending is not the same as approved.
+- Not accounting for setup time in the notification window — if the flight is 10:00–11:00, the window should start earlier to allow equipment setup.
+- Relying on the manufacturer app to determine if a notification is needed — airspace.lv is the only legally binding source.
+- Thinking a denied notification can be appealed in time for the same flight — plan ahead to avoid last-minute denials.
+- Not checking NOTAM on the same day as the flight, even after receiving BGKIS approval — a temporary restriction can override the zone status.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "bgkis-q1",
+    stem: "A pilot opens airspace.lv/drones and sees their planned filming location is in an amber zone. What is the correct next action?",
+    options: [
+      { id: "a", text: "Fly freely — amber means caution, not a full restriction." },
+      { id: "b", text: "Submit a BGKIS notification at e.caa.gov.lv and wait for approval before takeoff." },
+      { id: "c", text: "Call the local municipality for verbal permission." },
+      { id: "d", text: "Fly below 50 m — altitude reductions are automatically permitted in amber zones." },
+    ],
+    correctOptionId: "b",
+    explanation: "An amber (conditional) zone requires a submitted and approved BGKIS notification before any flight. Amber does not mean 'caution but fly' — it means the flight is conditional on approval. The only correct channel is the BGKIS portal at e.caa.gov.lv.",
+    distractorRationales: {
+      a: "Amber zones are not a free-flight warning — they are conditional zones requiring prior approval. Flying without approval in an amber zone is illegal.",
+      c: "The municipality is not the zone manager and cannot grant permission. The notification must be submitted to the zone manager via BGKIS.",
+      d: "There is no automatic altitude exemption in amber zones. The BGKIS notification process applies regardless of planned altitude.",
+    },
+  },
+  {
+    id: "bgkis-q2",
+    stem: "A pilot received BGKIS approval for Tuesday 14:00–16:00. The job ran long and was not finished. Can the pilot continue flying at 16:05 on Tuesday?",
+    options: [
+      { id: "a", text: "Yes — a 5-minute overrun is within reasonable tolerance." },
+      { id: "b", text: "Yes — the approval is valid for the rest of the day." },
+      { id: "c", text: "No — the approved window has expired. A new notification must be submitted and approved." },
+      { id: "d", text: "Yes — the pilot can request a verbal extension from the zone manager by phone." },
+    ],
+    correctOptionId: "c",
+    explanation: "BGKIS approvals are time-specific. At 16:00 the approval expires and the flight is no longer authorised. Flying at 16:05 without a new approved notification is illegal in a restricted zone. The pilot must submit a new notification and wait for approval before continuing.",
+    distractorRationales: {
+      a: "There is no 'tolerance' provision in the BGKIS rules. The approved window is exact. A 5-minute overrun without a new notification is a violation.",
+      b: "The approval covers only the stated window — not the rest of the day. Each time window requires its own notification and approval.",
+      d: "Verbal extensions by phone are not part of the BGKIS procedure. Extensions require a new submitted and approved notification.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ar-001"]}>
+You can now check any zone on airspace.lv, read zone colours correctly, and file a BGKIS notification before a flight in a restricted UGZ in Latvia.
+
+Next sector: Aviation Regulation — the regulatory framework, categories, and what each of them actually requires.
+</Debrief>
