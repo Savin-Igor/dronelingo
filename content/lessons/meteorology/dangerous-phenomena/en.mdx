@@ -1,0 +1,149 @@
+# Dangerous weather phenomena
+
+<MissionBriefing objective="After this lesson you will identify six dangerous weather phenomena before flight and during flight, apply the 10 km rule for thunderstorms, and know the immediate action when weather deteriorates unexpectedly.">
+Weather does not warn you before it becomes dangerous. A cumulonimbus 15 km away can produce strong turbulence at your location within minutes. Recognition and early action are the only defences.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/meteo-cumulonimbus.png"
+  alt="Dramatic cumulonimbus cloud with labeled danger zones: lightning discharge, severe turbulence, hail formation, electrostatic interference — 10 km exclusion circle"
+  caption="Diagram · cumulonimbus danger zones"
+/>
+
+## Cumulonimbus (Cb) — the most dangerous cloud for UAS
+
+A **cumulonimbus** is a towering convective cloud that can extend from near the surface to 12,000 m or higher. It is always associated with:
+
+- **Lightning** — discharge range extends well beyond the visible cloud. Do not wait to see if it will strike near you.
+- **Severe turbulence** — inside and for several kilometres downwind. Can exceed any drone's structural limits.
+- **Hail** — formed at altitude in the frozen upper portions, can fall as ice crystals even when the surface is warm.
+- **Microburst** — violent downward air column that spreads at the surface, capable of forcing a drone to the ground in seconds.
+- **Strong wind gusts** — leading edge of Cb produces a gust front that arrives before the visible cloud reaches overhead.
+
+**Rule: stay at least 10 km from any active cumulonimbus.** At 10 km you are still at risk from lightning and turbulence, but the risk decreases rapidly. Never fly if you cannot maintain this separation.
+
+How to recognise a developing Cb:
+1. Rapid vertical growth of cumulus cloud — rises visibly within minutes.
+2. Anvil-shaped top (cirrus plume spreading horizontally) — indicates a mature Cb.
+3. Darkening base — indicates rain and hail.
+4. Sudden drop in surface temperature.
+
+## Icing — the invisible prop-killer
+
+Ice forms on propellers when:
+- Air temperature is near or below 0 °C, **and**
+- High humidity (visible moisture: cloud, freezing rain, freezing drizzle).
+
+Ice on propellers creates aerodynamic imbalance, vibration, and reduced efficiency. The ice load itself adds weight. A thin layer of ice on a propeller can cause complete thrust loss.
+
+UAS are **not certified for flight in known icing conditions**. If you fly through cloud or in freezing precipitation, icing is a serious risk even at temperatures as high as +5 °C in supersaturated conditions.
+
+Practical indicator: if surfaces (car roofs, equipment cases) are icing over, do not fly.
+
+## Fog and reduced visibility
+
+**Fog** is a cloud at the surface — it contains water droplets that deposit on optics, motors, and electronics. In addition to the airworthiness risk:
+- VLOS is violated when the drone disappears into fog at short range.
+- The combination of fog + cold = potential icing.
+
+**Minimum visibility for VLOS**: the regulation has no fixed number, but the functional test is whether the pilot can determine the UAS attitude and direction of travel with the unaided eye. In practice this means conditions must be at least sufficient to maintain continuous, unambiguous visual contact.
+
+Avoid launching in visibility below 3 km for any meaningful VLOS operation. In dense fog, even a 50 m flight can lose VLOS.
+
+## Identifying deteriorating conditions mid-flight
+
+Do not wait for conditions to become critical before acting. Warning signs during flight:
+
+- **Visible precipitation starting**: land immediately.
+- **Strong gusts appearing** where none were present at launch: initiate return.
+- **Visibility dropping** — horizon becoming hazy, landmarks disappearing: initiate return.
+- **Drone attitude fighting the wind more than expected**: the actual wind speed has increased beyond the forecast.
+- **Lightning visible** anywhere in the sky: initiate emergency landing at the nearest safe point.
+
+<Artefact
+  description="Six dangerous weather phenomena and their immediate actions: Cb within 10 km → no-fly; Icing conditions → no-fly; Visibility < 3 km → no-fly; Precipitation starts in flight → land immediately; Gusts exceeding drone limit → initiate return; Lightning visible → emergency landing"
+  caption="Table · dangerous phenomena and actions"
+>
+  <table className="text-sm w-full text-telemetry">
+    <thead><tr className="text-cyan-pulse font-mono text-xs"><th className="text-left pr-3 pb-2">Phenomenon</th><th className="text-left pb-2">Action</th></tr></thead>
+    <tbody>
+      {[
+        ["Cumulonimbus within 10 km", "No-fly. Postpone until Cb has passed and cleared by > 10 km."],
+        ["Temperature near 0°C + cloud/moisture", "No-fly. Icing risk. Check for frost on surfaces."],
+        ["Visibility < 3 km", "No-fly. VLOS cannot be reliably maintained."],
+        ["Precipitation begins mid-flight", "Land immediately at the nearest safe spot."],
+        ["Gusts exceeding drone rating in flight", "Initiate immediate return. Do not continue the mission."],
+        ["Lightning visible anywhere", "Emergency landing. Fastest safe route to ground."],
+      ].map(([phenom, action]) => (
+        <tr key={phenom}>
+          <td className="pr-3 pb-1 font-mono text-xs text-amber-alert align-top">{phenom}</td>
+          <td className="pb-1">{action}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</Artefact>
+
+<Scenario title="You are filming an outdoor event. The weather was clear at launch. 20 minutes into the flight you notice a dark anvil-shaped cloud 12 km to the west moving in your direction. The surface wind has increased. What do you do?">
+**Initiate return immediately.** An anvil-shaped cloud at 12 km is a mature cumulonimbus. The 10 km rule means you are already within the risk zone. The increasing surface wind is the gust front arriving ahead of the Cb.
+
+Do not wait to see if it will "pass to the south". At 12 km distance, a Cb moving at even 20 km/h will reach your position in 36 minutes — but it can produce severe turbulence and lightning at your location within the next 10–15 minutes.
+
+Land, secure the equipment, and wait for the storm to pass.
+</Scenario>
+
+<MemoryAnchor
+  rule="Cb: 10 km rule, no exceptions. Icing: any temperature near 0°C + moisture = no fly. Lightning visible = emergency landing, not 'I'll keep an eye on it'."
+  hint="If you see lightning anywhere in the sky, you are already in danger. Land now."
+/>
+
+<CommonMistakes>
+- Waiting until a Cb is directly overhead before deciding to land — by that point the turbulence and lightning risk is already at maximum.
+- Dismissing a Cb as "it's still far away" — 10 km is the minimum safe distance, not a comfortable distance.
+- Not checking for icing conditions at the beginning of the flight when the sun is already warming the ground — temperatures at altitude can be below freezing while it is mild at the surface.
+- Continuing to film in light rain because "the drone is splash-rated" — splash ratings are not rain certifications.
+- Confusing "I can still see the drone" in fog with VLOS — if you cannot determine attitude and direction, VLOS is lost regardless of whether you can see the drone.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "met-d1",
+    stem: "A cumulonimbus cloud is visible 8 km to the northwest. Wind is picking up. You have 10 minutes of footage remaining. What is the correct action?",
+    options: [
+      { id: "a", text: "Continue — 8 km is outside the immediate danger zone." },
+      { id: "b", text: "Monitor closely and land only if the cloud gets within 5 km." },
+      { id: "c", text: "Initiate return immediately — 8 km is within the 10 km exclusion zone." },
+      { id: "d", text: "Reduce altitude to below the cloud base and continue filming." },
+    ],
+    correctOptionId: "c",
+    explanation: "The 10 km rule requires a minimum 10 km separation from any active cumulonimbus. At 8 km you are already within the risk zone — lightning and severe turbulence can reach you before the cloud arrives overhead. Initiate return now.",
+    distractorRationales: {
+      a: "8 km is inside, not outside, the 10 km exclusion zone. The risk is already present.",
+      b: "Waiting until 5 km is far too late — at 5 km the gust front and lightning risk are critical. The threshold is 10 km.",
+      d: "Reducing altitude does not reduce the lightning risk — lightning discharges extend from cloud to ground regardless of the drone's altitude. Turbulence also extends downward from the Cb.",
+    },
+  },
+  {
+    id: "met-d2",
+    stem: "Which combination of conditions creates the highest risk of propeller icing?",
+    options: [
+      { id: "a", text: "Temperature +20°C, high humidity." },
+      { id: "b", text: "Temperature -5°C, dry clear air." },
+      { id: "c", text: "Temperature +2°C, flying through cloud or freezing drizzle." },
+      { id: "d", text: "Temperature +10°C, light rain." },
+    ],
+    correctOptionId: "c",
+    explanation: "Icing requires two conditions simultaneously: temperature near or below 0°C AND visible moisture (cloud droplets, freezing drizzle). At +2°C in cloud or freezing drizzle, supercooled water droplets exist and freeze on contact with the propeller surface. -5°C in dry clear air has no moisture to form ice.",
+    distractorRationales: {
+      a: "At +20°C water is liquid and cannot freeze on propeller surfaces. High humidity at warm temperatures causes water deposition, not ice.",
+      b: "Cold temperature alone is not sufficient — icing requires the presence of supercooled water droplets (visible moisture). Dry clear air at -5°C carries no such droplets.",
+      d: "At +10°C water remains liquid. Light rain deposits water on the propellers but does not freeze. Icing risk is near or below 0°C.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["met-003"]}>
+You can identify six dangerous weather phenomena, know the 10 km Cb rule, and know when to execute an immediate landing during flight.
+
+Next: Go/no-go decisions — a structured framework for the most important call in every flight: whether to start.
+</Debrief>

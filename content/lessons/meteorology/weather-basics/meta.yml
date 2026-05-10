@@ -1,0 +1,17 @@
+slug: weather-basics
+ord: 1
+title:
+  lv: Laika apstākļu pamati dronu pilotiem
+  en: Weather basics for drone pilots
+  ru: Основы метеорологии для пилотов дронов
+sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; A2 syllabus Theme 1: Meteorology"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

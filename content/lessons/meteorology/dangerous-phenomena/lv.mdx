@@ -1,0 +1,141 @@
+# Bīstamie meteoroloģiskie apstākļi
+
+<MissionBriefing objective="Pēc šī nodarbības tu identificēsi sešus bīstamus meteoroloģiskos apstākļus pirms un lidojuma laikā, piemērosi 10 km noteikumu pērkona negaisam un zināsi tūlītējo darbību, kad laika apstākļi negaidīti pasliktinās.">
+Laika apstākļi nebrīdina pirms kļūst bīstami. Kumulonimbs 15 km attālumā var dažu minūšu laikā radīt stipru turbulenci tavā vietā. Atpazīšana un agrīna rīcība ir vienīgā aizsardzība.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/meteo-cumulonimbus.png"
+  alt="Dramatisks kumulonimbs ar apzīmētajām bīstamajām zonām: zibens izlādēšanās, stipra turbulence, krusas veidošanās, elektrostatiskā ietekme — 10 km izslēgšanas aplis"
+  caption="Diagramma · kumulonimba bīstamās zonas"
+/>
+
+## Kumulonimbs (Cb) — bīstamākais mākonis UAS
+
+**Kumulonimbs** ir augsts konvektīvs mākonis, kas var sniedzās no virszemes līdz 12 000 m vai augstāk. Tas vienmēr ir saistīts ar:
+
+- **Zibeni** — izlādes diapazons sniedzas tālu ārpus redzamā mākoņa.
+- **Stipru turbulenci** — iekšā un vairākus kilometrus lejpusvēja virzienā.
+- **Krusu** — veidojas mākoņa augšējos, sasalušajos apgabalos.
+- **Mikrobirastu** — vardarbīga lejupvērsta gaisa kolonna, kas var piespiest dronu pie zemes sekunžu laikā.
+- **Stiprām vēja brāzmām** — kumulonimba priekšpuse rada brāzmu fronti pirms redzamais mākonis nonāk virs galvas.
+
+**Noteikums: paliec vismaz 10 km attālumā no jebkura aktīva kumulonimba.** Nekad nelidot, ja šo atdalīšanu nevar uzturēt.
+
+Kā atpazīt veidojošos Cb:
+1. Strauja kumulusa mākoņa vertikāla augšana — minūšu laikā pieaug redzami.
+2. Laktas forma (cirusu plīvurs stiepjas horizontāli) — nobriedis Cb.
+3. Tumšojošs pamats — norāda uz lietu un krusu.
+4. Pēkšņa virszemes temperatūras pazemināšanās.
+
+## Apledojums — neredzamais propelleru "slepkava"
+
+Ledus veidojas uz propelleriem, kad:
+- Gaisa temperatūra ir tuvu vai zem 0 °C, **un**
+- Augsts mitrums (redzams mitrums: mākonis, saldējoša lietus, saldējoša migla).
+
+Ledus uz propelleriem rada aerodinamisku disbalansu, vibrācijas un samazinātu efektivitāti. Pat plāns ledus slānis var pilnībā atslēgt vilkmes spēku.
+
+**Praktiski indikatori**: ja virsmas (automašīnas jumti, aprīkojuma somas) apledojas, nelidot.
+
+## Migla un samazināta redzamība
+
+**Migla** ir mākonis uz virszemes — tā satur ūdens pilienus, kas nogulsnējas uz optiku, motoriem un elektronikas. Papildus darbspējas riskam:
+- VLOS tiek pārkāpts, kad drons pazūd miglā tuvā attālumā.
+- Migla + aukstums = potenciāls apledojums.
+
+**Minimālā redzamība VLOS ievērošanai**: praksē apstākļiem jābūt pietiekami labiem, lai uzturētu nepārtrauktu vizuālo kontaktu. Izvairīties no pacelšanās redzamībā zem 3 km.
+
+## Pasliktinošos apstākļu identificēšana lidojuma laikā
+
+Brīdinājuma pazīmes lidojuma laikā:
+
+- **Sākas redzamās nokrišņas**: nekavējoties nolaisties.
+- **Parādās stipras brāzmas**, kur to nebija pacelšanās brīdī: uzsākt atgriešanos.
+- **Redzamība krītas** — horizons kļūst miglaināks, pazūd orientieri: uzsākt atgriešanos.
+- **Zibens redzams** jebkurā debesu daļā: ārkārtas nolaišanās.
+
+<Artefact
+  description="Seši bīstami meteoroloģiskie apstākļi un tūlītējās darbības: Cb 10 km tuvumā → nelidot; Apledojuma apstākļi → nelidot; Redzamība < 3 km → nelidot; Nokrišņas lidojuma laikā → nekavējoties nolaisties; Brāzmas pārsniedz limitu → atgriezties; Zibens redzams → ārkārtas nolaišanās"
+  caption="Tabula · bīstamie apstākļi un darbības"
+>
+  <table className="text-sm w-full text-telemetry">
+    <thead><tr className="text-cyan-pulse font-mono text-xs"><th className="text-left pr-3 pb-2">Apstākļi</th><th className="text-left pb-2">Darbība</th></tr></thead>
+    <tbody>
+      {[
+        ["Kumulonimbs 10 km tuvumā", "Nelidot. Atlikt, līdz Cb ir pagājis un atrodas > 10 km attālumā."],
+        ["Temperatūra tuvu 0°C + mākonis/mitrums", "Nelidot. Apledojuma risks. Pārbaudīt virsmu apledojumu."],
+        ["Redzamība < 3 km", "Nelidot. VLOS nevar uzticami uzturēt."],
+        ["Lidojuma laikā sākas nokrišņas", "Nekavējoties nolaisties tuvākajā drošajā vietā."],
+        ["Brāzmas pārsniedz drona novērtējumu lidojuma laikā", "Uzsākt tūlītēju atgriešanos. Misiju neturpināt."],
+        ["Jebkur redzams zibens", "Ārkārtas nolaišanās. Ātrākais drošais ceļš uz zemi."],
+      ].map(([phenom, action]) => (
+        <tr key={phenom}>
+          <td className="pr-3 pb-1 font-mono text-xs text-amber-alert align-top">{phenom}</td>
+          <td className="pb-1">{action}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</Artefact>
+
+<Scenario title="Tu filmē āra pasākumu. Laiks bija skaidrs pacelšanās brīdī. 20 minūtes lidojumā pamanāt tumšu laktas formas mākoni 12 km uz rietumiem. Virszemes vējš ir pastiprinājies. Ko dari?">
+**Nekavējoties uzsākt atgriešanos.** Laktas formas mākonis 12 km attālumā ir nobriedis kumulonimbs. 10 km noteikums nozīmē, ka tu jau atrodas riska zonā. Pastiprinātais virszemes vējš ir brāzmu fronte, kas ierodas pirms Cb.
+
+Nolaisties, nodrošināt aprīkojumu un gaidīt vētras pāreju.
+</Scenario>
+
+<MemoryAnchor
+  rule="Cb: 10 km noteikums, bez izņēmumiem. Apledojums: temperatūra tuvu 0°C + mitrums = nelidot. Redzams zibens = ārkārtas nolaišanās, ne 'turpināšu vērot'."
+  hint="Ja redzi zibeni jebkurā debesu daļā, tu jau esi apdraudētajā zonā. Nolaidies tagad."
+/>
+
+<CommonMistakes>
+- Gaidīt, līdz Cb ir tieši virs galvas, pirms nolemj nolaisties — tajā brīdī turbulences un zibens risks jau ir maksimāls.
+- Noraidīt Cb kā "vēl tālu" — 10 km ir minimālais drošais attālums, ne ērtais.
+- Turpināt filmēt vieglā lietus laikā, jo "drons ir splash-novērtēts" — splash novērtējumi nav lietus sertifikāti.
+- Sajaukt "redzu dronu" miglā ar VLOS — ja nevari noteikt attieksmi un virzienu, VLOS ir zaudēts.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "met-lv-d1",
+    stem: "Kumulonimba mākonis redzams 8 km uz ziemeļrietumiem. Vējš pastiprinās. Tev vēl 10 minūtes filmēšanas. Pareizā rīcība?",
+    options: [
+      { id: "a", text: "Turpināt — 8 km atrodas ārpus tūlītējās bīstamības zonas." },
+      { id: "b", text: "Vērot un nolaisties tikai tad, ja mākonis pietuvojas 5 km." },
+      { id: "c", text: "Nekavējoties uzsākt atgriešanos — 8 km atrodas 10 km izslēgšanas zonā." },
+      { id: "d", text: "Samazināt augstumu zem mākoņa pamata un turpināt filmēt." },
+    ],
+    correctOptionId: "c",
+    explanation: "10 km noteikums prasa vismaz 10 km atdalīšanu no jebkura aktīva kumulonimba. 8 km atrodas bīstamajā zonā — zibens un stipra turbulence var sasniegt tevi pirms mākonis nonāk virs galvas. Nekavējoties uzsākt atgriešanos.",
+    distractorRationales: {
+      a: "8 km atrodas iekšā, nevis ārpus 10 km izslēgšanas zonas. Risks jau pastāv.",
+      b: "Gaidīt, līdz 5 km, ir daudz par vēlu — 5 km brāzmu fronte un zibens risks ir kritisks. Slieksnis ir 10 km.",
+      d: "Augstuma samazināšana nesamazina zibens risku. Turbulence arī stiepjas lejup no Cb.",
+    },
+  },
+  {
+    id: "met-lv-d2",
+    stem: "Kura apstākļu kombinācija rada vislielāko propelleru apledojuma risku?",
+    options: [
+      { id: "a", text: "Temperatūra +20°C, augsts mitrums." },
+      { id: "b", text: "Temperatūra -5°C, sauss un skaidrs gaiss." },
+      { id: "c", text: "Temperatūra +2°C, lidojums caur mākoni vai saldējoša migla." },
+      { id: "d", text: "Temperatūra +10°C, viegls lietus." },
+    ],
+    correctOptionId: "c",
+    explanation: "Apledojumam nepieciešami divi apstākļi vienlaicīgi: temperatūra tuvu vai zem 0°C UN redzams mitrums (mākoņu pilieni, saldējoša migla). +2°C mākonī vai saldējoša miglā pārsaldēti ūdens pilieni sasalst, nonākot saskarē ar propellera virsmu.",
+    distractorRationales: {
+      a: "+20°C ūdens ir šķidrs un nevar sasalt uz propellera virsmām.",
+      b: "Auksta temperatūra viena nav pietiekama — apledojumam nepieciešami pārsaldēti ūdens pilieni (redzams mitrums). Sausam skaidram gaisam pie -5°C šādu pilienu nav.",
+      d: "+10°C ūdens paliek šķidrs. Viegls lietus nogulsnējas uz propelleriem, bet nesasalst.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["met-003"]}>
+Tu vari identificēt sešus bīstamus meteoroloģiskos apstākļus, zini 10 km Cb noteikumu un zini, kad lidojuma laikā uzsākt ārkārtas nolaišanos.
+
+Nākamais: Iet/Neiet lēmumi — strukturēta sistēma svarīgākajam lēmumam katrā lidojumā: vai sākt.
+</Debrief>

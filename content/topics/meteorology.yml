@@ -1,0 +1,19 @@
+slug: meteorology
+ord: 10
+title:
+  lv: Meteoroloģija
+  en: Meteorology
+  ru: Метеорология
+summary:
+  lv: >
+    Vēja, miglāja un temperatūras ietekme uz UAS lidojumu. METAR/TAF lasīšana,
+    bīstamie meteoroloģiskie apstākļi un iet/neiet lēmumu pieņemšana.
+    Obligātā A2 kompetences sertifikāta tēma.
+  en: >
+    Wind, visibility, and temperature effects on UAS flight performance.
+    Reading METAR/TAF forecasts, dangerous weather phenomena, and
+    practical go/no-go decision-making. Mandatory A2 certificate topic.
+  ru: >
+    Влияние ветра, видимости и температуры на полёт UAS. Чтение METAR/TAF,
+    опасные метеорологические явления и практическое принятие решений о
+    полёте. Обязательная тема сертификата компетентности A2.

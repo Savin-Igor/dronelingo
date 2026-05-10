@@ -1,0 +1,122 @@
+# Laika apstākļu pamati dronu pilotiem
+
+<MissionBriefing objective="Pēc šī nodarbības tu sapratīsi, kā vējš, turbulence, temperatūra un blīvuma augstums ietekmē drona veiktspēju, un pratīsi nolasīt METAR laika ziņojumu pirms katra lidojuma.">
+Laika apstākļi nerūpējas par tavu grafiku. Drons, kas lido pie vēja ātruma robežas vētrainā vidē, jau atrodas vietā, kur kaut kas var noiet greizi.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/meteo-density-altitude.png"
+  alt="Diagramma, kas salīdzina biezu auksto gaisu, kas nodrošina vairāk pacēluma, ar reto karsto gaisu, kas samazina veiktspēju"
+  caption="Diagramma · blīvuma augstums un drona pacēlums"
+/>
+
+## Vējš — galvenais laika apstākļu risks
+
+Vējš ir visbiežākais laika apstākļu izraisīto UAS incidentu cēlonis.
+
+**Vidējais vēja ātrums** — vidējais ātrums noteiktā laika posmā (parasti 10 minūtes). Drona rokasgrāmatā norādīts maksimālais vidējais vēja ātrums. Pārsniegšana samazina vadāmību un paātrina baterijas iztukšošanos.
+
+**Brāzmas** — īslaicīgi pīķi virs vidējā vēja. Brāzmu laikā slodzes ir ievērojami augstākas par vidējo. Droni brāzmām reaģē slikti — autopilotam jāreaģē ātrāk, nekā brāzma pieaug.
+
+**Turbulence** — haotisks gaisa plūsmas traucējums, ko izraisa:
+- **Mehāniskā turbulence**: vējš virs ēkām, kokiem, reljefu — rada neparedzamus virpuļus lejpusvēja virzienā.
+- **Termiskā turbulence**: silta zeme sasilda gaisu, kas paceļas (termiki), vēsāks gaiss nosēžas — intensīvākā saules dienas pēcpusdienā.
+- **Šķēluma turbulence**: strauja vēja ātruma vai virziena maiņa starp augstuma slāņiem (vēja šķēlums).
+
+## METAR nolasīšana
+
+**METAR** (Meteorological Aerodrome Report) ir standartizēts laika apstākļu novērojums lidostās. Tas ir uzticamākais pašreizējo apstākļu avots konkrētai vietai.
+
+Piemērs: `METAR EVRA 101150Z 27012KT 9999 FEW020 14/08 Q1015`
+
+| Lauks | Vērtība | Nozīme |
+|-------|---------|--------|
+| Stacija | EVRA | Rīgas lidostas ICAO kods |
+| Laiks | 101150Z | 10. datums, 11:50 UTC |
+| Vējš | 27012KT | Vējš no 270° ar 12 mezgliem |
+| Redzamība | 9999 | ≥ 10 km |
+| Mākoņi | FEW020 | Daži mākoņi 2000 pēdu AGL (≈ 600 m) |
+| Temp/Rasas punkts | 14/08 | 14 °C, rasas punkts 8 °C |
+| QNH | Q1015 | 1015 hPa |
+
+Vējš METAR ir **mezglos** (KT). 1 mezgls ≈ 0,51 m/s. Vējš 12 KT ≈ 6 m/s.
+
+## Blīvuma augstums un kāpēc karstas dienas ir grūtākas
+
+Gaisa blīvums samazinās augstākā temperatūrā un zemākā atmosfēras spiedienā. Mazākā gaisa blīvumā:
+- Propelleri katrā apgriezienā rada mazāk pacēluma — dronam jāgriezē ātrāk.
+- Maksimālā slodze samazinās.
+- Baterijas iztukšojas ātrāk.
+- Maksimālā vēja pretestība samazinās.
+
+**Augsts blīvuma augstums**: vasaras karstums, zems spiediens, liels augstums virs jūras līmeņa. Drons, kas karstā dienā novērtēts 10 m/s vējam standarta apstākļos, var apstrādāt tikai 7–8 m/s.
+
+## Temperatūras inversija
+
+Parasti temperatūra samazinās ar augstumu. **Temperatūras inversija** to apvērš: siltāka gaisa slānis atrodas virs vēsākā virszemes gaisa. Tas saglabā:
+- Piesārņojumu un miglu pie virszemes, samazinot redzamību.
+- Mitru gaisu, kas var izraisīt miglu vai zemu mākoņu veidošanos.
+
+Inversijas Latvijā ir biežas rudenī un ziemas sākumā, īpaši no rīta.
+
+<Scenario title="Tu ierodas piekrastes filmēšanas vietā. Tuvākās lidostas METAR rāda vēju 18012G22KT — 12 mezgļi ar brāzmām 22. Drona rokasgrāmata norāda maksimumu 10 m/s (≈ 20 KT). Vai drīkst lidot?">
+**Nē — brāzmas pārsniedz drona robežu.** 22 KT ≈ 11,3 m/s, kas pārsniedz 10 m/s maksimumu. Pat ja vidējais vējš (12 KT / 6,2 m/s) ir robežās, brāzmas rada pīķa slodzes, kas var destabilizēt lidaparātu.
+
+Gaidi labākus apstākļus, pārvieto uz aizsargātāku vietu vai pārcel grafiku. Drona maksimālais vēja limits nav vadlīnija — tā ir inženiertehniskā robeža.
+</Scenario>
+
+<MemoryAnchor
+  rule="Nekad nelido apstākļos, kas pārsniedz ražotāja specifikācijas. Brāzmas, ne vidējais vējš, nosaka pīķa slodzes. Karsta diena = augstāks blīvuma augstums = samazināta veiktspēja."
+  hint="Ja METAR vējš + brāzmas pārsniedz drona limitu, arguments 'bet uz zemes šķiet labi' nestrādā."
+/>
+
+<CommonMistakes>
+- Izmantot viedtālruņa laika lietotnes aviācijas priekšlidojuma novērtēšanai — lietotnes rāda prognozes, METAR rāda novērojumus.
+- Ignorēt brāzmu vērtības un pārbaudīt tikai vidējo vēju — brāzmas rada faktiskās pārslodzes.
+- Neņemt vērā mehānisko turbulenci pie ēkām — pacelšanās vietā var būt mierīgi, bet plānotā lidojuma trajektorija ir turbulenta.
+- Vasaras karstumā lidot ar pilnu slodzi, nepārbaudot ražotāja karstā laika parametrus.
+- Nepārbaudīt vēju augstumā pret zemes vēju — virszemes vējš var būt mierīgs, kamēr augstumā apstākļi ir ievērojami stiprāki.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "met-lv-w1",
+    stem: "METAR rāda 18015G25KT. Tavs drons ir novērtēts maksimumam 12 m/s. Vai lidojums ir droši?",
+    options: [
+      { id: "a", text: "Jā — vidējais vējš (15 KT = 7,7 m/s) ir labi robežās." },
+      { id: "b", text: "Nē — brāzmas (25 KT = 12,9 m/s) pārsniedz 12 m/s limitu." },
+      { id: "c", text: "Jā — METAR vēji ir konservatīvi; faktiskie apstākļi būs zemāki." },
+      { id: "d", text: "Jā, ja lidojums paliek zem 50 m, kur vējš ir mazāks." },
+    ],
+    correctOptionId: "b",
+    explanation: "25 KT × 0,514 ≈ 12,9 m/s, kas pārsniedz 12 m/s drona limitu. Brāzmu vērtības, ne vidējais vējš, reprezentē pīķa slodzes. Lidojot brāzmainā vidē pie novērtētā maksimuma, pastāv vadības zaudēšanas vai strukturāla stresa risks.",
+    distractorRationales: {
+      a: "Vidējā vēja robežu ievērošana nedara lidojumu drošu, ja brāzmas pārsniedz novērtēto maksimumu.",
+      c: "METAR novērojumi ir precīzas mērītas vērtības, nevis konservatīvas aplēses.",
+      d: "Vēja ātrums 50 m augstumā ne vienmēr ir mazāks, un brāzmas joprojām pārsniedz novērtēto limitu.",
+    },
+  },
+  {
+    id: "met-lv-w2",
+    stem: "Karstā vasaras dienā (35°C), kāda ir blīvuma augstuma ietekme uz dronu salīdzinājumā ar standarta dienu (15°C)?",
+    options: [
+      { id: "a", text: "Nav ietekmes — droni ir elektriski un gaisa blīvums tos neietekmē." },
+      { id: "b", text: "Samazināta veiktspēja — propelleri rada mazāk pacēluma, baterijas iztukšojas ātrāk, vēja pretestība samazinās." },
+      { id: "c", text: "Uzlabota veiktspēja — karstais gaiss paceļas ātrāk un palīdz dronam turēt augstumu." },
+      { id: "d", text: "Ietekmē tikai baterija — propellera efektivitāti temperatūra neietekmē." },
+    ],
+    correctOptionId: "b",
+    explanation: "Karstais gaiss ir mazāk blīvs. Propelleri strādā pret gaisa masu, lai radītu pacēlumu — mazāks gaisa blīvums nozīmē mazāk pacēluma katrā apgriezienā, nepieciešami lielāki RPM, kas ātrāk iztukšo bateriju. Maksimālā slodze un vēja pretestība arī samazinās.",
+    distractorRationales: {
+      a: "Elektriskais dzinējs joprojām balstās uz gaisa masu thrustu ģenerēšanai. Mazāks gaisa blīvums samazina vilkmes spēku neatkarīgi no dzinēja veida.",
+      c: "Termiskie paceļošies strāvas no karstas zemes ir lokāli un neparedzami — ne uzticama veiktspējas uzlabošana.",
+      d: "Ietekmē gan baterija, gan propellera efektivitāte. Mazāks gaisa blīvums nozīmē, ka propelleri jāgriež ātrāk, kas palielina strāvas patēriņu.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["met-002"]}>
+Tu saproti, kā vējš, turbulence, temperatūra un blīvuma augstums ietekmē drona veiktspēju, un pratīsi nolasīt METAR vēja ziņojumu.
+
+Nākamais: Bīstamie meteoroloģiskie apstākļi — kumulonimbs, apledojums, migla un kā atpazīt apstākļus, kas prasa tūlītēju nolaišanos.
+</Debrief>

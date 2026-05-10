@@ -1,0 +1,125 @@
+# Weather basics for drone pilots
+
+<MissionBriefing objective="After this lesson you will understand how wind, turbulence, temperature, and density altitude affect your drone's performance and behaviour — and how to read a METAR weather report before every flight.">
+Weather does not care about your schedule. A drone flying near its wind limit in turbulent conditions is already past the point where something can go wrong.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/meteo-density-altitude.png"
+  alt="Side-by-side diagram comparing dense cold air providing more lift versus thin hot air reducing performance"
+  caption="Diagram · density altitude and drone lift"
+/>
+
+## Wind — the primary weather hazard
+
+Wind is the most frequent weather cause of UAS incidents. Key concepts:
+
+**Mean wind speed** — the average speed over a period (typically 10 minutes). Your drone's manual specifies a maximum mean wind speed. Exceeding it reduces control authority and accelerates battery drain.
+
+**Gusts** — brief peaks above the mean wind. A forecast of "15 kt gusting 25 kt" means momentary loads 67 % higher than the mean. Drones handle gusts poorly because their autopilots must react faster than the gust rises.
+
+**Turbulence** — irregular, chaotic airflow caused by:
+- **Mechanical turbulence**: wind flowing over buildings, trees, terrain — creates unpredictable eddies downwind.
+- **Thermal turbulence**: warm ground heats air which rises in columns (thermals), cooler air sinks — most intense in the early afternoon on sunny days.
+- **Shear turbulence**: rapid change in wind speed or direction between altitude layers (wind shear).
+
+**Wind shear** is particularly dangerous for UAS because it happens at the transition between layers — a drone climbing from a calm ground layer into a 15 m/s layer aloft can be flipped or rapidly displaced.
+
+## Reading a METAR
+
+A **METAR** (Meteorological Aerodrome Report) is a standardised weather observation issued at airports, typically every 30 or 60 minutes. It is the most reliable current weather source for a specific location.
+
+Example: `METAR EVRA 101150Z 27012KT 9999 FEW020 14/08 Q1015`
+
+| Field | Value | Meaning |
+|-------|-------|---------|
+| Station | EVRA | Riga airport ICAO code |
+| Time | 101150Z | 10th day, 11:50 UTC (Zulu) |
+| Wind | 27012KT | Wind from 270° (west) at 12 knots |
+| Visibility | 9999 | ≥ 10 km (maximum reportable) |
+| Cloud | FEW020 | Few clouds at 2,000 ft AGL (≈ 600 m) |
+| Temp/Dew | 14/08 | Temperature 14 °C, dew point 8 °C |
+| QNH | Q1015 | Altimeter setting 1015 hPa |
+
+Wind in METAR is given in **knots** (KT). 1 knot ≈ 0.51 m/s. A wind of 12 KT ≈ 6 m/s.
+
+## Density altitude and why hot days are harder
+
+Air density decreases with higher temperature and lower atmospheric pressure. At lower air density:
+- Propellers generate less lift per revolution — the drone must spin faster for the same thrust.
+- Maximum payload capacity decreases.
+- Battery drain increases (motors work harder).
+- Maximum wind resistance decreases.
+
+**High density altitude conditions**: summer heat, low pressure, high elevation above sea level. A drone rated for 10 m/s wind in standard conditions may only handle 7–8 m/s on a hot summer day.
+
+## Temperature inversion
+
+Normally, air temperature decreases with altitude. A **temperature inversion** reverses this: a layer of warmer air sits above cooler surface air. This traps:
+- Pollution and haze near the surface, reducing visibility.
+- Moist air, which can cause fog or low cloud.
+- The inversion layer itself acts as a "lid" that intensifies turbulence below it.
+
+Inversions are common in Latvia in autumn and early winter, particularly in the morning.
+
+<Scenario title="You arrive at a coastal shoot location. The METAR for the nearby airport shows wind 18012G22KT — 12 knots gusting 22. Your drone's manual specifies a maximum of 10 m/s (≈ 20 KT). Can you fly?">
+**No — the gusts exceed the drone's limit.** 22 KT = approximately 11.3 m/s, which exceeds the 10 m/s maximum. Even if the mean wind (12 KT / 6.2 m/s) is within limits, gusts impose peak loads that can destabilise the aircraft and cause control loss.
+
+Wait for conditions to improve, move to a sheltered location if the specific site is more turbulent than the airport, or reschedule. The drone's maximum wind limit is not a guideline — it is the engineering boundary.
+</Scenario>
+
+<MemoryAnchor
+  rule="Never fly in conditions beyond the manufacturer's specifications. Gusts, not mean wind, determine peak loads. Hot days = higher density altitude = reduced performance."
+  hint="If the METAR wind + gusts exceeds your drone's limit, there is no 'but it seems fine on the ground' argument."
+/>
+
+<CommonMistakes>
+- Using smartphone weather apps instead of METAR for precise pre-flight assessment — apps show forecasts, METAR shows observations.
+- Ignoring gust values and only checking mean wind — gusts cause the actual overloads.
+- Not accounting for mechanical turbulence near buildings — conditions at the launch point may be calm while the planned flight path is turbulent.
+- Flying in summer heat at full payload without checking manufacturer hot-weather derating — performance degrades more than expected.
+- Not checking wind at altitude vs. at the ground — surface wind can be calm while conditions aloft are significantly stronger.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "met-w1",
+    stem: "A METAR shows 18015G25KT. Your drone is rated for a maximum of 12 m/s. Is flight safe?",
+    options: [
+      { id: "a", text: "Yes — the mean wind (15 KT = 7.7 m/s) is well within limits." },
+      { id: "b", text: "No — the gusts (25 KT = 12.9 m/s) exceed the 12 m/s limit." },
+      { id: "c", text: "Yes — METAR winds are conservative; actual conditions will be lower." },
+      { id: "d", text: "Yes, if the flight stays below 50 m where wind is lower." },
+    ],
+    correctOptionId: "b",
+    explanation: "25 KT × 0.514 ≈ 12.9 m/s, which exceeds the 12 m/s drone limit. Gust values, not mean wind, represent the peak loads the drone must survive. Flying in gusty conditions near the rated limit risks loss of control or structural stress.",
+    distractorRationales: {
+      a: "Mean wind being within limits does not make flight safe when gusts exceed the rated maximum.",
+      c: "METAR observations are precise measured values, not conservative estimates. They should not be discounted.",
+      d: "Wind speed does not reliably decrease at 50 m in all conditions — and the gust still exceeds the rated limit regardless of altitude.",
+    },
+  },
+  {
+    id: "met-w2",
+    stem: "On a hot summer day (35°C), what effect does density altitude have on your drone compared to a standard day (15°C)?",
+    options: [
+      { id: "a", text: "No effect — drones are electrically powered and not affected by air density." },
+      { id: "b", text: "Reduced performance — propellers generate less lift, batteries drain faster, wind resistance decreases." },
+      { id: "c", text: "Improved performance — hot air rises faster, helping the drone maintain altitude." },
+      { id: "d", text: "Only the battery is affected — propeller efficiency is unaffected by temperature." },
+    ],
+    correctOptionId: "b",
+    explanation: "Hot air is less dense. Propellers work against the air mass to generate lift — lower air density means less lift per revolution, requiring higher RPM, which drains the battery faster. Maximum payload and wind resistance also decrease at high density altitude.",
+    distractorRationales: {
+      a: "Electric propulsion still relies on pushing against an air mass for thrust. Lower air density reduces thrust regardless of the power source.",
+      c: "Thermal updrafts from hot ground are real, but they are localised and unpredictable — not a reliable performance boost. Overall propeller efficiency still decreases.",
+      d: "Both the battery and propeller efficiency are affected. Reduced air density means propellers must spin faster for the same thrust, which increases current draw.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["met-002"]}>
+You understand how wind, turbulence, temperature, and density altitude affect drone performance, and how to read a METAR wind report.
+
+Next: Dangerous weather phenomena — cumulonimbus, icing, fog, and how to identify conditions that require an immediate landing.
+</Debrief>
