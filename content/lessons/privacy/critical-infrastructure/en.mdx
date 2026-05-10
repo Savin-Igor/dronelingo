@@ -1,42 +1,120 @@
-# Critical-infrastructure sites
+# Critical infrastructure
 
-Latvia has sites whose security goes beyond ordinary privacy and
-calls for special handling regardless of UAS class or subcategory.
+<MissionBriefing objective="After this lesson you will identify Latvia's protected infrastructure categories, understand why the filming ban operates independently of UGZ airspace status, and know the correct procedure if a protected site enters your frame accidentally.">
+An airspace approval does not authorise filming. These are parallel legal frameworks. A drone can be legally airborne and simultaneously in violation of the filming ban.
+</MissionBriefing>
 
-## What "critical infrastructure" covers
+<CinematicScene
+  src="/lessons/critical-infrastructure-zones.png"
+  alt="Map-style diagram showing critical infrastructure categories with red prohibition overlays: power station, water facility, military site, communications hub, border facility"
+  caption="Diagram · critical-infrastructure-zones"
+/>
 
-- power stations and substations;
-- water supply sites;
-- major communications hubs;
-- military sites;
-- state-border technical facilities.
+## What counts as critical infrastructure
 
-Each is marked with the sign:
+Latvia's Critical Infrastructure Protection Law designates specific categories of sites where unauthorised photography and filming is prohibited regardless of how the pilot arrived in the airspace above them:
 
+- **Energy facilities** — power stations, substations, major transmission lines;
+- **Water supply** — treatment plants, pumping stations, reservoirs;
+- **Communications hubs** — major switching centres, data infrastructure;
+- **Military sites** — all MoD-designated facilities and perimeter zones;
+- **State border technical facilities** — surveillance and control equipment along the border.
+
+Sites in these categories are marked with the sign:
 > **"BEZ SASKAŅOŠANAS FOTOGRAFĒT, FILMĒT AIZLIEGTS"**
-> ("Photography or filming forbidden without authorisation")
+> *(Photography or filming forbidden without authorisation)*
 
-## Why this matters to the pilot
+## Why this is separate from UGZ
 
-UGZ may not always cover these sites entirely — but **the filming
-ban** works independently of UGZ status. Even when the drone flies
-outside any prohibited zone, the camera frame **must not include**
-a marked site without authorisation.
+The Unified Geo Zone (UGZ) system controls **where a drone may fly**. The critical infrastructure filming ban controls **what the camera may record**. These are separate legal instruments enforced by separate authorities (CAA vs. relevant ministry / security services).
+
+Consequences of conflating them:
+- A site may sit outside any UGZ restricted zone — but the filming ban still applies.
+- Obtaining BGKIS approval for the airspace does not grant filming rights.
+- Airspace approval is granted by CAA Latvia. Filming authorisation is granted by the **site operator** (grid company, military command, etc.).
 
 ## Authorisation process
 
-1. Identify the site operator (grid operator, military authority,
-   etc.).
-2. Submit an official **written** request with a flight plan and a
-   copy of your insurance policy.
-3. Get the **approval** before flying; do not start without it.
+If filming near or over a protected site is operationally necessary:
 
-## Inadvertent exceptions
+1. **Identify the operator** — power grid = AST or Sadales tīkls; military = NBS; border facilities = SRS/VP.
+2. **Submit a formal written request** including: flight plan, date and time window, UAS details, purpose of filming, copy of current liability insurance policy.
+3. **Wait for written approval** before any flight. Do not start without it.
+4. **Retain the approval document** on site during the flight — it may be requested by inspectors or security services.
 
-If a marked site enters the frame by accident, **delete the footage**
-and inform the operator. Ignorance is not a defence — the sign and
-the standard information bases (`airspace.lv`) provide sufficient
-warning.
+## Accidental capture — the correct response
 
-> **Source:** Latvian Critical Infrastructure Protection Law; CAA
-> Latvia guidance; official sign wording.
+If a protected site enters the frame unexpectedly during a flight:
+
+1. **Redirect the camera** immediately or terminate recording.
+2. **Do not publish or share** the footage containing the site.
+3. **Inform the site operator** proactively — do not wait for them to discover it.
+4. **Delete the segment** that captures the protected facility.
+
+Ignorance is not a legal defence. The sites are marked. The standard information base (`airspace.lv`, site signage) provides sufficient public notice.
+
+<Scenario title="You are filming a commercial shoot near an industrial zone. You later notice that the frame briefly captured what appears to be an electrical substation with the prohibition sign. You did not have authorisation. What do you do?">
+**Stop, do not publish, inform, delete.**
+
+1. Do not distribute the footage to the client until the offending segment is removed.
+2. Contact the grid operator (Sadales tīkls or AST, depending on the installation type) and disclose the accidental capture.
+3. Delete the segment from all copies, including backup drives and cloud storage.
+
+Proactive disclosure reduces legal exposure significantly compared to being discovered after publication. The filming prohibition is a criminal offence in some jurisdictions — treat it seriously.
+</Scenario>
+
+<MemoryAnchor
+  rule="UGZ governs where you fly. The filming ban governs what the camera records. They are independent. Accidental capture: stop, inform, delete."
+  hint="Airspace approval ≠ filming permission. Always check if a protected site is in or near your planned frame."
+/>
+
+<CommonMistakes>
+- Assuming BGKIS approval covers filming rights at sensitive sites — it does not.
+- Not recognising the prohibition sign on-site before the flight — the pre-flight environment check includes identifying protected facilities in the planned area.
+- Sharing accidental footage with the client before removing the protected segment — the prohibition applies to distribution, not only to intentional recording.
+- Believing that "not publishing" is sufficient when accidentally capturing a military site — operator notification is also required.
+- Confusing a restricted UGZ zone with a filming prohibition zone — they may overlap but are not identical.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "pr-ci1",
+    stem: "A pilot holds a valid BGKIS approval to fly over an industrial area. The planned route passes above an electrical substation with the filming prohibition sign. What may the pilot do?",
+    options: [
+      { id: "a", text: "Film freely — the BGKIS approval covers both flight and filming." },
+      { id: "b", text: "Fly the route but must not record video or photos of the substation without separate filming authorisation from the operator." },
+      { id: "c", text: "The presence of the sign means the entire flight must be cancelled." },
+      { id: "d", text: "Film at altitude — the prohibition only applies at low altitude near the site." },
+    ],
+    correctOptionId: "b",
+    explanation: "BGKIS approval grants airspace access. Filming authorisation is granted separately by the site operator. The pilot may fly the approved route but must not record the protected substation without the operator's written permission. The filming ban has no altitude exemption.",
+    distractorRationales: {
+      a: "BGKIS is issued by CAA Latvia for airspace access. The filming ban is enforced by the site operator under a separate legal instrument.",
+      c: "The filming ban does not automatically ground the flight — it restricts what the camera may record, not whether the drone may fly.",
+      d: "The filming prohibition applies to any footage capturing the protected site, regardless of the altitude from which it is taken.",
+    },
+  },
+  {
+    id: "pr-ci2",
+    stem: "Which of the following correctly describes the relationship between a UGZ restricted zone and a critical infrastructure filming ban?",
+    options: [
+      { id: "a", text: "They are identical — if a site is in a UGZ zone, filming is banned; if not, filming is permitted." },
+      { id: "b", text: "They are parallel frameworks — a site can be outside any UGZ zone while still carrying a filming prohibition." },
+      { id: "c", text: "UGZ takes precedence — a UGZ approval overrides any filming prohibition." },
+      { id: "d", text: "Filming bans only apply within UGZ restricted zones." },
+    ],
+    correctOptionId: "b",
+    explanation: "UGZ (airspace restriction) and the filming ban (content restriction) are independent legal instruments under different authorities. A site may sit outside any UGZ zone and still carry a valid filming prohibition. Both must be checked separately during the pre-flight environment assessment.",
+    distractorRationales: {
+      a: "A site may be outside any UGZ zone and still have a filming prohibition sign. The two systems are not co-extensive.",
+      c: "A UGZ approval does not override filming bans. They are issued by different authorities for different purposes.",
+      d: "Filming bans are defined by the Critical Infrastructure Protection Law, not by the UGZ regulation. They apply at all sites with the prohibition sign, regardless of UGZ boundaries.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["in-001"]}>
+You understand the critical infrastructure filming ban, its independence from UGZ airspace status, and the correct response to accidental captures.
+
+Next sector: Insurance — mandatory cover amounts, what they protect, and the optional policies that complete professional coverage.
+</Debrief>

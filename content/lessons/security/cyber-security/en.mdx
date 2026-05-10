@@ -1,42 +1,115 @@
 # UAS cyber security
 
-A UAS is a connected computer system — pilot, drone, mobile app,
-manufacturer cloud. Each is a potential attack vector.
+<MissionBriefing objective="After this lesson you will identify the four main cyber attack vectors against a UAS, recognise the difference between GNSS jamming and spoofing, and apply basic security hygiene to your aircraft, app, and data.">
+A drone is a networked computer that also flies. The attack surface is the pilot's phone, the manufacturer's cloud, and the GPS signals the drone trusts unconditionally. Each is exploitable.
+</MissionBriefing>
 
-## Basic hygiene
+<CinematicScene
+  src="/lessons/cyber-security-threats.png"
+  alt="UAS cyber threat diagram: central drone connected to pilot app, cloud, and GPS satellites, with attack vectors showing jamming, spoofing, firmware tampering, and rogue WiFi"
+  caption="Diagram · cyber-security-threats"
+/>
 
-- **Change the factory password** on the mobile app and account.
-- **Update firmware** only from the official manufacturer channel.
-- **Do not connect the UAS to unknown Wi-Fi** (public hotspots, forum
-  "demo" networks).
-- **Store account passwords** in a password manager, not in plain
-  text.
+## The four attack vectors
 
-## GNSS jamming and spoofing
+A UAS system consists of four components, each with its own exposure:
 
-- **Jamming** — RF noise drowns out the GPS signal; the UAS loses
-  position lock. Sign: sudden RTH failure or a typical "grey map" in
-  city centres.
-- **Spoofing** — fake GPS signals redirect the UAS. Sign: position
-  jumps to an implausible spot (kilometres off).
+**1. The pilot app and account.** Manufacturer apps (DJI GO 4, DJI Fly, Autel Sky) are linked to accounts that contain flight logs, location history, and settings. Weak passwords, unrotated credentials, and reused passwords across services are the primary attack vector here.
 
-Latvia is seeing more such events, especially near the eastern border.
-**First action:** switch to manual mode, land safely.
-**Second action:** report to CAA Latvia.
+**2. Firmware and software update channels.** A drone's autopilot, camera, and remote controller run firmware. Malicious firmware injected via fake update servers can disable safety features, alter flight behaviour, or exfiltrate data. Only update via the **official manufacturer channel** — never from third-party sites, even for "unlocking" regional restrictions.
 
-## Data privacy on the UAS
+**3. Radio link and GPS signals.** The control link (typically 2.4/5.8 GHz) and video downlink are radio signals. Public Wi-Fi hotspots near the operation can interfere. The GPS signals the drone uses for positioning are unencrypted civilian signals — vulnerable to both jamming and spoofing.
 
-A camera-equipped UAS **stores video locally on SD or in the cloud**.
-Make sure:
+**4. Local storage and cloud.** Video recorded to SD cards or uploaded to manufacturer clouds is personal data if it contains identifiable people. Unencrypted SD cards can be read by anyone who handles the drone. Cloud accounts without 2FA are single-password protected.
 
-- the SD card is encrypted if the content is sensitive;
-- the cloud account is protected with 2FA;
-- videos are deleted after the required retention window.
+## GNSS jamming vs. spoofing
 
-## Occurrence reporting
+**Jamming** is the simpler attack: an RF noise source overwhelms the GPS signal band, causing the drone to lose satellite lock. Symptoms: sudden "grey map" in the app, GPS accuracy warnings, RTH failure. The drone does not know where it is. **Immediate action: switch to manual mode, use visual references, land safely.**
 
-If a credible attack on the account or UAS firmware is suspected, it
-is a **voluntary report** at `e.caa.gov.lv/incidents`.
+**Spoofing** is more sophisticated: a transmitter sends fake GPS signals that override the legitimate ones. The drone believes it is flying at a different location or altitude. Symptoms: position jumps to a geographically implausible location (kilometres away), unexpected route deviations, altitude anomalies. **Immediate action: same — manual mode, visual references, land. Do not trust any app-displayed position.**
 
-> **Source:** ENISA Good Practices for UAS cyber security (2022);
-> ENISA threat report — GNSS spoofing/jamming.
+Both are increasing in frequency in Latvia, particularly near the eastern border (NATO operational area), and have been documented at Riga city centre. They are not hypothetical.
+
+## Basic security hygiene — five rules
+
+1. **Change the factory password** on the manufacturer app account immediately after registering.
+2. **Enable 2FA** on all accounts linked to the UAS (manufacturer app, cloud storage, email recovery).
+3. **Update firmware only from official channels** — manufacturer website or official app update mechanism only.
+4. **Never connect the UAS or controller to public or unknown Wi-Fi** — use a personal hotspot or LTE connection.
+5. **Encrypt sensitive SD card footage** if the content is operationally sensitive (inspection data, client materials).
+
+## Data privacy in the UAS
+
+The SD card and cloud account hold footage that may be:
+- Personal data under GDPR (identifiable people in frame).
+- Commercially sensitive (client site details, proprietary infrastructure).
+- Security-relevant (critical infrastructure captured accidentally).
+
+Retention rule: delete footage that has no current purpose. Do not accumulate gigabytes of unfiled footage on an unencrypted card.
+
+<Scenario title="Mid-flight over Riga city centre, your drone's displayed position suddenly jumps 4 km to a location over the sea. The drone's actual position is still visually confirmed in front of you at the park. What is happening and what do you do?">
+This is the classic symptom of **GNSS spoofing**. The drone's GPS receiver is accepting fake signals that override its true position.
+
+**Immediate actions:**
+1. Do not rely on the app map for position, altitude, or RTH — all are compromised.
+2. Switch to **manual / attitude mode** immediately.
+3. Maintain VLOS and use visual references to land at the nearest safe spot.
+4. After landing: screenshot the app showing the position anomaly, note the time and location.
+5. File a report with CAA Latvia — GNSS incidents in controlled airspace are mandatory to report.
+</Scenario>
+
+<MemoryAnchor
+  rule="Jamming = position lost (grey map). Spoofing = position jumps to implausible location. Both responses: manual mode, VLOS references, land now."
+  hint="The drone trusts GPS unconditionally. You should not."
+/>
+
+<CommonMistakes>
+- Using the manufacturer app on the same phone that connects to public Wi-Fi routinely — the device becomes an attack vector.
+- Trusting third-party firmware "unlock" tools — they can introduce backdoors and void manufacturer support.
+- Not recognising spoofing because "the app shows a location, it must be working" — a spoofed position is an actively misleading position.
+- Storing months of client footage on unencrypted SD cards in the drone bag — physical theft of the bag exposes all data.
+- Not reporting GNSS anomalies to CAA Latvia — the pattern across multiple reports is what allows authorities to identify active jamming/spoofing sources.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "se-q1",
+    stem: "During a flight, the drone's GPS position in the app suddenly shifts 6 km from the drone's actual visual position. The pilot can still see the drone clearly. What is the most likely cause?",
+    options: [
+      { id: "a", text: "GPS signal loss — the drone has lost satellite lock." },
+      { id: "b", text: "App software error — restart the app." },
+      { id: "c", text: "GNSS spoofing — fake GPS signals are overriding the legitimate position." },
+      { id: "d", text: "Compass interference — recalibrate the compass mid-flight." },
+    ],
+    correctOptionId: "c",
+    explanation: "A sudden position jump to a geographically implausible location (kilometres away from the actual position) while the drone remains visually confirmed is the signature symptom of GNSS spoofing. GPS loss (jamming) produces a 'grey map' and satellite count drop, not a false location jump. Compass interference affects heading, not GPS position.",
+    distractorRationales: {
+      a: "GPS signal loss (jamming) results in loss of position — the map goes grey or shows 'GPS lost'. A jump to a specific false location indicates active spoofing, not loss.",
+      b: "A consistent geographic position jump of 6 km is not an app rendering error — it indicates the GPS data feed itself is corrupted.",
+      d: "Compass interference causes heading errors (the drone points in the wrong direction). It does not cause the GPS position to jump to a different location.",
+    },
+  },
+  {
+    id: "se-q2",
+    stem: "Which of the following firmware update practices is safe?",
+    options: [
+      { id: "a", text: "Downloading from a drone forum that provides 'unlocked' regional firmware." },
+      { id: "b", text: "Accepting firmware updates pushed through the official manufacturer app." },
+      { id: "c", text: "Updating via a third-party tool that bypasses manufacturer verification." },
+      { id: "d", text: "Keeping old firmware indefinitely to avoid the risk of a bad update." },
+    ],
+    correctOptionId: "b",
+    explanation: "The only safe firmware update path is the official manufacturer app or website. Third-party firmware, forum downloads, and bypass tools cannot be verified for integrity and may introduce security vulnerabilities or disable safety features. Avoiding all updates is also unsafe — manufacturers issue security patches that address known vulnerabilities.",
+    distractorRationales: {
+      a: "'Unlocked' firmware from unofficial sources has not passed manufacturer security review and may contain malicious code.",
+      c: "Third-party tools that bypass manufacturer verification remove the cryptographic signature check that ensures firmware authenticity.",
+      d: "Avoiding updates leaves known security vulnerabilities unpatched. Manufacturers release fixes for safety-critical bugs; running old firmware exposes the operator to those risks.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["se-002"]}>
+You can identify the four UAS cyber attack vectors, distinguish jamming from spoofing, and apply the five security hygiene rules.
+
+Next: Occurrence reporting — the mandatory and voluntary reporting obligations that make aviation safer for everyone.
+</Debrief>

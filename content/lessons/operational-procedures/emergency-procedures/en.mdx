@@ -1,43 +1,114 @@
 # Emergency procedures
 
-Open-category flights are conducted without ATC support. Every
-emergency is the pilot's call, based on procedures rehearsed in
-advance.
+<MissionBriefing objective="After this lesson you will know the correct immediate actions for lost link, lost GPS, low battery, fly-away, and collision — and why these decisions must be made before takeoff, not during the emergency.">
+In an emergency, you do not rise to the occasion. You fall to your level of preparation. Know the procedures before you need them.
+</MissionBriefing>
 
-## Lost link
+<CinematicScene
+  src="/lessons/emergency-decision-tree.png"
+  alt="Emergency decision tree with four branches: lost link (amber), lost GPS (red), low battery (amber), fly-away (red)"
+  caption="Diagram · emergency-procedures"
+/>
 
-Loss of the control link. The UAS executes a **fail-safe**:
+## Lost link — the most common emergency
 
-- **Return-to-Home (RTH)** — flies back to a pre-set point;
-- **Controlled descent** — lands directly under the last known
-  position.
+A lost control link means the drone can no longer receive commands from the pilot. The UAS should automatically execute the pre-configured **fail-safe**.
 
-Choose the mode **before** flight. RTH altitude must clear every
-obstacle along the trajectory.
+Two common fail-safe modes:
+- **Return-to-Home (RTH)** — the drone navigates back to the home point at a pre-set altitude. The RTH altitude must be set higher than every obstacle on the return path before takeoff.
+- **Controlled descent** — the drone descends and lands at its current position.
 
-## Lost GPS
+Choose the appropriate mode before takeoff. RTH is dangerous if the drone is above a crowd and the home point is in a different location. Descent is dangerous if the drone is over water or an obstacle.
 
-Without GPS the UAS does not know its position. Switch to **manual
-mode** and land at the nearest safe spot with visual references.
+## Lost GPS — manual is the only option
 
-## Low battery
+Without GPS, the drone cannot hold position or navigate autonomously. **Switch to manual mode immediately.** Use visual references (roads, buildings, field edges) to orient the drone and select a safe landing spot. Land as quickly as safely possible.
 
-First warning (usually ~20 %): **abort the mission**, start return.
-Second warning: **land immediately at a safe spot** — do not chase the
-home point if the battery cannot make it.
+Do not attempt to wait for GPS recovery — position drift in altitude-hold mode without GPS will take the drone away from where you expect it.
 
-## Fly-away
+## Low battery — two-stage response
 
-The UAS departs in an uncontrolled direction. Try to re-establish
-control; if it fails, **document the last known position**
-(photo / screenshot) and report to CAA Latvia within 72 hours if
-manned aircraft or infrastructure were involved.
+Most drones warn at approximately 20 % remaining (first warning) and 10 % (second, critical warning).
 
-## Collision
+**First warning (~20 %):** Abort the current mission objective. Start the return. Do not complete the shot, the pass, or the sequence.
 
-- With a manned aircraft — **mandatory report** within 72 hours via
-  `e.caa.gov.lv/incidents`.
-- With an obstacle — abort, inspect the UAS, document the event.
+**Second warning (~10 %):** Land immediately at the nearest safe spot. Do not try to reach the home point if the battery cannot make it — a controlled landing off-target is safer than a crash near the home point.
 
-> **Source:** EASA Easy Access Rules for UAS — Emergency procedures;
-> manufacturer manuals (DJI / Autel / Skydio).
+<Scenario title="You are filming 600 m from the launch point. The first battery warning appears. Your planned footage would take another 4 minutes. What do you do?">
+**Start returning immediately.** A 600 m return at a moderate speed may take 3–4 minutes. Adding 4 minutes of filming first would result in the second warning triggering mid-return — and potentially a crash.
+
+The professional action: abort, return, land, swap battery, resume shooting. Footage can always be re-filmed. A crashed drone in a field 400 m away cannot always be recovered the same day.
+</Scenario>
+
+## Fly-away — rare but serious
+
+A fly-away occurs when the drone departs in an uncontrolled direction and cannot be recovered by normal control inputs. Causes include firmware bugs, GPS spoofing, or compass errors in extreme magnetic environments.
+
+**Action sequence:**
+1. Attempt to switch flight modes (e.g., to Attitude mode) to regain partial control.
+2. If the drone cannot be recovered, note the last known GPS position (screenshot the app).
+3. Track the drone as long as VLOS allows.
+4. If a collision with infrastructure or manned aircraft is possible, call the nearest airport (if in controlled airspace).
+5. File a mandatory report within 72 hours via e.caa.gov.lv/incidents.
+
+## Collision and post-incident
+
+With a **manned aircraft**: mandatory incident report within 72 hours at e.caa.gov.lv/incidents. This is not optional.
+
+With an **obstacle or surface**: abort further flight, physically inspect the UAS before any subsequent flight. Document the event (photos, video, timestamp). File a voluntary report if the event had safety implications.
+
+<MemoryAnchor
+  rule="Set fail-safe before takeoff. First battery warning = return now. Fly-away = document everything."
+  hint="Emergency decisions made in calm, before the flight, are always better than decisions made in panic."
+/>
+
+<CommonMistakes>
+- Not setting RTH altitude before takeoff — default altitude may be lower than nearby obstacles.
+- Continuing to film after the first battery warning — the second warning may occur over water or a crowd.
+- Switching to manual mode without visual references available — without references, manual mode in GPS loss makes disorientation worse.
+- Not filing a mandatory report after a collision with a manned aircraft — omission is a separate offence.
+- Relying on the manufacturer app's "find my drone" function without knowing the last GPS screenshot — the app requires connectivity to retrieve the position.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "ep-q1",
+    stem: "You lose control link at 90 m altitude over an empty field. RTH is active. What is the minimum RTH altitude you should have set before this flight?",
+    options: [
+      { id: "a", text: "90 m — the current flight altitude." },
+      { id: "b", text: "Higher than the tallest obstacle between the drone's position and the home point." },
+      { id: "c", text: "50 m — a standard safe altitude for open areas." },
+      { id: "d", text: "RTH altitude is irrelevant in an empty field." },
+    ],
+    correctOptionId: "b",
+    explanation: "RTH altitude must clear every obstacle along the return path — trees, power lines, buildings — regardless of the current flight altitude. Setting it to the current altitude only works if nothing taller stands between the drone and the home point.",
+    distractorRationales: {
+      a: "The drone may need to climb or the return path may have obstacles higher than 90 m.",
+      c: "50 m is a common default but may not be appropriate for all environments — set it deliberately based on the actual obstacle profile.",
+      d: "Open fields may still have power lines, fencing, and tall trees that the drone must clear on return.",
+    },
+  },
+  {
+    id: "ep-q2",
+    stem: "The first battery warning appears. The pilot has 2 minutes of filming remaining to complete the job. What should the pilot do?",
+    options: [
+      { id: "a", text: "Complete the 2 minutes of filming — the second warning provides a safe margin." },
+      { id: "b", text: "Reduce altitude to extend battery life and complete the shot." },
+      { id: "c", text: "Abort the mission objective and start returning immediately." },
+      { id: "d", text: "Switch to performance mode to return faster after finishing." },
+    ],
+    correctOptionId: "c",
+    explanation: "The first battery warning is the signal to end the operational mission and begin return. The second warning should be used only for an emergency landing when the home point cannot be reached. Trading the safety margin for 2 more minutes of footage risks a forced landing off-target.",
+    distractorRationales: {
+      a: "The second warning is an emergency indicator, not a safety buffer for completing work.",
+      b: "Altitude reduction alone does not reliably extend battery life enough to justify the risk.",
+      d: "Performance mode increases battery draw. Using it to 'buy time' to finish the shot compounds the problem.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ug-001"]}>
+You know the correct response to the five most common UAS emergencies.
+
+Next sector: UAS General Knowledge — the drone itself, its classes, and the battery that powers it.
+</Debrief>

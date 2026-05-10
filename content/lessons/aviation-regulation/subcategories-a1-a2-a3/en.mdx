@@ -1,41 +1,117 @@
-# A1, A2 and A3 subcategories in detail
+# A1, A2 and A3 in detail
 
-Open category splits into three subcategories — by UAS class and
-distance to people.
+<MissionBriefing objective="After this lesson you will be able to read any drone's class marking, know which sub-category it belongs to, what certificate the pilot needs, and what distance rules apply.">
+Sub-category confusion causes more exam failures than any other topic. The drone's class, not the pilot's choice, determines the sub-category.
+</MissionBriefing>
 
-## A1 — over people
+<CinematicScene
+  src="/lessons/distance-rules-a1-a2-a3.png"
+  alt="A1/A2/A3 sub-category comparison showing permitted/conditional/prohibited distances to people"
+  caption="Diagram · subcategories-overview"
+/>
 
-| Class | Pilot certificate | Note |
-|-------|-------------------|------|
-| C0 (< 250 g) | **None required** | Overflight of individuals allowed |
-| C1 | A1/A3 online exam | No flight over uninvolved persons |
+## The key principle
 
-## A2 — close to people (5 m / 30 m)
+The UAS class marking (C0, C1, C2, C3, C4) is stamped on the drone's body. It is fixed by the manufacturer. **You cannot operate a C2 drone as if it were C0**, even if you would prefer the C0 rules.
 
-| Class | Pilot certificate |
-|-------|-------------------|
-| C2 | **A1/A3 + extra A2 exam** |
+## A1 — the lightest drones, nearest to people
 
-The A2 add-on exam requires **practical self-study** plus a 60-question
-theory test, ≥75 %, at a recognised organisation.
+A1 is for drones light enough that a collision causes minimal harm.
 
-## A3 — far from people
+| Class | MTOM | Pilot certificate | Distance to individuals | Assemblies |
+|-------|------|-------------------|------------------------|-----------|
+| C0 | < 250 g | **None required** | Over individuals — OK | **Never** |
+| C1 | < 900 g | A1/A3 online exam | No overflight expected | **Never** |
 
-| Class | Pilot certificate |
-|-------|-------------------|
-| C2 / C3 / C4 | A1/A3 online exam |
-| Legacy (< 25 kg) | A1/A3 online exam |
+"No overflight expected" for C1 means: if you reasonably expect a person to be below your flight path, you must route around them or descend. It is a risk management obligation, not a physical distance rule.
 
-A3 requires **150 m from residential areas** and **30 m from
-uninvolved persons** or 1:1 (≥ flight altitude).
+## A2 — professionals working near people
 
-## Universal limits
+A2 exists for commercial work where 30 m (or even 5 m) from people is operationally required. It demands more from both the drone and the pilot.
 
-All three subcategories share:
+| Class | MTOM | Pilot certificate |
+|-------|------|-------------------|
+| C2 | < 4 kg | A1/A3 **plus** A2 competence certificate |
 
-- max **120 m** above ground;
-- VLOS;
-- no flight over assemblies of people.
+The A2 add-on: a further theory exam (60 Q, ≥75 %, at a recognised organisation in Latvia) plus a practical self-study declaration covering five skill areas.
 
-> **Source:** Reg (EU) 2019/947 UAS.OPEN.020 / 030 / 040; EASA Easy
-> Access Rules for UAS — Subcategories A1 / A2 / A3.
+Minimum horizontal distances for C2:
+
+- **Low-speed mode active (≤ 3 m/s)** → 5 m from uninvolved persons
+- **Normal speed** → 30 m from uninvolved persons
+
+## A3 — away from people, away from settlements
+
+A3 is for heavier drones operating in genuinely uninhabited areas.
+
+| Class | MTOM | Pilot certificate |
+|-------|------|-------------------|
+| C2 / C3 / C4 | < 25 kg | A1/A3 online exam |
+| Legacy (no marking) | < 25 kg | A1/A3 online exam |
+
+Three limits apply simultaneously:
+- ≥ 150 m from any residential, commercial, industrial, or recreational **area**
+- ≥ 30 m from uninvolved **persons**, or the 1:1 rule (≥ flight altitude), whichever is greater
+- ≥ a "2-second flight distance" at max speed (crash buffer)
+
+<Scenario title="You own a DJI Mavic 3 Pro (895 g, marked C1). You want to fly commercially 10 m from a construction crew that has given consent. Which sub-category allows this?">
+**None in Open category.** The Mavic is C1, which operates in A1. A1 requires no overflight of uninvolved persons. Construction crew who have consented might reduce the "uninvolved" argument, but 10 m close-approach flight is not within A1 rules.
+
+For 10 m approach with consent, the operation would need an A2 certificate and a C2-marked drone — or a Specific category authorisation. The certificate you hold does not change the class of your drone.
+</Scenario>
+
+<MemoryAnchor
+  rule="The drone's class marking decides the sub-category. Your certificate can only unlock what the class already permits."
+  hint="C0 → A1 only. C1 → A1 only. C2 → A2 or A3. C3/C4 → A3 only."
+/>
+
+<CommonMistakes>
+- Operating a C1 drone and expecting A1 to allow overflight of individuals — C1 in A1 does not allow overflight of uninvolved persons; only C0 does.
+- Thinking the A1/A3 certificate authorises A2 operations — it does not; A2 needs the additional competence certificate.
+- Confusing the 5 m A2 rule with a general "5 m is safe" — the 5 m only applies to C2 in confirmed low-speed mode.
+- Applying A3's 150 m rule to individual buildings instead of the entire inhabited area.
+- Legacy drone owners flying under A1 rules — a drone without class marking flies under A3 (or A1 if < 250 g), not A1 with C1 privileges.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "sub-q1",
+    stem: "A drone is marked C2 and the pilot holds only an A1/A3 certificate. What is the minimum sub-category the pilot may use, and what distance from uninvolved persons applies?",
+    options: [
+      { id: "a", text: "A1 — no distance requirement because A1 allows overflight of individuals." },
+      { id: "b", text: "A2 with 5 m (low-speed) or 30 m (normal) — the A1/A3 certificate covers A2." },
+      { id: "c", text: "A3 with 30 m (or 1:1 rule) from uninvolved persons and 150 m from residential areas." },
+      { id: "d", text: "No flight is permitted — C2 drones require an A2 certificate for all operations." },
+    ],
+    correctOptionId: "c",
+    explanation: "A C2 drone can be operated in A3 with only an A1/A3 certificate. A3 requires ≥ 30 m from uninvolved persons (or 1:1, whichever is greater) and ≥ 150 m from inhabited areas. To use A2 rules (5 m or 30 m), the pilot also needs the A2 competence certificate.",
+    distractorRationales: {
+      a: "A C2 drone cannot be operated under A1 rules. The class fixes the minimum sub-category.",
+      b: "A2 rules (5 m / 30 m) require an additional A2 competence certificate beyond A1/A3.",
+      d: "C2 drones can be flown in A3 with only the A1/A3 certificate. A2 operations require the extra A2 certificate.",
+    },
+  },
+  {
+    id: "sub-q2",
+    stem: "Which drones require NO pilot certificate to fly in A1?",
+    options: [
+      { id: "a", text: "C0 drones under 250 g." },
+      { id: "b", text: "C0 and C1 drones, since A1 is the entry-level sub-category." },
+      { id: "c", text: "All drones flown by pilots under age 16." },
+      { id: "d", text: "Any drone used for recreational purposes only." },
+    ],
+    correctOptionId: "a",
+    explanation: "Only C0 drones (under 250 g, max speed 19 m/s) may be flown in A1 without a pilot certificate. C1 drones in A1 require the A1/A3 online exam. The recreational/commercial distinction and age do not affect the certificate requirement for C1.",
+    distractorRationales: {
+      b: "C1 drones require the A1/A3 certificate even in A1.",
+      c: "Age affects minimum age to operate (16 years minimum for most), not certificate exemption by class.",
+      d: "Recreational use does not exempt C1 pilots from the certificate requirement.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["hp-001"]}>
+You can now match any class-marked drone to its sub-category, know what certificate is needed, and apply the correct distance rules.
+
+Next sector: Human Performance — why the most dangerous part of any drone operation is the pilot.
+</Debrief>

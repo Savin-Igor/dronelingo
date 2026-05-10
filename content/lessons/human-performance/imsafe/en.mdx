@@ -1,30 +1,95 @@
-# IMSAFE self-check before flight
+# IMSAFE — pre-flight self-check
 
-In any UAS operation the human is the weakest link. Before every flight
-the pilot runs the **IMSAFE** checklist to confirm fitness to fly.
+<MissionBriefing objective="After this lesson you will run the IMSAFE checklist automatically before every flight and understand why one 'yes' is enough to ground the operation.">
+The drone will fly exactly as well as the pilot is able to fly it. IMSAFE is how you decide whether that pilot is you — today.
+</MissionBriefing>
 
-## Six checks
+<CinematicScene
+  src="/lessons/imsafe-checklist.png"
+  alt="IMSAFE checklist showing six letters: Illness, Medication, Stress, Alcohol, Fatigue, Eating — each with a question and checkbox"
+  caption="Checklist · imsafe"
+/>
 
-| Letter | Topic | Question to self |
-|--------|-------|------------------|
-| **I**llness | Illness | Cold, fever, flu-like symptoms? |
-| **M**edication | Medication | Anything that affects reaction time? |
-| **S**tress | Stress | Emotionally loaded (work, family)? |
-| **A**lcohol | Alcohol | Anything within the last 8 hours? |
-| **F**atigue | Fatigue | How much sleep last night? |
-| **E**ating | Eating | Eaten within the last 4 hours? |
+## Why the pilot is the weakest link
 
-## Why it matters for a UAS pilot
+An Open-category drone pilot has no co-pilot, no air traffic controller monitoring their performance, no technical crew double-checking the setup. If the pilot's judgment is off today, nobody else will catch it.
 
-An Open-category pilot works alone. **Nobody else notices** that the
-pilot is tired or distracted today. IMSAFE is a personal discipline —
-the responsibility lies entirely with the pilot.
+IMSAFE is borrowed from manned aviation — where the stakes of a degraded pilot are obvious. For UAS operations the stakes are lower, but the principle is identical: **assess yourself before you assess the aircraft.**
 
-## Practical limit
+## The six checks
 
-If **even one answer is "yes"**, the flight should be postponed or
-delegated to an observer. It is far cheaper to slip a flight by a few
-hours than to live with an incident that follows the pilot for life.
+**I — Illness.** Any active infection degrades cognitive performance and, in the case of respiratory illness, may force you to focus on your own discomfort rather than the flight. Even a mild cold slows your reactions.
 
-> **Source:** EASA Easy Access Rules for UAS — Human Performance
-> Limitations; ICAO Doc 9683 (Human Factors Training Manual).
+**M — Medication.** Over-the-counter antihistamines, decongestants, and painkillers all have CNS effects. Read the label. If it says "may cause drowsiness" — it will.
+
+**S — Stress.** Acute emotional stress (an argument, bad news, financial pressure) consumes exactly the cognitive bandwidth that safe UAS operation requires. Stress is not an excuse. It is a disqualifier.
+
+**A — Alcohol.** EU aviation law adopts the same 8-hour "bottle to throttle" rule for UAS pilots. The blood-alcohol level after 8 hours is typically near zero — but judgment recovery lags behind blood clearance.
+
+**F — Fatigue.** See the Fatigue lesson for the full picture. The practical check here: fewer than 6 hours of sleep the night before is a red flag; fewer than 5 is a disqualifier.
+
+**E — Eating.** Hypoglycaemia (low blood sugar) causes tunnel vision, irritability, and slow decision-making. A flight without food in the preceding four hours is an unnecessary risk.
+
+<Scenario title="You have a paid aerial photography job at 07:00. The client insisted on golden-hour light. You slept 4 hours, you have a slight headache (no medication), and you skipped breakfast to make it on time. IMSAFE?">
+Three "yes" answers: Fatigue (4 hours sleep), possible Illness (headache — cause unknown), Eating (no breakfast).
+
+**Ground the flight.** Explain to the client that the flight cannot safely proceed. A professional who grounds a flight for safety is more trustworthy — not less — than one who flies through self-evident warning signs.
+
+Rescheduling costs time. An incident with a drone over a garden costs the client far more.
+</Scenario>
+
+<MemoryAnchor
+  rule="One 'yes' in IMSAFE = postpone or delegate. There is no 'it'll be fine.'"
+  hint="Nobody else will notice you're not okay today. The checklist is your only check."
+/>
+
+<CommonMistakes>
+- Treating IMSAFE as optional for short flights — fatigue and medication don't care about flight duration.
+- Answering "probably fine" instead of yes or no — ambiguity defaults to yes.
+- Skipping Eating as trivial — hypoglycaemia at 80 m altitude is a genuine risk.
+- Thinking stress is a mental health issue, not a safety issue — they are the same thing in the cockpit context.
+- Running IMSAFE once a week rather than before every individual flight.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "imsafe-q1",
+    stem: "A pilot took an antihistamine for hay fever two hours ago. The label says 'may cause drowsiness'. Should they fly?",
+    options: [
+      { id: "a", text: "Yes — hay fever is minor and the medication is common." },
+      { id: "b", text: "Yes — two hours is enough time for the medication to wear off." },
+      { id: "c", text: "No — medication affecting alertness is an IMSAFE disqualifier." },
+      { id: "d", text: "Yes — but only if the flight is under 30 minutes." },
+    ],
+    correctOptionId: "c",
+    explanation: "IMSAFE 'M' covers any medication that could affect reactions or alertness. 'May cause drowsiness' is explicit. Two hours is not sufficient clearance for most antihistamines, and flight duration does not change the disqualifier.",
+    distractorRationales: {
+      a: "The severity of the underlying condition is irrelevant. The medication effect is the issue.",
+      b: "Most antihistamines have 4–6 hour half-lives. Two hours is within the active window for most.",
+      d: "Flight duration does not modify the medication rule.",
+    },
+  },
+  {
+    id: "imsafe-q2",
+    stem: "Which of the following is the correct action if one IMSAFE answer is 'yes'?",
+    options: [
+      { id: "a", text: "Proceed if the 'yes' is in a low-priority category like Eating." },
+      { id: "b", text: "Postpone or delegate the flight." },
+      { id: "c", text: "Reduce the planned flight altitude by half." },
+      { id: "d", text: "Proceed with additional caution and a shorter flight plan." },
+    ],
+    correctOptionId: "b",
+    explanation: "One 'yes' in IMSAFE is sufficient to ground the operation. The checklist does not have a 'low-priority' category — each item was included because it represents a genuine safety risk. Proceeding with 'additional caution' while impaired is circular logic.",
+    distractorRationales: {
+      a: "There is no hierarchy of IMSAFE items — all six are disqualifiers if answered 'yes'.",
+      c: "Altitude reduction does not address cognitive impairment.",
+      d: "Caution-based mitigation does not substitute for being fit to fly.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["hp-002"]}>
+You know the six IMSAFE checks and why one 'yes' stops the flight.
+
+Next: Fatigue and stress in depth — what happens to your brain at hour 16 without sleep, and how stress from a waiting client can be the most dangerous thing in the air that day.
+</Debrief>

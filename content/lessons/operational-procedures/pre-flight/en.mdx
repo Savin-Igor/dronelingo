@@ -1,32 +1,114 @@
 # Pre-flight check
 
-An Open-category pilot must **inspect the site and the UAS before every
-flight**. It is not a formal document — it is a few minutes of discipline
-that separates professionals from incidents.
+<MissionBriefing objective="After this lesson you will conduct a complete pre-flight check — environment, UAS hardware, and pilot fitness — as a systematic routine before every flight.">
+Most incidents do not happen in the air. They are caused on the ground, in the five minutes that could have caught the problem but didn't.
+</MissionBriefing>
 
-## Environment
+<CinematicScene
+  src="/lessons/pre-flight-checklist.png"
+  alt="Three-section pre-flight checklist: Environment (weather, zones, surroundings), UAS Hardware (firmware, batteries, mechanics, sensors, RTH), Pilot (IMSAFE)"
+  caption="Checklist · pre-flight"
+/>
 
-- **Weather:** wind direction and speed (within UAS spec); visibility
-  good enough to maintain VLOS; no rain / snow.
-- **NOTAM and UGZ:** check `airspace.lv/drones`. If the zone is
-  restricted — there must be an approved BGKIS application.
-- **Surroundings:** identify obstacles (power lines, trees, pedestrians);
-  visualise the planned trajectory.
+## Why a structured check matters
 
-## UAS
+A pre-flight check is not bureaucracy. It is a memory aid for the 12 things that can go wrong before the drone leaves the ground — and the few that cause incidents the moment it does.
 
-- **Software:** current firmware, valid geo-awareness dataset (ED-269).
-- **Batteries:** charged, not swollen, temperature within spec.
-- **Mechanics:** motors, propellers, frame free of cracks.
-- **Sensors:** GPS has enough satellites, compass calibrated, IMU shows
-  no warnings.
-- **Safety setup:** Return-To-Home point and altitude defined, geofence
-  active.
+The structure matters. Doing the checks in a random order means you will skip something under time pressure. A consistent sequence becomes a habit; habits survive distraction.
 
-## Pilot fitness
+## Environment — three questions before touching the drone
 
-IMSAFE self-check (see **Human performance → IMSAFE**). If not fit —
-do not fly.
+**Weather.** Wind speed and direction must be within the UAS manufacturer's specifications. Visibility must allow VLOS at your planned maximum distance. No rain, snow, or ice. Check a forecast for the area, not just the launch point — conditions can differ 2 km away.
 
-> **Source:** Reg (EU) 2019/947 Art. UAS.OPEN.060(1); EASA Easy Access
-> Rules — Operational procedures.
+**UGZ and NOTAMs.** Open airspace.lv/drones. If the zone is restricted and you do not have a confirmed BGKIS approval, the flight does not happen. Also check for any temporary NOTAM — airshows, military exercises, emergency operations — that may have appeared since you last looked.
+
+**Surroundings.** Walk the site. Identify obstacles in the planned flight path (power lines are harder to see than trees). Identify where uninvolved persons could appear and how you would respond. Confirm there is a safe emergency landing area.
+
+## UAS hardware — systematic, not improvised
+
+<Artefact
+  description="Six-item UAS hardware check: 1. Firmware current, geo-awareness dataset loaded. 2. Batteries charged, unswollen, temperature in range. 3. Motors, propellers, frame — no damage. 4. GPS: satellite lock obtained, compass calibrated. 5. RTH altitude set to clear highest obstacle on return path. 6. Geofence active and correct."
+  caption="Table · uas-hardware-check"
+>
+  <ol className="space-y-2 text-sm text-telemetry">
+    {[
+      ["Firmware", "Current firmware installed. Geo-awareness ED-269 dataset loaded and current."],
+      ["Batteries", "Charged, not swollen, temperature in operating range (check in cold/hot conditions)."],
+      ["Mechanics", "Motors, propellers, frame free of cracks, loose screws, or visible damage."],
+      ["Sensors", "GPS lock confirmed, compass calibrated, IMU warnings cleared."],
+      ["RTH setup", "Return-to-Home altitude set above the highest obstacle on the return path."],
+      ["Geofence", "Geofence active. Do not disable it without explicit operational need."],
+    ].map(([title, desc]) => (
+      <li key={title} className="flex gap-3">
+        <span className="w-24 shrink-0 font-mono text-xs text-cyan-pulse">{title}</span>
+        <span>{desc}</span>
+      </li>
+    ))}
+  </ol>
+</Artefact>
+
+## Pilot — last check before takeoff
+
+Run IMSAFE. If any item is "yes" — stop here. The environment and drone may be perfect. An impaired pilot erases both advantages.
+
+<Scenario title="You arrive at a commercial shoot location. It is raining lightly. The drone is IPX4 rated (splash-proof). The client says 'other drones fly in light rain all the time'. What do you do?">
+**Ground the flight.** IPX4 protects against splashing from any direction — not sustained rain. "Other drones do it" is not a regulatory or manufacturer authorisation. Rain also degrades VLOS and makes surfaces slippery.
+
+The pre-flight environment check — weather — failed. The manufacturer specification likely states "do not fly in rain." The client's opinion about what other pilots do is not part of the pre-flight checklist.
+</Scenario>
+
+<MemoryAnchor
+  rule="Environment → UAS → Pilot. Always in that order. Each section must pass before the next begins."
+  hint="A green zone, perfect hardware, and an impaired pilot is still a no-fly."
+/>
+
+<CommonMistakes>
+- Skipping the zone check because "I fly here all the time" — zones change without notice.
+- Setting RTH altitude from habit (e.g. always 50 m) instead of the actual obstacle height on the return path.
+- Skipping compass calibration after driving to a new location — metal in the car can disturb the compass.
+- Not identifying a safe emergency landing area before the first motor starts.
+- Running hardware checks without the drone powered on — some warnings only appear on the live screen.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "pf-q1",
+    stem: "During the pre-flight UAS check, you notice one propeller has a small chip at the tip. What is the correct action?",
+    options: [
+      { id: "a", text: "Continue — small chips are cosmetic and do not affect performance." },
+      { id: "b", text: "Replace the propeller before flying." },
+      { id: "c", text: "Fly at half-speed to reduce the impact of the damage." },
+      { id: "d", text: "Continue if the flight is under 5 minutes." },
+    ],
+    correctOptionId: "b",
+    explanation: "A chipped propeller causes vibration, reduces efficiency, and can fail under load. The pre-flight check exists precisely to catch this. Replace the propeller. Flight duration and speed reductions do not make a damaged propeller safe.",
+    distractorRationales: {
+      a: "Even a small chip creates aerodynamic asymmetry, increases vibration, and can worsen under centrifugal force at operating RPM.",
+      c: "Reduced speed does not eliminate the risk from a structurally compromised propeller.",
+      d: "Flight duration does not change the risk of propeller failure under load.",
+    },
+  },
+  {
+    id: "pf-q2",
+    stem: "What is the correct order for a pre-flight check?",
+    options: [
+      { id: "a", text: "UAS hardware → environment → pilot." },
+      { id: "b", text: "Pilot → UAS hardware → environment." },
+      { id: "c", text: "Environment → UAS hardware → pilot." },
+      { id: "d", text: "The order is flexible — all three must be completed." },
+    ],
+    correctOptionId: "c",
+    explanation: "Environment first: if the zone is prohibited or the weather is out of limits, there is no point checking the drone or the pilot. UAS second: if the drone has a critical fault, the pilot check is irrelevant. Pilot last: a final go/no-go decision with all information available.",
+    distractorRationales: {
+      a: "Checking the drone before knowing the environment is inefficient — a prohibited zone ends the flight regardless of drone condition.",
+      b: "Pilot first is possible but inefficient — knowing environment and drone state improves the pilot's go/no-go decision.",
+      d: "Order matters under time pressure — a consistent sequence prevents omissions.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["op-002"]}>
+You have a complete, ordered pre-flight routine.
+
+Next: Emergency procedures — what to do when the flight stops going to plan and every second counts.
+</Debrief>

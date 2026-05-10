@@ -1,39 +1,114 @@
 # Latvia mandatory insurance minima
 
-In Latvia a UAS operator is **required to hold third-party liability
-insurance** — regardless of whether the flight is commercial or
-recreational. The minima are set by Cabinet Regulation No. 447.
+<MissionBriefing objective="After this lesson you will know which UAS operators in Latvia must hold third-party liability insurance, the minimum cover amounts by drone class, and what the policy must actually cover — and what it explicitly does not.">
+Insurance is not optional for most UAS operators in Latvia. The requirement exists regardless of whether the flight is commercial or recreational. No policy, no legal flight.
+</MissionBriefing>
 
-## Cover amounts
+<CinematicScene
+  src="/lessons/insurance-latvia-minima.png"
+  alt="Three-tier shield diagram: C0 no requirement, C1/A2/A3 up to 20kg shows €50,000 cover, C3/C4 20-25kg shows 750,000 SDR cover"
+  caption="Diagram · insurance-latvia-minima"
+/>
 
-| Class / mass | Minimum cover |
-|--------------|----------------|
+## Who must hold insurance
+
+Cabinet Regulation No. 447 requires **all UAS operators in Latvia** to hold valid third-party liability insurance before flying — with one exception:
+
+- **C0 drones under 250 g** — no mandatory insurance requirement.
+- **All other classes** — mandatory, regardless of recreational or commercial use.
+
+This is a stricter requirement than many other EU member states. A recreational pilot flying a DJI Mini 4 Pro (249 g, C0) is exempt. The same pilot flying a 300 g drone is not.
+
+## Minimum cover amounts
+
+| Drone class / mass | Minimum third-party cover |
+|-------------------|--------------------------|
 | C0 (< 250 g) | **Not required** |
-| A1 (C1), A2, A3 (up to 20 kg) | **€50 000** |
-| A3 (20–25 kg, C3 / C4) | **750 000 SDR** |
-| Specific category (< 500 kg) | **750 000 SDR** |
+| A1 (C1), A2, A3 — drones up to 20 kg | **€50 000** |
+| A3 — C3 / C4 drones (20–25 kg) | **750 000 SDR** |
+| Specific category (UAS < 500 kg) | **750 000 SDR** |
 
-## What the minimum covers
+**SDR** = Special Drawing Rights (IMF currency basket). At current rates, 750 000 SDR ≈ €900 000. The exact euro equivalent fluctuates — check the Bank of Latvia rate when purchasing a policy.
 
-Third-party **bodily injury and property damage** caused during a UAS
-flight. Damage to the UAS itself (hull) **is not included**.
+## What the mandatory cover protects
 
-## What SDR means
+The mandatory policy covers **bodily injury and property damage caused to third parties** during a UAS operation. It is liability insurance, not asset insurance.
 
-SDR = Special Drawing Rights — IMF currency basket. 750 000 SDR ≈
-€900 000 (rate fluctuates).
+**What it does not cover:**
+- Damage to the UAS itself (the drone, camera, payload) — this requires **hull insurance**.
+- Damage to property the pilot or operator owns.
+- Losses from a client contract not being fulfilled — this requires **professional liability** insurance.
+- Theft of the UAS.
 
-## Proof
+Understanding what is excluded prevents the common mistake of assuming the mandatory policy provides full financial protection.
 
-The policy must be shown on request to a CAA Latvia inspector. Without
-a policy the operator is **not qualified to fly** and receives an
-administrative fine.
+## Proof of insurance
 
-## Optional cover
+The insurance certificate must be:
+- **Available on-site** during every flight.
+- **Presented on request** to any CAA Latvia inspector.
+- **Current** — expired policies are treated as no policy.
 
-- **Hull insurance** — covers the UAS itself (crash, theft).
-- **Employer's liability** — for commercial operators.
-- **Payload insurance** — cameras, sensor equipment.
+An operator flying without a valid policy receives an **administrative fine** and may have the operation halted. The fine does not substitute for the insurance obligation.
 
-> **Source:** Cabinet Reg. No. 447 (10.07.2018); Reg (EC) 785/2004 on
-> insurance requirements for air carriers.
+<Scenario title="A recreational pilot owns a DJI Air 3 (720 g, marked C1). They fly only on weekends over their own fields, never commercially, never near people. Do they need insurance?">
+**Yes.** The exemption applies only to C0 drones under 250 g. The DJI Air 3 is a C1 drone. Cabinet Regulation No. 447 requires third-party liability insurance regardless of recreational use, regardless of flying over own land, regardless of how rarely the drone flies.
+
+The minimum cover required: €50 000 third-party liability. The annual premium from Latvian insurers (BTA, Balta, Gjensidige) typically runs €80–200 for recreational cover at this level.
+</Scenario>
+
+<MemoryAnchor
+  rule="C0 under 250 g: no insurance needed. Everything else: minimum €50,000 (or 750,000 SDR for 20–25 kg drones). Hull, payload, and professional liability are separate policies."
+  hint="The mandatory policy covers damage you cause. It does not cover damage to your drone."
+/>
+
+<CommonMistakes>
+- Believing recreational use exempts the operator from insurance — it does not, unless the drone is C0 under 250 g.
+- Confusing the mandatory third-party policy with hull cover — if the drone crashes and is damaged, the mandatory policy pays nothing.
+- Letting the policy lapse between flying seasons without renewal — an expired policy means no legal flight.
+- Using a policy bought for one country when operating in Latvia without verifying Latvian minimum cover levels — minimums vary by member state.
+- Not carrying proof of insurance on-site — the policy must be available for inspection, not just exist somewhere at home.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "in-q1",
+    stem: "A recreational pilot operates a 1.2 kg C2 drone over uninhabited farmland on weekends. What minimum insurance is legally required in Latvia?",
+    options: [
+      { id: "a", text: "No insurance — recreational operations are exempt." },
+      { id: "b", text: "€50 000 third-party liability." },
+      { id: "c", text: "750 000 SDR — required for all C2 drones." },
+      { id: "d", text: "Hull insurance only — mandatory liability is for commercial operators." },
+    ],
+    correctOptionId: "b",
+    explanation: "A C2 drone at 1.2 kg falls under the A3 category (up to 20 kg). Cabinet Regulation No. 447 requires €50 000 minimum third-party liability for all drones in this category, regardless of recreational or commercial use. The 750 000 SDR threshold applies to drones between 20 and 25 kg.",
+    distractorRationales: {
+      a: "Recreational use is not an exemption in Latvia. Only C0 drones under 250 g are exempt.",
+      c: "750 000 SDR applies to C3/C4 drones in the 20–25 kg range. A 1.2 kg drone is well below this threshold.",
+      d: "Hull insurance is optional and covers the drone itself. Mandatory liability insurance is required for third-party damage regardless of the operation's commercial nature.",
+    },
+  },
+  {
+    id: "in-q2",
+    stem: "A pilot's drone crashes and is destroyed during a flight. The mandatory third-party liability policy is the only insurance held. What costs does the policy cover?",
+    options: [
+      { id: "a", text: "The cost of replacing the drone." },
+      { id: "b", text: "Any bodily injury or property damage caused to third parties during the flight." },
+      { id: "c", text: "The cost of replacing the drone and any third-party damage." },
+      { id: "d", text: "Nothing — the policy only activates for commercial flights." },
+    ],
+    correctOptionId: "b",
+    explanation: "The mandatory third-party liability policy covers bodily injury and property damage caused to others. It explicitly does not cover damage to the operator's own aircraft (hull). To recover the cost of a destroyed drone, a separate hull insurance policy is required.",
+    distractorRationales: {
+      a: "The mandatory policy does not cover the operator's own drone. This is hull damage and requires hull insurance.",
+      c: "Only the third-party damage portion is covered by the mandatory policy. The drone replacement cost requires separate hull cover.",
+      d: "The mandatory policy applies to all legal flights, recreational and commercial alike.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["in-002"]}>
+You know which operators must insure, what the minimum cover amounts are, and exactly what the mandatory policy does and does not protect.
+
+Next: Optional covers — hull, professional liability, payload, and EU travel policies that complete full professional protection.
+</Debrief>

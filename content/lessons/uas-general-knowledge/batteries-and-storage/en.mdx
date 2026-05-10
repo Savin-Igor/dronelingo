@@ -1,41 +1,118 @@
 # Batteries and storage
 
-The battery is both the **energy source** and the **biggest safety
-risk** of a UAS. Most "drone fire" incidents trace back to a damaged
-or mis-stored Li-Po cell.
+<MissionBriefing objective="After this lesson you will handle, store, and travel with LiPo batteries correctly — and recognise a battery that must not fly before it harms the aircraft or the pilot.">
+Most drone fires start on the ground. A LiPo stored at full charge in a hot car is a fire waiting for an excuse. The battery is the most dangerous component you will touch.
+</MissionBriefing>
 
-## Li-Po basics
+<CinematicScene
+  src="/lessons/battery-storage-guide.png"
+  alt="LiPo battery storage guide showing charge levels for different storage periods and IATA air travel limits"
+  caption="Diagram · battery-storage-guide"
+/>
 
-- **Voltage range:** 3.0–4.2 V per cell (safe working range
-  ~3.7–4.2 V).
-- **Energy:** Wh = Ah × V. E.g., 4S 5000 mAh ≈ 14.8 V × 5 Ah ≈ **74 Wh**.
-- **C rating:** the maximum discharge current as a multiple of
-  capacity.
+## LiPo fundamentals
 
-## Storage
+Lithium Polymer (LiPo) cells operate between **3.0 V** (depleted — do not discharge below this) and **4.2 V** (fully charged) per cell. The nominal voltage is **3.7 V** per cell.
 
-| Storage period | Recommended charge |
-|----------------|--------------------|
-| < 3 days | 100 % (if you'll use it soon) |
+Energy content is calculated as: **Wh = mAh ÷ 1000 × nominal voltage × cell count**. A 4S 5000 mAh pack: 5 Ah × 14.8 V ≈ **74 Wh** — relevant for air travel limits.
+
+The **C rating** tells you the maximum safe discharge rate as a multiple of capacity. A 5000 mAh battery rated at 20C can safely deliver up to 100 A continuous.
+
+## Storage charge — the rule most pilots skip
+
+A fully charged LiPo sitting unused generates heat internally and degrades faster than one stored at the correct level.
+
+| Storage period | Target charge |
+|----------------|---------------|
+| < 3 days (flying again soon) | 100 % |
 | 3–14 days | 70–80 % |
 | **> 2 weeks** | **50–60 % (storage charge)** |
 
-Keep cells in a **fire-safe bag** (Li-Po safe bag) and in a **cool,
-dry place**.
+Most modern drone apps have a "storage discharge" mode that brings cells to the correct level automatically. Use it — do not leave batteries at full charge in a bag for months.
 
-## If a battery swells
+Store batteries in a **Li-Po safe bag** (fireproof ceramic-fibre pouch) in a cool, dry location. Not in the car boot in summer.
 
-**Do not use it.** Swelling means internal gas build-up — fire risk.
-Dispose of it under local rules (in Latvia via partner collection
-points listed at `dabasdati.lv`).
+## Signs a battery must not fly
 
-## Air travel
+A **swollen** battery has gas building inside the cell — a sign of internal damage or overcharge. This is a fire risk under the mechanical stress of flight vibration.
 
-IATA rules:
+Check before every flight:
+- Is the pack visibly puffed or asymmetric?
+- Are any cells below 3.0 V after storage (over-discharged)?
+- Does the outer casing have cracks or damage?
 
-- **< 100 Wh** — checked or carry-on baggage (no charging in flight);
-- **100–160 Wh** — carry-on only, with airline approval;
-- **> 160 Wh** — **forbidden** as civilian air cargo.
+**Any "yes" = do not fly.** Dispose of swollen cells at certified collection points (in Latvia: partner sites listed at `dabasdati.lv`). Do not put them in household waste.
 
-> **Source:** Reg (EU) 2019/945 on UAS battery safety; IATA Lithium
-> Battery Guidance Document; manufacturer manuals.
+## Air travel limits (IATA)
+
+Drone batteries fall under IATA Dangerous Goods regulations for lithium ion cells:
+
+| Wh rating | Allowed in aircraft |
+|-----------|---------------------|
+| **< 100 Wh** | Carry-on or checked baggage |
+| **100–160 Wh** | Carry-on only, with **airline written approval** |
+| **> 160 Wh** | Forbidden in passenger aircraft cabin |
+
+Terminals at some airports will ask for the Wh figure — calculate it from the label before departure. Do not charge batteries on the aircraft.
+
+<Scenario title="You arrive at a job site and find that the only charged battery you brought is visibly puffed at one corner. The client is waiting. What do you do?">
+**Do not fly.** A puffed battery under the vibration and current draw of a flight can rupture and ignite. The consequences — a burning drone over a client's site — are worse than a postponed shoot.
+
+The professional response: inform the client, reschedule, and dispose of the battery correctly. Most commercial photographers carry two sets of batteries. This situation is an argument for redundancy, not a reason to fly with a defective cell.
+</Scenario>
+
+<MemoryAnchor
+  rule="Store > 2 weeks at 50–60 %. Never fly a swollen cell. Batteries > 160 Wh cannot board a passenger aircraft."
+  hint="A full charge is for flying. Storage charge is for everything else."
+/>
+
+<CommonMistakes>
+- Storing batteries at 100 % charge between flights — degrades cell chemistry and increases fire risk over weeks.
+- Not checking for swelling before flight — a puffed pack is not cosmetic; it is a structural failure waiting to happen.
+- Calculating Wh incorrectly for air travel — forgetting to account for cell count (S rating) leads to underestimating capacity.
+- Leaving batteries in a hot car boot — temperatures above 60 °C accelerate degradation and can trigger thermal runaway.
+- Disposing of LiPo cells in household waste — lithium fires in waste facilities are a documented hazard; use certified collection.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "ug-b1",
+    stem: "A 6S 4000 mAh LiPo battery will not be used for three weeks. What is the correct storage charge level?",
+    options: [
+      { id: "a", text: "100 % — keep it ready for the next job." },
+      { id: "b", text: "0 % — fully discharge before storage." },
+      { id: "c", text: "50–60 % — the recommended storage charge for periods over 2 weeks." },
+      { id: "d", text: "80–90 % — a safe compromise between full and storage charge." },
+    ],
+    correctOptionId: "c",
+    explanation: "Batteries stored over 2 weeks should be at 50–60 % (storage charge). Full charge accelerates cell degradation and raises fire risk. Complete discharge damages the cells — cells should not go below 3.0 V per cell during storage.",
+    distractorRationales: {
+      a: "Full charge during long storage generates internal heat and degrades the cell chemistry, reducing battery lifespan.",
+      b: "A fully discharged LiPo will drop below the minimum cell voltage during storage and become permanently damaged.",
+      d: "80–90 % is appropriate for up to 14 days. For 3 weeks, the correct target is 50–60 %.",
+    },
+  },
+  {
+    id: "ug-b2",
+    stem: "A pilot's battery is a 4S 5200 mAh LiPo. What is its approximate Wh rating, and can it be taken as carry-on without prior airline approval?",
+    options: [
+      { id: "a", text: "Approximately 77 Wh — carry-on without approval." },
+      { id: "b", text: "Approximately 77 Wh — carry-on with airline approval required." },
+      { id: "c", text: "Approximately 100 Wh — airline approval required." },
+      { id: "d", text: "Over 160 Wh — forbidden on passenger aircraft." },
+    ],
+    correctOptionId: "a",
+    explanation: "4S nominal voltage = 14.8 V. Wh = 5.2 Ah × 14.8 V ≈ 77 Wh. Below 100 Wh means carry-on or checked baggage without special airline approval.",
+    distractorRationales: {
+      b: "Airline approval is only required for batteries between 100 Wh and 160 Wh. At ~77 Wh, this battery is below the approval threshold.",
+      c: "The Wh calculation: 5.2 × 14.8 ≈ 77 Wh, not 100 Wh. Check the cell count in the S rating.",
+      d: "160 Wh limit applies to much larger packs — typically 6S or higher with high mAh ratings. A 4S 5200 mAh is well below this.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["pr-001"]}>
+You can store LiPo batteries safely, recognise a battery that must not fly, and calculate Wh for air travel compliance.
+
+Next sector: Privacy — why a camera-equipped drone is also a data collection device under EU law.
+</Debrief>

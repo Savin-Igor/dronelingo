@@ -1,37 +1,110 @@
-# GDPR basics for drones
+# GDPR basics for drone pilots
 
-The moment a camera-equipped drone records an **identifiable person** —
-even if the pilot did not intend the person as a subject — the General
-Data Protection Regulation (GDPR) applies.
+<MissionBriefing objective="After this lesson you will know when GDPR applies to drone footage, what counts as personal data from the air, and what lawful basis you need before pressing record near people.">
+You do not need to intend to film someone for GDPR to apply. The moment an identifiable person appears in the frame, the regulation is active.
+</MissionBriefing>
 
-## Personal data from a drone
+<CinematicScene
+  src="/lessons/gdpr-drone-privacy.png"
+  alt="Drone camera cone pointing downward with icons for identifiable data: face, license plate, voice recording — GDPR amber warning overlay"
+  caption="Diagram · gdpr-drone-privacy"
+/>
 
-Personal data covers not only faces, but also:
+## Why GDPR applies from the air
 
-- vehicle licence plates;
-- voice recordings;
-- gestures / behaviour that allow identifying a person in context.
+The General Data Protection Regulation (EU 2016/679) applies to any processing of **personal data** — information that relates to an identified or identifiable natural person. From a drone camera, personal data is captured the moment the footage contains:
 
-## Lawful basis
+- **Faces** visible enough to identify a person;
+- **Vehicle licence plates** (identifiable property → traceable owner);
+- **Voice recordings** if a microphone is active;
+- **Behavioural patterns** — filming a person's home over time, revealing when they leave and return.
 
-GDPR requires a **lawful basis** (Art. 6) — typically:
+The pilot's intention is irrelevant. If the data is captured, GDPR governs how it is stored, used, and deleted.
 
-- **consent** — the person agrees to be filmed;
-- **legitimate interest** — e.g. inspection of a technical site, where
-  any people in frame are incidental and not identifiable.
+## Lawful basis — required before recording
 
-## Practical advice
+Article 6 of GDPR requires a lawful basis for processing personal data. For drone pilots the two most relevant bases are:
 
-- When flying near populated areas, **do not record video** unless
-  necessary.
-- If faces or plates enter the frame, **blur** them before publishing.
-- Retain footage only as long as needed for the specific purpose.
+**Consent (Art. 6(1)(a))** — the person has given clear, specific agreement to be filmed. Verbal consent is weak; written is better. Consent must be freely given — a property owner cannot consent on behalf of passers-by.
 
-## Latvia supervisor
+**Legitimate interest (Art. 6(1)(f))** — the pilot or their client has a genuine purpose and the privacy impact is proportionate. Examples: a utility company inspecting its own power line infrastructure; a farmer monitoring their own fields. People who happen to appear at the edge of the frame are incidental if they are not identifiable and are not the subject of recording.
 
-In Latvia the supervisor is **Datu valsts inspekcija (DVI)**. Complaints
-are investigated; fines can reach 4 % of annual turnover or €20 million
-(whichever is higher).
+**No lawful basis applies** when filming a public park for a commercial video and capturing identifiable people who have not consented. This is the most common violation.
 
-> **Source:** Reg (EU) 2016/679 (GDPR) Art. 4, 6; DVI guidance for
-> drones.
+## Practical obligations
+
+Before pressing record near people:
+1. Identify whether identifiable persons are likely to enter the frame.
+2. Establish the lawful basis in advance — not after the footage exists.
+3. If consent is the basis, document it.
+
+After recording:
+- **Blur faces and plates** before publishing or sharing footage where individuals are identifiable.
+- **Retain footage only as long as the specific purpose requires** — then delete.
+- **Do not share footage** with third parties without a separate legal basis.
+
+## Latvia's supervisory authority
+
+In Latvia, GDPR is enforced by the **Datu valsts inspekcija (DVI)**. Complaints trigger investigations. Maximum fines: **€20 million** or **4 % of annual global turnover** — whichever is higher. Individual pilots operating commercially can be fined under the same framework.
+
+<Scenario title="You are filming an aerial video of a public plaza for a city's promotional reel. People are walking below. Some are identifiable. You have no consent from any of them. Is this legal to publish?">
+**Not without blurring identifiable individuals.** Filming public spaces for commercial purposes captures personal data. "Public space" does not waive GDPR — it only means the people were visible from outside. The lawful basis for publishing identifiable footage must exist.
+
+Options: obtain a legitimate interest assessment (LIA) showing the privacy impact is minimal, or blur all identifiable faces and plates before publishing. Many production houses use automated blurring tools for exactly this purpose.
+</Scenario>
+
+<MemoryAnchor
+  rule="GDPR activates the moment an identifiable person is in the frame — regardless of intent. Lawful basis must exist before recording, not after."
+  hint="Blur before publishing. Retain only as long as needed. Document consent."
+/>
+
+<CommonMistakes>
+- Assuming "it's a public space" exempts the pilot from GDPR — it does not.
+- Getting verbal consent from a property owner and believing it covers all people who may appear — it does not.
+- Storing raw footage indefinitely "just in case" — GDPR requires data minimisation and purpose limitation.
+- Publishing footage without blurring faces because "nobody will complain" — the DVI can investigate based on third-party reports, not just direct complaints.
+- Confusing airspace permission (UGZ approval) with privacy permission — they are entirely separate legal frameworks.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "pr-q1",
+    stem: "A drone pilot films a coastal landscape for a tourism client. Three hikers are visible in one shot — their faces are clear. The pilot has no consent from them. What must be done before publishing the clip?",
+    options: [
+      { id: "a", text: "Nothing — filming in a public outdoor area is always permitted." },
+      { id: "b", text: "Get the hikers' retrospective consent via social media." },
+      { id: "c", text: "Blur the hikers' faces before publishing." },
+      { id: "d", text: "Delete only the shots where the hikers are in the foreground." },
+    ],
+    correctOptionId: "c",
+    explanation: "GDPR applies regardless of the location being public. Identifiable faces constitute personal data. Without consent or another valid lawful basis, the footage must be anonymised (faces blurred) before publishing. Retrospective social media consent is not a valid GDPR mechanism for data already processed.",
+    distractorRationales: {
+      a: "Public location does not exempt the pilot from GDPR obligations regarding identifiable individuals.",
+      b: "GDPR consent must be given before the data is collected, not after. Social media 'consent' after the fact is not legally valid.",
+      d: "Deleting only foreground shots does not resolve the issue if faces are identifiable in background shots. Blurring all identifiable faces is the correct approach.",
+    },
+  },
+  {
+    id: "pr-q2",
+    stem: "Which of the following is a valid lawful basis for a commercial drone operator to film identifiable individuals without their explicit consent?",
+    options: [
+      { id: "a", text: "The operator paid for the flight permit." },
+      { id: "b", text: "Legitimate interest, where the privacy impact is proportionate and documented." },
+      { id: "c", text: "The operator is a registered business entity." },
+      { id: "d", text: "The individuals are in a publicly accessible area." },
+    ],
+    correctOptionId: "b",
+    explanation: "Legitimate interest (Art. 6(1)(f)) is a valid lawful basis when the operator has a genuine purpose and the privacy impact is proportionate to that purpose. This requires a documented Legitimate Interest Assessment (LIA). Being a registered business or holding a flight permit are not GDPR legal bases.",
+    distractorRationales: {
+      a: "A flight permit is airspace authorisation from the aviation authority. It has no bearing on GDPR.",
+      c: "Business registration status does not affect GDPR obligations. GDPR applies to individuals and businesses equally.",
+      d: "Public accessibility is not a GDPR exemption. Identifiable persons in public spaces retain their data protection rights.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["pr-002"]}>
+You know when GDPR applies to drone footage, which lawful bases are relevant, and how to handle footage containing identifiable persons.
+
+Next: Critical infrastructure — sites where the filming ban exists independently of airspace rules and how to handle accidental captures.
+</Debrief>

@@ -1,39 +1,113 @@
-# Altitude limits and BGKIS applications
+# Altitude limits and BGKIS
 
-The Open-category altitude cap is **120 m above ground or water**. A
-UGZ can lower it — but **never raise it**.
+<MissionBriefing objective="After this lesson you will know how the 120 m ceiling works, how terrain changes the calculation, and when you must file a BGKIS application before flying.">
+Altitude and zone applications are on nearly every A1/A3 exam. The rule is simple — the traps are in how it is measured.
+</MissionBriefing>
 
-## How altitude is measured
+<CinematicScene
+  src="/lessons/altitude-120m-ceiling.png"
+  alt="Cross-section showing 120m AGL ceiling above terrain with drone inside limit and one trying to exceed it"
+  caption="Diagram · altitude-ceiling"
+/>
 
-- **AGL (Above Ground Level)** — above the ground directly under the
-  UAS, not above the launch point.
-- Terrain following is the pilot's responsibility when there is a
-  rise underneath.
+## The 120 m ceiling
 
-## When to file BGKIS
+The Open category hard limit is **120 m above ground or water directly under the drone** — not above the takeoff point, not above sea level.
 
-Since 2025-01-01 a BGKIS application is mandatory for flights in a
-**restricted UGZ**. File at least **24 hours in advance** unless a
-shorter window is specified.
+This has one critical consequence: **the ceiling moves with the terrain.**
 
-Application fields:
+A drone launched at the base of a 60 m hill must stay below 120 m above the ground where it flies. If it crosses to the top of the hill, the 120 m is measured from the hilltop — not from where it launched.
 
-- date and time of flight (± buffer);
-- max altitude and distance from launch point;
-- UAS class and mass;
-- pilot and operator numbers.
+A UGZ can lower the ceiling for a specific area. It can **never raise it above 120 m**.
 
-## When BGKIS alone is not enough
+## When BGKIS is mandatory
 
-Some zones (airport CTRs, military sites) require **additional
-authorisation** from the relevant authority. BGKIS does not replace
-it.
+Since 1 January 2025, a BGKIS application is required for any flight in a **Restricted UGZ**.
 
-## Consequences
+<Artefact
+  description="Table showing BGKIS requirement by zone type: Information = no BGKIS, Restricted = BGKIS application required, Prohibited = flight not permitted at all."
+  caption="Table · bgkis-by-zone"
+>
+  <div className="grid gap-2 text-sm">
+    {[
+      { zone: "Information", bgkis: "Not required", colour: "text-green-clear" },
+      { zone: "Restricted", bgkis: "Required — apply ≥ 24 h before", colour: "text-amber-alert" },
+      { zone: "Prohibited", bgkis: "No flight permitted", colour: "text-red-danger" },
+    ].map(r => (
+      <div key={r.zone} className="flex items-center gap-4 border-b border-horizon pb-2">
+        <span className="w-28 font-mono text-xs text-muted">{r.zone}</span>
+        <span className={`text-sm ${r.colour}`}>{r.bgkis}</span>
+      </div>
+    ))}
+  </div>
+</Artefact>
 
-Flying without an approved application — administrative fine and,
-depending on the zone, criminal liability (e.g. flying within
-EVR17 Border East along the Latvia-Russia border).
+The application must include the date and time (with a buffer), maximum altitude, UAS class, mass, pilot number, and operator number.
 
-> **Source:** Reg (EU) 2019/947 UAS.OPEN.010(2); CAA Latvia BGKIS
-> rules effective 2025-01-01.
+## When BGKIS is not enough
+
+Some zones require additional authorisation on top of a BGKIS submission — particularly airport CTRs and military restricted areas. BGKIS confirms that the zone manager has received your application; it does not grant access by itself.
+
+<Scenario title="You want to film a hilltop castle. The castle sits at 180 m elevation; you launch from the valley floor at 120 m. The zone is green (information). How high can you fly from your launch point?">
+You need to think in AGL above the terrain the drone flies over — not above your launch point.
+
+The valley floor is at 120 m. The castle hilltop is at 180 m, a rise of 60 m. When you fly over the castle hill, your ceiling is 120 m above the hilltop — which is 180 + 120 = 300 m above sea level, but only 120 m above the ground under the drone. From your launch point (120 m elevation), the ceiling would appear as 180 m of climb available when you're over the valley, but only 120 m once you're over the hill.
+
+In plain terms: do not exceed 120 m above whatever terrain is directly below you at any point.
+</Scenario>
+
+<MemoryAnchor
+  rule="120 m AGL — measured below the drone, not from where you stood when you launched."
+  hint="If the hill rises 40 m under you, your usable altitude just shrank by 40 m."
+/>
+
+<CommonMistakes>
+- Measuring 120 m from the takeoff point instead of from the ground currently under the UAS.
+- Assuming that a green zone means no check is needed — always open airspace.lv before flying.
+- Treating BGKIS submission as approval — a filed application is not the same as an authorised application.
+- Flying in a restricted zone without a confirmed BGKIS response, assuming the 24 h window is just a guideline.
+- Not updating RTH altitude when the terrain around the return path is higher than when you set it.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "alt-q1",
+    stem: "You launch from flat ground and fly to hover above a 50 m hill. What is your maximum altitude above your launch point before you breach the 120 m AGL ceiling?",
+    options: [
+      { id: "a", text: "120 m — the 120 m rule is measured from the launch point." },
+      { id: "b", text: "170 m above launch — 120 m ceiling plus the 50 m hill height." },
+      { id: "c", text: "70 m above launch — 120 m minus the 50 m rise underneath." },
+      { id: "d", text: "50 m above launch — equal to the hill height." },
+    ],
+    correctOptionId: "c",
+    explanation: "When the drone hovers above the 50 m hill, the ground under it is 50 m higher than the launch point. The 120 m AGL ceiling allows only 120 - 50 = 70 m of altitude above the launch point at that location.",
+    distractorRationales: {
+      a: "The 120 m is measured above the ground directly under the drone — not above the launch point.",
+      b: "This would mean you are 170 m above the launch point and 120 m above the hilltop — correct for the hilltop part, but you still cannot exceed 120 m AGL at any point.",
+      d: "Equal to the hill height has no regulatory basis.",
+    },
+  },
+  {
+    id: "alt-q2",
+    stem: "The airspace.lv map shows your planned area as 'Restricted'. What must you do before flying?",
+    options: [
+      { id: "a", text: "Stay below 50 m — restricted zones allow low-altitude flight automatically." },
+      { id: "b", text: "Submit a BGKIS application and receive approval before the flight." },
+      { id: "c", text: "Call the nearest airport tower to obtain verbal clearance." },
+      { id: "d", text: "Notify the zone manager by email within 24 h after the flight." },
+    ],
+    correctOptionId: "b",
+    explanation: "Restricted zones require a BGKIS application submitted and approved before the flight. Flying without an approved application is illegal regardless of altitude or UAS class.",
+    distractorRationales: {
+      a: "Altitude reduction does not waive the authorisation requirement in a Restricted zone.",
+      c: "Airport towers do not manage UAS zone applications; BGKIS is the mandatory channel.",
+      d: "Notification after the fact is not authorisation — you need approval before flying.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["al-002"]}>
+You know the 120 m AGL rule and why terrain matters. You also know when and how to use BGKIS.
+
+Next: the three UGZ types — information, restricted, prohibited — and what happens at Latvia's border zones.
+</Debrief>

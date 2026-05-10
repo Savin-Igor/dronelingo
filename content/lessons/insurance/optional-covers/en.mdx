@@ -1,47 +1,142 @@
 # Optional insurance covers
 
-Mandatory third-party liability covers **damage to others**. Full
-professional protection needs additional policies.
+<MissionBriefing objective="After this lesson you will select the correct insurance stack for a given operating scenario — recreational, commercial photography, inspection, or EU travel — and understand what each optional policy covers that the mandatory one does not.">
+The mandatory third-party policy covers what you do to others. Optional covers protect your equipment, your income, and your professional reputation. A professional operator needs all three layers.
+</MissionBriefing>
 
-## Hull (the UAS itself) insurance
+<CinematicScene
+  src="/lessons/insurance-stack-diagram.png"
+  alt="Four stacked card layers: mandatory third-party liability, hull/crash/theft, professional liability and payload, EU travel policy — each with scenario icons"
+  caption="Diagram · insurance-stack-diagram"
+/>
 
-Covers damage to the UAS:
+## Hull insurance — protecting the aircraft
 
-- **Crash** (pilot error, fly-away, lost link);
-- **Theft** or loss;
-- **Water damage** if the manufacturer drops its IPxx claim.
+Hull insurance covers **damage to or loss of the UAS itself**. The mandatory policy never covers this. Hull insurance typically covers:
 
-Typically 5–10 % of UAS value per year, with a **deductible** of
-€200–500.
+- **Crash** — regardless of cause: pilot error, fly-away, unexpected obstacle, bird strike.
+- **Theft** — from a vehicle, storage location, or on-site.
+- **Water damage** — if the drone is rated for wet conditions and the damage exceeds that rating.
+- **Transit damage** — in some policies, damage during transport.
 
-## Professional liability
+**Typical cost:** 5–10 % of UAS replacement value per year, with a deductible of €200–500 per claim.
 
-For commercial operators (photo/video, inspection, security). Covers:
+A DJI Mavic 3 Enterprise priced at €3 500 would cost approximately €175–350/year to insure on hull. Without hull cover, a fly-away over water is an unrecovered €3 500 loss.
 
-- Client damages if the work fails the contract.
-- Data loss (footage, GIS data).
-- IP / copyright claims on materials used.
+## Professional liability — protecting the work
 
-## Payload insurance
+For commercial operators, **professional liability** (also called errors and omissions insurance) covers:
 
-Cameras, sensors, lidar modules separately. Often more expensive than
-the UAS, so cover is priced separately.
+- **Client financial losses** if the deliverable fails — footage corrupted, survey data lost, deadline missed due to equipment failure.
+- **Data loss** — GIS survey results, orthomosaic data, inspection records.
+- **IP and copyright claims** — if footage captures protected content inadvertently.
 
-## Export / transport policy
+Without professional liability, a client who loses a major construction survey due to a data corruption event can pursue the operator for the full cost of re-survey — which may exceed the value of the drone by orders of magnitude.
 
-For travel jobs in other EU countries. The base Latvian policy is
-**valid across the EU**, but extra cover is sensible in some
-jurisdictions (e.g. Germany imposes higher demands on commercial
-operators).
+## Payload insurance — protecting the camera
 
-## How to choose
+Sensors, cinema cameras, and LiDAR modules mounted on a drone often cost more than the aircraft itself. Payload insurance covers this equipment separately, including:
 
-| Scenario | Minimum stack |
-|----------|---------------|
-| Recreational < 250 g | Only mandatory (or none required) |
-| Recreational C1 / C2 / C3 | Mandatory + hull |
-| Commercial photo / video | Mandatory + hull + professional |
-| Travel jobs in other EU countries | + transport policy |
+- Physical damage during flight or landing.
+- Damage during transit and setup.
+- Theft from a vehicle or location.
 
-> **Source:** Reg (EC) 785/2004; commercial insurer product offerings
-> (BTA, Balta, Gjensidige); CAA Latvia guidance.
+A Sony FX3 rigged for aerial work plus gimbal can exceed €5 000. A hull policy covers the drone frame; the camera requires its own rider or separate policy.
+
+## EU travel policy
+
+The mandatory Latvian policy is **valid across the EU** for third-party liability — EU regulations standardise this. However, for extended commercial work in other member states, an **EU travel extension** is advisable because:
+
+- Some countries (notably Germany) impose additional requirements on commercial UAS operators beyond EU minimums.
+- Local claims handling in a foreign country is smoother with a policy that covers the jurisdiction explicitly.
+- Long-term operations abroad may trigger local operator registration requirements.
+
+## Choosing the right stack
+
+<Artefact
+  description="Insurance stack by operating scenario: recreational under 250g needs nothing; recreational C1/C2/C3 needs mandatory plus hull; commercial photo/video adds professional liability; full professional with payload adds payload cover; EU travel jobs add a travel extension."
+  caption="Table · insurance-stack-by-scenario"
+>
+  <table className="text-sm w-full text-telemetry">
+    <thead><tr className="text-cyan-pulse font-mono text-xs"><th className="text-left pr-4 pb-2">Scenario</th><th className="text-left pb-2">Recommended stack</th></tr></thead>
+    <tbody className="space-y-1">
+      {[
+        ["Recreational C0 < 250 g", "None required"],
+        ["Recreational C1 / C2 / C3", "Mandatory + hull"],
+        ["Commercial photo / video", "Mandatory + hull + professional liability"],
+        ["With expensive payload", "+ payload insurance"],
+        ["Extended EU travel jobs", "+ EU travel extension"],
+      ].map(([scenario, stack]) => (
+        <tr key={scenario}>
+          <td className="pr-4 pb-1 font-mono text-xs text-cyan-pulse align-top">{scenario}</td>
+          <td className="pb-1">{stack}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</Artefact>
+
+<Scenario title="You are a commercial aerial photographer. During a client job, a fly-away sends your drone into a canal. The drone, an attached cinema camera, and the day's footage are all lost. What does each policy cover?">
+- **Mandatory third-party liability:** Covers any property or people the drone struck during the fly-away. Does not cover your losses.
+- **Hull insurance:** Covers the drone replacement cost (subject to deductible).
+- **Payload insurance:** Covers the cinema camera replacement cost.
+- **Professional liability:** May cover the client's losses if the lost footage was a contractual deliverable and the failure is attributable to your operations.
+
+Without the optional layers, you absorb the cost of the drone and camera out of pocket, and face a client claim with no insurance backing.
+</Scenario>
+
+<MemoryAnchor
+  rule="Mandatory = damage to others. Hull = damage to the drone. Professional = damage to the client's work. Payload = damage to the camera. Stack them for the scenario."
+  hint="Ask: what is the most expensive thing that could be lost on this job? Insure that thing."
+/>
+
+<CommonMistakes>
+- Assuming hull cover is included in the mandatory policy — it is not, ever.
+- Not insuring expensive payload separately — the hull policy insures the aircraft, not the sensor.
+- Believing the EU policy covers all EU commercial requirements — Germany and a few others impose additional demands worth checking per job.
+- Letting professional liability lapse between contracts — a claim from a job six months ago can still arrive after the policy expires if the coverage period is misunderstood.
+- Underinsuring hull by using a lower declared value to reduce premiums — the payout on a total loss is based on the declared value.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "in-oc1",
+    stem: "A commercial drone pilot loses their aircraft and a €4,000 cinema camera in a crash. They hold mandatory third-party liability and hull insurance (with a €300 deductible). What is covered?",
+    options: [
+      { id: "a", text: "The drone cost only — hull covers the aircraft, not the camera." },
+      { id: "b", text: "The drone cost minus the €300 deductible — the camera requires separate payload cover." },
+      { id: "c", text: "Both the drone and camera — hull insurance covers all equipment attached to the drone." },
+      { id: "d", text: "Neither — crashes caused by pilot error are excluded from hull policies." },
+    ],
+    correctOptionId: "b",
+    explanation: "Hull insurance covers the aircraft (drone) minus the deductible. The cinema camera is payload and requires a separate payload insurance policy or rider. Hull does not automatically extend to mounted equipment. Pilot error is typically not an exclusion in most hull policies — fly-away and crashes are the core covered events.",
+    distractorRationales: {
+      a: "The formulation is partially correct — hull covers the drone — but omits the deductible, which reduces the payout.",
+      c: "Hull policies cover the aircraft itself. Payload (camera, sensor, gimbal) requires separate insurance unless explicitly included in the policy schedule.",
+      d: "Hull insurance is specifically designed to cover crash and fly-away events, including pilot error. Intentional damage or gross negligence may be excluded, but crashes are a core covered peril.",
+    },
+  },
+  {
+    id: "in-oc2",
+    stem: "A Latvian operator takes a commercial inspection job in Germany for two weeks. Their Latvian third-party liability policy is valid EU-wide. What additional cover should they consider?",
+    options: [
+      { id: "a", text: "No additional cover — EU-wide validity means full coverage." },
+      { id: "b", text: "A German-specific UAS registration and an EU travel extension, because Germany imposes additional commercial requirements beyond EU minimums." },
+      { id: "c", text: "Professional liability only — third-party is already covered." },
+      { id: "d", text: "The operation cannot be conducted legally in Germany with a Latvian licence." },
+    ],
+    correctOptionId: "b",
+    explanation: "The Latvian third-party liability policy is EU-valid, but Germany imposes additional requirements on commercial UAS operators that may exceed EU minimums. An EU travel extension handles the jurisdiction-specific demands and simplifies local claims handling. The pilot should also verify local registration requirements for the specific operation type.",
+    distractorRationales: {
+      a: "EU-wide validity covers the minimum third-party liability. It does not address Germany's additional commercial operator requirements.",
+      c: "Professional liability is a good addition but does not address the Germany-specific compliance layer. An EU travel extension is the more relevant addition.",
+      d: "Latvian A1/A3 or A2 certificates are recognised across the EU under Open category mutual recognition. The operation is legal subject to local requirements.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["se-001"]}>
+You can select the correct insurance stack for any operating scenario and explain what each layer protects.
+
+Next sector: Security — cyber threats to UAS systems and the reporting obligations that make aviation safer for everyone.
+</Debrief>
