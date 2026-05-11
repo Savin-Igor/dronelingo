@@ -96,7 +96,14 @@ function buildOrder(
   return [...due, ...shuffle(fresh), ...shuffle(scheduled)];
 }
 
-export function Trainer({ questions }: { questions: TrainerQuestion[] }) {
+export function Trainer({
+  questions,
+  initialDueOnly = false,
+}: {
+  questions: TrainerQuestion[];
+  /** If true, the session starts in "due only" mode — for daily warm-up. */
+  initialDueOnly?: boolean;
+}) {
   const t = useTranslations("practice");
   const tSrs = useTranslations("practice.srs");
   const [srs, setSrs] = useState<SRSMap>({});
@@ -106,7 +113,7 @@ export function Trainer({ questions }: { questions: TrainerQuestion[] }) {
   const [revealed, setRevealed] = useState(false);
   const [sessionCorrect, setSessionCorrect] = useState(0);
   const [sessionTotal, setSessionTotal] = useState(0);
-  const [dueOnly, setDueOnly] = useState(false);
+  const [dueOnly, setDueOnly] = useState(initialDueOnly);
 
   // Initialise on questions change and on dueOnly toggle.
   useEffect(() => {

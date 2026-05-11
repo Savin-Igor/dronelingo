@@ -188,6 +188,16 @@
     "stubNote": "Stub checkout — no real charge.",
     "freeNote": "Air Safety topic is always free — no payment needed."
   },
+  "warmUp": {
+    "ariaLabel": "Daily warm-up",
+    "kicker": "Daily warm-up",
+    "title": "{count, plural, =1 {# question is due for review.} other {# questions are due for review.}}",
+    "subtitle": "A few minutes of spaced repetition keeps your weak topics sharp.",
+    "cta": "Start warm-up",
+    "pageTitle": "Daily warm-up",
+    "freeOnlyNote": "Warming up from the free Air Safety topic only.",
+    "unlockAll": "Unlock all 9 topics"
+  },
   "lessonWidgets": {
     "anatomy": {
       "missionBriefing": "Mission briefing",

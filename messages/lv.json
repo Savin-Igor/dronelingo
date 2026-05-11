@@ -188,6 +188,16 @@
     "stubNote": "Stub checkout — reāla maksa netiek ieturēta.",
     "freeNote": "Gaisa drošības tēma vienmēr ir bez maksas."
   },
+  "warmUp": {
+    "ariaLabel": "Dienas iesildīšanās",
+    "kicker": "Dienas iesildīšanās",
+    "title": "{count, plural, one {# jautājums gaida atkārtojumu.} other {# jautājumi gaida atkārtojumu.}}",
+    "subtitle": "Dažas minūtes atkārtojuma intervālos uztur vājās tēmas asas.",
+    "cta": "Sākt iesildīšanos",
+    "pageTitle": "Dienas iesildīšanās",
+    "freeOnlyNote": "Iesildies tikai no bezmaksas Gaisa drošības tēmas.",
+    "unlockAll": "Atver visas 9 tēmas"
+  },
   "lessonWidgets": {
     "anatomy": {
       "missionBriefing": "Misijas brīfings",
