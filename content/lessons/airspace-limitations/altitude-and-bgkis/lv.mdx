@@ -1,39 +1,113 @@
-# Augstuma robežas un BGKIS pieteikumi
+# Augstuma robežas un BGKIS
 
-Atvērtās kategorijas augstuma robeža ir **120 m virs zemes vai ūdens
-virsmas**. UGZ var noteikt zemāku — bet **nekad augstāku**.
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, kā darbojas 120 m griesti, kā ainava maina aprēķinu un kad pirms lidojuma jāiesniedz BGKIS pieteikums.">
+Augstums un zonu pieteikumi ir gandrīz katrā A1/A3 eksāmenā. Pats noteikums ir vienkāršs — slazdi ir tajā, kā to mēra.
+</MissionBriefing>
 
-## Kā mēra augstumu
+<CinematicScene
+  src="/lessons/altitude-120m-ceiling.png"
+  alt="Šķērsgriezums ar 120 m AGL griestiem virs reljefa: UAS robežās un UAS, kas mēģina tos pārkāpt."
+  caption="Diagramma · altitude-ceiling"
+/>
 
-- **AGL (Above Ground Level)** — virs zemes tieši zem UAS, ne virs
-  starta punkta.
-- Sekot ainavai (terrain following) ir pilota atbildība, ja zem UAS
-  atrodas paaugstinājumi.
+## 120 m griesti
 
-## Kad pieteikt BGKIS
+Atvērtās kategorijas stingrais limits ir **120 m virs zemes vai ūdens tieši zem aparāta** — ne virs starta punkta, ne virs jūras līmeņa.
 
-Kopš 2025-01-01 lidojumiem **ierobežotās UGZ** obligāts ir BGKIS
-pieteikums. Iesniedz vismaz **24 stundas pirms** lidojuma, ja nav
-norādīts īsāks termiņš.
+No tā izriet viena būtiska sekas: **griesti pārvietojas līdzi reljefam.**
 
-Pieteikuma saturs:
+UAS, kas pacelts pie 60 m augsta paugura pakājes, jāpaliek zem 120 m virs tās zemes, kur tas lido. Ja tas pārvietojas pār paugura virsotni, 120 m mēra no paugura virsotnes — ne no vietas, kur tas pacelts.
 
-- lidojuma datums un laiks (ar ± buferi);
-- maksimālais augstums un attālums no starta punkta;
-- UAS klase un masa;
-- pilota un ekspluatanta numuri.
+UGZ var pazemināt griestus konkrētai vietai. Tā **nekad nevar pacelt** tos virs 120 m.
 
-## Kad nepietiek ar BGKIS
+## Kad BGKIS ir obligāts
 
-Atsevišķās zonās (lidostu CTR, militāri objekti) nepieciešama
-**papildu saskaņošana** ar attiecīgo institūciju. To nevar aizstāt
-BGKIS pieteikums.
+Kopš 2025. gada 1. janvāra BGKIS pieteikums ir obligāts katram lidojumam **Ierobežotā UGZ**.
 
-## Pārkāpuma sekas
+<Artefact
+  description="Tabula ar BGKIS prasību pa zonu tipiem: Informatīvā = nav BGKIS, Ierobežotā = BGKIS pieteikums obligāts, Aizliegtā = lidojums vispār nav atļauts."
+  caption="Tabula · bgkis-by-zone"
+>
+  <div className="grid gap-2 text-sm">
+    {[
+      { zone: "Informatīvā", bgkis: "Nav vajadzīgs", colour: "text-green-clear" },
+      { zone: "Ierobežotā", bgkis: "Obligāts — iesniedz ≥ 24 h pirms", colour: "text-amber-alert" },
+      { zone: "Aizliegtā", bgkis: "Lidot nedrīkst", colour: "text-red-danger" },
+    ].map(r => (
+      <div key={r.zone} className="flex items-center gap-4 border-b border-horizon pb-2">
+        <span className="w-28 font-mono text-xs text-muted">{r.zone}</span>
+        <span className={`text-sm ${r.colour}`}>{r.bgkis}</span>
+      </div>
+    ))}
+  </div>
+</Artefact>
 
-Bez apstiprināta pieteikuma — administratīvais sods un, atkarībā no
-zonas, kriminālatbildība (piem., lidojot Latvijas-Krievijas robežzonā
-EVR17 Border East).
+Pieteikumam jāietver datums un laiks (ar rezervi), maksimālais augstums, UAS klase, masa, pilota numurs un operatora numurs.
 
-> **Avots:** Regula (ES) 2019/947 UAS.OPEN.010(2); CAA Latvia BGKIS
-> noteikumi spēkā no 2025-01-01.
+## Kad BGKIS vien nepietiek
+
+Dažas zonas papildus BGKIS pieteikumam prasa atsevišķu atļauju — īpaši lidostu CTR un militāri ierobežotas zonas. BGKIS apstiprina, ka zonas pārvaldītājs ir saņēmis pieteikumu; pati par sevi tā piekļuvi nedod.
+
+<Scenario title="Tu vēlies filmēt pilskalna pili. Pils atrodas 180 m virs jūras līmeņa; pacelies no ielejas grīdas 120 m augstumā. Zona ir zaļa (informatīvā). Cik augstu drīksti lidot no starta punkta?">
+Jādomā AGL virs reljefa, pār kuru aparāts lido, nevis virs sava starta punkta.
+
+Ielejas grīda ir 120 m. Pilskalna virsotne ir 180 m, kāpums 60 m. Kad lido virs pilskalna, tavi griesti ir 120 m virs virsotnes — kas ir 180 + 120 = 300 m virs jūras līmeņa, bet tikai 120 m virs zemes zem aparāta. No starta punkta (120 m augstuma) tev vizuāli būtu pieejami 180 m kāpuma pār ieleju, bet tikai 120 m, tiklīdz atrodies pār pakalnu.
+
+Vienkārši: nepārkāp 120 m virs jebkāda reljefa, kas tieši zem tevis.
+</Scenario>
+
+<MemoryAnchor
+  rule="120 m AGL — mēra zem aparāta, ne no vietas, kur tu stāvi starta brīdī."
+  hint="Ja zem tevis ir 40 m pakalns, tavs lietojamais augstums tikko saruka par 40 m."
+/>
+
+<CommonMistakes>
+- Mērīt 120 m no starta punkta, nevis no zemes, kas pašlaik zem UAS.
+- Pieņemt, ka zaļa zona nozīmē, ka pārbaude nav vajadzīga — vienmēr atver airspace.lv pirms lidojuma.
+- Uzskatīt BGKIS iesniegumu par apstiprinājumu — iesniegts pieteikums nav tas pats, kas autorizēts.
+- Lidot ierobežotā zonā bez apstiprinātas BGKIS atbildes, domājot, ka 24 h logs ir tikai vadlīnija.
+- Neatjaunot RTH augstumu, kad reljefs ap atgriešanās ceļu ir augstāks nekā iestatīšanas brīdī.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "alt-q1",
+    stem: "Tu pacelies no līdzenas zemes un dodies karāties virs 50 m augsta pakalna. Kāds ir tavs maksimālais augstums virs starta punkta, pirms tu pārkāp 120 m AGL griestus?",
+    options: [
+      { id: "a", text: "120 m — 120 m noteikumu mēra no starta punkta." },
+      { id: "b", text: "170 m virs starta — 120 m griesti plus 50 m pakalna augstums." },
+      { id: "c", text: "70 m virs starta — 120 m mīnus 50 m kāpums zem aparāta." },
+      { id: "d", text: "50 m virs starta — vienāds ar pakalna augstumu." },
+    ],
+    correctOptionId: "c",
+    explanation: "Kad aparāts karājas virs 50 m pakalna, zeme zem tā ir par 50 m augstāka nekā starta punktā. 120 m AGL griesti šajā vietā atļauj tikai 120 − 50 = 70 m virs starta punkta.",
+    distractorRationales: {
+      a: "120 m mēra virs zemes tieši zem aparāta — ne virs starta punkta.",
+      b: "Tas nozīmētu 170 m virs starta un 120 m virs pakalna virsotnes — pa daļai pareizi, bet nekur lidojuma laikā nedrīkst pārsniegt 120 m AGL.",
+      d: "Vienāds ar pakalna augstumu — bez regulas pamata.",
+    },
+  },
+  {
+    id: "alt-q2",
+    stem: "Airspace.lv karte rāda plānoto vietu kā 'Ierobežotu'. Kas obligāti jādara pirms lidojuma?",
+    options: [
+      { id: "a", text: "Palikt zem 50 m — ierobežotās zonās zemu augstumu lidojums ir automātiski atļauts." },
+      { id: "b", text: "Iesniegt BGKIS pieteikumu un saņemt apstiprinājumu pirms lidojuma." },
+      { id: "c", text: "Piezvanīt tuvākajai lidostas tornī, lai saņemtu mutisku atļauju." },
+      { id: "d", text: "Pa e-pastu paziņot zonas pārvaldītājam 24 h pēc lidojuma." },
+    ],
+    correctOptionId: "b",
+    explanation: "Ierobežotās zonas prasa BGKIS pieteikumu, kas iesniegts un apstiprināts pirms lidojuma. Lidojums bez apstiprinātas atbildes ir prettiesisks neatkarīgi no augstuma vai UAS klases.",
+    distractorRationales: {
+      a: "Augstuma samazināšana neatceļ atļaujas prasību ierobežotā zonā.",
+      c: "Lidostas torņi UAS zonu pieteikumus nepārvalda; BGKIS ir obligātais kanāls.",
+      d: "Paziņojums pēc fakta nav atļauja — apstiprinājums vajadzīgs pirms.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["al-002"]}>
+Tu pārvaldi 120 m AGL noteikumu un saproti, kāpēc reljefs ir būtisks. Tu arī zini, kad un kā lietot BGKIS.
+
+Tālāk: trīs UGZ tipi — informatīvā, ierobežotā, aizliegtā — un kas notiek pie Latvijas robežzonām.
+</Debrief>
