@@ -19,6 +19,11 @@
         lv: Mazāk par 4 kg.
         en: Less than 4 kg.
         ru: Менее 4 кг.
+    - id: d
+      text:
+        lv: Mazāk par 25 kg.
+        en: Less than 25 kg.
+        ru: Менее 25 кг.
   correctOptionId: a
   explanation:
     lv: >
@@ -31,8 +36,23 @@
     ru: >
       Класс C0 — < 250 г (и макс. скорость 19 м/с). Соответствует A1 и
       единственный, разрешённый над отдельными посторонними людьми.
+  distractorRationales:
+    b:
+      lv: 900 g ir C1 klases masas limits, ne C0. C1 atbilst A1 apakškategorijai, bet ar stingrākiem ierobežojumiem.
+      en: 900 g is the C1 class mass limit, not C0. C1 maps to A1 but with stricter limits.
+      ru: 900 г — предел массы C1, а не C0. C1 относится к A1, но с более строгими ограничениями.
+    c:
+      lv: 4 kg ir C2 klases limits. C2 atbilst A2 vai A3, ne A1 ar pārlidojuma privilēģijām.
+      en: 4 kg is the C2 class limit. C2 maps to A2 or A3, not A1 with overflight privilege.
+      ru: 4 кг — предел C2. C2 относится к A2 или A3, не к A1 с правом пролёта.
+    d:
+      lv: 25 kg ir augšējais Atvērtās kategorijas limits (C3/C4). C0 ir uz citas masas spektra ekstrēma — < 250 g.
+      en: 25 kg is the upper Open-category limit (C3/C4). C0 sits at the opposite end of the mass spectrum — < 250 g.
+      ru: 25 кг — верхний предел Открытой категории (C3/C4). C0 — на противоположном конце шкалы массы (< 250 г).
   sourceRef: "Reg (EU) 2019/945 Annex Part 1 — C0 requirements"
   difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: factual
 
 - id: ug-002
   stem:
@@ -55,6 +75,11 @@
         lv: C2.
         en: C2.
         ru: C2.
+    - id: d
+      text:
+        lv: C3.
+        en: C3.
+        ru: C3.
   correctOptionId: a
   explanation:
     lv: >
@@ -66,8 +91,23 @@
     ru: >
       Direct Remote ID обязателен для C1, C2, C3. C0 освобождён как
       самый низкорисковый класс.
+  distractorRationales:
+    b:
+      lv: C1 ir obligāts Remote ID — tas ir daļa no klases pamata prasībām.
+      en: C1 mandates Remote ID — it is part of the class's core requirements.
+      ru: C1 обязательно требует Remote ID — это часть базовых требований класса.
+    c:
+      lv: C2 prasa Direct Remote ID, lai ļautu identifikāciju cilvēkiem tuvākajā A2 darba teritorijā.
+      en: C2 requires Direct Remote ID to enable identification in the closer A2 operating area.
+      ru: C2 требует Direct Remote ID, чтобы обеспечить идентификацию в ближней зоне работы A2.
+    d:
+      lv: C3 ir obligāts Direct Remote ID — augstāka masa nozīmē lielāku risku, un identifikācija ir nepieciešama.
+      en: C3 requires Direct Remote ID — higher mass implies higher risk, identification is necessary.
+      ru: C3 обязательно требует Direct Remote ID — большая масса означает больший риск, идентификация нужна.
   sourceRef: "Reg (EU) 2019/945 Annex Parts 2–4 — Direct Remote ID requirement"
   difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: factual
 
 - id: ug-003
   stem:
@@ -90,6 +130,11 @@
         lv: ≈ 740 Wh.
         en: ≈ 740 Wh.
         ru: ≈ 740 Wh.
+    - id: d
+      text:
+        lv: ≈ 20 Wh.
+        en: ≈ 20 Wh.
+        ru: ≈ 20 Wh.
   correctOptionId: a
   explanation:
     lv: >
@@ -104,8 +149,23 @@
       Wh = Ah × V = 5,0 × 14,8 ≈ 74 Wh. Это важно для авиаперевозки:
       большинство авиакомпаний ограничивает > 100 Wh в багаже и
       запрещает > 160 Wh.
+  distractorRationales:
+    b:
+      lv: "5 Wh ir krietni par maz — tā būtu mAh, ne Ah. Atceries: dalīt mAh ar 1000, lai iegūtu Ah."
+      en: "5 Wh is far too low — that would treat mAh as Ah. Remember: divide mAh by 1000 to get Ah."
+      ru: "5 Wh — слишком мало. Это бы значило mAh вместо Ah. Запомни: делишь mAh на 1000."
+    c:
+      lv: 740 Wh ir tieši x10 — iespējams, pilots aizmirsis dalīt mAh ar 1000 vai jaucis spriegumu. Pareizs aprēķins dod 74 Wh.
+      en: 740 Wh is exactly 10× — likely the pilot forgot to divide mAh by 1000 or confused voltages. Correct math yields 74 Wh.
+      ru: 740 Wh — это ровно в 10 раз больше. Скорее всего, не разделили mAh на 1000 или ошиблись с напряжением. Правильный ответ — 74 Wh.
+    d:
+      lv: 20 Wh ir mazāk nekā vienas šūnas (~18 Wh) komplekts — 4S sistēmā tas ir krietni par maz.
+      en: 20 Wh is less than a single-cell (~18 Wh) pack — far too low for a 4S configuration.
+      ru: 20 Wh — это меньше, чем у одной ячейки (~18 Wh). Для конфигурации 4S — слишком мало.
   sourceRef: "IATA Lithium Battery Guidance; Reg (EU) 2019/945 — battery safety"
   difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: numeric
 
 - id: ug-004
   stem:
@@ -128,6 +188,11 @@
         lv: 50 m/s.
         en: 50 m/s.
         ru: 50 м/с.
+    - id: d
+      text:
+        lv: 10 m/s.
+        en: 10 m/s.
+        ru: 10 м/с.
   correctOptionId: a
   explanation:
     lv: >
@@ -141,8 +206,23 @@
       Требования безопасности класса C0 включают предел скорости
       19 м/с (≈68 км/ч), чтобы снизить энергию удара при столкновении
       с человеком.
+  distractorRationales:
+    b:
+      lv: 30 m/s ir lielāks par C0 limitu. Pie šādas trieciena enerģijas C0 vairs nebūtu zemākā riska klase.
+      en: 30 m/s exceeds the C0 limit. At that impact energy C0 would no longer be the lowest-risk class.
+      ru: 30 м/с превышают предел C0. С такой энергией удара C0 перестал бы быть низкорисковым классом.
+    c:
+      lv: 50 m/s ir tipiskāka liela komerciālā drona vērtība, ne C0 zemākā riska kategorija.
+      en: 50 m/s is more typical for larger commercial drones, not the C0 low-risk class.
+      ru: 50 м/с — типичная скорость крупных коммерческих дронов, а не низкорискового C0.
+    d:
+      lv: 10 m/s ir krietni zem regulā noteiktās robežas. C0 var lidot līdz 19 m/s.
+      en: 10 m/s is well below the regulatory cap. C0 is permitted up to 19 m/s.
+      ru: 10 м/с — значительно ниже регуляторного предела. C0 допускается до 19 м/с.
   sourceRef: "Reg (EU) 2019/945 Annex Part 1 — C0(2)"
   difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: numeric
 
 - id: ug-005
   stem:
@@ -165,6 +245,11 @@
         lv: A3 kā C3 ekvivalents.
         en: A3 as the C3 equivalent.
         ru: A3 как эквивалент C3.
+    - id: d
+      text:
+        lv: Drons nav atļauts vispār bez klases marķējuma.
+        en: The drone is not allowed at all without a class marking.
+        ru: Дрон без классовой маркировки не разрешён вообще.
   correctOptionId: a
   explanation:
     lv: >
@@ -176,8 +261,23 @@
     ru: >
       Переходные правила сопоставляют немаркированные legacy-дроны по
       массе: < 250 г летает как C0 (A1), < 25 кг — как C3 (A3).
+  distractorRationales:
+    b:
+      lv: A2 prasa C2 marķējumu — legacy drons bez marķējuma A2 noteikumos darboties nevar.
+      en: A2 requires a C2 marking — an unmarked legacy drone cannot operate under A2 rules.
+      ru: A2 требует маркировки C2 — немаркированный legacy-дрон не работает по правилам A2.
+    c:
+      lv: A3 attiecas uz legacy droniem virs 250 g, ne uz tiem zem 250 g. Pareizais izvietojums atkarīgs no masas.
+      en: A3 applies to legacy drones above 250 g, not below. Correct placement depends on mass.
+      ru: A3 — для legacy-дронов свыше 250 г, не меньше. Правильное размещение зависит от массы.
+    d:
+      lv: Pārejas noteikumi (Reg 2019/947 Art. 22) tieši ļauj legacy droniem turpināt lidot pēc masas — tie nav aizliegti.
+      en: Transitional rules (Reg 2019/947 Art. 22) explicitly allow legacy drones to fly by mass — they are not prohibited.
+      ru: Переходные правила (Регл. 2019/947 ст. 22) прямо разрешают legacy-дронам летать по массе — они не запрещены.
   sourceRef: "Reg (EU) 2019/947 Art. 22 — transitional provisions"
   difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
 
 - id: ug-006
   stem:

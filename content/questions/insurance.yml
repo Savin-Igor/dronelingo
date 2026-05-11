@@ -19,6 +19,11 @@
         lv: Nav obligāts.
         en: Not required.
         ru: Не обязателен.
+    - id: d
+      text:
+        lv: 750 000 SDR.
+        en: 750 000 SDR.
+        ru: 750 000 SDR.
   correctOptionId: a
   explanation:
     lv: >
@@ -32,8 +37,23 @@
       Правила КМ № 447 устанавливают минимум 50 000 EUR для A1 (C1), A2
       и A3 до 20 кг. C0 (< 250 г) от обязательного страхования
       освобождён.
+  distractorRationales:
+    b:
+      lv: 1 000 EUR ir krietni zem MK Nr. 447 prasītā minimuma. Tāds segums neapmierina regulu.
+      en: €1 000 is far below the minimum required by Cabinet Reg. No. 447. Such cover does not satisfy the regulation.
+      ru: 1 000 EUR — значительно ниже минимума, требуемого Правилами КМ № 447. Такое покрытие не удовлетворяет регламенту.
+    c:
+      lv: C1 (un visas pārējās klases virs C0) Latvijā obligāti pakļaujas civiltiesiskās apdrošināšanas prasībai.
+      en: C1 (and every class above C0) is mandatorily subject to the third-party insurance requirement in Latvia.
+      ru: C1 (и все классы выше C0) в Латвии обязательно подлежат требованию страхования гражданской ответственности.
+    d:
+      lv: 750 000 SDR ir minimums Specifiskās kategorijas un A3 lielmasas (20–25 kg) lidojumiem. A1 (C1) prasība ir mazāka — 50 000 EUR.
+      en: 750 000 SDR is the minimum for the Specific category and A3 heavy-mass (20–25 kg) flights. The A1 (C1) threshold is lower — €50 000.
+      ru: 750 000 SDR — минимум для Специальной категории и тяжёлых A3 (20–25 кг). Для A1 (C1) порог ниже — 50 000 EUR.
   sourceRef: "MK noteikumi Nr. 447 (10.07.2018)"
   difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: regulatory
 
 - id: in-002
   stem:
@@ -56,6 +76,11 @@
         lv: Tikai komerciālajiem operatoriem.
         en: Only for commercial operators.
         ru: Только для коммерческих операторов.
+    - id: d
+      text:
+        lv: Tikai tad, ja UAS sver vairāk par 4 kg.
+        en: Only if the UAS exceeds 4 kg.
+        ru: Только если UAS тяжелее 4 кг.
   correctOptionId: a
   explanation:
     lv: >
@@ -67,8 +92,23 @@
     ru: >
       Обязательный полис покрывает вред жизни/здоровью/имуществу третьих
       лиц. Ущерб самому UAS — добровольное hull-страхование.
+  distractorRationales:
+    b:
+      lv: Obligātā polise nesedz paša UAS bojājumus. Hull-segums ir atsevišķs, brīvprātīgs polises veids.
+      en: The mandatory policy does not cover damage to the UAS itself. Hull cover is a separate voluntary product.
+      ru: Обязательный полис не покрывает ущерб самому UAS. Hull-страхование — отдельный, добровольный продукт.
+    c:
+      lv: Komerciālā/atpūtas nošķiršana neietekmē obligātās polises saturu — visos gadījumos tā sedz tikai trešās personas.
+      en: The commercial / recreational split does not change the scope of the mandatory policy — in every case it covers only third parties.
+      ru: Различие коммерческого и развлекательного использования не меняет объём обязательного полиса — он всегда покрывает только третьих лиц.
+    d:
+      lv: UAS masa neietekmē hull-seguma jautājumu — obligātā polise nesedz paša aparāta bojājumu neatkarīgi no svara.
+      en: UAS mass does not change the hull issue — the mandatory policy does not cover damage to the aircraft itself, regardless of weight.
+      ru: Масса UAS не влияет на hull — обязательный полис не покрывает повреждение самого аппарата вне зависимости от веса.
   sourceRef: "MK noteikumi Nr. 447; Reg (EC) 785/2004"
   difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
 
 - id: in-003
   stem:
@@ -91,6 +131,11 @@
         lv: A3 ar C3 dronu.
         en: A3 with a C3 drone.
         ru: A3 с C3-дроном.
+    - id: d
+      text:
+        lv: A1 ar C1 dronu, ja pilots lido virs sava zemes gabala.
+        en: A1 with a C1 drone, if the pilot flies above their own land.
+        ru: A1 с C1, если полёт над своим земельным участком.
   correctOptionId: a
   explanation:
     lv: >
@@ -102,8 +147,23 @@
     ru: >
       Полёты C0 (< 250 г) освобождены от обязательного страхования по
       Правилам КМ № 447. Добровольное страхование всё же рекомендуется.
+  distractorRationales:
+    b:
+      lv: A2 ar C2 obligāti pakļaujas 50 000 EUR seguma prasībai. C2 masa ir < 4 kg, bet apdrošināšana joprojām obligāta.
+      en: A2 with C2 is mandatorily subject to the €50 000 cover requirement. C2 mass is < 4 kg but insurance is still required.
+      ru: A2 с C2 обязательно подлежит требованию покрытия 50 000 EUR. Масса C2 < 4 кг, но страховка всё равно обязательна.
+    c:
+      lv: A3 ar C3 ir tieši tā situācija, kur apdrošināšana ir obligāta — drons sver līdz 25 kg un var radīt nopietnu kaitējumu.
+      en: A3 with C3 is exactly the case where insurance is mandatory — the drone may weigh up to 25 kg and can cause serious harm.
+      ru: A3 с C3 — именно тот случай, когда страхование обязательно — дрон может весить до 25 кг и нанести серьёзный ущерб.
+    d:
+      lv: Lidošana virs sava zemes gabala neatbrīvo no apdrošināšanas prasības. MK Nr. 447 attiecas uz operāciju, ne uz zemes īpašumu.
+      en: Flying over one's own land does not waive the insurance requirement. Cabinet Reg. No. 447 applies to the operation, not to land ownership.
+      ru: Полёт над собственным участком не освобождает от страхования. Правила КМ № 447 касаются операции, а не права собственности.
   sourceRef: "MK noteikumi Nr. 447 (10.07.2018) — exemption for C0"
   difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
 
 - id: in-004
   stem:
@@ -126,6 +186,11 @@
         lv: 1 000 000 EUR.
         en: €1 000 000.
         ru: 1 000 000 EUR.
+    - id: d
+      text:
+        lv: 100 000 EUR.
+        en: €100 000.
+        ru: 100 000 EUR.
   correctOptionId: a
   explanation:
     lv: >
@@ -137,8 +202,23 @@
     ru: >
       Операторы Специальной категории с UAS < 500 кг подпадают под
       Регл. (ЕС) 785/2004 — 750 000 SDR.
+  distractorRationales:
+    b:
+      lv: 50 000 EUR ir Atvērtās kategorijas A1/A2/A3 limits (līdz 20 kg). Specifiskā prasība ir vairākas reizes lielāka.
+      en: €50 000 is the Open-category A1/A2/A3 limit (up to 20 kg). The Specific category demands several times more.
+      ru: 50 000 EUR — лимит для Открытой A1/A2/A3 (до 20 кг). В Специальной категории требование в несколько раз выше.
+    c:
+      lv: 1 000 000 EUR ir tuvu pareizajai summai pēc valūtas konvertācijas, bet regulā minimums ir definēts SDR vienībās — 750 000 SDR.
+      en: €1 000 000 is close after currency conversion, but the regulatory minimum is defined in SDR units — 750 000 SDR.
+      ru: 1 000 000 EUR близко после конвертации, но регуляторный минимум определён в SDR — 750 000 SDR.
+    d:
+      lv: 100 000 EUR ir nepietiekami pat Atvērtās kategorijas augstākajām masām (20–25 kg) — Specifiskās slieksnis ir krietni augstāks.
+      en: €100 000 is insufficient even for upper-mass Open category (20–25 kg) — the Specific threshold is much higher.
+      ru: 100 000 EUR недостаточны даже для верхней массы Открытой (20–25 кг) — порог Специальной значительно выше.
   sourceRef: "Reg (EC) 785/2004 — air carriers' liability minima"
   difficulty: 3
+  cognitiveLevel: recall
+  scenarioType: regulatory
 
 - id: in-005
   stem:
@@ -161,6 +241,11 @@
         lv: Nekādu seku — civiltiesiska atbildība ir brīvprātīga.
         en: No consequences — third-party liability is voluntary.
         ru: Никаких последствий — гражданская ответственность добровольна.
+    - id: d
+      text:
+        lv: Operatoram tiek dotas 14 dienas, lai noformētu polisi pēc fakta.
+        en: The operator is given 14 days to obtain the policy after the fact.
+        ru: Оператору дают 14 дней оформить полис задним числом.
   correctOptionId: a
   explanation:
     lv: >
@@ -174,8 +259,23 @@
     ru: >
       Без действующего полиса оператор не имеет права летать. Полёт
       прекращается и налагается административный штраф.
+  distractorRationales:
+    b:
+      lv: Apdrošināšana nav rekomendācija, bet obligāta prasība. Inspektors nav pilnvarots ļaut turpināt lidojumu bez polises.
+      en: Insurance is not a recommendation but a mandatory requirement. An inspector has no authority to let the flight continue without a policy.
+      ru: Страховка — не рекомендация, а обязательное требование. Инспектор не вправе разрешить продолжить полёт без полиса.
+    c:
+      lv: Civiltiesiskā atbildība UAS operatoram ir obligāta saskaņā ar MK Nr. 447. Tā nav brīvprātīga.
+      en: Third-party liability for UAS operators is mandatory under Cabinet Reg. No. 447. It is not voluntary.
+      ru: Гражданская ответственность для оператора UAS обязательна по Правилам КМ № 447. Это не добровольно.
+    d:
+      lv: Polise jābūt spēkā lidojuma brīdī. Retroaktīvā noformēšana neaizvieto prasību iepriekš būt apdrošinātam.
+      en: The policy must be valid at the moment of flight. Retroactive issuance does not satisfy the prior-coverage requirement.
+      ru: Полис должен действовать на момент полёта. Оформление задним числом не заменяет требование иметь страховку заранее.
   sourceRef: "Latvian Aviation Law; MK noteikumi Nr. 447"
   difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
 
 - id: in-006
   stem:
