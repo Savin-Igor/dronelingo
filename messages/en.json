@@ -2,17 +2,16 @@
   "nav": {
     "learn": "Learn",
     "practice": "Practice",
-    "exam": "Exam",
-    "claim": "Claim"
+    "exam": "Exam"
   },
   "landing": {
     "hero": {
       "title": "Pass your EASA A1/A3 drone exam — first try.",
-      "sub": "Free to learn. Pay €19 only after you pass the official exam at e.caa.gov.lv.",
-      "ctaPrimary": "Start learning",
+      "sub": "First topic free. Full access to all 9 topics, practice drills, and mock exams — €19 one-time.",
+      "ctaPrimary": "Try free",
       "ctaSecondary": "How it works"
     },
-    "valueProp": "Free to learn. €19 only after you pass.",
+    "valueProp": "First topic free. Full access for €19 — no subscription.",
     "howItWorks": {
       "heading": "How it works",
       "learn": {
@@ -24,8 +23,8 @@
         "body": "Answer real-style questions. Take mock exams until you consistently score 80%+."
       },
       "pass": {
-        "title": "Pass — then pay",
-        "body": "Take the free official A1/A3 exam at e.caa.gov.lv. Pay €19 only after you pass. Don't pass — don't pay."
+        "title": "Get certified",
+        "body": "Take the official A1/A3 exam at e.caa.gov.lv — you are fully prepared. The exam itself is free at the CAA portal."
       }
     },
     "why": {
@@ -35,8 +34,8 @@
         "body": "Built for the Latvian process — registration at e.caa.gov.lv, A1/A3 exam, real CAA wording."
       },
       "passOrFree": {
-        "title": "Pass or free",
-        "body": "If you don't pass, you don't pay. We're aligned with your goal."
+        "title": "One-time, no subscription",
+        "body": "€19 once. No monthly fees, no renewals, no upsells. Full access is yours to keep."
       },
       "euAligned": {
         "title": "EU regulation aligned",
@@ -82,7 +81,17 @@
     "questionOf": "Question {current} of {total}",
     "allDone": "You've gone through all questions in this topic.",
     "anonymousNote": "Answers are kept only in this browser — no sign-up needed.",
-    "ctaFromTopic": "Practice this topic"
+    "ctaFromTopic": "Practice this topic",
+    "srs": {
+      "due": "Due",
+      "fresh": "Fresh",
+      "scheduled": "Scheduled",
+      "dueCount": "Due now: {count}",
+      "reviewDueOnly": "Review due only",
+      "showAll": "Show all",
+      "allCaughtUp": "All caught up — nothing due. Showing all questions.",
+      "noneDue": "Nothing is due right now. Start a session to build up your schedule."
+    }
   },
   "exam": {
     "title": "Mock exam",
@@ -94,6 +103,14 @@
       "threshold": "≥75% correct to pass",
       "navigation": "You can navigate between questions and change answers until you submit",
       "anonymous": "Results are kept only in this browser — no sign-up needed"
+    },
+    "coverage": {
+      "heading": "Question distribution",
+      "subtitle": "Mirrors the official CAA Latvia exam weighting.",
+      "drillHint": "Tap a topic to take a focused drill for that area.",
+      "drillCta": "Drill {topic}",
+      "questionsLabel": "questions",
+      "totalLabel": "Total"
     },
     "start": "Start exam",
     "timeLeft": "Time left",
@@ -117,9 +134,13 @@
     "perTopicScore": "{correct} / {total}",
     "missed": "Missed questions",
     "noMisses": "Every answer correct — excellent!",
+    "review": {
+      "send": "{count, plural, =1 {Send # to review} other {Send # to review}}",
+      "queued": "{count, plural, =1 {# queued for warm-up} other {# queued for warm-up}}"
+    },
     "retake": "Take another exam",
     "noResult": "No recent exam found. Start a new one.",
-    "claimCta": "Claim Pass Guarantee",
+    "claimCta": "Go to e.caa.gov.lv →",
     "durationLabel": "Duration: {minutes} min",
     "history": {
       "heading": "Your recent exams",
@@ -161,34 +182,254 @@
     "privacyLink": "privacy policy",
     "accept": "Got it"
   },
-  "claim": {
-    "title": "Claim your €19 — Pass Guarantee",
-    "subtitle": "Once you have passed the official A1/A3 exam, upload your certificate or enter your registration number — then complete the €19 checkout.",
-    "kindHeading": "How to prove the pass",
-    "kindPdf": "Upload PDF certificate from e.caa.gov.lv",
-    "kindCaaId": "Enter your CAA Latvia registration number",
-    "fileLabel": "PDF certificate (max 5 MB)",
-    "fileHint": "Download the PDF from e.caa.gov.lv after passing.",
-    "fileSelected": "Selected: {name}",
-    "caaIdLabel": "Registration number",
-    "caaIdPlaceholder": "LVA-RP-############",
-    "caaIdHint": "Format: LVA-RP- followed by 12 digits (e.g. LVA-RP-123456789012).",
-    "emailLabel": "Email for the thank-you note",
-    "emailPlaceholder": "you@example.com",
-    "checkout": {
-      "heading": "Stub-checkout (€19)",
-      "note": "This is a Stripe-shaped stub — real Stripe will be wired up after ≥10 successfully completed stub-checkout flows.",
-      "amount": "€19.00",
-      "pay": "Pay €19",
-      "processing": "Processing...",
-      "success": "Payment successful ✓",
-      "successBody": "Thank you! You just gave us the strongest possible signal — that the Pass Guarantee model works. No real money was charged.",
-      "back": "Back to exam"
+  "access": {
+    "gateTitle": "Full access required",
+    "gateBody": "Get full access to all lessons, practice drills, and mock exams.",
+    "gateCta": "Get full access — €19",
+    "freeNote": "Air Safety topic is always free."
+  },
+  "pricing": {
+    "title": "Unlock the full platform",
+    "subtitle": "First topic free. Pay once to unlock everything.",
+    "includedHeading": "Full access includes",
+    "payHeading": "One-time payment",
+    "productName": "dronelingo — Full Access",
+    "emailLabel": "Email (optional — for receipt)",
+    "pay": "Get full access — €19 →",
+    "processing": "Processing...",
+    "stubNote": "Stub checkout — no real charge.",
+    "freeNote": "Air Safety topic is always free — no payment needed."
+  },
+  "topicExam": {
+    "kicker": "Topic drill",
+    "title": "Topic drill",
+    "subtitle": "Focused mock scoped to {topic}. Useful once you've drilled the topic in practice.",
+    "backToExam": "Exam home",
+    "rules": {
+      "heading": "Rules",
+      "questions": "{count} questions from this topic",
+      "duration": "{minutes} minutes",
+      "threshold": "≥ {threshold} % correct to pass",
+      "notFullMock": "Topic drills do not count toward your full-exam readiness gauge."
     },
-    "errors": {
-      "missing": "Provide a PDF certificate or a registration number.",
-      "caaIdFormat": "Registration number must be in the form LVA-RP-############.",
-      "fileTooLarge": "File exceeds 5 MB."
+    "stats": {
+      "questions": "Questions",
+      "minutes": "Minutes",
+      "threshold": "Threshold"
+    },
+    "start": "Start drill"
+  },
+  "diagnostic": {
+    "kicker": "Calibration flight",
+    "title": "10-question diagnostic",
+    "subtitle": "Short, no timer, one question per topic. Misses go straight into your daily warm-up.",
+    "backToExam": "Mock exam",
+    "stats": {
+      "questions": "Questions",
+      "noTimer": "Timer",
+      "feedback": "Instant feedback"
+    },
+    "questionOf": "Question {current} of {total}",
+    "check": "Check answer",
+    "next": "Next",
+    "finish": "See results",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "source": "Source",
+    "emptyPool": "The question bank is not ready for the diagnostic yet.",
+    "result": {
+      "kicker": "Calibration complete",
+      "percent": "{percent}% correct",
+      "perTopicLabel": "Per-topic strength",
+      "perTopicHeading": "Per-topic strength",
+      "scoreAria": "{correct} of {total} correct",
+      "queuedKicker": "Queued for warm-up",
+      "queuedTitle": "{count, plural, =1 {# missed question added to your review schedule.} other {# missed questions added to your review schedule.}}",
+      "queuedBody": "Daily warm-up will surface them with weakest topics first.",
+      "ctaWarmup": "Start warm-up",
+      "ctaLessons": "Browse lessons",
+      "allClearKicker": "All clear",
+      "allClearBody": "Perfect run. You are ready for the full mock exam.",
+      "ctaMockExam": "Start mock exam"
+    },
+    "cta": {
+      "ariaLabel": "Diagnostic prompt",
+      "kicker": "First time here?",
+      "title": "Take a 10-question calibration",
+      "subtitle": "Find out exactly where you stand across all 9 topics. Misses go straight into the daily warm-up.",
+      "cta": "Start diagnostic"
+    }
+  },
+  "rank": {
+    "ariaLabel": "Pilot rank",
+    "kicker": "Pilot rank",
+    "nextLabel": "Next:",
+    "certifiedHint": "You're certified — fly the real exam at e.caa.gov.lv.",
+    "tiers": {
+      "recruit": { "name": "Recruit" },
+      "cadet": { "name": "Cadet" },
+      "pilotReady": { "name": "A1/A3 ready" },
+      "certified": { "name": "Certified" }
+    },
+    "criteria": {
+      "lessonsVisited": { "label": "Visit {target} lessons ({current}/{target})" },
+      "recentMockPasses": { "label": "Pass {target} mock exams ≥ 85 % this week ({current}/{target})" },
+      "topicsAt70": { "label": "Reach 70 % mastery across all topics ({current}/{target})" },
+      "hasCertificate": { "label": "Upload your CAA Latvia certificate" }
+    }
+  },
+  "masteryMap": {
+    "ariaLabel": "Topic mastery map",
+    "title": "Mastery map",
+    "subtitle": "{seen} of {total} questions practised",
+    "overallMastery": "Overall",
+    "rowStats": "{mastered} mastered · {seen}/{total} seen",
+    "dueCount": "{count, plural, =1 {# due} other {# due}}",
+    "ariaProgress": "{topic} — {percent}% mastered",
+    "tier": {
+      "untouched": "Untouched",
+      "weak": "Weak",
+      "learning": "Learning",
+      "ready": "Ready",
+      "mastered": "Mastered"
+    }
+  },
+  "warmUp": {
+    "ariaLabel": "Daily warm-up",
+    "kicker": "Daily warm-up",
+    "title": "{count, plural, =1 {# question is due for review.} other {# questions are due for review.}}",
+    "subtitle": "A few minutes of spaced repetition keeps your weak topics sharp.",
+    "cta": "Start warm-up",
+    "pageTitle": "Daily warm-up",
+    "freeOnlyNote": "Warming up from the free Air Safety topic only.",
+    "unlockAll": "Unlock all 9 topics",
+    "adaptive": "Adaptive · weakest topics first"
+  },
+  "lessonWidgets": {
+    "anatomy": {
+      "missionBriefing": "Mission briefing",
+      "scenario": "Scenario",
+      "remember": "Remember",
+      "commonMistakes": "Common mistakes",
+      "debrief": "Debrief",
+      "unlocked": "Unlocked",
+      "scenePlaceholder": "Scene placeholder · awaiting render",
+      "promptLabel": "prompt:"
+    },
+    "miniQuiz": {
+      "heading": "Quick check",
+      "correct": "Correct",
+      "notQuite": "Not quite",
+      "whyWrong": "Why your answer is wrong:"
+    },
+    "classComparator": {
+      "heading": "Interactive · UAS class comparator",
+      "tabsAriaLabel": "UAS classes",
+      "mtom": "MTOM",
+      "maxSpeed": "Max speed",
+      "subcategory": "Subcategory",
+      "remoteId": "Remote ID",
+      "geoAwareness": "Geo-awareness",
+      "keyRestriction": "Key restriction",
+      "required": "Required",
+      "notRequired": "Not required",
+      "manualOnly": "manual only",
+      "retrofitKit": "retrofit kit",
+      "bvlosCapable": "BVLOS-capable",
+      "dash": "—",
+      "classes": {
+        "C0": { "restriction": "Over individuals OK · never over assemblies" },
+        "C1": { "restriction": "No expected overflight of uninvolved persons" },
+        "C2": { "restriction": "Low-speed mode (≤ 3 m/s) → 5 m · normal → 30 m" },
+        "C3": { "restriction": "≥ 150 m from inhabited areas · ≥ 30 m or 1:1 from people" },
+        "C4": { "restriction": "No autonomous modes — manual control only" },
+        "C5": { "restriction": "VLOS, controlled ground area, airspace observers" },
+        "C6": { "restriction": "BVLOS over sparsely populated · observer chain required" }
+      }
+    },
+    "whCalculator": {
+      "heading": "Interactive · Wh calculator",
+      "cells": "Cell count (S)",
+      "cellsHint": "DJI Mavic 3 = 4S",
+      "capacity": "Capacity (mAh)",
+      "capacityHint": "Per-cell pack — read from the battery label",
+      "packVoltage": "Pack voltage",
+      "capacityRow": "Capacity",
+      "energy": "Energy",
+      "iata": "IATA air travel",
+      "iataOk": "Carry-on or checked baggage",
+      "iataApproval": "Carry-on only · airline approval",
+      "iataForbidden": "Forbidden on passenger aircraft",
+      "formula": "Formula: Wh = (mAh ÷ 1000) × cells × 3.7 V nominal. Below 100 Wh: free. 100–160 Wh: airline approval. Above 160 Wh: forbidden in passenger cabin."
+    },
+    "imsafe": {
+      "heading": "Interactive · IMSAFE self-check",
+      "verdict": "Verdict",
+      "verdictWaiting": "Answer all six to see the verdict",
+      "verdictGo": "GO — all six clear. Run the UAS and environment checks next.",
+      "verdictNoGo": "NO-GO — one or more risks active. Postpone or delegate.",
+      "reset": "Reset checklist",
+      "yes": "Yes",
+      "no": "No",
+      "items": {
+        "illness": { "letter": "I", "label": "Illness", "prompt": "Any active infection, cold, or symptoms affecting concentration?" },
+        "medication": { "letter": "M", "label": "Medication", "prompt": "Any medication that may cause drowsiness or affect alertness?" },
+        "stress": { "letter": "S", "label": "Stress", "prompt": "Acute emotional stress (argument, bad news, financial pressure)?" },
+        "alcohol": { "letter": "A", "label": "Alcohol", "prompt": "Any alcohol consumed in the last 8 hours?" },
+        "fatigue": { "letter": "F", "label": "Fatigue", "prompt": "Fewer than 6 hours of sleep last night, or sustained sleep debt?" },
+        "eating": { "letter": "E", "label": "Eating", "prompt": "No food in the last 4 hours, or feeling hypoglycaemic?" }
+      }
+    },
+    "zoneClassifier": {
+      "heading": "Interactive · classify the zone",
+      "intro": "Decide which UGZ type each scenario falls into. Tap to reveal.",
+      "zoneTypeLabel": "Zone type",
+      "correct": "Correct",
+      "notQuite": "Not quite",
+      "answerPrefix": "answer:",
+      "types": {
+        "information": "Information",
+        "restricted": "Restricted",
+        "prohibited": "Prohibited"
+      },
+      "cards": {
+        "z1": {
+          "scenario": "A bird nesting reserve on a small island. The CAA map marks it 'active during nesting season — please avoid'. No active restriction on the date you plan to fly.",
+          "explanation": "Information zones carry no legal restriction — they exist to warn the pilot of nearby sensitivity. Flying is allowed without any application."
+        },
+        "z2": {
+          "scenario": "A patch of airspace adjacent to Riga airport's CTR. The map says 'flight permitted with BGKIS application — max 50 m AGL'.",
+          "explanation": "Restricted zones require an application and approval. Since 2025-01-01 BGKIS is the mandatory channel. The ceiling stated in the approval (50 m here) takes precedence over the general 120 m."
+        },
+        "z3": {
+          "scenario": "EVR17 Border East — the full eastern border strip with Russia and Belarus, since 2025.",
+          "explanation": "Prohibited zones are not flyable in Open category at all. EVR17 specifically carries criminal liability, not just an administrative fine."
+        },
+        "z4": {
+          "scenario": "An active military training area marked 'No flight 08:00–18:00 weekdays during May'. The day you plan to fly is a Saturday in June.",
+          "explanation": "Outside the active window the zone is effectively information-only. Always re-check the zone status against the date and time of the planned flight, not against the season as a whole."
+        },
+        "z5": {
+          "scenario": "A nuclear research facility's perimeter. The map shows a red filled polygon labelled 'no UAS flight permitted'.",
+          "explanation": "Critical infrastructure with a hard no-fly designation. No application can lift the prohibition for Open category."
+        }
+      }
+    },
+    "distanceRule": {
+      "heading": "Interactive · distance from uninvolved persons",
+      "altitude": "Flight altitude (AGL)",
+      "altitudeAriaLabel": "Altitude in metres above ground",
+      "ceilingMark": "120 m ceiling",
+      "subcats": {
+        "a1-c0": { "label": "A1 — C0 (<250 g)", "note": "Overflight of individuals OK · never over assemblies" },
+        "a1-c1": { "label": "A1 — C1 (<900 g)", "note": "Plan around people · no expected overflight" },
+        "a2-low": { "label": "A2 — C2 low-speed (≤ 3 m/s)", "note": "Activate low-speed mode BEFORE closing to 5 m" },
+        "a2-normal": { "label": "A2 — C2 normal speed", "note": "Flat 30 m horizontal" },
+        "a3": { "label": "A3 — C2 / C3 / C4 / legacy" }
+      },
+      "a3NoteFloor": "30 m floor applies — 1:1 not yet binding",
+      "a3NoteActive": "1:1 rule active · {altitude} m altitude → {altitude} m distance",
+      "footer": "Remember: the 1:1 rule in A3 means horizontal distance ≥ flight altitude, with a 30 m floor. The crowd prohibition applies in every sub-category regardless of altitude or distance."
     }
   }
 }

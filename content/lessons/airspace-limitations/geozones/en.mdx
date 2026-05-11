@@ -1,36 +1,99 @@
-# UAS geographical zones in Latvia
+# UAS geographical zones
 
-Before every flight the pilot **must check UAS geographical zones (UGZ)**.
-In Latvia the only legally binding source is
-[airspace.lv/drones](https://airspace.lv/drones).
+<MissionBriefing objective="After this lesson you will know the three UGZ types, how to read airspace.lv, what authorisation does and does not grant you, and why Latvia's eastern border is a no-fly zone.">
+Every flight starts at airspace.lv. Every fine starts with not checking it.
+</MissionBriefing>
 
-## Three UGZ types
+<CinematicScene
+  src="/lessons/airspace-zones-map.png"
+  alt="Tactical map showing airport exclusion zones in concentric rings — prohibited red, restricted amber, information teal"
+  caption="Scene · geozones-map"
+/>
 
-- **Information** — no restriction, just notification (e.g., bird reserve).
-- **Restricted** — allowed under conditions: BGKIS application, altitude
-  cap, or special authorisation.
-- **Prohibited** — flights are not allowed (airport vicinity, military
-  sites).
+## The only legally binding source
 
-## BGKIS applications
+Before every flight, open **airspace.lv/drones**. This is not optional and it is not a formality — it is the only map that carries legal force in Latvia. Commercial apps, Google Maps, and forum screenshots are helpful, but they are not the law.
 
-Since 1 January 2025 **flights in restricted zones require an application
-in the BGKIS system**. Without an approved application the flight is
-illegal regardless of UAS class.
+## Three zone types
 
-## What a UGZ authorisation does **not** grant
+**Information zones** — no restrictions apply. The zone exists only to warn you that something is nearby (a bird nesting area, a military practice range that is currently inactive). Flying is allowed without any application.
 
-A UGZ authorisation increases access — but **does not expand the limits
-of the Open category**. The following still apply:
+**Restricted zones** — flight is allowed under specific conditions, which the zone definition spells out. Conditions can include a BGKIS application, a maximum altitude lower than 120 m, a specific time window, or all of the above. Since 2025-01-01, a BGKIS application is mandatory for any restricted zone that requires it.
 
-- 120 m maximum height above ground;
-- VLOS requirement;
-- ban on flying over assemblies of people.
+**Prohibited zones** — flights are not permitted at all for Open category. Includes airport CTRs (control zones), military sites actively in use, and the border zones.
 
-## Border zones
+## What authorisation does not give you
 
-Since 2025 the entire Latvia–Russia and Latvia–Belarus border is **EVR17
-Border East** — closed for Open category flights.
+Getting BGKIS approval for a restricted zone does not suspend the other Open-category rules. You still must:
 
-> **Source:** Reg (EU) 2019/947 Art. 15; `airspace.lv/drones` (CAA Latvia),
-> `docs/knowledge/latvia-caa/web-snapshots/`.
+- stay below 120 m AGL;
+- maintain VLOS;
+- never fly over assemblies of people.
+
+The zone access is expanded. The category limits are not.
+
+<Scenario title="Your BGKIS application for a restricted area near Riga airport is approved. The approval says 'max 70 m AGL'. Can you fly up to 120 m inside the restricted area?">
+**No.** The BGKIS approval sets a maximum of 70 m AGL for this specific authorisation. That is lower than the general Open-category 120 m ceiling — and the lower limit applies. The zone conditions always take precedence when they are more restrictive.
+</Scenario>
+
+## Latvia's closed border zone
+
+Since 2025, the **EVR17 Border East** zone runs the entire length of the Latvia–Russia and Latvia–Belarus borders. It is classified as prohibited for Open-category flights. Flying in this zone without a specific military or government authorisation carries criminal liability — not just an administrative fine.
+
+<ZoneClassifier />
+
+<MemoryAnchor
+  rule="Airspace.lv before every flight. Restricted = apply first. Prohibited = no flight."
+  hint="Approval expands zone access. It never removes Open-category rules."
+/>
+
+<CommonMistakes>
+- Checking the map once at the start of the season and not again before each individual flight — zones change.
+- Confusing "information" with "restricted" — they look similar on some map views; check the legend.
+- Assuming a BGKIS-approved restricted zone allows 120 m — the approval may set a lower ceiling.
+- Flying near the eastern border without verifying the exact EVR17 boundary on the current map.
+- Believing that a competitor's drone flying in an area means it must be allowed — someone else's violation is not your authorisation.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "gz-q1",
+    stem: "What is the only legally binding source for UAS geographical zones in Latvia?",
+    options: [
+      { id: "a", text: "The DJI Fly app geofencing layer." },
+      { id: "b", text: "airspace.lv/drones maintained by CAA Latvia." },
+      { id: "c", text: "Google Maps satellite view of the area." },
+      { id: "d", text: "The nearest airport's published VFR chart." },
+    ],
+    correctOptionId: "b",
+    explanation: "airspace.lv/drones is the official, legally binding source for UAS geographical zones in Latvia. Other sources may be useful for orientation but carry no legal weight.",
+    distractorRationales: {
+      a: "Manufacturer geofencing is based on third-party data; it is not legally authoritative and has coverage gaps.",
+      c: "Google Maps does not contain UGZ data.",
+      d: "VFR charts cover manned aviation airspace; they do not replace UAS-specific zone databases.",
+    },
+  },
+  {
+    id: "gz-q2",
+    stem: "A zone is marked as 'Restricted — BGKIS application required'. You file an application and receive an approval. Which of the following rules still applies inside the zone?",
+    options: [
+      { id: "a", text: "VLOS is no longer required because the zone approval upgrades you to Specific category." },
+      { id: "b", text: "The 120 m ceiling no longer applies — you can fly as high as needed." },
+      { id: "c", text: "You must still maintain VLOS and may not exceed the ceiling stated in the approval." },
+      { id: "d", text: "The crowd restriction is lifted because the authority reviewed your flight plan." },
+    ],
+    correctOptionId: "c",
+    explanation: "Zone authorisation expands access to the restricted area. It does not change Open-category rules — VLOS, altitude limits (including any lower limit in the approval), and the crowd prohibition all remain in force.",
+    distractorRationales: {
+      a: "BGKIS approval does not change your category. You remain in Open category.",
+      b: "The approval may set a lower ceiling than 120 m. It never raises the ceiling above 120 m.",
+      d: "The assembly prohibition is a category-level rule that no zone approval can override in Open category.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ar-001"]}>
+You can read airspace.lv, identify the three zone types, and understand what authorisation gives you — and what it does not.
+
+Next sector: Aviation Regulation — the EU laws that sit behind every rule you have learned so far.
+</Debrief>

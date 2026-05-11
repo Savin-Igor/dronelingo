@@ -49,6 +49,11 @@ model Lesson {
   ord       Int
   title     Json
   bodyMdx   Json
+  // Optional structured representation of the 9-block academy lesson anatomy:
+  // mission briefing, cinematic scene, core, artefact, scenario, memory anchor,
+  // common mistakes, mini quiz, debrief. Authored in MDX; this column is for
+  // server-side analytics on which blocks each lesson actually exposes.
+  blocks    Json?
   sourceRef String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -58,18 +63,28 @@ model Lesson {
 }
 
 model Question {
-  id              String   @id @default(cuid())
-  externalId      String   @unique
-  topicId         String
-  topic           Topic    @relation(fields: [topicId], references: [id], onDelete: Restrict)
-  stem            Json
-  options         Json
-  correctOptionId String
-  explanation     Json
-  sourceRef       String
-  difficulty      Int?
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
+  id                   String   @id @default(cuid())
+  externalId           String   @unique
+  topicId              String
+  topic                Topic    @relation(fields: [topicId], references: [id], onDelete: Restrict)
+  stem                 Json
+  options              Json
+  correctOptionId      String
+  explanation          Json
+  // Per-distractor rationale: { [optionId]: { lv, en, ru } } — why each wrong
+  // option is wrong. Optional during the 3 → 4 option migration.
+  distractorRationales Json?
+  sourceRef            String
+  difficulty           Int?
+  // Bloom-style cognitive level: "recall" | "apply" | "analyze".
+  cognitiveLevel       String?
+  // Scenario flavour: "factual" | "map" | "numeric" | "decision" | "regulatory".
+  scenarioType         String?
+  // Reference into a lesson + section to route users on repeated failure
+  // (e.g. "air-safety/vlos#fpv-observer"). Optional.
+  lessonSectionRef     String?
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
 
   attempts Attempt[]
 

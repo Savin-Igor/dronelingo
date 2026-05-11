@@ -1,0 +1,141 @@
+# Iet/Neiet lēmumi laika apstākļos
+
+<MissionBriefing objective="Pēc šī nodarbības tu pirms katra lidojuma piemērosi strukturētu laika apstākļu iet/neiet sistēmu, pārbaudīsi pareizos Latvijas laika avotus un zināsi vēja robežas, ko uzliek dažādas dronu klases.">
+Iet/Neiet lēmums ir vissvarīgākais, ko tu pieņem. Katra cita prasme — VLOS, BGKIS, ārkārtas procedūras — paredz, ka lidojums jau ir sācies. Šis lēmums nosaka, vai tam vajadzētu sākties.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/meteo-go-nogo.png"
+  alt="Laika apstākļu iet/neiet lēmumu diagramma: vējš specifikācijās → redzamība → lietus/sniegs → pērkona negaiss → galīgais Iet vai Neiet"
+  caption="Diagramma · laika apstākļu iet/neiet"
+/>
+
+## Laika avoti Latvijai
+
+Pirms katra lidojuma pārbaudīt **divus neatkarīgus avotus**:
+
+**Primārais — novērojums:**
+- **meteo.lv** (Latvijas Vides, ģeoloģijas un meteoroloģijas centrs — LVĢMC): Latvijas oficiālais laika dienests. Nodrošina pašreizējos novērojumus, stundas prognozes un aviācijas laika ziņas (METAR/TAF Latvijas lidostām).
+- **aviationweather.gov** (NOAA): globāli METAR un TAF.
+
+**Aviācijas formātiem:**
+- METAR: pašreizējie apstākļi lidostu novērojumu stacijās.
+- **TAF** (Terminal Aerodrome Forecast): 24–30 stundu prognoze lidostai METAR formātā. Publicēts ik 6 stundas.
+
+Nepaļauties tikai uz ražotāja lietotnes laika logrīku — tas parasti rāda komerciālu prognožu API, nevis aviācijas klases novērojumu.
+
+## TAF nolasīšana
+
+Piemērs: `EVRA 101700Z 1018/1118 27012KT 9999 FEW020 BECMG 1022/1024 29018KT`
+
+| Lauks | Nozīme |
+|-------|--------|
+| EVRA 101700Z | Rīgas lidosta, publicēts 17:00 UTC 10. datumā |
+| 1018/1118 | Derīgs no 10. 18:00 līdz 11. 18:00 UTC |
+| 27012KT 9999 FEW020 | Bāzes apstākļi: vējš 270°/12 KT, redzamība > 10 km, daži mākoņi 2000 pēdās |
+| BECMG 1022/1024 | Pakāpeniska maiņa starp 22:00 un 24:00 |
+| 29018KT | Vējš mainās uz 290°/18 KT |
+
+**BECMG** = pakāpeniska maiņa. **TEMPO** = pagaidu apstākļi. **FM** = no noteikta laika apstākļi mainās pilnīgi.
+
+## Vēja robežas pēc drona klases
+
+Ražotājs norāda maksimālo vēja ātrumu UAS rokasgrāmatā. Vienmēr izmantot šo vērtību. Orientējoši klašu praktiskie limiti:
+
+| Tipiskā klase | Vēja limits (vidējais vējš) |
+|---------------|----------------------------|
+| C0 mini (< 250 g) | 5–8 m/s |
+| C1 vidēja izmēra (< 900 g) | 8–12 m/s |
+| C2 (< 4 kg) | 10–14 m/s |
+| C3 rūpniecisks (< 25 kg) | 12–18 m/s |
+
+Šie ir vidējā vēja limiti — brāzmainā vidē atņem 20–30 %, lai saglabātu drošas darbības rezerves.
+
+## Iet/Neiet sistēma
+
+Strādā caur šo secību **pirms katra lidojuma**:
+
+1. **Vējš specifikācijās?** Pārbaudīt METAR vidējo vēju UN brāzmas. Salīdzināt ar ražotāja limitu. Ja brāzmas pārsniedz limitu: **NEIET**.
+
+2. **Redzamība pietiekama VLOS?** Vai horizontālā redzamība pietiekama vizuālam kontaktam plānotajā maksimālajā attālumā? Praktiskais minimums: 3 km. Ja zem 3 km: **NEIET**.
+
+3. **Nokrišņas?** Lietus, sniegs, sarma, saldējoša migla: **NEIET** visiem UAS, kas nav sertificēti nokrišņiem.
+
+4. **Pērkona negaiss 10 km tuvumā?** Pārbaudīt radaru (meteo.lv radara cilne) aktīviem Cb šūnām 10 km rādiusā: **NEIET**. Jebkur redzams zibens: **NEIET**.
+
+5. **Temperatūra tuvu 0°C + mitrums?** Apledojuma risks: **NEIET**.
+
+Ja visi pieci pozitīvi: **IET** — taču nepārtraukti vērot un būt gatavam pārtraukt.
+
+## Vējš augstumā vs. pie zemes
+
+Virszemes vējš mērīts 10 m virs zemes. 80 m AGL augstumā vējš var būt par 30–50 % stiprāks. Tas ietekmē:
+- RTH — drons atgriežas pret vēju augstumā, ātrāk iztukšo bateriju.
+- Filmēšanu — drons cīnās ar vēju novietojumā, samazinot stabilitāti.
+- Ārkārtas baterijas rezerves — pretpūte atgriešanās laikā patērē vairāk enerģijas.
+
+Ja šaubas — vidējam virszemes vēja ātrumam pievienot 50 % darbības augstumam.
+
+<Scenario title="Priekšlidojuma pārbaude: METAR rāda vēju 22008KT. Tavs drons novērtēts 10 m/s. TAF rāda TEMPO 1012/1014 29018G28KT. Plānotais lidojums 11:00–12:00. Vai iet?">
+**NEIET plānotajā logā.** TAF TEMPO grupa 1012/1014 (starp 12:00 un 14:00 UTC) rāda vēju 18 mezgļi ar brāzmām 28 mezgļi = 14,4 m/s brāzmas. Tas pārsniedz 10 m/s drona limitu.
+
+Pārcelt uz laiku pēc 14:00 UTC, ja TEMPO ir pagājis un apstākļi apstiprinās.
+</Scenario>
+
+<MemoryAnchor
+  rule="Pārbaudīt METAR + TAF no meteo.lv vai NOAA. Iziet caur visām 5 iet/neiet pārbaudēm. Ja kāda neizdodas — NEIET. Virszemes vējš augstumā = reizināt ar 1,3–1,5."
+  hint="'Droši vien labi' laika apstākļu pārbaude nav laika apstākļu pārbaude. Visām piecām jāiziet skaidri."
+/>
+
+<CommonMistakes>
+- Pārbaudīt laiku pēdējā brīdī bez laika pārcelt, ja apstākļi neizdodas — pārbaudīt 24 h iepriekš.
+- Izmantot ražotāja lietotnes laika logrīku kā vienīgo laika pārbaudi — tas nav aviācijas klases avots.
+- Nepārbaudīt TAF plānotā lidojuma logam, tikai pašreizējo METAR — pašreizējie apstākļi var būt labi, kamēr prognozēts pasliktinājums.
+- Noraidīt TEMPO kā "pagaidu, droši vien nenotiks" — TEMPO ir apstākļu prognoze, kas notiks.
+- Ignorēt augstuma vēju — pieņemot, ka zemes apstākļi vienādi ar lidojuma augstumu.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "met-lv-g1",
+    stem: "Kurš avots nodrošina 24 stundu aviācijas klases laika prognozi konkrētai Latvijas lidostai?",
+    options: [
+      { id: "a", text: "DJI Fly lietotnes laika logrīks." },
+      { id: "b", text: "Google Weather tuvākajai pilsētai." },
+      { id: "c", text: "TAF (Terminal Aerodrome Forecast) no meteo.lv vai NOAA aviationweather.gov." },
+      { id: "d", text: "METAR tuvākajai lidostai." },
+    ],
+    correctOptionId: "c",
+    explanation: "TAF (Terminal Aerodrome Forecast) ir standarta aviācijas klases 24–30 stundu prognoze lidostām. METAR nodrošina pašreizējos novērotos apstākļus, ne prognozi. Ražotāja lietotnes logrīki un vispārīgie patērētāju laika dienesti nav aviācijas klases avoti.",
+    distractorRationales: {
+      a: "Ražotāja lietotnes laika logrīki izmanto komerciālus prognožu API, nevis aviācijas klases datus.",
+      b: "Patērētāju laika dienesti nesniedz aviācijas klases prognozes un tiem trūkst METAR/TAF precizitātes.",
+      d: "METAR nodrošina tikai pašreizējos apstākļus — jauns novērojums tiek izlaists aptuveni ik 30–60 minūtes. Tas neprognoze nākotnes apstākļus.",
+    },
+  },
+  {
+    id: "met-lv-g2",
+    stem: "Virszemes METAR rāda 06008KT (8 mezgļi). Tavs drons novērtēts 12 m/s. Plāno lidot 100 m AGL. Kādu vēja ātrumu var gaidīt augstumā?",
+    options: [
+      { id: "a", text: "Aptuveni 4 m/s — vējš samazinās ar augstumu." },
+      { id: "b", text: "Aptuveni 4 m/s — tāpat kā pie virszemes." },
+      { id: "c", text: "Aptuveni 5,5–6,2 m/s — virszemes vējš (4,1 m/s) × 1,3–1,5." },
+      { id: "d", text: "Tieši 8 mezgļi — METAR mēra lidojuma augstumā." },
+    ],
+    correctOptionId: "c",
+    explanation: "METAR vējš mērīts 10 m AGL. 100 m AGL vēja ātrums parasti ir par 30–50 % lielāks nekā pie virszemes, jo samazinās berze no zemes šķēršļiem. 8 KT = 4,1 m/s × 1,5 ≈ 6,2 m/s augstumā.",
+    distractorRationales: {
+      a: "Vējš parasti palielinās ar augstumu virszemes berzes samazināšanās dēļ, nevis samazinās.",
+      b: "Vējš augstumā nav vienāds ar virszemi — METAR mēra 10 m augstumā, ne darbības augstumā.",
+      d: "METAR pēc standarta mēra 10 m AGL, nevis 100 m. Tas ir virszemes novērojums, nevis mērījums augstumā.",
+    },
+  },
+]} />
+
+<Debrief unlocks={[]}>
+Meteoroloģijas moduļa mācības ir pabeigtas.
+
+Tu saproti, kā laika apstākļi ietekmē drona veiktspēju, vari identificēt bīstamas parādības pirms tās kļūst ārkārtas situācijas, un vari piemērot strukturētu iet/neiet sistēmu, izmantojot aviācijas klases avotus.
+
+Atgriezies uz prakses jautājumiem, lai pārbaudītu savas meteoroloģijas zināšanas.
+</Debrief>

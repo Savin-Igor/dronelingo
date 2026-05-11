@@ -19,6 +19,11 @@
         lv: Safety.
         en: Safety.
         ru: Безопасность.
+    - id: d
+      text:
+        lv: Skill.
+        en: Skill.
+        ru: Навык.
   correctOptionId: a
   explanation:
     lv: >
@@ -30,8 +35,23 @@
     ru: >
       IMSAFE = Illness, Medication, Stress, Alcohol, Fatigue, Eating.
       "S" — это Stress (стресс).
+  distractorRationales:
+    b:
+      lv: Ātrums (Speed) ir lidojuma parametrs, nevis pašpārbaudes elements. IMSAFE attiecas uz pilota stāvokli.
+      en: Speed is a flight parameter, not a self-check item. IMSAFE addresses the pilot's state.
+      ru: Скорость — параметр полёта, а не пункт самопроверки. IMSAFE — про состояние пилота.
+    c:
+      lv: Drošība (Safety) ir mērķis, nevis konkrēts IMSAFE pārbaudes punkts. Stress ir specifiskais "S" elements.
+      en: Safety is the goal, not a specific IMSAFE item. Stress is the specific "S" element.
+      ru: Безопасность — это цель, а не конкретный пункт IMSAFE. Stress — это и есть «S».
+    d:
+      lv: Iemaņas (Skill) tiek attīstītas treniņos, IMSAFE turpretim ir 6 īstermiņa fizioloģisko un emocionālo riska faktoru saraksts.
+      en: Skill is built through training, whereas IMSAFE is a 6-item short-term physiological and emotional risk-factor checklist.
+      ru: Навык формируется тренировками, а IMSAFE — это список из 6 краткосрочных физиологических и эмоциональных факторов риска.
   sourceRef: "EASA Easy Access Rules for UAS — Human performance limitations"
   difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: factual
 
 - id: hp-002
   stem:
@@ -54,6 +74,11 @@
         lv: 24 stundas.
         en: 24 hours.
         ru: 24 часа.
+    - id: d
+      text:
+        lv: 12 stundas.
+        en: 12 hours.
+        ru: 12 часов.
   correctOptionId: b
   explanation:
     lv: >
@@ -65,8 +90,23 @@
     ru: >
       «Bottle to throttle» — 8 часов. На практике рекомендуется больший
       интервал в зависимости от количества выпитого.
+  distractorRationales:
+    a:
+      lv: 2 stundas pārāk maz — pat neliels patēriņš ietekmē spriestspēju daudz ilgāk.
+      en: 2 hours is far too short — even small consumption affects judgement for much longer.
+      ru: 2 часа — слишком мало. Даже малое количество влияет на принятие решений намного дольше.
+    c:
+      lv: 24 stundas ir konservatīva prakse, bet regulā noteiktais limits ir 8 stundas. 24 h ir personisks izvēles standarts.
+      en: 24 hours is conservative practice, but the regulatory limit is 8 hours. 24 h is a personal-choice standard.
+      ru: 24 часа — консервативная практика, но регуляторный предел — 8 часов. 24 ч — личный стандарт.
+    d:
+      lv: "12 stundas pārsniedz minimumu — drošāk, bet nav obligātās regulas robeža. Atceries: 8 stundas — minimālais limits."
+      en: "12 hours exceeds the minimum — safer, but not the mandatory regulatory threshold. Remember: 8 hours is the floor."
+      ru: "12 часов превышают минимум — безопаснее, но не обязательный регуляторный порог. Помни: 8 часов — это нижняя граница."
   sourceRef: "EASA Easy Access Rules — Human performance, alcohol; ICAO Annex 2"
   difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: factual
 
 - id: hp-003
   stem:
@@ -89,6 +129,11 @@
         lv: Tāpēc, ka kamera nepārraida HDR.
         en: Because the camera does not transmit HDR.
         ru: Потому что камера не передаёт HDR.
+    - id: d
+      text:
+        lv: Tāpēc, ka brilles patērē baterijas jaudu.
+        en: Because the goggles drain battery power.
+        ru: Потому что очки потребляют энергию батареи.
   correctOptionId: a
   explanation:
     lv: >
@@ -103,8 +148,23 @@
       FPV-очки закрывают естественный обзор UAS и воздушной обстановки.
       Поэтому в Открытой категории FPV допустим только с наблюдателем
       рядом с пилотом.
+  distractorRationales:
+    b:
+      lv: Signāla stiprums attiecas uz kontroli ar drona pulti, ne uz pilota redzes lauku. VLOS prasība ir par to, ko pilots redz, ne par radio kvalitāti.
+      en: Signal strength is about link control, not the pilot's field of view. VLOS is about what the pilot sees, not radio quality.
+      ru: Сила сигнала — про управление каналом, а не про поле зрения пилота. VLOS — про то, что видит пилот, а не про качество радиосигнала.
+    c:
+      lv: HDR pārraide ir video kvalitātes parametrs, kas nemaina pamata problēmu — brilles aizsedz dabisko apkārtējās gaisa telpas skatu.
+      en: HDR transmission is a video-quality parameter that does not change the core issue — the goggles block the natural view of the surrounding airspace.
+      ru: "HDR-передача — это параметр качества видео, не меняющий главной проблемы: очки закрывают естественный обзор воздушной обстановки."
+    d:
+      lv: Baterijas patēriņš ir aprīkojuma jautājums, ne VLOS prasība. VLOS ir par to, ka pilots fiziski redz UAS — kameru iegrāmatošana to nemaina.
+      en: Battery drain is an equipment matter, not a VLOS requirement. VLOS is about the pilot physically seeing the UAS — camera-feed framing does not change that.
+      ru: Расход батареи — вопрос оборудования, а не требование VLOS. VLOS — про то, что пилот видит UAS физически; обрамление кадра ничего не меняет.
   sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(2)(a); EASA HF guidance"
   difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
 
 - id: hp-004
   stem:
@@ -127,6 +187,11 @@
         lv: Krāsu konstantums.
         en: Colour constancy.
         ru: Постоянство цвета.
+    - id: d
+      text:
+        lv: Tuneļa redzeslauks (samazināta perifērā uzmanība).
+        en: Tunnel vision (reduced peripheral attention).
+        ru: Тоннельное зрение (сужение периферии).
   correctOptionId: a
   explanation:
     lv: >
@@ -142,8 +207,23 @@
       Empty-field myopia — известный эффект: без точки фиксации глаз
       фокусируется близко, что мешает видеть далёкие объекты (включая
       дрон). Активное сканирование его предотвращает.
+  distractorRationales:
+    b:
+      lv: Spilgtuma adaptācija ir reālā parādība, bet tā uzlabo nakts redzi tumsā, nevis tukšā debesī. Mehānika atšķiras.
+      en: Brightness adaptation is real but improves night vision in the dark — not in empty sky. Different mechanism.
+      ru: Яркостная адаптация существует, но улучшает зрение в темноте, а не в пустом небе. Это другой механизм.
+    c:
+      lv: Krāsu konstantums ir spēja uztvert objekta krāsu vienādu dažādā gaismā — nesaistīts efekts.
+      en: Colour constancy is the ability to perceive an object's colour as the same under different lighting — an unrelated phenomenon.
+      ru: Постоянство цвета — способность воспринимать цвет объекта одинаково при разном освещении. Это другой эффект.
+    d:
+      lv: Tuneļa redzeslauks rodas no stresa vai FPV brillēm, ne no skatīšanās debesīs. Tas ir cita ģenēze.
+      en: Tunnel vision arises from stress or FPV goggles, not from looking at sky. Different cause.
+      ru: Тоннельное зрение возникает от стресса или FPV-очков, а не от взгляда в небо. Иной источник.
   sourceRef: "FAA AC 60-22; EASA Easy Access Rules — Vision and perception"
   difficulty: 3
+  cognitiveLevel: recall
+  scenarioType: factual
 
 - id: hp-005
   stem:
@@ -166,6 +246,11 @@
         lv: Lidot — nogurums neietekmē tālvadības pilotu.
         en: Fly — fatigue does not affect a remote pilot.
         ru: Лететь — усталость не влияет на пилота-оператора.
+    - id: d
+      text:
+        lv: Nogulēt 30 minūšu sniegu un sākt lidojumu.
+        en: Take a 30-minute nap and start flying.
+        ru: Поспать 30 минут и начать полёт.
   correctOptionId: a
   explanation:
     lv: >
@@ -180,5 +265,208 @@
       Усталость снижает скорость реакции и спектр внимания.
       Профессиональная дисциплина требует отложить полёт — кофеин не
       заменяет сон.
+  distractorRationales:
+    b:
+      lv: Kofeīns ir stimulators, bet tas neaizvieto miegu un nemazina noguruma kumulatīvo efektu uz spriestspēju.
+      en: Caffeine is a stimulant but does not replace sleep and does not undo the cumulative effect of fatigue on judgement.
+      ru: Кофеин — стимулятор, но он не заменяет сон и не устраняет кумулятивный эффект усталости на принятие решений.
+    c:
+      lv: Nogurums ietekmē jebkuru pilotu — tālvadības pilots saskaras ar tiem pašiem reakcijas, uzmanības un spriestspējas riskiem.
+      en: Fatigue affects every pilot — remote pilots face the same risks to reaction, attention, and judgement.
+      ru: Усталость влияет на любого пилота — пилот-оператор сталкивается с теми же рисками для реакции, внимания и принятия решений.
+    d:
+      lv: 30 minūšu sniegs var dot īsu modrību, bet tas neaizvieto pilnu nakts miegu. Pēc 4 h kopējā miega kumulatīvais deficīts paliek.
+      en: A 30-minute nap may give brief alertness, but it does not replace a full night's sleep. After 4 h total the cumulative deficit remains.
+      ru: 30-минутный сон даёт кратковременную бодрость, но не заменяет полноценный ночной сон. После 4 часов общий дефицит сохраняется.
   sourceRef: "ICAO Doc 9966 — Manual for Fatigue Management"
   difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: hp-006
+  stem:
+    lv: Pilots ierodas darba uzņēmumā un konstatē, ka primārajai tālvadības pultij baterija ir tukša. Ir tikai rezerves pults, kuru pilots nav iepriekš izmantojis. Kāda veida stress tas ir?
+    en: A pilot arrives at a commercial job and discovers the primary controller battery is dead. Only an unfamiliar backup controller is available. What type of stress is this?
+    ru: Пилот приезжает на коммерческую съёмку и обнаруживает, что аккумулятор основного пульта разряжен. Есть только незнакомый резервный пульт. Какой это тип стресса?
+  options:
+    - id: a
+      text:
+        lv: Hronisks stress.
+        en: Chronic stress.
+        ru: Хронический стресс.
+    - id: b
+      text:
+        lv: Akūts stress.
+        en: Acute stress.
+        ru: Острый стресс.
+    - id: c
+      text:
+        lv: Tehnisks stress.
+        en: Technical stress.
+        ru: Технический стресс.
+    - id: d
+      text:
+        lv: Šāda situācija nerada nozīmīgu stresu pieredzējušiem pilotiem.
+        en: This situation does not cause significant stress for experienced pilots.
+        ru: Такая ситуация не вызывает значительного стресса у опытных пилотов.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Tehnisks stress rodas no nepazīstamas vai nestrādājošas tehniskās
+      iekārtas — jauns drona modelis, ierīces kļūme, nevēlama aparatūras
+      maiņa. Rezerves pults, kuru pilots nav izmantojis, ir tehnisks stress.
+      Tas ietekmē pat pieredzējušus pilotus, tāpēc IMSAFE jāvērtē pirms
+      katra lidojuma.
+    en: >
+      Technical stress arises from unfamiliar or malfunctioning technical
+      equipment — a new drone model, device failure, unexpected hardware
+      change. An unfamiliar backup controller is technical stress. It affects
+      even experienced pilots, which is why IMSAFE must be assessed before
+      every flight.
+    ru: >
+      Технический стресс возникает из-за незнакомого или неисправного
+      оборудования — новая модель дрона, сбой устройства, неожиданная смена
+      аппаратуры. Незнакомый резервный пульт — технический стресс. Он
+      затрагивает даже опытных пилотов, поэтому IMSAFE нужно оценивать
+      перед каждым полётом.
+  distractorRationales:
+    a:
+      lv: Hronisks stress uzkrājas dienu un nedēļu laikā — pastāvīga darba slodze, miega trūkums, personiskās problēmas. Šis ir situatīvs, tūlītējs stress.
+      en: Chronic stress accumulates over days and weeks — sustained workload, poor sleep, personal circumstances. This is situational, immediate stress.
+      ru: Хронический стресс накапливается дни и недели — длительная нагрузка, недосып, личные проблемы. Это ситуативный, немедленный стресс.
+    b:
+      lv: Akūts stress ir tūlītējs situatīvs spiediens — klients kavējas, veldze laikā, sociāls vai laika spiediens. Tehniskas iekārtas problēma ir tehnisks, nevis akūts stress.
+      en: Acute stress is immediate situational pressure — a late client, time pressure, social or schedule pressure. A technical equipment problem is technical, not acute, stress.
+      ru: "Острый стресс — это немедленное ситуативное давление: задержка клиента, давление времени, социальное или плановое давление. Проблема с техническим оборудованием — это технический, а не острый стресс."
+    d:
+      lv: Pieredzējuši piloti arī piedzīvo tehnisku stresu ar nepazīstamu aprīkojumu — pieredze samazina stresu, bet to nenovērš pilnīgi.
+      en: Experienced pilots also experience technical stress with unfamiliar equipment — experience reduces but does not eliminate stress.
+      ru: Опытные пилоты тоже испытывают технический стресс при работе с незнакомым оборудованием — опыт снижает, но не устраняет стресс.
+  sourceRef: "EASA Easy Access Rules for UAS — Human performance limitations"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: hp-007
+  stem:
+    lv: Pilots ir nomodā 18 stundas. Aptuveni kādam alkohola koncentrācijas ekvivalentam asinīs (pēc BAC) tas atbilst?
+    en: A pilot has been awake for 18 hours. This corresponds approximately to what blood-alcohol concentration (BAC) equivalent?
+    ru: Пилот не спит 18 часов. Это приблизительно соответствует какому эквиваленту концентрации алкоголя в крови (BAC)?
+  options:
+    - id: a
+      text:
+        lv: 0,2 ‰ — virs nulles.
+        en: 0.2 ‰ — slightly above zero.
+        ru: 0,2 ‰ — немного выше нуля.
+    - id: b
+      text:
+        lv: 0,5 ‰ — Latvijā pieļaujamais vadīšanas limits.
+        en: 0.5 ‰ — the Latvian legal driving limit.
+        ru: 0,5 ‰ — допустимый предел вождения в Латвии.
+    - id: c
+      text:
+        lv: Virs 0,5 ‰, tuvojoties 0,8 ‰.
+        en: Above 0.5 ‰, approaching 0.8 ‰.
+        ru: Выше 0,5 ‰, приближаясь к 0,8 ‰.
+    - id: d
+      text:
+        lv: Nav ievērojama ietekme — organisms pielāgojas ilgai nomoda periodam.
+        en: No significant impairment — the body adapts to extended wakefulness.
+        ru: Нет значительного нарушения — организм адаптируется к длительному бодрствованию.
+  correctOptionId: c
+  explanation:
+    lv: >
+      0,5 ‰ BAC ekvivalents parasti tiek saistīts ar ~16 stundu nomodā.
+      18 stundas pārsniedz šo slieksni — atbilstošs ekvivalents ir virs
+      0,5 ‰, tuvojoties 0,8 ‰. Organisms nepielāgojas ilgstošai
+      nomodā uzturēšanai — veiktspēja turpina degradēties.
+    en: >
+      The 0.5 ‰ BAC equivalent is typically associated with ~16 hours awake.
+      18 hours exceeds this threshold — the corresponding equivalent is above
+      0.5 ‰, approaching 0.8 ‰. The body does not adapt to extended
+      wakefulness — performance continues to degrade.
+    ru: >
+      Эквивалент BAC 0,5 ‰ обычно связывают с ~16 часами без сна. 18 часов
+      превышают этот порог — соответствующий эквивалент выше 0,5 ‰,
+      приближаясь к 0,8 ‰. Организм не адаптируется к длительному
+      бодрствованию — производительность продолжает снижаться.
+  distractorRationales:
+    a:
+      lv: 0,2 ‰ atbilst vieglai nogurdinātībai — ievērojami mazāk par 16 stundu nomodā. 18 stundas ir ievērojami augstāka iedarbība.
+      en: 0.2 ‰ corresponds to mild tiredness — well short of 16 hours awake. 18 hours is a significantly higher level of impairment.
+      ru: 0,2 ‰ соответствует лёгкой усталости — значительно меньше 16 часов без сна. 18 часов — значительно более высокий уровень нарушения.
+    b:
+      lv: 0,5 ‰ ekvivalents ir saistīts ar ~16 stundu nomodā. 18 stundas pārsniedz šo slieksni — ietekme ir lielāka.
+      en: The 0.5 ‰ equivalent is associated with ~16 hours awake. 18 hours exceeds this threshold — the impairment is greater.
+      ru: Эквивалент 0,5 ‰ связан с ~16 часами без сна. 18 часов превышают этот порог — нарушение сильнее.
+    d:
+      lv: Organisms nepielāgojas — kognitīvā veiktspēja turpina pasliktināties lineāri bez miega. Pielāgošanas mīts ir dokumentēts kā neprecīzs.
+      en: The body does not adapt — cognitive performance continues to degrade linearly without sleep. The adaptation myth is documented as inaccurate.
+      ru: Организм не адаптируется — когнитивные способности продолжают линейно ухудшаться без сна. Миф об адаптации задокументирован как неточный.
+  sourceRef: "ICAO Doc 9966; Dawson & Reid (1997) — wakefulness and BAC equivalence"
+  difficulty: 3
+  cognitiveLevel: recall
+  scenarioType: numeric
+
+- id: hp-008
+  stem:
+    lv: Kurš no šiem apraksta VISAS trīs pilota pašpārbaudes jautājumu tēmas pirms lidojuma?
+    en: Which of these describes ALL three pilot self-test question topics before a flight?
+    ru: Какой из вариантов описывает ВСЕ три темы самопроверки пилота перед полётом?
+  options:
+    - id: a
+      text:
+        lv: Vai es zinu lidojuma maršrutu? Vai akumulatori uzlādēti? Vai laikapstākļi ir labvēlīgi?
+        en: Do I know the flight route? Are the batteries charged? Is the weather favourable?
+        ru: Знаю ли я маршрут? Заряжены ли аккумуляторы? Благоприятна ли погода?
+    - id: b
+      text:
+        lv: Vai es varu pieņemt droš lēmumu laika spiedienā? Vai mana uzmanība ir šim lidojumam? Vai esmu gatavs pārtraukt misiju, ja nepieciešams?
+        en: Can I make a safe decision under pressure right now? Is my attention on this flight? Am I ready to abort if needed?
+        ru: Могу ли я сейчас принять безопасное решение под давлением? Моё внимание на этом полёте? Готов ли я прервать миссию при необходимости?
+    - id: c
+      text:
+        lv: Vai man ir A1/A3 sertifikāts? Vai apdrošināšana ir spēkā? Vai drona marķējums ir pareizs?
+        en: Do I hold an A1/A3 certificate? Is insurance current? Is the drone marking correct?
+        ru: Есть ли у меня сертификат A1/A3? Действует ли страховка? Правильна ли маркировка дрона?
+    - id: d
+      text:
+        lv: Vai BGKIS pieteikums apstiprināts? Vai laikapstākļi atbilst prasībām? Vai drons atjauno GPS savienojumu?
+        en: Is the BGKIS application approved? Is weather within limits? Is the drone acquiring GPS?
+        ru: Одобрена ли заявка BGKIS? Погода в пределах нормы? Получает ли дрон GPS?
+  correctOptionId: b
+  explanation:
+    lv: >
+      Trīs pašpārbaudes jautājumi pirms lidojuma: (1) Vai es varu pieņemt drošu
+      lēmumu laika spiedienā tieši tagad? (2) Vai mana uzmanība ir šim
+      lidojumam — vai arī uz daudzām citām lietām? (3) Vai esmu gatavs
+      pārtraukt misiju, ja kaut kas noiet greizi? Ja kāda atbilde ir "nē" vai
+      "domāju, ka jā" — tas ir "nē".
+    en: >
+      The three pre-flight self-test questions: (1) Can I make a safe decision
+      under time pressure right now? (2) Is my attention on this flight — or on
+      several other things? (3) Am I ready to abort the mission if something
+      goes wrong? If any answer is "no" or "I think so" — that counts as "no".
+    ru: >
+      Три вопроса самопроверки перед полётом: (1) Могу ли я прямо сейчас
+      принять безопасное решение под временным давлением? (2) Моё внимание на
+      этом полёте — или на нескольких других вещах? (3) Готов ли я прервать
+      миссию, если что-то пойдёт не так? Если любой ответ «нет» или «думаю,
+      да» — это «нет».
+  distractorRationales:
+    a:
+      lv: Šie ir pirmslido vides un aparatūras pārbaudes jautājumi, nevis pilota pašpārbaudē iekļautie jautājumi par kognitīvo gatavību.
+      en: These are pre-flight environment and hardware check questions, not the pilot self-test questions about cognitive readiness.
+      ru: Это вопросы предполётной проверки окружающей среды и оборудования, а не вопросы самопроверки пилота о когнитивной готовности.
+    c:
+      lv: Sertifikāts, apdrošināšana un marķējums ir atbilstības pārbaudes — tos nevajadzētu jaukt ar kognitīvās gatavības pašpārbaudi.
+      en: Certificate, insurance, and marking are compliance checks — they should not be confused with the cognitive readiness self-test.
+      ru: Сертификат, страховка и маркировка — проверки соответствия, их не следует путать с самопроверкой когнитивной готовности.
+    d:
+      lv: BGKIS, laikapstākļi un GPS — vides pārbaudes pirms lidojuma, nevis kognitīvās pašpārbaudes jautājumi.
+      en: BGKIS, weather, and GPS are pre-flight environment checks, not cognitive self-test questions.
+      ru: BGKIS, погода и GPS — предполётные проверки окружающей среды, а не вопросы когнитивной самопроверки.
+  sourceRef: "EASA Easy Access Rules — Human performance; ICAO Doc 9966"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: factual

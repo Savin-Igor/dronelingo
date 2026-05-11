@@ -1,3 +1,4 @@
+import { DailyWarmUp } from "@/components/landing/DailyWarmUp";
 import { ExamFacts } from "@/components/landing/ExamFacts";
 import { Hero } from "@/components/landing/Hero";
 import { HowItWorks } from "@/components/landing/HowItWorks";
@@ -15,6 +16,7 @@ export default async function HomePage({
     <main>
       <StructuredData locale={locale} />
       <Hero />
+      <DailyWarmUp />
       <ValueProp />
       <HowItWorks />
       <WhyDronelingo />

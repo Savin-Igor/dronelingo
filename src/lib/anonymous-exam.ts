@@ -13,12 +13,26 @@ export type StoredExamResult = {
   total: number;
   correct: number;
   passed: boolean;
+  /**
+   * Exam mode. `full` is the 40-Q stratified mock; `topic` is the
+   * shorter per-topic drill at /exam/[topic]. Undefined on legacy
+   * records (treated as `full` by the readiness gauge).
+   */
+  type?: "full" | "topic";
+  /** Topic slug — only set when type is `topic`. */
+  topicSlug?: string;
   perTopic: Record<
     string,
     { topicSlug: string; topicTitle: string; correct: number; total: number }
   >;
   missed: {
     questionId: string;
+    /**
+     * Stable per-content id (e.g. "as-001"). Optional for backward
+     * compatibility with exam history written before the SRS link
+     * was introduced; new exams always include it.
+     */
+    externalId?: string;
     topicSlug: string;
     topicTitle: string;
     stem: string;
@@ -63,8 +77,11 @@ export function computeReadiness(
   history: StoredExamResult[],
   threshold: number,
 ): Readiness {
-  if (history.length === 0) return "no-data";
-  const last3 = history.slice(-3);
+  // Readiness is about the official mock exam — topic-scoped drills
+  // (`type: 'topic'`) are useful but don't predict the real 40-Q exam.
+  const fullMocks = history.filter((h) => h.type !== "topic");
+  if (fullMocks.length === 0) return "no-data";
+  const last3 = fullMocks.slice(-3);
   const percents = last3.map((h) => Math.round((h.correct / h.total) * 100));
   if (last3.length === 3 && percents.every((p) => p >= threshold)) {
     return "ready";

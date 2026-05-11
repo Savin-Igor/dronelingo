@@ -1,40 +1,104 @@
-# Nogurums un stress UAS pilotam
+# Nogurums un stress
 
-Tālvadības pilots strādā vienatnē — bez otras pilota, bez ATC. Tas
-padara **personīgo stāvokli** par vienu no galvenajiem drošības
-faktoriem.
+<MissionBriefing objective="Pēc šīs nodarbības tu sapratīsi, kā nogurums degradē pilota veiktspēju, atpazīsi trīs stresa tipus, kas ietekmē UAS operācijas, un zināsi, kad jāapstājas.">
+UAS pirmslidojuma pārbaude aizņem 3 minūtes. Smadzenes tu pirmslidojuma pārbaudei nepakļausi. Nogurums ir neredzams visiem, izņemot to, kurš to izjūt — un viņš parasti pamana pēdējais.
+</MissionBriefing>
 
-## Kas ir noguruma "punkts"
+<CinematicScene
+  src="/lessons/fatigue-performance-graph.png"
+  alt="Grafiks: kognitīvā veiktspēja krīt no 100 % pie 0 h nomoda līdz 30 % pie 24 h, ar BAC ekvivalences iezīmēm."
+  caption="Diagramma · fatigue-performance"
+/>
 
-Pēc 16 nomoda stundām reakcijas ātrums un uzmanības spektrs samazinās
-līdzīgi kā pie 0,5 ‰ alkohola koncentrācijas asinīs. Pēc 24 stundām —
-līdzīgi kā pie 1,0 ‰.
+## Ko nogurums tiešām dara
 
-## Stresa avoti
+Pēc 16 stundām bez miega kognitīvā veiktspēja ir kritusi līdz līmenim, kas ekvivalents asins alkohola koncentrācijai 0,5 ‰. Pēc 24 stundām ekvivalents ir aptuveni 1,0 ‰.
 
-- **Akūts stress** — laika spiediens, klienta gaidīšana, mikroshēmas
-  problēmas;
-- **Hronisks stress** — darba slodze nedēļas garumā, ģimenes situācija;
-- **Tehniskais stress** — atkārtoti BGKIS atteikumi, GPS spoofing
-  pierobežā.
+Latvijā likumīgā robeža autovadīšanai ir 0,5 ‰. Atpūties UAS pilots, kas iedzēris līdz šai robežai, nedrīkst nedz braukt, nedz droši lidot. Tāds pats limits attiecas uz miega trūkumu, tikai bez alkomāra un bez ārējas pārbaudes.
 
-## Kā atpazīt savu robežu
+Simptomi: lēnāka reakcija, sašaurināta uzmanība, traucēta riska novērtēšana un — vissvarīgāk — **pavājināta spēja atpazīt, ka esi traucēts**.
 
-Pirms lidojuma uzdod sev vienkāršus jautājumus:
+## Trīs stresa tipi
 
-1. Vai es spēšu pieņemt **drošu lēmumu** zem laika spiediena?
-2. Vai mana uzmanība ir uz vairākām lietām vienlaikus, vai uz **šo
-   lidojumu**?
-3. Vai es esmu gatavs **pārtraukt misiju**, ja kaut kas iet greizi?
+**Akūts stress** parādās brīdī: klients kavējas, aparatūras problēma uz objekta, negaidītas brāzmas, kamēr UAS jau gaisā. Akūts stress saspiež uzmanību uz tiešajiem draudiem un padara grūtāk pamanīt riskus ārpus šī šaurā fokusa.
 
-Ja kāda atbilde ir "nē" — atliec vai deleģē.
+**Hronisks stress** uzkrājas dienām un nedēļām: liela darba slodze, slikti miega ritmi, personīgi apstākļi. Tas padara bāzes līniju sliktāku jau pirms lidojuma sākuma.
 
-## Praktiski padomi
+**Tehnisks stress** ir specifisks UAS operācijām: atkārtoti BGKIS noraidījumi, GPS signāla zudums austrumu robežas tuvumā, nepazīstams UAS modelis. Pat pieredzējuši piloti to izjūt, kad kaut kas jauns iet greizi.
 
-- Plāno lidojumus **pēc atpūtas**, ne pēc strādes dienas.
-- **Pirms lidojuma — ūdens, ne kafija** kā galvenais šķidrums.
-- **Limitē sesijas līdz 60–90 min.** Pēc — pārtraukums.
-- **Reģistrē notikumus** brīvprātīgā ziņojumā, lai pamācītos.
+## Trīs jautājumu pašpārbaude
 
-> **Avots:** ICAO Doc 9966 — Manual for Fatigue Management;
-> EASA Easy Access Rules for UAS — Human Performance Limitations.
+Pirms lidojuma uzdod trīs vienkāršus jautājumus:
+
+1. **Vai es pašlaik varu pieņemt drošu lēmumu zem laika spiediena?**
+2. **Vai mana uzmanība ir uz šo lidojumu — vai arī uz vairākām citām lietām?**
+3. **Vai es esmu gatavs pārtraukt misiju, ja kaut kas iet greizi?**
+
+Ja kāda atbilde ir "nē" — atliec. Ja atbilde ir "domāju, ka jā" — tas ir "nē".
+
+<Scenario title="Tev rezervēts komerciāls filmēšanas darbs. Klients laukā skatās. Tu slikti gulēji, kavējies, un baterija, ko izmanto, ir tā, par kuras stāvokli šaubies. Ko darīt?">
+Trīs aktīvi riska faktori: nogurums (slikts miegs), akūts stress (gaidošs klients, grafiks), tehniska bažas (neskaidra baterija).
+
+Pareizā darbība ir **apstāties un risināt katru faktoru** pirms pirmā motora startēšanas:
+1. Pasaki klientam godīgi: "Man vajadzīgas 5 minūtes, lai pārbaudītu bateriju un apstiprinātu iestatījumus."
+2. Apmaini neskaidro bateriju pret zināmi labu, ja pieejama.
+3. Pirms sākuma uzklusti uz 60 sekundēm — atjauno kognitīvo bāzes līniju.
+
+Ja nogurums ir pietiekami nopietns, lai traucētu spriestspēju, pareizā darbība ir atlikt un pārplānot. Profesionālis, kurš pārtrauc lidojumu, ir drošāks, ne vājāks.
+</Scenario>
+
+<MemoryAnchor
+  rule="16 h nomoda = 0,5 ‰ traucējums. No ārpuses to nepamanīs neviens. Tikai tu vari pārtraukt lidojumu."
+  hint="Jautā: vai esmu gatavs pārtraukt, ja vajadzēs? Ja neesi pārliecināts — nesāc."
+/>
+
+<CommonMistakes>
+- Lidot pēc gara darba dienas "jo tas tikai īss darbs" — nogurumam nerūp lidojuma ilgums.
+- Ļaut klienta klātbūtnei pārmākt lēmumu "ej/neej" — pilota balss nav apspriežama.
+- Sajaukt kafiju ar atpūtu — stimulanti maskē nogurumu, neatjaunojot kognitīvo veiktspēju.
+- Ignorēt hronisko stresu kā "ne drošības problēmu" — hronisks nogurums pazemina bāzes līniju jau pirms IMSAFE.
+- Neiesniegt brīvprātīgus ziņojumus pēc ar stresu saistītām bīstamām situācijām — modelis paliek neatklāts.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "fat-q1",
+    stem: "Pilots bijis nomodā 18 stundas. Kognitīvā traucējuma ziņā tas aptuveni atbilst kādai alkohola koncentrācijai asinīs?",
+    options: [
+      { id: "a", text: "0,2 ‰ — nedaudz virs nulles." },
+      { id: "b", text: "0,5 ‰ — atbilst Latvijas likumīgajai braukšanas robežai." },
+      { id: "c", text: "0,8 ‰ — virs likumīgās robežas vairumā ES valstu." },
+      { id: "d", text: "Nav traucējuma — ķermenis pielāgojas paildzinātam nomodam." },
+    ],
+    correctOptionId: "c",
+    explanation: "18 stundas nomoda parasti atbilst traucējumam virs 0,5 ‰ BAC ekvivalences — tuvojas 0,8 ‰. 0,5 ‰ ekvivalents minēts pie 16 stundām; 18 stundas šo robežu pārsniedz. Ķermenis paildzinātam nomodam nepielāgojas — veiktspēja turpina krist.",
+    distractorRationales: {
+      a: "0,2 ‰ atbilst vieglam nogurumam — krietni zem 18 stundām nomodā.",
+      b: "0,5 ‰ ekvivalents atbilst aptuveni 16 stundām nomodā. 18 stundas ir sliktāk.",
+      d: "Ķermenis nepielāgojas — bez miega veiktspēja turpina krist lineāri.",
+    },
+  },
+  {
+    id: "fat-q2",
+    stem: "Klients gaida uz vietas, un pilots kavējas. Pilots jūtas satraukts un steigā. Kāds stresa tips tas ir?",
+    options: [
+      { id: "a", text: "Hronisks stress." },
+      { id: "b", text: "Tehnisks stress." },
+      { id: "c", text: "Akūts stress." },
+      { id: "d", text: "Ievērojama stresa nav — tā ir parasta darba situācija." },
+    ],
+    correctOptionId: "c",
+    explanation: "Akūtu stresu izraisa tūlītējs situācijas spiediens — gaidošs klients, laika ierobežojums, kavēšanās. Tas sašaurina uzmanību un paātrina lēmumus tā, ka apzināts riska novērtējums tiek apiets.",
+    distractorRationales: {
+      a: "Hronisks stress uzkrājas dienām un nedēļām. Viens gaidošs klients ir akūts, ne hronisks.",
+      b: "Tehnisks stress saistīts ar nepazīstamu vai traucētu aparatūru, ne ar klienta spiedienu.",
+      d: "Parastas darba situācijas izraisa reālu fizioloģisku stresa reakciju, kas ietekmē veiktspēju.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["op-001"]}>
+Tu izproti, kā nogurums un stress degradē pilota veiktspēju, un kā tos atpazīt.
+
+Nākamais sektors: Ekspluatācijas procedūras — pirmslidojuma disciplīna un avārijas lēmumu pieņemšana, kas atšķir profesionāli no hobistā.
+</Debrief>

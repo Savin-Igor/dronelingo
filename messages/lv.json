@@ -2,17 +2,16 @@
   "nav": {
     "learn": "Mācies",
     "practice": "Trenējies",
-    "exam": "Eksāmens",
-    "claim": "Saņemt"
+    "exam": "Eksāmens"
   },
   "landing": {
     "hero": {
       "title": "Sagatavojies EASA A1/A3 droniem eksāmenam — un nokārto to pirmajā reizē.",
-      "sub": "Mācies bez maksas. Maksā €19 tikai tad, kad nokārto oficiālo eksāmenu vietnē e.caa.gov.lv.",
-      "ctaPrimary": "Sākt mācīties",
+      "sub": "Pirmā tēma bez maksas. Pilna piekļuve visām 9 tēmām, treniņiem un simulētajiem eksāmeniem — €19 vienreiz.",
+      "ctaPrimary": "Izmēģināt bez maksas",
       "ctaSecondary": "Kā tas darbojas"
     },
-    "valueProp": "Bez maksas mācīties. €19 tikai pēc sekmīgi nokārtota eksāmena.",
+    "valueProp": "Pirmā tēma bez maksas. Pilna piekļuve par €19 — bez abonēšanas.",
     "howItWorks": {
       "heading": "Kā tas darbojas",
       "learn": {
@@ -24,8 +23,8 @@
         "body": "Atbildi uz reāla stila jautājumiem. Pildi simulētos eksāmenus, līdz stabili sasniedz 80 %+."
       },
       "pass": {
-        "title": "Nokārto — tad maksā",
-        "body": "Nokārto bezmaksas oficiālo A1/A3 eksāmenu vietnē e.caa.gov.lv. Maksā €19 tikai pēc sekmīgas nokārtošanas. Neizdevās — nemaksā."
+        "title": "Nokārto eksāmenu",
+        "body": "Nokārto oficiālo A1/A3 eksāmenu vietnē e.caa.gov.lv — esi pilnībā sagatavots. Eksāmens CAA portālā ir bez maksas."
       }
     },
     "why": {
@@ -35,8 +34,8 @@
         "body": "Pielāgots Latvijas procesam — reģistrācijai vietnē e.caa.gov.lv, A1/A3 eksāmenam, reālajai CAA valodai."
       },
       "passOrFree": {
-        "title": "Nokārto vai bez maksas",
-        "body": "Ja neizdodas, nemaksā. Mūsu mērķis sakrīt ar tavu."
+        "title": "Vienreizējs maksājums",
+        "body": "€19 vienreiz. Bez ikmēneša maksas, bez atjaunošanas, bez papildu piedāvājumiem. Piekļuve paliek uz visiem laikiem."
       },
       "euAligned": {
         "title": "Saskaņots ar ES regulām",
@@ -82,11 +81,29 @@
     "questionOf": "Jautājums {current} no {total}",
     "allDone": "Esi izgājis visus šīs tēmas jautājumus.",
     "anonymousNote": "Atbildes glabājas tikai šajā pārlūkā — bez reģistrācijas.",
-    "ctaFromTopic": "Trenējies šajā tēmā"
+    "ctaFromTopic": "Trenējies šajā tēmā",
+    "srs": {
+      "due": "Termiņā",
+      "fresh": "Jauns",
+      "scheduled": "Plānots",
+      "dueCount": "Termiņā tagad: {count}",
+      "reviewDueOnly": "Tikai termiņa atkārtošana",
+      "showAll": "Rādīt visus",
+      "allCaughtUp": "Viss izdarīts — nekas nav termiņā. Rādu visus jautājumus.",
+      "noneDue": "Pašlaik nekas nav termiņā. Sāc sesiju, lai izveidotu grafiku."
+    }
   },
   "exam": {
     "title": "Pārbaudes eksāmens",
     "subtitle": "Imitē oficiālo A1/A3 eksāmenu vietnē e.caa.gov.lv. Ja stabili sasniedz 80 %+, esi gatavs reālajam eksāmenam.",
+    "coverage": {
+      "heading": "Jautājumu sadalījums",
+      "subtitle": "Atveido oficiālo CAA Latvia eksāmena svēršanu.",
+      "drillHint": "Pieskaries tēmai, lai sāktu fokusētu treniņu.",
+      "drillCta": "Treniņš · {topic}",
+      "questionsLabel": "jautājumi",
+      "totalLabel": "Kopā"
+    },
     "rules": {
       "heading": "Noteikumi",
       "questions": "40 jautājumi, kas aptver visas 9 EASA tēmas",
@@ -117,9 +134,13 @@
     "perTopicScore": "{correct} / {total}",
     "missed": "Nepareizi atbildētie jautājumi",
     "noMisses": "Visas atbildes pareizas — lieliski!",
+    "review": {
+      "send": "{count, plural, one {Nosūtīt # uz atkārtojumu} other {Nosūtīt # uz atkārtojumu}}",
+      "queued": "{count, plural, one {# rindā iesildīšanai} other {# rindā iesildīšanai}}"
+    },
     "retake": "Sākt jaunu eksāmenu",
     "noResult": "Pēdējais eksāmens nav atrasts. Sāc no jauna.",
-    "claimCta": "Pieprasīt Pass Guarantee",
+    "claimCta": "Doties uz e.caa.gov.lv →",
     "durationLabel": "Ilgums: {minutes} min",
     "history": {
       "heading": "Tavi pēdējie eksāmeni",
@@ -161,34 +182,254 @@
     "privacyLink": "privātuma politika",
     "accept": "Sapratu"
   },
-  "claim": {
-    "title": "Saņem savu €19 — Pass Guarantee",
-    "subtitle": "Ja oficiālais A1/A3 eksāmens nokārtots, augšupielādē apliecību vai ievadi reģistrācijas numuru — un noslēdz €19 maksājumu.",
-    "kindHeading": "Kā apliecināt nokārtošanu",
-    "kindPdf": "Augšupielādēt PDF apliecību no e.caa.gov.lv",
-    "kindCaaId": "Ievadīt CAA Latvia reģistrācijas numuru",
-    "fileLabel": "PDF apliecība (max 5 MB)",
-    "fileHint": "Lejupielādē PDF no e.caa.gov.lv pēc nokārtošanas.",
-    "fileSelected": "Izvēlēts: {name}",
-    "caaIdLabel": "Reģistrācijas numurs",
-    "caaIdPlaceholder": "LVA-RP-############",
-    "caaIdHint": "Formāts: LVA-RP- un 12 cipari (piem., LVA-RP-123456789012).",
-    "emailLabel": "E-pasts paldies vēstulei",
-    "emailPlaceholder": "tava@vēstule.lv",
-    "checkout": {
-      "heading": "Stub-checkout (€19)",
-      "note": "Šis ir Stripe formas iztēlošana — reālais Stripe tiks pieslēgts pēc ≥10 sekmīgi pabeigtām stub-checkout plūsmām.",
-      "amount": "€19,00",
-      "pay": "Maksāt €19",
-      "processing": "Apstrādā...",
-      "success": "Maksājums veiksmīgs ✓",
-      "successBody": "Paldies! Esi devis svarīgu signālu — ka Pass Guarantee modelis darbojas. Reālā summa netika ieturēta.",
-      "back": "Atpakaļ uz eksāmenu"
+  "access": {
+    "gateTitle": "Nepieciešama pilna piekļuve",
+    "gateBody": "Iegūsti pilnu piekļuvi visām nodarbībām, treniņiem un eksāmeniem.",
+    "gateCta": "Iegūt pilnu piekļuvi — €19",
+    "freeNote": "Gaisa drošības tēma vienmēr ir bez maksas."
+  },
+  "pricing": {
+    "title": "Atslēdz visu platformu",
+    "subtitle": "Pirmā tēma bez maksas. Maksā vienreiz, lai atslēgtu visu.",
+    "includedHeading": "Pilna piekļuve ietver",
+    "payHeading": "Vienreizējs maksājums",
+    "productName": "dronelingo — Pilna piekļuve",
+    "emailLabel": "E-pasts (neobligāti — čekiem)",
+    "pay": "Iegūt pilnu piekļuvi — €19 →",
+    "processing": "Apstrādā...",
+    "stubNote": "Stub checkout — reāla maksa netiek ieturēta.",
+    "freeNote": "Gaisa drošības tēma vienmēr ir bez maksas."
+  },
+  "topicExam": {
+    "kicker": "Tēmas treniņš",
+    "title": "Tēmas treniņš",
+    "subtitle": "Fokusēts mock par tēmu {topic}. Noderīgs, kad tēma jau pastrādāta praksē.",
+    "backToExam": "Eksāmena sākums",
+    "rules": {
+      "heading": "Noteikumi",
+      "questions": "{count} jautājumi no šīs tēmas",
+      "duration": "{minutes} minūtes",
+      "threshold": "≥ {threshold} % pareizi, lai nokārtotu",
+      "notFullMock": "Tēmas treniņi neietekmē pilnā eksāmena gatavības rādītāju."
     },
-    "errors": {
-      "missing": "Vajag PDF apliecību vai reģistrācijas numuru.",
-      "caaIdFormat": "Reģistrācijas numuram jābūt formātā LVA-RP-############.",
-      "fileTooLarge": "Fails pārsniedz 5 MB."
+    "stats": {
+      "questions": "Jautājumi",
+      "minutes": "Minūtes",
+      "threshold": "Slieksnis"
+    },
+    "start": "Sākt treniņu"
+  },
+  "diagnostic": {
+    "kicker": "Kalibrēšanas lidojums",
+    "title": "10 jautājumu diagnostika",
+    "subtitle": "Īsi, bez taimera, viens jautājums no katras tēmas. Kļūdas uzreiz nonāk dienas iesildīšanā.",
+    "backToExam": "Mock eksāmens",
+    "stats": {
+      "questions": "Jautājumi",
+      "noTimer": "Taimers",
+      "feedback": "Tūlītēja atbilde"
+    },
+    "questionOf": "Jautājums {current} no {total}",
+    "check": "Pārbaudīt atbildi",
+    "next": "Tālāk",
+    "finish": "Rezultāti",
+    "correct": "Pareizi",
+    "incorrect": "Nepareizi",
+    "source": "Avots",
+    "emptyPool": "Jautājumu banka diagnostikai vēl nav gatava.",
+    "result": {
+      "kicker": "Kalibrēšana pabeigta",
+      "percent": "{percent}% pareizi",
+      "perTopicLabel": "Spēks pa tēmām",
+      "perTopicHeading": "Spēks pa tēmām",
+      "scoreAria": "{correct} no {total} pareizi",
+      "queuedKicker": "Rindā iesildīšanai",
+      "queuedTitle": "{count, plural, one {# nepareizs jautājums pievienots atkārtojuma grafikam.} other {# nepareizi jautājumi pievienoti atkārtojuma grafikam.}}",
+      "queuedBody": "Dienas iesildīšana parādīs tos ar vājākajām tēmām vispirms.",
+      "ctaWarmup": "Sākt iesildīšanos",
+      "ctaLessons": "Skatīt nodarbības",
+      "allClearKicker": "Viss tīrs",
+      "allClearBody": "Tīra iziešana. Tu esi gatavs pilnam mock eksāmenam.",
+      "ctaMockExam": "Sākt mock eksāmenu"
+    },
+    "cta": {
+      "ariaLabel": "Diagnostikas piedāvājums",
+      "kicker": "Pirmo reizi šeit?",
+      "title": "Sāc ar 10 jautājumu kalibrēšanu",
+      "subtitle": "Uzzini precīzi, kur esi visās 9 tēmās. Kļūdas uzreiz nonāk dienas iesildīšanā.",
+      "cta": "Sākt diagnostiku"
+    }
+  },
+  "rank": {
+    "ariaLabel": "Pilota rangs",
+    "kicker": "Pilota rangs",
+    "nextLabel": "Tālāk:",
+    "certifiedHint": "Tu esi sertificēts — kārto īsto eksāmenu e.caa.gov.lv.",
+    "tiers": {
+      "recruit": { "name": "Iesācējs" },
+      "cadet": { "name": "Kadets" },
+      "pilotReady": { "name": "A1/A3 gatavs" },
+      "certified": { "name": "Sertificēts" }
+    },
+    "criteria": {
+      "lessonsVisited": { "label": "Apmeklē {target} nodarbības ({current}/{target})" },
+      "recentMockPasses": { "label": "Šonedēļ nokārto {target} mock eksāmenus ≥ 85 % ({current}/{target})" },
+      "topicsAt70": { "label": "Sasniedz 70 % apgūšanu visās tēmās ({current}/{target})" },
+      "hasCertificate": { "label": "Augšupielādē savu CAA Latvia sertifikātu" }
+    }
+  },
+  "masteryMap": {
+    "ariaLabel": "Tēmu meistarības karte",
+    "title": "Meistarības karte",
+    "subtitle": "{seen} no {total} jautājumiem izpildīti",
+    "overallMastery": "Kopā",
+    "rowStats": "{mastered} apgūti · {seen}/{total} redzēti",
+    "dueCount": "{count, plural, one {# termiņā} other {# termiņā}}",
+    "ariaProgress": "{topic} — {percent}% apgūts",
+    "tier": {
+      "untouched": "Nesākts",
+      "weak": "Vājš",
+      "learning": "Mācās",
+      "ready": "Gatavs",
+      "mastered": "Apgūts"
+    }
+  },
+  "warmUp": {
+    "ariaLabel": "Dienas iesildīšanās",
+    "kicker": "Dienas iesildīšanās",
+    "title": "{count, plural, one {# jautājums gaida atkārtojumu.} other {# jautājumi gaida atkārtojumu.}}",
+    "subtitle": "Dažas minūtes atkārtojuma intervālos uztur vājās tēmas asas.",
+    "cta": "Sākt iesildīšanos",
+    "pageTitle": "Dienas iesildīšanās",
+    "freeOnlyNote": "Iesildies tikai no bezmaksas Gaisa drošības tēmas.",
+    "unlockAll": "Atver visas 9 tēmas",
+    "adaptive": "Adaptīvs · vājākās tēmas vispirms"
+  },
+  "lessonWidgets": {
+    "anatomy": {
+      "missionBriefing": "Misijas brīfings",
+      "scenario": "Scenārijs",
+      "remember": "Atceries",
+      "commonMistakes": "Biežākās kļūdas",
+      "debrief": "Apkopojums",
+      "unlocked": "Atklāts",
+      "scenePlaceholder": "Ainas vietturis · gaida renderi",
+      "promptLabel": "prompts:"
+    },
+    "miniQuiz": {
+      "heading": "Ātrā pārbaude",
+      "correct": "Pareizi",
+      "notQuite": "Ne īsti",
+      "whyWrong": "Kāpēc tava atbilde nepareiza:"
+    },
+    "classComparator": {
+      "heading": "Interaktīvs · UAS klašu salīdzinājums",
+      "tabsAriaLabel": "UAS klases",
+      "mtom": "MTOM",
+      "maxSpeed": "Maks. ātrums",
+      "subcategory": "Apakškategorija",
+      "remoteId": "Remote ID",
+      "geoAwareness": "Geo-awareness",
+      "keyRestriction": "Galvenais ierobežojums",
+      "required": "Obligāts",
+      "notRequired": "Nav vajadzīgs",
+      "manualOnly": "tikai manuāli",
+      "retrofitKit": "modernizācijas komplekts",
+      "bvlosCapable": "BVLOS spējīgs",
+      "dash": "—",
+      "classes": {
+        "C0": { "restriction": "Pārlidot atsevišķas personas — drīkst · pulcēšanos — nekad" },
+        "C1": { "restriction": "Pārlidojums virs nepiederošām personām nav gaidāms" },
+        "C2": { "restriction": "Zema ātruma režīms (≤ 3 m/s) → 5 m · parasti → 30 m" },
+        "C3": { "restriction": "≥ 150 m no apdzīvotām zonām · ≥ 30 m vai 1:1 no cilvēkiem" },
+        "C4": { "restriction": "Bez autonomiem režīmiem — tikai manuāla vadība" },
+        "C5": { "restriction": "VLOS, kontrolēta zemes zona, gaisa telpas novērotāji" },
+        "C6": { "restriction": "BVLOS pār mazapdzīvotām zonām · novērotāju ķēde" }
+      }
+    },
+    "whCalculator": {
+      "heading": "Interaktīvs · Wh kalkulators",
+      "cells": "Šūnu skaits (S)",
+      "cellsHint": "DJI Mavic 3 = 4S",
+      "capacity": "Kapacitāte (mAh)",
+      "capacityHint": "Pa šūnu komplektā — nolasi no baterijas etiķetes",
+      "packVoltage": "Komplekta spriegums",
+      "capacityRow": "Kapacitāte",
+      "energy": "Enerģija",
+      "iata": "IATA aviācijas ceļojums",
+      "iataOk": "Rokas vai reģistrētajā bagāžā",
+      "iataApproval": "Tikai rokas bagāžā · aviokompānijas atļauja",
+      "iataForbidden": "Aizliegts pasažieru gaisa kuģī",
+      "formula": "Formula: Wh = (mAh ÷ 1000) × šūnas × 3,7 V nominālie. Zem 100 Wh: brīvi. 100–160 Wh: aviokompānijas atļauja. Virs 160 Wh: aizliegts pasažieru salonā."
+    },
+    "imsafe": {
+      "heading": "Interaktīvs · IMSAFE pašpārbaude",
+      "verdict": "Vērtējums",
+      "verdictWaiting": "Atbildi uz visiem sešiem, lai redzētu vērtējumu",
+      "verdictGo": "GO — visi seši tīri. Tālāk UAS un vides pārbaudes.",
+      "verdictNoGo": "NO-GO — viens vai vairāki riski aktīvi. Atliec vai deleģē.",
+      "reset": "Atiestatīt sarakstu",
+      "yes": "Jā",
+      "no": "Nē",
+      "items": {
+        "illness": { "letter": "I", "label": "Slimība", "prompt": "Aktīva infekcija, saaukstēšanās vai simptomi, kas ietekmē koncentrāciju?" },
+        "medication": { "letter": "M", "label": "Medikamenti", "prompt": "Medikaments, kas var izraisīt miegainību vai ietekmēt modrību?" },
+        "stress": { "letter": "S", "label": "Stress", "prompt": "Akūts emocionāls stress (strīds, sliktas ziņas, finansiāls spiediens)?" },
+        "alcohol": { "letter": "A", "label": "Alkohols", "prompt": "Vai esi lietojis alkoholu pēdējās 8 stundās?" },
+        "fatigue": { "letter": "F", "label": "Nogurums", "prompt": "Mazāk par 6 stundām miega pagājušajā naktī vai uzkrāts miega trūkums?" },
+        "eating": { "letter": "E", "label": "Ēšana", "prompt": "Bez ēdiena pēdējās 4 stundās vai jūties hipoglikēmisks?" }
+      }
+    },
+    "zoneClassifier": {
+      "heading": "Interaktīvs · klasificē zonu",
+      "intro": "Izlem, kuram UGZ tipam katrs scenārijs atbilst. Klikšķini, lai atklātu.",
+      "zoneTypeLabel": "Zonas tips",
+      "correct": "Pareizi",
+      "notQuite": "Ne īsti",
+      "answerPrefix": "atbilde:",
+      "types": {
+        "information": "Informatīvā",
+        "restricted": "Ierobežotā",
+        "prohibited": "Aizliegtā"
+      },
+      "cards": {
+        "z1": {
+          "scenario": "Putnu ligzdošanas rezervāts uz mazas salas. CAA karte to atzīmē 'aktīvs ligzdošanas sezonā — lūdzu izvairieties'. Datumā, kad plāno lidot, nav aktīva ierobežojuma.",
+          "explanation": "Informatīvās zonas nenes juridisku ierobežojumu — tās brīdina pilotu par tuvumā esošu jutīgumu. Lidošana atļauta bez pieteikuma."
+        },
+        "z2": {
+          "scenario": "Gaisa telpas posms blakus Rīgas lidostas CTR. Kartē rakstīts 'lidojums atļauts ar BGKIS pieteikumu — maks. 50 m AGL'.",
+          "explanation": "Ierobežotas zonas prasa pieteikumu un apstiprinājumu. Kopš 2025-01-01 BGKIS ir obligātais kanāls. Apstiprinājumā norādītie griesti (šeit 50 m) ir augstāki par vispārējiem 120 m."
+        },
+        "z3": {
+          "scenario": "EVR17 Border East — pilna austrumu robežas josla ar Krieviju un Baltkrieviju, kopš 2025. gada.",
+          "explanation": "Aizliegtās zonas Atvērtajā kategorijā nav lidojamas vispār. EVR17 specifiski paredz kriminālatbildību, ne tikai administratīvo sodu."
+        },
+        "z4": {
+          "scenario": "Aktīvs militāras apmācības rajons ar atzīmi 'Bez lidojumiem 08:00–18:00 darbdienās maijā'. Diena, kad plāno lidot, ir jūnija sestdiena.",
+          "explanation": "Ārpus aktīvā loga zona faktiski ir tikai informatīva. Vienmēr pārbaudi zonas statusu pret konkrēto datumu un laiku, ne pret sezonu kopumā."
+        },
+        "z5": {
+          "scenario": "Kodolpētniecības objekta perimetrs. Kartē redzams sarkans aizpildīts daudzstūris ar uzrakstu 'UAS lidojumi nav atļauti'.",
+          "explanation": "Kritiskā infrastruktūra ar cietu aizlieguma noteikumu. Nekāds pieteikums Atvērtajā kategorijā šo aizliegumu nepaceļ."
+        }
+      }
+    },
+    "distanceRule": {
+      "heading": "Interaktīvs · attālums no nepiederošām personām",
+      "altitude": "Lidojuma augstums (AGL)",
+      "altitudeAriaLabel": "Augstums metros virs zemes",
+      "ceilingMark": "120 m griesti",
+      "subcats": {
+        "a1-c0": { "label": "A1 — C0 (<250 g)", "note": "Pārlidojums virs atsevišķām personām — drīkst · virs pulcēšanās — nekad" },
+        "a1-c1": { "label": "A1 — C1 (<900 g)", "note": "Plāno ceļu apkārt cilvēkiem · pārlidojums nav gaidāms" },
+        "a2-low": { "label": "A2 — C2 zems ātrums (≤ 3 m/s)", "note": "Aktivizē zema ātruma režīmu PIRMS pietuvošanās 5 m" },
+        "a2-normal": { "label": "A2 — C2 parastais ātrums", "note": "Pastāvīgi 30 m horizontāli" },
+        "a3": { "label": "A3 — C2 / C3 / C4 / mantots" }
+      },
+      "a3NoteFloor": "30 m grīda piemērojama — 1:1 vēl nav saistošs",
+      "a3NoteActive": "1:1 noteikums aktīvs · {altitude} m augstums → {altitude} m attālums",
+      "footer": "Atceries: A3 1:1 noteikums nozīmē horizontālais attālums ≥ lidojuma augstumam, ar 30 m grīdu. Pulcēšanās aizliegums darbojas katrā apakškategorijā neatkarīgi no augstuma vai attāluma."
     }
   }
 }

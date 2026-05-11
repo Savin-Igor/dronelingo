@@ -1,39 +1,114 @@
 # Latvijas obligātās apdrošināšanas robežas
 
-Latvijā UAS operatoram ir **obligāta civiltiesiskā apdrošināšana** —
-neatkarīgi no tā, vai lidojums ir komerciāls vai atpūtas. Robežas
-nosaka MK noteikumi Nr. 447.
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, kuriem UAS operatoriem Latvijā obligāti jātur trešās personas civiltiesiskā apdrošināšana, kādas ir minimālās summas pa UAS klasēm un ko polise patiesi sedz — un ko skaidri neapsedz.">
+Apdrošināšana lielākajai daļai UAS operatoru Latvijā nav fakultatīva. Prasība darbojas neatkarīgi no tā, vai lidojums komerciāls vai atpūtas. Bez polises legāla lidojuma nav.
+</MissionBriefing>
 
-## Apdrošināšanas summas
+<CinematicScene
+  src="/lessons/insurance-latvia-minima.png"
+  alt="Trīs līmeņu vairoga diagramma: C0 — bez prasības; C1/A2/A3 līdz 20 kg — €50 000; C3/C4 20–25 kg — 750 000 SDR."
+  caption="Diagramma · insurance-latvia-minima"
+/>
 
-| Klase / masa | Minimālā apdrošināšana |
-|--------------|--------------------------|
-| C0 (< 250 g) | **Nav obligāta** |
-| A1 (C1), A2, A3 (līdz 20 kg) | **50 000 EUR** |
-| A3 (20–25 kg, C3 / C4) | **750 000 SDR** |
-| Specifiskā kategorija (< 500 kg) | **750 000 SDR** |
+## Kam jātur apdrošināšana
 
-## Ko sedz minimālais apdrošināšanas līmenis
+Ministru kabineta noteikumi Nr. 447 prasa, lai **visiem UAS operatoriem Latvijā** pirms lidojuma būtu spēkā esoša trešās personas civiltiesiskā apdrošināšana — ar vienu izņēmumu:
 
-Trešo personu — **dzīvības, veselības un mantas — kaitējumu**, ko
-nodara UAS lidojuma laikā. Kaitējums pašam UAS (hull) **nav iekļauts**.
+- **C0 UAS zem 250 g** — obligātās apdrošināšanas prasības nav.
+- **Visas pārējās klases** — obligāti, neatkarīgi no atpūtas vai komerciālas izmantošanas.
 
-## Kas ir SDR
+Tas ir stingrāks režīms nekā daudzās citās ES dalībvalstīs. Atpūtas pilots ar DJI Mini 4 Pro (249 g, C0) ir atbrīvots. Tas pats pilots ar 300 g UAS — nav.
 
-SDR = Special Drawing Rights — Starptautiskā Valūtas fonda valūtas
-grozs. 750 000 SDR ≈ 900 000 EUR (kurss mainās).
+## Minimālās seguma summas
 
-## Pierādījums
+| UAS klase / masa | Minimālais trešās personas segums |
+|------------------|-----------------------------------|
+| C0 (< 250 g) | **Nav prasīts** |
+| A1 (C1), A2, A3 — UAS līdz 20 kg | **€50 000** |
+| A3 — C3 / C4 UAS (20–25 kg) | **750 000 SDR** |
+| Specifiskā kategorija (UAS < 500 kg) | **750 000 SDR** |
 
-Apdrošināšanas polise ir jāuzrāda pēc CAA Latvia inspektora
-pieprasījuma. Bez polises operators **nav kvalificēts lidojumam** un
-saņem administratīvo sodu.
+**SDR** = Special Drawing Rights (SVF valūtas grozs). Pašreizējās likmēs 750 000 SDR ≈ €900 000. Precīzs euro ekvivalents svārstās — pārbaudi Latvijas Bankas likmi polises iegādes brīdī.
 
-## Brīvprātīgās iespējas
+## Ko obligātā polise aizsargā
 
-- **Hull apdrošināšana** — sedz pašu UAS (kritiens, zādzība).
-- **Darbinieku atbildība** — komerciālajiem operatoriem.
-- **Lietderīgās kravas apdrošināšana** — kameras, sensoru iekārtas.
+Obligātā polise sedz **miesas bojājumus un mantas zaudējumus, kas nodarīti trešām personām** UAS darbības laikā. Tā ir atbildības, ne mantas, apdrošināšana.
 
-> **Avots:** MK noteikumi Nr. 447 (10.07.2018); Regula (EK) 785/2004 par
-> apdrošināšanas prasībām gaisa pārvadātājiem.
+**Ko tā neaptver:**
+- Bojājumus pašam UAS (drons, kamera, lietderīgā krava) — tam vajadzīga **korpusa apdrošināšana** (hull).
+- Bojājumus mantai, kas pieder pilotam vai operatoram.
+- Zaudējumus no neizpildīta klienta līguma — tam vajadzīga **profesionālā atbildības** apdrošināšana.
+- UAS zādzību.
+
+Izpratne par to, kas izslēgts, novērš biežo kļūdu pieņemt, ka obligātā polise dod pilnīgu finansiālu aizsardzību.
+
+## Apdrošināšanas pierādījums
+
+Apdrošināšanas sertifikātam jābūt:
+- **Pieejamam uz vietas** katra lidojuma laikā.
+- **Uzrādāmam pēc pieprasījuma** jebkuram CAA Latvia inspektoram.
+- **Spēkā esošam** — beidzies polises termiņš pielīdzināms polises trūkumam.
+
+Operators bez derīgas polises saņem **administratīvo sodu**, un operācija var tikt apturēta. Sods neatceļ apdrošināšanas pienākumu.
+
+<Scenario title="Atpūtas pilots ir DJI Air 3 (720 g, marķēts C1) īpašnieks. Lido tikai brīvdienās virs sava lauka, nekad komerciāli, nekad pie cilvēkiem. Vai apdrošināšana vajadzīga?">
+**Jā.** Izņēmums attiecas tikai uz C0 UAS zem 250 g. DJI Air 3 ir C1 UAS. MK noteikumi Nr. 447 prasa trešās personas civiltiesisko apdrošināšanu neatkarīgi no atpūtas izmantošanas, neatkarīgi no lidošanas pār savu zemi, neatkarīgi no tā, cik reti UAS lido.
+
+Minimālais prasītais segums: €50 000 trešās personas atbildība. Gada prēmijas no Latvijas apdrošinātājiem (BTA, Balta, Gjensidige) atpūtas seguma līmenī parasti ir €80–200.
+</Scenario>
+
+<MemoryAnchor
+  rule="C0 zem 250 g: apdrošināšana nav vajadzīga. Visi pārējie: vismaz €50 000 (vai 750 000 SDR 20–25 kg UAS). Korpuss, lietderīgā krava un profesionālā atbildība ir atsevišķas polises."
+  hint="Obligātā polise sedz to, ko tu nodari citiem. Tā nesedz bojājumus tavam UAS."
+/>
+
+<CommonMistakes>
+- Domāt, ka atpūtas izmantošana atbrīvo operatoru no apdrošināšanas — neatbrīvo, ja vien UAS nav C0 zem 250 g.
+- Sajaukt obligāto trešās personas polisi ar korpusa segumu — ja UAS sabrūk un sabojājas, obligātā polise nemaksā neko.
+- Atļaut polisei izbeigties starp sezonām bez atjaunošanas — beidzies polises termiņš nozīmē, ka legāla lidojuma nav.
+- Izmantot citai valstij iegādātu polisi, neapstiprinot Latvijas minimālo segumu — minimumi dalībvalstīs atšķiras.
+- Nenēsāt apdrošināšanas pierādījumu uz vietas — polisei jābūt pieejamai pārbaudei, ne tikai jāeksistē kaut kur mājās.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "in-q1",
+    stem: "Atpūtas pilots brīvdienās lido ar 1,2 kg C2 UAS virs neapdzīvota lauksaimniecības lauka. Kāda apdrošināšana Latvijā likumā prasīta kā minimums?",
+    options: [
+      { id: "a", text: "Nav vajadzīga — atpūtas operācijas ir atbrīvotas." },
+      { id: "b", text: "€50 000 trešās personas atbildība." },
+      { id: "c", text: "750 000 SDR — vajadzīgi visiem C2 UAS." },
+      { id: "d", text: "Tikai korpusa apdrošināšana — obligātā atbildība ir komerciāliem operatoriem." },
+    ],
+    correctOptionId: "b",
+    explanation: "C2 UAS pie 1,2 kg ietilpst A3 kategorijā (līdz 20 kg). MK noteikumi Nr. 447 prasa €50 000 minimālo trešās personas atbildību visiem šīs kategorijas UAS neatkarīgi no atpūtas vai komerciālas izmantošanas. 750 000 SDR slieksnis attiecas uz UAS no 20 līdz 25 kg.",
+    distractorRationales: {
+      a: "Atpūtas izmantošana Latvijā nav izņēmums. Atbrīvoti tikai C0 UAS zem 250 g.",
+      c: "750 000 SDR attiecas uz C3/C4 UAS 20–25 kg klāstā. 1,2 kg UAS ir krietni zem šī sliekšņa.",
+      d: "Korpusa apdrošināšana ir fakultatīva un sedz pašu UAS. Obligātā atbildības apdrošināšana prasīta trešās personas zaudējumiem neatkarīgi no operācijas komerciālā rakstura.",
+    },
+  },
+  {
+    id: "in-q2",
+    stem: "Pilota UAS lidojumā sabrūk un tiek iznīcināts. Vienīgā polise ir obligātā trešās personas atbildība. Kādas izmaksas tā sedz?",
+    options: [
+      { id: "a", text: "UAS nomaiņas izmaksas." },
+      { id: "b", text: "Jebkurus miesas bojājumus vai mantas zaudējumus, kas nodarīti trešām personām lidojuma laikā." },
+      { id: "c", text: "Gan UAS nomaiņu, gan trešās personas zaudējumus." },
+      { id: "d", text: "Neko — polise aktivizējas tikai komerciāliem lidojumiem." },
+    ],
+    correctOptionId: "b",
+    explanation: "Obligātā trešās personas atbildības polise sedz miesas bojājumus un mantas zaudējumus, kas nodarīti citiem. Tā skaidri nesedz bojājumus pašam UAS (korpuss). Lai atgūtu iznīcinātā UAS izmaksas, vajadzīga atsevišķa korpusa apdrošināšanas polise.",
+    distractorRationales: {
+      a: "Obligātā polise nesedz paša UAS. Tas ir korpusa bojājums un prasa korpusa apdrošināšanu.",
+      c: "Tikai trešās personas daļa segta no obligātās polises. UAS nomaiņas izmaksas prasa atsevišķu korpusa segumu.",
+      d: "Obligātā polise attiecas uz visiem legāliem lidojumiem, gan atpūtas, gan komerciāliem.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["in-002"]}>
+Tu zini, kuriem operatoriem jāapdrošinās, kādas ir minimālās summas un ko obligātā polise patiesi aizsargā un ko ne.
+
+Tālāk: brīvprātīgās polises — korpuss, profesionālā atbildība, lietderīgās kravas un ES ceļojumu polises, kas pabeidz pilnu profesionālu segumu.
+</Debrief>

@@ -1,41 +1,119 @@
-# Kritiskās infrastruktūras objekti
+# Kritiskā infrastruktūra
 
-Latvijā ir objekti, kuru drošība pārsniedz parasto privātumu — un
-prasa speciālu attieksmi neatkarīgi no UAS klases vai apakškategorijas.
+<MissionBriefing objective="Pēc šīs nodarbības tu identificēsi Latvijas aizsargātās infrastruktūras kategorijas, sapratīsi, kāpēc filmēšanas aizliegums darbojas neatkarīgi no UGZ statusa, un zināsi pareizo rīcību, ja aizsargāta vieta nejauši nokļūst kadrā.">
+Gaisa telpas apstiprinājums neautorizē filmēšanu. Tās ir paralēlas tiesiskās sistēmas. UAS var būt legāli gaisā un vienlaikus pārkāpt filmēšanas aizliegumu.
+</MissionBriefing>
 
-## Kas ir "kritiskā infrastruktūra"
+<CinematicScene
+  src="/lessons/critical-infrastructure-zones.png"
+  alt="Kartes stila diagramma ar kritiskās infrastruktūras kategorijām un sarkanām aizlieguma uzlīmēm: spēkstacija, ūdens objekts, militārā vieta, sakaru centrs, robežas iekārta."
+  caption="Diagramma · critical-infrastructure-zones"
+/>
 
-- elektrostacijas un apakšstacijas;
-- ūdensapgādes objekti;
-- lielie sakaru mezgli;
-- militāri objekti;
-- valsts robežas tehniskā aprīkojuma objekti.
+## Kas skaitās kritiskā infrastruktūra
 
-Visi tie ir apzīmēti ar zīmi:
+Latvijas Kritiskās infrastruktūras aizsardzības likums izceļ konkrētas vietu kategorijas, kur neatļauta fotografēšana un filmēšana ir aizliegta neatkarīgi no tā, kā pilots nonāca gaisa telpā virs tām:
 
+- **Enerģijas objekti** — spēkstacijas, apakšstacijas, lielas pārvades līnijas;
+- **Ūdens apgāde** — attīrīšanas stacijas, sūkņu stacijas, ūdenstilpes;
+- **Sakaru centri** — lieli komutācijas centri, datu infrastruktūra;
+- **Militārie objekti** — visi AM noteiktie objekti un perimetra zonas;
+- **Valsts robežas tehniskie objekti** — uzraudzības un kontroles iekārtas gar robežu.
+
+Šādās vietās ir uzstādīta zīme:
 > **"BEZ SASKAŅOŠANAS FOTOGRAFĒT, FILMĒT AIZLIEGTS"**
 
-## Kāpēc tas svarīgi pilotam
+## Kāpēc tas atsevišķi no UGZ
 
-UGZ ne vienmēr aptver šādus objektus pilnīgi — bet **filmēšanas
-aizliegums** darbojas neatkarīgi no UGZ statusa. Pat tad, ja drons
-fiziski lido ārpus aizliegumzonas, **kameras kadrā nedrīkst būt**
-apzīmēts objekts bez saskaņojuma.
+Vienotā ģeozonu (UGZ) sistēma kontrolē, **kur UAS drīkst lidot**. Kritiskās infrastruktūras filmēšanas aizliegums kontrolē, **ko kamera drīkst ierakstīt**. Tie ir atsevišķi tiesiskie instrumenti, ko piemēro dažādas iestādes (CAA vs. attiecīgā ministrija / drošības dienesti).
 
-## Saskaņošanas process
+Sajaukšanas sekas:
+- Vieta var atrasties ārpus jebkuras UGZ ierobežotas zonas — tomēr filmēšanas aizliegums strādā.
+- BGKIS apstiprinājums par gaisa telpu nesniedz filmēšanas tiesības.
+- Gaisa telpas atļauju izsniedz CAA Latvia. Filmēšanas atļauju izsniedz **objekta operators** (tīkla uzņēmums, militārā vadība u.c.).
 
-1. Identificē objekta turētāju (elektrotīkla operators, militārā
-   institūcija u.c.).
-2. Iesniedz oficiālu pieteikumu **rakstiski** ar lidojuma plānu un
-   apdrošināšanas polises kopiju.
-3. Saņem **apstiprinājumu** pirms lidojuma; gaisā nesāc bez tā.
+## Atļaujas process
 
-## Neapzinātas izņēmumi nav
+Ja filmēšana virs vai blakus aizsargātam objektam ir operatīvi vajadzīga:
 
-Ja kadrā nejauši nokļūst aizliegtais objekts, **dzēs materiālu** un
-informē turētāju. Atrunāties ar nezināšanu nav ceļa, jo zīme un
-parastās informatīvās bāzes (`airspace.lv`) sniedz pietiekamu
-brīdinājumu.
+1. **Identificē operatoru** — elektrotīkls = AST vai Sadales tīkls; militārais = NBS; robežas objekti = SRS/VP.
+2. **Iesniedz formālu rakstisku pieprasījumu**, kas ietver: lidojuma plānu, datumu un laika logu, UAS detaļas, filmēšanas mērķi, spēkā esošas civiltiesiskās apdrošināšanas polises kopiju.
+3. **Gaidi rakstisku apstiprinājumu** pirms jebkura lidojuma. Bez tā nesāc.
+4. **Saglabā apstiprinājuma dokumentu** lidojuma laikā uz vietas — to var pieprasīt inspektori vai drošības dienesti.
 
-> **Avots:** Latvijas Kritiskās infrastruktūras aizsardzības likums;
-> CAA Latvia vadlīnijas; oficiālā zīmes formulējums.
+## Nejaušs kadrs — pareizā reakcija
+
+Ja aizsargāts objekts negaidīti nokļūst kadrā lidojuma laikā:
+
+1. **Pārvirzi kameru** nekavējoties vai pārtrauc ierakstu.
+2. **Nepublicē un nedalies** ar materiālu, kas satur objektu.
+3. **Informē objekta operatoru** proaktīvi — negaidi, kad viņi paši atklās.
+4. **Dzēs segmentu**, kur fiksēts aizsargātais objekts.
+
+Nezināšana nav juridiska aizstāvība. Objekti ir marķēti. Standarta informācijas bāze (`airspace.lv`, objektu zīmes) sniedz pietiekamu publisku paziņojumu.
+
+<Scenario title="Tu filmē komerciālu darbu pie industriālas zonas. Vēlāk pamani, ka kadrā īsi parādījies elektriskās apakšstacijas objekts ar aizlieguma zīmi. Atļaujas tev nebija. Ko darīt?">
+**Apstājies, nepublicē, informē, dzēs.**
+
+1. Nesūti materiālu klientam, kamēr nav noņemts attiecīgais segments.
+2. Sazinies ar tīkla operatoru (Sadales tīkls vai AST atkarībā no objekta tipa) un atklāj nejaušo kadru.
+3. Dzēs segmentu no visām kopijām, ieskaitot rezerves diskus un mākoņa krātuves.
+
+Proaktīva ziņošana būtiski samazina tiesisko risku salīdzinājumā ar to, kad pārkāpums tiek atklāts pēc publicēšanas. Filmēšanas aizliegums atsevišķās jurisdikcijās ir krimināls pārkāpums — izturies pret to nopietni.
+</Scenario>
+
+<MemoryAnchor
+  rule="UGZ nosaka, kur lido. Filmēšanas aizliegums nosaka, ko ieraksta kamera. Tie ir neatkarīgi. Nejaušs kadrs: apstājies, informē, dzēs."
+  hint="Gaisa telpas atļauja ≠ filmēšanas atļauja. Vienmēr pārbaudi, vai aizsargāts objekts ir kadrā vai tā tuvumā."
+/>
+
+<CommonMistakes>
+- Pieņemt, ka BGKIS apstiprinājums sedz filmēšanas tiesības sensitīvās vietās — nesedz.
+- Neatpazīt aizlieguma zīmi uz vietas pirms lidojuma — pirmslidojuma vides pārbaudē jāidentificē aizsargātie objekti plānotajā teritorijā.
+- Dalīties ar nejaušu materiālu ar klientu, pirms aizsargātais segments noņemts — aizliegums attiecas uz izplatīšanu, ne tikai uz tīšu ierakstu.
+- Domāt, ka "nepublicēt" pietiek pēc nejauša militāra objekta uzņemšanas — operatoru paziņošana arī ir vajadzīga.
+- Sajaukt UGZ ierobežotu zonu ar filmēšanas aizlieguma zonu — tās var pārklāties, bet nav identiskas.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "pr-ci1",
+    stem: "Pilotam ir derīgs BGKIS apstiprinājums lidot virs industriālas zonas. Plānotais ceļš iet pār elektrisko apakšstaciju ar filmēšanas aizlieguma zīmi. Ko pilots drīkst darīt?",
+    options: [
+      { id: "a", text: "Filmēt brīvi — BGKIS apstiprinājums sedz gan lidojumu, gan filmēšanu." },
+      { id: "b", text: "Lidot ceļu, bet nedrīkst ierakstīt video vai foto par apakšstaciju bez atsevišķas filmēšanas atļaujas no operatora." },
+      { id: "c", text: "Zīmes klātbūtne nozīmē, ka viss lidojums jāatceļ." },
+      { id: "d", text: "Filmēt augstumā — aizliegums attiecas tikai uz zemu augstumu pie objekta." },
+    ],
+    correctOptionId: "b",
+    explanation: "BGKIS apstiprinājums dod piekļuvi gaisa telpai. Filmēšanas atļauju atsevišķi izsniedz objekta operators. Pilots drīkst lidot apstiprinātajā maršrutā, bet nedrīkst ierakstīt aizsargāto apakšstaciju bez operatora rakstiskas atļaujas. Filmēšanas aizliegumam nav augstuma izņēmuma.",
+    distractorRationales: {
+      a: "BGKIS izsniedz CAA Latvia par gaisa telpas piekļuvi. Filmēšanas aizliegumu uzrauga objekta operators pēc atsevišķa tiesiska instrumenta.",
+      c: "Filmēšanas aizliegums automātiski neatceļ lidojumu — tas ierobežo, ko kamera drīkst ierakstīt, ne to, vai UAS drīkst lidot.",
+      d: "Filmēšanas aizliegums attiecas uz jebkuru kadru ar aizsargāto objektu, neatkarīgi no augstuma.",
+    },
+  },
+  {
+    id: "pr-ci2",
+    stem: "Kurš pareizi apraksta saistību starp UGZ ierobežoto zonu un kritiskās infrastruktūras filmēšanas aizliegumu?",
+    options: [
+      { id: "a", text: "Tie ir identiski — ja vieta UGZ zonā, filmēt aizliegts; ja nav — drīkst." },
+      { id: "b", text: "Tie ir paralēli ietvari — vieta var atrasties ārpus jebkuras UGZ zonas un joprojām nest filmēšanas aizliegumu." },
+      { id: "c", text: "UGZ ir prioritāte — UGZ apstiprinājums pārmāc jebkuru filmēšanas aizliegumu." },
+      { id: "d", text: "Filmēšanas aizliegumi piemērojami tikai UGZ ierobežotās zonās." },
+    ],
+    correctOptionId: "b",
+    explanation: "UGZ (gaisa telpas ierobežojums) un filmēšanas aizliegums (satura ierobežojums) ir neatkarīgi tiesiskie instrumenti pēc dažādām iestādēm. Vieta var atrasties ārpus jebkuras UGZ zonas un joprojām nest derīgu filmēšanas aizliegumu. Abi jāpārbauda atsevišķi pirmslidojuma vides novērtējumā.",
+    distractorRationales: {
+      a: "Vieta var atrasties ārpus UGZ zonas un joprojām nest filmēšanas aizliegumu. Abas sistēmas savstarpēji nesakrīt.",
+      c: "UGZ apstiprinājums neatceļ filmēšanas aizliegumus. Tos izdod dažādas iestādes dažādiem mērķiem.",
+      d: "Filmēšanas aizliegumus nosaka Kritiskās infrastruktūras aizsardzības likums, ne UGZ regula. Tie attiecas uz visām vietām ar aizlieguma zīmi, neatkarīgi no UGZ robežām.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["in-001"]}>
+Tu pārvaldi kritiskās infrastruktūras filmēšanas aizliegumu, tā neatkarību no UGZ statusa un pareizo reakciju uz nejaušiem kadriem.
+
+Nākamais sektors: apdrošināšana — obligātie segumu līmeņi, ko tie aizsargā, un brīvprātīgās polises, kas pabeidz profesionālu segumu.
+</Debrief>

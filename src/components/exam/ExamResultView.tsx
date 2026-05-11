@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import {
@@ -9,17 +9,41 @@ import {
   type StoredExamResult,
 } from "@/lib/anonymous-exam";
 import { EXAM_PASS_THRESHOLD } from "@/lib/exam";
+import { recordAnswer } from "@/lib/srs";
 import { ProgressRing } from "@/components/ui/ProgressRing";
 
 export function ExamResultView() {
   const t = useTranslations("exam");
   const [result, setResult] = useState<StoredExamResult | null>(null);
   const [loaded, setLoaded] = useState(false);
+  const [sentToReview, setSentToReview] = useState(false);
 
   useEffect(() => {
     setResult(readLatestExamResult());
     setLoaded(true);
   }, []);
+
+  // Missed items that carry an externalId — only these can be pushed
+  // into SRS. Old exam history (pre-SRS-link) may have undefined ids
+  // and is silently skipped.
+  const reviewableMissed = useMemo(() => {
+    if (!result) return [] as { externalId: string }[];
+    return result.missed.filter(
+      (m): m is typeof m & { externalId: string } =>
+        typeof m.externalId === "string" && m.externalId.length > 0,
+    );
+  }, [result]);
+
+  function sendMissedToReview() {
+    if (reviewableMissed.length === 0 || sentToReview) return;
+    for (const m of reviewableMissed) {
+      // recordAnswer with "wrong" → SRS resets repetitions to 0 and sets
+      // dueAt to a 1-day penalty interval; the warm-up adaptive sort
+      // surfaces the question on the next session.
+      recordAnswer(m.externalId, "wrong");
+    }
+    setSentToReview(true);
+  }
 
   if (!loaded) return null;
 
@@ -122,9 +146,34 @@ export function ExamResultView() {
 
       {/* ── Missed questions ──────────────────────────────────────────── */}
       <section className="mt-4 rounded-sm border border-horizon bg-cockpit p-6">
-        <h2 className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
-          {t("missed")}
-        </h2>
+        <div className="flex flex-wrap items-baseline justify-between gap-3">
+          <h2 className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
+            {t("missed")}
+          </h2>
+          {reviewableMissed.length > 0 &&
+            (sentToReview ? (
+              <Link
+                href="/practice/warmup"
+                className="inline-flex items-center justify-center rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-3 py-1.5 font-mono text-[0.65rem] uppercase tracking-widest text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void"
+                aria-live="polite"
+              >
+                ◇{" "}
+                {t("review.queued", { count: reviewableMissed.length })}
+                <span className="ml-2 opacity-70" aria-hidden>
+                  →
+                </span>
+              </Link>
+            ) : (
+              <button
+                type="button"
+                onClick={sendMissedToReview}
+                className="inline-flex items-center gap-1.5 rounded-sm border border-amber-400/60 bg-amber-400/10 px-3 py-1.5 font-mono text-[0.65rem] uppercase tracking-widest text-amber-200 transition-colors hover:bg-amber-400 hover:text-void"
+              >
+                <span aria-hidden>◇</span>
+                {t("review.send", { count: reviewableMissed.length })}
+              </button>
+            ))}
+        </div>
 
         {result.missed.length === 0 ? (
           <p className="mt-4 text-sm text-green-clear">{t("noMisses")}</p>
@@ -186,12 +235,14 @@ export function ExamResultView() {
       {/* ── CTAs ─────────────────────────────────────────────────────── */}
       <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
         {result.passed && (
-          <Link
-            href="/claim"
+          <a
+            href="https://e.caa.gov.lv"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-5 py-2.5 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void"
           >
-            {t("claimCta")} →
-          </Link>
+            {t("claimCta")}
+          </a>
         )}
         <Link
           href="/exam"

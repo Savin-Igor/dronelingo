@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { LazyMotion, domAnimation, m, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
 import {
@@ -12,8 +13,6 @@ import {
   writeExamResult,
   type StoredExamResult,
 } from "@/lib/anonymous-exam";
-
-const DURATION_SEC = EXAM_DURATION_MIN * 60;
 
 function newId() {
   if (typeof crypto !== "undefined" && "randomUUID" in crypto) {
@@ -28,16 +27,30 @@ function formatTime(secLeft: number): string {
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
-export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
+export function ExamSession({
+  questions,
+  durationMin = EXAM_DURATION_MIN,
+  examType = "full",
+  topicSlug,
+}: {
+  questions: ExamQuestion[];
+  /** Override the timer length — used by per-topic drills (~1 min/Q). */
+  durationMin?: number;
+  /** Persisted on StoredExamResult so the readiness gauge can filter. */
+  examType?: "full" | "topic";
+  /** Topic slug for per-topic drills (only set when examType === "topic"). */
+  topicSlug?: string;
+}) {
   const t = useTranslations("exam");
   const router = useRouter();
   const startedAt = useRef<number>(Date.now());
   const submittedRef = useRef(false);
 
+  const durationSec = durationMin * 60;
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [showConfirm, setShowConfirm] = useState(false);
-  const [secLeft, setSecLeft] = useState(DURATION_SEC);
+  const [secLeft, setSecLeft] = useState(durationSec);
 
   const total = questions.length;
   const current = questions[index];
@@ -72,6 +85,7 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
       } else {
         missed.push({
           questionId: q.id,
+          externalId: q.externalId,
           topicSlug: q.topicSlug,
           topicTitle: q.topicTitle,
           stem: q.stem,
@@ -92,12 +106,14 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
       total,
       correct: correctCount,
       passed: percent >= EXAM_PASS_THRESHOLD,
+      type: examType,
+      topicSlug: examType === "topic" ? topicSlug : undefined,
       perTopic,
       missed,
     };
     writeExamResult(result);
     router.replace("/exam/result");
-  }, [answers, questions, router, total]);
+  }, [answers, questions, router, total, examType, topicSlug]);
 
   useEffect(() => {
     const tick = setInterval(() => {
@@ -277,13 +293,25 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
       </div>
 
       {/* ── Submit confirmation modal ─────────────────────────────────── */}
-      {showConfirm && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-void/80 p-4 backdrop-blur-sm"
-          role="dialog"
-          aria-modal="true"
-        >
-          <div className="w-full max-w-md rounded-sm border border-horizon bg-hull p-6 shadow-xl">
+      <LazyMotion features={domAnimation}>
+        <AnimatePresence>
+          {showConfirm && (
+            <m.div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-void/80 p-4 backdrop-blur-sm"
+              role="dialog"
+              aria-modal="true"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.15 }}
+            >
+          <m.div
+            className="w-full max-w-md rounded-sm border border-horizon bg-hull p-6 shadow-xl"
+            initial={{ scale: 0.95, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.95, opacity: 0 }}
+            transition={{ duration: 0.18, ease: "easeOut" }}
+          >
             <h2 className="font-display text-lg font-semibold text-hud-white">
               {t("confirmSubmitTitle")}
             </h2>
@@ -318,9 +346,11 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
                 {t("confirmYes")}
               </button>
             </div>
-          </div>
-        </div>
-      )}
+          </m.div>
+            </m.div>
+          )}
+        </AnimatePresence>
+      </LazyMotion>
     </>
   );
 }

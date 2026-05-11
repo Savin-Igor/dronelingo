@@ -1,34 +1,114 @@
 # Pirmslidojuma pārbaude
 
-Atvērtās kategorijas pilotam pirms lidojuma **jāveic objekta un UAS
-pārbaude**. Tas nav formāls dokuments — tā ir vairāku minūšu disciplīna,
-kas atšķir profesionāli no incidentiem.
+<MissionBriefing objective="Pēc šīs nodarbības tu veiksi pilnu pirmslidojuma pārbaudi — vide, UAS aparatūra, pilota stāvoklis — kā sistēmisku rutīnu pirms katra lidojuma.">
+Lielākā daļa incidentu nenotiek gaisā. Tos uz zemes izprovocē tās piecas minūtes, kad problēmu varēja noķert, bet tā nepamanīta palika.
+</MissionBriefing>
 
-## Vide
+<CinematicScene
+  src="/lessons/pre-flight-checklist.png"
+  alt="Trīs sadaļu pirmslidojuma kontrolsaraksts: vide (laiks, zonas, apkārtne), UAS aparatūra (programmatūra, baterijas, mehānika, sensori, RTH), pilots (IMSAFE)."
+  caption="Kontrolsaraksts · pre-flight"
+/>
 
-- **Laika apstākļi:** vēja virziens un ātrums (UAS specifikācijas robežās);
-  redzamība vismaz tāda, lai uzturētu VLOS; nav lietus / sniega.
-- **NOTAM un UGZ:** pārbauda `airspace.lv/drones`. Ja zona ierobežota —
-  jābūt apstiprinātam BGKIS pieteikumam.
-- **Apkārtne:** identificē iespējamos šķēršļus (elektrolīnijas, koki,
-  gājēji), ar acīm pārliecinās par lidojuma trajektoriju.
+## Kāpēc strukturēta pārbaude
 
-## UAS
+Pirmslidojuma pārbaude nav birokrātija. Tā ir atmiņas atbalsts 12 lietām, kas var noiet greizi pirms aparāta pacelšanās — un dažām, kas izraisa incidentus tūlīt pēc tās.
 
-- **Programmatūra:** aktuāla firmware, derīgs ģeogrāfiskās informētības
-  datu kopums (ED-269).
-- **Baterijas:** uzlādētas, nav uzpūstas, temperatūra ir specifikācijas
-  diapazonā.
-- **Mehāniskā daļa:** dzinēji, propelleri, korpuss bez plaisām.
-- **Sensori:** GPS fiksē pietiekami satelītu, kompass kalibrēts, IMU bez
-  brīdinājumiem.
-- **Drošības iestatījumi:** Return-To-Home punkts un augstums noteikti,
-  ģeofence aktīvs.
+Struktūra ir būtiska. Pārbaužu veikšana nejaušā secībā nozīmē, ka zem laika spiediena tu kaut ko izlaidīsi. Konsekventa secība pārtop par paradumu; paradumi izdzīvo izklaidības brīžus.
 
-## Pilota gatavība
+## Vide — trīs jautājumi pirms pieskaršanās UAS
 
-IMSAFE pašpārbaude (skatīt **Cilvēka veiktspēja → IMSAFE**). Ja nav
-gatavs — nelido.
+**Laikapstākļi.** Vēja ātrumam un virzienam jābūt UAS ražotāja specifikāciju robežās. Redzamībai jāļauj VLOS plānotajā maksimālajā attālumā. Bez lietus, sniega un apledojuma. Pārbaudi prognozi par apgabalu, ne tikai starta punktu — 2 km tālāk apstākļi var atšķirties.
 
-> **Avots:** Regula (ES) 2019/947 Art. UAS.OPEN.060(1); EASA Easy Access
-> Rules — Operational procedures.
+**UGZ un NOTAM.** Atver airspace.lv/drones. Ja zona ir ierobežota un tev nav apstiprinātas BGKIS atbildes, lidojums nenotiek. Pārbaudi arī jebkurus pagaidu NOTAM — aviošovi, militārās mācības, ārkārtas operācijas, — kas varēja parādīties kopš pēdējās pārbaudes.
+
+**Apkārtne.** Apstaigā vietu. Identificē šķēršļus plānotajā trajektorijā (elektrolīnijas ir grūtāk pamanāmas nekā koki). Identificē, kur var parādīties nepiederošas personas un kā tu reaģēsi. Apstiprini, ka ir droša avārijas nolaišanās vieta.
+
+## UAS aparatūra — sistemātiski, ne improvizēti
+
+<Artefact
+  description="Sešu punktu UAS aparatūras pārbaude: 1. Aktuāla programmatūra, ielādēts ģeoinformācijas datu kopums. 2. Baterijas uzlādētas, neuzpampušas, temperatūra robežās. 3. Motori, propelleri, rāmis — bez bojājumiem. 4. GPS: satelīta saite, kalibrēts kompass. 5. RTH augstums iestatīts virs augstākā šķēršļa atgriešanās ceļā. 6. Ģeofence aktīvs un pareizs."
+  caption="Tabula · uas-hardware-check"
+>
+  <ol className="space-y-2 text-sm text-telemetry">
+    {[
+      ["Programmatūra", "Aktuāla programmatūra. ED-269 ģeoinformācijas datu kopums ielādēts un aktuāls."],
+      ["Baterijas", "Uzlādētas, neuzpampušas, temperatūra darba diapazonā (pārbaudi aukstumā/karstumā)."],
+      ["Mehānika", "Motori, propelleri, rāmis bez plaisām, vaļīgām skrūvēm vai redzamiem bojājumiem."],
+      ["Sensori", "GPS saite apstiprināta, kompass kalibrēts, IMU brīdinājumi novērsti."],
+      ["RTH iestatījumi", "Return-to-Home augstums iestatīts virs augstākā šķēršļa atgriešanās ceļā."],
+      ["Ģeofence", "Ģeofence aktīvs. Neatslēdz to bez skaidra operatīva pamatojuma."],
+    ].map(([title, desc]) => (
+      <li key={title} className="flex gap-3">
+        <span className="w-28 shrink-0 font-mono text-xs text-cyan-pulse">{title}</span>
+        <span>{desc}</span>
+      </li>
+    ))}
+  </ol>
+</Artefact>
+
+## Pilots — pēdējā pārbaude pirms starta
+
+Izej IMSAFE. Ja kāds punkts ir "jā" — apstājies šeit. Vide un aparāts var būt nevainojami. Nestrādājošs pilots abas priekšrocības nodzēš.
+
+<Scenario title="Tu ierodies komerciālā filmēšanas vietā. Sāk līt viegls lietus. UAS ir IPX4 (aizsardzība pret šļakatām). Klients saka 'citi droni ar vieglu lietu lido visu laiku'. Ko darīt?">
+**Pārtraukt lidojumu.** IPX4 aizsargā pret šļakatām no jebkura virziena — ne pret ilgstošu lietu. "Citi tā dara" nav ne regulas, ne ražotāja atļauja. Lietus arī samazina VLOS un padara virsmas slidenas.
+
+Pirmslidojuma vides pārbaude — laikapstākļi — neizpildījās. Ražotāja specifikācijā gandrīz noteikti rakstīts "nelidot lietū". Klienta viedoklis par to, ko dara citi piloti, pirmslidojuma kontrolsarakstā neietilpst.
+</Scenario>
+
+<MemoryAnchor
+  rule="Vide → UAS → Pilots. Vienmēr šādā secībā. Katra sadaļa jāizpilda pirms nākamās."
+  hint="Zaļa zona, ideāla aparatūra un nestrādājošs pilots joprojām ir lidojuma 'nē'."
+/>
+
+<CommonMistakes>
+- Izlaist zonas pārbaudi, jo "es te vienmēr lidoju" — zonas mainās bez iepriekšēja paziņojuma.
+- Iestatīt RTH augstumu pēc paraduma (piem., vienmēr 50 m), nevis pēc faktiskā šķēršļu augstuma atgriešanās ceļā.
+- Izlaist kompasa kalibrāciju pēc pārbraukšanas uz jaunu vietu — auto metāls var traucēt kompasu.
+- Neidentificēt drošu avārijas nolaišanās vietu, pirms motoru pirmā palaišana.
+- Veikt aparatūras pārbaudes ar neieslēgtu UAS — daži brīdinājumi parādās tikai dzīvajā ekrānā.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "pf-q1",
+    stem: "Pirmslidojuma UAS pārbaudes laikā tu pamani, ka vienam propelleram galā ir neliela šķēla. Kā rīkoties?",
+    options: [
+      { id: "a", text: "Turpināt — nelielas šķēlas ir kosmētiskas un nekādi neietekmē veiktspēju." },
+      { id: "b", text: "Nomainīt propelleru pirms lidojuma." },
+      { id: "c", text: "Lidot pusātrumā, lai mazinātu bojājuma ietekmi." },
+      { id: "d", text: "Turpināt, ja lidojums ir īsāks par 5 minūtēm." },
+    ],
+    correctOptionId: "b",
+    explanation: "Bojāts propelleris izraisa vibrāciju, samazina efektivitāti un var sabrukt slodzē. Pirmslidojuma pārbaude pastāv tieši tāpēc, lai to pamanītu. Nomainīt propelleru. Lidojuma ilgums un ātruma samazināšana bojātu propelleru drošu nepadara.",
+    distractorRationales: {
+      a: "Pat neliela šķēla rada aerodinamisku asimetriju, palielina vibrāciju un var pasliktināties centrbēdzes ietekmē darba apgriezienos.",
+      c: "Samazināts ātrums neizslēdz strukturāli bojāta propellera atteices risku.",
+      d: "Lidojuma ilgums neietekmē propellera atteices risku slodzē.",
+    },
+  },
+  {
+    id: "pf-q2",
+    stem: "Kāda ir pareizā pirmslidojuma pārbaudes secība?",
+    options: [
+      { id: "a", text: "UAS aparatūra → vide → pilots." },
+      { id: "b", text: "Pilots → UAS aparatūra → vide." },
+      { id: "c", text: "Vide → UAS aparatūra → pilots." },
+      { id: "d", text: "Secība elastīga — galvenais, lai visi trīs ir izpildīti." },
+    ],
+    correctOptionId: "c",
+    explanation: "Vispirms vide: ja zona ir aizliegta vai laikapstākļi ir ārpus robežām, nav jēgas pārbaudīt UAS vai pilotu. Pēc tam UAS: ja aparātam ir kritiska kļūme, pilota pārbaudei nav nozīmes. Pilots pēdējais: galīgais 'ej/neej' lēmums ar visu informāciju.",
+    distractorRationales: {
+      a: "Pārbaudīt UAS pirms vides ir neefektīvi — aizliegta zona beidz lidojumu neatkarīgi no aparāta stāvokļa.",
+      b: "Pilots vispirms ir iespējams, bet neefektīvs — zinot vidi un aparāta stāvokli, pilota lēmums uzlabojas.",
+      d: "Secība zem laika spiediena ir būtiska — konsekventa secība novērš izlaišanu.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["op-002"]}>
+Tev ir pilna, sakārtota pirmslidojuma rutīna.
+
+Tālāk: avārijas procedūras — ko darīt, kad lidojums vairs neiet pēc plāna un katra sekunde skaitās.
+</Debrief>

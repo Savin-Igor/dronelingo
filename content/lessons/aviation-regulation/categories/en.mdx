@@ -1,38 +1,103 @@
 # Open, Specific and Certified categories
 
-EU Regulation 2019/947 splits all UAS operations **into three categories
-by risk**.
+<MissionBriefing objective="After this lesson you will understand the three-tier EU drone category system, what separates each tier, and why the A1/A3 exam focuses entirely on Open.">
+Every rule you learn in this course lives inside the Open category. Knowing where Open ends — and what comes after — is part of passing the exam.
+</MissionBriefing>
 
-## Open category
+<CinematicScene
+  src="/lessons/categories-risk-pyramid.png"
+  alt="Risk pyramid showing Open at bottom (green), Specific in middle (amber), Certified at top (red) — risk increases upward"
+  caption="Diagram · categories-pyramid"
+/>
 
-Lowest-risk operations — **no prior authorisation**. Constraints:
+## Why three categories?
 
-- VLOS;
-- max 120 m altitude;
-- max 25 kg mass;
-- no flight over assemblies of people;
-- no carriage of dangerous goods.
+EU Regulation 2019/947 groups all drone operations by risk. The higher the risk, the more authorisation is required before a single flight can take place.
 
-Subdivided into **A1, A2, A3** based on UAS class (C0–C4) and distance
-to people.
+## Open — the category you are studying
 
-## Specific category
+Open is the lowest-risk tier. It applies when all of the following are true simultaneously:
 
-Medium-risk operations — **requires authorisation or declaration**. E.g.,
-BVLOS, flights above 120 m, flights over people with heavier UAS. The
-operator runs a risk assessment (SORA) or uses a standard scenario (STS).
+- the UAS is under 25 kg (MTOM);
+- the pilot maintains VLOS throughout;
+- the drone stays below 120 m AGL;
+- no dangerous goods are carried;
+- no flight over assemblies of people.
 
-## Certified category
+If even one condition fails, the operation is no longer in Open category.
 
-High-risk operations (passenger transport, large urban delivery). Requires
-**both UAS certification and operator certification**. Out of scope for
-MVP.
+Open subdivides into **A1, A2, A3** — each with specific UAS class requirements and distance-to-people rules. The A1/A3 exam qualifies you to fly in A1 (with C0 and C1 drones) and A3 (with C2, C3, C4, and legacy drones).
 
-## For the A1/A3 exam
+## Specific — when Open is not enough
 
-All MVP exam questions concern the **Open category**. Specific and
-Certified are mentioned only conceptually — so the pilot knows that
-levels exist above Open.
+Specific category covers operations that exceed Open limits: BVLOS flights, flights above 120 m, or flights with heavier UAS near or over people. The operator must either:
 
-> **Source:** Reg (EU) 2019/947 Art. 3 and Annex; EASA Easy Access Rules
-> for UAS (2024-07).
+- follow a **Standard Scenario (STS)** — a pre-defined risk package that comes with a declaration, or
+- conduct a full **SORA (Specific Operations Risk Assessment)** and obtain an operating permit from the CAA.
+
+The cost for a Latvian Specific category permit starts at €175 (PDRA-S01) and rises with operational complexity.
+
+## Certified — aviation-grade operations
+
+Certified applies to the highest-risk operations: carrying passengers, high-speed urban delivery, flights over dense populations with large drones. Both the UAS and the operator must hold individual certifications — similar to manned aviation. Certified is outside the scope of the A1/A3 exam entirely.
+
+<Scenario title="A client asks you to fly a camera drone continuously at 800 m altitude along a pipeline to inspect for leaks. No people are below. Which category applies?">
+**Specific category.** The flight exceeds 120 m AGL, which takes it outside Open regardless of the empty terrain below. The operator would need either an STS that covers this scenario or a SORA-based operating permit.
+
+The A1/A3 certificate does not authorise this flight.
+</Scenario>
+
+<MemoryAnchor
+  rule="Open = no permit, VLOS, under 25 kg, under 120 m. Break any one condition — you leave Open."
+  hint="The A1/A3 exam tests Open only. Know Specific and Certified exist, not their details."
+/>
+
+<CommonMistakes>
+- Thinking the A1/A3 certificate covers any type of flight under 25 kg — the category limits still apply.
+- Confusing Open sub-categories (A1, A2, A3) with the category (Open) — the exam tests both levels.
+- Believing that flying in an unpopulated area removes the 120 m ceiling — it does not.
+- Assuming BVLOS is allowed with any Open certificate — BVLOS always requires Specific category or higher.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "cat-q1",
+    stem: "Which statement correctly describes the Open category boundary?",
+    options: [
+      { id: "a", text: "Open applies to all recreational drone flights." },
+      { id: "b", text: "Open applies when UAS < 25 kg, VLOS, max 120 m AGL, no dangerous goods, no flight over assemblies." },
+      { id: "c", text: "Open applies to any drone under 250 g regardless of other conditions." },
+      { id: "d", text: "Open applies when the pilot holds an A1/A3 certificate." },
+    ],
+    correctOptionId: "b",
+    explanation: "Open category is defined by five simultaneous conditions: under 25 kg, VLOS, below 120 m AGL, no dangerous goods, no overflight of assemblies. All five must hold. The pilot certificate is required for some sub-categories, but it does not by itself define the category boundary.",
+    distractorRationales: {
+      a: "The recreational/commercial distinction is irrelevant — category is defined by operational parameters.",
+      c: "The 250 g threshold is related to C0 class and insurance, not to the Open category boundary.",
+      d: "The certificate is a pilot competence requirement, not what defines the category.",
+    },
+  },
+  {
+    id: "cat-q2",
+    stem: "A drone pilot with an A1/A3 certificate wants to fly a C1 drone beyond visual line of sight (BVLOS) in an empty field. Is this permitted?",
+    options: [
+      { id: "a", text: "Yes — the field is empty, so safety is maintained." },
+      { id: "b", text: "Yes — C1 drones may fly BVLOS with an A1/A3 certificate." },
+      { id: "c", text: "No — BVLOS is outside the Open category, regardless of terrain or drone class." },
+      { id: "d", text: "Yes — Open category allows BVLOS up to 500 m." },
+    ],
+    correctOptionId: "c",
+    explanation: "VLOS is a non-negotiable condition of the Open category. Any BVLOS operation, regardless of drone class, field emptiness, or certificate held, exits Open category and requires Specific category authorisation.",
+    distractorRationales: {
+      a: "The safety rationale does not override regulatory category definitions.",
+      b: "No Open-category certificate authorises BVLOS. The A1/A3 certificate is an Open-category qualification.",
+      d: "There is no BVLOS distance allowance in Open category.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ar-002"]}>
+You understand the three-tier system and where Open ends. 
+
+Next: A1, A2 and A3 in detail — what each sub-category requires from the drone, the pilot, and the distance to people.
+</Debrief>

@@ -1,35 +1,129 @@
 # Tieša redzamība (VLOS)
 
-Atvērtajā kategorijā tālvadības pilotam **bezpilota gaisa kuģis vienmēr ir
-jātur tiešā redzamībā (VLOS)**.
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, kas ir VLOS, ar ko tā atšķiras no FPV un kāds ir vienīgais legālais veids, kā Atvērtajā kategorijā lidot ar FPV brillēm.">
+VLOS ir Atvērtās kategorijas pamats. Tās "zema riska" loģika sabrūk tajā
+brīdī, kad tu pārstāj redzēt gaisa kuģi.
+</MissionBriefing>
+
+<CinematicScene
+  alt="Pilots stāv plašā laukā rītausmā, skatās uz nelielu dronu apmēram 150 m attālumā. Drons — tik tikko redzams punkts ar nelielu kustības izplūdumu."
+  prompt="Style: cinematic, photoreal, aviation-grade. Cool blue-grey palette, dark slate. Pilot silhouette, eyes on drone ~150 m away. Dawn light, foreground sharp, mid-field haze. The frame teaches what VLOS at 150 m actually looks like. 16:9."
+  caption="Aina · vlos-scene-1"
+/>
 
 ## Ko nozīmē VLOS
 
-Pilots redz gaisa kuģi bez palīglīdzekļiem. Briles vai kontaktlēcas atļautas,
-bet binokļi un kameru tālskata režīmi — nē. Pilotam jāspēj noteikt
-**gaisa kuģa stāvokli un kustības virzienu** — ne tikai punktu debesīs.
+Pilots redz gaisa kuģi **bez palīglīdzekļiem**. Korekcijas brilles vai
+kontaktlēcas ir atļautas. Binokļi un tālummaiņas kameras — nav. Pilotam
+jāspēj noteikt gaisa kuģa **stāvoklis un kustības virziens**, nevis tikai
+apstiprināt punktu debesīs.
 
-Cik tālu tas ir praktiski, atkarīgs no gaisa kuģa izmēra un laika apstākļiem.
-Maza drona apvidū migaina laikā nav redzams jau no 200 m; lielāku skaidrā
-laikā var sekot pat 500 m attālumā.
+Cik tālu tas ir praksē — atkarīgs no gaisa kuģa izmēra un laika apstākļiem.
+Mazs drons vasaras dūmakā var pazust jau pie 200 m; lielāks skaidrā dienā
+saglabā izsekojamību pat 500 m. Regulā nav fiksēta VLOS metru robeža —
+ir tikai jautājums: vai pilots vēl spēj pateikt, uz kuru pusi tas griezies?
 
-## Pirmās personas skats (FPV) nav VLOS
+<Artefact
+  description="Skats no augšas: pilots koordinātu sākumā, redzes konuss virzās uz priekšu. Drons konusa iekšpusē — VLOS saglabāta. Drons ārpus konusa — operācija pārsniedz Atvērto kategoriju. Vertikālā 120 m līnija šķērso konusu."
+  caption="Diagramma · vlos-cone-1"
+>
+  <div className="grid gap-3 text-sm">
+    <p className="text-hud-white">VLOS redzes konuss (skats no augšas)</p>
+    <ul className="space-y-1 text-telemetry">
+      <li>· Pilots sākumpunktā, skats uz priekšu.</li>
+      <li>· Gaisa kuģis konusa iekšpusē → VLOS saglabāta.</li>
+      <li>· Gaisa kuģis ārpus konusa → Atvērtās kategorijas lidojums beidzies.</li>
+      <li>· Konuss saraujas dūmakā, attālumā un pie maza UAS izmēra.</li>
+    </ul>
+  </div>
+</Artefact>
 
-Kad pilots skatās brillēs vai telefona ekrānā, nevis pašā gaisa kuģī, viņš
-lido **FPV režīmā** — un tas pārtrauc VLOS. Atvērtajā kategorijā FPV ir
-atļauts **tikai tad, ja pilotam blakus stāv UAS novērotājs**, kurš tieši
-seko gaisa telpai.
+## FPV nav VLOS
 
-Novērotājam:
-- fiziski jābūt pilotam blakus (bez radio, bez telefona);
-- jāseko gaisa telpai, nevis ekrānam.
+Kad pilots skatās brillēs vai telefona ekrānā, nevis uz pašu gaisa kuģi —
+tas ir **FPV**, un VLOS ir lauzta. Atvērtajā kategorijā FPV ir atļauta
+tikai tad, ja blakus pilotam stāv atsevišķs **UAS novērotājs**, kas vēro
+gaisa telpu.
 
-## Kāpēc VLOS ir svarīgi
+Novērotājam jābūt:
 
-Visa Atvērtās kategorijas zema riska loģika balstās uz to, ka pilots redz
-un spēj reaģēt uz citiem gaisa telpas dalībniekiem. Tiklīdz šī saikne
-pārtrūkst, lidojums iziet ārpus kategorijas — un ārpus tālvadības pilota
-pilnvarām.
+- fiziski blakus pilotam (bez radio, bez telefona);
+- skatam uz gaisa telpu, nevis uz ekrānu.
 
-> **Avots:** Regula (ES) 2019/947, UAS.OPEN.060(3); EASA Easy Access Rules
-> for UAS (konsolidēts 2024-07).
+<Scenario title="Tu lido ar C1 dronu FPV brillēs. Draugs vēlas tev palīdzēt, vērojot gaisu no 100 m attāluma pa raciju.">
+Tas Atvērtajā kategorijā **nav legāli**. Novērotāja noteikums prasa tiešu,
+neapstarpinātu balss kontaktu — novērotājam jāstāv blakus pilotam. Racija
+nav "blakus". Vai nu nolaid dronu, vai liec draugam pienākt klāt.
+</Scenario>
+
+<MemoryAnchor
+  rule="Ja nesniedz aci uz gaisa kuģi — tu vairs nelido Atvērtā kategorijā."
+  hint="FPV ir Atvērtā tikai tad, ja blakus stāv novērotājs ar tiešu skatu."
+/>
+
+<CommonMistakes>
+- Uzskatīt "es to dzirdu" vai "es redzu uz ekrāna" par VLOS — ne viens, ne otrs neder.
+- Lietot radio starp pilotu un novērotāju. Tikai tieša balss.
+- Paļauties uz binokli vai tālummaiņu, lai "atgūtu" VLOS uz drona, kas jau ir punkts. Kad tas ir punkts, VLOS vairs nav neatkarīgi no palielinājuma.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "vlos-quick-1",
+    stem: "Ko Atvērtajā kategorijā nozīmē VLOS?",
+    options: [
+      { id: "a", text: "Pilots redz gaisa kuģi bez palīglīdzekļiem (briles atļautas)." },
+      { id: "b", text: "Pilots seko gaisa kuģim caur FPV brillēm." },
+      { id: "c", text: "Pilots zina UAS atrašanās vietu pēc telefona kartes." },
+      { id: "d", text: "Pilots seko dronam ar binokli." },
+    ],
+    correctOptionId: "a",
+    explanation: "VLOS prasa, lai pilots redzētu gaisa kuģi neapbruņotu aci un spētu noteikt tā stāvokli un kustības virzienu. Briles atļautas, binokļi un ekrāni — nē.",
+    distractorRationales: {
+      b: "FPV brilles aizvieto skatu uz gaisa kuģi ar kameras attēlu — tas nav VLOS.",
+      c: "Atrašanās vietas zināšana kartē nav tas pats, kas redzēt stāvokli un virzienu gaisā.",
+      d: "Binokļi ir tieši izslēgti — noteikums prasa neapbruņotu aci.",
+    },
+  },
+  {
+    id: "vlos-quick-2",
+    stem: "Tu vēlies Atvērtajā kategorijā lidot ar FPV brillēm. Kas ir vienīgais legālais veids?",
+    options: [
+      { id: "a", text: "Izmantot kvalitatīvu video saiti ar latentumu zem 50 ms." },
+      { id: "b", text: "Blakus stāv novērotājs ar tiešu balss kontaktu, kas vēro gaisa telpu." },
+      { id: "c", text: "Novērotājs ar raciju 100 m attālumā." },
+      { id: "d", text: "Lidot tikai virs sava zemesgabala." },
+    ],
+    correctOptionId: "b",
+    explanation: "Atvērtajā kategorijā FPV ir atļauta tikai tad, ja UAS novērotājs stāv blakus pilotam, ar tiešu balss kontaktu, un vēro apkārtējo gaisa telpu.",
+    distractorRationales: {
+      a: "Latentums noteikumu nemaina — pilots joprojām neredz apkārtējo gaisu.",
+      c: "Radio nav tiešs balss kontakts; noteikums prasa novērotāju blakus pilotam.",
+      d: "Sava zeme noteikumu par VLOS / FPV nemaina.",
+    },
+  },
+  {
+    id: "vlos-quick-3",
+    stem: "Dūmakainā dienā tavs C1 drons 250 m attālumā kļūst par punktu. Tu redzi punktu, bet vairs ne stāvokli. Vai esi VLOS?",
+    options: [
+      { id: "a", text: "Jā — punkts redzams, ar to pietiek." },
+      { id: "b", text: "Jā — C1 ir atļauts līdz 500 m." },
+      { id: "c", text: "Nē — VLOS prasa redzēt stāvokli un virzienu, ne tikai klātbūtni." },
+      { id: "d", text: "Jā, ja tiek atvērts kameras skats." },
+    ],
+    correctOptionId: "c",
+    explanation: "VLOS nav par to, ka apstiprini gaisa kuģa esamību — tā prasa spēju noteikt stāvokli un virzienu. Tiklīdz tas nav iespējams, operācija vairs nav Atvērtajā kategorijā.",
+    distractorRationales: {
+      a: "Punkts nav pietiekams — tev vajadzīga spēja reaģēt, bet tā prasa redzēt stāvokli.",
+      b: "Regulā nav fiksēta VLOS metru robeža; noteikums ir funkcionāls, ne ar mērvienībām.",
+      d: "Kameras skats ir FPV — tas neatjauno VLOS.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["as-001", "as-002"]}>
+Tu zini, kas ir VLOS, kāpēc FPV to lauž un kāda FPV konfigurācija
+Atvērtajā ir vienīgā legālā. Tālāk: kā mainās attālums līdz cilvēkiem
+atkarībā no apakškategorijas (A1 / A2 / A3) un 1:1 noteikums, kas augstumu
+sasaista ar minimālo attālumu.
+</Debrief>

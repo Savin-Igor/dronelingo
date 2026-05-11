@@ -1,0 +1,153 @@
+# BGKIS pieteikuma iesniegšana — soli pa solim
+
+<MissionBriefing objective="Pēc šī nodarbības tu spēsi pārbaudīt zonu airspace.lv, pareizi lasīt zonas krāsas un iesniegt BGKIS lidojuma pieteikumu pirms jebkura lidojuma ierobežotā UAS ģeogrāfiskā zonā Latvijā.">
+Kopš 2025. gada 1. janvāra BGKIS pieteikums nav izvēles teorija — tas ir obligāta operatīvā prasme. Nav apstiprināta pieteikuma — nav legāla lidojuma ierobežotā zonā.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/airspace-lv-interface.png"
+  alt="Stilizēts airspace.lv/drones kartes interfeiss ar Latvijas krāsu zonām: zaļš brīvi, dzeltens nosacīts, sarkans aizliegts"
+  caption="Interfeiss · airspace.lv/drones karte"
+/>
+
+## Kas ir BGKIS un kāpēc tas kļuva obligāts
+
+**BGKIS** (Bāzes ģeotelpiskās informācijas kontroļu un informēšanas par situāciju sistēma) ir CAA Latvia portāls [e.caa.gov.lv](https://e.caa.gov.lv), caur kuru piloti iesniedz lidojuma pieteikumus ierobežotām UAS ģeogrāfiskām zonām (UGZ).
+
+MK noteikumi Nr. 248 (§53, §73) padarīja pieteikumus **obligātus**: jebkuram lidojumam ierobežotā UGZ nepieciešams iesniegts un apstiprināts BGKIS pieteikums pirms pacelšanās.
+
+Noraidīts vai neatbildēts pieteikums nozīmē — lidojums nelegāls.
+
+## 1. solis: Pārbaudi zonu airspace.lv/drones
+
+Atver **airspace.lv/drones** un dodieties uz plānoto lidojuma vietu. Karte rāda visas UGZ Latvijā.
+
+<Artefact
+  description="Zonas krāsu leģenda: zaļš — bez ierobežojumiem, dzeltens — nepieciešams BGKIS pieteikums, sarkans — aizliegts, pelēks šķērsojums — lidostas CTR ar BGKIS"
+  caption="Leģenda · zonas krāsas"
+>
+  <div className="grid gap-2 text-sm text-telemetry">
+    {[
+      ["bg-green-clear/20 border-green-clear", "Zaļš", "Nav ierobežojumu — pieteikums nav nepieciešams."],
+      ["bg-amber-alert/20 border-amber-alert", "Dzeltens", "Nosacīts — lidojumam nepieciešams iesniegts un apstiprināts BGKIS pieteikums."],
+      ["bg-red-danger/20 border-red-danger", "Sarkans", "Aizliegts — Atvērtās kategorijas lidojumi nav atļauti."],
+      ["bg-muted/20 border-muted", "Pelēks šķērsojums", "CTR / lidostas zona — nepieciešams BGKIS pieteikums, var būt augstuma ierobežojumi."],
+    ].map(([cls, krāsa, apraksts]) => (
+      <div key={krāsa} className={`flex gap-3 items-start border-l-2 pl-2 ${cls}`}>
+        <span className="font-mono text-xs w-20 shrink-0 text-hud-white">{krāsa}</span>
+        <span>{apraksts}</span>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+Noklikšķini uz zonas, lai atvērtu informācijas paneli. Pieraksti:
+- **Zonas identifikatoru** (piem., EVR-D-017)
+- **Zonas veidu** (ierobežota, nosacīta, aizliegta)
+- **Zonas pārvaldnieku** (CAA Latvia, lidosta, militārā iestāde)
+- **Augstuma robežas** (apakšējā un augšējā)
+- **Aktīvās stundas** (pastāvīgas vai laika loga)
+
+## 2. solis: Nosaki, vai nepieciešams pieteikums
+
+| Zonas veids | Nepieciešamā darbība |
+|-------------|---------------------|
+| Nav ierobežojumu (zaļš) | Pieteikums nav nepieciešams |
+| Nosacīts (dzeltens) | Iesniegt BGKIS pieteikumu un gaidīt apstiprinājumu |
+| Aizliegts (sarkans) | Nelidot Atvērtajā kategorijā |
+| CTR / lidosta (pelēks) | Iesniegt BGKIS pieteikumu un gaidīt apstiprinājumu |
+
+**EVR17 Border East** — zona gar Latvijas-Krievijas un Latvijas-Baltkrievijas robežu — ir slēgta Atvērtās kategorijas lidojumiem kopš 2025. gada. Neviens pieteikums netiks apstiprināts.
+
+## 3. solis: Iesniegt BGKIS pieteikumu
+
+Piesakies **e.caa.gov.lv** ar operatora reģistrācijas datiem. Dodies uz **BGKIS → Jauns pieteikums**.
+
+Aizpildi veidlapu:
+
+1. **Datums un laika logs** — precīzs sākuma un beigu laiks. Plāno vismaz 24 h pirms (tajā pašā dienā apstiprināšana iespējama, bet nav garantēta).
+2. **Atrašanās vieta** — GPS koordinātas vai zīmē lidojuma daudzstūri kartē. Norādi maksimālo augstumu (AGL).
+3. **UAS reģistrācijas numurs** — operatora reģistrācijas ID no CAA Latvia.
+4. **Mērķis** — īss apraksts (komerciāla fotografēšana, topogrāfija, hobijs, inspekcija u.tml.).
+5. **Ārkārtas kontakts** — tava tālruņa numurs lidojuma laikā.
+
+Iesniegt veidlapu. Nekavējoties saņemsi atsauces numuru.
+
+## 4. solis: Gaidīt apstiprinājumu — nepaceļaties bez tā
+
+Apstiprinājumu izsniedz zonas pārvaldnieks (CAA Latvia, lidosta, militārā iestāde u.c.). Pārbaudi BGKIS portāla statusu:
+
+- **Gaida** — pagaidi; nepaceļaties.
+- **Apstiprināts** — pacel drones tikai apstiprinātajā laika logā.
+- **Noraidīts** — nelidot.
+
+Otrdienas 14:00–16:00 apstiprinājums **nav** spēkā trešdienai. Katrs jauns laika logs prasa jaunu pieteikumu.
+
+## 5. solis: Lido apstiprināto logu
+
+Lidojuma laikā:
+- Paliec pieteikumā norādītajās ģeogrāfiskajās robežās un augstumā.
+- Turi apstiprinājuma atsauces numuru pieejamu (ekrānuzņēmums vai izdruka).
+- Ja laika logs jāpagarina, iesniegt jaunu pieteikumu pirms vecā beidzas.
+
+<Scenario title="Tu pārbaudi airspace.lv un redzi, ka plānotā filmēšanas vieta atrodas CAA Latvia pārvaldītā dzeltenā zonā. Plāno lidot rīt plkst. 10:00. Ko dari šodien?">
+**Iesniedz BGKIS pieteikumu šodien.** Piesakies e.caa.gov.lv, izveido pieteikumu rītdienas laika logam (piem., 09:45–11:15, iekļaujot sagatavošanās laiku), definē lidojuma daudzstūri un maksimālo augstumu, iesniedz.
+
+Negaidi līdz rītdienai — tajā pašā dienā apstiprināšana nav garantēta. Profesionālā pieeja: iesniedz 24 h iepriekš un pārbaudi portālu statusam.
+</Scenario>
+
+<MemoryAnchor
+  rule="Pārbaudi airspace.lv → noteikt zonas veidu → dzeltens/CTR = iesniegt BGKIS e.caa.gov.lv → gaidīt apstiprinājumu → lido tikai apstiprinātajā logā."
+  hint="BGKIS apstiprinājums ir laika specifisks. Katram jaunam lidojuma logam nepieciešams savs pieteikums."
+/>
+
+<CommonMistakes>
+- Iesniegt pieteikumu un pacelties pirms apstiprinājuma — gaidīšana nav tas pats, kas apstiprināts.
+- Neiekļaut sagatavošanās laiku pieteikuma logā — ja lidojums ir 10:00–11:00, logam jāsākas agrāk.
+- Paļauties uz ražotāja lietotni, lai noteiktu, vai nepieciešams pieteikums — airspace.lv ir vienīgais juridiski saistošais avots.
+- Domāt, ka noraidītu pieteikumu var pārsūdzēt laikā tam pašam lidojumam — plāno pietiekami iepriekš.
+- Nepārbaudīt NOTAM tajā pašā lidojuma dienā, pat pēc BGKIS apstiprinājuma saņemšanas.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "bgkis-lv-q1",
+    stem: "Pilots atver airspace.lv/drones un redz, ka plānotā vieta ir dzeltenā zonā. Kāda ir pareizā nākamā darbība?",
+    options: [
+      { id: "a", text: "Lidot brīvi — dzeltens nozīmē piesardzību, ne pilnu ierobežojumu." },
+      { id: "b", text: "Iesniegt BGKIS pieteikumu e.caa.gov.lv un gaidīt apstiprinājumu pirms pacelšanās." },
+      { id: "c", text: "Piezvanīt pašvaldībai mutiski atļaut." },
+      { id: "d", text: "Lidot zem 50 m — dzeltens nozīmē automātiski atļauts zemā augstumā." },
+    ],
+    correctOptionId: "b",
+    explanation: "Dzeltenā (nosacītā) zona prasa iesniegtu un apstiprinātu BGKIS pieteikumu pirms jebkura lidojuma. Dzeltens nenozīmē 'piesardzies, bet lido' — tas nozīmē, lidojums ir atkarīgs no apstiprinājuma. Vienīgais kanāls ir BGKIS portāls e.caa.gov.lv.",
+    distractorRationales: {
+      a: "Dzeltenās zonas nav brīvas lidošanas brīdinājums — tās ir nosacītas zonas, kurām nepieciešams iepriekšējs apstiprinājums.",
+      c: "Pašvaldība nav zonas pārvaldnieks un nevar piešķirt atļauju. Pieteikums jāiesniedz zonas pārvaldniekam caur BGKIS.",
+      d: "Dzeltenajās zonās nav automātiska augstuma izņēmuma. BGKIS pieteikuma process attiecas neatkarīgi no plānotā augstuma.",
+    },
+  },
+  {
+    id: "bgkis-lv-q2",
+    stem: "Pilots saņēma BGKIS apstiprinājumu otrdienas 14:00–16:00. Darbs aizkavējās. Vai drīkst turpināt lidot 16:05?",
+    options: [
+      { id: "a", text: "Jā — 5 minūšu pārsniegt ir pieļaujams." },
+      { id: "b", text: "Jā — apstiprinājums ir spēkā visu dienu." },
+      { id: "c", text: "Nē — apstiprinātais logs ir beidzies; jāiesniedz jauns pieteikums." },
+      { id: "d", text: "Jā — pilots var pa tālruni lūgt zonas pārvaldnieku pagārināt." },
+    ],
+    correctOptionId: "c",
+    explanation: "BGKIS apstiprinājumi ir laika specifiski. 16:00 apstiprinājums beidzas un lidojums vairs nav atļauts. Lidojums 16:05 bez jauna apstiprināta pieteikuma ir nelegāls. Pilotam jāiesniedz jauns pieteikums un jāgaida apstiprinājums.",
+    distractorRationales: {
+      a: "BGKIS noteikumos nav 'pielaides' nodrošinājuma. Apstiprinātais logs ir precīzs — jebkurš pārsniegt bez jauna pieteikuma ir pārkāpums.",
+      b: "Apstiprinājums attiecas tikai uz norādīto laika logu — ne visu dienu.",
+      d: "Mutiskas pagarinājums pa tālruni nav BGKIS procedūras daļa. Pagarinājumiem nepieciešams jauns iesniegts un apstiprināts pieteikums.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ar-001"]}>
+Tu tagad vari pārbaudīt jebkuru zonu airspace.lv, pareizi nolasīt zonas krāsas un iesniegt BGKIS pieteikumu pirms lidojuma ierobežotā UGZ Latvijā.
+
+Nākamā sadaļa: Aviācijas regulējums — normatīvais pamats, kategorijas un ko katra no tām faktiski prasa.
+</Debrief>

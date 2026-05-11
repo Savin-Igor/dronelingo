@@ -1,38 +1,128 @@
 # Occurrence reporting
 
-Civil aviation safety relies on **open reporting of occurrences** — even
-those that ended without consequences. That is how the industry learns
-from near-misses rather than only from accidents.
+<MissionBriefing objective="After this lesson you will know exactly which events trigger a mandatory 72-hour report, which warrant a voluntary report, where to file in Latvia and across the EU, and why Just Culture protection means reporting is always safer than silence.">
+Civil aviation learns from near-misses, not only accidents. Every event filed is a data point that prevents the next one. The pilot who reports a close call is not admitting fault — they are contributing to a system that protects everyone.
+</MissionBriefing>
 
-## Mandatory within 72 hours
+<CinematicScene
+  src="/lessons/occurrence-reporting-flow.png"
+  alt="Decision flowchart: event occurs, serious injury or manned aircraft near-miss leads to mandatory 72h report, safety-related events lead to voluntary report, both filed at e.caa.gov.lv/incidents"
+  caption="Diagram · occurrence-reporting-flow"
+/>
 
-The pilot reports **within 72 hours** if:
+## Two reporting categories
 
-- there was a **serious injury or fatality**;
-- there was a **near-miss or collision with a manned aircraft**;
-- the UAS struck an obstacle that is critical infrastructure (power
-  line, railway).
+**Mandatory reporting** — required by law within 72 hours of the event. Missing the deadline is a separate offence from the underlying incident.
 
-## Voluntary reporting
+**Voluntary reporting** — no deadline, no obligation, but strongly encouraged for any safety-related event that did not meet the mandatory threshold.
 
-Same channel, no deadline, **for any safety-related event**:
+## Mandatory reports — three triggers
 
-- lost data link;
-- "fly-away" — UAS departs in an uncontrolled direction;
-- "fail-safe" did not activate;
-- erroneous geofence or GPS position.
+A pilot **must** file a mandatory report within 72 hours when any of the following occurs:
+
+1. **Serious injury or fatality** — the UAS causes bodily harm to a third party requiring medical treatment.
+2. **Near-miss or collision with a manned aircraft** — any situation where a manned aircraft had to manoeuvre to avoid the UAS, or where separation was insufficient by the crew's assessment.
+3. **Strike on critical infrastructure** — the UAS physically contacts a power line, railway, communications mast, or other protected infrastructure.
+
+These are not discretionary. "Near-miss" is interpreted broadly — if a manned aircraft crew filed an AIRPROX report, the UAS pilot should assume a mandatory report is required.
+
+## Voluntary reports — the wider net
+
+Voluntary reports are encouraged for any event with safety implications that did not meet the mandatory threshold:
+
+- Lost data link during flight (link recovered, safe landing achieved).
+- Fly-away event where control was regained before harm occurred.
+- Fail-safe did not activate as configured.
+- GNSS jamming or spoofing detected during flight.
+- Hardware failure discovered during flight (motor warning, battery cell failure).
+- Geofence anomaly or erroneous geo-awareness data.
+
+There is no penalty for filing voluntarily. There is a systemic cost to not filing — these events never enter the safety database, the pattern is never detected, and the next pilot faces the same unwarned hazard.
 
 ## Where to file
 
-- **Latvia:** [e.caa.gov.lv/incidents](https://e.caa.gov.lv/incidents).
-- **EU-wide:** [aviationreporting.eu](https://aviationreporting.eu) —
-  ECCAIRS system.
+**Latvia:** `e.caa.gov.lv/incidents` — the primary portal for both mandatory and voluntary reports. Available in Latvian and English.
 
-## "Just culture"
+**EU-wide:** `aviationreporting.eu` — the ECCAIRS 2 system that aggregates reports across all EU member states. Relevant for events involving cross-border operations or shared airspace.
 
-EU law (Reg 376/2014) protects the reporter from criminal consequences
-unless the event resulted from deliberate misconduct. Reporting is
-safer than silence.
+Reports should include: date, time, location (GPS if available), UAS type, what occurred, what actions were taken, and any witness or bystander contact details.
 
-> **Source:** Reg (EU) 376/2014 on the reporting of occurrences in
-> civil aviation; CAA Latvia portal `e.caa.gov.lv/incidents`.
+## Just Culture — the protection that makes reporting work
+
+EU Regulation 376/2014 establishes **Just Culture** as a legal principle in civil aviation reporting. The core guarantee:
+
+- Filing a report **does not automatically trigger criminal proceedings** against the reporter.
+- Authorities are required to separate the safety investigation from any enforcement action.
+- Criminal consequences apply only when the event resulted from **gross negligence** or **deliberate misconduct**.
+
+In practice: a pilot who loses link, lands safely, and files a voluntary report is protected from prosecution for the incident. A pilot who does not report a mandatory event — a near-miss with a manned aircraft — has no protection and may face charges for the omission itself.
+
+**Silence is not safer.** The omission of a mandatory report is a separately prosecutable act.
+
+<Scenario title="Your drone loses GPS and drifts 80 m downwind before you regain manual control and land safely. No one was hurt. No aircraft were nearby. Is this a mandatory or voluntary report?">
+**Voluntary.** The event does not meet any mandatory trigger — no injury, no manned aircraft involved, no critical infrastructure struck. However, it is a clear candidate for a voluntary report:
+
+- Lost GPS position control during flight is a safety-relevant event.
+- The drift distance and wind conditions are useful data for the safety authority.
+- If the same GPS failure pattern appears in other reports, CAA Latvia can notify the manufacturer.
+
+File at `e.caa.gov.lv/incidents`. Takes approximately 10 minutes. The Just Culture protection applies to voluntary reports — there is no downside to filing.
+</Scenario>
+
+<MemoryAnchor
+  rule="Mandatory (72h): injury, manned aircraft near-miss, critical infrastructure strike. Voluntary: any safety-relevant event. Both go to e.caa.gov.lv/incidents. Just Culture = reporting is always safer than silence."
+  hint="Not filing a mandatory report is a separate offence. Filing a voluntary report has zero downside."
+/>
+
+<CommonMistakes>
+- Waiting more than 72 hours to file a mandatory report because "I wanted to think about it" — the deadline is 72 hours from the event, not from when the pilot decides to file.
+- Assuming a near-miss only counts if the manned aircraft filed a report first — the UAS pilot's reporting obligation is independent.
+- Not filing voluntary reports for events that resolved safely — "nothing happened" misses the point; the near-miss data is the value.
+- Believing Just Culture means no consequences ever — gross negligence and deliberate misconduct are explicitly not protected.
+- Filing at the wrong portal — EU-wide `aviationreporting.eu` does not replace the mandatory Latvian report at `e.caa.gov.lv/incidents`.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "se-or1",
+    stem: "A UAS pilot's drone comes within 50 m of a light aircraft on approach. No collision occurred. The manned aircraft crew had to slightly adjust course. What is the pilot's reporting obligation?",
+    options: [
+      { id: "a", text: "No report required — no collision occurred and no one was injured." },
+      { id: "b", text: "Voluntary report only — the pilot may choose whether to file." },
+      { id: "c", text: "Mandatory report within 72 hours — a near-miss with a manned aircraft is a mandatory trigger." },
+      { id: "d", text: "Mandatory report within 24 hours — near-miss events have a shorter deadline." },
+    ],
+    correctOptionId: "c",
+    explanation: "A near-miss with a manned aircraft is one of the three mandatory reporting triggers under EU Regulation 376/2014 and Latvian implementation. The manned aircraft crew had to manoeuvre to avoid the UAS — this meets the threshold. The 72-hour deadline applies. No collision is required for the mandatory trigger to activate.",
+    distractorRationales: {
+      a: "The near-miss threshold does not require a collision. A manned aircraft having to adjust course due to a UAS is a reportable near-miss.",
+      b: "Near-miss with manned aircraft is mandatory, not voluntary. The pilot's choice is not relevant — the obligation exists regardless.",
+      d: "The mandatory reporting deadline for UAS occurrences is 72 hours, not 24 hours.",
+    },
+  },
+  {
+    id: "se-or2",
+    stem: "What legal protection does Just Culture (Reg 376/2014) provide to a pilot who voluntarily reports a safety event?",
+    options: [
+      { id: "a", text: "Complete immunity from any legal consequences related to the reported event." },
+      { id: "b", text: "Protection from automatic criminal prosecution — criminal consequences only apply for gross negligence or deliberate misconduct." },
+      { id: "c", text: "Protection applies only if the report is filed within 24 hours." },
+      { id: "d", text: "No protection — voluntary reports are used as evidence in enforcement proceedings." },
+    ],
+    correctOptionId: "b",
+    explanation: "Just Culture under Reg 376/2014 protects reporters from automatic criminal proceedings arising from the reported event. It does not provide complete immunity — gross negligence and deliberate misconduct remain prosecutable. There is no time condition on voluntary report protection. Voluntary reports are used for safety analysis, not enforcement, under the Just Culture framework.",
+    distractorRationales: {
+      a: "Just Culture is not blanket immunity. Gross negligence and deliberate misconduct remain outside the protection.",
+      c: "Just Culture protection for voluntary reporting has no time condition — it applies regardless of when the report is filed.",
+      d: "Reg 376/2014 explicitly establishes that voluntary safety reports are protected from use as enforcement evidence, subject to the gross negligence / misconduct exceptions.",
+    },
+  },
+]} />
+
+<Debrief unlocks={[]}>
+You have completed all nine sectors of the A1/A3 preparation programme.
+
+You know the regulatory framework, the sub-categories, human performance factors, operational procedures, UAS systems, privacy obligations, insurance requirements, and security and reporting duties.
+
+The next step is practice — the question bank is waiting.
+</Debrief>

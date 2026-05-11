@@ -1,38 +1,104 @@
-# Fatigue and stress for the UAS pilot
+# Fatigue and stress
 
-A remote pilot works alone — no second pilot, no ATC. That makes
-**personal state** one of the dominant safety factors.
+<MissionBriefing objective="After this lesson you will understand how fatigue degrades pilot performance, recognise the three types of stress that affect UAS operations, and know when to stop.">
+You can pre-flight a drone in 3 minutes. You cannot pre-flight your brain. Fatigue is invisible to everyone except the person experiencing it — and they are usually the last to notice.
+</MissionBriefing>
 
-## What "fatigue" really is
+<CinematicScene
+  src="/lessons/fatigue-performance-graph.png"
+  alt="Graph showing cognitive performance degradation from 100% at 0h awake to 30% at 24h awake, with BAC equivalency markers"
+  caption="Diagram · fatigue-performance"
+/>
 
-After 16 hours awake, reaction time and attention span degrade
-similarly to a 0.5 ‰ blood-alcohol concentration. After 24 hours —
-similar to 1.0 ‰.
+## What fatigue actually does
 
-## Sources of stress
+At 16 hours without sleep, cognitive performance has degraded to a level equivalent to a blood-alcohol concentration of 0.5 ‰. At 24 hours, the equivalent is approximately 1.0 ‰.
 
-- **Acute stress** — time pressure, a waiting client, hardware
-  glitches;
-- **Chronic stress** — week-long workload, family circumstances;
-- **Technical stress** — repeated BGKIS rejections, GPS spoofing near
-  the border.
+In Latvia, the legal limit for driving is 0.5 ‰. A rested drone pilot who drinks to that limit cannot legally drive — or safely fly. The same limit applies to sleep deprivation, with no breathalyser required and no external check available.
 
-## How to know your limit
+The symptoms are: slowed reaction, narrowed attention, impaired risk assessment, and — critically — **reduced ability to recognise that you are impaired**.
+
+## Three types of stress
+
+**Acute stress** appears in the moment: a client running late, a hardware problem at the job site, unexpected gusts while the drone is airborne. Acute stress contracts your attention to the immediate threat and makes it harder to see hazards outside that narrow focus.
+
+**Chronic stress** accumulates over days and weeks: heavy workload, poor sleep patterns, personal circumstances. It makes the baseline worse even before a flight begins.
+
+**Technical stress** is specific to UAS operations: repeated BGKIS rejections, GPS signal loss near the eastern border, an unfamiliar drone model. Even experienced pilots encounter it when something new goes wrong.
+
+## The three-question self-test
 
 Before flight, ask three plain questions:
 
-1. Can I make a **safe decision** under time pressure?
-2. Is my attention on multiple things or on **this flight**?
-3. Am I ready to **abort the mission** if things go sideways?
+1. **Can I make a safe decision under time pressure right now?**
+2. **Is my attention on this flight — or on several other things?**
+3. **Am I ready to abort the mission if something goes wrong?**
 
-If any answer is "no" — postpone or delegate.
+If any answer is "no" — postpone. If the answer is "I think so" — that is a "no."
 
-## Practical tips
+<Scenario title="You have a commercial shoot booked. The client is watching from the field. You slept badly, you are behind schedule, and the battery you are using is the one you are less sure about. What should you do?">
+Three active risk factors: fatigue (poor sleep), acute stress (waiting client, schedule pressure), technical concern (uncertain battery).
 
-- Schedule flights **after rest**, not after a long workday.
-- **Water, not coffee** as the primary fluid before flight.
-- **Cap sessions at 60–90 min.** Then break.
-- **File voluntary occurrence reports** so the lessons stick.
+The correct action is to **pause and address each factor** before the first motor spins:
+1. Tell the client honestly: "I'm going to take 5 minutes to check the battery and confirm my setup."
+2. Swap the uncertain battery for a known-good one if available.
+3. Take 60 seconds of stillness before starting — reset cognitive baseline.
 
-> **Source:** ICAO Doc 9966 — Manual for Fatigue Management;
-> EASA Easy Access Rules for UAS — Human Performance Limitations.
+If the fatigue is severe enough to impair judgment, the correct action is to postpone and reschedule. A professional who grounds a flight is safer, not weaker.
+</Scenario>
+
+<MemoryAnchor
+  rule="16 hours awake = 0.5 ‰ impairment. Nobody can detect it from outside. Only you can stop the flight."
+  hint="Ask: am I ready to abort if needed? If not certain — don't start."
+/>
+
+<CommonMistakes>
+- Flying after a long workday "because it's just a quick job" — fatigue does not care about flight duration.
+- Letting a paying client's presence override the go/no-go decision — the pilot's call is not negotiable.
+- Confusing caffeine for rest — stimulants mask fatigue without restoring cognitive performance.
+- Ignoring chronic stress as "not a safety issue" — chronic fatigue degrades baseline before the IMSAFE check.
+- Not filing voluntary occurrence reports after stress-related near-misses — the pattern never gets fixed.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "fat-q1",
+    stem: "A pilot has been awake for 18 hours. In terms of cognitive impairment, this is roughly equivalent to what blood-alcohol concentration?",
+    options: [
+      { id: "a", text: "0.2 ‰ — slightly above zero." },
+      { id: "b", text: "0.5 ‰ — equivalent to the Latvian legal driving limit." },
+      { id: "c", text: "0.8 ‰ — above the legal limit in most EU countries." },
+      { id: "d", text: "No impairment — the body adapts to extended wakefulness." },
+    ],
+    correctOptionId: "c",
+    explanation: "18 hours of wakefulness typically corresponds to impairment exceeding 0.5 ‰ BAC equivalence — heading toward 0.8 ‰. The 0.5 ‰ equivalence is cited for 16 hours; 18 hours exceeds that. The body does not adapt to extended wakefulness — performance continues to degrade.",
+    distractorRationales: {
+      a: "0.2 ‰ is the equivalency for mild tiredness — well below 18 hours of wakefulness.",
+      b: "0.5 ‰ equivalence corresponds to approximately 16 hours awake. 18 hours is worse.",
+      d: "The body does not adapt — without sleep, performance continues to degrade linearly.",
+    },
+  },
+  {
+    id: "fat-q2",
+    stem: "A client is waiting on-site and the pilot is running late. The pilot feels anxious and rushed. What type of stress is this?",
+    options: [
+      { id: "a", text: "Chronic stress." },
+      { id: "b", text: "Technical stress." },
+      { id: "c", text: "Acute stress." },
+      { id: "d", text: "No significant stress — it is a normal work situation." },
+    ],
+    correctOptionId: "c",
+    explanation: "Acute stress is triggered by immediate situational pressure — a waiting client, time pressure, running late. It narrows attention and speeds up decision-making in ways that bypass careful risk assessment.",
+    distractorRationales: {
+      a: "Chronic stress accumulates over days and weeks. A single waiting client is acute, not chronic.",
+      b: "Technical stress relates to unfamiliar or malfunctioning equipment, not client pressure.",
+      d: "Normal work situations produce real physiological stress responses that affect performance.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["op-001"]}>
+You understand how fatigue and stress degrade pilot performance and how to recognise them.
+
+Next sector: Operational Procedures — the pre-flight discipline and emergency decision-making that separates a professional pilot from a hobbyist.
+</Debrief>

@@ -1,36 +1,137 @@
 # Attālums no nepiederošām personām
 
-Atvērtās kategorijas robežas atšķiras pa apakškategorijām un UAS klasēm.
+<MissionBriefing objective="Pēc šīs nodarbības tu precīzi zināsi, cik tuvu drīksti lidot cilvēkiem A1, A2 un A3 apakškategorijās — un kāpēc lidot virs pūļa ir aizliegts neatkarīgi no UAS svara.">
+Attāluma noteikumi ir biežāk izgāztā tēma A1/A3 eksāmenā. Tabula izskatās vienkārša. Eksāmena jautājumi ir veidoti, lai noķertu katru saīsinājumu, ko mēģināji izmantot.
+</MissionBriefing>
 
-## A1 — virs cilvēkiem (ar brīdinājumiem)
+<CinematicScene
+  src="/lessons/distance-rules-a1-a2-a3.png"
+  alt="Apakškategoriju A1/A2/A3 attāluma noteikumu salīdzinošā infografika."
+  caption="Diagramma · distance-rules-overview"
+/>
 
-| Klase | Robeža |
-|-------|--------|
-| **C0** (< 250 g) | Pārlidot atsevišķas personas atļauts; **nekad** virs pulcēšanās |
-| **C1** | "Pamatoti gaidāms, ka nelidot virs nepiederošām personām" |
+## A1 — visciešāk, cik tikai drīkst
 
-C1 nelido tieši virs cilvēkiem; ja kāds nokļūst trajektorijā — pārtrauc
-vai apvedo.
+A1 ir paredzēta viegliem UAS, kas pat krītot rada minimālu kaitējumu. Bet **neviena apakškategorija** nenoņem noteikumu par pūli.
 
-## A2 — līdzās cilvēkiem (5 m / 30 m)
+| Klase | Maks. svars | Attālums līdz atsevišķām personām | Pulcēšanās |
+|-------|-------------|------------------------------------|------------|
+| **C0** | < 250 g | Pārlidot atsevišķas personas — **drīkst** | **Nekad** |
+| **C1** | < 900 g | "Pamatoti gaidāms, ka nelidos virs" | **Nekad** |
 
-| Režīms | Minimālais attālums |
-|--------|----------------------|
-| C2 ar zema ātruma režīmu (≤ 3 m/s) | **5 m** horizontāli |
-| C2 parastais režīms | **30 m** horizontāli |
+"Pamatoti gaidāms" nozīmē: ja priekšā ir cilvēks — apej apkārt. Ja kāds ienāk trajektorijā — pārtrauc. C1 nav atļauja karāties virs sauļojas cilvēka.
 
-A2 prasa **kompetences sertifikātu** (papildu tests pēc A1/A3).
+## A2 — kad jāpietuvojas
 
-## A3 — tālu no cilvēkiem (1:1 noteikums)
+A2 ir paredzēta profesionālam darbam tuvu cilvēkiem. Tā prasa **atsevišķu kompetences sertifikātu** (teorija + praktiska deklarācija) papildus A1/A3.
 
-- ≥ **30 m** no nepiederošām personām vai **1:1** (≥ lidojuma augstumam).
-- ≥ **150 m** no apdzīvotām, komerciālām, industriālām zonām.
-- ≥ "2-second flight distance" pie maks. ātruma.
+| Režīms | Minimālais horizontālais attālums |
+|--------|------------------------------------|
+| C2 **zema ātruma režīmā** (≤ 3 m/s) | **5 m** |
+| C2 **parastajā ātrumā** | **30 m** |
 
-## Pulcēšanās
+Zema ātruma režīms ir obligāta C2 UAS aparatūras iezīme. To jāaktivizē **pirms** pietuvošanās 5 m, nevis pēc tam.
 
-**Lidot virs cilvēku pulcēšanās ir aizliegts visās Atvērtās kategorijas
-apakškategorijās** un visās UAS klasēs.
+## A3 — tālu no civilizācijas
 
-> **Avots:** Regula (ES) 2019/947 UAS.OPEN.020/030/040; EASA Easy Access
-> Rules for UAS — Subcategories A1 / A2 / A3.
+A3 ir paredzēta lielākiem UAS (līdz 25 kg), kas strādā prom no cilvēkiem, patiesi neapdzīvotās vietās.
+
+<Artefact
+  src="/lessons/altitude-distance-rule.png"
+  alt="1:1 noteikums — horizontālais attālums vienāds ar lidojuma augstumu, minimums 30 m."
+  description="Diagramma: UAS 60 m augstumā, 60 m horizontālais attālums katrā pusē līdz nepiederošām personām. Otrs piemērs: 40 m augstums dod 40 m attāluma prasību."
+  caption="Diagramma · 1-to-1-rule"
+/>
+
+Trīs limiti darbojas vienlaikus — visi trīs jāievēro:
+
+1. **1:1 noteikums** — horizontālais attālums līdz nepiederošām personām ≥ lidojuma augstumam, minimums 30 m.
+2. **150 m** no jebkuras dzīvojamās, komerciālās, industriālās vai atpūtas zonas.
+3. **2 sekunžu lidojuma attālums** pie maksimālā ātruma (apstāšanās rezerve).
+
+Ja tu esi 80 m augstumā, 1:1 noteikums prasa ≥ 80 m līdz cilvēkiem. 30 m grīda joprojām strādā ļoti zemā augstumā.
+
+<DistanceRuleSimulator />
+
+## Noteikums, kas nemainās nekad
+
+<MemoryAnchor
+  rule="Lidot virs cilvēku pulcēšanās ir aizliegts visās Atvērtās apakškategorijās."
+  hint="C0 zem 250 g, C1, C2, C3 — vienalga. Pūlis zem tevis = nolaid vai turies tālāk."
+/>
+
+"Cilvēku pulcēšanās" likumā nav definēta kā konkrēts cilvēku skaits. Tiesa to interpretē kā jebkuru saiešanos, kur dalībnieki nevar viegli pakustēties prom no UAS virs galvas — ielas tirgus, sporta sacensība, koncerts, pat aizņemta kafejnīcas terase.
+
+<Scenario title="Kāzu fotogrāfs lūdz nofilmēt C1 (780 g) virs ceremonijas, lai iegūtu skatu no augšas. Vai tas ir atļauts?">
+**Nē.** Kāzu ceremonija ir cilvēku pulcēšanās. C1 joprojām pakļaujas "nelido virs pulcēšanās" noteikumam A1. UAS svars šo limitu neatceļ.
+
+Vienīgais legālais skats no augšas pār pūli Atvērtajā kategorijā prasītu darbības atļauju Specifiskajā kategorijā — tas ir pilnīgi cits regulatīvais ceļš.
+</Scenario>
+
+<CommonMistakes>
+- Domāt, ka C0 (< 250 g) ļauj lidot virs pūļa — pulcēšanās noteikums attiecas uz visām Atvērtās apakškategorijām.
+- Jaukt 1:1 noteikumu ar 1 m uz katru kg formulu — tas nav saistīts ar UAS svaru.
+- Aktivizēt zema ātruma režīmu pietuvojoties 5 m, nevis pirms tam.
+- Lietot A1 noteikumus, lidojot ar C2 UAS — apakškategoriju nosaka UAS klase, nevis tava izvēle.
+- Domāt, ka 150 m no dzīvojamām zonām nozīmē 150 m no katras atsevišķās ēkas — runa ir par **zonu**, ne par viena nama žogu.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "dr-q1",
+    stem: "Tu lido ar C0 UAS (190 g) virs publiska parka. Tieši zem tevis pikniku rīko 30 cilvēku grupa. Vai tas ir atļauts?",
+    options: [
+      { id: "a", text: "Jā — C0 zem 250 g drīkst lidot virs atsevišķām personām." },
+      { id: "b", text: "Jā — parks ir publiska atklāta vieta, ne kontrolēta zona." },
+      { id: "c", text: "Nē — pulcēšanās ir aizliegta visās Atvērtās apakškategorijās." },
+      { id: "d", text: "Jā — ja lidojums ir zem 30 m." },
+    ],
+    correctOptionId: "c",
+    explanation: "Pulcēšanās noteikums (nelido virs cilvēku saiešanās) attiecas uz katru Atvērto apakškategoriju, ieskaitot A1 ar C0 UAS. 250 g izņēmums ļauj pārlidot tikai atsevišķas personas — ne pulcēšanos.",
+    distractorRationales: {
+      a: "C0 ļauj pārlidot atsevišķas personas, ne pulcēšanos. Pikniku grupa ir pulcēšanās.",
+      b: "Vietas raksturs pulcēšanās noteikumu neatceļ.",
+      d: "Augstums nerada izņēmumu pulcēšanās noteikumam.",
+    },
+  },
+  {
+    id: "dr-q2",
+    stem: "Lidojums A3 60 m augstumā. Kāds ir minimālais horizontālais attālums līdz nepiederošām personām?",
+    options: [
+      { id: "a", text: "30 m — fiksētais A3 minimums." },
+      { id: "b", text: "60 m — 1:1 noteikums vienāds ar lidojuma augstumu." },
+      { id: "c", text: "120 m — divkāršs augstums drošībai." },
+      { id: "d", text: "150 m — tāds pats kā attālums līdz dzīvojamai zonai." },
+    ],
+    correctOptionId: "b",
+    explanation: "1:1 noteikums prasa horizontālo attālumu ≥ lidojuma augstumam. Pie 60 m tas nozīmē ≥ 60 m. 30 m ir grīda, kas darbojas ļoti zemā augstumā (piem., pie 10 m augstuma tev joprojām vajadzīgi 30 m, nevis 10 m).",
+    distractorRationales: {
+      a: "30 m ir minimālā grīda, bet 60 m augstumā strādā 1:1, tāpēc vajadzīgi 60 m.",
+      c: "Noteikums ir 1:1, ne 2:1.",
+      d: "150 m ir atsevišķs noteikums attālumam līdz apdzīvotām zonām — ne līdz atsevišķiem cilvēkiem.",
+    },
+  },
+  {
+    id: "dr-q3",
+    stem: "A2 pilots ar C2 UAS vēlas fotografēt būvstrādnieku 4 m attālumā. Pietuvojoties aktivizē zema ātruma režīmu. Vai tas ir atļauts?",
+    options: [
+      { id: "a", text: "Nē — A2 minimālais attālums vienmēr ir 30 m." },
+      { id: "b", text: "Nē — zema ātruma režīms attiecas tikai uz C3." },
+      { id: "c", text: "Jā — C2 zema ātruma režīmā minimums ir 5 m." },
+      { id: "d", text: "Jā — strādnieki būvlaukumā nav 'nepiederošas personas'." },
+    ],
+    correctOptionId: "c",
+    explanation: "C2 UAS apstiprinātā zema ātruma režīmā (≤ 3 m/s) drīkst pietuvoties 5 m līdz nepiederošām personām. Būvstrādnieks darba teritorijā ir nepiederoša persona, ja vien viņš nav daļa no lidojuma komandas.",
+    distractorRationales: {
+      a: "30 m ir parastā ātruma minimums C2. Zema ātruma režīms to maina uz 5 m.",
+      b: "Zema ātruma režīms ir C2 aparatūras prasība, ne C3 funkcija.",
+      d: "Cilvēki teritorijā nav komanda, ja vien viņi nav īpaši instruēti un viņiem nav piešķirta loma operācijā.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["as-003"]}>
+Tu pārvaldi pilno attāluma matricu A1, A2 un A3 — un saproti, kāpēc pulcēšanās noteikums darbojas neatkarīgi no UAS svara.
+
+Tālāk: **1:1 noteikuma padziļinājums** — kā novērtēt attālumus laukā bez mērlentes un ko 150 m dzīvojamā zona praksē nozīmē pilsētas operācijām.
+</Debrief>

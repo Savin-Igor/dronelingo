@@ -1,31 +1,97 @@
-# IMSAFE pašpārbaude pirms lidojuma
+# IMSAFE — pirmslidojuma pašpārbaude
 
-UAS lidojumā cilvēks ir vājākais posms. Pirms katra lidojuma pilots
-pielieto **IMSAFE** kontrolsarakstu, lai pārliecinātos par savu
-gatavību.
+<MissionBriefing objective="Pēc šīs nodarbības tu automātiski izpildīsi IMSAFE kontrolsarakstu pirms katra lidojuma un sapratīsi, kāpēc viens 'jā' pietiek, lai operāciju pārtrauktu.">
+UAS lidos tieši tik labi, cik labi pilots spēj to lidot. IMSAFE ir veids, kā tu izlem, vai tas pilots šodien esi tu.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/imsafe-checklist.png"
+  alt="IMSAFE kontrolsaraksts ar sešiem burtiem: Illness, Medication, Stress, Alcohol, Fatigue, Eating — ar jautājumu un atzīmes lauciņu pie katra."
+  caption="Kontrolsaraksts · imsafe"
+/>
+
+## Kāpēc pilots ir vājākais posms
+
+Atvērtās kategorijas UAS pilotam nav otrā pilota, nav gaisa kustības dispečera, kas seko līdzi viņa veiktspējai, nav tehniskās komandas, kas pārbaudītu iestatījumus. Ja pilota spriestspēja šodien ir traucēta, neviens cits to neatklās.
+
+IMSAFE pārņemts no pilotētās aviācijas — kur traucēta pilota sekas ir acīmredzamas. UAS operācijās likme zemāka, bet princips identisks: **novērtē sevi, pirms novērtē aparātu.**
 
 ## Sešas pārbaudes
 
-| Burts | Tēma | Jautājums sev |
-|-------|------|---------------|
-| **I**llness | Slimība | Vai man ir saaukstēšanās, drudzis, gripas simptomi? |
-| **M**edication | Medikamenti | Vai esmu lietojis zāles, kas ietekmē reakciju? |
-| **S**tress | Stress | Vai esmu emocionāli sasprindzināts (darbs, ģimene)? |
-| **A**lcohol | Alkohols | Vai pēdējās 8 stundās esmu lietojis alkoholu? |
-| **F**atigue | Nogurums | Cik daudz esmu gulējis pēdējā nakts? |
-| **E**ating | Ēdiens | Vai esmu paēdis pēdējās 4 stundās? |
+**I — Illness (slimība).** Jebkura aktīva infekcija samazina kognitīvo veiktspēju, un elpošanas slimības gadījumā var likt fokusēties uz savu pašsajūtu, ne lidojumu. Pat viegls saaukstēšanās ātri palēnina reakciju.
 
-## Kāpēc tas svarīgi UAS pilotam
+**M — Medication (medikamenti).** Bezrecepšu antihistamīni, dekongestanti un sāpju mazinātāji visi ietekmē CNS. Izlasi marķējumu. Ja tur "var izraisīt miegainību" — izraisīs.
 
-Atvērtās kategorijas pilots nestrādā komandā. **Nav otra cilvēka, kurš
-pamana**, ka pilots šodien ir noguris vai novērsts. IMSAFE ir personīga
-disciplīna — atbildība par to gulst tikai uz pilotu.
+**S — Stress.** Akūts emocionāls stress (strīds, sliktas ziņas, finansiāls spiediens) patērē tieši to kognitīvo joslu, ko prasa droša UAS ekspluatācija. Stress nav attaisnojums. Tas ir diskvalifikators.
 
-## Praktiskā robeža
+**A — Alcohol (alkohols).** ES aviācijas likumi UAS pilotiem piemēro to pašu "no pudeles līdz droselei 8 h" likumu. Pēc 8 stundām alkohola līmenis asinīs parasti tuvojas nullei — bet spriestspējas atjaunošanās atpaliek no asins attīrīšanās.
 
-Ja vismaz **viena no atbildēm ir "jā"**, lidojums būtu jāatliek vai
-jāpaļaujas uz novērotāju. Drošāk lidojumu pārcelt par dažām stundām
-nekā piedzīvot incidentu, kas paliek personīgajā profilā uz visu mūžu.
+**F — Fatigue (nogurums).** Pilnīgu ainu skati Noguruma nodarbībā. Praktiska atskaite: mazāk par 6 h miega iepriekšējā naktī ir sarkans karogs; mazāk par 5 — diskvalifikators.
 
-> **Avots:** EASA Easy Access Rules for UAS — Human Performance Limitations;
-> ICAO Doc 9683 (Human Factors Training Manual).
+**E — Eating (ēšana).** Hipoglikēmija (zems cukurs asinīs) izraisa tuneli uzmanībā, aizkaitināmību un lēnu lēmumu pieņemšanu. Lidojums bez ēdiena pēdējās 4 stundās ir lieks risks.
+
+<IMSAFEChecklist />
+
+<Scenario title="Tev 07:00 ir apmaksāts aerofoto darbs. Klients prasīja zelta stundas gaismu. Tu gulēji 4 stundas, tev neliela galvas sāpe (bez medikamentiem), un brokastis tu izlaidi, lai laikus pagūtu. IMSAFE?">
+Trīs "jā" atbildes: nogurums (4 h miega), iespējama slimība (galvas sāpes — nezināms cēlonis), ēšana (bez brokastīm).
+
+**Pārtrauc lidojumu.** Paskaidro klientam, ka droši turpināt nevar. Profesionālis, kurš pārtrauc drošības dēļ, ir uzticamāks, ne mazāk uzticams nekā tas, kurš lido cauri acīmredzamiem brīdinājumiem.
+
+Pārplānošana izmaksā laiku. Incidents ar UAS virs dārza klientam izmaksā nesalīdzināmi vairāk.
+</Scenario>
+
+<MemoryAnchor
+  rule="Viens 'jā' IMSAFE = atliec vai deleģē. 'Viss būs labi' šeit nav."
+  hint="Neviens cits nepamanīs, ka tu šodien neesi formā. Šis saraksts ir tava vienīgā pārbaude."
+/>
+
+<CommonMistakes>
+- Uzskatīt IMSAFE par fakultatīvu īsiem lidojumiem — nogurumam un medikamentiem nerūp lidojuma ilgums.
+- Atbildēt "droši vien jā", nevis "jā" vai "nē" — divdomība pārvēršas par "jā".
+- Izlaist E (ēšana) kā triviālu — hipoglikēmija 80 m augstumā ir reāls risks.
+- Domāt, ka stress ir mentālās veselības, ne drošības problēma — pilota lomā tas ir viens un tas pats.
+- Veikt IMSAFE reizi nedēļā, nevis pirms katra atsevišķā lidojuma.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "imsafe-q1",
+    stem: "Pilots pirms 2 stundām ieņēma antihistamīnu pret siena drudzi. Marķējumā rakstīts 'var izraisīt miegainību'. Vai drīkst lidot?",
+    options: [
+      { id: "a", text: "Jā — siena drudzis ir niecīgs, un medikaments parasts." },
+      { id: "b", text: "Jā — 2 stundas ir pietiekami, lai medikaments pārtraukt darbību." },
+      { id: "c", text: "Nē — medikaments, kas ietekmē modrību, ir IMSAFE diskvalifikators." },
+      { id: "d", text: "Jā — bet tikai tad, ja lidojums ir īsāks par 30 minūtēm." },
+    ],
+    correctOptionId: "c",
+    explanation: "IMSAFE 'M' aptver jebkuru medikamentu, kas var ietekmēt reakciju vai modrību. 'Var izraisīt miegainību' ir tieši norādīts. 2 stundas vairumam antihistamīnu nav pietiekams atklārējums, un lidojuma ilgums diskvalifikatoru nemaina.",
+    distractorRationales: {
+      a: "Pamatslimības smagums šeit nav būtisks. Jautājums ir par medikamenta ietekmi.",
+      b: "Vairumam antihistamīnu pussabrukšanas periods ir 4–6 stundas. 2 stundas vairumam ir aktīvajā logā.",
+      d: "Lidojuma ilgums medikamentu noteikumu nemaina.",
+    },
+  },
+  {
+    id: "imsafe-q2",
+    stem: "Kas ir pareizā darbība, ja viena IMSAFE atbilde ir 'jā'?",
+    options: [
+      { id: "a", text: "Turpināt, ja 'jā' ir mazsvarīgā kategorijā, piem., ēšanā." },
+      { id: "b", text: "Atlikt vai deleģēt lidojumu." },
+      { id: "c", text: "Samazināt plānoto lidojuma augstumu uz pusi." },
+      { id: "d", text: "Turpināt ar lielāku piesardzību un īsāku plānu." },
+    ],
+    correctOptionId: "b",
+    explanation: "Viens 'jā' IMSAFE pietiek, lai pārtrauktu operāciju. Sarakstā nav 'zemas prioritātes' kategorijas — katrs punkts iekļauts, jo apzīmē reālu drošības risku. Turpināt 'ar piesardzību' traucētā stāvoklī ir cikliska loģika.",
+    distractorRationales: {
+      a: "IMSAFE punktiem hierarhijas nav — visi seši ir diskvalifikatori, ja atbilde 'jā'.",
+      c: "Augstuma samazināšana neatrisina kognitīvo traucējumu.",
+      d: "Piesardzība neaizvieto fizisko gatavību lidot.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["hp-002"]}>
+Tu pārvaldi sešas IMSAFE pārbaudes un saproti, kāpēc viens 'jā' apstādina lidojumu.
+
+Tālāk: nogurums un stress padziļināti — kas notiek tavās smadzenēs 16. nomoda stundā un kā gaidoša klienta stress var būt bīstamākā lieta gaisā tajā dienā.
+</Debrief>

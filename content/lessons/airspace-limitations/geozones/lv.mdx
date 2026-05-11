@@ -1,36 +1,99 @@
-# UAS ģeogrāfiskās zonas Latvijā
+# UAS ģeogrāfiskās zonas
 
-Pirms katra lidojuma pilotam **jāpārbauda UAS ģeogrāfiskās zonas (UGZ)**.
-Latvijā vienīgais juridiski saistošais avots ir
-[airspace.lv/drones](https://airspace.lv/drones).
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi trīs UGZ tipus, kā lasīt airspace.lv, ko atļauja dod un ko nedod, un kāpēc Latvijas austrumu robeža ir lidojumiem aizliegta zona.">
+Katrs lidojums sākas airspace.lv. Katrs sods sākas ar to, ka pilots šo karti nepārbaudīja.
+</MissionBriefing>
 
-## Trīs UGZ tipi
+<CinematicScene
+  src="/lessons/airspace-zones-map.png"
+  alt="Taktiskā karte ar lidostas izslēgšanas zonām koncentriskās rievās — aizliegtā sarkana, ierobežotā dzeltena, informatīvā tirkīza."
+  caption="Aina · geozones-map"
+/>
 
-- **Informatīva** — bez ierobežojumiem, tikai paziņojums (piem., putnu
-  rezervāts).
-- **Ierobežota** — atļauts ar nosacījumiem: pieteikums BGKIS sistēmā,
-  augstuma ierobežojums vai speciāla atļauja.
-- **Aizliegta** — lidojumi nav atļauti (lidostu zona, militāri objekti).
+## Vienīgais juridiski saistošais avots
 
-## BGKIS pieteikumi
+Pirms katra lidojuma atver **airspace.lv/drones**. Tā nav fakultatīva un nav formalitāte — tā ir vienīgā karte Latvijā ar juridisku spēku. Komerciālas lietotnes, Google Maps un foruma ekrānuzņēmumi var noderēt orientācijai, bet tie nav likums.
 
-Kopš 2025. gada 1. janvāra **lidojumiem ierobežotās zonās jāiesniedz
-pieteikums BGKIS sistēmā**. Bez apstiprināta pieteikuma lidojums šādā
-zonā ir nelikumīgs neatkarīgi no UAS klases.
+## Trīs zonu tipi
 
-## Ko UGZ atļauja **neatļauj**
+**Informatīvās zonas** — ierobežojumi nav. Zona pastāv tikai tāpēc, lai brīdinātu, ka tuvumā kaut kas atrodas (putnu ligzdošanas vieta, militārs poligons, kas pašlaik neaktīvs). Lidot drīkst bez jebkāda pieteikuma.
 
-UGZ atļauja paaugstina pieejamību — bet **nepaplašina Atvērtās kategorijas
-robežas**. Joprojām spēkā:
+**Ierobežotās zonas** — lidot drīkst saskaņā ar īpašiem nosacījumiem, kas norādīti zonas definīcijā. Nosacījumi var ietvert BGKIS pieteikumu, maksimālo augstumu zemāku par 120 m, konkrētu laika logu vai visu kopā. Kopš 2025-01-01 BGKIS pieteikums ir obligāts katrai ierobežotai zonai, kas to prasa.
 
-- 120 m maksimālais augstums virs zemes;
-- VLOS prasība;
-- aizliegums lidot virs cilvēku pulcēšanās vietām.
+**Aizliegtās zonas** — Atvērtajā kategorijā lidojumi vispār nav atļauti. Tās ietver lidostu CTR (kontroles zonas), aktīvi izmantotas militārās vietas un robežzonas.
 
-## Robežzonas
+## Ko atļauja nedod
 
-Kopš 2025. gada visa Latvijas-Krievijas un Latvijas-Baltkrievijas robeža
-ir **EVR17 Border East** — slēgta zona Atvērtās kategorijas lidojumiem.
+BGKIS apstiprinājums ierobežotā zonā neaptur pārējos Atvērtās kategorijas noteikumus. Tev joprojām:
 
-> **Avots:** Regula (ES) 2019/947 Art. 15; `airspace.lv/drones` (CAA Latvia),
-> `docs/knowledge/latvia-caa/web-snapshots/`.
+- jāpaliek zem 120 m AGL;
+- jāsaglabā VLOS;
+- nekad nedrīkst lidot virs cilvēku pulcēšanās.
+
+Tiek paplašināta piekļuve zonai. Kategorijas robežas — nē.
+
+<Scenario title="Tavs BGKIS pieteikums ierobežotā zonā pie Rīgas lidostas ir apstiprināts. Apstiprinājumā rakstīts 'maks. 70 m AGL'. Vai vari ierobežotās zonas iekšienē lidot līdz 120 m?">
+**Nē.** BGKIS apstiprinājums šai konkrētajai atļaujai nosaka 70 m AGL maksimumu. Tas ir zemāks par vispārīgo Atvērtās kategorijas 120 m griesti — un piemērojams ir zemākais limits. Zonas nosacījumiem vienmēr ir prioritāte, kad tie ir stingrāki.
+</Scenario>
+
+## Latvijas slēgtā robežzona
+
+Kopš 2025. gada **EVR17 Border East** zona stiepjas visā Latvijas–Krievijas un Latvijas–Baltkrievijas robežas garumā. Tā Atvērtās kategorijas lidojumiem klasificēta kā aizliegta. Lidojums šajā zonā bez specifiskas militāras vai valdības atļaujas paredz kriminālatbildību — ne tikai administratīvo sodu.
+
+<ZoneClassifier />
+
+<MemoryAnchor
+  rule="Airspace.lv pirms katra lidojuma. Ierobežotā = vispirms pieteikums. Aizliegtā = lidojuma nav."
+  hint="Apstiprinājums paplašina zonas piekļuvi. Tas nekad neatceļ Atvērtās kategorijas noteikumus."
+/>
+
+<CommonMistakes>
+- Pārbaudīt karti vienu reizi sezonas sākumā un vairs ne pirms katra lidojuma — zonas mainās.
+- Jaukt "informatīvo" ar "ierobežoto" — dažās kartes versijās tās izskatās līdzīgi; pārbaudi leģendu.
+- Pieņemt, ka BGKIS apstiprināta ierobežotā zona atļauj 120 m — apstiprinājums var noteikt zemākus griestus.
+- Lidot tuvu austrumu robežai, nepārbaudot precīzu EVR17 robežu aktuālajā kartē.
+- Uzskatīt, ka konkurenta UAS lido vietā, kur "tātad drīkst" — cita pārkāpums nav tava atļauja.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "gz-q1",
+    stem: "Kāds ir vienīgais juridiski saistošais avots par UAS ģeogrāfiskām zonām Latvijā?",
+    options: [
+      { id: "a", text: "DJI Fly lietotnes ģeofence slānis." },
+      { id: "b", text: "airspace.lv/drones, ko uztur CAA Latvia." },
+      { id: "c", text: "Google Maps satelītskats virs vietas." },
+      { id: "d", text: "Tuvākās lidostas publicētā VFR karte." },
+    ],
+    correctOptionId: "b",
+    explanation: "airspace.lv/drones ir oficiālais, juridiski saistošais avots par UAS ģeogrāfiskām zonām Latvijā. Citi avoti var noderēt orientācijai, bet tiem nav juridiska spēka.",
+    distractorRationales: {
+      a: "Ražotāja ģeofence balstās uz trešo pušu datiem; tas nav juridiski autoritatīvs un satur baltus laukumus.",
+      c: "Google Maps UGZ datus nesatur.",
+      d: "VFR kartes aptver pilotētās aviācijas gaisa telpu; tās neaizstāj UAS specifiskās zonu datu bāzes.",
+    },
+  },
+  {
+    id: "gz-q2",
+    stem: "Zona ir marķēta kā 'Ierobežota — vajadzīgs BGKIS pieteikums'. Tu iesniedz pieteikumu un saņem apstiprinājumu. Kurš no šiem noteikumiem zonas iekšienē joprojām strādā?",
+    options: [
+      { id: "a", text: "VLOS vairs nav vajadzīga, jo zonas apstiprinājums tevi paceļ uz Specifisko kategoriju." },
+      { id: "b", text: "120 m griesti vairs nestrādā — vari lidot tik augstu, cik vajag." },
+      { id: "c", text: "Tev joprojām jāsaglabā VLOS, un nedrīkst pārsniegt apstiprinājumā norādītos griestus." },
+      { id: "d", text: "Aizliegums lidot virs pulcēšanās atcelts, jo iestāde tavu plānu pārbaudīja." },
+    ],
+    correctOptionId: "c",
+    explanation: "Zonas atļauja paplašina piekļuvi ierobežotai zonai. Tā nemaina Atvērtās kategorijas noteikumus — VLOS, augstuma griesti (ieskaitot zemāku robežu apstiprinājumā) un pulcēšanās aizliegums paliek spēkā.",
+    distractorRationales: {
+      a: "BGKIS apstiprinājums kategoriju nemaina. Tu paliec Atvērtajā.",
+      b: "Apstiprinājums var noteikt zemākus griestus par 120 m. Tas nekad necels griestus virs 120 m.",
+      d: "Pulcēšanās aizliegums ir kategorijas līmeņa noteikums, ko Atvērtajā nekāda zonas atļauja neatceļ.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ar-001"]}>
+Tu pratīsi nolasīt airspace.lv, atšķirt trīs zonu tipus un saproti, ko atļauja dod un ko ne.
+
+Nākamais sektors: Aviācijas regulējums — ES likumi, kas stāv aiz katra noteikuma, ko līdz šim apguvi.
+</Debrief>

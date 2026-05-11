@@ -1,35 +1,104 @@
 # UAS classes C0–C4
 
-EU Regulation 2019/945 defines **class markings** that determine which
-Open-category sub-category a UAS may operate in.
+<MissionBriefing objective="After this lesson you will read a class marking on any drone, know which sub-category it unlocks, and understand why a legacy (unmarked) drone has different rules than a new C1 — even if they weigh the same.">
+The class marking on the drone's body is set by the manufacturer. The pilot's certificate does not change it. The drone decides the sub-category.
+</MissionBriefing>
 
-## Five markings
+<CinematicScene
+  src="/lessons/drone-classes-c0-c4.png"
+  alt="Five drone class icons C0 through C4 arranged on a dark background with mass limits and sub-category labels in cyan"
+  caption="Diagram · uas-classes-c0-c4"
+/>
 
-| Class | MTOM | Typical use |
-|-------|------|-------------|
-| **C0** | < 250 g, max speed 19 m/s | A1 — overflight of individuals allowed (not assemblies). |
-| **C1** | < 900 g | A1 — reasonably expected not to fly over uninvolved people. |
-| **C2** | < 4 kg, with low-speed mode | A2 — min. 5 m horizontal (low-speed) or 30 m (normal). |
-| **C3** | < 25 kg | A3 — at least 150 m from residential / commercial areas. |
-| **C4** | < 25 kg, manual control only | A3 — model-aircraft style operations. |
+## What class markings are
 
-## Where to find the class
+EU Regulation 2019/945 defines five UAS class markings — C0 through C4. Each is physically stamped on the drone body with a CE mark. The marking determines which Open-category sub-category the drone may be used in. **You cannot re-classify a drone** by choosing to operate under different rules.
 
-The class marking is **on the UAS body** (CE mark + class, e.g., "C1").
-Older drones (pre-2024) may not have a marking — those are called "legacy"
-and are placed by mass.
+## The five classes
 
-## Legacy drones
+| Class | MTOM | Key requirement | Sub-category |
+|-------|------|-----------------|--------------|
+| **C0** | < 250 g, max 19 m/s | No marking needed on small toys | A1 only |
+| **C1** | < 900 g | Remote ID, geo-awareness | A1 only |
+| **C2** | < 4 kg | Low-speed mode (≤ 3 m/s) | A2 or A3 |
+| **C3** | < 25 kg | Remote ID, geo-awareness | A3 only |
+| **C4** | < 25 kg | Manual control only (no autonomous modes) | A3 only |
 
-If the drone is not marked:
+**C0** is the only class that permits overflying uninvolved individuals — but **never** assemblies of people. **C1** in A1 requires the pilot to plan around people, not over them.
 
-- < 250 g — A1 as C0;
-- < 25 kg — A3 as C3.
+<ClassComparator />
 
-## Why it matters
+## Legacy drones — no class marking
 
-**You cannot fly a C2 or C3 drone in A1** — regardless of pilot skill.
-The class fixes the sub-category, not the pilot's choice.
+Drones manufactured before the class system took effect may not carry any class marking. These "legacy" UAS are slotted by mass:
 
-> **Source:** Reg (EU) 2019/945 Annex (C0–C4 requirements); EASA Easy
-> Access Rules for UAS — Subcategories.
+- **< 250 g** — treated as C0, may operate in A1.
+- **250 g to 25 kg** — treated as C3, must operate in A3.
+
+A legacy drone that weighs 800 g gets **A3 rules** — not A1 — even though a new C1 drone at the same weight operates in A1. The certification matters, not just the mass.
+
+## Why C2 is the professional pivot
+
+C2 is the only class that enables **A2 operations** — close commercial work within 5–30 m of uninvolved persons. The pilot must hold the A1/A3 certificate **plus** the A2 competence certificate. A C2 drone flown by a pilot with only the A1/A3 certificate must still follow A3 rules: 150 m from inhabited areas, 30 m from persons.
+
+<Scenario title="You hold an A1/A3 certificate and your drone is marked C2. A client asks you to film 25 m from a group of construction workers who have not given consent. Can you do it?">
+**No.** With only the A1/A3 certificate, a C2 drone must operate in A3. A3 requires ≥ 30 m from uninvolved persons. 25 m violates that limit.
+
+To close to 25 m, you would need the A2 competence certificate. The construction workers' professional presence does not automatically make them "involved persons" under the regulation — consent alone is insufficient; the correct sub-category authorisation is also required.
+</Scenario>
+
+<MemoryAnchor
+  rule="C0 → A1. C1 → A1. C2 → A2 (with A2 cert) or A3. C3/C4 → A3. Legacy < 250 g → A1. Legacy > 250 g → A3."
+  hint="The drone's stamp, not the pilot's preference, defines the rules."
+/>
+
+<CommonMistakes>
+- Assuming a heavy C1 drone (e.g. 850 g) can fly closer to people than a light C2 — C1 drones never operate under A2 rules regardless of mass.
+- Flying a C2 drone in A2 with only the A1/A3 certificate — the A2 competence certificate is a separate requirement.
+- Thinking a legacy drone can claim A1 privileges by mass — a 300 g legacy drone is A3, not A1.
+- Confusing C4 "manual control only" with "no certificate needed" — C4 still requires the A1/A3 certificate for A3 operations.
+- Believing the pilot can "downgrade" a C2 to operate it under C0 rules — class is fixed by manufacture.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "ug-q1",
+    stem: "A drone is marked C3 and weighs 18 kg. The pilot holds an A1/A3 certificate. In which sub-category may the pilot operate, and what distance from uninvolved persons applies?",
+    options: [
+      { id: "a", text: "A1 — no distance requirement since A1 allows overflight." },
+      { id: "b", text: "A2 — 30 m from uninvolved persons in normal speed mode." },
+      { id: "c", text: "A3 — ≥ 30 m from uninvolved persons and ≥ 150 m from inhabited areas." },
+      { id: "d", text: "No flight permitted — C3 drones require an A2 certificate." },
+    ],
+    correctOptionId: "c",
+    explanation: "C3 drones operate exclusively in A3. The A1/A3 certificate is sufficient for A3. A3 rules require ≥ 30 m from uninvolved persons (or 1:1 altitude rule, whichever is greater) and ≥ 150 m from residential, commercial, industrial, or recreational areas.",
+    distractorRationales: {
+      a: "C3 cannot operate in A1. A1 only accepts C0 and C1 drones.",
+      b: "A2 rules require a C2 drone plus the A2 competence certificate — neither applies here.",
+      d: "C3 drones in A3 require only the A1/A3 certificate. No A2 certificate is needed for A3.",
+    },
+  },
+  {
+    id: "ug-q2",
+    stem: "A pilot owns a drone manufactured in 2019 with no class marking and a take-off mass of 450 g. Under which rules must it operate?",
+    options: [
+      { id: "a", text: "A1, like a C1 drone — the mass is under 900 g." },
+      { id: "b", text: "A3, like a C3 drone — it is a legacy drone over 250 g." },
+      { id: "c", text: "A2, since it is between 250 g and 4 kg." },
+      { id: "d", text: "The pilot chooses the sub-category since there is no marking." },
+    ],
+    correctOptionId: "b",
+    explanation: "Legacy drones (no class marking) between 250 g and 25 kg are treated as C3 and must operate in A3. The mass comparison to C1 does not apply — class marking, not mass alone, determines the sub-category for new drones. Legacy drones follow the mass-based placement rule.",
+    distractorRationales: {
+      a: "The C1/A1 placement applies to drones with an actual C1 marking. A legacy drone at 450 g is not C1.",
+      c: "There is no 'A2 by default for legacy drones' rule. Legacy drones go to A1 only if under 250 g.",
+      d: "Sub-category is not the pilot's choice. Legacy drones are placed by the regulation's mass-based rule.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ug-002"]}>
+You can read any class marking, match it to the correct sub-category, and explain why legacy drones follow different rules.
+
+Next: Batteries and storage — the energy source that powers every flight and the safety hazard that causes most drone fires.
+</Debrief>

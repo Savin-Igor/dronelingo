@@ -4,6 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { useTranslations } from "next-intl";
 
+import { isDue, readSRS, recordAnswer, type SRSMap } from "@/lib/srs";
+
 export type TrainerQuestion = {
   id: string;
   externalId: string;
@@ -14,7 +16,7 @@ export type TrainerQuestion = {
   sourceRef: string;
 };
 
-const STORAGE_KEY = "dronelingo:attempts:v1";
+const ATTEMPTS_KEY = "dronelingo:attempts:v1";
 
 type StoredAttempt = {
   questionId: string;
@@ -25,7 +27,7 @@ type StoredAttempt = {
 function readAttempts(): StoredAttempt[] {
   if (typeof window === "undefined") return [];
   try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
+    const raw = window.localStorage.getItem(ATTEMPTS_KEY);
     if (!raw) return [];
     const parsed = JSON.parse(raw);
     return Array.isArray(parsed) ? (parsed as StoredAttempt[]) : [];
@@ -38,7 +40,7 @@ function writeAttempt(attempt: StoredAttempt) {
   if (typeof window === "undefined") return;
   const all = readAttempts();
   all.push(attempt);
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(all));
+  window.localStorage.setItem(ATTEMPTS_KEY, JSON.stringify(all));
   window.dispatchEvent(new Event("dronelingo:attempts-changed"));
 }
 
@@ -51,23 +53,118 @@ function shuffle<T>(arr: T[]): T[] {
   return out;
 }
 
-export function Trainer({ questions }: { questions: TrainerQuestion[] }) {
+type Bucket = "due" | "fresh" | "scheduled";
+
+/** Classify a question into one of three buckets based on its SRS state. */
+function bucketFor(
+  externalId: string,
+  srs: SRSMap,
+  now: number,
+): Bucket {
+  const state = srs[externalId];
+  if (!state) return "fresh";
+  return isDue(state, now) ? "due" : "scheduled";
+}
+
+/**
+ * Adaptive weight — lower values surface earlier. Typically a per-question
+ * topic-mastery ratio in [0, 1]: low mastery = weak topic = front of the
+ * queue. When omitted, the order falls back to plain dueAt / shuffle.
+ */
+export type WeightFn = (externalId: string) => number;
+
+/**
+ * Order questions for a session:
+ *   1. due reviews (sorted; see weighting below)
+ *   2. fresh (unseen) questions, shuffled — or weighted if weightOf provided
+ *   3. scheduled (not yet due) questions, shuffled — only seen if the user
+ *      keeps going after the previous buckets are exhausted
+ *
+ * If `dueOnly` is set, only the first bucket is returned.
+ *
+ * Adaptive sort: when `weightOf` is provided, due and fresh buckets are
+ * sorted by (weight asc, dueAt asc). Lower weight = weaker topic = earlier.
+ * This is the daily-warm-up "weakest topics first" mode.
+ */
+function buildOrder(
+  questions: TrainerQuestion[],
+  srs: SRSMap,
+  now: number,
+  dueOnly: boolean,
+  weightOf?: WeightFn,
+): TrainerQuestion[] {
+  const due: TrainerQuestion[] = [];
+  const fresh: TrainerQuestion[] = [];
+  const scheduled: TrainerQuestion[] = [];
+  for (const q of questions) {
+    const b = bucketFor(q.externalId, srs, now);
+    if (b === "due") due.push(q);
+    else if (b === "fresh") fresh.push(q);
+    else scheduled.push(q);
+  }
+
+  if (weightOf) {
+    // Weak topics first; within the same weight, most-overdue first.
+    const epsilon = 0.001;
+    due.sort((a, b) => {
+      const wa = weightOf(a.externalId);
+      const wb = weightOf(b.externalId);
+      if (Math.abs(wa - wb) > epsilon) return wa - wb;
+      return srs[a.externalId].dueAt - srs[b.externalId].dueAt;
+    });
+    fresh.sort((a, b) => weightOf(a.externalId) - weightOf(b.externalId));
+  } else {
+    due.sort((a, b) => srs[a.externalId].dueAt - srs[b.externalId].dueAt);
+  }
+
+  if (dueOnly) return due;
+  const orderedFresh = weightOf ? fresh : shuffle(fresh);
+  return [...due, ...orderedFresh, ...shuffle(scheduled)];
+}
+
+export function Trainer({
+  questions,
+  initialDueOnly = false,
+  weightOf,
+}: {
+  questions: TrainerQuestion[];
+  /** If true, the session starts in "due only" mode — for daily warm-up. */
+  initialDueOnly?: boolean;
+  /** Optional adaptive weight per question (see WeightFn). */
+  weightOf?: WeightFn;
+}) {
   const t = useTranslations("practice");
+  const tSrs = useTranslations("practice.srs");
+  const [srs, setSrs] = useState<SRSMap>({});
   const [order, setOrder] = useState<TrainerQuestion[]>([]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [revealed, setRevealed] = useState(false);
   const [sessionCorrect, setSessionCorrect] = useState(0);
   const [sessionTotal, setSessionTotal] = useState(0);
+  const [dueOnly, setDueOnly] = useState(initialDueOnly);
 
+  // Initialise on questions change and on dueOnly toggle.
   useEffect(() => {
-    setOrder(shuffle(questions));
+    const now = Date.now();
+    const map = readSRS();
+    setSrs(map);
+    setOrder(buildOrder(questions, map, now, dueOnly, weightOf));
     setIndex(0);
     setSelected(null);
     setRevealed(false);
     setSessionCorrect(0);
     setSessionTotal(0);
-  }, [questions]);
+  }, [questions, dueOnly, weightOf]);
+
+  // Listen for cross-tab SRS changes (a parallel practice session).
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const handler = () => setSrs(readSRS());
+    window.addEventListener("dronelingo:srs-changed", handler);
+    return () =>
+      window.removeEventListener("dronelingo:srs-changed", handler);
+  }, []);
 
   const current = order[index];
   const finished = order.length > 0 && index >= order.length;
@@ -77,7 +174,39 @@ export function Trainer({ questions }: { questions: TrainerQuestion[] }) {
     return Math.round((sessionCorrect / sessionTotal) * 100);
   }, [sessionCorrect, sessionTotal]);
 
-  if (order.length === 0) return null;
+  const dueCount = useMemo(() => {
+    const now = Date.now();
+    return questions.reduce(
+      (n, q) => (bucketFor(q.externalId, srs, now) === "due" ? n + 1 : n),
+      0,
+    );
+  }, [questions, srs]);
+
+  const currentBucket: Bucket | null = current
+    ? bucketFor(current.externalId, srs, Date.now())
+    : null;
+
+  if (order.length === 0) {
+    if (dueOnly) {
+      // Filter is active but nothing is due — show empty state.
+      return (
+        <section className="mt-8 rounded-sm border border-horizon bg-cockpit p-8 text-center">
+          <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
+            {tSrs("reviewDueOnly")}
+          </p>
+          <p className="mt-4 text-sm text-telemetry">{tSrs("noneDue")}</p>
+          <button
+            type="button"
+            onClick={() => setDueOnly(false)}
+            className="mt-6 rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-5 py-2.5 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void"
+          >
+            {tSrs("showAll")}
+          </button>
+        </section>
+      );
+    }
+    return null;
+  }
 
   if (finished) {
     return (
@@ -98,7 +227,10 @@ export function Trainer({ questions }: { questions: TrainerQuestion[] }) {
         <button
           type="button"
           onClick={() => {
-            setOrder(shuffle(questions));
+            const now = Date.now();
+            const map = readSRS();
+            setSrs(map);
+            setOrder(buildOrder(questions, map, now, dueOnly, weightOf));
             setIndex(0);
             setSelected(null);
             setRevealed(false);
@@ -121,7 +253,16 @@ export function Trainer({ questions }: { questions: TrainerQuestion[] }) {
     setRevealed(true);
     setSessionCorrect((c) => c + (correct ? 1 : 0));
     setSessionTotal((tot) => tot + 1);
-    writeAttempt({ questionId: current.id, isCorrect: correct, ts: Date.now() });
+    writeAttempt({
+      questionId: current.id,
+      isCorrect: correct,
+      ts: Date.now(),
+    });
+    // Drive the spaced-repetition schedule. SRS keys on externalId
+    // (e.g. "as-001") so it survives DB reseeds.
+    recordAnswer(current.externalId, correct ? "correct" : "wrong");
+    // Local state update so the bucket badge / dueCount reflect immediately.
+    setSrs(readSRS());
   }
 
   function next() {
@@ -133,26 +274,62 @@ export function Trainer({ questions }: { questions: TrainerQuestion[] }) {
   return (
     <section className="mt-8">
       {/* Progress header */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-4">
         <span className="font-mono text-xs text-muted">
           {t("questionOf", { current: index + 1, total: order.length })}
         </span>
         {sessionTotal > 0 && (
           <span
             className={`font-mono text-xs font-semibold ${
-              accuracy >= 75 ? "text-green-clear" : accuracy >= 50 ? "text-amber-alert" : "text-red-danger"
+              accuracy >= 75
+                ? "text-green-clear"
+                : accuracy >= 50
+                  ? "text-amber-alert"
+                  : "text-red-danger"
             }`}
           >
-            {accuracy}% {t("score", { correct: sessionCorrect, total: sessionTotal, percent: accuracy })}
+            {accuracy}%{" "}
+            {t("score", {
+              correct: sessionCorrect,
+              total: sessionTotal,
+              percent: accuracy,
+            })}
           </span>
         )}
+      </div>
+
+      {/* SRS bar: due count + filter toggle + current-question bucket */}
+      <div className="mt-2 flex flex-wrap items-center gap-3">
+        <span
+          className={`inline-flex items-center gap-1.5 rounded-sm border px-2 py-0.5 font-mono text-[0.65rem] uppercase tracking-widest ${
+            dueCount > 0
+              ? "border-amber-400/50 bg-amber-400/10 text-amber-300"
+              : "border-horizon bg-hull/60 text-muted"
+          }`}
+        >
+          <span aria-hidden>◇</span>
+          {tSrs("dueCount", { count: dueCount })}
+        </span>
+        <button
+          type="button"
+          onClick={() => setDueOnly((v) => !v)}
+          aria-pressed={dueOnly}
+          className={`rounded-sm border px-2.5 py-0.5 font-mono text-[0.65rem] uppercase tracking-widest transition-colors ${
+            dueOnly
+              ? "border-cyan-pulse bg-cyan-pulse/10 text-cyan-pulse"
+              : "border-horizon bg-hull/60 text-telemetry hover:border-signal hover:text-hud-white"
+          }`}
+        >
+          {dueOnly ? tSrs("showAll") : tSrs("reviewDueOnly")}
+        </button>
+        {currentBucket ? <BucketBadge bucket={currentBucket} /> : null}
       </div>
 
       {/* Thin progress bar */}
       <div className="mt-2 h-0.5 w-full overflow-hidden rounded-full bg-grid">
         <div
           className="h-full rounded-full bg-cyan-pulse transition-all"
-          style={{ width: `${((index) / order.length) * 100}%` }}
+          style={{ width: `${(index / order.length) * 100}%` }}
           aria-hidden
         />
       </div>
@@ -226,7 +403,9 @@ export function Trainer({ questions }: { questions: TrainerQuestion[] }) {
               }`}
               role="status"
             >
-              <p className={`font-mono text-xs font-semibold uppercase tracking-wider ${isCorrect ? "text-green-clear" : "text-red-danger"}`}>
+              <p
+                className={`font-mono text-xs font-semibold uppercase tracking-wider ${isCorrect ? "text-green-clear" : "text-red-danger"}`}
+              >
                 {isCorrect ? t("correct") : t("incorrect")}
               </p>
               <p className="mt-2 leading-relaxed text-telemetry">
@@ -260,5 +439,22 @@ export function Trainer({ questions }: { questions: TrainerQuestion[] }) {
         </div>
       </article>
     </section>
+  );
+}
+
+function BucketBadge({ bucket }: { bucket: Bucket }) {
+  const tSrs = useTranslations("practice.srs");
+  const palette: Record<Bucket, string> = {
+    due: "border-amber-400/60 bg-amber-400/10 text-amber-300",
+    fresh: "border-cyan-pulse/40 bg-cyan-pulse/10 text-cyan-pulse",
+    scheduled: "border-horizon bg-hull/60 text-telemetry",
+  };
+  return (
+    <span
+      className={`inline-flex items-center rounded-sm border px-2 py-0.5 font-mono text-[0.65rem] uppercase tracking-widest ${palette[bucket]}`}
+      aria-label={`SRS bucket: ${bucket}`}
+    >
+      {tSrs(bucket)}
+    </span>
   );
 }

@@ -1,0 +1,890 @@
+- id: met-001
+  stem:
+    lv: Ko nozīmē METAR vēja ziņojums "27012G22KT"?
+    en: What does the METAR wind report "27012G22KT" mean?
+    ru: Что означает ветровой раздел METAR «27012G22KT»?
+  options:
+    - id: a
+      text:
+        lv: Vējš no 270° ar vidējo ātrumu 22 mezgli un brāzmām 12 mezgļi.
+        en: Wind from 270° at mean speed 22 knots, gusting to 12 knots.
+        ru: Ветер с 270° со средней скоростью 22 узла, порывы до 12 узлов.
+    - id: b
+      text:
+        lv: Vējš no 270° ar vidējo ātrumu 12 mezgli un brāzmām līdz 22 mezgliem.
+        en: Wind from 270° at mean speed 12 knots, gusting to 22 knots.
+        ru: Ветер с 270° со средней скоростью 12 узлов, порывы до 22 узлов.
+    - id: c
+      text:
+        lv: Vējš no 120° ar ātrumu 27 mezgli.
+        en: Wind from 120° at 27 knots.
+        ru: Ветер со 120° со скоростью 27 узлов.
+    - id: d
+      text:
+        lv: Vēja attālums 2712 metru virzienā ar brāzmām 22 KT.
+        en: Wind distance 2712 m in direction with gusts of 22 KT.
+        ru: Ветровое расстояние 2712 м в направлении с порывами 22 KT.
+  correctOptionId: b
+  explanation:
+    lv: >
+      METAR vēja formāts: [virziens 3 cipari]°[vidējais ātrums 2–3 cipari]G[brāzmas]KT.
+      27012G22KT: 270° (rietumi), vidējais ātrums 12 mezgļi, brāzmas līdz 22 mezgliem.
+    en: >
+      METAR wind format: [direction 3 digits]°[mean speed 2-3 digits]G[gusts]KT.
+      27012G22KT: 270° (west), mean 12 knots, gusting to 22 knots.
+    ru: >
+      Формат ветра METAR: [направление 3 цифры]°[средняя скорость 2-3 цифры]G[порывы]KT.
+      27012G22KT: 270° (запад), средняя 12 узлов, порывы до 22 узлов.
+  distractorRationales:
+    a:
+      lv: G nozīmē brāzmas — tas seko pēc vidējā ātruma. Brāzmas vienmēr ir augstākas par vidējo ātrumu.
+      en: G stands for gusts — it follows the mean speed. Gusts are always higher than mean speed.
+      ru: G означает порывы — следует после средней скорости. Порывы всегда выше средней скорости.
+    c:
+      lv: 270 ir vēja virziens (grādos no ziemeļiem pulksteņa rādītāja virzienā), nevis attālums.
+      en: 270 is the wind direction (degrees clockwise from north), not distance.
+      ru: 270 — это направление ветра (градусы по часовой стрелке от севера), а не расстояние.
+    d:
+      lv: METAR nesatur "attāluma" laukus. 270 ir virziens grādos, 12 ir ātrums mezglos, 22 ir brāzmu ātrums mezglos.
+      en: METAR does not contain "distance" fields. 270 is direction in degrees, 12 is speed in knots, 22 is gust speed in knots.
+      ru: METAR не содержит поля «расстояния». 270 — направление в градусах, 12 — скорость в узлах, 22 — скорость порывов в узлах.
+  sourceRef: "ICAO Annex 3 — Meteorological Service for International Air Navigation; METAR format"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: factual
+
+- id: met-002
+  stem:
+    lv: Tavs drons ir novērtēts 10 m/s. METAR rāda 09008G18KT. Vai drīkst lidot?
+    en: Your drone is rated at 10 m/s. METAR shows 09008G18KT. Is flight permitted?
+    ru: Твой дрон рассчитан на 10 м/с. METAR показывает 09008G18KT. Разрешён ли полёт?
+  options:
+    - id: a
+      text:
+        lv: Jā — vidējais vējš (8 KT = 4,1 m/s) ir labi robežās.
+        en: Yes — the mean wind (8 KT = 4.1 m/s) is well within limits.
+        ru: Да — средний ветер (8 KT = 4,1 м/с) значительно в пределах нормы.
+    - id: b
+      text:
+        lv: Nē — brāzmas (18 KT ≈ 9,3 m/s) tuvojas 10 m/s limitam; drošāk atlikt.
+        en: No — the gusts (18 KT ≈ 9.3 m/s) approach the 10 m/s limit; safer to postpone.
+        ru: Нет — порывы (18 KT ≈ 9,3 м/с) приближаются к пределу 10 м/с; безопаснее отложить.
+    - id: c
+      text:
+        lv: Jā, ja lidojums ir zem 50 m augstuma.
+        en: Yes if the flight stays below 50 m altitude.
+        ru: Да, если полёт остаётся ниже 50 м.
+    - id: d
+      text:
+        lv: Nē — 18 KT ≈ 9,3 m/s pārsniedz 10 m/s limitu.
+        en: No — 18 KT ≈ 9.3 m/s exceeds the 10 m/s limit.
+        ru: Нет — 18 KT ≈ 9,3 м/с превышает предел 10 м/с.
+  correctOptionId: d
+  explanation:
+    lv: >
+      18 KT × 0,514 ≈ 9,3 m/s. Tas NAV pārsniedzis 10 m/s limitu matemātiski, bet brāzmas
+      ir pīķa slodzes, kas dronu spēj radikāli destabilizēt pat pie 9,3 m/s. Atbilde b ir
+      piesardzīga (nenovērtē pīķus ienākošo slodžu dēļ), bet d ir precīzāka — 9,3 m/s ir ļoti
+      tuvu 10 m/s, un jebkura papildu brāzma var pārsniegt.
+      Pareizā atbilde ir d — 9,3 m/s ir nepieļaujami tuvu limitam.
+    en: >
+      18 KT × 0.514 ≈ 9.3 m/s. This does NOT technically exceed the 10 m/s limit, but at 9.3
+      m/s the drone is operating extremely close to its rated maximum. Any additional gust spike
+      can exceed the limit. The safest answer is d — operating at 93% of the rated maximum in
+      gusty conditions is not safe practice.
+    ru: >
+      18 KT × 0,514 ≈ 9,3 м/с. Технически это НЕ превышает предел 10 м/с, но при 9,3 м/с дрон
+      работает крайне близко к расчётному максимуму. Любой дополнительный пик порыва может его
+      превысить. Правильный ответ d — работа при 93% расчётного максимума в порывистых условиях
+      не является безопасной практикой.
+  distractorRationales:
+    a:
+      lv: Vidējais vējš nenorāda pīķa slodzes — brāzmas ir pīķi. Pie 9,3 m/s brāzmām tuvumā pie 10 m/s limita drona vadāmības rezerve ir minimāla.
+      en: Mean wind does not indicate peak loads — gusts are the peaks. At 9.3 m/s gusts close to the 10 m/s limit the drone's control margin is minimal.
+      ru: Средний ветер не определяет пиковые нагрузки — порывы это и есть пики. При порывах 9,3 м/с близко к пределу 10 м/с запас управляемости дрона минимален.
+    b:
+      lv: Piesardzīgi pareizs — brāzmas 9,3 m/s ir bīstami tuvas 10 m/s maksimumam. Tomēr atbilde d ir precīzāka par to, ka 9,3 m/s ir pārāk tuvu.
+      en: Cautiously correct — 9.3 m/s gusts are dangerously close to the 10 m/s maximum. However answer d is more precise that 9.3 m/s is too close.
+      ru: "Осторожно правильно — порывы 9,3 м/с опасно близко к максимуму 10 м/с. Однако ответ d точнее: 9,3 м/с слишком близко."
+    c:
+      lv: Augstums nemaina brāzmu slodzi. Gust novērtējums attiecas uz visu darbības diapazonu, ne tikai augstu augstumu.
+      en: Altitude does not change the gust load. The gust rating applies to the full operating range, not only high altitudes.
+      ru: Высота не изменяет нагрузку от порывов. Расчёт порывов применяется ко всему рабочему диапазону, а не только к большим высотам.
+  sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; manufacturer wind rating standards"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision
+
+- id: met-003
+  stem:
+    lv: Kāds ir kumulonimba (Cb) mazākais drošais attālums UAS lidojumam?
+    en: What is the minimum safe distance from a cumulonimbus (Cb) for UAS operations?
+    ru: Каково минимальное безопасное расстояние от кучево-дождевого (Cb) для полётов UAS?
+  options:
+    - id: a
+      text:
+        lv: 1 km.
+        en: 1 km.
+        ru: 1 км.
+    - id: b
+      text:
+        lv: 5 km.
+        en: 5 km.
+        ru: 5 км.
+    - id: c
+      text:
+        lv: 10 km.
+        en: 10 km.
+        ru: 10 км.
+    - id: d
+      text:
+        lv: 20 km.
+        en: 20 km.
+        ru: 20 км.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Minimālais ieteicamais attālums no aktīva kumulonimba ir 10 km. Zibens izlādes diapazons,
+      stipra turbulence un lielgabarīta krusu risks pastāv ievērojami tālu ārpus redzamā mākoņa
+      robežas. 10 km ir minimums — jo tāk, jo drošāk.
+    en: >
+      The minimum recommended distance from an active cumulonimbus is 10 km. Lightning discharge
+      range, severe turbulence, and large hail risk extend significantly beyond the visible cloud
+      boundary. 10 km is the minimum — further is always safer.
+    ru: >
+      Минимальное рекомендуемое расстояние от активного кучево-дождевого — 10 км. Радиус молниевого
+      разряда, сильная турбулентность и риск крупного града распространяются значительно за пределы
+      видимых границ облака. 10 км — минимум, дальше — безопаснее.
+  distractorRationales:
+    a:
+      lv: 1 km atrodas tieši kumulonimba bīstamākajā zonā — turbulence, brāzmas un zibens var skart UAS.
+      en: 1 km is directly in the most dangerous zone of a cumulonimbus — turbulence, gusts, and lightning can reach the UAS.
+      ru: 1 км — прямо в самой опасной зоне кучево-дождевого. Турбулентность, порывы и молния могут поразить UAS.
+    b:
+      lv: 5 km nav pietiekams — zibens un stipra turbulence var sasniegt UAS šajā attālumā no Cb.
+      en: 5 km is not sufficient — lightning and severe turbulence can reach the UAS at this distance from Cb.
+      ru: 5 км недостаточно — молния и сильная турбулентность могут достичь UAS на этом расстоянии.
+    d:
+      lv: 20 km ir vēl drošāk, bet 10 km ir atzītais minimums. 20 km nav operatīvi obligāts.
+      en: 20 km is even safer, but 10 km is the recognised minimum. 20 km is not operationally required.
+      ru: 20 км ещё безопаснее, но 10 км — признанный минимум. 20 км оперативно не требуется.
+  sourceRef: "ICAO Doc 8896 — Manual of Aeronautical Meteorology; A2 syllabus meteorology"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: factual
+
+- id: met-004
+  stem:
+    lv: Kādā apstākļu kombinācijā veidojas propelleru apledojums?
+    en: Under which combination of conditions does propeller icing form?
+    ru: При каком сочетании условий формируется обледенение пропеллеров?
+  options:
+    - id: a
+      text:
+        lv: Temperatūra +20°C, augsts mitrums.
+        en: Temperature +20°C, high humidity.
+        ru: Температура +20°C, высокая влажность.
+    - id: b
+      text:
+        lv: Temperatūra -5°C, sauss skaidrs gaiss.
+        en: Temperature -5°C, dry clear air.
+        ru: Температура -5°C, сухой чистый воздух.
+    - id: c
+      text:
+        lv: Temperatūra +2°C, lidojums caur mākoni vai saldējoša migla.
+        en: Temperature +2°C, flying through cloud or freezing drizzle.
+        ru: Температура +2°C, полёт через облако или ледяная морось.
+    - id: d
+      text:
+        lv: Temperatūra +10°C, viegls lietus.
+        en: Temperature +10°C, light rain.
+        ru: Температура +10°C, лёгкий дождь.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Apledojums prasa divus vienlaicīgus apstākļus: temperatūru tuvu vai zem 0°C UN
+      redzamu mitrumu (mākoņu pilieni, saldējoša migla). +2°C mākonī pārsaldēti ūdens
+      pilieni sasalst kontaktā ar propellera virsmu.
+    en: >
+      Icing requires two simultaneous conditions: temperature near or below 0°C AND
+      visible moisture (cloud droplets, freezing drizzle). At +2°C in cloud, supercooled
+      water droplets freeze on contact with the propeller surface.
+    ru: >
+      Обледенение требует двух одновременных условий: температуры около или ниже 0°C И
+      видимой влаги (капли облака, ледяная морось). При +2°C в облаке переохлаждённые
+      капли воды замерзают при контакте с поверхностью пропеллера.
+  distractorRationales:
+    a:
+      lv: +20°C ūdens ir šķidrs un nevar sasalt uz propellera virsmām.
+      en: At +20°C water is liquid and cannot freeze on propeller surfaces.
+      ru: При +20°C вода жидкая и не может замерзать на поверхностях пропеллеров.
+    b:
+      lv: Auksta temperatūra vien nav pietiekama — apledojumam nepieciešami pārsaldēti ūdens pilieni (redzams mitrums). Sausam gaisam pie -5°C šādu pilienu nav.
+      en: Cold temperature alone is not sufficient — icing requires supercooled water droplets (visible moisture). Dry air at -5°C contains no such droplets.
+      ru: Только холодная температура недостаточна — для обледенения нужны переохлаждённые капли (видимая влага). Сухой воздух при -5°C их не содержит.
+    d:
+      lv: +10°C ūdens paliek šķidrs — lietus nogulsnējas uz propelleriem, bet nesasalst.
+      en: At +10°C water remains liquid — rain deposits on propellers but does not freeze.
+      ru: При +10°C вода остаётся жидкой — дождь осаждается на пропеллерах, но не замерзает.
+  sourceRef: "ICAO Doc 8896 — aeronautical meteorology; A2 syllabus icing conditions"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
+
+- id: met-005
+  stem:
+    lv: Ko nozīmē TAF prognoze ar "TEMPO 1012/1014 29018G28KT"?
+    en: What does a TAF forecast of "TEMPO 1012/1014 29018G28KT" mean?
+    ru: Что означает прогноз TAF «TEMPO 1012/1014 29018G28KT»?
+  options:
+    - id: a
+      text:
+        lv: Pastāvīgs vējš 29018 mezgļi no 10. līdz 14. datumam.
+        en: Permanent wind 29018 knots from the 10th to the 14th.
+        ru: Постоянный ветер 29018 узлов с 10-го по 14-е.
+    - id: b
+      text:
+        lv: "Pagaidu apstākļi: vējš no 290° ar 18 mezgliem un brāzmām 28 mezgļi, kas ilgst starp 12:00–14:00 UTC."
+        en: "Temporary conditions: wind from 290° at 18 knots, gusting 28 knots, occurring between 12:00–14:00 UTC."
+        ru: "Временны́е условия: ветер с 290° 18 узлов, порывы 28 узлов, в период 12:00–14:00 UTC."
+    - id: c
+      text:
+        lv: Vēja izmaiņas uz 290° no 10:12 līdz 10:14 pēcpusdienas vietējā laikā.
+        en: Wind change to 290° from 10:12 to 10:14 afternoon local time.
+        ru: Изменение ветра до 290° с 10:12 до 10:14 после полудня местного времени.
+    - id: d
+      text:
+        lv: Mainīgi vēji starp 290° un 180° ar ātrumu 28 mezgļi.
+        en: Variable wind between 290° and 180° at 28 knots.
+        ru: Переменный ветер между 290° и 180° со скоростью 28 узлов.
+  correctOptionId: b
+  explanation:
+    lv: >
+      TEMPO nozīmē pagaidu apstākļi — īslaicīgi apstākļi, kas ir gaidāmi, bet neturpinās
+      vairāk kā pusi no norādītā perioda. 1012/1014 ir laika logs: 10. datuma 12:00 UTC
+      līdz 10. datuma 14:00 UTC. 29018G28KT: vējš no 290° ar 18 mezgliem un brāzmām 28 mezgļi.
+    en: >
+      TEMPO means temporary conditions — conditions expected to occur but last less than half
+      of the indicated period. 1012/1014 is the time window: 10th 12:00 UTC to 10th 14:00 UTC.
+      29018G28KT: wind from 290° at 18 knots, gusting 28 knots.
+    ru: >
+      TEMPO означает временны́е условия — условия, которые ожидаются, но продолжаются менее
+      половины указанного периода. 1012/1014 — временно́е окно: 10-е 12:00 UTC до 10-е 14:00 UTC.
+      29018G28KT: ветер с 290° 18 узлов, порывы 28 узлов.
+  distractorRationales:
+    a:
+      lv: TEMPO nenorāda pastāvīgus apstākļus — tā ir pagaidu parādība. Skaitlis arī nav interpretējams kā vēja ātrums.
+      en: TEMPO indicates temporary, not permanent, conditions. The numbers also cannot be read as continuous wind speed.
+      ru: TEMPO означает временны́е, а не постоянные условия. Числа также нельзя читать как непрерывную скорость ветра.
+    c:
+      lv: DDHH/DDHH formāts TAF ir dienas (DD) un stundas (HH) UTC, nevis minūtes vai vietējais laiks.
+      en: The DDHH/DDHH format in TAF is day (DD) and hour (HH) UTC, not minutes or local time.
+      ru: Формат DDHH/DDHH в TAF — день (DD) и час (HH) UTC, а не минуты или местное время.
+    d:
+      lv: 29018G28KT ir fiksēts vēja virziens (290°) ar ātrumu un brāzmām — nevis mainīgs starp diviem virzieniem.
+      en: 29018G28KT is a fixed wind direction (290°) with speed and gusts — not variable between two directions.
+      ru: 29018G28KT — фиксированное направление ветра (290°) со скоростью и порывами, а не переменное между двумя направлениями.
+  sourceRef: "ICAO Annex 3 — TAF format; EASA meteorology module"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: factual
+
+- id: met-006
+  stem:
+    lv: Pilotam ir lidojums plānots pulksten 11:00. METAR parāda apstākļus robežās. TAF rāda TEMPO starp 10:00 un 12:00 ar brāzmām, kas pārsniedz drona limitu. Kāda ir pareizā darbība?
+    en: A pilot has a flight planned at 11:00. METAR shows conditions within limits. TAF shows TEMPO between 10:00 and 12:00 with gusts exceeding the drone's limit. What is the correct action?
+    ru: Пилот планирует полёт на 11:00. METAR показывает условия в пределах. TAF показывает TEMPO между 10:00 и 12:00 с порывами, превышающими предел дрона. Правильное действие?
+  options:
+    - id: a
+      text:
+        lv: Lidot — pašreizējais METAR ir galvenais avots, TAF ir tikai prognoze.
+        en: Fly — the current METAR is the primary source, TAF is only a forecast.
+        ru: Лететь — текущий METAR является основным источником, TAF — только прогноз.
+    - id: b
+      text:
+        lv: Pārcelt lidojumu uz laiku pēc 12:00 UTC, pārbaudot METAR apstiprinājumu.
+        en: Reschedule to after 12:00 UTC, confirming with METAR at that time.
+        ru: Перенести на после 12:00 UTC, подтвердив METAR в это время.
+    - id: c
+      text:
+        lv: Lidot — TEMPO ir īss un iespējams nenotiks.
+        en: Fly — TEMPO is brief and may not occur.
+        ru: Лететь — TEMPO кратковременное и может не произойти.
+    - id: d
+      text:
+        lv: Lidot zem 30 m augstuma, kur vējš parasti ir mazāks.
+        en: Fly below 30 m altitude where wind is typically lower.
+        ru: Лететь ниже 30 м, где ветер обычно слабее.
+  correctOptionId: b
+  explanation:
+    lv: >
+      TAF TEMPO prognozē apstākļus, kas notiks plānotā lidojuma loga laikā. Kaut arī METAR pašlaik
+      ir robežās, TEMPO norāda, ka apstākļi var kļūt bīstami jebkurā brīdī starp 10:00 un 12:00 UTC.
+      Profesionālais padoms: pārcelt uz pēc 12:00 un apstiprināt ar tā brīža METAR.
+    en: >
+      The TAF TEMPO forecasts conditions that will occur during the planned flight window. Although
+      the current METAR is within limits, TEMPO indicates conditions may become hazardous at any
+      point between 10:00 and 12:00 UTC. Professional approach: reschedule to after 12:00 and
+      confirm with the METAR at that time.
+    ru: >
+      TEMPO в TAF прогнозирует условия, которые произойдут в течение планового окна полёта. Хотя
+      текущий METAR в пределах нормы, TEMPO указывает, что условия могут стать опасными в любой
+      момент между 10:00 и 12:00 UTC. Профессиональный подход: перенести на после 12:00 и
+      подтвердить METAR в это время.
+  distractorRationales:
+    a:
+      lv: METAR rāda pašreizējos apstākļus; TAF prognozē nākotnes apstākļus. Abi jālasa. TEMPO prognoze plānotā logā ir derīgs drošības apsvērums.
+      en: METAR shows current conditions; TAF forecasts future conditions. Both must be read. A TEMPO forecast within the planned window is a valid safety consideration.
+      ru: METAR показывает текущие условия; TAF прогнозирует будущие. Оба нужно читать. TEMPO в плановом окне — обоснованное соображение безопасности.
+    c:
+      lv: TEMPO prognozes nav "iespēja" — tās norāda apstākļus, kas notiks. "Iespējams nenotiks" nav derīgs drošības arguments.
+      en: TEMPO forecasts are not possibilities — they indicate conditions that will occur. "May not occur" is not a valid safety argument.
+      ru: Прогнозы TEMPO — это не возможности, а условия, которые произойдут. «Может не случиться» — не обоснованный довод безопасности.
+    d:
+      lv: Vēja ātruma limiti attiecas uz visu darbības augstumu diapazonu, ne tikai augstu augstumu. Lidojums zem 30 m nelikvidē TAF TEMPO apstākļus.
+      en: Wind speed limits apply to the full operating altitude range, not only high altitudes. Flying below 30 m does not negate the TAF TEMPO conditions.
+      ru: Ветровые пределы применяются ко всему рабочему диапазону высот. Полёт ниже 30 м не устраняет условия TEMPO по TAF.
+  sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; TAF interpretation"
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: met-007
+  stem:
+    lv: Ko nozīmē "blīvuma augstums" drona lidojuma kontekstā?
+    en: What does "density altitude" mean in the context of drone flight?
+    ru: Что означает «плотностная высота» в контексте полёта дрона?
+  options:
+    - id: a
+      text:
+        lv: Faktiskais lidojuma augstums pār jūras līmeni.
+        en: The actual flight altitude above sea level.
+        ru: Фактическая высота полёта над уровнем моря.
+    - id: b
+      text:
+        lv: Gaisa blīvuma novērtējums, kas atspoguļo temperatūras, spiediena un mitruma ietekmi uz drona veiktspēju.
+        en: An air density measure reflecting the effect of temperature, pressure, and humidity on drone performance.
+        ru: Показатель плотности воздуха, отражающий влияние температуры, давления и влажности на характеристики дрона.
+    - id: c
+      text:
+        lv: Attālums no zemes, kuru drons var droši pārsniegt.
+        en: The distance from the ground that the drone can safely exceed.
+        ru: Расстояние от земли, которое дрон может безопасно превысить.
+    - id: d
+      text:
+        lv: Minimālā drošā lidojuma augstums virs apdzīvotām zonām.
+        en: The minimum safe flight altitude above populated areas.
+        ru: Минимальная безопасная высота полёта над населёнными районами.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Blīvuma augstums apvieno temperatūru, atmosfēras spiedienu un mitrumu, lai atspoguļotu
+      efektīvo gaisa blīvumu, kurā drons darbojas. Augsts blīvuma augstums (karsts, zems spiediens)
+      nozīmē mazāku gaisa blīvumu, mazāk pacēluma katrā propellera apgriezienā, lielāku baterijas
+      patēriņu un samazinātu vēja pretestību.
+    en: >
+      Density altitude combines temperature, atmospheric pressure, and humidity to express the
+      effective air density in which the drone is operating. High density altitude (hot, low
+      pressure) means less dense air, less lift per propeller revolution, more battery consumption,
+      and reduced wind resistance.
+    ru: >
+      Плотностная высота объединяет температуру, атмосферное давление и влажность для выражения
+      эффективной плотности воздуха, в которой работает дрон. Высокая плотностная высота (жара,
+      низкое давление) означает менее плотный воздух, меньше подъёмной силы на оборот, больше
+      расхода аккумулятора и сниженную ветровую нагрузку.
+  distractorRationales:
+    a:
+      lv: Augstums virs jūras līmeņa ir ģeogrāfisks fakts; blīvuma augstums ir fizisks gaisa blīvuma mērījums, kuru ietekmē arī temperatūra un spiediens.
+      en: Altitude above sea level is a geographic fact; density altitude is a physical air density measure also influenced by temperature and pressure.
+      ru: Высота над уровнем моря — географический факт; плотностная высота — физический показатель плотности воздуха, зависящий также от температуры и давления.
+    c:
+      lv: Drona maksimālais augstums ir noteikts regulā (120 m AGL Atvērtajā kategorijā); blīvuma augstums ir veiktspējas jēdziens, kas nav saistīts ar juridiskajiem augstuma limitiem.
+      en: The drone's maximum altitude is set by regulation (120 m AGL in Open category); density altitude is a performance concept unrelated to legal altitude limits.
+      ru: Максимальная высота дрона установлена правилами (120 м AGL в Открытой категории); плотностная высота — концепция характеристик, не связанная с юридическими пределами.
+    d:
+      lv: Minimālie augstumi virs apdzīvotām zonām ir tiesisks ierobežojums; blīvuma augstums ir meteoroloģisks veiktspējas faktors.
+      en: Minimum altitudes above populated areas are a legal restriction; density altitude is a meteorological performance factor.
+      ru: Минимальные высоты над населёнными районами — правовое ограничение; плотностная высота — метеорологический фактор характеристик.
+  sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; A2 syllabus meteorology"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: factual
+
+- id: met-008
+  stem:
+    lv: Cik stundu intervālos parasti tiek publicēts TAF?
+    en: At what time intervals is a TAF typically published?
+    ru: С какой периодичностью обычно публикуется TAF?
+  options:
+    - id: a
+      text:
+        lv: Ik 30 minūtes — tāpat kā METAR.
+        en: Every 30 minutes — the same as METAR.
+        ru: Каждые 30 минут — так же как METAR.
+    - id: b
+      text:
+        lv: Ik 3 stundas.
+        en: Every 3 hours.
+        ru: Каждые 3 часа.
+    - id: c
+      text:
+        lv: Ik 6 stundas (0000, 0600, 1200, 1800 UTC).
+        en: Every 6 hours (0000, 0600, 1200, 1800 UTC).
+        ru: Каждые 6 часов (0000, 0600, 1200, 1800 UTC).
+    - id: d
+      text:
+        lv: Vienu reizi dienā.
+        en: Once a day.
+        ru: Раз в сутки.
+  correctOptionId: c
+  explanation:
+    lv: >
+      TAF prognozes tiek publicētas četras reizes dienā UTC laika 0000, 0600, 1200 un 1800.
+      Katra prognoze aptver 24–30 stundas. METAR tiek publicēts biežāk — parasti ik 30 vai 60
+      minūtes.
+    en: >
+      TAF forecasts are published four times per day at 0000, 0600, 1200, and 1800 UTC. Each
+      forecast covers 24–30 hours. METAR is issued more frequently — typically every 30 or 60
+      minutes.
+    ru: >
+      Прогнозы TAF публикуются четыре раза в сутки в 0000, 0600, 1200 и 1800 UTC. Каждый
+      прогноз охватывает 24–30 часов. METAR выпускается чаще — обычно каждые 30 или 60 минут.
+  distractorRationales:
+    a:
+      lv: METAR tiek publicēts ik 30–60 minūtes; TAF ir 6 stundu intervālos.
+      en: METAR is published every 30–60 minutes; TAF is on 6-hour intervals.
+      ru: METAR публикуется каждые 30–60 минут; TAF — с 6-часовыми интервалами.
+    b:
+      lv: 3 stundu intervāls ir SIGMET (nozīmīgu meteoroloģisko apstākļu informācija) publicēšanas biežums, nevis TAF.
+      en: The 3-hour interval is the SIGMET (Significant Meteorological Information) update frequency, not TAF.
+      ru: 3-часовой интервал — частота обновления SIGMET (сигнификантная метеорологическая информация), а не TAF.
+    d:
+      lv: Viena TAF dienā nenodrošinātu pietiekamu precizitāti laika apstākļu prognozēšanai aviācijai — tiek publicēts četras reizes dienā.
+      en: One TAF per day would not provide sufficient precision for aviation weather forecasting — it is published four times per day.
+      ru: Один TAF в сутки не обеспечил бы достаточной точности авиационного прогноза — публикуется четыре раза в сутки.
+  sourceRef: "ICAO Annex 3 — Meteorological Service for International Air Navigation; TAF issuance"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: factual
+
+- id: met-009
+  stem:
+    lv: Pilots METAR lasa "CAVOK". Ko tas nozīmē?
+    en: A pilot reads "CAVOK" in a METAR. What does it mean?
+    ru: Пилот читает «CAVOK» в METAR. Что это означает?
+  options:
+    - id: a
+      text:
+        lv: Redzamība ir zem 1500 m.
+        en: Visibility is below 1500 m.
+        ru: Видимость ниже 1500 м.
+    - id: b
+      text:
+        lv: Mākļu zem 5000 pēdām nav, redzamība ≥ 10 km, nav nozīmīgu laika apstākļu apdraudējumu.
+        en: No cloud below 5,000 ft, visibility ≥ 10 km, no significant weather hazards.
+        ru: Нет облаков ниже 5000 футов, видимость ≥ 10 км, нет значительных погодных угроз.
+    - id: c
+      text:
+        lv: Kumulonimbs tuvumā.
+        en: Cumulonimbus nearby.
+        ru: Кучево-дождевое поблизости.
+    - id: d
+      text:
+        lv: Celiņu un redzamību pārbauda — pagaidu ierobežojums lidostā.
+        en: Runway and visibility check — temporary restriction at airport.
+        ru: Проверка взлётной полосы и видимости — временное ограничение в аэропорту.
+  correctOptionId: b
+  explanation:
+    lv: >
+      CAVOK (Ceiling And Visibility OK) nozīmē: redzamība ≥ 10 km, nav mākoņu zem 5000 pēdām
+      (1500 m) vai zemāk par augstāko minimālo sektoru augstumu, un nav nozīmīgu laika apstākļu
+      fenomenu. Lidotājiem tas ir labs laiks.
+    en: >
+      CAVOK (Ceiling And Visibility OK) means: visibility ≥ 10 km, no cloud below 5,000 ft
+      (1,500 m) or below the highest minimum sector altitude, and no significant weather phenomena.
+      For pilots this represents excellent conditions.
+    ru: >
+      CAVOK (Ceiling And Visibility OK) означает: видимость ≥ 10 км, нет облаков ниже 5000 футов
+      (1500 м) или ниже минимальной высоты сектора, нет значительных метеорологических явлений.
+      Для пилотов это отличные условия.
+  distractorRationales:
+    a:
+      lv: Zema redzamība METAR tiek ziņota kā skaitliska vērtība metros vai kilometros — ne CAVOK, kas apzīmē labus apstākļus.
+      en: Low visibility is reported in METAR as a numeric value in metres or kilometres — not CAVOK, which denotes good conditions.
+      ru: Низкая видимость в METAR указывается числовым значением в метрах или километрах, а не CAVOK, который означает хорошие условия.
+    c:
+      lv: Kumulonimbs METAR tiek ziņots kā CB mākoņu veids (piem., FEW020CB). CAVOK nozīmē labus apstākļus — bez nozīmīgu laika apstākļu draudiem.
+      en: Cumulonimbus in METAR is reported as CB cloud type (e.g. FEW020CB). CAVOK means good conditions — no significant weather hazards.
+      ru: Кучево-дождевое в METAR сообщается как тип облаков CB (например, FEW020CB). CAVOK означает хорошие условия без значительных угроз.
+    d:
+      lv: CAVOK nav saistīts ar lidostas darbības ierobežojumiem. Tas ir standartizēts starptautisks kods labiem laika apstākļiem METAR.
+      en: CAVOK is not related to airport operational restrictions. It is a standardised international code for good weather conditions in METAR.
+      ru: CAVOK не связан с ограничениями работы аэропорта. Это стандартизированный международный код хороших условий в METAR.
+  sourceRef: "ICAO Annex 3 — METAR; CAVOK definition"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: factual
+
+- id: met-010
+  stem:
+    lv: Ar cik km skaita Latvijā minimālo redzamību praktiskai VLOS operācijai?
+    en: What is the practical minimum visibility in km for VLOS operations in Latvia?
+    ru: Какова практическая минимальная видимость в км для операций VLOS в Латвии?
+  options:
+    - id: a
+      text:
+        lv: 500 m.
+        en: 500 m.
+        ru: 500 м.
+    - id: b
+      text:
+        lv: 1 km.
+        en: 1 km.
+        ru: 1 км.
+    - id: c
+      text:
+        lv: 3 km — lai uzturētu nepārtrauktu VLOS plānotajā maksimālajā attālumā.
+        en: 3 km — to maintain continuous VLOS at the planned maximum range.
+        ru: 3 км — для поддержания непрерывного VLOS на планируемой максимальной дистанции.
+    - id: d
+      text:
+        lv: 10 km.
+        en: 10 km.
+        ru: 10 км.
+  correctOptionId: c
+  explanation:
+    lv: >
+      VLOS prasība ir funkcionāla: pilots spēj nepārtraukti un neapbruņotu aci noteikt
+      UAS pozīciju, attieksmi un virzienu. Praksē 3 km redzamība ir praktiskais minimums
+      jebkurai jēgpilnai VLOS operācijai. Pie zemākas redzamības VLOS prasību var nebūt
+      iespējams izpildīt pat mazos attālumos.
+    en: >
+      The VLOS requirement is functional: the pilot can continuously and unaided determine
+      the UAS position, attitude, and direction. In practice, 3 km visibility is the practical
+      minimum for any meaningful VLOS operation. Below this VLOS may not be achievable even
+      at short ranges.
+    ru: >
+      Требование VLOS функциональное: пилот может непрерывно и невооружённым глазом определять
+      положение, ориентацию и направление UAS. На практике 3 км — практический минимум для
+      любой содержательной операции VLOS. При меньшей видимости VLOS может быть недостижим
+      даже на малых расстояниях.
+  distractorRationales:
+    a:
+      lv: 500 m redzamībā VLOS var uzturēt tikai ļoti īsam, fiksētam lidojumam pie fiksētas vietas. Tas ir nepraktiski lielākajai daļai operāciju.
+      en: At 500 m visibility VLOS can only be maintained for a very short, fixed-position flight. This is impractical for most operations.
+      ru: При 500 м видимости VLOS можно поддерживать только при очень коротком полёте с фиксированной позицией. Это нецелесообразно для большинства операций.
+    b:
+      lv: 1 km var būt pietiekams ļoti tuvajos operācijās (< 200 m), bet nav pietiekams vidējas attālinātības operācijām.
+      en: 1 km may be adequate for very close-range operations (< 200 m) but is insufficient for medium-range operations.
+      ru: 1 км может быть достаточен для операций очень близкого радиуса (< 200 м), но недостаточен для операций среднего радиуса.
+    d:
+      lv: 10 km ir maksimāli ziņojamā redzamība METAR, nevis minimums VLOS. Lielākā daļa VLOS operāciju notiek tuvāk par 1 km attālumā.
+      en: 10 km is the maximum reportable visibility in METAR, not the VLOS minimum. Most VLOS operations take place at under 1 km range.
+      ru: 10 км — максимальная отчётная видимость в METAR, а не минимум VLOS. Большинство операций VLOS происходит на расстоянии менее 1 км.
+  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.060(3); EASA AMC1 UAS.OPEN.060 VLOS"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
+
+- id: met-011
+  stem:
+    lv: Pilots lido 80 m AGL. METAR virszemes vējš ir 5 m/s. Kādu vēja ātrumu jāplāno 80 m augstumā?
+    en: A pilot flies at 80 m AGL. METAR surface wind is 5 m/s. What wind speed should be planned for at 80 m?
+    ru: Пилот летит на 80 м AGL. Приземный ветер METAR — 5 м/с. Какую скорость ветра следует планировать на 80 м?
+  options:
+    - id: a
+      text:
+        lv: Tāpat 5 m/s — METAR mēra operatīvajā augstumā.
+        en: The same 5 m/s — METAR measures at operational altitude.
+        ru: Те же 5 м/с — METAR измеряет на рабочей высоте.
+    - id: b
+      text:
+        lv: 3–4 m/s — vējš samazinās ar augstumu pilsētā.
+        en: 3–4 m/s — wind decreases with altitude in the city.
+        ru: 3–4 м/с — ветер ослабевает с высотой в городе.
+    - id: c
+      text:
+        lv: 6,5–7,5 m/s — virszemes vējš × 1,3–1,5 koriģēšanai.
+        en: 6.5–7.5 m/s — surface wind × 1.3–1.5 for altitude correction.
+        ru: 6,5–7,5 м/с — приземный ветер × 1,3–1,5 для поправки по высоте.
+    - id: d
+      text:
+        lv: 10+ m/s — vējš dubultosies katrās 40 m.
+        en: 10+ m/s — wind doubles every 40 m.
+        ru: 10+ м/с — ветер удваивается каждые 40 м.
+  correctOptionId: c
+  explanation:
+    lv: >
+      METAR vējš mērīts 10 m AGL. Berzes slānis (aptuveni zemes 300 m) samazina vēja ātrumu
+      tuvāk pie virszemes. 80 m AGL vēja ātrums parasti ir par 30–50 % lielāks nekā pie
+      virszemes: 5 m/s × 1,3–1,5 ≈ 6,5–7,5 m/s. Šī korekcija ir īpaši svarīga bateriju plānošanā
+      atgriešanās braucieniem pret vēju.
+    en: >
+      METAR wind is measured at 10 m AGL. The friction layer (approximately 300 m of surface
+      atmosphere) reduces wind speed closer to the ground. At 80 m AGL wind speed is typically
+      30–50 % higher than at the surface: 5 m/s × 1.3–1.5 ≈ 6.5–7.5 m/s. This correction is
+      especially important for battery planning on into-wind return legs.
+    ru: >
+      Ветер METAR измеряется на 10 м AGL. Слой трения (примерно 300 м атмосферы у поверхности)
+      снижает скорость ветра ближе к земле. На 80 м AGL скорость ветра обычно на 30–50 % выше
+      приземной: 5 м/с × 1,3–1,5 ≈ 6,5–7,5 м/с. Эта поправка особенно важна для планирования
+      аккумулятора на возвратных курсах против ветра.
+  distractorRationales:
+    a:
+      lv: METAR mēra 10 m virs zemes — tas ir par 70 m zemāku par 80 m lidojuma augstumu. Berzes slānis nozīmē, ka vējš palielinās ar augstumu.
+      en: METAR measures 10 m above the ground — this is 70 m lower than the 80 m flight altitude. The friction layer means wind increases with altitude.
+      ru: METAR измеряет в 10 м над землёй — это на 70 м ниже высоты полёта 80 м. Слой трения означает, что ветер усиливается с высотой.
+    b:
+      lv: Vējš virs āra vides (lauks, jūra) palielinās ar augstumu. Tikai dažos pilsētas gadījumos var būt minimālas augstuma korekcijas ēku turbulences dēļ.
+      en: Wind over open terrain (field, sea) increases with altitude. Only in some urban cases may there be minimal altitude corrections due to building turbulence.
+      ru: Ветер над открытой местностью (поле, море) усиливается с высотой. Только в некоторых городских случаях могут быть минимальные поправки из-за турбулентности зданий.
+    d:
+      lv: Vēja ātruma dubultošanās katrās 40 m nav precīzs fizisks modelis. 30–50 % pieaugums no 10 m uz 80 m ir labākā piesarobeža.
+      en: Wind speed doubling every 40 m is not an accurate physical model. A 30–50 % increase from 10 m to 80 m is the better approximation.
+      ru: Удвоение скорости ветра каждые 40 м — неточная физическая модель. Увеличение на 30–50 % от 10 м до 80 м — лучшее приближение.
+  sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; wind profile standard atmosphere"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: numeric
+
+- id: met-012
+  stem:
+    lv: Ko nozīmē TAF kods "BECMG 1022/1024 29018KT"?
+    en: What does the TAF code "BECMG 1022/1024 29018KT" mean?
+    ru: Что означает код TAF «BECMG 1022/1024 29018KT»?
+  options:
+    - id: a
+      text:
+        lv: Vējš momentāni mainīsies uz 290°/18 KT pulksten 22:00 UTC.
+        en: Wind will instantly change to 290°/18 KT at 22:00 UTC.
+        ru: Ветер мгновенно изменится до 290°/18 KT в 22:00 UTC.
+    - id: b
+      text:
+        lv: Pakāpeniskas izmaiņas no 22:00 līdz 24:00 UTC — finālais vējš 290°/18 KT.
+        en: Gradual change from 22:00 to 24:00 UTC — final wind 290°/18 KT.
+        ru: Постепенное изменение с 22:00 до 24:00 UTC — итоговый ветер 290°/18 KT.
+    - id: c
+      text:
+        lv: Pagaidu vējš 290°/18 KT starp 22:00 un 24:00 UTC.
+        en: Temporary wind 290°/18 KT between 22:00 and 24:00 UTC.
+        ru: Временный ветер 290°/18 KT между 22:00 и 24:00 UTC.
+    - id: d
+      text:
+        lv: Sākas uz 22 stundām laika apstākļu logs ar vēju 290°/18 KT.
+        en: A 22-hour weather window with wind 290°/18 KT begins.
+        ru: Начинается 22-часовое погодное окно с ветром 290°/18 KT.
+  correctOptionId: b
+  explanation:
+    lv: >
+      BECMG nozīmē pakāpeniskas, pastāvīgas izmaiņas sākas starp norādītajām stundām.
+      1022/1024 = 10. datums 22:00 UTC līdz 10. datums 24:00 UTC (= 11. datums 00:00 UTC).
+      Pēc 24:00 UTC galīgais vējš ir 290°/18 KT. TEMPO ir pagaidu; BECMG ir pastāvīgas izmaiņas.
+    en: >
+      BECMG means gradual, permanent changes begin between the stated hours. 1022/1024 = 10th
+      22:00 UTC to 10th 24:00 UTC (= 11th 00:00 UTC). After 24:00 UTC the final wind is 290°/18 KT.
+      TEMPO is temporary; BECMG is permanent change.
+    ru: >
+      BECMG означает постепенное, постоянное изменение, начинающееся в указанные часы. 1022/1024 =
+      10-е 22:00 UTC до 10-е 24:00 UTC (= 11-е 00:00 UTC). После 24:00 UTC итоговый ветер 290°/18 KT.
+      TEMPO — временное; BECMG — постоянное изменение.
+  distractorRationales:
+    a:
+      lv: FM (from) norāda tūlītējas izmaiņas noteiktā laikā. BECMG norāda pakāpeniskas izmaiņas noteiktā laika logā.
+      en: FM (from) indicates instantaneous changes at a specific time. BECMG indicates gradual changes over a time window.
+      ru: FM (from) указывает мгновенные изменения в конкретное время. BECMG указывает постепенные изменения в течение временно́го окна.
+    c:
+      lv: Pagaidu apstākļi ir TEMPO; BECMG norāda pastāvīgas izmaiņas, kas saglabāsies arī pēc norādītā laika loga.
+      en: Temporary conditions are indicated by TEMPO; BECMG indicates permanent changes that persist after the time window.
+      ru: Временны́е условия обозначаются TEMPO; BECMG указывает постоянные изменения, сохраняющиеся после временно́го окна.
+    d:
+      lv: BECMG laika logs norāda izmaiņu periodu, nevis kopējo laika apstākļu ilgumu. 1022/1024 ir divu stundu izmaiņu periods, ne 22 stundu.
+      en: The BECMG time window indicates the change period, not total weather duration. 1022/1024 is a 2-hour change period, not 22 hours.
+      ru: Временно́е окно BECMG указывает период изменения, а не общую продолжительность погоды. 1022/1024 — 2-часовой период изменения, а не 22 часа.
+  sourceRef: "ICAO Annex 3 — TAF format; BECMG vs TEMPO vs FM"
+  difficulty: 3
+  cognitiveLevel: recall
+  scenarioType: factual
+
+- id: met-013
+  stem:
+    lv: Kāda mākoņu izohrona (kods) METAR norāda kumulonimbu?
+    en: Which cloud type code in METAR indicates a cumulonimbus?
+    ru: Какой код типа облаков в METAR указывает на кучево-дождевое?
+  options:
+    - id: a
+      text:
+        lv: BKN — plaukumi.
+        en: BKN — broken.
+        ru: BKN — разорванная.
+    - id: b
+      text:
+        lv: OVC — pārsegs.
+        en: OVC — overcast.
+        ru: OVC — сплошная.
+    - id: c
+      text:
+        lv: CB — kumulonimbs, norādīts papildus mākoņu grupas koda aizmugurē.
+        en: CB — cumulonimbus, appended after the cloud group code.
+        ru: CB — кучево-дождевое, добавляется после кода группы облаков.
+    - id: d
+      text:
+        lv: TCU — torējoše kumuluss.
+        en: TCU — towering cumulus.
+        ru: TCU — мощно-кучевое.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Kumulonimbi METAR tiek norādīti ar "CB" sufiksu pēc mākoņu grupas koda.
+      Piemērs: FEW010CB = daži kumulonimbi 1000 pēdu augstumā. TCU (torējoše kumuluss)
+      ir atsevišķs kods, kas norāda attīstošus kumulusus — potenciālu Cb priekšteci.
+    en: >
+      Cumulonimbus clouds are indicated in METAR with the "CB" suffix after the cloud group
+      code. Example: FEW010CB = few cumulonimbus at 1,000 ft. TCU (towering cumulus) is a
+      separate code indicating developing cumulus — a potential Cb precursor.
+    ru: >
+      Кучево-дождевые в METAR указываются суффиксом «CB» после кода группы облаков.
+      Пример: FEW010CB = незначительная кучево-дождевая облачность на 1000 футов. TCU
+      (мощно-кучевое) — отдельный код, указывающий на развивающийся кумулюс — потенциальный
+      предшественник Cb.
+  distractorRationales:
+    a:
+      lv: BKN nozīmē "plaukumi" — 5–7 mākoņu astotdaļas debesu pārklājuma. Tas nenorāda mākoņu veidu.
+      en: BKN means "broken" — 5–7 eighths cloud cover. It indicates coverage amount, not cloud type.
+      ru: BKN означает «разорванная» — 5–7 октантов облачного покрова. Это указывает количество покрова, а не тип облаков.
+    b:
+      lv: OVC nozīmē "pārsegs" — 8 astotdaļas debesu pārklājuma. Tas ir pārklājuma daudzums, nevis mākoņu veids.
+      en: OVC means "overcast" — 8 eighths cloud cover. It is a coverage amount, not a cloud type indicator.
+      ru: OVC означает «сплошная» — 8 октантов покрова. Это количество покрова, а не тип облаков.
+    d:
+      lv: TCU (torējoše kumuluss) norāda attīstošos kumulusus, kas var izveidoties kumulonimbā — bet TCU pats nav kumulonimbs. Pieredzējušam pilotam TCU jāuzskata par brīdinājumu.
+      en: TCU (towering cumulus) indicates developing cumulus that may become a cumulonimbus — but TCU itself is not a cumulonimbus. An experienced pilot treats TCU as a warning.
+      ru: TCU (мощно-кучевое) указывает на развивающийся кумулюс, который может стать кучево-дождевым, но сам по себе не является им. Опытный пилот воспринимает TCU как предупреждение.
+  sourceRef: "ICAO Annex 3 — METAR cloud type codes; CB and TCU"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: factual
+
+- id: met-014
+  stem:
+    lv: Kāda ir temperatūras inversijas galvenā sekas UAS lidojumam?
+    en: What is the primary consequence of a temperature inversion for UAS operations?
+    ru: Каковы основные последствия температурной инверсии для полётов UAS?
+  options:
+    - id: a
+      text:
+        lv: Uzlabota drona veiktspēja augstumā.
+        en: Improved drone performance at altitude.
+        ru: Улучшенные характеристики дрона на высоте.
+    - id: b
+      text:
+        lv: Samazināta redzamība un miglājs pie virszemes; turbulence zem inversijas slāņa.
+        en: Reduced visibility and haze at the surface; turbulence below the inversion layer.
+        ru: Пониженная видимость и дымка у поверхности; турбулентность под инверсионным слоем.
+    - id: c
+      text:
+        lv: Pastiprināts GPS signāls.
+        en: Enhanced GPS signal.
+        ru: Усиленный GPS-сигнал.
+    - id: d
+      text:
+        lv: Automātiska VLOS paplašināšanās inversijas slāņa refleksijas dēļ.
+        en: Automatic VLOS extension due to inversion layer reflections.
+        ru: Автоматическое расширение VLOS из-за отражений инверсионного слоя.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Temperatūras inversija "iesloga" mitru, piesārņotu gaisu pie virszemes, kas samazina
+      redzamību un var izraisīt miglu. Turklāt inversijas slānis darbojas kā "vāks", kas
+      intensificē turbulenci zem tā — sevišķi termisko turbulenci no virszemes sildīšanas.
+      Inversijas bieži novērojamas Latvijas rudenī un ziemā, no rīta.
+    en: >
+      A temperature inversion "traps" moist, polluted air at the surface, reducing visibility
+      and potentially causing fog. Additionally the inversion layer acts as a "lid" that intensifies
+      turbulence below it — especially thermal turbulence from surface heating. Inversions are
+      common in Latvia in autumn and winter, in the morning.
+    ru: >
+      Температурная инверсия «задерживает» влажный, загрязнённый воздух у поверхности, снижая
+      видимость и потенциально вызывая туман. Кроме того, инверсионный слой действует как «крышка»,
+      усиливающая турбулентность под ним — особенно термическую от нагрева поверхности.
+      Инверсии часты в Латвии осенью и зимой, по утрам.
+  distractorRationales:
+    a:
+      lv: Temperatūras inversija samazina gaisa blīvumu augstumā, bet galvenais efekts ir redzamības samazināšanās un turbulence pie virszemes, nevis uzlabota veiktspēja.
+      en: Temperature inversion does not improve drone performance at altitude — its primary effects are visibility reduction and turbulence at the surface level.
+      ru: "Температурная инверсия не улучшает характеристики дрона на высоте — её основные эффекты: снижение видимости и турбулентность у поверхности."
+    c:
+      lv: Temperatūras inversija neietekmē GPS signālu tādā veidā, kas uzlabotu tā uztveri.
+      en: Temperature inversion does not affect GPS signals in a way that would improve reception.
+      ru: Температурная инверсия не влияет на GPS-сигналы так, чтобы улучшить приём.
+    d:
+      lv: VLOS ir vizuāla prasība — to ietekmē vidējā optiskā redzamība, nevis atmosfēras optiskās refleksijas.
+      en: VLOS is a visual requirement — it is affected by ambient optical visibility, not atmospheric optical reflections.
+      ru: VLOS — визуальное требование, зависящее от фактической оптической видимости, а не атмосферных отражений.
+  sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; ICAO meteorology training"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: factual
+
+- id: met-015
+  stem:
+    lv: Pilots plāno lidojumu pāri piejūras ezeram vēsā rudens rītā. Gaiss ir mitrs, temperatūra +3°C. Ko jāpārbauda papildus standarta laika pārbaudei?
+    en: A pilot plans a flight over a coastal lake on a cool autumn morning. Air is damp, temperature +3°C. What should be checked in addition to the standard weather check?
+    ru: Пилот планирует полёт над прибрежным озером прохладным осенним утром. Воздух влажный, температура +3°C. Что проверить дополнительно к стандартной проверке погоды?
+  options:
+    - id: a
+      text:
+        lv: Lidostas laikapstākļi tuvumā.
+        en: Nearby airport weather.
+        ru: Погода ближайшего аэропорта.
+    - id: b
+      text:
+        lv: Apledojuma risku — +3°C + augsts mitrums tuvu ūdenim var radīt apledojumu uz propelleriem.
+        en: Icing risk — +3°C + high humidity near water can create propeller icing.
+        ru: Риск обледенения — +3°C + высокая влажность у воды может вызвать обледенение пропеллеров.
+    - id: c
+      text:
+        lv: NOTAM par ūdens sporta aktivitātēm.
+        en: NOTAMs for water sports activities.
+        ru: NOTAM для водных спортивных мероприятий.
+    - id: d
+      text:
+        lv: Nekas papildus — +3°C ir augstāk par 0°C, tāpēc apledojuma risks nav.
+        en: Nothing additional — +3°C is above 0°C, so there is no icing risk.
+        ru: Ничего дополнительного — +3°C выше 0°C, поэтому риска обледенения нет.
+  correctOptionId: b
+  explanation:
+    lv: >
+      +3°C ar augstu mitrumu tuvu ūdens virsmai ir potenciāls apledojuma scenārijs. Ūdens
+      var radīt zemtemperatūras gaisa slāni tieši virs virsmas, kas var pazemināt faktisko
+      propellera kontakttemperatūru zem 0°C. Pārsaldētu ūdens pilienu klātbūtne miglā vai
+      plānas mākonīšu veidās virs ezera var radīt apledojumu pat +3°C gaisa temperatūrā.
+      Pārbaudīt augšzemes virszemes temperatūru un miglas ziņojumus pirms pacelšanās.
+    en: >
+      +3°C with high humidity near a water surface is a potential icing scenario. Water bodies
+      can create a cold surface air layer directly above that can drive the actual propeller
+      contact temperature below 0°C. Supercooled droplets in mist or thin cloud above the lake
+      can cause icing even at +3°C ambient temperature. Check surface temperature and fog
+      reports before departure.
+    ru: >
+      +3°C с высокой влажностью вблизи водной поверхности — потенциальный сценарий обледенения.
+      Водоёмы могут создавать холодный приземный слой воздуха, снижающий фактическую контактную
+      температуру пропеллера ниже 0°C. Переохлаждённые капли в дымке или тонкой облачности над
+      озером могут вызывать обледенение даже при +3°C. Проверить приземную температуру и
+      сообщения о тумане до взлёта.
+  distractorRationales:
+    a:
+      lv: Lidostas laika apstākļi ir daļa no standarta pārbaudes, nevis papildu apledojuma specifiska pārbaude.
+      en: Nearby airport weather is part of the standard check, not an icing-specific additional check.
+      ru: Погода ближайшего аэропорта — часть стандартной проверки, а не специфическая дополнительная проверка обледенения.
+    c:
+      lv: Ūdens sporta NOTAM var būt aktuāls par drošu attālumu, bet tas nav galvenais drošības apsvērums šajā situācijā — tā ir apledojuma riski.
+      en: Water sports NOTAMs may be relevant for safe distances, but are not the primary safety consideration in this scenario — icing is.
+      ru: NOTAM для водных видов спорта может быть актуален для безопасного расстояния, но не является основным соображением безопасности в этом сценарии — это обледенение.
+    d:
+      lv: +3°C ir tuvu 0°C, un ūdens virsma var samazināt faktisko gaisa temperatūru zem 0°C tieši pie ezera. Apledojums iespējams pat pie +5°C pārsaldētu pilienu klātbūtnē.
+      en: +3°C is close to 0°C, and the water surface can reduce the actual air temperature below 0°C right over the lake. Icing is possible even at +5°C in the presence of supercooled droplets.
+      ru: +3°C близко к 0°C, и водная поверхность может снизить фактическую температуру воздуха ниже 0°C прямо над озером. Обледенение возможно даже при +5°C при наличии переохлаждённых капель.
+  sourceRef: "ICAO Doc 8896 — icing conditions; A2 syllabus meteorology"
+  difficulty: 4
+  cognitiveLevel: analyze
+  scenarioType: decision

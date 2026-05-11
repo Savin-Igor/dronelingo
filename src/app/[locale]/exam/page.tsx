@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { DiagnosticCta } from "@/components/exam/DiagnosticCta";
 import { ExamHistorySection } from "@/components/exam/ExamHistorySection";
 import {
+  A1A3_STRATIFICATION,
   EXAM_DURATION_MIN,
   EXAM_PASS_THRESHOLD,
   EXAM_TOTAL_QUESTIONS,
 } from "@/lib/exam";
+import { localize } from "@/lib/localize";
+import { prisma } from "@/lib/prisma";
 import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
@@ -34,6 +38,21 @@ export default async function ExamStart({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "exam" });
 
+  // Resolve localised topic titles for the question-distribution breakdown.
+  const targetSlugs = Object.keys(A1A3_STRATIFICATION);
+  const topics = await prisma.topic.findMany({
+    where: { slug: { in: targetSlugs } },
+    orderBy: { ord: "asc" },
+    select: { slug: true, title: true },
+  });
+  const coverage = topics
+    .map((tp) => ({
+      slug: tp.slug,
+      title: localize(tp.title, locale),
+      count: A1A3_STRATIFICATION[tp.slug] ?? 0,
+    }))
+    .filter((row) => row.count > 0);
+
   return (
     <main className="mx-auto max-w-3xl px-6 py-12">
       <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
@@ -43,6 +62,8 @@ export default async function ExamStart({
         {t("title")}
       </h1>
       <p className="mt-2 text-telemetry">{t("subtitle")}</p>
+
+      <DiagnosticCta />
 
       <section className="mt-6 rounded-sm border border-horizon bg-cockpit p-6">
         <h2 className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
@@ -98,6 +119,62 @@ export default async function ExamStart({
           >
             {t("start")} →
           </Link>
+        </div>
+      </section>
+
+      <section
+        aria-label={t("coverage.heading")}
+        className="mt-6 rounded-sm border border-horizon bg-cockpit p-6"
+      >
+        <h2 className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
+          {t("coverage.heading")}
+        </h2>
+        <p className="mt-2 text-xs text-muted">{t("coverage.subtitle")}</p>
+        <p className="mt-1 text-xs text-telemetry">{t("coverage.drillHint")}</p>
+
+        <ul className="mt-5 divide-y divide-horizon border-y border-horizon">
+          {coverage.map((row) => {
+            const percent = (row.count / EXAM_TOTAL_QUESTIONS) * 100;
+            return (
+              <li key={row.slug}>
+                <Link
+                  href={`/exam/${row.slug}`}
+                  className="grid grid-cols-[1fr_3rem_3rem_1.25rem] items-center gap-3 py-2.5 transition-colors hover:bg-hull/50"
+                  aria-label={t("coverage.drillCta", {
+                    topic: row.title,
+                  })}
+                >
+                  <span className="text-sm text-hud-white">{row.title}</span>
+                  <div
+                    className="relative h-1 overflow-hidden rounded-full bg-grid"
+                    role="presentation"
+                  >
+                    <div
+                      className="h-full rounded-full bg-cyan-pulse/70"
+                      style={{ width: `${percent}%` }}
+                      aria-hidden
+                    />
+                  </div>
+                  <span className="text-right font-mono text-sm text-hud-white">
+                    {row.count}
+                  </span>
+                  <span
+                    aria-hidden
+                    className="text-right font-mono text-xs text-muted transition-colors group-hover:text-cyan-pulse"
+                  >
+                    →
+                  </span>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+
+        <div className="mt-4 flex items-center justify-between font-mono text-xs uppercase tracking-widest text-muted">
+          <span>{t("coverage.totalLabel")}</span>
+          <span className="text-hud-white">
+            {EXAM_TOTAL_QUESTIONS} {t("coverage.questionsLabel")}
+          </span>
         </div>
       </section>
 

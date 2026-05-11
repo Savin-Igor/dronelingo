@@ -1,0 +1,17 @@
+slug: dangerous-phenomena
+ord: 2
+title:
+  lv: Bīstamie meteoroloģiskie apstākļi
+  en: Dangerous weather phenomena
+  ru: Опасные метеорологические явления
+sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; A2 syllabus Theme 1: Meteorology; ICAO Doc 8896"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

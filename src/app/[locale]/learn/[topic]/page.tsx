@@ -1,12 +1,14 @@
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { AccessGate } from "@/components/access/AccessGate";
 import { BreadcrumbSchema } from "@/components/learn/Breadcrumb";
 import {
   TopicLessonList,
   type LessonListItem,
 } from "@/components/learn/TopicLessonList";
 import { TopicSchema } from "@/components/learn/TopicSchema";
+import { isFreeTopic } from "@/lib/access";
 import { localize } from "@/lib/localize";
 import { prisma } from "@/lib/prisma";
 
@@ -30,14 +32,16 @@ export default async function TopicPage({
   });
   if (!topic) notFound();
 
+  const free = isFreeTopic(topicSlug);
+
   const lessons: LessonListItem[] = topic.lessons.map((lesson) => ({
     id: lesson.id,
     slug: lesson.slug,
     title: localize(lesson.title, locale),
   }));
 
-  return (
-    <main className="mx-auto max-w-3xl px-6 py-12">
+  const content = (
+    <>
       <TopicSchema
         locale={locale}
         slug={topic.slug}
@@ -82,6 +86,12 @@ export default async function TopicPage({
           </Link>
         </div>
       )}
+    </>
+  );
+
+  return (
+    <main className="mx-auto max-w-3xl px-6 py-12">
+      {free ? content : <AccessGate>{content}</AccessGate>}
     </main>
   );
 }

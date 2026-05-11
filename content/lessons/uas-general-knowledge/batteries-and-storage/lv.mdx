@@ -1,40 +1,120 @@
-# Baterijas un to uzglabāšana
+# Baterijas un uzglabāšana
 
-Bezpilota gaisa kuģim baterija ir gan **enerģijas avots**, gan
-**lielākais drošības risks**. Lielākā daļa "drona uguns" gadījumu
-saistās ar bojātu vai nepareizi uzglabātu Li-Po šūnu.
+<MissionBriefing objective="Pēc šīs nodarbības tu pareizi apieties ar LiPo baterijām, uzglabā tās un ceļo ar tām — un atpazīsi bateriju, kura nedrīkst lidot, pirms tā kaitē aparātam vai pilotam.">
+Vairums UAS ugunsgrēku sākas uz zemes. LiPo, kas pilnā uzlādē atstāts karstā mašīnā, ir ugunsgrēks, kas gaida iemeslu. Baterija ir bīstamākā sastāvdaļa, ko tu pieskaries.
+</MissionBriefing>
 
-## Li-Po pamatfizika
+<CinematicScene
+  src="/lessons/battery-storage-guide.png"
+  alt="LiPo uzglabāšanas ceļvedis: uzlādes līmeņi dažādiem uzglabāšanas periodiem un IATA aviācijas ceļojumu limiti."
+  caption="Diagramma · battery-storage-guide"
+/>
 
-- **Sprieguma diapazons:** 3,0–4,2 V uz šūnu (drošs darba režīms
-  ~3,7–4,2 V).
-- **Enerģija:** Wh = Ah × V. Piem., 4S 5000 mAh ≈ 14,8 V × 5 Ah ≈ **74 Wh**.
-- **C-vērtējums:** maks. izlādes strāvas reizinājums ar kapacitāti.
+## LiPo pamati
 
-## Uzglabāšana
+Litija polimēru (LiPo) šūnas strādā starp **3,0 V** (izlādēta — nesamazini zem šī) un **4,2 V** (pilna uzlāde) uz šūnu. Nominālais spriegums ir **3,7 V** uz šūnu.
 
-| Uzglabāšanas laiks | Ieteicamais līmenis |
-|---------------------|----------------------|
-| < 3 dienas | 100 % (ja izmantosi drīz) |
+Enerģijas saturu aprēķina: **Wh = mAh ÷ 1000 × nominālais spriegums × šūnu skaits**. 4S 5000 mAh komplekts: 5 Ah × 14,8 V ≈ **74 Wh** — būtiski aviācijas ceļojumu limitiem.
+
+**C koeficients** norāda maksimālo drošo izlādes ātrumu kā kapacitātes daudzkārtni. 5000 mAh baterija ar 20C var droši nepārtraukti dot līdz 100 A.
+
+## Uzglabāšanas uzlāde — noteikums, ko vairums pilotu izlaiž
+
+Pilnā uzlādē atstāta LiPo iekšēji izstaro siltumu un degradējas ātrāk nekā tā, kas uzglabāta pareizajā līmenī.
+
+| Uzglabāšanas periods | Mērķa uzlāde |
+|----------------------|--------------|
+| < 3 dienas (drīz atkal lidos) | 100 % |
 | 3–14 dienas | 70–80 % |
-| **> 2 nedēļas** | **50–60 % (storage charge)** |
+| **> 2 nedēļas** | **50–60 % (uzglabāšanas uzlāde)** |
 
-Glabā **ugunsdrošā maisā** (Li-Po safe bag) un **vēsā, sausā vietā**.
+Vairumam mūsdienu UAS lietotņu ir "uzglabāšanas izlāde" režīms, kas šūnas automātiski noved pareizajā līmenī. Izmanto to — neatstāj baterijas pilnā uzlādē somā mēnešiem.
 
-## Ja baterija ir uzpūsta
+Uzglabā baterijas **LiPo drošības somā** (ugunsdrošā keramisko šķiedru maisā) vēsā, sausā vietā. Ne automašīnas bagāžnieka vasarā.
 
-**Nelieto.** Uzpūšanās norāda uz iekšēju gāzu uzkrāšanos — risks
-aizdegties. Utilizē atbilstoši vietējiem noteikumiem
-(Latvijā — `dabasdati.lv` partneru savākšanas punkti).
+## Pazīmes, ka baterija nedrīkst lidot
 
-## Aviopārvadājumi
+**Uzpampusi** baterija nozīmē, ka šūnā uzkrājas gāze — iekšēja bojājuma vai pārlādes pazīme. Tas ir ugunsgrēka risks zem lidojuma vibrācijas mehāniskā spiediena.
 
-IATA noteikumi:
+Pārbaudi pirms katra lidojuma:
+- Vai komplekts redzami uzpampis vai asimetrisks?
+- Vai kāda šūna pēc uzglabāšanas ir zem 3,0 V (pārmērīgi izlādēta)?
+- Vai ārējam apvalkam ir plaisas vai bojājumi?
 
-- **< 100 Wh** — bagāžā un rokas bagāžā (ne reģistrētā, ne kabīnē
-  nedrīkst lādēt);
-- **100–160 Wh** — tikai rokas bagāžā ar avioliniju atļauju;
-- **> 160 Wh** — aviopārvadājums **aizliegts** kā civilā krava.
+**Jebkurš "jā" = nelidot.** Uzpampušas šūnas izmet sertificētos savākšanas punktos (Latvijā: partneru vietas norādītas `dabasdati.lv`). Nelikvidē tās sadzīves atkritumos.
 
-> **Avots:** Regula (ES) 2019/945 par drošības prasībām UAS baterijām;
-> IATA Lithium Battery Guidance Document; ražotāju rokasgrāmatas.
+## Aviācijas ceļojumu limiti (IATA)
+
+UAS baterijas IATA Bīstamo kravu regulās klasificētas pie litija jonu šūnām:
+
+| Wh klase | Atļauts gaisa kuģī |
+|----------|---------------------|
+| **< 100 Wh** | Rokas vai reģistrētajā bagāžā |
+| **100–160 Wh** | Tikai rokas bagāžā, **ar rakstisku aviokompānijas atļauju** |
+| **> 160 Wh** | Aizliegts pasažieru gaisa kuģa salonā |
+
+Daži lidostu termināļi prasīs Wh skaitli — aprēķini to no marķējuma pirms izlidošanas. Baterijas gaisa kuģī nelādē.
+
+<WhCalculator />
+
+<Scenario title="Ierodies darba vietā un atklāj, ka vienīgā uzlādētā baterija, ko paņēmi līdzi, vienā stūrī redzami uzpampusi. Klients gaida. Ko dari?">
+**Nelido.** Uzpampusi baterija lidojuma vibrācijā un strāvas slodzē var sprāgt un aizdegties. Sekas — degošs UAS virs klienta objekta — ir sliktākas nekā atlikta filmēšana.
+
+Profesionāļa reakcija: informē klientu, pārplāno un pareizi atbrīvojies no baterijas. Vairums komerciālo fotogrāfu nēsā divus baterijas komplektus. Šī situācija ir arguments par dublēšanu, nevis iemesls lidot ar defektīvu šūnu.
+</Scenario>
+
+<MemoryAnchor
+  rule="Uzglabā > 2 nedēļas pie 50–60 %. Nekad nelido ar uzpampušu šūnu. Baterijas > 160 Wh pasažieru gaisa kuģī nedrīkst."
+  hint="Pilna uzlāde ir lidošanai. Uzglabāšanas uzlāde — visam pārējam."
+/>
+
+<CommonMistakes>
+- Uzglabāt baterijas 100 % uzlādē starp lidojumiem — degradē šūnu ķīmiju un palielina ugunsgrēka risku nedēļu laikā.
+- Nepārbaudīt uzpampumu pirms lidojuma — uzpampusi šūna nav kosmētika; tā ir strukturāla atteice, kas gaida iemeslu.
+- Nepareizi aprēķināt Wh aviācijas ceļojumam — aizmirstot šūnu skaitu (S klasi), kapacitāti novērtē par zemu.
+- Atstāt baterijas karstā mašīnas bagāžniekā — temperatūra virs 60 °C paātrina degradāciju un var izraisīt termisko reakciju.
+- Izmest LiPo šūnas sadzīves atkritumos — litija ugunsgrēki atkritumu objektos ir dokumentēts apdraudējums; izmanto sertificētus savākšanas punktus.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "ug-b1",
+    stem: "6S 4000 mAh LiPo baterija netiks izmantota trīs nedēļas. Kāds ir pareizais uzglabāšanas uzlādes līmenis?",
+    options: [
+      { id: "a", text: "100 % — turi gatavu nākamajam darbam." },
+      { id: "b", text: "0 % — pilnībā izlādē pirms uzglabāšanas." },
+      { id: "c", text: "50–60 % — ieteiktais uzglabāšanas līmenis periodiem virs 2 nedēļām." },
+      { id: "d", text: "80–90 % — drošs kompromiss starp pilnu un uzglabāšanas uzlādi." },
+    ],
+    correctOptionId: "c",
+    explanation: "Baterijas, ko uzglabā virs 2 nedēļām, jātur pie 50–60 % (uzglabāšanas uzlādes). Pilna uzlāde paātrina šūnu degradāciju un palielina ugunsgrēka risku. Pilnīga izlāde bojā šūnas — uzglabāšanas laikā tās nedrīkst nokrist zem 3,0 V uz šūnu.",
+    distractorRationales: {
+      a: "Pilna uzlāde ilgstošā uzglabāšanā rada iekšēju siltumu un degradē šūnu ķīmiju, saīsinot baterijas mūžu.",
+      b: "Pilnībā izlādēta LiPo uzglabāšanā nokritīs zem minimālā šūnas sprieguma un kļūs neatgriezeniski bojāta.",
+      d: "80–90 % piemērots līdz 14 dienām. 3 nedēļām pareizais mērķis ir 50–60 %.",
+    },
+  },
+  {
+    id: "ug-b2",
+    stem: "Pilota baterija ir 4S 5200 mAh LiPo. Kāds ir aptuvenais Wh skaitlis, un vai to drīkst ņemt rokas bagāžā bez iepriekšējas aviokompānijas atļaujas?",
+    options: [
+      { id: "a", text: "Aptuveni 77 Wh — rokas bagāža bez atļaujas." },
+      { id: "b", text: "Aptuveni 77 Wh — rokas bagāža ar aviokompānijas atļauju." },
+      { id: "c", text: "Aptuveni 100 Wh — vajadzīga aviokompānijas atļauja." },
+      { id: "d", text: "Virs 160 Wh — aizliegts pasažieru gaisa kuģī." },
+    ],
+    correctOptionId: "a",
+    explanation: "4S nominālais spriegums = 14,8 V. Wh = 5,2 Ah × 14,8 V ≈ 77 Wh. Zem 100 Wh nozīmē rokas vai reģistrēto bagāžu bez īpašas aviokompānijas atļaujas.",
+    distractorRationales: {
+      b: "Aviokompānijas atļauja nepieciešama tikai baterijām starp 100 Wh un 160 Wh. Pie ~77 Wh šī baterija ir zem atļaujas sliekšņa.",
+      c: "Aprēķins: 5,2 × 14,8 ≈ 77 Wh, ne 100. Pārbaudi šūnu skaitu S klasē.",
+      d: "160 Wh limits attiecas uz daudz lielākiem komplektiem — parasti 6S vai vairāk ar augstu mAh. 4S 5200 mAh ir krietni zem šī.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["pr-001"]}>
+Tu spēj droši uzglabāt LiPo baterijas, atpazīt to, kura nedrīkst lidot, un aprēķināt Wh aviācijas atbilstībai.
+
+Nākamais sektors: Privātums — kāpēc UAS ar kameru ES likumos ir arī datu vākšanas ierīce.
+</Debrief>

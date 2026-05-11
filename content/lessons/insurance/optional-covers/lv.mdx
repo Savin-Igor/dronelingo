@@ -1,46 +1,142 @@
 # Brīvprātīgās apdrošināšanas iespējas
 
-Obligātā civiltiesiskā apdrošināšana sedz **trešās puses zaudējumus**.
-Pilna profesionāla aizsardzība prasa papildu polises.
+<MissionBriefing objective="Pēc šīs nodarbības tu izvēlēsies pareizo apdrošināšanas paketi konkrētam operāciju scenārijam — atpūta, komerciāla foto/video, inspekcija vai ES ceļojums — un sapratīsi, ko katra brīvprātīgā polise sedz, ko obligātā nesedz.">
+Obligātā trešās personas polise sedz to, ko tu nodari citiem. Brīvprātīgās polises aizsargā tavu aprīkojumu, ienākumus un profesionālo reputāciju. Profesionālam operatoram vajadzīgi visi trīs slāņi.
+</MissionBriefing>
 
-## Hull (paša UAS) apdrošināšana
+<CinematicScene
+  src="/lessons/insurance-stack-diagram.png"
+  alt="Četri kartīšu slāņi: obligātā trešās personas atbildība, korpuss/sabrukums/zādzība, profesionālā atbildība un lietderīgā krava, ES ceļojuma polise — katrs ar scenāriju ikonām."
+  caption="Diagramma · insurance-stack-diagram"
+/>
 
-Sedz UAS bojājumus:
+## Korpusa apdrošināšana (hull) — paša aparāta aizsardzība
 
-- **Kritiens** (cilvēka kļūda, fly-away, lost link);
-- **Zādzība** vai pazaudēšana;
-- **Ūdens bojājumi** ja ražotājs nesaglabā IPxx kategoriju.
+Korpusa apdrošināšana sedz **bojājumus vai zaudējumu pašam UAS**. Obligātā polise to nesedz nekad. Korpusa apdrošināšana parasti sedz:
 
-Tipiski 5–10 % no UAS vērtības gadā, ar **franšīzi** 200–500 EUR.
+- **Sabrukums** — neatkarīgi no cēloņa: pilota kļūda, fly-away, negaidīts šķērslis, putna trieciens.
+- **Zādzība** — no automašīnas, glabāšanas vietas vai operāciju vietā.
+- **Ūdens bojājums** — ja UAS sertificēts mitriem apstākļiem un bojājums pārsniedz šo līmeni.
+- **Tranzīta bojājums** — dažās polisēs, bojājums transportēšanas laikā.
 
-## Profesionālā atbildība
+**Tipiskā cena:** 5–10 % no UAS aizvietošanas vērtības gadā, ar pašrisku €200–500 par gadījumu.
 
-Komerciālajiem operatoriem (foto/video, apsekošana, drošība).
-Sedz:
+DJI Mavic 3 Enterprise ar cenu €3 500 korpusa apdrošināšana izmaksātu aptuveni €175–350 gadā. Bez korpusa seguma fly-away pār ūdeni ir neatgūstami €3 500 zaudējumi.
 
-- Klienta zaudējumus, ja darbs neatbilst līgumam.
-- Datu pazaudēšanu (videomateriāls, GIS dati).
-- Patentu / autortiesību prasības par izmantotajiem materiāliem.
+## Profesionālā atbildība — darba aizsardzība
 
-## Lietderīgās kravas (payload) apdrošināšana
+Komerciāliem operatoriem **profesionālā atbildība** (saukta arī par errors and omissions) sedz:
 
-Atsevišķi kameras, sensori, lidar moduļi. Bieži dārgāki par pašu UAS,
-tāpēc segums tiek aprēķināts atsevišķi.
+- **Klienta finansiālie zaudējumi**, ja gala produkts izgāžas — sabojāts materiāls, pazaudēti uzmērīšanas dati, nokavēts termiņš aparatūras atteices dēļ.
+- **Datu zudums** — GIS uzmērījumi, ortomozaīkas dati, inspekcijas ieraksti.
+- **IP un autortiesību prasības** — ja kadrā nejauši nokļūst aizsargāts saturs.
 
-## Eksporta/transporta polise
+Bez profesionālās atbildības klients, kurš zaudē lielu būvniecības uzmērījumu datu sabojāšanas dēļ, var atgūt no operatora pilnu pārmērīšanas izmaksu — tā var pārsniegt UAS vērtību par lielumu kārtām.
 
-Komandējumu lidojumiem citā ES valstī. Bāzes polise Latvijā **derīga
-visā ES**, bet papildu segums dažās valstīs ir saprātīgs (piem.,
-Vācijā augstāka prasība pret komerciālajiem operatoriem).
+## Lietderīgās kravas apdrošināšana — kameras aizsardzība
 
-## Kā izvēlēties
+Sensori, kino kameras un LiDAR moduļi, kas piestiprināti UAS, bieži maksā vairāk nekā pats aparāts. Lietderīgās kravas apdrošināšana sedz šo aprīkojumu atsevišķi:
 
-| Scenārijs | Minimālā konfigurācija |
-|-----------|------------------------|
-| Atpūta < 250 g | Tikai obligātā (vai pat tās nav) |
-| Atpūta C1 / C2 / C3 | Obligātā + hull |
-| Komerciāls foto / video | Obligātā + hull + profesionālā |
-| Komandējumi citā ES valstī | + transporta polise |
+- Fizisks bojājums lidojuma vai nolaišanās laikā.
+- Bojājums tranzītā un uzstādīšanā.
+- Zādzība no automašīnas vai vietas.
 
-> **Avots:** Regula (EK) 785/2004; komerciālo apdrošinātāju produktu
-> piedāvājumi (BTA, Balta, Gjensidige); CAA Latvia vadlīnijas.
+Sony FX3, kas aprīkota aerofoto darbam, plus gimbāls var pārsniegt €5 000. Korpusa polise sedz UAS rāmi; kamerai vajadzīgs savs piesaistes līgums vai atsevišķa polise.
+
+## ES ceļojuma polise
+
+Obligātā Latvijas polise ir **derīga visā ES** trešās personas atbildībai — ES regulas to standartizē. Tomēr ilgākam komerciālam darbam citās dalībvalstīs ieteicams **ES ceļojuma paplašinājums**, jo:
+
+- Dažas valstis (īpaši Vācija) komerciāliem UAS operatoriem uzliek papildu prasības virs ES minimumiem.
+- Vietējā prasību izskatīšana ārvalstī ir vienkāršāka ar polisi, kas skaidri sedz jurisdikciju.
+- Ilgtermiņa operācijas ārvalstīs var izraisīt vietēja operatora reģistrācijas prasības.
+
+## Pareizās paketes izvēle
+
+<Artefact
+  description="Apdrošināšanas pakete pēc operāciju scenārija: atpūta zem 250 g — nekas; atpūta C1/C2/C3 — obligātā plus korpuss; komerciāla foto/video pievieno profesionālo atbildību; pilna profesionālā ar lietderīgo kravu pievieno kravas segumu; ES ceļojumu darbi pievieno ceļojuma paplašinājumu."
+  caption="Tabula · insurance-stack-by-scenario"
+>
+  <table className="text-sm w-full text-telemetry">
+    <thead><tr className="text-cyan-pulse font-mono text-xs"><th className="text-left pr-4 pb-2">Scenārijs</th><th className="text-left pb-2">Ieteicamā pakete</th></tr></thead>
+    <tbody className="space-y-1">
+      {[
+        ["Atpūta C0 < 250 g", "Nekas nav prasīts"],
+        ["Atpūta C1 / C2 / C3", "Obligātā + korpuss"],
+        ["Komerciāla foto / video", "Obligātā + korpuss + profesionālā atbildība"],
+        ["Ar dārgu lietderīgo kravu", "+ kravas apdrošināšana"],
+        ["Ilgāki ES ceļojumu darbi", "+ ES ceļojuma paplašinājums"],
+      ].map(([scenario, stack]) => (
+        <tr key={scenario}>
+          <td className="pr-4 pb-1 font-mono text-xs text-cyan-pulse align-top">{scenario}</td>
+          <td className="pb-1">{stack}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</Artefact>
+
+<Scenario title="Tu esi komerciāls aerofoto operators. Klienta darba laikā fly-away aizved UAS kanālā. UAS, piestiprinātā kino kamera un dienas materiāls — viss pazaudēts. Ko sedz katra polise?">
+- **Obligātā trešās personas atbildība:** sedz mantu vai cilvēkus, ko UAS fly-away laikā trāpīja. Tavus zaudējumus nesedz.
+- **Korpusa apdrošināšana:** sedz UAS aizvietošanas izmaksas (mīnus pašrisks).
+- **Lietderīgās kravas apdrošināšana:** sedz kino kameras aizvietošanas izmaksas.
+- **Profesionālā atbildība:** var segt klienta zaudējumus, ja pazudušais materiāls bija līgumiska nodevums un atteice attiecināma uz tavām operācijām.
+
+Bez brīvprātīgajiem slāņiem tu absorbē UAS un kameras izmaksas no savas kabatas un saskaries ar klienta prasību bez apdrošināšanas atbalsta.
+</Scenario>
+
+<MemoryAnchor
+  rule="Obligātā = bojājums citiem. Korpuss = bojājums UAS. Profesionālā = bojājums klienta darbam. Lietderīgā krava = bojājums kamerai. Sakraj tos kopā scenārijam."
+  hint="Pajautā: kas šajā darbā vērtīgākais varētu tikt pazaudēts? To arī apdrošini."
+/>
+
+<CommonMistakes>
+- Pieņemt, ka korpusa segums iekļauts obligātajā polisē — nav, nekad.
+- Neapdrošināt dārgo lietderīgo kravu atsevišķi — korpusa polise sedz aparātu, ne sensoru.
+- Domāt, ka ES polise sedz visas ES komerciālās prasības — Vācija un dažas citas valstis uzliek papildu prasības, ko vērts pārbaudīt katram darbam.
+- Atļaut profesionālajai atbildībai izbeigties starp līgumiem — prasība par darbu pirms sešiem mēnešiem var pienākt pēc polises beigām, ja seguma periods nav pareizi izprasts.
+- Pārāk zemu apdrošināt korpusu, izmantojot zemāku deklarēto vērtību prēmijas samazināšanai — pilna zaudējuma izmaksa balstās uz deklarēto vērtību.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "in-oc1",
+    stem: "Komerciāls UAS pilots sabrukumā zaudē aparātu un €4 000 kino kameru. Viņam ir obligātā trešās personas atbildība un korpusa apdrošināšana (ar €300 pašrisku). Kas tiek segts?",
+    options: [
+      { id: "a", text: "Tikai UAS izmaksas — korpuss sedz aparātu, ne kameru." },
+      { id: "b", text: "UAS izmaksas mīnus €300 pašrisks — kamerai vajadzīgs atsevišķs kravas segums." },
+      { id: "c", text: "Gan UAS, gan kamera — korpusa apdrošināšana sedz visu UAS piestiprināto aprīkojumu." },
+      { id: "d", text: "Neko — sabrukumi pilota kļūdas dēļ ir izslēgti no korpusa polises." },
+    ],
+    correctOptionId: "b",
+    explanation: "Korpusa apdrošināšana sedz aparātu (UAS) mīnus pašrisks. Kino kamera ir lietderīgā krava un prasa atsevišķu kravas apdrošināšanas polisi vai piesaisti. Korpuss automātiski neattiecas uz piestiprinātu aprīkojumu. Pilota kļūda parasti nav izslēgts gadījums vairumā korpusa polišu — fly-away un sabrukumi ir kodola segumi.",
+    distractorRationales: {
+      a: "Formulējums daļēji pareizs — korpuss sedz UAS — bet izlaiž pašrisku, kas samazina izmaksu.",
+      c: "Korpusa polises sedz pašu aparātu. Lietderīgā krava (kamera, sensors, gimbāls) prasa atsevišķu apdrošināšanu, ja vien tā nav skaidri iekļauta polises grafikā.",
+      d: "Korpusa apdrošināšana ir tieši paredzēta sabrukuma un fly-away gadījumiem, ieskaitot pilota kļūdas. Tīši bojājumi vai rupja neuzmanība var būt izslēgti, bet sabrukumi ir kodola segums.",
+    },
+  },
+  {
+    id: "in-oc2",
+    stem: "Latvijas operators uzņemas komerciālu inspekcijas darbu Vācijā uz divām nedēļām. Viņa Latvijas trešās personas atbildības polise ir derīga visā ES. Kāds papildu segums būtu jāapsver?",
+    options: [
+      { id: "a", text: "Papildu segums nav vajadzīgs — ES derīgums nozīmē pilnu segumu." },
+      { id: "b", text: "Vācijai specifiska UAS reģistrācija un ES ceļojuma paplašinājums, jo Vācija komerciāliem UAS operatoriem uzliek papildu prasības virs ES minimumiem." },
+      { id: "c", text: "Tikai profesionālā atbildība — trešās personas jau segta." },
+      { id: "d", text: "Operāciju Vācijā ar Latvijas licenci legāli veikt nedrīkst." },
+    ],
+    correctOptionId: "b",
+    explanation: "Latvijas trešās personas atbildības polise ir derīga visā ES, bet Vācija komerciāliem UAS operatoriem uzliek papildu prasības, kas var pārsniegt ES minimumus. ES ceļojuma paplašinājums apstrādā jurisdikcijas specifiskās prasības un vienkāršo vietējo prasību izskatīšanu. Pilotam jāpārbauda arī vietējās reģistrācijas prasības konkrētajam operācijas tipam.",
+    distractorRationales: {
+      a: "ES derīgums sedz minimālo trešās personas atbildību. Tas neaptver Vācijas papildu komerciālā operatora prasības.",
+      c: "Profesionālā atbildība ir laba papildināšana, bet neaptver Vācijai specifisko atbilstības slāni. ES ceļojuma paplašinājums šeit aktuālāks.",
+      d: "Latvijas A1/A3 vai A2 sertifikāti atzīti visā ES pēc Atvērtās kategorijas savstarpējās atzīšanas. Operācija legāla, ievērojot vietējās prasības.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["se-001"]}>
+Tu spēj izvēlēties pareizo apdrošināšanas paketi jebkuram operāciju scenārijam un izskaidrot, ko katrs slānis aizsargā.
+
+Nākamais sektors: drošība — kiberdraudi UAS sistēmām un ziņošanas pienākumi, kas padara aviāciju drošāku visiem.
+</Debrief>

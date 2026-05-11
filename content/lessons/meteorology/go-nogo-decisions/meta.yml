@@ -1,0 +1,17 @@
+slug: go-nogo-decisions
+ord: 3
+title:
+  lv: Iet/neiet lēmumi laika apstākļos
+  en: Weather go/no-go decisions
+  ru: Принятие решения о полёте в зависимости от погоды
+sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; A2 syllabus Theme 1; meteo.lv; LVGMC"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

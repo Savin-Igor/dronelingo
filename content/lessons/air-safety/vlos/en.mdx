@@ -1,36 +1,121 @@
 # Visual line of sight (VLOS)
 
-In the Open category, the remote pilot must keep the unmanned aircraft in
-**visual line of sight (VLOS)** at all times.
+<MissionBriefing objective="After this lesson you will know what VLOS is, how it differs from FPV, and the only legal way to fly FPV in the Open category.">
+VLOS is the foundation of every Open-category flight. The whole "low risk"
+premise of the category collapses the moment you stop seeing the aircraft.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/vlos-scene-1.png"
+  alt="A pilot stands in a flat field at dawn, eyes on a small drone roughly 150 m away. The drone is a barely-visible speck with motion blur."
+  caption="Scene · vlos-scene-1"
+/>
 
 ## What VLOS means
 
-The pilot sees the aircraft unaided. Prescription glasses or contact lenses
-are allowed, but binoculars and zoomed cameras are not. The pilot must be
-able to detect the aircraft's **attitude and direction** of travel — not
-merely confirm a dot in the sky.
+The pilot sees the aircraft **unaided**. Prescription glasses or contact
+lenses are allowed. Binoculars and zoomed cameras are not. The pilot must
+be able to detect the aircraft's **attitude and direction** — not merely
+confirm a dot in the sky.
 
 How far that is in practice depends on the size of the aircraft and the
-weather. A small drone may be invisible at 200 m on a hazy day; a larger one
-may be tracked at 500 m on a clear one.
+weather. A small drone may be invisible at 200 m on a hazy day; a larger
+one may be tracked at 500 m on a clear one. There is no fixed metre value
+for VLOS distance — there is only "can the pilot still tell which way it's
+pointing?"
+
+<Artefact
+  src="/lessons/vlos-cone-diagram.png"
+  alt="VLOS coverage cone — drone inside is legal, drone outside is not"
+  description="Diagram of a pilot at the origin with a cone of visual coverage extending forward. A drone inside the cone is labelled 'VLOS'. A second drone outside the cone is labelled 'lost — outside Open category'. A vertical 120 m ceiling is drawn across the cone."
+  caption="Diagram · vlos-cone-1"
+/>
 
 ## First-person view (FPV) is not VLOS
 
 When the pilot looks at goggles or a phone screen instead of the aircraft,
-they are flying **FPV** — and that breaks VLOS. FPV is permitted in the Open
-category **only if a separate UAS observer stands next to the pilot** and
-keeps the airspace under direct watch.
+they are flying **FPV** — and that breaks VLOS. FPV is permitted in the
+Open category only if a separate **UAS observer** stands next to the pilot
+and keeps the airspace under direct watch.
 
 The observer must be:
+
 - physically next to the pilot (no radio, no phone link)
 - watching the airspace, not the screen
 
-## Why VLOS matters
+<Scenario title="You're flying C1 with FPV goggles. Your friend wants to spot for you from 100 m away over a walkie-talkie.">
+That is **not legal** in the Open category. The observer-FPV rule requires
+direct, unmediated voice contact: the observer must stand next to you. A
+radio link is not "next to." Either land, or have your friend walk over.
+</Scenario>
 
-The whole low-risk premise of the Open category rests on the pilot being
-able to see and react to other airspace users. The moment that link is
-broken, the operation drops outside the category — and outside the
-remote pilot's authority.
+<MemoryAnchor
+  rule="If you're not seeing the aircraft, you're not in the Open category."
+  hint="FPV is only Open if an observer at your shoulder sees it for you."
+/>
 
-> **Source:** Reg (EU) 2019/947, UAS.OPEN.060(3); EASA Easy Access Rules
-> for UAS (consolidated 2024-07).
+<CommonMistakes>
+- Treating "I can hear it" or "I can see it on the screen" as VLOS — neither counts.
+- Using a radio between pilot and observer. Direct voice only.
+- Trusting binoculars or zoom to recover VLOS on a drone that's too far. Once it's a dot, you're outside VLOS regardless of magnification.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "vlos-quick-1",
+    stem: "What does VLOS mean in the Open category?",
+    options: [
+      { id: "a", text: "The pilot sees the aircraft unaided (corrective glasses are allowed)." },
+      { id: "b", text: "The pilot follows the aircraft through FPV goggles." },
+      { id: "c", text: "The pilot knows the UAS position from a phone map." },
+      { id: "d", text: "The pilot tracks the drone with binoculars." },
+    ],
+    correctOptionId: "a",
+    explanation: "VLOS requires the pilot to see the aircraft with the unaided eye and to determine its attitude and direction. Corrective glasses are allowed; binoculars and screens are not.",
+    distractorRationales: {
+      b: "FPV goggles replace the view of the aircraft with a camera feed — that is not VLOS.",
+      c: "Knowing position on a map is not the same as seeing attitude and direction in the air.",
+      d: "Binoculars are explicitly excluded — the rule is unaided vision.",
+    },
+  },
+  {
+    id: "vlos-quick-2",
+    stem: "You want to fly FPV in the Open category. What's the only legal way?",
+    options: [
+      { id: "a", text: "Use a high-quality video link with sub-50 ms latency." },
+      { id: "b", text: "Have an observer next to you, in direct voice contact, watching the airspace." },
+      { id: "c", text: "Have an observer on a radio 100 m away." },
+      { id: "d", text: "Fly only over your own land." },
+    ],
+    correctOptionId: "b",
+    explanation: "FPV is allowed in the Open category only if a UAS observer stands next to the pilot, in direct voice contact, and keeps the surrounding airspace under watch.",
+    distractorRationales: {
+      a: "Latency does not change the rule — the pilot still cannot see the airspace around the aircraft.",
+      c: "Radio links are not direct voice contact; the rule requires the observer next to the pilot.",
+      d: "The land you own does not change the VLOS / FPV rule.",
+    },
+  },
+  {
+    id: "vlos-quick-3",
+    stem: "On a hazy day your C1 drone becomes a dot at 250 m. You can see the dot but no longer its attitude. Are you in VLOS?",
+    options: [
+      { id: "a", text: "Yes — you can see the dot, that's enough." },
+      { id: "b", text: "Yes — C1 is allowed up to 500 m." },
+      { id: "c", text: "No — VLOS requires you to see attitude and direction, not just presence." },
+      { id: "d", text: "Yes, if you keep the camera feed open." },
+    ],
+    correctOptionId: "c",
+    explanation: "VLOS is not about confirming the aircraft exists — it requires being able to detect attitude and direction. The moment you can't, the operation is no longer in the Open category.",
+    distractorRationales: {
+      a: "Seeing a dot is not enough — you need to be able to react, which requires attitude.",
+      b: "There is no fixed VLOS distance in the regulation; the rule is functional, not metric.",
+      d: "Camera feed is FPV — it does not restore VLOS.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["as-001", "as-002"]}>
+You now know what VLOS is, why FPV breaks it, and the only legal FPV
+configuration in Open. Next: how distance to people changes by sub-category
+(A1 / A2 / A3) — and the 1:1 rule that ties altitude to minimum distance.
+</Debrief>
