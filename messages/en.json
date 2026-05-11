@@ -212,7 +212,8 @@
     "cta": "Start warm-up",
     "pageTitle": "Daily warm-up",
     "freeOnlyNote": "Warming up from the free Air Safety topic only.",
-    "unlockAll": "Unlock all 9 topics"
+    "unlockAll": "Unlock all 9 topics",
+    "adaptive": "Adaptive · weakest topics first"
   },
   "lessonWidgets": {
     "anatomy": {

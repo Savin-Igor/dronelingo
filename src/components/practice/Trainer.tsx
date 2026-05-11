@@ -67,19 +67,31 @@ function bucketFor(
 }
 
 /**
+ * Adaptive weight — lower values surface earlier. Typically a per-question
+ * topic-mastery ratio in [0, 1]: low mastery = weak topic = front of the
+ * queue. When omitted, the order falls back to plain dueAt / shuffle.
+ */
+export type WeightFn = (externalId: string) => number;
+
+/**
  * Order questions for a session:
- *   1. due reviews (oldest dueAt first — most-overdue questions surface earliest)
- *   2. fresh (unseen) questions, shuffled
+ *   1. due reviews (sorted; see weighting below)
+ *   2. fresh (unseen) questions, shuffled — or weighted if weightOf provided
  *   3. scheduled (not yet due) questions, shuffled — only seen if the user
  *      keeps going after the previous buckets are exhausted
  *
  * If `dueOnly` is set, only the first bucket is returned.
+ *
+ * Adaptive sort: when `weightOf` is provided, due and fresh buckets are
+ * sorted by (weight asc, dueAt asc). Lower weight = weaker topic = earlier.
+ * This is the daily-warm-up "weakest topics first" mode.
  */
 function buildOrder(
   questions: TrainerQuestion[],
   srs: SRSMap,
   now: number,
   dueOnly: boolean,
+  weightOf?: WeightFn,
 ): TrainerQuestion[] {
   const due: TrainerQuestion[] = [];
   const fresh: TrainerQuestion[] = [];
@@ -90,19 +102,36 @@ function buildOrder(
     else if (b === "fresh") fresh.push(q);
     else scheduled.push(q);
   }
-  // Oldest dueAt first inside the "due" bucket.
-  due.sort((a, b) => (srs[a.externalId].dueAt - srs[b.externalId].dueAt));
+
+  if (weightOf) {
+    // Weak topics first; within the same weight, most-overdue first.
+    const epsilon = 0.001;
+    due.sort((a, b) => {
+      const wa = weightOf(a.externalId);
+      const wb = weightOf(b.externalId);
+      if (Math.abs(wa - wb) > epsilon) return wa - wb;
+      return srs[a.externalId].dueAt - srs[b.externalId].dueAt;
+    });
+    fresh.sort((a, b) => weightOf(a.externalId) - weightOf(b.externalId));
+  } else {
+    due.sort((a, b) => srs[a.externalId].dueAt - srs[b.externalId].dueAt);
+  }
+
   if (dueOnly) return due;
-  return [...due, ...shuffle(fresh), ...shuffle(scheduled)];
+  const orderedFresh = weightOf ? fresh : shuffle(fresh);
+  return [...due, ...orderedFresh, ...shuffle(scheduled)];
 }
 
 export function Trainer({
   questions,
   initialDueOnly = false,
+  weightOf,
 }: {
   questions: TrainerQuestion[];
   /** If true, the session starts in "due only" mode — for daily warm-up. */
   initialDueOnly?: boolean;
+  /** Optional adaptive weight per question (see WeightFn). */
+  weightOf?: WeightFn;
 }) {
   const t = useTranslations("practice");
   const tSrs = useTranslations("practice.srs");
@@ -120,13 +149,13 @@ export function Trainer({
     const now = Date.now();
     const map = readSRS();
     setSrs(map);
-    setOrder(buildOrder(questions, map, now, dueOnly));
+    setOrder(buildOrder(questions, map, now, dueOnly, weightOf));
     setIndex(0);
     setSelected(null);
     setRevealed(false);
     setSessionCorrect(0);
     setSessionTotal(0);
-  }, [questions, dueOnly]);
+  }, [questions, dueOnly, weightOf]);
 
   // Listen for cross-tab SRS changes (a parallel practice session).
   useEffect(() => {
@@ -201,7 +230,7 @@ export function Trainer({
             const now = Date.now();
             const map = readSRS();
             setSrs(map);
-            setOrder(buildOrder(questions, map, now, dueOnly));
+            setOrder(buildOrder(questions, map, now, dueOnly, weightOf));
             setIndex(0);
             setSelected(null);
             setRevealed(false);

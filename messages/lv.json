@@ -212,7 +212,8 @@
     "cta": "Sākt iesildīšanos",
     "pageTitle": "Dienas iesildīšanās",
     "freeOnlyNote": "Iesildies tikai no bezmaksas Gaisa drošības tēmas.",
-    "unlockAll": "Atver visas 9 tēmas"
+    "unlockAll": "Atver visas 9 tēmas",
+    "adaptive": "Adaptīvs · vājākās tēmas vispirms"
   },
   "lessonWidgets": {
     "anatomy": {
