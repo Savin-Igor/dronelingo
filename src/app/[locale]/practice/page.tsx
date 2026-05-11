@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import {
+  MasteryMap,
+  type MasteryMapTopic,
+} from "@/components/practice/MasteryMap";
 import { FREE_TOPIC_SLUG } from "@/lib/access";
 import { localize } from "@/lib/localize";
 import { prisma } from "@/lib/prisma";
@@ -33,8 +37,32 @@ export default async function PracticeIndex({
 
   const topics = await prisma.topic.findMany({
     orderBy: { ord: "asc" },
-    include: { _count: { select: { questions: true } } },
+    include: {
+      _count: { select: { questions: true } },
+      // One question per topic just to extract the externalId prefix
+      // (e.g. "as" from "as-001"). The MasteryMap needs the prefix to
+      // partition the visitor's SRS state by topic.
+      questions: {
+        orderBy: { externalId: "asc" },
+        take: 1,
+        select: { externalId: true },
+      },
+    },
   });
+
+  const masteryTopics: MasteryMapTopic[] = topics
+    .filter((tp) => tp._count.questions > 0)
+    .map((tp) => {
+      const firstId = tp.questions[0]?.externalId ?? "";
+      const prefix = firstId.includes("-") ? firstId.split("-")[0] : tp.slug;
+      return {
+        slug: tp.slug,
+        title: localize(tp.title, locale),
+        prefix,
+        totalQuestions: tp._count.questions,
+        free: tp.slug === FREE_TOPIC_SLUG,
+      };
+    });
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-12">
@@ -46,7 +74,11 @@ export default async function PracticeIndex({
       </h1>
       <p className="mt-2 text-sm text-telemetry">{t("subtitle")}</p>
 
-      <ul className="mt-8 divide-y divide-horizon rounded-sm border border-horizon">
+      <div className="mt-8">
+        <MasteryMap topics={masteryTopics} />
+      </div>
+
+      <ul className="divide-y divide-horizon rounded-sm border border-horizon">
         {topics.map((topic, i) => {
           const count = topic._count.questions;
           const disabled = count === 0;

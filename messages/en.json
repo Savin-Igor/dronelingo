@@ -188,6 +188,22 @@
     "stubNote": "Stub checkout — no real charge.",
     "freeNote": "Air Safety topic is always free — no payment needed."
   },
+  "masteryMap": {
+    "ariaLabel": "Topic mastery map",
+    "title": "Mastery map",
+    "subtitle": "{seen} of {total} questions practised",
+    "overallMastery": "Overall",
+    "rowStats": "{mastered} mastered · {seen}/{total} seen",
+    "dueCount": "{count, plural, =1 {# due} other {# due}}",
+    "ariaProgress": "{topic} — {percent}% mastered",
+    "tier": {
+      "untouched": "Untouched",
+      "weak": "Weak",
+      "learning": "Learning",
+      "ready": "Ready",
+      "mastered": "Mastered"
+    }
+  },
   "warmUp": {
     "ariaLabel": "Daily warm-up",
     "kicker": "Daily warm-up",

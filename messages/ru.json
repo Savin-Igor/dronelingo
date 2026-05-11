@@ -188,6 +188,22 @@
     "stubNote": "Тестовая оплата — деньги не списываются.",
     "freeNote": "Тема «Безопасность полётов» всегда бесплатна."
   },
+  "masteryMap": {
+    "ariaLabel": "Карта мастерства по темам",
+    "title": "Карта мастерства",
+    "subtitle": "{seen} из {total} вопросов пройдено",
+    "overallMastery": "Всего",
+    "rowStats": "{mastered} освоено · {seen}/{total} пройдено",
+    "dueCount": "{count, plural, one {# на срок} few {# на срок} many {# на срок} other {# на срок}}",
+    "ariaProgress": "{topic} — {percent}% освоено",
+    "tier": {
+      "untouched": "Не начато",
+      "weak": "Слабо",
+      "learning": "Учится",
+      "ready": "Готов",
+      "mastered": "Освоено"
+    }
+  },
   "warmUp": {
     "ariaLabel": "Ежедневная разминка",
     "kicker": "Ежедневная разминка",

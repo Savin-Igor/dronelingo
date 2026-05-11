@@ -188,6 +188,22 @@
     "stubNote": "Stub checkout — reāla maksa netiek ieturēta.",
     "freeNote": "Gaisa drošības tēma vienmēr ir bez maksas."
   },
+  "masteryMap": {
+    "ariaLabel": "Tēmu meistarības karte",
+    "title": "Meistarības karte",
+    "subtitle": "{seen} no {total} jautājumiem izpildīti",
+    "overallMastery": "Kopā",
+    "rowStats": "{mastered} apgūti · {seen}/{total} redzēti",
+    "dueCount": "{count, plural, one {# termiņā} other {# termiņā}}",
+    "ariaProgress": "{topic} — {percent}% apgūts",
+    "tier": {
+      "untouched": "Nesākts",
+      "weak": "Vājš",
+      "learning": "Mācās",
+      "ready": "Gatavs",
+      "mastered": "Apgūts"
+    }
+  },
   "warmUp": {
     "ariaLabel": "Dienas iesildīšanās",
     "kicker": "Dienas iesildīšanās",
