@@ -132,6 +132,10 @@
     "perTopicScore": "{correct} / {total}",
     "missed": "Missed questions",
     "noMisses": "Every answer correct — excellent!",
+    "review": {
+      "send": "{count, plural, =1 {Send # to review} other {Send # to review}}",
+      "queued": "{count, plural, =1 {# queued for warm-up} other {# queued for warm-up}}"
+    },
     "retake": "Take another exam",
     "noResult": "No recent exam found. Start a new one.",
     "claimCta": "Go to e.caa.gov.lv →",

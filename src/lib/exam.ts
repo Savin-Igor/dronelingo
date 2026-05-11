@@ -34,6 +34,12 @@ export const A1A3_STRATIFICATION: Record<string, number> = {
 
 export type ExamQuestion = {
   id: string;
+  /**
+   * Stable per-content identifier (e.g. "as-001"). Used as the SRS key so
+   * the schedule survives DB reseeds and lines up with the question bank
+   * regardless of internal cuids.
+   */
+  externalId: string;
   topicId: string;
   topicSlug: string;
   topicTitle: string;
@@ -98,6 +104,7 @@ export async function buildStratifiedExam(
     const topicTitle = localize(topic.title, locale);
     const all = topic.questions.map<ExamQuestion>((q) => ({
       id: q.id,
+      externalId: q.externalId,
       topicId: topic.id,
       topicSlug: topic.slug,
       topicTitle,

@@ -19,6 +19,12 @@ export type StoredExamResult = {
   >;
   missed: {
     questionId: string;
+    /**
+     * Stable per-content id (e.g. "as-001"). Optional for backward
+     * compatibility with exam history written before the SRS link
+     * was introduced; new exams always include it.
+     */
+    externalId?: string;
     topicSlug: string;
     topicTitle: string;
     stem: string;

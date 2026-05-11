@@ -73,6 +73,7 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
       } else {
         missed.push({
           questionId: q.id,
+          externalId: q.externalId,
           topicSlug: q.topicSlug,
           topicTitle: q.topicTitle,
           stem: q.stem,

@@ -132,6 +132,10 @@
     "perTopicScore": "{correct} / {total}",
     "missed": "Nepareizi atbildētie jautājumi",
     "noMisses": "Visas atbildes pareizas — lieliski!",
+    "review": {
+      "send": "{count, plural, one {Nosūtīt # uz atkārtojumu} other {Nosūtīt # uz atkārtojumu}}",
+      "queued": "{count, plural, one {# rindā iesildīšanai} other {# rindā iesildīšanai}}"
+    },
     "retake": "Sākt jaunu eksāmenu",
     "noResult": "Pēdējais eksāmens nav atrasts. Sāc no jauna.",
     "claimCta": "Doties uz e.caa.gov.lv →",
