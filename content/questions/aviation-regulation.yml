@@ -19,6 +19,11 @@
         lv: Regula (ES) 2018/1139.
         en: Regulation (EU) 2018/1139.
         ru: Регламент (ЕС) 2018/1139.
+    - id: d
+      text:
+        lv: Regula (ES) 376/2014.
+        en: Regulation (EU) 376/2014.
+        ru: Регламент (ЕС) 376/2014.
   correctOptionId: a
   explanation:
     lv: >
@@ -33,8 +38,23 @@
       2019/947 — об эксплуатации (Open / Specific / Certified). 2019/945
       — о технических требованиях к UAS (классы C0–C6). 2018/1139 —
       базовый регламент по EASA.
+  distractorRationales:
+    b:
+      lv: 2019/945 ir par UAS tehniskām prasībām un CE klašu marķējumu, ne par operāciju kategorijām.
+      en: 2019/945 covers UAS technical requirements and CE class marking, not operational categories.
+      ru: 2019/945 — о технических требованиях к UAS и CE-маркировке классов, не об эксплуатации.
+    c:
+      lv: 2018/1139 ir EASA pamatregula. Tā nosaka EASA pilnvaras, bet konkrētie UAS operāciju noteikumi ir 2019/947.
+      en: 2018/1139 is the EASA basic regulation. It defines EASA powers, but the specific UAS operating rules are in 2019/947.
+      ru: 2018/1139 — базовый регламент EASA. Он задаёт полномочия EASA, но конкретные правила эксплуатации UAS — в 2019/947.
+    d:
+      lv: 376/2014 ir par atgadījumu ziņošanu civilajā aviācijā. Tas nav UAS operāciju noteikumu avots.
+      en: 376/2014 is about occurrence reporting in civil aviation. It is not the source of UAS operating rules.
+      ru: 376/2014 — об уведомлениях о происшествиях в гражданской авиации. Это не источник правил эксплуатации UAS.
   sourceRef: "Reg (EU) 2019/947 — Operations; Reg (EU) 2019/945 — Technical; Reg 2018/1139 — Basic"
   difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
 
 - id: ar-002
   stem:
@@ -57,6 +77,11 @@
         lv: Sertificētā.
         en: Certified.
         ru: Сертифицированная.
+    - id: d
+      text:
+        lv: Gan Specifiskā, gan Sertificētā.
+        en: Both Specific and Certified.
+        ru: И Специальная, и Сертифицированная.
   correctOptionId: b
   explanation:
     lv: >
@@ -70,8 +95,23 @@
       Специальная требует SORA или STS. Открытая — без предварительного
       разрешения. Сертифицированная — полная сертификация UAS и
       оператора.
+  distractorRationales:
+    a:
+      lv: Atvērtā kategorija ir definēta tā, lai nebūtu vajadzīga iepriekšēja atļauja — limits ir iebūvēti (120 m, VLOS, masa, pulcēšanās).
+      en: The Open category is defined so that no prior authorisation is needed — limits are intrinsic (120 m, VLOS, mass, assemblies).
+      ru: Открытая категория устроена так, что предварительное разрешение не требуется — ограничения встроены (120 м, VLOS, масса, скопления).
+    c:
+      lv: Sertificētā prasa pilnvērtīgu UAS un operatora sertifikāciju, nevis SORA vai STS — tā ir pilnīgi atsevišķa procedūra ar augstāku risku.
+      en: Certified requires full UAS and operator certification rather than SORA or STS — it is a separate, higher-risk procedure.
+      ru: Сертифицированная требует полной сертификации UAS и оператора, а не SORA или STS — это отдельная процедура более высокого риска.
+    d:
+      lv: Sertificētā kategorija neizmanto SORA mehānismu — tā ir augstāka riska procedūra. SORA/STS ir tikai Specifiskās kategorijas mehānismi.
+      en: The Certified category does not use the SORA mechanism — it is a higher-risk procedure. SORA/STS belongs only to the Specific category.
+      ru: Сертифицированная категория не использует механизм SORA — это процедура более высокого риска. SORA/STS — только для Специальной.
   sourceRef: "Reg (EU) 2019/947 Art. 5; AMC1 Article 11 — SORA"
   difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
 
 - id: ar-003
   stem:
@@ -94,6 +134,11 @@
         lv: 150 m.
         en: 150 m.
         ru: 150 м.
+    - id: d
+      text:
+        lv: 100 m.
+        en: 100 m.
+        ru: 100 м.
   correctOptionId: b
   explanation:
     lv: >
@@ -105,8 +150,23 @@
     ru: >
       Высота Открытой категории — 120 м над землёй или водой, если UGZ
       не задаёт более низкий предел.
+  distractorRationales:
+    a:
+      lv: 50 m ir krietni zem standarta robežas. Tas ir piesardzīgs operatīvs lēmums, ne regulatīvais limits.
+      en: 50 m is well below the standard cap. It is a cautious operational choice, not the regulatory limit.
+      ru: 50 м значительно ниже стандартного предела. Это осторожное операционное решение, а не регуляторная граница.
+    c:
+      lv: 150 m attiecas uz distances no apdzīvotām zonām A3, nevis uz augstuma robežu.
+      en: 150 m relates to the distance from inhabited areas in A3, not to the altitude cap.
+      ru: 150 м относится к дистанции до жилых зон в A3, а не к пределу высоты.
+    d:
+      lv: 100 m ir pat tuvu pareizajai vērtībai, bet regulā ir tieši 120 m. Tā ir maza atšķirība, kas eksāmenā ir izšķiroša.
+      en: 100 m is close to the right value, but the regulation says exactly 120 m. The 20 m difference is decisive in the exam.
+      ru: 100 м близко к верному значению, но в регламенте именно 120 м. Разница в 20 м для экзамена принципиальна.
   sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020/030/040(2)"
   difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: factual
 
 - id: ar-004
   stem:
@@ -129,6 +189,11 @@
         lv: Regula (ES) 376/2014.
         en: Regulation (EU) 376/2014.
         ru: Регламент (ЕС) 376/2014.
+    - id: d
+      text:
+        lv: Regula (ES) 2018/1139.
+        en: Regulation (EU) 2018/1139.
+        ru: Регламент (ЕС) 2018/1139.
   correctOptionId: a
   explanation:
     lv: >
@@ -143,8 +208,23 @@
       2019/945 — технические требования (классы C0–C6, маркировка CE).
       2019/947 — об эксплуатации. 376/2014 — об уведомлениях о
       происшествиях.
+  distractorRationales:
+    b:
+      lv: 2019/947 ir par operāciju kategorijām (Open / Specific / Certified). Tehniskās prasības ir 945, ne 947.
+      en: 2019/947 covers operational categories (Open / Specific / Certified). The technical requirements live in 945, not 947.
+      ru: 2019/947 — об операционных категориях (Open / Specific / Certified). Технические требования — в 945, а не в 947.
+    c:
+      lv: 376/2014 ir par atgadījumu ziņošanu civilajā aviācijā, ne par UAS tehniskām prasībām.
+      en: 376/2014 covers occurrence reporting in civil aviation, not UAS technical requirements.
+      ru: 376/2014 — об отчётности о происшествиях в гражданской авиации, не о технических требованиях к UAS.
+    d:
+      lv: 2018/1139 ir EASA pamatregula. UAS klašu tehniskās prasības ir 945, deleģēta regula uz pamatregulas pamata.
+      en: 2018/1139 is the EASA basic regulation. UAS class technical requirements are in 945, a delegated regulation under the basic regulation.
+      ru: 2018/1139 — базовый регламент EASA. Технические требования к классам UAS — в 945, делегированном регламенте на основе базового.
   sourceRef: "Reg (EU) 2019/945 — Technical requirements for UAS"
   difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
 
 - id: ar-005
   stem:
@@ -167,6 +247,11 @@
         lv: MK noteikumi Nr. 627.
         en: Cabinet Regulation No. 627.
         ru: Правила КМ № 627.
+    - id: d
+      text:
+        lv: MK noteikumi Nr. 447.
+        en: Cabinet Regulation No. 447.
+        ru: Правила КМ № 447.
   correctOptionId: a
   explanation:
     lv: >
@@ -178,8 +263,23 @@
     ru: >
       Правила КМ № 436 — о квалификации пилота UAS. № 248 — о правилах
       полётов; № 627 — о клубах авиамоделистов.
+  distractorRationales:
+    b:
+      lv: MK Nr. 248 nosaka lidojuma noteikumus kopumā, nevis pilota kvalifikāciju.
+      en: Cabinet Reg. No. 248 sets general flight rules, not pilot qualification.
+      ru: Правила КМ № 248 задают общие правила полётов, а не квалификацию пилота.
+    c:
+      lv: MK Nr. 627 ir par modeļa lidaparātu klubiem, ne par UAS pilota individuālo kvalifikāciju.
+      en: Cabinet Reg. No. 627 covers model-aircraft clubs, not the individual UAS pilot qualification.
+      ru: Правила КМ № 627 — о клубах авиамоделистов, не об индивидуальной квалификации пилота UAS.
+    d:
+      lv: MK Nr. 447 reglamentē civiltiesisko apdrošināšanu, nevis pilota kvalifikāciju.
+      en: Cabinet Reg. No. 447 governs civil-liability insurance, not pilot qualification.
+      ru: Правила КМ № 447 регулируют гражданскую страховку, а не квалификацию пилота.
   sourceRef: "MK noteikumi Nr. 436 (Latvia) — UAS pilot qualification"
   difficulty: 3
+  cognitiveLevel: recall
+  scenarioType: regulatory
 
 - id: ar-006
   stem:

@@ -19,6 +19,11 @@
         lv: Safety.
         en: Safety.
         ru: Безопасность.
+    - id: d
+      text:
+        lv: Skill.
+        en: Skill.
+        ru: Навык.
   correctOptionId: a
   explanation:
     lv: >
@@ -30,8 +35,23 @@
     ru: >
       IMSAFE = Illness, Medication, Stress, Alcohol, Fatigue, Eating.
       "S" — это Stress (стресс).
+  distractorRationales:
+    b:
+      lv: Ātrums (Speed) ir lidojuma parametrs, nevis pašpārbaudes elements. IMSAFE attiecas uz pilota stāvokli.
+      en: Speed is a flight parameter, not a self-check item. IMSAFE addresses the pilot's state.
+      ru: Скорость — параметр полёта, а не пункт самопроверки. IMSAFE — про состояние пилота.
+    c:
+      lv: Drošība (Safety) ir mērķis, nevis konkrēts IMSAFE pārbaudes punkts. Stress ir specifiskais "S" elements.
+      en: Safety is the goal, not a specific IMSAFE item. Stress is the specific "S" element.
+      ru: Безопасность — это цель, а не конкретный пункт IMSAFE. Stress — это и есть «S».
+    d:
+      lv: Iemaņas (Skill) tiek attīstītas treniņos, IMSAFE turpretim ir 6 īstermiņa fizioloģisko un emocionālo riska faktoru saraksts.
+      en: Skill is built through training, whereas IMSAFE is a 6-item short-term physiological and emotional risk-factor checklist.
+      ru: Навык формируется тренировками, а IMSAFE — это список из 6 краткосрочных физиологических и эмоциональных факторов риска.
   sourceRef: "EASA Easy Access Rules for UAS — Human performance limitations"
   difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: factual
 
 - id: hp-002
   stem:
@@ -54,6 +74,11 @@
         lv: 24 stundas.
         en: 24 hours.
         ru: 24 часа.
+    - id: d
+      text:
+        lv: 12 stundas.
+        en: 12 hours.
+        ru: 12 часов.
   correctOptionId: b
   explanation:
     lv: >
@@ -65,8 +90,23 @@
     ru: >
       «Bottle to throttle» — 8 часов. На практике рекомендуется больший
       интервал в зависимости от количества выпитого.
+  distractorRationales:
+    a:
+      lv: 2 stundas pārāk maz — pat neliels patēriņš ietekmē spriestspēju daudz ilgāk.
+      en: 2 hours is far too short — even small consumption affects judgement for much longer.
+      ru: 2 часа — слишком мало. Даже малое количество влияет на принятие решений намного дольше.
+    c:
+      lv: 24 stundas ir konservatīva prakse, bet regulā noteiktais limits ir 8 stundas. 24 h ir personisks izvēles standarts.
+      en: 24 hours is conservative practice, but the regulatory limit is 8 hours. 24 h is a personal-choice standard.
+      ru: 24 часа — консервативная практика, но регуляторный предел — 8 часов. 24 ч — личный стандарт.
+    d:
+      lv: "12 stundas pārsniedz minimumu — drošāk, bet nav obligātās regulas robeža. Atceries: 8 stundas — minimālais limits."
+      en: "12 hours exceeds the minimum — safer, but not the mandatory regulatory threshold. Remember: 8 hours is the floor."
+      ru: "12 часов превышают минимум — безопаснее, но не обязательный регуляторный порог. Помни: 8 часов — это нижняя граница."
   sourceRef: "EASA Easy Access Rules — Human performance, alcohol; ICAO Annex 2"
   difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: factual
 
 - id: hp-003
   stem:
@@ -89,6 +129,11 @@
         lv: Tāpēc, ka kamera nepārraida HDR.
         en: Because the camera does not transmit HDR.
         ru: Потому что камера не передаёт HDR.
+    - id: d
+      text:
+        lv: Tāpēc, ka brilles patērē baterijas jaudu.
+        en: Because the goggles drain battery power.
+        ru: Потому что очки потребляют энергию батареи.
   correctOptionId: a
   explanation:
     lv: >
@@ -103,8 +148,23 @@
       FPV-очки закрывают естественный обзор UAS и воздушной обстановки.
       Поэтому в Открытой категории FPV допустим только с наблюдателем
       рядом с пилотом.
+  distractorRationales:
+    b:
+      lv: Signāla stiprums attiecas uz kontroli ar drona pulti, ne uz pilota redzes lauku. VLOS prasība ir par to, ko pilots redz, ne par radio kvalitāti.
+      en: Signal strength is about link control, not the pilot's field of view. VLOS is about what the pilot sees, not radio quality.
+      ru: Сила сигнала — про управление каналом, а не про поле зрения пилота. VLOS — про то, что видит пилот, а не про качество радиосигнала.
+    c:
+      lv: HDR pārraide ir video kvalitātes parametrs, kas nemaina pamata problēmu — brilles aizsedz dabisko apkārtējās gaisa telpas skatu.
+      en: HDR transmission is a video-quality parameter that does not change the core issue — the goggles block the natural view of the surrounding airspace.
+      ru: "HDR-передача — это параметр качества видео, не меняющий главной проблемы: очки закрывают естественный обзор воздушной обстановки."
+    d:
+      lv: Baterijas patēriņš ir aprīkojuma jautājums, ne VLOS prasība. VLOS ir par to, ka pilots fiziski redz UAS — kameru iegrāmatošana to nemaina.
+      en: Battery drain is an equipment matter, not a VLOS requirement. VLOS is about the pilot physically seeing the UAS — camera-feed framing does not change that.
+      ru: Расход батареи — вопрос оборудования, а не требование VLOS. VLOS — про то, что пилот видит UAS физически; обрамление кадра ничего не меняет.
   sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(2)(a); EASA HF guidance"
   difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
 
 - id: hp-004
   stem:
@@ -127,6 +187,11 @@
         lv: Krāsu konstantums.
         en: Colour constancy.
         ru: Постоянство цвета.
+    - id: d
+      text:
+        lv: Tuneļa redzeslauks (samazināta perifērā uzmanība).
+        en: Tunnel vision (reduced peripheral attention).
+        ru: Тоннельное зрение (сужение периферии).
   correctOptionId: a
   explanation:
     lv: >
@@ -142,8 +207,23 @@
       Empty-field myopia — известный эффект: без точки фиксации глаз
       фокусируется близко, что мешает видеть далёкие объекты (включая
       дрон). Активное сканирование его предотвращает.
+  distractorRationales:
+    b:
+      lv: Spilgtuma adaptācija ir reālā parādība, bet tā uzlabo nakts redzi tumsā, nevis tukšā debesī. Mehānika atšķiras.
+      en: Brightness adaptation is real but improves night vision in the dark — not in empty sky. Different mechanism.
+      ru: Яркостная адаптация существует, но улучшает зрение в темноте, а не в пустом небе. Это другой механизм.
+    c:
+      lv: Krāsu konstantums ir spēja uztvert objekta krāsu vienādu dažādā gaismā — nesaistīts efekts.
+      en: Colour constancy is the ability to perceive an object's colour as the same under different lighting — an unrelated phenomenon.
+      ru: Постоянство цвета — способность воспринимать цвет объекта одинаково при разном освещении. Это другой эффект.
+    d:
+      lv: Tuneļa redzeslauks rodas no stresa vai FPV brillēm, ne no skatīšanās debesīs. Tas ir cita ģenēze.
+      en: Tunnel vision arises from stress or FPV goggles, not from looking at sky. Different cause.
+      ru: Тоннельное зрение возникает от стресса или FPV-очков, а не от взгляда в небо. Иной источник.
   sourceRef: "FAA AC 60-22; EASA Easy Access Rules — Vision and perception"
   difficulty: 3
+  cognitiveLevel: recall
+  scenarioType: factual
 
 - id: hp-005
   stem:
@@ -166,6 +246,11 @@
         lv: Lidot — nogurums neietekmē tālvadības pilotu.
         en: Fly — fatigue does not affect a remote pilot.
         ru: Лететь — усталость не влияет на пилота-оператора.
+    - id: d
+      text:
+        lv: Nogulēt 30 minūšu sniegu un sākt lidojumu.
+        en: Take a 30-minute nap and start flying.
+        ru: Поспать 30 минут и начать полёт.
   correctOptionId: a
   explanation:
     lv: >
@@ -180,8 +265,23 @@
       Усталость снижает скорость реакции и спектр внимания.
       Профессиональная дисциплина требует отложить полёт — кофеин не
       заменяет сон.
+  distractorRationales:
+    b:
+      lv: Kofeīns ir stimulators, bet tas neaizvieto miegu un nemazina noguruma kumulatīvo efektu uz spriestspēju.
+      en: Caffeine is a stimulant but does not replace sleep and does not undo the cumulative effect of fatigue on judgement.
+      ru: Кофеин — стимулятор, но он не заменяет сон и не устраняет кумулятивный эффект усталости на принятие решений.
+    c:
+      lv: Nogurums ietekmē jebkuru pilotu — tālvadības pilots saskaras ar tiem pašiem reakcijas, uzmanības un spriestspējas riskiem.
+      en: Fatigue affects every pilot — remote pilots face the same risks to reaction, attention, and judgement.
+      ru: Усталость влияет на любого пилота — пилот-оператор сталкивается с теми же рисками для реакции, внимания и принятия решений.
+    d:
+      lv: 30 minūšu sniegs var dot īsu modrību, bet tas neaizvieto pilnu nakts miegu. Pēc 4 h kopējā miega kumulatīvais deficīts paliek.
+      en: A 30-minute nap may give brief alertness, but it does not replace a full night's sleep. After 4 h total the cumulative deficit remains.
+      ru: 30-минутный сон даёт кратковременную бодрость, но не заменяет полноценный ночной сон. После 4 часов общий дефицит сохраняется.
   sourceRef: "ICAO Doc 9966 — Manual for Fatigue Management"
   difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
 
 - id: hp-006
   stem:

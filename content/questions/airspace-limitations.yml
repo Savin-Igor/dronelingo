@@ -19,6 +19,11 @@
         lv: Google Maps slāņi par lidostām.
         en: Google Maps overlays of airports.
         ru: Слои Google Maps по аэропортам.
+    - id: d
+      text:
+        lv: Drukātās Latvijas AIP kartes.
+        en: The printed Latvia AIP charts.
+        ru: Печатные карты AIP Латвии.
   correctOptionId: b
   explanation:
     lv: >
@@ -33,8 +38,23 @@
       Только `airspace.lv/drones` (CAA Latvia) — юридически обязательная
       база UGZ. Сторонние приложения обычно используют те же данные, но
       не являются последней инстанцией.
+  distractorRationales:
+    a:
+      lv: Ražotāja lietotne lieto trešo pušu datu kopu un var atpalikt no aktuālā stāvokļa. Tā nav juridiskais avots.
+      en: A manufacturer app uses a third-party dataset and can lag behind the current state. It is not the legal source.
+      ru: Приложение производителя использует сторонний набор данных и может отставать от актуального состояния. Это не правовой источник.
+    c:
+      lv: Google Maps nesatur UGZ datus — tikai vispārējus lidostu apzīmējumus, kas neattēlo dronu ierobežojumus.
+      en: Google Maps does not carry UGZ data — only generic airport markers that do not reflect drone restrictions.
+      ru: В Google Maps нет данных UGZ — только общие отметки аэропортов, не отражающие ограничения для дронов.
+    d:
+      lv: AIP kartes ir pilotētajai aviācijai. UAS zonu pilnais saraksts un izmaiņas tiek publicētas tikai airspace.lv.
+      en: AIP charts are for manned aviation. The full UAS zone list and any changes are only published at airspace.lv.
+      ru: Карты AIP — для пилотируемой авиации. Полный список UAS-зон и изменения публикуются только на airspace.lv.
   sourceRef: "Reg (EU) 2019/947 Art. 15; airspace.lv/drones"
   difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
 
 - id: al-002
   stem:
@@ -57,6 +77,11 @@
         lv: E-pasts vietējai pašvaldībai.
         en: An e-mail to the local municipality.
         ru: Электронное письмо в местное самоуправление.
+    - id: d
+      text:
+        lv: Tālrunis tuvākajai lidostai.
+        en: A phone call to the nearest airport.
+        ru: Звонок в ближайший аэропорт.
   correctOptionId: a
   explanation:
     lv: >
@@ -68,8 +93,23 @@
     ru: >
       С 2025-01-01 для полётов в ограниченных UGZ обязательна заявка
       BGKIS. Без одобрения полёт незаконен.
+  distractorRationales:
+    b:
+      lv: SMS nav formāls iesniegšanas kanāls. Iesniegumam jāiet caur strukturētu sistēmu — BGKIS.
+      en: SMS is not a formal submission channel. The application must go through a structured system — BGKIS.
+      ru: SMS не является формальным каналом подачи. Заявка идёт через структурированную систему — BGKIS.
+    c:
+      lv: Pašvaldība neuzrauga UAS gaisa telpu. Atbildība un kanāls ir CAA Latvia caur BGKIS.
+      en: The municipality does not oversee UAS airspace. Authority and channel belong to CAA Latvia via BGKIS.
+      ru: Самоуправление не контролирует воздушное пространство для UAS. Полномочия и канал — у CAA Latvia через BGKIS.
+    d:
+      lv: Lidostas neapstiprina UAS pieteikumus tieši. Pat ja CTR ir lidostas tuvumā, pieteikuma kanāls ir BGKIS — e.caa.gov.lv.
+      en: Airports do not approve UAS applications directly. Even if the CTR is near an airport, the channel is BGKIS — e.caa.gov.lv.
+      ru: Аэропорты не одобряют заявки UAS напрямую. Даже если CTR рядом с аэропортом, канал — BGKIS, e.caa.gov.lv.
   sourceRef: "CAA Latvia — BGKIS rules effective 2025-01-01"
   difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
 
 - id: al-003
   stem:
@@ -92,6 +132,11 @@
         lv: Jā, ja drons ir vieglāks par 250 g.
         en: Yes, if the drone is lighter than 250 g.
         ru: Да, если дрон легче 250 г.
+    - id: d
+      text:
+        lv: Jā, ja lidojums notiek nedēļas nogalē, kad ATC ir mazāk noslogots.
+        en: Yes, if the flight happens on a weekend when ATC is less busy.
+        ru: Да, если полёт в выходные, когда у ATC меньше нагрузки.
   correctOptionId: b
   explanation:
     lv: >
@@ -106,8 +151,23 @@
       Разрешение UGZ расширяет доступ к зоне, но не расширяет внутренние
       ограничения Открытой категории (120 м, VLOS, запрет над
       скоплениями).
+  distractorRationales:
+    a:
+      lv: UGZ atļauja ir vērtīga, jo atver piekļuvi ierobežotai zonai — bet tā nemaina kategorijas iekšējos limitus, ieskaitot 120 m.
+      en: A UGZ authorisation is valuable because it opens access to a restricted zone — but it does not change intrinsic category limits including 120 m.
+      ru: Разрешение UGZ ценно тем, что открывает доступ к ограниченной зоне — но оно не меняет внутренних пределов категории, включая 120 м.
+    c:
+      lv: 250 g robeža attiecas uz pārlidojumu virs atsevišķām personām A1, ne uz augstuma limitu. 120 m attiecas uz visām klasēm.
+      en: The 250 g threshold relates to overflight of individuals in A1, not to the altitude limit. 120 m applies to all classes.
+      ru: Порог 250 г относится к пролёту над отдельными лицами в A1, а не к пределу высоты. 120 м применяется ко всем классам.
+    d:
+      lv: ATC noslogojums neietekmē regulas robežas. 120 m ir nepārtraukti spēkā — septiņas dienas nedēļā, divdesmit četras stundas.
+      en: ATC workload does not affect regulatory limits. 120 m applies continuously — seven days a week, twenty-four hours.
+      ru: Нагрузка ATC не влияет на регламентарные пределы. 120 м действуют непрерывно — семь дней в неделю, круглосуточно.
   sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020/030/040 — altitude limit"
   difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
 
 - id: al-004
   stem:
@@ -130,6 +190,11 @@
         lv: Jūrmalas pludmales zona.
         en: Jūrmala beach zone.
         ru: Зона пляжей Юрмалы.
+    - id: d
+      text:
+        lv: Visi Latvijas nacionālie parki.
+        en: All Latvia national parks.
+        ru: Все национальные парки Латвии.
   correctOptionId: a
   explanation:
     lv: >
@@ -144,8 +209,23 @@
       Приграничная зона EVR17 Border East вдоль границы Латвии с
       Россией и Беларусью с 2025 года закрыта для полётов Открытой
       категории.
+  distractorRationales:
+    b:
+      lv: Rīgas centra parks nav slēgts pilnībā. Pilsētas zonu apraksts ir nianses — ne vienkārša aizliegtā kategorija.
+      en: Riga central park is not closed wholesale. Urban zones are nuanced — not a simple prohibited category.
+      ru: Рижский центральный парк не закрыт целиком. Городские зоны — это нюансы, а не простая запрещённая категория.
+    c:
+      lv: Jūrmalas pludmales var saturēt pagaidu ierobežojumus sezonas laikā, bet tās nav vispārēji slēgtas Atvērtajā kategorijā.
+      en: Jūrmala beaches may have seasonal temporary restrictions but are not blanket-closed in the Open category.
+      ru: Пляжи Юрмалы могут иметь сезонные временные ограничения, но не закрыты целиком в Открытой категории.
+    d:
+      lv: Atsevišķi nacionālie parki var saturēt ierobežotās UGZ, bet nav vienota aizlieguma visiem parkiem. Katrs gadījums jāpārbauda airspace.lv.
+      en: Individual national parks may contain restricted UGZ, but there is no blanket prohibition across all parks. Each case must be checked on airspace.lv.
+      ru: Отдельные национальные парки могут содержать ограниченные UGZ, но единого запрета на все парки нет. Каждый случай — на airspace.lv.
   sourceRef: "CAA Latvia — airspace.lv/drones; EVR17 Border East NOTAM (2025)"
   difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: factual
 
 - id: al-005
   stem:
@@ -168,6 +248,11 @@
         lv: KML.
         en: KML.
         ru: KML.
+    - id: d
+      text:
+        lv: SHP (ESRI Shapefile).
+        en: SHP (ESRI Shapefile).
+        ru: SHP (ESRI Shapefile).
   correctOptionId: a
   explanation:
     lv: >
@@ -180,8 +265,23 @@
     ru: >
       EUROCAE ED-269 — стандарт данных geo-awareness для UAS, в JSON.
       В Латвии публикуются на `ais.lgs.lv/page/UAS_geozones`.
+  distractorRationales:
+    b:
+      lv: GPX ir izplatīts trasu formāts GPS ierīcēm, bet nav UAS ģeofence standarta. Ražotāji to neielādē kā geo-awareness avotu.
+      en: GPX is a common GPS track format, but it is not the UAS geofence standard. Manufacturers do not consume it as a geo-awareness source.
+      ru: GPX — распространённый формат треков для GPS, но это не стандарт UAS-геофенса. Производители не используют его как источник geo-awareness.
+    c:
+      lv: KML ir Google Earth karšu formāts. Tas neaizvieto strukturēto ED-269 JSON datu kopu ar zonu metadatiem.
+      en: KML is a Google Earth map format. It does not substitute for the structured ED-269 JSON dataset with zone metadata.
+      ru: KML — формат карт Google Earth. Он не заменяет структурированный набор данных ED-269 JSON с метаданными зон.
+    d:
+      lv: ESRI Shapefile ir GIS lietojuma formāts. ED-269 izmanto JSON, lai būtu vienkāršāks ielādēt UAS programmatūrā un valstu publikācijās.
+      en: ESRI Shapefile is a GIS-app format. ED-269 uses JSON so it is simpler to ingest in UAS firmware and national publications.
+      ru: ESRI Shapefile — формат для GIS-приложений. ED-269 использует JSON, чтобы упростить загрузку в прошивку UAS и национальные публикации.
   sourceRef: "EUROCAE ED-269; ais.lgs.lv/page/UAS_geozones"
   difficulty: 3
+  cognitiveLevel: recall
+  scenarioType: factual
 
 - id: al-006
   stem:
