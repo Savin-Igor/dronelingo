@@ -1,35 +1,102 @@
 # UAS klases C0–C4
 
-ES Regula 2019/945 nosaka **klases marķējumu**, kas norāda, kurā
-Atvērtās kategorijas apakškategorijā UAS drīkst lidot.
+<MissionBriefing objective="Pēc šīs nodarbības tu nolasīsi klases marķējumu uz jebkura UAS, zināsi, kuru apakškategoriju tas atver, un sapratīsi, kāpēc mantotam (bez marķējuma) UAS ir citi noteikumi nekā jaunam C1 — pat ja tie sver vienādi.">
+Klases marķējumu uz UAS korpusa nosaka ražotājs. Pilota sertifikāts to nemaina. Apakškategoriju izšķir UAS.
+</MissionBriefing>
 
-## Pieci marķējumi
+<CinematicScene
+  src="/lessons/drone-classes-c0-c4.png"
+  alt="Piecu UAS klašu ikonas C0 līdz C4 uz tumša fona ar masas robežām un apakškategoriju etiķetēm tirkīza tonī."
+  caption="Diagramma · uas-classes-c0-c4"
+/>
 
-| Klase | MTOM | Tipiskā lietošana |
-|-------|------|-------------------|
-| **C0** | < 250 g, maks. ātrums 19 m/s | A1 — atļauts virs atsevišķām personām (ne pulcēšanās). |
-| **C1** | < 900 g | A1 — pamatoti gaidāms, ka nelidot virs nepiederošām personām. |
-| **C2** | < 4 kg, ar zema ātruma režīmu | A2 — minimāls 5 m attālums (zema ātruma) vai 30 m (parastais). |
-| **C3** | < 25 kg | A3 — vismaz 150 m no apdzīvotām zonām. |
-| **C4** | < 25 kg, tikai manuālā vadība | A3 — modeļa lidaparāta tipa lidojumi. |
+## Kas ir klases marķējumi
 
-## Kā atrast klasi
+ES Regula 2019/945 nosaka piecus UAS klases marķējumus — C0 līdz C4. Katrs fiziski izspiests uz UAS korpusa ar CE zīmi. Marķējums nosaka, kurā Atvērtās kategorijas apakškategorijā UAS drīkst izmantot. **UAS nevar pārklasificēt**, izvēloties strādāt pēc citiem noteikumiem.
 
-Klases marķējums atrodas **uz UAS korpusa** (CE marķējums + klase, piem.,
-"C1"). Vecākiem droniem (pirms 2024) marķējums var trūkt — tādi tiek
-saukti "legacy" un tos piemēro pēc masas.
+## Piecas klases
 
-## Legacy droni
+| Klase | MTOM | Galvenā prasība | Apakškategorija |
+|-------|------|-----------------|-----------------|
+| **C0** | < 250 g, maks. 19 m/s | Mazām rotaļlietām marķējums nav vajadzīgs | Tikai A1 |
+| **C1** | < 900 g | Remote ID, geo-awareness | Tikai A1 |
+| **C2** | < 4 kg | Zema ātruma režīms (≤ 3 m/s) | A2 vai A3 |
+| **C3** | < 25 kg | Remote ID, geo-awareness | Tikai A3 |
+| **C4** | < 25 kg | Tikai manuāla vadība (bez autonomiem režīmiem) | Tikai A3 |
 
-Ja drons nav marķēts:
+**C0** ir vienīgā klase, kas atļauj pārlidot atsevišķas nepiederošas personas — bet **nekad** cilvēku pulcēšanos. **C1** A1 prasa pilotam plānot lidojumu apkārt cilvēkiem, ne virs viņiem.
 
-- < 250 g — A1 kā C0;
-- < 25 kg — A3 kā C3.
+## Mantoti UAS — bez klases marķējuma
 
-## Kāpēc tas svarīgi
+UAS, kas ražoti pirms klases sistēmas stāšanās spēkā, var nesatur klases marķējumu. Šie "mantoti" UAS tiek iedalīti pēc masas:
 
-**A1 ir nedrīkst lidot ar C2 vai C3 dronu** — neatkarīgi no pilota
-prasmēm. Klase nosaka apakškategoriju, nevis pilota izvēle.
+- **< 250 g** — pielīdzināmi C0, drīkst strādāt A1.
+- **250 g līdz 25 kg** — pielīdzināmi C3, jāstrādā A3.
 
-> **Avots:** Regula (ES) 2019/945, A pielikums (klases C0–C4 prasības);
-> EASA Easy Access Rules for UAS — Subcategories.
+Mantots UAS, kas sver 800 g, dabū **A3 noteikumus** — ne A1 — pat ja jauns C1 UAS tajā pašā svarā strādā A1. Svarīgs ir sertifikāts, ne tikai masa.
+
+## Kāpēc C2 ir profesionāļa atslēga
+
+C2 ir vienīgā klase, kas atver **A2 operācijas** — tuvu komerciālu darbu 5–30 m attālumā no nepiederošām personām. Pilotam jābūt A1/A3 sertifikātam **plus** A2 kompetences sertifikātam. C2 UAS, ko ekspluatē pilots tikai ar A1/A3, joprojām pakļaujas A3 noteikumiem: 150 m no apdzīvotām zonām, 30 m no personām.
+
+<Scenario title="Tev ir A1/A3 sertifikāts, un tavs UAS marķēts C2. Klients lūdz filmēt 25 m no būvgrupas, kas piekrišanu nav devusi. Vai drīksti?">
+**Nē.** Tikai ar A1/A3 sertifikātu C2 UAS jāstrādā A3. A3 prasa ≥ 30 m no nepiederošām personām. 25 m šo limitu pārkāpj.
+
+Lai tuvotos līdz 25 m, vajadzīgs A2 kompetences sertifikāts. Būvstrādnieku profesionāla klātbūtne automātiski nepadara viņus par "iesaistītām personām" regulas izpratnē — piekrišana viena pati ir nepietiekama; vajag arī pareizu apakškategorijas atļauju.
+</Scenario>
+
+<MemoryAnchor
+  rule="C0 → A1. C1 → A1. C2 → A2 (ar A2 sertifikātu) vai A3. C3/C4 → A3. Mantots < 250 g → A1. Mantots > 250 g → A3."
+  hint="Spiedogu uz UAS, ne pilota izvēli, izšķir noteikumus."
+/>
+
+<CommonMistakes>
+- Pieņemt, ka smags C1 UAS (piem., 850 g) drīkst lidot tuvāk cilvēkiem nekā viegls C2 — C1 UAS nekad nestrādā pēc A2 noteikumiem neatkarīgi no masas.
+- Lidot ar C2 UAS A2 tikai ar A1/A3 sertifikātu — A2 kompetences sertifikāts ir atsevišķa prasība.
+- Domāt, ka mantots UAS pēc masas var pretendēt uz A1 privilēģijām — 300 g mantots UAS ir A3, ne A1.
+- Jaukt C4 "tikai manuāla vadība" ar "bez sertifikāta" — C4 A3 operācijām joprojām prasa A1/A3 sertifikātu.
+- Domāt, ka pilots var "pazemināt" C2 līdz C0 noteikumiem — klasi fiksē ražošana.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "ug-q1",
+    stem: "UAS marķēts C3 un sver 18 kg. Pilotam ir A1/A3 sertifikāts. Kurā apakškategorijā drīkst lidot un kāds attālums no nepiederošām personām piemērojams?",
+    options: [
+      { id: "a", text: "A1 — bez attāluma prasības, jo A1 atļauj pārlidojumu." },
+      { id: "b", text: "A2 — 30 m no nepiederošām personām parastajā ātrumā." },
+      { id: "c", text: "A3 — ≥ 30 m no nepiederošām personām un ≥ 150 m no apdzīvotām zonām." },
+      { id: "d", text: "Lidot nedrīkst — C3 prasa A2 sertifikātu." },
+    ],
+    correctOptionId: "c",
+    explanation: "C3 UAS strādā tikai A3. A1/A3 sertifikāts A3 ir pietiekams. A3 noteikumi prasa ≥ 30 m no nepiederošām personām (vai 1:1 augstuma noteikumu, atkarībā no tā, kurš ir lielāks) un ≥ 150 m no dzīvojamām, komerciālām, industriālām vai atpūtas zonām.",
+    distractorRationales: {
+      a: "C3 A1 nedrīkst strādāt. A1 pieņem tikai C0 un C1.",
+      b: "A2 noteikumi prasa C2 UAS un A2 kompetences sertifikātu — neviens no tiem šeit neattiecas.",
+      d: "C3 UAS A3 prasa tikai A1/A3 sertifikātu. A2 sertifikāts A3 nav vajadzīgs.",
+    },
+  },
+  {
+    id: "ug-q2",
+    stem: "Pilots ir 2019. gadā ražota UAS īpašnieks bez klases marķējuma, kura pacelšanās masa 450 g. Pēc kuriem noteikumiem tam jāstrādā?",
+    options: [
+      { id: "a", text: "A1, kā C1 — masa zem 900 g." },
+      { id: "b", text: "A3, kā C3 — tas ir mantots UAS virs 250 g." },
+      { id: "c", text: "A2, jo svars ir starp 250 g un 4 kg." },
+      { id: "d", text: "Pilots pats izvēlas apakškategoriju, jo marķējuma nav." },
+    ],
+    correctOptionId: "b",
+    explanation: "Mantoti UAS (bez klases marķējuma) starp 250 g un 25 kg pielīdzināmi C3 un strādā A3. Masas salīdzinājums ar C1 šeit nestrādā — klases marķējumu, ne tikai masu, izšķir jauniem UAS. Mantoti UAS seko masas balstītam izvietojuma noteikumam.",
+    distractorRationales: {
+      a: "C1/A1 izvietojums attiecas uz UAS ar reālu C1 marķējumu. Mantots 450 g UAS nav C1.",
+      c: "Noteikuma 'A2 pēc noklusējuma mantotiem UAS' nav. Mantoti UAS A1 nokļūst tikai tad, ja zem 250 g.",
+      d: "Apakškategorija nav pilota izvēle. Mantoti UAS tiek izvietoti pēc regulas masas balstītā noteikuma.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ug-002"]}>
+Tu pratīsi nolasīt jebkuru klases marķējumu, sasaistīt to ar pareizo apakškategoriju un izskaidrot, kāpēc mantotiem UAS ir citi noteikumi.
+
+Tālāk: baterijas un uzglabāšana — enerģijas avots, kas darbina katru lidojumu, un drošības risks, kas izraisa vairumu UAS ugunsgrēku.
+</Debrief>
