@@ -1,43 +1,114 @@
 # Avārijas procedūras
 
-Atvērtās kategorijas pilots vada UAS bez ATC atbalsta. Katra avārijas
-situācija — pilota personīgais lēmums, balstīts uz iepriekš
-sagatavotām procedūrām.
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi pareizās tūlītējās darbības vadības saites zudumam, GPS zudumam, zemai baterijai, fly-away un sadursmei — un sapratīsi, kāpēc šie lēmumi pieņemami pirms starta, nevis pašā avārijas brīdī.">
+Avārijas brīdī tu nepacelies līdz situācijai. Tu nokrīti līdz savas sagatavotības līmenim. Iemācies procedūras pirms tās tev ir vajadzīgas.
+</MissionBriefing>
 
-## Lost link
+<CinematicScene
+  src="/lessons/emergency-decision-tree.png"
+  alt="Avārijas lēmumu koks ar četriem zariem: vadības saites zudums (dzeltens), GPS zudums (sarkans), zema baterija (dzeltens), fly-away (sarkans)."
+  caption="Shēma · avārijas procedūras"
+/>
 
-Vadības saites zudums. UAS izmanto **fail-safe**:
+## Vadības saites zudums — biežākā avārija
 
-- **Return-to-Home (RTH)** — atgriežas uz iepriekš iestatīto punktu;
-- **Kontrolēta nolaišanās** — nolaižas tieši zem pēdējās zināmās
-  pozīcijas.
+Vadības saites zudums nozīmē, ka UAS vairs nesaņem pilota komandas. Aparātam automātiski jāizpilda iepriekš iestatītā **fail-safe** procedūra.
 
-Pilots izvēlas režīmu **pirms** lidojuma. RTH augstumam jābūt virs
-visiem trajektorijas šķēršļiem.
+Divi izplatīti fail-safe režīmi:
+- **Return-to-Home (RTH)** — UAS atgriežas uz starta punktu iepriekš iestatītā augstumā. RTH augstumam pirms starta jābūt iestatītam virs visiem šķēršļiem atgriešanās ceļā.
+- **Kontrolēta nolaišanās** — UAS nolaižas tieši zem pašreizējās pozīcijas.
 
-## Lost GPS
+Režīms izvēlams **pirms** starta. RTH ir bīstams, ja UAS atrodas virs cilvēku pūļa vai starta punkts ir citā vietā. Nolaišanās ir bīstama, ja zem aparāta ir ūdens vai šķērslis.
 
-Bez GPS UAS nezina pozīciju. Pārslēdz uz **manuālo režīmu** un nolaiž
-tuvākajā drošajā vietā ar redzamiem orientieriem.
+## GPS zudums — paliek tikai manuālais režīms
 
-## Low battery
+Bez GPS aparāts nespēj noturēt pozīciju vai autonomi navigēt. **Pārslēdz uz manuālo režīmu nekavējoties.** Izmanto vizuālus orientierus (ceļus, ēkas, lauku malas), lai orientētos un izvēlētos drošu nolaišanās vietu. Nolaid pēc iespējas ātrāk.
 
-Pirmais brīdinājums (parasti ~20 %): **pārtrauc misiju**, sāc
-atgriešanos. Otrs brīdinājums: **nekavējoties nolaid drošā vietā** —
-nemēģini sasniegt sākuma punktu, ja baterija to neatļauj.
+Negaidi GPS atjaunošanos — pozīcijas dreifs augstuma turēšanas režīmā bez GPS aizvedīs aparātu prom no tās vietas, kur tu to gaidi.
 
-## Fly-away
+## Zema baterija — divpakāpju reakcija
 
-UAS aizlido pilotam nekontrolējamā virzienā. Mēģini atjaunot kontaktu;
-ja neizdodas — **dokumentē pēdējo zināmo pozīciju** (foto / ekrānuzņēmums)
-un ziņo CAA Latvia 72 stundu laikā, ja iesaistīti citi gaisa kuģi vai
-infrastruktūra.
+Lielākā daļa UAS brīdina pie aptuveni 20 % (pirmais brīdinājums) un 10 % (otrais, kritiskais).
 
-## Sadursme
+**Pirmais brīdinājums (~20 %):** Pārtrauc pašreizējo misijas uzdevumu. Sāc atgriešanos. Nepabeidz kadru, pāreju vai sēriju.
 
-- Ar pilotētu gaisa kuģi — **obligāts ziņojums** 72 stundu laikā vietnē
-  `e.caa.gov.lv/incidents`.
-- Ar šķērsli — pārtrauc lidojumu, pārbauda UAS, dokumentē notikumu.
+**Otrais brīdinājums (~10 %):** Nekavējoties nolaid tuvākajā drošajā vietā. Nemēģini sasniegt starta punktu, ja baterija to vairs neļauj — kontrolēta nolaišanās nepareizajā vietā ir drošāka nekā kritiens pie mājām.
 
-> **Avots:** EASA Easy Access Rules for UAS — Emergency procedures;
-> ražotāja rokasgrāmatas (DJI / Autel / Skydio).
+<Scenario title="Tu filmē 600 m attālumā no starta punkta. Parādās pirmais baterijas brīdinājums. Plānotais kadrs prasītu vēl 4 minūtes. Ko tu dari?">
+**Sāc atgriezties uzreiz.** Atgriešanās 600 m vidējā ātrumā ilgst 3–4 minūtes. Pieliec klāt 4 minūtes filmēšanas — un otrais brīdinājums nostrādās atgriešanās laikā, iespējams virs šķēršļa vai ūdens.
+
+Profesionālais lēmums: pārtrauc → atgriezies → nolaid → nomaini bateriju → turpini filmēt. Kadrus vienmēr var pārfilmēt. Avarējušu UAS 400 m attālā laukā ne vienmēr var atgūt tajā pašā dienā.
+</Scenario>
+
+## Fly-away — reti, bet nopietni
+
+Fly-away — UAS aizlido nekontrolējamā virzienā un nereaģē uz parastām vadības komandām. Cēloņi: programmatūras kļūdas, GPS spoofing, kompasa kļūdas spēcīgos magnētiskajos traucējumos.
+
+**Darbību secība:**
+1. Mēģini pārslēgt lidojuma režīmu (piem., uz Attitude), lai daļēji atgūtu vadību.
+2. Ja aparātu atgūt neizdodas — fotografē ekrānu ar pēdējām zināmajām GPS koordinātām.
+3. Seko UAS tik ilgi, cik VLOS to ļauj.
+4. Ja iespējama sadursme ar infrastruktūru vai pilotētu gaisa kuģi — zvani tuvākajai lidostai (ja kontrolētā gaisa telpā).
+5. Iesniedz obligātu ziņojumu 72 stundu laikā vietnē `e.caa.gov.lv/incidents`.
+
+## Sadursme un darbības pēc notikuma
+
+Ar **pilotētu gaisa kuģi**: obligāts ziņojums 72 stundu laikā vietnē `e.caa.gov.lv/incidents`. Tas nav fakultatīvi.
+
+Ar **šķērsli vai virsmu**: pārtrauc lidojumu, fiziski apskati UAS pirms jebkura nākamā lidojuma. Dokumentē notikumu (foto, video, laika zīmogs). Iesniedz brīvprātīgu ziņojumu, ja notikumam bija drošības sekas.
+
+<MemoryAnchor
+  rule="Iestati fail-safe pirms starta. Pirmais baterijas brīdinājums = atgriezies tagad. Fly-away = dokumentē visu."
+  hint="Avārijas lēmumi, kas pieņemti mierīgi pirms lidojuma, vienmēr ir labāki par lēmumiem panikā."
+/>
+
+<CommonMistakes>
+- Neiestatīt RTH augstumu pirms starta — noklusētā vērtība var būt zemāka par tuvākajiem šķēršļiem.
+- Turpināt filmēt pēc pirmā baterijas brīdinājuma — otrais var nostrādāt virs ūdens vai cilvēkiem.
+- Pārslēgties manuālajā režīmā GPS zuduma brīdī bez vizuāliem orientieriem — bez orientieriem manuālais režīms tikai padara dezorientāciju sliktāku.
+- Neiesniegt obligātu ziņojumu pēc sadursmes ar pilotētu gaisa kuģi — izlaišana ir atsevišķs pārkāpums.
+- Paļauties uz ražotāja lietotnes "find my drone" funkciju bez ekrānuzņēmuma ar pēdējām GPS koordinātām — lietotnei nepieciešama saite, lai iegūtu pozīciju.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "ep-q1",
+    stem: "Tu zaudē vadības saiti 90 m augstumā virs tukša lauka. RTH ir aktīvs. Kāds bija minimālais RTH augstums, kas pirms šī lidojuma bija jāiestata?",
+    options: [
+      { id: "a", text: "90 m — pašreizējais lidojuma augstums." },
+      { id: "b", text: "Augstāks par augstāko šķērsli starp UAS pozīciju un starta punktu." },
+      { id: "c", text: "50 m — standarta drošs augstums atklātās vietās." },
+      { id: "d", text: "RTH augstums tukšā laukā nav būtisks." },
+    ],
+    correctOptionId: "b",
+    explanation: "RTH augstumam jāpārsniedz visi šķēršļi atgriešanās ceļā — koki, elektrolīnijas, ēkas — neatkarīgi no pašreizējā lidojuma augstuma. Iestatīt to pēc pašreizējā augstuma der tikai tad, ja starp UAS un starta punktu nav nekā augstāka.",
+    distractorRationales: {
+      a: "Atgriešanās ceļā var būt šķēršļi virs pašreizējiem 90 m — RTH tos jāpārvar.",
+      c: "50 m ir izplatīta noklusētā vērtība, bet var nebūt pietiekama. Augstumu iestata pēc reālā šķēršļu profila.",
+      d: "Pat šķietami tukšos laukos ir elektrolīnijas, žogi un augsti koki — UAS tos jāpārvar atgriežoties.",
+    },
+  },
+  {
+    id: "ep-q2",
+    stem: "Parādās pirmais baterijas brīdinājums. Līdz uzdevuma pabeigšanai vajadzīgas vēl 2 minūtes filmēšanas. Ko darīt?",
+    options: [
+      { id: "a", text: "Pabeigt 2 minūtes — otrais brīdinājums dos rezervi." },
+      { id: "b", text: "Samazināt augstumu, lai ietaupītu bateriju, un pabeigt kadru." },
+      { id: "c", text: "Pārtraukt misiju un nekavējoties sākt atgriešanos." },
+      { id: "d", text: "Ieslēgt Performance režīmu, lai ātrāk atgrieztos pēc pabeigšanas." },
+    ],
+    correctOptionId: "c",
+    explanation: "Pirmais brīdinājums ir signāls pārtraukt operatīvo uzdevumu un sākt atgriešanos. Otrais brīdinājums ir avārijas indikators nolaišanai, nevis rezerve darba pabeigšanai. Apmainīt drošības rezervi pret 2 minūtēm filmēšanas nozīmē riskēt ar piespiedu nolaišanos nepareizā vietā.",
+    distractorRationales: {
+      a: "Otrais brīdinājums ir avārijas indikators, nevis drošības buferis darba pabeigšanai.",
+      b: "Augstuma samazināšana vien neietaupa pietiekami daudz, lai pamatotu risku.",
+      d: "Performance režīms palielina baterijas patēriņu. Tā izmantošana, lai pabeigtu kadru, problēmu tikai padziļina.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ug-001"]}>
+Tu zini pareizo reakciju uz piecām biežākajām UAS avārijas situācijām.
+
+Nākamais sektors: Vispārīgas zināšanas par UAS — pats drons, tā klases un baterijas, kas visu darbina.
+</Debrief>
