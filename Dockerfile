@@ -48,15 +48,15 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 # Static MDX content read at request time by `src/lib/static-page.ts`.
 COPY --from=builder --chown=nextjs:nodejs /app/content/static ./content/static
 
-# Prisma artefacts at runtime (migrate deploy needs the schema + CLI;
-# the client + engines must be resolvable from the standalone output).
+# Prisma schema needed for `prisma migrate deploy` at container start.
 COPY --from=builder /app/prisma ./prisma
-COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
-COPY --from=builder /app/node_modules/.bin/prisma ./node_modules/.bin/prisma
-COPY --from=builder /app/node_modules/prisma ./node_modules/prisma
-# @prisma/* family — includes @prisma/client and @prisma/engines, both
-# of which the Next.js standalone bundle resolves at runtime.
-COPY --from=builder /app/node_modules/@prisma ./node_modules/@prisma
+
+# Replace the standalone-bundled node_modules with the full builder
+# install. The standalone tracer only ships modules used by the Next.js
+# runtime, so prisma CLI's own transitive deps (@prisma/config →
+# `effect`, etc.) go missing. The image is a bit larger but the
+# entrypoint's `prisma migrate deploy` resolves reliably.
+COPY --from=builder /app/node_modules ./node_modules
 
 # Entrypoint: prisma migrate deploy then exec CMD.
 COPY scripts/docker-entrypoint.sh /docker-entrypoint.sh
