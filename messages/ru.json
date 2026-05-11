@@ -198,6 +198,24 @@
     "stubNote": "Тестовая оплата — деньги не списываются.",
     "freeNote": "Тема «Безопасность полётов» всегда бесплатна."
   },
+  "rank": {
+    "ariaLabel": "Звание пилота",
+    "kicker": "Звание пилота",
+    "nextLabel": "Дальше:",
+    "certifiedHint": "Ты сертифицирован — сдавай реальный экзамен на e.caa.gov.lv.",
+    "tiers": {
+      "recruit": { "name": "Новобранец" },
+      "cadet": { "name": "Кадет" },
+      "pilotReady": { "name": "A1/A3 готов" },
+      "certified": { "name": "Сертифицирован" }
+    },
+    "criteria": {
+      "lessonsVisited": { "label": "Открой {target} урока ({current}/{target})" },
+      "recentMockPasses": { "label": "Сдай {target} mock-экзамена ≥ 85 % за неделю ({current}/{target})" },
+      "topicsAt70": { "label": "Достигни 70 % мастерства по всем темам ({current}/{target})" },
+      "hasCertificate": { "label": "Загрузи сертификат CAA Latvia" }
+    }
+  },
   "masteryMap": {
     "ariaLabel": "Карта мастерства по темам",
     "title": "Карта мастерства",

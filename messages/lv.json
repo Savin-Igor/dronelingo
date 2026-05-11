@@ -198,6 +198,24 @@
     "stubNote": "Stub checkout — reāla maksa netiek ieturēta.",
     "freeNote": "Gaisa drošības tēma vienmēr ir bez maksas."
   },
+  "rank": {
+    "ariaLabel": "Pilota rangs",
+    "kicker": "Pilota rangs",
+    "nextLabel": "Tālāk:",
+    "certifiedHint": "Tu esi sertificēts — kārto īsto eksāmenu e.caa.gov.lv.",
+    "tiers": {
+      "recruit": { "name": "Iesācējs" },
+      "cadet": { "name": "Kadets" },
+      "pilotReady": { "name": "A1/A3 gatavs" },
+      "certified": { "name": "Sertificēts" }
+    },
+    "criteria": {
+      "lessonsVisited": { "label": "Apmeklē {target} nodarbības ({current}/{target})" },
+      "recentMockPasses": { "label": "Šonedēļ nokārto {target} mock eksāmenus ≥ 85 % ({current}/{target})" },
+      "topicsAt70": { "label": "Sasniedz 70 % apgūšanu visās tēmās ({current}/{target})" },
+      "hasCertificate": { "label": "Augšupielādē savu CAA Latvia sertifikātu" }
+    }
+  },
   "masteryMap": {
     "ariaLabel": "Tēmu meistarības karte",
     "title": "Meistarības karte",

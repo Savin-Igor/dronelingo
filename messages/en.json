@@ -198,6 +198,24 @@
     "stubNote": "Stub checkout — no real charge.",
     "freeNote": "Air Safety topic is always free — no payment needed."
   },
+  "rank": {
+    "ariaLabel": "Pilot rank",
+    "kicker": "Pilot rank",
+    "nextLabel": "Next:",
+    "certifiedHint": "You're certified — fly the real exam at e.caa.gov.lv.",
+    "tiers": {
+      "recruit": { "name": "Recruit" },
+      "cadet": { "name": "Cadet" },
+      "pilotReady": { "name": "A1/A3 ready" },
+      "certified": { "name": "Certified" }
+    },
+    "criteria": {
+      "lessonsVisited": { "label": "Visit {target} lessons ({current}/{target})" },
+      "recentMockPasses": { "label": "Pass {target} mock exams ≥ 85 % this week ({current}/{target})" },
+      "topicsAt70": { "label": "Reach 70 % mastery across all topics ({current}/{target})" },
+      "hasCertificate": { "label": "Upload your CAA Latvia certificate" }
+    }
+  },
   "masteryMap": {
     "ariaLabel": "Topic mastery map",
     "title": "Mastery map",
