@@ -48,11 +48,15 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 # Static MDX content read at request time by `src/lib/static-page.ts`.
 COPY --from=builder --chown=nextjs:nodejs /app/content/static ./content/static
 
-# Prisma artefacts at runtime (migrate deploy needs the schema + CLI).
+# Prisma artefacts at runtime (migrate deploy needs the schema + CLI;
+# the client + engines must be resolvable from the standalone output).
 COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
 COPY --from=builder /app/node_modules/.bin/prisma ./node_modules/.bin/prisma
 COPY --from=builder /app/node_modules/prisma ./node_modules/prisma
+# @prisma/* family — includes @prisma/client and @prisma/engines, both
+# of which the Next.js standalone bundle resolves at runtime.
+COPY --from=builder /app/node_modules/@prisma ./node_modules/@prisma
 
 # Entrypoint: prisma migrate deploy then exec CMD.
 COPY scripts/docker-entrypoint.sh /docker-entrypoint.sh
