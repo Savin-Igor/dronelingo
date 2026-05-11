@@ -1,38 +1,128 @@
 # Atgadījumu ziņošana
 
-Civilās aviācijas drošība balstās uz **atklātu ziņošanu par
-atgadījumiem** — pat tādiem, kas pabeigti bez sekām. Tas ļauj nozarei
-mācīties no tuvtrāpījumiem, nevis tikai no nelaimēm.
+<MissionBriefing objective="Pēc šīs nodarbības tu precīzi zināsi, kuri notikumi prasa obligātu ziņojumu 72 stundu laikā, kuri ir brīvprātīgi, kur to iesniegt Latvijā un visā ES, un kāpēc Just Culture aizsardzība nozīmē, ka ziņot vienmēr ir drošāk nekā klusēt.">
+Civilā aviācija mācās no bīstamām situācijām, ne tikai no avārijām. Katrs iesniegts notikums ir datu punkts, kas novērš nākamo. Pilots, kurš ziņo par bīstamu tuvošanos, neatzīst vainu — viņš piedalās sistēmā, kas pasargā visus.
+</MissionBriefing>
 
-## Obligāta ziņošana 72 stundu laikā
+<CinematicScene
+  src="/lessons/occurrence-reporting-flow.png"
+  alt="Lēmumu plūsma: notiek notikums; nopietna trauma vai bīstama tuvošanās pilotētam gaisa kuģim → obligāts 72 h ziņojums; ar drošību saistīts notikums → brīvprātīgs ziņojums; abi iesniedzami e.caa.gov.lv/incidents."
+  caption="Diagramma · occurrence-reporting-flow"
+/>
 
-Pilots ziņo **72 stundu laikā**, ja:
+## Divas ziņošanas kategorijas
 
-- noticis **smags savainojums** vai bojāgājušais;
-- bijusi **tuva saskarsme vai sadursme ar pilotētu gaisa kuģi**;
-- UAS sadūries ar šķērsli, kas ir kritisks infrastruktūras objekts
-  (līnija, dzelzceļš).
+**Obligātā ziņošana** — likumā prasīta 72 stundu laikā no notikuma. Termiņa nokavējums ir atsevišķs pārkāpums no paša incidenta.
 
-## Brīvprātīga ziņošana
+**Brīvprātīgā ziņošana** — bez termiņa, bez pienākuma, bet stipri ieteicama jebkuram ar drošību saistītam notikumam, kas nesasniedz obligāto slieksni.
 
-Tāda pati prasība, bez termiņa, **par jebkuru drošības notikumu**:
+## Obligātie ziņojumi — trīs trigeri
 
-- pazaudēts datu kanāls (lost link);
-- "fly-away" — UAS aizlido pilotam nekontrolējamā virzienā;
-- "fail-safe" funkcijas neaktivējās;
-- kļūdaina ģeofence vai GPS pozīcija.
+Pilotam **obligāti** jāiesniedz ziņojums 72 stundu laikā, kad notiek kāds no šiem:
+
+1. **Nopietna trauma vai bojāeja** — UAS izraisa trešās personas miesas bojājumu, kas prasa medicīnisku palīdzību.
+2. **Bīstama tuvošanās vai sadursme ar pilotētu gaisa kuģi** — jebkura situācija, kurā pilotētā gaisa kuģa apkalpei bijis jāizdara manevrs, lai izvairītos no UAS, vai kurā separācija pēc apkalpes vērtējuma bijusi nepietiekama.
+3. **Trieciens pa kritisko infrastruktūru** — UAS fiziski saskaras ar elektrolīniju, dzelzceļu, sakaru mastu vai citu aizsargātu infrastruktūru.
+
+Šie nav diskrecionāri. "Bīstama tuvošanās" tiek interpretēta plaši — ja pilotētā gaisa kuģa apkalpe iesniedz AIRPROX ziņojumu, UAS pilotam jārēķinās ar obligātu ziņojumu.
+
+## Brīvprātīgie ziņojumi — plašākais tīkls
+
+Brīvprātīgi ieteicams ziņot par jebkuru notikumu ar drošības sekām, kas nesasniedz obligāto slieksni:
+
+- Lidojuma laikā zaudēta datu saite (saite atjaunota, droša nolaišanās).
+- Fly-away notikums, kur kontrole atjaunota pirms kaitējuma.
+- Fail-safe nestrādāja, kā konfigurēts.
+- GNSS traucēšana vai spoofings konstatēts lidojumā.
+- Aparatūras atteice lidojumā (motora brīdinājums, baterijas šūnas atteice).
+- Ģeofence anomālija vai kļūdaini ģeo-info dati.
+
+Par brīvprātīgu ziņojumu sods nav. Sistēmiska maksa par nepaziņošanu ir tā, ka šie notikumi nekad nenokļūst drošības datu bāzē, modelis paliek neatklāts, un nākamais pilots saskaras ar to pašu nebrīdinātu risku.
 
 ## Kur iesniegt
 
-- **Latvija:** [e.caa.gov.lv/incidents](https://e.caa.gov.lv/incidents).
-- **ES līmenī:** [aviationreporting.eu](https://aviationreporting.eu) —
-  ECCAIRS sistēma.
+**Latvija:** `e.caa.gov.lv/incidents` — galvenais portāls gan obligātajiem, gan brīvprātīgajiem ziņojumiem. Pieejams latviešu un angļu valodā.
 
-## "Just culture"
+**ES kopumā:** `aviationreporting.eu` — ECCAIRS 2 sistēma, kas apvieno ziņojumus visās ES dalībvalstīs. Aktuāla pārrobežu operācijām vai kopīgai gaisa telpai.
 
-ES regulējums (Regula 376/2014) aizsargā ziņotāju no krimināltiesiskām
-sekām, ja vien notikums nav noticis tīšas neuzmanības rezultātā. Ziņot
-ir drošāk nekā klusēt.
+Ziņojumā iekļauj: datumu, laiku, atrašanās vietu (GPS, ja pieejams), UAS tipu, kas notika, kādas darbības veiktas un jebkuras liecinieku vai apkārtējo kontaktu detaļas.
 
-> **Avots:** Regula (ES) 376/2014 par ziņošanu par atgadījumiem civilajā
-> aviācijā; CAA Latvia portāls `e.caa.gov.lv/incidents`.
+## Just Culture — aizsardzība, kas padara ziņošanu derīgu
+
+ES Regula 376/2014 nodibina **Just Culture** kā tiesisku principu civilās aviācijas ziņošanā. Pamatgarantija:
+
+- Ziņojuma iesniegšana **automātiski neizraisa krimināltiesisku procesu** pret ziņotāju.
+- Iestādēm jāatdala drošības izmeklēšana no jebkuras izpildes darbības.
+- Krimināltiesiskas sekas piemērojamas tikai tad, kad notikums izriet no **rupja neuzmanība** vai **tīšas nelikumības**.
+
+Praksē: pilots, kurš zaudē saiti, droši nolaiž un iesniedz brīvprātīgu ziņojumu, ir aizsargāts pret kriminālvajāšanu par incidentu. Pilots, kurš neziņo par obligātu notikumu — bīstamu tuvošanos ar pilotētu gaisa kuģi — aizsardzības nav un var saskarties ar apsūdzību pašā nepaziņošanā.
+
+**Klusēt nav drošāk.** Obligātā ziņojuma izlaišana ir atsevišķi sodāms akts.
+
+<Scenario title="Tavs UAS zaudē GPS un aizdreifē 80 m pa vēju, pirms atgūsti manuālu kontroli un droši nolaid. Neviens nav cietis. Tuvumā nebija gaisa kuģu. Vai tas ir obligāts vai brīvprātīgs ziņojums?">
+**Brīvprātīgs.** Notikums neaptver nevienu obligāto trigeri — bez traumas, bez pilotēta gaisa kuģa, bez trieciena kritiskajai infrastruktūrai. Tomēr tas ir skaidrs kandidāts brīvprātīgam ziņojumam:
+
+- GPS pozīcijas zudums lidojumā ir ar drošību saistīts notikums.
+- Dreifa attālums un vēja apstākļi ir noderīgi dati drošības iestādei.
+- Ja tāds pats GPS atteices modelis parādās citos ziņojumos, CAA Latvia var paziņot ražotājam.
+
+Iesniedz `e.caa.gov.lv/incidents`. Aizņem aptuveni 10 minūtes. Just Culture aizsardzība attiecas arī uz brīvprātīgiem ziņojumiem — iesniegšanai trūkumu nav.
+</Scenario>
+
+<MemoryAnchor
+  rule="Obligāti (72 h): trauma, bīstama tuvošanās pilotētam gaisa kuģim, trieciens kritiskajai infrastruktūrai. Brīvprātīgi: jebkurš ar drošību saistīts notikums. Abi e.caa.gov.lv/incidents. Just Culture = ziņot vienmēr drošāk nekā klusēt."
+  hint="Obligāta ziņojuma neiesniegšana ir atsevišķs pārkāpums. Brīvprātīgam ziņojumam nav trūkumu."
+/>
+
+<CommonMistakes>
+- Gaidīt vairāk nekā 72 stundas, lai iesniegtu obligātu ziņojumu, jo "gribēju pārdomāt" — termiņš ir 72 stundas no notikuma, ne no brīža, kad pilots izlems iesniegt.
+- Pieņemt, ka bīstama tuvošanās skaitās tikai tad, ja pilotētais gaisa kuģis iesniedzis ziņojumu pirmais — UAS pilota pienākums ir neatkarīgs.
+- Neiesniegt brīvprātīgus ziņojumus par notikumiem, kas droši atrisinājās — "nekas jau nenotika" pazaudē jēgu; bīstamās tuvošanās dati ir vērtība.
+- Domāt, ka Just Culture nozīmē nekādas sekas — rupja neuzmanība un tīša nelikumīga rīcība skaidri nav aizsargāta.
+- Iesniegt nepareizajā portālā — ES `aviationreporting.eu` neaizvieto obligāto Latvijas ziņojumu `e.caa.gov.lv/incidents`.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "se-or1",
+    stem: "UAS pilota aparāts nokļūst 50 m attālumā no nelielas pilotētas lidmašīnas tās tuvošanās posmā. Sadursmes nav. Pilotētā kuģa apkalpei bijis nedaudz jākoriģē kurss. Kāds ir pilota ziņošanas pienākums?",
+    options: [
+      { id: "a", text: "Ziņojums nav nepieciešams — sadursme nenotika, un neviens nav cietis." },
+      { id: "b", text: "Tikai brīvprātīgs ziņojums — pilots pats izvēlas, vai iesniegt." },
+      { id: "c", text: "Obligāts ziņojums 72 stundu laikā — bīstama tuvošanās pilotētam gaisa kuģim ir obligātais trigeris." },
+      { id: "d", text: "Obligāts ziņojums 24 stundu laikā — bīstamām tuvošanās ir īsāks termiņš." },
+    ],
+    correctOptionId: "c",
+    explanation: "Bīstama tuvošanās pilotētam gaisa kuģim ir viens no trim obligātajiem ziņošanas trigeriem pēc ES Regulas 376/2014 un Latvijas īstenošanas. Pilotētā kuģa apkalpei bijis jākoriģē kurss UAS dēļ — tas sasniedz slieksni. Piemērojams 72 stundu termiņš. Sadursme obligātā trigera aktivizācijai nav nepieciešama.",
+    distractorRationales: {
+      a: "Bīstamas tuvošanās slieksnim sadursme nav nepieciešama. Pilotētā gaisa kuģa kursa korekcija UAS dēļ jau ir ziņojama.",
+      b: "Bīstama tuvošanās pilotētam gaisa kuģim ir obligāta, ne brīvprātīga. Pilota izvēle šeit nav būtiska — pienākums pastāv neatkarīgi.",
+      d: "Obligātais UAS atgadījumu ziņošanas termiņš ir 72 stundas, ne 24.",
+    },
+  },
+  {
+    id: "se-or2",
+    stem: "Kādu tiesisku aizsardzību Just Culture (Reg 376/2014) sniedz pilotam, kurš brīvprātīgi ziņo par drošības notikumu?",
+    options: [
+      { id: "a", text: "Pilna imunitāte pret jebkurām tiesiskām sekām, kas saistītas ar paziņoto notikumu." },
+      { id: "b", text: "Aizsardzība pret automātisku kriminālvajāšanu — krimināltiesiskas sekas piemērojamas tikai par rupju neuzmanība vai tīšu nelikumību." },
+      { id: "c", text: "Aizsardzība darbojas tikai tad, ja ziņojums iesniegts 24 stundu laikā." },
+      { id: "d", text: "Aizsardzības nav — brīvprātīgi ziņojumi izmantojami kā pierādījumi izpildes procesos." },
+    ],
+    correctOptionId: "b",
+    explanation: "Just Culture pēc Reg 376/2014 aizsargā ziņotājus no automātiskas kriminālvajāšanas par paziņoto notikumu. Tā nav pilna imunitāte — rupja neuzmanība un tīša nelikumība paliek sodāmas. Brīvprātīgā ziņojuma aizsardzībai laika nosacījuma nav. Brīvprātīgi ziņojumi Just Culture ietvarā izmantojami drošības analīzei, ne izpildei.",
+    distractorRationales: {
+      a: "Just Culture nav blakus imunitāte. Rupja neuzmanība un tīša nelikumība paliek ārpus aizsardzības.",
+      c: "Brīvprātīgā ziņojuma Just Culture aizsardzībai laika nosacījuma nav — tā darbojas neatkarīgi no tā, kad ziņojums iesniegts.",
+      d: "Reg 376/2014 skaidri nosaka, ka brīvprātīgi drošības ziņojumi aizsargāti pret izmantošanu kā izpildes pierādījumi, izņemot rupjas neuzmanības / nelikumības gadījumus.",
+    },
+  },
+]} />
+
+<Debrief unlocks={[]}>
+Tu esi pabeidzis visus deviņus A1/A3 sagatavošanas programmas sektorus.
+
+Tu pārvaldi regulas ietvaru, apakškategorijas, cilvēka veiktspējas faktorus, ekspluatācijas procedūras, UAS sistēmas, privātuma pienākumus, apdrošināšanas prasības un drošības un ziņošanas pienākumus.
+
+Nākamais solis ir prakse — jautājumu banka gaida.
+</Debrief>

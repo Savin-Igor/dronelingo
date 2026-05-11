@@ -1,41 +1,115 @@
 # UAS kiberdrošība
 
-UAS ir savienots datorsistēmu komplekss — pilots, drons, mobilā
-lietotne, ražotāja mākoņserveris. Katrs no šiem ir potenciāls
-uzbrukuma vektors.
+<MissionBriefing objective="Pēc šīs nodarbības tu identificēsi četrus galvenos kiberuzbrukumu vektorus pret UAS, atšķirsi GNSS traucēšanu no spoofinga un piemērosi pamata drošības higiēnu aparātam, lietotnei un datiem.">
+UAS ir tīkla dators, kas arī lido. Uzbrukuma virsma ir pilota telefons, ražotāja mākonis un GPS signāli, kuriem UAS uzticas bez ierunām. Katrs ir izmantojams.
+</MissionBriefing>
 
-## Pamata higiēna
+<CinematicScene
+  src="/lessons/cyber-security-threats.png"
+  alt="UAS kiberdraudu diagramma: centrā UAS, kas savienots ar pilota lietotni, mākoni un GPS satelītiem, ar uzbrukuma vektoriem — traucēšana, spoofing, programmatūras manipulācijas, viltus WiFi."
+  caption="Diagramma · cyber-security-threats"
+/>
 
-- **Maini rūpnīcas paroli** mobilajā lietotnē un kontā.
-- **Atjaunini firmware** tikai no oficiālā ražotāja kanāla.
-- **Nepievieno UAS nezināmiem Wi-Fi tīkliem** (publiskie hotspot, foruma
-  "demo" tīkli).
-- **Glabā konta paroli** parolu pārvaldniekā, ne tekstā.
+## Četri uzbrukuma vektori
 
-## GNSS jamming un spoofing
+UAS sistēma sastāv no četriem komponentiem, katrs ar savu izvietojumu uzbrukumam:
 
-- **Jamming** — radioviļņi pārklāj GPS signālu, UAS zaudē pozīcijas
-  fiksāciju. Pazīme: pēkšņs RTH atteikums vai pilsētas centrā tipiska
-  "pelēka karte".
-- **Spoofing** — viltus GPS signāli noved UAS uz citu vietu. Pazīme:
-  UAS rāda neticamu pozīciju (vairāki km nost no realitātes).
+**1. Pilota lietotne un konts.** Ražotāju lietotnes (DJI GO 4, DJI Fly, Autel Sky) saistītas ar kontiem, kas satur lidojumu žurnālus, atrašanās vietas vēsturi un iestatījumus. Vājas paroles, neapmaiņotas paroļdatnes un atkārtotas paroles starp servisiem ir galvenais vektors šeit.
 
-Latvijā šādi notikumi tiek arvien biežāk reģistrēti, īpaši pierobežas
-zonās. **Pirmā darbība:** pārslēdz uz manuālo režīmu, nolaiž droši.
-**Otrā darbība:** ziņo CAA Latvia.
+**2. Programmatūras un atjauninājumu kanāli.** UAS autopilots, kamera un tālvadības pults darbojas uz programmatūras. Ļaunatura, kas injicēta caur viltus atjauninājumu serveriem, var atspējot drošības funkcijas, mainīt lidojuma uzvedību vai noplūdināt datus. Atjaunini tikai pa **oficiālo ražotāja kanālu** — nekad no trešo pušu vietnēm, pat reģionālu ierobežojumu "atbloķēšanai".
 
-## Datu privātums uz UAS
+**3. Radio kanāls un GPS signāli.** Vadības saite (parasti 2,4/5,8 GHz) un video pārraide ir radio signāli. Publiski Wi-Fi punkti operācijas tuvumā var traucēt. GPS signāli, ko UAS izmanto pozicionēšanai, ir nešifrēti civili signāli — neaizsargāti pret traucēšanu un spoofingu.
 
-UAS, kas raksta video, **glabā lokāli SD kartē vai mākonī**. Pārliecinies:
+**4. Lokāla glabātava un mākonis.** Video, kas ierakstīts uz SD kartēm vai augšupielādēts ražotāja mākoņos, ir personas dati, ja saturā ir identificējami cilvēki. Nešifrētas SD kartes var nolasīt jebkurš, kuram UAS nokļūst rokās. Mākoņa konti bez 2FA aizsargāti tikai ar vienu paroli.
 
-- SD karte ir šifrēta, ja saturs ir sensitīvs;
-- mākoņa konts ir aizsargāts ar 2FA;
-- video tiek dzēsts pēc nepieciešamā glabāšanas perioda.
+## GNSS traucēšana vs. spoofings
 
-## Atgadījuma ziņošana
+**Traucēšana** ir vienkāršāks uzbrukums: RF trokšņa avots pārklāj GPS signāla joslu, UAS zaudē saiti ar satelītiem. Simptomi: pēkšņa "pelēka karte" lietotnē, GPS precizitātes brīdinājumi, RTH atteice. UAS vairs nezina, kur atrodas. **Tūlītējā darbība: pārslēdz manuālajā režīmā, izmanto vizuālos orientierus, droši nolaid.**
 
-Ja konta vai UAS firmware uzbrukums ir pamatoti aizdomīgs, tas ir
-**brīvprātīgi ziņojams atgadījums** (`e.caa.gov.lv/incidents`).
+**Spoofings** ir sarežģītāks: raidītājs nosūta viltus GPS signālus, kas pārmāc īstos. UAS domā, ka tas atrodas citā vietā vai augstumā. Simptomi: pozīcija pēkšņi pārlec ģeogrāfiski neticamā vietā (kilometros prom), negaidītas trajektorijas novirzes, augstuma anomālijas. **Tūlītējā darbība: tā pati — manuālais režīms, vizuālie orientieri, nolaid. Neuzticies nekādai pozīcijai, ko rāda lietotne.**
 
-> **Avots:** ENISA Good Practices for UAS cyber security (2022);
-> ENISA threat report — GNSS spoofing/jamming.
+Abi Latvijā pieaug, īpaši pie austrumu robežas (NATO operatīvā teritorija), un dokumentēti arī Rīgas centrā. Tie nav hipotētiski.
+
+## Pamata drošības higiēna — pieci noteikumi
+
+1. **Mainī rūpnīcas paroli** ražotāja lietotnes kontā uzreiz pēc reģistrācijas.
+2. **Ieslēdz 2FA** visiem kontiem, kas saistīti ar UAS (ražotāja lietotne, mākoņa krātuve, e-pasta atjaunošana).
+3. **Atjaunini programmatūru tikai no oficiāliem kanāliem** — ražotāja vietne vai oficiālais lietotnes atjauninājumu mehānisms.
+4. **Nesavieno UAS vai pulti ar publisku vai nezināmu Wi-Fi** — izmanto personīgu hotspot vai LTE.
+5. **Šifrē sensitīvu SD kartes materiālu**, ja saturs ir operatīvi sensitīvs (inspekcijas dati, klienta materiāli).
+
+## Datu privātums UAS sistēmā
+
+SD karte un mākoņa konts glabā materiālu, kas var būt:
+- Personas dati pēc GDPR (kadrā identificējami cilvēki).
+- Komerciāli sensitīvi (klienta objekta detaļas, paša īpašnieka infrastruktūra).
+- Drošības nozīmīgi (nejauši uzņemta kritiskā infrastruktūra).
+
+Glabāšanas noteikums: dzēs materiālu, kam vairs nav aktīva mērķa. Neuzkrāj gigabaitus nesakārtota materiāla uz nešifrētas kartes.
+
+<Scenario title="Lidojuma laikā virs Rīgas centra UAS attēlotā pozīcija pēkšņi pārlec 4 km uz vietu virs jūras. UAS īstā pozīcija vēl redzama tev priekšā parkā. Kas notiek un ko dari?">
+Tas ir klasisks **GNSS spoofinga** simptoms. UAS GPS uztvērējs pieņem viltus signālus, kas pārmāc īsto pozīciju.
+
+**Tūlītējās darbības:**
+1. Nepaļaujies uz lietotnes karti pozīcijai, augstumam vai RTH — viss kompromitēts.
+2. Pārslēdz **manuālajā / Attitude režīmā** nekavējoties.
+3. Saglabā VLOS un izmanto vizuālos orientierus, lai nolaistu tuvākajā drošajā vietā.
+4. Pēc nolaišanās: ekrānuzņēmums no lietotnes ar pozīcijas anomāliju, atzīmē laiku un vietu.
+5. Iesniedz ziņojumu CAA Latvia — GNSS incidenti kontrolētā gaisa telpā ir obligāti jāziņo.
+</Scenario>
+
+<MemoryAnchor
+  rule="Traucēšana = pozīcija zaudēta (pelēka karte). Spoofings = pozīcija pārlec neticamā vietā. Abos gadījumos: manuālais režīms, VLOS orientieri, nolaid tagad."
+  hint="UAS GPS uzticas bez ierunām. Tev nav."
+/>
+
+<CommonMistakes>
+- Lietot ražotāja lietotni uz tā paša telefona, kas regulāri pieslēdzas publiskam Wi-Fi — ierīce kļūst par uzbrukuma vektoru.
+- Uzticēties trešo pušu programmatūras "atbloķēšanas" rīkiem — tie var ievietot aizmugures durvis un atcelt ražotāja atbalstu.
+- Neatpazīt spoofingu, jo "lietotne rāda pozīciju, tātad strādā" — spoofēta pozīcija ir aktīvi maldinoša pozīcija.
+- Glabāt mēnešus klienta materiāla uz nešifrētām SD kartēm UAS somā — somas zādzība atklāj visus datus.
+- Neziņot CAA Latvia par GNSS anomālijām — modelis vairākos ziņojumos ir tas, kas ļauj iestādēm identificēt aktīvus traucēšanas/spoofinga avotus.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "se-q1",
+    stem: "Lidojuma laikā UAS GPS pozīcija lietotnē pēkšņi pārlec 6 km no UAS reālās vizuālās pozīcijas. Pilots UAS skaidri redz. Kāds ir visticamākais cēlonis?",
+    options: [
+      { id: "a", text: "GPS signāla zudums — UAS zaudējis saiti ar satelītiem." },
+      { id: "b", text: "Lietotnes programmatūras kļūda — pārstartē lietotni." },
+      { id: "c", text: "GNSS spoofings — viltus GPS signāli pārmāc īsto pozīciju." },
+      { id: "d", text: "Kompasa traucējumi — kalibrē kompasu lidojuma laikā." },
+    ],
+    correctOptionId: "c",
+    explanation: "Pēkšņa pozīcijas pārlēkšana uz ģeogrāfiski neticamu vietu (kilometros prom no reālās) ar UAS vizuāli apstiprinātu klātbūtni ir GNSS spoofinga raksturīgs simptoms. GPS zudums (traucēšana) rada 'pelēko karti' un satelītu skaita kritumu, ne viltus pozīcijas pārlēkšanu. Kompasa traucējumi ietekmē kursu, ne GPS pozīciju.",
+    distractorRationales: {
+      a: "GPS signāla zudums (traucēšana) noved pie pozīcijas pazaudēšanas — karte kļūst pelēka vai parāda 'GPS lost'. Pārlēkšana uz konkrētu viltus vietu norāda uz aktīvu spoofingu, ne zudumu.",
+      b: "Konsekventa ģeogrāfiska 6 km pārlēkšana nav lietotnes attēlošanas kļūda — tā norāda, ka pati GPS datu plūsma ir bojāta.",
+      d: "Kompasa traucējumi rada kursa kļūdas (UAS rāda nepareizu virzienu). Tie neizraisa GPS pozīcijas pārlēkšanu uz citu vietu.",
+    },
+  },
+  {
+    id: "se-q2",
+    stem: "Kura no šīm programmatūras atjaunināšanas praksēm ir droša?",
+    options: [
+      { id: "a", text: "Lejupielāde no UAS foruma ar 'atbloķētu' reģionālu programmatūru." },
+      { id: "b", text: "Atjauninājumu pieņemšana caur oficiālo ražotāja lietotni." },
+      { id: "c", text: "Atjaunināšana ar trešās puses rīku, kas apiet ražotāja pārbaudi." },
+      { id: "d", text: "Veca programmatūra mūžīgi, lai izvairītos no slikta atjauninājuma riska." },
+    ],
+    correctOptionId: "b",
+    explanation: "Vienīgais drošais atjaunināšanas ceļš ir oficiālā ražotāja lietotne vai vietne. Trešo pušu programmatūra, foruma lejupielādes un apgājuma rīki nav verificējami integritātei un var ievietot drošības ievainojamības vai atspējot drošības funkcijas. Visu atjauninājumu izvairīšanās arī nav droša — ražotāji izdod ielāpus, kas novērš zināmas problēmas.",
+    distractorRationales: {
+      a: "'Atbloķēta' programmatūra no neoficiāliem avotiem nav izgājusi ražotāja drošības pārbaudi un var saturēt ļaunatūru.",
+      c: "Trešo pušu rīki, kas apiet ražotāja pārbaudi, noņem kriptogrāfisko parakstu pārbaudi, kas garantē programmatūras autentiskumu.",
+      d: "Izvairīšanās no atjauninājumiem atstāj zināmas drošības ievainojamības neielāpotas. Ražotāji izdod labojumus drošībai kritiskām kļūdām; vecas programmatūras palaide atstāj operatoru tiem pakļautu.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["se-002"]}>
+Tu identificē četrus UAS kiberuzbrukuma vektorus, atšķir traucēšanu no spoofinga un piemēro piecus drošības higiēnas noteikumus.
+
+Tālāk: atgadījumu ziņošana — obligātie un brīvprātīgie ziņošanas pienākumi, kas padara aviāciju drošāku visiem.
+</Debrief>
