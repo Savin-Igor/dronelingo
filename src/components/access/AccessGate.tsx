@@ -16,10 +16,24 @@ export function AccessGate({ children }: { children: React.ReactNode }) {
     return () => window.removeEventListener("dronelingo:access-changed", refresh);
   }, []);
 
-  // null = still checking localStorage — render nothing to avoid content flash
-  if (access === null) return null;
+  // null = still checking localStorage — render skeleton to avoid layout shift
+  if (access === null) return <AccessSkeleton />;
   if (!access) return <PaywallPanel />;
   return <>{children}</>;
+}
+
+function AccessSkeleton() {
+  return (
+    <div className="mx-auto max-w-lg py-16" aria-hidden="true">
+      <div className="animate-pulse rounded-sm border border-horizon bg-cockpit p-8 space-y-4">
+        <div className="h-3 w-24 rounded bg-hull" />
+        <div className="h-6 w-48 rounded bg-hull" />
+        <div className="h-4 w-full rounded bg-hull" />
+        <div className="h-4 w-5/6 rounded bg-hull" />
+        <div className="mt-6 h-10 w-full rounded bg-hull" />
+      </div>
+    </div>
+  );
 }
 
 function PaywallPanel() {

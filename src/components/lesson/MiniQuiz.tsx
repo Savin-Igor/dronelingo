@@ -44,16 +44,17 @@ function MiniQuizItem({
   const [selected, setSelected] = useState<string | null>(null);
   const revealed = selected !== null;
   const isCorrect = selected === question.correctOptionId;
+  const groupId = `miniquiz-${question.id}-stem`;
 
   return (
     <div>
-      <p className="text-sm font-medium text-hud-white">
+      <p id={groupId} className="text-sm font-medium text-hud-white">
         <span className="mr-2 font-mono text-xs text-muted">
           Q{String(index).padStart(2, "0")}
         </span>
         {question.stem}
       </p>
-      <ul className="mt-3 space-y-2">
+      <ul role="radiogroup" aria-labelledby={groupId} className="mt-3 space-y-2">
         {question.options.map((opt) => {
           const isSelected = selected === opt.id;
           const isAnswer = opt.id === question.correctOptionId;
@@ -70,9 +71,10 @@ function MiniQuizItem({
             <li key={opt.id}>
               <button
                 type="button"
+                role="radio"
+                aria-checked={isSelected}
                 onClick={() => !revealed && setSelected(opt.id)}
                 disabled={revealed}
-                aria-pressed={isSelected}
                 className={`w-full border px-4 py-2.5 text-left text-sm transition-colors ${style} disabled:cursor-default`}
               >
                 <span className="mr-3 font-mono text-xs text-muted">
