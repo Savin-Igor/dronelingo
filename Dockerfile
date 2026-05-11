@@ -17,6 +17,10 @@ WORKDIR /app
 # ── Stage 1: deps — install with cache-friendly layer ──────────────────────
 FROM base AS deps
 COPY package.json package-lock.json* ./
+# Prisma schema must be present before `npm ci` runs because the package.json
+# postinstall hook ("prisma generate") reads from it. Cheap cache hit: prisma/
+# rarely changes versus package files.
+COPY prisma ./prisma
 RUN npm ci
 
 # ── Stage 2: builder — Prisma + Next build ─────────────────────────────────
