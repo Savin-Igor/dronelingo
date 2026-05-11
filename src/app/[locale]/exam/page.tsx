@@ -130,29 +130,41 @@ export default async function ExamStart({
           {t("coverage.heading")}
         </h2>
         <p className="mt-2 text-xs text-muted">{t("coverage.subtitle")}</p>
+        <p className="mt-1 text-xs text-telemetry">{t("coverage.drillHint")}</p>
 
         <ul className="mt-5 divide-y divide-horizon border-y border-horizon">
           {coverage.map((row) => {
             const percent = (row.count / EXAM_TOTAL_QUESTIONS) * 100;
             return (
-              <li
-                key={row.slug}
-                className="grid grid-cols-[1fr_3rem_3rem] items-center gap-3 py-2.5"
-              >
-                <span className="text-sm text-hud-white">{row.title}</span>
-                <div
-                  className="relative h-1 overflow-hidden rounded-full bg-grid"
-                  role="presentation"
+              <li key={row.slug}>
+                <Link
+                  href={`/exam/${row.slug}`}
+                  className="grid grid-cols-[1fr_3rem_3rem_1.25rem] items-center gap-3 py-2.5 transition-colors hover:bg-hull/50"
+                  aria-label={t("coverage.drillCta", {
+                    topic: row.title,
+                  })}
                 >
+                  <span className="text-sm text-hud-white">{row.title}</span>
                   <div
-                    className="h-full rounded-full bg-cyan-pulse/70"
-                    style={{ width: `${percent}%` }}
+                    className="relative h-1 overflow-hidden rounded-full bg-grid"
+                    role="presentation"
+                  >
+                    <div
+                      className="h-full rounded-full bg-cyan-pulse/70"
+                      style={{ width: `${percent}%` }}
+                      aria-hidden
+                    />
+                  </div>
+                  <span className="text-right font-mono text-sm text-hud-white">
+                    {row.count}
+                  </span>
+                  <span
                     aria-hidden
-                  />
-                </div>
-                <span className="text-right font-mono text-sm text-hud-white">
-                  {row.count}
-                </span>
+                    className="text-right font-mono text-xs text-muted transition-colors group-hover:text-cyan-pulse"
+                  >
+                    →
+                  </span>
+                </Link>
               </li>
             );
           })}

@@ -6,6 +6,13 @@ export const EXAM_DURATION_MIN = 40;
 export const EXAM_PASS_THRESHOLD = 75;
 export const EXAM_READINESS_THRESHOLD = 80;
 
+/** Maximum questions in a per-topic drill — cap so a fat topic does
+ *  not produce a 40-Q "mock". Banks smaller than this cap return whatever
+ *  they have. */
+export const TOPIC_EXAM_MAX_QUESTIONS = 15;
+/** Time budget per question for the per-topic drill, in seconds. */
+export const TOPIC_EXAM_SEC_PER_QUESTION = 60;
+
 /**
  * Official A1/A3 mock-exam stratification.
  *
@@ -130,4 +137,52 @@ export async function buildStratifiedExam(
   }
 
   return shuffleInPlace(picked.slice(0, EXAM_TOTAL_QUESTIONS));
+}
+
+/**
+ * Per-topic drill — a focused mock scoped to a single topic.
+ *
+ * Returns up to TOPIC_EXAM_MAX_QUESTIONS shuffled questions from the
+ * requested topic. If the topic does not exist or is empty, returns
+ * `null` so the caller can render a 404 / empty state.
+ *
+ * Only topics in A1A3_STRATIFICATION are eligible — other tracks
+ * (meteorology, future STS) build their own drills with their own
+ * stratification maps.
+ */
+export async function buildTopicExam(
+  locale: string,
+  slug: string,
+): Promise<{
+  topicSlug: string;
+  topicTitle: string;
+  questions: ExamQuestion[];
+} | null> {
+  if (!(slug in A1A3_STRATIFICATION)) return null;
+
+  const topic = await prisma.topic.findUnique({
+    where: { slug },
+    include: { questions: true },
+  });
+  if (!topic || topic.questions.length === 0) return null;
+
+  const topicTitle = localize(topic.title, locale);
+  const all = topic.questions.map<ExamQuestion>((q) => ({
+    id: q.id,
+    externalId: q.externalId,
+    topicId: topic.id,
+    topicSlug: topic.slug,
+    topicTitle,
+    stem: localize(q.stem, locale),
+    options: localizeOptions(q.options, locale),
+    correctOptionId: q.correctOptionId,
+    explanation: localize(q.explanation, locale),
+    sourceRef: q.sourceRef,
+  }));
+  shuffleInPlace(all);
+  return {
+    topicSlug: topic.slug,
+    topicTitle,
+    questions: all.slice(0, Math.min(TOPIC_EXAM_MAX_QUESTIONS, all.length)),
+  };
 }

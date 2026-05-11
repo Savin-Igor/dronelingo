@@ -14,8 +14,6 @@ import {
   type StoredExamResult,
 } from "@/lib/anonymous-exam";
 
-const DURATION_SEC = EXAM_DURATION_MIN * 60;
-
 function newId() {
   if (typeof crypto !== "undefined" && "randomUUID" in crypto) {
     return crypto.randomUUID();
@@ -29,16 +27,30 @@ function formatTime(secLeft: number): string {
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
-export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
+export function ExamSession({
+  questions,
+  durationMin = EXAM_DURATION_MIN,
+  examType = "full",
+  topicSlug,
+}: {
+  questions: ExamQuestion[];
+  /** Override the timer length — used by per-topic drills (~1 min/Q). */
+  durationMin?: number;
+  /** Persisted on StoredExamResult so the readiness gauge can filter. */
+  examType?: "full" | "topic";
+  /** Topic slug for per-topic drills (only set when examType === "topic"). */
+  topicSlug?: string;
+}) {
   const t = useTranslations("exam");
   const router = useRouter();
   const startedAt = useRef<number>(Date.now());
   const submittedRef = useRef(false);
 
+  const durationSec = durationMin * 60;
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [showConfirm, setShowConfirm] = useState(false);
-  const [secLeft, setSecLeft] = useState(DURATION_SEC);
+  const [secLeft, setSecLeft] = useState(durationSec);
 
   const total = questions.length;
   const current = questions[index];
@@ -94,12 +106,14 @@ export function ExamSession({ questions }: { questions: ExamQuestion[] }) {
       total,
       correct: correctCount,
       passed: percent >= EXAM_PASS_THRESHOLD,
+      type: examType,
+      topicSlug: examType === "topic" ? topicSlug : undefined,
       perTopic,
       missed,
     };
     writeExamResult(result);
     router.replace("/exam/result");
-  }, [answers, questions, router, total]);
+  }, [answers, questions, router, total, examType, topicSlug]);
 
   useEffect(() => {
     const tick = setInterval(() => {

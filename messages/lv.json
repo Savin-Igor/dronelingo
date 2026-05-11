@@ -99,6 +99,8 @@
     "coverage": {
       "heading": "Jautājumu sadalījums",
       "subtitle": "Atveido oficiālo CAA Latvia eksāmena svēršanu.",
+      "drillHint": "Pieskaries tēmai, lai sāktu fokusētu treniņu.",
+      "drillCta": "Treniņš · {topic}",
       "questionsLabel": "jautājumi",
       "totalLabel": "Kopā"
     },
@@ -197,6 +199,25 @@
     "processing": "Apstrādā...",
     "stubNote": "Stub checkout — reāla maksa netiek ieturēta.",
     "freeNote": "Gaisa drošības tēma vienmēr ir bez maksas."
+  },
+  "topicExam": {
+    "kicker": "Tēmas treniņš",
+    "title": "Tēmas treniņš",
+    "subtitle": "Fokusēts mock par tēmu {topic}. Noderīgs, kad tēma jau pastrādāta praksē.",
+    "backToExam": "Eksāmena sākums",
+    "rules": {
+      "heading": "Noteikumi",
+      "questions": "{count} jautājumi no šīs tēmas",
+      "duration": "{minutes} minūtes",
+      "threshold": "≥ {threshold} % pareizi, lai nokārtotu",
+      "notFullMock": "Tēmas treniņi neietekmē pilnā eksāmena gatavības rādītāju."
+    },
+    "stats": {
+      "questions": "Jautājumi",
+      "minutes": "Minūtes",
+      "threshold": "Slieksnis"
+    },
+    "start": "Sākt treniņu"
   },
   "diagnostic": {
     "kicker": "Kalibrēšanas lidojums",

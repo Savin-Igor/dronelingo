@@ -107,6 +107,8 @@
     "coverage": {
       "heading": "Question distribution",
       "subtitle": "Mirrors the official CAA Latvia exam weighting.",
+      "drillHint": "Tap a topic to take a focused drill for that area.",
+      "drillCta": "Drill {topic}",
       "questionsLabel": "questions",
       "totalLabel": "Total"
     },
@@ -197,6 +199,25 @@
     "processing": "Processing...",
     "stubNote": "Stub checkout — no real charge.",
     "freeNote": "Air Safety topic is always free — no payment needed."
+  },
+  "topicExam": {
+    "kicker": "Topic drill",
+    "title": "Topic drill",
+    "subtitle": "Focused mock scoped to {topic}. Useful once you've drilled the topic in practice.",
+    "backToExam": "Exam home",
+    "rules": {
+      "heading": "Rules",
+      "questions": "{count} questions from this topic",
+      "duration": "{minutes} minutes",
+      "threshold": "≥ {threshold} % correct to pass",
+      "notFullMock": "Topic drills do not count toward your full-exam readiness gauge."
+    },
+    "stats": {
+      "questions": "Questions",
+      "minutes": "Minutes",
+      "threshold": "Threshold"
+    },
+    "start": "Start drill"
   },
   "diagnostic": {
     "kicker": "Calibration flight",
