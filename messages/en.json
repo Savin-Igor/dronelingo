@@ -81,7 +81,17 @@
     "questionOf": "Question {current} of {total}",
     "allDone": "You've gone through all questions in this topic.",
     "anonymousNote": "Answers are kept only in this browser — no sign-up needed.",
-    "ctaFromTopic": "Practice this topic"
+    "ctaFromTopic": "Practice this topic",
+    "srs": {
+      "due": "Due",
+      "fresh": "Fresh",
+      "scheduled": "Scheduled",
+      "dueCount": "Due now: {count}",
+      "reviewDueOnly": "Review due only",
+      "showAll": "Show all",
+      "allCaughtUp": "All caught up — nothing due. Showing all questions.",
+      "noneDue": "Nothing is due right now. Start a session to build up your schedule."
+    }
   },
   "exam": {
     "title": "Mock exam",

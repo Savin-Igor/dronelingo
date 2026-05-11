@@ -81,7 +81,17 @@
     "questionOf": "Jautājums {current} no {total}",
     "allDone": "Esi izgājis visus šīs tēmas jautājumus.",
     "anonymousNote": "Atbildes glabājas tikai šajā pārlūkā — bez reģistrācijas.",
-    "ctaFromTopic": "Trenējies šajā tēmā"
+    "ctaFromTopic": "Trenējies šajā tēmā",
+    "srs": {
+      "due": "Termiņā",
+      "fresh": "Jauns",
+      "scheduled": "Plānots",
+      "dueCount": "Termiņā tagad: {count}",
+      "reviewDueOnly": "Tikai termiņa atkārtošana",
+      "showAll": "Rādīt visus",
+      "allCaughtUp": "Viss izdarīts — nekas nav termiņā. Rādu visus jautājumus.",
+      "noneDue": "Pašlaik nekas nav termiņā. Sāc sesiju, lai izveidotu grafiku."
+    }
   },
   "exam": {
     "title": "Pārbaudes eksāmens",
