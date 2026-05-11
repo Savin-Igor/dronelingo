@@ -1,41 +1,117 @@
-# A1, A2 un A3 apakškategorijas detalizēti
+# A1, A2 un A3 detalizēti
 
-Atvērtā kategorija dalās trīs apakškategorijās — pēc UAS klases un
-attāluma līdz cilvēkiem.
+<MissionBriefing objective="Pēc šīs nodarbības tu pratīsi nolasīt jebkura UAS klases marķējumu, zināsi, kurai apakškategorijai tas pieder, kāds sertifikāts vajadzīgs pilotam un kādi attāluma noteikumi piemērojami.">
+Apakškategoriju jaukšana izgāž eksāmenā vairāk nekā jebkura cita tēma. Apakškategoriju nosaka UAS klase, ne pilota izvēle.
+</MissionBriefing>
 
-## A1 — virs cilvēkiem
+<CinematicScene
+  src="/lessons/distance-rules-a1-a2-a3.png"
+  alt="A1/A2/A3 apakškategoriju salīdzinājums — atļautie, nosacītie un aizliegtie attālumi līdz cilvēkiem."
+  caption="Diagramma · subcategories-overview"
+/>
 
-| Klase | Pilota apliecība | Komentārs |
-|-------|------------------|-----------|
-| C0 (< 250 g) | **Nav prasības** | Var pārlidot atsevišķas personas |
-| C1 | A1/A3 tiešsaistes eksāmens | Nelido virs nepiederošām personām |
+## Pamatprincips
 
-## A2 — līdzās cilvēkiem (5 m / 30 m)
+UAS klases marķējums (C0, C1, C2, C3, C4) ir izspiests uz aparāta korpusa. To fiksē ražotājs. **Tu nevari ekspluatēt C2 UAS kā C0**, pat ja gribētu piemērot C0 noteikumus.
 
-| Klase | Pilota apliecība |
-|-------|------------------|
-| C2 | **A1/A3 + A2 papildu eksāmens** |
+## A1 — vieglākie UAS, vistuvāk cilvēkiem
 
-A2 papildu eksāmens prasa **praktisku pašmācību** un teorētisku testu
-60 jautājumi, ≥75 %, atzītā organizācijā.
+A1 ir paredzēta UAS, kas pietiekami viegli, lai sadursme rada minimālu kaitējumu.
 
-## A3 — tālu no cilvēkiem
+| Klase | MTOM | Pilota sertifikāts | Attālums līdz personām | Pulcēšanās |
+|-------|------|--------------------|------------------------|------------|
+| C0 | < 250 g | **Nav vajadzīgs** | Pārlidot — OK | **Nekad** |
+| C1 | < 900 g | A1/A3 tiešsaistes eksāmens | Pārlidojums nav gaidāms | **Nekad** |
 
-| Klase | Pilota apliecība |
-|-------|------------------|
-| C2 / C3 / C4 | A1/A3 tiešsaistes eksāmens |
-| Legacy (< 25 kg) | A1/A3 tiešsaistes eksāmens |
+"Pārlidojums nav gaidāms" C1 nozīmē: ja pamatoti gaidāms, ka zem lidojuma trajektorijas būs cilvēks — apej apkārt vai pazemini. Tas ir risku pārvaldības pienākums, ne fiksēts attāluma noteikums.
 
-A3 prasa **150 m no apdzīvotām zonām** un **30 m no nepiederošām
-personām** vai 1:1 (≥ lidojuma augstumam).
+## A2 — profesionāļi, kas strādā tuvu cilvēkiem
 
-## Universālās robežas
+A2 paredzēta komerciāliem darbiem, kur operatīvi vajadzīgi 30 m vai pat 5 m no cilvēkiem. Tā prasa vairāk gan no aparāta, gan no pilota.
 
-Visās trīs apakškategorijās:
+| Klase | MTOM | Pilota sertifikāts |
+|-------|------|--------------------|
+| C2 | < 4 kg | A1/A3 **plus** A2 kompetences sertifikāts |
 
-- max **120 m** virs zemes;
-- VLOS;
-- aizliegts virs cilvēku pulcēšanās.
+A2 papildinājums: papildu teorijas eksāmens (60 jautājumi, ≥75 %, atzītā organizācijā Latvijā) plus praktiskās pašmācības deklarācija, kas aptver piecas iemaņu jomas.
 
-> **Avots:** Regula (ES) 2019/947 UAS.OPEN.020 / 030 / 040; EASA Easy
-> Access Rules for UAS — Subcategories A1 / A2 / A3.
+Minimālie horizontālie attālumi C2:
+
+- **Zema ātruma režīms aktīvs (≤ 3 m/s)** → 5 m no nepiederošām personām
+- **Parastais ātrums** → 30 m no nepiederošām personām
+
+## A3 — prom no cilvēkiem, prom no apdzīvotām vietām
+
+A3 paredzēta smagākiem UAS, kas darbojas patiesi neapdzīvotās vietās.
+
+| Klase | MTOM | Pilota sertifikāts |
+|-------|------|--------------------|
+| C2 / C3 / C4 | < 25 kg | A1/A3 tiešsaistes eksāmens |
+| Mantots (bez marķējuma) | < 25 kg | A1/A3 tiešsaistes eksāmens |
+
+Trīs limiti darbojas vienlaikus:
+- ≥ 150 m no jebkuras dzīvojamās, komerciālās, industriālās vai atpūtas **zonas**
+- ≥ 30 m no nepiederošām **personām** vai 1:1 noteikums (≥ lidojuma augstumam), atkarībā no tā, kurš ir lielāks
+- ≥ "2 sekunžu lidojuma attālums" pie maksimālā ātruma (avārijas rezerve)
+
+<Scenario title="Tev ir DJI Mavic 3 Pro (895 g, marķēts C1). Vēlies komerciāli filmēt 10 m no būvgrupas, kas devusi piekrišanu. Kura apakškategorija to atļauj?">
+**Neviena Atvērtajā kategorijā.** Mavic ir C1, kas darbojas A1. A1 prasa, lai nebūtu pārlidojuma virs nepiederošām personām. Pat ja būvgrupa devusi piekrišanu, 10 m tuvināšanās A1 noteikumos neietilpst.
+
+10 m pieejai ar piekrišanu vajadzīgs A2 sertifikāts un C2 marķēts UAS — vai Specifiskās kategorijas atļauja. Tava sertifikāta veids tava UAS klasi nemaina.
+</Scenario>
+
+<MemoryAnchor
+  rule="Apakškategoriju izšķir UAS klases marķējums. Sertifikāts var atvērt tikai to, ko klase jau atļauj."
+  hint="C0 → tikai A1. C1 → tikai A1. C2 → A2 vai A3. C3/C4 → tikai A3."
+/>
+
+<CommonMistakes>
+- Ekspluatēt C1 UAS, gaidot, ka A1 atļaus pārlidot atsevišķas personas — C1 A1 nepieļauj pārlidojumu virs nepiederošām personām; to ļauj tikai C0.
+- Domāt, ka A1/A3 sertifikāts atļauj A2 operācijas — neatļauj; A2 prasa papildu kompetences sertifikātu.
+- Jaukt A2 5 m noteikumu ar vispārēju "5 m ir droši" — 5 m attiecas tikai uz C2 apstiprinātā zema ātruma režīmā.
+- Piemērot A3 150 m noteikumu atsevišķām ēkām, nevis visai apdzīvotai zonai.
+- Mantotu UAS īpašnieki, kas lido pēc A1 noteikumiem — UAS bez klases marķējuma lido A3 (vai A1, ja < 250 g), ne A1 ar C1 privilēģijām.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "sub-q1",
+    stem: "UAS ir marķēts C2, un pilotam ir tikai A1/A3 sertifikāts. Kura apakškategorija ir minimālā, kurā viņš drīkst lidot, un kāds attālums no nepiederošām personām piemērojams?",
+    options: [
+      { id: "a", text: "A1 — bez attāluma prasības, jo A1 atļauj pārlidojumu virs atsevišķām personām." },
+      { id: "b", text: "A2 ar 5 m (zems ātrums) vai 30 m (parasts) — A1/A3 sertifikāts sedz A2." },
+      { id: "c", text: "A3 ar 30 m (vai 1:1 noteikumu) no nepiederošām personām un 150 m no dzīvojamām zonām." },
+      { id: "d", text: "Lidot nedrīkst vispār — C2 vienmēr prasa A2 sertifikātu." },
+    ],
+    correctOptionId: "c",
+    explanation: "C2 UAS var ekspluatēt A3 tikai ar A1/A3 sertifikātu. A3 prasa ≥ 30 m no nepiederošām personām (vai 1:1, atkarībā no tā, kurš ir lielāks) un ≥ 150 m no apdzīvotām zonām. Lai izmantotu A2 noteikumus (5 m vai 30 m), pilotam vajadzīgs arī A2 kompetences sertifikāts.",
+    distractorRationales: {
+      a: "C2 UAS nevar ekspluatēt pēc A1 noteikumiem. Klase fiksē minimālo apakškategoriju.",
+      b: "A2 noteikumi (5 m / 30 m) prasa papildu A2 kompetences sertifikātu papildus A1/A3.",
+      d: "C2 UAS drīkst lidot A3 ar tikai A1/A3 sertifikātu. A2 operācijas prasa papildu A2 sertifikātu.",
+    },
+  },
+  {
+    id: "sub-q2",
+    stem: "Kuriem UAS NAV vajadzīgs pilota sertifikāts lidošanai A1?",
+    options: [
+      { id: "a", text: "C0 UAS zem 250 g." },
+      { id: "b", text: "C0 un C1 UAS, jo A1 ir ievada apakškategorija." },
+      { id: "c", text: "Jebkuram UAS, ja pilotam ir mazāk par 16 gadiem." },
+      { id: "d", text: "Jebkuram UAS, ko izmanto tikai atpūtai." },
+    ],
+    correctOptionId: "a",
+    explanation: "Tikai C0 UAS (zem 250 g, maks. ātrums 19 m/s) drīkst lidot A1 bez pilota sertifikāta. C1 UAS A1 prasa A1/A3 tiešsaistes eksāmenu. Atpūtas/komerciālā nošķiršana un vecums sertifikāta prasību C1 neietekmē.",
+    distractorRationales: {
+      b: "C1 UAS A1 prasa A1/A3 sertifikātu.",
+      c: "Vecums ietekmē minimālo lidotāja vecumu (16 gadi vairumam), nevis sertifikāta atbrīvojumu pēc klases.",
+      d: "Atpūtas izmantošana C1 pilotus no sertifikāta prasības neatbrīvo.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["hp-001"]}>
+Tu spēj sasaistīt jebkuru klases marķētu UAS ar tā apakškategoriju, zini, kāds sertifikāts vajadzīgs, un piemēro pareizos attāluma noteikumus.
+
+Nākamais sektors: Cilvēka veiktspēja — kāpēc bīstamākā UAS operācijas daļa ir pats pilots.
+</Debrief>
