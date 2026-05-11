@@ -96,6 +96,12 @@
   "exam": {
     "title": "Pārbaudes eksāmens",
     "subtitle": "Imitē oficiālo A1/A3 eksāmenu vietnē e.caa.gov.lv. Ja stabili sasniedz 80 %+, esi gatavs reālajam eksāmenam.",
+    "coverage": {
+      "heading": "Jautājumu sadalījums",
+      "subtitle": "Atveido oficiālo CAA Latvia eksāmena svēršanu.",
+      "questionsLabel": "jautājumi",
+      "totalLabel": "Kopā"
+    },
     "rules": {
       "heading": "Noteikumi",
       "questions": "40 jautājumi, kas aptver visas 9 EASA tēmas",

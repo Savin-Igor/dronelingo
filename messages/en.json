@@ -104,6 +104,12 @@
       "navigation": "You can navigate between questions and change answers until you submit",
       "anonymous": "Results are kept only in this browser — no sign-up needed"
     },
+    "coverage": {
+      "heading": "Question distribution",
+      "subtitle": "Mirrors the official CAA Latvia exam weighting.",
+      "questionsLabel": "questions",
+      "totalLabel": "Total"
+    },
     "start": "Start exam",
     "timeLeft": "Time left",
     "questionOf": "Question {current} of {total}",
