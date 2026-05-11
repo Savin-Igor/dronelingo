@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 // UAS class C0–C6 comparator. Tabs across the classes; live readout of MTOM,
@@ -7,98 +8,58 @@ import { useState } from "react";
 // #3 student-fail topic per academy-vision.md §1.4 — confusion between class
 // (C0–C6) and subcategory (A1/A2/A3).
 
-type UASClass = {
-  id: "C0" | "C1" | "C2" | "C3" | "C4" | "C5" | "C6";
+type ClassId = "C0" | "C1" | "C2" | "C3" | "C4" | "C5" | "C6";
+
+type ClassStatic = {
+  id: ClassId;
   mtom: string;
-  maxSpeed: string;
+  maxSpeed: string | null; // null → resolve from translations (manualOnly / dash)
   subcategory: string;
-  restriction: string;
   remoteId: boolean;
   geoAwareness: boolean;
 };
 
-const CLASSES: UASClass[] = [
-  {
-    id: "C0",
-    mtom: "< 250 g",
-    maxSpeed: "19 m/s",
-    subcategory: "A1",
-    restriction: "Over individuals OK · never over assemblies",
-    remoteId: false,
-    geoAwareness: false,
-  },
-  {
-    id: "C1",
-    mtom: "< 900 g",
-    maxSpeed: "19 m/s",
-    subcategory: "A1",
-    restriction: "No expected overflight of uninvolved persons",
-    remoteId: true,
-    geoAwareness: true,
-  },
-  {
-    id: "C2",
-    mtom: "< 4 kg",
-    maxSpeed: "—",
-    subcategory: "A2 or A3",
-    restriction: "Low-speed mode (≤ 3 m/s) → 5 m · normal → 30 m",
-    remoteId: true,
-    geoAwareness: true,
-  },
-  {
-    id: "C3",
-    mtom: "< 25 kg",
-    maxSpeed: "—",
-    subcategory: "A3",
-    restriction: "≥ 150 m from inhabited areas · ≥ 30 m or 1:1 from people",
-    remoteId: true,
-    geoAwareness: true,
-  },
-  {
-    id: "C4",
-    mtom: "< 25 kg",
-    maxSpeed: "manual only",
-    subcategory: "A3",
-    restriction: "No autonomous modes — manual control only",
-    remoteId: false,
-    geoAwareness: false,
-  },
-  {
-    id: "C5",
-    mtom: "retrofit kit",
-    maxSpeed: "—",
-    subcategory: "STS-01",
-    restriction: "VLOS, controlled ground area, airspace observers",
-    remoteId: true,
-    geoAwareness: true,
-  },
-  {
-    id: "C6",
-    mtom: "BVLOS-capable",
-    maxSpeed: "—",
-    subcategory: "STS-02",
-    restriction: "BVLOS over sparsely populated · observer chain required",
-    remoteId: true,
-    geoAwareness: true,
-  },
+const CLASSES: ClassStatic[] = [
+  { id: "C0", mtom: "< 250 g", maxSpeed: "19 m/s", subcategory: "A1", remoteId: false, geoAwareness: false },
+  { id: "C1", mtom: "< 900 g", maxSpeed: "19 m/s", subcategory: "A1", remoteId: true, geoAwareness: true },
+  { id: "C2", mtom: "< 4 kg", maxSpeed: null, subcategory: "A2 / A3", remoteId: true, geoAwareness: true },
+  { id: "C3", mtom: "< 25 kg", maxSpeed: null, subcategory: "A3", remoteId: true, geoAwareness: true },
+  { id: "C4", mtom: "< 25 kg", maxSpeed: "manualOnly", subcategory: "A3", remoteId: false, geoAwareness: false },
+  { id: "C5", mtom: "retrofitKit", maxSpeed: null, subcategory: "STS-01", remoteId: true, geoAwareness: true },
+  { id: "C6", mtom: "bvlosCapable", maxSpeed: null, subcategory: "STS-02", remoteId: true, geoAwareness: true },
 ];
 
 export function ClassComparator() {
-  const [active, setActive] = useState<UASClass["id"]>("C0");
+  const t = useTranslations("lessonWidgets.classComparator");
+  const [active, setActive] = useState<ClassId>("C0");
   const current = CLASSES.find((c) => c.id === active)!;
+
+  // Resolve MTOM/maxSpeed values that are translation keys
+  const mtomVal =
+    current.mtom === "retrofitKit"
+      ? t("retrofitKit")
+      : current.mtom === "bvlosCapable"
+        ? t("bvlosCapable")
+        : current.mtom;
+  const maxSpeedVal =
+    current.maxSpeed === null
+      ? t("dash")
+      : current.maxSpeed === "manualOnly"
+        ? t("manualOnly")
+        : current.maxSpeed;
 
   return (
     <section
-      aria-label="UAS class comparator"
+      aria-label={t("heading")}
       className="not-prose my-10 border border-horizon bg-hull/40 p-5"
     >
       <p className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-cyan-pulse">
-        Interactive · UAS class comparator
+        {t("heading")}
       </p>
 
       <div
         role="tablist"
-        aria-label="UAS classes"
+        aria-label={t("tabsAriaLabel")}
         className="mt-4 flex flex-wrap gap-1.5"
       >
         {CLASSES.map((c) => {
@@ -123,18 +84,22 @@ export function ClassComparator() {
       </div>
 
       <dl className="mt-5 grid gap-3 text-sm sm:grid-cols-2">
-        <Row label="MTOM" value={current.mtom} />
-        <Row label="Max speed" value={current.maxSpeed} />
-        <Row label="Subcategory" value={current.subcategory} accent />
+        <Row label={t("mtom")} value={mtomVal} />
+        <Row label={t("maxSpeed")} value={maxSpeedVal} />
+        <Row label={t("subcategory")} value={current.subcategory} accent />
         <Row
-          label="Remote ID"
-          value={current.remoteId ? "Required" : "Not required"}
+          label={t("remoteId")}
+          value={current.remoteId ? t("required") : t("notRequired")}
         />
         <Row
-          label="Geo-awareness"
-          value={current.geoAwareness ? "Required" : "Not required"}
+          label={t("geoAwareness")}
+          value={current.geoAwareness ? t("required") : t("notRequired")}
         />
-        <Row label="Key restriction" value={current.restriction} wide />
+        <Row
+          label={t("keyRestriction")}
+          value={t(`classes.${current.id}.restriction`)}
+          wide
+        />
       </dl>
     </section>
   );

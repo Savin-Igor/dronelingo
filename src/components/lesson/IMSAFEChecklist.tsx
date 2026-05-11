@@ -1,59 +1,19 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
-
-// IMSAFE pre-flight self-check. Six binary items. One "yes" = ground the
-// flight. State is persisted to localStorage so the lesson user can revisit
-// and so a future pre-flight tool (Wave 1+) can read the last check.
 
 const STORAGE_KEY = "dronelingo:imsafe:v1";
 
 type IMSAFEKey = "illness" | "medication" | "stress" | "alcohol" | "fatigue" | "eating";
 
-type IMSAFEItem = {
-  key: IMSAFEKey;
-  letter: string;
-  label: string;
-  prompt: string;
-};
-
-const ITEMS: IMSAFEItem[] = [
-  {
-    key: "illness",
-    letter: "I",
-    label: "Illness",
-    prompt: "Any active infection, cold, or symptoms affecting concentration?",
-  },
-  {
-    key: "medication",
-    letter: "M",
-    label: "Medication",
-    prompt: "Any medication that may cause drowsiness or affect alertness?",
-  },
-  {
-    key: "stress",
-    letter: "S",
-    label: "Stress",
-    prompt: "Acute emotional stress (argument, bad news, financial pressure)?",
-  },
-  {
-    key: "alcohol",
-    letter: "A",
-    label: "Alcohol",
-    prompt: "Any alcohol consumed in the last 8 hours?",
-  },
-  {
-    key: "fatigue",
-    letter: "F",
-    label: "Fatigue",
-    prompt: "Fewer than 6 hours of sleep last night, or sustained sleep debt?",
-  },
-  {
-    key: "eating",
-    letter: "E",
-    label: "Eating",
-    prompt: "No food in the last 4 hours, or feeling hypoglycaemic?",
-  },
+const ITEM_KEYS: IMSAFEKey[] = [
+  "illness",
+  "medication",
+  "stress",
+  "alcohol",
+  "fatigue",
+  "eating",
 ];
 
 type State = Record<IMSAFEKey, boolean | null>;
@@ -80,6 +40,7 @@ function readState(): State {
 }
 
 export function IMSAFEChecklist() {
+  const t = useTranslations("lessonWidgets.imsafe");
   const [state, setState] = useState<State>(initial);
   const [hydrated, setHydrated] = useState(false);
 
@@ -107,60 +68,56 @@ export function IMSAFEChecklist() {
 
   const anyYes = Object.values(state).some((v) => v === true);
   const allAnswered = Object.values(state).every((v) => v !== null);
-  const verdict = !allAnswered
-    ? null
-    : anyYes
-      ? "no-go"
-      : "go";
+  const verdict = !allAnswered ? null : anyYes ? "no-go" : "go";
 
   return (
     <section
-      aria-label="IMSAFE checklist"
+      aria-label={t("heading")}
       className="not-prose my-10 border border-horizon bg-hull/40 p-5"
     >
       <p className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-cyan-pulse">
-        Interactive · IMSAFE self-check
+        {t("heading")}
       </p>
 
       <ol className="mt-4 space-y-3">
-        {ITEMS.map((item) => (
-          <li
-            key={item.key}
-            className="border border-horizon bg-hull/60 px-4 py-3"
-          >
-            <div className="flex items-start gap-3">
-              <span className="font-mono text-2xl leading-none text-cyan-pulse">
-                {item.letter}
-              </span>
-              <div className="flex-1">
-                <p className="text-sm font-medium text-hud-white">
-                  {item.label}
-                </p>
-                <p className="mt-0.5 text-sm text-telemetry">{item.prompt}</p>
-                <div
-                  role="radiogroup"
-                  aria-label={item.label}
-                  className="mt-3 flex gap-2"
-                >
-                  <YesNoButton
-                    pressed={state[item.key] === false}
-                    onClick={() => set(item.key, false)}
-                    tone="safe"
+        {ITEM_KEYS.map((key) => {
+          const letter = t(`items.${key}.letter`);
+          const label = t(`items.${key}.label`);
+          const prompt = t(`items.${key}.prompt`);
+          return (
+            <li key={key} className="border border-horizon bg-hull/60 px-4 py-3">
+              <div className="flex items-start gap-3">
+                <span className="font-mono text-2xl leading-none text-cyan-pulse">
+                  {letter}
+                </span>
+                <div className="flex-1">
+                  <p className="text-sm font-medium text-hud-white">{label}</p>
+                  <p className="mt-0.5 text-sm text-telemetry">{prompt}</p>
+                  <div
+                    role="radiogroup"
+                    aria-label={label}
+                    className="mt-3 flex gap-2"
                   >
-                    No
-                  </YesNoButton>
-                  <YesNoButton
-                    pressed={state[item.key] === true}
-                    onClick={() => set(item.key, true)}
-                    tone="warn"
-                  >
-                    Yes
-                  </YesNoButton>
+                    <YesNoButton
+                      pressed={state[key] === false}
+                      onClick={() => set(key, false)}
+                      tone="safe"
+                    >
+                      {t("no")}
+                    </YesNoButton>
+                    <YesNoButton
+                      pressed={state[key] === true}
+                      onClick={() => set(key, true)}
+                      tone="warn"
+                    >
+                      {t("yes")}
+                    </YesNoButton>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-        ))}
+            </li>
+          );
+        })}
       </ol>
 
       <div
@@ -174,16 +131,16 @@ export function IMSAFEChecklist() {
         }`}
       >
         <p className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-cyan-pulse">
-          Verdict
+          {t("verdict")}
         </p>
         <p className="mt-1 text-base font-semibold text-hud-white">
           {!hydrated
             ? "—"
             : verdict === null
-              ? "Answer all six to see the verdict"
+              ? t("verdictWaiting")
               : verdict === "go"
-                ? "GO — all six clear. Run the UAS and environment checks next."
-                : "NO-GO — one or more risks active. Postpone or delegate."}
+                ? t("verdictGo")
+                : t("verdictNoGo")}
         </p>
       </div>
 
@@ -193,7 +150,7 @@ export function IMSAFEChecklist() {
           onClick={reset}
           className="mt-3 font-mono text-xs text-muted underline-offset-2 hover:text-cyan-pulse hover:underline"
         >
-          Reset checklist
+          {t("reset")}
         </button>
       ) : null}
     </section>

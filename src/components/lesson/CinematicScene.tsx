@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 // Cinematic hero / scene block. If `src` is provided, renders the image with
 // a HUD-style bottom gradient + caption strip. If `src` is omitted, renders a
@@ -47,6 +48,7 @@ export function CinematicScene({
 }
 
 function ScenePlaceholder({ alt, prompt }: { alt: string; prompt?: string }) {
+  const t = useTranslations("lessonWidgets.anatomy");
   return (
     <div
       aria-label={alt}
@@ -59,13 +61,13 @@ function ScenePlaceholder({ alt, prompt }: { alt: string; prompt?: string }) {
       }}
     >
       <p className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-cyan-pulse">
-        ◇ Scene placeholder · awaiting render
+        ◇ {t("scenePlaceholder")}
       </p>
       <div className="max-w-prose">
         <p className="font-mono text-xs text-telemetry">{alt}</p>
         {prompt ? (
           <p className="mt-2 font-mono text-[0.65rem] text-muted">
-            <span className="text-cyan-pulse/70">prompt: </span>
+            <span className="text-cyan-pulse/70">{t("promptLabel")} </span>
             {prompt}
           </p>
         ) : null}

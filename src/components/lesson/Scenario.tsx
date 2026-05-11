@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import type { ReactNode } from "react";
 
 export function Scenario({
@@ -7,13 +8,14 @@ export function Scenario({
   title?: string;
   children: ReactNode;
 }) {
+  const t = useTranslations("lessonWidgets.anatomy");
   return (
     <section
-      aria-label={title ?? "Scenario"}
+      aria-label={title ?? t("scenario")}
       className="not-prose my-8 border border-horizon bg-signal/20 p-5"
     >
       <p className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-cyan-pulse">
-        Scenario
+        {t("scenario")}
       </p>
       {title ? (
         <h3 className="mt-1 text-lg font-semibold text-hud-white">{title}</h3>

@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 export type MiniQuizQuestion = {
@@ -15,13 +16,14 @@ export type MiniQuizQuestion = {
 // Designed to follow a concept immediately — not as exam practice.
 // (Practice and exam pages own those flows.)
 export function MiniQuiz({ questions }: { questions: MiniQuizQuestion[] }) {
+  const t = useTranslations("lessonWidgets.miniQuiz");
   return (
     <section
-      aria-label="Mini quiz"
+      aria-label={t("heading")}
       className="not-prose my-10 border border-horizon bg-hull/40 p-5"
     >
       <p className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-cyan-pulse">
-        Quick check
+        {t("heading")}
       </p>
       <ol className="mt-4 space-y-6">
         {questions.map((q, i) => (
@@ -41,6 +43,7 @@ function MiniQuizItem({
   question: MiniQuizQuestion;
   index: number;
 }) {
+  const t = useTranslations("lessonWidgets.miniQuiz");
   const [selected, setSelected] = useState<string | null>(null);
   const revealed = selected !== null;
   const isCorrect = selected === question.correctOptionId;
@@ -89,12 +92,12 @@ function MiniQuizItem({
       {revealed ? (
         <div className="mt-3 border-l-2 border-cyan-pulse/60 bg-hull/40 px-4 py-3 text-sm">
           <p className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-cyan-pulse">
-            {isCorrect ? "Correct" : "Not quite"}
+            {isCorrect ? t("correct") : t("notQuite")}
           </p>
           <p className="mt-1 text-telemetry">{question.explanation}</p>
           {!isCorrect && question.distractorRationales?.[selected!] ? (
             <p className="mt-2 text-xs text-muted">
-              <span className="text-amber-300">Why your answer is wrong: </span>
+              <span className="text-amber-300">{t("whyWrong")} </span>
               {question.distractorRationales[selected!]}
             </p>
           ) : null}

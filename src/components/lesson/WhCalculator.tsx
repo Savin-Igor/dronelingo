@@ -1,79 +1,75 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
-
-// LiPo Wh calculator. Inputs: cell count (S) and capacity (mAh). Outputs:
-// pack voltage, energy in Wh, IATA air-travel band. Built specifically for
-// the batteries-and-storage lesson — the Wh formula is one of the most-
-// failed numeric items per academy-vision.md §1.4.
 
 const NOMINAL_V_PER_CELL = 3.7;
 
 function classifyIATA(wh: number): {
   band: "ok" | "approval" | "forbidden";
-  label: string;
 } {
-  if (wh < 100) return { band: "ok", label: "Carry-on or checked baggage" };
-  if (wh <= 160)
-    return { band: "approval", label: "Carry-on only · airline approval" };
-  return { band: "forbidden", label: "Forbidden on passenger aircraft" };
+  if (wh < 100) return { band: "ok" };
+  if (wh <= 160) return { band: "approval" };
+  return { band: "forbidden" };
 }
 
 export function WhCalculator() {
+  const t = useTranslations("lessonWidgets.whCalculator");
   const [cells, setCells] = useState(4);
   const [mAh, setMah] = useState(5000);
 
-  const { volts, wh, classification } = useMemo(() => {
+  const { volts, wh, band } = useMemo(() => {
     const v = cells * NOMINAL_V_PER_CELL;
     const energy = (mAh / 1000) * v;
-    return { volts: v, wh: energy, classification: classifyIATA(energy) };
+    return { volts: v, wh: energy, band: classifyIATA(energy).band };
   }, [cells, mAh]);
 
   const bandStyle = {
     ok: "border-cyan-pulse/60 bg-cyan-pulse/10 text-hud-white",
     approval: "border-amber-400/60 bg-amber-400/10 text-hud-white",
     forbidden: "border-red-500/60 bg-red-500/10 text-hud-white",
-  }[classification.band];
+  }[band];
+
+  const bandLabel = {
+    ok: t("iataOk"),
+    approval: t("iataApproval"),
+    forbidden: t("iataForbidden"),
+  }[band];
 
   return (
     <section
-      aria-label="LiPo Wh calculator"
+      aria-label={t("heading")}
       className="not-prose my-10 border border-horizon bg-hull/40 p-5"
     >
       <p className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-cyan-pulse">
-        Interactive · Wh calculator
+        {t("heading")}
       </p>
 
       <div className="mt-4 grid gap-4 sm:grid-cols-2">
         <NumberField
-          label="Cell count (S)"
+          label={t("cells")}
           value={cells}
           min={1}
           max={12}
           step={1}
           onChange={setCells}
-          hint="DJI Mavic 3 = 4S"
+          hint={t("cellsHint")}
         />
         <NumberField
-          label="Capacity (mAh)"
+          label={t("capacity")}
           value={mAh}
           min={200}
           max={30000}
           step={100}
           onChange={setMah}
-          hint="Per cell pack — read from the battery label"
+          hint={t("capacityHint")}
         />
       </div>
 
       <dl className="mt-5 grid gap-3 text-sm sm:grid-cols-3">
-        <Row label="Pack voltage" value={`${volts.toFixed(1)} V`} mono />
-        <Row label="Capacity" value={`${(mAh / 1000).toFixed(2)} Ah`} mono />
-        <Row
-          label="Energy"
-          value={`${wh.toFixed(1)} Wh`}
-          mono
-          highlight
-        />
+        <Row label={t("packVoltage")} value={`${volts.toFixed(1)} V`} mono />
+        <Row label={t("capacityRow")} value={`${(mAh / 1000).toFixed(2)} Ah`} mono />
+        <Row label={t("energy")} value={`${wh.toFixed(1)} Wh`} mono highlight />
       </dl>
 
       <p
@@ -81,16 +77,12 @@ export function WhCalculator() {
         aria-live="polite"
       >
         <span className="block text-[0.65rem] uppercase tracking-widest opacity-70">
-          IATA air travel
+          {t("iata")}
         </span>
-        <span className="mt-1 block">{classification.label}</span>
+        <span className="mt-1 block">{bandLabel}</span>
       </p>
 
-      <p className="mt-3 text-xs text-muted">
-        Formula: Wh = (mAh ÷ 1000) × cells × {NOMINAL_V_PER_CELL} V nominal.
-        Below 100 Wh: free. 100–160 Wh: airline approval. Above 160 Wh:
-        forbidden in passenger cabin.
-      </p>
+      <p className="mt-3 text-xs text-muted">{t("formula")}</p>
     </section>
   );
 }

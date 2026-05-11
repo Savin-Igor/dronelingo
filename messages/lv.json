@@ -177,5 +177,132 @@
     "processing": "Apstrādā...",
     "stubNote": "Stub checkout — reāla maksa netiek ieturēta.",
     "freeNote": "Gaisa drošības tēma vienmēr ir bez maksas."
+  },
+  "lessonWidgets": {
+    "anatomy": {
+      "missionBriefing": "Misijas brīfings",
+      "scenario": "Scenārijs",
+      "remember": "Atceries",
+      "commonMistakes": "Biežākās kļūdas",
+      "debrief": "Apkopojums",
+      "unlocked": "Atklāts",
+      "scenePlaceholder": "Ainas vietturis · gaida renderi",
+      "promptLabel": "prompts:"
+    },
+    "miniQuiz": {
+      "heading": "Ātrā pārbaude",
+      "correct": "Pareizi",
+      "notQuite": "Ne īsti",
+      "whyWrong": "Kāpēc tava atbilde nepareiza:"
+    },
+    "classComparator": {
+      "heading": "Interaktīvs · UAS klašu salīdzinājums",
+      "tabsAriaLabel": "UAS klases",
+      "mtom": "MTOM",
+      "maxSpeed": "Maks. ātrums",
+      "subcategory": "Apakškategorija",
+      "remoteId": "Remote ID",
+      "geoAwareness": "Geo-awareness",
+      "keyRestriction": "Galvenais ierobežojums",
+      "required": "Obligāts",
+      "notRequired": "Nav vajadzīgs",
+      "manualOnly": "tikai manuāli",
+      "retrofitKit": "modernizācijas komplekts",
+      "bvlosCapable": "BVLOS spējīgs",
+      "dash": "—",
+      "classes": {
+        "C0": { "restriction": "Pārlidot atsevišķas personas — drīkst · pulcēšanos — nekad" },
+        "C1": { "restriction": "Pārlidojums virs nepiederošām personām nav gaidāms" },
+        "C2": { "restriction": "Zema ātruma režīms (≤ 3 m/s) → 5 m · parasti → 30 m" },
+        "C3": { "restriction": "≥ 150 m no apdzīvotām zonām · ≥ 30 m vai 1:1 no cilvēkiem" },
+        "C4": { "restriction": "Bez autonomiem režīmiem — tikai manuāla vadība" },
+        "C5": { "restriction": "VLOS, kontrolēta zemes zona, gaisa telpas novērotāji" },
+        "C6": { "restriction": "BVLOS pār mazapdzīvotām zonām · novērotāju ķēde" }
+      }
+    },
+    "whCalculator": {
+      "heading": "Interaktīvs · Wh kalkulators",
+      "cells": "Šūnu skaits (S)",
+      "cellsHint": "DJI Mavic 3 = 4S",
+      "capacity": "Kapacitāte (mAh)",
+      "capacityHint": "Pa šūnu komplektā — nolasi no baterijas etiķetes",
+      "packVoltage": "Komplekta spriegums",
+      "capacityRow": "Kapacitāte",
+      "energy": "Enerģija",
+      "iata": "IATA aviācijas ceļojums",
+      "iataOk": "Rokas vai reģistrētajā bagāžā",
+      "iataApproval": "Tikai rokas bagāžā · aviokompānijas atļauja",
+      "iataForbidden": "Aizliegts pasažieru gaisa kuģī",
+      "formula": "Formula: Wh = (mAh ÷ 1000) × šūnas × 3,7 V nominālie. Zem 100 Wh: brīvi. 100–160 Wh: aviokompānijas atļauja. Virs 160 Wh: aizliegts pasažieru salonā."
+    },
+    "imsafe": {
+      "heading": "Interaktīvs · IMSAFE pašpārbaude",
+      "verdict": "Vērtējums",
+      "verdictWaiting": "Atbildi uz visiem sešiem, lai redzētu vērtējumu",
+      "verdictGo": "GO — visi seši tīri. Tālāk UAS un vides pārbaudes.",
+      "verdictNoGo": "NO-GO — viens vai vairāki riski aktīvi. Atliec vai deleģē.",
+      "reset": "Atiestatīt sarakstu",
+      "yes": "Jā",
+      "no": "Nē",
+      "items": {
+        "illness": { "letter": "I", "label": "Slimība", "prompt": "Aktīva infekcija, saaukstēšanās vai simptomi, kas ietekmē koncentrāciju?" },
+        "medication": { "letter": "M", "label": "Medikamenti", "prompt": "Medikaments, kas var izraisīt miegainību vai ietekmēt modrību?" },
+        "stress": { "letter": "S", "label": "Stress", "prompt": "Akūts emocionāls stress (strīds, sliktas ziņas, finansiāls spiediens)?" },
+        "alcohol": { "letter": "A", "label": "Alkohols", "prompt": "Vai esi lietojis alkoholu pēdējās 8 stundās?" },
+        "fatigue": { "letter": "F", "label": "Nogurums", "prompt": "Mazāk par 6 stundām miega pagājušajā naktī vai uzkrāts miega trūkums?" },
+        "eating": { "letter": "E", "label": "Ēšana", "prompt": "Bez ēdiena pēdējās 4 stundās vai jūties hipoglikēmisks?" }
+      }
+    },
+    "zoneClassifier": {
+      "heading": "Interaktīvs · klasificē zonu",
+      "intro": "Izlem, kuram UGZ tipam katrs scenārijs atbilst. Klikšķini, lai atklātu.",
+      "zoneTypeLabel": "Zonas tips",
+      "correct": "Pareizi",
+      "notQuite": "Ne īsti",
+      "answerPrefix": "atbilde:",
+      "types": {
+        "information": "Informatīvā",
+        "restricted": "Ierobežotā",
+        "prohibited": "Aizliegtā"
+      },
+      "cards": {
+        "z1": {
+          "scenario": "Putnu ligzdošanas rezervāts uz mazas salas. CAA karte to atzīmē 'aktīvs ligzdošanas sezonā — lūdzu izvairieties'. Datumā, kad plāno lidot, nav aktīva ierobežojuma.",
+          "explanation": "Informatīvās zonas nenes juridisku ierobežojumu — tās brīdina pilotu par tuvumā esošu jutīgumu. Lidošana atļauta bez pieteikuma."
+        },
+        "z2": {
+          "scenario": "Gaisa telpas posms blakus Rīgas lidostas CTR. Kartē rakstīts 'lidojums atļauts ar BGKIS pieteikumu — maks. 50 m AGL'.",
+          "explanation": "Ierobežotas zonas prasa pieteikumu un apstiprinājumu. Kopš 2025-01-01 BGKIS ir obligātais kanāls. Apstiprinājumā norādītie griesti (šeit 50 m) ir augstāki par vispārējiem 120 m."
+        },
+        "z3": {
+          "scenario": "EVR17 Border East — pilna austrumu robežas josla ar Krieviju un Baltkrieviju, kopš 2025. gada.",
+          "explanation": "Aizliegtās zonas Atvērtajā kategorijā nav lidojamas vispār. EVR17 specifiski paredz kriminālatbildību, ne tikai administratīvo sodu."
+        },
+        "z4": {
+          "scenario": "Aktīvs militāras apmācības rajons ar atzīmi 'Bez lidojumiem 08:00–18:00 darbdienās maijā'. Diena, kad plāno lidot, ir jūnija sestdiena.",
+          "explanation": "Ārpus aktīvā loga zona faktiski ir tikai informatīva. Vienmēr pārbaudi zonas statusu pret konkrēto datumu un laiku, ne pret sezonu kopumā."
+        },
+        "z5": {
+          "scenario": "Kodolpētniecības objekta perimetrs. Kartē redzams sarkans aizpildīts daudzstūris ar uzrakstu 'UAS lidojumi nav atļauti'.",
+          "explanation": "Kritiskā infrastruktūra ar cietu aizlieguma noteikumu. Nekāds pieteikums Atvērtajā kategorijā šo aizliegumu nepaceļ."
+        }
+      }
+    },
+    "distanceRule": {
+      "heading": "Interaktīvs · attālums no nepiederošām personām",
+      "altitude": "Lidojuma augstums (AGL)",
+      "altitudeAriaLabel": "Augstums metros virs zemes",
+      "ceilingMark": "120 m griesti",
+      "subcats": {
+        "a1-c0": { "label": "A1 — C0 (<250 g)", "note": "Pārlidojums virs atsevišķām personām — drīkst · virs pulcēšanās — nekad" },
+        "a1-c1": { "label": "A1 — C1 (<900 g)", "note": "Plāno ceļu apkārt cilvēkiem · pārlidojums nav gaidāms" },
+        "a2-low": { "label": "A2 — C2 zems ātrums (≤ 3 m/s)", "note": "Aktivizē zema ātruma režīmu PIRMS pietuvošanās 5 m" },
+        "a2-normal": { "label": "A2 — C2 parastais ātrums", "note": "Pastāvīgi 30 m horizontāli" },
+        "a3": { "label": "A3 — C2 / C3 / C4 / mantots" }
+      },
+      "a3NoteFloor": "30 m grīda piemērojama — 1:1 vēl nav saistošs",
+      "a3NoteActive": "1:1 noteikums aktīvs · {altitude} m augstums → {altitude} m attālums",
+      "footer": "Atceries: A3 1:1 noteikums nozīmē horizontālais attālums ≥ lidojuma augstumam, ar 30 m grīdu. Pulcēšanās aizliegums darbojas katrā apakškategorijā neatkarīgi no augstuma vai attāluma."
+    }
   }
 }

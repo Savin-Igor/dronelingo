@@ -177,5 +177,132 @@
     "processing": "Processing...",
     "stubNote": "Stub checkout — no real charge.",
     "freeNote": "Air Safety topic is always free — no payment needed."
+  },
+  "lessonWidgets": {
+    "anatomy": {
+      "missionBriefing": "Mission briefing",
+      "scenario": "Scenario",
+      "remember": "Remember",
+      "commonMistakes": "Common mistakes",
+      "debrief": "Debrief",
+      "unlocked": "Unlocked",
+      "scenePlaceholder": "Scene placeholder · awaiting render",
+      "promptLabel": "prompt:"
+    },
+    "miniQuiz": {
+      "heading": "Quick check",
+      "correct": "Correct",
+      "notQuite": "Not quite",
+      "whyWrong": "Why your answer is wrong:"
+    },
+    "classComparator": {
+      "heading": "Interactive · UAS class comparator",
+      "tabsAriaLabel": "UAS classes",
+      "mtom": "MTOM",
+      "maxSpeed": "Max speed",
+      "subcategory": "Subcategory",
+      "remoteId": "Remote ID",
+      "geoAwareness": "Geo-awareness",
+      "keyRestriction": "Key restriction",
+      "required": "Required",
+      "notRequired": "Not required",
+      "manualOnly": "manual only",
+      "retrofitKit": "retrofit kit",
+      "bvlosCapable": "BVLOS-capable",
+      "dash": "—",
+      "classes": {
+        "C0": { "restriction": "Over individuals OK · never over assemblies" },
+        "C1": { "restriction": "No expected overflight of uninvolved persons" },
+        "C2": { "restriction": "Low-speed mode (≤ 3 m/s) → 5 m · normal → 30 m" },
+        "C3": { "restriction": "≥ 150 m from inhabited areas · ≥ 30 m or 1:1 from people" },
+        "C4": { "restriction": "No autonomous modes — manual control only" },
+        "C5": { "restriction": "VLOS, controlled ground area, airspace observers" },
+        "C6": { "restriction": "BVLOS over sparsely populated · observer chain required" }
+      }
+    },
+    "whCalculator": {
+      "heading": "Interactive · Wh calculator",
+      "cells": "Cell count (S)",
+      "cellsHint": "DJI Mavic 3 = 4S",
+      "capacity": "Capacity (mAh)",
+      "capacityHint": "Per-cell pack — read from the battery label",
+      "packVoltage": "Pack voltage",
+      "capacityRow": "Capacity",
+      "energy": "Energy",
+      "iata": "IATA air travel",
+      "iataOk": "Carry-on or checked baggage",
+      "iataApproval": "Carry-on only · airline approval",
+      "iataForbidden": "Forbidden on passenger aircraft",
+      "formula": "Formula: Wh = (mAh ÷ 1000) × cells × 3.7 V nominal. Below 100 Wh: free. 100–160 Wh: airline approval. Above 160 Wh: forbidden in passenger cabin."
+    },
+    "imsafe": {
+      "heading": "Interactive · IMSAFE self-check",
+      "verdict": "Verdict",
+      "verdictWaiting": "Answer all six to see the verdict",
+      "verdictGo": "GO — all six clear. Run the UAS and environment checks next.",
+      "verdictNoGo": "NO-GO — one or more risks active. Postpone or delegate.",
+      "reset": "Reset checklist",
+      "yes": "Yes",
+      "no": "No",
+      "items": {
+        "illness": { "letter": "I", "label": "Illness", "prompt": "Any active infection, cold, or symptoms affecting concentration?" },
+        "medication": { "letter": "M", "label": "Medication", "prompt": "Any medication that may cause drowsiness or affect alertness?" },
+        "stress": { "letter": "S", "label": "Stress", "prompt": "Acute emotional stress (argument, bad news, financial pressure)?" },
+        "alcohol": { "letter": "A", "label": "Alcohol", "prompt": "Any alcohol consumed in the last 8 hours?" },
+        "fatigue": { "letter": "F", "label": "Fatigue", "prompt": "Fewer than 6 hours of sleep last night, or sustained sleep debt?" },
+        "eating": { "letter": "E", "label": "Eating", "prompt": "No food in the last 4 hours, or feeling hypoglycaemic?" }
+      }
+    },
+    "zoneClassifier": {
+      "heading": "Interactive · classify the zone",
+      "intro": "Decide which UGZ type each scenario falls into. Tap to reveal.",
+      "zoneTypeLabel": "Zone type",
+      "correct": "Correct",
+      "notQuite": "Not quite",
+      "answerPrefix": "answer:",
+      "types": {
+        "information": "Information",
+        "restricted": "Restricted",
+        "prohibited": "Prohibited"
+      },
+      "cards": {
+        "z1": {
+          "scenario": "A bird nesting reserve on a small island. The CAA map marks it 'active during nesting season — please avoid'. No active restriction on the date you plan to fly.",
+          "explanation": "Information zones carry no legal restriction — they exist to warn the pilot of nearby sensitivity. Flying is allowed without any application."
+        },
+        "z2": {
+          "scenario": "A patch of airspace adjacent to Riga airport's CTR. The map says 'flight permitted with BGKIS application — max 50 m AGL'.",
+          "explanation": "Restricted zones require an application and approval. Since 2025-01-01 BGKIS is the mandatory channel. The ceiling stated in the approval (50 m here) takes precedence over the general 120 m."
+        },
+        "z3": {
+          "scenario": "EVR17 Border East — the full eastern border strip with Russia and Belarus, since 2025.",
+          "explanation": "Prohibited zones are not flyable in Open category at all. EVR17 specifically carries criminal liability, not just an administrative fine."
+        },
+        "z4": {
+          "scenario": "An active military training area marked 'No flight 08:00–18:00 weekdays during May'. The day you plan to fly is a Saturday in June.",
+          "explanation": "Outside the active window the zone is effectively information-only. Always re-check the zone status against the date and time of the planned flight, not against the season as a whole."
+        },
+        "z5": {
+          "scenario": "A nuclear research facility's perimeter. The map shows a red filled polygon labelled 'no UAS flight permitted'.",
+          "explanation": "Critical infrastructure with a hard no-fly designation. No application can lift the prohibition for Open category."
+        }
+      }
+    },
+    "distanceRule": {
+      "heading": "Interactive · distance from uninvolved persons",
+      "altitude": "Flight altitude (AGL)",
+      "altitudeAriaLabel": "Altitude in metres above ground",
+      "ceilingMark": "120 m ceiling",
+      "subcats": {
+        "a1-c0": { "label": "A1 — C0 (<250 g)", "note": "Overflight of individuals OK · never over assemblies" },
+        "a1-c1": { "label": "A1 — C1 (<900 g)", "note": "Plan around people · no expected overflight" },
+        "a2-low": { "label": "A2 — C2 low-speed (≤ 3 m/s)", "note": "Activate low-speed mode BEFORE closing to 5 m" },
+        "a2-normal": { "label": "A2 — C2 normal speed", "note": "Flat 30 m horizontal" },
+        "a3": { "label": "A3 — C2 / C3 / C4 / legacy" }
+      },
+      "a3NoteFloor": "30 m floor applies — 1:1 not yet binding",
+      "a3NoteActive": "1:1 rule active · {altitude} m altitude → {altitude} m distance",
+      "footer": "Remember: the 1:1 rule in A3 means horizontal distance ≥ flight altitude, with a 30 m floor. The crowd prohibition applies in every sub-category regardless of altitude or distance."
+    }
   }
 }
