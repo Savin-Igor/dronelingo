@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { DiagnosticCta } from "@/components/exam/DiagnosticCta";
 import { ExamHistorySection } from "@/components/exam/ExamHistorySection";
 import {
   A1A3_STRATIFICATION,
@@ -61,6 +62,8 @@ export default async function ExamStart({
         {t("title")}
       </h1>
       <p className="mt-2 text-telemetry">{t("subtitle")}</p>
+
+      <DiagnosticCta />
 
       <section className="mt-6 rounded-sm border border-horizon bg-cockpit p-6">
         <h2 className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">

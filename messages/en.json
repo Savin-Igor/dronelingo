@@ -198,6 +198,47 @@
     "stubNote": "Stub checkout — no real charge.",
     "freeNote": "Air Safety topic is always free — no payment needed."
   },
+  "diagnostic": {
+    "kicker": "Calibration flight",
+    "title": "10-question diagnostic",
+    "subtitle": "Short, no timer, one question per topic. Misses go straight into your daily warm-up.",
+    "backToExam": "Mock exam",
+    "stats": {
+      "questions": "Questions",
+      "noTimer": "Timer",
+      "feedback": "Instant feedback"
+    },
+    "questionOf": "Question {current} of {total}",
+    "check": "Check answer",
+    "next": "Next",
+    "finish": "See results",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "source": "Source",
+    "emptyPool": "The question bank is not ready for the diagnostic yet.",
+    "result": {
+      "kicker": "Calibration complete",
+      "percent": "{percent}% correct",
+      "perTopicLabel": "Per-topic strength",
+      "perTopicHeading": "Per-topic strength",
+      "scoreAria": "{correct} of {total} correct",
+      "queuedKicker": "Queued for warm-up",
+      "queuedTitle": "{count, plural, =1 {# missed question added to your review schedule.} other {# missed questions added to your review schedule.}}",
+      "queuedBody": "Daily warm-up will surface them with weakest topics first.",
+      "ctaWarmup": "Start warm-up",
+      "ctaLessons": "Browse lessons",
+      "allClearKicker": "All clear",
+      "allClearBody": "Perfect run. You are ready for the full mock exam.",
+      "ctaMockExam": "Start mock exam"
+    },
+    "cta": {
+      "ariaLabel": "Diagnostic prompt",
+      "kicker": "First time here?",
+      "title": "Take a 10-question calibration",
+      "subtitle": "Find out exactly where you stand across all 9 topics. Misses go straight into the daily warm-up.",
+      "cta": "Start diagnostic"
+    }
+  },
   "rank": {
     "ariaLabel": "Pilot rank",
     "kicker": "Pilot rank",
