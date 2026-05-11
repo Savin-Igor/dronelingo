@@ -8,6 +8,13 @@ set -e
 #   ENOENT: ... /app/node_modules/.bin/prisma_schema_build_bg.wasm
 echo "Running database migrations..."
 node ./node_modules/prisma/build/index.js migrate deploy
-echo "Migrations complete. Starting app..."
+
+# Idempotent upsert of every topic / lesson / question on each start
+# so a redeploy with new content lands in the DB without an extra
+# manual step. Takes ~5 s for the current ~100-question bank.
+echo "Importing content..."
+node ./node_modules/tsx/dist/cli.mjs scripts/import-content.ts
+
+echo "Startup tasks complete. Starting app..."
 
 exec "$@"

@@ -45,8 +45,12 @@ COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-# Static MDX content read at request time by `src/lib/static-page.ts`.
-COPY --from=builder --chown=nextjs:nodejs /app/content/static ./content/static
+# Full content/ tree — entrypoint runs scripts/import-content.ts on
+# every start to upsert topics, lessons, and questions into Postgres.
+COPY --from=builder --chown=nextjs:nodejs /app/content ./content
+
+# Import script — runs after `prisma migrate deploy`.
+COPY --from=builder --chown=nextjs:nodejs /app/scripts/import-content.ts ./scripts/import-content.ts
 
 # Prisma schema needed for `prisma migrate deploy` at container start.
 COPY --from=builder /app/prisma ./prisma
