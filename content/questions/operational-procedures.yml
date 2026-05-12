@@ -719,3 +719,322 @@
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: regulatory
+
+- id: op-013
+  stem:
+    lv: Pirms lidojuma pilots konstatē, ka tā plānotās lidojuma zonas tuvumā ir augstsprieguma elektrolīnijas. Kā pareizi rīkoties?
+    en: Before flight a pilot identifies high-voltage power lines near the planned flight area. What is the correct action?
+    ru: Перед полётом пилот обнаруживает высоковольтные линии электропередачи вблизи запланированной зоны полётов. Каковы правильные действия?
+  options:
+    - id: a
+      text:
+        lv: Lidot bez ierobežojumiem — elektrolīnijas ir zemes infrastruktūra, ne gaisa šķērslis.
+        en: Fly without restriction — power lines are ground infrastructure, not an aerial obstacle.
+        ru: Летать без ограничений — линии электропередачи являются наземной инфраструктурой, а не воздушным препятствием.
+    - id: b
+      text:
+        lv: Izvairīties no lidošanas zem un vertikāli virs līnijām; iekļaut elektrolīnijas RTH augstuma aprēķinā; nodrošināt drošu horizontālo atstatumu.
+        en: Avoid flying under and directly above the lines; include power lines in the RTH altitude calculation; ensure a safe horizontal clearance.
+        ru: Избегать полётов под и прямо над линиями; включить ЛЭП в расчёт высоты RTH; обеспечить безопасный горизонтальный зазор.
+    - id: c
+      text:
+        lv: Tikai jāievēro drošs 30 m horizontālais atstatums no torņiem.
+        en: Only maintain a safe 30 m horizontal distance from the pylons.
+        ru: Достаточно соблюдать безопасное горизонтальное расстояние 30 м от опор.
+    - id: d
+      text:
+        lv: Ziņot CAA par elektrolīniju klātbūtni un gaidīt atļauju.
+        en: Report the power lines to CAA and await authorisation.
+        ru: Сообщить в CAA о наличии ЛЭП и ожидать разрешения.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Elektrolīnijas rada vairākus draudus: elektromagnētiskā ietekme uz
+      kompasu un motoriem, fiziska sadursmes risks un traucēta VLOS. Pilots
+      nedrīkst lidot tieši zem vai virs tām un jānodrošina drošs horizontālais
+      atstatums. RTH augstumam jābūt augstākam par visiem šķēršļiem atgriešanās
+      trajektorijā, ieskaitot elektrolīnijas.
+    en: >
+      Power lines pose multiple threats: electromagnetic interference with compass
+      and motors, physical collision risk, and impaired VLOS. The pilot must not
+      fly directly below or above them and must ensure a safe horizontal clearance.
+      RTH altitude must be set above all obstacles in the return path, including
+      power lines.
+    ru: >
+      ЛЭП создают несколько угроз: электромагнитное воздействие на компас и
+      моторы, риск физического столкновения и нарушение VLOS. Пилот не должен
+      летать непосредственно под или над ними и должен обеспечить безопасный
+      горизонтальный зазор. Высота RTH должна быть выше всех препятствий на
+      пути возврата, включая ЛЭП.
+  distractorRationales:
+    a:
+      lv: Elektrolīnijas rada gan fiziskus, gan elektromagnētiskos draudus UAS. Tās nav tikai "zemes infrastruktūra".
+      en: Power lines pose both physical and electromagnetic threats to UAS. They are not merely "ground infrastructure".
+      ru: ЛЭП создают как физические, так и электромагнитные угрозы для UAS. Они не просто «наземная инфраструктура».
+    c:
+      lv: 30 m no torņiem nav regulatīvā prasība. Problēma ir pati kabeļu līnija, ne tornis — kabeļiem jāpievērš galvenā uzmanība.
+      en: 30 m from pylons is not a regulatory requirement. The cable span itself is the hazard, not the pylon — cables need the primary clearance.
+      ru: 30 м от опор не является нормативным требованием. Сам пролёт кабелей является источником опасности, а не опора — кабели требуют основного зазора.
+    d:
+      lv: Elektrolīnijas nav UAS ģeogrāfiskā zona, kam nepieciešama CAA atļauja. Tas ir telpiskās situācijas apzināšanās jautājums, ko pilots risina pats.
+      en: Power lines are not a UAS geographical zone requiring CAA authorisation. This is a situational awareness matter for the pilot to manage.
+      ru: ЛЭП не являются географической зоной UAS, требующей разрешения CAA. Это вопрос ситуационной осведомлённости пилота.
+  sourceRef: "Reg 2019/947 UAS.OPEN.060 — operational procedures; EASA UAS preflight guidelines"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: op-014
+  stem:
+    lv: Drona lietotne brīdina, ka atrašanās vieta ir 800 m no lidostas un piekļuve ir "atļauts ar nosacījumiem". Ko tas nozīmē?
+    en: The drone app warns that the location is 800 m from an airport and access is "allowed with conditions". What does this mean?
+    ru: Приложение для дрона предупреждает, что местоположение находится в 800 м от аэропорта и доступ «разрешён с условиями». Что это означает?
+  options:
+    - id: a
+      text:
+        lv: Drons automātiski pielieto ģeofencing un limitēs augstumu.
+        en: The drone automatically applies geofencing and will limit altitude.
+        ru: Дрон автоматически применит геозону и ограничит высоту.
+    - id: b
+      text:
+        lv: Pilots drīkst lidot bez papildu darbībām — "atļauts" nozīmē brīvu piekļuvi.
+        en: The pilot may fly without further action — "allowed" means free access.
+        ru: Пилот может летать без дополнительных действий — «разрешено» означает свободный доступ.
+    - id: c
+      text:
+        lv: Pilots pārbauda konkrētos nosacījumus (iespējams, maksimālo augstumu vai autorizācijas prasību) un ievēro tos pirms lidojuma.
+        en: The pilot checks the specific conditions (possibly a maximum altitude or authorisation requirement) and complies before flying.
+        ru: Пилот проверяет конкретные условия (возможно, максимальную высоту или требование авторизации) и соблюдает их перед полётом.
+    - id: d
+      text:
+        lv: "Atļauts ar nosacījumiem" nozīmē lidojums aizliegts — jāgaida uz oficiālu atļauju.
+        en: "Allowed with conditions" means flight is prohibited — wait for an official permit.
+        ru: «Разрешено с условиями» означает, что полёт запрещён — необходимо ожидать официального разрешения.
+  correctOptionId: c
+  explanation:
+    lv: >
+      "Atļauts ar nosacījumiem" (conditional access) nozīmē, ka zonā pastāv
+      ierobežojumi, piemēram, maksimālais augstums vai prasība iesniegt lidojuma
+      pieteikumu caur BGKIS / e.caa.gov.lv. Pilots pārbauda nosacījumus lietotnē
+      vai BGKIS un ievēro tos — tas nav brīva piekļuve un nav aizliegums, bet
+      gan nosacīta operācija.
+    en: >
+      "Allowed with conditions" (conditional access) means restrictions apply in
+      the area — for example a maximum altitude or a requirement to submit a flight
+      application via BGKIS / e.caa.gov.lv. The pilot checks the conditions in the
+      app or BGKIS and complies — it is neither free access nor a prohibition but
+      a conditional operation.
+    ru: >
+      «Разрешено с условиями» (условный доступ) означает, что в зоне действуют
+      ограничения — например, максимальная высота или требование подать заявку на
+      полёт через BGKIS / e.caa.gov.lv. Пилот проверяет условия в приложении или
+      BGKIS и соблюдает их — это не свободный доступ и не запрет, а условная
+      операция.
+  distractorRationales:
+    a:
+      lv: Ģeofencing ir automātisks sistēmas ierobežojums dažiem UAS, bet "atļauts ar nosacījumiem" vispirms prasa pilota darbību — nosacījumu pārbaudi.
+      en: Geofencing is an automated system restriction on some UAS, but "allowed with conditions" first requires pilot action — checking the conditions.
+      ru: Геозона — автоматическое системное ограничение для некоторых UAS, но «разрешено с условиями» сначала требует действий пилота — проверки условий.
+    b:
+      lv: "Atļauts ar nosacījumiem" nav brīva piekļuve. Nosacījumi jāpārbauda un jāievēro.
+      en: "Allowed with conditions" is not free access. The conditions must be checked and met.
+      ru: «Разрешено с условиями» — не свободный доступ. Условия необходимо проверить и выполнить.
+    d:
+      lv: "Atļauts ar nosacījumiem" nav aizliegums. Nosacīta piekļuve ļauj lidojumu, izpildot prasības.
+      en: "Allowed with conditions" is not a prohibition. Conditional access permits flight upon meeting requirements.
+      ru: «Разрешено с условиями» — не запрет. Условный доступ разрешает полёт при выполнении требований.
+  sourceRef: "Reg 2019/947 Art. UAS.OPEN.060; BGKIS / e.caa.gov.lv geo-awareness"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: op-015
+  stem:
+    lv: Kas ir "Return-to-Home" (RTH) priekšnoteikums, lai tas darbotos pareizi?
+    en: What is a prerequisite for "Return-to-Home" (RTH) to work correctly?
+    ru: Каково предварительное условие для корректной работы «Return-to-Home» (RTH)?
+  options:
+    - id: a
+      text:
+        lv: Dronam jābūt ar aktīvu GLONASS signālu.
+        en: The drone must have an active GLONASS signal.
+        ru: Дрон должен иметь активный сигнал ГЛОНАСС.
+    - id: b
+      text:
+        lv: Sākuma punktam jābūt ierakstītam pirms lidojuma, un RTH augstumam jābūt iestatītam augstākam par visiem apkārtējiem šķēršļiem.
+        en: The home point must be recorded before flight, and RTH altitude must be set above all surrounding obstacles.
+        ru: Домашняя точка должна быть записана до полёта, а высота RTH должна быть установлена выше всех окружающих препятствий.
+    - id: c
+      text:
+        lv: Pilotam jābūt A2 sertifikātam.
+        en: The pilot must hold an A2 certificate.
+        ru: Пилот должен иметь сертификат A2.
+    - id: d
+      text:
+        lv: RTH ir pieejams tikai C2 vai jaunākajām klasēm, nevis mantotajiem UAS.
+        en: RTH is only available on C2 or newer classes, not legacy UAS.
+        ru: RTH доступен только для C2 или более новых классов, а не для унаследованных UAS.
+  correctOptionId: b
+  explanation:
+    lv: >
+      RTH izmanto GPS, lai atgrieztos sākuma punktā. Sākuma punktam jābūt
+      fiksētam GPS fiksācijā pirms pacelšanās. RTH augstumam jābūt iestatītam
+      augstākam par visiem šķēršļiem atgriešanās trajektorijā — pretējā gadījumā
+      drons var atgriezties zemā augstumā un ietriekties šķērslī.
+    en: >
+      RTH uses GPS to navigate back to the home point. The home point must be
+      captured at GPS lock before takeoff. RTH altitude must be set above all
+      obstacles in the return path — otherwise the drone may return at low altitude
+      and strike an obstacle.
+    ru: >
+      RTH использует GPS для навигации к домашней точке. Домашняя точка должна
+      быть зафиксирована при захвате GPS до взлёта. Высота RTH должна быть
+      установлена выше всех препятствий на пути возврата — иначе дрон может
+      вернуться на малой высоте и врезаться в препятствие.
+  distractorRationales:
+    a:
+      lv: GLONASS ir papildu uzlabojums precizitātei, bet RTH darbojas ar jebkura GNSS signāla bloķēšanu (GPS ir pietiekams). GLONASS nav RTH priekšnosacījums.
+      en: GLONASS is an additional enhancement for precision, but RTH works with any GNSS fix (GPS is sufficient). GLONASS is not a prerequisite for RTH.
+      ru: ГЛОНАСС — дополнительное улучшение точности, но RTH работает с любым сигналом GNSS (GPS достаточно). ГЛОНАСС не является обязательным условием для RTH.
+    c:
+      lv: A2 sertifikāts ir pilota kompetences dokuments, kas nav saistīts ar RTH funkcionalitāti. RTH ir tehnoloģisks drona raksturlielums.
+      en: An A2 certificate is a pilot competence document unrelated to RTH functionality. RTH is a technological feature of the drone.
+      ru: Сертификат A2 — документ компетентности пилота, не связанный с функциональностью RTH. RTH — технологическая особенность дрона.
+    d:
+      lv: RTH ir pieejams daudzos mantotajos UAS. Prasība nav saistīta ar C klases statusu, bet ar konkrētā drona tehniskajām iespējām.
+      en: RTH is available on many legacy UAS. The requirement is not tied to C-class status but to the specific drone's technical capabilities.
+      ru: RTH доступен во многих унаследованных UAS. Требование не связано со статусом C-класса, а с техническими возможностями конкретного дрона.
+  sourceRef: "Reg 2019/947 UAS.OPEN.060 — fail-safe and operational procedures; EASA UAS preflight guidelines"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: op-016
+  stem:
+    lv: Operators plāno komerciālu video kadri veidošanu ar dronu publiski pieejamā parkā. Kādu dokumentu operators glabā ar sevi lidojuma laikā?
+    en: An operator plans commercial video filming with a drone in a publicly accessible park. What document must the operator carry during the flight?
+    ru: Оператор планирует коммерческую видеосъёмку с дроном в общедоступном парке. Какой документ оператор должен иметь при себе во время полёта?
+  options:
+    - id: a
+      text:
+        lv: Operators galvojuma dokuments no parka pārvaldes.
+        en: A guarantee document from the park management.
+        ru: Гарантийный документ от администрации парка.
+    - id: b
+      text:
+        lv: Derīga civiltiesiskās atbildības apdrošināšanas polise, pilota kompetences apliecība un UAS operators reģistrācijas apliecība.
+        en: A valid third-party liability insurance policy, remote pilot competence certificate, and UAS operator registration proof.
+        ru: Действующий полис страхования гражданской ответственности, свидетельство о компетентности дистанционного пилота и подтверждение регистрации оператора UAS.
+    - id: c
+      text:
+        lv: Tikai derīga apdrošināšanas polise — sertifikātu un reģistrāciju var pārbaudīt tiešsaistē.
+        en: Only a valid insurance policy — the certificate and registration can be checked online.
+        ru: Только действующий полис страхования — сертификат и регистрацию можно проверить онлайн.
+    - id: d
+      text:
+        lv: Neviens dokuments nav nepieciešams parkā — tas ir publisks gaisa telpa.
+        en: No documents are required in a park — it is public airspace.
+        ru: Никакие документы в парке не нужны — это общедоступное воздушное пространство.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Pilots brīdī, kad lido komerciālā operācijā, glabā pie sevis: (1) derīgu
+      civiltiesiskās atbildības apdrošināšanas polisi, (2) pilota kompetences
+      apliecību (A1/A3 vai A2), (3) UAS operators reģistrācijas numura pierādījumu.
+      Inspekcijas gadījumā tas jāuzrāda pārstāvim. Bez dokumentācijas uzrādīšanas
+      operators var saņemt administratīvo sodu.
+    en: >
+      The pilot in commercial operation carries: (1) a valid third-party liability
+      insurance policy, (2) a pilot competence certificate (A1/A3 or A2), (3) proof
+      of UAS operator registration number. In an inspection these must be shown to
+      the authority. Without documentation the operator may receive an
+      administrative fine.
+    ru: >
+      Пилот в коммерческой операции имеет при себе: (1) действующий полис
+      страхования гражданской ответственности, (2) свидетельство о компетентности
+      пилота (A1/A3 или A2), (3) подтверждение регистрационного номера оператора UAS.
+      При инспекции они должны быть предъявлены представителю. Без документов
+      оператор может получить административный штраф.
+  distractorRationales:
+    a:
+      lv: Parka pārvaldes dokuments var būt nepieciešams privātā parkā, bet tas nav regulatīvi nepieciešamais dokuments. Regulatīvā prasība ir apdrošināšana, sertifikāts un reģistrācija.
+      en: A park management document may be needed for a private park, but it is not the regulatorily required document. The regulatory requirements are insurance, certificate, and registration.
+      ru: Документ администрации парка может потребоваться для частного парка, но это не нормативно установленный документ. Нормативные требования — страховка, сертификат и регистрация.
+    c:
+      lv: Arī sertifikātam un reģistrācijas apliecinājumam jābūt uzrādāmam inspekcijas laikā. Tiešsaistes pārbaudes iespēja nav atvainojums to nešanai.
+      en: The certificate and registration proof must also be producible at inspection. Online verification capability is not an excuse for not carrying them.
+      ru: Сертификат и подтверждение регистрации также должны быть предъявлены при инспекции. Возможность онлайн-проверки не является оправданием для их отсутствия.
+    d:
+      lv: Publiska vieta neatbrīvo no dokumentu nešanas pienākuma. Regulatīvās prasības attiecas uz operāciju, nevis uz zemes vai gaisa telpas juridisko statusu.
+      en: A public location does not waive the document-carrying obligation. Regulatory requirements apply to the operation, not to the legal status of the land or airspace.
+      ru: Общедоступное место не освобождает от обязанности иметь документы. Нормативные требования применяются к операции, а не к правовому статусу земли или воздушного пространства.
+  sourceRef: "Reg 2019/947 Art. UAS.OPEN.060; Latvian Aviation Law — inspection obligations"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: op-017
+  stem:
+    lv: Pilots lido ar dronu pilsētas parkā. Pēkšņi drons patstāvīgi sāk doties augšup un uz sāniem bez pilota ievades. Kāda ir PIRMĀ darbība?
+    en: A pilot is flying a drone in a city park. Suddenly the drone independently starts moving upward and sideways without pilot input. What is the FIRST action?
+    ru: Пилот управляет дроном в городском парке. Внезапно дрон самостоятельно начинает двигаться вверх и в сторону без ввода пилота. Каково ПЕРВОЕ действие?
+  options:
+    - id: a
+      text:
+        lv: Ieslēgt kameru, lai dokumentētu incidentu.
+        en: Turn on the camera to document the incident.
+        ru: Включить камеру для документирования инцидента.
+    - id: b
+      text:
+        lv: Mēģināt pārslēgt dronu uz manuālo režīmu un atgūt kontroli; ja tas neizdodas — aktivizēt RTH vai izsaukt avārijas nosēšanos.
+        en: Attempt to switch the drone to manual mode and regain control; if unsuccessful — activate RTH or trigger emergency landing.
+        ru: Попытаться переключить дрон в ручной режим и восстановить управление; если не удастся — активировать RTH или инициировать аварийную посадку.
+    - id: c
+      text:
+        lv: Izslēgt vadības pulti, lai drons aktivizētu fail-safe automātiski.
+        en: Switch off the controller so the drone activates fail-safe automatically.
+        ru: Выключить пульт управления, чтобы дрон активировал fail-safe автоматически.
+    - id: d
+      text:
+        lv: Saukt cilvēkus, lai tie aizkļūst no zonas, un gaidīt.
+        en: Shout at people to clear the area and wait.
+        ru: Кричать на людей, чтобы они покинули зону, и ждать.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Nekontrolēta kustība (flyaway vai ģeogrāfiskās zonas traucējums) prasa
+      tūlītēju pilota darbību: (1) pāriet uz manuālo/altitude-hold режīmu un
+      mēģināt atgūt kontroli; (2) ja neveiksmīgi — aktivizēt RTH vai avārijas
+      nosēšanos drošā vietā. Izslēgt vadības pulti nav pirmā darbība — tas atstāj
+      dronu automātiski darboties, kas var nebūt vēlamais iznākums pilsētas vidē.
+    en: >
+      Uncontrolled movement (flyaway or geofencing interference) requires immediate
+      pilot action: (1) switch to manual/altitude-hold mode and attempt to regain
+      control; (2) if unsuccessful — activate RTH or emergency landing in a safe
+      spot. Switching off the controller is not the first action — it leaves the
+      drone operating autonomously, which may not be the desired outcome in an
+      urban environment.
+    ru: >
+      Неконтролируемое движение (улёт или вмешательство геозоны) требует немедленных
+      действий пилота: (1) переключиться в ручной/altitude-hold режим и попытаться
+      восстановить управление; (2) при неудаче — активировать RTH или аварийную
+      посадку в безопасном месте. Выключение пульта — не первое действие: это
+      оставит дрон в автономном режиме, что может быть нежелательным в городской
+      среде.
+  distractorRationales:
+    a:
+      lv: Dokumentēšana ir svarīga, bet tā ir sekundāra prioritāte. Drošības pasākumi ir pirmajā vietā.
+      en: Documentation is important but is a secondary priority. Safety measures come first.
+      ru: Документирование важно, но является второстепенным приоритетом. Меры безопасности на первом месте.
+    c:
+      lv: Izslēdzot vadību, drons aktivizēs fail-safe, bet tas ne vienmēr nozīmē nekavējošu drošu nosēšanos pilsētā. Manuālā atgūšana ir labāka pirmā darbība.
+      en: Switching off the controller activates fail-safe, but this does not always mean an immediate safe landing in a city. Manual recovery is the better first action.
+      ru: Выключение пульта активирует fail-safe, но это не всегда означает немедленную безопасную посадку в городе. Ручное восстановление управления — лучшее первое действие.
+    d:
+      lv: Brīdināšana ir noderīga, bet tas nav pirmais solis. Aktīva kontroles atgūšana ir prioritāte.
+      en: Warning people is useful, but it is not the first step. Active control recovery is the priority.
+      ru: Предупреждение людей полезно, но не является первым шагом. Активное восстановление управления является приоритетом.
+  sourceRef: "Reg 2019/947 UAS.OPEN.060 — emergency procedures; EASA UAS operational guidelines"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision

@@ -588,3 +588,444 @@
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: factual
+
+- id: ar-011
+  stem:
+    lv: Kas ir UAS operatora reģistrācija un no kādas masas tā ir obligāta?
+    en: What is UAS operator registration and from what mass is it mandatory?
+    ru: Что такое регистрация оператора UAS и с какой массы она обязательна?
+  options:
+    - id: a
+      text:
+        lv: Reģistrācija ir dronam piešķirts numurs; obligāta no 1 kg.
+        en: Registration is a number assigned to the drone; mandatory from 1 kg.
+        ru: Регистрация — это номер, присвоенный дрону; обязательна с 1 кг.
+    - id: b
+      text:
+        lv: Reģistrācija identificē operatoru (juridisko/fizisko personu); obligāta visiem UAS ≥ 250 g vai tiem, kas ar sensoru/kameru, vai Specifiskajā kategorijā.
+        en: Registration identifies the operator (legal/natural person); mandatory for all UAS ≥ 250 g or those with a sensor/camera, or in the Specific category.
+        ru: Регистрация идентифицирует оператора (юридическое/физическое лицо); обязательна для всех UAS ≥ 250 г, а также оснащённых датчиком/камерой или в Специальной категории.
+    - id: c
+      text:
+        lv: Reģistrācija identificē pilotu; obligāta visiem pilotiem neatkarīgi no masas.
+        en: Registration identifies the pilot; mandatory for all pilots regardless of mass.
+        ru: Регистрация идентифицирует пилота; обязательна для всех пилотов независимо от массы.
+    - id: d
+      text:
+        lv: Reģistrācija ir lidojuma atļauja; tā jāsaņem pirms katra lidojuma.
+        en: Registration is a flight permit; it must be obtained before each flight.
+        ru: Регистрация — это разрешение на полёт; её необходимо получать перед каждым полётом.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Saskaņā ar Reg 2019/947 Art. 14, operators (nevis drons, nevis pilots)
+      reģistrējas dalībvalsts kompetentajā iestādē. Reģistrācija obligāta:
+      UAS MTOM ≥ 250 g, vai jebkuram UAS ar sensoru/kameru, vai Specifiskajā
+      kategorijā. Reģistrācija piešķir operatoram numuru, kas tiek norādīts
+      dronam (uzlīme/Remote ID). Latvijā reģistrācija notiek e.caa.gov.lv.
+    en: >
+      Under Reg 2019/947 Art. 14, the operator (not the drone, not the pilot)
+      registers with the member state competent authority. Registration is
+      mandatory: UAS MTOM ≥ 250 g, or any UAS with a sensor/camera, or in the
+      Specific category. Registration assigns the operator a number displayed
+      on the drone (sticker/Remote ID). In Latvia registration is at e.caa.gov.lv.
+    ru: >
+      Согласно ст. 14 Регл. 2019/947, оператор (не дрон, не пилот) регистрируется
+      в компетентном органе государства-члена. Регистрация обязательна: MTOM UAS
+      ≥ 250 г, или для любого UAS с датчиком/камерой, или в Специальной категории.
+      Регистрация присваивает оператору номер, отображаемый на дроне
+      (наклейка/Remote ID). В Латвии регистрация осуществляется через e.caa.gov.lv.
+  distractorRationales:
+    a:
+      lv: Reģistrācija identificē operatoru, nevis dronu, un piešķir operatora numuru. Obligātais sliekšnis ir 250 g, nevis 1 kg.
+      en: Registration identifies the operator, not the drone, and assigns an operator number. The mandatory threshold is 250 g, not 1 kg.
+      ru: Регистрация идентифицирует оператора, а не дрон, и присваивает номер оператора. Обязательный порог — 250 г, а не 1 кг.
+    c:
+      lv: Operators reģistrējas, nevis pilots. Pilota kompetenci apliecina atsevišķs sertifikāts (piemēram, A1/A3 tiešsaistes apmācības apliecība).
+      en: The operator registers, not the pilot. Pilot competence is demonstrated by a separate certificate (e.g. A1/A3 online training certificate).
+      ru: Регистрируется оператор, а не пилот. Компетентность пилота подтверждается отдельным сертификатом (например, свидетельством об онлайн-обучении A1/A3).
+    d:
+      lv: Operatora reģistrācija ir vienreizēja vai periodiska administrācijas procedūra, nevis katras lidojuma atļauja. Tā nav lidojuma atļauja.
+      en: Operator registration is a one-time or periodic administrative procedure, not a per-flight permit. It is not a flight permit.
+      ru: Регистрация оператора — это единовременная или периодическая административная процедура, а не разрешение на каждый полёт. Это не разрешение на полёт.
+  sourceRef: "Reg 2019/947 Art. 14 — UAS operator registration"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: ar-012
+  stem:
+    lv: Pilots ir A1/A3 sertificēts un vēlas lidot ar C1 klases dronu virs atsevišķas personas. Cik liela masa ir C1 klases UAS robežvērtība?
+    en: A pilot is A1/A3 certified and wants to fly a C1-class drone over an isolated person. What is the mass threshold for a C1-class UAS?
+    ru: Пилот имеет сертификат A1/A3 и хочет летать на дроне класса C1 над одиноким человеком. Каков массовый порог для UAS класса C1?
+  options:
+    - id: a
+      text:
+        lv: < 250 g.
+        en: < 250 g.
+        ru: < 250 г.
+    - id: b
+      text:
+        lv: < 900 g.
+        en: < 900 g.
+        ru: < 900 г.
+    - id: c
+      text:
+        lv: < 4 kg.
+        en: < 4 kg.
+        ru: < 4 кг.
+    - id: d
+      text:
+        lv: < 2 kg.
+        en: < 2 kg.
+        ru: < 2 кг.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Regula 2019/945 definē C1 klasi: UAS ar MTOM < 900 g (bez uzlādētāja
+      vai baterijas). C1 klases UAS darbojas A1 apakškategorijā, kur ir
+      atļauts lidot pāri atsevišķām personām (bet nekad virs pulcēšanās).
+      C0 robežvērtība ir < 250 g; C2 — < 4 kg; C3 — < 25 kg.
+    en: >
+      Reg 2019/945 defines C1 class: UAS with MTOM < 900 g (excluding charger
+      or battery). C1-class UAS operates in A1 sub-category, where overflight of
+      isolated individuals is permitted (but never over assemblies).
+      C0 threshold is < 250 g; C2 — < 4 kg; C3 — < 25 kg.
+    ru: >
+      Регл. 2019/945 определяет класс C1: UAS с MTOM < 900 г (без зарядного
+      устройства или аккумулятора). UAS класса C1 работает в подкатегории A1,
+      где облёт отдельных лиц разрешён (но никогда над скоплениями).
+      Порог C0 — < 250 г; C2 — < 4 кг; C3 — < 25 кг.
+  distractorRationales:
+    a:
+      lv: 250 g ir C0 klases robežvērtība, nevis C1. C0 ir vieglākā un mazāk ierobežotā klase.
+      en: 250 g is the C0 class threshold, not C1. C0 is the lightest and least restricted class.
+      ru: 250 г — порог класса C0, а не C1. C0 — самый лёгкий и наименее ограниченный класс.
+    c:
+      lv: 4 kg ir C2 klases robežvērtība, nevis C1. C2 klase darbojas A2 apakškategorijā.
+      en: 4 kg is the C2 class threshold, not C1. C2 class operates in the A2 sub-category.
+      ru: 4 кг — порог класса C2, а не C1. Класс C2 работает в подкатегории A2.
+    d:
+      lv: 2 kg nav nevienas C klases robežvērtība. Klases ir C0 (< 250 g), C1 (< 900 g), C2 (< 4 kg), C3 (< 25 kg), C4 (< 25 kg ar papildu apstākļiem).
+      en: 2 kg is not a threshold for any C class. The classes are C0 (< 250 g), C1 (< 900 g), C2 (< 4 kg), C3 (< 25 kg), C4 (< 25 kg with additional conditions).
+      ru: 2 кг не является порогом ни для одного класса C. Классы: C0 (< 250 г), C1 (< 900 г), C2 (< 4 кг), C3 (< 25 кг), C4 (< 25 кг с дополнительными условиями).
+  sourceRef: "Reg 2019/945 Part 2 — C1 class definition; Reg 2019/947 A1 sub-category"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: ar-013
+  stem:
+    lv: Kāds ir minimālais vecums A1/A3 drona pilotam saskaņā ar Regulu 2019/947?
+    en: What is the minimum age for an A1/A3 drone pilot under Regulation 2019/947?
+    ru: Каков минимальный возраст пилота дрона A1/A3 согласно Регламенту 2019/947?
+  options:
+    - id: a
+      text:
+        lv: 14 gadi.
+        en: 14 years.
+        ru: 14 лет.
+    - id: b
+      text:
+        lv: 16 gadi.
+        en: 16 years.
+        ru: 16 лет.
+    - id: c
+      text:
+        lv: 18 gadi.
+        en: 18 years.
+        ru: 18 лет.
+    - id: d
+      text:
+        lv: Nav minimālā vecuma prasības.
+        en: There is no minimum age requirement.
+        ru: Минимального возрастного требования нет.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Reg 2019/947 nosaka minimālo vecumu 16 gadi A1/A3 sertifikāta saņemšanai.
+      Izņēmumi: < 250 g UAS bez kameras (C0 bez sensora) — vecuma prasību nav.
+      Jaunāki piloti var lidot kluba vai asociācijas uzraudzībā. Dalībvalstis
+      var noteikt augstāku, bet ne zemāku minimālo vecumu.
+    en: >
+      Reg 2019/947 sets the minimum age at 16 years for obtaining the A1/A3
+      certificate. Exceptions: < 250 g UAS without camera (C0 without sensor) —
+      no age requirement. Younger pilots may fly under club or association
+      supervision. Member states may set a higher but not lower minimum age.
+    ru: >
+      Регл. 2019/947 устанавливает минимальный возраст 16 лет для получения
+      сертификата A1/A3. Исключения: UAS < 250 г без камеры (C0 без датчика) —
+      возрастных требований нет. Молодые пилоты могут летать под надзором
+      клуба или ассоциации. Государства-члены могут устанавливать более высокий,
+      но не более низкий минимальный возраст.
+  distractorRationales:
+    a:
+      lv: 14 gadi nav norādīti kā minimālais vecums Reg 2019/947. Regulā norādīts 16 gadi.
+      en: 14 years is not stated as the minimum age in Reg 2019/947. The regulation states 16 years.
+      ru: 14 лет не указано как минимальный возраст в Регл. 2019/947. В регламенте указано 16 лет.
+    c:
+      lv: 18 gadi ir vecāku darbību tiesiskās kapacitātes vecums dažās valstīs, bet Reg 2019/947 minimums ir 16 gadi, nevis 18.
+      en: 18 years is the legal capacity age for adults in some countries, but Reg 2019/947 minimum is 16 years, not 18.
+      ru: 18 лет — возраст правовой дееспособности совершеннолетних в некоторых странах, но минимум Регл. 2019/947 составляет 16 лет, а не 18.
+    d:
+      lv: Vecuma prasība pastāv — 16 gadi par A1/A3 sertifikātu. Bez prasības ir tikai UAS bez sensora < 250 g.
+      en: An age requirement exists — 16 years for the A1/A3 certificate. Only UAS without sensor < 250 g have no age requirement.
+      ru: Возрастное требование существует — 16 лет для сертификата A1/A3. Только UAS без датчика < 250 г не имеют возрастного требования.
+  sourceRef: "Reg 2019/947 Art. UAS.OPEN.020 — minimum age"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: ar-014
+  stem:
+    lv: Operators beidz izmantot savu dronu un nodod to citam operatoram. Kādas ir operatora reģistrācijas sekas?
+    en: An operator stops using their drone and transfers it to another operator. What are the operator registration implications?
+    ru: Оператор прекращает использовать свой дрон и передаёт его другому оператору. Каковы последствия для регистрации оператора?
+  options:
+    - id: a
+      text:
+        lv: Reģistrācija automātiski pāriet uz jauno operatoru.
+        en: Registration automatically transfers to the new operator.
+        ru: Регистрация автоматически переходит к новому оператору.
+    - id: b
+      text:
+        lv: Jaunajam operatoram jāreģistrējas atsevišķi; vecajam operatoram nav jādara nekas.
+        en: The new operator must register separately; the old operator need do nothing.
+        ru: Новый оператор должен зарегистрироваться отдельно; старому оператору ничего делать не нужно.
+    - id: c
+      text:
+        lv: Jaunajam operatoram jāreģistrējas atsevišķi; vecajam operatoram jāatjaunina reģistrācija vai jāatreģistrējas, ja vairs nelieto nevienu UAS.
+        en: The new operator must register separately; the old operator must update their registration or deregister if they no longer operate any UAS.
+        ru: Новый оператор должен зарегистрироваться отдельно; старый оператор должен обновить регистрацию или аннулировать её, если больше не эксплуатирует UAS.
+    - id: d
+      text:
+        lv: Reģistrācija paliek pie vecā operatora uz 1 gadu pēc nodošanas.
+        en: Registration remains with the old operator for 1 year after transfer.
+        ru: Регистрация остаётся у старого оператора на 1 год после передачи.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Operatora reģistrācija ir saistīta ar operatoru, nevis ar konkrētu dronu.
+      Nododot dronu, jaunajam operatoram jāreģistrējas (ja vēl nav), un dronā
+      jāmarķē ar jauno operatora numuru. Vecajam operatoram nav aktīvu UAS —
+      reģistrācija jāatjaunina vai jāatreģistrējas, lai dati būtu precīzi.
+    en: >
+      Operator registration is tied to the operator, not to a specific drone.
+      Upon transfer, the new operator must register (if not already), and the
+      drone must be marked with the new operator number. The old operator has no
+      active UAS — registration should be updated or cancelled to keep data
+      accurate.
+    ru: >
+      Регистрация оператора привязана к оператору, а не к конкретному дрону.
+      При передаче новый оператор должен зарегистрироваться (если ещё не
+      зарегистрирован), а дрон должен быть промаркирован новым номером оператора.
+      У старого оператора нет активных UAS — регистрацию следует обновить или
+      аннулировать для точности данных.
+  distractorRationales:
+    a:
+      lv: Reģistrācija nav automātisks nodošanas process. Katrs operators reģistrējas pats.
+      en: Registration is not an automatic transfer process. Each operator registers themselves.
+      ru: Регистрация не является автоматическим процессом передачи. Каждый оператор регистрируется самостоятельно.
+    b:
+      lv: Vecajam operatoram arī ir pienākums atjaunināt vai anulēt savu reģistrāciju, ja vairs nav aktīvu UAS. Regulatīvā precizitāte prasa to.
+      en: The old operator also has an obligation to update or cancel their registration if they have no more active UAS. Regulatory accuracy requires this.
+      ru: У старого оператора также есть обязательство обновить или аннулировать регистрацию, если у него больше нет активных UAS. Точность данных требует этого.
+    d:
+      lv: Nav 1 gada "pagaidām aktīvas" reģistrācijas perioda pēc UAS nodošanas. Atjaunināšanas pienākums ir tūlītējs.
+      en: There is no 1-year "temporarily active" registration period after UAS transfer. The update obligation is immediate.
+      ru: Нет 1-годичного периода «временно активной» регистрации после передачи UAS. Обязательство по обновлению является немедленным.
+  sourceRef: "Reg 2019/947 Art. 14 — operator registration obligations"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
+
+- id: ar-015
+  stem:
+    lv: Pilots ir nokārtojis A1/A3 tiešsaistes apmācību. Kad viņam jāatjauno sertifikāts?
+    en: A pilot has completed A1/A3 online training. When must they renew the certificate?
+    ru: Пилот прошёл онлайн-обучение A1/A3. Когда необходимо обновить сертификат?
+  options:
+    - id: a
+      text:
+        lv: Sertifikātam nav derīguma termiņa — tas paliek spēkā mūžīgi.
+        en: The certificate has no expiry — it remains valid indefinitely.
+        ru: Сертификат не имеет срока действия — он действует бессрочно.
+    - id: b
+      text:
+        lv: Ik pēc 1 gada.
+        en: Every 1 year.
+        ru: Каждый год.
+    - id: c
+      text:
+        lv: Ik pēc 5 gadiem Regulas 2019/947 ietvaros; dalībvalstis var noteikt atšķirīgus termiņus.
+        en: Every 5 years under Reg 2019/947; member states may set different intervals.
+        ru: Каждые 5 лет в соответствии с Регл. 2019/947; государства-члены могут устанавливать разные интервалы.
+    - id: d
+      text:
+        lv: Ik pēc 3 gadiem.
+        en: Every 3 years.
+        ru: Каждые 3 года.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Reg 2019/947 paredz 5 gadu derīguma periodu A1/A3 tiešsaistes apmācības
+      sertifikātam. Pēc 5 gadiem apmācība jāatjauno. Latvijas CAA var noteikt
+      atšķirīgus termiņus, tāpēc jāpārbauda aktuālā nacionālā prasība
+      e.caa.gov.lv.
+    en: >
+      Reg 2019/947 provides for a 5-year validity period for the A1/A3 online
+      training certificate. After 5 years the training must be renewed. Latvia's
+      CAA may set different intervals, so the current national requirement should
+      be checked at e.caa.gov.lv.
+    ru: >
+      Регл. 2019/947 предусматривает 5-летний срок действия сертификата
+      онлайн-обучения A1/A3. По истечении 5 лет обучение необходимо обновить.
+      CAA Латвии может устанавливать разные интервалы, поэтому следует
+      проверить актуальные национальные требования на e.caa.gov.lv.
+  distractorRationales:
+    a:
+      lv: Sertifikātam ir derīguma termiņš — Reg 2019/947 nosaka 5 gadus. Mūžīgs sertifikāts neatbilst regulai.
+      en: The certificate does have an expiry — Reg 2019/947 sets 5 years. A perpetual certificate does not comply with the regulation.
+      ru: Сертификат имеет срок действия — Регл. 2019/947 устанавливает 5 лет. Бессрочный сертификат не соответствует регламенту.
+    b:
+      lv: 1 gads nav norādīts kā A1/A3 sertifikāta derīguma periods Reg 2019/947. Pareizais periods ir 5 gadi.
+      en: 1 year is not stated as the A1/A3 certificate validity period in Reg 2019/947. The correct period is 5 years.
+      ru: 1 год не указан как срок действия сертификата A1/A3 в Регл. 2019/947. Правильный период — 5 лет.
+    d:
+      lv: 3 gadi nav norādīts kā A1/A3 sertifikāta derīguma periods Reg 2019/947. Pareizais periods ir 5 gadi.
+      en: 3 years is not stated as the A1/A3 certificate validity period in Reg 2019/947. The correct period is 5 years.
+      ru: 3 года не указаны как срок действия сертификата A1/A3 в Регл. 2019/947. Правильный период — 5 лет.
+  sourceRef: "Reg 2019/947 Art. UAS.OPEN.020 — certificate validity period"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: ar-016
+  stem:
+    lv: Kas nosaka, kurā apakškategorijā (A1, A2, A3) operators var darboties?
+    en: What determines which sub-category (A1, A2, A3) an operator may operate in?
+    ru: Что определяет, в какой подкатегории (A1, A2, A3) может работать оператор?
+  options:
+    - id: a
+      text:
+        lv: Operators izvēlas apakškategoriju brīvi, pamatojoties uz darba vajadzībām.
+        en: The operator chooses the sub-category freely based on work needs.
+        ru: Оператор свободно выбирает подкатегорию в зависимости от рабочих потребностей.
+    - id: b
+      text:
+        lv: UAS klase (C0–C4), pilota kompetences sertifikāts un plānotās operācijas veids kopā nosaka pieļaujamo apakškategoriju.
+        en: The UAS class (C0–C4), pilot competence certificate, and planned operation type together determine the permitted sub-category.
+        ru: Класс UAS (C0–C4), сертификат компетентности пилота и тип планируемой операции вместе определяют разрешённую подкатегорию.
+    - id: c
+      text:
+        lv: Tikai pilota sertifikāta līmenis — jo augstāks, jo augstāka apakškategorija.
+        en: Only the pilot certificate level — the higher it is, the higher the sub-category.
+        ru: Только уровень сертификата пилота — чем он выше, тем выше подкатегория.
+    - id: d
+      text:
+        lv: Tikai UAS masa — jo smagāks, jo zemāka apakškategorija.
+        en: Only UAS mass — the heavier, the lower the sub-category.
+        ru: Только масса UAS — чем тяжелее, тем ниже подкатегория.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Apakškategoriju nosaka trīs faktoru kombinācija: (1) UAS klase — C0/C1
+      → A1; C2 → A2; C3/C4 un mantotie → A3; (2) pilota kompetences sertifikāts
+      — A1/A3 vai A2 papildu sertifikāts; (3) plānotās operācijas veids —
+      piemēram, lidojums virs cilvēkiem prasa noteiktu klasi un sertifikātu.
+    en: >
+      Sub-category is determined by a combination of three factors: (1) UAS class
+      — C0/C1 → A1; C2 → A2; C3/C4 and legacy → A3; (2) pilot competence
+      certificate — A1/A3 or A2 additional certificate; (3) planned operation type
+      — e.g. flying over people requires a specific class and certificate.
+    ru: >
+      Подкатегория определяется сочетанием трёх факторов: (1) класс UAS — C0/C1
+      → A1; C2 → A2; C3/C4 и унаследованные → A3; (2) сертификат компетентности
+      пилота — A1/A3 или дополнительный сертификат A2; (3) тип планируемой
+      операции — например, полёт над людьми требует определённого класса и
+      сертификата.
+  distractorRationales:
+    a:
+      lv: Apakškategorija nav brīva izvēle. To nosaka regulatīvie faktori — UAS klase un pilota sertifikāts.
+      en: Sub-category is not a free choice. It is determined by regulatory factors — UAS class and pilot certificate.
+      ru: Подкатегория — не свободный выбор. Она определяется нормативными факторами — классом UAS и сертификатом пилота.
+    c:
+      lv: Pilota sertifikāts ir viens no faktoriem, bet ne vienīgais. UAS klase ir galvenais parametrs, kas nosaka apakškategoriju.
+      en: The pilot certificate is one factor but not the only one. The UAS class is the primary parameter determining the sub-category.
+      ru: Сертификат пилота — один из факторов, но не единственный. Класс UAS является основным параметром, определяющим подкатегорию.
+    d:
+      lv: Masa ir saistīta ar klasi (C0, C1, C2 u.c.), bet klase nosaka apakškategoriju, nevis masa tieši.
+      en: Mass is related to class (C0, C1, C2, etc.) but class determines sub-category, not mass directly.
+      ru: Масса связана с классом (C0, C1, C2 и т.д.), но класс определяет подкатегорию, а не масса напрямую.
+  sourceRef: "Reg 2019/947 Art. UAS.OPEN.020/030/040 — sub-category requirements"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
+
+- id: ar-017
+  stem:
+    lv: Operators pirmo reizi reģistrējas e.caa.gov.lv. Kādā solis ir PIRMAIS?
+    en: An operator registers for the first time at e.caa.gov.lv. What is the FIRST step?
+    ru: Оператор впервые регистрируется на e.caa.gov.lv. Каков ПЕРВЫЙ шаг?
+  options:
+    - id: a
+      text:
+        lv: Iegādāties apdrošināšanas polisi.
+        en: Purchase an insurance policy.
+        ru: Приобрести страховой полис.
+    - id: b
+      text:
+        lv: Nokārtot A1/A3 tiešsaistes pārbaudījumu.
+        en: Pass the A1/A3 online test.
+        ru: Сдать онлайн-тест A1/A3.
+    - id: c
+      text:
+        lv: Izveidot kontu e.caa.gov.lv, norādot personas datus, un iesniegt operators reģistrācijas pieteikumu.
+        en: Create an account at e.caa.gov.lv, providing personal data, and submit the operator registration application.
+        ru: Создать учётную запись на e.caa.gov.lv, указав персональные данные, и подать заявку на регистрацию оператора.
+    - id: c
+      text:
+        lv: Izveidot kontu e.caa.gov.lv, norādot personas datus, un iesniegt operatora reģistrācijas pieteikumu.
+        en: Create an account at e.caa.gov.lv, providing personal data, and submit the operator registration application.
+        ru: Создать учётную запись на e.caa.gov.lv, указав персональные данные, и подать заявку на регистрацию оператора.
+    - id: d
+      text:
+        lv: Aizpildīt papīra formu un iesniegt CAA Latvia birojā Rīgā.
+        en: Fill in a paper form and submit it at the CAA Latvia office in Riga.
+        ru: Заполнить бумажную форму и сдать её в офис CAA Latvia в Риге.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Operators reģistrācija Latvijā notiek pilnībā tiešsaistē caur e.caa.gov.lv.
+      Pirmais solis ir konta izveide portālā, personas datu ievade un operators
+      pieteikuma iesniegšana. Sertifikāts un apdrošināšana ir atsevišķas, paralēlas
+      prasības, bet tie nav operators reģistrācijas priekšnoteikums.
+    en: >
+      Operator registration in Latvia is done entirely online via e.caa.gov.lv.
+      The first step is creating an account in the portal, entering personal data,
+      and submitting the operator application. The certificate and insurance are
+      separate, parallel requirements, but they are not prerequisites for operator
+      registration.
+    ru: >
+      Регистрация оператора в Латвии осуществляется полностью онлайн через
+      e.caa.gov.lv. Первый шаг — создание учётной записи на портале, ввод
+      персональных данных и подача заявки оператора. Сертификат и страхование —
+      отдельные, параллельные требования, но они не являются предварительными
+      условиями для регистрации оператора.
+  distractorRationales:
+    a:
+      lv: Apdrošināšanas iegāde ir atsevišķa prasība, ne pirmais operators reģistrācijas solis. Reģistrācija un apdrošināšana var notikt paralēli.
+      en: Purchasing insurance is a separate requirement, not the first operator registration step. Registration and insurance can happen in parallel.
+      ru: Приобретение страховки — отдельное требование, а не первый шаг регистрации оператора. Регистрация и страхование могут происходить параллельно.
+    b:
+      lv: A1/A3 pārbaudījums ir pilota kompetences apliecināšana, nevis operators reģistrācijas priekšnoteikums. Reg 2019/947 Art. 14 atļauj operators reģistrāciju neatkarīgi no pilota sertifikāta.
+      en: The A1/A3 test is pilot competence demonstration, not a prerequisite for operator registration. Reg 2019/947 Art. 14 allows operator registration independently of the pilot certificate.
+      ru: Тест A1/A3 — подтверждение компетентности пилота, а не предварительное условие регистрации оператора. Ст. 14 Регл. 2019/947 разрешает регистрацию оператора независимо от сертификата пилота.
+    d:
+      lv: Papīra formu iesniegšana CAA Latvia birojā nav prasīta — reģistrācija ir pilnībā elektroniski caur e.caa.gov.lv.
+      en: Submitting a paper form at the CAA Latvia office is not required — registration is entirely electronic via e.caa.gov.lv.
+      ru: Подача бумажной формы в офис CAA Latvia не требуется — регистрация полностью электронная через e.caa.gov.lv.
+  sourceRef: "CAA Latvia — e.caa.gov.lv operator registration; Reg 2019/947 Art. 14"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory

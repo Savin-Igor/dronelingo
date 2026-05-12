@@ -3,7 +3,7 @@
   db-up db-down \
   migrate migrate-deploy push studio backup import-content \
   build clean \
-  check \
+  check test test-e2e \
   release deploy help
 
 DC = docker compose -f docker-compose.dev.yml
@@ -67,6 +67,12 @@ build: ## Build production Docker image locally
 
 check: ## TypeScript + ESLint
 	npm run type-check && npm run lint
+
+test: ## Run Vitest unit tests
+	npm test
+
+test-e2e: ## Run Playwright e2e tests (dev server must be running or will be started)
+	npm run test:e2e
 
 ##@ Production
 

@@ -419,3 +419,666 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+
+- id: se-008
+  stem:
+    lv: Pilots vēro, ka kāds mēģina pārtvert viņa drona vadības signālu ar radio interferences iekārtu. Kāda ir tiesiskā situācija?
+    en: A pilot observes someone attempting to intercept their drone's control signal with a radio interference device. What is the legal situation?
+    ru: Пилот наблюдает, как кто-то пытается перехватить сигнал управления его дроном с помощью устройства радиопомех. Какова правовая ситуация?
+  options:
+    - id: a
+      text:
+        lv: Signāla pārtveršana ir legāla, ja to veic privāts pētnieks.
+        en: Signal interception is legal if done by a private researcher.
+        ru: Перехват сигнала законен, если его осуществляет частный исследователь.
+    - id: b
+      text:
+        lv: Signāla traucēšana ir nelikumīga privātpersonām visā ES — tā ir radiosignālu traucēšana, kas aizliegta ar sakaru tiesību aktiem.
+        en: Signal jamming is illegal for private persons throughout the EU — it is radio signal interference prohibited by communications law.
+        ru: Глушение сигналов незаконно для частных лиц по всему ЕС — это радиопомеха, запрещённая законодательством о связи.
+    - id: c
+      text:
+        lv: Ir legāla, ja to veic īpašuma aizsardzībai.
+        en: It is legal if done to protect property.
+        ru: Это законно, если делается для защиты имущества.
+    - id: d
+      text:
+        lv: Ir atļauta, ja drons lido virs privāta īpašuma.
+        en: It is permitted if the drone flies above private property.
+        ru: Это разрешено, если дрон летит над частной собственностью.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Radiosignālu traucēšana (jamming) ir aizliegta privātpersonām visā ES
+      atbilstoši Direktīvai 2014/53/ES (RED) un nacionālajiem sakaru tiesību
+      aktiem (Latvijā — Elektronisko sakaru likums). Tikai pilnvaroti dienesti
+      (militārie, drošības iestādes, Valsts policija) var izmantot pretdronu
+      traucēšanas iekārtas ar īpašu atļauju. Privāta īpašuma aizsardzība nav
+      attaisnojums signāla traucēšanai.
+    en: >
+      Radio signal jamming is prohibited for private persons throughout the EU
+      under Directive 2014/53/EU (RED) and national communications law (in
+      Latvia — the Electronic Communications Law). Only authorised services
+      (military, security agencies, State Police) may use counter-drone jamming
+      equipment with special permission. Protection of private property is not
+      a justification for signal jamming.
+    ru: >
+      Глушение радиосигналов запрещено для частных лиц по всему ЕС в соответствии
+      с Директивой 2014/53/EU (RED) и национальным законодательством о связи (в
+      Латвии — Закон об электронной связи). Только уполномоченные службы
+      (военные, службы безопасности, Государственная полиция) могут использовать
+      противодроновое оборудование глушения с особым разрешением. Защита частной
+      собственности не является оправданием для глушения сигналов.
+  distractorRationales:
+    a:
+      lv: Privāts pētnieks nav pilnvarotais dienests. Pētīšanas mērķis neatbrīvo no aizlieguma traucēt radiosignālus.
+      en: A private researcher is not an authorised service. Research purpose does not exempt from the prohibition on radio signal interference.
+      ru: Частный исследователь не является уполномоченной службой. Исследовательская цель не освобождает от запрета радиопомех.
+    c:
+      lv: Īpašuma aizsardzība nav tiesisks pamats radiosignālu traucēšanai. Tiesiskais ceļš ir ziņot policijai vai CAA Latvia.
+      en: Property protection is not a legal basis for radio signal jamming. The legal path is to report to the police or CAA Latvia.
+      ru: Защита собственности не является правовым основанием для глушения радиосигналов. Законный путь — сообщить в полицию или CAA Latvia.
+    d:
+      lv: Drons var legāli lidot virs privāta īpašuma no publiskas gaisa telpas. Tas neautorizē signāla traucēšanu.
+      en: A drone may legally fly over private property from public airspace. This does not authorise signal jamming.
+      ru: Дрон может законно летать над частной собственностью из общедоступного воздушного пространства. Это не авторизует глушение сигналов.
+  sourceRef: "Directive 2014/53/EU (RED); Latvia Electronic Communications Law; EASA UAS security"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
+
+- id: se-009
+  stem:
+    lv: Pēc lidojuma pilots konstatē, ka drona GPS žurnāls rāda neizskaidrojamu pozīciju novirzi 2 km prom no faktiskās lidojuma vietas. Kas ir visticamākais skaidrojums un kāda ir tūlītējā darbība?
+    en: After a flight a pilot notices the drone's GPS log shows an unexplained position drift 2 km from the actual flight location. What is the most likely explanation and what is the immediate action?
+    ru: После полёта пилот замечает, что журнал GPS дрона показывает необъяснимое отклонение позиции на 2 км от фактического места полёта. Каков наиболее вероятный объяснение и каковы немедленные действия?
+  options:
+    - id: a
+      text:
+        lv: GPS kalibrācijas kļūda — jāatkārtoti kalibrē kompasu.
+        en: GPS calibration error — recalibrate the compass.
+        ru: Ошибка калибровки GPS — повторно откалибровать компас.
+    - id: b
+      text:
+        lv: Iespējams GPS spoofing uzbrukums — jāziņo incidentu (brīvprātīgs ziņojums), jāpārbauda, vai sistēma nav kompromitēta, un jāizmanto tikai officiāla firmware.
+        en: Possible GPS spoofing attack — file an occurrence report (voluntary), check if the system is compromised, use only official firmware.
+        ru: Возможная атака GPS spoofing — подать добровольное уведомление об инциденте, проверить компрометацию системы, использовать только официальную прошивку.
+    - id: c
+      text:
+        lv: Normāla GPS novirze — nav jāveic darbība.
+        en: Normal GPS drift — no action needed.
+        ru: Нормальное отклонение GPS — никаких действий не требуется.
+    - id: d
+      text:
+        lv: Baterijas kļūme — aizstāt bateriju.
+        en: Battery failure — replace the battery.
+        ru: Неисправность батареи — заменить батарею.
+  correctOptionId: b
+  explanation:
+    lv: >
+      2 km pozīcijas novirze ir neparasta un var norādīt uz GPS spoofing —
+      viltotu signālu pārraidi, kas maldina GPS uztvērēju. Tūlītējas darbības:
+      (1) brīvprātīgs ziņojums e.caa.gov.lv/incidents; (2) sistēmas pārbaude;
+      (3) firmware atjaunināšana tikai no ražotāja. Normāla GPS novirze nesasniedz
+      2 km; tā ir centimetri vai metri pilsētas zonās.
+    en: >
+      A 2 km position drift is unusual and may indicate GPS spoofing — fake
+      signal broadcasting that misleads the GPS receiver. Immediate actions:
+      (1) voluntary report at e.caa.gov.lv/incidents; (2) system integrity check;
+      (3) firmware update only from the manufacturer. Normal GPS drift does not
+      reach 2 km; it is centimetres or metres in urban areas.
+    ru: >
+      Отклонение позиции на 2 км необычно и может указывать на GPS spoofing —
+      трансляцию поддельных сигналов, вводящих в заблуждение GPS-приёмник.
+      Немедленные действия: (1) добровольное уведомление на e.caa.gov.lv/incidents;
+      (2) проверка целостности системы; (3) обновление прошивки только от
+      производителя. Нормальное отклонение GPS не достигает 2 км; это
+      сантиметры или метры в городских районах.
+  distractorRationales:
+    a:
+      lv: Kompasa kalibrācija ietekmē orientāciju, nevis GPS pozīciju. 2 km novirze nav kalibrācijas problēma.
+      en: Compass calibration affects orientation, not GPS position. A 2 km drift is not a calibration issue.
+      ru: Калибровка компаса влияет на ориентацию, а не позицию GPS. Отклонение на 2 км — не проблема калибровки.
+    c:
+      lv: 2 km nav normāla GPS novirze — normāla novirze ir metru vai centimetru kārtībā. Tāda novirze prasa izmeklēšanu.
+      en: 2 km is not normal GPS drift — normal drift is in the order of metres or centimetres. Such a drift requires investigation.
+      ru: 2 км — не нормальное отклонение GPS; нормальное — в порядке метров или сантиметров. Такое отклонение требует расследования.
+    d:
+      lv: Baterijas kļūme ietekmē lidojuma laiku un jaudu, nevis GPS pozīcijas žurnālu. GPS novirze ir signāla, nevis enerģijas problēma.
+      en: Battery failure affects flight time and power, not the GPS position log. GPS drift is a signal issue, not a power issue.
+      ru: Неисправность батареи влияет на время полёта и мощность, а не на журнал позиций GPS. Отклонение GPS — проблема сигнала, а не питания.
+  sourceRef: "ENISA threat report — GNSS spoofing; CAA Latvia occurrence reporting"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision
+
+- id: se-010
+  stem:
+    lv: Operators saņem e-pastu no "UAS drošības dienesta" ar prasību piekļūt viņa drona sistēmas datiem, lai "verificētu drošību". E-pastā ir saite uz trešo pušu vietni. Ko operators drīkst darīt?
+    en: An operator receives an email from a "UAS security service" asking access to their drone system data to "verify security". The email contains a link to a third-party website. What should the operator do?
+    ru: Оператор получает электронное письмо от «службы безопасности UAS» с просьбой предоставить доступ к данным системы его дрона для «проверки безопасности». В письме — ссылка на сторонний сайт. Что должен сделать оператор?
+  options:
+    - id: a
+      text:
+        lv: Sekot saitei un ievadīt pieprasītos datus.
+        en: Follow the link and enter the requested data.
+        ru: Перейти по ссылке и ввести запрошенные данные.
+    - id: b
+      text:
+        lv: Dzēst e-pastu un neievadīt nekādus datus — šis ir sociālās inženierijas uzbrukuma raksturīgs modelis.
+        en: Delete the email and enter no data — this is a characteristic social engineering attack pattern.
+        ru: Удалить письмо и не вводить никаких данных — это типичная схема атаки социальной инженерии.
+    - id: c
+      text:
+        lv: Sazināties ar savu drona ražotāju, lai pārbaudītu, vai saite ir legāla.
+        en: Contact their drone manufacturer to verify whether the link is legitimate.
+        ru: Связаться с производителем своего дрона, чтобы проверить легитимность ссылки.
+    - id: d
+      text:
+        lv: Atbildēt e-pastam, pieprasot papildu identifikāciju.
+        en: Reply to the email requesting additional identification.
+        ru: Ответить на письмо, запросив дополнительную идентификацию.
+  correctOptionId: b
+  explanation:
+    lv: >
+      "UAS drošības dienests" nav EASA, CAA Latvia vai citas oficiālās iestādes
+      pazīstama organizācija. Pieprasījums piekļūt sistēmas datiem ar trešo
+      pušu saiti ir sociālās inženierijas uzbrukums — krāpšanas mēģinājums
+      (phishing). Pareizā darbība: nekavējoties dzēst; nekādā gadījumā nesekot
+      saitei; ja rodas šaubas — pārbaudīt tieši pie ražotāja, nevis izmantojot
+      e-pastā norādīto kontaktu.
+    en: >
+      "UAS security service" is not a known organisation of EASA, CAA Latvia,
+      or other official bodies. A request to access system data via a third-party
+      link is a social engineering attack — a phishing attempt. Correct action:
+      delete immediately; never follow the link; if in doubt — verify directly
+      with the manufacturer, not using the email contact.
+    ru: >
+      «Служба безопасности UAS» — не известная организация EASA, CAA Latvia или
+      других официальных органов. Запрос доступа к данным системы через ссылку
+      на сторонний сайт — атака социальной инженерии, попытка фишинга. Правильное
+      действие: немедленно удалить; ни в коем случае не переходить по ссылке;
+      при сомнениях — проверить напрямую у производителя, не используя контакты
+      из письма.
+  distractorRationales:
+    a:
+      lv: Sekošana saitei un datu ievade ir tieši tas, ko uzbrucējs vēlas. Tas varētu kompromitēt sistēmas datus vai akreditācijas datus.
+      en: Following the link and entering data is exactly what the attacker wants. This could compromise system data or credentials.
+      ru: Переход по ссылке и ввод данных — именно то, чего хочет злоумышленник. Это может скомпрометировать данные системы или учётные данные.
+    c:
+      lv: Sazinoties ar ražotāju varētu palīdzēt, bet primārā darbība ir dzēst e-pastu un nesekot saitei. Sazināties var, ja ir pamatotas šaubas.
+      en: Contacting the manufacturer could help, but the primary action is to delete the email and not follow the link. Contact can be made if there are genuine doubts.
+      ru: Связь с производителем могла бы помочь, но первичное действие — удалить письмо и не переходить по ссылке. Связаться можно, если есть обоснованные сомнения.
+    d:
+      lv: Atbildot phishing e-pastam, operators apstiprina, ka e-pasts ir aktīvs — tas var palielināt uzbrukumu skaitu. Atbildēšana nav drošs risinājums.
+      en: Replying to a phishing email confirms the address is active — this may increase attack frequency. Replying is not a safe solution.
+      ru: Ответ на фишинговое письмо подтверждает, что адрес активен — это может увеличить число атак. Ответ — небезопасное решение.
+  sourceRef: "ENISA Good Practices for UAS cyber security — social engineering"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: se-011
+  stem:
+    lv: Kāds ir Direct Remote ID mērķis drošības perspektīvā?
+    en: What is the purpose of Direct Remote ID from a security perspective?
+    ru: Какова цель Direct Remote ID с точки зрения безопасности?
+  options:
+    - id: a
+      text:
+        lv: Ļaut pilotam izsekot drona baterijas statusu.
+        en: Allow the pilot to track the drone's battery status.
+        ru: Позволить пилоту отслеживать статус батареи дрона.
+    - id: b
+      text:
+        lv: Ļaut pilnvarotajiem dienestiem un sabiedrībai identificēt UAS un tā operatoru lidojuma laikā, uzlabojot drošību un drošību gaisā.
+        en: Allow authorised services and the public to identify a UAS and its operator during flight, enhancing safety and security in the air.
+        ru: Позволить уполномоченным службам и общественности идентифицировать UAS и его оператора во время полёта, повышая безопасность в воздухе.
+    - id: c
+      text:
+        lv: Automātiski atturēt dronu no aizliegtajām zonām.
+        en: Automatically prevent the drone from entering prohibited zones.
+        ru: Автоматически предотвращать вход дрона в запретные зоны.
+    - id: d
+      text:
+        lv: Šifrēt vadības signālu no trešo pušu pārtveršanas.
+        en: Encrypt the control signal from third-party interception.
+        ru: Шифровать сигнал управления от перехвата третьими лицами.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Direct Remote ID pārraida drona ID, operatora ID, pozīciju, augstumu un
+      lidojuma statusu. Drošības perspektīvā tas ļauj: (1) pilnvarotajiem
+      dienestiem (policija, CAA, armija) identificēt UAS lidojuma laikā;
+      (2) sabiedrībai lietot lietotnēs, lai zinātu, kurš lido; (3) izmeklēt
+      negadījumus un nelegālas operācijas. Tas nav šifrēšanas vai ģeofencing
+      sistēma.
+    en: >
+      Direct Remote ID broadcasts the drone ID, operator ID, position, altitude,
+      and flight status. From a security perspective it enables: (1) authorised
+      services (police, CAA, military) to identify UAS in flight; (2) the public
+      to use apps to know who is flying; (3) investigation of accidents and illegal
+      operations. It is not an encryption or geofencing system.
+    ru: >
+      Direct Remote ID транслирует ID дрона, ID оператора, позицию, высоту и
+      статус полёта. С точки зрения безопасности это позволяет: (1) уполномоченным
+      службам (полиция, CAA, армия) идентифицировать UAS в полёте; (2) общественности
+      использовать приложения, чтобы знать, кто летит; (3) расследовать аварии и
+      незаконные операции. Это не система шифрования или геозон.
+  distractorRationales:
+    a:
+      lv: Baterijas statusa izsekošana ir vadības lietotnē, nevis Remote ID mērķis. Remote ID ir identifikācijas sistēma, nevis telemetrijas kanāls.
+      en: Battery status tracking is in the control app, not the purpose of Remote ID. Remote ID is an identification system, not a telemetry channel.
+      ru: Отслеживание статуса батареи — в приложении управления, а не цель Remote ID. Remote ID — система идентификации, а не канал телеметрии.
+    c:
+      lv: Automātiskā novēršana no aizliegtām zonām ir geo-awareness un geofencing funkcija, nevis Remote ID. Tās ir divas dažādas sistēmas.
+      en: Automatic prevention from prohibited zones is a geo-awareness and geofencing function, not Remote ID. These are two separate systems.
+      ru: Автоматическое предотвращение входа в запретные зоны — функция гео-осведомлённости и геозон, а не Remote ID. Это две разные системы.
+    d:
+      lv: Remote ID ir pārraides sistēma, nevis šifrēšanas sistēma. Tā pārraida datus nepārprotami, lai dienesti varētu tos nolasīt.
+      en: Remote ID is a broadcast system, not an encryption system. It broadcasts data openly so services can read it.
+      ru: Remote ID — система трансляции, а не шифрования. Она транслирует данные открыто, чтобы службы могли их считывать.
+  sourceRef: "Reg 2019/945 — Direct Remote ID requirements; EASA UAS security framework"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: se-012
+  stem:
+    lv: Kāda ir "tīkla Remote ID" (Network Remote ID) atšķirība no "tiešā Remote ID" (Direct Remote ID)?
+    en: What is the difference between "Network Remote ID" and "Direct Remote ID"?
+    ru: В чём разница между «Network Remote ID» и «Direct Remote ID»?
+  options:
+    - id: a
+      text:
+        lv: Network Remote ID pārraida datus lokāli radio (BT/Wi-Fi); Direct Remote ID sūta datus mobilajam tīklam.
+        en: Network Remote ID transmits data locally via radio (BT/Wi-Fi); Direct Remote ID sends data to a mobile network.
+        ru: Network Remote ID передаёт данные локально через радио (BT/Wi-Fi); Direct Remote ID отправляет данные в мобильную сеть.
+    - id: b
+      text:
+        lv: Direct Remote ID pārraida datus lokāli radio (BT/Wi-Fi); Network Remote ID sūta datus uz tīkla serveri (UTM sistēmu) internetā.
+        en: Direct Remote ID transmits data locally via radio (BT/Wi-Fi); Network Remote ID sends data to a network server (UTM system) via the internet.
+        ru: Direct Remote ID передаёт данные локально через радио (BT/Wi-Fi); Network Remote ID отправляет данные на сетевой сервер (UTM) через интернет.
+    - id: c
+      text:
+        lv: Abas sistēmas ir identiski — "Direct" un "Network" ir sinonīmi.
+        en: Both systems are identical — "Direct" and "Network" are synonyms.
+        ru: Обе системы идентичны — «Direct» и «Network» — синонимы.
+    - id: d
+      text:
+        lv: Direct Remote ID darbojas tikai pilsētas zonās; Network Remote ID — lauku apvidos.
+        en: Direct Remote ID works only in urban areas; Network Remote ID in rural areas.
+        ru: Direct Remote ID работает только в городских районах; Network Remote ID — в сельской местности.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Direct Remote ID pārraida datus lokāli izmantojot Bluetooth vai Wi-Fi —
+      jebkurš tuvumā esošs smartphones var nolasīt. Network Remote ID sūta
+      datus internetā uz UTM (UAS Traffic Management) serveri — tas ļauj
+      centralizēti uzraudzīt lidojumus. Reg 2019/947 paredz Direct Remote ID
+      kā obligātu C1/C2/C3 klasēm; Network Remote ID ir papildinājums.
+    en: >
+      Direct Remote ID broadcasts data locally via Bluetooth or Wi-Fi — any
+      nearby smartphone can read it. Network Remote ID sends data over the
+      internet to a UTM (UAS Traffic Management) server — enabling centralised
+      flight monitoring. Reg 2019/947 requires Direct Remote ID for C1/C2/C3
+      classes; Network Remote ID is an addition.
+    ru: >
+      Direct Remote ID транслирует данные локально через Bluetooth или Wi-Fi —
+      любой ближайший смартфон может их считать. Network Remote ID отправляет
+      данные через интернет на сервер UTM (управление движением UAS) — обеспечивая
+      централизованный мониторинг полётов. Регл. 2019/947 требует Direct Remote ID
+      для классов C1/C2/C3; Network Remote ID является дополнением.
+  distractorRationales:
+    a:
+      lv: Apraksts ir otrādi. Direct pārraida lokāli; Network sūta uz serveri.
+      en: The description is reversed. Direct transmits locally; Network sends to a server.
+      ru: Описание приведено в обратном порядке. Direct передаёт локально; Network отправляет на сервер.
+    c:
+      lv: Sistēmas nav identiski — tām ir atšķirīga tehnoloģija, tvērums un mērķi.
+      en: The systems are not identical — they have different technology, range, and purposes.
+      ru: Системы не идентичны — у них разная технология, охват и назначение.
+    d:
+      lv: Remote ID darbības zona nav saistīta ar pilsētas vai lauku vidi. Direct Remote ID darbojas visur, kur ir pietiekams Bluetooth/Wi-Fi signāls.
+      en: Remote ID operational area is not tied to urban or rural environment. Direct Remote ID works wherever there is adequate Bluetooth/Wi-Fi signal.
+      ru: Рабочая зона Remote ID не связана с городской или сельской местностью. Direct Remote ID работает везде, где есть достаточный сигнал Bluetooth/Wi-Fi.
+  sourceRef: "Reg 2019/945 — Direct Remote ID; EASA UAS Remote ID framework"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: se-013
+  stem:
+    lv: Pilots lido pāri lielpilsētas centram. Tā kā Remote ID ir aktīvs, pilnvarota institūcija var identificēt operatoru. Kādu datu kopumu Remote ID nepārraida?
+    en: A pilot flies over a city centre. With Remote ID active, an authorised authority can identify the operator. What data set does Remote ID NOT broadcast?
+    ru: Пилот летит над центром мегаполиса. При активном Remote ID уполномоченный орган может идентифицировать оператора. Какой набор данных Remote ID НЕ транслирует?
+  options:
+    - id: a
+      text:
+        lv: Operators reģistrācijas numurs.
+        en: Operator registration number.
+        ru: Регистрационный номер оператора.
+    - id: b
+      text:
+        lv: UAS GPS pozīcija.
+        en: UAS GPS position.
+        ru: GPS-позиция UAS.
+    - id: c
+      text:
+        lv: Pilota personīgais telefona numurs.
+        en: Pilot's personal phone number.
+        ru: Личный телефонный номер пилота.
+    - id: d
+      text:
+        lv: UAS lidojuma augstums.
+        en: UAS flight altitude.
+        ru: Высота полёта UAS.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Direct Remote ID pārraidītie dati (Reg 2019/945): (1) UAS ID (sērijas
+      numurs vai sesijas ID), (2) operators reģistrācijas numurs, (3) UAS
+      pozīcija (lat/lon), (4) UAS augstums, (5) operatora pozīcija vai
+      palaišanas punkts, (6) ātrums un kustības virziens. Pilota personiskie
+      kontaktdati (tālrunis, e-pasts) NAV Remote ID pārraides daļa —
+      tie paliek privāti.
+    en: >
+      Direct Remote ID broadcasts (Reg 2019/945): (1) UAS ID (serial number
+      or session ID), (2) operator registration number, (3) UAS position
+      (lat/lon), (4) UAS altitude, (5) operator position or takeoff point,
+      (6) speed and direction. Pilot personal contact details (phone, email)
+      are NOT part of Remote ID broadcast — they remain private.
+    ru: >
+      Direct Remote ID транслирует (Регл. 2019/945): (1) ID UAS (серийный
+      номер или ID сессии), (2) регистрационный номер оператора, (3) позицию
+      UAS (широта/долгота), (4) высоту UAS, (5) позицию оператора или точку
+      взлёта, (6) скорость и направление. Личные контактные данные пилота
+      (телефон, электронная почта) НЕ являются частью трансляции Remote ID —
+      они остаются конфиденциальными.
+  distractorRationales:
+    a:
+      lv: Operators reģistrācijas numurs ir Remote ID pārraides obligāta daļa — tas ļauj identificēt operatoru.
+      en: The operator registration number is a mandatory part of Remote ID broadcast — it enables operator identification.
+      ru: Регистрационный номер оператора является обязательной частью трансляции Remote ID — он позволяет идентифицировать оператора.
+    b:
+      lv: UAS GPS pozīcija ir Remote ID pārraides pamatinformācija.
+      en: UAS GPS position is core information in Remote ID broadcast.
+      ru: Позиция GPS UAS является основной информацией в трансляции Remote ID.
+    d:
+      lv: UAS lidojuma augstums ir Remote ID pārraides daļa.
+      en: UAS flight altitude is part of Remote ID broadcast.
+      ru: Высота полёта UAS является частью трансляции Remote ID.
+  sourceRef: "Reg 2019/945 — Direct Remote ID data fields"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: se-014
+  stem:
+    lv: Pilots saņem paziņojumu par jaunu firmware versiju no neoficiāla avota (foruma). Versijā tiek solīti "papildu lidojuma augstumi" un "atbloķētas zonas". Ko pilotam jādara?
+    en: A pilot receives a notification of a new firmware version from an unofficial source (a forum). The version promises "extended flight altitudes" and "unlocked zones". What should the pilot do?
+    ru: Пилот получает уведомление о новой версии прошивки из неофициального источника (форума). Версия обещает «расширенные высоты полёта» и «разблокированные зоны». Что должен сделать пилот?
+  options:
+    - id: a
+      text:
+        lv: Lejupielādēt un instalēt — papildu iespējas uzlabo lidojuma efektivitāti.
+        en: Download and install — extended capabilities improve flight efficiency.
+        ru: Скачать и установить — расширенные возможности улучшают эффективность полёта.
+    - id: b
+      text:
+        lv: Nelejupielādēt — neoficiāla firmware ir kiberdrošības risks un var atcelt C klases sertifikāciju, turklāt "atbloķētās zonas" ir nelegālas.
+        en: Do not download — unofficial firmware is a cybersecurity risk and may void the C-class certification; additionally "unlocked zones" are illegal.
+        ru: Не скачивать — неофициальная прошивка является киберрисковой и может аннулировать сертификацию C-класса; кроме того, «разблокированные зоны» незаконны.
+    - id: c
+      text:
+        lv: Lejupielādēt, ja firmware ir bez maksas.
+        en: Download if the firmware is free.
+        ru: Скачать, если прошивка бесплатна.
+    - id: d
+      text:
+        lv: Lejupielādēt, bet tikai testēšanas nolūkos.
+        en: Download but only for testing purposes.
+        ru: Скачать, но только в целях тестирования.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Neoficiāla firmware ir aizliegta vairāku iemeslu dēļ: (1) drošības risks —
+      var saturēt ļaunatūru vai backdoors; (2) C klases sertifikācija var tikt
+      atcelta — C klase prasa atbilstību ražotāja specifikācijām; (3) "atbloķētās
+      zonas" nozīmē geo-awareness un geofencing apiešanu, kas ir nelegāli;
+      (4) papildu augstumi pārsniedz regulatīvos limitus. Vienmēr izmantot tikai
+      ražotāja oficiālo firmware.
+    en: >
+      Unofficial firmware is prohibited for several reasons: (1) security risk —
+      may contain malware or backdoors; (2) C-class certification may be voided —
+      C-class requires compliance with manufacturer specifications; (3) "unlocked
+      zones" means bypassing geo-awareness and geofencing, which is illegal;
+      (4) extended altitudes exceed regulatory limits. Always use only manufacturer
+      official firmware.
+    ru: >
+      Неофициальная прошивка запрещена по нескольким причинам: (1) риск
+      безопасности — может содержать вредоносное ПО или бэкдоры; (2) сертификация
+      C-класса может быть аннулирована — C-класс требует соответствия
+      спецификациям производителя; (3) «разблокированные зоны» означают обход
+      гео-осведомлённости и геозон, что незаконно; (4) расширенные высоты
+      превышают нормативные лимиты. Всегда использовать только официальную
+      прошивку производителя.
+  distractorRationales:
+    a:
+      lv: "Papildu iespējas" no neoficiāla avota nav likumīgas un var apdraudēt drošību. "Efektivitāte" nav attaisnojums nelegālai firmware.
+      en: "Extended capabilities" from an unofficial source are not legal and may compromise security. "Efficiency" is not a justification for illegal firmware.
+      ru: «Расширенные возможности» из неофициального источника незаконны и могут поставить под угрозу безопасность. «Эффективность» не является оправданием для нелегальной прошивки.
+    c:
+      lv: Cena (bezmaksas/maksas) nav kritērijs firmware drošībai vai legalitātei. Ļaunatūra nereti ir bezmaksas.
+      en: Price (free/paid) is not a criterion for firmware safety or legality. Malware is often free.
+      ru: Цена (бесплатно/платно) не является критерием безопасности или законности прошивки. Вредоносное ПО часто бесплатно.
+    d:
+      lv: "Tikai testēšanai" nenomaina faktu, ka sistēmā ir instalēta potenciāli ļaunprātīga programma. Ja sistēma ir kompromitēta, testēšana to nepadara drošāku.
+      en: "Only for testing" does not change the fact that potentially malicious software is installed in the system. If the system is compromised, testing does not make it safer.
+      ru: «Только для тестирования» не меняет того факта, что в системе установлено потенциально вредоносное ПО. Если система скомпрометирована, тестирование не делает её безопаснее.
+  sourceRef: "ENISA Good Practices for UAS cyber security; Reg 2019/945 — manufacturer compliance"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: se-015
+  stem:
+    lv: Pilots veic inspekcijas lidojumu aiz rūpnīcas. Drona kamera fiksē, ka darbinieki apspriež ražošanas procesu, un lidojumā tiek uzņemts konfidenciāls dokumentu mape. Kāds ir operators pienākums?
+    en: A pilot conducts an inspection flight behind a factory. The drone camera captures workers discussing a manufacturing process, and a folder of confidential documents is recorded during the flight. What is the operator's obligation?
+    ru: Пилот проводит инспекционный полёт за заводом. Камера дрона фиксирует работников, обсуждающих производственный процесс, и в ходе полёта записывается папка конфиденциальных документов. Каково обязательство оператора?
+  options:
+    - id: a
+      text:
+        lv: Nav pienākuma — inspekcijas lidojums ir leģitīms komerciāls mērķis.
+        en: No obligation — an inspection flight is a legitimate commercial purpose.
+        ru: Никаких обязательств — инспекционный полёт является законной коммерческой целью.
+    - id: b
+      text:
+        lv: Operators nedrīkst izmantot konfidenciālos datus; jādzēš vai jāpiegādā tikai pasūtītājam, kurš autorizēja inspekciju; jānovērtē, vai uzņemšana pārkāpj GDPR vai komercnoslēpuma aizsardzību.
+        en: The operator must not use the confidential data; it must be deleted or delivered only to the client authorising the inspection; compliance with GDPR and trade secret protection must be assessed.
+        ru: Оператор не должен использовать конфиденциальные данные; они должны быть удалены или переданы только клиенту, авторизовавшему инспекцию; необходимо оценить соответствие GDPR и защите коммерческой тайны.
+    - id: c
+      text:
+        lv: Operators drīkst izmantot materiālu savām vajadzībām — tas ir legāli iegūts inspekcijas laikā.
+        en: The operator may use the footage for their own purposes — it was legally obtained during inspection.
+        ru: Оператор может использовать материал в своих целях — он был законно получен во время инспекции.
+    - id: d
+      text:
+        lv: Operators ziņo rūpnīcas vadībai par drošības trūkumiem.
+        en: The operator reports to the factory management about security lapses.
+        ru: Оператор сообщает руководству завода о нарушениях безопасности.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Inspekcijas lidojums autorizēts konkrētam mērķim — nevis konfidenciālu
+      dokumentu vai personu datu vākšanai. Operators pienākumi: (1) GDPR —
+      personas dati (darbinieki) apstrādāti tikai ar tiesisko pamatu; (2)
+      komercnoslēpuma aizsardzība (EU Directive 2016/943) — konfidenciālie
+      ražošanas dati nedrīkst tikt izmantoti vai izplatīti; (3) materiāls
+      piegādājams tikai autorizētajam pasūtītājam.
+    en: >
+      The inspection flight is authorised for a specific purpose — not for
+      collecting confidential documents or personal data. Operator obligations:
+      (1) GDPR — personal data (workers) processed only with legal basis; (2)
+      trade secret protection (EU Directive 2016/943) — confidential production
+      data must not be used or distributed; (3) footage must be delivered only
+      to the authorised client.
+    ru: >
+      Инспекционный полёт авторизован для конкретной цели — не для сбора
+      конфиденциальных документов или персональных данных. Обязательства
+      оператора: (1) GDPR — персональные данные (работники) обрабатываются
+      только при наличии правового основания; (2) защита коммерческой тайны
+      (Директива ЕС 2016/943) — конфиденциальные производственные данные
+      не должны использоваться или распространяться; (3) материал передаётся
+      только авторизованному клиенту.
+  distractorRationales:
+    a:
+      lv: Komerciāls mērķis neautorizē visu materiālu izmantošanu. Autorizācija tika dota konkrētam inspekcijas uzdevumam, nevis konfidenciāliem datiem.
+      en: A commercial purpose does not authorise the use of all footage. Authorisation was given for a specific inspection task, not for confidential data.
+      ru: Коммерческая цель не авторизует использование всего материала. Авторизация была дана для конкретного инспекционного задания, а не для конфиденциальных данных.
+    c:
+      lv: "Legāli iegūts" neautorizē operators personisko izmantošanu. Materiāls iegūts klients rīkojumā un piegādājams tikai autorisētajam pasūtītājam.
+      en: "Legally obtained" does not authorise the operator's personal use. The footage was obtained under a client's order and must be delivered only to the authorised client.
+      ru: «Законно полученный» не авторизует личное использование оператором. Материал получен по заданию клиента и должен быть передан только авторизованному клиенту.
+    d:
+      lv: Ziņošana rūpnīcai var būt pareizā darbība, bet primārais pienākums ir neizmantot un nepublicēt konfidenciālo materiālu.
+      en: Reporting to the factory may be the right action, but the primary obligation is not to use or publish the confidential material.
+      ru: Сообщение заводу может быть правильным действием, но основное обязательство — не использовать и не публиковать конфиденциальный материал.
+  sourceRef: "GDPR Art. 6; EU Directive 2016/943 — trade secret protection; ENISA UAS data security"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision
+
+- id: se-016
+  stem:
+    lv: Kas ir "pretdronu sistēma" (C-UAS) un kas ir pilnvarots to izmantot Latvijā?
+    en: What is a "counter-drone system" (C-UAS) and who is authorised to use it in Latvia?
+    ru: Что такое «противодроновая система» (C-UAS) и кто уполномочен её использовать в Латвии?
+  options:
+    - id: a
+      text:
+        lv: Jebkura persona var izmantot C-UAS sistēmu, lai aizsargātu savu īpašumu.
+        en: Any person can use a C-UAS system to protect their property.
+        ru: Любое лицо может использовать систему C-UAS для защиты своей собственности.
+    - id: b
+      text:
+        lv: C-UAS ir sistēma, kas atklāj, identificē vai neitralizē neatļautus UAS; to drīkst izmantot tikai Valsts aizsardzības un tiesībsargājošās iestādes ar īpašu pilnvarojumu.
+        en: C-UAS is a system that detects, identifies, or neutralises unauthorised UAS; it may only be used by state defence and law-enforcement agencies with special authorisation.
+        ru: C-UAS — система, обнаруживающая, идентифицирующая или нейтрализующая несанкционированные UAS; может использоваться только государственными оборонными и правоохранительными органами с особым разрешением.
+    - id: c
+      text:
+        lv: C-UAS ir atļauta uzņēmumu drošības dienestiem lielākos objektos.
+        en: C-UAS is permitted for corporate security services at large facilities.
+        ru: C-UAS разрешена корпоративным службам безопасности на крупных объектах.
+    - id: d
+      text:
+        lv: C-UAS ir tikai militāras ierīces bez civilā regulējuma.
+        en: C-UAS are only military devices without civilian regulation.
+        ru: C-UAS — только военные устройства без гражданского регулирования.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Pretdronu sistēmas (C-UAS) izmanto elektromagnētiskos traucēkļus,
+      signāla pārtveršanas iekārtas vai fizisku neitralizāciju. Latvijā to
+      izmantošana ir stingri ierobežota — tikai valsts iestādēm (Nacionālie
+      bruņotie spēki, Valsts policija, citas drošības iestādes) ar īpašu
+      tiesisko pilnvarojumu. Privātpersonas un korporācijas nedrīkst izmantot
+      C-UAS neatkarīgi no mērķa.
+    en: >
+      Counter-drone systems (C-UAS) use electromagnetic jammers, signal
+      interception equipment, or physical neutralisation. In Latvia their use is
+      strictly limited — only to state agencies (National Armed Forces, State
+      Police, other security agencies) with special legal authorisation. Private
+      persons and corporations may not use C-UAS regardless of purpose.
+    ru: >
+      Противодроновые системы (C-UAS) используют электромагнитные глушители,
+      оборудование для перехвата сигналов или физическую нейтрализацию. В Латвии
+      их использование строго ограничено — только государственными органами
+      (Национальные вооружённые силы, Государственная полиция, другие службы
+      безопасности) с особым правовым разрешением. Частные лица и корпорации
+      не могут использовать C-UAS независимо от цели.
+  distractorRationales:
+    a:
+      lv: Privātpersonu C-UAS izmantošana ir nelikumīga Latvijā. Īpašuma aizsardzība ir tiesisks mērķis, bet neautorizē signāla traucēšanu vai fizisku neitralizāciju.
+      en: Private use of C-UAS is illegal in Latvia. Property protection is a legal goal, but does not authorise signal jamming or physical neutralisation.
+      ru: Частное использование C-UAS в Латвии незаконно. Защита собственности является законной целью, но не авторизует глушение сигналов или физическую нейтрализацию.
+    c:
+      lv: Korporatīvie drošības dienesti nav pilnvaroti izmantot C-UAS Latvijā bez īpaša valsts pilnvarojuma.
+      en: Corporate security services are not authorised to use C-UAS in Latvia without special state authorisation.
+      ru: Корпоративные службы безопасности не уполномочены использовать C-UAS в Латвии без специального государственного разрешения.
+    d:
+      lv: C-UAS ir regulētas gan militāri, gan civili. Civilo izmantošanu regulē tiesībsargājošo iestāžu tiesiskais regulējums.
+      en: C-UAS are regulated both militarily and civilly. Civil use is regulated by law enforcement agency legal frameworks.
+      ru: C-UAS регулируются как в военной, так и в гражданской сфере. Гражданское использование регулируется правовой базой правоохранительных органов.
+  sourceRef: "Latvia Electronic Communications Law; Latvian Aviation Law; national security legislation"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: se-017
+  stem:
+    lv: Pilots lido drona sacensībā. Pēkšķī cits pilots nolaiž savu dronu uz sacensību laukuma, nolaidumā nositot vērtīgu fotoaparātu trešajai personai. Vai sacensību organizators ir kādā veidā atbildīgs?
+    en: A pilot participates in a drone race. Suddenly another pilot lands their drone on the race field, the landing knocking over a valuable camera owned by a third party. Is the race organiser liable in any way?
+    ru: Пилот участвует в гонках дронов. Внезапно другой пилот сажает свой дрон на гоночное поле, при посадке сбивая ценную камеру третьего лица. Несёт ли организатор гонок ответственность?
+  options:
+    - id: a
+      text:
+        lv: Nē — atbildīgs ir tikai pilots, kurš nosita kameru.
+        en: No — only the pilot who knocked over the camera is liable.
+        ru: Нет — ответственен только пилот, сбивший камеру.
+    - id: b
+      text:
+        lv: Jā — organizators var būt koplietotāji atbildīgs, ja nav nodrošinājis pietiekamu drošības zonu, instrukcijas vai piekļuves kontroli.
+        en: Yes — the organiser may be jointly liable if they have not provided adequate safety zones, instructions, or access control.
+        ru: Да — организатор может нести совместную ответственность, если не обеспечил достаточных зон безопасности, инструктажа или контроля доступа.
+    - id: c
+      text:
+        lv: Nē — sacensību dalībnieki ir parakstījuši atbildības atteikumu.
+        en: No — race participants have signed liability waivers.
+        ru: Нет — участники гонок подписали отказ от ответственности.
+    - id: d
+      text:
+        lv: Jā — organizators vienmēr ir pilnībā atbildīgs par visiem negadījumiem pasākumā.
+        en: Yes — the organiser is always fully liable for all accidents at the event.
+        ru: Да — организатор всегда полностью несёт ответственность за все происшествия на мероприятии.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Civiltiesiskā atbildība var būt koplietota starp pilotu (tiešais kaitējuma
+      izraisītājs) un organizatoru, ja organizators nav nodrošinājis drošu
+      vidi. Organizatora atbildība var rasties, ja: (1) nebija piemērotas
+      drošības zonas; (2) trešās personas bija ļautas pārāk tuvu; (3) instrukcijas
+      pilotiem bija nepilnīgas. Atbildības atteikšanās (waiver) starp dalībniekiem
+      neaizsargā pret trešo personu (fotoaparāta īpašnieka) prasībām.
+    en: >
+      Civil liability may be shared between the pilot (direct harm causer) and
+      the organiser if the organiser failed to provide a safe environment.
+      Organiser liability can arise if: (1) there was no adequate safety zone;
+      (2) third parties were allowed too close; (3) instructions to pilots were
+      incomplete. Liability waivers between participants do not protect against
+      third-party (camera owner) claims.
+    ru: >
+      Гражданская ответственность может быть разделена между пилотом
+      (непосредственным причинителем вреда) и организатором, если организатор
+      не обеспечил безопасную среду. Ответственность организатора может возникнуть,
+      если: (1) не было надлежащей зоны безопасности; (2) третьи лица были
+      допущены слишком близко; (3) инструктаж пилотов был неполным. Отказ от
+      ответственности между участниками не защищает от требований третьих лиц
+      (владельца камеры).
+  distractorRationales:
+    a:
+      lv: Atbildība nav vienmēr ekskluzīva pilotam. Organizatora nedrošas vides nodrošināšana var radīt kopīgu atbildību.
+      en: Liability is not always exclusive to the pilot. An organiser's failure to provide a safe environment can create shared liability.
+      ru: Ответственность не всегда является исключительной для пилота. Неспособность организатора обеспечить безопасную среду может создать совместную ответственность.
+    c:
+      lv: Atbildības atteikums starp sacensību dalībniekiem neattiecas uz trešajām personām. Trešās personas (fotoaparāta īpašnieks) nav parakstījis atteikumu.
+      en: Liability waivers between race participants do not apply to third parties. The third party (camera owner) has not signed a waiver.
+      ru: Отказ от ответственности между участниками гонок не распространяется на третьих лиц. Третья сторона (владелец камеры) не подписывала отказ.
+    d:
+      lv: Organizators nav automātiski pilnībā atbildīgs — atbildība ir atkarīga no konkrētajiem apstākļiem un nedrošu apstākļu novēršanas pienākuma.
+      en: An organiser is not automatically fully liable — liability depends on specific circumstances and the duty to prevent unsafe conditions.
+      ru: Организатор не несёт автоматически полной ответственности — ответственность зависит от конкретных обстоятельств и обязанности предотвращать небезопасные условия.
+  sourceRef: "Latvia Civil Law — tort liability; general event organiser liability principles"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision

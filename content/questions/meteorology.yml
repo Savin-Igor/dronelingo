@@ -888,3 +888,129 @@
   difficulty: 4
   cognitiveLevel: analyze
   scenarioType: decision
+
+- id: met-016
+  stem:
+    lv: Pilots pamana, ka lidojuma laikā drons strauji maina ātrumu un augstumu, kaut gan vadības ievade nav mainīta. Kāds meteoroloģisks faktors to visbiežāk izraisa?
+    en: A pilot notices the drone rapidly changes speed and altitude during flight despite no control input change. Which meteorological factor most commonly causes this?
+    ru: Пилот замечает, что дрон резко меняет скорость и высоту в полёте, хотя ввод управления не изменился. Какой метеорологический фактор чаще всего это вызывает?
+  options:
+    - id: a
+      text:
+        lv: Temperatūras inversija, kas nomāc horizontālo vēja plūsmu.
+        en: Temperature inversion suppressing horizontal air flow.
+        ru: Температурная инверсия, подавляющая горизонтальный воздушный поток.
+    - id: b
+      text:
+        lv: Vēja bīde — strauja vēja ātruma vai virziena maiņa īsā attālumā.
+        en: Wind shear — a rapid change in wind speed or direction over a short distance.
+        ru: Сдвиг ветра — резкое изменение скорости или направления ветра на коротком расстоянии.
+    - id: c
+      text:
+        lv: Liels relatīvais mitrums, kas palielina gaisa blīvumu.
+        en: High relative humidity increasing air density.
+        ru: Высокая относительная влажность, увеличивающая плотность воздуха.
+    - id: d
+      text:
+        lv: Saulriets, kas samazina gaisa temperatūru.
+        en: Sunset reducing air temperature.
+        ru: Закат, снижающий температуру воздуха.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Vēja bīde ir strauja vēja ātruma vai virziena maiņa uz īsu attālumu —
+      horizontāli vai vertikāli. Kad drons šķērso bīdes slāni, tas iegūst vai
+      zaudē ātrgaitu pēkšņi, liekot kontroles sistēmai kompensēt. Ar spēcīgu
+      bīdi UAS var zaudēt stabilitāti.
+    en: >
+      Wind shear is a rapid change in wind speed or direction across a short
+      distance — horizontal or vertical. When the drone crosses the shear layer it
+      suddenly gains or loses airspeed, forcing the control system to compensate.
+      With strong shear the UAS can lose stability entirely.
+    ru: >
+      Сдвиг ветра — резкое изменение скорости или направления ветра на коротком
+      расстоянии — горизонтальном или вертикальном. При пересечении дроном слоя
+      сдвига он внезапно набирает или теряет скорость, заставляя систему
+      управления компенсировать. При сильном сдвиге UAS может полностью потерять
+      стабильность.
+  distractorRationales:
+    a:
+      lv: Inversija kavē vertikālo sajaukšanos un bieži rada miglāju, bet nerada pēkšņas ātruma izmaiņas, kas raksturīgas bīdei.
+      en: An inversion inhibits vertical mixing and often causes haze, but does not produce the sudden speed changes characteristic of shear.
+      ru: Инверсия подавляет вертикальное перемешивание и часто вызывает дымку, но не создаёт резких изменений скорости, характерных для сдвига.
+    c:
+      lv: Augsts mitrums ietekmē baterijas un motorus pakāpeniski, nevis rada pēkšņas reaktīvas kustības. Tas arī nedaudz samazina gaisa blīvumu (mitrais gaiss ir vieglāks par sausu).
+      en: High humidity degrades batteries and motors gradually, not producing sudden reactive movement. It also slightly decreases air density (moist air is lighter than dry).
+      ru: Высокая влажность постепенно снижает работоспособность аккумуляторов и моторов, не создавая резких движений. Кроме того, она незначительно снижает плотность воздуха (влажный воздух легче сухого).
+    d:
+      lv: Saulriets pāris stundu laikā samazina temperatūru. Tas ir pārāk lēns, lai izskaidrotu pēkšņas izmaiņas lidojuma laikā.
+      en: Sunset lowers temperature gradually over hours. This is far too slow to explain sudden in-flight changes.
+      ru: Закат снижает температуру в течение нескольких часов — слишком медленно, чтобы объяснить внезапные изменения в полёте.
+  sourceRef: "EASA Easy Access Rules UAS 2024 — meteorology section; ICAO Annex 3"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: met-017
+  stem:
+    lv: Vasaras dienā pēc karstas rīta saules apspīdēšanas parādās augošas kumulusa mākoņu torņi. Kādu lidojuma apdraudējumu tas signalizē?
+    en: On a summer afternoon after strong morning sunshine, growing cumulus cloud towers appear. What flight hazard does this signal?
+    ru: Летним днём после сильного утреннего солнечного прогрева появляются башнеобразные кучевые облака. Какую лётную опасность это сигнализирует?
+  options:
+    - id: a
+      text:
+        lv: Samazināta redzamība miglāja dēļ.
+        en: Reduced visibility due to haze.
+        ru: Сниженная видимость из-за дымки.
+    - id: b
+      text:
+        lv: Zema augstuma inversija, kas bloķē dūmus.
+        en: Low-level inversion trapping smoke.
+        ru: Приземная инверсия, удерживающая дым.
+    - id: c
+      text:
+        lv: Termiskā turbulence un augošs konvektīvās aktivitātes risks, iespējams attīstoties kumulonimbā.
+        en: Thermal turbulence and growing risk of convective activity, potentially developing into cumulonimbus.
+        ru: Термическая турбулентность и нарастающий риск конвективной активности с возможным развитием кучево-дождевого облака.
+    - id: d
+      text:
+        lv: Auksts fronts, kas nes ilgstošas lietusgāzes.
+        en: Cold front bringing prolonged rain.
+        ru: Холодный фронт, приносящий продолжительные дожди.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Augošu kumulusa torņu parādīšanās dienas siltākajā daļā pēc intensīvas
+      saules apkarsēšanas norāda uz aktīviem termiskiem procesiem. Šādos apstākļos
+      UAS var piedzīvot negaidītu turbulenci un straujas vertikālās plūsmas.
+      Spēcīgi kumulusi var attīstīties par kumulonimbiem ar pērkona negaisu un
+      zibeni. Ja mākoņi strauji aug — laiks beigt lidojumu.
+    en: >
+      Towering cumulus appearing in the warmest part of the afternoon following
+      intense heating signals active thermal convection. UAS can encounter sudden
+      turbulence and strong updrafts/downdrafts. Strong cumulus may develop into
+      cumulonimbus with thunderstorm and lightning. If clouds are growing rapidly —
+      time to end the flight.
+    ru: >
+      Появление башнеобразных кучевых облаков в самую тёплую часть дня после
+      интенсивного прогрева свидетельствует об активной тепловой конвекции. UAS
+      может встретить внезапную турбулентность и сильные восходящие/нисходящие
+      потоки. Мощные кучевые облака могут развиться в кучево-дождевые с грозой
+      и молниями. Если облака быстро растут — пора завершать полёт.
+  distractorRationales:
+    a:
+      lv: Miglājs veidojas pie temperatūras inversijas un mitruma, ne pie kumulusa torņiem. Kumulusa torņi norāda uz pretējo — aktīvu konvekciju un vertikālu sajaukšanos.
+      en: Haze forms under temperature inversions with moisture, not under towering cumulus. Towering cumulus signals the opposite — active convection and vertical mixing.
+      ru: Дымка образуется при температурной инверсии и влажности, а не при башнеобразных кучевых облаках. Башнеобразные кучевые указывают на противоположное — активную конвекцию.
+    b:
+      lv: Inversijas dūmu slazds rada miglāju un horizontālu gaisa piesārņojumu, ne vertikāli augošus mākoņus. Kumulusa torņi norāda, ka inversijas nav.
+      en: An inversion smoke trap produces haze and horizontal pollution, not vertically growing clouds. Towering cumulus signals the inversion is absent.
+      ru: Ловушка дыма при инверсии создаёт горизонтальное загрязнение, а не вертикально растущие облака. Башнеобразные кучевые сигнализируют об отсутствии инверсии.
+    d:
+      lv: Aukstā fronte parasti rada plakanus slāņveida mākoņus un ienesīgs ilgstošas lietusgāzes, ne kumulusa torņus. Kumulusa torņi ir lokālas konvektīvas aktivitātes pazīme, ne frontālas sistēmas.
+      en: A cold front typically produces flat stratiform clouds and steady rain, not towering cumulus. Towering cumulus is a sign of local convective activity, not a frontal system.
+      ru: Холодный фронт обычно формирует плоские слоистые облака и продолжительные осадки, а не башнеобразные кучевые. Башнеобразные кучевые — признак локальной конвективной активности, а не фронтальной системы.
+  sourceRef: "EASA Easy Access Rules UAS 2024 — meteorology; ICAO Annex 3 cloud types"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision

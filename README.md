@@ -108,4 +108,4 @@ Full pipeline: `docs/DEPLOY.md`.
 
 ## License
 
-To be determined.
+[AGPL-3.0-or-later](LICENSE) — modifications to the deployed code must be shared back under the same terms.

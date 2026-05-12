@@ -702,3 +702,320 @@
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: numeric
+
+- id: as-013
+  stem:
+    lv: Pilots lido ar C1 dronu 100 m no palaišanas punkta. Baterija nokrītas līdz 8 %. Tuvākā droša nolaišanās vieta ir 40 m no trīs gājējiem. Vai pilots drīkst nolaisties tajā vietā?
+    en: A pilot is flying a C1 drone 100 m from the launch point. Battery drops to 8 %. The nearest safe landing spot is 40 m from three pedestrians. May the pilot land there?
+    ru: Пилот летит с C1-дроном в 100 м от точки запуска. Батарея падает до 8 %. Ближайшее безопасное место посадки — в 40 м от трёх пешеходов. Может ли пилот там посадить дрон?
+  options:
+    - id: a
+      text:
+        lv: Nē — C1 nekad nedrīkst nolaisties 40 m no cilvēkiem.
+        en: No — C1 may never land within 40 m of people.
+        ru: Нет — C1 никогда не может приземлиться в 40 м от людей.
+    - id: b
+      text:
+        lv: Jā — C1 A1 apakškategorijā drīkst lidot tuvu atsevišķām personām, un ārkārtas nolaišanās ir pamatota situācijā.
+        en: Yes — C1 in A1 may fly near isolated individuals, and an emergency landing is justified in this situation.
+        ru: Да — C1 в A1 может летать рядом с отдельными лицами, и аварийная посадка оправдана в данной ситуации.
+    - id: c
+      text:
+        lv: Jā, bet tikai tad, ja gājēji tiek brīdināti ar skaļu kliedzēšanu.
+        en: Yes, but only if the pedestrians are warned by loud shouting.
+        ru: Да, но только если пешеходы предупреждены громким криком.
+    - id: d
+      text:
+        lv: Nē — pilotam jāatgriežas sākuma punktā, lai nolaišanās varētu notikt tur.
+        en: No — the pilot must return to the launch point so landing can occur there.
+        ru: Нет — пилот должен вернуться к точке запуска, чтобы приземление произошло там.
+  correctOptionId: b
+  explanation:
+    lv: >
+      C1 A1 apakškategorijā drīkst lidot pāri atsevišķām personām (ne pulcēšanās).
+      Gājēji ir atsevišķas personas, nevis pulcēšanās. Ārkārtas situācijā — kritiski
+      zema baterija — pilots izvēlas tuvāko drošo pieejamo vietu. Alternatīva
+      (atgriešanās) var beigties ar nekontrolētu kritienu. Ārkārtas nolaišanās
+      netālu no atsevišķām personām ir labāka nekā nekontrolēta nolaišanās.
+    en: >
+      C1 in A1 may fly over isolated individuals (not assemblies). Three pedestrians
+      are isolated individuals, not an assembly. In an emergency — critically low
+      battery — the pilot chooses the nearest safe available spot. The alternative
+      (returning) risks an uncontrolled crash. An emergency landing near isolated
+      individuals is preferable to an uncontrolled descent.
+    ru: >
+      C1 в A1 может летать над отдельными лицами (не над скоплениями). Три пешехода
+      — это отдельные лица, а не скопление. В аварийной ситуации — критически низкий
+      заряд батареи — пилот выбирает ближайшее безопасное доступное место. Альтернатива
+      (возврат) грозит неконтролируемым падением. Аварийная посадка рядом с
+      отдельными лицами предпочтительнее неконтролируемого снижения.
+  distractorRationales:
+    a:
+      lv: C1 A1 apakškategorijā var lidot tuvu atsevišķām personām. Aizliegums attiecas uz pulcēšanos, nevis atsevišķiem gājējiem.
+      en: C1 in A1 may fly near isolated individuals. The prohibition applies to assemblies, not isolated pedestrians.
+      ru: C1 в A1 может летать рядом с отдельными лицами. Запрет касается скоплений, а не отдельных пешеходов.
+    c:
+      lv: Brīdināšana ar kliedzēšanu nav regulatīva prasība nolaišanās vietas izvēlei. Izvēle balstās uz drošību, nevis brīdināšanas procedūru.
+      en: Warning by shouting is not a regulatory requirement for landing-spot selection. The choice is based on safety, not a warning procedure.
+      ru: Предупреждение криком не является нормативным требованием при выборе места посадки. Выбор основан на безопасности, а не на процедуре предупреждения.
+    d:
+      lv: Atgriešanās pie sākuma punkta ar 8 % bateriju 100 m attālumā var nebūt iespējama. Ārkārtas situācijā tuvākā droša vieta ir pareizā izvēle.
+      en: Returning to the launch point at 8 % battery 100 m away may not be achievable. In an emergency the nearest safe spot is the correct choice.
+      ru: Возврат к точке запуска с зарядом 8 % на расстоянии 100 м может быть невозможен. В аварийной ситуации ближайшее безопасное место — правильный выбор.
+  sourceRef: "Reg 2019/947 Art. UAS.OPEN.020 — A1 sub-category; UAS.OPEN.060"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision
+
+- id: as-014
+  stem:
+    lv: Vai Atvērtajā kategorijā ir atļauti nakts lidojumi?
+    en: Are night flights permitted in the Open category?
+    ru: Допускаются ли ночные полёты в Открытой категории?
+  options:
+    - id: a
+      text:
+        lv: Jā — bez papildu ierobežojumiem.
+        en: Yes — with no additional restrictions.
+        ru: Да — без дополнительных ограничений.
+    - id: b
+      text:
+        lv: Nē — Atvērtajā kategorijā nakts lidojumi ir pilnīgi aizliegti.
+        en: No — night flights are entirely prohibited in the Open category.
+        ru: Нет — ночные полёты полностью запрещены в Открытой категории.
+    - id: c
+      text:
+        lv: Jā — ja UAS ir apgaismojuma sistēma un pilots saglabā VLOS.
+        en: Yes — if the UAS has a lighting system and the pilot maintains VLOS.
+        ru: Да — если UAS оборудован системой освещения и пилот сохраняет VLOS.
+    - id: d
+      text:
+        lv: Jā — tikai C0 (< 250 g) bez papildu prasībām.
+        en: Yes — only C0 (< 250 g) with no additional requirements.
+        ru: Да — только C0 (< 250 г) без дополнительных требований.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Regula 2019/947 UAS.OPEN.060(2)(d) ļauj nakts lidojumus Atvērtajā
+      kategorijā, ja UAS ir aprīkots ar apgaismojuma sistēmu, kas nodrošina
+      pilotam spēju saglabāt VLOS un noteikt UAS orientāciju. Lidojums nakts
+      laikā bez šāda apgaismojuma nav atļauts, jo nav iespējams uzturēt VLOS.
+    en: >
+      Reg 2019/947 UAS.OPEN.060(2)(d) permits night flights in the Open
+      category provided the UAS is equipped with a lighting system that enables
+      the pilot to maintain VLOS and determine the UAS orientation. Night flight
+      without such lighting is not permitted because VLOS cannot be maintained.
+    ru: >
+      Регл. 2019/947 UAS.OPEN.060(2)(d) разрешает ночные полёты в Открытой
+      категории при условии, что UAS оснащён системой освещения, позволяющей
+      пилоту сохранять VLOS и определять ориентацию. Ночной полёт без такого
+      освещения не разрешён, так как VLOS невозможно поддерживать.
+  distractorRationales:
+    a:
+      lv: Papildu prasība ir apgaismojuma sistēma, kas nodrošina VLOS. Bez tās nakts lidojums nav atļauts.
+      en: The additional requirement is a lighting system enabling VLOS. Without it night flight is not permitted.
+      ru: Дополнительное требование — система освещения, обеспечивающая VLOS. Без неё ночной полёт не разрешён.
+    b:
+      lv: Regula atļauj nakts lidojumus ar nosacījumu, ka UAS ir atbilstoša apgaismošanas sistēma VLOS uzturēšanai. Tas nav pilnīgs aizliegums.
+      en: The regulation permits night flights provided the UAS has adequate lighting for VLOS maintenance. It is not a blanket prohibition.
+      ru: Регламент разрешает ночные полёты при наличии у UAS соответствующего освещения для поддержания VLOS. Это не абсолютный запрет.
+    d:
+      lv: Prasība par apgaismojuma sistēmu attiecas uz visām UAS klasēm, ne tikai C0. Svars viens pats nakts lidojumu neatļauj.
+      en: The lighting system requirement applies to all UAS classes, not only C0. Weight alone does not determine night flight permission.
+      ru: Требование о системе освещения распространяется на все классы UAS, а не только C0. Только масса не определяет разрешение на ночной полёт.
+  sourceRef: "Reg 2019/947 Art. UAS.OPEN.060(2)(d) — night operations"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: as-015
+  stem:
+    lv: Ko regula saprot ar terminu "nepiederoša persona" (uninvolved person)?
+    en: What does the regulation mean by the term "uninvolved person"?
+    ru: Что подразумевает регламент под термином «непричастное лицо» (uninvolved person)?
+  options:
+    - id: a
+      text:
+        lv: Jebkura persona, kas nav operatora ģimenes loceklis.
+        en: Any person who is not a family member of the operator.
+        ru: Любое лицо, не являющееся членом семьи оператора.
+    - id: b
+      text:
+        lv: Persona, kas nav iesaistīta UAS operācijā.
+        en: A person who is not involved in the UAS operation.
+        ru: Лицо, не участвующее в операции UAS.
+    - id: c
+      text:
+        lv: Persona, kas atrodas vairāk nekā 150 m no operatora.
+        en: A person located more than 150 m from the operator.
+        ru: Лицо, находящееся более чем в 150 м от оператора.
+    - id: d
+      text:
+        lv: Persona, kas nav EASA sertificēts pilots.
+        en: A person who is not an EASA-certified pilot.
+        ru: Лицо, не являющееся пилотом с сертификатом EASA.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Regula 2019/947 AMC1 definē "uninvolved person" kā personu, kas nav
+      iesaistīta UAS operācijā. Tā ietver visus, kas nav operatīvā komanda —
+      pilotu, novērotāju un jebkuru citu, kas ir informēts un pilda lomu lidojumā.
+      Attālums vai sertifikācija šo definīciju neietekmē.
+    en: >
+      Reg 2019/947 AMC1 defines "uninvolved person" as a person not involved in
+      the UAS operation. It includes everyone who is not part of the operating
+      crew — the pilot, observer, and any other person who is briefed and filling
+      a role in the flight. Distance or certification do not affect this definition.
+    ru: >
+      AMC1 Регл. 2019/947 определяет «непричастное лицо» как лицо, не участвующее
+      в операции UAS. Это включает всех, кто не является частью лётного экипажа —
+      пилота, наблюдателя и любого другого лица, проинструктированного и
+      выполняющего роль в полёте. Расстояние или сертификация не влияют на
+      это определение.
+  distractorRationales:
+    a:
+      lv: Ģimenes locekļi nav izslēgti no "nepiederoša personas" definīcijas — tie ir nepiederošas personas, ja nav iesaistīti operācijā.
+      en: Family members are not excluded from the "uninvolved person" definition — they are uninvolved persons if not part of the operation.
+      ru: Члены семьи не исключены из определения «непричастного лица» — они являются непричастными лицами, если не участвуют в операции.
+    c:
+      lv: Attālums nenosaka, vai persona ir "piederīga" vai "nepiederīga". To nosaka dalība operācijā.
+      en: Distance does not determine whether a person is "involved" or "uninvolved". Participation in the operation determines this.
+      ru: Расстояние не определяет, является ли лицо «причастным» или «непричастным». Это определяет участие в операции.
+    d:
+      lv: EASA sertifikāts ir pilota kompetences rādītājs, nevis kritērijs, lai klasificētu personu kā "nepiederošu".
+      en: An EASA certificate is a pilot competence indicator, not a criterion to classify a person as "uninvolved".
+      ru: Сертификат EASA — показатель компетентности пилота, а не критерий для классификации лица как «непричастного».
+  sourceRef: "Reg 2019/947 AMC1 to UAS.OPEN.060 — definition of uninvolved person"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: as-016
+  stem:
+    lv: Pilots lido ar mantotu dronu (nav C klases zīmola), kas sver 480 g. Drona lidojums šķērso vientuļas personas ceļu 10 m augstumā, horizontāli 15 m attālumā. Kāds ir juridiskais statuss?
+    en: A pilot flies a legacy drone (no C-class marking) weighing 480 g. The drone's flight path crosses above an isolated person's route at 10 m altitude, 15 m horizontally. What is the legal status?
+    ru: Пилот управляет унаследованным дроном (без маркировки C-класса) массой 480 г. Траектория дрона пересекает путь одинокого человека на высоте 10 м, 15 м по горизонтали. Каков правовой статус?
+  options:
+    - id: a
+      text:
+        lv: Atļauts — mantoti droni zem 500 g automātiski iegūst C0 tiesības.
+        en: Permitted — legacy drones under 500 g automatically gain C0 rights.
+        ru: Разрешено — унаследованные дроны до 500 г автоматически получают права C0.
+    - id: b
+      text:
+        lv: Aizliegts — mantots drons bez C klases zīmola ≥ 250 g darbojas A3 apakškategorijā, kur pārlidošana virs atsevišķām personām nav atļauta.
+        en: Prohibited — a legacy drone without C-class marking ≥ 250 g operates in A3, where overflight of isolated individuals is not permitted.
+        ru: Запрещено — унаследованный дрон без маркировки C-класса ≥ 250 г работает в A3, где облёт отдельных лиц не разрешён.
+    - id: c
+      text:
+        lv: Atļauts, jo drons sver mazāk par 500 g un ir personīgai lietošanai.
+        en: Permitted because the drone weighs less than 500 g and is for personal use.
+        ru: Разрешено, так как дрон весит менее 500 г и используется для личных целей.
+    - id: d
+      text:
+        lv: Atļauts — mantoti droni ≤ 500 g var darboties A1 apakškategorijā.
+        en: Permitted — legacy drones ≤ 500 g may operate in A1.
+        ru: Разрешено — унаследованные дроны ≤ 500 г могут работать в A1.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Mantots drons bez C klases zīmola, kas sver 250 g vai vairāk, tiek
+      klasificēts atbilstoši pārejas noteikumiem un atbilstoši savam apakšklases
+      statusam. Tā kā tam nav C1 zīmola, tas darbojas A3 apakškategorijā, kur
+      prasīts 150 m no apdzīvotām zonām un 1:1 noteikums attiecībā uz personām.
+      Pārlidošana virs atsevišķām personām A3 nav atļauta — tikai A1 (ar C0/C1)
+      pieļauj pārlidošanu virs atsevišķām personām.
+    en: >
+      A legacy drone without a C-class marking weighing 250 g or more is classified
+      under transition rules and operates in A3. Without a C1 marking it cannot
+      benefit from A1 overflight permissions. A3 requires the 1:1 rule for persons
+      and 150 m from populated areas. Overflight of isolated individuals is only
+      permitted in A1 (with C0/C1 class drones).
+    ru: >
+      Унаследованный дрон без маркировки C-класса массой 250 г и более
+      классифицируется по переходным правилам и работает в A3. Без маркировки
+      C1 он не может пользоваться разрешениями на облёт лиц в A1. В A3 требуются
+      правило 1:1 для людей и 150 м от населённых районов. Облёт отдельных лиц
+      разрешён только в A1 (с дронами класса C0/C1).
+  distractorRationales:
+    a:
+      lv: Mantoti droni automātiski nekļūst par C0 UAS. C0 ir ražotāja piešķirta klase, nevis pārejas noteikumu piešķirta svara kategorija.
+      en: Legacy drones do not automatically become C0 UAS. C0 is a manufacturer-assigned class, not a transitional weight category.
+      ru: Унаследованные дроны автоматически не становятся C0. C0 — это класс, присвоенный производителем, а не весовая категория переходных правил.
+    c:
+      lv: Personīgā lietošana un svars neietekmē apakškategorijas noteikumus. Juridiskais statuss ir atkarīgs no C klases zīmola esamības.
+      en: Personal use and weight do not override sub-category rules. The legal status depends on the presence of a C-class marking.
+      ru: Личное использование и масса не отменяют правила подкатегории. Правовой статус зависит от наличия маркировки C-класса.
+    d:
+      lv: Mantoti droni ≤ 500 g var darboties A3 apakškategorijā, bet ne A1. A1 prasa C1 vai C0 zīmolu.
+      en: Legacy drones ≤ 500 g operate in A3, not A1. A1 requires a C1 or C0 marking.
+      ru: Унаследованные дроны ≤ 500 г работают в A3, а не A1. A1 требует маркировки C1 или C0.
+  sourceRef: "Reg 2019/947 Art. 20 — transitional provisions for legacy drones"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: regulatory
+
+- id: as-017
+  stem:
+    lv: Divi piloti vienā vietā vienlaikus lido ar saviem droniem. Pilotu A drons ir 80 m augstumā; Pilota B drons ir 60 m augstumā un tuvojas Pilota A dronam. Kurš ir atbildīgs par sadursmes novēršanu?
+    en: Two pilots at the same location simultaneously fly their drones. Pilot A's drone is at 80 m; Pilot B's drone is at 60 m and approaching Pilot A's drone. Who is responsible for preventing a collision?
+    ru: Два пилота в одном месте одновременно управляют своими дронами. Дрон пилота A на высоте 80 м; дрон пилота B на высоте 60 м и приближается к дрону пилота A. Кто отвечает за предотвращение столкновения?
+  options:
+    - id: a
+      text:
+        lv: Tikai pilotam A, jo viņa drons ir augstākā.
+        en: Pilot A only, because their drone is higher.
+        ru: Только пилот A, так как его дрон выше.
+    - id: b
+      text:
+        lv: Tikai pilotam B, jo viņa drons tuvojas.
+        en: Pilot B only, because their drone is approaching.
+        ru: Только пилот B, так как его дрон приближается.
+    - id: c
+      text:
+        lv: Abi piloti kopīgi ir atbildīgi par saviem droniem un sadursmes novēršanu.
+        en: Both pilots are jointly responsible for their drones and for preventing a collision.
+        ru: Оба пилота несут совместную ответственность за свои дроны и за предотвращение столкновения.
+    - id: d
+      text:
+        lv: Neviens — VLOS lidojumā sadursmes novēršana ir automātiska sistēma.
+        en: Neither — in VLOS flight collision avoidance is an automated system.
+        ru: Никто — в полёте VLOS предотвращение столкновений — автоматическая система.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Katrs pilots ir atbildīgs par sava UAS drošu ekspluatāciju saskaņā ar
+      Reg 2019/947 UAS.OPEN.060. Tai skaitā ietilpst sadursmes novēršana ar
+      citiem gaisa kuģiem, ieskaitot citiem UAS. Abiem pilotiem ir jākoordinē
+      lidojumi, jāsazinās un jāveic tūlītēji pasākumi, lai novērstu sadursmi —
+      vienam vien "pirmtiesības" nav.
+    en: >
+      Each pilot is responsible for the safe conduct of their own UAS under
+      Reg 2019/947 UAS.OPEN.060. This includes collision avoidance with other
+      aircraft, including other UAS. Both pilots must coordinate flights,
+      communicate, and take immediate action to avoid a collision — neither has
+      exclusive "right of way".
+    ru: >
+      Каждый пилот несёт ответственность за безопасное управление своим UAS
+      в соответствии с Регл. 2019/947 UAS.OPEN.060. Это включает предотвращение
+      столкновений с другими воздушными судами, в том числе другими UAS. Оба
+      пилота должны координировать полёты, общаться и принимать немедленные меры
+      для предотвращения столкновения — ни у одного нет исключительного
+      «преимущества».
+  distractorRationales:
+    a:
+      lv: Augstums viens pats nenosaka atbildību. Abi piloti atbild par saviem UAS.
+      en: Altitude alone does not assign responsibility. Both pilots are responsible for their own UAS.
+      ru: Высота одна не определяет ответственность. Оба пилота несут ответственность за свои UAS.
+    b:
+      lv: Arī tuvojoties UAS puse nenes vienīgo atbildību. Pilots A arī var mainīt trajektoriju vai augstumu.
+      en: The approaching UAS side does not bear sole responsibility either. Pilot A can also change trajectory or altitude.
+      ru: Сторона приближающегося UAS также не несёт единоличной ответственности. Пилот A тоже может изменить траекторию или высоту.
+    d:
+      lv: Automātiska sadursmes novēršana nav obligāta Atvērtās kategorijas UAS. VLOS lidojumā atbildība ir pilota, ne sistēmas.
+      en: Automated collision avoidance is not mandatory for Open-category UAS. In VLOS flight the responsibility is the pilot's, not the system's.
+      ru: Автоматическое предотвращение столкновений не является обязательным для UAS Открытой категории. В полёте VLOS ответственность лежит на пилоте, а не системе.
+  sourceRef: "Reg 2019/947 Art. UAS.OPEN.060 — pilot responsibilities"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision

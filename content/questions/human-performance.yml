@@ -470,3 +470,579 @@
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
+
+- id: hp-009
+  stem:
+    lv: Ko apzīmē burts "I" IMSAFE pašpārbaudē?
+    en: What does the letter "I" stand for in the IMSAFE self-check?
+    ru: Что обозначает буква «I» в самопроверке IMSAFE?
+  options:
+    - id: a
+      text:
+        lv: Apdrošināšana (Insurance).
+        en: Insurance.
+        ru: Страхование (Insurance).
+    - id: b
+      text:
+        lv: Slimība (Illness).
+        en: Illness.
+        ru: Болезнь (Illness).
+    - id: c
+      text:
+        lv: Incidenti (Incidents).
+        en: Incidents.
+        ru: Инциденты (Incidents).
+    - id: d
+      text:
+        lv: Iedvesma (Inspiration).
+        en: Inspiration.
+        ru: Вдохновение (Inspiration).
+  correctOptionId: b
+  explanation:
+    lv: >
+      IMSAFE: I — Illness (slimība), M — Medication (medikamenti),
+      S — Stress (stress), A — Alcohol (alkohols), F — Fatigue (nogurums),
+      E — Emotion (emocijas). "I" apzīmē pātrumu vai fiziskās veselības stāvokli,
+      kas var ietekmēt pilota spēju droši vadīt.
+    en: >
+      IMSAFE: I — Illness, M — Medication, S — Stress, A — Alcohol,
+      F — Fatigue, E — Emotion. "I" refers to any physical illness or health
+      condition that may impair the pilot's ability to operate safely.
+    ru: >
+      IMSAFE: I — Illness (болезнь), M — Medication (лекарства), S — Stress
+      (стресс), A — Alcohol (алкоголь), F — Fatigue (усталость),
+      E — Emotion (эмоции). «I» обозначает любое физическое заболевание или
+      состояние здоровья, которое может ухудшить способность пилота безопасно
+      управлять.
+  distractorRationales:
+    a:
+      lv: Apdrošināšana nav IMSAFE pašpārbaudes elements. IMSAFE koncentrējas uz pilota fizisko un garīgo stāvokli.
+      en: Insurance is not an IMSAFE element. IMSAFE focuses on the pilot's physical and mental condition.
+      ru: Страхование не является элементом IMSAFE. IMSAFE фокусируется на физическом и психическом состоянии пилота.
+    c:
+      lv: Incidenti nav IMSAFE kategorija. Incidentu ziņošana ir atsevišķa drošības procedūra.
+      en: Incidents are not an IMSAFE category. Incident reporting is a separate safety procedure.
+      ru: Инциденты не являются категорией IMSAFE. Уведомление об инцидентах — отдельная процедура безопасности.
+    d:
+      lv: Iedvesma nav IMSAFE kategorija. IMSAFE mēra stāvokļus, kas var pasliktināt sniegumu, nevis motivāciju.
+      en: Inspiration is not an IMSAFE category. IMSAFE measures conditions that can impair performance, not motivation.
+      ru: Вдохновение не является категорией IMSAFE. IMSAFE измеряет состояния, которые могут ухудшить производительность, а не мотивацию.
+  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; IMSAFE checklist"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: hp-010
+  stem:
+    lv: Ko apzīmē burts "M" IMSAFE pašpārbaudē?
+    en: What does the letter "M" stand for in the IMSAFE self-check?
+    ru: Что обозначает буква «M» в самопроверке IMSAFE?
+  options:
+    - id: a
+      text:
+        lv: Motivācija (Motivation).
+        en: Motivation.
+        ru: Мотивация (Motivation).
+    - id: b
+      text:
+        lv: Medikamenti (Medication).
+        en: Medication.
+        ru: Лекарства (Medication).
+    - id: c
+      text:
+        lv: Meteoroloģija (Meteorology).
+        en: Meteorology.
+        ru: Метеорология (Meteorology).
+    - id: d
+      text:
+        lv: Manevrs (Manoeuvre).
+        en: Manoeuvre.
+        ru: Манёвр (Manoeuvre).
+  correctOptionId: b
+  explanation:
+    lv: >
+      "M" IMSAFE nozīmē Medication — medikamenti. Pilots vērtē, vai lieto
+      jebkādus medikamentus, kas var ietekmēt koncentrāciju, reakcijas laiku vai
+      situācijas apzināšanos. Pat bezrecepšu zāles (antihistamīni, miegazāles)
+      var būt kaitīgas lidojuma drošībai.
+    en: >
+      "M" in IMSAFE stands for Medication. The pilot assesses whether they are
+      taking any medication that may affect concentration, reaction time, or
+      situational awareness. Even over-the-counter drugs (antihistamines, sleep
+      aids) can be detrimental to flight safety.
+    ru: >
+      «M» в IMSAFE означает Medication (лекарства). Пилот оценивает, принимает
+      ли он какие-либо лекарства, которые могут повлиять на концентрацию, время
+      реакции или ситуационную осведомлённость. Даже безрецептурные препараты
+      (антигистамины, снотворные) могут нанести вред безопасности полётов.
+  distractorRationales:
+    a:
+      lv: Motivācija nav IMSAFE kategorija. IMSAFE koncentrējas uz fiziskajiem un psihiskajiem stāvokļiem, kas pasliktina sniegumu.
+      en: Motivation is not an IMSAFE category. IMSAFE focuses on physical and mental states that impair performance.
+      ru: Мотивация не является категорией IMSAFE. IMSAFE фокусируется на физических и психических состояниях, ухудшающих производительность.
+    c:
+      lv: Meteoroloģija ir ārējs faktors, nevis IMSAFE personiskās pārbaudes elements.
+      en: Meteorology is an external factor, not an element of the personal IMSAFE check.
+      ru: Метеорология — внешний фактор, а не элемент личной проверки IMSAFE.
+    d:
+      lv: Manevrs nav IMSAFE kategorija. IMSAFE ir pašpārbaude, kas novērtē pilota stāvokli.
+      en: Manoeuvre is not an IMSAFE category. IMSAFE is a self-check evaluating the pilot's condition.
+      ru: Манёвр не является категорией IMSAFE. IMSAFE — самопроверка, оценивающая состояние пилота.
+  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; IMSAFE checklist"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: hp-011
+  stem:
+    lv: Pilots lieto antihistamīna tabletes pret siena drudzi. Tabletes anotācijā norādīts: "var izraisīt miegainību". Ko pilotam jādara?
+    en: A pilot is taking antihistamine tablets for hay fever. The leaflet states: "may cause drowsiness". What should the pilot do?
+    ru: Пилот принимает таблетки от антигистамина от сенной лихорадки. В листке-вкладыше указано: «может вызывать сонливость». Что должен сделать пилот?
+  options:
+    - id: a
+      text:
+        lv: Lidot var, ja miegainības simptomu nav brīdī, kad sāk lidot.
+        en: Flying is permitted if there are no drowsiness symptoms at the time of starting to fly.
+        ru: Полёт разрешён, если симптомов сонливости нет в момент начала полёта.
+    - id: b
+      text:
+        lv: Atlikt lidojumu līdz brīdim, kad medikamenta iedarbība ir beigusies, vai konsultēties ar ārstu par aviācijas drošu alternatīvu.
+        en: Postpone the flight until the medication's effect has worn off, or consult a doctor for an aviation-safe alternative.
+        ru: Отложить полёт до окончания действия препарата или проконсультироваться с врачом об авиационно-безопасной альтернативе.
+    - id: c
+      text:
+        lv: Lidot var — bezrecepšu zāles nav IMSAFE kategorija.
+        en: Flying is permitted — over-the-counter drugs are not an IMSAFE category.
+        ru: Полёт разрешён — безрецептурные препараты не относятся к категории IMSAFE.
+    - id: d
+      text:
+        lv: Lidot var, bet tikai tuvākajā atvērtajā laukā bez cilvēkiem.
+        en: Flying is permitted, but only in the nearest open field without people.
+        ru: Полёт разрешён, но только на ближайшем открытом поле без людей.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Antihistamīni ar miegainību kā blakni tieši ietekmē IMSAFE "M" (medikamenti).
+      Miegainība pasliktina reakcijas laiku, situācijas apzināšanos un
+      lēmumu pieņemšanu. Pilotam jāatliek lidojums līdz zāles ir izvadītas vai
+      jāizmanto aviācijas drošs analogs. Simptomu neesamība konkrētā brīdī
+      negarantē drošību visā lidojuma laikā.
+    en: >
+      Antihistamines with drowsiness as a side effect directly affect IMSAFE "M"
+      (medication). Drowsiness impairs reaction time, situational awareness, and
+      decision making. The pilot should postpone the flight until the medication
+      clears or use an aviation-safe analogue. Absence of symptoms at a specific
+      moment does not guarantee safety throughout the flight.
+    ru: >
+      Антигистамины с сонливостью в качестве побочного эффекта напрямую влияют
+      на IMSAFE «M» (лекарства). Сонливость ухудшает время реакции, ситуационную
+      осведомлённость и принятие решений. Пилот должен отложить полёт до вывода
+      препарата из организма или использовать авиационно-безопасный аналог.
+      Отсутствие симптомов в конкретный момент не гарантирует безопасность в
+      течение всего полёта.
+  distractorRationales:
+    a:
+      lv: Symptomu neesamība brīdī "x" nedrošina, ka miegainība neradīsies lidojuma laikā. Medikamentam var būt aizkavēta iedarbība.
+      en: Absence of symptoms at moment "x" does not guarantee drowsiness will not appear during flight. The medication may have a delayed effect.
+      ru: Отсутствие симптомов в момент «x» не гарантирует, что сонливость не появится во время полёта. У препарата может быть отсроченный эффект.
+    c:
+      lv: Bezrecepšu zāles ir daļa no IMSAFE "M" kategorijas. IMSAFE neizslēdz neviena medikamenta veidu.
+      en: Over-the-counter drugs are part of the IMSAFE "M" category. IMSAFE does not exclude any type of medication.
+      ru: Безрецептурные препараты входят в категорию IMSAFE «M». IMSAFE не исключает никаких видов лекарств.
+    d:
+      lv: Lidojuma vietas izvēle nemaina drošības problēmu, ko rada miegainību raisošs medikaments. Problēma ir pilota stāvoklī, ne vietā.
+      en: Choosing a different flying location does not change the safety issue posed by a drowsiness-causing medication. The problem is the pilot's condition, not the location.
+      ru: Выбор другого места полёта не устраняет проблему безопасности, вызванную препаратом, провоцирующим сонливость. Проблема в состоянии пилота, а не в месте.
+  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; IMSAFE M — medication"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: hp-012
+  stem:
+    lv: Karstu vasaras dienu pilots lido 2 stundas bez ūdens. Kādu kognitīvo ietekmi var sagaidīt?
+    en: On a hot summer day a pilot flies for 2 hours without water. What cognitive effect can be expected?
+    ru: В жаркий летний день пилот летает 2 часа без воды. Какого когнитивного эффекта можно ожидать?
+  options:
+    - id: a
+      text:
+        lv: Nav ietekmes — dehidratācija ietekmē tikai fizisko izturību, ne kognitīvo darbību.
+        en: No effect — dehydration only affects physical endurance, not cognitive function.
+        ru: Никакого эффекта — дегидратация влияет только на физическую выносливость, а не на когнитивные функции.
+    - id: b
+      text:
+        lv: Uzlabota koncentrācija no adrenalīna, ko izraisa slāpes.
+        en: Improved concentration from adrenaline triggered by thirst.
+        ru: Улучшенная концентрация от адреналина, вызванного жаждой.
+    - id: c
+      text:
+        lv: Pasliktināta koncentrācija, lēnāks reakcijas laiks un novājināta lēmumu pieņemšana jau pie 1–2 % ķermeņa masas dehidratācijas.
+        en: Impaired concentration, slower reaction time, and weakened decision-making already at 1–2 % body mass dehydration.
+        ru: Нарушение концентрации, замедление времени реакции и ослабление принятия решений уже при дегидратации 1–2 % массы тела.
+    - id: d
+      text:
+        lv: Ietekme ir jūtama tikai pie > 5 % dehidratācijas.
+        en: Effects are noticeable only above 5 % dehydration.
+        ru: Эффекты заметны только при дегидратации более 5 %.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Pētījumi rāda, ka jau 1–2 % ķermeņa masas ūdens zudums (apm. 700 ml–1 l
+      70 kg cilvēkam) pasliktina kognitīvo funkciju — īpaši uzmanību, darba
+      atmiņu un lēmumu pieņemšanu. Karstā laikā pēc 2 stundu lidojuma šis
+      slieksnis ir viegli pārsniedzams. Padzeries pirms lidojuma un pārtraukumos.
+    en: >
+      Research shows that as little as 1–2 % body mass water loss (approx.
+      700 ml–1 L for a 70 kg person) impairs cognitive function — particularly
+      attention, working memory, and decision making. In hot weather after a
+      2-hour flight this threshold is easily exceeded. Hydrate before the flight
+      and at breaks.
+    ru: >
+      Исследования показывают, что потеря воды от 1–2 % массы тела (около
+      700 мл–1 л для человека 70 кг) уже ухудшает когнитивные функции — особенно
+      внимание, рабочую память и принятие решений. В жаркую погоду после 2 часов
+      полёта этот порог легко превышается. Пейте воду перед полётом и на
+      перерывах.
+  distractorRationales:
+    a:
+      lv: Dehidratācija ietekmē gan fizisko, gan kognitīvo funkciju. Kognitīvā pasliktināšanās var rasties pat pirms fiziskiem simptomiem.
+      en: Dehydration affects both physical and cognitive function. Cognitive impairment can occur even before physical symptoms.
+      ru: Дегидратация влияет как на физическую, так и на когнитивную функцию. Когнитивное ухудшение может наступить даже до физических симптомов.
+    b:
+      lv: Adrenalīns no slāpēm nav dokumentēts mehānisms koncentrācijas uzlabošanai. Slāpes ir diskomforts, kas parasti novērš uzmanību.
+      en: Adrenaline from thirst is not a documented mechanism for improving concentration. Thirst is a distraction, not a stimulant.
+      ru: Адреналин от жажды не является задокументированным механизмом улучшения концентрации. Жажда отвлекает, а не стимулирует.
+    d:
+      lv: 5 % dehidratācija ir smaga klīniskā dehidratācija. Kognitīvā pasliktināšanās sākas daudz agrāk — pie 1–2 %.
+      en: 5 % dehydration is severe clinical dehydration. Cognitive impairment begins far earlier — at 1–2 %.
+      ru: 5 % дегидратация — тяжёлая клиническая дегидратация. Когнитивное ухудшение начинается намного раньше — при 1–2 %.
+  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; physiological factors"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
+
+- id: hp-013
+  stem:
+    lv: Pilots pārbauda drona akumulatoru un pamana nelielus pietūkuma pazīmes (swelling). Komanda gaida un laiks ir ierobežots. Pilots nolemj lidot "tikai šo vienu reizi". Kāds kognitīvs kļūdas veids šeit ir redzams?
+    en: A pilot inspects the drone battery and notices slight swelling signs. The team is waiting and time is short. The pilot decides to fly "just this once". What type of cognitive error is demonstrated?
+    ru: Пилот осматривает аккумулятор дрона и замечает лёгкие признаки вздутия. Команда ждёт, времени мало. Пилот решает лететь «только этот раз». Какой тип когнитивной ошибки здесь демонстрируется?
+  options:
+    - id: a
+      text:
+        lv: Telpiskā dezorientācija.
+        en: Spatial disorientation.
+        ru: Пространственная дезориентация.
+    - id: b
+      text:
+        lv: Plāna turpināšanas aizspriedums (get-there-itis / plan continuation bias).
+        en: Plan continuation bias (get-there-itis).
+        ru: Предвзятость продолжения плана (get-there-itis).
+    - id: c
+      text:
+        lv: Inverted-U efekts (Yerkesa-Dodsona likums).
+        en: Inverted-U effect (Yerkes-Dodson law).
+        ru: Эффект перевёрнутой U (закон Йеркса-Додсона).
+    - id: d
+      text:
+        lv: Mnemonikas kļūda.
+        en: Mnemonic error.
+        ru: Мнемоническая ошибка.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Plāna turpināšanas aizspriedums rodas, kad pilots turpina ar plānu pat tad,
+      kad situācija ir mainījusies un bīstami. Sociālais spiediens ("komanda gaida")
+      un laika trūkums pastiprina šo efektu. Pietūcis akumulators ir klīniska
+      defekta pazīme — drošs lēmums ir atteikties no lidojuma, nevis "tikai vienu
+      reizi" riskēt ar aizdegšanos.
+    en: >
+      Plan continuation bias occurs when the pilot continues with the plan even
+      when the situation has changed and become hazardous. Social pressure ("team
+      is waiting") and time scarcity reinforce this effect. A swollen battery is
+      a clinical defect sign — the safe decision is to cancel the flight, not
+      risk a fire "just once".
+    ru: >
+      Предвзятость продолжения плана возникает, когда пилот продолжает план, даже
+      если ситуация изменилась и стала опасной. Социальное давление («команда ждёт»)
+      и нехватка времени усиливают этот эффект. Вздутый аккумулятор — признак
+      клинического дефекта — безопасным решением является отмена полёта, а не риск
+      возгорания «только один раз».
+  distractorRationales:
+    a:
+      lv: Telpiskā dezorientācija rodas, kad pilots nevar noteikt drona orientāciju gaisā — tas ir percepcijas, nevis lēmumu pieņemšanas kļūdas veids.
+      en: Spatial disorientation occurs when the pilot cannot determine the drone's orientation in the air — that is a perception failure, not a decision-making error type.
+      ru: Пространственная дезориентация возникает, когда пилот не может определить ориентацию дрона в воздухе — это ошибка восприятия, а не тип ошибки принятия решений.
+    c:
+      lv: Inverted-U efekts attiecas uz saistību starp uzbudinājumu un sniegumu — ne uz lēmumu turpināt ar zināmu risku.
+      en: The Inverted-U effect refers to the relationship between arousal and performance — not to the decision to continue despite a known risk.
+      ru: Эффект перевёрнутой U описывает связь между возбуждением и производительностью — не решение продолжать несмотря на известный риск.
+    d:
+      lv: Mnemonikas kļūda ir kļūda, kas saistīta ar atmiņas palīglīdzekli — šeit nav redzama atmiņas sistēmas problēma.
+      en: A mnemonic error is a mistake related to a memory aid — no memory system problem is visible here.
+      ru: Мнемоническая ошибка — ошибка, связанная с мнемоническим приёmом — здесь не видно проблемы памяти.
+  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; cognitive biases"
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision
+
+- id: hp-014
+  stem:
+    lv: Pilots plāno lidojumu 2000 m augstumā virs jūras līmeņa (alpīna vieta). Kā augstums ietekmē viņa kognitīvo darbību?
+    en: A pilot plans a flight at 2000 m above sea level (alpine location). How does altitude affect their cognitive performance?
+    ru: Пилот планирует полёт на высоте 2000 м над уровнем моря (альпийское место). Как высота влияет на его когнитивные функции?
+  options:
+    - id: a
+      text:
+        lv: Nav ietekmes — 2000 m ir pārāk zems, lai ietekmētu kognitīvo darbību.
+        en: No effect — 2000 m is too low to affect cognitive performance.
+        ru: Никакого эффекта — 2000 м слишком мало для влияния на когнитивные функции.
+    - id: b
+      text:
+        lv: Paaugstināts skābekļa līmenis kalnu gaisā uzlabo uzmanību.
+        en: Elevated oxygen levels in mountain air improve attention.
+        ru: Повышенный уровень кислорода в горном воздухе улучшает внимание.
+    - id: c
+      text:
+        lv: Pazeminātais skābekļa spiediens 2000 m var izraisīt vieglu hipoksiju ar neskaidru domāšanu, nogurumu un lēnāku reakciju.
+        en: The reduced oxygen partial pressure at 2000 m can cause mild hypoxia with unclear thinking, fatigue, and slower reactions.
+        ru: Сниженное парциальное давление кислорода на 2000 м может вызвать лёгкую гипоксию с нечётким мышлением, усталостью и замедленной реакцией.
+    - id: d
+      text:
+        lv: Augstums ietekmē tikai drona lidojuma veiktspēju, ne pilota kognitīvo funkciju.
+        en: Altitude affects only drone flight performance, not the pilot's cognitive function.
+        ru: Высота влияет только на лётные характеристики дрона, а не на когнитивные функции пилота.
+  correctOptionId: c
+  explanation:
+    lv: >
+      No 2000 m un augstāk skābekļa daļējais spiediens sāk būtiski samazināties.
+      Personas ar hipoksijas jutīgumu var sajust kognitīvu pasliktināšanos —
+      lēnāku reakciju, neskaidru domāšanu un novājinātu lēmumu pieņemšanu — pat
+      bez fiziskiem simptomiem. Alpīnā vidē jāplāno biežākas pārtraukumos, ēnā,
+      un sākotnēji jāpielāgojas.
+    en: >
+      From 2000 m and higher the partial pressure of oxygen starts to decrease
+      significantly. Individuals sensitive to hypoxia may experience cognitive
+      impairment — slower reactions, unclear thinking, and weakened decision making
+      — even without physical symptoms. In alpine environments plan more frequent
+      breaks, shade, and initial acclimatisation.
+    ru: >
+      С 2000 м и выше парциальное давление кислорода начинает значительно снижаться.
+      Люди, чувствительные к гипоксии, могут испытывать когнитивное ухудшение —
+      замедление реакций, нечёткое мышление и ослабленное принятие решений — даже
+      без физических симптомов. В альпийской среде планируйте более частые
+      перерывы, тень и начальную акклиматизацию.
+    ru: >
+      С 2000 м и выше парциальное давление кислорода начинает значительно снижаться.
+      Люди, чувствительные к гипоксии, могут испытывать когнитивное ухудшение —
+      замедление реакций, нечёткое мышление и ослабленное принятие решений — даже
+      без физических симптомов. В альпийской среде планируйте более частые
+      перерывы, тень и начальную акклиматизацию.
+  distractorRationales:
+    a:
+      lv: 2000 m nav augsti tikai pēc absolūtiem standartiem, bet skābekļa daļējais spiediens jau ir par ~20 % zemāks nekā jūras līmenī, un jutīgām personām tas ir nozīmīgi.
+      en: 2000 m is not high only by absolute standards, but the partial oxygen pressure is already ~20 % lower than at sea level, which is significant for sensitive individuals.
+      ru: 2000 м не является большой высотой по абсолютным стандартам, но парциальное давление кислорода уже на ~20 % ниже, чем на уровне моря, что значимо для чувствительных людей.
+    b:
+      lv: Skābekļa līmenis gaisā ir aptuveni 21 % neatkarīgi no augstuma, bet daļējais spiediens (un tādejādi absorbcija) samazinās ar augstumu.
+      en: The oxygen percentage in air is approximately 21 % regardless of altitude, but the partial pressure (and thus absorption) decreases with altitude.
+      ru: Процент кислорода в воздухе составляет около 21 % независимо от высоты, но парциальное давление (и, следовательно, поглощение) снижается с высотой.
+    d:
+      lv: Augstums ietekmē gan dronu (mazāka pacelšanās jauda, ātrāka baterijas izlāde), gan pilotu (kognitīvā pasliktināšanās). Abi jāņem vērā.
+      en: Altitude affects both the drone (reduced lift, faster battery drain) and the pilot (cognitive impairment). Both must be considered.
+      ru: Высота влияет как на дрон (уменьшение подъёмной силы, более быстрая разрядка батареи), так и на пилота (когнитивное ухудшение). Необходимо учитывать оба аспекта.
+  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; hypoxia and altitude"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
+
+- id: hp-015
+  stem:
+    lv: Pilots konstatē, ka apkārtējā teritorijā pēkšņi parādījušies neidentificēti cilvēki, kas var nonākt drona trajektorijas tuvumā. Kāda ir pareizā darbība?
+    en: A pilot notices that unidentified people have unexpectedly appeared in the area and could come near the drone's trajectory. What is the correct action?
+    ru: Пилот замечает, что в районе неожиданно появились неизвестные люди, которые могут приблизиться к траектории дрона. Каковы правильные действия?
+  options:
+    - id: a
+      text:
+        lv: Turpināt lidojumu — cilvēki parādījās pēc plānošanas.
+        en: Continue the flight — people appeared after planning.
+        ru: Продолжить полёт — люди появились после планирования.
+    - id: b
+      text:
+        lv: Paaugstināt lidojuma augstumu virs 120 m, lai izvairītos no cilvēkiem.
+        en: Raise flight altitude above 120 m to stay away from people.
+        ru: Поднять высоту полёта выше 120 м, чтобы держаться подальше от людей.
+    - id: c
+      text:
+        lv: Nekavējoties pielāgot trajektoriju vai pārtraukt lidojumu, lai saglabātu nepieciešamos attālumus, vai veikt drošu nosēšanos.
+        en: Immediately adjust trajectory or abort the flight to maintain required distances, or perform a safe landing.
+        ru: Немедленно скорректировать траекторию или прервать полёт, чтобы соблюсти необходимые расстояния, либо выполнить безопасную посадку.
+    - id: d
+      text:
+        lv: Saukt cilvēkiem, lai tie aiziet, un turpināt lidojumu.
+        en: Shout at the people to leave and continue the flight.
+        ru: Крикнуть людям, чтобы они ушли, и продолжить полёт.
+  correctOptionId: c
+  explanation:
+    lv: >
+      Situācijas apzināšanās prasa aktīvi novērot mainīgos apstākļus. Ja
+      nepiederošas personas ienāk operācijas zonā un apdraud nepieciešamos
+      attālumus, pilots nekavējoties pielāgo trajektoriju, lai paliktu
+      noteiktajos attālumos, vai veic drošu nosēšanos. Lidojumu nevar turpināt,
+      pārkāpjot attāluma prasības.
+    en: >
+      Situational awareness requires actively monitoring changing conditions.
+      If uninvolved persons enter the operating area and threaten required distances,
+      the pilot immediately adjusts trajectory to remain within required distances
+      or performs a safe landing. Flight cannot continue while violating distance
+      requirements.
+    ru: >
+      Ситуационная осведомлённость требует активного мониторинга меняющихся условий.
+      Если непричастные лица входят в рабочую зону и угрожают необходимым
+      расстояниям, пилот немедленно корректирует траекторию для соблюдения
+      необходимых расстояний или выполняет безопасную посадку. Полёт не может
+      продолжаться при нарушении требований к расстояниям.
+  distractorRationales:
+    a:
+      lv: Lidojuma plāns ir veidots pirms lidojuma situācijai. Mainīgā situācija prasa lēmumu pārskatīšanu.
+      en: The flight plan was made for the pre-flight situation. A changed situation requires decision review.
+      ru: Полётный план составлялся для ситуации до полёта. Изменившаяся ситуация требует пересмотра решений.
+    b:
+      lv: 120 m ir maksimālais Atvērtās kategorijas augstums, nevis paaugstināmais limits. Augstuma palielināšana virs 120 m ir pārkāpums.
+      en: 120 m is the Open-category maximum altitude, not a raiseable limit. Increasing altitude above 120 m is a violation.
+      ru: 120 м — максимальная высота Открытой категории, а не поднимаемый предел. Подъём выше 120 м является нарушением.
+    d:
+      lv: Cilvēku aizdzīšana nav pilotam tiesībā. Pareizā darbība ir mainīt trajektoriju vai nosēsties, ne censties kontrolēt cilvēku kustību.
+      en: Shouting people away is not the pilot's right. The correct action is to adjust trajectory or land, not to try to control people's movement.
+      ru: Кричать на людей, чтобы они ушли, не является правом пилота. Правильное действие — скорректировать траекторию или приземлиться, а не пытаться контролировать движение людей.
+  sourceRef: "Reg 2019/947 UAS.OPEN.060 — situational awareness and operational response"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: hp-016
+  stem:
+    lv: Kāda ir "E" nozīme IMSAFE pašpārbaudē un kāds piemērs tam var apdraudēt pilota sniegumu?
+    en: What does "E" mean in the IMSAFE self-check, and what example of it can threaten pilot performance?
+    ru: Что означает «E» в самопроверке IMSAFE и какой пример может угрожать производительности пилота?
+  options:
+    - id: a
+      text:
+        lv: Vide (Environment) — biezi meži pilota redzes laukā.
+        en: Environment — dense forests in the pilot's field of view.
+        ru: Окружающая среда (Environment) — густые леса в поле зрения пилота.
+    - id: b
+      text:
+        lv: Ekipējums (Equipment) — novecojis vadības pults firmware.
+        en: Equipment — outdated controller firmware.
+        ru: Оборудование (Equipment) — устаревшая прошивка пульта управления.
+    - id: c
+      text:
+        lv: Emocijas (Emotion) — piemēram, nervozitāte pirms svarīga komerclidojuma, bēdas vai dusmas, kas novērš uzmanību.
+        en: Emotion — for example nervousness before an important commercial flight, grief or anger distracting attention.
+        ru: Эмоции (Emotion) — например, нервозность перед важным коммерческим полётом, горе или гнев, отвлекающие внимание.
+    - id: d
+      text:
+        lv: Ārkārtas procedūras (Emergency) — nezināmas nolaidināšanas procedūras.
+        en: Emergency — unknown landing procedures.
+        ru: Аварийные процедуры (Emergency) — неизвестные процедуры посадки.
+  correctOptionId: c
+  explanation:
+    lv: >
+      "E" IMSAFE apzīmē Emotions (emocijas). Spēcīgas emocijas — uztraukums,
+      dusmas, bēdas, sasprindzinājums — var novērst uzmanību no lidojuma uzdevuma.
+      Emocijpārslogots pilots var pieņemt sliktus lēmumus vai nepamanīt svarīgu
+      informāciju. Pirms lidojuma jānovērtē, vai emocionālais stāvoklis ļauj
+      droši koncentrēties.
+    en: >
+      "E" in IMSAFE stands for Emotions. Strong emotions — anxiety, anger, grief,
+      tension — can divert attention from the flight task. An emotionally overloaded
+      pilot may make poor decisions or miss important information. Before flight,
+      assess whether your emotional state allows safe focus.
+    ru: >
+      «E» в IMSAFE означает Emotions (эмоции). Сильные эмоции — тревога, гнев,
+      горе, напряжение — могут отвлекать внимание от лётного задания. Эмоционально
+      перегруженный пилот может принимать плохие решения или пропускать важную
+      информацию. Перед полётом оцените, позволяет ли ваше эмоциональное состояние
+      безопасно сосредоточиться.
+  distractorRationales:
+    a:
+      lv: "Vide" (Environment) nav IMSAFE kategorija. IMSAFE koncentrējas uz pilota iekšējo stāvokli, nevis ārējo vidi.
+      en: "Environment" is not an IMSAFE category. IMSAFE focuses on the pilot's internal state, not the external environment.
+      ru: «Окружающая среда» (Environment) не является категорией IMSAFE. IMSAFE фокусируется на внутреннем состоянии пилота, а не на внешней среде.
+    b:
+      lv: "Ekipējums" (Equipment) nav IMSAFE kategorija. IMSAFE ir pilota pašpārbaude, ne aprīkojuma pārbaude.
+      en: "Equipment" is not an IMSAFE category. IMSAFE is a pilot self-check, not an equipment check.
+      ru: «Оборудование» (Equipment) не является категорией IMSAFE. IMSAFE — самопроверка пилота, а не проверка оборудования.
+    d:
+      lv: "Ārkārtas procedūras" (Emergency) nav IMSAFE kategorija. Ārkārtas procedūru pārzināšana ir preflight plānošanas jautājums, nevis emocionālais faktors.
+      en: "Emergency" is not an IMSAFE category. Emergency procedure knowledge is a preflight planning matter, not an emotional factor.
+      ru: «Аварийные процедуры» (Emergency) не является категорией IMSAFE. Знание аварийных процедур — вопрос предполётного планирования, а не эмоциональный фактор.
+  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; IMSAFE E — emotion"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: hp-017
+  stem:
+    lv: Pilots ir iestrēdzis garā darbā ar augstu stresa līmeni. Pēkšķī atrasties jāveic sarežģīts lidojums. Kādu ietekmi var sagaidīt no augsta stresa uz lidojuma sniegumu?
+    en: A pilot is stuck in a long task with high stress. Suddenly a complex flight must be performed. What effect can high stress have on flight performance?
+    ru: Пилот застрял в длительной задаче с высоким уровнем стресса. Внезапно необходимо выполнить сложный полёт. Какое влияние может оказать высокий стресс на лётную производительность?
+  options:
+    - id: a
+      text:
+        lv: Stress vienmēr uzlabo sniegumu, jo adrenalīns paaugstina uzmanību.
+        en: Stress always improves performance because adrenaline increases attention.
+        ru: Стресс всегда улучшает производительность, так как адреналин повышает внимание.
+    - id: b
+      text:
+        lv: Augsts stress sašaurina uzmanību ("tunelredzē"), samazina darba atmiņu un var izraisīt lēmu pieņemšanas kļūdas.
+        en: High stress narrows attention ("tunnel vision"), reduces working memory, and can cause decision-making errors.
+        ru: Высокий стресс сужает внимание («туннельное зрение»), снижает рабочую память и может вызывать ошибки принятия решений.
+    - id: c
+      text:
+        lv: Stresam nav ietekmes uz lēmumu pieņemšanu — tikai fiziskā nogurums ir būtisks.
+        en: Stress has no effect on decision making — only physical fatigue matters.
+        ru: Стресс не влияет на принятие решений — важна только физическая усталость.
+    - id: d
+      text:
+        lv: Stress ietekmē tikai jaunos pilotus — pieredze pilnībā neitralizē tā efektu.
+        en: Stress only affects novice pilots — experience fully neutralises its effect.
+        ru: Стресс влияет только на новичков — опыт полностью нейтрализует его эффект.
+  correctOptionId: b
+  explanation:
+    lv: >
+      Augsts stress aktivizē "cīnies vai bēdz" reakciju, kas paaugstina adrenalīnu
+      un kortizolu. Īstermiņā tas var uzlabot sniegumu vienkāršos uzdevumos, bet
+      sarežģītos uzdevumos tas sašaurina uzmanību (tuneļredze), samazina darba
+      atmiņas kapacitāti un var izraisīt impulsīvus, neapsvērtus lēmumus.
+      Yerkesa-Dodsona kross apraksta šo attiecību starp uzbudinājumu un sniegumu.
+    en: >
+      High stress activates the "fight or flight" response, raising adrenaline and
+      cortisol. In the short term this can improve performance on simple tasks, but
+      on complex tasks it narrows attention (tunnel vision), reduces working memory
+      capacity, and can trigger impulsive, unconsidered decisions. The Yerkes-Dodson
+      curve describes this relationship between arousal and performance.
+    ru: >
+      Высокий стресс активирует реакцию «бей или беги», повышая адреналин и
+      кортизол. Краткосрочно это может улучшить производительность при простых
+      задачах, но при сложных — сужает внимание (туннельное зрение), снижает
+      ёмкость рабочей памяти и может вызывать импульсивные, непродуманные решения.
+      Кривая Йеркса-Додсона описывает эту взаимосвязь между возбуждением и
+      производительностью.
+  distractorRationales:
+    a:
+      lv: Zems līdz mērens stress var uzlabot sniegumu (Yerkesas-Dodsona princips), bet augsts stress (pārslogots) pasliktina to, it īpaši sarežģītos uzdevumos.
+      en: Low to moderate stress can improve performance (Yerkes-Dodson principle), but high stress (overload) degrades it, especially on complex tasks.
+      ru: Низкий и умеренный стресс может улучшить производительность (принцип Йеркса-Додсона), но высокий стресс (перегрузка) ухудшает её, особенно при сложных задачах.
+    c:
+      lv: Stress ir dokumentēts faktors, kas ietekmē kognitīvos procesus, tai skaitā lēmumu pieņemšanu. Fiziskais nogurums ir atsevišķa, bet papildinoša problēma.
+      en: Stress is a documented factor affecting cognitive processes, including decision making. Physical fatigue is a separate but additive issue.
+      ru: Стресс — задокументированный фактор, влияющий на когнитивные процессы, включая принятие решений. Физическая усталость — отдельная, но дополнительная проблема.
+    d:
+      lv: Pieredze var uzlabot stresa pārvaldīšanu un procedūru automatizāciju, bet neizslēdz stresa ietekmi. Pat pieredzējuši piloti var saskarsties ar stresa radītiem kognitīviem deficītiem.
+      en: Experience can improve stress management and procedure automation, but does not eliminate stress effects. Even experienced pilots can face stress-induced cognitive deficits.
+      ru: Опыт может улучшить управление стрессом и автоматизацию процедур, но не устраняет его эффекты. Даже опытные пилоты могут сталкиваться с когнитивными дефицитами, вызванными стрессом.
+  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; stress and performance"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
