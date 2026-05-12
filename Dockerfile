@@ -10,7 +10,7 @@
 # This file is committed before the application code lands. CI will fail with
 # "no package.json" until the first code commit — that's the intended signal.
 
-FROM node:20-alpine AS base
+FROM node:24-alpine AS base
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
