@@ -595,9 +595,9 @@
 
 - id: hp-011
   stem:
-    lv: Pilots lieto antihistamīna tabletes pret siena drudzi. Tabletes anotācijā norādīts: "var izraisīt miegainību". Ko pilotam jādara?
-    en: A pilot is taking antihistamine tablets for hay fever. The leaflet states: "may cause drowsiness". What should the pilot do?
-    ru: Пилот принимает таблетки от антигистамина от сенной лихорадки. В листке-вкладыше указано: «может вызывать сонливость». Что должен сделать пилот?
+    lv: 'Pilots lieto antihistamīna tabletes pret siena drudzi. Tabletes anotācijā norādīts: "var izraisīt miegainību". Ko pilotam jādara?'
+    en: 'A pilot is taking antihistamine tablets for hay fever. The leaflet states: "may cause drowsiness". What should the pilot do?'
+    ru: 'Пилот принимает таблетки от антигистамина от сенной лихорадки. В листке-вкладыше указано: «может вызывать сонливость». Что должен сделать пилот?'
   options:
     - id: a
       text:
@@ -966,16 +966,16 @@
       безопасно сосредоточиться.
   distractorRationales:
     a:
-      lv: "Vide" (Environment) nav IMSAFE kategorija. IMSAFE koncentrējas uz pilota iekšējo stāvokli, nevis ārējo vidi.
-      en: "Environment" is not an IMSAFE category. IMSAFE focuses on the pilot's internal state, not the external environment.
+      lv: '"Vide" (Environment) nav IMSAFE kategorija. IMSAFE koncentrējas uz pilota iekšējo stāvokli, nevis ārējo vidi.'
+      en: '"Environment" is not an IMSAFE category. IMSAFE focuses on the pilot''s internal state, not the external environment.'
       ru: «Окружающая среда» (Environment) не является категорией IMSAFE. IMSAFE фокусируется на внутреннем состоянии пилота, а не на внешней среде.
     b:
-      lv: "Ekipējums" (Equipment) nav IMSAFE kategorija. IMSAFE ir pilota pašpārbaude, ne aprīkojuma pārbaude.
-      en: "Equipment" is not an IMSAFE category. IMSAFE is a pilot self-check, not an equipment check.
+      lv: '"Ekipējums" (Equipment) nav IMSAFE kategorija. IMSAFE ir pilota pašpārbaude, ne aprīkojuma pārbaude.'
+      en: '"Equipment" is not an IMSAFE category. IMSAFE is a pilot self-check, not an equipment check.'
       ru: «Оборудование» (Equipment) не является категорией IMSAFE. IMSAFE — самопроверка пилота, а не проверка оборудования.
     d:
-      lv: "Ārkārtas procedūras" (Emergency) nav IMSAFE kategorija. Ārkārtas procedūru pārzināšana ir preflight plānošanas jautājums, nevis emocionālais faktors.
-      en: "Emergency" is not an IMSAFE category. Emergency procedure knowledge is a preflight planning matter, not an emotional factor.
+      lv: '"Ārkārtas procedūras" (Emergency) nav IMSAFE kategorija. Ārkārtas procedūru pārzināšana ir preflight plānošanas jautājums, nevis emocionālais faktors.'
+      en: '"Emergency" is not an IMSAFE category. Emergency procedure knowledge is a preflight planning matter, not an emotional factor.'
       ru: «Аварийные процедуры» (Emergency) не является категорией IMSAFE. Знание аварийных процедур — вопрос предполётного планирования, а не эмоциональный фактор.
   sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; IMSAFE E — emotion"
   difficulty: 1

@@ -581,8 +581,8 @@
       en: A friend's policy is not the operator's policy for the specific operator. Each operator must have their own valid policy.
       ru: Полис друга не является полисом оператора для конкретного оператора. Каждый оператор должен иметь свой действующий полис.
     c:
-      lv: "Atjaunošanā" nav juridisks ekvivalents derīgai poliserei. Inspekcijā "atjaunošanā" neapmierina prasības.
-      en: "In renewal" is not a legal equivalent of a valid policy. In an inspection "in renewal" does not satisfy requirements.
+      lv: '"Atjaunošanā" nav juridisks ekvivalents derīgai poliserei. Inspekcijā "atjaunošanā" neapmierina prasības.'
+      en: '"In renewal" is not a legal equivalent of a valid policy. In an inspection "in renewal" does not satisfy requirements.'
       ru: «В процессе продления» не является юридическим эквивалентом действующего полиса. При инспекции «в процессе продления» не удовлетворяет требованиям.
     d:
       lv: Nav "nozīmīguma" sliekšņa polises derīgumam. Polise vai nu ir derīga, vai nav — vienas dienas kavēšanās nav atļauta.
@@ -726,9 +726,9 @@
 
 - id: in-013
   stem:
-    lv: Operators pērkot polisi saņem jautājumu: "Hull vai civiltiesiskās atbildības?" Kāda ir galvenā atšķirība?
-    en: When purchasing a policy an operator is asked: "Hull or third-party liability?" What is the main difference?
-    ru: При покупке полиса оператора спрашивают: «Hull или страхование гражданской ответственности?» В чём основная разница?
+    lv: 'Operators pērkot polisi saņem jautājumu: "Hull vai civiltiesiskās atbildības?" Kāda ir galvenā atšķirība?'
+    en: 'When purchasing a policy an operator is asked: "Hull or third-party liability?" What is the main difference?'
+    ru: 'При покупке полиса оператора спрашивают: «Hull или страхование гражданской ответственности?» В чём основная разница?'
   options:
     - id: a
       text:

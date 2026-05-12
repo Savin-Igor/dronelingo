@@ -627,9 +627,9 @@
       en: 900 g is the C1 class boundary, not C2. C2 is a heavier, specialised class for the A2 sub-category.
       ru: 900 г — граница класса C1, а не C2. C2 — более тяжёлый специализированный класс для подкатегории A2.
     b:
-      lv: 2 kg nav nevienas C klases robeža. Robežvērtības: C0 < 250 g, C1 < 900 g, C2 < 4 kg, C3 < 25 kg.
-      en: 2 kg is not a boundary for any C class. Boundaries: C0 < 250 g, C1 < 900 g, C2 < 4 kg, C3 < 25 kg.
-      ru: 2 кг не является границей ни одного класса C. Границы: C0 < 250 г, C1 < 900 г, C2 < 4 кг, C3 < 25 кг.
+      lv: '2 kg nav nevienas C klases robeža. Robežvērtības: C0 < 250 g, C1 < 900 g, C2 < 4 kg, C3 < 25 kg.'
+      en: '2 kg is not a boundary for any C class. Boundaries: C0 < 250 g, C1 < 900 g, C2 < 4 kg, C3 < 25 kg.'
+      ru: '2 кг не является границей ни одного класса C. Границы: C0 < 250 г, C1 < 900 г, C2 < 4 кг, C3 < 25 кг.'
     d:
       lv: 10 kg nav nevienas C klases robeža. C2 robeža ir 4 kg.
       en: 10 kg is not a boundary for any C class. The C2 boundary is 4 kg.

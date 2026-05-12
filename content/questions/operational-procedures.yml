@@ -807,8 +807,8 @@
         ru: Пилот проверяет конкретные условия (возможно, максимальную высоту или требование авторизации) и соблюдает их перед полётом.
     - id: d
       text:
-        lv: "Atļauts ar nosacījumiem" nozīmē lidojums aizliegts — jāgaida uz oficiālu atļauju.
-        en: "Allowed with conditions" means flight is prohibited — wait for an official permit.
+        lv: '"Atļauts ar nosacījumiem" nozīmē lidojums aizliegts — jāgaida uz oficiālu atļauju.'
+        en: '"Allowed with conditions" means flight is prohibited — wait for an official permit.'
         ru: «Разрешено с условиями» означает, что полёт запрещён — необходимо ожидать официального разрешения.
   correctOptionId: c
   explanation:
@@ -836,12 +836,12 @@
       en: Geofencing is an automated system restriction on some UAS, but "allowed with conditions" first requires pilot action — checking the conditions.
       ru: Геозона — автоматическое системное ограничение для некоторых UAS, но «разрешено с условиями» сначала требует действий пилота — проверки условий.
     b:
-      lv: "Atļauts ar nosacījumiem" nav brīva piekļuve. Nosacījumi jāpārbauda un jāievēro.
-      en: "Allowed with conditions" is not free access. The conditions must be checked and met.
+      lv: '"Atļauts ar nosacījumiem" nav brīva piekļuve. Nosacījumi jāpārbauda un jāievēro.'
+      en: '"Allowed with conditions" is not free access. The conditions must be checked and met.'
       ru: «Разрешено с условиями» — не свободный доступ. Условия необходимо проверить и выполнить.
     d:
-      lv: "Atļauts ar nosacījumiem" nav aizliegums. Nosacīta piekļuve ļauj lidojumu, izpildot prasības.
-      en: "Allowed with conditions" is not a prohibition. Conditional access permits flight upon meeting requirements.
+      lv: '"Atļauts ar nosacījumiem" nav aizliegums. Nosacīta piekļuve ļauj lidojumu, izpildot prasības.'
+      en: '"Allowed with conditions" is not a prohibition. Conditional access permits flight upon meeting requirements.'
       ru: «Разрешено с условиями» — не запрет. Условный доступ разрешает полёт при выполнении требований.
   sourceRef: "Reg 2019/947 Art. UAS.OPEN.060; BGKIS / e.caa.gov.lv geo-awareness"
   difficulty: 2

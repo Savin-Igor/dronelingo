@@ -865,16 +865,16 @@
       прошивку производителя.
   distractorRationales:
     a:
-      lv: "Papildu iespējas" no neoficiāla avota nav likumīgas un var apdraudēt drošību. "Efektivitāte" nav attaisnojums nelegālai firmware.
-      en: "Extended capabilities" from an unofficial source are not legal and may compromise security. "Efficiency" is not a justification for illegal firmware.
+      lv: '"Papildu iespējas" no neoficiāla avota nav likumīgas un var apdraudēt drošību. "Efektivitāte" nav attaisnojums nelegālai firmware.'
+      en: '"Extended capabilities" from an unofficial source are not legal and may compromise security. "Efficiency" is not a justification for illegal firmware.'
       ru: «Расширенные возможности» из неофициального источника незаконны и могут поставить под угрозу безопасность. «Эффективность» не является оправданием для нелегальной прошивки.
     c:
       lv: Cena (bezmaksas/maksas) nav kritērijs firmware drošībai vai legalitātei. Ļaunatūra nereti ir bezmaksas.
       en: Price (free/paid) is not a criterion for firmware safety or legality. Malware is often free.
       ru: Цена (бесплатно/платно) не является критерием безопасности или законности прошивки. Вредоносное ПО часто бесплатно.
     d:
-      lv: "Tikai testēšanai" nenomaina faktu, ka sistēmā ir instalēta potenciāli ļaunprātīga programma. Ja sistēma ir kompromitēta, testēšana to nepadara drošāku.
-      en: "Only for testing" does not change the fact that potentially malicious software is installed in the system. If the system is compromised, testing does not make it safer.
+      lv: '"Tikai testēšanai" nenomaina faktu, ka sistēmā ir instalēta potenciāli ļaunprātīga programma. Ja sistēma ir kompromitēta, testēšana to nepadara drošāku.'
+      en: '"Only for testing" does not change the fact that potentially malicious software is installed in the system. If the system is compromised, testing does not make it safer.'
       ru: «Только для тестирования» не меняет того факта, что в системе установлено потенциально вредоносное ПО. Если система скомпрометирована, тестирование не делает её безопаснее.
   sourceRef: "ENISA Good Practices for UAS cyber security; Reg 2019/945 — manufacturer compliance"
   difficulty: 2
@@ -937,8 +937,8 @@
       en: A commercial purpose does not authorise the use of all footage. Authorisation was given for a specific inspection task, not for confidential data.
       ru: Коммерческая цель не авторизует использование всего материала. Авторизация была дана для конкретного инспекционного задания, а не для конфиденциальных данных.
     c:
-      lv: "Legāli iegūts" neautorizē operators personisko izmantošanu. Materiāls iegūts klients rīkojumā un piegādājams tikai autorisētajam pasūtītājam.
-      en: "Legally obtained" does not authorise the operator's personal use. The footage was obtained under a client's order and must be delivered only to the authorised client.
+      lv: '"Legāli iegūts" neautorizē operators personisko izmantošanu. Materiāls iegūts klients rīkojumā un piegādājams tikai autorisētajam pasūtītājam.'
+      en: '"Legally obtained" does not authorise the operator''s personal use. The footage was obtained under a client''s order and must be delivered only to the authorised client.'
       ru: «Законно полученный» не авторизует личное использование оператором. Материал получен по заданию клиента и должен быть передан только авторизованному клиенту.
     d:
       lv: Ziņošana rūpnīcai var būt pareizā darbība, bet primārais pienākums ir neizmantot un nepublicēt konfidenciālo materiālu.

@@ -708,7 +708,7 @@
     d:
       lv: 2 kg nav nevienas C klases robežvērtība. Klases ir C0 (< 250 g), C1 (< 900 g), C2 (< 4 kg), C3 (< 25 kg), C4 (< 25 kg ar papildu apstākļiem).
       en: 2 kg is not a threshold for any C class. The classes are C0 (< 250 g), C1 (< 900 g), C2 (< 4 kg), C3 (< 25 kg), C4 (< 25 kg with additional conditions).
-      ru: 2 кг не является порогом ни для одного класса C. Классы: C0 (< 250 г), C1 (< 900 г), C2 (< 4 кг), C3 (< 25 кг), C4 (< 25 кг с дополнительными условиями).
+      ru: '2 кг не является порогом ни для одного класса C. Классы: C0 (< 250 г), C1 (< 900 г), C2 (< 4 кг), C3 (< 25 кг), C4 (< 25 кг с дополнительными условиями).'
   sourceRef: "Reg 2019/945 Part 2 — C1 class definition; Reg 2019/947 A1 sub-category"
   difficulty: 1
   cognitiveLevel: recall
