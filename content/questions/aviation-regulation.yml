@@ -980,11 +980,6 @@
         ru: Сдать онлайн-тест A1/A3.
     - id: c
       text:
-        lv: Izveidot kontu e.caa.gov.lv, norādot personas datus, un iesniegt operators reģistrācijas pieteikumu.
-        en: Create an account at e.caa.gov.lv, providing personal data, and submit the operator registration application.
-        ru: Создать учётную запись на e.caa.gov.lv, указав персональные данные, и подать заявку на регистрацию оператора.
-    - id: c
-      text:
         lv: Izveidot kontu e.caa.gov.lv, norādot personas datus, un iesniegt operatora reģistrācijas pieteikumu.
         en: Create an account at e.caa.gov.lv, providing personal data, and submit the operator registration application.
         ru: Создать учётную запись на e.caa.gov.lv, указав персональные данные, и подать заявку на регистрацию оператора.
