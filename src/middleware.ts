@@ -1,11 +1,13 @@
-import { auth } from "@/auth";
+import NextAuth from "next-auth";
+import { authConfig } from "./auth.config";
 import createIntlMiddleware from "next-intl/middleware";
 import { routing } from "./i18n/routing";
-import type { NextRequest } from "next/server";
 
+// Edge-safe: uses authConfig (no nodemailer, no prisma)
+const { auth } = NextAuth(authConfig);
 const intl = createIntlMiddleware(routing);
 
-export default auth((req: NextRequest & { auth: unknown }) => {
+export default auth((req) => {
   return intl(req);
 });
 
