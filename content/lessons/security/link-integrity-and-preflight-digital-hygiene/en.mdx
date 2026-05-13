@@ -1,0 +1,134 @@
+# Link integrity and preflight digital hygiene
+
+<MissionBriefing objective="After this lesson you will know how to reduce avoidable digital risk before takeoff: trusted devices, offline maps, firmware discipline, home-point checks, and controller hygiene.">
+Many drone incidents that look like “technical failure” start earlier: wrong tablet, stale map cache, aggressive background apps, unsafe update habits, or an unverified home point.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Preflight digital checklist visual: controller, drone, tablet, SD card, firmware lock icon, offline map, home point confirmation, clean radio environment"
+  alt="Structured preflight digital checklist for a drone pilot before arming motors"
+  caption="Training scene · digital preflight discipline"
+/>
+
+## The idea: reduce hidden complexity before takeoff
+
+The aircraft can only be as reliable as the digital chain behind it:
+
+- drone firmware
+- controller firmware
+- pilot phone or tablet
+- flight app
+- map cache and airspace data
+- SD card and storage settings
+
+If one link is unstable, the whole operation becomes harder to manage under pressure.
+
+<Artefact
+  description="Five-card digital preflight checklist: trusted device, current official firmware, fresh map and airspace check, verified home point and RTH altitude, unnecessary apps disabled."
+  caption="Checklist · digital-preflight-five"
+>
+  <div className="grid gap-3 md:grid-cols-5 text-sm">
+    {[
+      ["Trusted Device", "Use the same tested phone or tablet, not a random spare."],
+      ["Official Firmware", "Update only through the official channel and not on the way to the job."],
+      ["Fresh Map", "Refresh airspace and base maps before departure if coverage may be weak."],
+      ["Home Point", "Confirm home point, GNSS quality, and RTH altitude before takeoff."],
+      ["Quiet Device", "Close non-essential apps, calls, and auto-sync tasks."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## The five most useful habits
+
+**1. Fly with a known device.**  
+Do not swap to an unfamiliar tablet at the last moment unless the tested one is unusable. Small UI differences create real delays under stress.
+
+**2. Do not update on mission day unless necessary.**  
+An update can fix security issues, but mission day is the wrong moment for an untested software change. Update in a controlled setting, then test.
+
+**3. Refresh maps before going offline.**  
+Weak mobile coverage is common at rural sites. If the map and airspace overlays were not refreshed earlier, the pilot loses context exactly where it is needed most.
+
+**4. Confirm home point and RTH logic.**  
+A wrong home point turns an automated recovery feature into a risk amplifier.
+
+**5. Reduce app noise.**  
+Messaging popups, cloud sync, battery optimisation, and phone calls interrupt attention and sometimes degrade app performance.
+
+## Home point is a safety setting, not a formality
+
+Pilots often treat home-point confirmation as a routine message to tap through. That is a mistake. If takeoff occurred before stable GNSS or if the aircraft was moved after initial lock, return-to-home may aim at the wrong place.
+
+<Scenario title="You arrive at a rural inspection site with weak coverage. The pilot tablet has not refreshed maps since yesterday, one messaging app keeps sending notifications, and the home point message was tapped through quickly. The flight is legal. Is it ready?">
+No. The flight may be legally possible, but the digital setup is weak.
+
+The right action is to pause before takeoff:
+
+1. refresh or confirm the required airspace context;
+2. close non-essential apps and silence notifications;
+3. verify GNSS quality, home point, and RTH altitude;
+4. arm only after the digital chain is stable.
+
+This is not bureaucracy. It is risk reduction before the aircraft leaves the ground.
+</Scenario>
+
+<MemoryAnchor
+  rule="Known device, official firmware, fresh map, correct home point, quiet screen."
+  hint="If the tablet is noisy or unfamiliar, the pilot will be slower when the situation becomes fast."
+/>
+
+<CommonMistakes>
+- Updating firmware in the car on the way to the mission.
+- Flying with an unfamiliar spare phone because “it should be the same.”
+- Ignoring stale map tiles and missing overlays in weak coverage areas.
+- Accepting the home point without verifying where it actually landed.
+- Leaving notifications, calls, and background sync active during flight.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "se-li1",
+    stem: "Which preflight digital action most directly reduces the risk of a bad return-to-home event?",
+    options: [
+      { id: "a", text: "Increasing screen brightness." },
+      { id: "b", text: "Confirming the home point and RTH altitude before takeoff." },
+      { id: "c", text: "Formatting the SD card after landing." },
+      { id: "d", text: "Opening a messaging app to keep the client informed." },
+    ],
+    correctOptionId: "b",
+    explanation: "Return-to-home depends on a correct home point and sensible RTH altitude. If either is wrong, the automation may guide the aircraft into the wrong place or route.",
+    distractorRationales: {
+      a: "Brightness affects readability, not navigation logic.",
+      c: "SD-card formatting is unrelated to RTH safety.",
+      d: "Extra app activity increases distraction and does not help flight safety.",
+    },
+  },
+  {
+    id: "se-li2",
+    stem: "Why is an untested firmware update on mission day a poor practice?",
+    options: [
+      { id: "a", text: "Because firmware updates are never allowed under EASA rules." },
+      { id: "b", text: "Because it introduces a software change into the operation without a controlled test." },
+      { id: "c", text: "Because updated firmware disables remote ID." },
+      { id: "d", text: "Because BGKIS approval becomes invalid after any update." },
+    ],
+    correctOptionId: "b",
+    explanation: "Even good updates can change behaviour. Mission day is the wrong time to introduce an untested software state into a real operation.",
+    distractorRationales: {
+      a: "Updates are allowed; the issue is timing and testing.",
+      c: "There is no general rule that firmware updates disable remote ID.",
+      d: "BGKIS status is unrelated to routine firmware changes.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["se-003"]}>
+You now have a practical digital preflight checklist that reduces avoidable failures before takeoff.
+
+Next: connect cyber threats, reporting, and field discipline into one habit — notice anomalies early, document them clearly, and stop before automation turns a small issue into a bigger one.
+</Debrief>

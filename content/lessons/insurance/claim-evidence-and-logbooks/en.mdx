@@ -1,0 +1,136 @@
+# Claims, evidence and logbooks
+
+<MissionBriefing objective="After this lesson you will know what to document after an incident, why insurers and regulators care about the same facts for different reasons, and how a disciplined flight log protects the operator before there is a dispute.">
+Insurance becomes useful only if the operator can prove what happened, when it happened, and what condition the aircraft and operation were in before the event.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Incident documentation scene: drone case, damaged propeller, tablet with flight log, insurance form, checklist for photos, witness details, battery record"
+  alt="Operator building an evidence package after a drone incident"
+  caption="Training scene · incident evidence package"
+/>
+
+## Why documentation matters
+
+After an incident, three different parties may ask for evidence:
+
+- **the insurer** — to decide whether the claim is covered;
+- **the regulator** — to understand whether reporting duties apply;
+- **the client** — to assess delay, damage, or data loss.
+
+If the operator has poor records, the same event becomes harder to defend in all three directions.
+
+<Artefact
+  description="Evidence package layout: scene photos, aircraft serial number, battery ID and cycle count, flight logs, screenshots, witness names, weather and airspace status, and timeline notes."
+  caption="Matrix · minimum-incident-evidence"
+>
+  <div className="grid gap-3 md:grid-cols-2 text-sm">
+    {[
+      ["Scene and damage", "Photos of aircraft, props, payload, surroundings, impact marks."],
+      ["Aircraft identity", "Serial number, class marking, registration and operator details."],
+      ["Battery record", "Battery ID, charge level, cycle count, warnings, storage condition."],
+      ["Digital logs", "Flight log export, app screenshots, telemetry warnings, map state."],
+      ["Environment", "Weather, airspace status, zone type, authorisation status."],
+      ["Human timeline", "Who flew, when, what changed, witnesses, immediate actions taken."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## The three records that save time later
+
+**1. A flight log.**  
+Date, place, pilot, aircraft, purpose, batteries used, anomalies, and whether the flight completed normally.
+
+**2. A battery log.**  
+Battery identity, cycle count, swelling, storage issues, unusual heating, and retirement date.
+
+**3. A maintenance log.**  
+Prop changes, firmware state, repairs, payload changes, and any known limitation.
+
+These logs are boring until something goes wrong. After that, they become the fastest way to show that the operator was organised and the aircraft was not being used blindly.
+
+## What to do immediately after an incident
+
+1. make the site safe first;
+2. preserve the aircraft and damaged parts;
+3. take photos before moving too much;
+4. export or save digital logs and screenshots early;
+5. write down the timeline while memory is fresh;
+6. notify insurer, regulator, or client as required.
+
+## Do not “clean up the story”
+
+A common mistake is to tidy the aircraft, recharge batteries, or rewrite the timeline before documenting. That destroys evidence and weakens both safety learning and claim credibility.
+
+<Scenario title="A drone clips a light pole during a low-speed approach. No one is injured, but one arm, the gimbal, and a battery are damaged. The pilot wants to pack up quickly because the client is waiting. What should happen first?">
+First secure the site and make sure no secondary hazard remains. Then document before cleanup:
+
+- photo the aircraft where it stopped, if safe;
+- capture the pole, surroundings, and impact marks;
+- record the battery ID and warning state;
+- save flight logs and screenshots from the app;
+- note witness details and exact time.
+
+Packing fast may feel efficient, but it destroys the evidence needed for insurance, reporting, and later learning.
+</Scenario>
+
+<MemoryAnchor
+  rule="Safe site first. Then freeze the facts: photos, logs, battery, timeline, witnesses."
+  hint="If you move first and document later, you usually lose the best evidence."
+/>
+
+<CommonMistakes>
+- Recharging or swapping the battery before documenting its condition.
+- Repairing or cleaning the aircraft before photographing the damage.
+- Keeping flight logs only inside the app and not exporting them after an incident.
+- Writing notes hours later from memory instead of immediately on site.
+- Treating the client update as more urgent than preserving the evidence package.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "in-cl1",
+    stem: "Which record is most useful for showing that a damaged battery already had warning signs before an incident?",
+    options: [
+      { id: "a", text: "The client's invoice." },
+      { id: "b", text: "A battery log with ID, cycle count, and condition notes." },
+      { id: "c", text: "The pilot's social-media post." },
+      { id: "d", text: "The drone's packaging box." },
+    ],
+    correctOptionId: "b",
+    explanation: "A battery log is the structured record that connects a specific battery to its usage history and condition. That is the key evidence if battery health is relevant to the incident.",
+    distractorRationales: {
+      a: "An invoice proves the commercial job, not battery condition.",
+      c: "A social-media post is not a reliable technical record.",
+      d: "Packaging may identify the product model, but not the in-service condition of that battery.",
+    },
+  },
+  {
+    id: "in-cl2",
+    stem: "What is the best immediate action after a non-injury drone impact, once the site is safe?",
+    options: [
+      { id: "a", text: "Recharge the battery to see whether it still works." },
+      { id: "b", text: "Take scene photos and preserve logs before cleanup." },
+      { id: "c", text: "Delete the footage to protect privacy." },
+      { id: "d", text: "Repair the propeller so the aircraft can be tested again." },
+    ],
+    correctOptionId: "b",
+    explanation: "Once the site is safe, the next priority is to preserve evidence: scene photos, app logs, warnings, battery identity, and timeline details before they disappear.",
+    distractorRationales: {
+      a: "Recharging changes the evidence state and can add safety risk.",
+      c: "Relevant data should be preserved first; privacy handling follows the legal and operational process.",
+      d: "Repairing first destroys evidence and should not happen before documentation.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["in-003"]}>
+You now know how to build an evidence package that supports insurance, reporting, and professional credibility.
+
+Next: connect insurance logic back to operations — prevention is cheaper than claims, but clean documentation is what keeps a bad day from becoming a worse one.
+</Debrief>

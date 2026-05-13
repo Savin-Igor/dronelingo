@@ -1,0 +1,128 @@
+# Remote ID un geo-awareness
+
+<MissionBriefing objective="Pēc šīs nodarbības tu atšķirsi Remote ID no geo-awareness, zināsi, ar kurām klasēm tie saistīti, un sapratīsi, kāpēc neviena no šīm funkcijām neaizvieto pilota paša juridisko gaisa telpas pārbaudi.">
+Piloti bieži sajauc šīs funkcijas vienā miglainā idejā: “dronam ir karte un pozīcija, tātad viss ir legāli.” Tā sistēma nestrādā.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/airspace-zones-map.png"
+  alt="Drona lidojums virs kartētas ģeozonas ar sānu paneli, kur redzami Remote ID lauki un geo-awareness brīdinājumi"
+  caption="Diagramma · remote-id-vs-geo-awareness"
+/>
+
+## Divas dažādas sistēmas
+
+**Direct Remote ID** ir vērsts uz āru. Tas pārraida operatīvos datus, lai iestādes un citi autorizēti uztvērēji varētu identificēt UAS un operatoru reāllaikā.
+
+**Geo-awareness** ir vērsts uz iekšu. Tas palīdz pilotam un UAS saprast tuvumā esošās UAS ģeogrāfiskās zonas un brīdina par ierobežojumiem.
+
+Tie risina dažādas problēmas:
+
+- Remote ID atbild uz jautājumu: *kas ir šis drons un kur tas atrodas?*
+- Geo-awareness atbild uz jautājumu: *kādi ierobežojumi ir ap šo pozīciju?*
+
+<Artefact
+  description="Salīdzinājuma kartītes Remote ID un geo-awareness sistēmām: mērķis, dati un ierobežojumi."
+  caption="Kartītes · remote-id-salidzinajums"
+>
+  <div className="grid gap-3 md:grid-cols-2">
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Remote ID</p>
+      <p className="mt-2 text-sm text-telemetry">Pārraida operatora/UAS identifikācijas datus, pozīciju, augstumu un kustību. Mērķis ir izsekojamība un uzraudzība.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Geo-awareness</p>
+      <p className="mt-2 text-sm text-telemetry">Brīdina par ģeogrāfisko zonu ierobežojumiem ap UAS pozīciju. Mērķis ir situācijas apzināšanās un pārkāpumu novēršana.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Remote ID nedara</p>
+      <p className="mt-2 text-sm text-telemetry">Neatļauj automātiski lidot ierobežotā zonā un neaizvieto BGKIS vai airspace pārbaudi.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Geo-awareness nedara</p>
+      <p className="mt-2 text-sm text-telemetry">Neaizvieto juridiski saistošo avotu. Novecojusi vai nepilnīga datne joprojām var maldināt pilotu.</p>
+    </div>
+  </div>
+</Artefact>
+
+## Ar kurām klasēm tas visvairāk saistīts?
+
+Atvērtās kategorijas ekosistēmā Remote ID un geo-awareness ir īpaši saistīti ar **C1, C2 un C3** klašu prasībām. Precīza tehniskā realizācija ir ražotāja darbs, bet operatīvās sekas ir pilota darbs:
+
+- pārliecināties, ka sistēma ir ieslēgta un bez kļūdām
+- uzturēt datus aktuālus, ja sistēma izmanto lejupielādējamu datni
+- nekad nepieņemt, ka UAS funkcija aizvieto juridiski saistošo karti
+
+Latvijā juridiskā un ģeogrāfiskā pārbaude joprojām ved atpakaļ uz `airspace.lv/drones` un oficiālo zonu datu ķēdi aiz tā.
+
+## Ko pilotam darīt pirms starta
+
+Uztver Remote ID un geo-awareness kā daļu no digitālās pirmslidojuma pārbaudes:
+
+1. pārliecinies, ka nav aktīva sistēmas brīdinājuma
+2. pārliecinies, ka lietotnes un UAS atrašanās vieta sakrīt ar realitāti
+3. pārliecinies, ka ģeogrāfisko zonu datne ir aktuāla, ja sistēma tādu izmanto
+4. neatkarīgi pārbaudi vietu `airspace.lv/drones`
+
+Ja UAS saka “viss skaidrs”, bet oficiālā karte rāda ierobežotu zonu, uzvar oficiālā karte.
+
+<Scenario title="Tava UAS lietotne nerāda brīdinājumu un geofence skats izskatās tīrs. `airspace.lv/drones` tajā pašā vietā rāda ierobežotu UAS ģeogrāfisko zonu ar BGKIS prasību. Kurš avots nosaka tavu lēmumu?">
+Lēmumu nosaka `airspace.lv/drones`. Geo-awareness ir drošības palīgs, nevis juridiski saistošais avots. Ja UAS datne ir novecojusi vai nepilnīga, tā var klusējot kļūdīties.
+
+Pareizā darbība: ievērot oficiālo zonas avotu, iesniegt BGKIS, ja tas vajadzīgs, un lidot tikai pēc apstiprinājuma.
+</Scenario>
+
+<MemoryAnchor
+  rule="Remote ID identificē. Geo-awareness brīdina. Neviena no šīm funkcijām pati par sevi neatļauj lidojumu."
+  hint="Ja ir konflikts, oficiālais zonas avots vienmēr ir svarīgāks par UAS saskarni."
+/>
+
+<CommonMistakes>
+- Uztvert Remote ID kā “caurlaidi” ierobežotai gaisa telpai.
+- Pieņemt, ka lietotnes geo-awareness dati vienmēr ir aktuāli.
+- Ignorēt oficiālo zonas karti, jo pults ekrāns nerāda brīdinājumu.
+- Pārvērst tehnisku palīgfunkciju par juridisku lēmumu pieņēmēju.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "rid-q1",
+    stem: "Kāds ir Direct Remote ID galvenais mērķis?",
+    options: [
+      { id: "a", text: "Pārraidīt identifikācijas un pozīcijas datus par UAS operāciju." },
+      { id: "b", text: "Automātiski pieprasīt BGKIS apstiprinājumu Latvijā." },
+      { id: "c", text: "Atcelt operatora reģistrācijas pienākumu." },
+      { id: "d", text: "Aizvietot VLOS ar digitālo sekošanu." },
+    ],
+    correctOptionId: "a",
+    explanation: "Direct Remote ID mērķis ir identifikācija un izsekojamība: kas lido, kur atrodas UAS un ar kādiem saistītiem datiem tas tiek pārraidīts.",
+    distractorRationales: {
+      b: "BGKIS ir administratīvs process, nevis Remote ID funkcija.",
+      c: "Remote ID neaizvieto operatora reģistrācijas pienākumus.",
+      d: "Digitāla sekošana neatceļ Atvērtās kategorijas VLOS prasību.",
+    },
+  },
+  {
+    id: "rid-q2",
+    stem: "Kādas ir pareizās attiecības starp geo-awareness un oficiālo gaisa telpas pārbaudi?",
+    options: [
+      { id: "a", text: "Geo-awareness aizvieto oficiālo zonas pārbaudi, ja lietotne ir atjaunināta." },
+      { id: "b", text: "Geo-awareness ir atbalsta rīks; juridiski saistošais lēmums joprojām balstās uz oficiālo zonas avotu." },
+      { id: "c", text: "Geo-awareness ir svarīgs tikai UAS virs 25 kg." },
+      { id: "d", text: "Geo-awareness ir būtisks tikai Specifiskajā kategorijā." },
+    ],
+    correctOptionId: "b",
+    explanation: "Geo-awareness palīdz pilotam, bet neaizvieto oficiālo gaisa telpas vai UAS ģeogrāfisko zonu pārbaudi. Atbilstības lēmumu joprojām nosaka oficiālais avots.",
+    distractorRationales: {
+      a: "Pat aktuāli UAS dati nav tas pats, kas juridiski saistošais zonas statuss.",
+      c: "Šī funkcija ir svarīga arī Atvērtās kategorijas praksē, īpaši ap C1/C2/C3 operācijām.",
+      d: "Geo-awareness ir saistīts arī ar Atvērtās kategorijas atbilstību un praktisko drošību.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ug-003"]}>
+Tu tagad skaidri atšķir Remote ID no geo-awareness un proti abas funkcijas izmantot pareizi.
+
+Tālāk: atpakaļ pie pilota — uzmanība, fiksācija un tas, kāpēc cilvēka skenēšanas disciplīna ir svarīga pat ar tehniski modernu UAS.
+</Debrief>

@@ -1,0 +1,144 @@
+# Post-flight discipline and logs
+
+<MissionBriefing objective="After this lesson you will know how to close a flight professionally: secure the aircraft, cool and store batteries correctly, write the minimum useful log entry, and decide whether an event should be reported.">
+Good pilots do not stop at touchdown. Many equipment failures, battery fires, and missed incident reports are created in the ten minutes after landing.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/battery-storage-guide.png"
+  alt="Post-flight table with a drone, warm batteries on a fire-safe mat, a notebook with a log entry, and storage-state indicators"
+  caption="Routine · post-flight discipline"
+/>
+
+## Why post-flight matters
+
+Post-flight is where you convert a flight from a one-off event into usable operational learning.
+
+Without a shutdown routine:
+
+- hot batteries go straight into bags or cars
+- small propeller damage is discovered only at the next launch
+- GPS or control anomalies are forgotten instead of documented
+- a reportable occurrence becomes an unreported memory
+
+The goal is simple: leave the aircraft, the batteries, and the record in a state that makes the next flight safer than the last one.
+
+<Artefact
+  description="Four post-flight cards: shutdown, inspection, battery care, and logging/reporting."
+  caption="Cards · post-flight-routine"
+>
+  <div className="grid gap-3 md:grid-cols-2">
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Shutdown</p>
+      <p className="mt-2 text-sm text-telemetry">Stop motors, power down the aircraft and controller in the manufacturer-recommended order, remove the battery only when safe to handle.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Inspection</p>
+      <p className="mt-2 text-sm text-telemetry">Check props, motors, landing legs, payload mount, and airframe for cracks, chips, dirt, or overheated components.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Battery Care</p>
+      <p className="mt-2 text-sm text-telemetry">Let batteries cool before charging or sealing them in a bag. Storage batteries should sit around 50–60%, not full or empty.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Log and Report</p>
+      <p className="mt-2 text-sm text-telemetry">Write down the location, date, aircraft, anomalies, and lessons learned. Escalate to occurrence reporting when the event crosses the reporting threshold.</p>
+    </div>
+  </div>
+</Artefact>
+
+## The minimum useful log entry
+
+A useful post-flight log is short. It should answer:
+
+- when and where the flight happened
+- which UAS and battery were used
+- whether any anomaly appeared
+- whether maintenance or a follow-up check is needed
+
+You are not writing a novel. You are preserving operational memory for the next flight.
+
+## Batteries after landing
+
+The most common mistake is treating a just-landed battery like a neutral object. It is not. After a demanding flight the pack may be warm internally even if the outer shell feels only mildly hot.
+
+Safe sequence:
+
+1. remove the battery when the aircraft is stable and powered down
+2. place it on a fire-safe, non-flammable surface
+3. allow it to cool before charging
+4. if the next flight is not soon, return it to storage charge rather than leaving it full
+
+Never leave a fully charged battery in a hot car after a summer mission.
+
+## Reportable or just logged?
+
+Not every anomaly is a mandatory report, but every anomaly is worth logging.
+
+Use this split:
+
+- **Log only**: small vibration, short GNSS warning that resolved cleanly, minor propeller nick found after landing
+- **Escalate for occurrence reporting**: serious loss of control, near-miss with manned aircraft, GPS spoofing/jamming affecting safety, injury, or any event that materially reduced safety margins
+
+When in doubt, preserve evidence: screenshots, timestamps, location, and a short factual description.
+
+<Scenario title="You land after a short urban practice flight. The battery feels warm, one propeller has a shallow chip, and the app log shows a brief compass warning at minute 3 that disappeared on its own. What is the correct post-flight action?">
+Do not pack and leave immediately. Set the battery aside to cool, replace the damaged propeller before the next flight, and write a short log entry that records the compass warning, time, and location.
+
+This is not automatically a mandatory occurrence report, but it is absolutely operationally relevant. If the same warning appears again on the next flight, your log turns two isolated “small things” into a pattern.
+</Scenario>
+
+<MemoryAnchor
+  rule="Shutdown, inspect, cool, log. Landing ends the flight, not the pilot's responsibility."
+  hint="If you do not record anomalies, the next flight starts blind."
+/>
+
+<CommonMistakes>
+- Putting hot batteries straight into a closed case or car.
+- Leaving every battery at 100% for days between flights.
+- Ignoring small damage because “the flight was already over.”
+- Treating app warnings as disposable instead of logging them for pattern detection.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "postflight-q1",
+    stem: "What is the correct handling of a warm flight battery after landing?",
+    options: [
+      { id: "a", text: "Charge it immediately while it is still warm to save time." },
+      { id: "b", text: "Let it cool on a fire-safe surface before charging or packing it." },
+      { id: "c", text: "Seal it in the carrying bag so temperature stays stable." },
+      { id: "d", text: "Leave it fully charged in the car until the next mission." },
+    ],
+    correctOptionId: "b",
+    explanation: "A warm post-flight battery should cool before charging or closed-case storage. Heat plus high state of charge increases battery stress and risk.",
+    distractorRationales: {
+      a: "Charging a warm pack increases stress and can be unsafe.",
+      c: "Closed storage traps heat instead of dissipating it.",
+      d: "A hot car and a fully charged lithium pack is a bad combination.",
+    },
+  },
+  {
+    id: "postflight-q2",
+    stem: "Why is a short post-flight log operationally valuable?",
+    options: [
+      { id: "a", text: "It helps detect repeat anomalies and maintenance patterns over time." },
+      { id: "b", text: "It replaces the need for any pre-flight checks." },
+      { id: "c", text: "It automatically submits occurrence reports to the authority." },
+      { id: "d", text: "It removes the need to inspect the aircraft after landing." },
+    ],
+    correctOptionId: "a",
+    explanation: "A short, factual log preserves memory. Repeated warnings, propeller damage, battery behaviour, and site-specific issues become visible only when written down consistently.",
+    distractorRationales: {
+      b: "Post-flight logging and pre-flight checking solve different problems.",
+      c: "A personal log is not the same thing as an official occurrence report.",
+      d: "Logging without inspection misses physical issues; inspection without logging loses history.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["op-003"]}>
+You now have a professional post-flight routine.
+
+Next: back to the aircraft itself — Remote ID and geo-awareness, the two digital layers many pilots confuse with each other.
+</Debrief>

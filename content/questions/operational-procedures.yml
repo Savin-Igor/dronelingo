@@ -51,7 +51,7 @@
       lv: Pievienojums ir pirmais solis, bet ne pārbaude. Bojāta baterija var būt pievienota — riska tas nenovērš.
       en: Connection is a precondition, not a check. A damaged battery can be connected — that does not remove the risk.
       ru: Подключение — это предусловие, а не проверка. Повреждённый аккумулятор может быть подключён — это не снимает риск.
-  sourceRef: "EASA Easy Access Rules — Operational procedures; manufacturer manuals"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Operational procedures; manufacturer manuals"
   difficulty: 1
   cognitiveLevel: apply
   scenarioType: factual
@@ -109,7 +109,7 @@
       lv: Lietotnes restarts ietekmē tikai pilota ekrānu, nevis radio saiti vai drona uzvedību. Saite tiek atjaunota tehniski citā līmenī.
       en: Restarting the app affects only the pilot's screen, not the radio link or the drone's behaviour. The link recovers at a different technical layer.
       ru: Перезапуск приложения влияет только на экран пилота, а не на радиосвязь или поведение дрона. Связь восстанавливается на другом техническом уровне.
-  sourceRef: "EASA Easy Access Rules — Emergency procedures"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -163,7 +163,7 @@
       lv: 250 m joprojām pārsniedz Follow-Me limitu. Iespējams, ka VLOS šajā attālumā vēl saglabājas, bet Follow-Me konkrēti — 50 m.
       en: 250 m still exceeds the Follow-Me limit. VLOS may still hold at that range, but Follow-Me specifically is capped at 50 m.
       ru: 250 м всё равно превышает лимит Follow-Me. VLOS может ещё сохраняться на такой дистанции, но именно Follow-Me — 50 м.
-  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020(1)(a) — follow-me mode"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.020(1)(a) — follow-me mode"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
@@ -219,7 +219,7 @@
       lv: 80–90 % der tikai īsām uzglabāšanas periodiem (3–14 dienas). Pie 2 nedēļām vai ilgāk pareizais līmenis ir 50–60 %.
       en: 80–90 % is only valid for short storage (3–14 days). For 2 weeks or longer the correct level is 50–60 %.
       ru: 80–90 % подходит только для коротких периодов (3–14 дней). При 2 неделях и больше — 50–60 %.
-  sourceRef: "Manufacturer guidance (DJI / Autel); IEEE 1725 battery guidelines"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Manufacturer guidance (DJI / Autel); IEEE 1725 battery guidelines"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: numeric
@@ -275,7 +275,7 @@
       lv: Augstuma pazemināšana var palīdzēt nedaudz, bet tas pats par sevi nav pareizs lēmums — misija jāpārtrauc, lai izvairītos no nokrišanas neparedzamā vietā.
       en: Lowering altitude can help a little, but on its own it is not the right action — the mission must end so the drone does not fall in an unpredictable spot.
       ru: Снижение высоты немного помогает, но само по себе не верное решение — миссию нужно прекратить, чтобы дрон не упал в непредсказуемом месте.
-  sourceRef: "EASA Easy Access Rules — Emergency procedures"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures"
   difficulty: 1
   cognitiveLevel: apply
   scenarioType: decision
@@ -336,7 +336,7 @@
       lv: GPS nodrošina navigāciju RTH laikā, bet negarantē šķērsļu izvairīšanos. Bez pareizi iestatīta RTH augstuma drons var trāpīt elektrolīnijās, ko nevar noteikt GPS.
       en: GPS provides navigation during RTH but does not guarantee obstacle avoidance. Without a correctly set RTH altitude the drone can strike power lines that GPS cannot detect.
       ru: GPS обеспечивает навигацию во время RTH, но не гарантирует обход препятствий. Без правильно установленной высоты RTH дрон может врезаться в линии электропередачи, которые GPS не обнаруживает.
-  sourceRef: "EASA Easy Access Rules — Emergency procedures; pre-flight checklist"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; pre-flight checklist"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
@@ -398,7 +398,7 @@
       lv: Secībai ir nozīme laika spiediena situācijās — konsekventa secība novērš izlaidumu. Nestrukturētas pārbaudes var izlaist kritiskus posmus.
       en: Order matters under time pressure — a consistent sequence prevents omissions. Unstructured checks can miss critical elements.
       ru: Порядок важен при временном давлении — последовательная проверка предотвращает пропуски. Неструктурированные проверки могут упустить критические элементы.
-  sourceRef: "EASA Easy Access Rules — Operational procedures; pre-flight checklist"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Operational procedures; pre-flight checklist"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -462,7 +462,7 @@
       lv: Pacelšanās augstāk rada papildu risku, kamēr drons ir nestabilā stāvoklī bez pozīcijas uzturēšanas. GPS signāls ne vienmēr uzlabojas ar augstumu pilsētā (ēku atstarojumi).
       en: Climbing higher adds additional risk while the drone is in an unstable state without position hold. GPS signal does not reliably improve with altitude in urban environments (building reflections).
       ru: Набор высоты создаёт дополнительный риск при нестабильном состоянии дрона без удержания позиции. GPS-сигнал не обязательно улучшается с высотой в городе (отражения от зданий).
-  sourceRef: "EASA Easy Access Rules — Emergency procedures; GPS loss"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; GPS loss"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
@@ -526,7 +526,7 @@
       lv: Performance režīms palielina akumulatora patēriņu. Tā izmantošana, lai "ietaupītu laiku", paaslina problēmu, nevis to risina.
       en: Performance mode increases battery draw. Using it to "save time" worsens the problem rather than solving it.
       ru: Режим Performance увеличивает потребление батареи. Его использование для «экономии времени» усугубляет проблему, а не решает её.
-  sourceRef: "EASA Easy Access Rules — Emergency procedures; battery management"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; battery management"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -588,7 +588,7 @@
       lv: Magnētiskās traucēšanas avoti — metāla struktūras, elektroinstalācija, dzelzs bagāts grunds — pastāv gan pilsētā, gan lauku apvidos.
       en: Sources of magnetic interference — metal structures, wiring, iron-rich soil — exist in both urban and rural environments.
       ru: Источники магнитных помех — металлические конструкции, проводка, железосодержащий грунт — есть как в городе, так и в сельской местности.
-  sourceRef: "EASA Easy Access Rules — Operational procedures; UAS manufacturer manuals"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Operational procedures; UAS manufacturer manuals"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -651,7 +651,7 @@
       lv: Kill Switch aptur propellerus lidojuma laikā — drons krīt nekontrolēti. Tas ir pēdējs risinājums, nevis pirmā darbība fly-away situācijā.
       en: The kill switch stops the propellers in flight — the drone falls uncontrolled. It is a last resort, not the first action in a fly-away.
       ru: Kill Switch останавливает пропеллеры в полёте — дрон падает неуправляемо. Это крайняя мера, а не первое действие при fly-away.
-  sourceRef: "EASA Easy Access Rules — Emergency procedures; fly-away response"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; fly-away response"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -715,7 +715,7 @@
       lv: Ziņošanas pienākums nav atkarīgs no drona bojājumiem — tas ir atkarīgs no notikuma rakstura (kritiskās infrastruktūras kontakts).
       en: The reporting obligation is not dependent on drone damage — it depends on the nature of the event (critical infrastructure contact).
       ru: Обязательство по уведомлению не зависит от повреждения дрона, а от характера события (контакт с критической инфраструктурой).
-  sourceRef: "Reg (EU) 376/2014 — occurrence reporting; CAA Latvia e.caa.gov.lv/incidents"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 376/2014 — occurrence reporting; CAA Latvia e.caa.gov.lv/incidents"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: regulatory
@@ -779,7 +779,7 @@
       lv: Elektrolīnijas nav UAS ģeogrāfiskā zona, kam nepieciešama CAA atļauja. Tas ir telpiskās situācijas apzināšanās jautājums, ko pilots risina pats.
       en: Power lines are not a UAS geographical zone requiring CAA authorisation. This is a situational awareness matter for the pilot to manage.
       ru: ЛЭП не являются географической зоной UAS, требующей разрешения CAA. Это вопрос ситуационной осведомлённости пилота.
-  sourceRef: "Reg 2019/947 UAS.OPEN.060 — operational procedures; EASA UAS preflight guidelines"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 UAS.OPEN.060 — operational procedures; EASA UAS preflight guidelines"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -843,7 +843,7 @@
       lv: '"Atļauts ar nosacījumiem" nav aizliegums. Nosacīta piekļuve ļauj lidojumu, izpildot prasības.'
       en: '"Allowed with conditions" is not a prohibition. Conditional access permits flight upon meeting requirements.'
       ru: «Разрешено с условиями» — не запрет. Условный доступ разрешает полёт при выполнении требований.
-  sourceRef: "Reg 2019/947 Art. UAS.OPEN.060; BGKIS / e.caa.gov.lv geo-awareness"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. UAS.OPEN.060; BGKIS / e.caa.gov.lv geo-awareness"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -904,7 +904,7 @@
       lv: RTH ir pieejams daudzos mantotajos UAS. Prasība nav saistīta ar C klases statusu, bet ar konkrētā drona tehniskajām iespējām.
       en: RTH is available on many legacy UAS. The requirement is not tied to C-class status but to the specific drone's technical capabilities.
       ru: RTH доступен во многих унаследованных UAS. Требование не связано со статусом C-класса, а с техническими возможностями конкретного дрона.
-  sourceRef: "Reg 2019/947 UAS.OPEN.060 — fail-safe and operational procedures; EASA UAS preflight guidelines"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 UAS.OPEN.060 — fail-safe and operational procedures; EASA UAS preflight guidelines"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -968,7 +968,7 @@
       lv: Publiska vieta neatbrīvo no dokumentu nešanas pienākuma. Regulatīvās prasības attiecas uz operāciju, nevis uz zemes vai gaisa telpas juridisko statusu.
       en: A public location does not waive the document-carrying obligation. Regulatory requirements apply to the operation, not to the legal status of the land or airspace.
       ru: Общедоступное место не освобождает от обязанности иметь документы. Нормативные требования применяются к операции, а не к правовому статусу земли или воздушного пространства.
-  sourceRef: "Reg 2019/947 Art. UAS.OPEN.060; Latvian Aviation Law — inspection obligations"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. UAS.OPEN.060; Latvian Aviation Law — inspection obligations"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -1034,7 +1034,7 @@
       lv: Brīdināšana ir noderīga, bet tas nav pirmais solis. Aktīva kontroles atgūšana ir prioritāte.
       en: Warning people is useful, but it is not the first step. Active control recovery is the priority.
       ru: Предупреждение людей полезно, но не является первым шагом. Активное восстановление управления является приоритетом.
-  sourceRef: "Reg 2019/947 UAS.OPEN.060 — emergency procedures; EASA UAS operational guidelines"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 UAS.OPEN.060 — emergency procedures; EASA UAS operational guidelines"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision

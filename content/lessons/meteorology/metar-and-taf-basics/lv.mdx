@@ -1,0 +1,140 @@
+# METAR un TAF pamati dronu pilotam
+
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, kas ir METAR un TAF, pratīsi atšifrēt dronu pilotam svarīgākās daļas un izvairīsies no kļūdas uztvert laikapstākļus kā kaut ko, kas attiecas tikai uz lidostām.">
+Lielākajai daļai dronu pilotu nav vajadzīga pilna aviācijas meteoroloģija. Bet ir vajadzīgs disciplinēts veids, kā pirms pacelšanās lasīt vēju, brāzmas, redzamību, mākoņus un tendenci.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Mācību ekrāns ar atšifrētu METAR un TAF blakus neliela UAS weather go/no-go čeklistam, izcelti vēja un brāzmu dati"
+  alt="Atšifrēts METAR un TAF kā praktisks laikapstākļu brīfings dronu lidojumam"
+  caption="Laikapstākļu brīfings · metar-taf"
+/>
+
+## Kas ir šie ziņojumi
+
+**METAR** ir novērojuma ziņojums: kādi laikapstākļi bija konkrētā aerodromā konkrētajā laikā.
+
+**TAF** ir prognoze: kādi laikapstākļi tiek gaidīti noteiktā laika intervālā.
+
+Dronu pilots tos neizmanto kā perfekti precīzu starta vietas aprakstu. To vērtība ir cita: tie dod strukturētu, aviācijas līmeņa priekšstatu par vēju, brāzmām, redzamību un izmaiņām laikā.
+
+## Kuras daļas dronu pilotam ir vissvarīgākās
+
+Lielākajai daļai Atvērtās kategorijas lēmumu vispirms svarīgi ir šie lauki:
+
+- **vēja virziens un ātrums**
+- **brāzmas**
+- **redzamība**
+- **būtiski mākoņi / negaisa pazīmes**
+- **prognozes tendence tavā lidojuma logā**
+
+<Artefact
+  description="Vienkāršas METAR atšifrēšanas kartītes dronu pilotam: vējš, brāzmas, redzamība un laika maiņa."
+  caption="Kartītes · metar-atšifrēšana"
+>
+  <div className="grid gap-3 md:grid-cols-2">
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Vējš</p>
+      <p className="mt-2 text-sm text-telemetry">`18012KT` nozīmē vējš no 180 grādiem ar 12 mezgliem. Salīdzini to ar UAS rokasgrāmatu, nevis ar savu pašsajūtu.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Brāzmas</p>
+      <p className="mt-2 text-sm text-telemetry">`18012G22KT` nozīmē noturīgs 12 mezglu vējš ar brāzmām līdz 22. Mazam UAS brāzmas bieži ir svarīgākas par vidējo vēju.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Redzamība</p>
+      <p className="mt-2 text-sm text-telemetry">Slikta redzamība samazina praktisko VLOS arī tad, ja UAS tehniski vēl būtu sasniedzams.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Tendence</p>
+      <p className="mt-2 text-sm text-telemetry">TAF pasaka, vai tavā lidojuma logā apstākļi būs stabili, uzlabosies vai kļūs sliktāki.</p>
+    </div>
+  </div>
+</Artefact>
+
+## Praktisks lasīšanas ieradums
+
+Nemēģini atšifrēt visu uzreiz. Lasi šādā secībā:
+
+1. vējš un brāzmas
+2. redzamība
+3. nokrišņi vai negaisa pazīmes
+4. laika tendence tavā pacelšanās un nolaišanās logā
+
+Pēc tam salīdzini šo ainu ar:
+
+- plānoto vietu
+- plānoto attālumu un augstumu
+- UAS ražotāja limitiem
+
+## Kāpēc dronu pilotam vajag lidlauka laikapstākļus
+
+Tuvākais aerodroms nav tava precīzā pļava, bet tas gandrīz vienmēr ir daudz labāk nekā minēt.
+
+Lidlauka dati palīdz izvairīties no diviem sliktiem ieradumiem:
+
+- nenovērtēt par zemu brāzmas, jo starta punktā “šķiet mierīgi”
+- uztvert laikapstākļus kā statisku ainu, nevis tendenci laikā
+
+METAR un TAF ir lēmuma palīgi, nevis absolūta patiesība. Tiem jāuzasina spriedums, nevis jāaizvieto skatiens ārā.
+
+<Scenario title="Tuvākā aerodroma METAR rāda `18012G22KT`, bet tava UAS rokasgrāmata norāda maksimālo demonstrēto vēju 10 m/s. Starta punktā pašā šķiet mierīgs, jo vietu daļēji aizsedz ēkas. Kā pareizi to interpretēt?">
+Aizsargāts starta punkts nav pietiekams iemesls ignorēt METAR. Brāzmas līdz 22 mezgliem nozīmē reālu risku, ka UAS sastaps daudz stiprāku vēju, tiklīdz pacelsies virs vietējā aizsega vai izies no ēku “ēnas”.
+
+Pareizā reakcija ir konservatīva: izturies pret brāzmu prognozi kā operatīvi nozīmīgu un pieņem strict go/no-go lēmumu pret UAS limitu, nevis pret to, cik ērti jūties uz zemes.
+</Scenario>
+
+<MemoryAnchor
+  rule="Laikapstākļus lasi šādā secībā: vējš, brāzmas, redzamība, tendence. Pēc tam salīdzini ar UAS rokasgrāmatu un misiju, nevis ar garastāvokli."
+  hint="Mierīgs starta punkts var slēpt raupju gaisa masu tikai dažus metrus augstāk."
+/>
+
+<CommonMistakes>
+- Skatīties tikai uz noturīgo vēju un ignorēt brāzmas.
+- Uztvert METAR kā precīzu mērījumu tieši pacelšanās vietai.
+- Vienu mierīgu brīdi uztvert kā pierādījumu, ka viss lidojuma logs būs drošs.
+- Par laikapstākļiem domāt tikai pēc misijas plānošanas, nevis pirms tās.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "metar-q1",
+    stem: "Ko dronu pilotam pasaka burts `G` kodā `18012G22KT`?",
+    options: [
+      { id: "a", text: "Ka vējš garantēti paliks 12 mezglu līmenī." },
+      { id: "b", text: "Ka brāzmas var sasniegt 22 mezglus un mazam UAS tās var būt svarīgākas par vidējo vēju." },
+      { id: "c", text: "Ka vējš attiecas tikai uz lielajiem gaisa kuģiem." },
+      { id: "d", text: "Ka GPS uztveršana būs pasliktināta." },
+    ],
+    correctOptionId: "b",
+    explanation: "Brāzmu vērtība mazam UAS ir ļoti svarīga. Īsi stiprāka vēja uzplūdi var radīt vadības problēmas, pat ja noturīgais vējš šķiet pieņemams.",
+    distractorRationales: {
+      a: "Kods tieši parāda, ka vēja stiprums var pieaugt līdz brāzmu vērtībai.",
+      c: "Brāzmas ir ļoti svarīgas tieši vieglajiem droniem.",
+      d: "Vēja kodējums tieši neapraksta GPS kvalitāti.",
+    },
+  },
+  {
+    id: "metar-q2",
+    stem: "Kāpēc TAF ir noderīgs arī īsai drona misijai?",
+    options: [
+      { id: "a", text: "Tāpēc, ka tas parāda iespējamo tendenci tavā reālajā lidojuma logā." },
+      { id: "b", text: "Tāpēc, ka tas aizvieto vajadzību paskatīties ārā." },
+      { id: "c", text: "Tāpēc, ka tas dod juridisku atļauju lidot." },
+      { id: "d", text: "Tāpēc, ka tas ir vajadzīgs tikai IFR satiksmei." },
+    ],
+    correctOptionId: "a",
+    explanation: "TAF ir vērtīgs, jo dronu lidojumi notiek laikā, nevis vienā sastingušā sekundē. Tendence ir svarīga pacelšanās, uzdevuma un nolaišanās fāzēs.",
+    distractorRationales: {
+      b: "Prognoze palīdz, bet neaizvieto reālo apstākļu novērtējumu uz vietas.",
+      c: "Laikapstākļu prognoze nav juridiska atļauja.",
+      d: "TAF nav “tikai IFR” informācija; tas ir noderīgs laikapstākļu avots daudz plašāk.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["met-003"]}>
+Tev tagad ir praktisks veids, kā lasīt METAR un TAF, nekļūstot par pilna laika aviācijas meteorologu.
+
+Tālāk: saliec šo laikapstākļu valodu kopā ar go/no-go sistēmu un UAS limitiem, lai pirmslidojuma lēmums kļūtu konsekvents, nevis intuitīvs.
+</Debrief>

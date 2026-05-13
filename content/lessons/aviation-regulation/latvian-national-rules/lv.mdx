@@ -1,0 +1,132 @@
+# Latvijas nacionālie noteikumi un portāli
+
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, kuri Latvijas noteikumi ir svarīgi ikdienas Atvērtās kategorijas lidojumam, kurš portāls ko dara un kā ES noteikumi savienojas ar Latvijas praktisko piemērošanu vienā darba ķēdē.">
+ES tiesības dod rāmi. Latvija pievieno praktisko mehāniku: reģistrāciju, apdrošināšanas minimumus, ģeogrāfiskās zonas, BGKIS pieteikumus un portālus, kuros tas viss reāli notiek.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/airspace-lv-interface.png"
+  alt="CAA Latvia un airspace.lv saskarnes attēlotas kā pilota darba ķēde: reģistrācija, gaisa telpas pārbaude, BGKIS pieteikums, lidojums"
+  caption="Plūsma · Latvijas operatīvā ķēde"
+/>
+
+## Tiesiskais slāņojums vienā attēlā
+
+A1/A3 pilotam noteikumu loģika darbojas slāņos:
+
+1. **ES pamats**: Regula 2019/947 nosaka operācijas; Regula 2019/945 nosaka klases un tehniskās produkta prasības.
+2. **Latvijas ieviešana**: Aviācijas likums un MK noteikumi nosaka lokālo izpildi kvalifikācijai, apdrošināšanai, reģistram un Specifiskās kategorijas administrēšanai.
+3. **Operatīvie portāli**: `e.caa.gov.lv` apstrādā operatora reģistrāciju un BGKIS pieteikumus; `airspace.lv/drones` ir praktiskais avots, lai pārbaudītu, vai konkrētajā vietā drīkst lidot.
+
+Ja ES noteikumi pasaka, *kurā kategorijā tu atrodies*, tad Latvijas noteikumi pasaka, *kādas lokālās darbības jāizdara pirms pacelšanās*.
+
+<Artefact
+  description="Četras mācību kartītes par Latvijas noteikumu slāni Atvērtās kategorijas pilotam: reģistrācija, kvalifikācija, apdrošināšana un piekļuve gaisa telpai."
+  caption="Kartītes · nacionālo-noteikumu-struktūra"
+>
+  <div className="grid gap-3 md:grid-cols-2">
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Reģistrs</p>
+      <p className="mt-2 text-sm text-telemetry">`MK Nr. 457` un CAA portāls nosaka operatora reģistrāciju un praktisko uzskaiti ap to.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Kvalifikācija</p>
+      <p className="mt-2 text-sm text-telemetry">`MK Nr. 436` aptver tālvadības pilota kvalifikāciju. Šim projektam tas nozīmē A1/A3 teorijas ceļu un tā Latvijas ieviešanu.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Apdrošināšana</p>
+      <p className="mt-2 text-sm text-telemetry">`MK Nr. 447` nosaka obligātos civiltiesiskās atbildības minimumus Latvijā, tostarp sadalījumu starp sub-250 g un smagākām Atvērtās kategorijas operācijām.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Gaisa telpa</p>
+      <p className="mt-2 text-sm text-telemetry">`MK Nr. 248` kopā ar UAS ģeogrāfisko zonu sistēmu nosaka, kur drīkst lidot un kad nepieciešams BGKIS pieteikums.</p>
+    </div>
+  </div>
+</Artefact>
+
+## Divi portāli, kas jāzina katram pilotam Latvijā
+
+**`e.caa.gov.lv`** ir CAA Latvia portāls. Atvērtajā kategorijā to izmanto:
+
+- operatora reģistrācijai
+- eksāmenu un kvalifikācijas plūsmai
+- BGKIS pieteikumiem ierobežotajās UAS ģeogrāfiskajās zonās
+- atgadījumu ziņošanai
+
+**`airspace.lv/drones`** ir operatīvā karte. Tā atbild uz lauka jautājumu: *vai šeit drīkst lidot, ar kādiem nosacījumiem, un vai nepieciešams BGKIS?*
+
+Šie portāli viens otru papildina. `airspace.lv` pasaka zonas loģiku; `e.caa.gov.lv` ir vieta, kur tu izdari regulēto darbību.
+
+## Praktiska Atvērtās kategorijas ķēde Latvijā
+
+Normālam lidojumam Latvijā secība ir šāda:
+
+1. pārliecinies, ka operatora reģistrācija ir spēkā
+2. pārliecinies, ka tev pašam ir vajadzīgā kvalifikācija
+3. pārliecinies par apdrošināšanu, ja tava UAS un operācija to prasa
+4. pārbaudi vietu `airspace.lv/drones`
+5. iesniedz BGKIS `e.caa.gov.lv`, ja zona to prasa
+6. lido tikai apstiprinātajā laikā un vienlaikus paliec Atvērtās kategorijas iekšējās robežās
+
+Pēdējais punkts ir svarīgs: **BGKIS apstiprinājums neļauj pārkāpt Atvērtās kategorijas robežas**. Tas neatļauj BVLOS, nelidojumu virs pulcēšanās vai rutīnas lidojumu virs 120 m AGL.
+
+<Scenario title="Lietuvas operators, kas ir reģistrēts savā mītnes valstī, grib filmēt Latvijā. Viņam jau ir operatora ID un A1/A3 kompetence. Vai tik un tā jāskatās Latvijas portāli?">
+**Jā.** ES reģistrācija un kompetence darbojas visā EASA zonā, bet lokālie darbības nosacījumi nepazūd. Pilotam tik un tā jāpārbauda Latvijas UAS ģeogrāfiskās zonas, jāievēro Latvijas ierobežojumi un jāiesniedz BGKIS, ja izvēlētā vieta to prasa.
+
+Pārrobežu lidojums nenozīmē “bez noteikumiem”. Tas nozīmē vienu ES rāmi plus lokālo piemērošanu tajā vietā, kur notiek lidojums.
+</Scenario>
+
+<MemoryAnchor
+  rule="ES noteikumi definē kategoriju. Latvijas noteikumi definē lokālo izpildi. `airspace.lv` pasaka nosacījumus; `e.caa.gov.lv` ir vieta, kur tu uz tiem reaģē."
+  hint="Reģistrācija, kvalifikācija, apdrošināšana, ģeogrāfiskās zonas, BGKIS — tā ir Latvijas lidojuma ķēde."
+/>
+
+<CommonMistakes>
+- Uztvert `airspace.lv/drones` kā izvēles avotu, jo ražotāja lietotne rāda “zaļu” zonu.
+- Domāt, ka ES reģistrācija noņem pienākumu ievērot Latvijas geozonas un BGKIS procedūras.
+- Uztvert BGKIS apstiprinājumu kā atļauju pārsniegt 120 m vai lidot BVLOS Atvērtajā kategorijā.
+- Apskatīt Latvijas noteikumus vienu reizi un pēc tam paļauties uz atmiņu, nevis aktuālu portāla informāciju.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "lat-rules-q1",
+    stem: "Kurš portāls atbild uz praktisko jautājumu “vai šajā konkrētajā vietā Latvijā drīkst lidot un ar kādiem zonas nosacījumiem”?",
+    options: [
+      { id: "a", text: "Tikai ražotāja lietotne." },
+      { id: "b", text: "airspace.lv/drones." },
+      { id: "c", text: "Jebkura laikapstākļu lietotne ar kartes slāni." },
+      { id: "d", text: "Vispārīgs meklētāja rezultāts." },
+    ],
+    correctOptionId: "b",
+    explanation: "Praktiskai vietas pārbaudei Latvijā `airspace.lv/drones` ir operatīvā karte UAS ģeogrāfiskajām zonām un to nosacījumiem.",
+    distractorRationales: {
+      a: "Ražotāja lietotnē var būt geofence, bet tā nav Latvijas zonu juridiski saistošais avots.",
+      c: "Laikapstākļu kartes nedefinē UAS ģeogrāfisko zonu likumību.",
+      d: "Meklētāja rezultāts nav regulēts operatīvais avots.",
+    },
+  },
+  {
+    id: "lat-rules-q2",
+    stem: "Pilots saņem BGKIS apstiprinājumu ierobežotai zonai. Ko šis apstiprinājums NEDARA?",
+    options: [
+      { id: "a", text: "Apstiprina lidojuma logu konkrētajai zonai." },
+      { id: "b", text: "Aizvieto Atvērtās kategorijas robežas, piemēram, VLOS un 120 m griestus." },
+      { id: "c", text: "Fiksē, ka pilots ir iesniedzis prasīto lokālo pieteikumu." },
+      { id: "d", text: "Ļauj zonas pārvaldniekam noteikt piekļuves nosacījumus teritorijai." },
+    ],
+    correctOptionId: "b",
+    explanation: "BGKIS apstiprinājums ir lokāls zonas piekļuves mehānisms. Tas neaizvieto Atvērtās kategorijas iekšējās robežas: VLOS, 120 m AGL, bez bīstamām kravām, bez pārlidojuma virs pulcēšanās.",
+    distractorRationales: {
+      a: "Laika loga apstiprināšana ir tieši tas, ko BGKIS dara ierobežotās zonās.",
+      c: "Pieteikuma/apstiprinājuma plūsma ir daļa no BGKIS administratīvās funkcijas.",
+      d: "Piekļuve ierobežotajai zonai ir viens no iemesliem, kāpēc BGKIS vispār eksistē.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ar-003"]}>
+Tev tagad ir viena darba ķēde Latvijas specifiskajiem noteikumiem.
+
+Tālāk: atgriežamies pie operatīvās izpildes — kā profesionāli pabeigt lidojumu pēc nosēšanās, ne tikai pirms pacelšanās.
+</Debrief>

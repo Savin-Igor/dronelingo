@@ -51,7 +51,7 @@
       lv: 376/2014 ir par atgadījumu ziņošanu civilajā aviācijā. Tas nav UAS operāciju noteikumu avots.
       en: 376/2014 is about occurrence reporting in civil aviation. It is not the source of UAS operating rules.
       ru: 376/2014 — об уведомлениях о происшествиях в гражданской авиации. Это не источник правил эксплуатации UAS.
-  sourceRef: "Reg (EU) 2019/947 — Operations; Reg (EU) 2019/945 — Technical; Reg 2018/1139 — Basic"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 — Operations; Reg (EU) 2019/945 — Technical; Reg 2018/1139 — Basic"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -108,7 +108,7 @@
       lv: Sertificētā kategorija neizmanto SORA mehānismu — tā ir augstāka riska procedūra. SORA/STS ir tikai Specifiskās kategorijas mehānismi.
       en: The Certified category does not use the SORA mechanism — it is a higher-risk procedure. SORA/STS belongs only to the Specific category.
       ru: Сертифицированная категория не использует механизм SORA — это процедура более высокого риска. SORA/STS — только для Специальной.
-  sourceRef: "Reg (EU) 2019/947 Art. 5; AMC1 Article 11 — SORA"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. 5; AMC1 Article 11 — SORA"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -163,7 +163,7 @@
       lv: 100 m ir pat tuvu pareizajai vērtībai, bet regulā ir tieši 120 m. Tā ir maza atšķirība, kas eksāmenā ir izšķiroša.
       en: 100 m is close to the right value, but the regulation says exactly 120 m. The 20 m difference is decisive in the exam.
       ru: 100 м близко к верному значению, но в регламенте именно 120 м. Разница в 20 м для экзамена принципиальна.
-  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020/030/040(2)"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.020/030/040(2)"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: factual
@@ -221,7 +221,7 @@
       lv: 2018/1139 ir EASA pamatregula. UAS klašu tehniskās prasības ir 945, deleģēta regula uz pamatregulas pamata.
       en: 2018/1139 is the EASA basic regulation. UAS class technical requirements are in 945, a delegated regulation under the basic regulation.
       ru: 2018/1139 — базовый регламент EASA. Технические требования к классам UAS — в 945, делегированном регламенте на основе базового.
-  sourceRef: "Reg (EU) 2019/945 — Technical requirements for UAS"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/945 — Technical requirements for UAS"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -276,7 +276,7 @@
       lv: MK Nr. 447 reglamentē civiltiesisko apdrošināšanu, nevis pilota kvalifikāciju.
       en: Cabinet Reg. No. 447 governs civil-liability insurance, not pilot qualification.
       ru: Правила КМ № 447 регулируют гражданскую страховку, а не квалификацию пилота.
-  sourceRef: "MK noteikumi Nr. 436 (Latvia) — UAS pilot qualification"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — MK noteikumi Nr. 436 (Latvia) — UAS pilot qualification"
   difficulty: 3
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -338,7 +338,7 @@
       lv: Nav noteiktas minimālās stundu prasības A2 sertifikātam. Pašdeklarācija nav atkarīga no skaitliski uzraudzīta lidojuma laika.
       en: There is no minimum flight-hour requirement for the A2 certificate. The self-declaration is not contingent on a numerically audited flight time.
       ru: Для сертификата A2 нет требований по минимальному налёту. Самодекларация не зависит от подтверждённого количества часов налёта.
-  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.030; EASA AMC1 UAS.OPEN.030"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. UAS.OPEN.030; EASA AMC1 UAS.OPEN.030"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -400,7 +400,7 @@
       lv: Strādnieku piekrišana A3 kontekstā neietekmē minimālās distanču prasības. A3 distanču noteikumi ir absolūti — tos nevar aizstāt ar privātu piekrišanu.
       en: Worker consent in the A3 context does not affect the minimum distance requirements. A3 distance rules are absolute — they cannot be replaced by private consent.
       ru: Согласие рабочих в контексте A3 не влияет на минимальные требования к дистанции. Правила расстояний A3 абсолютны — их нельзя заменить частным согласием.
-  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.030/040; UAS.OPEN.030(2)"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.030/040; UAS.OPEN.030(2)"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
@@ -463,7 +463,7 @@
       lv: Juridiskas personas nav atbrīvotas — tās ir galvenais reģistrācijas subjekts kā UAS operatori.
       en: Legal entities are not exempt — they are the primary registration subject as UAS operators.
       ru: Юридические лица не освобождены — они являются основным субъектом регистрации как операторы UAS.
-  sourceRef: "Reg (EU) 2019/947 Art. 2(2) — definition of UAS operator; Art. 14 — registration"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. 2(2) — definition of UAS operator; Art. 14 — registration"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -525,7 +525,7 @@
       lv: 19 m/s ātruma limits ir C0, nevis C4 prasība. C4 (< 25 kg) nav šāds specifisks ātruma limits.
       en: The 19 m/s speed cap is a C0, not a C4, requirement. C4 (< 25 kg) has no such specific speed limit.
       ru: Предел 19 м/с — требование C0, а не C4. C4 (< 25 кг) не имеет такого конкретного ограничения скорости.
-  sourceRef: "Reg (EU) 2019/945 Annex Part 5 — C4 requirements"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/945 Annex Part 5 — C4 requirements"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
@@ -584,7 +584,7 @@
       lv: Atvērtajai kategorijai ir stingra 25 kg masa. Tā nav bezmasa kategorija.
       en: The Open category has a firm 25 kg mass cap. It is not a mass-unlimited category.
       ru: Открытая категория имеет жёсткий предел в 25 кг. Это не категория без ограничений по массе.
-  sourceRef: "Reg (EU) 2019/947 Art. 4(1) — Open category definition"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. 4(1) — Open category definition"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: factual
@@ -648,7 +648,7 @@
       lv: Operatora reģistrācija ir vienreizēja vai periodiska administrācijas procedūra, nevis katras lidojuma atļauja. Tā nav lidojuma atļauja.
       en: Operator registration is a one-time or periodic administrative procedure, not a per-flight permit. It is not a flight permit.
       ru: Регистрация оператора — это единовременная или периодическая административная процедура, а не разрешение на каждый полёт. Это не разрешение на полёт.
-  sourceRef: "Reg 2019/947 Art. 14 — UAS operator registration"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. 14 — UAS operator registration"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -709,7 +709,7 @@
       lv: 2 kg nav nevienas C klases robežvērtība. Klases ir C0 (< 250 g), C1 (< 900 g), C2 (< 4 kg), C3 (< 25 kg), C4 (< 25 kg ar papildu apstākļiem).
       en: 2 kg is not a threshold for any C class. The classes are C0 (< 250 g), C1 (< 900 g), C2 (< 4 kg), C3 (< 25 kg), C4 (< 25 kg with additional conditions).
       ru: '2 кг не является порогом ни для одного класса C. Классы: C0 (< 250 г), C1 (< 900 г), C2 (< 4 кг), C3 (< 25 кг), C4 (< 25 кг с дополнительными условиями).'
-  sourceRef: "Reg 2019/945 Part 2 — C1 class definition; Reg 2019/947 A1 sub-category"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/945 Part 2 — C1 class definition; Reg 2019/947 A1 sub-category"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -771,7 +771,7 @@
       lv: Vecuma prasība pastāv — 16 gadi par A1/A3 sertifikātu. Bez prasības ir tikai UAS bez sensora < 250 g.
       en: An age requirement exists — 16 years for the A1/A3 certificate. Only UAS without sensor < 250 g have no age requirement.
       ru: Возрастное требование существует — 16 лет для сертификата A1/A3. Только UAS без датчика < 250 г не имеют возрастного требования.
-  sourceRef: "Reg 2019/947 Art. UAS.OPEN.020 — minimum age"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. UAS.OPEN.020 — minimum age"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -834,7 +834,7 @@
       lv: Nav 1 gada "pagaidām aktīvas" reģistrācijas perioda pēc UAS nodošanas. Atjaunināšanas pienākums ir tūlītējs.
       en: There is no 1-year "temporarily active" registration period after UAS transfer. The update obligation is immediate.
       ru: Нет 1-годичного периода «временно активной» регистрации после передачи UAS. Обязательство по обновлению является немедленным.
-  sourceRef: "Reg 2019/947 Art. 14 — operator registration obligations"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. 14 — operator registration obligations"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -895,7 +895,7 @@
       lv: 3 gadi nav norādīts kā A1/A3 sertifikāta derīguma periods Reg 2019/947. Pareizais periods ir 5 gadi.
       en: 3 years is not stated as the A1/A3 certificate validity period in Reg 2019/947. The correct period is 5 years.
       ru: 3 года не указаны как срок действия сертификата A1/A3 в Регл. 2019/947. Правильный период — 5 лет.
-  sourceRef: "Reg 2019/947 Art. UAS.OPEN.020 — certificate validity period"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. UAS.OPEN.020 — certificate validity period"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -957,7 +957,7 @@
       lv: Masa ir saistīta ar klasi (C0, C1, C2 u.c.), bet klase nosaka apakškategoriju, nevis masa tieši.
       en: Mass is related to class (C0, C1, C2, etc.) but class determines sub-category, not mass directly.
       ru: Масса связана с классом (C0, C1, C2 и т.д.), но класс определяет подкатегорию, а не масса напрямую.
-  sourceRef: "Reg 2019/947 Art. UAS.OPEN.020/030/040 — sub-category requirements"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. UAS.OPEN.020/030/040 — sub-category requirements"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -1020,7 +1020,117 @@
       lv: Papīra formu iesniegšana CAA Latvia birojā nav prasīta — reģistrācija ir pilnībā elektroniski caur e.caa.gov.lv.
       en: Submitting a paper form at the CAA Latvia office is not required — registration is entirely electronic via e.caa.gov.lv.
       ru: Подача бумажной формы в офис CAA Latvia не требуется — регистрация полностью электронная через e.caa.gov.lv.
-  sourceRef: "CAA Latvia — e.caa.gov.lv operator registration; Reg 2019/947 Art. 14"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — CAA Latvia — e.caa.gov.lv operator registration; Reg 2019/947 Art. 14"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: ar-018
+  stem:
+    lv: Kādas ir trīs UAS operāciju kategorijas ES regulējumā?
+    en: What are the three UAS operation categories in the EU framework?
+    ru: Какие три категории операций UAS существуют в регулировании ЕС?
+  options:
+    - id: a
+      text:
+        lv: Atvērtā, Specifiskā, Sertificētā.
+        en: Open, Specific, Certified.
+        ru: Открытая, Специальная, Сертифицированная.
+    - id: b
+      text:
+        lv: Privātā, Komerciālā, Militārā.
+        en: Private, Commercial, Military.
+        ru: Частная, Коммерческая, Военная.
+    - id: c
+      text:
+        lv: Dienas, Nakts, Miglas.
+        en: Day, Night, Fog.
+        ru: Дневная, Ночная, Туманная.
+    - id: d
+      text:
+        lv: A1, A2, A3.
+        en: A1, A2, A3.
+        ru: A1, A2, A3.
+  correctOptionId: a
+  explanation:
+    lv: >
+      ES sistēmā operācijas tiek sadalītas Open / Specific / Certified pēc riska līmeņa.
+      A1/A2/A3 ir Open kategorijas apakškategorijas.
+    en: >
+      The EU framework groups operations into Open / Specific / Certified based on risk.
+      A1/A2/A3 are Open subcategories.
+    ru: >
+      В системе ЕС операции делятся на Open / Specific / Certified по риску.
+      A1/A2/A3 — подкатегории Open.
+  distractorRationales:
+    b:
+      lv: Kategorijas nav “privāts/komerciāls”; tās ir risku balstītas.
+      en: Categories are not “private/commercial”; they are risk-based.
+      ru: Категории не «частная/коммерческая», а риск‑ориентированные.
+    c:
+      lv: Diennakts laiks nav kategorija; tas ir operācijas nosacījums.
+      en: Time of day is not a category; it is an operating condition.
+      ru: Время суток — не категория, а условие выполнения.
+    d:
+      lv: A1/A2/A3 ir apakškategorijas Open kategorijā, nevis visas sistēmas kategorijas.
+      en: A1/A2/A3 are subcategories within Open, not the full category set.
+      ru: A1/A2/A3 — подкатегории Open, а не весь набор категорий.
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Open/Specific/Certified categories; definitions"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: ar-019
+  stem:
+    lv: Kura regula galvenokārt nosaka UAS tehniskās prasības un CE klašu marķējumu?
+    en: Which regulation primarily sets UAS technical requirements and CE class marking?
+    ru: Какой регламент в основном задаёт технические требования и CE‑классы UAS?
+  options:
+    - id: a
+      text:
+        lv: Regula (ES) 2019/945.
+        en: Regulation (EU) 2019/945.
+        ru: Регламент (ЕС) 2019/945.
+    - id: b
+      text:
+        lv: Regula (ES) 2019/947.
+        en: Regulation (EU) 2019/947.
+        ru: Регламент (ЕС) 2019/947.
+    - id: c
+      text:
+        lv: Regula (ES) 2018/1139.
+        en: Regulation (EU) 2018/1139.
+        ru: Регламент (ЕС) 2018/1139.
+    - id: d
+      text:
+        lv: Regula (ES) 376/2014.
+        en: Regulation (EU) 376/2014.
+        ru: Регламент (ЕС) 376/2014.
+  correctOptionId: a
+  explanation:
+    lv: >
+      2019/945 attiecas uz UAS produktu prasībām un klašu marķējumu (C0–C6).
+      2019/947 attiecas uz operācijām un procedūrām.
+    en: >
+      2019/945 covers product requirements and class marking (C0–C6).
+      2019/947 covers operations and procedures.
+    ru: >
+      2019/945 — требования к продукту и маркировке классов (C0–C6).
+      2019/947 — правила эксплуатации.
+  distractorRationales:
+    b:
+      lv: 2019/947 ir operāciju regula, nevis produktu (CE klašu) regula.
+      en: 2019/947 is about operations, not product class marking.
+      ru: 2019/947 — про эксплуатацию, а не CE‑классы.
+    c:
+      lv: 2018/1139 ir EASA pamatregula, bet ne detalizētas UAS klašu prasības.
+      en: 2018/1139 is the EASA basic regulation, not detailed UAS class requirements.
+      ru: 2018/1139 — базовый регламент EASA, не детализация классов UAS.
+    d:
+      lv: 376/2014 ir par atgadījumu ziņošanu, ne par UAS klasēm.
+      en: 376/2014 is about occurrence reporting, not UAS classes.
+      ru: 376/2014 — про сообщения об инцидентах, не про классы UAS.
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — UAS class requirements and marking"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory

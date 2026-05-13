@@ -1,0 +1,17 @@
+slug: attention-and-fixation
+ord: 3
+title:
+  lv: Uzmanība, skenēšana un fiksācija
+  en: Attention, scanning and fixation
+  ru: Внимание, сканирование и фиксация
+sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — human performance limitations; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — vision, perception and FPV tunnel vision"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

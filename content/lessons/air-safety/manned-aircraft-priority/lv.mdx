@@ -1,0 +1,121 @@
+# Prioritāte pilotējamam gaisa kuģim
+
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, kāpēc UAS praksē nekad nav prioritātes pār pilotējamu gaisa kuģi, kā laikus atpazīt konfliktu un kāda tūlītēja darbība visātrāk samazina risku.">
+Drošākais noteikums jauktā gaisa telpā ir arī vienkāršākais: ja kadrā parādās pilotējams gaisa kuģis, tavs uzdevums ir padarīt savu dronu par mazāku problēmu, nevis diskutēt par prioritāti.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Mācību aina: neliels drons zemu virs lauka, tālumā tuvojas helikopters, pilots tūlīt samazina augstumu un virza UAS uz drošu nolaišanās punktu"
+  alt="Drona pilots dod ceļu tuvojošam helikopteram, samazinot augstumu un nosēžoties drošā vietā"
+  caption="Mācību aina · dod-ceļu"
+/>
+
+## Kāpēc noteikums ir tik stingrs
+
+Atvērtajā kategorijā tālvadības pilotam jāizvairās no konfliktiem ar citiem gaisa telpas lietotājiem. Praksē tas nozīmē: UAS dod ceļu pilotējamam gaisa kuģim.
+
+Iemesls nav simbolisks. Helikopters vai vieglā lidmašīna:
+
+- pārvietojas ātrāk nekā tavs UAS
+- var būt noslogotā režīmā vai lidot zemu tāda iemesla dēļ, ko tu neredzi
+- var nepamanīt mazu dronu pietiekami agri drošai izvairīšanai
+
+Pilots, kurš domā “viņi mani noteikti ieraudzīs”, visu drošības modeli balsta uz otra gaisa kuģa veiksmi.
+
+<Artefact
+  description="Trīs soļu konflikta reakcijas kartītes: pamanīt, radīt separāciju un nolaisties, ja nepieciešams."
+  caption="Kartītes · konflikta-reakcija"
+>
+  <div className="grid gap-3 md:grid-cols-3">
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Pamani</p>
+      <p className="mt-2 text-sm text-telemetry">Pamāni gaisa kuģi agrīni: skaņa, kustība, pieejas trajektorija, novērotāja brīdinājums vai vizuāls kontakts.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Atdali</p>
+      <p className="mt-2 text-sm text-telemetry">Samazini augstumu, attālini UAS no iespējamās konflikta trajektorijas un pārtrauc nebūtiskos uzdevumus.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Nolaidies</p>
+      <p className="mt-2 text-sm text-telemetry">Ja ir kaut mazākās šaubas par separāciju, nolaidies. Pārtraukta misija ir lēta; konflikts gaisā nav.</p>
+    </div>
+  </div>
+</Artefact>
+
+## Ko nedarīt
+
+Kad parādās pilotējams gaisa kuģis, biežākie nepareizie instinkti ir:
+
+- kāpt augstāk, lai “būtu labāk redzams”
+- lidot tuvāk, lai saprastu, kas tas ir
+- pabeigt kadru un tikai tad reaģēt
+- skatīties kartē, nevis vizuāli lidot
+
+Visas četras reakcijas palielina risku. Prioritāte nav ziņkārība vai kadrs. Prioritāte ir samazināt mainīgo skaitu gaisā.
+
+## Praktiskais lēmums
+
+Ja vari saglabāt acīmredzamu separāciju un droši turpināt, dari to konservatīvi. Ja ir kaut mazākās šaubas, nolaidies.
+
+Šis ir viens no tiem brīžiem, kad izlēmīga nolaišanās ir profesionālāka nekā tehniski “varbūt vēl drīkstētu” turpināšana.
+
+<Scenario title="Tu lido 55 m AGL virs atklātas vietas. Tu sadzirdi helikopteru, vēl pirms saproti virzienu. Novērotājs norāda pa kreisi un saka, ka tas tuvojas zemu, bet vēl tālu. Kāda ir pareizā reakcija?">
+Uzreiz pārtrauc uzdevumu, samazini augstumu, ja vajag attālini UAS no iespējamās trajektorijas un esi gatavs tūlītējai nolaišanai. Ja pieejas trajektorija nav skaidra, nolaidies bez kavēšanās.
+
+Svarīgākais nav “uzvarēt” separācijas spriedumu. Svarīgākais ir samazināt konfliktu, kamēr situācija vēl ir vienkārša.
+</Scenario>
+
+<MemoryAnchor
+  rule="Pilotējams gaisa kuģis kadrā = tavs uzdevums sarūk līdz separācijai vispirms, misijai pēc tam."
+  hint="Nekāp, lai būtu redzams. Samazini augstumu, atdali, nolaidies, ja ir šaubas."
+/>
+
+<CommonMistakes>
+- Domāt, ka tukša ainava zemāk noņem konfliktu risku ar gaisa kuģi augstāk.
+- Kāpt augstāk, lai “dronu labāk pamanītu”.
+- Mēģināt pabeigt kadru, nevis izbeigt konfliktu.
+- Gaidīt, līdz precīzi identificēsi gaisa kuģi, pirms sāksi rīkoties.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "manned-q1",
+    stem: "Kāds ir drošākais pirmais princips, kad pie darbības zonas parādās pilotējams gaisa kuģis?",
+    options: [
+      { id: "a", text: "Turpināt filmēt un vērot karti, līdz gaisa kuģis pietuvojas." },
+      { id: "b", text: "Kāpt augstāk, lai dronu būtu vieglāk pamanīt." },
+      { id: "c", text: "Nekavējoties samazināt konfliktu: samazināt augstumu, atdalīties un nolaisties, ja ir šaubas." },
+      { id: "d", text: "Pieņemt, ka otram pilotam vienmēr būs labāka situācijas apzināšanās." },
+    ],
+    correctOptionId: "c",
+    explanation: "Drošā atbilde ir nekavējoties samazināt konfliktu: pārtraukt nebūtisko, samazināt augstumu, radīt separāciju un nolaisties, ja saglabājas nenoteiktība.",
+    distractorRationales: {
+      a: "Vērošana viena pati nav pietiekama, ja tā aizkavē riska samazināšanu.",
+      b: "Kāpšana bieži palielina konflikta potenciālu un pasliktina separāciju.",
+      d: "Drošību nevar balstīt uz cita pilota situācijas apzināšanos.",
+    },
+  },
+  {
+    id: "manned-q2",
+    stem: "Kāpēc kāpšana augstāk, lai “būtu redzamāks”, parasti ir slikta reakcija?",
+    options: [
+      { id: "a", text: "Tāpēc, ka tas var novest UAS tuvāk konflikta trajektorijai, nevis tālāk no tās." },
+      { id: "b", text: "Tāpēc, ka helikopteriem juridiski vienmēr jānovēršas pirmajiem." },
+      { id: "c", text: "Tāpēc, ka droni nedrīkst mainīt augstumu pēc pacelšanās." },
+      { id: "d", text: "Tāpēc, ka citus gaisa kuģus drīkst meklēt tikai novērotājs." },
+    ],
+    correctOptionId: "a",
+    explanation: "Kāpšana bieži palielina risku, jo UAS nonāk tuvāk tai vertikālajai joslai, kur konflikts var attīstīties. Augstuma samazināšana parasti vienkāršo separāciju.",
+    distractorRationales: {
+      b: "Drošākā pieeja nav pieņemt, ka otrs gaisa kuģis dos ceļu.",
+      c: "Droni drīkst mainīt augstumu; jautājums ir, vai izvēlētā darbība samazina risku.",
+      d: "Novērotājs palīdz, bet par drošu konflikta reakciju joprojām atbild pilots.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["as-004"]}>
+Tev tagad ir praktisks noteikums jauktas gaisa telpas konfliktam: separācija vispirms, skaidrojumi pēc tam.
+
+Tālāk: atpakaļ pie privātuma uz zemes, kur legāls lidojums joprojām var kļūt par nelegālu publikāciju, ja kadrā ir identificējami cilvēki.
+</Debrief>

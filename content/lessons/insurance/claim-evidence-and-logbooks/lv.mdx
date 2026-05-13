@@ -1,0 +1,136 @@
+# Prasījumi, pierādījumi un žurnāli
+
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, ko dokumentēt pēc incidenta, kāpēc apdrošinātājam un regulatoram vajag vienus un tos pašus faktus dažādu iemeslu dēļ, un kā disciplinēts žurnāls sargā operatoru vēl pirms strīda.">
+Apdrošināšana kļūst noderīga tikai tad, ja operators spēj pierādīt, kas notika, kad tas notika un kādā stāvoklī bija lidaparāts un operācija pirms notikuma.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Incident documentation scene: drone case, damaged propeller, tablet with flight log, insurance form, checklist for photos, witness details, battery record"
+  alt="Operators pēc drona incidenta veido pierādījumu paketi"
+  caption="Treniņa aina · incidenta pierādījumu pakete"
+/>
+
+## Kāpēc dokumentēšana ir svarīga
+
+Pēc incidenta pierādījumus var prasīt trīs dažādas puses:
+
+- **apdrošinātājs** — lai izlemtu, vai prasījums ir segts;
+- **regulators** — lai saprastu, vai piemērojami ziņošanas pienākumi;
+- **klients** — lai novērtētu kavējumu, zaudējumus vai datu zudumu.
+
+Ja operatoram ir slikti ieraksti, viens un tas pats notikums kļūst grūtāk aizstāvams visos trīs virzienos.
+
+<Artefact
+  description="Pierādījumu paketes uzbūve: vietas foto, lidaparāta sērijas numurs, baterijas ID un ciklu skaits, lidojuma žurnāli, ekrānšāviņi, liecinieku vārdi, laikapstākļi un gaisa telpas statuss, laika līnijas piezīmes."
+  caption="Matrica · minimālie-incidenta-pierādījumi"
+>
+  <div className="grid gap-3 md:grid-cols-2 text-sm">
+    {[
+      ["Vieta un bojājumi", "Lidaparāta, propelleru, kravas, apkārtnes un trieciena pēdu foto."],
+      ["Lidaparāta identitāte", "Sērijas numurs, klases marķējums, reģistrācija un operatora dati."],
+      ["Baterijas ieraksts", "Baterijas ID, uzlādes līmenis, ciklu skaits, brīdinājumi, glabāšanas stāvoklis."],
+      ["Digitālie žurnāli", "Lidojuma žurnāla eksports, lietotnes ekrānšāviņi, telemetrijas brīdinājumi, kartes statuss."],
+      ["Vide", "Laikapstākļi, gaisa telpas statuss, zonas tips, atļaujas statuss."],
+      ["Cilvēka laika līnija", "Kas lidoja, kad, kas mainījās, liecinieki, tūlītējās darbības."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## Trīs ieraksti, kas vēlāk ietaupa laiku
+
+**1. Lidojuma žurnāls.**  
+Datums, vieta, pilots, lidaparāts, mērķis, izmantotās baterijas, anomālijas un vai lidojums noslēdzās normāli.
+
+**2. Bateriju žurnāls.**  
+Baterijas identitāte, ciklu skaits, uzpūšanās, glabāšanas problēmas, neparasta karšana un izņemšanas datums.
+
+**3. Tehniskās apkopes žurnāls.**  
+Propelleru maiņas, programmatūras stāvoklis, remonti, kravas maiņas un zināmie ierobežojumi.
+
+Tie ir garlaicīgi ieraksti līdz brīdim, kad kaut kas noiet greizi. Pēc tam tie kļūst par ātrāko veidu, kā parādīt, ka operators strādāja organizēti.
+
+## Ko darīt uzreiz pēc incidenta
+
+1. vispirms padari vietu drošu;
+2. saglabā lidaparātu un bojātās detaļas;
+3. pirms pārvietošanas uzņem foto;
+4. agri eksportē vai saglabā digitālos žurnālus un ekrānšāviņus;
+5. pieraksti laika līniju, kamēr atmiņa ir svaiga;
+6. vajadzības gadījumā paziņo apdrošinātājam, regulatoram vai klientam.
+
+## Nestāsti "glītāku stāstu"
+
+Bieža kļūda ir sakopt lidaparātu, uzlādēt baterijas vai pārrakstīt notikuma gaitu vēl pirms dokumentēšanas. Tas iznīcina pierādījumus un vājina gan drošības mācību, gan prasījuma ticamību.
+
+<Scenario title="Dronam zema ātruma pieejā trāpot apgaismes stabā, neviens nav cietis, bet bojāta viena roka, gimbals un baterija. Pilots grib ātri sapakoties, jo klients gaida. Kas jādara vispirms?">
+Vispirms padari vietu drošu un pārliecinies, ka nav otrreizēja riska. Pēc tam dokumentē pirms sakopšanas:
+
+- nofotografē lidaparātu tur, kur tas apstājās, ja tas ir droši;
+- fiksē stabu, apkārtni un trieciena pēdas;
+- pieraksti baterijas ID un brīdinājuma stāvokli;
+- saglabā lidojuma žurnālus un ekrānšāviņus;
+- pieraksti lieciniekus un precīzu laiku.
+
+Ātra pakošanās šķiet efektīva, bet tā iznīcina pierādījumus, kas vajadzīgi apdrošināšanai, ziņošanai un vēlākai mācībai.
+</Scenario>
+
+<MemoryAnchor
+  rule="Vispirms droša vieta. Tad sasaldē faktus: foto, žurnāli, baterija, laika līnija, liecinieki."
+  hint="Ja vispirms pārvieto un tikai pēc tam dokumentē, parasti pazaudē labākos pierādījumus."
+/>
+
+<CommonMistakes>
+- Uzlādēt vai nomainīt bateriju, pirms nofiksēts tās stāvoklis.
+- Remontēt vai tīrīt lidaparātu pirms bojājumu fotografēšanas.
+- Glabāt lidojuma žurnālus tikai lietotnē un neeksportēt tos pēc incidenta.
+- Rakstīt piezīmes vairākas stundas vēlāk no atmiņas, nevis uzreiz uz vietas.
+- Uztvert klienta informēšanu kā steidzamāku par pierādījumu paketes saglabāšanu.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "in-cl1",
+    stem: "Kurš ieraksts ir visnoderīgākais, lai parādītu, ka bojātai baterijai jau pirms incidenta bija brīdinājuma pazīmes?",
+    options: [
+      { id: "a", text: "Klienta rēķins." },
+      { id: "b", text: "Bateriju žurnāls ar ID, ciklu skaitu un stāvokļa piezīmēm." },
+      { id: "c", text: "Pilota ieraksts sociālajos tīklos." },
+      { id: "d", text: "Drona iepakojuma kaste." },
+    ],
+    correctOptionId: "b",
+    explanation: "Bateriju žurnāls ir strukturēts ieraksts, kas savieno konkrētu bateriju ar tās lietošanas vēsturi un stāvokli. Tas ir galvenais pierādījums, ja incidentā svarīga ir baterijas veselība.",
+    distractorRationales: {
+      a: "Rēķins pierāda komerciālo darbu, nevis baterijas stāvokli.",
+      c: "Sociālo tīklu ieraksts nav uzticams tehnisks ieraksts.",
+      d: "Iepakojums var identificēt modeli, bet ne konkrētās baterijas ekspluatācijas stāvokli.",
+    },
+  },
+  {
+    id: "in-cl2",
+    stem: "Kāda ir labākā tūlītējā darbība pēc drona trieciena bez cietušajiem, tiklīdz vieta ir droša?",
+    options: [
+      { id: "a", text: "Uzlādēt bateriju, lai redzētu, vai tā vēl darbojas." },
+      { id: "b", text: "Uzņemt vietas foto un saglabāt žurnālus pirms sakopšanas." },
+      { id: "c", text: "Dzēst video, lai aizsargātu privātumu." },
+      { id: "d", text: "Nomainīt propelleru, lai dronu varētu uzreiz notestēt vēlreiz." },
+    ],
+    correctOptionId: "b",
+    explanation: "Kad vieta ir droša, nākamā prioritāte ir saglabāt pierādījumus: vietas foto, lietotnes žurnālus, brīdinājumus, baterijas identitāti un laika līnijas detaļas, pirms tie pazūd.",
+    distractorRationales: {
+      a: "Uzlādēšana maina pierādījumu stāvokli un var radīt papildu drošības risku.",
+      c: "Svarīgie dati vispirms jāsaglabā; privātuma apstrāde seko juridiskajam procesam.",
+      d: "Remonts pirms dokumentēšanas iznīcina pierādījumus.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["in-003"]}>
+Tu tagad zini, kā izveidot pierādījumu paketi, kas palīdz apdrošināšanai, ziņošanai un profesionālajai uzticamībai.
+
+Tālāk: sasaisti apdrošināšanas loģiku ar operācijām — profilakse ir lētāka par prasījumu, bet tīra dokumentācija neļauj sliktai dienai pārvērsties vēl sliktākā.
+</Debrief>

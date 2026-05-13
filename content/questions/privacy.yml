@@ -51,7 +51,7 @@
       lv: Patērētāju centrs uzrauga patērētāju tiesības, nevis GDPR — pat ja datu pārkāpumi var skart patērētājus, formālais regulators ir DVI.
       en: The Consumer Centre oversees consumer rights, not GDPR — even though data breaches can affect consumers, the formal regulator is DVI.
       ru: Центр защиты прав потребителей надзирает за правами потребителей, а не за GDPR — формальный регулятор это DVI.
-  sourceRef: "GDPR Art. 51; Latvian Personal Data Processing Law"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR Art. 51; Latvian Personal Data Processing Law"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -109,7 +109,7 @@
       lv: Vadītāja redzamība papildina datu apjomu, bet nemaina to, ka numurs pats par sevi jau ir personas dati.
       en: The driver's visibility adds data, but it does not change that the plate alone is already personal data.
       ru: Видимость водителя добавляет данных, но не меняет факт, что сам номер — уже персональные данные.
-  sourceRef: "Reg (EU) 2016/679 (GDPR) Art. 4(1)"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Reg (EU) 2016/679 (GDPR) Art. 4(1)"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -164,7 +164,7 @@
       lv: 2 % / 10 milj. EUR ir GDPR mazāks sliedzis (Art. 83(4)), kas attiecas uz operatīvām pārkāpšanām, ne uz augstākajiem nopietnajiem (4 % / 20 milj.).
       en: 2 % / €10 million is the lower GDPR tier (Art. 83(4)) for operational infringements, not the highest one (4 % / €20 million).
       ru: 2 % / 10 млн EUR — это нижний уровень GDPR (ст. 83(4)) для операционных нарушений, а не максимум.
-  sourceRef: "Reg (EU) 2016/679 (GDPR) Art. 83(5)"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Reg (EU) 2016/679 (GDPR) Art. 83(5)"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -222,7 +222,7 @@
       lv: Piekrišana no katra nejauša garāmgājēja praktiski nav iespējama un nav prasīta — leģitīmā interese šādiem gadījumiem ir piemērotāks pamats.
       en: Consent from every incidental passer-by is practically impossible and not required — legitimate interest fits such cases better.
       ru: Согласие от каждого случайного прохожего практически невозможно и не требуется — для таких случаев лучше подходит законный интерес.
-  sourceRef: "Reg (EU) 2016/679 (GDPR) Art. 6(1)(f); EDPB Guidelines 06/2020"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Reg (EU) 2016/679 (GDPR) Art. 6(1)(f); EDPB Guidelines 06/2020"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -279,7 +279,7 @@
       lv: Sarkans krusts ir medicīnas vai bīstamības simbols, kas neapzīmē filmēšanas aizliegumu.
       en: A red cross is a medical or danger symbol, unrelated to filming prohibitions.
       ru: Красный крест — медицинский или знак опасности, не запрет на съёмку.
-  sourceRef: "Latvia: critical-infrastructure protection rules; CAA Latvia guidance"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Latvia: critical-infrastructure protection rules; CAA Latvia guidance"
   difficulty: 3
   cognitiveLevel: recall
   scenarioType: factual
@@ -343,7 +343,7 @@
       lv: GDPR attiecas uz personas datu apstrādi neatkarīgi no filmēšanas vietas. Āra filmēšana nav atbrīvota kategorija.
       en: GDPR applies to the processing of personal data regardless of where filming takes place. Outdoor filming is not an exempt category.
       ru: GDPR применяется к обработке персональных данных независимо от места съёмки. Съёмка на улице не является освобождённой категорией.
-  sourceRef: "Reg (EU) 2016/679 (GDPR) Art. 6(1)(f); EDPB Guidelines 06/2020"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Reg (EU) 2016/679 (GDPR) Art. 6(1)(f); EDPB Guidelines 06/2020"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
@@ -407,7 +407,7 @@
       lv: UGZ zonas un filmēšanas aizlieguma zīmes ir neatkarīgas — pirmā neaizstāj otru. Nav mehānisma, kurā UGZ izstrāde "atceļ" drošības marķētas zonas filmēšanas aizliegumu.
       en: UGZ zones and filming prohibition signs are independent — the former does not replace the latter. There is no mechanism by which UGZ developments "override" security-marked site filming prohibitions.
       ru: Зоны UGZ и знаки запрета съёмки независимы — первое не заменяет второе. Не существует механизма, при котором решения UGZ «отменяют» запреты съёмки на объектах с охраной.
-  sourceRef: "Latvia Critical Infrastructure Protection Law; CAA Latvia BGKIS rules"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Latvia Critical Infrastructure Protection Law; CAA Latvia BGKIS rules"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -477,7 +477,7 @@
       lv: CAA Latvia reģistrācijas termiņš nav saistīts ar GDPR datu uzglabāšanas termiņu. Tie ir neatkarīgas tiesiskās prasības.
       en: CAA Latvia registration period is not linked to GDPR data retention periods. They are independent legal requirements.
       ru: Период регистрации CAA Latvia не связан со сроками хранения данных GDPR. Это независимые правовые требования.
-  sourceRef: "Reg (EU) 2016/679 (GDPR) Art. 5(1)(e) — storage limitation"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Reg (EU) 2016/679 (GDPR) Art. 5(1)(e) — storage limitation"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -542,7 +542,7 @@
       lv: Kaitējums nav priekšnoteikums dzēšanas tiesībām GDPR Art. 17. Pietiek ar personas pieprasījumu un tiesiska pamata neesamību.
       en: Harm is not a prerequisite for erasure rights under GDPR Art. 17. A person's request and the absence of a legal basis are sufficient.
       ru: Причинённый вред не является предварительным условием для права на стирание по ст. 17 GDPR. Достаточно запроса лица и отсутствия правового основания.
-  sourceRef: "GDPR Art. 17 — right to erasure; Art. 6 — lawful basis"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR Art. 17 — right to erasure; Art. 6 — lawful basis"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -604,7 +604,7 @@
       lv: GDPR attiecas uz jebkādu personas datu apstrādi — attēlus, video, metadatus, finanšu datus u.c. Nav ierobežojuma tikai uz vizuālajiem formātiem.
       en: GDPR applies to any processing of personal data — images, video, metadata, financial data, etc. There is no restriction to visual formats only.
       ru: GDPR применяется к любой обработке персональных данных — изображения, видео, метаданные, финансовые данные и т.д. Нет ограничения только на визуальные форматы.
-  sourceRef: "GDPR Art. 4(1) — personal data definition; Recital 30 — location data"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR Art. 4(1) — personal data definition; Recital 30 — location data"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -671,7 +671,7 @@
       lv: Nav vispārēja filmēšanas aizlieguma ārpus lidlaukiem. Filmēšanas legālumu nosaka konkrētie gaisa telpas un privātuma noteikumi.
       en: There is no general filming prohibition outside aerodromes. Filming legality is determined by specific airspace and privacy rules.
       ru: Нет общего запрета на съёмку за пределами аэродромов. Законность съёмки определяется конкретными правилами воздушного пространства и конфиденциальности.
-  sourceRef: "GDPR Art. 6 — lawful basis; Latvia Personal Data Processing Law; Datu valsts inspekcija"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR Art. 6 — lawful basis; Latvia Personal Data Processing Law; Datu valsts inspekcija"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: regulatory
@@ -736,7 +736,7 @@
       lv: '"Fotografēšana aizliegta" attiecas uz jebkādu dokumentēšanu — ar kameru uz zemes, no drona vai ar jebkuru citu līdzekli. Tas nav ierobežots tikai ar virszemes foto.'
       en: '"Photography prohibited" refers to any documentation — with a camera on the ground, from a drone, or by any other means. It is not restricted to ground-level photos.'
       ru: «Съёмка запрещена» относится к любой документации — наземной камерой, с дрона или любым другим способом. Это не ограничивается только наземными фотографиями.
-  sourceRef: "Latvia security legislation; GDPR Art. 6; Datu valsts inspekcija guidance"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Latvia security legislation; GDPR Art. 6; Datu valsts inspekcija guidance"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
@@ -802,7 +802,7 @@
       lv: Publisks pasākums neizslēdz GDPR piemērojamību. GDPR attiecas uz visu personas datu apstrādi, neatkarīgi no pasākuma rakstura.
       en: A public event does not exclude GDPR applicability. GDPR applies to all personal data processing, regardless of the event's public character.
       ru: Публичное мероприятие не исключает применимости GDPR. GDPR применяется ко всей обработке персональных данных независимо от публичного характера мероприятия.
-  sourceRef: "GDPR Art. 6(1)(f) — legitimate interests; European Data Protection Board guidelines"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR Art. 6(1)(f) — legitimate interests; European Data Protection Board guidelines"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: regulatory
@@ -866,7 +866,7 @@
       lv: Sertifikāta izdevējs (CAA) apliecina pilota kompetenci, bet nenosaka personas datu apstrādes mērķus operācijā.
       en: The certificate issuer (CAA) certifies pilot competence but does not determine personal data processing purposes in an operation.
       ru: Орган, выдавший сертификат (CAA), удостоверяет компетентность пилота, но не определяет цели обработки персональных данных в операции.
-  sourceRef: "GDPR Art. 4(7) — data controller definition"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR Art. 4(7) — data controller definition"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -932,7 +932,7 @@
       lv: GDPR prasības nebalstās uz apgrozījuma slieksni. Tās balstās uz personas datu apstrādes faktu un tā riskiem.
       en: GDPR requirements are not based on a turnover threshold. They are based on the fact of personal data processing and its risks.
       ru: Требования GDPR не основаны на пороге оборота. Они основаны на факте обработки персональных данных и связанных с ней рисках.
-  sourceRef: "GDPR Art. 30 — records of processing activities"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR Art. 30 — records of processing activities"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: regulatory
@@ -995,7 +995,7 @@
       lv: Atpūtas pilots var kļūt par GDPR pārzini, ja publicē materiālu ar identificējamām personām. Darbības raksturs (atpūtas/komerciāls) neatceļ GDPR, kad materiāls tiek izplatīts.
       en: A recreational pilot can become a GDPR controller if they publish footage with identifiable persons. The recreational nature of the activity does not override GDPR when material is disseminated.
       ru: Рекреационный пилот может стать контролёром по GDPR, если публикует материал с идентифицируемыми лицами. Рекреационный характер деятельности не отменяет GDPR при распространении материала.
-  sourceRef: "GDPR Art. 2(2)(c) — household exemption; CJEU Case C-212/13 (Ryneš)"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR Art. 2(2)(c) — household exemption; CJEU Case C-212/13 (Ryneš)"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: regulatory
@@ -1058,7 +1058,7 @@
       lv: Policija var iesaistīties, ja ir kriminālpārkāpums, bet GDPR sūdzības primārā adrese ir DVI — regulatīvā iestāde datu aizsardzībai.
       en: Police may be involved if there is a criminal offence, but the primary address for GDPR complaints is DVI — the regulatory authority for data protection.
       ru: Полиция может участвовать при уголовном правонарушении, но основной адрес для жалоб по GDPR — DVI, регулирующий орган по защите данных.
-  sourceRef: "GDPR Art. 51 — supervisory authority; Datu valsts inspekcija — dvi.gov.lv"
+  sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR Art. 51 — supervisory authority; Datu valsts inspekcija — dvi.gov.lv"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory

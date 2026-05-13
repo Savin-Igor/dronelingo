@@ -1,0 +1,140 @@
+# METAR and TAF basics for drone pilots
+
+<MissionBriefing objective="After this lesson you will know what METAR and TAF are, decode the parts that matter most for drone operations, and avoid the common mistake of reading weather as if it were only an airport concern.">
+Most drone pilots do not need full aviation meteorology. They do need a disciplined way to read wind, gusts, visibility, cloud, and trend before takeoff.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Training screen with a decoded METAR and TAF beside a small drone weather go/no-go checklist, wind and gust values highlighted"
+  alt="Decoded METAR and TAF displayed as a practical weather briefing for a drone flight"
+  caption="Weather briefing · metar-taf"
+/>
+
+## What these reports are
+
+**METAR** is an observation report: what the weather was at a specific aerodrome at a specific time.
+
+**TAF** is a forecast: what the weather is expected to be over a defined period.
+
+A drone pilot does not use them as a perfect description of the launch point. The value is different: they provide a structured, aviation-grade picture of wind, gusts, visibility, and change over time.
+
+## The parts that matter most to UAS pilots
+
+For most Open-category decisions, these fields matter first:
+
+- **wind direction and speed**
+- **gusts**
+- **visibility**
+- **significant cloud / storm cues**
+- **forecast trend in your flight window**
+
+<Artefact
+  description="Simple METAR decode cards for drone pilots: wind, gusts, visibility and weather change."
+  caption="Cards · metar-decode"
+>
+  <div className="grid gap-3 md:grid-cols-2">
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Wind</p>
+      <p className="mt-2 text-sm text-telemetry">`18012KT` means wind from 180 degrees at 12 knots. Compare it with your UAS manual, not your confidence.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Gusts</p>
+      <p className="mt-2 text-sm text-telemetry">`18012G22KT` means sustained 12 knots with gusts to 22. Gusts often matter more than the average for small UAS.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Visibility</p>
+      <p className="mt-2 text-sm text-telemetry">Poor visibility reduces practical VLOS even if the aircraft is technically in range.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Trend</p>
+      <p className="mt-2 text-sm text-telemetry">TAF tells you whether conditions are stable, improving, or likely to deteriorate during the actual mission window.</p>
+    </div>
+  </div>
+</Artefact>
+
+## A practical reading habit
+
+Do not try to decode everything at once. Read in this order:
+
+1. wind and gusts
+2. visibility
+3. precipitation or thunderstorm clues
+4. time trend during your planned launch and recovery window
+
+Then compare that weather picture with:
+
+- your planned site
+- your planned distance and altitude
+- the aircraft limits in the manual
+
+## Why drone pilots should care about airport weather
+
+The nearest aerodrome is not your exact field, but it is usually much better than guessing.
+
+Airport weather helps you avoid two bad habits:
+
+- underestimating gusts because the launch point “feels fine”
+- treating weather as static instead of trend-based
+
+METAR and TAF are decision aids, not perfect truth. They should sharpen judgment, not replace looking outside.
+
+<Scenario title="The nearest aerodrome METAR shows `18012G22KT`, and your drone manual gives a maximum demonstrated wind of 10 m/s. The site itself feels calm at launch point level because it is partially sheltered by buildings. What is the correct interpretation?">
+The sheltered launch point is not enough evidence to ignore the METAR. Gusts to 22 knots indicate a real risk that the UAS may encounter much stronger wind once it climbs above the local shelter or moves out of the lee of buildings.
+
+The correct response is conservative: treat the gust forecast as operationally relevant and make a strict go/no-go decision against the aircraft limit, not against how comfortable the ground feels.
+</Scenario>
+
+<MemoryAnchor
+  rule="Read weather in this order: wind, gusts, visibility, trend. Then compare it to the aircraft manual and the mission, not to your mood."
+  hint="A calm launch point can hide a rough air mass just a few metres higher."
+/>
+
+<CommonMistakes>
+- Reading only sustained wind and ignoring gusts.
+- Using METAR as if it were an exact measurement of the takeoff spot.
+- Treating a single calm moment as proof that the full flight window is safe.
+- Looking at weather after planning the mission instead of before.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "metar-q1",
+    stem: "What does the `G` in `18012G22KT` tell a drone pilot?",
+    options: [
+      { id: "a", text: "That the wind is guaranteed to stay at 12 knots." },
+      { id: "b", text: "That gusts may reach 22 knots and can matter more than the average wind." },
+      { id: "c", text: "That the wind is only relevant to large aircraft." },
+      { id: "d", text: "That GPS reception will be degraded." },
+    ],
+    correctOptionId: "b",
+    explanation: "The gust figure is crucial for small UAS. Short bursts of stronger wind can create control problems even if the sustained wind looks manageable.",
+    distractorRationales: {
+      a: "The code explicitly says wind is variable in strength up to the gust value.",
+      c: "Gusts are highly relevant to light drones.",
+      d: "Wind coding does not directly describe GPS performance.",
+    },
+  },
+  {
+    id: "metar-q2",
+    stem: "Why is TAF useful to a drone pilot even for a short mission?",
+    options: [
+      { id: "a", text: "Because it shows the likely trend across the planned flight window." },
+      { id: "b", text: "Because it replaces the need to check outside visually." },
+      { id: "c", text: "Because it gives a legal permission to fly." },
+      { id: "d", text: "Because it is only for IFR traffic." },
+    ],
+    correctOptionId: "a",
+    explanation: "TAF is valuable because drone flights still happen over time, not at a frozen instant. Trend matters for launch, task, and recovery.",
+    distractorRationales: {
+      b: "Forecasts help, but they do not replace looking at real conditions.",
+      c: "A forecast is not a legal authorisation.",
+      d: "TAF is not restricted to IFR decision-making; it is useful weather information broadly.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["met-003"]}>
+You now have a practical way to read METAR and TAF without turning into a full aviation meteorologist.
+
+Next: use that weather language together with the go/no-go framework and your aircraft limits, so the pre-flight decision becomes consistent instead of intuitive.
+</Debrief>

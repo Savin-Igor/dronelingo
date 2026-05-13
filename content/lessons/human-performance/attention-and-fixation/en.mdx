@@ -1,0 +1,134 @@
+# Attention, scanning and fixation
+
+<MissionBriefing objective="After this lesson you will know why pilots miss obvious hazards, how empty-field myopia and tunnel vision degrade awareness, and how to use a deliberate scan pattern to keep the aircraft, the airspace, and people in the same mental picture.">
+Most attention errors do not look dramatic from the inside. They feel like concentration. That is exactly why they are dangerous.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="HUD-style training image: drone pilot in a field, one panel showing narrow tunnel vision on the controller screen, second panel showing proper scan across drone, sky, people, obstacles"
+  alt="Visual contrast between fixation on one point and disciplined pilot scanning across aircraft, sky and surroundings"
+  caption="Training scene · scan vs fixation"
+/>
+
+## Why good pilots still miss things
+
+UAS pilots do not fail only because they are careless. They often fail because they are *too focused on one thing*:
+
+- framing the shot
+- watching battery percentage
+- reading the map
+- solving a warning message
+
+That is called **fixation**. Attention collapses onto one task and stops scanning the rest of the environment.
+
+In drone flying, fixation is dangerous because the situation changes outside the controller screen:
+
+- people enter the area
+- a helicopter appears
+- wind shifts near obstacles
+- the aircraft drifts while the pilot is head-down
+
+## Two classic traps
+
+**Empty-field myopia.** In a visually simple environment, the eyes relax and stop actively refocusing. The pilot thinks they are “looking outside,” but visual detection quality drops.
+
+**Tunnel vision.** Under stress or task overload, attention narrows. FPV, live video work, and client pressure make this worse.
+
+<Artefact
+  description="Three attention cards for drone pilots: scan pattern, trigger to restart scan, and role of the observer."
+  caption="Cards · pilot-scan-discipline"
+>
+  <div className="grid gap-3 md:grid-cols-3">
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Scan Pattern</p>
+      <p className="mt-2 text-sm text-telemetry">Aircraft → surrounding sky → people/obstacles → controller data → back outside. Repeat deliberately.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Reset Trigger</p>
+      <p className="mt-2 text-sm text-telemetry">Any warning, client question, or shot adjustment is a cue to restart the full scan instead of staying head-down.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Observer Role</p>
+      <p className="mt-2 text-sm text-telemetry">An observer is not just “extra eyes.” They actively protect against pilot fixation by maintaining a second scan loop.</p>
+    </div>
+  </div>
+</Artefact>
+
+## A practical scan loop
+
+Use a short, repeatable loop:
+
+1. confirm where the aircraft is and what it is doing
+2. scan the surrounding sky and approach paths
+3. scan people, vehicles, and obstacles near the operating area
+4. glance at controller data only long enough to answer a specific question
+5. return outside immediately
+
+The point is not to stare everywhere. The point is to **avoid being trapped anywhere**.
+
+## Why screens make this worse
+
+A controller screen gives the brain a false sense of certainty. It looks rich, precise, and “complete.” But it shows only selected data. It does not show what is behind you, beside you, or about to enter the area.
+
+This is why a pilot can be technically informed and situationally blind at the same time.
+
+<Scenario title="You are landing after a practice session. At three metres AGL, a friend starts asking where to stand for a photo. You look down at the controller to answer and adjust camera angle. What is the real risk?">
+The real risk is not the question itself. The real risk is **fixation during a critical phase**. At low altitude there is little time margin. Looking down at the controller and changing camera settings steals the exact attention needed for descent, drift correction, and separation from people.
+
+The correct response is to ignore the non-essential question, complete the landing, and resume conversation only after motors are stopped.
+</Scenario>
+
+<MemoryAnchor
+  rule="Looking hard is not the same as scanning well. Fixation feels like focus; good scanning feels slightly repetitive."
+  hint="Aircraft, sky, people, data, back outside."
+/>
+
+<CommonMistakes>
+- Calling prolonged screen-watching “situational awareness.”
+- Trying to solve non-critical settings mid-flight instead of flying first and configuring later.
+- Letting client conversation or bystanders interrupt low-altitude phases.
+- Believing that because the area looked empty 30 seconds ago, it is still empty now.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "scan-q1",
+    stem: "What is fixation in a drone operation?",
+    options: [
+      { id: "a", text: "The pilot concentrates so strongly on one task that broader scanning collapses." },
+      { id: "b", text: "The pilot keeps the drone in VLOS." },
+      { id: "c", text: "The pilot reads telemetry carefully before every flight." },
+      { id: "d", text: "The pilot uses a tripod for landing shots." },
+    ],
+    correctOptionId: "a",
+    explanation: "Fixation is attention narrowing: the pilot becomes absorbed in one task or display and stops scanning the wider environment effectively.",
+    distractorRationales: {
+      b: "VLOS is a legal/visual condition, not the definition of fixation.",
+      c: "Telemetry checks can be useful; fixation is what happens when they consume too much attention at the wrong moment.",
+      d: "Tripod use is unrelated to the attention concept.",
+    },
+  },
+  {
+    id: "scan-q2",
+    stem: "What is the best practical defense against tunnel vision in flight?",
+    options: [
+      { id: "a", text: "A deliberate repeating scan loop that returns outside after every controller glance." },
+      { id: "b", text: "Looking at the battery percentage continuously." },
+      { id: "c", text: "Keeping the controller brighter so the data is easier to read." },
+      { id: "d", text: "Flying faster to reduce time in the air." },
+    ],
+    correctOptionId: "a",
+    explanation: "A deliberate scan loop prevents attention from getting trapped on one target and keeps the aircraft, airspace, and people in the same mental model.",
+    distractorRationales: {
+      b: "Continuous monitoring of one field is fixation, not its cure.",
+      c: "Brighter screens may help visibility, but they do not solve attention narrowing.",
+      d: "Speed reduces time margin and does not address the cognitive problem.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["hp-003"]}>
+You now know how attention fails and how to defend against it with deliberate scan discipline.
+
+Next: back to the regulator-facing side of flight — question banks, practice, and field rules all matter only if they transfer into real behaviour under workload.
+</Debrief>

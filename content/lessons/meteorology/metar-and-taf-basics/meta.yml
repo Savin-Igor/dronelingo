@@ -1,0 +1,17 @@
+slug: metar-and-taf-basics
+ord: 4
+title:
+  lv: METAR un TAF pamati dronu pilotam
+  en: METAR and TAF basics for drone pilots
+  ru: Основы METAR и TAF для пилота дрона
+sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — weather observation and decoding basics; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — meteorology and pre-flight weather reading"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

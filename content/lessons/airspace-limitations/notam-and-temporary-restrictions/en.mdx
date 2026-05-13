@@ -1,0 +1,130 @@
+# NOTAMs and temporary restrictions
+
+<MissionBriefing objective="After this lesson you will know what a NOTAM changes in practice, why yesterday's green zone can be red today, and how to build a last-minute airspace check into every flight.">
+Permanent rules are only half the picture. A large share of illegal drone flights happen because the pilot checked the map once, assumed it stayed valid, and flew into a temporary restriction.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Aviation briefing visual: drone pilot reviewing tablet map with temporary red restricted circle over a city event, airport traffic lane, and emergency helicopter route"
+  alt="Pilot checking live airspace map with temporary restriction overlays before a drone flight"
+  caption="Training scene · live airspace check"
+/>
+
+## What a NOTAM actually does
+
+A **NOTAM** is a time-limited operational notice. It can create, modify, or cancel restrictions for a specific period. For a drone pilot, this means:
+
+- an area that was usable yesterday may be restricted today;
+- the ceiling may be temporarily reduced;
+- emergency, police, military, or public-event activity may change who has priority;
+- a previously valid routine plan may become invalid without any change in your drone or certificate.
+
+The practical rule is simple: **do not rely on memory for airspace status**.
+
+## Typical temporary restrictions in Latvia
+
+The most common short-notice changes for UAS pilots are:
+
+- **public events** — concerts, sports, city festivals, state visits;
+- **emergency services activity** — fire, search and rescue, police scene management;
+- **military activity** — temporary reserved or restricted areas;
+- **airport operational changes** — runway works, traffic flow changes, special helicopter routes.
+
+These restrictions may appear on `airspace.lv`, in official notices, or as zone-manager instructions linked to the operating area.
+
+<Artefact
+  description="Decision flow for temporary restrictions: check map on the day, check exact time window, identify if the area is information, restricted, or prohibited, then decide whether to proceed, apply in BGKIS, or cancel."
+  caption="Flow · temporary-restriction-decision"
+>
+  <div className="grid gap-3 md:grid-cols-4 text-sm">
+    {[
+      ["1. Check today", "Open the live map on the same day, not just during planning."],
+      ["2. Check time", "Read the active start and end time, not only the zone colour."],
+      ["3. Check effect", "Identify whether it is information, restricted, or prohibited."],
+      ["4. Decide", "Proceed, apply in BGKIS, or cancel the mission."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## The right workflow
+
+Use this sequence for every real operation:
+
+1. **Plan in advance** — identify normal zone type and likely constraints.
+2. **Re-check on the flight day** — preferably shortly before travel and again on site.
+3. **Read the time window carefully** — many temporary restrictions are valid only for several hours.
+4. **Treat temporary restrictions as primary** — if a temporary rule conflicts with your routine assumption, the temporary rule wins.
+5. **If in doubt, do not improvise** — cancel or delay until the zone status is clear.
+
+## Why “it looked green earlier” is not a defense
+
+CAA and airspace authorities evaluate the actual conditions at the time of flight, not what the pilot remembers from a previous check. A screenshot from yesterday is not operational compliance for today.
+
+<Scenario title="You planned a weekend real-estate shoot on Friday. The area was clear then. On Sunday morning, `airspace.lv` shows a temporary restricted area because of a city event nearby. The client is already on location. What is the correct decision?">
+The correct decision is to follow the **current** status, not the earlier plan.
+
+If the temporary restriction requires BGKIS approval and you do not have it, you do not fly. If the temporary restriction makes the area prohibited, you cancel immediately. Client pressure does not change the airspace status.
+
+The professional response is short and factual: the operating environment changed, and aviation rules are based on the active conditions at the time of flight.
+</Scenario>
+
+<MemoryAnchor
+  rule="Airspace status is live, not remembered. Check it on the day, check the time, then decide."
+  hint="Yesterday's screenshot is not today's approval."
+/>
+
+<CommonMistakes>
+- Planning once and treating the airspace picture as fixed for the whole week.
+- Reading only the zone colour and skipping the active time window.
+- Assuming a temporary event restriction is “only for manned aviation.”
+- Relying on client urgency instead of live operational status.
+- Saving the map offline but not refreshing it before the mission.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "al-nt1",
+    stem: "What is the most important operational effect of a NOTAM for a drone pilot?",
+    options: [
+      { id: "a", text: "It can temporarily change whether and how the area may be used." },
+      { id: "b", text: "It permanently replaces the Open category rules." },
+      { id: "c", text: "It applies only to commercial airline traffic." },
+      { id: "d", text: "It matters only if the drone weighs more than 4 kg." },
+    ],
+    correctOptionId: "a",
+    explanation: "A NOTAM can temporarily create or change restrictions, altitude limits, or operational priorities in a specific area and time window. That directly affects drone legality and safety.",
+    distractorRationales: {
+      b: "NOTAMs are temporary operational notices. They do not permanently replace the Open category framework.",
+      c: "Temporary restrictions often affect all airspace users, including UAS pilots.",
+      d: "Zone status is not limited to heavier drones. It applies according to the airspace rule, not just mass.",
+    },
+  },
+  {
+    id: "al-nt2",
+    stem: "You checked the area yesterday and it was green. Today it is temporarily restricted for a public event. Which rule governs the operation?",
+    options: [
+      { id: "a", text: "Yesterday's status, because the flight was planned earlier." },
+      { id: "b", text: "Today's live status at the time of flight." },
+      { id: "c", text: "The pilot may choose the more convenient interpretation." },
+      { id: "d", text: "The older map status remains valid for 24 hours." },
+    ],
+    correctOptionId: "b",
+    explanation: "Operational compliance is based on the live status at the time of flight. Planning history does not override an active temporary restriction.",
+    distractorRationales: {
+      a: "Earlier planning does not preserve access once the operating environment changes.",
+      c: "Pilots do not choose between statuses; the active one applies.",
+      d: "There is no 24-hour grace period for outdated checks.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["al-003"]}>
+You now know why temporary restrictions matter and how to build a live airspace check into every mission.
+
+Next: practical route and zone reading — how to connect map colours, altitude logic, and local Latvian procedures into one preflight decision.
+</Debrief>

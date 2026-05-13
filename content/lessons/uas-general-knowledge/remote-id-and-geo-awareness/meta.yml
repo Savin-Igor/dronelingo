@@ -1,0 +1,17 @@
+slug: remote-id-and-geo-awareness
+ord: 3
+title:
+  lv: Remote ID un geo-awareness
+  en: Remote ID and geo-awareness
+  ru: Remote ID и geo-awareness
+sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — class requirements for C1/C2/C3; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — UAS geozones and map sources"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

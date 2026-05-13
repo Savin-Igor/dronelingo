@@ -48,7 +48,7 @@
       lv: METAR nesatur "attāluma" laukus. 270 ir virziens grādos, 12 ir ātrums mezglos, 22 ir brāzmu ātrums mezglos.
       en: METAR does not contain "distance" fields. 270 is direction in degrees, 12 is speed in knots, 22 is gust speed in knots.
       ru: METAR не содержит поля «расстояния». 270 — направление в градусах, 12 — скорость в узлах, 22 — скорость порывов в узлах.
-  sourceRef: "ICAO Annex 3 — Meteorological Service for International Air Navigation; METAR format"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — ICAO Annex 3 — Meteorological Service for International Air Navigation; METAR format"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
@@ -110,7 +110,7 @@
       lv: Augstums nemaina brāzmu slodzi. Gust novērtējums attiecas uz visu darbības diapazonu, ne tikai augstu augstumu.
       en: Altitude does not change the gust load. The gust rating applies to the full operating range, not only high altitudes.
       ru: Высота не изменяет нагрузку от порывов. Расчёт порывов применяется ко всему рабочему диапазону, а не только к большим высотам.
-  sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; manufacturer wind rating standards"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — EASA Easy Access Rules — AMC1 UAS.OPEN.030; manufacturer wind rating standards"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
@@ -168,7 +168,7 @@
       lv: 20 km ir vēl drošāk, bet 10 km ir atzītais minimums. 20 km nav operatīvi obligāts.
       en: 20 km is even safer, but 10 km is the recognised minimum. 20 km is not operationally required.
       ru: 20 км ещё безопаснее, но 10 км — признанный минимум. 20 км оперативно не требуется.
-  sourceRef: "ICAO Doc 8896 — Manual of Aeronautical Meteorology; A2 syllabus meteorology"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — ICAO Doc 8896 — Manual of Aeronautical Meteorology; A2 syllabus meteorology"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: factual
@@ -226,7 +226,7 @@
       lv: +10°C ūdens paliek šķidrs — lietus nogulsnējas uz propelleriem, bet nesasalst.
       en: At +10°C water remains liquid — rain deposits on propellers but does not freeze.
       ru: При +10°C вода остаётся жидкой — дождь осаждается на пропеллерах, но не замерзает.
-  sourceRef: "ICAO Doc 8896 — aeronautical meteorology; A2 syllabus icing conditions"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — ICAO Doc 8896 — aeronautical meteorology; A2 syllabus icing conditions"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -284,7 +284,7 @@
       lv: 29018G28KT ir fiksēts vēja virziens (290°) ar ātrumu un brāzmām — nevis mainīgs starp diviem virzieniem.
       en: 29018G28KT is a fixed wind direction (290°) with speed and gusts — not variable between two directions.
       ru: 29018G28KT — фиксированное направление ветра (290°) со скоростью и порывами, а не переменное между двумя направлениями.
-  sourceRef: "ICAO Annex 3 — TAF format; EASA meteorology module"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — ICAO Annex 3 — TAF format; EASA meteorology module"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: factual
@@ -344,7 +344,7 @@
       lv: Vēja ātruma limiti attiecas uz visu darbības augstumu diapazonu, ne tikai augstu augstumu. Lidojums zem 30 m nelikvidē TAF TEMPO apstākļus.
       en: Wind speed limits apply to the full operating altitude range, not only high altitudes. Flying below 30 m does not negate the TAF TEMPO conditions.
       ru: Ветровые пределы применяются ко всему рабочему диапазону высот. Полёт ниже 30 м не устраняет условия TEMPO по TAF.
-  sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; TAF interpretation"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — EASA Easy Access Rules — AMC1 UAS.OPEN.030; TAF interpretation"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
@@ -405,7 +405,7 @@
       lv: Minimālie augstumi virs apdzīvotām zonām ir tiesisks ierobežojums; blīvuma augstums ir meteoroloģisks veiktspējas faktors.
       en: Minimum altitudes above populated areas are a legal restriction; density altitude is a meteorological performance factor.
       ru: Минимальные высоты над населёнными районами — правовое ограничение; плотностная высота — метеорологический фактор характеристик.
-  sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; A2 syllabus meteorology"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — EASA Easy Access Rules — AMC1 UAS.OPEN.030; A2 syllabus meteorology"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
@@ -462,7 +462,7 @@
       lv: Viena TAF dienā nenodrošinātu pietiekamu precizitāti laika apstākļu prognozēšanai aviācijai — tiek publicēts četras reizes dienā.
       en: One TAF per day would not provide sufficient precision for aviation weather forecasting — it is published four times per day.
       ru: Один TAF в сутки не обеспечил бы достаточной точности авиационного прогноза — публикуется четыре раза в сутки.
-  sourceRef: "ICAO Annex 3 — Meteorological Service for International Air Navigation; TAF issuance"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — ICAO Annex 3 — Meteorological Service for International Air Navigation; TAF issuance"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
@@ -520,7 +520,7 @@
       lv: CAVOK nav saistīts ar lidostas darbības ierobežojumiem. Tas ir standartizēts starptautisks kods labiem laika apstākļiem METAR.
       en: CAVOK is not related to airport operational restrictions. It is a standardised international code for good weather conditions in METAR.
       ru: CAVOK не связан с ограничениями работы аэропорта. Это стандартизированный международный код хороших условий в METAR.
-  sourceRef: "ICAO Annex 3 — METAR; CAVOK definition"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — ICAO Annex 3 — METAR; CAVOK definition"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
@@ -581,7 +581,7 @@
       lv: 10 km ir maksimāli ziņojamā redzamība METAR, nevis minimums VLOS. Lielākā daļa VLOS operāciju notiek tuvāk par 1 km attālumā.
       en: 10 km is the maximum reportable visibility in METAR, not the VLOS minimum. Most VLOS operations take place at under 1 km range.
       ru: 10 км — максимальная отчётная видимость в METAR, а не минимум VLOS. Большинство операций VLOS происходит на расстоянии менее 1 км.
-  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.060(3); EASA AMC1 UAS.OPEN.060 VLOS"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — Reg (EU) 2019/947 UAS.OPEN.060(3); EASA AMC1 UAS.OPEN.060 VLOS"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -642,7 +642,7 @@
       lv: Vēja ātruma dubultošanās katrās 40 m nav precīzs fizisks modelis. 30–50 % pieaugums no 10 m uz 80 m ir labākā piesarobeža.
       en: Wind speed doubling every 40 m is not an accurate physical model. A 30–50 % increase from 10 m to 80 m is the better approximation.
       ru: Удвоение скорости ветра каждые 40 м — неточная физическая модель. Увеличение на 30–50 % от 10 м до 80 м — лучшее приближение.
-  sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; wind profile standard atmosphere"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — EASA Easy Access Rules — AMC1 UAS.OPEN.030; wind profile standard atmosphere"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: numeric
@@ -700,7 +700,7 @@
       lv: BECMG laika logs norāda izmaiņu periodu, nevis kopējo laika apstākļu ilgumu. 1022/1024 ir divu stundu izmaiņu periods, ne 22 stundu.
       en: The BECMG time window indicates the change period, not total weather duration. 1022/1024 is a 2-hour change period, not 22 hours.
       ru: Временно́е окно BECMG указывает период изменения, а не общую продолжительность погоды. 1022/1024 — 2-часовой период изменения, а не 22 часа.
-  sourceRef: "ICAO Annex 3 — TAF format; BECMG vs TEMPO vs FM"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — ICAO Annex 3 — TAF format; BECMG vs TEMPO vs FM"
   difficulty: 3
   cognitiveLevel: recall
   scenarioType: factual
@@ -759,7 +759,7 @@
       lv: TCU (torējoše kumuluss) norāda attīstošos kumulusus, kas var izveidoties kumulonimbā — bet TCU pats nav kumulonimbs. Pieredzējušam pilotam TCU jāuzskata par brīdinājumu.
       en: TCU (towering cumulus) indicates developing cumulus that may become a cumulonimbus — but TCU itself is not a cumulonimbus. An experienced pilot treats TCU as a warning.
       ru: TCU (мощно-кучевое) указывает на развивающийся кумулюс, который может стать кучево-дождевым, но сам по себе не является им. Опытный пилот воспринимает TCU как предупреждение.
-  sourceRef: "ICAO Annex 3 — METAR cloud type codes; CB and TCU"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — ICAO Annex 3 — METAR cloud type codes; CB and TCU"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
@@ -820,7 +820,7 @@
       lv: VLOS ir vizuāla prasība — to ietekmē vidējā optiskā redzamība, nevis atmosfēras optiskās refleksijas.
       en: VLOS is a visual requirement — it is affected by ambient optical visibility, not atmospheric optical reflections.
       ru: VLOS — визуальное требование, зависящее от фактической оптической видимости, а не атмосферных отражений.
-  sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; ICAO meteorology training"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — EASA Easy Access Rules — AMC1 UAS.OPEN.030; ICAO meteorology training"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: factual
@@ -884,7 +884,7 @@
       lv: +3°C ir tuvu 0°C, un ūdens virsma var samazināt faktisko gaisa temperatūru zem 0°C tieši pie ezera. Apledojums iespējams pat pie +5°C pārsaldētu pilienu klātbūtnē.
       en: +3°C is close to 0°C, and the water surface can reduce the actual air temperature below 0°C right over the lake. Icing is possible even at +5°C in the presence of supercooled droplets.
       ru: +3°C близко к 0°C, и водная поверхность может снизить фактическую температуру воздуха ниже 0°C прямо над озером. Обледенение возможно даже при +5°C при наличии переохлаждённых капель.
-  sourceRef: "ICAO Doc 8896 — icing conditions; A2 syllabus meteorology"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — ICAO Doc 8896 — icing conditions; A2 syllabus meteorology"
   difficulty: 4
   cognitiveLevel: analyze
   scenarioType: decision
@@ -946,7 +946,7 @@
       lv: Saulriets pāris stundu laikā samazina temperatūru. Tas ir pārāk lēns, lai izskaidrotu pēkšņas izmaiņas lidojuma laikā.
       en: Sunset lowers temperature gradually over hours. This is far too slow to explain sudden in-flight changes.
       ru: Закат снижает температуру в течение нескольких часов — слишком медленно, чтобы объяснить внезапные изменения в полёте.
-  sourceRef: "EASA Easy Access Rules UAS 2024 — meteorology section; ICAO Annex 3"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — EASA Easy Access Rules UAS 2024 — meteorology section; ICAO Annex 3"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -1010,7 +1010,7 @@
       lv: Aukstā fronte parasti rada plakanus slāņveida mākoņus un ienesīgs ilgstošas lietusgāzes, ne kumulusa torņus. Kumulusa torņi ir lokālas konvektīvas aktivitātes pazīme, ne frontālas sistēmas.
       en: A cold front typically produces flat stratiform clouds and steady rain, not towering cumulus. Towering cumulus is a sign of local convective activity, not a frontal system.
       ru: Холодный фронт обычно формирует плоские слоистые облака и продолжительные осадки, а не башнеобразные кучевые. Башнеобразные кучевые — признак локальной конвективной активности, а не фронтальной системы.
-  sourceRef: "EASA Easy Access Rules UAS 2024 — meteorology; ICAO Annex 3 cloud types"
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — EASA Easy Access Rules UAS 2024 — meteorology; ICAO Annex 3 cloud types"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision

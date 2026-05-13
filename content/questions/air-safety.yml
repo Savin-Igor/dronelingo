@@ -51,7 +51,7 @@
       lv: Ekrāns uz pults rāda kameras attēlu — tas ir FPV ekvivalents, kas pārkāpj "neapbruņotas acs" prasību.
       en: A screen on the controller shows a camera feed — that is FPV-equivalent and breaks the "unaided eye" requirement.
       ru: Экран на пульте показывает изображение с камеры — это эквивалент FPV, нарушающий требование «невооружённого глаза».
-  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(3)"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. UAS.OPEN.060(3)"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: factual
@@ -109,7 +109,7 @@
       lv: Aparatūras dublēšana nav novērotāja loma. Otra pilota loma — atsevišķs jautājums, ko Atvērtā kategorija neparedz.
       en: Hardware redundancy is not the observer's role. A second pilot is a separate matter not envisioned in the Open category.
       ru: Резервирование оборудования — не задача наблюдателя. Второй пилот — отдельный вопрос, не предусмотренный в Открытой категории.
-  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(2)(a)"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. UAS.OPEN.060(2)(a)"
   difficulty: 1
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -164,7 +164,7 @@
       lv: Ražotāja ģeofence ir tehniska iezīme, nevis tiesisks noteikums. Pat ja aparāts ļauj augstāk, regula joprojām fiksē 120 m.
       en: A manufacturer's geofence is a technical feature, not a legal rule. Even if the aircraft permits more, the regulation still fixes the cap at 120 m.
       ru: Ограничитель производителя — это техническая функция, а не правовая норма. Даже если аппарат разрешает больше, регламент фиксирует 120 м.
-  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020/030/040(2)"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.020/030/040(2)"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: factual
@@ -221,7 +221,7 @@
       lv: Privāta piekrišana neaizvieto regulu. Pulcēšanās aizliegums Atvērtajā ir absolūts — pārkāpums prasa Specifisko kategoriju.
       en: Private consent does not override regulation. The assembly ban in Open is absolute — crossing it requires the Specific category.
       ru: Частное согласие не отменяет правила. Запрет на скопления в Открытой абсолютен — для исключения нужна категория «Специальная».
-  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.010(1); Annex Part A"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. UAS.OPEN.010(1); Annex Part A"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -280,7 +280,7 @@
       lv: Fiksētas 50 m kārtulas regulā nav. A3 izmanto 30 m grīdu plus 1:1 noteikumu — abi vienlaikus.
       en: There is no flat 50 m rule in the regulation. A3 uses a 30 m floor plus the 1:1 rule — both apply simultaneously.
       ru: Постоянного правила 50 м в регламенте нет. A3 использует пол 30 м и правило 1:1 одновременно.
-  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.040(1)(b)"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.040(1)(b)"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: numeric
@@ -338,7 +338,7 @@
       lv: Binoklis ir palīglīdzeklis — VLOS ir tieši definēts kā "neapbruņotas acs" prasība (brilles atļautas, binokļi nav).
       en: Binoculars are an aid — VLOS is explicitly defined as an "unaided eye" requirement (corrective glasses allowed, binoculars are not).
       ru: Бинокль — вспомогательное средство. VLOS явно определён как требование «невооружённым глазом» (очки для коррекции допустимы, бинокли — нет).
-  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(3); EASA AMC1 UAS.OPEN.060"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. UAS.OPEN.060(3); EASA AMC1 UAS.OPEN.060"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
@@ -398,7 +398,7 @@
       lv: Organizatora atļauja ir privātpersonas piekrišana, nevis regulatīvā atļauja. Regulā nav paredzēta iespēja atcelt šo aizliegumu ar privātu atļauju.
       en: An organiser's permission is private consent, not a regulatory authorisation. The regulation provides no mechanism to waive this prohibition via private permission.
       ru: Разрешение организатора — это частное согласие, а не регуляторное разрешение. Правила не предусматривают отмены этого запрета частным образом.
-  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.010(1); UAS.OPEN.020/030/040"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. UAS.OPEN.010(1); UAS.OPEN.020/030/040"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -458,7 +458,7 @@
       lv: 50 m ir piesardzīga prakse, bet nav juridiski noteikta robeža šajā gadījumā. 110 m ir reglamentētais maksimums.
       en: 50 m is cautious practice but not the legally defined limit in this case. 110 m is the regulated maximum.
       ru: 50 м — осторожная практика, но не юридически установленный предел в данном случае. 110 м — регламентированный максимум.
-  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.020/030/040(2)(b) — altitude extension near structures"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. UAS.OPEN.020/030/040(2)(b) — altitude extension near structures"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: numeric
@@ -519,7 +519,7 @@
       lv: Piekrišana no atsevišķām personām nav prasīta C0 pārlidojumam. Pulcēšanās aizliegums ir absolūts, bet atsevišķas personas ir atļautas ar C0.
       en: Consent from isolated individuals is not required for C0 overflights. The assembly prohibition is absolute; individual persons are permitted with C0.
       ru: Согласие отдельных людей не требуется для C0. Запрет на скопления абсолютен, но отдельные люди разрешены для C0.
-  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020(1)(c); Reg (EU) 2019/945 Part 1 — C0"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.020(1)(c); Reg (EU) 2019/945 Part 1 — C0"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -578,7 +578,7 @@
       lv: Atklātajā kategorijā nav paredzēts darba veids ar novērotāju atsevišķā vietā (bez FPV brilles). Novērotāja loma ir stāvēt blakus pilotam, nevis aizstāt VLOS no attālas vietas.
       en: Open category does not provide for operation with a separated observer (without FPV). The observer's role is to stand next to the pilot, not to substitute VLOS from a remote position.
       ru: Открытая категория не предусматривает работу с наблюдателем на отдельной позиции (без FPV). Роль наблюдателя — стоять рядом с пилотом, а не заменять VLOS с удалённой точки.
-  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(3); AMC1 UAS.OPEN.060"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. UAS.OPEN.060(3); AMC1 UAS.OPEN.060"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -637,7 +637,7 @@
       lv: C4 klasei nav autonomo lidojumu režīmu, bet tam ir obligāts Direct Remote ID, lai nodrošinātu identifikāciju A3 zonās.
       en: C4 has no autonomous modes but still requires Direct Remote ID to enable identification in A3 zones.
       ru: C4 не имеет автономных режимов, но всё равно требует Direct Remote ID для идентификации в зонах A3.
-  sourceRef: "Reg (EU) 2019/945 Annex Parts 1–5 — Remote ID requirements per class"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/945 Annex Parts 1–5 — Remote ID requirements per class"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: factual
@@ -698,7 +698,7 @@
       lv: 150 m ir minimālā distance no apdzīvotām, komerciālām, rūpnieciskām vai atpūtas zonām — ne no atsevišķām personām. Personas tiek regulētas ar 30 m / 1:1 noteikumu.
       en: 150 m is the minimum distance from residential, commercial, industrial, or recreational areas — not from individual persons. Persons are governed by the 30 m / 1:1 rule.
       ru: 150 м — минимальная дистанция от жилых, коммерческих, промышленных или рекреационных зон, а не от отдельных людей. Люди регулируются правилом 30 м / 1:1.
-  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.040(1)(b)"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.040(1)(b)"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: numeric
@@ -762,7 +762,7 @@
       lv: Atgriešanās pie sākuma punkta ar 8 % bateriju 100 m attālumā var nebūt iespējama. Ārkārtas situācijā tuvākā droša vieta ir pareizā izvēle.
       en: Returning to the launch point at 8 % battery 100 m away may not be achievable. In an emergency the nearest safe spot is the correct choice.
       ru: Возврат к точке запуска с зарядом 8 % на расстоянии 100 м может быть невозможен. В аварийной ситуации ближайшее безопасное место — правильный выбор.
-  sourceRef: "Reg 2019/947 Art. UAS.OPEN.020 — A1 sub-category; UAS.OPEN.060"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. UAS.OPEN.020 — A1 sub-category; UAS.OPEN.060"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
@@ -823,7 +823,7 @@
       lv: Prasība par apgaismojuma sistēmu attiecas uz visām UAS klasēm, ne tikai C0. Svars viens pats nakts lidojumu neatļauj.
       en: The lighting system requirement applies to all UAS classes, not only C0. Weight alone does not determine night flight permission.
       ru: Требование о системе освещения распространяется на все классы UAS, а не только C0. Только масса не определяет разрешение на ночной полёт.
-  sourceRef: "Reg 2019/947 Art. UAS.OPEN.060(2)(d) — night operations"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. UAS.OPEN.060(2)(d) — night operations"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -885,7 +885,7 @@
       lv: EASA sertifikāts ir pilota kompetences rādītājs, nevis kritērijs, lai klasificētu personu kā "nepiederošu".
       en: An EASA certificate is a pilot competence indicator, not a criterion to classify a person as "uninvolved".
       ru: Сертификат EASA — показатель компетентности пилота, а не критерий для классификации лица как «непричастного».
-  sourceRef: "Reg 2019/947 AMC1 to UAS.OPEN.060 — definition of uninvolved person"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 AMC1 to UAS.OPEN.060 — definition of uninvolved person"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -950,7 +950,7 @@
       lv: Mantoti droni ≤ 500 g var darboties A3 apakškategorijā, bet ne A1. A1 prasa C1 vai C0 zīmolu.
       en: Legacy drones ≤ 500 g operate in A3, not A1. A1 requires a C1 or C0 marking.
       ru: Унаследованные дроны ≤ 500 г работают в A3, а не A1. A1 требует маркировки C1 или C0.
-  sourceRef: "Reg 2019/947 Art. 20 — transitional provisions for legacy drones"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. 20 — transitional provisions for legacy drones"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: regulatory
@@ -1015,7 +1015,1278 @@
       lv: Automātiska sadursmes novēršana nav obligāta Atvērtās kategorijas UAS. VLOS lidojumā atbildība ir pilota, ne sistēmas.
       en: Automated collision avoidance is not mandatory for Open-category UAS. In VLOS flight the responsibility is the pilot's, not the system's.
       ru: Автоматическое предотвращение столкновений не является обязательным для UAS Открытой категории. В полёте VLOS ответственность лежит на пилоте, а не системе.
-  sourceRef: "Reg 2019/947 Art. UAS.OPEN.060 — pilot responsibilities"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. UAS.OPEN.060 — pilot responsibilities"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-018
+  stem:
+    lv: Ko Atvērtajā kategorijā pilots dara pirms pacelšanās, lai samazinātu risku?
+    en: What should an Open-category remote pilot do before take-off to reduce risk?
+    ru: Что должен сделать дистанционный пилот в Открытой категории перед взлётом, чтобы снизить риск?
+  options:
+    - id: a
+      text:
+        lv: Veic pirmslidojuma pārbaudi (vietu, laikapstākļus, UAS stāvokli, geozonas/NOTAM).
+        en: Perform a pre-flight check (site, weather, UAS condition, geo-zones/NOTAM).
+        ru: Выполнить предполётную проверку (место, погода, состояние БПЛА, геозоны/NOTAM).
+    - id: b
+      text:
+        lv: Paceļas uzreiz un “paskatās”, vai ir droši.
+        en: Take off immediately and “see if it’s safe”.
+        ru: Взлететь сразу и «посмотреть, безопасно ли».
+    - id: c
+      text:
+        lv: Palielina augstumu virs 120 m, lai labāk redzētu apkārtni.
+        en: Climb above 120 m to get a better view.
+        ru: Подняться выше 120 м, чтобы лучше видеть вокруг.
+    - id: d
+      text:
+        lv: Paļaujas tikai uz automātisko atgriešanos mājās (RTH) kā drošības pasākumu.
+        en: Rely only on Return-to-Home (RTH) as the safety measure.
+        ru: Полагаться только на Return-to-Home (RTH) как меру безопасности.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Pirmspacelšanās pārbaude ir pilota pienākums: vieta, cilvēki, šķēršļi,
+      laikapstākļi, UAS tehniskais stāvoklis un vietējie ierobežojumi.
+    en: >
+      A pre-flight check is a pilot responsibility: site, people, obstacles,
+      weather, UAS technical condition and local restrictions.
+    ru: >
+      Предполётная проверка — обязанность пилота: место, люди, препятствия,
+      погода, техническое состояние БПЛА и местные ограничения.
+  distractorRationales:
+    b:
+      lv: “Pārbaudīt lidojumā” palielina risku. Drošības pasākumi jāveic pirms starta.
+      en: “Checking in flight” increases risk. Safety checks belong before launch.
+      ru: «Проверять в полёте» — значит повышать риск. Проверки делаются до старта.
+    c:
+      lv: 120 m limits Atvērtajā kategorijā ir pamatprasība; augstuma palielināšana nav risinājums drošībai.
+      en: The 120 m limit is a core Open-category rule; climbing higher is not a safety solution.
+      ru: Предел 120 м — базовое правило Открытой категории; подниматься выше — не «мера безопасности».
+    d:
+      lv: RTH ir palīgfunkcija, bet tā neaizvieto risku novērtējumu un vietas/ierobežojumu pārbaudi.
+      en: RTH is a helper feature; it does not replace risk assessment and restriction checks.
+      ru: RTH — вспомогательная функция; она не заменяет оценку рисков и проверку ограничений.
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS.OPEN.060(1) — pilot responsibilities; pre-flight"
+  difficulty: 1
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-019
+  stem:
+    lv: Kurš apgalvojums par “neiesaistītu personu” (uninvolved person) ir pareizs?
+    en: Which statement about an “uninvolved person” is correct?
+    ru: Какое утверждение о «не вовлечённом лице» (uninvolved person) верно?
+  options:
+    - id: a
+      text:
+        lv: Persona, kas nav informēta par UAS operāciju un nevar kontrolēt risku, ir neiesaistīta.
+        en: A person who is not informed about the UAS operation and cannot control the risk is uninvolved.
+        ru: Лицо, не проинформированное об операции и не контролирующее риск, считается не вовлечённым.
+    - id: b
+      text:
+        lv: Ikviens, kurš skatās uz dronu, automātiski kļūst par iesaistītu personu.
+        en: Anyone who looks at the drone automatically becomes involved.
+        ru: Любой, кто смотрит на дрон, автоматически становится вовлечённым.
+    - id: c
+      text:
+        lv: Draugi vienmēr skaitās iesaistīti, pat ja neko nezina par lidojumu.
+        en: Friends are always involved, even if they know nothing about the flight.
+        ru: Друзья всегда вовлечены, даже если ничего не знают о полёте.
+    - id: d
+      text:
+        lv: Persona ir iesaistīta tikai tad, ja paraksta rakstisku piekrišanu.
+        en: A person is involved only if they sign written consent.
+        ru: Лицо считается вовлечённым только при письменном согласии.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Neiesaistīta persona nav informēta par operāciju un nevar saprātīgi
+      pieņemt risku vai to kontrolēt. Informēšana un brīvprātīga līdzdalība
+      maina statusu.
+    en: >
+      An uninvolved person is not informed about the operation and cannot
+      reasonably accept or control the risk. Being informed and participating
+      voluntarily changes the status.
+    ru: >
+      Не вовлечённое лицо не проинформировано об операции и не может разумно
+      принять или контролировать риск. Информирование и добровольное участие
+      меняют статус.
+  distractorRationales:
+    b:
+      lv: Skatīšanās pati par sevi nenozīmē informētu līdzdalību vai spēju kontrolēt risku.
+      en: Looking alone does not equal informed participation or risk control.
+      ru: Сам факт наблюдения не означает информированного участия или контроля риска.
+    c:
+      lv: Attiecības (draugs/ģimene) nenosaka statusu. Izšķiroši ir informēšana un brīvprātīga līdzdalība.
+      en: Relationship (friend/family) doesn’t determine status. Information and voluntary participation do.
+      ru: Статус не зависит от «друг/семья». Важно информирование и добровольное участие.
+    d:
+      lv: Noteikumi neprasa “rakstisku” formu kā vienīgo kritēriju; būtiska ir informēta piekrišana un līdzdalība.
+      en: Rules do not require “written” form as the sole criterion; informed consent and participation matter.
+      ru: Правила не требуют только «письменной» формы; важны информированное согласие и участие.
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — AMC/GM on “uninvolved persons” for Open category"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: as-020
+  stem:
+    lv: FPV lidojumā Atvērtajā kategorijā novērotājs drīkst stāvēt…
+    en: In an Open-category FPV flight, the observer may stand…
+    ru: При FPV-полёте в Открытой категории наблюдатель может находиться…
+  options:
+    - id: a
+      text:
+        lv: Blakus pilotam tā, lai viņi varētu efektīvi sazināties un novērotājs redzētu UAS.
+        en: Next to the pilot so they can communicate effectively and the observer can see the UAS.
+        ru: Рядом с пилотом, чтобы эффективно общаться и чтобы наблюдатель видел БПЛА.
+    - id: b
+      text:
+        lv: Citā vietā, ja vien novērotājs redz video straumi telefonā.
+        en: Elsewhere, as long as the observer watches the video feed on a phone.
+        ru: В другом месте, если наблюдатель смотрит видеопоток на телефоне.
+    - id: c
+      text:
+        lv: Automašīnā, jo tas ir drošāk pret vēju.
+        en: Inside a car, because it’s safer from wind.
+        ru: В машине, так как там безопаснее от ветра.
+    - id: d
+      text:
+        lv: Jebkur, ja pilots ir reģistrēts operators.
+        en: Anywhere, if the pilot is a registered operator.
+        ru: Где угодно, если пилот зарегистрирован как оператор.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Novērotājs palīdz uzturēt situācijas apzināšanos un VLOS uz UAS.
+      Praktiski tas nozīmē fizisku tuvumu un reāllaika saziņu ar pilotu.
+    en: >
+      The observer supports situational awareness and VLOS on the UAS.
+      In practice this means physical proximity and real-time communication.
+    ru: >
+      Наблюдатель обеспечивает ситуационную осведомлённость и VLOS по БПЛА.
+      На практике это означает близость и связь в реальном времени.
+  distractorRationales:
+    b:
+      lv: Novērotāja uzdevums ir skatīt gaisa telpu un UAS tieši, nevis video plūsmu.
+      en: The observer’s job is to monitor the airspace and UAS directly, not a video feed.
+      ru: Задача наблюдателя — контролировать воздушную обстановку и БПЛА напрямую, а не по видео.
+    c:
+      lv: No auto bieži nav iespējams uzturēt VLOS un saziņu; tā arī var radīt papildu riskus.
+      en: From a car it’s often impossible to maintain VLOS and communication; it can introduce extra risks.
+      ru: Из машины часто нельзя поддерживать VLOS и связь; это добавляет риски.
+    d:
+      lv: Operatora reģistrācija nemaina FPV novērotāja prasību.
+      en: Operator registration does not change the FPV observer requirement.
+      ru: Регистрация оператора не отменяет требование наблюдателя при FPV.
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS.OPEN.060(2)(a) — FPV observer conditions"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: regulatory
+
+- id: as-021
+  stem:
+    lv: Kā rīkoties, ja lidojuma laikā pēkšņi parādās helikopters tajā pašā apgabalā?
+    en: What should you do if a helicopter suddenly appears in the same area during your flight?
+    ru: Что делать, если во время полёта в том же районе внезапно появляется вертолёт?
+  options:
+    - id: a
+      text:
+        lv: "Nekavējoties samazināt risku: nolaisties vai attālināties, saglabājot drošu separāciju."
+        en: "Immediately reduce risk: land or move away while maintaining safe separation."
+        ru: "Немедленно снизить риск: приземлиться или уйти в сторону, сохраняя безопасное разделение."
+    - id: b
+      text:
+        lv: Palielināt augstumu, lai helikopters noteikti tevi redzētu.
+        en: Climb higher so the helicopter will definitely see you.
+        ru: Подняться выше, чтобы вертолёт точно вас увидел.
+    - id: c
+      text:
+        lv: Turpināt misiju, jo Atvērtajā kategorijā ir prioritāte virs pilotējamiem gaisa kuģiem.
+        en: Continue the mission because Open category has priority over manned aircraft.
+        ru: Продолжать миссию, потому что Открытая категория имеет приоритет над пилотируемыми ВС.
+    - id: d
+      text:
+        lv: Lidot tuvāk, lai nofilmētu incidentu.
+        en: Fly closer to film the incident.
+        ru: Подлететь ближе, чтобы снять инцидент.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Pilota pienākums ir izvairīties no konflikta ar citiem gaisa kuģiem un
+      nekavējoties samazināt risku. Drošākā izvēle parasti ir nolaisties.
+    en: >
+      The pilot must avoid conflicts with other aircraft and immediately
+      reduce risk. The safest choice is usually to land.
+    ru: >
+      Пилот обязан избегать конфликтов с другими воздушными судами и сразу
+      снижать риск. Самый безопасный вариант обычно — посадка.
+  distractorRationales:
+    b:
+      lv: Augstuma palielināšana var pasliktināt situāciju un pārkāpt 120 m limitu.
+      en: Climbing can worsen the situation and may breach the 120 m limit.
+      ru: Набор высоты может ухудшить ситуацию и привести к нарушению лимита 120 м.
+    c:
+      lv: UAS nekad nav “prioritāte” pret pilotējamiem gaisa kuģiem; tie ir jāizlaiž.
+      en: UAS never has “priority” over manned aircraft; you must give way.
+      ru: БПЛА не имеет «приоритета» над пилотируемыми ВС; нужно уступать.
+    d:
+      lv: Filmēšana palielina risku un motivē lidot tuvāk konfliktam.
+      en: Filming increases risk and encourages flying into the conflict.
+      ru: Съёмка повышает риск и провоцирует приближение к конфликту.
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS.OPEN.060 — avoid hazards and give way"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-022
+  stem:
+    lv: Kad Atvērtajā kategorijā drīkst lidot virs cilvēku pulcēšanās (assembly of people)?
+    en: When may you fly over an assembly of people in the Open category?
+    ru: Когда в Открытой категории можно летать над скоплением людей (assembly of people)?
+  options:
+    - id: a
+      text:
+        lv: Nekad — lidojums virs pulcēšanās ir aizliegts Atvērtajā kategorijā.
+        en: Never — flying over assemblies of people is prohibited in Open category.
+        ru: Никогда — полёт над скоплением людей запрещён в Открытой категории.
+    - id: b
+      text:
+        lv: Ja drons ir zem 250 g un ir C0 klase.
+        en: If the drone is under 250 g and class C0.
+        ru: Если дрон легче 250 г и класса C0.
+    - id: c
+      text:
+        lv: Ja pilots ir nokārtojis A2 eksāmenu.
+        en: If the pilot has passed the A2 exam.
+        ru: Если пилот сдал экзамен A2.
+    - id: d
+      text:
+        lv: Ja lidojumam ir uzlikts “kino režīms” ar zemu ātrumu.
+        en: If the flight uses “cinematic mode” with low speed.
+        ru: Если включён «кинорежим» с низкой скоростью.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Atvērtajā kategorijā ir aizliegts lidot virs cilvēku pulcēšanās.
+      Pat ar vieglu UAS drīkst lidot “virs neiesaistītām personām” tikai
+      noteiktos apstākļos, bet ne virs pulcēšanās.
+    en: >
+      In the Open category, flying over assemblies of people is prohibited.
+      Even with a light UAS, flying over uninvolved persons is only allowed
+      under specific conditions — not over assemblies.
+    ru: >
+      В Открытой категории запрещено летать над скоплением людей.
+      Даже с лёгким БПЛА полёт над не вовлечёнными лицами возможен только
+      при условиях — но не над скоплениями.
+  distractorRationales:
+    b:
+      lv: C0 var atļaut lidojumu virs atsevišķām neiesaistītām personām, bet “assembly” ir atsevišķs aizliegums.
+      en: C0 may allow flight over individual uninvolved persons, but “assembly” is a separate prohibition.
+      ru: C0 может допускать полёт над отдельными не вовлечёнными лицами, но «скопление» — отдельный запрет.
+    c:
+      lv: A2 attiecas uz A2 apakškategoriju, bet neatceļ aizliegumu lidot virs pulcēšanās.
+      en: A2 relates to the A2 subcategory but does not remove the assembly prohibition.
+      ru: A2 относится к подкатегории A2, но не отменяет запрет над скоплениями.
+    d:
+      lv: Lidojuma režīms neietekmē juridisko aizliegumu virs pulcēšanās.
+      en: Flight mode does not change the legal prohibition over assemblies.
+      ru: Режим полёта не меняет юридический запрет над скоплениями.
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Open category limitations — assemblies of people"
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: regulatory
+
+- id: as-023
+  stem:
+    lv: Kura rīcība vislabāk palīdz samazināt risku “fly-away” (nekontrolēta aizlidošana)?
+    en: Which action best helps reduce “fly-away” risk?
+    ru: Какое действие лучше всего снижает риск «fly-away» (неконтролируемого улёта)?
+  options:
+    - id: a
+      text:
+        lv: Pārbaudīt GNSS/kompasa stāvokli un iestatīt drošu RTH augstumu pirms starta.
+        en: Check GNSS/compass status and set a safe RTH altitude before launch.
+        ru: Проверить состояние GNSS/компаса и задать безопасную высоту RTH до старта.
+    - id: b
+      text:
+        lv: Lidot tikai “sporta režīmā”, lai ātrāk atgrieztos.
+        en: Fly only in “sport mode” to return faster.
+        ru: Летать только в «sport mode», чтобы быстрее возвращаться.
+    - id: c
+      text:
+        lv: Izslēgt geozonu brīdinājumus, lai tie netraucētu.
+        en: Disable geo-zone warnings so they don’t distract you.
+        ru: Отключить предупреждения о геозонах, чтобы не отвлекали.
+    - id: d
+      text:
+        lv: Vienmēr pacelties tieši virs cilvēkiem, lai mazāk zaudētu signālu.
+        en: Always take off directly above people to lose signal less.
+        ru: Всегда взлетать прямо над людьми, чтобы меньше терять сигнал.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Fly-away risks samazinās ar labu iestatījumu pārbaudi un “fail-safe”
+      parametriem (piem., RTH augstums), kā arī ar vietas izvēli un VLOS.
+    en: >
+      Fly-away risk is reduced by checking status and fail-safe settings
+      (e.g., RTH altitude), plus good site selection and VLOS.
+    ru: >
+      Риск fly-away снижается проверкой состояния и fail-safe настроек
+      (например, высоты RTH), а также выбором места и VLOS.
+  distractorRationales:
+    b:
+      lv: “Sport mode” parasti palielina risku (ātrums, bremzēšana), nevis to samazina.
+      en: “Sport mode” typically increases risk (speed, braking), not reduce it.
+      ru: «Sport mode» обычно повышает риск (скорость, торможение), а не снижает.
+    c:
+      lv: Geozonu brīdinājumi palīdz izvairīties no pārkāpumiem un bīstamām zonām.
+      en: Geo-zone warnings help avoid violations and unsafe areas.
+      ru: Предупреждения о геозонах помогают избегать нарушений и опасных зон.
+    d:
+      lv: Lidojums virs cilvēkiem palielina sekas avārijas gadījumā un var būt aizliegts.
+      en: Flying over people increases consequences in an accident and may be prohibited.
+      ru: Полёт над людьми увеличивает последствия при аварии и может быть запрещён.
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS.OPEN.060 — safe operation; fail-safe considerations"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-024
+  stem:
+    lv: Ko nozīmē “lidojuma pārtraukšana” (terminate the flight) Atvērtajā kategorijā?
+    en: What does “terminate the flight” mean in the Open category?
+    ru: Что означает «прекратить полёт» (terminate the flight) в Открытой категории?
+  options:
+    - id: a
+      text:
+        lv: Nekavējoties pabeigt lidojumu drošā veidā (nolaisties vai atgriezties), ja risks pieaug.
+        en: End the flight safely without delay (land or return) when risk increases.
+        ru: Немедленно безопасно завершить полёт (посадка/возврат), если риск вырос.
+    - id: b
+      text:
+        lv: Izslēgt motorus gaisā, lai drons nokristu uz zemes.
+        en: Cut motors mid-air so the drone falls to the ground.
+        ru: Выключить моторы в воздухе, чтобы дрон упал.
+    - id: c
+      text:
+        lv: Pārtraukt tikai video ierakstu.
+        en: Stop only the video recording.
+        ru: Остановить только запись видео.
+    - id: d
+      text:
+        lv: Pārtraukt lidojumu drīkst tikai pēc policijas pieprasījuma.
+        en: You may terminate a flight only when police request it.
+        ru: Прекратить полёт можно только по требованию полиции.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Ja apstākļi kļūst nedroši, pilots pabeidz lidojumu drošā veidā,
+      piemēram, nolaidoties vai atgriežoties uz starta vietu.
+    en: >
+      When conditions become unsafe, the pilot ends the flight in a safe way,
+      e.g., landing or returning to the launch point.
+    ru: >
+      Если условия стали небезопасными, пилот завершает полёт безопасно,
+      например посадкой или возвращением к месту старта.
+  distractorRationales:
+    b:
+      lv: Apzināta “brīva krišana” var apdraudēt cilvēkus un īpašumu; terminācija nav “nometšana”.
+      en: Intentionally “free-falling” can endanger people/property; termination is not “dropping it”.
+      ru: Намеренное «свободное падение» опасно; прекращение полёта — не «уронить».
+    c:
+      lv: Video nav lidojuma drošības kritērijs. Jārisina lidojums, nevis ieraksts.
+      en: Video is not the safety criterion. The flight itself must be addressed.
+      ru: Видео — не критерий безопасности. Важно завершить полёт.
+    d:
+      lv: Pilots pats ir atbildīgs par risku un var pārtraukt lidojumu jebkurā brīdī drošības dēļ.
+      en: The pilot is responsible for risk and may terminate anytime for safety.
+      ru: Пилот отвечает за риск и может прекратить полёт в любой момент из соображений безопасности.
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS.OPEN.060 — obligation to avoid hazards; terminate when needed"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: decision
+
+- id: as-025
+  stem:
+    lv: Kāda ir drošākā rīcība, ja tu zaudē VLOS (vairs neredzi UAS ar neapbruņotu aci)?
+    en: What is the safest action if you lose VLOS (you can’t see the UAS with the unaided eye)?
+    ru: Что безопаснее всего сделать, если вы потеряли VLOS (не видите БПЛА невооружённым глазом)?
+  options:
+    - id: a
+      text:
+        lv: Nekavējoties atjaunot VLOS vai pārtraukt lidojumu (RTH/landing), izvairoties no riska.
+        en: Immediately regain VLOS or terminate the flight (RTH/land) to reduce risk.
+        ru: Немедленно восстановить VLOS или завершить полёт (RTH/посадка), снижая риск.
+    - id: b
+      text:
+        lv: Turpināt, jo GPS parāda atrašanās vietu.
+        en: Continue because GPS shows the position.
+        ru: Продолжать, ведь GPS показывает позицию.
+    - id: c
+      text:
+        lv: Lidot augstāk, lai to atkal ieraudzītu.
+        en: Fly higher to see it again.
+        ru: Подняться выше, чтобы снова увидеть.
+    - id: d
+      text:
+        lv: Pārslēgties uz FPV režīmu bez novērotāja.
+        en: Switch to FPV mode without an observer.
+        ru: Перейти на FPV без наблюдателя.
+  correctOptionId: a
+  explanation:
+    lv: >
+      VLOS ir pamatprasība. Ja to zaudē, pilots atjauno kontroli un redzamību
+      vai droši pabeidz lidojumu, nepalielinot risku.
+    en: >
+      VLOS is a core requirement. If it’s lost, the pilot regains visual control
+      or safely ends the flight without increasing risk.
+    ru: >
+      VLOS — базовое требование. При его потере пилот восстанавливает визуальный
+      контроль или безопасно завершает полёт, не повышая риск.
+  distractorRationales:
+    b:
+      lv: GPS koordinātes neaizvieto spēju redzēt kustību, orientāciju un šķēršļus.
+      en: GPS coordinates don’t replace seeing attitude, movement and obstacles.
+      ru: Координаты GPS не заменяют видимость ориентации, движения и препятствий.
+    c:
+      lv: Augstuma palielināšana var pārkāpt limitus un palielināt konfliktu risku.
+      en: Climbing can breach limits and increase conflict risk.
+      ru: Набор высоты может нарушить ограничения и увеличить риск конфликта.
+    d:
+      lv: FPV bez novērotāja neatbilst prasībām un samazina situācijas apzināšanos.
+      en: FPV without an observer is non-compliant and reduces situational awareness.
+      ru: FPV без наблюдателя нарушает требования и снижает осведомлённость.
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS.OPEN.060(3) — VLOS requirement"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-026
+  stem:
+    lv: Kura rīcība ir piemērota, ja cilvēks tuvojas tavam pacelšanās/zemēšanās laukumiņam?
+    en: What is appropriate if a person approaches your take-off/landing spot?
+    ru: Что правильно, если человек приближается к вашей площадке взлёта/посадки?
+  options:
+    - id: a
+      text:
+        lv: Apturēt vai atlikt startu/zemēšanos un nodrošināt drošu attālumu.
+        en: Pause or delay take-off/landing and ensure a safe separation.
+        ru: Остановить/отложить взлёт/посадку и обеспечить безопасную дистанцию.
+    - id: b
+      text:
+        lv: Ignorēt, jo pilots ir “atbildīgs” un var turpināt.
+        en: Ignore it because the pilot is “responsible” and can continue.
+        ru: "Игнорировать: пилот «ответственный» и может продолжать."
+    - id: c
+      text:
+        lv: Paātrināt pacelšanos, lai ātrāk aizlidotu prom.
+        en: Speed up take-off to get away faster.
+        ru: Ускорить взлёт, чтобы быстрее улететь.
+    - id: d
+      text:
+        lv: Uzsākt lidojumu tieši virs personas, lai to neapdraudētu propelleri uz zemes.
+        en: Take off directly above the person so propellers don’t endanger them on the ground.
+        ru: Взлететь прямо над человеком, чтобы винты «не опасны на земле».
+  correctOptionId: a
+  explanation:
+    lv: >
+      Pilots uztur drošu attālumu no personām un izvēlas drošu pacelšanās/zemēšanās vietu.
+      Ja apstākļi mainās, lidojumu pārtrauc vai atliek.
+    en: >
+      The pilot maintains a safe distance to people and chooses a safe take-off/landing area.
+      If conditions change, the flight is paused or terminated.
+    ru: >
+      Пилот поддерживает безопасную дистанцию до людей и выбирает безопасное место взлёта/посадки.
+      При изменении условий полёт откладывается или прекращается.
+  distractorRationales:
+    b:
+      lv: Atbildība nozīmē rīkoties droši, nevis ignorēt riskus.
+      en: Responsibility means acting safely, not ignoring risks.
+      ru: Ответственность означает действовать безопасно, а не игнорировать риск.
+    c:
+      lv: Steiga palielina kļūdu risku tieši kritiskajā fāzē (take-off/landing).
+      en: Rushing increases error risk in a critical phase (take-off/landing).
+      ru: Спешка повышает риск ошибок в критической фазе (взлёт/посадка).
+    d:
+      lv: Lidojums virs cilvēka palielina risku; arī uz zemes propelleri ir bīstami.
+      en: Flying above a person increases risk; propellers are dangerous on the ground too.
+      ru: Полёт над человеком повышает риск; винты опасны и на земле.
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS.OPEN.060 — keep safe distances; avoid endangering people"
+  difficulty: 1
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-027
+  stem:
+    lv: Kāpēc “zems akumulatora līmenis” ir drošības risks?
+    en: Why is “low battery” a safety risk?
+    ru: Почему «низкий заряд батареи» — это риск безопасности?
+  options:
+    - id: a
+      text:
+        lv: Tas var izraisīt neplānotu nosēšanos vai kontroles zudumu kritiskā brīdī.
+        en: It can cause an unplanned landing or loss of control at a critical moment.
+        ru: Это может привести к незапланированной посадке или потере управления в критический момент.
+    - id: b
+      text:
+        lv: Tas tikai samazina video kvalitāti, bet drošību neietekmē.
+        en: It only reduces video quality and doesn’t affect safety.
+        ru: Это лишь ухудшает качество видео и не влияет на безопасность.
+    - id: c
+      text:
+        lv: Tas ir risks tikai virs 120 m augstuma.
+        en: It’s a risk only above 120 m altitude.
+        ru: Это риск только выше 120 м.
+    - id: d
+      text:
+        lv: Tas nav risks, ja UAS ir C1 klase.
+        en: It’s not a risk if the UAS is class C1.
+        ru: Это не риск, если БПЛА класса C1.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Zems akumulators var piespiest UAS veikt avārijas nosēšanos vai ierobežot jaudu
+      (vējš, manevri), kas palielina incidentu risku.
+    en: >
+      Low battery can force emergency landing or reduce available power
+      (wind, manoeuvres), increasing incident risk.
+    ru: >
+      Низкий заряд может привести к аварийной посадке или снижению доступной мощности
+      (ветер, манёвры), повышая риск инцидента.
+  distractorRationales:
+    b:
+      lv: Akumulators ietekmē ne tikai kameru, bet arī lidojuma stabilitāti un atgriešanos.
+      en: Battery affects not only the camera but flight stability and return capability.
+      ru: Батарея влияет не только на камеру, но и на устойчивость полёта и возможность возврата.
+    c:
+      lv: Risks pastāv jebkurā augstumā — īpaši tuvu cilvēkiem un šķēršļiem.
+      en: The risk exists at any altitude—especially near people and obstacles.
+      ru: Риск существует на любой высоте — особенно рядом с людьми и препятствиями.
+    d:
+      lv: "UAS klase neizslēdz fiziskos ierobežojumus: zema baterija joprojām ir risks."
+      en: "UAS class doesn’t remove physics: low battery is still a risk."
+      ru: "Класс БПЛА не отменяет физику: низкий заряд всё равно риск."
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — operational safety; battery management"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: factual
+
+- id: as-028
+  stem:
+    lv: Ko nozīmē “situācijas apzināšanās” (situational awareness) dronu lidojumā?
+    en: What does “situational awareness” mean in drone operations?
+    ru: Что означает «ситуационная осведомлённость» в управлении дроном?
+  options:
+    - id: a
+      text:
+        lv: Pastāvīga izpratne par UAS, vidi, citiem dalībniekiem un riskiem, lai laicīgi pieņemtu lēmumus.
+        en: Continuous understanding of the UAS, environment, other airspace users and risks to make timely decisions.
+        ru: Постоянное понимание БПЛА, среды, других участников и рисков для своевременных решений.
+    - id: b
+      text:
+        lv: Tikai zināt, cik procentu akumulators ir palicis.
+        en: Only knowing the remaining battery percentage.
+        ru: Только знать процент заряда батареи.
+    - id: c
+      text:
+        lv: Skatīties tikai uz FPV attēlu, lai “nepalaistu garām” kadrus.
+        en: Watching only the FPV feed so you don’t “miss the shot”.
+        ru: Смотреть только FPV-картинку, чтобы «не упустить кадр».
+    - id: d
+      text:
+        lv: Aizvērt vienu aci, lai labāk fokusētos uz dronu.
+        en: Closing one eye to focus better on the drone.
+        ru: Закрыть один глаз, чтобы лучше фокусироваться на дроне.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Situācijas apzināšanās ietver UAS stāvokli, apkārtējo vidi, cilvēkus,
+      gaisa telpu, laikapstākļus un ierobežojumus — lai nepieļautu konfliktus.
+    en: >
+      Situational awareness includes UAS status, environment, people,
+      airspace, weather and restrictions—so you can avoid conflicts.
+    ru: >
+      Ситуационная осведомлённость включает состояние БПЛА, среду, людей,
+      воздушное пространство, погоду и ограничения — чтобы избегать конфликтов.
+  distractorRationales:
+    b:
+      lv: Akumulators ir tikai viens no faktoriem; risks var pieaugt arī citu iemeslu dēļ.
+      en: Battery is only one factor; risk can increase for many other reasons.
+      ru: Батарея — лишь один фактор; риск растёт и по другим причинам.
+    c:
+      lv: FPV vien var pasliktināt apzināšanos par apkārtējo gaisa telpu; vajadzīga plašāka bilde.
+      en: FPV-only can reduce awareness of surrounding airspace; you need the bigger picture.
+      ru: Только FPV снижает понимание окружающего пространства; нужна «общая картина».
+    d:
+      lv: Tas nav situācijas apzināšanās jēdziens un neveicina drošu lidojumu.
+      en: That’s not what situational awareness means and doesn’t improve safety.
+      ru: Это не про ситуационную осведомлённость и не повышает безопасность.
+  sourceRef: "docs/knowledge/training-guides/EASA-QA-UAS-regulations.pdf — safe operation concepts; pilot responsibilities"
+  difficulty: 1
+  cognitiveLevel: recall
+  scenarioType: factual
+
+- id: as-029
+  stem:
+    lv: Kura no izvēlēm ir piemērots “kontingences plāna” (contingency plan) piemērs?
+    en: Which is an example of a suitable contingency plan?
+    ru: Что является примером подходящего плана действий на случай непредвиденных обстоятельств (contingency plan)?
+  options:
+    - id: a
+      text:
+        lv: “Ja zaudēju signālu, aktivizēju RTH; ja tas nav droši, veicu kontrolētu nosēšanos brīvā zonā.”
+        en: “If I lose link, I trigger RTH; if that’s unsafe, I perform a controlled landing in a clear area.”
+        ru: «При потере связи включаю RTH; если это небезопасно — выполняю контролируемую посадку в свободной зоне».
+    - id: b
+      text:
+        lv: “Ja kas notiek, turpinu filmēt līdz beigām.”
+        en: “If anything happens, I keep filming until the end.”
+        ru: «Если что-то случится, продолжаю снимать до конца».
+    - id: c
+      text:
+        lv: “Ja ir problēmas, vienkārši skrienu pakaļ dronam.”
+        en: “If there’s a problem, I just run after the drone.”
+        ru: «Если проблема — просто бегу за дроном».
+    - id: d
+      text:
+        lv: “Man nav vajadzīgs plāns, jo man ir apdrošināšana.”
+        en: “I don’t need a plan because I have insurance.”
+        ru: «План не нужен, потому что у меня есть страховка».
+  correctOptionId: a
+  explanation:
+    lv: >
+      Kontingences plāns ir iepriekš izdomāts drošības scenārijs neparedzētām situācijām
+      (signāla zudums, baterija, cilvēku parādīšanās), lai ātri samazinātu risku.
+    en: >
+      A contingency plan is a pre-thought safety response to unexpected situations
+      (link loss, battery, people entering area) to reduce risk quickly.
+    ru: >
+      Contingency plan — заранее продуманная реакция на неожиданные ситуации
+      (потеря связи, батарея, появление людей), чтобы быстро снизить риск.
+  distractorRationales:
+    b:
+      lv: Filmēšana nav prioritāte salīdzinājumā ar drošību un atbilstību.
+      en: Filming is not a priority over safety and compliance.
+      ru: Съёмка не важнее безопасности и соблюдения правил.
+    c:
+      lv: Skriešana var pasliktināt situāciju (zaudē VLOS, satiksme, šķēršļi) un nav strukturēts plāns.
+      en: Running can worsen the situation (lose VLOS, traffic, obstacles) and isn’t a structured plan.
+      ru: Бег может ухудшить ситуацию (потеря VLOS, транспорт, препятствия) и не является планом.
+    d:
+      lv: Apdrošināšana nemazina tūlītējo risku lidojuma laikā.
+      en: Insurance does not reduce immediate operational risk during flight.
+      ru: Страховка не снижает оперативный риск во время полёта.
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — operational procedures; emergencies"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-030
+  stem:
+    lv: Kurš ir labs iemesls izvēlēties lielāku drošības buferi (attālumu) nekā minimums?
+    en: What is a good reason to keep a larger safety buffer than the minimum?
+    ru: Какова хорошая причина держать больший запас безопасности (дистанцию), чем минимум?
+  options:
+    - id: a
+      text:
+        lv: Vējš, signāla aizture un cilvēku neparedzama kustība var palielināt risku, tāpēc buferis palīdz.
+        en: Wind, control latency and unpredictable human movement increase risk, so extra buffer helps.
+        ru: Ветер, задержка управления и непредсказуемые движения людей повышают риск — дополнительный запас помогает.
+    - id: b
+      text:
+        lv: Jo tā var lidot virs cilvēku pulcēšanās.
+        en: So you can fly over assemblies of people.
+        ru: Чтобы можно было летать над скоплениями людей.
+    - id: c
+      text:
+        lv: Lai nebūtu jāievēro 120 m augstuma limits.
+        en: To avoid the 120 m altitude limit.
+        ru: Чтобы не соблюдать ограничение 120 м.
+    - id: d
+      text:
+        lv: Jo tas ļauj pilotam izmantot binokli VLOS vietā.
+        en: Because it allows the pilot to use binoculars instead of VLOS.
+        ru: Потому что это позволяет использовать бинокль вместо VLOS.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Minimālie limiti ir juridiskā robeža, nevis “drošākais attālums”.
+      Mainīgos apstākļos lielāks buferis samazina incidentu risku.
+    en: >
+      Minimum limits are legal boundaries, not “the safest distance”.
+      With changing conditions, a larger buffer reduces incident risk.
+    ru: >
+      Минимальные ограничения — это юридическая граница, а не «самая безопасная дистанция».
+      При изменяющихся условиях больший запас снижает риск.
+  distractorRationales:
+    b:
+      lv: Virs pulcēšanās lidot nedrīkst neatkarīgi no bufera.
+      en: Flying over assemblies is prohibited regardless of buffer.
+      ru: Полёт над скоплениями запрещён независимо от «запаса».
+    c:
+      lv: Buferis neietekmē augstuma limitu.
+      en: Buffer does not affect the altitude limit.
+      ru: Запас дистанции не отменяет высотное ограничение.
+    d:
+      lv: VLOS prasa neapbruņotu aci; binokļi nav VLOS aizvietotājs.
+      en: VLOS requires the unaided eye; binoculars are not a VLOS substitute.
+      ru: VLOS требует невооружённый глаз; бинокль не заменяет VLOS.
+  sourceRef: "docs/knowledge/training-guides/EASA-open-category-rules.pdf — safety distances; keep clear of people"
+  difficulty: 1
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-031
+  stem:
+    lv: Kura situācija visbiežāk prasa “GO/NO-GO” lēmumu pirms pacelšanās?
+    en: Which situation most often calls for a GO/NO-GO decision before take-off?
+    ru: Какая ситуация чаще всего требует решения GO/NO-GO перед взлётом?
+  options:
+    - id: a
+      text:
+        lv: Vējš pastiprinās un brāzmas pārsniedz UAS drošu vadāmību.
+        en: Wind increases and gusts exceed safe controllability for the UAS.
+        ru: Усиливается ветер и порывы превышают безопасную управляемость БПЛА.
+    - id: b
+      text:
+        lv: Tu vēlies labāku kadrējumu video.
+        en: You want a better video framing.
+        ru: Хочется лучше кадрировать видео.
+    - id: c
+      text:
+        lv: Tu maini telefona fona attēlu.
+        en: You change your phone wallpaper.
+        ru: Меняете обои на телефоне.
+    - id: d
+      text:
+        lv: Tu aizver aplikāciju, lai taupītu bateriju.
+        en: You close an app to save battery.
+        ru: Закрываете приложение, чтобы экономить батарею.
+  correctOptionId: a
+  explanation:
+    lv: >
+      GO/NO-GO lēmums balstās drošībā: laikapstākļi, cilvēki, vieta, ierobežojumi
+      un UAS spēja droši izpildīt lidojumu.
+    en: >
+      GO/NO-GO decisions are safety-based: weather, people, site, restrictions,
+      and whether the UAS can be operated safely.
+    ru: >
+      Решение GO/NO-GO основано на безопасности: погода, люди, место, ограничения
+      и возможность безопасно выполнить полёт.
+  distractorRationales:
+    b:
+      lv: Video kvalitāte nav drošības kritērijs; tas nedrīkst dominēt pār riskiem.
+      en: Video quality is not a safety criterion; it must not override risk.
+      ru: Качество видео не критерий безопасности и не должно перевешивать риск.
+    c:
+      lv: Tas nav saistīts ar lidojuma drošību.
+      en: This is unrelated to flight safety.
+      ru: Это не связано с безопасностью полёта.
+    d:
+      lv: Aplikāciju aizvēršana var būt noderīga, bet tā nav tipisks GO/NO-GO drošības faktors.
+      en: Closing apps may help, but it’s not a typical GO/NO-GO safety driver.
+      ru: Закрытие приложений может помочь, но это не типичный фактор GO/NO-GO.
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — meteorology and decision-making basics"
+  difficulty: 1
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-032
+  stem:
+    lv: Kāda ir drošības priekšrocība lidojumam ar mazāku ātrumu sarežģītā vidē?
+    en: What is a safety advantage of flying slower in a complex environment?
+    ru: Какое преимущество для безопасности даёт меньшая скорость в сложной среде?
+  options:
+    - id: a
+      text:
+        lv: Vairāk laika reakcijai un precīzākai vadībai, mazāks sadursmes risks.
+        en: More time to react and control precisely, reducing collision risk.
+        ru: Больше времени на реакцию и точное управление, меньше риск столкновения.
+    - id: b
+      text:
+        lv: Lielāka iespēja pārkāpt augstuma limitu.
+        en: Higher chance to exceed the altitude limit.
+        ru: Больший шанс превысить ограничение по высоте.
+    - id: c
+      text:
+        lv: Tas garantē, ka UAS nekad nezaudēs GNSS signālu.
+        en: It guarantees the UAS will never lose GNSS.
+        ru: Это гарантирует, что БПЛА никогда не потеряет GNSS.
+    - id: d
+      text:
+        lv: Tas automātiski padara lidojumu atļautu virs pulcēšanās.
+        en: It automatically makes over-assembly flight allowed.
+        ru: Это автоматически делает полёт над скоплениями разрешённым.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Mazāks ātrums dod lielāku drošības rezervi: īsāks bremzēšanas ceļš,
+      mazākas kļūdas un labāka spēja reaģēt uz šķēršļiem.
+    en: >
+      Lower speed increases safety margin: shorter stopping distance,
+      fewer control errors and better obstacle avoidance.
+    ru: >
+      Меньшая скорость увеличивает запас безопасности: короче тормозной путь,
+      меньше ошибок управления и легче избегать препятствий.
+  distractorRationales:
+    b:
+      lv: Ātrums tieši nepalielina augstumu; augstums ir atsevišķs parametrs.
+      en: Speed doesn’t directly increase altitude; altitude is separate.
+      ru: Скорость не увеличивает высоту напрямую; высота — отдельный параметр.
+    c:
+      lv: GNSS signāls atkarīgs no apstākļiem, nevis no ātruma.
+      en: GNSS depends on conditions, not speed.
+      ru: GNSS зависит от условий, а не от скорости.
+    d:
+      lv: Juridiskie aizliegumi nav atkarīgi no ātruma.
+      en: Legal prohibitions are not speed-dependent.
+      ru: Юридические запреты не зависят от скорости.
+  sourceRef: "docs/knowledge/training-guides/EASA-QA-UAS-regulations.pdf — safe operating practices"
+  difficulty: 1
+  cognitiveLevel: apply
+  scenarioType: factual
+
+- id: as-033
+  stem:
+    lv: Kura situācija vislabāk raksturo “cilvēku riska” pieaugumu lidojuma laikā?
+    en: Which situation best describes increased “people risk” during a flight?
+    ru: Какая ситуация лучше всего описывает рост «риска для людей» во время полёта?
+  options:
+    - id: a
+      text:
+        lv: Pie lidojuma zonas pēkšņi parādās bērni vai gājēji, kas nav informēti par operāciju.
+        en: Children or pedestrians unexpectedly enter the area and are not informed about the operation.
+        ru: В зону полёта неожиданно заходят дети/пешеходы, не проинформированные об операции.
+    - id: b
+      text:
+        lv: Tu nomaini kameras filtrus aplikācijā.
+        en: You change camera filters in the app.
+        ru: Вы меняете фильтры камеры в приложении.
+    - id: c
+      text:
+        lv: Tu palielini video bitreitu.
+        en: You increase the video bitrate.
+        ru: Вы увеличиваете битрейт видео.
+    - id: d
+      text:
+        lv: Tu atver karti, lai atzīmētu punktu.
+        en: You open the map to mark a point.
+        ru: Вы открываете карту, чтобы отметить точку.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Neiesaistītas personas palielina risku un var prasīt lidojuma pārtraukšanu
+      vai distances palielināšanu.
+    en: >
+      Uninvolved people increase risk and may require terminating the flight
+      or increasing separation.
+    ru: >
+      Не вовлечённые лица повышают риск и могут потребовать прекращения полёта
+      или увеличения дистанции.
+  distractorRationales:
+    b:
+      lv: Tas ir sekundārs iestatījums un nepalielina cilvēku risku pats par sevi.
+      en: This is a secondary setting and doesn’t increase people risk by itself.
+      ru: Это второстепенная настройка и сама по себе не повышает риск для людей.
+    c:
+      lv: Bitreits neietekmē drošību tieši.
+      en: Bitrate does not directly affect safety.
+      ru: Битрейт напрямую не влияет на безопасность.
+    d:
+      lv: Kartes izmantošana var palīdzēt, bet tā nav tipiska “riska pieauguma” situācija.
+      en: Maps can help, but it’s not a typical “risk increase” event.
+      ru: Карта может помочь, но это не типичный «рост риска» сам по себе.
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Open category — uninvolved persons and safety"
+  difficulty: 1
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-034
+  stem:
+    lv: Ko nozīmē “atbildīga rīcība” (due regard) Open kategorijā praktiski?
+    en: What does “due regard” mean in practice in the Open category?
+    ru: Что на практике означает «должная осмотрительность» (due regard) в Открытой категории?
+  options:
+    - id: a
+      text:
+        lv: Izvērtēt riskus un rīkoties tā, lai neapdraudētu cilvēkus, īpašumu un citus gaisa telpas lietotājus.
+        en: Assess risks and act so you don’t endanger people, property or other airspace users.
+        ru: Оценивать риски и действовать так, чтобы не подвергать опасности людей, имущество и других пользователей воздушного пространства.
+    - id: b
+      text:
+        lv: Lidot pēc iespējas tuvāk cilvēkiem, lai parādītu kontroli.
+        en: Fly as close as possible to people to demonstrate control.
+        ru: Летать как можно ближе к людям, чтобы показать контроль.
+    - id: c
+      text:
+        lv: Ignorēt vietējos noteikumus, ja tie traucē filmēšanai.
+        en: Ignore local rules if they interfere with filming.
+        ru: Игнорировать местные правила, если они мешают съёмке.
+    - id: d
+      text:
+        lv: Paļauties, ka citi vienmēr pamanīs dronu un izvairīsies.
+        en: Assume others will always notice the drone and avoid it.
+        ru: Считать, что другие всегда заметят дрон и разойдутся.
+  correctOptionId: a
+  explanation:
+    lv: >
+      “Due regard” nozīmē aktīvu riska pārvaldību: plānošanu, distances,
+      lidojuma pārtraukšanu, ja nepieciešams, un noteikumu ievērošanu.
+    en: >
+      “Due regard” means active risk management: planning, separation,
+      terminating when needed, and following rules.
+    ru: >
+      Due regard — это активное управление риском: планирование, дистанция,
+      прекращение полёта при необходимости и соблюдение правил.
+  distractorRationales:
+    b:
+      lv: Tuvums palielina risku un var pārkāpt noteikumus par cilvēku drošību.
+      en: Closeness increases risk and may breach people-safety rules.
+      ru: Близость повышает риск и может нарушать требования безопасности людей.
+    c:
+      lv: Vietējie noteikumi un geozonas ir daļa no drošības prasībām.
+      en: Local rules and geo-zones are part of safety requirements.
+      ru: Местные правила и геозоны — часть требований безопасности.
+    d:
+      lv: Atbildība ir pilota pusē; citi var tevi nepamanīt vai rīkoties neparedzami.
+      en: Responsibility is on the pilot; others may not notice or act unpredictably.
+      ru: Ответственность на пилоте; другие могут не заметить или вести себя непредсказуемо.
+  sourceRef: "docs/knowledge/training-guides/EASA-QA-UAS-regulations.pdf — general obligations; due regard"
+  difficulty: 2
+  cognitiveLevel: analyze
+  scenarioType: decision
+
+- id: as-035
+  stem:
+    lv: Kāpēc ir bīstami paļauties tikai uz kartes aplikāciju, ignorējot reālo vidi?
+    en: Why is it dangerous to rely only on a map app while ignoring the real environment?
+    ru: Почему опасно полагаться только на карту в приложении, игнорируя реальную обстановку?
+  options:
+    - id: a
+      text:
+        lv: Karte var nebūt aktuāla vai pilnīga; šķēršļi un cilvēki jānovērtē uz vietas.
+        en: Maps may be outdated/incomplete; obstacles and people must be assessed on-site.
+        ru: Карта может быть неактуальной/неполной; препятствия и люди оцениваются на месте.
+    - id: b
+      text:
+        lv: Karte vienmēr ir precīzāka par redzi.
+        en: A map is always more accurate than eyesight.
+        ru: Карта всегда точнее зрения.
+    - id: c
+      text:
+        lv: Jo karte palielina UAS ātrumu.
+        en: Because a map increases UAS speed.
+        ru: Потому что карта увеличивает скорость БПЛА.
+    - id: d
+      text:
+        lv: Jo karte automātiski atceļ VLOS prasību.
+        en: Because a map automatically removes the VLOS requirement.
+        ru: Потому что карта автоматически отменяет требование VLOS.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Plānošana ir noderīga, bet drošība ir atkarīga no reālās situācijas:
+      cilvēki, šķēršļi, vējš, signāla apstākļi un negaidīti notikumi.
+    en: >
+      Planning helps, but safety depends on the real situation: people, obstacles,
+      wind, link conditions and unexpected events.
+    ru: >
+      Планирование полезно, но безопасность зависит от реальной ситуации: люди, препятствия,
+      ветер, связь и неожиданные события.
+  distractorRationales:
+    b:
+      lv: Karte neuzrāda dinamiskus riskus (cilvēki, auto), un var būt novecojusi.
+      en: Maps don’t show dynamic risks (people, cars) and can be outdated.
+      ru: Карта не показывает динамические риски (люди, машины) и может быть устаревшей.
+    c:
+      lv: Karte neietekmē UAS ātrumu.
+      en: A map doesn’t affect UAS speed.
+      ru: Карта не влияет на скорость БПЛА.
+    d:
+      lv: VLOS ir juridiska prasība; kartes izmantošana to neatceļ.
+      en: VLOS is a legal requirement; using maps doesn’t remove it.
+      ru: VLOS — юридическое требование; карта его не отменяет.
+  sourceRef: "docs/knowledge/training-guides/EASA-open-category-rules.pdf — pilot responsibilities and safe operation"
+  difficulty: 1
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-036
+  stem:
+    lv: Kura pazīme var liecināt par “vēja bīdi” vai bīstamām brāzmām zemu virs zemes?
+    en: Which sign can indicate wind shear or dangerous gusts near the ground?
+    ru: Какой признак может указывать на сдвиг ветра или опасные порывы у земли?
+  options:
+    - id: a
+      text:
+        lv: Straujas virziena/ātruma izmaiņas, koku galotņu “raustīšanās”, neprognozējama UAS dreife.
+        en: Rapid changes in direction/speed, tree tops “twitching”, unpredictable UAS drift.
+        ru: Резкие изменения направления/скорости, «дёргание» верхушек деревьев, непредсказуемый снос БПЛА.
+    - id: b
+      text:
+        lv: Pilnīgi skaidras debesis vienmēr nozīmē nulles vēju.
+        en: Perfectly clear skies always mean zero wind.
+        ru: Полностью ясное небо всегда означает нулевой ветер.
+    - id: c
+      text:
+        lv: UAS klase C1 garantē stabilitāti jebkurā vējā.
+        en: Class C1 guarantees stability in any wind.
+        ru: Класс C1 гарантирует устойчивость при любом ветре.
+    - id: d
+      text:
+        lv: Vējš ir bīstams tikai virs 120 m.
+        en: Wind is dangerous only above 120 m.
+        ru: Ветер опасен только выше 120 м.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Vējš un brāzmas var būt nevienmērīgas, īpaši pie ēkām un reljefa.
+      Pazīmes dabā un UAS uzvedībā palīdz laikus pieņemt NO-GO lēmumu.
+    en: >
+      Wind and gusts can be uneven, especially near buildings and terrain.
+      Signs in the environment and UAS behaviour help make timely NO-GO decisions.
+    ru: >
+      Ветер и порывы бывают неравномерными, особенно у зданий и рельефа.
+      Признаки в окружающей среде и поведении БПЛА помогают вовремя принять решение NO-GO.
+  distractorRationales:
+    b:
+      lv: Vējš var būt arī skaidrā laikā; jāskatās uz apstākļiem, ne tikai uz mākoņiem.
+      en: Wind can exist in clear weather; assess conditions, not just clouds.
+      ru: Ветер бывает и при ясной погоде; оценивайте условия, а не только облака.
+    c:
+      lv: UAS klase nosaka prasības, bet ne “maģisku” stabilitāti; vējš joprojām ietekmē lidojumu.
+      en: Class defines requirements, not “magic” stability; wind still affects flight.
+      ru: Класс задаёт требования, но не «магическую» устойчивость; ветер влияет на полёт.
+    d:
+      lv: Vējš ir bīstams arī zemā augstumā, īpaši tuvu šķēršļiem un cilvēkiem.
+      en: Wind can be dangerous at low altitude too, especially near obstacles and people.
+      ru: Ветер опасен и на малой высоте — особенно рядом с препятствиями и людьми.
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — meteorology basics; wind and gusts"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: factual
+
+- id: as-037
+  stem:
+    lv: Kas ir “drošā nosēšanās zona” ārkārtas situācijā?
+    en: What is a “safe landing area” in an emergency?
+    ru: Что такое «безопасная зона посадки» при аварийной ситуации?
+  options:
+    - id: a
+      text:
+        lv: Brīva vieta prom no cilvēkiem, satiksmes un kritiskām konstrukcijām.
+        en: A clear area away from people, traffic and critical structures.
+        ru: Свободное место вдали от людей, транспорта и критически важных объектов.
+    - id: b
+      text:
+        lv: Vislabākā vieta ir jebkura cilvēku pūļa vidū, jo tur ir “mīkstāk”.
+        en: Best is the middle of a crowd because it’s “softer”.
+        ru: Лучшее место — в центре толпы, потому что «мягче».
+    - id: c
+      text:
+        lv: Uz ceļa, lai policija var redzēt incidentu.
+        en: On a road so police can see the incident.
+        ru: На дороге, чтобы полиция увидела инцидент.
+    - id: d
+      text:
+        lv: Uz elektrolīnijas balsta, jo tas ir augsts.
+        en: On a power pole because it’s high.
+        ru: На опоре ЛЭП, потому что она высокая.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Ārkārtas situācijā mērķis ir samazināt sekas: izvēlēties vietu ar minimālu
+      iespēju savainot cilvēkus vai radīt bojājumus.
+    en: >
+      In an emergency the goal is to reduce consequences: choose an area that
+      minimizes risk to people and property.
+    ru: >
+      В аварийной ситуации цель — снизить последствия: выбрать место с минимальным
+      риском для людей и имущества.
+  distractorRationales:
+    b:
+      lv: Pūlis palielina cilvēku risku un ir aizlieguma zona.
+      en: A crowd increases people risk and is a prohibited context.
+      ru: Толпа увеличивает риск для людей и относится к запрещённым ситуациям.
+    c:
+      lv: Ceļš nozīmē satiksmes risku un sekundārus negadījumus.
+      en: Roads introduce traffic hazards and secondary accidents.
+      ru: Дорога — это риск ДТП и вторичных происшествий.
+    d:
+      lv: Elektrolīnijas ir kritiska infrastruktūra; kontakts var būt bīstams un radīt lielus bojājumus.
+      en: Power lines are critical infrastructure; contact is dangerous and can cause major damage.
+      ru: ЛЭП — критическая инфраструктура; контакт опасен и может вызвать серьёзный ущерб.
+  sourceRef: "docs/knowledge/training-guides/EASA-open-category-rules.pdf — emergency landing considerations"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-038
+  stem:
+    lv: Kura no darbībām vislabāk palīdz novērst “cilvēku faktora” kļūdas lidojumā?
+    en: Which action best helps prevent “human factor” errors in flight?
+    ru: Какое действие лучше всего помогает предотвращать ошибки «человеческого фактора» в полёте?
+  options:
+    - id: a
+      text:
+        lv: Izmantot kontrolsarakstu (checklist) un neuzsākt lidojumu nogurumā vai stresa stāvoklī.
+        en: Use a checklist and avoid flying when fatigued or stressed.
+        ru: Использовать чек-лист и не летать в состоянии усталости или стресса.
+    - id: b
+      text:
+        lv: Lidot bez pārtraukuma vairākas stundas, lai “iestrādātos”.
+        en: Fly for many hours without breaks to “get in the zone”.
+        ru: Летать много часов без перерывов, чтобы «войти в поток».
+    - id: c
+      text:
+        lv: Palielināt ātrumu, lai ātrāk pabeigtu lidojumu.
+        en: Increase speed to finish faster.
+        ru: Увеличить скорость, чтобы быстрее закончить.
+    - id: d
+      text:
+        lv: Atcelt pirmslidojuma pārbaudes, ja tu “jūties pārliecināts”.
+        en: Skip pre-flight checks if you “feel confident”.
+        ru: Пропустить проверки, если «уверен в себе».
+  correctOptionId: a
+  explanation:
+    lv: >
+      Checklists un pašnovērtējums (nogurums/stress) samazina kļūdu iespējamību,
+      īpaši rutīnas lidojumos un mainīgos apstākļos.
+    en: >
+      Checklists and self-assessment (fatigue/stress) reduce error likelihood,
+      especially in routine flights and changing conditions.
+    ru: >
+      Чек-листы и самоконтроль (усталость/стресс) снижают вероятность ошибок,
+      особенно при рутинных полётах и изменяющихся условиях.
+  distractorRationales:
+    b:
+      lv: Ilgi lidojumi bez pauzēm palielina nogurumu un kļūdu risku.
+      en: Long flights without breaks increase fatigue and error risk.
+      ru: Долгие полёты без пауз повышают усталость и риск ошибок.
+    c:
+      lv: Ātrums bieži samazina drošības rezervi un palielina kļūdu sekas.
+      en: Speed often reduces safety margin and increases consequences of errors.
+      ru: Скорость уменьшает запас безопасности и увеличивает последствия ошибок.
+    d:
+      lv: Pārbaudes nav atkarīgas no pārliecības; tās ir process, kas atrod kļūdas, kuras cilvēks nepamana.
+      en: Checks aren’t confidence-based; they catch mistakes humans miss.
+      ru: Проверки не зависят от «уверенности»; они выявляют ошибки, которые человек не замечает.
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — human factors; pilot responsibilities"
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+
+- id: as-039
+  stem:
+    lv: Kura izvēle ir pareiza attiecībā uz “drošu attālumu” no cilvēkiem?
+    en: Which statement about “safe distance” from people is correct?
+    ru: Какое утверждение о «безопасной дистанции» от людей верно?
+  options:
+    - id: a
+      text:
+        lv: “Drošs” attālums nav tikai minimums noteikumos — tas jāpielāgo apstākļiem (vējš, masa, vide).
+        en: “Safe” distance isn’t only the legal minimum; it must be adapted to conditions (wind, mass, environment).
+        ru: «Безопасная» дистанция — это не только юридический минимум; её нужно адаптировать к условиям (ветер, масса, среда).
+    - id: b
+      text:
+        lv: Ja noteikumos nav skaitļa, tad attālums nav svarīgs.
+        en: If rules don’t give a number, distance doesn’t matter.
+        ru: Если в правилах нет числа, дистанция не важна.
+    - id: c
+      text:
+        lv: Vienmēr pietiek ar 1 metru, jo droni ir mazi.
+        en: 1 meter is always enough because drones are small.
+        ru: Всегда достаточно 1 метра, потому что дроны маленькие.
+    - id: d
+      text:
+        lv: Drošs attālums ir tikai horizontāli; vertikālais nav svarīgs.
+        en: Safe distance is only horizontal; vertical separation doesn’t matter.
+        ru: Безопасная дистанция только по горизонтали; вертикаль не важна.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Praksē drošība ir atkarīga no apstākļiem. Pat ja juridiski ir atļauts,
+      pilotam jāizvēlas attālums, kas samazina risku.
+    en: >
+      In practice safety depends on conditions. Even if something is legally allowed,
+      the pilot must choose separation that reduces risk.
+    ru: >
+      На практике безопасность зависит от условий. Даже если что-то юридически разрешено,
+      пилот выбирает дистанцию, снижающую риск.
+  distractorRationales:
+    b:
+      lv: Noteikumi apraksta principi (“neapdraudēt”), un attālums ir daļa no riska pārvaldības.
+      en: Rules define principles (“don’t endanger”); distance is part of risk management.
+      ru: Правила задают принципы («не подвергать опасности»); дистанция — часть управления риском.
+    c:
+      lv: 1 m var būt nepietiekams (propwash, kļūda, bremzēšana). “Vienmēr” ir nepareizi.
+      en: 1 m may be insufficient (propwash, error, braking). “Always” is wrong.
+      ru: 1 м может быть недостаточно (поток винтов, ошибка, торможение). «Всегда» неверно.
+    d:
+      lv: "Separācija ir 3D: gan horizontāli, gan vertikāli, it īpaši pie šķēršļiem."
+      en: "Separation is 3D: horizontal and vertical, especially near obstacles."
+      ru: "Разделение трёхмерное: и по горизонтали, и по вертикали, особенно у препятствий."
+  sourceRef: "docs/knowledge/training-guides/EASA-open-category-rules.pdf — keep safe distance; due regard"
+  difficulty: 2
+  cognitiveLevel: analyze
+  scenarioType: decision
+
+- id: as-040
+  stem:
+    lv: Kāds ir labs veids, kā samazināt risku, lidojot tuvu kokiem vai ēkām?
+    en: What is a good way to reduce risk when flying near trees or buildings?
+    ru: Какой хороший способ снизить риск при полёте рядом с деревьями или зданиями?
+  options:
+    - id: a
+      text:
+        lv: Uzturēt lielāku distanci, lidot lēnāk un izvairīties no turbulences pie šķēršļiem.
+        en: Keep more separation, fly slower, and account for turbulence near obstacles.
+        ru: Держать большую дистанцию, летать медленнее и учитывать турбулентность у препятствий.
+    - id: b
+      text:
+        lv: Lidot pēc iespējas ātrāk, lai “izlidotu cauri” riskam.
+        en: Fly as fast as possible to “punch through” the risk.
+        ru: Летать как можно быстрее, чтобы «проскочить» риск.
+    - id: c
+      text:
+        lv: Lidot tikai augstāk par 120 m.
+        en: Fly only above 120 m.
+        ru: Летать только выше 120 м.
+    - id: d
+      text:
+        lv: Izslēgt brīdinājumus par šķēršļiem, lai netraucē.
+        en: Disable obstacle warnings so they don’t distract you.
+        ru: Отключить предупреждения о препятствиях, чтобы не мешали.
+  correctOptionId: a
+  explanation:
+    lv: >
+      Šķēršļi rada turbulenci, signāla ēnas un “propwash” efektus. Lēnāks lidojums un
+      distance dod vairāk laika korekcijām un samazina sadursmes risku.
+    en: >
+      Obstacles create turbulence, signal shadows and propwash effects. Slower flight and
+      separation give more time for corrections and reduce collision risk.
+    ru: >
+      Препятствия создают турбулентность, «тени» связи и эффекты propwash. Более медленный полёт и
+      дистанция дают время на корректировки и снижают риск столкновения.
+  distractorRationales:
+    b:
+      lv: Liels ātrums samazina reakcijas laiku un palielina kļūdu sekas.
+      en: High speed reduces reaction time and increases consequences of mistakes.
+      ru: Большая скорость уменьшает время реакции и увеличивает последствия ошибок.
+    c:
+      lv: 120 m limits ir maksimums, nevis drošības rīks; turklāt tas var būt pārkāpums.
+      en: 120 m is a maximum, not a safety tool; exceeding it is non-compliant.
+      ru: 120 м — максимум, а не «инструмент безопасности»; превышение — нарушение.
+    d:
+      lv: Brīdinājumi palīdz, bet pat ar tiem vajadzīga distance un pareiza lidošanas taktika.
+      en: Warnings help, but you still need separation and good technique.
+      ru: Предупреждения помогают, но всё равно нужна дистанция и правильная тактика.
+  sourceRef: "docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — practical safety; obstacles and wind effects"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision

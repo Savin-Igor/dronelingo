@@ -3,7 +3,7 @@
   db-up db-down \
   migrate migrate-deploy push studio backup import-content \
   build clean \
-  check test test-e2e \
+  check test test-e2e validate-questions \
   release deploy help
 
 DC = docker compose -f docker-compose.dev.yml
@@ -73,6 +73,9 @@ test: ## Run Vitest unit tests
 
 test-e2e: ## Run Playwright e2e tests (dev server must be running or will be started)
 	npm run test:e2e
+
+validate-questions: ## Validate content/questions/*.yml (structure + sourceRef docs/knowledge/)
+	python3 scripts/validate-questions.py
 
 ##@ Production
 

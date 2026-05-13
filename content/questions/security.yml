@@ -51,7 +51,7 @@
       lv: "7 dienas joprojām pārsniedz regulā noteikto 72 stundu logu. Atceries: tieši 72 stundas."
       en: "7 days still exceeds the 72-hour window set by the regulation. Remember: exactly 72 hours."
       ru: "7 дней всё равно превышают окно 72 часа. Запомни: именно 72 часа."
-  sourceRef: "Reg (EU) 376/2014 — occurrence reporting in civil aviation"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 376/2014 — occurrence reporting in civil aviation"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -109,7 +109,7 @@
       lv: aviationreporting.eu ir ES līmeņa ECCAIRS portāls papildus nacionālajam — bet primārais kanāls Latvijai ir e.caa.gov.lv/incidents.
       en: aviationreporting.eu is the EU-level ECCAIRS portal in addition to the national one — the primary Latvian channel is e.caa.gov.lv/incidents.
       ru: aviationreporting.eu — портал ECCAIRS на уровне ЕС, дополняющий национальный. Основной канал в Латвии — e.caa.gov.lv/incidents.
-  sourceRef: "CAA Latvia — e.caa.gov.lv/incidents; Reg (EU) 376/2014"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — CAA Latvia — e.caa.gov.lv/incidents; Reg (EU) 376/2014"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -167,7 +167,7 @@
       lv: Just culture nav pilna imunitāte. Tīša neuzmanība un rupja pārkāpšana joprojām paliek sodāmas.
       en: Just culture is not blanket immunity. Deliberate misconduct and gross negligence remain prosecutable.
       ru: Just culture — не полный иммунитет. Умышленные действия и грубая неосторожность всё равно остаются наказуемыми.
-  sourceRef: "Reg (EU) 376/2014 Art. 16 — protection of reporters"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 376/2014 Art. 16 — protection of reporters"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -223,7 +223,7 @@
       lv: "GPS signāla pilnīga slāpēšana ir jamming, ne spoofing. Galvenā atšķirība: spoofings dod viltus pozīciju, jamming dzēš jebkuru."
       en: "Complete suppression of the GPS signal is jamming, not spoofing. Key difference: spoofing gives a fake position; jamming erases all of it."
       ru: "Полное подавление GPS — это jamming, а не spoofing. Главная разница: spoofing подменяет позицию, jamming стирает её совсем."
-  sourceRef: "ENISA threat report — GNSS spoofing/jamming"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — ENISA threat report — GNSS spoofing/jamming"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -281,7 +281,7 @@
       lv: 2FA atspējošana vājina kontu — tas ir tieši pretēji drošības higiēnai. Pat lielāks ērtums to neattaisno.
       en: Disabling 2FA weakens the account — it goes against security hygiene. The convenience gain does not justify it.
       ru: Отключение 2FA ослабляет аккаунт — это противоречит гигиене безопасности. Удобство этого не оправдывает.
-  sourceRef: "ENISA Good Practices for UAS cyber security"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — ENISA Good Practices for UAS cyber security"
   difficulty: 1
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -344,7 +344,7 @@
       lv: Wi-Fi uzbrukums var traucēt vadības saiti, bet ne GPS satelītu signālu. Pelēka karte un satelītu zudums ir GPS slāņa problēma, nevis vadības saites problēma.
       en: A Wi-Fi attack can disrupt the control link but not the GPS satellite signal. A grey map and satellite loss is a GPS layer issue, not a control link issue.
       ru: Wi-Fi атака может нарушить канал управления, но не GPS-сигнал спутника. Серая карта и потеря спутников — проблема уровня GPS, а не канала управления.
-  sourceRef: "ENISA threat report — GNSS spoofing/jamming; EASA UAS security"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — ENISA threat report — GNSS spoofing/jamming; EASA UAS security"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -415,7 +415,7 @@
       lv: Ziņošanas pienākums nav atkarīgs no fail-safe konfigurācijas. Šajā gadījumā fail-safe darbojās pareizi — tas nemazina brīvprātīgās ziņošanas vērtību.
       en: The reporting obligation does not depend on fail-safe configuration. In this case the fail-safe worked correctly — this does not reduce the value of voluntary reporting.
       ru: Обязательство по уведомлению не зависит от конфигурации fail-safe. В данном случае fail-safe сработал правильно — это не уменьшает ценность добровольного уведомления.
-  sourceRef: "Reg (EU) 376/2014 — mandatory vs voluntary occurrence reporting"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 376/2014 — mandatory vs voluntary occurrence reporting"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -482,7 +482,7 @@
       lv: Drons var legāli lidot virs privāta īpašuma no publiskas gaisa telpas. Tas neautorizē signāla traucēšanu.
       en: A drone may legally fly over private property from public airspace. This does not authorise signal jamming.
       ru: Дрон может законно летать над частной собственностью из общедоступного воздушного пространства. Это не авторизует глушение сигналов.
-  sourceRef: "Directive 2014/53/EU (RED); Latvia Electronic Communications Law; EASA UAS security"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Directive 2014/53/EU (RED); Latvia Electronic Communications Law; EASA UAS security"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -547,7 +547,7 @@
       lv: Baterijas kļūme ietekmē lidojuma laiku un jaudu, nevis GPS pozīcijas žurnālu. GPS novirze ir signāla, nevis enerģijas problēma.
       en: Battery failure affects flight time and power, not the GPS position log. GPS drift is a signal issue, not a power issue.
       ru: Неисправность батареи влияет на время полёта и мощность, а не на журнал позиций GPS. Отклонение GPS — проблема сигнала, а не питания.
-  sourceRef: "ENISA threat report — GNSS spoofing; CAA Latvia occurrence reporting"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — ENISA threat report — GNSS spoofing; CAA Latvia occurrence reporting"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
@@ -613,7 +613,7 @@
       lv: Atbildot phishing e-pastam, operators apstiprina, ka e-pasts ir aktīvs — tas var palielināt uzbrukumu skaitu. Atbildēšana nav drošs risinājums.
       en: Replying to a phishing email confirms the address is active — this may increase attack frequency. Replying is not a safe solution.
       ru: Ответ на фишинговое письмо подтверждает, что адрес активен — это может увеличить число атак. Ответ — небезопасное решение.
-  sourceRef: "ENISA Good Practices for UAS cyber security — social engineering"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — ENISA Good Practices for UAS cyber security — social engineering"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -678,7 +678,7 @@
       lv: Remote ID ir pārraides sistēma, nevis šifrēšanas sistēma. Tā pārraida datus nepārprotami, lai dienesti varētu tos nolasīt.
       en: Remote ID is a broadcast system, not an encryption system. It broadcasts data openly so services can read it.
       ru: Remote ID — система трансляции, а не шифрования. Она транслирует данные открыто, чтобы службы могли их считывать.
-  sourceRef: "Reg 2019/945 — Direct Remote ID requirements; EASA UAS security framework"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/945 — Direct Remote ID requirements; EASA UAS security framework"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -742,7 +742,7 @@
       lv: Remote ID darbības zona nav saistīta ar pilsētas vai lauku vidi. Direct Remote ID darbojas visur, kur ir pietiekams Bluetooth/Wi-Fi signāls.
       en: Remote ID operational area is not tied to urban or rural environment. Direct Remote ID works wherever there is adequate Bluetooth/Wi-Fi signal.
       ru: Рабочая зона Remote ID не связана с городской или сельской местностью. Direct Remote ID работает везде, где есть достаточный сигнал Bluetooth/Wi-Fi.
-  sourceRef: "Reg 2019/945 — Direct Remote ID; EASA UAS Remote ID framework"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/945 — Direct Remote ID; EASA UAS Remote ID framework"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -808,7 +808,7 @@
       lv: UAS lidojuma augstums ir Remote ID pārraides daļa.
       en: UAS flight altitude is part of Remote ID broadcast.
       ru: Высота полёта UAS является частью трансляции Remote ID.
-  sourceRef: "Reg 2019/945 — Direct Remote ID data fields"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/945 — Direct Remote ID data fields"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -876,7 +876,7 @@
       lv: '"Tikai testēšanai" nenomaina faktu, ka sistēmā ir instalēta potenciāli ļaunprātīga programma. Ja sistēma ir kompromitēta, testēšana to nepadara drošāku.'
       en: '"Only for testing" does not change the fact that potentially malicious software is installed in the system. If the system is compromised, testing does not make it safer.'
       ru: «Только для тестирования» не меняет того факта, что в системе установлено потенциально вредоносное ПО. Если система скомпрометирована, тестирование не делает её безопаснее.
-  sourceRef: "ENISA Good Practices for UAS cyber security; Reg 2019/945 — manufacturer compliance"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — ENISA Good Practices for UAS cyber security; Reg 2019/945 — manufacturer compliance"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -944,7 +944,7 @@
       lv: Ziņošana rūpnīcai var būt pareizā darbība, bet primārais pienākums ir neizmantot un nepublicēt konfidenciālo materiālu.
       en: Reporting to the factory may be the right action, but the primary obligation is not to use or publish the confidential material.
       ru: Сообщение заводу может быть правильным действием, но основное обязательство — не использовать и не публиковать конфиденциальный материал.
-  sourceRef: "GDPR Art. 6; EU Directive 2016/943 — trade secret protection; ENISA UAS data security"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — GDPR Art. 6; EU Directive 2016/943 — trade secret protection; ENISA UAS data security"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
@@ -1010,7 +1010,7 @@
       lv: C-UAS ir regulētas gan militāri, gan civili. Civilo izmantošanu regulē tiesībsargājošo iestāžu tiesiskais regulējums.
       en: C-UAS are regulated both militarily and civilly. Civil use is regulated by law enforcement agency legal frameworks.
       ru: C-UAS регулируются как в военной, так и в гражданской сфере. Гражданское использование регулируется правовой базой правоохранительных органов.
-  sourceRef: "Latvia Electronic Communications Law; Latvian Aviation Law; national security legislation"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Latvia Electronic Communications Law; Latvian Aviation Law; national security legislation"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -1078,7 +1078,7 @@
       lv: Organizators nav automātiski pilnībā atbildīgs — atbildība ir atkarīga no konkrētajiem apstākļiem un nedrošu apstākļu novēršanas pienākuma.
       en: An organiser is not automatically fully liable — liability depends on specific circumstances and the duty to prevent unsafe conditions.
       ru: Организатор не несёт автоматически полной ответственности — ответственность зависит от конкретных обстоятельств и обязанности предотвращать небезопасные условия.
-  sourceRef: "Latvia Civil Law — tort liability; general event organiser liability principles"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Latvia Civil Law — tort liability; general event organiser liability principles"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision

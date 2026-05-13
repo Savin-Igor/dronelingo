@@ -48,7 +48,7 @@
       lv: Iemaņas (Skill) tiek attīstītas treniņos, IMSAFE turpretim ir 6 īstermiņa fizioloģisko un emocionālo riska faktoru saraksts.
       en: Skill is built through training, whereas IMSAFE is a 6-item short-term physiological and emotional risk-factor checklist.
       ru: Навык формируется тренировками, а IMSAFE — это список из 6 краткосрочных физиологических и эмоциональных факторов риска.
-  sourceRef: "EASA Easy Access Rules for UAS — Human performance limitations"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules for UAS — Human performance limitations"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: factual
@@ -103,7 +103,7 @@
       lv: "12 stundas pārsniedz minimumu — drošāk, bet nav obligātās regulas robeža. Atceries: 8 stundas — minimālais limits."
       en: "12 hours exceeds the minimum — safer, but not the mandatory regulatory threshold. Remember: 8 hours is the floor."
       ru: "12 часов превышают минимум — безопаснее, но не обязательный регуляторный порог. Помни: 8 часов — это нижняя граница."
-  sourceRef: "EASA Easy Access Rules — Human performance, alcohol; ICAO Annex 2"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Human performance, alcohol; ICAO Annex 2"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
@@ -161,7 +161,7 @@
       lv: Baterijas patēriņš ir aprīkojuma jautājums, ne VLOS prasība. VLOS ir par to, ka pilots fiziski redz UAS — kameru iegrāmatošana to nemaina.
       en: Battery drain is an equipment matter, not a VLOS requirement. VLOS is about the pilot physically seeing the UAS — camera-feed framing does not change that.
       ru: Расход батареи — вопрос оборудования, а не требование VLOS. VLOS — про то, что пилот видит UAS физически; обрамление кадра ничего не меняет.
-  sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(2)(a); EASA HF guidance"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. UAS.OPEN.060(2)(a); EASA HF guidance"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -220,7 +220,7 @@
       lv: Tuneļa redzeslauks rodas no stresa vai FPV brillēm, ne no skatīšanās debesīs. Tas ir cita ģenēze.
       en: Tunnel vision arises from stress or FPV goggles, not from looking at sky. Different cause.
       ru: Тоннельное зрение возникает от стресса или FPV-очков, а не от взгляда в небо. Иной источник.
-  sourceRef: "FAA AC 60-22; EASA Easy Access Rules — Vision and perception"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — FAA AC 60-22; EASA Easy Access Rules — Vision and perception"
   difficulty: 3
   cognitiveLevel: recall
   scenarioType: factual
@@ -278,7 +278,7 @@
       lv: 30 minūšu sniegs var dot īsu modrību, bet tas neaizvieto pilnu nakts miegu. Pēc 4 h kopējā miega kumulatīvais deficīts paliek.
       en: A 30-minute nap may give brief alertness, but it does not replace a full night's sleep. After 4 h total the cumulative deficit remains.
       ru: 30-минутный сон даёт кратковременную бодрость, но не заменяет полноценный ночной сон. После 4 часов общий дефицит сохраняется.
-  sourceRef: "ICAO Doc 9966 — Manual for Fatigue Management"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — ICAO Doc 9966 — Manual for Fatigue Management"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -342,7 +342,7 @@
       lv: Pieredzējuši piloti arī piedzīvo tehnisku stresu ar nepazīstamu aprīkojumu — pieredze samazina stresu, bet to nenovērš pilnīgi.
       en: Experienced pilots also experience technical stress with unfamiliar equipment — experience reduces but does not eliminate stress.
       ru: Опытные пилоты тоже испытывают технический стресс при работе с незнакомым оборудованием — опыт снижает, но не устраняет стресс.
-  sourceRef: "EASA Easy Access Rules for UAS — Human performance limitations"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules for UAS — Human performance limitations"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -403,7 +403,7 @@
       lv: Organisms nepielāgojas — kognitīvā veiktspēja turpina pasliktināties lineāri bez miega. Pielāgošanas mīts ir dokumentēts kā neprecīzs.
       en: The body does not adapt — cognitive performance continues to degrade linearly without sleep. The adaptation myth is documented as inaccurate.
       ru: Организм не адаптируется — когнитивные способности продолжают линейно ухудшаться без сна. Миф об адаптации задокументирован как неточный.
-  sourceRef: "ICAO Doc 9966; Dawson & Reid (1997) — wakefulness and BAC equivalence"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — ICAO Doc 9966; Dawson & Reid (1997) — wakefulness and BAC equivalence"
   difficulty: 3
   cognitiveLevel: recall
   scenarioType: numeric
@@ -466,7 +466,7 @@
       lv: BGKIS, laikapstākļi un GPS — vides pārbaudes pirms lidojuma, nevis kognitīvās pašpārbaudes jautājumi.
       en: BGKIS, weather, and GPS are pre-flight environment checks, not cognitive self-test questions.
       ru: BGKIS, погода и GPS — предполётные проверки окружающей среды, а не вопросы когнитивной самопроверки.
-  sourceRef: "EASA Easy Access Rules — Human performance; ICAO Doc 9966"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Human performance; ICAO Doc 9966"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
@@ -527,7 +527,7 @@
       lv: Iedvesma nav IMSAFE kategorija. IMSAFE mēra stāvokļus, kas var pasliktināt sniegumu, nevis motivāciju.
       en: Inspiration is not an IMSAFE category. IMSAFE measures conditions that can impair performance, not motivation.
       ru: Вдохновение не является категорией IMSAFE. IMSAFE измеряет состояния, которые могут ухудшить производительность, а не мотивацию.
-  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; IMSAFE checklist"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules UAS 2024 — human performance; IMSAFE checklist"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -588,7 +588,7 @@
       lv: Manevrs nav IMSAFE kategorija. IMSAFE ir pašpārbaude, kas novērtē pilota stāvokli.
       en: Manoeuvre is not an IMSAFE category. IMSAFE is a self-check evaluating the pilot's condition.
       ru: Манёвр не является категорией IMSAFE. IMSAFE — самопроверка, оценивающая состояние пилота.
-  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; IMSAFE checklist"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules UAS 2024 — human performance; IMSAFE checklist"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -653,7 +653,7 @@
       lv: Lidojuma vietas izvēle nemaina drošības problēmu, ko rada miegainību raisošs medikaments. Problēma ir pilota stāvoklī, ne vietā.
       en: Choosing a different flying location does not change the safety issue posed by a drowsiness-causing medication. The problem is the pilot's condition, not the location.
       ru: Выбор другого места полёта не устраняет проблему безопасности, вызванную препаратом, провоцирующим сонливость. Проблема в состоянии пилота, а не в месте.
-  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; IMSAFE M — medication"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules UAS 2024 — human performance; IMSAFE M — medication"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -716,7 +716,7 @@
       lv: 5 % dehidratācija ir smaga klīniskā dehidratācija. Kognitīvā pasliktināšanās sākas daudz agrāk — pie 1–2 %.
       en: 5 % dehydration is severe clinical dehydration. Cognitive impairment begins far earlier — at 1–2 %.
       ru: 5 % дегидратация — тяжёлая клиническая дегидратация. Когнитивное ухудшение начинается намного раньше — при 1–2 %.
-  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; physiological factors"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules UAS 2024 — human performance; physiological factors"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -780,7 +780,7 @@
       lv: Mnemonikas kļūda ir kļūda, kas saistīta ar atmiņas palīglīdzekli — šeit nav redzama atmiņas sistēmas problēma.
       en: A mnemonic error is a mistake related to a memory aid — no memory system problem is visible here.
       ru: Мнемоническая ошибка — ошибка, связанная с мнемоническим приёmом — здесь не видно проблемы памяти.
-  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; cognitive biases"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules UAS 2024 — human performance; cognitive biases"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
@@ -844,7 +844,7 @@
       lv: Augstums ietekmē gan dronu (mazāka pacelšanās jauda, ātrāka baterijas izlāde), gan pilotu (kognitīvā pasliktināšanās). Abi jāņem vērā.
       en: Altitude affects both the drone (reduced lift, faster battery drain) and the pilot (cognitive impairment). Both must be considered.
       ru: Высота влияет как на дрон (уменьшение подъёмной силы, более быстрая разрядка батареи), так и на пилота (когнитивное ухудшение). Необходимо учитывать оба аспекта.
-  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; hypoxia and altitude"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules UAS 2024 — human performance; hypoxia and altitude"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -908,7 +908,7 @@
       lv: Cilvēku aizdzīšana nav pilotam tiesībā. Pareizā darbība ir mainīt trajektoriju vai nosēsties, ne censties kontrolēt cilvēku kustību.
       en: Shouting people away is not the pilot's right. The correct action is to adjust trajectory or land, not to try to control people's movement.
       ru: Кричать на людей, чтобы они ушли, не является правом пилота. Правильное действие — скорректировать траекторию или приземлиться, а не пытаться контролировать движение людей.
-  sourceRef: "Reg 2019/947 UAS.OPEN.060 — situational awareness and operational response"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 UAS.OPEN.060 — situational awareness and operational response"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -971,7 +971,7 @@
       lv: '"Ārkārtas procedūras" (Emergency) nav IMSAFE kategorija. Ārkārtas procedūru pārzināšana ir preflight plānošanas jautājums, nevis emocionālais faktors.'
       en: '"Emergency" is not an IMSAFE category. Emergency procedure knowledge is a preflight planning matter, not an emotional factor.'
       ru: «Аварийные процедуры» (Emergency) не является категорией IMSAFE. Знание аварийных процедур — вопрос предполётного планирования, а не эмоциональный фактор.
-  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; IMSAFE E — emotion"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules UAS 2024 — human performance; IMSAFE E — emotion"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -1036,7 +1036,7 @@
       lv: Pieredze var uzlabot stresa pārvaldīšanu un procedūru automatizāciju, bet neizslēdz stresa ietekmi. Pat pieredzējuši piloti var saskarsties ar stresa radītiem kognitīviem deficītiem.
       en: Experience can improve stress management and procedure automation, but does not eliminate stress effects. Even experienced pilots can face stress-induced cognitive deficits.
       ru: Опыт может улучшить управление стрессом и автоматизацию процедур, но не устраняет его эффекты. Даже опытные пилоты могут сталкиваться с когнитивными дефицитами, вызванными стрессом.
-  sourceRef: "EASA Easy Access Rules UAS 2024 — human performance; stress and performance"
+  sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules UAS 2024 — human performance; stress and performance"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory

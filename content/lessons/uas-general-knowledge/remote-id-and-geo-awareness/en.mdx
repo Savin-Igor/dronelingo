@@ -1,0 +1,128 @@
+# Remote ID and geo-awareness
+
+<MissionBriefing objective="After this lesson you will distinguish Remote ID from geo-awareness, know which classes rely on them, and understand why neither feature replaces the pilot's own legal airspace check.">
+Pilots often merge these into one fuzzy idea: “the drone knows where it is, so I must be compliant.” That is not how the system works.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/airspace-zones-map.png"
+  alt="Drone operating over a mapped geozone with a side panel showing Remote ID broadcast fields and geo-awareness alerts"
+  caption="Diagram · remote-id-vs-geo-awareness"
+/>
+
+## Two different systems
+
+**Direct Remote ID** is outward-facing. It broadcasts operational data so authorities and other authorised receivers can identify the aircraft and operator in real time.
+
+**Geo-awareness** is inward-facing. It helps the pilot and aircraft understand nearby UAS geographical zones and alerts about restrictions.
+
+They solve different problems:
+
+- Remote ID answers: *who is this drone and where is it now?*
+- Geo-awareness answers: *what restrictions exist around this position?*
+
+<Artefact
+  description="Comparison cards for Remote ID and geo-awareness, including purpose, data and limitations."
+  caption="Cards · remote-id-compare"
+>
+  <div className="grid gap-3 md:grid-cols-2">
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Remote ID</p>
+      <p className="mt-2 text-sm text-telemetry">Broadcasts operator/aircraft-related data, position, altitude, and movement information. It is about traceability and oversight.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Geo-awareness</p>
+      <p className="mt-2 text-sm text-telemetry">Warns about geographical-zone restrictions around the UAS position. It is about situational awareness and prevention.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Remote ID does not</p>
+      <p className="mt-2 text-sm text-telemetry">Give you permission to fly in a restricted zone or replace BGKIS/airspace checks.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Geo-awareness does not</p>
+      <p className="mt-2 text-sm text-telemetry">Replace the legal source of truth. Outdated datasets or missing updates can still mislead the pilot.</p>
+    </div>
+  </div>
+</Artefact>
+
+## Which classes depend on these features?
+
+In the Open-category ecosystem, Remote ID and geo-awareness are associated especially with **C1, C2, and C3** class requirements. The exact technical implementation is the manufacturer’s job, but the operational consequence is the pilot’s job:
+
+- confirm the system is enabled and healthy
+- keep the dataset current when the manufacturer requires updates
+- never assume the aircraft feature overrides the legal map source
+
+For Latvia, the legal/geographical check still points back to `airspace.lv/drones` and the official zone data chain behind it.
+
+## What pilots should do before launch
+
+Treat Remote ID and geo-awareness as part of the pre-flight digital check:
+
+1. confirm no system warning is active
+2. confirm the app and aircraft location agree with reality
+3. confirm the geographical-zone dataset is current if your system uses downloadable data
+4. independently verify the location on `airspace.lv/drones`
+
+If the aircraft says “all clear” but the official map says the zone is restricted, the official map wins.
+
+<Scenario title="Your aircraft app shows no warning and the geofence view looks clear. On `airspace.lv/drones`, the same location is shown as a restricted UAS geographical zone that requires BGKIS. Which source controls your decision?">
+`airspace.lv/drones` controls the decision. Geo-awareness is a safety aid, not the legal source of truth. If the aircraft dataset is stale or incomplete, it can fail silently.
+
+The correct action is to follow the official zone source, submit BGKIS if required, and fly only after approval.
+</Scenario>
+
+<MemoryAnchor
+  rule="Remote ID identifies. Geo-awareness warns. Neither one grants permission."
+  hint="If there is any conflict, the official zone source beats the aircraft interface."
+/>
+
+<CommonMistakes>
+- Treating Remote ID as if it were a “license to enter” restricted airspace.
+- Assuming geo-awareness data in the app is always current.
+- Ignoring official zone maps because the controller screen shows no warning.
+- Turning a technical feature into a legal decision-maker instead of a supporting tool.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "rid-q1",
+    stem: "What is the core purpose of Direct Remote ID?",
+    options: [
+      { id: "a", text: "To broadcast identifying and positional data about the UAS operation." },
+      { id: "b", text: "To automatically request BGKIS approval in Latvia." },
+      { id: "c", text: "To remove the need for operator registration." },
+      { id: "d", text: "To replace VLOS with digital tracking." },
+    ],
+    correctOptionId: "a",
+    explanation: "Direct Remote ID is about identification and traceability: who is operating, where the aircraft is, and related broadcast data.",
+    distractorRationales: {
+      b: "BGKIS approval is an administrative process, not a Remote ID function.",
+      c: "Remote ID does not replace registration duties.",
+      d: "Digital tracking does not remove the Open-category VLOS requirement.",
+    },
+  },
+  {
+    id: "rid-q2",
+    stem: "What is the correct relationship between geo-awareness and official airspace checks?",
+    options: [
+      { id: "a", text: "Geo-awareness replaces official zone checking if the app is updated." },
+      { id: "b", text: "Geo-awareness is a supporting aid; official zone sources still govern legality." },
+      { id: "c", text: "Geo-awareness matters only for drones above 25 kg." },
+      { id: "d", text: "Geo-awareness is relevant only in Specific category." },
+    ],
+    correctOptionId: "b",
+    explanation: "Geo-awareness helps the pilot but does not replace legal/official airspace or UAS geographical-zone checks. The official source still controls the compliance decision.",
+    distractorRationales: {
+      a: "Even updated aircraft data is not the same thing as the official legal source of zone status.",
+      c: "The concept matters in the Open ecosystem, especially around C1/C2/C3 operations.",
+      d: "Geo-awareness is relevant to Open-category compliance and practical flight safety too.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ug-003"]}>
+You can now separate Remote ID from geo-awareness and use both correctly.
+
+Next: back to the pilot — attention, fixation, and why human scanning discipline matters even when the aircraft is technically sophisticated.
+</Debrief>

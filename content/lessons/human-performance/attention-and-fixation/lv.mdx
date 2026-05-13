@@ -1,0 +1,134 @@
+# Uzmanība, skenēšana un fiksācija
+
+<MissionBriefing objective="Pēc šīs nodarbības tu sapratīsi, kāpēc pilots var nepamanīt acīmredzamu risku, kā empty-field myopia un tunnel vision degradē apzināšanos un kā izmantot disciplinētu skenēšanas ciklu, lai vienā mentālajā attēlā noturētu UAS, gaisa telpu un cilvēkus.">
+Daudzas uzmanības kļūdas no iekšpuses neizskatās dramatiski. Tās jūtas kā koncentrēšanās. Tieši tāpēc tās ir bīstamas.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="HUD stila mācību aina: drona pilots laukā, vienā panelī šaurs tunelredzes skats uz pults ekrānu, otrā panelī pareiza skenēšana starp UAS, debesīm, cilvēkiem un šķēršļiem"
+  alt="Vizuāls pretstats starp fiksāciju vienā punktā un disciplinētu pilota skenēšanu pāri UAS, debesīm un apkārtnei"
+  caption="Mācību aina · skenēšana pret fiksāciju"
+/>
+
+## Kāpēc arī labs pilots kaut ko palaiž garām
+
+UAS pilots kļūdās ne tikai tāpēc, ka ir paviršs. Bieži viņš kļūdās tāpēc, ka ir *pārāk fokusēts uz vienu lietu*:
+
+- kadra kompozīciju
+- baterijas procentiem
+- karti
+- brīdinājuma atrisināšanu
+
+To sauc par **fiksāciju**. Uzmanība sabrūk uz vienu uzdevumu un pārstāj skenēt pārējo vidi.
+
+Dronu lidojumā tas ir bīstami, jo situācija mainās ārpus pults ekrāna:
+
+- cilvēki ienāk zonā
+- parādās helikopters
+- vējš mainās pie šķēršļiem
+- UAS dreifē, kamēr pilots ir “galvu lejā”
+
+## Divi klasiskie slazdi
+
+**Empty-field myopia.** Vizuāli vienkāršā vidē acis atslābst un pārstāj aktīvi pārfokusēties. Pilotam šķiet, ka viņš “skatās ārā”, bet uztveres kvalitāte krītas.
+
+**Tunnel vision.** Stresa vai uzdevumu pārslodzes laikā uzmanība sašaurinās. FPV, tiešraides video un klienta spiediens to pastiprina.
+
+<Artefact
+  description="Trīs uzmanības disciplīnas kartītes dronu pilotam: skenēšanas cikls, pārstarta signāls un novērotāja loma."
+  caption="Kartītes · pilota-skenesanas-disciplina"
+>
+  <div className="grid gap-3 md:grid-cols-3">
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Skenēšanas cikls</p>
+      <p className="mt-2 text-sm text-telemetry">UAS → apkārtējās debesis → cilvēki/šķēršļi → pults dati → atpakaļ ārā. Atkārto apzināti.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Pārstarta signāls</p>
+      <p className="mt-2 text-sm text-telemetry">Jebkurš warning, klienta jautājums vai kadra korekcija ir signāls restartēt pilnu skenēšanu, nevis palikt “galvu lejā”.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Novērotājs</p>
+      <p className="mt-2 text-sm text-telemetry">Novērotājs nav tikai “papildu acis”. Viņš aktīvi aizsargā pret pilota fiksāciju ar otru skenēšanas ciklu.</p>
+    </div>
+  </div>
+</Artefact>
+
+## Praktisks skenēšanas cikls
+
+Lieto īsu, atkārtojamu ciklu:
+
+1. apstiprini, kur ir UAS un ko tas dara
+2. paskenē apkārtējās debesis un iespējamās pieejas trajektorijas
+3. paskenē cilvēkus, transportu un šķēršļus darbības zonā
+4. paskaties pults datos tikai tik ilgi, lai atbildētu uz konkrētu jautājumu
+5. uzreiz atgriezies skatā ārā
+
+Mērķis nav vienlaikus lūrēt visur. Mērķis ir **neiestrēgt nevienā vietā**.
+
+## Kāpēc ekrāni to pasliktina
+
+Pults ekrāns smadzenēm rada viltus pārliecību. Tas izskatās precīzs, bagāts un “pilnīgs”. Bet tas rāda tikai atlasītus datus. Tas nerāda, kas notiek aiz tevis, sānos vai tūlīt ieies darbības zonā.
+
+Tāpēc pilots var būt tehniski informēts un vienlaikus situatīvi akls.
+
+<Scenario title="Tu nolaid UAS pēc treniņa. Pie 3 m AGL draugs sāk jautāt, kur nostāties bildei. Tu paskaties pultī, lai atbildētu un vienlaikus koriģētu kameras leņķi. Kur ir īstais risks?">
+Īstais risks nav pats jautājums. Īstais risks ir **fiksācija kritiskā fāzē**. Zemā augstumā laika rezerve ir maza. Skatiens pultī un kameras korekcija nozog tieši to uzmanību, kas vajadzīga nolaišanai, dreifa korekcijai un distancei no cilvēkiem.
+
+Pareizā reakcija: ignorēt nebūtisko jautājumu, pabeigt nolaišanu un runāt tikai pēc tam, kad motori ir apstājušies.
+</Scenario>
+
+<MemoryAnchor
+  rule="Skatīties intensīvi nav tas pats, kas skenēt kvalitatīvi. Fiksācija jūtas kā fokuss; laba skenēšana jūtas nedaudz atkārtota."
+  hint="UAS, debesis, cilvēki, dati, atpakaļ ārā."
+/>
+
+<CommonMistakes>
+- Saukt ilgu skatīšanos pults ekrānā par “situācijas apzināšanos”.
+- Mēģināt risināt nebūtiskus iestatījumus lidojuma laikā, nevis lidot vispirms un konfigurēt pēc tam.
+- Atļaut klientam vai skatītājiem pārtraukt uzmanību zemā augstuma fāzēs.
+- Domāt, ka, ja zona bija tukša pirms 30 sekundēm, tā joprojām ir tukša tagad.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "scan-q1",
+    stem: "Kas ir fiksācija drona operācijā?",
+    options: [
+      { id: "a", text: "Pilota uzmanība tik spēcīgi ieķeras vienā uzdevumā, ka plašā skenēšana sabrūk." },
+      { id: "b", text: "Pilots uztur UAS VLOS." },
+      { id: "c", text: "Pilots rūpīgi lasa telemetriju pirms katra lidojuma." },
+      { id: "d", text: "Pilots izmanto statīvu nolaišanās kadriem." },
+    ],
+    correctOptionId: "a",
+    explanation: "Fiksācija ir uzmanības sašaurināšanās: pilots iestrēgst vienā uzdevumā vai displejā un vairs kvalitatīvi neskenē pārējo vidi.",
+    distractorRationales: {
+      b: "VLOS ir juridisks/vizuāls stāvoklis, nevis fiksācijas definīcija.",
+      c: "Telemetrijas pārbaude var būt lietderīga; fiksācija sākas tad, kad tā patērē pārāk daudz uzmanības nepareizajā brīdī.",
+      d: "Statīva lietošana nav saistīta ar uzmanības jēdzienu.",
+    },
+  },
+  {
+    id: "scan-q2",
+    stem: "Kas ir labākā praktiskā aizsardzība pret tunelredzi lidojumā?",
+    options: [
+      { id: "a", text: "Apzināts atkārtojošs skenēšanas cikls, kas pēc katra skatiena pultī atgriež uzmanību ārā." },
+      { id: "b", text: "Nepārtraukti skatīties baterijas procentus." },
+      { id: "c", text: "Palielināt ekrāna spilgtumu, lai datus būtu vieglāk lasīt." },
+      { id: "d", text: "Lidot ātrāk, lai samazinātu laiku gaisā." },
+    ],
+    correctOptionId: "a",
+    explanation: "Apzināts skenēšanas cikls neļauj uzmanībai iestrēgt vienā punktā un notur UAS, gaisa telpu un cilvēkus vienā mentālajā modelī.",
+    distractorRationales: {
+      b: "Nepārtraukta viena lauka kontrole ir fiksācija, nevis tās ārstēšana.",
+      c: "Spilgtāks ekrāns var palīdzēt redzamībai, bet neizārstē uzmanības sašaurināšanos.",
+      d: "Ātrums samazina laika rezervi un neatrisina kognitīvo problēmu.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["hp-003"]}>
+Tu tagad saproti, kā uzmanība sabrūk un kā sevi pasargāt ar disciplinētu skenēšanu.
+
+Tālāk: viss, ko mācies teorijā un praksē, ir jēdzīgs tikai tad, ja tas reāli pāriet uzvedībā slodzē.
+</Debrief>

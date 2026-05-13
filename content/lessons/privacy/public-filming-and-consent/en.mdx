@@ -1,0 +1,130 @@
+# Public filming and consent
+
+<MissionBriefing objective="After this lesson you will know the difference between legal flight and lawful publication, when public-space filming still creates privacy risk, and how to decide between consent, legitimate interest, and anonymisation.">
+Many pilots think the key question is “was I allowed to fly there?” Privacy usually asks a different question: “were you allowed to process and publish what the camera captured?”
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Urban drone filming scene: public square, pedestrians below, camera frame highlighting faces and license plates with privacy warning overlays"
+  alt="Drone filming in a public square with privacy markers on identifiable faces and license plates"
+  caption="Training scene · public filming"
+/>
+
+## Flight legality and privacy legality are separate
+
+A flight can be fully legal under airspace rules and still create a privacy problem.
+
+These are different layers:
+
+- **Airspace legality**: may I fly here?
+- **Data-protection legality**: may I record, keep, share, or publish what I captured?
+
+Public space does not cancel privacy law. It only means people were visible from a place open to others.
+
+## Three practical routes
+
+When people may be identifiable in the footage, the usual practical routes are:
+
+1. **Consent**: you are filming specific people and they agree.
+2. **Legitimate interest**: there is a real operational reason, and the privacy impact is limited and proportionate.
+3. **Anonymisation**: you blur or otherwise remove identifiability before sharing or publishing.
+
+If none of these routes works cleanly, the safest choice is to redesign the shot.
+
+<Artefact
+  description="Three public-filming decision cards: consent, legitimate interest, anonymisation."
+  caption="Cards · privacy-decision"
+>
+  <div className="grid gap-3 md:grid-cols-3">
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Consent</p>
+      <p className="mt-2 text-sm text-telemetry">Best when the subject is specific and cooperative: portrait, event participant, arranged production, private-property owner.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Legitimate Interest</p>
+      <p className="mt-2 text-sm text-telemetry">Best when the purpose is real and limited: inspection, survey, safety, infrastructure work, or documentation with controlled impact.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Anonymisation</p>
+      <p className="mt-2 text-sm text-telemetry">Best when incidental people appear in otherwise useful footage: blur faces, blur plates, crop or discard problem shots.</p>
+    </div>
+  </div>
+</Artefact>
+
+## The practical test: who is the subject of the shot?
+
+Ask this before pressing record:
+
+- Am I filming the place, or am I effectively filming the people in it?
+- If a person appears, are they incidental or central?
+- If I publish this, can a reasonable viewer identify someone?
+
+The more the person becomes the real subject, the harder it is to justify publication without consent.
+
+## Safer habits
+
+- choose angles that reduce facial detail
+- avoid hovering over café terraces, beaches, playgrounds, or queues if the people are visually central
+- review footage before sharing, not after
+- delete unusable personal-data-heavy footage instead of archiving it forever
+
+<Scenario title="You film a city-promotion clip in a public square. The flight itself was lawful and the zone was open. In the best shot, several pedestrians are clearly identifiable and two car number plates are readable. What is the right publication decision?">
+Do not publish the raw shot as-is. The lawful airspace operation does not create a free right to publish identifiable people and plates.
+
+The correct route is to anonymise the clip first by blurring faces and plates, or replace it with a less privacy-sensitive shot.
+</Scenario>
+
+<MemoryAnchor
+  rule="Legal flight is not the same as lawful publication. Airspace permission and privacy permission are different decisions."
+  hint="If people are identifiable, decide: consent, legitimate interest, or anonymisation."
+/>
+
+<CommonMistakes>
+- Treating “public place” as if it were a GDPR exemption.
+- Thinking a property owner can consent on behalf of random passers-by.
+- Reviewing privacy risk only after publication planning has already started.
+- Archiving raw footage indefinitely because “it might be useful one day.”
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "public-privacy-q1",
+    stem: "What is the key privacy distinction a drone pilot must remember in public-space filming?",
+    options: [
+      { id: "a", text: "If the flight was legal in airspace terms, publication is automatically legal too." },
+      { id: "b", text: "Airspace legality and data-protection legality are separate questions." },
+      { id: "c", text: "GDPR applies only indoors." },
+      { id: "d", text: "Privacy matters only when filming on private property." },
+    ],
+    correctOptionId: "b",
+    explanation: "A lawful flight and a lawful use/publication of footage are different legal questions. Airspace permission does not erase privacy obligations.",
+    distractorRationales: {
+      a: "The legal right to fly does not automatically include the legal right to publish identifiable people.",
+      c: "GDPR is not an indoor-only rule; identifiable people outdoors can trigger it too.",
+      d: "Privacy obligations can arise in public spaces as well.",
+    },
+  },
+  {
+    id: "public-privacy-q2",
+    stem: "What is often the safest route when incidental identifiable people appear in otherwise useful footage?",
+    options: [
+      { id: "a", text: "Publish quickly before anyone notices." },
+      { id: "b", text: "Anonymise the footage before sharing or publishing." },
+      { id: "c", text: "Assume the crowd accepted filming by staying there." },
+      { id: "d", text: "Ignore the issue if the drone flew under 120 m." },
+    ],
+    correctOptionId: "b",
+    explanation: "When incidental people appear but the footage is otherwise useful, anonymisation is often the cleanest route: blur faces, blur plates, crop or replace the shot.",
+    distractorRationales: {
+      a: "Speed of publication does not reduce privacy obligations.",
+      c: "Passive presence is not the same thing as informed consent.",
+      d: "The 120 m airspace ceiling has nothing to do with privacy legality.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["pr-003"]}>
+You now have a practical privacy decision model for public-space footage.
+
+Next: weather language. Pilots who cannot read METAR and TAF are flying with less information than the aircraft deserves.
+</Debrief>

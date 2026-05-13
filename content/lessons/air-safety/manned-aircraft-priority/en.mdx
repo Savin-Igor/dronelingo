@@ -1,0 +1,121 @@
+# Giving way to manned aircraft
+
+<MissionBriefing objective="After this lesson you will know why a UAS never has practical priority over a manned aircraft, how to recognise an emerging conflict early, and what immediate action reduces risk fastest.">
+The safest rule in mixed airspace is also the simplest: if a manned aircraft is part of the picture, your job is to make your drone a smaller problem, not a debatable one.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Training scene: small drone low over a field, helicopter approaching in the distance, pilot immediately descending and moving to a safe landing point"
+  alt="Drone pilot yielding to an approaching helicopter by descending and landing in a clear area"
+  caption="Training scene · give-way"
+/>
+
+## Why the rule is strict
+
+In the Open category, the remote pilot must avoid creating conflicts with other airspace users. In practice, that means a UAS must give way to manned aircraft.
+
+The reason is not symbolic. A helicopter or light aircraft:
+
+- moves faster than your UAS
+- may be task-loaded or flying low for a reason you cannot see
+- may not detect a small drone early enough to avoid it safely
+
+The pilot who assumes “they will see me” is building the whole safety case on the other aircraft’s luck.
+
+<Artefact
+  description="Three-step conflict response cards: detect, create separation, and land if needed."
+  caption="Cards · conflict-response"
+>
+  <div className="grid gap-3 md:grid-cols-3">
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Detect</p>
+      <p className="mt-2 text-sm text-telemetry">Spot the aircraft early: sound, movement, approach path, observer warning, or visual contact.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Separate</p>
+      <p className="mt-2 text-sm text-telemetry">Reduce altitude, move away from the conflict path, and stop all non-essential camera or mission tasks.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Land</p>
+      <p className="mt-2 text-sm text-telemetry">If there is any doubt about separation, land. The cost of an interrupted mission is trivial compared with a conflict in the air.</p>
+    </div>
+  </div>
+</Artefact>
+
+## What not to do
+
+When a manned aircraft appears, the wrong instincts are common:
+
+- climbing higher “to be seen”
+- flying closer to identify it
+- finishing the shot first
+- staring at the map instead of flying visually
+
+All four increase risk. The priority is not curiosity or footage. The priority is reducing the number of variables in the air.
+
+## The practical decision
+
+If you can maintain obvious separation and safely continue, do so conservatively. If there is any doubt, land.
+
+This is one of those moments where a decisive landing is more professional than a technically arguable continuation.
+
+<Scenario title="You are flying at 55 m AGL over open ground. You hear a helicopter before you can identify its direction. Your observer points left and says it is approaching low, but still far away. What is the correct response?">
+Immediately stop the task, bring the drone lower, move it away from the likely path if needed, and be ready to land at once. If the approach path is uncertain, land without delay.
+
+The key is not to “win” the separation judgment. The key is to reduce conflict while the situation is still easy.
+</Scenario>
+
+<MemoryAnchor
+  rule="Manned aircraft in the picture = your task shrinks to separation first, mission second."
+  hint="Do not climb to be seen. Descend, separate, land if in doubt."
+/>
+
+<CommonMistakes>
+- Treating empty terrain below as if it removes conflict risk with aircraft above.
+- Climbing to “make the drone more visible.”
+- Trying to finish the shot instead of ending the conflict.
+- Waiting for perfect identification of the aircraft before acting.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "manned-q1",
+    stem: "What is the safest first principle when a manned aircraft appears near your operating area?",
+    options: [
+      { id: "a", text: "Keep filming and monitor the map until the aircraft gets closer." },
+      { id: "b", text: "Climb to make your drone easier to spot." },
+      { id: "c", text: "Reduce conflict: descend, separate, and land if there is any doubt." },
+      { id: "d", text: "Assume the other pilot will always have better awareness than you." },
+    ],
+    correctOptionId: "c",
+    explanation: "The safe response is to reduce conflict immediately: stop non-essential tasks, reduce altitude, create separation, and land if uncertainty remains.",
+    distractorRationales: {
+      a: "Monitoring is not enough if it delays the risk-reduction action.",
+      b: "Climbing usually increases conflict potential and may worsen visibility and separation.",
+      d: "You cannot outsource your safety case to the other pilot's awareness.",
+    },
+  },
+  {
+    id: "manned-q2",
+    stem: "Why is climbing to be 'more visible' usually a poor response?",
+    options: [
+      { id: "a", text: "Because it can place the UAS closer to the conflict path instead of farther from it." },
+      { id: "b", text: "Because helicopters are legally required to turn away first." },
+      { id: "c", text: "Because drones may never change altitude once airborne." },
+      { id: "d", text: "Because only observers are allowed to look for other aircraft." },
+    ],
+    correctOptionId: "a",
+    explanation: "Climbing often increases the risk by moving the UAS toward the vertical band where the conflict may develop. Descending usually simplifies separation.",
+    distractorRationales: {
+      b: "The safer assumption is not that the other aircraft will yield.",
+      c: "Drones can change altitude; the issue is whether the chosen action reduces risk.",
+      d: "Observers help, but the pilot remains responsible for safe conflict response.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["as-004"]}>
+You now have a practical rule for mixed-airspace conflicts: separate first, explain later.
+
+Next: back to privacy on the ground, where legal flight can still become illegal publication if people are identifiable in the footage.
+</Debrief>

@@ -50,7 +50,7 @@
       lv: 750 000 SDR ir minimums Specifiskās kategorijas un A3 lielmasas (20–25 kg) lidojumiem. A1 (C1) prasība ir mazāka — 50 000 EUR.
       en: 750 000 SDR is the minimum for the Specific category and A3 heavy-mass (20–25 kg) flights. The A1 (C1) threshold is lower — €50 000.
       ru: 750 000 SDR — минимум для Специальной категории и тяжёлых A3 (20–25 кг). Для A1 (C1) порог ниже — 50 000 EUR.
-  sourceRef: "MK noteikumi Nr. 447 (10.07.2018)"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 (10.07.2018)"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -105,7 +105,7 @@
       lv: UAS masa neietekmē hull-seguma jautājumu — obligātā polise nesedz paša aparāta bojājumu neatkarīgi no svara.
       en: UAS mass does not change the hull issue — the mandatory policy does not cover damage to the aircraft itself, regardless of weight.
       ru: Масса UAS не влияет на hull — обязательный полис не покрывает повреждение самого аппарата вне зависимости от веса.
-  sourceRef: "MK noteikumi Nr. 447; Reg (EC) 785/2004"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -160,7 +160,7 @@
       lv: Lidošana virs sava zemes gabala neatbrīvo no apdrošināšanas prasības. MK Nr. 447 attiecas uz operāciju, ne uz zemes īpašumu.
       en: Flying over one's own land does not waive the insurance requirement. Cabinet Reg. No. 447 applies to the operation, not to land ownership.
       ru: Полёт над собственным участком не освобождает от страхования. Правила КМ № 447 касаются операции, а не права собственности.
-  sourceRef: "MK noteikumi Nr. 447 (10.07.2018) — exemption for C0"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 (10.07.2018) — exemption for C0"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -215,7 +215,7 @@
       lv: 100 000 EUR ir nepietiekami pat Atvērtās kategorijas augstākajām masām (20–25 kg) — Specifiskās slieksnis ir krietni augstāks.
       en: €100 000 is insufficient even for upper-mass Open category (20–25 kg) — the Specific threshold is much higher.
       ru: 100 000 EUR недостаточны даже для верхней массы Открытой (20–25 кг) — порог Специальной значительно выше.
-  sourceRef: "Reg (EC) 785/2004 — air carriers' liability minima"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004 — air carriers' liability minima"
   difficulty: 3
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -272,7 +272,7 @@
       lv: Polise jābūt spēkā lidojuma brīdī. Retroaktīvā noformēšana neaizvieto prasību iepriekš būt apdrošinātam.
       en: The policy must be valid at the moment of flight. Retroactive issuance does not satisfy the prior-coverage requirement.
       ru: Полис должен действовать на момент полёта. Оформление задним числом не заменяет требование иметь страховку заранее.
-  sourceRef: "Latvian Aviation Law; MK noteikumi Nr. 447"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Latvian Aviation Law; MK noteikumi Nr. 447"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -335,7 +335,7 @@
       lv: Abas polises kopā neatlīdzina "pilnu vērtību" — obligātā polise neko neizmaksā (nav trešo personu zaudējumu), un hull polise izmaksā drona vērtību mīnus pašrisks.
       en: Both policies together do not cover "full value" — the mandatory policy pays nothing (no third-party loss), and hull pays the drone value minus deductible.
       ru: Оба полиса вместе не покрывают «полную стоимость» — обязательный ничего не платит (нет ущерба третьим лицам), hull платит стоимость дрона минус франшиза.
-  sourceRef: "MK noteikumi Nr. 447; Reg (EC) 785/2004 — hull vs third-party insurance"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — hull vs third-party insurance"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
@@ -397,7 +397,7 @@
       lv: Obligātā apdrošināšana ir prasīta visiem UAS ≥ 250 g neatkarīgi no darbības vietas — pilsēta vai lauki.
       en: Mandatory insurance is required for all UAS ≥ 250 g regardless of the operating area — urban or rural.
       ru: Обязательное страхование требуется для всех UAS ≥ 250 г независимо от места операции — городского или сельского.
-  sourceRef: "MK noteikumi Nr. 447; Reg (EC) 785/2004 — mass category 20–500 kg"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — mass category 20–500 kg"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -462,7 +462,7 @@
       lv: Reg 2019/947 Art. 41 paredz savstarpējo atzīšanu — operators ar derīgu reģistrāciju vienas dalībvalsts kompetentajā iestādē drīkst darboties visā ES. Reģistrācija citā dalībvalstī nav obligāta.
       en: Reg 2019/947 Art. 41 provides for mutual recognition — an operator with valid registration in one member state's competent authority may operate throughout the EU. Registration in another member state is not required.
       ru: Ст. 41 Регл. 2019/947 предусматривает взаимное признание — оператор с действительной регистрацией в компетентном органе одного государства-члена может работать по всему ЕС. Регистрация в другом государстве-члене не требуется.
-  sourceRef: "Reg (EC) 785/2004 — EU-wide liability insurance; Reg 2019/947 Art. 41 — mutual recognition"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004 — EU-wide liability insurance; Reg 2019/947 Art. 41 — mutual recognition"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -524,7 +524,7 @@
       lv: Atbilde D pareizi identificē abu polisu lomus, bet daļa "hull sedz dronam" nav piemērojama šajā scenārijā, kur drons nav bojāts. Jautājums ir par pašvaldības prasību — to sedz obligātā polise.
       en: Answer D correctly identifies both policies' roles, but the "hull covers the drone" part is not applicable in this scenario where the drone is not damaged. The question is about the municipality's claim — covered by the mandatory policy.
       ru: Ответ D правильно определяет роли обоих полисов, но часть «hull покрывает дрон» не применима в этом сценарии, где дрон не повреждён. Вопрос касается иска муниципалитета — он покрывается обязательным полисом.
-  sourceRef: "MK noteikumi Nr. 447; Reg (EC) 785/2004 — third-party property coverage"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — third-party property coverage"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -588,7 +588,7 @@
       lv: Nav "nozīmīguma" sliekšņa polises derīgumam. Polise vai nu ir derīga, vai nav — vienas dienas kavēšanās nav atļauta.
       en: There is no "significance" threshold for policy validity. The policy is either valid or it is not — one day's lapse is not permitted.
       ru: Нет порога «существенности» для действительности полиса. Полис либо действителен, либо нет — однодневная просрочка не разрешена.
-  sourceRef: "MK noteikumi Nr. 447 — insurance validity at time of flight; Latvian Aviation Law"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 — insurance validity at time of flight; Latvian Aviation Law"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -652,7 +652,7 @@
       lv: Nav valsts noteikta pašriska drona apdrošināšanā. Pašrisku nosaka polises noteikumi.
       en: There is no state-mandated deductible in drone insurance. The deductible is set by the policy terms.
       ru: В страховании дронов нет государственно установленной франшизы. Франшиза устанавливается условиями полиса.
-  sourceRef: "General insurance principles — deductibles; hull vs third-party insurance"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — General insurance principles — deductibles; hull vs third-party insurance"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -719,7 +719,7 @@
       lv: Iepriekšējo sodīšanu nav pieminēta kā polises nosacījums. Alkohola ietekme pie lidojuma ir atsevišķs pārkāpums neatkarīgi no vēstures.
       en: Previous convictions are not mentioned as a policy condition. Operating under alcohol influence is a separate violation regardless of history.
       ru: Предыдущие судимости не упоминаются как условие полиса. Управление в состоянии алкогольного опьянения — отдельное нарушение независимо от истории.
-  sourceRef: "General insurance law — subrogation; MK noteikumi Nr. 447; Reg (EC) 785/2004"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — General insurance law — subrogation; MK noteikumi Nr. 447; Reg (EC) 785/2004"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
@@ -782,7 +782,7 @@
       lv: Nav nošķiršanas starp "avārijas" un "profesionālajiem" pilotiem polises tipos. Nošķiršana ir starp pašu UAS bojājumu un trešo personu zaudējumiem.
       en: There is no distinction between "accidental" and "professional" pilots in policy types. The distinction is between own UAS damage and third-party losses.
       ru: Нет разграничения между «аварийными» и «профессиональными» пилотами в типах полисов. Разграничение — между ущербом собственному UAS и убытками третьих лиц.
-  sourceRef: "MK noteikumi Nr. 447; Reg (EC) 785/2004 — hull vs TPL insurance"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — hull vs TPL insurance"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -846,7 +846,7 @@
       lv: Atbildību par obligāto apdrošināšanu nevar nodot ar rakstisku vienošanos. Tā ir personiska regulatīvā prasība.
       en: Liability for mandatory insurance cannot be transferred by written agreement. It is a personal regulatory requirement.
       ru: Ответственность за обязательное страхование не может быть передана письменным соглашением. Это личное нормативное требование.
-  sourceRef: "MK noteikumi Nr. 447 — operator personal insurance obligation; Latvian Aviation Law"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 — operator personal insurance obligation; Latvian Aviation Law"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -908,7 +908,7 @@
       lv: Krimināltiesiskā atbildība ir nacionālo tiesību aktu joma, nevis ES regulas. Reg 785/2004 regulē civiltiesisko apdrošināšanu.
       en: Criminal liability is a matter of national law, not an EU regulation. Reg 785/2004 regulates civil liability insurance.
       ru: Уголовная ответственность относится к национальному законодательству, а не к регламентам ЕС. Регл. 785/2004 регулирует гражданское страхование ответственности.
-  sourceRef: "Reg (EC) 785/2004 — aircraft operator insurance; MK noteikumi Nr. 447"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004 — aircraft operator insurance; MK noteikumi Nr. 447"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -969,7 +969,7 @@
       lv: Apdrošināšanas minimums ir regulatīvi noteikts — operators nevar brīvi izvēlēties summu zemāk par regulatīvo minimumu.
       en: The insurance minimum is set by regulation — the operator cannot freely choose an amount below the regulatory minimum.
       ru: Минимум страхования установлен нормативно — оператор не может свободно выбирать сумму ниже нормативного минимума.
-  sourceRef: "Reg (EC) 785/2004; Reg 2019/947 — BVLOS in Specific category; MK noteikumi Nr. 447"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004; Reg 2019/947 — BVLOS in Specific category; MK noteikumi Nr. 447"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -1033,7 +1033,7 @@
       lv: Operators tiesiskā atbildība ir pret cietušo (mākslas darba īpašnieku), nevis pret parka īpašnieku. Parka īpašnieks nav atbildīgs par pilota kļūdu.
       en: The operator's legal liability is towards the victim (art owner), not the park owner. The park owner is not liable for the pilot's error.
       ru: Юридическая ответственность оператора — перед пострадавшим (владельцем произведения искусства), а не перед владельцем парка. Владелец парка не несёт ответственности за ошибку пилота.
-  sourceRef: "General insurance law — policy exclusions; MK noteikumi Nr. 447"
+  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — General insurance law — policy exclusions; MK noteikumi Nr. 447"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision

@@ -1,0 +1,144 @@
+# Pēclidojuma disciplīna un žurnāli
+
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, kā profesionāli aizvērt lidojumu: nodrošināt UAS, pareizi atdzesēt un uzglabāt baterijas, uzrakstīt minimāli noderīgu žurnāla ierakstu un izlemt, vai notikums jāeskalē ziņošanai.">
+Labs pilots neapstājas pie nosēšanās. Daudzas iekārtu kļūmes, bateriju ugunsgrēki un neziņoti incidenti rodas desmit minūtēs pēc nolaišanās.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/battery-storage-guide.png"
+  alt="Pēclidojuma galds ar dronu, siltām baterijām uz ugunsdrošas virsmas un žurnāla piezīmēm"
+  caption="Rutīna · pēclidojuma disciplīna"
+/>
+
+## Kāpēc pēclidojums ir svarīgs
+
+Pēclidojuma fāzē tu pārvērt vienu lidojumu par nākamajam noderīgu operatīvo pieredzi.
+
+Bez shutdown rutīnas:
+
+- siltas baterijas nonāk somā vai automašīnā
+- nelieli propelleru bojājumi tiek atklāti tikai nākamajā startā
+- GPS vai vadības anomālijas tiek aizmirstas, nevis dokumentētas
+- ziņojams notikums paliek tikai miglaina atmiņa
+
+Mērķis ir vienkāršs: atstāt UAS, baterijas un ierakstu tādā stāvoklī, lai nākamais lidojums būtu drošāks par iepriekšējo.
+
+<Artefact
+  description="Četras pēclidojuma kartītes: izslēgšana, inspekcija, bateriju aprūpe un žurnāls/ziņošana."
+  caption="Kartītes · pēclidojuma-rutīna"
+>
+  <div className="grid gap-3 md:grid-cols-2">
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Izslēgšana</p>
+      <p className="mt-2 text-sm text-telemetry">Apturi motorus, izslēdz UAS un pulti ražotāja ieteiktajā secībā, izņem bateriju tikai tad, kad tas ir droši.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Inspekcija</p>
+      <p className="mt-2 text-sm text-telemetry">Pārbaudi propellerus, motorus, šasiju, stiprinājumus un korpusu uz plaisām, šķembām, netīrumiem un pārkaršanas pazīmēm.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Baterijas</p>
+      <p className="mt-2 text-sm text-telemetry">Ļauj baterijām atdzist pirms uzlādes vai ievietošanas somā. Glabāšanas režīmā tām jābūt ap 50–60%, ne pilnām vai tukšām.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Žurnāls un ziņošana</p>
+      <p className="mt-2 text-sm text-telemetry">Pieraksti vietu, datumu, UAS, anomālijas un secinājumus. Ja notikums šķērso ziņošanas slieksni, eskalē to oficiāli.</p>
+    </div>
+  </div>
+</Artefact>
+
+## Minimāli noderīgs žurnāla ieraksts
+
+Noderīgs pēclidojuma žurnāls ir īss. Tam jāatbild:
+
+- kad un kur lidojums notika
+- kurš UAS un kura baterija tika izmantota
+- vai parādījās kāda anomālija
+- vai nepieciešama apkope vai atkārtota pārbaude
+
+Te nav jāuzraksta romāns. Te ir jāsaglabā operatīvā atmiņa nākamajam lidojumam.
+
+## Baterijas pēc nolaišanās
+
+Visizplatītākā kļūda ir uztvert tikko nosēdušos bateriju kā neitrālu priekšmetu. Tā nav. Pēc intensīva lidojuma pakete iekšēji var būt silta pat tad, ja korpuss šķiet tikai viegli remdens.
+
+Drošā secība:
+
+1. izņem bateriju, kad UAS ir stabils un izslēgts
+2. novieto to uz ugunsdrošas, nedegošas virsmas
+3. ļauj tai atdzist pirms uzlādes
+4. ja nākamais lidojums nav drīz, pārslēdz uz glabāšanas līmeni, nevis atstāj pilnu
+
+Nekad neatstāj pilnībā uzlādētu bateriju karstā auto pēc vasaras misijas.
+
+## Ziņojams vai tikai žurnālā?
+
+Ne katra anomālija ir obligāts ziņojums, bet katra anomālija ir vērta ierakstam.
+
+Lieto šo dalījumu:
+
+- **Tikai žurnāls**: neliela vibrācija, īss GNSS brīdinājums, kas tīri atrisinājās, neliels propellera bojājums, kas atrasts pēc nosēšanās
+- **Eskalēt ziņošanai**: nopietns kontroles zudums, bīstama tuvošanās pilotētam gaisa kuģim, GPS spoofing/jamming, kas ietekmēja drošību, traumas vai jebkurš notikums, kas būtiski samazināja drošības rezervi
+
+Ja ir šaubas, saglabā pierādījumus: ekrānšāviņus, laikus, vietu un īsu faktisko aprakstu.
+
+<Scenario title="Pēc īsa treniņlidojuma pilsētā tu nolaidies. Baterija ir silta, vienam propellerim ir sekla šķemba, un lietotnes žurnālā redzams īss compass warning trešajā minūtē, kas pats pazuda. Kā pareizi pabeigt lidojumu?">
+Neiepako un neaizej uzreiz. Noliec bateriju atdzist, nomaini bojāto propelleri pirms nākamā lidojuma un uzraksti īsu žurnāla ierakstu par compass warning, laiku un vietu.
+
+Tas nav automātiski obligāts ziņojums regulatoram, bet tas ir ļoti svarīgs operatīvs fakts. Ja tas pats brīdinājums atkārtojas nākamajā lidojumā, tavs žurnāls pārvērš divas “mazas lietas” par skaidru modeli.
+</Scenario>
+
+<MemoryAnchor
+  rule="Izslēdz, apskati, atdzesē, pieraksti. Nosēšanās beidz lidojumu, nevis pilota atbildību."
+  hint="Ja anomālijas nepieraksti, nākamais lidojums sākas akls."
+/>
+
+<CommonMistakes>
+- Karstas baterijas uzreiz ielikt aizvērtā somā vai automašīnā.
+- Atstāt visas baterijas 100% līmenī vairākas dienas starp lidojumiem.
+- Ignorēt nelielus bojājumus, jo “lidojums jau bija beidzies”.
+- Uztvert lietotnes brīdinājumus kā vienreizēju troksni, nevis kā signālu žurnālam.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "postflight-q1",
+    stem: "Kā pareizi rīkoties ar siltu lidojuma bateriju pēc nosēšanās?",
+    options: [
+      { id: "a", text: "Uzreiz lādēt, kamēr tā vēl ir silta, lai ietaupītu laiku." },
+      { id: "b", text: "Ļaut tai atdzist uz ugunsdrošas virsmas pirms uzlādes vai iepakošanas." },
+      { id: "c", text: "Aizvērt somā, lai temperatūra saglabātos vienmērīga." },
+      { id: "d", text: "Atstāt to pilnībā uzlādētu automašīnā līdz nākamajai misijai." },
+    ],
+    correctOptionId: "b",
+    explanation: "Silta pēclidojuma baterija ir jāatdzesē pirms uzlādes vai glabāšanas slēgtā telpā. Siltums kopā ar augstu uzlādes līmeni palielina stresu un risku.",
+    distractorRationales: {
+      a: "Silta pakete uzlādes laikā tiek papildus slogota un tas var būt nedroši.",
+      c: "Aizvērta soma siltumu notur, nevis novada.",
+      d: "Karsts auto un pilnībā uzlādēta litija baterija ir slikta kombinācija.",
+    },
+  },
+  {
+    id: "postflight-q2",
+    stem: "Kāpēc īss pēclidojuma žurnāls ir operatīvi vērtīgs?",
+    options: [
+      { id: "a", text: "Tas palīdz pamanīt atkārtotas anomālijas un apkopes modeļus laika gaitā." },
+      { id: "b", text: "Tas aizvieto jebkādas pirmslidojuma pārbaudes." },
+      { id: "c", text: "Tas automātiski nosūta ziņojumus regulatoram." },
+      { id: "d", text: "Tas atceļ vajadzību pārbaudīt UAS pēc nosēšanās." },
+    ],
+    correctOptionId: "a",
+    explanation: "Īss, faktisks žurnāls saglabā operatīvo atmiņu. Atkārtoti brīdinājumi, propelleru bojājumi, bateriju uzvedība un vietas īpatnības kļūst redzamas tikai tad, ja tās konsekventi pieraksta.",
+    distractorRationales: {
+      b: "Pēclidojuma žurnāls un pirmslidojuma pārbaude risina dažādas problēmas.",
+      c: "Personīgais žurnāls nav tas pats, kas oficiāls ziņojums regulatoram.",
+      d: "Žurnāls bez inspekcijas izlaiž fiziskās problēmas; inspekcija bez žurnāla zaudē vēsturi.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["op-003"]}>
+Tev tagad ir profesionāla pēclidojuma rutīna.
+
+Tālāk: atgriežamies pie paša UAS — Remote ID un geo-awareness, divi digitālie slāņi, kurus piloti bieži jauc.
+</Debrief>

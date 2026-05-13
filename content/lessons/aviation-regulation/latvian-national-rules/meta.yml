@@ -1,0 +1,17 @@
+slug: latvian-national-rules
+ord: 3
+title:
+  lv: Latvijas nacionālie noteikumi un portāli
+  en: Latvian national rules and portals
+  ru: Латвийские национальные правила и порталы
+sourceRef: "docs/knowledge/latvia-caa/web-snapshots/14-normativais-regulejums.md — Latvian regulatory stack; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md — operator registration; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — geozones and BGKIS"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

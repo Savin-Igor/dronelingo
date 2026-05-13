@@ -1,0 +1,132 @@
+# Latvian national rules and portals
+
+<MissionBriefing objective="After this lesson you will know which Latvian rules matter in day-to-day Open-category flying, which portal does what, and how EU rules and Latvian implementation fit together in one workflow.">
+EU law gives the framework. Latvia adds the practical machinery: registration, insurance minima, geographical zones, BGKIS notifications, and the portals where all of that actually happens.
+</MissionBriefing>
+
+<CinematicScene
+  src="/lessons/airspace-lv-interface.png"
+  alt="CAA Latvia and airspace.lv interfaces shown as a pilot workflow: registration, airspace check, BGKIS notification, flight"
+  caption="Workflow · Latvia operational stack"
+/>
+
+## The legal stack in one picture
+
+For an A1/A3 pilot, the legal logic works in layers:
+
+1. **EU baseline**: Regulation 2019/947 defines operations; Regulation 2019/945 defines classes and technical product rules.
+2. **Latvian implementation**: the Aviation Law and Cabinet regulations set local execution rules for qualification, insurance, registry, and specific-category administration.
+3. **Operational portals**: `e.caa.gov.lv` handles operator registration and BGKIS notifications; `airspace.lv/drones` is the practical source for checking whether a place is legal to fly.
+
+If EU law tells you *what category you are in*, Latvian rules tell you *what local steps you must complete before takeoff*.
+
+<Artefact
+  description="Four study cards describing the Latvian rule stack for Open-category pilots: registration, qualification, insurance and airspace access."
+  caption="Cards · national-rule-stack"
+>
+  <div className="grid gap-3 md:grid-cols-2">
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Registry</p>
+      <p className="mt-2 text-sm text-telemetry">`MK Nr. 457` and the CAA portal define operator registration and the practical record-keeping around it.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Qualification</p>
+      <p className="mt-2 text-sm text-telemetry">`MK Nr. 436` covers remote-pilot qualification. For this project, that means the A1/A3 theory route and its Latvian implementation.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Insurance</p>
+      <p className="mt-2 text-sm text-telemetry">`MK Nr. 447` defines mandatory liability minima in Latvia, including the practical split between sub-250 g and heavier Open-category operations.</p>
+    </div>
+    <div className="border border-horizon bg-hull/60 p-4">
+      <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">Airspace</p>
+      <p className="mt-2 text-sm text-telemetry">`MK Nr. 248` plus the UAS geographical-zone system define where you may fly and when BGKIS approval is required.</p>
+    </div>
+  </div>
+</Artefact>
+
+## The two portals every Latvia-first pilot must know
+
+**`e.caa.gov.lv`** is the CAA Latvia portal. In Open category you use it for:
+
+- operator registration
+- exam and qualification flows
+- BGKIS notifications for restricted UAS geographical zones
+- occurrence reporting
+
+**`airspace.lv/drones`** is the operational map. It answers the immediate field question: *may I fly here, under what conditions, and do I need a BGKIS notification?*
+
+These portals are complementary. `airspace.lv` tells you the zone logic; `e.caa.gov.lv` is where you perform the regulated action.
+
+## A practical Open-category workflow in Latvia
+
+For a normal flight in Latvia, the sequence is:
+
+1. confirm your operator registration is valid
+2. confirm you personally hold the needed competence level
+3. confirm insurance if your UAS and operation require it
+4. check `airspace.lv/drones` for the location
+5. submit BGKIS in `e.caa.gov.lv` if the zone requires it
+6. fly only inside the approved window and still remain inside intrinsic Open-category limits
+
+That last point is load-bearing: **BGKIS approval does not let you exceed Open-category limits**. It does not authorise BVLOS, overflight of assemblies, or routine flight above 120 m AGL.
+
+<Scenario title="A Lithuanian operator registered in their home state wants to film in Latvia. They already have operator ID and A1/A3 competence. Do they still need to check Latvian portals?">
+**Yes.** EU registration and competence travel across the EASA zone, but local operating conditions do not disappear. The pilot must still check Latvian UAS geographical zones, comply with Latvian restrictions, and submit BGKIS if the chosen location requires it.
+
+Cross-border does not mean rule-free. It means one EU framework plus local implementation at the place of flight.
+</Scenario>
+
+<MemoryAnchor
+  rule="EU rules define category. Latvian rules define local execution. `airspace.lv` tells you the conditions; `e.caa.gov.lv` is where you act on them."
+  hint="Registration, qualification, insurance, geozones, BGKIS — that is the Latvia flight chain."
+/>
+
+<CommonMistakes>
+- Treating `airspace.lv/drones` as optional because the manufacturer app shows green airspace.
+- Assuming EU registration removes the need to comply with Latvian geozones and BGKIS procedures.
+- Thinking BGKIS approval is a permit to exceed 120 m or to fly BVLOS in Open category.
+- Looking up Latvian rules only once and then relying on memory instead of current portal information.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "lat-rules-q1",
+    stem: "Which portal answers the practical question 'may I fly at this exact place in Latvia, and under what zone conditions?'",
+    options: [
+      { id: "a", text: "Only the manufacturer app." },
+      { id: "b", text: "airspace.lv/drones." },
+      { id: "c", text: "Any weather app with a map layer." },
+      { id: "d", text: "A general search engine result." },
+    ],
+    correctOptionId: "b",
+    explanation: "For practical field checking in Latvia, `airspace.lv/drones` is the operational map for UAS geographical zones and their conditions.",
+    distractorRationales: {
+      a: "Manufacturer apps may have geofencing, but they are not the legal source of Latvian zone conditions.",
+      c: "Weather maps do not define UAS geographical-zone legality.",
+      d: "Search results are not a regulated operational source.",
+    },
+  },
+  {
+    id: "lat-rules-q2",
+    stem: "A pilot receives BGKIS approval for a restricted zone. What does that approval NOT do?",
+    options: [
+      { id: "a", text: "It confirms the flight window for that zone." },
+      { id: "b", text: "It replaces Open-category limits such as VLOS and the 120 m ceiling." },
+      { id: "c", text: "It records that the pilot submitted the required local notification." },
+      { id: "d", text: "It allows the local zone manager to condition access to the area." },
+    ],
+    correctOptionId: "b",
+    explanation: "BGKIS approval is a local zone-access mechanism. It does not replace intrinsic Open-category limits such as VLOS, 120 m AGL, no dangerous goods, and no flight over assemblies of people.",
+    distractorRationales: {
+      a: "Time-window confirmation is exactly what BGKIS approval does for restricted operations.",
+      c: "The notification/approval flow is part of the administrative function of BGKIS.",
+      d: "Restricted-zone access is one of the reasons BGKIS exists.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ar-003"]}>
+You now have the Latvia-specific rule stack in one workflow.
+
+Next: return to operational execution — how to close a flight professionally after landing, not just before takeoff.
+</Debrief>

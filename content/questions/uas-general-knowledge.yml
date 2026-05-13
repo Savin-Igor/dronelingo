@@ -49,7 +49,7 @@
       lv: 25 kg ir augšējais Atvērtās kategorijas limits (C3/C4). C0 ir uz citas masas spektra ekstrēma — < 250 g.
       en: 25 kg is the upper Open-category limit (C3/C4). C0 sits at the opposite end of the mass spectrum — < 250 g.
       ru: 25 кг — верхний предел Открытой категории (C3/C4). C0 — на противоположном конце шкалы массы (< 250 г).
-  sourceRef: "Reg (EU) 2019/945 Annex Part 1 — C0 requirements"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg (EU) 2019/945 Annex Part 1 — C0 requirements"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: factual
@@ -104,7 +104,7 @@
       lv: C3 ir obligāts Direct Remote ID — augstāka masa nozīmē lielāku risku, un identifikācija ir nepieciešama.
       en: C3 requires Direct Remote ID — higher mass implies higher risk, identification is necessary.
       ru: C3 обязательно требует Direct Remote ID — большая масса означает больший риск, идентификация нужна.
-  sourceRef: "Reg (EU) 2019/945 Annex Parts 2–4 — Direct Remote ID requirement"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg (EU) 2019/945 Annex Parts 2–4 — Direct Remote ID requirement"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
@@ -162,7 +162,7 @@
       lv: 20 Wh ir mazāk nekā vienas šūnas (~18 Wh) komplekts — 4S sistēmā tas ir krietni par maz.
       en: 20 Wh is less than a single-cell (~18 Wh) pack — far too low for a 4S configuration.
       ru: 20 Wh — это меньше, чем у одной ячейки (~18 Wh). Для конфигурации 4S — слишком мало.
-  sourceRef: "IATA Lithium Battery Guidance; Reg (EU) 2019/945 — battery safety"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — IATA Lithium Battery Guidance; Reg (EU) 2019/945 — battery safety"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: numeric
@@ -219,7 +219,7 @@
       lv: 10 m/s ir krietni zem regulā noteiktās robežas. C0 var lidot līdz 19 m/s.
       en: 10 m/s is well below the regulatory cap. C0 is permitted up to 19 m/s.
       ru: 10 м/с — значительно ниже регуляторного предела. C0 допускается до 19 м/с.
-  sourceRef: "Reg (EU) 2019/945 Annex Part 1 — C0(2)"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg (EU) 2019/945 Annex Part 1 — C0(2)"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: numeric
@@ -274,7 +274,7 @@
       lv: Pārejas noteikumi (Reg 2019/947 Art. 22) tieši ļauj legacy droniem turpināt lidot pēc masas — tie nav aizliegti.
       en: Transitional rules (Reg 2019/947 Art. 22) explicitly allow legacy drones to fly by mass — they are not prohibited.
       ru: Переходные правила (Регл. 2019/947 ст. 22) прямо разрешают legacy-дронам летать по массе — они не запрещены.
-  sourceRef: "Reg (EU) 2019/947 Art. 22 — transitional provisions"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg (EU) 2019/947 Art. 22 — transitional provisions"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -336,7 +336,7 @@
       lv: Distance prasības pastāv arī zemā ātruma režīmā — 5 m. Zemā ātruma režīms samazina prasību no 30 m uz 5 m, bet nenovērš to pilnīgi.
       en: Distance requirements exist even in low-speed mode — 5 m. Low-speed mode reduces the requirement from 30 m to 5 m, but does not eliminate it.
       ru: Требования к дистанции существуют и в режиме малой скорости — 5 м. Режим малой скорости снижает требование с 30 м до 5 м, но не устраняет его.
-  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.030(2)(b) — A2 distance in low-speed mode"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg (EU) 2019/947 UAS.OPEN.030(2)(b) — A2 distance in low-speed mode"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: numeric
@@ -397,7 +397,7 @@
       lv: Sērijas numurs ir daļa no UAS ID, bet Remote ID pārsūta dinamisku reāllaika informāciju, nevis tikai statiskus manufaktūras datus.
       en: The serial number is part of the UAS ID, but Remote ID broadcasts dynamic real-time data, not only static manufacturing data.
       ru: Серийный номер — часть UAS ID, но Remote ID передаёт динамические данные в реальном времени, а не только статические данные производства.
-  sourceRef: "Reg (EU) 2019/945 Annex Parts 2–4 — Remote ID broadcast requirements"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg (EU) 2019/945 Annex Parts 2–4 — Remote ID broadcast requirements"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
@@ -457,7 +457,7 @@
       lv: C1 arī ir obligāta geo-awareness — šis atbilsme ir nepilnīga.
       en: C1 also requires geo-awareness — this answer is incomplete.
       ru: C1 также требует geo-awareness — этот ответ неполный.
-  sourceRef: "Reg (EU) 2019/945 Annex Parts 2–4 — geo-awareness requirements"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg (EU) 2019/945 Annex Parts 2–4 — geo-awareness requirements"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
@@ -516,7 +516,7 @@
       lv: 333 Wh ir nepareizs aprēķins. 5 Ah × 22,2 V = 111 Wh. 333 Wh rastos, ja mAh tiktu kļūdaini izmantots kā Ah bez pārveidojuma.
       en: 333 Wh is an incorrect calculation. 5 Ah × 22.2 V = 111 Wh. 333 Wh would result from mistakenly using mAh as Ah without conversion.
       ru: 333 Wh — неверный расчёт. 5 Ач × 22,2 В = 111 Wh. 333 Wh получится при ошибочном использовании mAh как Ач без перевода.
-  sourceRef: "IATA Lithium Battery Guidance Document; Reg (EU) 2019/945 — battery safety"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — IATA Lithium Battery Guidance Document; Reg (EU) 2019/945 — battery safety"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: numeric
@@ -576,7 +576,7 @@
       lv: Operatora reģistrācija ir atkarīga no masas un ekrāna, nevis UAS klases. C4 operators ir jāreģistrē, ja drona masa prasa to (≥250 g vai aprīkots ar kameru).
       en: Operator registration depends on mass and payload, not UAS class. C4 operators must register if the drone mass requires it (≥250 g or equipped with a camera).
       ru: Регистрация оператора зависит от массы и нагрузки, а не от класса UAS. Операторы C4 должны регистрироваться, если масса дрона требует этого (≥250 г или оснащён камерой).
-  sourceRef: "Reg (EU) 2019/945 Annex Part 5 — C4 requirements"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg (EU) 2019/945 Annex Part 5 — C4 requirements"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -634,7 +634,7 @@
       lv: 10 kg nav nevienas C klases robeža. C2 robeža ir 4 kg.
       en: 10 kg is not a boundary for any C class. The C2 boundary is 4 kg.
       ru: 10 кг не является границей ни одного класса C. Граница C2 составляет 4 кг.
-  sourceRef: "Reg 2019/945 Part 4 — C2 class definition"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg 2019/945 Part 4 — C2 class definition"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -695,7 +695,7 @@
       lv: Zema ātruma režīms ir C2 prasība, nevis C1. C1 ir ātruma un kinētiskās enerģijas limits, nevis zema ātruma sensors.
       en: Low-speed mode is a C2 requirement, not C1. C1 has a speed and kinetic energy limit, not a low-speed mode.
       ru: Режим малой скорости — требование C2, а не C1. C1 имеет ограничение скорости и кинетической энергии, а не режим малой скорости.
-  sourceRef: "Reg 2019/945 Part 2 — C1 class technical requirements"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg 2019/945 Part 2 — C1 class technical requirements"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -759,7 +759,7 @@
       lv: Nav servera atļaujas mehānisma C4 autonomajiem lidojumiem. Autonomā lidojuma ierobežojums izriet no tehnoloģiskas prasības — nav fail-safe un geo-awareness.
       en: There is no server authorisation mechanism for C4 autonomous flights. The autonomous flight restriction arises from a technical requirement — absence of fail-safe and geo-awareness.
       ru: Нет механизма серверного разрешения для автономных полётов C4. Ограничение на автономные полёты вытекает из технического требования — отсутствия fail-safe и гео-осведомлённости.
-  sourceRef: "Reg 2019/945 Part 6 — C4 class requirements; Reg 2019/947 UAS.OPEN.040 A3"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg 2019/945 Part 6 — C4 class requirements; Reg 2019/947 UAS.OPEN.040 A3"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: regulatory
@@ -824,7 +824,7 @@
       lv: C1 ir fiksēts ātruma limits — 19 m/s. "Nav limita" neatbilst regulatīvajai prasībai.
       en: C1 has a fixed speed limit — 19 m/s. "No limit" does not comply with the regulatory requirement.
       ru: C1 имеет фиксированное ограничение скорости — 19 м/с. «Нет ограничения» не соответствует нормативному требованию.
-  sourceRef: "Reg 2019/945 Part 2 — C1 class max speed"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg 2019/945 Part 2 — C1 class max speed"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -888,7 +888,7 @@
       lv: Network Remote ID ir papildu prasība, nevis aizstājoša alternatīva Direct Remote ID. Abas var tikt prasītas.
       en: Network Remote ID is an additional requirement, not a replacement alternative to Direct Remote ID. Both may be required.
       ru: Network Remote ID — дополнительное требование, а не замещающая альтернатива Direct Remote ID. Оба могут быть обязательными.
-  sourceRef: "Reg 2019/945 Part 2 — C1 mandatory features; Remote ID requirement"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg 2019/945 Part 2 — C1 mandatory features; Remote ID requirement"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
@@ -953,7 +953,7 @@
       lv: Automātiskā nosēšanās pie 20 % baterijas ir fail-safe funkcija, nevis geo-awareness. Tās ir divas dažādas sistēmas.
       en: Automatic landing at 20 % battery is a fail-safe function, not geo-awareness. These are two separate systems.
       ru: Автоматическая посадка при 20 % батареи — функция fail-safe, а не гео-осведомлённости. Это две разные системы.
-  sourceRef: "Reg 2019/945 Part 2 — C1 geo-awareness; Reg 2019/947 Art. 13 — geo-awareness"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg 2019/945 Part 2 — C1 geo-awareness; Reg 2019/947 Art. 13 — geo-awareness"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
@@ -1014,7 +1014,7 @@
       lv: Fiziskā marķēšana ir obligāta papildus Remote ID. Viena Remote ID sistēma nav pietiekama.
       en: Physical marking is mandatory in addition to Remote ID. Remote ID alone is not sufficient.
       ru: Физическая маркировка обязательна в дополнение к Remote ID. Только Remote ID недостаточно.
-  sourceRef: "Reg 2019/947 Art. 14(6) — operator number display on UAS"
+  sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg 2019/947 Art. 14(6) — operator number display on UAS"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory

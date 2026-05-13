@@ -1,0 +1,130 @@
+# NOTAM un pagaidu ierobežojumi
+
+<MissionBriefing objective="Pēc šīs nodarbības tu sapratīsi, ko NOTAM praktiski maina, kāpēc vakardienas zaļā zona šodien var būt sarkana, un kā iekļaut pēdējā brīža gaisa telpas pārbaudi katrā lidojumā.">
+Pastāvīgie noteikumi ir tikai puse no bildes. Daudz nelikumīgu lidojumu notiek tāpēc, ka pilots karti pārbaudīja vienreiz, pieņēma, ka tā nemainās, un ielidoja pagaidu ierobežojumā.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Aviation briefing visual: drone pilot reviewing tablet map with temporary red restricted circle over a city event, airport traffic lane, and emergency helicopter route"
+  alt="Pilots pirms lidojuma pārbauda dzīvo gaisa telpas karti ar pagaidu ierobežojumiem"
+  caption="Treniņa aina · dzīva gaisa telpas pārbaude"
+/>
+
+## Ko NOTAM dara praksē
+
+**NOTAM** ir laika ierobežots operatīvs paziņojums. Tas var izveidot, mainīt vai atcelt ierobežojumus noteiktam periodam. UAS pilotam tas nozīmē:
+
+- teritorija, kas vakar bija izmantojama, šodien var būt ierobežota;
+- maksimālais augstums var tikt īslaicīgi samazināts;
+- avārijas dienesti, policija, militārā vai publiska pasākuma darbība var mainīt prioritātes;
+- iepriekš derīgs rutīnas plāns var kļūt nederīgs, pat ja drons un sertifikāts nav mainījušies.
+
+Praktiskais noteikums ir vienkāršs: **nepaļaujies uz atmiņu par gaisa telpas statusu**.
+
+## Tipiski pagaidu ierobežojumi Latvijā
+
+Visbiežākie īstermiņa ierobežojumi UAS pilotiem ir:
+
+- **publiski pasākumi** — koncerti, sports, pilsētas svētki, valsts vizītes;
+- **avārijas dienestu darbība** — ugunsgrēks, meklēšana un glābšana, policijas notikuma vieta;
+- **militārā aktivitāte** — pagaidu rezervētas vai ierobežotas zonas;
+- **lidostas operatīvās izmaiņas** — skrejceļu darbi, plūsmas maiņa, speciāli helikopteru maršruti.
+
+Šādi ierobežojumi var parādīties `airspace.lv`, oficiālajos paziņojumos vai zonas pārvaldītāja norādījumos.
+
+<Artefact
+  description="Lēmumu shēma pagaidu ierobežojumiem: pārbaudi karti lidojuma dienā, pārbaudi precīzu laika logu, nosaki vai zona ir informējoša, ierobežota vai aizliegta, un tad lem, vai turpināt, pieteikt BGKIS vai atcelt."
+  caption="Shēma · pagaidu-ierobežojumu-lēmums"
+>
+  <div className="grid gap-3 md:grid-cols-4 text-sm">
+    {[
+      ["1. Pārbaudi šodien", "Atver dzīvo karti tajā pašā dienā, ne tikai plānošanas laikā."],
+      ["2. Pārbaudi laiku", "Izlasi aktīvo sākuma un beigu laiku, ne tikai zonas krāsu."],
+      ["3. Pārbaudi ietekmi", "Nosaki, vai tā ir informējoša, ierobežota vai aizliegta zona."],
+      ["4. Pieņem lēmumu", "Turpini, piesaki BGKIS vai atcel misiju."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## Pareizā secība
+
+Lieto šādu secību katram reālam lidojumam:
+
+1. **Plāno iepriekš** — nosaki parasto zonas tipu un iespējamos ierobežojumus.
+2. **Pārbaudi vēlreiz lidojuma dienā** — ideāli īsi pirms izbraukšanas un vēlreiz uz vietas.
+3. **Rūpīgi izlasi laika logu** — daudzi pagaidu ierobežojumi darbojas tikai vairākas stundas.
+4. **Uzskati pagaidu ierobežojumu par prioritāru** — ja tas konfliktē ar rutīnas pieņēmumu, uzvar pagaidu noteikums.
+5. **Ja ir šaubas, neimprovizē** — atliec vai atcel, līdz statuss ir skaidrs.
+
+## Kāpēc "iepriekš bija zaļš" nav aizsardzība
+
+CAA un gaisa telpas iestādes vērtē faktiskos apstākļus lidojuma brīdī, nevis to, ko pilots atceras no iepriekšējās pārbaudes. Vakardienas ekrānšāviņš nav šodienas atbilstība.
+
+<Scenario title="Piektdien plānoji nekustamā īpašuma filmēšanu nedēļas nogalei. Tad teritorija bija brīva. Svētdienas rītā `airspace.lv` rāda pagaidu ierobežotu zonu tuvējā pasākuma dēļ. Klients jau ir uz vietas. Kāds ir pareizais lēmums?">
+Pareizais lēmums ir sekot **pašreizējam** statusam, nevis agrākajam plānam.
+
+Ja pagaidu ierobežojums prasa BGKIS atļauju un tev tās nav, tu nelido. Ja teritorija ir aizliegta, tu uzreiz atcel. Klienta spiediens nemaina gaisa telpas statusu.
+
+Profesionāla atbilde ir īsa un faktiska: darbības vide ir mainījusies, un aviācijas noteikumi balstās uz aktīvajiem apstākļiem lidojuma laikā.
+</Scenario>
+
+<MemoryAnchor
+  rule="Gaisa telpas statuss ir dzīvs, nevis atcerēts. Pārbaudi dienā, pārbaudi laiku, tad lem."
+  hint="Vakardienas ekrānšāviņš nav šodienas atļauja."
+/>
+
+<CommonMistakes>
+- Plānot vienu reizi un uzskatīt, ka gaisa telpas aina nemainās visu nedēļu.
+- Lasīt tikai zonas krāsu un izlaist aktīvo laika logu.
+- Pieņemt, ka pasākuma ierobežojums attiecas "tikai uz lielo aviāciju".
+- Balstīt lēmumu uz klienta steigu, nevis dzīvo statusu.
+- Saglabāt karti bezsaistē, bet neatjaunot to pirms misijas.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "al-nt1",
+    stem: "Kāds ir svarīgākais NOTAM operatīvais efekts drona pilotam?",
+    options: [
+      { id: "a", text: "Tas var uz laiku mainīt, vai un kā teritoriju drīkst izmantot." },
+      { id: "b", text: "Tas pastāvīgi aizstāj Atvērtās kategorijas noteikumus." },
+      { id: "c", text: "Tas attiecas tikai uz komerciālajiem pasažieru lidojumiem." },
+      { id: "d", text: "Tas ir svarīgs tikai droniem virs 4 kg." },
+    ],
+    correctOptionId: "a",
+    explanation: "NOTAM var uz laiku izveidot vai mainīt ierobežojumus, augstuma robežas vai operatīvās prioritātes konkrētā vietā un laikā. Tas tieši ietekmē drona lidojuma likumību un drošību.",
+    distractorRationales: {
+      b: "NOTAM ir pagaidu operatīvs paziņojums. Tas pastāvīgi neaizstāj Atvērtās kategorijas sistēmu.",
+      c: "Pagaidu ierobežojumi bieži attiecas uz visiem gaisa telpas lietotājiem, arī UAS pilotiem.",
+      d: "Zonas statuss nav piesaistīts tikai smagākiem droniem. Tas attiecas pēc gaisa telpas noteikuma.",
+    },
+  },
+  {
+    id: "al-nt2",
+    stem: "Vakar pārbaudīji teritoriju, un tā bija zaļa. Šodien tā ir īslaicīgi ierobežota publiska pasākuma dēļ. Kurš statuss nosaka lidojumu?",
+    options: [
+      { id: "a", text: "Vakardienas statuss, jo lidojums tika plānots agrāk." },
+      { id: "b", text: "Šodienas dzīvais statuss lidojuma laikā." },
+      { id: "c", text: "Pilots var izvēlēties ērtāko interpretāciju." },
+      { id: "d", text: "Vecais kartes statuss saglabājas spēkā 24 stundas." },
+    ],
+    correctOptionId: "b",
+    explanation: "Atbilstība tiek vērtēta pēc dzīvajiem apstākļiem lidojuma laikā. Plānošanas vēsture aktīvu pagaidu ierobežojumu nepārspēj.",
+    distractorRationales: {
+      a: "Agrāks plāns nesaglabā piekļuvi, ja darbības vide ir mainījusies.",
+      c: "Pilots neizvēlas starp statusiem; spēkā ir aktīvais statuss.",
+      d: "Nav 24 stundu pārejas perioda novecojušai pārbaudei.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["al-003"]}>
+Tu tagad saproti, kāpēc pagaidu ierobežojumi ir svarīgi un kā iebūvēt dzīvu gaisa telpas pārbaudi katrā misijā.
+
+Tālāk: praktiska maršrutu un zonu lasīšana — kā savienot kartes krāsas, augstuma loģiku un Latvijas procedūras vienā pirmslidojuma lēmumā.
+</Debrief>
