@@ -1680,9 +1680,9 @@
   scenarioType: decision
 - id: al-033
   stem:
-    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Kur Latvijā ir vienīgais juridiski saistošais avots par UAS ģeogrāfiskām zonām?'
-    en: 'Before flight, the pilot reviews this principle again: Where is the only legally binding source for UAS geographical zones in Latvia?'
-    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Где единственный юридически обязательный источник по геозонам UAS в Латвии?'
+    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kur Latvijā ir vienīgais juridiski saistošais avots par UAS ģeogrāfiskām zonām?'
+    en: 'During preflight review, the operator asks: Where is the only legally binding source for UAS geographical zones in Latvia?'
+    ru: 'Во время предполётной проверки оператор задаёт вопрос: Где единственный юридически обязательный источник по геозонам UAS в Латвии?'
   options:
   - id: a
     text:
@@ -1734,9 +1734,9 @@
   scenarioType: decision
 - id: al-034
   stem:
-    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Kopš 2025. gada 1. janvāra — kas obligāti jāiesniedz lidojumam ierobežotā UGZ?
-    en: Which option most accurately matches this rule? Since 1 January 2025, what must be submitted for a flight in a restricted UGZ?
-    ru: Какой вариант точнее всего соответствует этому правилу? С 1 января 2025 года что обязательно подаётся для полёта в ограниченной UGZ?
+    lv: Kura atbilde vislabāk atbilst situācijai? Kopš 2025. gada 1. janvāra — kas obligāti jāiesniedz lidojumam ierobežotā UGZ?
+    en: Which answer best fits the situation? Since 1 January 2025, what must be submitted for a flight in a restricted UGZ?
+    ru: Какой ответ лучше всего подходит к ситуации? С 1 января 2025 года что обязательно подаётся для полёта в ограниченной UGZ?
   options:
   - id: a
     text:
@@ -1788,9 +1788,9 @@
   scenarioType: decision
 - id: al-035
   stem:
-    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Vai UGZ atļauja ļauj pārsniegt 120 m augstuma robežu?
-    en: Scenario check — choose the correct answer. Does a UGZ authorisation allow exceeding the 120 m altitude limit?
-    ru: Проверка ситуации — выбери правильный ответ. Разрешает ли UGZ-авторизация превышать предел 120 м?
+    lv: Operatīvā situācija — pieņem pareizo lēmumu. Vai UGZ atļauja ļauj pārsniegt 120 m augstuma robežu?
+    en: Operational scenario — choose the correct decision. Does a UGZ authorisation allow exceeding the 120 m altitude limit?
+    ru: Операционная ситуация — выбери правильное решение. Разрешает ли UGZ-авторизация превышать предел 120 м?
   options:
   - id: a
     text:
@@ -1842,9 +1842,9 @@
   scenarioType: decision
 - id: al-036
   stem:
-    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Kura zona Latvijā kopš 2025. gada ir slēgta Atvērtās kategorijas lidojumiem?'
-    en: 'Before flight, the pilot reviews this principle again: Which zone in Latvia has been closed to Open-category flights since 2025?'
-    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Какая зона в Латвии с 2025 года закрыта для полётов Открытой категории?'
+    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kura zona Latvijā kopš 2025. gada ir slēgta Atvērtās kategorijas lidojumiem?'
+    en: 'During preflight review, the operator asks: Which zone in Latvia has been closed to Open-category flights since 2025?'
+    ru: 'Во время предполётной проверки оператор задаёт вопрос: Какая зона в Латвии с 2025 года закрыта для полётов Открытой категории?'
   options:
   - id: a
     text:
@@ -1896,9 +1896,9 @@
   scenarioType: decision
 - id: al-037
   stem:
-    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Kāds datu formāts tiek izmantots ģeogrāfiskās informētības (geo-awareness) ielādei?
-    en: Which option most accurately matches this rule? Which data format is used for geo-awareness uploads?
-    ru: Какой вариант точнее всего соответствует этому правилу? Какой формат данных используется для загрузки geo-awareness?
+    lv: Kura atbilde vislabāk atbilst situācijai? Kāds datu formāts tiek izmantots ģeogrāfiskās informētības (geo-awareness) ielādei?
+    en: Which answer best fits the situation? Which data format is used for geo-awareness uploads?
+    ru: Какой ответ лучше всего подходит к ситуации? Какой формат данных используется для загрузки geo-awareness?
   options:
   - id: a
     text:
@@ -1950,9 +1950,9 @@
   scenarioType: decision
 - id: al-038
   stem:
-    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Pilots pārbauda airspace.lv/drones rīta pusdienlaikā un neredz ierobežojumus. Vai pietiek ar to pirms lidojuma pēcpusdienā?
-    en: Scenario check — choose the correct answer. A pilot checks airspace.lv/drones at noon and sees no restrictions. Is this sufficient before an afternoon flight?
-    ru: Проверка ситуации — выбери правильный ответ. Пилот проверяет airspace.lv/drones в полдень и не видит ограничений. Достаточно ли этого перед полётом во второй половине дня?
+    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pilots pārbauda airspace.lv/drones rīta pusdienlaikā un neredz ierobežojumus. Vai pietiek ar to pirms lidojuma pēcpusdienā?
+    en: Operational scenario — choose the correct decision. A pilot checks airspace.lv/drones at noon and sees no restrictions. Is this sufficient before an afternoon flight?
+    ru: Операционная ситуация — выбери правильное решение. Пилот проверяет airspace.lv/drones в полдень и не видит ограничений. Достаточно ли этого перед полётом во второй половине дня?
   options:
   - id: a
     text:
@@ -2004,9 +2004,9 @@
   scenarioType: decision
 - id: al-039
   stem:
-    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Pilots plāno lidojumu 5 km no Rīgas lidostas sliekšņa, 80 m augstumā. Rīgas lidostas CTR pastāvīgi pārklāj šo teritoriju. Ko pilotam darīt?'
-    en: 'Before flight, the pilot reviews this principle again: A pilot plans a flight 5 km from the Riga airport threshold, at 80 m altitude. Riga airport CTR permanently covers this area. What must the pilot do?'
-    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Пилот планирует полёт в 5 км от порога ВПП Рижского аэропорта на высоте 80 м. CTR Рижского аэропорта постоянно охватывает эту территорию. Что должен сделать пилот?'
+    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Pilots plāno lidojumu 5 km no Rīgas lidostas sliekšņa, 80 m augstumā. Rīgas lidostas CTR pastāvīgi pārklāj šo teritoriju. Ko pilotam darīt?'
+    en: 'During preflight review, the operator asks: A pilot plans a flight 5 km from the Riga airport threshold, at 80 m altitude. Riga airport CTR permanently covers this area. What must the pilot do?'
+    ru: 'Во время предполётной проверки оператор задаёт вопрос: Пилот планирует полёт в 5 км от порога ВПП Рижского аэропорта на высоте 80 м. CTR Рижского аэропорта постоянно охватывает эту территорию. Что должен сделать пилот?'
   options:
   - id: a
     text:
@@ -2058,9 +2058,9 @@
   scenarioType: decision
 - id: al-040
   stem:
-    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Kādos apstākļos pilots var pārsniegt 120 m standarta augstuma robežu Atvērtajā kategorijā?
-    en: Which option most accurately matches this rule? Under what conditions may a pilot exceed the 120 m standard altitude limit in the Open category?
-    ru: Какой вариант точнее всего соответствует этому правилу? При каких условиях пилот может превысить стандартный предел 120 м в Открытой категории?
+    lv: Kura atbilde vislabāk atbilst situācijai? Kādos apstākļos pilots var pārsniegt 120 m standarta augstuma robežu Atvērtajā kategorijā?
+    en: Which answer best fits the situation? Under what conditions may a pilot exceed the 120 m standard altitude limit in the Open category?
+    ru: Какой ответ лучше всего подходит к ситуации? При каких условиях пилот может превысить стандартный предел 120 м в Открытой категории?
   options:
   - id: a
     text:

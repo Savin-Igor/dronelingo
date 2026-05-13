@@ -1302,9 +1302,9 @@
   scenarioType: decision
 - id: se-026
   stem:
-    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Cik stundu laikā jāziņo par tuvtrāpījumu ar pilotētu gaisa kuģi?'
-    en: 'Before flight, the pilot reviews this principle again: Within how many hours must a near-miss with a manned aircraft be reported?'
-    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: В течение скольких часов нужно сообщить о сближении с пилотируемым воздушным судном?'
+    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Cik stundu laikā jāziņo par tuvtrāpījumu ar pilotētu gaisa kuģi?'
+    en: 'During preflight review, the operator asks: Within how many hours must a near-miss with a manned aircraft be reported?'
+    ru: 'Во время предполётной проверки оператор задаёт вопрос: В течение скольких часов нужно сообщить о сближении с пилотируемым воздушным судном?'
   options:
   - id: a
     text:
@@ -1356,9 +1356,9 @@
   scenarioType: decision
 - id: se-027
   stem:
-    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Kur Latvijā iesniedz UAS atgadījumu ziņojumu?
-    en: Which option most accurately matches this rule? Where in Latvia is a UAS occurrence report submitted?
-    ru: Какой вариант точнее всего соответствует этому правилу? Куда в Латвии подаётся уведомление о происшествии UAS?
+    lv: Kura atbilde vislabāk atbilst situācijai? Kur Latvijā iesniedz UAS atgadījumu ziņojumu?
+    en: Which answer best fits the situation? Where in Latvia is a UAS occurrence report submitted?
+    ru: Какой ответ лучше всего подходит к ситуации? Куда в Латвии подаётся уведомление о происшествии UAS?
   options:
   - id: a
     text:
@@ -1410,9 +1410,9 @@
   scenarioType: decision
 - id: se-028
   stem:
-    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Kāds ir galvenais ieguvums no "just culture" pieejas atgadījumu ziņošanā?
-    en: Scenario check — choose the correct answer. What is the main benefit of "just culture" in occurrence reporting?
-    ru: Проверка ситуации — выбери правильный ответ. Какова главная цель подхода «just culture» в уведомлениях о происшествиях?
+    lv: Operatīvā situācija — pieņem pareizo lēmumu. Kāds ir galvenais ieguvums no "just culture" pieejas atgadījumu ziņošanā?
+    en: Operational scenario — choose the correct decision. What is the main benefit of "just culture" in occurrence reporting?
+    ru: Операционная ситуация — выбери правильное решение. Какова главная цель подхода «just culture» в уведомлениях о происшествиях?
   options:
   - id: a
     text:
@@ -1464,9 +1464,9 @@
   scenarioType: decision
 - id: se-029
   stem:
-    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Ko nozīmē GPS spoofing ar UAS uzbrukuma kontekstā?'
-    en: 'Before flight, the pilot reviews this principle again: What does GPS spoofing mean in the context of a UAS attack?'
-    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Что такое GPS spoofing в контексте атаки на UAS?'
+    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Ko nozīmē GPS spoofing ar UAS uzbrukuma kontekstā?'
+    en: 'During preflight review, the operator asks: What does GPS spoofing mean in the context of a UAS attack?'
+    ru: 'Во время предполётной проверки оператор задаёт вопрос: Что такое GPS spoofing в контексте атаки на UAS?'
   options:
   - id: a
     text:
@@ -1518,9 +1518,9 @@
   scenarioType: decision
 - id: se-030
   stem:
-    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Kura no šīm ir laba prakse UAS kiberdrošībā?
-    en: Which option most accurately matches this rule? Which of the following is good UAS cyber security practice?
-    ru: Какой вариант точнее всего соответствует этому правилу? Что из перечисленного — хорошая практика кибербезопасности UAS?
+    lv: Kura atbilde vislabāk atbilst situācijai? Kura no šīm ir laba prakse UAS kiberdrošībā?
+    en: Which answer best fits the situation? Which of the following is good UAS cyber security practice?
+    ru: Какой ответ лучше всего подходит к ситуации? Что из перечисленного — хорошая практика кибербезопасности UAS?
   options:
   - id: a
     text:
@@ -1572,9 +1572,9 @@
   scenarioType: decision
 - id: se-031
   stem:
-    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Lidojuma laikā kartes attēls pārvēršas pelēks un satelītu skaits krīt uz nulli. Drons aktivē RTH. Kāds ir visticamākais kiberuzbrukuma veids?
-    en: Scenario check — choose the correct answer. Mid-flight, the map display goes grey and the satellite count drops to zero. The drone activates RTH. What cyber threat is most likely?
-    ru: Проверка ситуации — выбери правильный ответ. В середине полёта карта сереет, количество спутников падает до нуля. Дрон активирует RTH. Какая кибератака наиболее вероятна?
+    lv: Operatīvā situācija — pieņem pareizo lēmumu. Lidojuma laikā kartes attēls pārvēršas pelēks un satelītu skaits krīt uz nulli. Drons aktivē RTH. Kāds ir visticamākais kiberuzbrukuma veids?
+    en: Operational scenario — choose the correct decision. Mid-flight, the map display goes grey and the satellite count drops to zero. The drone activates RTH. What cyber threat is most likely?
+    ru: Операционная ситуация — выбери правильное решение. В середине полёта карта сереет, количество спутников падает до нуля. Дрон активирует RTH. Какая кибератака наиболее вероятна?
   options:
   - id: a
     text:
@@ -1626,9 +1626,9 @@
   scenarioType: decision
 - id: se-032
   stem:
-    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Lidojuma laikā drons zaudē datu saiti 30 sekundes. Fail-safe aktivējas un drons drošā kārtā atgriežas. Nav ievainojumu, nav pilotētu gaisa kuģu tuvumā. Kāds ir ziņošanas pienākums?'
-    en: 'Before flight, the pilot reviews this principle again: Mid-flight the drone loses the data link for 30 seconds. Fail-safe activates and the drone returns safely. No injuries, no manned aircraft nearby. What is the reporting obligation?'
-    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: В середине полёта дрон теряет канал данных на 30 секунд. Fail-safe активируется, дрон возвращается безопасно. Травм нет, пилотируемых воздушных судов рядом нет. Каково обязательство по уведомлению?'
+    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Lidojuma laikā drons zaudē datu saiti 30 sekundes. Fail-safe aktivējas un drons drošā kārtā atgriežas. Nav ievainojumu, nav pilotētu gaisa kuģu tuvumā. Kāds ir ziņošanas pienākums?'
+    en: 'During preflight review, the operator asks: Mid-flight the drone loses the data link for 30 seconds. Fail-safe activates and the drone returns safely. No injuries, no manned aircraft nearby. What is the reporting obligation?'
+    ru: 'Во время предполётной проверки оператор задаёт вопрос: В середине полёта дрон теряет канал данных на 30 секунд. Fail-safe активируется, дрон возвращается безопасно. Травм нет, пилотируемых воздушных судов рядом нет. Каково обязательство по уведомлению?'
   options:
   - id: a
     text:
@@ -1680,9 +1680,9 @@
   scenarioType: decision
 - id: se-033
   stem:
-    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Pilots vēro, ka kāds mēģina pārtvert viņa drona vadības signālu ar radio interferences iekārtu. Kāda ir tiesiskā situācija?
-    en: Which option most accurately matches this rule? A pilot observes someone attempting to intercept their drone's control signal with a radio interference device. What is the legal situation?
-    ru: Какой вариант точнее всего соответствует этому правилу? Пилот наблюдает, как кто-то пытается перехватить сигнал управления его дроном с помощью устройства радиопомех. Какова правовая ситуация?
+    lv: Kura atbilde vislabāk atbilst situācijai? Pilots vēro, ka kāds mēģina pārtvert viņa drona vadības signālu ar radio interferences iekārtu. Kāda ir tiesiskā situācija?
+    en: Which answer best fits the situation? A pilot observes someone attempting to intercept their drone's control signal with a radio interference device. What is the legal situation?
+    ru: Какой ответ лучше всего подходит к ситуации? Пилот наблюдает, как кто-то пытается перехватить сигнал управления его дроном с помощью устройства радиопомех. Какова правовая ситуация?
   options:
   - id: a
     text:
@@ -1734,9 +1734,9 @@
   scenarioType: decision
 - id: se-034
   stem:
-    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Pēc lidojuma pilots konstatē, ka drona GPS žurnāls rāda neizskaidrojamu pozīciju novirzi 2 km prom no faktiskās lidojuma vietas. Kas ir visticamākais skaidrojums un kāda ir tūlītējā darbība?
-    en: Scenario check — choose the correct answer. After a flight a pilot notices the drone's GPS log shows an unexplained position drift 2 km from the actual flight location. What is the most likely explanation and what is the immediate action?
-    ru: Проверка ситуации — выбери правильный ответ. После полёта пилот замечает, что журнал GPS дрона показывает необъяснимое отклонение позиции на 2 км от фактического места полёта. Каков наиболее вероятный объяснение и каковы немедленные действия?
+    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pēc lidojuma pilots konstatē, ka drona GPS žurnāls rāda neizskaidrojamu pozīciju novirzi 2 km prom no faktiskās lidojuma vietas. Kas ir visticamākais skaidrojums un kāda ir tūlītējā darbība?
+    en: Operational scenario — choose the correct decision. After a flight a pilot notices the drone's GPS log shows an unexplained position drift 2 km from the actual flight location. What is the most likely explanation and what is the immediate action?
+    ru: Операционная ситуация — выбери правильное решение. После полёта пилот замечает, что журнал GPS дрона показывает необъяснимое отклонение позиции на 2 км от фактического места полёта. Каков наиболее вероятный объяснение и каковы немедленные действия?
   options:
   - id: a
     text:
@@ -1788,9 +1788,9 @@
   scenarioType: decision
 - id: se-035
   stem:
-    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Operators saņem e-pastu no "UAS drošības dienesta" ar prasību piekļūt viņa drona sistēmas datiem, lai "verificētu drošību". E-pastā ir saite uz trešo pušu vietni. Ko operators drīkst darīt?'
-    en: 'Before flight, the pilot reviews this principle again: An operator receives an email from a "UAS security service" asking access to their drone system data to "verify security". The email contains a link to a third-party website. What should the operator do?'
-    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Оператор получает электронное письмо от «службы безопасности UAS» с просьбой предоставить доступ к данным системы его дрона для «проверки безопасности». В письме — ссылка на сторонний сайт. Что должен сделать оператор?'
+    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Operators saņem e-pastu no "UAS drošības dienesta" ar prasību piekļūt viņa drona sistēmas datiem, lai "verificētu drošību". E-pastā ir saite uz trešo pušu vietni. Ko operators drīkst darīt?'
+    en: 'During preflight review, the operator asks: An operator receives an email from a "UAS security service" asking access to their drone system data to "verify security". The email contains a link to a third-party website. What should the operator do?'
+    ru: 'Во время предполётной проверки оператор задаёт вопрос: Оператор получает электронное письмо от «службы безопасности UAS» с просьбой предоставить доступ к данным системы его дрона для «проверки безопасности». В письме — ссылка на сторонний сайт. Что должен сделать оператор?'
   options:
   - id: a
     text:
@@ -1842,9 +1842,9 @@
   scenarioType: decision
 - id: se-036
   stem:
-    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Kāds ir Direct Remote ID mērķis drošības perspektīvā?
-    en: Which option most accurately matches this rule? What is the purpose of Direct Remote ID from a security perspective?
-    ru: Какой вариант точнее всего соответствует этому правилу? Какова цель Direct Remote ID с точки зрения безопасности?
+    lv: Kura atbilde vislabāk atbilst situācijai? Kāds ir Direct Remote ID mērķis drošības perspektīvā?
+    en: Which answer best fits the situation? What is the purpose of Direct Remote ID from a security perspective?
+    ru: Какой ответ лучше всего подходит к ситуации? Какова цель Direct Remote ID с точки зрения безопасности?
   options:
   - id: a
     text:
@@ -1896,9 +1896,9 @@
   scenarioType: decision
 - id: se-037
   stem:
-    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Kāda ir "tīkla Remote ID" (Network Remote ID) atšķirība no "tiešā Remote ID" (Direct Remote ID)?
-    en: Scenario check — choose the correct answer. What is the difference between "Network Remote ID" and "Direct Remote ID"?
-    ru: Проверка ситуации — выбери правильный ответ. В чём разница между «Network Remote ID» и «Direct Remote ID»?
+    lv: Operatīvā situācija — pieņem pareizo lēmumu. Kāda ir "tīkla Remote ID" (Network Remote ID) atšķirība no "tiešā Remote ID" (Direct Remote ID)?
+    en: Operational scenario — choose the correct decision. What is the difference between "Network Remote ID" and "Direct Remote ID"?
+    ru: Операционная ситуация — выбери правильное решение. В чём разница между «Network Remote ID» и «Direct Remote ID»?
   options:
   - id: a
     text:
@@ -1950,9 +1950,9 @@
   scenarioType: decision
 - id: se-038
   stem:
-    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Pilots lido pāri lielpilsētas centram. Tā kā Remote ID ir aktīvs, pilnvarota institūcija var identificēt operatoru. Kādu datu kopumu Remote ID nepārraida?'
-    en: 'Before flight, the pilot reviews this principle again: A pilot flies over a city centre. With Remote ID active, an authorised authority can identify the operator. What data set does Remote ID NOT broadcast?'
-    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Пилот летит над центром мегаполиса. При активном Remote ID уполномоченный орган может идентифицировать оператора. Какой набор данных Remote ID НЕ транслирует?'
+    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Pilots lido pāri lielpilsētas centram. Tā kā Remote ID ir aktīvs, pilnvarota institūcija var identificēt operatoru. Kādu datu kopumu Remote ID nepārraida?'
+    en: 'During preflight review, the operator asks: A pilot flies over a city centre. With Remote ID active, an authorised authority can identify the operator. What data set does Remote ID NOT broadcast?'
+    ru: 'Во время предполётной проверки оператор задаёт вопрос: Пилот летит над центром мегаполиса. При активном Remote ID уполномоченный орган может идентифицировать оператора. Какой набор данных Remote ID НЕ транслирует?'
   options:
   - id: a
     text:
@@ -2004,9 +2004,9 @@
   scenarioType: decision
 - id: se-039
   stem:
-    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Pilots saņem paziņojumu par jaunu firmware versiju no neoficiāla avota (foruma). Versijā tiek solīti "papildu lidojuma augstumi" un "atbloķētas zonas". Ko pilotam jādara?
-    en: Which option most accurately matches this rule? A pilot receives a notification of a new firmware version from an unofficial source (a forum). The version promises "extended flight altitudes" and "unlocked zones". What should the pilot do?
-    ru: Какой вариант точнее всего соответствует этому правилу? Пилот получает уведомление о новой версии прошивки из неофициального источника (форума). Версия обещает «расширенные высоты полёта» и «разблокированные зоны». Что должен сделать пилот?
+    lv: Kura atbilde vislabāk atbilst situācijai? Pilots saņem paziņojumu par jaunu firmware versiju no neoficiāla avota (foruma). Versijā tiek solīti "papildu lidojuma augstumi" un "atbloķētas zonas". Ko pilotam jādara?
+    en: Which answer best fits the situation? A pilot receives a notification of a new firmware version from an unofficial source (a forum). The version promises "extended flight altitudes" and "unlocked zones". What should the pilot do?
+    ru: Какой ответ лучше всего подходит к ситуации? Пилот получает уведомление о новой версии прошивки из неофициального источника (форума). Версия обещает «расширенные высоты полёта» и «разблокированные зоны». Что должен сделать пилот?
   options:
   - id: a
     text:
@@ -2058,9 +2058,9 @@
   scenarioType: decision
 - id: se-040
   stem:
-    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Pilots veic inspekcijas lidojumu aiz rūpnīcas. Drona kamera fiksē, ka darbinieki apspriež ražošanas procesu, un lidojumā tiek uzņemts konfidenciāls dokumentu mape. Kāds ir operators pienākums?
-    en: Scenario check — choose the correct answer. A pilot conducts an inspection flight behind a factory. The drone camera captures workers discussing a manufacturing process, and a folder of confidential documents is recorded during the flight. What is the operator's obligation?
-    ru: Проверка ситуации — выбери правильный ответ. Пилот проводит инспекционный полёт за заводом. Камера дрона фиксирует работников, обсуждающих производственный процесс, и в ходе полёта записывается папка конфиденциальных документов. Каково обязательство оператора?
+    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pilots veic inspekcijas lidojumu aiz rūpnīcas. Drona kamera fiksē, ka darbinieki apspriež ražošanas procesu, un lidojumā tiek uzņemts konfidenciāls dokumentu mape. Kāds ir operators pienākums?
+    en: Operational scenario — choose the correct decision. A pilot conducts an inspection flight behind a factory. The drone camera captures workers discussing a manufacturing process, and a folder of confidential documents is recorded during the flight. What is the operator's obligation?
+    ru: Операционная ситуация — выбери правильное решение. Пилот проводит инспекционный полёт за заводом. Камера дрона фиксирует работников, обсуждающих производственный процесс, и в ходе полёта записывается папка конфиденциальных документов. Каково обязательство оператора?
   options:
   - id: a
     text:

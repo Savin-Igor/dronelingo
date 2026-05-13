@@ -1302,9 +1302,9 @@
   scenarioType: decision
 - id: pr-026
   stem:
-    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Kura institūcija ir UAS datu aizsardzības uzraugs Latvijā?'
-    en: 'Before flight, the pilot reviews this principle again: Which authority supervises UAS data protection in Latvia?'
-    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Какой орган надзирает за защитой данных UAS в Латвии?'
+    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kura institūcija ir UAS datu aizsardzības uzraugs Latvijā?'
+    en: 'During preflight review, the operator asks: Which authority supervises UAS data protection in Latvia?'
+    ru: 'Во время предполётной проверки оператор задаёт вопрос: Какой орган надзирает за защитой данных UAS в Латвии?'
   options:
   - id: a
     text:
@@ -1356,9 +1356,9 @@
   scenarioType: decision
 - id: pr-027
   stem:
-    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Vai automašīnas valsts numurs uzskatāms par personas datiem GDPR izpratnē?
-    en: Which option most accurately matches this rule? Is a vehicle licence plate personal data under GDPR?
-    ru: Какой вариант точнее всего соответствует этому правилу? Является ли автомобильный номер персональными данными по GDPR?
+    lv: Kura atbilde vislabāk atbilst situācijai? Vai automašīnas valsts numurs uzskatāms par personas datiem GDPR izpratnē?
+    en: Which answer best fits the situation? Is a vehicle licence plate personal data under GDPR?
+    ru: Какой ответ лучше всего подходит к ситуации? Является ли автомобильный номер персональными данными по GDPR?
   options:
   - id: a
     text:
@@ -1410,9 +1410,9 @@
   scenarioType: decision
 - id: pr-028
   stem:
-    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Cik liels var būt maksimālais GDPR sods?
-    en: Scenario check — choose the correct answer. What is the maximum GDPR fine?
-    ru: Проверка ситуации — выбери правильный ответ. Каков максимальный штраф по GDPR?
+    lv: Operatīvā situācija — pieņem pareizo lēmumu. Cik liels var būt maksimālais GDPR sods?
+    en: Operational scenario — choose the correct decision. What is the maximum GDPR fine?
+    ru: Операционная ситуация — выбери правильное решение. Каков максимальный штраф по GDPR?
   options:
   - id: a
     text:
@@ -1464,9 +1464,9 @@
   scenarioType: decision
 - id: pr-029
   stem:
-    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Kāds GDPR pamatojums visdrošāk attiecas uz tehniskā objekta apsekošanas drona lidojumu?'
-    en: 'Before flight, the pilot reviews this principle again: Which GDPR lawful basis most safely fits a technical-site inspection drone flight?'
-    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Какое правовое основание GDPR безопаснее всего подходит для осмотра технического объекта?'
+    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kāds GDPR pamatojums visdrošāk attiecas uz tehniskā objekta apsekošanas drona lidojumu?'
+    en: 'During preflight review, the operator asks: Which GDPR lawful basis most safely fits a technical-site inspection drone flight?'
+    ru: 'Во время предполётной проверки оператор задаёт вопрос: Какое правовое основание GDPR безопаснее всего подходит для осмотра технического объекта?'
   options:
   - id: a
     text:
@@ -1518,9 +1518,9 @@
   scenarioType: decision
 - id: pr-030
   stem:
-    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Kā apzīmē objektu, kuru aizliegts fotografēt vai filmēt bez saskaņošanas?
-    en: Which option most accurately matches this rule? How is a site marked that is forbidden to photograph or film without authorisation?
-    ru: Какой вариант точнее всего соответствует этому правилу? Как обозначен объект, который запрещено фотографировать или снимать без согласования?
+    lv: Kura atbilde vislabāk atbilst situācijai? Kā apzīmē objektu, kuru aizliegts fotografēt vai filmēt bez saskaņošanas?
+    en: Which answer best fits the situation? How is a site marked that is forbidden to photograph or film without authorisation?
+    ru: Какой ответ лучше всего подходит к ситуации? Как обозначен объект, который запрещено фотографировать или снимать без согласования?
   options:
   - id: a
     text:
@@ -1572,9 +1572,9 @@
   scenarioType: decision
 - id: pr-031
   stem:
-    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Pilots filmē pilsētas maratonu komerciālam klientam. Dalībnieku sejas ir atpazīstamas. Kāds GDPR juridiskais pamats der un kas jādara pirms publicēšanas?
-    en: Scenario check — choose the correct answer. A pilot films a city marathon for a commercial client. Runners' faces are identifiable. Which GDPR lawful basis applies and what must be done before publishing?
-    ru: Проверка ситуации — выбери правильный ответ. Пилот снимает городской марафон для коммерческого клиента. Лица участников узнаваемы. Какое правовое основание GDPR применяется и что необходимо сделать перед публикацией?
+    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pilots filmē pilsētas maratonu komerciālam klientam. Dalībnieku sejas ir atpazīstamas. Kāds GDPR juridiskais pamats der un kas jādara pirms publicēšanas?
+    en: Operational scenario — choose the correct decision. A pilot films a city marathon for a commercial client. Runners' faces are identifiable. Which GDPR lawful basis applies and what must be done before publishing?
+    ru: Операционная ситуация — выбери правильное решение. Пилот снимает городской марафон для коммерческого клиента. Лица участников узнаваемы. Какое правовое основание GDPR применяется и что необходимо сделать перед публикацией?
   options:
   - id: a
     text:
@@ -1626,9 +1626,9 @@
   scenarioType: decision
 - id: pr-032
   stem:
-    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Objekts neatrodas UGZ ierobežotajā zonā, bet tam ir filmēšanas aizlieguma zīme. Vai apstiprināts BGKIS pieteikums dod tiesības filmēt?'
-    en: 'Before flight, the pilot reviews this principle again: A site is not in a restricted UGZ zone but carries a filming prohibition sign. Does an approved BGKIS application grant filming rights?'
-    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Объект не находится в ограниченной зоне UGZ, но имеет знак запрета съёмки. Даёт ли одобренная заявка BGKIS право снимать?'
+    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Objekts neatrodas UGZ ierobežotajā zonā, bet tam ir filmēšanas aizlieguma zīme. Vai apstiprināts BGKIS pieteikums dod tiesības filmēt?'
+    en: 'During preflight review, the operator asks: A site is not in a restricted UGZ zone but carries a filming prohibition sign. Does an approved BGKIS application grant filming rights?'
+    ru: 'Во время предполётной проверки оператор задаёт вопрос: Объект не находится в ограниченной зоне UGZ, но имеет знак запрета съёмки. Даёт ли одобренная заявка BGKIS право снимать?'
   options:
   - id: a
     text:
@@ -1680,9 +1680,9 @@
   scenarioType: decision
 - id: pr-033
   stem:
-    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Pilots uzfilmē inspekcijas materiālu klientam. Klients ir pieņēmis darbu. Cik ilgi pilotam ir tiesības uzglabāt attēlus?
-    en: Which option most accurately matches this rule? A pilot captures inspection footage for a client. The client has accepted the deliverable. How long may the pilot retain the footage?
-    ru: Какой вариант точнее всего соответствует этому правилу? Пилот снимает инспекционные материалы для клиента. Клиент принял результат. Как долго пилот может хранить видеозаписи?
+    lv: Kura atbilde vislabāk atbilst situācijai? Pilots uzfilmē inspekcijas materiālu klientam. Klients ir pieņēmis darbu. Cik ilgi pilotam ir tiesības uzglabāt attēlus?
+    en: Which answer best fits the situation? A pilot captures inspection footage for a client. The client has accepted the deliverable. How long may the pilot retain the footage?
+    ru: Какой ответ лучше всего подходит к ситуации? Пилот снимает инспекционные материалы для клиента. Клиент принял результат. Как долго пилот может хранить видеозаписи?
   options:
   - id: a
     text:
@@ -1734,9 +1734,9 @@
   scenarioType: decision
 - id: pr-034
   stem:
-    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Drona kamera nejauši uzņem personu privātajā pagalmā. Persona pieprasa dzēst uzņemto materiālu. Kāds ir GDPR pienākums?
-    en: Scenario check — choose the correct answer. A drone camera accidentally captures a person in their private garden. The person requests deletion of the footage. What is the GDPR obligation?
-    ru: Проверка ситуации — выбери правильный ответ. Камера дрона случайно снимает человека в его личном саду. Человек требует удалить запись. Каково обязательство по GDPR?
+    lv: Operatīvā situācija — pieņem pareizo lēmumu. Drona kamera nejauši uzņem personu privātajā pagalmā. Persona pieprasa dzēst uzņemto materiālu. Kāds ir GDPR pienākums?
+    en: Operational scenario — choose the correct decision. A drone camera accidentally captures a person in their private garden. The person requests deletion of the footage. What is the GDPR obligation?
+    ru: Операционная ситуация — выбери правильное решение. Камера дрона случайно снимает человека в его личном саду. Человек требует удалить запись. Каково обязательство по GDPR?
   options:
   - id: a
     text:
@@ -1788,9 +1788,9 @@
   scenarioType: decision
 - id: pr-035
   stem:
-    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: UAS operators apstrādā lidojuma žurnāla datus, kas satur GPS pozīcijas un laika zīmogus. Vai tie ir uzskatāmi par personas datiem?'
-    en: 'Before flight, the pilot reviews this principle again: A UAS operator processes flight log data containing GPS positions and time stamps. Are these considered personal data?'
-    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Оператор UAS обрабатывает данные журнала полётов, содержащие GPS-координаты и метки времени. Считаются ли они персональными данными?'
+    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: UAS operators apstrādā lidojuma žurnāla datus, kas satur GPS pozīcijas un laika zīmogus. Vai tie ir uzskatāmi par personas datiem?'
+    en: 'During preflight review, the operator asks: A UAS operator processes flight log data containing GPS positions and time stamps. Are these considered personal data?'
+    ru: 'Во время предполётной проверки оператор задаёт вопрос: Оператор UAS обрабатывает данные журнала полётов, содержащие GPS-координаты и метки времени. Считаются ли они персональными данными?'
   options:
   - id: a
     text:
@@ -1842,9 +1842,9 @@
   scenarioType: decision
 - id: pr-036
   stem:
-    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Pilots filmē privātīpašumu no publiskas gaisa telpas (ārpus pārkāptām ģeogrāfiskajām zonām). Īpašnieks nevar būt filmēts. Vai filma ir legāla?
-    en: Which option most accurately matches this rule? A pilot films private property from public airspace (outside any violated geographical zones). The owner cannot be identified in the footage. Is the filming legal?
-    ru: Какой вариант точнее всего соответствует этому правилу? Пилот снимает частную собственность из общедоступного воздушного пространства (за пределами нарушенных географических зон). Владелец не может быть идентифицирован на видео. Законна ли съёмка?
+    lv: Kura atbilde vislabāk atbilst situācijai? Pilots filmē privātīpašumu no publiskas gaisa telpas (ārpus pārkāptām ģeogrāfiskajām zonām). Īpašnieks nevar būt filmēts. Vai filma ir legāla?
+    en: Which answer best fits the situation? A pilot films private property from public airspace (outside any violated geographical zones). The owner cannot be identified in the footage. Is the filming legal?
+    ru: Какой ответ лучше всего подходит к ситуации? Пилот снимает частную собственность из общедоступного воздушного пространства (за пределами нарушенных географических зон). Владелец не может быть идентифицирован на видео. Законна ли съёмка?
   options:
   - id: a
     text:
@@ -1896,9 +1896,9 @@
   scenarioType: decision
 - id: pr-037
   stem:
-    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Pilots filmu kritiskās infrastruktūras tuvumā, kas marķēta ar "Fotografēšana aizliegta" zīmi. BGKIS pieteikums ir apstiprināts. Vai filmēšana ir atļauta?
-    en: Scenario check — choose the correct answer. A pilot films near critical infrastructure marked with a "Photography prohibited" sign. The BGKIS application is approved. Is filming permitted?
-    ru: Проверка ситуации — выбери правильный ответ. Пилот снимает вблизи критической инфраструктуры, помеченной знаком «Съёмка запрещена». Заявка BGKIS одобрена. Разрешена ли съёмка?
+    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pilots filmu kritiskās infrastruktūras tuvumā, kas marķēta ar "Fotografēšana aizliegta" zīmi. BGKIS pieteikums ir apstiprināts. Vai filmēšana ir atļauta?
+    en: Operational scenario — choose the correct decision. A pilot films near critical infrastructure marked with a "Photography prohibited" sign. The BGKIS application is approved. Is filming permitted?
+    ru: Операционная ситуация — выбери правильное решение. Пилот снимает вблизи критической инфраструктуры, помеченной знаком «Съёмка запрещена». Заявка BGKIS одобрена. Разрешена ли съёмка?
   options:
   - id: a
     text:
@@ -1950,9 +1950,9 @@
   scenarioType: decision
 - id: pr-038
   stem:
-    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Kāds GDPR tiesiskais pamats ir vispiemērotākais drona uzņemšanai pilsētas sporta sacensībās komerciālam lietojumam?'
-    en: 'Before flight, the pilot reviews this principle again: What GDPR lawful basis is most appropriate for drone filming at a city sports competition for commercial use?'
-    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Какое правовое основание GDPR наиболее подходит для коммерческой съёмки с дрона на городских спортивных соревнованиях?'
+    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kāds GDPR tiesiskais pamats ir vispiemērotākais drona uzņemšanai pilsētas sporta sacensībās komerciālam lietojumam?'
+    en: 'During preflight review, the operator asks: What GDPR lawful basis is most appropriate for drone filming at a city sports competition for commercial use?'
+    ru: 'Во время предполётной проверки оператор задаёт вопрос: Какое правовое основание GDPR наиболее подходит для коммерческой съёмки с дрона на городских спортивных соревнованиях?'
   options:
   - id: a
     text:
@@ -2004,9 +2004,9 @@
   scenarioType: decision
 - id: pr-039
   stem:
-    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Kas ir "datu pārzinis" (data controller) GDPR izpratnē drona operācijas kontekstā?
-    en: Which option most accurately matches this rule? Who is the "data controller" under GDPR in the context of a drone operation?
-    ru: Какой вариант точнее всего соответствует этому правилу? Кто является «контролёром данных» (data controller) по GDPR в контексте операции с дроном?
+    lv: Kura atbilde vislabāk atbilst situācijai? Kas ir "datu pārzinis" (data controller) GDPR izpratnē drona operācijas kontekstā?
+    en: Which answer best fits the situation? Who is the "data controller" under GDPR in the context of a drone operation?
+    ru: Какой ответ лучше всего подходит к ситуации? Кто является «контролёром данных» (data controller) по GDPR в контексте операции с дроном?
   options:
   - id: a
     text:
@@ -2058,9 +2058,9 @@
   scenarioType: decision
 - id: pr-040
   stem:
-    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Komerciāls operators filmē apdzīvotu pilsētas rajonu. Viņa GDPR apstrādes reģistrā (Art. 30) nav šīs konkrētās operācijas. Vai tas ir pārkāpums?
-    en: Scenario check — choose the correct answer. A commercial operator films a populated urban area. Their GDPR processing register (Art. 30) does not include this specific operation. Is this a violation?
-    ru: Проверка ситуации — выбери правильный ответ. Коммерческий оператор снимает населённый городской район. В его реестре обработки по GDPR (ст. 30) эта конкретная операция не включена. Является ли это нарушением?
+    lv: Operatīvā situācija — pieņem pareizo lēmumu. Komerciāls operators filmē apdzīvotu pilsētas rajonu. Viņa GDPR apstrādes reģistrā (Art. 30) nav šīs konkrētās operācijas. Vai tas ir pārkāpums?
+    en: Operational scenario — choose the correct decision. A commercial operator films a populated urban area. Their GDPR processing register (Art. 30) does not include this specific operation. Is this a violation?
+    ru: Операционная ситуация — выбери правильное решение. Коммерческий оператор снимает населённый городской район. В его реестре обработки по GDPR (ст. 30) эта конкретная операция не включена. Является ли это нарушением?
   options:
   - id: a
     text:
