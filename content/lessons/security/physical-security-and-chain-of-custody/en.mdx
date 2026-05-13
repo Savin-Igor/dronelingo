@@ -1,0 +1,137 @@
+# Physical security and chain of custody
+
+<MissionBriefing objective="After this lesson you will know how to protect the aircraft, controller, batteries, and recorded data from theft, tampering, and casual mishandling before, during, and after the mission.">
+Cyber security gets attention because it sounds technical. Physical security gets ignored because it looks ordinary. In practice, stolen equipment, unattended controllers, swapped batteries, and loose SD cards cause real operational and privacy damage.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Operational security scene: drone case, controller, labelled batteries, SD cards, vehicle loading area, handoff checklist showing who touched what and when"
+  alt="Secure handling workflow for drone equipment and recorded media through the whole mission"
+  caption="Training scene · chain of custody in field operations"
+/>
+
+## What chain of custody means here
+
+Chain of custody is simply controlled accountability:
+
+- who had the aircraft;
+- who had the controller;
+- who handled the batteries;
+- who handled the storage media;
+- when any transfer or handoff happened.
+
+This matters for three reasons:
+
+- **safety** — unknown equipment state is operational risk;
+- **security** — unattended gear can be stolen or tampered with;
+- **privacy** — media cards and controllers may contain sensitive data.
+
+<Artefact
+  description="Five security checkpoints: packing, transport, site setup, active mission, and post-flight handoff."
+  caption="Checklist · physical-security-checkpoints"
+>
+  <div className="grid gap-3 md:grid-cols-5 text-sm">
+    {[
+      ["Packing", "Label batteries, media, and key accessories before leaving base."],
+      ["Transport", "Do not leave visible kits or exposed media in vehicles."],
+      ["Setup", "Open only what is needed; keep spare gear controlled."],
+      ["Mission", "Never abandon controller, batteries, or media in public reach."],
+      ["Handoff", "Record who receives footage, hardware, or damaged parts."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## The weak moments
+
+Physical security failures usually happen in routine transitions:
+
+- loading or unloading the vehicle;
+- battery swaps on the ground;
+- client review moments when the pilot hands over the screen;
+- post-incident confusion;
+- rushed pack-down at the end of the day.
+
+The fix is not paranoia. The fix is simple discipline.
+
+## Media handling matters
+
+An SD card is small, easy to misplace, and often more valuable than the drone because it contains:
+
+- client work,
+- evidence after an incident,
+- personal data,
+- potentially sensitive site imagery.
+
+Loose cards in jacket pockets or mixed accessory bags are poor practice.
+
+## Borrowed equipment is a trust boundary
+
+If batteries, payloads, or aircraft move between people or organisations, label and document them. Unknown history creates unknown risk.
+
+<Scenario title="During a busy field day, the pilot leaves the controller on a table while walking 30 metres away to move cones. A client is nearby, spare batteries are open, and one SD card is loose beside the case. Why is this more serious than it looks?">
+Because several control points were lost at once.
+
+The unattended controller can be tampered with or taken. The open batteries can be mixed. The loose SD card can be lost or copied. None of these require a malicious scene to become a problem; ordinary confusion is enough.
+
+The correct habit is to keep the controller in controlled hands, batteries labelled and separated, and media stored immediately after use.
+</Scenario>
+
+<MemoryAnchor
+  rule="If you cannot say who had it, where it was, and what state it was in, you do not control it."
+  hint="Security is strongest in the boring handoff moments."
+/>
+
+<CommonMistakes>
+- Leaving controllers or open cases unattended “just for a minute.”
+- Mixing used and fresh batteries without clear labels.
+- Carrying SD cards loose in pockets or unmarked pouches.
+- Handing devices to clients without controlling what else is accessible on them.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "se-pc1",
+    stem: "Why is chain of custody important in drone operations?",
+    options: [
+      { id: "a", text: "Only to satisfy police evidence requirements after a crime." },
+      { id: "b", text: "Because accountability for aircraft, batteries, controller, and media supports safety, security, and privacy." },
+      { id: "c", text: "Only when the drone weighs more than 4 kg." },
+      { id: "d", text: "It is mainly a formal issue with no operational value." },
+    ],
+    correctOptionId: "b",
+    explanation: "Controlled handling matters operationally: unknown state creates safety risk, unattended gear creates security risk, and loose media creates privacy risk.",
+    distractorRationales: {
+      a: "It also matters in ordinary operations, not only after crimes.",
+      c: "This discipline is useful across sizes because the controller, media, and batteries remain sensitive items.",
+      d: "It has direct field value and reduces real operational failures.",
+    },
+  },
+  {
+    id: "se-pc2",
+    stem: "Which practice best protects recorded footage in the field?",
+    options: [
+      { id: "a", text: "Leaving used SD cards beside the case for easier access." },
+      { id: "b", text: "Placing media immediately into a labelled, controlled storage location after use." },
+      { id: "c", text: "Handing the card to whoever asks first so it is not lost." },
+      { id: "d", text: "Keeping all cards mixed together to save time." },
+    ],
+    correctOptionId: "b",
+    explanation: "The safest field practice is immediate controlled storage in a labelled location. That reduces loss, mix-ups, and unauthorised access.",
+    distractorRationales: {
+      a: "Ease of access is outweighed by loss and disclosure risk.",
+      c: "Uncontrolled handoff breaks accountability.",
+      d: "Mixed cards destroy clarity about what was used and what data they contain.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["se-004"]}>
+You now have a practical security discipline for physical gear and recorded media: control the handoffs, label the state, and do not let routine transitions become the weakest point.
+
+Next: combine physical security with cyber hygiene and reporting so equipment, data, and anomalies stay controlled through the whole mission lifecycle.
+</Debrief>

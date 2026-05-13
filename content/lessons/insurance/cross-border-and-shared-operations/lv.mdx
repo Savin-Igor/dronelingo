@@ -1,0 +1,136 @@
+# Pārrobežu un koplietotas operācijas
+
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, kas mainās, kad Latvijas operators strādā citā ES valstī, īrē lidaparātu vai izmanto apakšuzņēmēja pilotu, un kāpēc apdrošināšanai jāsakrīt ar īsto operatora struktūru, nevis rēķina nosaukumu.">
+Apdrošināšanas kļūmes bieži parādās sarežģītākās operācijās: aizņemts lidaparāts, cits pilots pie pults, darbs ārzemēs vai klients, kurš pieņem, ka "jūsu parastā polise taču to sedz". Dažreiz sedz. Dažreiz noteikti ne.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Insurance operations diagram: Latvian operator, subcontract pilot, rented drone, foreign EU worksite, insurer arrows showing who is covered and where policy gaps appear"
+  alt="Vizuāla karte, kas rāda apdrošināšanas atbildību koplietotās un pārrobežu dronu operācijās"
+  caption="Treniņa aina · kas ir apdrošināts sarežģītā operācijā"
+/>
+
+## Pirmais jautājums: kurš te ir operators?
+
+Vienkāršā darbā atbilde ir acīmredzama. Koplietotās operācijās tā bieži nav.
+
+Jautā:
+
+- kam pieder vai kurš kontrolē lidaparātu?
+- kurš plāno un autorizē misiju?
+- kurš nodrošina pilotu?
+- kura apdrošināšanas polise nosauc šo darbību?
+
+Rēķins pats par sevi neatbild uz apdrošināšanas jautājumu. To atbild īstā operatīvā struktūra.
+
+<Artefact
+  description="Četri bieži operāciju modeļi: savs drons un savs pilots, savs drons un apakšuzņēmēja pilots, īrēts drons un savs pilots, ārvalsts ES darbs. Katrs modelis izceļ papildu apdrošināšanas pārbaudi."
+  caption="Matrica · koplietotu-operāciju-apdrošināšanas-pārbaudes"
+>
+  <div className="grid gap-3 md:grid-cols-2 text-sm">
+    {[
+      ["Savs drons, savs pilots", "Pārbaudi, vai standarta atbildības un papildu segumi atbilst lidaparātam un darba veidam."],
+      ["Savs drons, apakšuzņēmēja pilots", "Pārbaudi, vai polise sedz nosauktus vai nenosauktus pilotus un komerciālu deleģēšanu."],
+      ["Īrēts drons, savs pilots", "Pārbaudi, kurš sedz korpusu, civiltiesisko atbildību un kravu tava lietošanas periodā."],
+      ["Darbs citā ES valstī", "Pārbaudi teritoriālo spēkā esamību, vietējās prasības un vai darbības apraksts joprojām atbilst polisei."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## Apakšuzņēmēja pilots rada slēptus caurumus
+
+Bieža kļūda ir pieņemt, ka jebkurš kvalificēts pilots automātiski drīkst lidot zem operatora polises. Dažas polises ir pietiekami plašas. Dažas nav.
+
+Pirms apakšuzņēmējs vai otrais pilots lido:
+
+- apstiprini, vai polise sedz jebkuru autorizētu pilotu vai tikai nosauktas personas;
+- apstiprini, vai komerciāla deleģēšana ir iekļauta;
+- dokumentē, kam bija operatīvā kontrole pār misiju.
+
+## Īrēts vai aizņemts lidaparāts
+
+Ja lidaparāts nav tavs, atdali trīs jautājumus:
+
+- kurš sedz **trešo personu civiltiesisko atbildību**?
+- kurš sedz **bojājumus pašam lidaparātam**?
+- kurš sedz **pievienoto kravu**?
+
+Ja atbilde uz kādu no tiem ir miglaina, vienošanās ir vāja.
+
+## Pārrobežu darbs ES iekšienē
+
+Pat ja Latvijas polise kopumā ir derīga, pārrobežu darbā joprojām jāpārbauda:
+
+- vai vietējās operatīvās prasības neievieš papildu nosacījumus;
+- vai apdrošinātājs jāinformē par teritoriju vai darba tipu;
+- vai klienta līguma valoda nerada saistības ārpus polises.
+
+<Scenario title="Latvijas operators iegūst īsu komerciālu darbu citā ES valstī. Lidaparāts pieder partneruzņēmumam, un to lidos frīlansa pilots zem tava projekta. Kam jābūt skaidram pirms misijas sākuma?">
+Skaidriem jābūt trim jautājumiem:
+
+1. kurš ir juridiskais operators šai misijai;
+2. kuras polises sedz atbildību, korpusu un kravu;
+3. vai frīlansa pilots tiešām ir segts paredzētajā polises struktūrā.
+
+Ja kāds no šiem punktiem tiek pieņemts, nevis pārbaudīts, operators ienes risku līgumā vēl pirms pacelšanās.
+</Scenario>
+
+<MemoryAnchor
+  rule="Sarežģīts darbs = trīs jautājumi: kurš ir operators, kurš ir pilots un kura polise tiešām nosauc šo struktūru."
+  hint="Apdrošināšana seko īstajai operācijai, nevis ērtam pieņēmumam."
+/>
+
+<CommonMistakes>
+- Pieņemt, ka apakšuzņēmēja pilots ir segts automātiski.
+- Domāt, ka īrēts drons vienmēr ir pilnībā apdrošināts tieši tavai lietošanai.
+- Pārbaudīt teritoriju, bet nepārbaudīt precīzu darbības aprakstu polisē.
+- Dot klientam līgumiskus solījumus, kas pārsniedz reālo apdrošināšanas segumu.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "in-cb1",
+    stem: "Kāds ir svarīgākais pirmais apdrošināšanas jautājums koplietotā vai pārrobežu dronu operācijā?",
+    options: [
+      { id: "a", text: "Kurš izrakstīja rēķinu." },
+      { id: "b", text: "Kāda ir īstā operatora struktūra aiz šīs misijas." },
+      { id: "c", text: "Kādā krāsā ir lidaparāts." },
+      { id: "d", text: "Vai klients ir redzējis kadrējuma piemērus." },
+    ],
+    correctOptionId: "b",
+    explanation: "Apdrošināšanas un atbildības analīze sākas ar īsto operatora struktūru: kurš kontrolē misiju, kurš lido, kam pieder lidaparāts un kura polise šo vienošanos patiešām sedz.",
+    distractorRationales: {
+      a: "Rēķins var neatspoguļot īsto operatīvo kontroli.",
+      c: "Lidaparāta krāsa nav saistīta ar apdrošināšanas struktūru.",
+      d: "Radošās gaidas nenosaka apdrošināšanas segumu.",
+    },
+  },
+  {
+    id: "in-cb2",
+    stem: "Kāpēc frīlansa vai apakšuzņēmēja pilots ir īpašs apdrošināšanas pārbaudes punkts?",
+    options: [
+      { id: "a", text: "Tāpēc, ka kvalificēti piloti vienmēr pēc noklusējuma ir izslēgti." },
+      { id: "b", text: "Tāpēc, ka dažas polises sedz tikai nosauktus vai īpaši autorizētus pilotus un var automātiski neiekļaut deleģētu komerciālu izmantošanu." },
+      { id: "c", text: "Tāpēc, ka apakšuzņēmēja piloti nevar lidot ES Atvērtajā kategorijā." },
+      { id: "d", text: "Tāpēc, ka apdrošināšana nav svarīga, ja pilotam ir A1/A3." },
+    ],
+    correctOptionId: "b",
+    explanation: "Pilota kvalifikācija pati par sevi neatbild uz polises tvērumu. Dažām polisēm vajag nosauktus pilotus vai skaidri autorizētu izmantošanu, īpaši komerciālās vai deleģētās struktūrās.",
+    distractorRationales: {
+      a: "Kvalificēti piloti nav automātiski izslēgti; jautājums ir polises formulējumā.",
+      c: "Apakšuzņēmēja pilots drīkst lidot, ja regulatīvā un apdrošināšanas struktūra ir pareiza.",
+      d: "Pilota kompetence neaizvieto apdrošināšanas prasības.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["in-004"]}>
+Tu tagad zini, kā domāt par apdrošināšanu, kad operācijas kļūst reālākas un sarežģītākas: koplietoti lidaparāti, papildu piloti un pārrobežu darbs prasa struktūru, nevis pieņēmumus.
+
+Tālāk: sasaisti to ar prasījumu pierādījumiem un operatīvo disciplīnu, lai apdrošinātā struktūra būtu skaidra gan pirms, gan pēc misijas.
+</Debrief>

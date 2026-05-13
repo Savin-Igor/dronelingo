@@ -1,0 +1,137 @@
+# Fiziskā drošība un glabāšanas ķēde
+
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, kā aizsargāt lidaparātu, pulti, baterijas un ierakstītos datus no zādzības, manipulācijas un paviršas apiešanās pirms misijas, tās laikā un pēc tās.">
+Kiberdrošība pievērš uzmanību, jo izklausās tehniska. Fiziskā drošība bieži tiek ignorēta, jo izskatās ikdienišķa. Praksē nozagts aprīkojums, bez uzraudzības atstātas pultis, sajauktas baterijas un vaļīgas SD kartes rada reālus operatīvus un privātuma zaudējumus.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Operational security scene: drone case, controller, labelled batteries, SD cards, vehicle loading area, handoff checklist showing who touched what and when"
+  alt="Droša apiešanās plūsma ar drona aprīkojumu un ierakstīto materiālu visas misijas garumā"
+  caption="Treniņa aina · glabāšanas ķēde lauka operācijās"
+/>
+
+## Ko tas nozīmē šeit
+
+Glabāšanas ķēde ir vienkārši kontrolēta atbildība:
+
+- kam bija lidaparāts;
+- kam bija pults;
+- kurš apstrādāja baterijas;
+- kurš apstrādāja datu nesējus;
+- kad notika jebkura nodošana.
+
+Tas ir svarīgi trīs iemeslu dēļ:
+
+- **drošība** — nezināms aprīkojuma stāvoklis ir operatīvs risks;
+- **security** — bez uzraudzības atstātu aprīkojumu var nozagt vai mainīt;
+- **privātums** — atmiņas kartes un pultis var saturēt sensitīvus datus.
+
+<Artefact
+  description="Pieci drošības kontrolpunkti: sapakošana, transports, vietas sagatavošana, aktīvā misija un nodošana pēc lidojuma."
+  caption="Kontrolsaraksts · fiziskās-drošības-punkti"
+>
+  <div className="grid gap-3 md:grid-cols-5 text-sm">
+    {[
+      ["Sapakošana", "Marķē baterijas, datu nesējus un galvenos piederumus vēl pirms izbraukšanas."],
+      ["Transports", "Neatstāj redzamus koferus vai atklātus datu nesējus transportlīdzeklī."],
+      ["Sagatavošana", "Atver tikai to, kas vajadzīgs; rezerves aprīkojumam jāpaliek kontrolē."],
+      ["Misija", "Nekad neatstāj pulti, baterijas vai datu nesējus publiski aizsniedzamus."],
+      ["Nodošana", "Fiksē, kam tiek nodots materiāls, aprīkojums vai bojātās detaļas."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## Vājie brīži
+
+Fiziskās drošības kļūmes parasti notiek rutīnas pārejās:
+
+- iekraušana vai izkraušana;
+- bateriju maiņa uz zemes;
+- klienta materiāla apskates brīži, kad pilots padod ekrānu;
+- juceklis pēc incidenta;
+- sasteigta sapakošanās dienas beigās.
+
+Risinājums nav paranoja. Risinājums ir vienkārša disciplīna.
+
+## Datu nesēji ir svarīgi
+
+SD karte ir maza, viegli pazaudējama un bieži vērtīgāka par pašu dronu, jo satur:
+
+- klienta darbu;
+- pierādījumus pēc incidenta;
+- personas datus;
+- potenciāli sensitīvu objekta attēlu.
+
+Vaļīgas kartes kabatā vai sajauktās piederumu somās ir slikta prakse.
+
+## Aizņemts aprīkojums ir uzticības robeža
+
+Ja baterijas, kravas vai lidaparāti pārvietojas starp cilvēkiem vai organizācijām, marķē un dokumentē tos. Nezināma vēsture rada nezināmu risku.
+
+<Scenario title="Aizņemtā lauka dienā pilots atstāj pulti uz galda un aiziet 30 metrus pārbīdīt konusus. Klients ir tuvumā, rezerves baterijas ir atvērtas, un viena SD karte guļ vaļā pie kofera. Kāpēc tas ir nopietnāk, nekā izskatās?">
+Jo vienlaikus tika zaudēti vairāki kontroles punkti.
+
+Bez uzraudzības atstāto pulti var pārvietot, mainīt vai paņemt. Atvērtās baterijas var sajaukt. Vaļīgā SD karte var pazust vai tikt nokopēta. Tam nav vajadzīga ļaunprātīga aina; pietiek ar parastu jucekli.
+
+Pareizais ieradums ir turēt pulti kontrolētās rokās, baterijas marķētas un nošķirtas, bet datu nesējus — uzreiz novietotus drošā vietā.
+</Scenario>
+
+<MemoryAnchor
+  rule="Ja tu nevari pateikt, kam tas bija, kur tas bija un kādā stāvoklī tas bija, tu to nekontrolē."
+  hint="Drošība ir visstiprākā garlaicīgajos nodošanas brīžos."
+/>
+
+<CommonMistakes>
+- Atstāt pultis vai atvērtus koferus bez uzraudzības "tikai uz minūti".
+- Sajaukt lietotas un svaigas baterijas bez skaidra marķējuma.
+- Nēsāt SD kartes vaļīgi kabatās vai nemarķētos maciņos.
+- Dot ierīces klientiem, nekontrolējot, kam vēl viņi tajās var piekļūt.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "se-pc1",
+    stem: "Kāpēc glabāšanas ķēde ir svarīga dronu operācijās?",
+    options: [
+      { id: "a", text: "Tikai lai izpildītu policijas pierādījumu prasības pēc nozieguma." },
+      { id: "b", text: "Jo atbildība par lidaparātu, baterijām, pulti un datu nesējiem atbalsta drošību, security un privātumu." },
+      { id: "c", text: "Tikai ja drons sver vairāk par 4 kg." },
+      { id: "d", text: "Tas pārsvarā ir formāls jautājums bez operatīvas vērtības." },
+    ],
+    correctOptionId: "b",
+    explanation: "Kontrolēta apiešanās ir operatīvi svarīga: nezināms stāvoklis rada drošības risku, bez uzraudzības atstāts aprīkojums rada security risku, bet vaļīgi datu nesēji — privātuma risku.",
+    distractorRationales: {
+      a: "Tas ir svarīgi arī ikdienas darbā, ne tikai pēc noziegumiem.",
+      c: "Šī disciplīna ir noderīga visās svara klasēs, jo pults, datu nesēji un baterijas joprojām ir jutīgas lietas.",
+      d: "Tai ir tieša lauka vērtība un tā samazina reālas operatīvas kļūmes.",
+    },
+  },
+  {
+    id: "se-pc2",
+    stem: "Kura prakse vislabāk aizsargā ierakstīto materiālu laukā?",
+    options: [
+      { id: "a", text: "Atstāt izmantotās SD kartes pie kofera, lai tās būtu ērtāk sasniedzamas." },
+      { id: "b", text: "Pēc lietošanas uzreiz ielikt datu nesēju marķētā, kontrolētā glabāšanas vietā." },
+      { id: "c", text: "Atdot karti pirmajam, kas to palūdz, lai tā nepazūd." },
+      { id: "d", text: "Glabāt visas kartes sajauktas kopā, lai ietaupītu laiku." },
+    ],
+    correctOptionId: "b",
+    explanation: "Drošākā prakse laukā ir tūlītēja kontrolēta glabāšana marķētā vietā. Tas samazina nozaudēšanu, sajaukšanu un neatļautu piekļuvi.",
+    distractorRationales: {
+      a: "Ērtība neatsver nozaudēšanas un noplūdes risku.",
+      c: "Nekontrolēta nodošana pārrauj atbildības ķēdi.",
+      d: "Sajauktas kartes iznīcina skaidrību par to, kas lietots un ko satur dati.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["se-004"]}>
+Tev tagad ir praktiska security disciplīna fiziskajam aprīkojumam un ierakstītajiem datiem: kontrolē nodošanu, marķē stāvokli un neļauj ikdienas pārejām kļūt par vājāko punktu.
+
+Tālāk: savieno fizisko drošību ar kiberdrošību un ziņošanu, lai aprīkojums, dati un anomālijas paliktu kontrolē visā misijas ciklā.
+</Debrief>

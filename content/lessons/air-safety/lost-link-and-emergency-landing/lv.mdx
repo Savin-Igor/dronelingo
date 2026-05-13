@@ -1,0 +1,127 @@
+# Signāla zudums un avārijas nolaišanās
+
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, kā reaģēt, kad vadības vai video saite kļūst nedroša, kā atšķirt svārstīšanos no īstas ārkārtas situācijas un kad tūlītēja nolaišanās ir drošākā atbilde.">
+Signāla zudums reti sākas dramatiski. Parasti tas sākas ar nelielu aizturi, sasalušu attēlu, novēlotu reakciju uz pulti vai telemetriju, kurai vairs nevar pilnīgi uzticēties. Labs pilots šīs agrīnās pazīmes uztver nopietni.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Emergency training scene: drone over open field, controller shows weak signal and frozen video, pilot turns toward a pre-identified landing spot while keeping VLOS"
+  alt="Drona pilots reaģē uz vājo signālu, pārtraucot misiju un gatavojoties tūlītējai nolaišanai"
+  caption="Treniņa aina · reakcija uz vāju saiti"
+/>
+
+## Ko nozīmē signāla zudums praksē
+
+Problēma var skart vienu vai vairākus vadības ķēdes posmus:
+
+- **vadības saiti** — lidaparāts reaģē novēloti vai nereāģē;
+- **video saiti** — attēls sasalst vai saraustās, lai gan lidaparāts vēl var būt vadāms;
+- **telemetrijas uzticamību** — vērtības atjaunojas kļūdaini, pārāk lēni vai neiespējami.
+
+Pilota uzdevums nav gaisā perfekti diagnosticēt visu. Uzdevums ir izlemt, vai lidaparāts joprojām ir droši vadāms.
+
+<Artefact
+  description="Trīs stāvokļu ārkārtas loģika: pasliktināts, bet vadāms; nestabils un pasliktinās; uzticība pilnībā zudusi. Katram stāvoklim ir sava rīcības robeža."
+  caption="Lēmumu modelis · saites-pasliktināšanās-robežas"
+>
+  <div className="grid gap-3 md:grid-cols-3 text-sm">
+    {[
+      ["Pasliktināts", "Samazini distanci, kāp tikai ja to prasa šķēršļu drošums, vienkāršo lidojumu, gatavojies nosēsties."],
+      ["Pasliktinās", "Pārtrauc misiju, pagriezies uz drošāko nolaišanās vietu, pēc vajadzības samazini augstumu, nolaid tagad."],
+      ["Neuzticams", "Ja vadībai, video vai pozīcijai vairs nevar uzticēties, uztver to kā ārkārtas atgūšanas situāciju."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## Pareizās prioritātes
+
+Kad saite sāk zust, prioritātes ātri sašaurinās:
+
+1. **vispirms lido ar lidaparātu**;
+2. **pārtrauc visas nebūtiskās kameras vai misijas darbības**;
+3. **padari lidaparāta stāvokli tuvāku un vienkāršāku**;
+4. **izmanto iepriekš noteikto nolaišanās laukumu**;
+5. **nolaidies, pirms situācija kļūst sliktāka**.
+
+Biežākā kļūda ir gaidīt pilnīgu pārliecību, ka kļūme ir "īstā". Kad šī pārliecība pienāk, izvēles parasti jau ir sliktākas.
+
+## Kad return-to-home palīdz — un kad nē
+
+Return-to-home var būt noderīgs, ja:
+
+- home point ir pareizs;
+- GNSS ir uzticams;
+- ceļš atpakaļ ir brīvs no šķēršļiem;
+- lidaparāts joprojām uzvedas normāli.
+
+Tas ir slikts noklusējums, ja atrašanās vietas dati ir apšaubāmi, tuvumā ir šķēršļi vai lidaparāta reakcija jau ir saraustīta. Automātika ir tik laba, cik labi ir dati, uz kuriem tā balstās.
+
+## Avārijas nolaišanās ir profesionāla darbība
+
+Piloti dažkārt uztver avārijas nolaišanos kā neveiksmi. Tā nav. Tā ir kontrolēta riska samazināšana.
+
+<Scenario title="Tu filmē pie koku līnijas. Tiešraides attēls divreiz sasalst un atjaunojas. Telemetrija joprojām rāda pozīciju un bateriju, bet reakcija uz pulti šķiet mazliet novēlota. Kā jārīkojas?">
+Uztver situāciju kā pasliktinātu un potenciāli pasliktinošos.
+
+Pareizā darbība ir pārtraukt filmēšanu, samazināt attālumu, izvairīties no kokiem, ieņemt drošāko nolaišanās virzienu un drīz nolaisties. Neturpini kadru tikai tāpēc, ka attēls atgriezās. Viena kanāla atkopšanās nepierāda visas saites stabilitāti.
+</Scenario>
+
+<MemoryAnchor
+  rule="Vāja saite = samazini problēmu. Vienkāršāks ceļš, īsāka distance, drošāka nolaišanās, agrāks lēmums."
+  hint="Negaidi perfektu kļūmi. Nolaid, kamēr lidaparāts vēl ir vadāms."
+/>
+
+<CommonMistakes>
+- Turpināt misiju, jo bilde vienu reizi atgriezās.
+- Mēģināt meklēt iestatījumus, kamēr lidaparāts vēl ir gaisā.
+- Akli uzticēties return-to-home, ja GNSS vai home point kvalitāte ir apšaubāma.
+- Atlikt nolaišanos, jo klientam vajag "vēl vienu pārlidojumu".
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "as-ll1",
+    stem: "Kāda ir labākā pirmā operatīvā reakcija uz skaidri vājinātu vadības vai video saiti?",
+    options: [
+      { id: "a", text: "Turpināt filmēt un skatīties, vai kļūst sliktāk." },
+      { id: "b", text: "Pārtraukt misijas uzdevumu, vienkāršot lidaparāta stāvokli un gatavoties nolaišanai." },
+      { id: "c", text: "Lidot tālāk, lai atrastu labāku kadru." },
+      { id: "d", text: "Ignorēt brīdinājumus, ja baterija un augstums vēl izskatās normāli." },
+    ],
+    correctOptionId: "b",
+    explanation: "Pareizā atbilde ir agrīna riska samazināšana: pārtraukt nebūtiskos uzdevumus, ieņemt vienkāršāku atgūšanas pozīciju un gatavoties nolaišanai, pirms problēma kļūst nopietnāka.",
+    distractorRationales: {
+      a: "Gaidīšana un darba turpināšana patērē atlikušo drošības rezervi.",
+      c: "Palielināt attālumu nozīmē padarīt problēmu grūtāku, nevis vieglāku.",
+      d: "Normāla baterija un augstums nepierāda, ka vadības ķēde ir vesela.",
+    },
+  },
+  {
+    id: "as-ll2",
+    stem: "Kad return-to-home ir slikts noklusējuma risinājums?",
+    options: [
+      { id: "a", text: "Kad GNSS vai home point uzticamība ir apšaubāma un ceļā var būt šķēršļi." },
+      { id: "b", text: "Kad lidaparāts jau ir tuvu un stabili virs drošas nolaišanās vietas." },
+      { id: "c", text: "Kad pilots saglabā VLOS." },
+      { id: "d", text: "Kad baterija ir virs 50%." },
+    ],
+    correctOptionId: "a",
+    explanation: "RTH balstās uz uzticamu pozicionēšanu, pareizu home point un drošu maršrutu. Ja šie pieņēmumi ir vāji, akla paļaušanās uz automātiku var ārkārtas situāciju tikai saasināt.",
+    distractorRationales: {
+      b: "Ja lidaparāts jau ir tuvu drošai vietai, tieša nolaišanās bieži ir labāka par papildu automātiku.",
+      c: "VLOS vien nenozīmē, ka RTH ir slikts; problēma ir datu kvalitāte un maršruta drošums.",
+      d: "Baterijas procents nav galvenais iemesls, kāpēc RTH šeit kļūst nedrošs.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["as-004"]}>
+Tev tagad ir praktiska ārkārtas loģika vājai vai zaudētai saitei: agrīni vienkāršo situāciju, uzticies tikai tam, kas vēl ir drošs, un nolaidies, kamēr izvēles vēl ir labas.
+
+Tālāk: ievieto to plašākā gaisa drošības disciplīnā — lielāko daļu ārkārtas situāciju vislabāk pārvalda vēl pirms tās kļūst dramatiskas.
+</Debrief>

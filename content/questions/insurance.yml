@@ -4,39 +4,37 @@
     en: What is the minimum third-party liability cover in Latvia for A1 (C1) flights?
     ru: Каков минимум страхования гражданской ответственности в Латвии для полётов A1 (C1)?
   options:
-    - id: a
-      text:
-        lv: 50 000 EUR.
-        en: €50 000.
-        ru: 50 000 EUR.
-    - id: b
-      text:
-        lv: 1 000 EUR.
-        en: €1 000.
-        ru: 1 000 EUR.
-    - id: c
-      text:
-        lv: Nav obligāts.
-        en: Not required.
-        ru: Не обязателен.
-    - id: d
-      text:
-        lv: 750 000 SDR.
-        en: 750 000 SDR.
-        ru: 750 000 SDR.
+  - id: a
+    text:
+      lv: 50 000 EUR.
+      en: €50 000.
+      ru: 50 000 EUR.
+  - id: b
+    text:
+      lv: 1 000 EUR.
+      en: €1 000.
+      ru: 1 000 EUR.
+  - id: c
+    text:
+      lv: Nav obligāts.
+      en: Not required.
+      ru: Не обязателен.
+  - id: d
+    text:
+      lv: 750 000 SDR.
+      en: 750 000 SDR.
+      ru: 750 000 SDR.
   correctOptionId: a
   explanation:
-    lv: >
-      MK noteikumi Nr. 447 nosaka 50 000 EUR minimumu A1 (C1), A2 un A3
-      līdz 20 kg masai. Bezklasveida < 250 g (C0) lidojumiem
-      apdrošināšana nav obligāta.
-    en: >
-      Cabinet Reg. No. 447 sets a €50 000 minimum for A1 (C1), A2 and
-      A3 up to 20 kg. C0 (< 250 g) flights are exempt.
-    ru: >
-      Правила КМ № 447 устанавливают минимум 50 000 EUR для A1 (C1), A2
-      и A3 до 20 кг. C0 (< 250 г) от обязательного страхования
-      освобождён.
+    lv: 'MK noteikumi Nr. 447 nosaka 50 000 EUR minimumu A1 (C1), A2 un A3 līdz 20 kg masai. Bezklasveida < 250 g (C0) lidojumiem apdrošināšana nav obligāta.
+
+      '
+    en: 'Cabinet Reg. No. 447 sets a €50 000 minimum for A1 (C1), A2 and A3 up to 20 kg. C0 (< 250 g) flights are exempt.
+
+      '
+    ru: 'Правила КМ № 447 устанавливают минимум 50 000 EUR для A1 (C1), A2 и A3 до 20 кг. C0 (< 250 г) от обязательного страхования освобождён.
+
+      '
   distractorRationales:
     b:
       lv: 1 000 EUR ir krietni zem MK Nr. 447 prasītā minimuma. Tāds segums neapmierina regulu.
@@ -50,48 +48,47 @@
       lv: 750 000 SDR ir minimums Specifiskās kategorijas un A3 lielmasas (20–25 kg) lidojumiem. A1 (C1) prasība ir mazāka — 50 000 EUR.
       en: 750 000 SDR is the minimum for the Specific category and A3 heavy-mass (20–25 kg) flights. The A1 (C1) threshold is lower — €50 000.
       ru: 750 000 SDR — минимум для Специальной категории и тяжёлых A3 (20–25 кг). Для A1 (C1) порог ниже — 50 000 EUR.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 (10.07.2018)"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 (10.07.2018)
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
-
 - id: in-002
   stem:
     lv: Vai obligātā apdrošināšana sedz paša UAS bojājumus (hull)?
     en: Does mandatory insurance cover damage to the UAS itself (hull)?
     ru: Покрывает ли обязательное страхование ущерб самому UAS (hull)?
   options:
-    - id: a
-      text:
-        lv: Nē — obligātā apdrošināšana sedz tikai trešo personu zaudējumus.
-        en: No — mandatory insurance covers only third-party loss.
-        ru: Нет — обязательное страхование покрывает только третьих лиц.
-    - id: b
-      text:
-        lv: Jā, vienmēr.
-        en: Yes, always.
-        ru: Да, всегда.
-    - id: c
-      text:
-        lv: Tikai komerciālajiem operatoriem.
-        en: Only for commercial operators.
-        ru: Только для коммерческих операторов.
-    - id: d
-      text:
-        lv: Tikai tad, ja UAS sver vairāk par 4 kg.
-        en: Only if the UAS exceeds 4 kg.
-        ru: Только если UAS тяжелее 4 кг.
+  - id: a
+    text:
+      lv: Nē — obligātā apdrošināšana sedz tikai trešo personu zaudējumus.
+      en: No — mandatory insurance covers only third-party loss.
+      ru: Нет — обязательное страхование покрывает только третьих лиц.
+  - id: b
+    text:
+      lv: Jā, vienmēr.
+      en: Yes, always.
+      ru: Да, всегда.
+  - id: c
+    text:
+      lv: Tikai komerciālajiem operatoriem.
+      en: Only for commercial operators.
+      ru: Только для коммерческих операторов.
+  - id: d
+    text:
+      lv: Tikai tad, ja UAS sver vairāk par 4 kg.
+      en: Only if the UAS exceeds 4 kg.
+      ru: Только если UAS тяжелее 4 кг.
   correctOptionId: a
   explanation:
-    lv: >
-      Obligātā polise sedz trešo personu dzīvības, veselības un mantas
-      zaudējumus. Paša UAS bojājumi ir brīvprātīgs hull-segums.
-    en: >
-      The mandatory policy covers third-party bodily and property loss.
-      Damage to the UAS itself is voluntary hull cover.
-    ru: >
-      Обязательный полис покрывает вред жизни/здоровью/имуществу третьих
-      лиц. Ущерб самому UAS — добровольное hull-страхование.
+    lv: 'Obligātā polise sedz trešo personu dzīvības, veselības un mantas zaudējumus. Paša UAS bojājumi ir brīvprātīgs hull-segums.
+
+      '
+    en: 'The mandatory policy covers third-party bodily and property loss. Damage to the UAS itself is voluntary hull cover.
+
+      '
+    ru: 'Обязательный полис покрывает вред жизни/здоровью/имуществу третьих лиц. Ущерб самому UAS — добровольное hull-страхование.
+
+      '
   distractorRationales:
     b:
       lv: Obligātā polise nesedz paša UAS bojājumus. Hull-segums ir atsevišķs, brīvprātīgs polises veids.
@@ -105,48 +102,47 @@
       lv: UAS masa neietekmē hull-seguma jautājumu — obligātā polise nesedz paša aparāta bojājumu neatkarīgi no svara.
       en: UAS mass does not change the hull issue — the mandatory policy does not cover damage to the aircraft itself, regardless of weight.
       ru: Масса UAS не влияет на hull — обязательный полис не покрывает повреждение самого аппарата вне зависимости от веса.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
-
 - id: in-003
   stem:
     lv: Kuram UAS lidojumam Latvijā apdrošināšana NAV obligāta?
     en: For which UAS flight in Latvia is insurance NOT mandatory?
     ru: Для какого полёта UAS в Латвии страхование НЕ обязательно?
   options:
-    - id: a
-      text:
-        lv: C0 (< 250 g) atpūtas lidojums.
-        en: C0 (< 250 g) recreational flight.
-        ru: Развлекательный полёт C0 (< 250 г).
-    - id: b
-      text:
-        lv: A2 ar C2 dronu.
-        en: A2 with a C2 drone.
-        ru: A2 с C2-дроном.
-    - id: c
-      text:
-        lv: A3 ar C3 dronu.
-        en: A3 with a C3 drone.
-        ru: A3 с C3-дроном.
-    - id: d
-      text:
-        lv: A1 ar C1 dronu, ja pilots lido virs sava zemes gabala.
-        en: A1 with a C1 drone, if the pilot flies above their own land.
-        ru: A1 с C1, если полёт над своим земельным участком.
+  - id: a
+    text:
+      lv: C0 (< 250 g) atpūtas lidojums.
+      en: C0 (< 250 g) recreational flight.
+      ru: Развлекательный полёт C0 (< 250 г).
+  - id: b
+    text:
+      lv: A2 ar C2 dronu.
+      en: A2 with a C2 drone.
+      ru: A2 с C2-дроном.
+  - id: c
+    text:
+      lv: A3 ar C3 dronu.
+      en: A3 with a C3 drone.
+      ru: A3 с C3-дроном.
+  - id: d
+    text:
+      lv: A1 ar C1 dronu, ja pilots lido virs sava zemes gabala.
+      en: A1 with a C1 drone, if the pilot flies above their own land.
+      ru: A1 с C1, если полёт над своим земельным участком.
   correctOptionId: a
   explanation:
-    lv: >
-      C0 (< 250 g) lidojumiem MK noteikumi Nr. 447 neuzliek obligāto
-      apdrošināšanu. Tomēr brīvprātīgi to ieteicams iegādāties.
-    en: >
-      C0 (< 250 g) flights are exempt from the mandatory insurance under
-      Cabinet Reg. No. 447. Voluntary cover is still recommended.
-    ru: >
-      Полёты C0 (< 250 г) освобождены от обязательного страхования по
-      Правилам КМ № 447. Добровольное страхование всё же рекомендуется.
+    lv: 'C0 (< 250 g) lidojumiem MK noteikumi Nr. 447 neuzliek obligāto apdrošināšanu. Tomēr brīvprātīgi to ieteicams iegādāties.
+
+      '
+    en: 'C0 (< 250 g) flights are exempt from the mandatory insurance under Cabinet Reg. No. 447. Voluntary cover is still recommended.
+
+      '
+    ru: 'Полёты C0 (< 250 г) освобождены от обязательного страхования по Правилам КМ № 447. Добровольное страхование всё же рекомендуется.
+
+      '
   distractorRationales:
     b:
       lv: A2 ar C2 obligāti pakļaujas 50 000 EUR seguma prasībai. C2 masa ir < 4 kg, bet apdrošināšana joprojām obligāta.
@@ -160,48 +156,47 @@
       lv: Lidošana virs sava zemes gabala neatbrīvo no apdrošināšanas prasības. MK Nr. 447 attiecas uz operāciju, ne uz zemes īpašumu.
       en: Flying over one's own land does not waive the insurance requirement. Cabinet Reg. No. 447 applies to the operation, not to land ownership.
       ru: Полёт над собственным участком не освобождает от страхования. Правила КМ № 447 касаются операции, а не права собственности.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 (10.07.2018) — exemption for C0"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 (10.07.2018) — exemption for C0
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
-
 - id: in-004
   stem:
     lv: Kāds ir minimālais segums Specifiskās kategorijas UAS lidojumam < 500 kg?
     en: What is the minimum cover for a Specific-category UAS flight under 500 kg?
     ru: Каков минимум покрытия для полёта UAS Специальной категории < 500 кг?
   options:
-    - id: a
-      text:
-        lv: 750 000 SDR.
-        en: 750 000 SDR.
-        ru: 750 000 SDR.
-    - id: b
-      text:
-        lv: 50 000 EUR.
-        en: €50 000.
-        ru: 50 000 EUR.
-    - id: c
-      text:
-        lv: 1 000 000 EUR.
-        en: €1 000 000.
-        ru: 1 000 000 EUR.
-    - id: d
-      text:
-        lv: 100 000 EUR.
-        en: €100 000.
-        ru: 100 000 EUR.
+  - id: a
+    text:
+      lv: 750 000 SDR.
+      en: 750 000 SDR.
+      ru: 750 000 SDR.
+  - id: b
+    text:
+      lv: 50 000 EUR.
+      en: €50 000.
+      ru: 50 000 EUR.
+  - id: c
+    text:
+      lv: 1 000 000 EUR.
+      en: €1 000 000.
+      ru: 1 000 000 EUR.
+  - id: d
+    text:
+      lv: 100 000 EUR.
+      en: €100 000.
+      ru: 100 000 EUR.
   correctOptionId: a
   explanation:
-    lv: >
-      Specifiskās kategorijas operatoriem ar UAS < 500 kg piemēro
-      Regulu (EK) 785/2004 — 750 000 SDR.
-    en: >
-      Specific-category operators with UAS < 500 kg fall under
-      Reg (EC) 785/2004 — 750 000 SDR.
-    ru: >
-      Операторы Специальной категории с UAS < 500 кг подпадают под
-      Регл. (ЕС) 785/2004 — 750 000 SDR.
+    lv: 'Specifiskās kategorijas operatoriem ar UAS < 500 kg piemēro Regulu (EK) 785/2004 — 750 000 SDR.
+
+      '
+    en: 'Specific-category operators with UAS < 500 kg fall under Reg (EC) 785/2004 — 750 000 SDR.
+
+      '
+    ru: 'Операторы Специальной категории с UAS < 500 кг подпадают под Регл. (ЕС) 785/2004 — 750 000 SDR.
+
+      '
   distractorRationales:
     b:
       lv: 50 000 EUR ir Atvērtās kategorijas A1/A2/A3 limits (līdz 20 kg). Specifiskā prasība ir vairākas reizes lielāka.
@@ -215,50 +210,47 @@
       lv: 100 000 EUR ir nepietiekami pat Atvērtās kategorijas augstākajām masām (20–25 kg) — Specifiskās slieksnis ir krietni augstāks.
       en: €100 000 is insufficient even for upper-mass Open category (20–25 kg) — the Specific threshold is much higher.
       ru: 100 000 EUR недостаточны даже для верхней массы Открытой (20–25 кг) — порог Специальной значительно выше.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004 — air carriers' liability minima"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004 — air carriers' liability minima
   difficulty: 3
   cognitiveLevel: recall
   scenarioType: regulatory
-
 - id: in-005
   stem:
     lv: Kas notiek, ja CAA Latvia inspektors konstatē, ka operatoram nav apdrošināšanas?
     en: What happens if a CAA Latvia inspector finds an operator without insurance?
     ru: Что происходит, если инспектор CAA Latvia обнаружит, что у оператора нет страховки?
   options:
-    - id: a
-      text:
-        lv: Operators saņem administratīvo sodu un nedrīkst lidot.
-        en: The operator is fined and not allowed to fly.
-        ru: Оператор получает административный штраф и не вправе летать.
-    - id: b
-      text:
-        lv: Inspektors ieteic apdrošināšanu un atstāj operatoru lidot.
-        en: The inspector recommends insurance and lets the operator fly on.
-        ru: Инспектор рекомендует оформить и позволяет летать дальше.
-    - id: c
-      text:
-        lv: Nekādu seku — civiltiesiska atbildība ir brīvprātīga.
-        en: No consequences — third-party liability is voluntary.
-        ru: Никаких последствий — гражданская ответственность добровольна.
-    - id: d
-      text:
-        lv: Operatoram tiek dotas 14 dienas, lai noformētu polisi pēc fakta.
-        en: The operator is given 14 days to obtain the policy after the fact.
-        ru: Оператору дают 14 дней оформить полис задним числом.
+  - id: a
+    text:
+      lv: Operators saņem administratīvo sodu un nedrīkst lidot.
+      en: The operator is fined and not allowed to fly.
+      ru: Оператор получает административный штраф и не вправе летать.
+  - id: b
+    text:
+      lv: Inspektors ieteic apdrošināšanu un atstāj operatoru lidot.
+      en: The inspector recommends insurance and lets the operator fly on.
+      ru: Инспектор рекомендует оформить и позволяет летать дальше.
+  - id: c
+    text:
+      lv: Nekādu seku — civiltiesiska atbildība ir brīvprātīga.
+      en: No consequences — third-party liability is voluntary.
+      ru: Никаких последствий — гражданская ответственность добровольна.
+  - id: d
+    text:
+      lv: Operatoram tiek dotas 14 dienas, lai noformētu polisi pēc fakta.
+      en: The operator is given 14 days to obtain the policy after the fact.
+      ru: Оператору дают 14 дней оформить полис задним числом.
   correctOptionId: a
   explanation:
-    lv: >
-      Bez derīgas civiltiesiskās polises operators nav kvalificēts
-      lidojumam. Lidojums tiek pārtraukts, un piemēro administratīvo
-      sodu.
-    en: >
-      Without a valid third-party policy the operator is not qualified
-      to fly. The flight is grounded and an administrative fine is
-      imposed.
-    ru: >
-      Без действующего полиса оператор не имеет права летать. Полёт
-      прекращается и налагается административный штраф.
+    lv: 'Bez derīgas civiltiesiskās polises operators nav kvalificēts lidojumam. Lidojums tiek pārtraukts, un piemēro administratīvo sodu.
+
+      '
+    en: 'Without a valid third-party policy the operator is not qualified to fly. The flight is grounded and an administrative fine is imposed.
+
+      '
+    ru: 'Без действующего полиса оператор не имеет права летать. Полёт прекращается и налагается административный штраф.
+
+      '
   distractorRationales:
     b:
       lv: Apdrošināšana nav rekomendācija, bet obligāta prasība. Inspektors nav pilnvarots ļaut turpināt lidojumu bez polises.
@@ -272,56 +264,47 @@
       lv: Polise jābūt spēkā lidojuma brīdī. Retroaktīvā noformēšana neaizvieto prasību iepriekš būt apdrošinātam.
       en: The policy must be valid at the moment of flight. Retroactive issuance does not satisfy the prior-coverage requirement.
       ru: Полис должен действовать на момент полёта. Оформление задним числом не заменяет требование иметь страховку заранее.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Latvian Aviation Law; MK noteikumi Nr. 447"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Latvian Aviation Law; MK noteikumi Nr. 447
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
-
 - id: in-006
   stem:
     lv: Pilots ar obligāto civiltiesiskās atbildības polisi un hull apdrošināšanu (€200 pašriska) zaudē dronu lidojuma laikā — tas krīt kanālā, tiek applūdināts un iznīcināts. Neviens nav ievainots. Kādi zaudējumi tiek atlīdzināti?
     en: A pilot with mandatory third-party liability insurance and hull insurance (€200 deductible) loses their drone mid-flight — it falls into a canal, floods, and is destroyed. No one was injured. Which losses are covered?
     ru: У пилота есть обязательное страхование ответственности перед третьими лицами и страхование корпуса (€200 франшизы). Дрон падает в канал, тонет и уничтожен. Никто не пострадал. Какие убытки покрываются?
   options:
-    - id: a
-      text:
-        lv: Obligātā polise atlīdzina drona vērtību; hull polise nav nepieciešama.
-        en: The mandatory policy covers the drone value; hull is not needed.
-        ru: Обязательный полис покрывает стоимость дрона; hull не нужен.
-    - id: b
-      text:
-        lv: Neviena no polisēm — ūdens bojājums ir izslēgts no visām polisēm.
-        en: Neither policy — water damage is excluded from all policies.
-        ru: Ни один полис — водный ущерб исключён из всех полисов.
-    - id: c
-      text:
-        lv: Hull polise atlīdzina drona vērtību mīnus €200 pašrisks; obligātā polise neko neatlīdzina (nav trešo personu zaudējumu).
-        en: Hull insurance covers the drone value minus the €200 deductible; mandatory policy covers nothing (no third-party loss).
-        ru: Страхование корпуса покрывает стоимость дрона минус €200 франшизы; обязательный полис ничего не покрывает (нет ущерба третьим лицам).
-    - id: d
-      text:
-        lv: Abas polises kopā atlīdzina pilnu drona vērtību.
-        en: Both policies together cover the full drone value.
-        ru: Оба полиса вместе покрывают полную стоимость дрона.
+  - id: a
+    text:
+      lv: Obligātā polise atlīdzina drona vērtību; hull polise nav nepieciešama.
+      en: The mandatory policy covers the drone value; hull is not needed.
+      ru: Обязательный полис покрывает стоимость дрона; hull не нужен.
+  - id: b
+    text:
+      lv: Neviena no polisēm — ūdens bojājums ir izslēgts no visām polisēm.
+      en: Neither policy — water damage is excluded from all policies.
+      ru: Ни один полис — водный ущерб исключён из всех полисов.
+  - id: c
+    text:
+      lv: Hull polise atlīdzina drona vērtību mīnus €200 pašrisks; obligātā polise neko neatlīdzina (nav trešo personu zaudējumu).
+      en: Hull insurance covers the drone value minus the €200 deductible; mandatory policy covers nothing (no third-party loss).
+      ru: Страхование корпуса покрывает стоимость дрона минус €200 франшизы; обязательный полис ничего не покрывает (нет ущерба третьим лицам).
+  - id: d
+    text:
+      lv: Abas polises kopā atlīdzina pilnu drona vērtību.
+      en: Both policies together cover the full drone value.
+      ru: Оба полиса вместе покрывают полную стоимость дрона.
   correctOptionId: c
   explanation:
-    lv: >
-      Hull polise sedz drona bojājumus — tā atlīdzinās drona aizstāšanas
-      izmaksas mīnus €200 pašrisks. Obligātā civiltiesiskās atbildības
-      polise sedz trešo personu zaudējumus — šajā gadījumā neviens nav
-      ievainots un nav trešo personu īpašuma bojājumu, tāpēc obligātā polise
-      neko neizmaksā.
-    en: >
-      Hull insurance covers damage to the drone — it will pay the drone
-      replacement cost minus the €200 deductible. The mandatory third-party
-      liability policy covers third-party losses — in this case no one was
-      injured and there was no third-party property damage, so the mandatory
-      policy pays nothing.
-    ru: >
-      Страхование корпуса покрывает ущерб дрону — оно возместит стоимость
-      замены дрона за вычетом €200 франшизы. Обязательный полис покрывает
-      ущерб третьим лицам — в данном случае никто не пострадал и ущерба
-      имуществу третьих лиц нет, поэтому обязательный полис ничего не платит.
+    lv: 'Hull polise sedz drona bojājumus — tā atlīdzinās drona aizstāšanas izmaksas mīnus €200 pašrisks. Obligātā civiltiesiskās atbildības polise sedz trešo personu zaudējumus — šajā gadījumā neviens nav ievainots un nav trešo personu īpašuma bojājumu, tāpēc obligātā polise neko neizmaksā.
+
+      '
+    en: 'Hull insurance covers damage to the drone — it will pay the drone replacement cost minus the €200 deductible. The mandatory third-party liability policy covers third-party losses — in this case no one was injured and there was no third-party property damage, so the mandatory policy pays nothing.
+
+      '
+    ru: 'Страхование корпуса покрывает ущерб дрону — оно возместит стоимость замены дрона за вычетом €200 франшизы. Обязательный полис покрывает ущерб третьим лицам — в данном случае никто не пострадал и ущерба имуществу третьих лиц нет, поэтому обязательный полис ничего не платит.
+
+      '
   distractorRationales:
     a:
       lv: Obligātā polise nekad nesedz drona bojājumus. Hull polise ir tas, kas atlīdzina drona vērtību — obligātā ir tikai par trešo personu zaudējumiem.
@@ -335,55 +318,47 @@
       lv: Abas polises kopā neatlīdzina "pilnu vērtību" — obligātā polise neko neizmaksā (nav trešo personu zaudējumu), un hull polise izmaksā drona vērtību mīnus pašrisks.
       en: Both policies together do not cover "full value" — the mandatory policy pays nothing (no third-party loss), and hull pays the drone value minus deductible.
       ru: Оба полиса вместе не покрывают «полную стоимость» — обязательный ничего не платит (нет ущерба третьим лицам), hull платит стоимость дрона минус франшиза.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — hull vs third-party insurance"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — hull vs third-party insurance
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
-
 - id: in-007
   stem:
     lv: Operators ar C3 dronu (22 kg) plāno A3 operāciju. Kāds ir minimālais civiltiesiskās atbildības segums?
     en: An operator with a C3 drone (22 kg) plans an A3 operation. What is the minimum third-party liability cover?
     ru: Оператор с дроном C3 (22 кг) планирует операцию A3. Каков минимум страхования гражданской ответственности?
   options:
-    - id: a
-      text:
-        lv: 50 000 EUR — tāpat kā C1 vai C2.
-        en: €50 000 — same as C1 or C2.
-        ru: 50 000 EUR — как для C1 или C2.
-    - id: b
-      text:
-        lv: 750 000 SDR — masa pārsniedz 20 kg.
-        en: 750 000 SDR — mass exceeds 20 kg.
-        ru: 750 000 SDR — масса превышает 20 кг.
-    - id: c
-      text:
-        lv: 1 000 000 EUR — C3 prasa augstāku minimumu.
-        en: €1 000 000 — C3 requires a higher minimum.
-        ru: 1 000 000 EUR — C3 требует более высокого минимума.
-    - id: d
-      text:
-        lv: Nav obligātas apdrošināšanas prasības A3 attālinātos apgabalos.
-        en: No mandatory insurance requirement in remote A3 areas.
-        ru: Нет обязательного страхования в удалённых районах A3.
+  - id: a
+    text:
+      lv: 50 000 EUR — tāpat kā C1 vai C2.
+      en: €50 000 — same as C1 or C2.
+      ru: 50 000 EUR — как для C1 или C2.
+  - id: b
+    text:
+      lv: 750 000 SDR — masa pārsniedz 20 kg.
+      en: 750 000 SDR — mass exceeds 20 kg.
+      ru: 750 000 SDR — масса превышает 20 кг.
+  - id: c
+    text:
+      lv: 1 000 000 EUR — C3 prasa augstāku minimumu.
+      en: €1 000 000 — C3 requires a higher minimum.
+      ru: 1 000 000 EUR — C3 требует более высокого минимума.
+  - id: d
+    text:
+      lv: Nav obligātas apdrošināšanas prasības A3 attālinātos apgabalos.
+      en: No mandatory insurance requirement in remote A3 areas.
+      ru: Нет обязательного страхования в удалённых районах A3.
   correctOptionId: b
   explanation:
-    lv: >
-      MK noteikumi Nr. 447, pamatojoties uz Reg (EK) 785/2004, nosaka, ka UAS
-      ar masu 20–500 kg (svarāki par 20 kg, bet ne smagāki par 500 kg) prasa
-      minimālo segumu 750 000 SDR. C3 klases droni var sasniegt 25 kg, un
-      22 kg pārsniedz 20 kg slieksni, tādēļ piemēro augstāku SDR prasību.
-    en: >
-      Cabinet Regulation No. 447, based on Reg (EC) 785/2004, sets that UAS
-      weighing 20–500 kg (heavier than 20 kg but not exceeding 500 kg) require
-      a minimum cover of 750 000 SDR. C3-class drones can reach 25 kg and 22 kg
-      exceeds the 20 kg threshold, therefore the higher SDR requirement applies.
-    ru: >
-      Правила КМ № 447, основанные на Регл. (ЕС) 785/2004, устанавливают, что
-      UAS массой 20–500 кг (тяжелее 20 кг, но не более 500 кг) требуют
-      минимального покрытия 750 000 SDR. Дроны класса C3 могут достигать 25 кг,
-      а 22 кг превышает порог 20 кг, поэтому применяется более высокое требование
-      SDR.
+    lv: 'MK noteikumi Nr. 447, pamatojoties uz Reg (EK) 785/2004, nosaka, ka UAS ar masu 20–500 kg (svarāki par 20 kg, bet ne smagāki par 500 kg) prasa minimālo segumu 750 000 SDR. C3 klases droni var sasniegt 25 kg, un 22 kg pārsniedz 20 kg slieksni, tādēļ piemēro augstāku SDR prasību.
+
+      '
+    en: 'Cabinet Regulation No. 447, based on Reg (EC) 785/2004, sets that UAS weighing 20–500 kg (heavier than 20 kg but not exceeding 500 kg) require a minimum cover of 750 000 SDR. C3-class drones can reach 25 kg and 22 kg exceeds the 20 kg threshold, therefore the higher SDR requirement applies.
+
+      '
+    ru: 'Правила КМ № 447, основанные на Регл. (ЕС) 785/2004, устанавливают, что UAS массой 20–500 кг (тяжелее 20 кг, но не более 500 кг) требуют минимального покрытия 750 000 SDR. Дроны класса C3 могут достигать 25 кг, а 22 кг превышает порог 20 кг, поэтому применяется более высокое требование SDR.
+
+      '
   distractorRationales:
     a:
       lv: 50 000 EUR attiecas uz Atvērtajā kategorijā UAS ar masu ≤ 20 kg. 22 kg pārsniedz šo slieksni.
@@ -397,58 +372,47 @@
       lv: Obligātā apdrošināšana ir prasīta visiem UAS ≥ 250 g neatkarīgi no darbības vietas — pilsēta vai lauki.
       en: Mandatory insurance is required for all UAS ≥ 250 g regardless of the operating area — urban or rural.
       ru: Обязательное страхование требуется для всех UAS ≥ 250 г независимо от места операции — городского или сельского.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — mass category 20–500 kg"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — mass category 20–500 kg
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: regulatory
-
 - id: in-008
   stem:
     lv: Latvijas operators vēlas lidot ar savu dronu Vācijā. Vai viņa Latvijas apdrošināšanas polise der ES?
     en: A Latvian operator wants to fly their drone in Germany. Is their Latvian insurance policy valid in the EU?
     ru: Латвийский оператор хочет летать со своим дроном в Германии. Действителен ли его латвийский страховой полис в ЕС?
   options:
-    - id: a
-      text:
-        lv: Nē — katrai valstij jābūt atsevišķai vietējai poliserei.
-        en: No — a separate local policy is required for each country.
-        ru: Нет — для каждой страны требуется отдельный местный полис.
-    - id: b
-      text:
-        lv: Jā — ES civiltiesiskās atbildības polises parasti ir spēkā visās ES dalībvalstīs.
-        en: Yes — EU third-party liability policies are generally valid across all EU member states.
-        ru: Да — полисы страхования гражданской ответственности ЕС, как правило, действительны во всех государствах-членах ЕС.
-    - id: c
-      text:
-        lv: Jā, bet tikai Šengenas zonā.
-        en: Yes, but only in the Schengen Area.
-        ru: Да, но только в Шенгенской зоне.
-    - id: d
-      text:
-        lv: Nē — pilotam jāreģistrējas jaunā dalībvalstī pirms katras ārvalstu operācijas.
-        en: No — the pilot must register in the new member state before each foreign operation.
-        ru: Нет — пилот должен зарегистрироваться в новом государстве-члене перед каждой зарубежной операцией.
+  - id: a
+    text:
+      lv: Nē — katrai valstij jābūt atsevišķai vietējai poliserei.
+      en: No — a separate local policy is required for each country.
+      ru: Нет — для каждой страны требуется отдельный местный полис.
+  - id: b
+    text:
+      lv: Jā — ES civiltiesiskās atbildības polises parasti ir spēkā visās ES dalībvalstīs.
+      en: Yes — EU third-party liability policies are generally valid across all EU member states.
+      ru: Да — полисы страхования гражданской ответственности ЕС, как правило, действительны во всех государствах-членах ЕС.
+  - id: c
+    text:
+      lv: Jā, bet tikai Šengenas zonā.
+      en: Yes, but only in the Schengen Area.
+      ru: Да, но только в Шенгенской зоне.
+  - id: d
+    text:
+      lv: Nē — pilotam jāreģistrējas jaunā dalībvalstī pirms katras ārvalstu operācijas.
+      en: No — the pilot must register in the new member state before each foreign operation.
+      ru: Нет — пилот должен зарегистрироваться в новом государстве-члене перед каждой зарубежной операцией.
   correctOptionId: b
   explanation:
-    lv: >
-      Reg (EK) 785/2004 ir ES regula, kas nosaka obligāto apdrošināšanu.
-      Polise, kas atbilst šīs regulas minimumam, ir spēkā visās ES dalībvalstīs.
-      Latvijas operators ar polisi, kas atbilst 785/2004 minimumam, var lidot
-      Vācijā. Tomēr jāpārbauda, vai konkrētā polise skaidri norāda ES darbību —
-      dažas polises var ierobežot ģeogrāfisko tvērumu.
-    en: >
-      Reg (EC) 785/2004 is an EU regulation setting mandatory insurance. A policy
-      meeting this regulation's minimum is valid across all EU member states. A
-      Latvian operator with a policy meeting the 785/2004 minimum can fly in
-      Germany. However, the specific policy should be checked to confirm EU
-      coverage — some policies may limit geographical scope.
-    ru: >
-      Регл. (ЕС) 785/2004 — регламент ЕС, устанавливающий обязательное
-      страхование. Полис, соответствующий минимуму этого регламента, действителен
-      во всех государствах-членах ЕС. Латвийский оператор с полисом, отвечающим
-      минимуму 785/2004, может летать в Германии. Однако следует проверить
-      конкретный полис на подтверждение охвата ЕС — некоторые полисы могут
-      ограничивать географический охват.
+    lv: 'Reg (EK) 785/2004 ir ES regula, kas nosaka obligāto apdrošināšanu. Polise, kas atbilst šīs regulas minimumam, ir spēkā visās ES dalībvalstīs. Latvijas operators ar polisi, kas atbilst 785/2004 minimumam, var lidot Vācijā. Tomēr jāpārbauda, vai konkrētā polise skaidri norāda ES darbību — dažas polises var ierobežot ģeogrāfisko tvērumu.
+
+      '
+    en: 'Reg (EC) 785/2004 is an EU regulation setting mandatory insurance. A policy meeting this regulation''s minimum is valid across all EU member states. A Latvian operator with a policy meeting the 785/2004 minimum can fly in Germany. However, the specific policy should be checked to confirm EU coverage — some policies may limit geographical scope.
+
+      '
+    ru: 'Регл. (ЕС) 785/2004 — регламент ЕС, устанавливающий обязательное страхование. Полис, соответствующий минимуму этого регламента, действителен во всех государствах-членах ЕС. Латвийский оператор с полисом, отвечающим минимуму 785/2004, может летать в Германии. Однако следует проверить конкретный полис на подтверждение охвата ЕС — некоторые полисы могут ограничивать географический охват.
+
+      '
   distractorRationales:
     a:
       lv: Atsevišķa vietēja polise katrai ES valstij nav obligāta, ja esošā polise atbilst 785/2004 ES minimumam un sedz ES teritoriju.
@@ -462,55 +426,47 @@
       lv: Reg 2019/947 Art. 41 paredz savstarpējo atzīšanu — operators ar derīgu reģistrāciju vienas dalībvalsts kompetentajā iestādē drīkst darboties visā ES. Reģistrācija citā dalībvalstī nav obligāta.
       en: Reg 2019/947 Art. 41 provides for mutual recognition — an operator with valid registration in one member state's competent authority may operate throughout the EU. Registration in another member state is not required.
       ru: Ст. 41 Регл. 2019/947 предусматривает взаимное признание — оператор с действительной регистрацией в компетентном органе одного государства-члена может работать по всему ЕС. Регистрация в другом государстве-члене не требуется.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004 — EU-wide liability insurance; Reg 2019/947 Art. 41 — mutual recognition"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004 — EU-wide liability insurance; Reg 2019/947 Art. 41 — mutual recognition
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
-
 - id: in-009
   stem:
     lv: Operators drona kļūdas dēļ notriec ielas laternas stabu. Pilsētas pašvaldība iesniedz prasību par 3 200 EUR remonta izmaksām. Kura polise sedz šo?
     en: An operator's drone hits a streetlamp post due to pilot error. The city municipality files a claim for €3,200 repair costs. Which policy covers this?
     ru: Дрон оператора сбивает фонарный столб из-за ошибки пилота. Городская муниципальная власть подаёт иск на €3 200 ремонтных расходов. Какой полис покрывает это?
   options:
-    - id: a
-      text:
-        lv: Hull apdrošināšana — tā sedz visus fiziskos bojājumus.
-        en: Hull insurance — it covers all physical damage.
-        ru: Hull страхование — оно покрывает весь физический ущерб.
-    - id: b
-      text:
-        lv: Civiltiesiskās atbildības (obligātā) polise — tā sedz trešo personu īpašuma bojājumus.
-        en: Third-party liability (mandatory) policy — it covers third-party property damage.
-        ru: Полис страхования гражданской ответственности (обязательный) — он покрывает ущерб имуществу третьих лиц.
-    - id: c
-      text:
-        lv: Neviena — infrastruktūras bojājums nav apdrošināms.
-        en: Neither — infrastructure damage is not insurable.
-        ru: Никакой — ущерб инфраструктуре не является страховым случаем.
-    - id: d
-      text:
-        lv: Hull polise sedz dronam, obligātā polise sedz pašvaldības prasībai.
-        en: Hull covers the drone; mandatory covers the municipality's claim.
-        ru: Hull покрывает дрон; обязательный полис покрывает иск муниципалитета.
+  - id: a
+    text:
+      lv: Hull apdrošināšana — tā sedz visus fiziskos bojājumus.
+      en: Hull insurance — it covers all physical damage.
+      ru: Hull страхование — оно покрывает весь физический ущерб.
+  - id: b
+    text:
+      lv: Civiltiesiskās atbildības (obligātā) polise — tā sedz trešo personu īpašuma bojājumus.
+      en: Third-party liability (mandatory) policy — it covers third-party property damage.
+      ru: Полис страхования гражданской ответственности (обязательный) — он покрывает ущерб имуществу третьих лиц.
+  - id: c
+    text:
+      lv: Neviena — infrastruktūras bojājums nav apdrošināms.
+      en: Neither — infrastructure damage is not insurable.
+      ru: Никакой — ущерб инфраструктуре не является страховым случаем.
+  - id: d
+    text:
+      lv: Hull polise sedz dronam, obligātā polise sedz pašvaldības prasībai.
+      en: Hull covers the drone; mandatory covers the municipality's claim.
+      ru: Hull покрывает дрон; обязательный полис покрывает иск муниципалитета.
   correctOptionId: b
   explanation:
-    lv: >
-      Civiltiesiskās atbildības polise sedz trešo personu mantiskos un veselības
-      zaudējumus. Pašvaldības īpašuma — laternas stabs — remonts ir trešo personu
-      mantisks zaudējums, ko sedz obligātā polise. Hull polise sedz pašu dronu,
-      nevis ārējas struktūras bojājumus.
-    en: >
-      The third-party liability policy covers third-party property and bodily harm
-      losses. The municipality's property — the streetlamp post — repair is a
-      third-party property loss covered by the mandatory policy. Hull insurance
-      covers the drone itself, not damage to external structures.
-    ru: >
-      Полис страхования гражданской ответственности покрывает имущественный и
-      телесный вред третьих лиц. Ремонт имущества муниципалитета — фонарного
-      столба — является имущественным ущербом третьих лиц, покрываемым
-      обязательным полисом. Hull-страхование покрывает сам дрон, а не ущерб
-      внешним конструкциям.
+    lv: 'Civiltiesiskās atbildības polise sedz trešo personu mantiskos un veselības zaudējumus. Pašvaldības īpašuma — laternas stabs — remonts ir trešo personu mantisks zaudējums, ko sedz obligātā polise. Hull polise sedz pašu dronu, nevis ārējas struktūras bojājumus.
+
+      '
+    en: 'The third-party liability policy covers third-party property and bodily harm losses. The municipality''s property — the streetlamp post — repair is a third-party property loss covered by the mandatory policy. Hull insurance covers the drone itself, not damage to external structures.
+
+      '
+    ru: 'Полис страхования гражданской ответственности покрывает имущественный и телесный вред третьих лиц. Ремонт имущества муниципалитета — фонарного столба — является имущественным ущербом третьих лиц, покрываемым обязательным полисом. Hull-страхование покрывает сам дрон, а не ущерб внешним конструкциям.
+
+      '
   distractorRationales:
     a:
       lv: Hull polise sedz bojājumus pašam UAS, nevis ārējai infrastruktūrai. Pašvaldības prasība ir trešās personas prasība.
@@ -524,57 +480,47 @@
       lv: Atbilde D pareizi identificē abu polisu lomus, bet daļa "hull sedz dronam" nav piemērojama šajā scenārijā, kur drons nav bojāts. Jautājums ir par pašvaldības prasību — to sedz obligātā polise.
       en: Answer D correctly identifies both policies' roles, but the "hull covers the drone" part is not applicable in this scenario where the drone is not damaged. The question is about the municipality's claim — covered by the mandatory policy.
       ru: Ответ D правильно определяет роли обоих полисов, но часть «hull покрывает дрон» не применима в этом сценарии, где дрон не повреждён. Вопрос касается иска муниципалитета — он покрывается обязательным полисом.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — third-party property coverage"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — third-party property coverage
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-
 - id: in-010
   stem:
     lv: Pilots atklāj, ka apdrošināšanas polise ir beigusies vakar. Viņam ir steidzams komerciāls lidojums šodien. Ko viņš drīkst darīt?
     en: A pilot discovers that their insurance policy expired yesterday. They have an urgent commercial flight today. What may they do?
     ru: Пилот обнаруживает, что его страховой полис истёк вчера. Сегодня у него срочный коммерческий полёт. Что он может сделать?
   options:
-    - id: a
-      text:
-        lv: Lidot ar norādi uz draugu, kurš ir reģistrēts operators ar derīgu polisi.
-        en: Fly with reference to a friend who is a registered operator with a valid policy.
-        ru: Лететь, ссылаясь на друга — зарегистрированного оператора с действующим полисом.
-    - id: b
-      text:
-        lv: Atteikties no lidojuma, kamēr nav derīga polise, vai iegādāties dienas/nedēļas pagaidu polisi pirms lidojuma.
-        en: Cancel the flight until a valid policy is obtained, or purchase a day/week temporary policy before the flight.
-        ru: Отменить полёт до получения действующего полиса или приобрести временный дневной/недельный полис перед полётом.
-    - id: c
-      text:
-        lv: Lidot ar informāciju, ka polise atjaunošanā.
-        en: Fly with information that the policy is in renewal.
-        ru: Лететь, сообщив, что полис находится в процессе продления.
-    - id: d
-      text:
-        lv: Lidot, jo viena dienas kavēšanās nav nozīmīga.
-        en: Fly, because one day's lapse is not significant.
-        ru: Лететь, потому что однодневная просрочка несущественна.
+  - id: a
+    text:
+      lv: Lidot ar norādi uz draugu, kurš ir reģistrēts operators ar derīgu polisi.
+      en: Fly with reference to a friend who is a registered operator with a valid policy.
+      ru: Лететь, ссылаясь на друга — зарегистрированного оператора с действующим полисом.
+  - id: b
+    text:
+      lv: Atteikties no lidojuma, kamēr nav derīga polise, vai iegādāties dienas/nedēļas pagaidu polisi pirms lidojuma.
+      en: Cancel the flight until a valid policy is obtained, or purchase a day/week temporary policy before the flight.
+      ru: Отменить полёт до получения действующего полиса или приобрести временный дневной/недельный полис перед полётом.
+  - id: c
+    text:
+      lv: Lidot ar informāciju, ka polise atjaunošanā.
+      en: Fly with information that the policy is in renewal.
+      ru: Лететь, сообщив, что полис находится в процессе продления.
+  - id: d
+    text:
+      lv: Lidot, jo viena dienas kavēšanās nav nozīmīga.
+      en: Fly, because one day's lapse is not significant.
+      ru: Лететь, потому что однодневная просрочка несущественна.
   correctOptionId: b
   explanation:
-    lv: >
-      Apdrošināšanas polise jābūt spēkā lidojuma brīdī — nav labvēlības perioda
-      beidzas polisēm. Ja polise ir beigusies, pilots nedrīkst lidot. Risinājums:
-      (1) atteikties no lidojuma; vai (2) iegādāties pagaidu polisi pirms lidojuma
-      sākuma. Daudzi apdrošinātāji piedāvā dienas vai nedēļas pagaidu polises
-      tiešsaistē. "Atjaunošanā" vai drauga polise nedarbojas kā juridisks pamats.
-    en: >
-      Insurance must be in force at the moment of flight — there is no grace period
-      for expired policies. If the policy has expired, the pilot must not fly.
-      Solution: (1) cancel the flight; or (2) purchase a temporary policy before
-      the flight begins. Many insurers offer daily or weekly temporary policies
-      online. "In renewal" or a friend's policy does not work as a legal basis.
-    ru: >
-      Страховка должна действовать в момент полёта — периода льгот для истёкших
-      полисов нет. Если полис истёк, пилот не может летать. Решение: (1) отменить
-      полёт; или (2) приобрести временный полис до начала полёта. Многие страховщики
-      предлагают дневные или недельные временные полисы онлайн. «В процессе
-      продления» или полис друга не является правовым основанием.
+    lv: 'Apdrošināšanas polise jābūt spēkā lidojuma brīdī — nav labvēlības perioda beidzas polisēm. Ja polise ir beigusies, pilots nedrīkst lidot. Risinājums: (1) atteikties no lidojuma; vai (2) iegādāties pagaidu polisi pirms lidojuma sākuma. Daudzi apdrošinātāji piedāvā dienas vai nedēļas pagaidu polises tiešsaistē. "Atjaunošanā" vai drauga polise nedarbojas kā juridisks pamats.
+
+      '
+    en: 'Insurance must be in force at the moment of flight — there is no grace period for expired policies. If the policy has expired, the pilot must not fly. Solution: (1) cancel the flight; or (2) purchase a temporary policy before the flight begins. Many insurers offer daily or weekly temporary policies online. "In renewal" or a friend''s policy does not work as a legal basis.
+
+      '
+    ru: 'Страховка должна действовать в момент полёта — периода льгот для истёкших полисов нет. Если полис истёк, пилот не может летать. Решение: (1) отменить полёт; или (2) приобрести временный полис до начала полёта. Многие страховщики предлагают дневные или недельные временные полисы онлайн. «В процессе продления» или полис друга не является правовым основанием.
+
+      '
   distractorRationales:
     a:
       lv: Drauga polise nav operators polise konkrētajam operatoram. Katram operatoram jābūt savai derīgai poliserei.
@@ -588,57 +534,47 @@
       lv: Nav "nozīmīguma" sliekšņa polises derīgumam. Polise vai nu ir derīga, vai nav — vienas dienas kavēšanās nav atļauta.
       en: There is no "significance" threshold for policy validity. The policy is either valid or it is not — one day's lapse is not permitted.
       ru: Нет порога «существенности» для действительности полиса. Полис либо действителен, либо нет — однодневная просрочка не разрешена.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 — insurance validity at time of flight; Latvian Aviation Law"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 — insurance validity at time of flight; Latvian Aviation Law
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-
 - id: in-011
   stem:
     lv: Kas ir "pašrisks" (deductible) drona hull apdrošināšanā un kā tas ietekmē prasību?
     en: What is a "deductible" in drone hull insurance and how does it affect a claim?
     ru: Что такое «франшиза» (deductible) в hull-страховании дронов и как она влияет на страховой случай?
   options:
-    - id: a
-      text:
-        lv: Pašrisks ir gada maksa par polisi.
-        en: The deductible is the annual premium for the policy.
-        ru: Франшиза — это ежегодный взнос за полис.
-    - id: b
-      text:
-        lv: Pašrisks ir operators pats samaksā summa katrā prasībā pirms apdrošinātājs izmaksā atlikumu.
-        en: The deductible is the amount the operator pays themselves on each claim before the insurer pays the remainder.
-        ru: Франшиза — сумма, которую оператор оплачивает сам при каждом страховом случае, после чего страховщик выплачивает остаток.
-    - id: c
-      text:
-        lv: Pašrisks ir drona iznīcināšanas vērtība pēc avārijas.
-        en: The deductible is the salvage value of the drone after a crash.
-        ru: Франшиза — это остаточная стоимость дрона после аварии.
-    - id: d
-      text:
-        lv: Pašrisks ir obligātā apdrošināšanas pašrisks, ko nosaka valsts.
-        en: The deductible is the mandatory insurance deductible set by the state.
-        ru: Франшиза — обязательная страховая франшиза, установленная государством.
+  - id: a
+    text:
+      lv: Pašrisks ir gada maksa par polisi.
+      en: The deductible is the annual premium for the policy.
+      ru: Франшиза — это ежегодный взнос за полис.
+  - id: b
+    text:
+      lv: Pašrisks ir operators pats samaksā summa katrā prasībā pirms apdrošinātājs izmaksā atlikumu.
+      en: The deductible is the amount the operator pays themselves on each claim before the insurer pays the remainder.
+      ru: Франшиза — сумма, которую оператор оплачивает сам при каждом страховом случае, после чего страховщик выплачивает остаток.
+  - id: c
+    text:
+      lv: Pašrisks ir drona iznīcināšanas vērtība pēc avārijas.
+      en: The deductible is the salvage value of the drone after a crash.
+      ru: Франшиза — это остаточная стоимость дрона после аварии.
+  - id: d
+    text:
+      lv: Pašrisks ir obligātā apdrošināšanas pašrisks, ko nosaka valsts.
+      en: The deductible is the mandatory insurance deductible set by the state.
+      ru: Франшиза — обязательная страховая франшиза, установленная государством.
   correctOptionId: b
   explanation:
-    lv: >
-      Pašrisks (deductible) ir definēts izdevums, ko operators sedz pats katrā
-      apdrošināšanas gadījumā. Piemēram, ar €200 pašrisku un €1500 drona
-      bojājumu: apdrošinātājs izmaksā €1300 (1500 – 200). Augstāks pašrisks
-      parasti nozīmē zemāku gada prēmiju. Pašrisks nav gada maksa vai valsts
-      noteikta summa.
-    en: >
-      A deductible is a defined expense the operator covers themselves on each
-      insurance event. For example, with a €200 deductible and €1,500 drone
-      damage: the insurer pays €1,300 (1,500 – 200). A higher deductible usually
-      means a lower annual premium. The deductible is not an annual fee or a
-      state-set amount.
-    ru: >
-      Франшиза — это определённая сумма, которую оператор оплачивает сам при
-      каждом страховом случае. Например, при франшизе €200 и ущербе дрону €1 500:
-      страховщик выплачивает €1 300 (1 500 – 200). Более высокая франшиза
-      обычно означает более низкую годовую премию. Франшиза — не годовой взнос
-      и не государственно установленная сумма.
+    lv: 'Pašrisks (deductible) ir definēts izdevums, ko operators sedz pats katrā apdrošināšanas gadījumā. Piemēram, ar €200 pašrisku un €1500 drona bojājumu: apdrošinātājs izmaksā €1300 (1500 – 200). Augstāks pašrisks parasti nozīmē zemāku gada prēmiju. Pašrisks nav gada maksa vai valsts noteikta summa.
+
+      '
+    en: 'A deductible is a defined expense the operator covers themselves on each insurance event. For example, with a €200 deductible and €1,500 drone damage: the insurer pays €1,300 (1,500 – 200). A higher deductible usually means a lower annual premium. The deductible is not an annual fee or a state-set amount.
+
+      '
+    ru: 'Франшиза — это определённая сумма, которую оператор оплачивает сам при каждом страховом случае. Например, при франшизе €200 и ущербе дрону €1 500: страховщик выплачивает €1 300 (1 500 – 200). Более высокая франшиза обычно означает более низкую годовую премию. Франшиза — не годовой взнос и не государственно установленная сумма.
+
+      '
   distractorRationales:
     a:
       lv: Gada prēmija ir apdrošināšanas maksa par polisi visu gadu. Pašrisks ir atšķirīgs — tas ir operators dalījums katrā konkrētā prasībā.
@@ -652,60 +588,47 @@
       lv: Nav valsts noteikta pašriska drona apdrošināšanā. Pašrisku nosaka polises noteikumi.
       en: There is no state-mandated deductible in drone insurance. The deductible is set by the policy terms.
       ru: В страховании дронов нет государственно установленной франшизы. Франшиза устанавливается условиями полиса.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — General insurance principles — deductibles; hull vs third-party insurance"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — General insurance principles — deductibles; hull vs third-party insurance
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
-
 - id: in-012
   stem:
     lv: Operators lido ar dronu alkohola ietekmē un nodara kaitējumu trešajai personai. Vai civiltiesiskās atbildības polise sedz prasību?
     en: An operator flies a drone under the influence of alcohol and causes harm to a third party. Does the third-party liability policy cover the claim?
     ru: Оператор управляет дроном в состоянии алкогольного опьянения и причиняет вред третьему лицу. Покрывает ли полис страхования гражданской ответственности этот иск?
   options:
-    - id: a
-      text:
-        lv: Jā — polise sedz visus negadījumus bez izņēmumiem.
-        en: Yes — the policy covers all accidents without exceptions.
-        ru: Да — полис покрывает все случаи без исключений.
-    - id: b
-      text:
-        lv: Jā, bet apdrošinātājs var vērsties ar regresa prasību pret operatoru.
-        en: Yes, but the insurer may exercise a right of recourse (subrogation) against the operator.
-        ru: Да, но страховщик может предъявить регрессное требование к оператору.
-    - id: c
-      text:
-        lv: Nē — alkohols pilnībā izslēdz polises darbību.
-        en: No — alcohol completely voids the policy.
-        ru: Нет — алкоголь полностью аннулирует полис.
-    - id: d
-      text:
-        lv: Tikai tad, ja operators nav bijis sodīts iepriekš.
-        en: Only if the operator has not been previously convicted.
-        ru: Только если оператор ранее не был осуждён.
+  - id: a
+    text:
+      lv: Jā — polise sedz visus negadījumus bez izņēmumiem.
+      en: Yes — the policy covers all accidents without exceptions.
+      ru: Да — полис покрывает все случаи без исключений.
+  - id: b
+    text:
+      lv: Jā, bet apdrošinātājs var vērsties ar regresa prasību pret operatoru.
+      en: Yes, but the insurer may exercise a right of recourse (subrogation) against the operator.
+      ru: Да, но страховщик может предъявить регрессное требование к оператору.
+  - id: c
+    text:
+      lv: Nē — alkohols pilnībā izslēdz polises darbību.
+      en: No — alcohol completely voids the policy.
+      ru: Нет — алкоголь полностью аннулирует полис.
+  - id: d
+    text:
+      lv: Tikai tad, ja operators nav bijis sodīts iepriekš.
+      en: Only if the operator has not been previously convicted.
+      ru: Только если оператор ранее не был осуждён.
   correctOptionId: b
   explanation:
-    lv: >
-      Obligātā civiltiesiskās atbildības polise primāri aizsargā TREŠĀS PERSONAS —
-      cietušo. Tāpēc apdrošinātājs sedz trešās personas prasību. Taču polise var
-      paredzēt regresa tiesības (subrogation) pret pārkāpumu izdarījušo operatoru —
-      apdrošinātājs izmaksā cietušajam un pēc tam pieprasa šo summu no operatora,
-      kurš rīkojies ārpus polises nosacījumiem (alkohola ietekmē).
-    en: >
-      The mandatory third-party liability policy primarily protects the THIRD PARTY
-      — the injured person. Therefore the insurer covers the third party's claim.
-      However the policy may include a right of recourse (subrogation) against the
-      defaulting operator — the insurer pays the victim and then recovers the
-      amount from the operator who acted outside policy conditions (under alcohol
-      influence).
-    ru: >
-      Обязательный полис страхования гражданской ответственности в первую очередь
-      защищает ТРЕТЬЮ СТОРОНУ — пострадавшего. Поэтому страховщик покрывает
-      требование третьей стороны. Однако полис может предусматривать право
-      регресса (суброгации) против нарушившего правила оператора — страховщик
-      выплачивает пострадавшему, а затем требует эту сумму от оператора,
-      действовавшего в нарушение условий полиса (в состоянии алкогольного
-      опьянения).
+    lv: 'Obligātā civiltiesiskās atbildības polise primāri aizsargā TREŠĀS PERSONAS — cietušo. Tāpēc apdrošinātājs sedz trešās personas prasību. Taču polise var paredzēt regresa tiesības (subrogation) pret pārkāpumu izdarījušo operatoru — apdrošinātājs izmaksā cietušajam un pēc tam pieprasa šo summu no operatora, kurš rīkojies ārpus polises nosacījumiem (alkohola ietekmē).
+
+      '
+    en: 'The mandatory third-party liability policy primarily protects the THIRD PARTY — the injured person. Therefore the insurer covers the third party''s claim. However the policy may include a right of recourse (subrogation) against the defaulting operator — the insurer pays the victim and then recovers the amount from the operator who acted outside policy conditions (under alcohol influence).
+
+      '
+    ru: 'Обязательный полис страхования гражданской ответственности в первую очередь защищает ТРЕТЬЮ СТОРОНУ — пострадавшего. Поэтому страховщик покрывает требование третьей стороны. Однако полис может предусматривать право регресса (суброгации) против нарушившего правила оператора — страховщик выплачивает пострадавшему, а затем требует эту сумму от оператора, действовавшего в нарушение условий полиса (в состоянии алкогольного опьянения).
+
+      '
   distractorRationales:
     a:
       lv: Polise var liegt regresa tiesības vai mainīt izmaksas nosacījumus, bet trešās personas aizsardzība parasti tiek saglabāta. "Bez izņēmumiem" nav pilnīgi precīzs.
@@ -719,56 +642,47 @@
       lv: Iepriekšējo sodīšanu nav pieminēta kā polises nosacījums. Alkohola ietekme pie lidojuma ir atsevišķs pārkāpums neatkarīgi no vēstures.
       en: Previous convictions are not mentioned as a policy condition. Operating under alcohol influence is a separate violation regardless of history.
       ru: Предыдущие судимости не упоминаются как условие полиса. Управление в состоянии алкогольного опьянения — отдельное нарушение независимо от истории.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — General insurance law — subrogation; MK noteikumi Nr. 447; Reg (EC) 785/2004"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — General insurance law — subrogation; MK noteikumi Nr. 447; Reg (EC) 785/2004
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
-
 - id: in-013
   stem:
     lv: 'Operators pērkot polisi saņem jautājumu: "Hull vai civiltiesiskās atbildības?" Kāda ir galvenā atšķirība?'
     en: 'When purchasing a policy an operator is asked: "Hull or third-party liability?" What is the main difference?'
     ru: 'При покупке полиса оператора спрашивают: «Hull или страхование гражданской ответственности?» В чём основная разница?'
   options:
-    - id: a
-      text:
-        lv: Hull sedz drona fiziskos bojājumus; civiltiesiskās atbildības polise sedz zaudējumus trešajām personām.
-        en: Hull covers physical damage to the drone; third-party liability covers losses to third parties.
-        ru: Hull покрывает физический ущерб дрону; страхование гражданской ответственности покрывает убытки третьих лиц.
-    - id: b
-      text:
-        lv: Hull sedz komerciālos lidojumus; civiltiesiskā atbildība — atpūtas lidojumus.
-        en: Hull covers commercial flights; third-party liability covers recreational flights.
-        ru: Hull покрывает коммерческие полёты; страхование ответственности — рекреационные.
-    - id: c
-      text:
-        lv: Hull ir obligāts, civiltiesiskā atbildība — brīvprātīga.
-        en: Hull is mandatory, third-party liability is voluntary.
-        ru: Hull обязателен, страхование ответственности — добровольно.
-    - id: d
-      text:
-        lv: Hull sedz avārijas pilotiem; civiltiesiskā atbildība — profesionālajiem.
-        en: Hull covers accidental pilots; third-party liability covers professional ones.
-        ru: Hull покрывает аварийные случаи для любительских пилотов; страхование ответственности — для профессиональных.
+  - id: a
+    text:
+      lv: Hull sedz drona fiziskos bojājumus; civiltiesiskās atbildības polise sedz zaudējumus trešajām personām.
+      en: Hull covers physical damage to the drone; third-party liability covers losses to third parties.
+      ru: Hull покрывает физический ущерб дрону; страхование гражданской ответственности покрывает убытки третьих лиц.
+  - id: b
+    text:
+      lv: Hull sedz komerciālos lidojumus; civiltiesiskā atbildība — atpūtas lidojumus.
+      en: Hull covers commercial flights; third-party liability covers recreational flights.
+      ru: Hull покрывает коммерческие полёты; страхование ответственности — рекреационные.
+  - id: c
+    text:
+      lv: Hull ir obligāts, civiltiesiskā atbildība — brīvprātīga.
+      en: Hull is mandatory, third-party liability is voluntary.
+      ru: Hull обязателен, страхование ответственности — добровольно.
+  - id: d
+    text:
+      lv: Hull sedz avārijas pilotiem; civiltiesiskā atbildība — profesionālajiem.
+      en: Hull covers accidental pilots; third-party liability covers professional ones.
+      ru: Hull покрывает аварийные случаи для любительских пилотов; страхование ответственности — для профессиональных.
   correctOptionId: a
   explanation:
-    lv: >
-      Hull apdrošināšana (jeb "own-damage" apdrošināšana) sedz pašu UAS —
-      tā izmaksā, ja drons ir bojāts vai iznīcināts. Civiltiesiskās atbildības
-      (TPL) polise sedz zaudējumus, ko operators nodarījis trešajām personām —
-      ievainojumus un mantiskos bojājumus. Hull ir brīvprātīga; TPL ir obligāta
-      visiem UAS ≥ 250 g Latvijā.
-    en: >
-      Hull insurance (or "own-damage" insurance) covers the UAS itself — it pays
-      out if the drone is damaged or destroyed. Third-party liability (TPL) policy
-      covers losses the operator causes to third parties — injuries and property
-      damage. Hull is voluntary; TPL is mandatory for all UAS ≥ 250 g in Latvia.
-    ru: >
-      Hull-страхование (или страхование «собственного ущерба») покрывает сам UAS
-      — оно выплачивает, если дрон повреждён или уничтожен. Полис страхования
-      гражданской ответственности (TPL) покрывает убытки, причинённые оператором
-      третьим лицам — травмы и имущественный ущерб. Hull — добровольное;
-      TPL — обязательное для всех UAS ≥ 250 г в Латвии.
+    lv: 'Hull apdrošināšana (jeb "own-damage" apdrošināšana) sedz pašu UAS — tā izmaksā, ja drons ir bojāts vai iznīcināts. Civiltiesiskās atbildības (TPL) polise sedz zaudējumus, ko operators nodarījis trešajām personām — ievainojumus un mantiskos bojājumus. Hull ir brīvprātīga; TPL ir obligāta visiem UAS ≥ 250 g Latvijā.
+
+      '
+    en: 'Hull insurance (or "own-damage" insurance) covers the UAS itself — it pays out if the drone is damaged or destroyed. Third-party liability (TPL) policy covers losses the operator causes to third parties — injuries and property damage. Hull is voluntary; TPL is mandatory for all UAS ≥ 250 g in Latvia.
+
+      '
+    ru: 'Hull-страхование (или страхование «собственного ущерба») покрывает сам UAS — оно выплачивает, если дрон повреждён или уничтожен. Полис страхования гражданской ответственности (TPL) покрывает убытки, причинённые оператором третьим лицам — травмы и имущественный ущерб. Hull — добровольное; TPL — обязательное для всех UAS ≥ 250 г в Латвии.
+
+      '
   distractorRationales:
     b:
       lv: Polises veidu diferenciācija nav saistīta ar lidojuma tipu (komerciāls/atpūtas). Abas polises var attiekties uz jebkuru lidojuma tipu.
@@ -782,57 +696,47 @@
       lv: Nav nošķiršanas starp "avārijas" un "profesionālajiem" pilotiem polises tipos. Nošķiršana ir starp pašu UAS bojājumu un trešo personu zaudējumiem.
       en: There is no distinction between "accidental" and "professional" pilots in policy types. The distinction is between own UAS damage and third-party losses.
       ru: Нет разграничения между «аварийными» и «профессиональными» пилотами в типах полисов. Разграничение — между ущербом собственному UAS и убытками третьих лиц.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — hull vs TPL insurance"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — hull vs TPL insurance
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
-
 - id: in-014
   stem:
     lv: Operators veic lidojumu pasākumā ar papildu apdrošināšanu, ko nodrošinājis pasākuma organizators. Vai operators joprojām atbild par obligāto civiltiesisko polisi?
     en: An operator conducts a flight at an event with additional insurance provided by the event organiser. Is the operator still responsible for mandatory third-party liability?
     ru: Оператор выполняет полёт на мероприятии с дополнительным страхованием, предоставленным организатором мероприятия. Несёт ли оператор по-прежнему ответственность за обязательное страхование гражданской ответственности?
   options:
-    - id: a
-      text:
-        lv: Nē — organizatora papildu apdrošināšana aizvieto operators obligāto polisi.
-        en: No — the organiser's additional insurance replaces the operator's mandatory policy.
-        ru: Нет — дополнительная страховка организатора заменяет обязательный полис оператора.
-    - id: b
-      text:
-        lv: Jā — operators ir atbildīgs par savu obligāto civiltiesisko polisi neatkarīgi no organizatora apdrošināšanas.
-        en: Yes — the operator is responsible for their own mandatory third-party liability policy regardless of the organiser's insurance.
-        ru: Да — оператор несёт ответственность за свой обязательный полис страхования гражданской ответственности независимо от страховки организатора.
-    - id: c
-      text:
-        lv: Tikai tad, ja organizatora polise ir ar zemāku segumu.
-        en: Only if the organiser's policy has lower coverage.
-        ru: Только если полис организатора имеет более низкое покрытие.
-    - id: d
-      text:
-        lv: Operators var nodot atbildību organizatoram rakstiski.
-        en: The operator can transfer liability to the organiser in writing.
-        ru: Оператор может передать ответственность организатору в письменной форме.
+  - id: a
+    text:
+      lv: Nē — organizatora papildu apdrošināšana aizvieto operators obligāto polisi.
+      en: No — the organiser's additional insurance replaces the operator's mandatory policy.
+      ru: Нет — дополнительная страховка организатора заменяет обязательный полис оператора.
+  - id: b
+    text:
+      lv: Jā — operators ir atbildīgs par savu obligāto civiltiesisko polisi neatkarīgi no organizatora apdrošināšanas.
+      en: Yes — the operator is responsible for their own mandatory third-party liability policy regardless of the organiser's insurance.
+      ru: Да — оператор несёт ответственность за свой обязательный полис страхования гражданской ответственности независимо от страховки организатора.
+  - id: c
+    text:
+      lv: Tikai tad, ja organizatora polise ir ar zemāku segumu.
+      en: Only if the organiser's policy has lower coverage.
+      ru: Только если полис организатора имеет более низкое покрытие.
+  - id: d
+    text:
+      lv: Operators var nodot atbildību organizatoram rakstiski.
+      en: The operator can transfer liability to the organiser in writing.
+      ru: Оператор может передать ответственность организатору в письменной форме.
   correctOptionId: b
   explanation:
-    lv: >
-      Obligātā civiltiesiskās atbildības apdrošināšana ir UAS operatora
-      personiskais pienākums — to nevar aizstāt ar pasākuma organizatora polisi.
-      Inspekcijā operators uzrāda savu polisi. Organizatora apdrošināšana var
-      būt papildinājums vai komerciālā vienošanās, bet nemaina operators regulatīvo
-      pienākumu.
-    en: >
-      Mandatory third-party liability insurance is the UAS operator's personal
-      obligation — it cannot be replaced by an event organiser's policy. In an
-      inspection the operator shows their own policy. The organiser's insurance
-      may be an addition or a commercial arrangement, but it does not change the
-      operator's regulatory obligation.
-    ru: >
-      Обязательное страхование гражданской ответственности является личным
-      обязательством оператора UAS — оно не может быть заменено полисом
-      организатора мероприятия. При инспекции оператор предъявляет свой
-      собственный полис. Страховка организатора может быть дополнением или
-      коммерческим соглашением, но не меняет нормативного обязательства оператора.
+    lv: 'Obligātā civiltiesiskās atbildības apdrošināšana ir UAS operatora personiskais pienākums — to nevar aizstāt ar pasākuma organizatora polisi. Inspekcijā operators uzrāda savu polisi. Organizatora apdrošināšana var būt papildinājums vai komerciālā vienošanās, bet nemaina operators regulatīvo pienākumu.
+
+      '
+    en: 'Mandatory third-party liability insurance is the UAS operator''s personal obligation — it cannot be replaced by an event organiser''s policy. In an inspection the operator shows their own policy. The organiser''s insurance may be an addition or a commercial arrangement, but it does not change the operator''s regulatory obligation.
+
+      '
+    ru: 'Обязательное страхование гражданской ответственности является личным обязательством оператора UAS — оно не может быть заменено полисом организатора мероприятия. При инспекции оператор предъявляет свой собственный полис. Страховка организатора может быть дополнением или коммерческим соглашением, но не меняет нормативного обязательства оператора.
+
+      '
   distractorRationales:
     a:
       lv: Organizatora polise neaizvieto operators personisko regulatīvo pienākumu par obligāto apdrošināšanu.
@@ -846,55 +750,47 @@
       lv: Atbildību par obligāto apdrošināšanu nevar nodot ar rakstisku vienošanos. Tā ir personiska regulatīvā prasība.
       en: Liability for mandatory insurance cannot be transferred by written agreement. It is a personal regulatory requirement.
       ru: Ответственность за обязательное страхование не может быть передана письменным соглашением. Это личное нормативное требование.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 — operator personal insurance obligation; Latvian Aviation Law"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 — operator personal insurance obligation; Latvian Aviation Law
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
-
 - id: in-015
   stem:
     lv: Ko regulē Regula (EK) 785/2004?
     en: What does Regulation (EC) 785/2004 regulate?
     ru: Что регулирует Регламент (ЕС) 785/2004?
   options:
-    - id: a
-      text:
-        lv: UAS reģistrāciju un operators identifikāciju ES.
-        en: UAS registration and operator identification in the EU.
-        ru: Регистрацию UAS и идентификацию оператора в ЕС.
-    - id: b
-      text:
-        lv: Obligātās apdrošināšanas minimālos standartus gaisa kuģu operatoriem ES, ieskaitot UAS.
-        en: Mandatory insurance minimum standards for aircraft operators in the EU, including UAS.
-        ru: Минимальные стандарты обязательного страхования для операторов воздушных судов в ЕС, включая UAS.
-    - id: c
-      text:
-        lv: UAS ģeogrāfisko zonu izveidošanas kārtību.
-        en: The procedure for establishing UAS geographical zones.
-        ru: Процедуру создания географических зон UAS.
-    - id: d
-      text:
-        lv: Krimināltiesisko atbildību par UAS negadījumiem.
-        en: Criminal liability for UAS accidents.
-        ru: Уголовную ответственность за аварии UAS.
+  - id: a
+    text:
+      lv: UAS reģistrāciju un operators identifikāciju ES.
+      en: UAS registration and operator identification in the EU.
+      ru: Регистрацию UAS и идентификацию оператора в ЕС.
+  - id: b
+    text:
+      lv: Obligātās apdrošināšanas minimālos standartus gaisa kuģu operatoriem ES, ieskaitot UAS.
+      en: Mandatory insurance minimum standards for aircraft operators in the EU, including UAS.
+      ru: Минимальные стандарты обязательного страхования для операторов воздушных судов в ЕС, включая UAS.
+  - id: c
+    text:
+      lv: UAS ģeogrāfisko zonu izveidošanas kārtību.
+      en: The procedure for establishing UAS geographical zones.
+      ru: Процедуру создания географических зон UAS.
+  - id: d
+    text:
+      lv: Krimināltiesisko atbildību par UAS negadījumiem.
+      en: Criminal liability for UAS accidents.
+      ru: Уголовную ответственность за аварии UAS.
   correctOptionId: b
   explanation:
-    lv: >
-      Regula (EK) 785/2004 par gaisa kuģu operatoru un gaisa pārvadātāju
-      apdrošināšanas prasībām nosaka minimālos civiltiesiskās atbildības
-      seguma standartus gaisa kuģu operatoriem ES — ieskaitot UAS. Latvija
-      ievieš šo regulu nacionālajā līmenī ar MK noteikumiem Nr. 447.
-    en: >
-      Regulation (EC) 785/2004 on insurance requirements for air carriers and
-      aircraft operators sets minimum third-party liability coverage standards for
-      aircraft operators in the EU — including UAS. Latvia implements this
-      regulation at national level through Cabinet Regulation No. 447.
-    ru: >
-      Регламент (ЕС) 785/2004 о требованиях к страхованию авиаперевозчиков и
-      эксплуатантов воздушных судов устанавливает минимальные стандарты покрытия
-      страхования гражданской ответственности для эксплуатантов воздушных судов
-      в ЕС — включая UAS. Латвия реализует этот регламент на национальном уровне
-      через Правила КМ № 447.
+    lv: 'Regula (EK) 785/2004 par gaisa kuģu operatoru un gaisa pārvadātāju apdrošināšanas prasībām nosaka minimālos civiltiesiskās atbildības seguma standartus gaisa kuģu operatoriem ES — ieskaitot UAS. Latvija ievieš šo regulu nacionālajā līmenī ar MK noteikumiem Nr. 447.
+
+      '
+    en: 'Regulation (EC) 785/2004 on insurance requirements for air carriers and aircraft operators sets minimum third-party liability coverage standards for aircraft operators in the EU — including UAS. Latvia implements this regulation at national level through Cabinet Regulation No. 447.
+
+      '
+    ru: 'Регламент (ЕС) 785/2004 о требованиях к страхованию авиаперевозчиков и эксплуатантов воздушных судов устанавливает минимальные стандарты покрытия страхования гражданской ответственности для эксплуатантов воздушных судов в ЕС — включая UAS. Латвия реализует этот регламент на национальном уровне через Правила КМ № 447.
+
+      '
   distractorRationales:
     a:
       lv: UAS reģistrācija un operators identifikācija ir regulēta ar Reg 2019/947 Art. 14, nevis 785/2004.
@@ -908,54 +804,47 @@
       lv: Krimināltiesiskā atbildība ir nacionālo tiesību aktu joma, nevis ES regulas. Reg 785/2004 regulē civiltiesisko apdrošināšanu.
       en: Criminal liability is a matter of national law, not an EU regulation. Reg 785/2004 regulates civil liability insurance.
       ru: Уголовная ответственность относится к национальному законодательству, а не к регламентам ЕС. Регл. 785/2004 регулирует гражданское страхование ответственности.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004 — aircraft operator insurance; MK noteikumi Nr. 447"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004 — aircraft operator insurance; MK noteikumi Nr. 447
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
-
 - id: in-016
   stem:
     lv: Kāda ir minimālā prasība BVLOS (Beyond Visual Line of Sight) lidojumam attiecībā uz apdrošināšanu?
     en: What is the minimum insurance requirement for a BVLOS (Beyond Visual Line of Sight) flight?
     ru: Каково минимальное требование страхования для полёта BVLOS (Beyond Visual Line of Sight)?
   options:
-    - id: a
-      text:
-        lv: Tāds pats kā Atvērtajai kategorijai — 50 000 EUR.
-        en: Same as for the Open category — €50 000.
-        ru: Такое же, как для Открытой категории — 50 000 EUR.
-    - id: b
-      text:
-        lv: BVLOS prasa Specifiskās kategorijas apdrošināšanu — vismaz 750 000 SDR (MTOM < 500 kg).
-        en: BVLOS requires Specific-category insurance — at least 750 000 SDR (MTOM < 500 kg).
-        ru: BVLOS требует страхования Специальной категории — не менее 750 000 SDR (MTOM < 500 кг).
-    - id: c
-      text:
-        lv: BVLOS nav apdrošināms — tiek veikts tikai ar īpašu CAA atļauju bez apdrošināšanas.
-        en: BVLOS is not insurable — it is conducted only with special CAA permission without insurance.
-        ru: BVLOS не страхуется — выполняется только с особым разрешением CAA без страховки.
-    - id: d
-      text:
-        lv: BVLOS operators var izvēlēties polises summu pēc saviem ieskatiem.
-        en: BVLOS operators may choose the policy amount at their discretion.
-        ru: Операторы BVLOS могут выбирать сумму полиса по своему усмотрению.
+  - id: a
+    text:
+      lv: Tāds pats kā Atvērtajai kategorijai — 50 000 EUR.
+      en: Same as for the Open category — €50 000.
+      ru: Такое же, как для Открытой категории — 50 000 EUR.
+  - id: b
+    text:
+      lv: BVLOS prasa Specifiskās kategorijas apdrošināšanu — vismaz 750 000 SDR (MTOM < 500 kg).
+      en: BVLOS requires Specific-category insurance — at least 750 000 SDR (MTOM < 500 kg).
+      ru: BVLOS требует страхования Специальной категории — не менее 750 000 SDR (MTOM < 500 кг).
+  - id: c
+    text:
+      lv: BVLOS nav apdrošināms — tiek veikts tikai ar īpašu CAA atļauju bez apdrošināšanas.
+      en: BVLOS is not insurable — it is conducted only with special CAA permission without insurance.
+      ru: BVLOS не страхуется — выполняется только с особым разрешением CAA без страховки.
+  - id: d
+    text:
+      lv: BVLOS operators var izvēlēties polises summu pēc saviem ieskatiem.
+      en: BVLOS operators may choose the policy amount at their discretion.
+      ru: Операторы BVLOS могут выбирать сумму полиса по своему усмотрению.
   correctOptionId: b
   explanation:
-    lv: >
-      BVLOS lidojumi vienmēr ietilpst Specifiskajā vai Sertificētajā kategorijā —
-      ārpus Atvērtās kategorijas. Specifiskās kategorijas operators (ar UAS < 500 kg)
-      pakļaujas Reg (EK) 785/2004 — 750 000 SDR minimums. Tas ir augstāks par
-      Atvērtās kategorijas 50 000 EUR.
-    en: >
-      BVLOS flights always fall under the Specific or Certified category — outside
-      the Open category. A Specific-category operator (with UAS < 500 kg) is
-      subject to Reg (EC) 785/2004 — 750 000 SDR minimum. This is higher than the
-      Open-category €50 000.
-    ru: >
-      Полёты BVLOS всегда относятся к Специальной или Сертифицированной категории
-      — за пределами Открытой категории. Оператор Специальной категории (с UAS < 500 кг)
-      подпадает под Регл. (ЕС) 785/2004 — минимум 750 000 SDR. Это выше, чем
-      50 000 EUR Открытой категории.
+    lv: 'BVLOS lidojumi vienmēr ietilpst Specifiskajā vai Sertificētajā kategorijā — ārpus Atvērtās kategorijas. Specifiskās kategorijas operators (ar UAS < 500 kg) pakļaujas Reg (EK) 785/2004 — 750 000 SDR minimums. Tas ir augstāks par Atvērtās kategorijas 50 000 EUR.
+
+      '
+    en: 'BVLOS flights always fall under the Specific or Certified category — outside the Open category. A Specific-category operator (with UAS < 500 kg) is subject to Reg (EC) 785/2004 — 750 000 SDR minimum. This is higher than the Open-category €50 000.
+
+      '
+    ru: 'Полёты BVLOS всегда относятся к Специальной или Сертифицированной категории — за пределами Открытой категории. Оператор Специальной категории (с UAS < 500 кг) подпадает под Регл. (ЕС) 785/2004 — минимум 750 000 SDR. Это выше, чем 50 000 EUR Открытой категории.
+
+      '
   distractorRationales:
     a:
       lv: 50 000 EUR ir Atvērtās kategorijas minimums. BVLOS ir Specifiskajā kategorijā, kurā piemēro augstāku slieksni.
@@ -969,57 +858,47 @@
       lv: Apdrošināšanas minimums ir regulatīvi noteikts — operators nevar brīvi izvēlēties summu zemāk par regulatīvo minimumu.
       en: The insurance minimum is set by regulation — the operator cannot freely choose an amount below the regulatory minimum.
       ru: Минимум страхования установлен нормативно — оператор не может свободно выбирать сумму ниже нормативного минимума.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004; Reg 2019/947 — BVLOS in Specific category; MK noteikumi Nr. 447"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004; Reg 2019/947 — BVLOS in Specific category; MK noteikumi Nr. 447
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: regulatory
-
 - id: in-017
   stem:
     lv: Pilots ar dronu nodarīja bojājumus vērtīgam mākslas darbam āra skulptūru parkā. Apdrošināšanas polise satur "atrašanās vietas izslēgšanu" (location exclusion) privātiem parkiem. Kas notiek?
     en: A pilot's drone damages a valuable piece of art in an outdoor sculpture park. The insurance policy contains a "location exclusion" for private parks. What happens?
     ru: Дрон пилота повреждает ценное произведение искусства в парке скульптур под открытым небом. Страховой полис содержит «исключение местоположения» для частных парков. Что происходит?
   options:
-    - id: a
-      text:
-        lv: Apdrošinātājs pilnībā sedz prasību neatkarīgi no izslēgšanas.
-        en: The insurer covers the claim in full regardless of the exclusion.
-        ru: Страховщик полностью покрывает требование независимо от исключения.
-    - id: b
-      text:
-        lv: Apdrošinātājs var atteikt prasību, ja izslēgšana ir spēkā un operators to apzinājies pie polises iegādes.
-        en: The insurer may deny the claim if the exclusion is valid and the operator was aware of it when purchasing the policy.
-        ru: Страховщик может отклонить требование, если исключение действительно и оператор знал о нём при покупке полиса.
-    - id: c
-      text:
-        lv: Polises nosacījumiem nav juridiska spēka.
-        en: Policy conditions have no legal force.
-        ru: Условия полиса не имеют юридической силы.
-    - id: d
-      text:
-        lv: Operators var prasīt kompensāciju no parka īpašnieka.
-        en: The operator can claim compensation from the park owner.
-        ru: Оператор может требовать компенсацию от владельца парка.
+  - id: a
+    text:
+      lv: Apdrošinātājs pilnībā sedz prasību neatkarīgi no izslēgšanas.
+      en: The insurer covers the claim in full regardless of the exclusion.
+      ru: Страховщик полностью покрывает требование независимо от исключения.
+  - id: b
+    text:
+      lv: Apdrošinātājs var atteikt prasību, ja izslēgšana ir spēkā un operators to apzinājies pie polises iegādes.
+      en: The insurer may deny the claim if the exclusion is valid and the operator was aware of it when purchasing the policy.
+      ru: Страховщик может отклонить требование, если исключение действительно и оператор знал о нём при покупке полиса.
+  - id: c
+    text:
+      lv: Polises nosacījumiem nav juridiska spēka.
+      en: Policy conditions have no legal force.
+      ru: Условия полиса не имеют юридической силы.
+  - id: d
+    text:
+      lv: Operators var prasīt kompensāciju no parka īpašnieka.
+      en: The operator can claim compensation from the park owner.
+      ru: Оператор может требовать компенсацию от владельца парка.
   correctOptionId: b
   explanation:
-    lv: >
-      Apdrošināšanas polises satur izslēgšanas (exclusions) — konkrētus gadījumus
-      vai vietas, kurās polise nedarbojas. Ja operators lidoja privātā parkā, kas
-      izslēgts polisē, apdrošinātājs var atteikt prasību. Tāpēc pirms apdrošināšanas
-      iegādes jāpārbauda ģeogrāfiskās un vietējo izslēgšanas. Operators paliek
-      personīgi atbildīgs par nesegtajiem bojājumiem.
-    en: >
-      Insurance policies contain exclusions — specific events or locations where
-      the policy does not apply. If the operator flew in a private park that is
-      excluded in the policy, the insurer may deny the claim. This is why
-      geographical and location exclusions must be checked before purchasing
-      insurance. The operator remains personally liable for uncovered damages.
-    ru: >
-      Страховые полисы содержат исключения — конкретные случаи или места, в
-      которых полис не действует. Если оператор летел в частном парке, исключённом
-      в полисе, страховщик может отклонить требование. Поэтому перед покупкой
-      страховки необходимо проверить географические и местные исключения. Оператор
-      остаётся лично ответственным за непокрытый ущерб.
+    lv: 'Apdrošināšanas polises satur izslēgšanas (exclusions) — konkrētus gadījumus vai vietas, kurās polise nedarbojas. Ja operators lidoja privātā parkā, kas izslēgts polisē, apdrošinātājs var atteikt prasību. Tāpēc pirms apdrošināšanas iegādes jāpārbauda ģeogrāfiskās un vietējo izslēgšanas. Operators paliek personīgi atbildīgs par nesegtajiem bojājumiem.
+
+      '
+    en: 'Insurance policies contain exclusions — specific events or locations where the policy does not apply. If the operator flew in a private park that is excluded in the policy, the insurer may deny the claim. This is why geographical and location exclusions must be checked before purchasing insurance. The operator remains personally liable for uncovered damages.
+
+      '
+    ru: 'Страховые полисы содержат исключения — конкретные случаи или места, в которых полис не действует. Если оператор летел в частном парке, исключённом в полисе, страховщик может отклонить требование. Поэтому перед покупкой страховки необходимо проверить географические и местные исключения. Оператор остаётся лично ответственным за непокрытый ущерб.
+
+      '
   distractorRationales:
     a:
       lv: Izslēgšanas ir polises būtiska daļa. Apdrošinātājs var atteikt prasību, ja izslēgšana ir spēkā.
@@ -1033,7 +912,1201 @@
       lv: Operators tiesiskā atbildība ir pret cietušo (mākslas darba īpašnieku), nevis pret parka īpašnieku. Parka īpašnieks nav atbildīgs par pilota kļūdu.
       en: The operator's legal liability is towards the victim (art owner), not the park owner. The park owner is not liable for the pilot's error.
       ru: Юридическая ответственность оператора — перед пострадавшим (владельцем произведения искусства), а не перед владельцем парка. Владелец парка не несёт ответственности за ошибку пилота.
-  sourceRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — General insurance law — policy exclusions; MK noteikumi Nr. 447"
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — General insurance law — policy exclusions; MK noteikumi Nr. 447
   difficulty: 3
   cognitiveLevel: analyze
+  scenarioType: decision
+- id: in-018
+  stem:
+    lv: Kurš ieraksts ir visnoderīgākais, lai parādītu, ka bojātai baterijai jau pirms incidenta bija brīdinājuma pazīmes?
+    en: Which record is most useful for showing that a damaged battery already had warning signs before an incident?
+    ru: Какая запись полезнее всего показывает, что у повреждённой батареи уже были тревожные признаки до инцидента?
+  options:
+  - id: a
+    text:
+      lv: Klienta rēķins.
+      en: The client's invoice.
+      ru: Счёт клиенту.
+  - id: b
+    text:
+      lv: Bateriju žurnāls ar ID, ciklu skaitu un stāvokļa piezīmēm.
+      en: A battery log with ID, cycle count, and condition notes.
+      ru: Журнал батареи с ID, числом циклов и заметками о состоянии.
+  - id: c
+    text:
+      lv: Pilota ieraksts sociālajos tīklos.
+      en: The pilot's social-media post.
+      ru: Пост пилота в соцсетях.
+  - id: d
+    text:
+      lv: Drona iepakojuma kaste.
+      en: The drone's packaging box.
+      ru: Коробка от дрона.
+  correctOptionId: b
+  explanation:
+    lv: Bateriju žurnāls ir strukturēts ieraksts, kas savieno konkrētu bateriju ar tās lietošanas vēsturi un stāvokli. Tas ir galvenais pierādījums, ja incidentā svarīga ir baterijas veselība.
+    en: A battery log is the structured record that connects a specific battery to its usage history and condition. That is the key evidence if battery health is relevant to the incident.
+    ru: Журнал батареи — это структурированная запись, связывающая конкретную батарею с историей использования и состоянием. Это ключевое доказательство, если здоровье батареи важно для разбора инцидента.
+  distractorRationales:
+    a:
+      lv: Rēķins pierāda komerciālo darbu, nevis baterijas stāvokli.
+      en: An invoice proves the commercial job, not battery condition.
+      ru: Счёт подтверждает коммерческую работу, но не состояние батареи.
+    c:
+      lv: Sociālo tīklu ieraksts nav uzticams tehnisks ieraksts.
+      en: A social-media post is not a reliable technical record.
+      ru: Пост в соцсетях не является надёжной технической записью.
+    d:
+      lv: Iepakojums var identificēt modeli, bet ne konkrētās baterijas ekspluatācijas stāvokli.
+      en: Packaging may identify the product model, but not the in-service condition of that battery.
+      ru: Коробка может идентифицировать модель, но не эксплуатационное состояние конкретной батареи.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/ — reporting and operator guidance; docs/knowledge/training-guides/ — practical post-flight documentation and safety recordkeeping
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-019
+  stem:
+    lv: Kāda ir labākā tūlītējā darbība pēc drona trieciena bez cietušajiem, tiklīdz vieta ir droša?
+    en: What is the best immediate action after a non-injury drone impact, once the site is safe?
+    ru: Какое лучшее немедленное действие после удара дрона без пострадавших, когда площадка уже безопасна?
+  options:
+  - id: a
+    text:
+      lv: Uzlādēt bateriju, lai redzētu, vai tā vēl darbojas.
+      en: Recharge the battery to see whether it still works.
+      ru: Зарядить батарею, чтобы проверить, работает ли она.
+  - id: b
+    text:
+      lv: Uzņemt vietas foto un saglabāt žurnālus pirms sakopšanas.
+      en: Take scene photos and preserve logs before cleanup.
+      ru: Сделать фото места и сохранить логи до уборки.
+  - id: c
+    text:
+      lv: Dzēst video, lai aizsargātu privātumu.
+      en: Delete the footage to protect privacy.
+      ru: Удалить видео ради защиты приватности.
+  - id: d
+    text:
+      lv: Nomainīt propelleru, lai dronu varētu uzreiz notestēt vēlreiz.
+      en: Repair the propeller so the aircraft can be tested again.
+      ru: Заменить винт и сразу повторно протестировать аппарат.
+  correctOptionId: b
+  explanation:
+    lv: 'Kad vieta ir droša, nākamā prioritāte ir saglabāt pierādījumus: vietas foto, lietotnes žurnālus, brīdinājumus, baterijas identitāti un laika līnijas detaļas, pirms tie pazūd.'
+    en: 'Once the site is safe, the next priority is to preserve evidence: scene photos, app logs, warnings, battery identity, and timeline details before they disappear.'
+    ru: 'После обеспечения безопасности следующая задача — сохранить доказательства: фото места, логи приложения, предупреждения, идентификацию батареи и детали хронологии до того, как они исчезнут.'
+  distractorRationales:
+    a:
+      lv: Uzlādēšana maina pierādījumu stāvokli un var radīt papildu drošības risku.
+      en: Recharging changes the evidence state and can add safety risk.
+      ru: Зарядка меняет состояние доказательства и добавляет риск.
+    c:
+      lv: Svarīgie dati vispirms jāsaglabā; privātuma apstrāde seko juridiskajam procesam.
+      en: Relevant data should be preserved first; privacy handling follows the legal and operational process.
+      ru: Сначала нужно сохранить значимые данные; вопросы приватности решаются в рамках правового и операционного процесса.
+    d:
+      lv: Remonts pirms dokumentēšanas iznīcina pierādījumus.
+      en: Repairing first destroys evidence and should not happen before documentation.
+      ru: Ремонт до документирования уничтожает доказательства.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/ — reporting and operator guidance; docs/knowledge/training-guides/ — practical post-flight documentation and safety recordkeeping
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-020
+  stem:
+    lv: Kāds ir svarīgākais pirmais apdrošināšanas jautājums koplietotā vai pārrobežu dronu operācijā?
+    en: What is the most important first insurance question in a shared or cross-border drone operation?
+    ru: Какой самый важный первый страховой вопрос в совместной или трансграничной операции с дроном?
+  options:
+  - id: a
+    text:
+      lv: Kurš izrakstīja rēķinu.
+      en: Who sent the invoice.
+      ru: Кто выставил счёт.
+  - id: b
+    text:
+      lv: Kāda ir īstā operatora struktūra aiz šīs misijas.
+      en: Who is the real operator structure behind the mission.
+      ru: Какова реальная операторская структура этой миссии.
+  - id: c
+    text:
+      lv: Kādā krāsā ir lidaparāts.
+      en: What colour the aircraft is.
+      ru: Какого цвета аппарат.
+  - id: d
+    text:
+      lv: Vai klients ir redzējis kadrējuma piemērus.
+      en: Whether the client has seen the footage style examples.
+      ru: Видел ли клиент примеры стиля съёмки.
+  correctOptionId: b
+  explanation:
+    lv: 'Apdrošināšanas un atbildības analīze sākas ar īsto operatora struktūru: kurš kontrolē misiju, kurš lido, kam pieder lidaparāts un kura polise šo vienošanos patiešām sedz.'
+    en: 'Insurance and liability analysis starts with the real operator structure: who controls the mission, who flies, whose aircraft is used, and which policy actually covers that arrangement.'
+    ru: 'Страховой и liability-анализ начинается с реальной структуры операции: кто контролирует миссию, кто летит, чей аппарат используется и какой полис действительно покрывает именно эту схему.'
+  distractorRationales:
+    a:
+      lv: Rēķins var neatspoguļot īsto operatīvo kontroli.
+      en: The invoice may not reflect the real operational control.
+      ru: Счёт может не отражать реальный operational control.
+    c:
+      lv: Lidaparāta krāsa nav saistīta ar apdrošināšanas struktūru.
+      en: Aircraft colour is irrelevant to insurance structure.
+      ru: Цвет аппарата не имеет отношения к страховой структуре.
+    d:
+      lv: Radošās gaidas nenosaka apdrošināšanas segumu.
+      en: Creative expectations do not determine coverage.
+      ru: Креативные ожидания не определяют coverage.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/latvia-caa/web-snapshots/ — operator and insurance practice in Latvia
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-021
+  stem:
+    lv: Kāpēc frīlansa vai apakšuzņēmēja pilots ir īpašs apdrošināšanas pārbaudes punkts?
+    en: Why is using a freelance or subcontract pilot a special insurance check point?
+    ru: Почему использование freelance или subcontract pilot — особая точка страховой проверки?
+  options:
+  - id: a
+    text:
+      lv: Tāpēc, ka kvalificēti piloti vienmēr pēc noklusējuma ir izslēgti.
+      en: Because qualified pilots are always excluded by default.
+      ru: Потому что qualified pilots всегда исключены по умолчанию.
+  - id: b
+    text:
+      lv: Tāpēc, ka dažas polises sedz tikai nosauktus vai īpaši autorizētus pilotus un var automātiski neiekļaut deleģētu komerciālu izmantošanu.
+      en: Because some policies cover only named or specifically authorised pilots and may not include delegated commercial use automatically.
+      ru: Потому что некоторые полисы покрывают только named или специально authorised pilots и не всегда автоматически включают делегированное коммерческое использование.
+  - id: c
+    text:
+      lv: Tāpēc, ka apakšuzņēmēja piloti nevar lidot ES Atvērtajā kategorijā.
+      en: Because subcontract pilots cannot fly in the EU Open category.
+      ru: Потому что субподрядные пилоты не могут летать в Open category ЕС.
+  - id: d
+    text:
+      lv: Tāpēc, ka apdrošināšana nav svarīga, ja pilotam ir A1/A3.
+      en: Because insurance is irrelevant if the pilot has A1/A3.
+      ru: Потому что страхование не важно, если у пилота есть A1/A3.
+  correctOptionId: b
+  explanation:
+    lv: Pilota kvalifikācija pati par sevi neatbild uz polises tvērumu. Dažām polisēm vajag nosauktus pilotus vai skaidri autorizētu izmantošanu, īpaši komerciālās vai deleģētās struktūrās.
+    en: Pilot qualification alone does not answer policy scope. Some policies require named pilots or explicit authorised-use wording, especially in commercial or delegated structures.
+    ru: Квалификация пилота сама по себе не отвечает на вопрос охвата полиса. Некоторые полисы требуют named pilots или явную авторизацию использования, особенно в коммерческих и делегированных структурах.
+  distractorRationales:
+    a:
+      lv: Kvalificēti piloti nav automātiski izslēgti; jautājums ir polises formulējumā.
+      en: Qualified pilots are not automatically excluded; the issue is policy wording, not a universal ban.
+      ru: Qualified pilots не исключаются автоматически; вопрос в wording полиса, а не в универсальном запрете.
+    c:
+      lv: Apakšuzņēmēja pilots drīkst lidot, ja regulatīvā un apdrošināšanas struktūra ir pareiza.
+      en: Subcontract pilots may legally fly if the regulatory and insurance structure is correct.
+      ru: Субподрядный пилот может летать законно, если regulatory и insurance structure настроены правильно.
+    d:
+      lv: Pilota kompetence neaizvieto apdrošināšanas prasības.
+      en: Pilot competence does not replace insurance coverage requirements.
+      ru: Компетенция пилота не заменяет требований страхового покрытия.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/latvia-caa/web-snapshots/ — operator and insurance practice in Latvia
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-022
+  stem:
+    lv: Atpūtas pilots brīvdienās lido ar 1,2 kg C2 UAS virs neapdzīvota lauksaimniecības lauka. Kāda apdrošināšana Latvijā likumā prasīta kā minimums?
+    en: A recreational pilot operates a 1.2 kg C2 drone over uninhabited farmland on weekends. What minimum insurance is legally required in Latvia?
+    ru: Рекреационный пилот управляет C2-дроном (1,2 кг) над необитаемыми сельхозугодьями по выходным. Какое минимальное страхование требуется в Латвии?
+  options:
+  - id: a
+    text:
+      lv: Nav vajadzīga — atpūtas operācijas ir atbrīvotas.
+      en: No insurance — recreational operations are exempt.
+      ru: Страховка не нужна — рекреационные операции освобождены.
+  - id: b
+    text:
+      lv: €50 000 trešās personas atbildība.
+      en: €50 000 third-party liability.
+      ru: € 50 000 гражданской ответственности.
+  - id: c
+    text:
+      lv: 750 000 SDR — vajadzīgi visiem C2 UAS.
+      en: 750 000 SDR — required for all C2 drones.
+      ru: 750 000 SDR — требуется для всех C2.
+  - id: d
+    text:
+      lv: Tikai korpusa apdrošināšana — obligātā atbildība ir komerciāliem operatoriem.
+      en: Hull insurance only — mandatory liability is for commercial operators.
+      ru: Только страховка корпуса — гражданская ответственность для коммерческих операторов.
+  correctOptionId: b
+  explanation:
+    lv: C2 UAS pie 1,2 kg ietilpst A3 kategorijā (līdz 20 kg). MK noteikumi Nr. 447 prasa €50 000 minimālo trešās personas atbildību visiem šīs kategorijas UAS neatkarīgi no atpūtas vai komerciālas izmantošanas. 750 000 SDR slieksnis attiecas uz UAS no 20 līdz 25 kg.
+    en: A C2 drone at 1.2 kg falls under the A3 category (up to 20 kg). Cabinet Regulation No. 447 requires €50 000 minimum third-party liability for all drones in this category, regardless of recreational or commercial use. The 750 000 SDR threshold applies to drones between 20 and 25 kg.
+    ru: C2 дрон 1,2 кг относится к A3 (до 20 кг). Постановление КМ № 447 требует €50 000 гражданской ответственности для всех дронов этой категории — независимо от рекреационного использования. 750 000 SDR — для дронов C3/C4 в диапазоне 20–25 кг.
+  distractorRationales:
+    a:
+      lv: Atpūtas izmantošana Latvijā nav izņēmums. Atbrīvoti tikai C0 UAS zem 250 g.
+      en: Recreational use is not an exemption in Latvia. Only C0 drones under 250 g are exempt.
+      ru: В Латвии рекреационное использование не является основанием для освобождения. Исключение только для C0 менее 250 г.
+    c:
+      lv: 750 000 SDR attiecas uz C3/C4 UAS 20–25 kg klāstā. 1,2 kg UAS ir krietni zem šī sliekšņa.
+      en: 750 000 SDR applies to C3/C4 drones in the 20–25 kg range. A 1.2 kg drone is well below this threshold.
+      ru: 750 000 SDR применяется к C3/C4 в диапазоне 20–25 кг. Дрон 1,2 кг находится значительно ниже этого порога.
+    d:
+      lv: Korpusa apdrošināšana ir fakultatīva un sedz pašu UAS. Obligātā atbildības apdrošināšana prasīta trešās personas zaudējumiem neatkarīgi no operācijas komerciālā rakstura.
+      en: Hull insurance is optional and covers the drone itself. Mandatory liability insurance is required for third-party damage regardless of the operation's commercial nature.
+      ru: Страховка корпуса — дополнительная и добровольная. Гражданская ответственность обязательна вне зависимости от коммерческого характера.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Latvia insurance guidance
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-023
+  stem:
+    lv: Pilota UAS lidojumā sabrūk un tiek iznīcināts. Vienīgā polise ir obligātā trešās personas atbildība. Kādas izmaksas tā sedz?
+    en: A pilot's drone crashes and is destroyed during a flight. The mandatory third-party liability policy is the only insurance held. What costs does the policy cover?
+    ru: Дрон пилота разбивается и уничтожается в полёте. Единственный действующий полис — обязательная гражданская ответственность. Что покрывается?
+  options:
+  - id: a
+    text:
+      lv: UAS nomaiņas izmaksas.
+      en: The cost of replacing the drone.
+      ru: Замена дрона.
+  - id: b
+    text:
+      lv: Jebkurus miesas bojājumus vai mantas zaudējumus, kas nodarīti trešām personām lidojuma laikā.
+      en: Any bodily injury or property damage caused to third parties during the flight.
+      ru: Телесный вред или ущерб имуществу третьих лиц, причинённые в ходе полёта.
+  - id: c
+    text:
+      lv: Gan UAS nomaiņu, gan trešās personas zaudējumus.
+      en: The cost of replacing the drone and any third-party damage.
+      ru: Замена дрона и ущерб третьим лицам.
+  - id: d
+    text:
+      lv: Neko — polise aktivizējas tikai komerciāliem lidojumiem.
+      en: Nothing — the policy only activates for commercial flights.
+      ru: Ничего — полис активируется только при коммерческих полётах.
+  correctOptionId: b
+  explanation:
+    lv: Obligātā trešās personas atbildības polise sedz miesas bojājumus un mantas zaudējumus, kas nodarīti citiem. Tā skaidri nesedz bojājumus pašam UAS (korpuss). Lai atgūtu iznīcinātā UAS izmaksas, vajadzīga atsevišķa korpusa apdrošināšanas polise.
+    en: The mandatory third-party liability policy covers bodily injury and property damage caused to others. It explicitly does not cover damage to the operator's own aircraft (hull). To recover the cost of a destroyed drone, a separate hull insurance policy is required.
+    ru: Обязательный полис гражданской ответственности покрывает вред жизни, здоровью и имуществу третьих лиц. Он не покрывает ущерб дрону оператора — это имущественное страхование (корпус), требующее отдельного полиса.
+  distractorRationales:
+    a:
+      lv: Obligātā polise nesedz paša UAS. Tas ir korpusa bojājums un prasa korpusa apdrošināšanu.
+      en: The mandatory policy does not cover the operator's own drone. This is hull damage and requires hull insurance.
+      ru: Обязательный полис не покрывает дрон оператора. Для этого нужна страховка корпуса.
+    c:
+      lv: Tikai trešās personas daļa segta no obligātās polises. UAS nomaiņas izmaksas prasa atsevišķu korpusa segumu.
+      en: Only the third-party damage portion is covered by the mandatory policy. The drone replacement cost requires separate hull cover.
+      ru: Только ущерб третьим лицам покрывается обязательным полисом. Замена дрона требует отдельной страховки корпуса.
+    d:
+      lv: Obligātā polise attiecas uz visiem legāliem lidojumiem, gan atpūtas, gan komerciāliem.
+      en: The mandatory policy applies to all legal flights, recreational and commercial alike.
+      ru: Обязательный полис распространяется на все законные полёты — рекреационные и коммерческие.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Latvia insurance guidance
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-024
+  stem:
+    lv: Komerciāls UAS pilots sabrukumā zaudē aparātu un €4 000 kino kameru. Viņam ir obligātā trešās personas atbildība un korpusa apdrošināšana (ar €300 pašrisku). Kas tiek segts?
+    en: A commercial drone pilot loses their aircraft and a €4,000 cinema camera in a crash. They hold mandatory third-party liability and hull insurance (with a €300 deductible). What is covered?
+    ru: Коммерческий пилот теряет дрон и кинокамеру €4 000 при крушении. Есть обязательный полис и страховка корпуса (франшиза €300). Что покрывается?
+  options:
+  - id: a
+    text:
+      lv: Tikai UAS izmaksas — korpuss sedz aparātu, ne kameru.
+      en: The drone cost only — hull covers the aircraft, not the camera.
+      ru: Только стоимость дрона — корпус покрывает аппарат, не камеру.
+  - id: b
+    text:
+      lv: UAS izmaksas mīnus €300 pašrisks — kamerai vajadzīgs atsevišķs kravas segums.
+      en: The drone cost minus the €300 deductible — the camera requires separate payload cover.
+      ru: Стоимость дрона за вычетом €300 франшизы — камера требует отдельной страховки груза.
+  - id: c
+    text:
+      lv: Gan UAS, gan kamera — korpusa apdrošināšana sedz visu UAS piestiprināto aprīkojumu.
+      en: Both the drone and camera — hull insurance covers all equipment attached to the drone.
+      ru: Дрон и камера — страховка корпуса покрывает всё смонтированное оборудование.
+  - id: d
+    text:
+      lv: Neko — sabrukumi pilota kļūdas dēļ ir izslēgti no korpusa polises.
+      en: Neither — crashes caused by pilot error are excluded from hull policies.
+      ru: Ничего — крушения по вине пилота исключены из страховки корпуса.
+  correctOptionId: b
+  explanation:
+    lv: Korpusa apdrošināšana sedz aparātu (UAS) mīnus pašrisks. Kino kamera ir lietderīgā krava un prasa atsevišķu kravas apdrošināšanas polisi vai piesaisti. Korpuss automātiski neattiecas uz piestiprinātu aprīkojumu. Pilota kļūda parasti nav izslēgts gadījums vairumā korpusa polišu — fly-away un sabrukumi ir kodola segumi.
+    en: Hull insurance covers the aircraft (drone) minus the deductible. The cinema camera is payload and requires a separate payload insurance policy or rider. Hull does not automatically extend to mounted equipment. Pilot error is typically not an exclusion in most hull policies — fly-away and crashes are the core covered events.
+    ru: Страховка корпуса покрывает дрон (аппарат) за вычетом франшизы. Кинокамера — груз и требует отдельного полиса. Ошибка пилота, как правило, не является исключением в страховке корпуса — крушения и fly-away являются основными покрываемыми рисками.
+  distractorRationales:
+    a:
+      lv: Formulējums daļēji pareizs — korpuss sedz UAS — bet izlaiž pašrisku, kas samazina izmaksu.
+      en: The formulation is partially correct — hull covers the drone — but omits the deductible, which reduces the payout.
+      ru: Формулировка неточная — корпус покрывает дрон, но не вычитает только франшизу. Более полный ответ указывает на франшизу.
+    c:
+      lv: Korpusa polises sedz pašu aparātu. Lietderīgā krava (kamera, sensors, gimbāls) prasa atsevišķu apdrošināšanu, ja vien tā nav skaidri iekļauta polises grafikā.
+      en: Hull policies cover the aircraft itself. Payload (camera, sensor, gimbal) requires separate insurance unless explicitly included in the policy schedule.
+      ru: Страховка корпуса покрывает раму дрона. Груз (камера, гимбал, датчики) требует отдельного полиса, если явно не включён в расписание полиса.
+    d:
+      lv: Korpusa apdrošināšana ir tieši paredzēta sabrukuma un fly-away gadījumiem, ieskaitot pilota kļūdas. Tīši bojājumi vai rupja neuzmanība var būt izslēgti, bet sabrukumi ir kodola segums.
+      en: Hull insurance is specifically designed to cover crash and fly-away events, including pilot error. Intentional damage or gross negligence may be excluded, but crashes are a core covered peril.
+      ru: Страховка корпуса разработана именно для покрытия крушений и fly-away, включая случаи ошибки пилота. Исключения касаются умышленного ущерба или грубой халатности.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Latvia insurance guidance
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-025
+  stem:
+    lv: Latvijas operators uzņemas komerciālu inspekcijas darbu Vācijā uz divām nedēļām. Viņa Latvijas trešās personas atbildības polise ir derīga visā ES. Kāds papildu segums būtu jāapsver?
+    en: A Latvian operator takes a commercial inspection job in Germany for two weeks. Their Latvian third-party liability policy is valid EU-wide. What additional cover should they consider?
+    ru: Латвийский оператор выполняет коммерческое инспекционное задание в Германии на две недели. Латвийский полис гражданской ответственности действителен в ЕС. Что дополнительно рассмотреть?
+  options:
+  - id: a
+    text:
+      lv: Papildu segums nav vajadzīgs — ES derīgums nozīmē pilnu segumu.
+      en: No additional cover — EU-wide validity means full coverage.
+      ru: Ничего — действительность в ЕС означает полное покрытие.
+  - id: b
+    text:
+      lv: Vācijai specifiska UAS reģistrācija un ES ceļojuma paplašinājums, jo Vācija komerciāliem UAS operatoriem uzliek papildu prasības virs ES minimumiem.
+      en: A German-specific UAS registration and an EU travel extension, because Germany imposes additional commercial requirements beyond EU minimums.
+      ru: Расширение для поездок и проверку немецких требований к коммерческим операторам.
+  - id: c
+    text:
+      lv: Tikai profesionālā atbildība — trešās personas jau segta.
+      en: Professional liability only — third-party is already covered.
+      ru: Только профессиональную ответственность — гражданская ответственность уже покрыта.
+  - id: d
+    text:
+      lv: Operāciju Vācijā ar Latvijas licenci legāli veikt nedrīkst.
+      en: The operation cannot be conducted legally in Germany with a Latvian licence.
+      ru: Операция незаконна — латвийская лицензия не признаётся в Германии.
+  correctOptionId: b
+  explanation:
+    lv: Latvijas trešās personas atbildības polise ir derīga visā ES, bet Vācija komerciāliem UAS operatoriem uzliek papildu prasības, kas var pārsniegt ES minimumus. ES ceļojuma paplašinājums apstrādā jurisdikcijas specifiskās prasības un vienkāršo vietējo prasību izskatīšanu. Pilotam jāpārbauda arī vietējās reģistrācijas prasības konkrētajam operācijas tipam.
+    en: The Latvian third-party liability policy is EU-valid, but Germany imposes additional requirements on commercial UAS operators that may exceed EU minimums. An EU travel extension handles the jurisdiction-specific demands and simplifies local claims handling. The pilot should also verify local registration requirements for the specific operation type.
+    ru: Латвийский полис гражданской ответственности действителен в ЕС, но Германия предъявляет к коммерческим операторам требования сверх минимумов ЕС. Расширение для поездок упрощает урегулирование претензий в местной юрисдикции. Следует также проверить местные требования к регистрации операторов.
+  distractorRationales:
+    a:
+      lv: ES derīgums sedz minimālo trešās personas atbildību. Tas neaptver Vācijas papildu komerciālā operatora prasības.
+      en: EU-wide validity covers the minimum third-party liability. It does not address Germany's additional commercial operator requirements.
+      ru: Действительность в ЕС покрывает минимум гражданской ответственности. Она не охватывает дополнительные требования Германии к коммерческим операторам.
+    c:
+      lv: Profesionālā atbildība ir laba papildināšana, bet neaptver Vācijai specifisko atbilstības slāni. ES ceļojuma paplašinājums šeit aktuālāks.
+      en: Professional liability is a good addition but does not address the Germany-specific compliance layer. An EU travel extension is the more relevant addition.
+      ru: Профессиональная ответственность уместна, но расширение для поездок более актуально для решения немецких юрисдикционных требований.
+    d:
+      lv: Latvijas A1/A3 vai A2 sertifikāti atzīti visā ES pēc Atvērtās kategorijas savstarpējās atzīšanas. Operācija legāla, ievērojot vietējās prasības.
+      en: Latvian A1/A3 or A2 certificates are recognised across the EU under Open category mutual recognition. The operation is legal subject to local requirements.
+      ru: Квалификации A1/A3 и A2 признаются по всему ЕС на основе взаимного признания Открытой категории. Операция законна с соблюдением местных требований.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Latvia insurance guidance
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-026
+  stem:
+    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Kāds ir minimālais civiltiesiskās apdrošināšanas segums Latvijā A1 (C1) lidojumiem?'
+    en: 'Before flight, the pilot reviews this principle again: What is the minimum third-party liability cover in Latvia for A1 (C1) flights?'
+    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Каков минимум страхования гражданской ответственности в Латвии для полётов A1 (C1)?'
+  options:
+  - id: a
+    text:
+      lv: 1 000 EUR.
+      en: €1 000.
+      ru: 1 000 EUR.
+  - id: b
+    text:
+      lv: Nav obligāts.
+      en: Not required.
+      ru: Не обязателен.
+  - id: c
+    text:
+      lv: 750 000 SDR.
+      en: 750 000 SDR.
+      ru: 750 000 SDR.
+  - id: d
+    text:
+      lv: 50 000 EUR.
+      en: €50 000.
+      ru: 50 000 EUR.
+  correctOptionId: d
+  explanation:
+    lv: 'MK noteikumi Nr. 447 nosaka 50 000 EUR minimumu A1 (C1), A2 un A3 līdz 20 kg masai. Bezklasveida < 250 g (C0) lidojumiem apdrošināšana nav obligāta.
+
+      '
+    en: 'Cabinet Reg. No. 447 sets a €50 000 minimum for A1 (C1), A2 and A3 up to 20 kg. C0 (< 250 g) flights are exempt.
+
+      '
+    ru: 'Правила КМ № 447 устанавливают минимум 50 000 EUR для A1 (C1), A2 и A3 до 20 кг. C0 (< 250 г) от обязательного страхования освобождён.
+
+      '
+  distractorRationales:
+    a:
+      lv: 1 000 EUR ir krietni zem MK Nr. 447 prasītā minimuma. Tāds segums neapmierina regulu.
+      en: €1 000 is far below the minimum required by Cabinet Reg. No. 447. Such cover does not satisfy the regulation.
+      ru: 1 000 EUR — значительно ниже минимума, требуемого Правилами КМ № 447. Такое покрытие не удовлетворяет регламенту.
+    b:
+      lv: C1 (un visas pārējās klases virs C0) Latvijā obligāti pakļaujas civiltiesiskās apdrošināšanas prasībai.
+      en: C1 (and every class above C0) is mandatorily subject to the third-party insurance requirement in Latvia.
+      ru: C1 (и все классы выше C0) в Латвии обязательно подлежат требованию страхования гражданской ответственности.
+    c:
+      lv: 750 000 SDR ir minimums Specifiskās kategorijas un A3 lielmasas (20–25 kg) lidojumiem. A1 (C1) prasība ir mazāka — 50 000 EUR.
+      en: 750 000 SDR is the minimum for the Specific category and A3 heavy-mass (20–25 kg) flights. The A1 (C1) threshold is lower — €50 000.
+      ru: 750 000 SDR — минимум для Специальной категории и тяжёлых A3 (20–25 кг). Для A1 (C1) порог ниже — 50 000 EUR.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 (10.07.2018)
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-027
+  stem:
+    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Vai obligātā apdrošināšana sedz paša UAS bojājumus (hull)?
+    en: Which option most accurately matches this rule? Does mandatory insurance cover damage to the UAS itself (hull)?
+    ru: Какой вариант точнее всего соответствует этому правилу? Покрывает ли обязательное страхование ущерб самому UAS (hull)?
+  options:
+  - id: a
+    text:
+      lv: Tikai komerciālajiem operatoriem.
+      en: Only for commercial operators.
+      ru: Только для коммерческих операторов.
+  - id: b
+    text:
+      lv: Tikai tad, ja UAS sver vairāk par 4 kg.
+      en: Only if the UAS exceeds 4 kg.
+      ru: Только если UAS тяжелее 4 кг.
+  - id: c
+    text:
+      lv: Nē — obligātā apdrošināšana sedz tikai trešo personu zaudējumus.
+      en: No — mandatory insurance covers only third-party loss.
+      ru: Нет — обязательное страхование покрывает только третьих лиц.
+  - id: d
+    text:
+      lv: Jā, vienmēr.
+      en: Yes, always.
+      ru: Да, всегда.
+  correctOptionId: c
+  explanation:
+    lv: 'Obligātā polise sedz trešo personu dzīvības, veselības un mantas zaudējumus. Paša UAS bojājumi ir brīvprātīgs hull-segums.
+
+      '
+    en: 'The mandatory policy covers third-party bodily and property loss. Damage to the UAS itself is voluntary hull cover.
+
+      '
+    ru: 'Обязательный полис покрывает вред жизни/здоровью/имуществу третьих лиц. Ущерб самому UAS — добровольное hull-страхование.
+
+      '
+  distractorRationales:
+    a:
+      lv: Komerciālā/atpūtas nošķiršana neietekmē obligātās polises saturu — visos gadījumos tā sedz tikai trešās personas.
+      en: The commercial / recreational split does not change the scope of the mandatory policy — in every case it covers only third parties.
+      ru: Различие коммерческого и развлекательного использования не меняет объём обязательного полиса — он всегда покрывает только третьих лиц.
+    b:
+      lv: UAS masa neietekmē hull-seguma jautājumu — obligātā polise nesedz paša aparāta bojājumu neatkarīgi no svara.
+      en: UAS mass does not change the hull issue — the mandatory policy does not cover damage to the aircraft itself, regardless of weight.
+      ru: Масса UAS не влияет на hull — обязательный полис не покрывает повреждение самого аппарата вне зависимости от веса.
+    d:
+      lv: Obligātā polise nesedz paša UAS bojājumus. Hull-segums ir atsevišķs, brīvprātīgs polises veids.
+      en: The mandatory policy does not cover damage to the UAS itself. Hull cover is a separate voluntary product.
+      ru: Обязательный полис не покрывает ущерб самому UAS. Hull-страхование — отдельный, добровольный продукт.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-028
+  stem:
+    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Kuram UAS lidojumam Latvijā apdrošināšana NAV obligāta?
+    en: Scenario check — choose the correct answer. For which UAS flight in Latvia is insurance NOT mandatory?
+    ru: Проверка ситуации — выбери правильный ответ. Для какого полёта UAS в Латвии страхование НЕ обязательно?
+  options:
+  - id: a
+    text:
+      lv: A1 ar C1 dronu, ja pilots lido virs sava zemes gabala.
+      en: A1 with a C1 drone, if the pilot flies above their own land.
+      ru: A1 с C1, если полёт над своим земельным участком.
+  - id: b
+    text:
+      lv: C0 (< 250 g) atpūtas lidojums.
+      en: C0 (< 250 g) recreational flight.
+      ru: Развлекательный полёт C0 (< 250 г).
+  - id: c
+    text:
+      lv: A2 ar C2 dronu.
+      en: A2 with a C2 drone.
+      ru: A2 с C2-дроном.
+  - id: d
+    text:
+      lv: A3 ar C3 dronu.
+      en: A3 with a C3 drone.
+      ru: A3 с C3-дроном.
+  correctOptionId: b
+  explanation:
+    lv: 'C0 (< 250 g) lidojumiem MK noteikumi Nr. 447 neuzliek obligāto apdrošināšanu. Tomēr brīvprātīgi to ieteicams iegādāties.
+
+      '
+    en: 'C0 (< 250 g) flights are exempt from the mandatory insurance under Cabinet Reg. No. 447. Voluntary cover is still recommended.
+
+      '
+    ru: 'Полёты C0 (< 250 г) освобождены от обязательного страхования по Правилам КМ № 447. Добровольное страхование всё же рекомендуется.
+
+      '
+  distractorRationales:
+    a:
+      lv: Lidošana virs sava zemes gabala neatbrīvo no apdrošināšanas prasības. MK Nr. 447 attiecas uz operāciju, ne uz zemes īpašumu.
+      en: Flying over one's own land does not waive the insurance requirement. Cabinet Reg. No. 447 applies to the operation, not to land ownership.
+      ru: Полёт над собственным участком не освобождает от страхования. Правила КМ № 447 касаются операции, а не права собственности.
+    c:
+      lv: A2 ar C2 obligāti pakļaujas 50 000 EUR seguma prasībai. C2 masa ir < 4 kg, bet apdrošināšana joprojām obligāta.
+      en: A2 with C2 is mandatorily subject to the €50 000 cover requirement. C2 mass is < 4 kg but insurance is still required.
+      ru: A2 с C2 обязательно подлежит требованию покрытия 50 000 EUR. Масса C2 < 4 кг, но страховка всё равно обязательна.
+    d:
+      lv: A3 ar C3 ir tieši tā situācija, kur apdrošināšana ir obligāta — drons sver līdz 25 kg un var radīt nopietnu kaitējumu.
+      en: A3 with C3 is exactly the case where insurance is mandatory — the drone may weigh up to 25 kg and can cause serious harm.
+      ru: A3 с C3 — именно тот случай, когда страхование обязательно — дрон может весить до 25 кг и нанести серьёзный ущерб.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 (10.07.2018) — exemption for C0
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-029
+  stem:
+    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Kāds ir minimālais segums Specifiskās kategorijas UAS lidojumam < 500 kg?'
+    en: 'Before flight, the pilot reviews this principle again: What is the minimum cover for a Specific-category UAS flight under 500 kg?'
+    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Каков минимум покрытия для полёта UAS Специальной категории < 500 кг?'
+  options:
+  - id: a
+    text:
+      lv: 50 000 EUR.
+      en: €50 000.
+      ru: 50 000 EUR.
+  - id: b
+    text:
+      lv: 1 000 000 EUR.
+      en: €1 000 000.
+      ru: 1 000 000 EUR.
+  - id: c
+    text:
+      lv: 100 000 EUR.
+      en: €100 000.
+      ru: 100 000 EUR.
+  - id: d
+    text:
+      lv: 750 000 SDR.
+      en: 750 000 SDR.
+      ru: 750 000 SDR.
+  correctOptionId: d
+  explanation:
+    lv: 'Specifiskās kategorijas operatoriem ar UAS < 500 kg piemēro Regulu (EK) 785/2004 — 750 000 SDR.
+
+      '
+    en: 'Specific-category operators with UAS < 500 kg fall under Reg (EC) 785/2004 — 750 000 SDR.
+
+      '
+    ru: 'Операторы Специальной категории с UAS < 500 кг подпадают под Регл. (ЕС) 785/2004 — 750 000 SDR.
+
+      '
+  distractorRationales:
+    a:
+      lv: 50 000 EUR ir Atvērtās kategorijas A1/A2/A3 limits (līdz 20 kg). Specifiskā prasība ir vairākas reizes lielāka.
+      en: €50 000 is the Open-category A1/A2/A3 limit (up to 20 kg). The Specific category demands several times more.
+      ru: 50 000 EUR — лимит для Открытой A1/A2/A3 (до 20 кг). В Специальной категории требование в несколько раз выше.
+    b:
+      lv: 1 000 000 EUR ir tuvu pareizajai summai pēc valūtas konvertācijas, bet regulā minimums ir definēts SDR vienībās — 750 000 SDR.
+      en: €1 000 000 is close after currency conversion, but the regulatory minimum is defined in SDR units — 750 000 SDR.
+      ru: 1 000 000 EUR близко после конвертации, но регуляторный минимум определён в SDR — 750 000 SDR.
+    c:
+      lv: 100 000 EUR ir nepietiekami pat Atvērtās kategorijas augstākajām masām (20–25 kg) — Specifiskās slieksnis ir krietni augstāks.
+      en: €100 000 is insufficient even for upper-mass Open category (20–25 kg) — the Specific threshold is much higher.
+      ru: 100 000 EUR недостаточны даже для верхней массы Открытой (20–25 кг) — порог Специальной значительно выше.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004 — air carriers' liability minima
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-030
+  stem:
+    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Kas notiek, ja CAA Latvia inspektors konstatē, ka operatoram nav apdrošināšanas?
+    en: Which option most accurately matches this rule? What happens if a CAA Latvia inspector finds an operator without insurance?
+    ru: Какой вариант точнее всего соответствует этому правилу? Что происходит, если инспектор CAA Latvia обнаружит, что у оператора нет страховки?
+  options:
+  - id: a
+    text:
+      lv: Nekādu seku — civiltiesiska atbildība ir brīvprātīga.
+      en: No consequences — third-party liability is voluntary.
+      ru: Никаких последствий — гражданская ответственность добровольна.
+  - id: b
+    text:
+      lv: Operatoram tiek dotas 14 dienas, lai noformētu polisi pēc fakta.
+      en: The operator is given 14 days to obtain the policy after the fact.
+      ru: Оператору дают 14 дней оформить полис задним числом.
+  - id: c
+    text:
+      lv: Operators saņem administratīvo sodu un nedrīkst lidot.
+      en: The operator is fined and not allowed to fly.
+      ru: Оператор получает административный штраф и не вправе летать.
+  - id: d
+    text:
+      lv: Inspektors ieteic apdrošināšanu un atstāj operatoru lidot.
+      en: The inspector recommends insurance and lets the operator fly on.
+      ru: Инспектор рекомендует оформить и позволяет летать дальше.
+  correctOptionId: c
+  explanation:
+    lv: 'Bez derīgas civiltiesiskās polises operators nav kvalificēts lidojumam. Lidojums tiek pārtraukts, un piemēro administratīvo sodu.
+
+      '
+    en: 'Without a valid third-party policy the operator is not qualified to fly. The flight is grounded and an administrative fine is imposed.
+
+      '
+    ru: 'Без действующего полиса оператор не имеет права летать. Полёт прекращается и налагается административный штраф.
+
+      '
+  distractorRationales:
+    a:
+      lv: Civiltiesiskā atbildība UAS operatoram ir obligāta saskaņā ar MK Nr. 447. Tā nav brīvprātīga.
+      en: Third-party liability for UAS operators is mandatory under Cabinet Reg. No. 447. It is not voluntary.
+      ru: Гражданская ответственность для оператора UAS обязательна по Правилам КМ № 447. Это не добровольно.
+    b:
+      lv: Polise jābūt spēkā lidojuma brīdī. Retroaktīvā noformēšana neaizvieto prasību iepriekš būt apdrošinātam.
+      en: The policy must be valid at the moment of flight. Retroactive issuance does not satisfy the prior-coverage requirement.
+      ru: Полис должен действовать на момент полёта. Оформление задним числом не заменяет требование иметь страховку заранее.
+    d:
+      lv: Apdrošināšana nav rekomendācija, bet obligāta prasība. Inspektors nav pilnvarots ļaut turpināt lidojumu bez polises.
+      en: Insurance is not a recommendation but a mandatory requirement. An inspector has no authority to let the flight continue without a policy.
+      ru: Страховка — не рекомендация, а обязательное требование. Инспектор не вправе разрешить продолжить полёт без полиса.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Latvian Aviation Law; MK noteikumi Nr. 447
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-031
+  stem:
+    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Pilots ar obligāto civiltiesiskās atbildības polisi un hull apdrošināšanu (€200 pašriska) zaudē dronu lidojuma laikā — tas krīt kanālā, tiek applūdināts un iznīcināts. Neviens nav ievainots. Kādi zaudējumi tiek atlīdzināti?
+    en: Scenario check — choose the correct answer. A pilot with mandatory third-party liability insurance and hull insurance (€200 deductible) loses their drone mid-flight — it falls into a canal, floods, and is destroyed. No one was injured. Which losses are covered?
+    ru: Проверка ситуации — выбери правильный ответ. У пилота есть обязательное страхование ответственности перед третьими лицами и страхование корпуса (€200 франшизы). Дрон падает в канал, тонет и уничтожен. Никто не пострадал. Какие убытки покрываются?
+  options:
+  - id: a
+    text:
+      lv: Abas polises kopā atlīdzina pilnu drona vērtību.
+      en: Both policies together cover the full drone value.
+      ru: Оба полиса вместе покрывают полную стоимость дрона.
+  - id: b
+    text:
+      lv: Obligātā polise atlīdzina drona vērtību; hull polise nav nepieciešama.
+      en: The mandatory policy covers the drone value; hull is not needed.
+      ru: Обязательный полис покрывает стоимость дрона; hull не нужен.
+  - id: c
+    text:
+      lv: Neviena no polisēm — ūdens bojājums ir izslēgts no visām polisēm.
+      en: Neither policy — water damage is excluded from all policies.
+      ru: Ни один полис — водный ущерб исключён из всех полисов.
+  - id: d
+    text:
+      lv: Hull polise atlīdzina drona vērtību mīnus €200 pašrisks; obligātā polise neko neatlīdzina (nav trešo personu zaudējumu).
+      en: Hull insurance covers the drone value minus the €200 deductible; mandatory policy covers nothing (no third-party loss).
+      ru: Страхование корпуса покрывает стоимость дрона минус €200 франшизы; обязательный полис ничего не покрывает (нет ущерба третьим лицам).
+  correctOptionId: d
+  explanation:
+    lv: 'Hull polise sedz drona bojājumus — tā atlīdzinās drona aizstāšanas izmaksas mīnus €200 pašrisks. Obligātā civiltiesiskās atbildības polise sedz trešo personu zaudējumus — šajā gadījumā neviens nav ievainots un nav trešo personu īpašuma bojājumu, tāpēc obligātā polise neko neizmaksā.
+
+      '
+    en: 'Hull insurance covers damage to the drone — it will pay the drone replacement cost minus the €200 deductible. The mandatory third-party liability policy covers third-party losses — in this case no one was injured and there was no third-party property damage, so the mandatory policy pays nothing.
+
+      '
+    ru: 'Страхование корпуса покрывает ущерб дрону — оно возместит стоимость замены дрона за вычетом €200 франшизы. Обязательный полис покрывает ущерб третьим лицам — в данном случае никто не пострадал и ущерба имуществу третьих лиц нет, поэтому обязательный полис ничего не платит.
+
+      '
+  distractorRationales:
+    a:
+      lv: Abas polises kopā neatlīdzina "pilnu vērtību" — obligātā polise neko neizmaksā (nav trešo personu zaudējumu), un hull polise izmaksā drona vērtību mīnus pašrisks.
+      en: Both policies together do not cover "full value" — the mandatory policy pays nothing (no third-party loss), and hull pays the drone value minus deductible.
+      ru: Оба полиса вместе не покрывают «полную стоимость» — обязательный ничего не платит (нет ущерба третьим лицам), hull платит стоимость дрона минус франшиза.
+    b:
+      lv: Obligātā polise nekad nesedz drona bojājumus. Hull polise ir tas, kas atlīdzina drona vērtību — obligātā ir tikai par trešo personu zaudējumiem.
+      en: The mandatory policy never covers drone damage. Hull is what covers the drone value — mandatory covers only third-party losses.
+      ru: Обязательный полис никогда не покрывает ущерб дрону. Hull покрывает стоимость дрона — обязательный только третьих лиц.
+    c:
+      lv: Hull polise parasti ietver ūdens bojājumus. Pārbaudiet polises nosacījumus, bet ūdens bojājums nav automātiski izslēgts.
+      en: Hull policies typically include water damage. Check the policy terms, but water damage is not automatically excluded.
+      ru: Полисы hull обычно включают водный ущерб. Проверьте условия полиса, но водный ущерб не исключается автоматически.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — hull vs third-party insurance
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision
+- id: in-032
+  stem:
+    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Operators ar C3 dronu (22 kg) plāno A3 operāciju. Kāds ir minimālais civiltiesiskās atbildības segums?'
+    en: 'Before flight, the pilot reviews this principle again: An operator with a C3 drone (22 kg) plans an A3 operation. What is the minimum third-party liability cover?'
+    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Оператор с дроном C3 (22 кг) планирует операцию A3. Каков минимум страхования гражданской ответственности?'
+  options:
+  - id: a
+    text:
+      lv: 750 000 SDR — masa pārsniedz 20 kg.
+      en: 750 000 SDR — mass exceeds 20 kg.
+      ru: 750 000 SDR — масса превышает 20 кг.
+  - id: b
+    text:
+      lv: 1 000 000 EUR — C3 prasa augstāku minimumu.
+      en: €1 000 000 — C3 requires a higher minimum.
+      ru: 1 000 000 EUR — C3 требует более высокого минимума.
+  - id: c
+    text:
+      lv: Nav obligātas apdrošināšanas prasības A3 attālinātos apgabalos.
+      en: No mandatory insurance requirement in remote A3 areas.
+      ru: Нет обязательного страхования в удалённых районах A3.
+  - id: d
+    text:
+      lv: 50 000 EUR — tāpat kā C1 vai C2.
+      en: €50 000 — same as C1 or C2.
+      ru: 50 000 EUR — как для C1 или C2.
+  correctOptionId: a
+  explanation:
+    lv: 'MK noteikumi Nr. 447, pamatojoties uz Reg (EK) 785/2004, nosaka, ka UAS ar masu 20–500 kg (svarāki par 20 kg, bet ne smagāki par 500 kg) prasa minimālo segumu 750 000 SDR. C3 klases droni var sasniegt 25 kg, un 22 kg pārsniedz 20 kg slieksni, tādēļ piemēro augstāku SDR prasību.
+
+      '
+    en: 'Cabinet Regulation No. 447, based on Reg (EC) 785/2004, sets that UAS weighing 20–500 kg (heavier than 20 kg but not exceeding 500 kg) require a minimum cover of 750 000 SDR. C3-class drones can reach 25 kg and 22 kg exceeds the 20 kg threshold, therefore the higher SDR requirement applies.
+
+      '
+    ru: 'Правила КМ № 447, основанные на Регл. (ЕС) 785/2004, устанавливают, что UAS массой 20–500 кг (тяжелее 20 кг, но не более 500 кг) требуют минимального покрытия 750 000 SDR. Дроны класса C3 могут достигать 25 кг, а 22 кг превышает порог 20 кг, поэтому применяется более высокое требование SDR.
+
+      '
+  distractorRationales:
+    b:
+      lv: 1 000 000 EUR nav regulatīvi noteikts minimums Latvijas tiesībās šajā masas kategorijā. Regulā noteikts 750 000 SDR.
+      en: €1 000 000 is not a regulatory minimum under Latvian law for this mass category. The regulation states 750 000 SDR.
+      ru: 1 000 000 EUR не является нормативным минимумом в соответствии с латвийским законодательством для данной весовой категории. В регламенте указано 750 000 SDR.
+    c:
+      lv: Obligātā apdrošināšana ir prasīta visiem UAS ≥ 250 g neatkarīgi no darbības vietas — pilsēta vai lauki.
+      en: Mandatory insurance is required for all UAS ≥ 250 g regardless of the operating area — urban or rural.
+      ru: Обязательное страхование требуется для всех UAS ≥ 250 г независимо от места операции — городского или сельского.
+    d:
+      lv: 50 000 EUR attiecas uz Atvērtajā kategorijā UAS ar masu ≤ 20 kg. 22 kg pārsniedz šo slieksni.
+      en: €50 000 applies to Open-category UAS ≤ 20 kg. 22 kg exceeds this threshold.
+      ru: 50 000 EUR применяется к UAS Открытой категории массой ≤ 20 кг. 22 кг превышает этот порог.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — mass category 20–500 kg
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-033
+  stem:
+    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Latvijas operators vēlas lidot ar savu dronu Vācijā. Vai viņa Latvijas apdrošināšanas polise der ES?
+    en: Which option most accurately matches this rule? A Latvian operator wants to fly their drone in Germany. Is their Latvian insurance policy valid in the EU?
+    ru: Какой вариант точнее всего соответствует этому правилу? Латвийский оператор хочет летать со своим дроном в Германии. Действителен ли его латвийский страховой полис в ЕС?
+  options:
+  - id: a
+    text:
+      lv: Jā, bet tikai Šengenas zonā.
+      en: Yes, but only in the Schengen Area.
+      ru: Да, но только в Шенгенской зоне.
+  - id: b
+    text:
+      lv: Nē — pilotam jāreģistrējas jaunā dalībvalstī pirms katras ārvalstu operācijas.
+      en: No — the pilot must register in the new member state before each foreign operation.
+      ru: Нет — пилот должен зарегистрироваться в новом государстве-члене перед каждой зарубежной операцией.
+  - id: c
+    text:
+      lv: Nē — katrai valstij jābūt atsevišķai vietējai poliserei.
+      en: No — a separate local policy is required for each country.
+      ru: Нет — для каждой страны требуется отдельный местный полис.
+  - id: d
+    text:
+      lv: Jā — ES civiltiesiskās atbildības polises parasti ir spēkā visās ES dalībvalstīs.
+      en: Yes — EU third-party liability policies are generally valid across all EU member states.
+      ru: Да — полисы страхования гражданской ответственности ЕС, как правило, действительны во всех государствах-членах ЕС.
+  correctOptionId: d
+  explanation:
+    lv: 'Reg (EK) 785/2004 ir ES regula, kas nosaka obligāto apdrošināšanu. Polise, kas atbilst šīs regulas minimumam, ir spēkā visās ES dalībvalstīs. Latvijas operators ar polisi, kas atbilst 785/2004 minimumam, var lidot Vācijā. Tomēr jāpārbauda, vai konkrētā polise skaidri norāda ES darbību — dažas polises var ierobežot ģeogrāfisko tvērumu.
+
+      '
+    en: 'Reg (EC) 785/2004 is an EU regulation setting mandatory insurance. A policy meeting this regulation''s minimum is valid across all EU member states. A Latvian operator with a policy meeting the 785/2004 minimum can fly in Germany. However, the specific policy should be checked to confirm EU coverage — some policies may limit geographical scope.
+
+      '
+    ru: 'Регл. (ЕС) 785/2004 — регламент ЕС, устанавливающий обязательное страхование. Полис, соответствующий минимуму этого регламента, действителен во всех государствах-членах ЕС. Латвийский оператор с полисом, отвечающим минимуму 785/2004, может летать в Германии. Однако следует проверить конкретный полис на подтверждение охвата ЕС — некоторые полисы могут ограничивать географический охват.
+
+      '
+  distractorRationales:
+    a:
+      lv: Apdrošināšanas regulācija nav saistīta ar Šengenas zonu — tā ir ceļošanas/vīzu sistēma. ES apdrošināšana attiecas uz ES dalībvalstīm, nevis Šengenas dalībvalstīm.
+      en: Insurance regulation is not tied to the Schengen Area — that is a travel/visa system. EU insurance applies to EU member states, not Schengen states.
+      ru: Страховое регулирование не связано с Шенгенской зоной — это система путешествий/виз. Страхование ЕС применяется к государствам-членам ЕС, а не Шенгенским государствам.
+    b:
+      lv: Reg 2019/947 Art. 41 paredz savstarpējo atzīšanu — operators ar derīgu reģistrāciju vienas dalībvalsts kompetentajā iestādē drīkst darboties visā ES. Reģistrācija citā dalībvalstī nav obligāta.
+      en: Reg 2019/947 Art. 41 provides for mutual recognition — an operator with valid registration in one member state's competent authority may operate throughout the EU. Registration in another member state is not required.
+      ru: Ст. 41 Регл. 2019/947 предусматривает взаимное признание — оператор с действительной регистрацией в компетентном органе одного государства-члена может работать по всему ЕС. Регистрация в другом государстве-члене не требуется.
+    c:
+      lv: Atsevišķa vietēja polise katrai ES valstij nav obligāta, ja esošā polise atbilst 785/2004 ES minimumam un sedz ES teritoriju.
+      en: A separate local policy for each EU country is not required if the existing policy meets the 785/2004 EU minimum and covers EU territory.
+      ru: Отдельный местный полис для каждой страны ЕС не требуется, если существующий полис соответствует минимуму 785/2004 ЕС и покрывает территорию ЕС.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004 — EU-wide liability insurance; Reg 2019/947 Art. 41 — mutual recognition
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-034
+  stem:
+    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Operators drona kļūdas dēļ notriec ielas laternas stabu. Pilsētas pašvaldība iesniedz prasību par 3 200 EUR remonta izmaksām. Kura polise sedz šo?
+    en: Scenario check — choose the correct answer. An operator's drone hits a streetlamp post due to pilot error. The city municipality files a claim for €3,200 repair costs. Which policy covers this?
+    ru: Проверка ситуации — выбери правильный ответ. Дрон оператора сбивает фонарный столб из-за ошибки пилота. Городская муниципальная власть подаёт иск на €3 200 ремонтных расходов. Какой полис покрывает это?
+  options:
+  - id: a
+    text:
+      lv: Hull polise sedz dronam, obligātā polise sedz pašvaldības prasībai.
+      en: Hull covers the drone; mandatory covers the municipality's claim.
+      ru: Hull покрывает дрон; обязательный полис покрывает иск муниципалитета.
+  - id: b
+    text:
+      lv: Hull apdrošināšana — tā sedz visus fiziskos bojājumus.
+      en: Hull insurance — it covers all physical damage.
+      ru: Hull страхование — оно покрывает весь физический ущерб.
+  - id: c
+    text:
+      lv: Civiltiesiskās atbildības (obligātā) polise — tā sedz trešo personu īpašuma bojājumus.
+      en: Third-party liability (mandatory) policy — it covers third-party property damage.
+      ru: Полис страхования гражданской ответственности (обязательный) — он покрывает ущерб имуществу третьих лиц.
+  - id: d
+    text:
+      lv: Neviena — infrastruktūras bojājums nav apdrošināms.
+      en: Neither — infrastructure damage is not insurable.
+      ru: Никакой — ущерб инфраструктуре не является страховым случаем.
+  correctOptionId: c
+  explanation:
+    lv: 'Civiltiesiskās atbildības polise sedz trešo personu mantiskos un veselības zaudējumus. Pašvaldības īpašuma — laternas stabs — remonts ir trešo personu mantisks zaudējums, ko sedz obligātā polise. Hull polise sedz pašu dronu, nevis ārējas struktūras bojājumus.
+
+      '
+    en: 'The third-party liability policy covers third-party property and bodily harm losses. The municipality''s property — the streetlamp post — repair is a third-party property loss covered by the mandatory policy. Hull insurance covers the drone itself, not damage to external structures.
+
+      '
+    ru: 'Полис страхования гражданской ответственности покрывает имущественный и телесный вред третьих лиц. Ремонт имущества муниципалитета — фонарного столба — является имущественным ущербом третьих лиц, покрываемым обязательным полисом. Hull-страхование покрывает сам дрон, а не ущерб внешним конструкциям.
+
+      '
+  distractorRationales:
+    a:
+      lv: Atbilde D pareizi identificē abu polisu lomus, bet daļa "hull sedz dronam" nav piemērojama šajā scenārijā, kur drons nav bojāts. Jautājums ir par pašvaldības prasību — to sedz obligātā polise.
+      en: Answer D correctly identifies both policies' roles, but the "hull covers the drone" part is not applicable in this scenario where the drone is not damaged. The question is about the municipality's claim — covered by the mandatory policy.
+      ru: Ответ D правильно определяет роли обоих полисов, но часть «hull покрывает дрон» не применима в этом сценарии, где дрон не повреждён. Вопрос касается иска муниципалитета — он покрывается обязательным полисом.
+    b:
+      lv: Hull polise sedz bojājumus pašam UAS, nevis ārējai infrastruktūrai. Pašvaldības prasība ir trešās personas prasība.
+      en: Hull insurance covers damage to the UAS itself, not to external infrastructure. The municipality's claim is a third-party claim.
+      ru: Hull-страхование покрывает ущерб самому UAS, а не внешней инфраструктуре. Иск муниципалитета — это требование третьей стороны.
+    d:
+      lv: Infrastruktūras bojājums ir apdrošināms kā trešo personu mantisks zaudējums. Civiltiesiskās atbildības polises tieši paredzētas šādiem gadījumiem.
+      en: Infrastructure damage is insurable as third-party property loss. Third-party liability policies are specifically designed for such cases.
+      ru: Ущерб инфраструктуре является страховым случаем как имущественный ущерб третьей стороны. Полисы страхования гражданской ответственности предназначены именно для таких случаев.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — third-party property coverage
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-035
+  stem:
+    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Pilots atklāj, ka apdrošināšanas polise ir beigusies vakar. Viņam ir steidzams komerciāls lidojums šodien. Ko viņš drīkst darīt?'
+    en: 'Before flight, the pilot reviews this principle again: A pilot discovers that their insurance policy expired yesterday. They have an urgent commercial flight today. What may they do?'
+    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: Пилот обнаруживает, что его страховой полис истёк вчера. Сегодня у него срочный коммерческий полёт. Что он может сделать?'
+  options:
+  - id: a
+    text:
+      lv: Atteikties no lidojuma, kamēr nav derīga polise, vai iegādāties dienas/nedēļas pagaidu polisi pirms lidojuma.
+      en: Cancel the flight until a valid policy is obtained, or purchase a day/week temporary policy before the flight.
+      ru: Отменить полёт до получения действующего полиса или приобрести временный дневной/недельный полис перед полётом.
+  - id: b
+    text:
+      lv: Lidot ar informāciju, ka polise atjaunošanā.
+      en: Fly with information that the policy is in renewal.
+      ru: Лететь, сообщив, что полис находится в процессе продления.
+  - id: c
+    text:
+      lv: Lidot, jo viena dienas kavēšanās nav nozīmīga.
+      en: Fly, because one day's lapse is not significant.
+      ru: Лететь, потому что однодневная просрочка несущественна.
+  - id: d
+    text:
+      lv: Lidot ar norādi uz draugu, kurš ir reģistrēts operators ar derīgu polisi.
+      en: Fly with reference to a friend who is a registered operator with a valid policy.
+      ru: Лететь, ссылаясь на друга — зарегистрированного оператора с действующим полисом.
+  correctOptionId: a
+  explanation:
+    lv: 'Apdrošināšanas polise jābūt spēkā lidojuma brīdī — nav labvēlības perioda beidzas polisēm. Ja polise ir beigusies, pilots nedrīkst lidot. Risinājums: (1) atteikties no lidojuma; vai (2) iegādāties pagaidu polisi pirms lidojuma sākuma. Daudzi apdrošinātāji piedāvā dienas vai nedēļas pagaidu polises tiešsaistē. "Atjaunošanā" vai drauga polise nedarbojas kā juridisks pamats.
+
+      '
+    en: 'Insurance must be in force at the moment of flight — there is no grace period for expired policies. If the policy has expired, the pilot must not fly. Solution: (1) cancel the flight; or (2) purchase a temporary policy before the flight begins. Many insurers offer daily or weekly temporary policies online. "In renewal" or a friend''s policy does not work as a legal basis.
+
+      '
+    ru: 'Страховка должна действовать в момент полёта — периода льгот для истёкших полисов нет. Если полис истёк, пилот не может летать. Решение: (1) отменить полёт; или (2) приобрести временный полис до начала полёта. Многие страховщики предлагают дневные или недельные временные полисы онлайн. «В процессе продления» или полис друга не является правовым основанием.
+
+      '
+  distractorRationales:
+    b:
+      lv: '"Atjaunošanā" nav juridisks ekvivalents derīgai poliserei. Inspekcijā "atjaunošanā" neapmierina prasības.'
+      en: '"In renewal" is not a legal equivalent of a valid policy. In an inspection "in renewal" does not satisfy requirements.'
+      ru: «В процессе продления» не является юридическим эквивалентом действующего полиса. При инспекции «в процессе продления» не удовлетворяет требованиям.
+    c:
+      lv: Nav "nozīmīguma" sliekšņa polises derīgumam. Polise vai nu ir derīga, vai nav — vienas dienas kavēšanās nav atļauta.
+      en: There is no "significance" threshold for policy validity. The policy is either valid or it is not — one day's lapse is not permitted.
+      ru: Нет порога «существенности» для действительности полиса. Полис либо действителен, либо нет — однодневная просрочка не разрешена.
+    d:
+      lv: Drauga polise nav operators polise konkrētajam operatoram. Katram operatoram jābūt savai derīgai poliserei.
+      en: A friend's policy is not the operator's policy for the specific operator. Each operator must have their own valid policy.
+      ru: Полис друга не является полисом оператора для конкретного оператора. Каждый оператор должен иметь свой действующий полис.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 — insurance validity at time of flight; Latvian Aviation Law
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-036
+  stem:
+    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Kas ir "pašrisks" (deductible) drona hull apdrošināšanā un kā tas ietekmē prasību?
+    en: Which option most accurately matches this rule? What is a "deductible" in drone hull insurance and how does it affect a claim?
+    ru: Какой вариант точнее всего соответствует этому правилу? Что такое «франшиза» (deductible) в hull-страховании дронов и как она влияет на страховой случай?
+  options:
+  - id: a
+    text:
+      lv: Pašrisks ir drona iznīcināšanas vērtība pēc avārijas.
+      en: The deductible is the salvage value of the drone after a crash.
+      ru: Франшиза — это остаточная стоимость дрона после аварии.
+  - id: b
+    text:
+      lv: Pašrisks ir obligātā apdrošināšanas pašrisks, ko nosaka valsts.
+      en: The deductible is the mandatory insurance deductible set by the state.
+      ru: Франшиза — обязательная страховая франшиза, установленная государством.
+  - id: c
+    text:
+      lv: Pašrisks ir gada maksa par polisi.
+      en: The deductible is the annual premium for the policy.
+      ru: Франшиза — это ежегодный взнос за полис.
+  - id: d
+    text:
+      lv: Pašrisks ir operators pats samaksā summa katrā prasībā pirms apdrošinātājs izmaksā atlikumu.
+      en: The deductible is the amount the operator pays themselves on each claim before the insurer pays the remainder.
+      ru: Франшиза — сумма, которую оператор оплачивает сам при каждом страховом случае, после чего страховщик выплачивает остаток.
+  correctOptionId: d
+  explanation:
+    lv: 'Pašrisks (deductible) ir definēts izdevums, ko operators sedz pats katrā apdrošināšanas gadījumā. Piemēram, ar €200 pašrisku un €1500 drona bojājumu: apdrošinātājs izmaksā €1300 (1500 – 200). Augstāks pašrisks parasti nozīmē zemāku gada prēmiju. Pašrisks nav gada maksa vai valsts noteikta summa.
+
+      '
+    en: 'A deductible is a defined expense the operator covers themselves on each insurance event. For example, with a €200 deductible and €1,500 drone damage: the insurer pays €1,300 (1,500 – 200). A higher deductible usually means a lower annual premium. The deductible is not an annual fee or a state-set amount.
+
+      '
+    ru: 'Франшиза — это определённая сумма, которую оператор оплачивает сам при каждом страховом случае. Например, при франшизе €200 и ущербе дрону €1 500: страховщик выплачивает €1 300 (1 500 – 200). Более высокая франшиза обычно означает более низкую годовую премию. Франшиза — не годовой взнос и не государственно установленная сумма.
+
+      '
+  distractorRationales:
+    a:
+      lv: Paliekošā vērtība (salvage value) ir ar bojātu aktīvu atlikušā vērtība. Pašrisks ir fiksēta summa, ko operators maksā pats — ne atlikušās vērtības aprēķins.
+      en: Salvage value is the remaining value of a damaged asset. The deductible is a fixed amount the operator pays themselves — not a remaining value calculation.
+      ru: Остаточная стоимость — оставшаяся стоимость повреждённого актива. Франшиза — фиксированная сумма, которую оператор оплачивает сам, а не расчёт остаточной стоимости.
+    b:
+      lv: Nav valsts noteikta pašriska drona apdrošināšanā. Pašrisku nosaka polises noteikumi.
+      en: There is no state-mandated deductible in drone insurance. The deductible is set by the policy terms.
+      ru: В страховании дронов нет государственно установленной франшизы. Франшиза устанавливается условиями полиса.
+    c:
+      lv: Gada prēmija ir apdrošināšanas maksa par polisi visu gadu. Pašrisks ir atšķirīgs — tas ir operators dalījums katrā konkrētā prasībā.
+      en: The annual premium is the insurance fee for the policy throughout the year. The deductible is different — it is the operator's contribution on each specific claim.
+      ru: Годовой взнос — плата за страхование на весь год. Франшиза отличается — это вклад оператора в каждый конкретный страховой случай.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — General insurance principles — deductibles; hull vs third-party insurance
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-037
+  stem:
+    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Operators lido ar dronu alkohola ietekmē un nodara kaitējumu trešajai personai. Vai civiltiesiskās atbildības polise sedz prasību?
+    en: Scenario check — choose the correct answer. An operator flies a drone under the influence of alcohol and causes harm to a third party. Does the third-party liability policy cover the claim?
+    ru: Проверка ситуации — выбери правильный ответ. Оператор управляет дроном в состоянии алкогольного опьянения и причиняет вред третьему лицу. Покрывает ли полис страхования гражданской ответственности этот иск?
+  options:
+  - id: a
+    text:
+      lv: Tikai tad, ja operators nav bijis sodīts iepriekš.
+      en: Only if the operator has not been previously convicted.
+      ru: Только если оператор ранее не был осуждён.
+  - id: b
+    text:
+      lv: Jā — polise sedz visus negadījumus bez izņēmumiem.
+      en: Yes — the policy covers all accidents without exceptions.
+      ru: Да — полис покрывает все случаи без исключений.
+  - id: c
+    text:
+      lv: Jā, bet apdrošinātājs var vērsties ar regresa prasību pret operatoru.
+      en: Yes, but the insurer may exercise a right of recourse (subrogation) against the operator.
+      ru: Да, но страховщик может предъявить регрессное требование к оператору.
+  - id: d
+    text:
+      lv: Nē — alkohols pilnībā izslēdz polises darbību.
+      en: No — alcohol completely voids the policy.
+      ru: Нет — алкоголь полностью аннулирует полис.
+  correctOptionId: c
+  explanation:
+    lv: 'Obligātā civiltiesiskās atbildības polise primāri aizsargā TREŠĀS PERSONAS — cietušo. Tāpēc apdrošinātājs sedz trešās personas prasību. Taču polise var paredzēt regresa tiesības (subrogation) pret pārkāpumu izdarījušo operatoru — apdrošinātājs izmaksā cietušajam un pēc tam pieprasa šo summu no operatora, kurš rīkojies ārpus polises nosacījumiem (alkohola ietekmē).
+
+      '
+    en: 'The mandatory third-party liability policy primarily protects the THIRD PARTY — the injured person. Therefore the insurer covers the third party''s claim. However the policy may include a right of recourse (subrogation) against the defaulting operator — the insurer pays the victim and then recovers the amount from the operator who acted outside policy conditions (under alcohol influence).
+
+      '
+    ru: 'Обязательный полис страхования гражданской ответственности в первую очередь защищает ТРЕТЬЮ СТОРОНУ — пострадавшего. Поэтому страховщик покрывает требование третьей стороны. Однако полис может предусматривать право регресса (суброгации) против нарушившего правила оператора — страховщик выплачивает пострадавшему, а затем требует эту сумму от оператора, действовавшего в нарушение условий полиса (в состоянии алкогольного опьянения).
+
+      '
+  distractorRationales:
+    a:
+      lv: Iepriekšējo sodīšanu nav pieminēta kā polises nosacījums. Alkohola ietekme pie lidojuma ir atsevišķs pārkāpums neatkarīgi no vēstures.
+      en: Previous convictions are not mentioned as a policy condition. Operating under alcohol influence is a separate violation regardless of history.
+      ru: Предыдущие судимости не упоминаются как условие полиса. Управление в состоянии алкогольного опьянения — отдельное нарушение независимо от истории.
+    b:
+      lv: Polise var liegt regresa tiesības vai mainīt izmaksas nosacījumus, bet trešās personas aizsardzība parasti tiek saglabāta. "Bez izņēmumiem" nav pilnīgi precīzs.
+      en: The policy may limit recourse rights or change payout conditions, but third-party protection is generally maintained. "Without exceptions" is not fully accurate.
+      ru: Полис может ограничивать права регресса или изменять условия выплаты, но защита третьей стороны, как правило, сохраняется. «Без исключений» не совсем точно.
+    d:
+      lv: Alkohols parasti aktivizē regresa tiesības pret operatoru, bet ne pilnīgu polises atcelšanu attiecībā uz trešo personu. Cietušais joprojām ir aizsargāts.
+      en: Alcohol typically activates recourse rights against the operator, not complete policy voidance towards the third party. The injured person is still protected.
+      ru: Алкоголь обычно активирует права регресса против оператора, а не полное аннулирование полиса в отношении третьей стороны. Пострадавший по-прежнему защищён.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — General insurance law — subrogation; MK noteikumi Nr. 447; Reg (EC) 785/2004
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision
+- id: in-038
+  stem:
+    lv: 'Pirms lidojuma pilots vēlreiz pārbauda principu: Operators pērkot polisi saņem jautājumu: "Hull vai civiltiesiskās atbildības?" Kāda ir galvenā atšķirība?'
+    en: 'Before flight, the pilot reviews this principle again: When purchasing a policy an operator is asked: "Hull or third-party liability?" What is the main difference?'
+    ru: 'Перед полётом пилот ещё раз проверяет этот принцип: При покупке полиса оператора спрашивают: «Hull или страхование гражданской ответственности?» В чём основная разница?'
+  options:
+  - id: a
+    text:
+      lv: Hull sedz komerciālos lidojumus; civiltiesiskā atbildība — atpūtas lidojumus.
+      en: Hull covers commercial flights; third-party liability covers recreational flights.
+      ru: Hull покрывает коммерческие полёты; страхование ответственности — рекреационные.
+  - id: b
+    text:
+      lv: Hull ir obligāts, civiltiesiskā atbildība — brīvprātīga.
+      en: Hull is mandatory, third-party liability is voluntary.
+      ru: Hull обязателен, страхование ответственности — добровольно.
+  - id: c
+    text:
+      lv: Hull sedz avārijas pilotiem; civiltiesiskā atbildība — profesionālajiem.
+      en: Hull covers accidental pilots; third-party liability covers professional ones.
+      ru: Hull покрывает аварийные случаи для любительских пилотов; страхование ответственности — для профессиональных.
+  - id: d
+    text:
+      lv: Hull sedz drona fiziskos bojājumus; civiltiesiskās atbildības polise sedz zaudējumus trešajām personām.
+      en: Hull covers physical damage to the drone; third-party liability covers losses to third parties.
+      ru: Hull покрывает физический ущерб дрону; страхование гражданской ответственности покрывает убытки третьих лиц.
+  correctOptionId: d
+  explanation:
+    lv: 'Hull apdrošināšana (jeb "own-damage" apdrošināšana) sedz pašu UAS — tā izmaksā, ja drons ir bojāts vai iznīcināts. Civiltiesiskās atbildības (TPL) polise sedz zaudējumus, ko operators nodarījis trešajām personām — ievainojumus un mantiskos bojājumus. Hull ir brīvprātīga; TPL ir obligāta visiem UAS ≥ 250 g Latvijā.
+
+      '
+    en: 'Hull insurance (or "own-damage" insurance) covers the UAS itself — it pays out if the drone is damaged or destroyed. Third-party liability (TPL) policy covers losses the operator causes to third parties — injuries and property damage. Hull is voluntary; TPL is mandatory for all UAS ≥ 250 g in Latvia.
+
+      '
+    ru: 'Hull-страхование (или страхование «собственного ущерба») покрывает сам UAS — оно выплачивает, если дрон повреждён или уничтожен. Полис страхования гражданской ответственности (TPL) покрывает убытки, причинённые оператором третьим лицам — травмы и имущественный ущерб. Hull — добровольное; TPL — обязательное для всех UAS ≥ 250 г в Латвии.
+
+      '
+  distractorRationales:
+    a:
+      lv: Polises veidu diferenciācija nav saistīta ar lidojuma tipu (komerciāls/atpūtas). Abas polises var attiekties uz jebkuru lidojuma tipu.
+      en: The type differentiation between policies is not related to flight type (commercial/recreational). Both policy types can apply to any flight type.
+      ru: Дифференциация типов полисов не связана с типом полёта (коммерческий/рекреационный). Оба типа полисов могут применяться к любому типу полёта.
+    b:
+      lv: Tieši otrādi — obligātā ir civiltiesiskās atbildības polise; hull ir brīvprātīga.
+      en: It is exactly the opposite — mandatory is the third-party liability policy; hull is voluntary.
+      ru: Всё наоборот — обязательным является полис страхования гражданской ответственности; hull — добровольный.
+    c:
+      lv: Nav nošķiršanas starp "avārijas" un "profesionālajiem" pilotiem polises tipos. Nošķiršana ir starp pašu UAS bojājumu un trešo personu zaudējumiem.
+      en: There is no distinction between "accidental" and "professional" pilots in policy types. The distinction is between own UAS damage and third-party losses.
+      ru: Нет разграничения между «аварийными» и «профессиональными» пилотами в типах полисов. Разграничение — между ущербом собственному UAS и убытками третьих лиц.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447; Reg (EC) 785/2004 — hull vs TPL insurance
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-039
+  stem:
+    lv: Kurš variants visprecīzāk atbilst šim noteikumam? Operators veic lidojumu pasākumā ar papildu apdrošināšanu, ko nodrošinājis pasākuma organizators. Vai operators joprojām atbild par obligāto civiltiesisko polisi?
+    en: Which option most accurately matches this rule? An operator conducts a flight at an event with additional insurance provided by the event organiser. Is the operator still responsible for mandatory third-party liability?
+    ru: Какой вариант точнее всего соответствует этому правилу? Оператор выполняет полёт на мероприятии с дополнительным страхованием, предоставленным организатором мероприятия. Несёт ли оператор по-прежнему ответственность за обязательное страхование гражданской ответственности?
+  options:
+  - id: a
+    text:
+      lv: Tikai tad, ja organizatora polise ir ar zemāku segumu.
+      en: Only if the organiser's policy has lower coverage.
+      ru: Только если полис организатора имеет более низкое покрытие.
+  - id: b
+    text:
+      lv: Operators var nodot atbildību organizatoram rakstiski.
+      en: The operator can transfer liability to the organiser in writing.
+      ru: Оператор может передать ответственность организатору в письменной форме.
+  - id: c
+    text:
+      lv: Nē — organizatora papildu apdrošināšana aizvieto operators obligāto polisi.
+      en: No — the organiser's additional insurance replaces the operator's mandatory policy.
+      ru: Нет — дополнительная страховка организатора заменяет обязательный полис оператора.
+  - id: d
+    text:
+      lv: Jā — operators ir atbildīgs par savu obligāto civiltiesisko polisi neatkarīgi no organizatora apdrošināšanas.
+      en: Yes — the operator is responsible for their own mandatory third-party liability policy regardless of the organiser's insurance.
+      ru: Да — оператор несёт ответственность за свой обязательный полис страхования гражданской ответственности независимо от страховки организатора.
+  correctOptionId: d
+  explanation:
+    lv: 'Obligātā civiltiesiskās atbildības apdrošināšana ir UAS operatora personiskais pienākums — to nevar aizstāt ar pasākuma organizatora polisi. Inspekcijā operators uzrāda savu polisi. Organizatora apdrošināšana var būt papildinājums vai komerciālā vienošanās, bet nemaina operators regulatīvo pienākumu.
+
+      '
+    en: 'Mandatory third-party liability insurance is the UAS operator''s personal obligation — it cannot be replaced by an event organiser''s policy. In an inspection the operator shows their own policy. The organiser''s insurance may be an addition or a commercial arrangement, but it does not change the operator''s regulatory obligation.
+
+      '
+    ru: 'Обязательное страхование гражданской ответственности является личным обязательством оператора UAS — оно не может быть заменено полисом организатора мероприятия. При инспекции оператор предъявляет свой собственный полис. Страховка организатора может быть дополнением или коммерческим соглашением, но не меняет нормативного обязательства оператора.
+
+      '
+  distractorRationales:
+    a:
+      lv: Obligātā polise ir jāoperatoram neatkarīgi no organizatora polises seguma apmēra. Seguma apmēra salīdzinājums nav kritērijs.
+      en: The mandatory policy is required for the operator regardless of the organiser's coverage amount. Coverage amount comparison is not a criterion.
+      ru: Обязательный полис необходим оператору независимо от размера покрытия организатора. Сравнение размеров покрытия не является критерием.
+    b:
+      lv: Atbildību par obligāto apdrošināšanu nevar nodot ar rakstisku vienošanos. Tā ir personiska regulatīvā prasība.
+      en: Liability for mandatory insurance cannot be transferred by written agreement. It is a personal regulatory requirement.
+      ru: Ответственность за обязательное страхование не может быть передана письменным соглашением. Это личное нормативное требование.
+    c:
+      lv: Organizatora polise neaizvieto operators personisko regulatīvo pienākumu par obligāto apdrošināšanu.
+      en: The organiser's policy does not replace the operator's personal regulatory obligation for mandatory insurance.
+      ru: Полис организатора не заменяет личное нормативное обязательство оператора по обязательному страхованию.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 — operator personal insurance obligation; Latvian Aviation Law
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: in-040
+  stem:
+    lv: Situācijas pārbaude — izvēlies pareizo atbildi. Ko regulē Regula (EK) 785/2004?
+    en: Scenario check — choose the correct answer. What does Regulation (EC) 785/2004 regulate?
+    ru: Проверка ситуации — выбери правильный ответ. Что регулирует Регламент (ЕС) 785/2004?
+  options:
+  - id: a
+    text:
+      lv: Krimināltiesisko atbildību par UAS negadījumiem.
+      en: Criminal liability for UAS accidents.
+      ru: Уголовную ответственность за аварии UAS.
+  - id: b
+    text:
+      lv: UAS reģistrāciju un operators identifikāciju ES.
+      en: UAS registration and operator identification in the EU.
+      ru: Регистрацию UAS и идентификацию оператора в ЕС.
+  - id: c
+    text:
+      lv: Obligātās apdrošināšanas minimālos standartus gaisa kuģu operatoriem ES, ieskaitot UAS.
+      en: Mandatory insurance minimum standards for aircraft operators in the EU, including UAS.
+      ru: Минимальные стандарты обязательного страхования для операторов воздушных судов в ЕС, включая UAS.
+  - id: d
+    text:
+      lv: UAS ģeogrāfisko zonu izveidošanas kārtību.
+      en: The procedure for establishing UAS geographical zones.
+      ru: Процедуру создания географических зон UAS.
+  correctOptionId: c
+  explanation:
+    lv: 'Regula (EK) 785/2004 par gaisa kuģu operatoru un gaisa pārvadātāju apdrošināšanas prasībām nosaka minimālos civiltiesiskās atbildības seguma standartus gaisa kuģu operatoriem ES — ieskaitot UAS. Latvija ievieš šo regulu nacionālajā līmenī ar MK noteikumiem Nr. 447.
+
+      '
+    en: 'Regulation (EC) 785/2004 on insurance requirements for air carriers and aircraft operators sets minimum third-party liability coverage standards for aircraft operators in the EU — including UAS. Latvia implements this regulation at national level through Cabinet Regulation No. 447.
+
+      '
+    ru: 'Регламент (ЕС) 785/2004 о требованиях к страхованию авиаперевозчиков и эксплуатантов воздушных судов устанавливает минимальные стандарты покрытия страхования гражданской ответственности для эксплуатантов воздушных судов в ЕС — включая UAS. Латвия реализует этот регламент на национальном уровне через Правила КМ № 447.
+
+      '
+  distractorRationales:
+    a:
+      lv: Krimināltiesiskā atbildība ir nacionālo tiesību aktu joma, nevis ES regulas. Reg 785/2004 regulē civiltiesisko apdrošināšanu.
+      en: Criminal liability is a matter of national law, not an EU regulation. Reg 785/2004 regulates civil liability insurance.
+      ru: Уголовная ответственность относится к национальному законодательству, а не к регламентам ЕС. Регл. 785/2004 регулирует гражданское страхование ответственности.
+    b:
+      lv: UAS reģistrācija un operators identifikācija ir regulēta ar Reg 2019/947 Art. 14, nevis 785/2004.
+      en: UAS registration and operator identification is regulated by Reg 2019/947 Art. 14, not 785/2004.
+      ru: Регистрация UAS и идентификация оператора регулируются ст. 14 Регл. 2019/947, а не 785/2004.
+    d:
+      lv: UAS ģeogrāfiskās zonas regulē Reg 2019/947 Art. 15, nevis 785/2004.
+      en: UAS geographical zones are regulated by Reg 2019/947 Art. 15, not 785/2004.
+      ru: Географические зоны UAS регулируются ст. 15 Регл. 2019/947, а не 785/2004.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Reg (EC) 785/2004 — aircraft operator insurance; MK noteikumi Nr. 447
+  difficulty: 2
+  cognitiveLevel: apply
   scenarioType: decision

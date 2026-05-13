@@ -1,0 +1,127 @@
+# Lost link and emergency landing
+
+<MissionBriefing objective="After this lesson you will know how to react when control or video link becomes unreliable, how to distinguish hesitation from a real emergency, and when an immediate landing is the safest answer.">
+A lost-link event is rarely dramatic at the start. It usually begins as a small hesitation, a frozen image, a delayed stick response, or telemetry that no longer feels trustworthy. Good pilots treat these early signs seriously.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Emergency training scene: drone over open field, controller shows weak signal and frozen video, pilot turns toward a pre-identified landing spot while keeping VLOS"
+  alt="Drone pilot responding to a weak-signal event by abandoning the mission and preparing an immediate landing"
+  caption="Training scene · weak-link response"
+/>
+
+## What “lost link” means in practice
+
+The problem may affect one or more parts of the control chain:
+
+- **control link** — the aircraft responds late or not at all;
+- **video link** — the image freezes or breaks up while the aircraft may still be controllable;
+- **telemetry trust** — values update incorrectly, too slowly, or implausibly.
+
+The pilot's task is not to diagnose everything perfectly in the air. The task is to decide whether the aircraft remains safely manageable.
+
+<Artefact
+  description="Three-state emergency logic: degraded but manageable, unstable and worsening, lost confidence completely. Each state has a different action threshold."
+  caption="Decision model · link-degradation-thresholds"
+>
+  <div className="grid gap-3 md:grid-cols-3 text-sm">
+    {[
+      ["Degraded", "Reduce distance, climb only if obstacle clearance needs it, simplify the task, prepare to land."],
+      ["Worsening", "Stop the mission, turn toward the safest recovery area, descend when appropriate, land now."],
+      ["Unreliable", "If control, video, or aircraft position can no longer be trusted, treat it as an emergency recovery situation."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## The right priorities
+
+When the link starts to fail, priorities narrow fast:
+
+1. **fly the aircraft first**;
+2. **stop all non-essential camera or mission tasks**;
+3. **bring the aircraft closer and simpler**;
+4. **use the pre-identified landing area**;
+5. **land before the situation gets worse**.
+
+The common mistake is waiting for certainty that the failure is “real.” By the time certainty arrives, options are usually worse.
+
+## When return-to-home helps — and when it does not
+
+Return-to-home can be useful if:
+
+- the home point is correct;
+- GNSS is trustworthy;
+- the route back is obstacle-safe;
+- the aircraft is still behaving normally.
+
+It is a poor default if location data is suspect, obstacles are nearby, or the aircraft response is already erratic. Automation is only as good as the data it is using.
+
+## Emergency landing is a professional action
+
+Pilots sometimes treat emergency landing as failure. It is not. It is controlled risk reduction.
+
+<Scenario title="You are filming near a treeline. The live image freezes twice, then returns. Telemetry still shows position and battery, but stick response feels slightly delayed. What is the correct reaction?">
+Treat the event as degraded and potentially worsening.
+
+The right action is to stop filming, reduce range, avoid the trees, orient toward the safest landing area, and land promptly. Do not continue the shot just because the image returned. The recovery of one channel does not prove the whole link is stable.
+</Scenario>
+
+<MemoryAnchor
+  rule="Weak link = shrink the problem. Simpler path, shorter distance, safer landing, sooner decision."
+  hint="Do not wait for a perfect failure. Land while the aircraft is still manageable."
+/>
+
+<CommonMistakes>
+- Continuing the mission because the picture came back once.
+- Trying to troubleshoot menus while the aircraft is still airborne.
+- Trusting return-to-home automatically when GNSS or home-point quality is uncertain.
+- Delaying the landing because the client wants “one more pass.”
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "as-ll1",
+    stem: "What is the best first operational response to a clearly weakening control or video link?",
+    options: [
+      { id: "a", text: "Keep filming while monitoring whether it gets worse." },
+      { id: "b", text: "Stop the mission task, simplify the aircraft position, and prepare to land." },
+      { id: "c", text: "Fly farther away to find a better camera angle." },
+      { id: "d", text: "Ignore the warnings if battery and altitude still look normal." },
+    ],
+    correctOptionId: "b",
+    explanation: "The correct response is early risk reduction: stop non-essential tasks, bring the aircraft into a simpler recovery position, and prepare to land before the problem escalates.",
+    distractorRationales: {
+      a: "Waiting while continuing the task consumes the remaining safety margin.",
+      c: "Increasing range makes the problem harder, not easier.",
+      d: "Normal battery and altitude do not prove the control chain is healthy.",
+    },
+  },
+  {
+    id: "as-ll2",
+    stem: "When is return-to-home a poor default response?",
+    options: [
+      { id: "a", text: "When GNSS or home-point reliability is uncertain and obstacles may be involved." },
+      { id: "b", text: "When the aircraft is already close and stable over a safe landing area." },
+      { id: "c", text: "When the pilot is in VLOS." },
+      { id: "d", text: "When battery level is above 50%." },
+    ],
+    correctOptionId: "a",
+    explanation: "RTH depends on reliable positioning, a correct home point, and an obstacle-safe path. If those assumptions are weak, blind trust in automation can worsen the emergency.",
+    distractorRationales: {
+      b: "If the aircraft is already close to a safe area, landing directly is often better than invoking more automation.",
+      c: "VLOS alone does not make RTH bad; the issue is data quality and route safety.",
+      d: "Battery percentage is not the main reason RTH becomes unsafe in this context.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["as-004"]}>
+You now have a practical emergency logic for weak or lost link situations: simplify early, trust only what is still reliable, and land while options remain good.
+
+Next: fold this into broader air safety discipline — most emergencies are managed best before they become dramatic.
+</Debrief>

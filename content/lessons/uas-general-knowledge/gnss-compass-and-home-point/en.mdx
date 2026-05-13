@@ -1,0 +1,134 @@
+# GNSS, compass and home point
+
+<MissionBriefing objective="After this lesson you will know what GNSS and the compass each do, why they are not interchangeable, and how a bad home point turns a safety feature into a hazard.">
+Pilots often speak about “GPS problems” as if one system explains everything. In reality, position, heading, and home-point logic are related but different. Confusing them leads to bad decisions.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Systems diagram: drone receiving GNSS position from satellites, compass giving heading, home point stored near takeoff site, arrows showing how return-to-home depends on all three"
+  alt="Visual explanation of how GNSS, compass, and home-point logic work together in a drone"
+  caption="Training scene · navigation building blocks"
+/>
+
+## Three different functions
+
+The aircraft uses several navigation references:
+
+- **GNSS** gives position;
+- **compass** gives heading orientation;
+- **home point** stores the return reference location.
+
+These functions interact, but they are not the same.
+
+If GNSS is wrong, the aircraft may think it is somewhere else.  
+If the compass is wrong, the aircraft may know where it is but misjudge which way it is pointing.  
+If the home point is wrong, return-to-home may guide the aircraft to the wrong place even when position is otherwise good.
+
+<Artefact
+  description="Three-card system comparison: GNSS answers where am I, compass answers which way am I pointing, home point answers where should I return."
+  caption="Cards · navigation-reference-separation"
+>
+  <div className="grid gap-3 md:grid-cols-3 text-sm">
+    {[
+      ["GNSS", "Where am I? Position over the ground."],
+      ["Compass", "Which way am I pointing? Heading orientation."],
+      ["Home Point", "Where should I return? Stored recovery reference."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## Why home point deserves a separate check
+
+Pilots sometimes assume home point is correct because the app showed a message once. That is weak practice.
+
+You should verify:
+
+- that GNSS quality was stable when it was set;
+- that the aircraft was not moved after the initial lock in a way that changes the intended recovery point;
+- that the stored point makes sense for the actual operating area.
+
+## Compass problems are not the same as GNSS problems
+
+Typical compass issues include:
+
+- incorrect heading display,
+- yaw instability or drift,
+- odd orientation behaviour after takeoff.
+
+Typical GNSS issues include:
+
+- poor position hold,
+- location jumps,
+- weak or lost satellite lock.
+
+Calling both “GPS trouble” hides the real problem.
+
+## Why this matters to automation
+
+Features like position hold and return-to-home depend on correct inputs. Pilots who do not understand the difference between those inputs are more likely to trust automation when it is least trustworthy.
+
+<Scenario title="You take off from an open site. The app confirms home point, but the aircraft had been powered while still beside a vehicle and then moved several metres before actual launch. The aircraft later needs to recover automatically. What is the risk?">
+The risk is that the stored home point may not match the best actual recovery location.
+
+Even if GNSS later looks normal, return-to-home may aim for a less safe or simply wrong reference position. That is why home-point confirmation is not a tap-through message; it is a navigation safety check.
+</Scenario>
+
+<MemoryAnchor
+  rule="GNSS = where. Compass = which way. Home point = where back."
+  hint="If you confuse the three, you will trust the wrong thing at the wrong time."
+/>
+
+<CommonMistakes>
+- Calling every navigation anomaly a GPS issue.
+- Accepting home-point confirmation without checking whether it makes sense physically.
+- Forgetting that return-to-home depends on stored reference logic, not magic.
+- Recalibrating or troubleshooting without first understanding which system looks wrong.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "ug-gh1",
+    stem: "Which system primarily answers the question 'where should the aircraft return'?",
+    options: [
+      { id: "a", text: "The compass." },
+      { id: "b", text: "The home point." },
+      { id: "c", text: "The battery management system." },
+      { id: "d", text: "The propeller speed controller." },
+    ],
+    correctOptionId: "b",
+    explanation: "The home point is the stored recovery reference used by return-to-home logic. It is separate from GNSS position and compass heading.",
+    distractorRationales: {
+      a: "The compass gives heading, not return destination.",
+      c: "Battery management affects endurance, not return reference location.",
+      d: "Propeller speed control affects thrust, not navigation reference.",
+    },
+  },
+  {
+    id: "ug-gh2",
+    stem: "What is the key difference between a GNSS problem and a compass problem?",
+    options: [
+      { id: "a", text: "GNSS affects position knowledge; compass affects heading orientation." },
+      { id: "b", text: "GNSS affects only battery use; compass affects only camera angle." },
+      { id: "c", text: "There is no real difference for pilots." },
+      { id: "d", text: "Compass errors matter only in FPV mode." },
+    ],
+    correctOptionId: "a",
+    explanation: "GNSS tells the aircraft where it is. The compass tells it which way it is oriented. These are different functions and produce different failure patterns.",
+    distractorRationales: {
+      b: "Neither description matches the actual navigation role of the systems.",
+      c: "There is a real operational difference, especially when deciding whether automation remains trustworthy.",
+      d: "Compass errors matter in all flight modes that depend on orientation awareness.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ug-004"]}>
+You now understand the three core navigation references behind common consumer-drone automation. That makes you less likely to misread warnings and more likely to catch bad assumptions before takeoff.
+
+Next: tie this knowledge back to remote ID, geo-awareness, and battery discipline so the aircraft is understood as a system, not a camera with props.
+</Debrief>

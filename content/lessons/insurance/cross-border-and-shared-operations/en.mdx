@@ -1,0 +1,136 @@
+# Cross-border and shared operations
+
+<MissionBriefing objective="After this lesson you will know what changes when a Latvian operator works in another EU state, rents aircraft, or uses subcontract pilots, and why insurance must match the real operator structure rather than the invoice title.">
+Insurance failures often appear in more complex operations: borrowed aircraft, another pilot on the controls, a foreign job site, or a client who assumes “your normal policy should cover it.” Sometimes it does. Sometimes it very much does not.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Insurance operations diagram: Latvian operator, subcontract pilot, rented drone, foreign EU worksite, insurer arrows showing who is covered and where policy gaps appear"
+  alt="Visual map of insurance responsibility in shared and cross-border drone operations"
+  caption="Training scene · who is insured in a complex operation"
+/>
+
+## The first question: who is the operator here?
+
+In simple work, the answer is obvious. In shared operations, it often is not.
+
+Ask:
+
+- who owns or controls the aircraft?
+- who plans and authorises the mission?
+- who provides the pilot?
+- whose insurance policy names the activity?
+
+The invoice alone does not answer the insurance question. The real operating structure does.
+
+<Artefact
+  description="Four common operation models: own drone own pilot, own drone subcontract pilot, rented drone own pilot, and multi-state client job. Each model highlights the extra insurance check needed."
+  caption="Matrix · shared-operation-insurance-checks"
+>
+  <div className="grid gap-3 md:grid-cols-2 text-sm">
+    {[
+      ["Own drone, own pilot", "Check the standard liability and optional covers match the aircraft and mission type."],
+      ["Own drone, subcontract pilot", "Check whether the policy covers named or non-named pilots and commercial delegation."],
+      ["Rented drone, own pilot", "Check who insures the hull, liability, and payload during your use period."],
+      ["Foreign EU job", "Check territorial validity, local requirements, and whether the activity description still fits the policy."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## Subcontract pilots create hidden gaps
+
+A common mistake is assuming any qualified pilot may fly under the operator's insurance automatically. Some policies are broad enough. Some are not.
+
+Before a subcontract or second pilot flies:
+
+- confirm whether the policy covers any authorised pilot or only named persons;
+- confirm whether commercial subcontracting is included;
+- document who had operational control of the mission.
+
+## Renting or borrowing aircraft
+
+When the aircraft is not yours, separate three questions:
+
+- who covers **third-party liability**?
+- who covers **damage to the aircraft**?
+- who covers **the attached payload**?
+
+If the answer to any of those is vague, the arrangement is weak.
+
+## Cross-border work inside the EU
+
+Even where a Latvian policy is generally valid, cross-border work still requires checking:
+
+- whether local operational requirements add conditions;
+- whether the insurer needs to be informed about the territory or work type;
+- whether client contract language creates obligations beyond the policy.
+
+<Scenario title="A Latvian operator wins a short commercial job in another EU country. The aircraft belongs to a partner company, and a freelance pilot will fly it under your project. What must be clear before the mission starts?">
+Three things must be clear:
+
+1. who is the legal operator for that mission;
+2. whose policies cover liability, hull, and payload;
+3. whether the freelance pilot is actually covered under the intended policy structure.
+
+If any of these are assumed instead of verified, the operator is building risk into the contract before takeoff.
+</Scenario>
+
+<MemoryAnchor
+  rule="Complex job = ask three things: who is the operator, who is the pilot, and which policy actually names this structure."
+  hint="Insurance follows the real operation, not the convenient assumption."
+/>
+
+<CommonMistakes>
+- Assuming a subcontract pilot is covered automatically.
+- Believing a rented drone always comes fully insured for your use case.
+- Checking territorial validity but not the exact activity description in the policy.
+- Letting client contract promises exceed what the insurance actually covers.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "in-cb1",
+    stem: "What is the most important first insurance question in a shared or cross-border drone operation?",
+    options: [
+      { id: "a", text: "Who sent the invoice." },
+      { id: "b", text: "Who is the real operator structure behind the mission." },
+      { id: "c", text: "What colour the aircraft is." },
+      { id: "d", text: "Whether the client has seen the footage style examples." },
+    ],
+    correctOptionId: "b",
+    explanation: "Insurance and liability analysis starts with the real operator structure: who controls the mission, who flies, whose aircraft is used, and which policy actually covers that arrangement.",
+    distractorRationales: {
+      a: "The invoice may not reflect the real operational control.",
+      c: "Aircraft colour is irrelevant to insurance structure.",
+      d: "Creative expectations do not determine coverage.",
+    },
+  },
+  {
+    id: "in-cb2",
+    stem: "Why is using a freelance or subcontract pilot a special insurance check point?",
+    options: [
+      { id: "a", text: "Because qualified pilots are always excluded by default." },
+      { id: "b", text: "Because some policies cover only named or specifically authorised pilots and may not include delegated commercial use automatically." },
+      { id: "c", text: "Because subcontract pilots cannot fly in the EU Open category." },
+      { id: "d", text: "Because insurance is irrelevant if the pilot has A1/A3." },
+    ],
+    correctOptionId: "b",
+    explanation: "Pilot qualification alone does not answer policy scope. Some policies require named pilots or explicit authorised-use wording, especially in commercial or delegated structures.",
+    distractorRationales: {
+      a: "Qualified pilots are not automatically excluded; the issue is policy wording, not a universal ban.",
+      c: "Subcontract pilots may legally fly if the regulatory and insurance structure is correct.",
+      d: "Pilot competence does not replace insurance coverage requirements.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["in-004"]}>
+You now know how to think about insurance when operations become more realistic and more complex: shared aircraft, extra pilots, and cross-border work all require structure, not assumptions.
+
+Next: connect this with claims evidence and operational discipline so the insured structure is clear both before and after the mission.
+</Debrief>
