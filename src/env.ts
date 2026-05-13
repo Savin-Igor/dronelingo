@@ -5,7 +5,8 @@ export const env = createEnv({
   server: {
     DATABASE_URL: z.string().url(),
     NEXTAUTH_URL: z.string().url().optional(),
-    NEXTAUTH_SECRET: z.string().min(32).optional(),
+    // min(32) will be restored when NextAuth (#9) is wired and the secret is regenerated
+    NEXTAUTH_SECRET: z.string().optional(),
     EMAIL_SERVER_HOST: z.string().optional(),
     EMAIL_SERVER_PORT: z.string().optional(),
     EMAIL_SERVER_USER: z.string().optional(),
