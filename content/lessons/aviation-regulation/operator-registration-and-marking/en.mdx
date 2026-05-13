@@ -1,0 +1,134 @@
+# Operator registration and marking
+
+<MissionBriefing objective="After this lesson you will know when the operator must register, where the operator number belongs, and why registration is about accountability rather than pilot skill.">
+Pilots often confuse three different identities: the pilot certificate, the operator registration number, and the aircraft class marking. They solve different problems and are not interchangeable.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Regulatory training graphic: drone body with class mark, operator number label, pilot certificate card, and arrows showing who/what each identifier belongs to"
+  alt="Visual separation between pilot certificate, operator registration number, and aircraft class marking"
+  caption="Training scene · identity layers in EU UAS rules"
+/>
+
+## Three identifiers, three purposes
+
+In the Open category, pilots need to keep these separate:
+
+- **pilot competency** — proves the person may operate in the relevant category;
+- **operator registration number** — identifies the legal operator responsible for the aircraft;
+- **class marking** — identifies what technical class the aircraft belongs to.
+
+The most common compliance failure is treating the pilot certificate as if it replaced operator registration. It does not.
+
+<Artefact
+  description="Comparison table of pilot certificate, operator registration number, and class marking: who it belongs to, what it proves, and where it must appear."
+  caption="Matrix · pilot-vs-operator-vs-aircraft"
+>
+  <table className="w-full text-sm text-telemetry">
+    <thead>
+      <tr className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
+        <th className="pb-2 pr-4 text-left">Identifier</th>
+        <th className="pb-2 pr-4 text-left">Belongs To</th>
+        <th className="pb-2 text-left">Function</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        ["Pilot certificate", "The remote pilot", "Shows training/competency"],
+        ["Operator number", "The operator entity", "Links the aircraft to the responsible operator"],
+        ["Class marking", "The aircraft", "Shows technical class such as C0/C1/C2"],
+      ].map(([id, owner, fn]) => (
+        <tr key={id} className="border-t border-horizon">
+          <td className="py-2 pr-4 font-mono text-xs text-cyan-pulse">{id}</td>
+          <td className="py-2 pr-4">{owner}</td>
+          <td className="py-2">{fn}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</Artefact>
+
+## When operator registration is required
+
+As a rule, the operator must register when operating a drone that is **not just a simple toy-level C0 case**, especially where the aircraft has a sensor capable of capturing personal data or falls outside the lowest exempt conditions.
+
+For practical A1/A3 exam logic, the safest mental model is:
+
+- if the aircraft is more than the simplest exempt low-risk case, **assume operator registration is required**;
+- the operator number must then be attached to the aircraft as required by the applicable rules;
+- the number identifies the operator, not the pilot physically holding the controller that day.
+
+## Where the number goes
+
+The operator number must be placed so that the aircraft can be linked back to the responsible operator. In practical terms:
+
+- keep it **readable and durable**;
+- place it where routine handling will not immediately remove it;
+- ensure the aircraft and any remote identification configuration use the correct operator identity where required.
+
+If several aircraft belong to the same operator, the same operator registration may appear on all of them. The number follows the operator entity, not one specific airframe.
+
+## Why this matters in enforcement
+
+Registration solves the accountability question: **who is responsible for this aircraft being in the air?** It does not prove that the pilot is skilled, and it does not prove that the aircraft is in the right class. That is why all three identifiers coexist.
+
+<Scenario title="A small company owns three drones. One employee holds the A1/A3 certificate and another employee flies under company procedures for a photo mission. Which identity must appear on the aircraft?">
+The aircraft must carry the **operator registration number of the company**, because the company is the legal operator. The pilot certificate belongs to the person flying. The class mark belongs to the aircraft itself.
+
+This distinction matters especially in commercial operations, where several pilots may fly aircraft owned and managed by one operator entity.
+</Scenario>
+
+<MemoryAnchor
+  rule="Pilot certificate = who may fly. Operator number = who is responsible. Class mark = what the aircraft is."
+  hint="Three identifiers. Never substitute one for another."
+/>
+
+<CommonMistakes>
+- Putting only the pilot certificate details in the flight file and forgetting the operator identity on the aircraft.
+- Assuming each drone needs a completely different operator identity even when all belong to the same operator.
+- Confusing the class mark with registration and treating the C-label as proof of legal operator identification.
+- Using temporary, easily removable stickers that do not survive routine field handling.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "ar-orm1",
+    stem: "What does the operator registration number primarily identify?",
+    options: [
+      { id: "a", text: "The remote pilot's level of training." },
+      { id: "b", text: "The legal operator responsible for the aircraft." },
+      { id: "c", text: "The drone's technical class." },
+      { id: "d", text: "The BGKIS approval status of the mission." },
+    ],
+    correctOptionId: "b",
+    explanation: "The operator registration number links the aircraft to the responsible operator entity. It is about accountability, not pilot skill or airspace approval.",
+    distractorRationales: {
+      a: "Pilot training is shown by the pilot's certificate, not the operator number.",
+      c: "Technical class is shown by the class marking such as C0/C1/C2.",
+      d: "BGKIS status is a mission-specific airspace matter, not the operator identity.",
+    },
+  },
+  {
+    id: "ar-orm2",
+    stem: "A company owns multiple drones flown by different employees. Which statement is correct?",
+    options: [
+      { id: "a", text: "Each pilot's certificate number must replace the operator number on the aircraft." },
+      { id: "b", text: "The company's operator registration can identify all aircraft operated by that company." },
+      { id: "c", text: "Only the heaviest drone needs an operator number." },
+      { id: "d", text: "The class marking removes the need for operator identification." },
+    ],
+    correctOptionId: "b",
+    explanation: "The operator registration belongs to the operator entity. If one company is the operator, its registration can identify multiple aircraft operated under that entity.",
+    distractorRationales: {
+      a: "Pilot certificates do not replace operator identity.",
+      c: "Operator identification is not based only on which aircraft is heaviest.",
+      d: "Class marking and operator identification serve different functions and both may be required.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ar-004"]}>
+You now understand the identity stack behind legal UAS operations: pilot, operator, and aircraft are related, but not interchangeable.
+
+Next: continue tying EU rules to Latvian practice — legal compliance works only when the correct identity, airspace status, and category logic all line up together.
+</Debrief>

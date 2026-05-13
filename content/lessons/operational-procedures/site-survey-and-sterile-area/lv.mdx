@@ -1,0 +1,141 @@
+# Vietas apskate un sterila darba zona
+
+<MissionBriefing objective="Pēc šīs nodarbības tu pratīsi novērtēt starta vietu pirms pacelšanās, pareizi izvietot cilvēkus un aprīkojumu un izveidot sterilu zonu, kas aizsargā kritiskās lidojuma fāzes.">
+Daudzi novēršami drona incidenti notiek vēl pirms lidaparāts pilnībā ir gaisā: sasteigta sagatavošanās, slikta starta vieta, mulsinoši garāmgājēji un neaizsargāta pacelšanās vai nolaišanās telpa.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Field safety diagram: drone launch point, pilot position, observer position, bystander boundary, obstacle scan arcs, takeoff and landing sterile zone marked on grass"
+  alt="Lauka izkārtojums ar sterilu pacelšanās un nolaišanās zonu drona operācijai"
+  caption="Treniņa aina · vietas izkārtojums pirms starta"
+/>
+
+## Vietas apskates jautājumi
+
+Pirms iedarbināšanas izstaigā vietu un atbildi uz pieciem jautājumiem:
+
+1. **Kur ir drošākais pacelšanās un nolaišanās punkts?**
+2. **Kur cilvēki var negaidīti kustēties?**
+3. **Kādi šķēršļi ietekmē aizlidošanu, atgriešanos vai avārijas nolaišanos?**
+4. **Kur pilots stāvēs, lai saglabātu VLOS un distanci no citiem?**
+5. **Kas var izjaukt sterilo zonu, ja situācija mainās?**
+
+Mērķis ir sakārtot vidi vēl pirms lidaparāts ienes laika spiedienu.
+
+<Artefact
+  description="Operatīvā izkārtojuma kartes: pacelšanās laukums, pilota zona, novērotāja līnija, nepiederošo robeža un avārijas nolaišanās virziens."
+  caption="Kartes · sterilās-zonas-izkārtojums"
+>
+  <div className="grid gap-3 md:grid-cols-5 text-sm">
+    {[
+      ["Pacelšanās laukums", "Līdzens, brīvs, drošs propelleriem, ne cilvēku plūsmā."],
+      ["Pilota zona", "Stabila pozīcija, laba redzamība, ekrāns salasāms bez panikas par ēnu."],
+      ["Novērotāja līnija", "Atsevišķs leņķis, netraucē pilotam."],
+      ["Nepiederošo robeža", "Skaidra robeža, aiz kuras paliek neiesaistītie cilvēki."],
+      ["Atkāpšanās virziens", "Zināms zemāka riska virziens abortam vai avārijas nolaišanās gadījumam."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## Ko nozīmē "sterila zona"
+
+**Sterila darba zona** ir apzināti izveidota beztraucējumu zona kritiskajām fāzēm:
+
+- pacelšanās;
+- zema augstuma manevri pie starta vietas;
+- pieeja;
+- nolaišanās;
+- baterijas maiņa, ja apkārt pārvietojas cilvēki.
+
+Šajā zonā:
+
+- nebūtiskas sarunas apstājas;
+- klienti un garāmgājēji paliek ārpus robežas;
+- pilots neatbild uz radošiem lūgumiem un nemaina misijas mērķi;
+- novērotājs runā tikai par drošībai svarīgo.
+
+## Kāpēc tas ir svarīgi
+
+Pacelšanās un nolaišanās pilotam dod vismazāko laika rezervi. Mazs traucējums tur rada lielākas sekas nekā tāds pats traucējums stabilā lidojumā drošā augstumā.
+
+## Praktiski marķieri
+
+Sterilai zonai nevajag dārgu aprīkojumu. To var izveidot ar:
+
+- konusiem;
+- nolaišanās paklāju;
+- īsu mutisku instruktāžu;
+- skaidri noteiktu klienta vai novērotāja stāvēšanas vietu;
+- vienu teikumu pirms starta: **"Šajā zonā neienāk, līdz es pasaku, ka nolaišanās ir pabeigta."**
+
+<Scenario title="Tu ierodies nekustamā īpašuma filmēšanā. Klients grib stāvēt tev blakus pacelšanās laikā, lai uzreiz komentētu kadru. Zāliens ir šaurs, un aiz starta vietas ir dekoratīvs koks. Kāda ir pareizā sagatavošanās?">
+Ja vajag, pārvieto starta vietu. Vispirms izveido vienkāršu sterilo zonu.
+
+Pilotam vajag skaidru pacelšanās un atgriešanās trajektoriju, distanci no koka un robežu, kas notur klientu ārpus kritiskās zonas līdz brīdim, kad lidaparāts ir stabils. Pareizā secība:
+
+1. izvēlies drošāko, nevis ērtāko pacelšanās vietu;
+2. novieto klientu ārpus sterilās zonas;
+3. paskaidro, ka kadrējuma apspriešana sākas tikai pēc drošas pacelšanās;
+4. turi pacelšanos un nolaišanos brīvu no nebūtiskām sarunām.
+</Scenario>
+
+<MemoryAnchor
+  rule="Vispirms sakārto zemi. Tad lido no tās. Sterila zona nozīmē: nav cilvēku, nav pļāpu, nav pēdējā brīža izmaiņu kritiskajās fāzēs."
+  hint="Mierīga starta zona vēlāk nopērk laiku."
+/>
+
+<CommonMistakes>
+- Izvēlēties ērtāko starta vietu, nevis drošāko.
+- Ļaut klientiem stāvēt pilotam blakus pacelšanās un nolaišanās laikā.
+- Nepiešķirt avārijas nolaišanās virzienu pirms starta.
+- Uztvert vietas apskati kā īsu skatienu, nevis strukturētu pārbaudi.
+- Turpināt misijas apspriešanu final approach laikā.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "op-ss1",
+    stem: "Kāds ir sterilas darba zonas galvenais mērķis?",
+    options: [
+      { id: "a", text: "Rezervēt vietu tikai rezerves bateriju glabāšanai." },
+      { id: "b", text: "Aizsargāt kritiskās fāzes no traucējumiem un negaidītas ielaušanās." },
+      { id: "c", text: "Izpildīt prasību, ka katrā Atvērtās kategorijas lidojumā obligāti jālieto konusi." },
+      { id: "d", text: "Turēt klientu pietiekami tuvu, lai viņš var redzēt ekrānu." },
+    ],
+    correctOptionId: "b",
+    explanation: "Sterila darba zona ir praktiska drošības robeža, kas aizsargā pacelšanos, nolaišanos un citas kritiskās fāzes no traucējumiem un iejaukšanās.",
+    distractorRationales: {
+      a: "Bateriju organizēšana var notikt tuvumā, bet tā nav galvenā funkcija.",
+      c: "Ideja ir operatīvā drošība, nevis konkrēta prasība par konusiem.",
+      d: "Klientiem nevajag spiesties pie pilota kritiskajās fāzēs.",
+    },
+  },
+  {
+    id: "op-ss2",
+    stem: "Kura darbība vislabāk parāda pareizu vietas apskati pirms starta?",
+    options: [
+      { id: "a", text: "Uzreiz ieslēgt lidaparātu, lai ietaupītu sagatavošanās laiku." },
+      { id: "b", text: "Izstaigāt vietu, lai noteiktu šķēršļus, cilvēku kustību, pilota pozīciju un avārijas nolaišanās virzienu." },
+      { id: "c", text: "Stāvēt tur, kur klientam ir ērtāk." },
+      { id: "d", text: "Pieņemt, ka teritorija ir laba, jo no mašīnas tā izskatījās tukša." },
+    ],
+    correctOptionId: "b",
+    explanation: "Īsta vietas apskate ir strukturēts zemes novērtējums pirms iedarbināšanas. Tā ļauj atklāt riskus un sakārtot darba zonu vēl pirms laika spiediena pieauguma.",
+    distractorRationales: {
+      a: "Sasteigta ieslēgšana pirms novērtējuma palielina risku.",
+      c: "Klienta ērtība nenosaka drošu pilota pozīciju.",
+      d: "Skatiens no mašīnas nav vietas apskate.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["op-004"]}>
+Tu tagad zini, kā izveidot drošāku darba zonu vēl pirms pacelšanās, nevis mēģināt improvizēt tad, kad lidaparāts jau ir gaisā.
+
+Tālāk: sasaisti sterilās zonas disciplīnu ar ārkārtas rīcību un pēc-lidojuma ieradumiem, lai visa misija paliek kontrolēta no pirmās sagatavošanas līdz pēdējai izslēgšanai.
+</Debrief>

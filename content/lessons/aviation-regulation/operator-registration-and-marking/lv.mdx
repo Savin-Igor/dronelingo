@@ -1,0 +1,134 @@
+# Operatora reģistrācija un marķēšana
+
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, kad operatoram jāreģistrējas, kur jāatrodas operatora numuram un kāpēc reģistrācija ir par atbildību, nevis pilota prasmēm.">
+Piloti bieži sajauc trīs dažādas identitātes: pilota sertifikātu, operatora reģistrācijas numuru un lidaparāta klases marķējumu. Tie risina dažādus uzdevumus un nav savstarpēji aizvietojami.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Regulatory training graphic: drone body with class mark, operator number label, pilot certificate card, and arrows showing who/what each identifier belongs to"
+  alt="Vizuāls nošķīrums starp pilota sertifikātu, operatora reģistrācijas numuru un lidaparāta klases marķējumu"
+  caption="Treniņa aina · identitātes slāņi ES UAS noteikumos"
+/>
+
+## Trīs identifikatori, trīs funkcijas
+
+Atvērtajā kategorijā jātur atsevišķi:
+
+- **pilota kompetence** — pierāda, ka persona drīkst lidot attiecīgajā kategorijā;
+- **operatora reģistrācijas numurs** — identificē juridisko operatoru, kas atbild par lidaparātu;
+- **klases marķējums** — identificē, kurai tehniskajai klasei pieder lidaparāts.
+
+Biežākā kļūda ir izturēties pret pilota sertifikātu tā, it kā tas aizvietotu operatora reģistrāciju. Tā nav.
+
+<Artefact
+  description="Salīdzinājuma tabula starp pilota sertifikātu, operatora reģistrācijas numuru un klases marķējumu: kam tas pieder, ko tas pierāda un kāda ir funkcija."
+  caption="Matrica · pilots-vs-operators-vs-lidaparāts"
+>
+  <table className="w-full text-sm text-telemetry">
+    <thead>
+      <tr className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
+        <th className="pb-2 pr-4 text-left">Identifikators</th>
+        <th className="pb-2 pr-4 text-left">Kam pieder</th>
+        <th className="pb-2 text-left">Funkcija</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        ["Pilota sertifikāts", "Tālvadības pilotam", "Parāda apmācību/kompetenci"],
+        ["Operatora numurs", "Operatora vienībai", "Saista lidaparātu ar atbildīgo operatoru"],
+        ["Klases marķējums", "Lidaparātam", "Parāda tehnisko klasi, piemēram, C0/C1/C2"],
+      ].map(([id, owner, fn]) => (
+        <tr key={id} className="border-t border-horizon">
+          <td className="py-2 pr-4 font-mono text-xs text-cyan-pulse">{id}</td>
+          <td className="py-2 pr-4">{owner}</td>
+          <td className="py-2">{fn}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</Artefact>
+
+## Kad vajag operatora reģistrāciju
+
+Praktiskā līmenī operatoram jāreģistrējas, ja viņš ekspluatē UAS, kas nav tikai visvienkāršākais izņēmuma zema riska gadījums, īpaši, ja lidaparātam ir sensors, kas spēj ievākt personas datus, vai tas neatbilst zemākajām atbrīvojuma robežām.
+
+A1/A3 eksāmena loģikai drošākais domāšanas modelis ir:
+
+- ja lidaparāts nav pats vienkāršākais atbrīvotais gadījums, **pieņem, ka operatora reģistrācija ir vajadzīga**;
+- operatora numuram tad jābūt pievienotam lidaparātam atbilstoši prasībām;
+- numurs identificē operatoru, nevis konkrēto pilotu, kurš tajā dienā tur pulti.
+
+## Kur numuram jāatrodas
+
+Operatora numuram jābūt izvietotam tā, lai lidaparātu varētu sasaistīt ar atbildīgo operatoru. Praktiski tas nozīmē:
+
+- lai tas būtu **lasāms un noturīgs**;
+- lai tas neizzustu pēc pirmās lauka lietošanas;
+- lai lidaparātā un, kur nepieciešams, remote ID konfigurācijā būtu pareizā operatora identitāte.
+
+Ja vienam operatoram ir vairāki lidaparāti, tas pats operatora reģistrācijas numurs var būt uz visiem. Numurs seko operatoram, nevis vienai konkrētai korpusam.
+
+## Kāpēc tas svarīgi kontrolē
+
+Reģistrācija atrisina atbildības jautājumu: **kurš ir atbildīgs par šo lidaparātu gaisā?** Tā nepierāda, ka pilots ir kvalificēts, un nepierāda, ka lidaparāts ir pareizajā klasē. Tāpēc pastāv visi trīs identifikatori.
+
+<Scenario title="Mazs uzņēmums īpašumā tur trīs dronus. Vienam darbiniekam ir A1/A3 sertifikāts, bet citā dienā lido cits darbinieks uzņēmuma procedūru ietvaros. Kurai identitātei jābūt uz lidaparāta?">
+Uz lidaparāta jābūt **uzņēmuma operatora reģistrācijas numuram**, jo juridiskais operators ir uzņēmums. Pilota sertifikāts pieder cilvēkam, kas lido. Klases marķējums pieder pašam lidaparātam.
+
+Šī atšķirība ir īpaši svarīga komerciālās operācijās, kur vairāki piloti var lidot ar vienam operatoram piederošiem UAS.
+</Scenario>
+
+<MemoryAnchor
+  rule="Pilota sertifikāts = kas drīkst lidot. Operatora numurs = kas atbild. Klases marķējums = kas ir lidaparāts."
+  hint="Trīs identifikatori. Nekad neaizvieto vienu ar citu."
+/>
+
+<CommonMistakes>
+- Lidojuma dokumentācijā paturēt tikai pilota sertifikāta detaļas un aizmirst operatora identitāti uz lidaparāta.
+- Domāt, ka katram dronam vajadzīga pilnīgi cita operatora identitāte, ja tie visi pieder vienam operatoram.
+- Jaukt klases marķējumu ar reģistrāciju un uztvert C-etiketi kā operatora identifikācijas pierādījumu.
+- Izmantot pagaidu, viegli noņemamas uzlīmes, kas nesaglabājas ikdienas darbā laukā.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "ar-orm1",
+    stem: "Ko primāri identificē operatora reģistrācijas numurs?",
+    options: [
+      { id: "a", text: "Tālvadības pilota apmācības līmeni." },
+      { id: "b", text: "Juridisko operatoru, kas atbild par lidaparātu." },
+      { id: "c", text: "Drona tehnisko klasi." },
+      { id: "d", text: "BGKIS atļaujas statusu misijai." },
+    ],
+    correctOptionId: "b",
+    explanation: "Operatora reģistrācijas numurs saista lidaparātu ar atbildīgo operatora vienību. Tas ir par atbildību, nevis pilota prasmi vai gaisa telpas atļauju.",
+    distractorRationales: {
+      a: "Pilota apmācību pierāda pilota sertifikāts, nevis operatora numurs.",
+      c: "Tehnisko klasi parāda klases marķējums, piemēram, C0/C1/C2.",
+      d: "BGKIS statuss ir konkrētas misijas gaisa telpas jautājums, nevis operatora identitāte.",
+    },
+  },
+  {
+    id: "ar-orm2",
+    stem: "Uzņēmumam pieder vairāki droni, ar kuriem lido dažādi darbinieki. Kurš apgalvojums ir pareizs?",
+    options: [
+      { id: "a", text: "Katra pilota sertifikāta numuram jāaizstāj operatora numurs uz lidaparāta." },
+      { id: "b", text: "Uzņēmuma operatora reģistrācija var identificēt visus šī uzņēmuma lidaparātus." },
+      { id: "c", text: "Operatora numurs vajadzīgs tikai smagākajam dronam." },
+      { id: "d", text: "Klases marķējums atceļ operatora identifikācijas vajadzību." },
+    ],
+    correctOptionId: "b",
+    explanation: "Operatora reģistrācija pieder operatora vienībai. Ja operators ir viens uzņēmums, tā reģistrācija var identificēt vairākus lidaparātus, ko tas ekspluatē.",
+    distractorRationales: {
+      a: "Pilota sertifikāts neaizvieto operatora identitāti.",
+      c: "Operatora identifikācija nav balstīta tikai uz to, kurš lidaparāts ir smagākais.",
+      d: "Klases marķējums un operatora identifikācija pilda atšķirīgas funkcijas, un abi var būt vajadzīgi.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["ar-004"]}>
+Tu tagad saproti legālas UAS operācijas identitātes slāņus: pilots, operators un lidaparāts ir saistīti, bet nav savstarpēji aizvietojami.
+
+Tālāk: turpinām savienot ES noteikumus ar Latvijas praksi — atbilstība strādā tikai tad, kad pareizi sakrīt identitāte, gaisa telpas statuss un kategorijas loģika.
+</Debrief>

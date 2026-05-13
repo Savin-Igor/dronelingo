@@ -1,0 +1,141 @@
+# Site survey and sterile operating area
+
+<MissionBriefing objective="After this lesson you will know how to assess a launch site before takeoff, where to place people and equipment, and how to create a sterile area that protects the critical phases of flight.">
+Many avoidable drone incidents happen before the aircraft is fully airborne: rushed setup, poor launch position, confused bystanders, and no protected space for takeoff or landing.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Field safety diagram: drone launch point, pilot position, observer position, bystander boundary, obstacle scan arcs, takeoff and landing sterile zone marked on grass"
+  alt="Field layout showing a sterile takeoff and landing area for drone operations"
+  caption="Training scene · site layout before launch"
+/>
+
+## The site survey question set
+
+Before powering up, walk the site and answer five questions:
+
+1. **Where is the safest launch and landing point?**
+2. **Where are people likely to move unexpectedly?**
+3. **What obstacles affect departure, return, or emergency landing?**
+4. **Where will the pilot stand to keep VLOS and space from others?**
+5. **What will interrupt the sterile area if something changes?**
+
+The point is to shape the environment before the aircraft adds time pressure.
+
+<Artefact
+  description="Operational layout card set: launch pad, pilot box, observer line, bystander limit, and emergency landing direction."
+  caption="Cards · sterile-area-layout"
+>
+  <div className="grid gap-3 md:grid-cols-5 text-sm">
+    {[
+      ["Launch Pad", "Flat, clear, rotor-safe, not in foot traffic."],
+      ["Pilot Box", "Stable stance, good view, screen readable without shade panic."],
+      ["Observer Line", "Separate angle, not blocking the pilot."],
+      ["Bystander Limit", "Clear boundary beyond which non-involved people stay."],
+      ["Escape Direction", "A known low-risk direction for abort or emergency landing."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## What “sterile area” means
+
+A **sterile operating area** is a deliberate no-distraction zone during critical phases:
+
+- takeoff,
+- low-altitude manoeuvring near the launch point,
+- approach,
+- landing,
+- battery swap if people are moving around the aircraft.
+
+In that zone:
+
+- non-essential conversation stops;
+- clients and bystanders stay outside the boundary;
+- the pilot is not answering creative requests or changing mission goals;
+- the observer speaks only for safety-relevant issues.
+
+## Why this matters
+
+Takeoff and landing give the pilot the least time margin. A small distraction there causes larger consequences than the same distraction at safe altitude in stable cruise.
+
+## Practical markers
+
+The sterile area does not need expensive equipment. It can be built with:
+
+- cones,
+- a landing mat,
+- a spoken briefing,
+- a clear standing position for the client or observer,
+- one sentence repeated before startup: **“Do not enter this area until I say landing is complete.”**
+
+<Scenario title="You arrive for a property shoot. The client wants to stand beside you during takeoff so they can comment on framing immediately. The lawn is narrow and there is a decorative tree behind the launch spot. What is the correct setup?">
+Move the launch point if needed. Build a simple sterile area first.
+
+The pilot needs a clear takeoff and return path, distance from the tree, and a boundary that keeps the client outside the critical zone until the aircraft is stable. The right workflow is:
+
+1. choose the safest launch point, not the most convenient one;
+2. place the client outside the sterile area;
+3. brief them that framing discussion starts only after the aircraft is safely established;
+4. keep takeoff and landing free from non-essential conversation.
+</Scenario>
+
+<MemoryAnchor
+  rule="First shape the ground. Then fly from it. Sterile area means no people, no chatter, no last-second changes during critical phases."
+  hint="A calm launch zone buys time later."
+/>
+
+<CommonMistakes>
+- Choosing the most convenient launch point instead of the safest one.
+- Letting clients stand beside the pilot during takeoff and landing.
+- Failing to designate an emergency landing direction before launch.
+- Treating site survey as a quick look instead of a structured scan.
+- Allowing mission discussion to continue during final approach.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "op-ss1",
+    stem: "What is the main purpose of a sterile operating area?",
+    options: [
+      { id: "a", text: "To reserve space only for storing spare batteries." },
+      { id: "b", text: "To protect critical phases from distraction and unexpected intrusion." },
+      { id: "c", text: "To satisfy a requirement that every Open category flight use cones." },
+      { id: "d", text: "To keep the client close enough to monitor the screen." },
+    ],
+    correctOptionId: "b",
+    explanation: "A sterile operating area is a practical safety boundary that protects takeoff, landing, and other critical phases from distraction and interference.",
+    distractorRationales: {
+      a: "Battery storage may be organised nearby, but that is not the main function.",
+      c: "The idea is operational safety, not a specific cone mandate.",
+      d: "Clients should not crowd the pilot during critical phases.",
+    },
+  },
+  {
+    id: "op-ss2",
+    stem: "Which action best demonstrates a proper site survey before launch?",
+    options: [
+      { id: "a", text: "Turning on the aircraft immediately to save setup time." },
+      { id: "b", text: "Walking the site to identify obstacles, people movement, pilot position, and emergency landing direction." },
+      { id: "c", text: "Standing wherever the client prefers for convenience." },
+      { id: "d", text: "Assuming the area is fine because it looked empty from the car." },
+    ],
+    correctOptionId: "b",
+    explanation: "A real site survey is a structured ground assessment before power-up. It identifies hazards and shapes the operating layout before time pressure builds.",
+    distractorRationales: {
+      a: "Fast startup before assessment increases risk rather than reducing it.",
+      c: "Client convenience does not determine a safe pilot position.",
+      d: "A quick glance from the car is not a site survey.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["op-004"]}>
+You now know how to build a safer operating area before takeoff instead of trying to improvise after the aircraft is already in the air.
+
+Next: connect sterile-area discipline to emergency handling and post-flight habits so the whole mission flow stays controlled from first setup to final shutdown.
+</Debrief>

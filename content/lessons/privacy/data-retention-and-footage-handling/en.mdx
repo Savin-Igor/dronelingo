@@ -1,0 +1,147 @@
+# Data retention and footage handling
+
+<MissionBriefing objective="After this lesson you will know how to keep drone footage only as long as needed, how to separate client deliverables from raw operational material, and how to reduce privacy risk after the flight ends.">
+Privacy risk does not end when the motors stop. For many operators, the largest exposure comes later: messy card storage, unnecessary archives, casual sharing, and footage that no longer serves a valid purpose.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Privacy workflow diagram: SD card to review folder to client deliverable to limited archive to deletion, with warning icons on cloud sharing and open messenger forwarding"
+  alt="Post-flight privacy workflow for drone footage from capture to deletion"
+  caption="Training scene · footage lifecycle after the mission"
+/>
+
+## The basic rule: purpose first, retention second
+
+If footage was collected for a defined purpose, it should be kept only for that purpose and only for as long as that purpose still exists.
+
+For a drone operator, that means separating:
+
+- **client deliverables**;
+- **raw source footage**;
+- **operational evidence** kept for safety, reporting, or insurance reasons;
+- **material that should be deleted** because it has no continuing purpose.
+
+Keeping everything forever is not a neutral choice. It increases privacy and security exposure.
+
+<Artefact
+  description="Footage lifecycle cards: capture, review, deliver, retain if justified, delete if no purpose remains."
+  caption="Cards · footage-lifecycle"
+>
+  <div className="grid gap-3 md:grid-cols-5 text-sm">
+    {[
+      ["Capture", "Collect only what the mission actually needs."],
+      ["Review", "Check whether unrelated people, plates, or private spaces were captured."],
+      ["Deliver", "Provide only the agreed material to the client."],
+      ["Retain", "Keep evidence or contractual material only if there is a clear reason."],
+      ["Delete", "Remove unnecessary raw footage and duplicate copies."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## Raw footage is not automatically an archive
+
+Operators often treat the SD card or export folder as a permanent archive. That is poor practice.
+
+A better workflow is:
+
+1. ingest footage into a structured project folder;
+2. separate final deliverables from raw files;
+3. keep only the minimum raw set needed for editing, contractual proof, or incident evidence;
+4. delete duplicate or purposeless material on a defined schedule.
+
+## Sharing creates new risk
+
+Footage handling becomes more dangerous when operators:
+
+- forward clips in open messaging apps,
+- give the whole card dump to the client,
+- sync raw footage automatically to uncontrolled cloud accounts,
+- keep years of identifiable footage on unencrypted drives.
+
+Every extra copy is another potential disclosure.
+
+## When retention is justified
+
+Longer retention may be justified where footage is needed for:
+
+- a client contract,
+- a dispute,
+- an insurance claim,
+- an incident report,
+- a legal obligation.
+
+But “maybe useful someday” is not a strong retention reason.
+
+<Scenario title="After a construction shoot, the operator has 90 minutes of raw footage. The client needs only a 90-second edit. Several clips show neighbouring gardens and people who were not part of the job. What is the right handling approach?">
+Keep the footage only according to purpose.
+
+The operator should:
+
+1. extract the material actually needed for the client deliverable;
+2. identify whether some raw footage must be temporarily retained for editing or contractual proof;
+3. delete irrelevant clips that contain unnecessary third-party exposure once they are no longer needed;
+4. avoid giving the entire raw card dump to the client unless there is a defined contractual reason.
+
+The goal is not zero retention. The goal is justified retention.
+</Scenario>
+
+<MemoryAnchor
+  rule="Capture for a purpose. Keep for a reason. Delete when the reason ends."
+  hint="Raw footage is not automatically a permanent archive."
+/>
+
+<CommonMistakes>
+- Keeping every SD-card dump forever “just in case.”
+- Sending full raw folders through consumer messaging apps.
+- Treating all captured material as automatically belonging in the client package.
+- Forgetting that duplicate backups also count as retained personal data.
+- Storing old footage on unencrypted drives with no retention schedule.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "pr-dr1",
+    stem: "What is the strongest reason to keep raw drone footage for longer than the final edit cycle?",
+    options: [
+      { id: "a", text: "It might be interesting to watch later." },
+      { id: "b", text: "There is a clear contractual, legal, insurance, or incident-related reason." },
+      { id: "c", text: "Large storage drives are inexpensive." },
+      { id: "d", text: "The operator prefers not to organise files." },
+    ],
+    correctOptionId: "b",
+    explanation: "Extended retention should be tied to a real purpose such as contract performance, dispute handling, insurance evidence, incident reporting, or legal obligation.",
+    distractorRationales: {
+      a: "Personal curiosity is not a strong retention basis for privacy-sensitive footage.",
+      c: "Cheap storage does not justify retaining unnecessary personal data.",
+      d: "Poor file discipline is not a legal or ethical retention reason.",
+    },
+  },
+  {
+    id: "pr-dr2",
+    stem: "What is the better default workflow after a client shoot?",
+    options: [
+      { id: "a", text: "Give the client the full raw card dump automatically." },
+      { id: "b", text: "Separate deliverables from raw material and retain only what still has a defined purpose." },
+      { id: "c", text: "Upload everything to a personal cloud folder with open sharing." },
+      { id: "d", text: "Keep all copies forever to avoid accidental deletion." },
+    ],
+    correctOptionId: "b",
+    explanation: "The better workflow is purpose-based retention: isolate what is needed for delivery, proof, or evidence, and remove material that no longer has a valid purpose.",
+    distractorRationales: {
+      a: "Clients usually need the agreed deliverables, not uncontrolled bulk data.",
+      c: "Open sharing increases disclosure risk and weakens control over personal data.",
+      d: "Infinite retention increases privacy and security exposure.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["pr-004"]}>
+You now have a practical privacy workflow for what happens after the flight: review, separate, justify, retain narrowly, and delete on purpose.
+
+Next: connect filming legality, consent, and post-flight handling into one consistent privacy practice instead of treating them as separate boxes.
+</Debrief>

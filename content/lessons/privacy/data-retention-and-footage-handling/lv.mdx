@@ -1,0 +1,147 @@
+# Datu glabāšana un materiālu apstrāde
+
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, cik ilgi drona materiālu drīkst glabāt, kā atdalīt klienta rezultātu no neapstrādātā materiāla un kā mazināt privātuma risku pēc lidojuma beigām.">
+Privātuma risks nebeidzas, kad motori apstājas. Daudziem operatoriem lielākais risks rodas vēlāk: nekārtīga karšu glabāšana, nevajadzīgi arhīvi, pavirša dalīšanās un materiāli, kuriem vairs nav derīga mērķa.
+</MissionBriefing>
+
+<CinematicScene
+  prompt="Privacy workflow diagram: SD card to review folder to client deliverable to limited archive to deletion, with warning icons on cloud sharing and open messenger forwarding"
+  alt="Pēc-lidojuma privātuma plūsma drona materiālam no uzņemšanas līdz dzēšanai"
+  caption="Treniņa aina · materiāla dzīves cikls pēc misijas"
+/>
+
+## Pamatnoteikums: vispirms mērķis, tad glabāšana
+
+Ja materiāls ievākts konkrētam mērķim, tas jātur tikai šim mērķim un tikai tik ilgi, kamēr mērķis vēl pastāv.
+
+Drona operatoram tas nozīmē atdalīt:
+
+- **klienta gala materiālus**;
+- **neapstrādāto izejmateriālu**;
+- **operatīvos pierādījumus**, kas vajadzīgi drošībai, ziņošanai vai apdrošināšanai;
+- **materiālus, kas jādzēš**, jo tiem vairs nav turpmāka mērķa.
+
+Glabāt visu mūžīgi nav neitrāla izvēle. Tā palielina privātuma un drošības risku.
+
+<Artefact
+  description="Materiāla dzīves cikla kartes: uzņemšana, pārskatīšana, nodošana, pamatota glabāšana, dzēšana, kad mērķa vairs nav."
+  caption="Kartes · materiāla-dzīves-cikls"
+>
+  <div className="grid gap-3 md:grid-cols-5 text-sm">
+    {[
+      ["Uzņemšana", "Ievāc tikai to, kas misijai patiešām vajadzīgs."],
+      ["Pārskatīšana", "Pārbaudi, vai kadrā nav nevajadzīgu cilvēku, numuru vai privātu telpu."],
+      ["Nodošana", "Dod klientam tikai saskaņoto materiālu."],
+      ["Glabāšana", "Atstāj pierādījumus vai līgumam vajadzīgo tikai ar skaidru pamatojumu."],
+      ["Dzēšana", "Noņem nevajadzīgo izejmateriālu un dublikātus."],
+    ].map(([title, text]) => (
+      <div key={title} className="border border-horizon bg-hull/60 p-4">
+        <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
+        <p className="mt-2 text-telemetry">{text}</p>
+      </div>
+    ))}
+  </div>
+</Artefact>
+
+## Izejmateriāls nav automātisks arhīvs
+
+Operatori bieži izturas pret SD karti vai eksporta mapi kā pret pastāvīgu arhīvu. Tā ir slikta prakse.
+
+Labāka plūsma ir:
+
+1. importēt materiālu strukturētā projekta mapē;
+2. nodalīt gala materiālu no neapstrādātajiem failiem;
+3. atstāt tikai minimālo izejmateriāla apjomu, kas vajadzīgs montāžai, līgumiskam pierādījumam vai incidenta pierādījumiem;
+4. pēc noteikta grafika dzēst dublikātus un bezmērķīgo materiālu.
+
+## Dalīšanās rada jaunu risku
+
+Materiāla apstrāde kļūst bīstamāka, ja operators:
+
+- pārsūta klipus atvērtās ziņapmaiņas lietotnēs;
+- atdod klientam visu kartes izgāztuvi;
+- automātiski sinhronizē neapstrādāto materiālu uz nekontrolētiem mākoņkontiem;
+- glabā gadiem ilgu identificējamu materiālu nešifrētos diskos.
+
+Katra papildu kopija ir vēl viena iespējama noplūde.
+
+## Kad ilgāka glabāšana ir pamatota
+
+Ilgāka glabāšana var būt pamatota, ja materiāls vajadzīgs:
+
+- klienta līgumam;
+- strīdam;
+- apdrošināšanas prasījumam;
+- incidenta ziņojumam;
+- juridiskam pienākumam.
+
+Bet "varbūt kādreiz noderēs" nav spēcīgs glabāšanas iemesls.
+
+<Scenario title="Pēc būvlaukuma filmēšanas operatoram ir 90 minūtes neapstrādāta materiāla. Klientam vajag tikai 90 sekunžu montāžu. Dažos klipos redzami kaimiņu dārzi un cilvēki, kas nebija darba daļa. Kā pareizi rīkoties?">
+Materiāls jāglabā tikai atbilstoši mērķim.
+
+Operatoram vajadzētu:
+
+1. izdalīt materiālu, kas tiešām vajadzīgs klienta rezultātam;
+2. noteikt, vai daļa izejmateriāla īslaicīgi jāatstāj montāžai vai līgumiskam pierādījumam;
+3. dzēst nerelevantos klipus ar nevajadzīgu trešo personu ekspozīciju, tiklīdz tie vairs nav vajadzīgi;
+4. nedot klientam visu neapstrādāto kartes saturu, ja vien tam nav skaidra līgumiska pamata.
+
+Mērķis nav nulle glabāšanas. Mērķis ir pamatota glabāšana.
+</Scenario>
+
+<MemoryAnchor
+  rule="Uzņem mērķim. Glabā ar iemeslu. Dzēs, kad iemesls beidzas."
+  hint="Izejmateriāls nav automātisks pastāvīgs arhīvs."
+/>
+
+<CommonMistakes>
+- Glabāt katru SD kartes izgāztuvi mūžīgi "katram gadījumam".
+- Sūtīt pilnas izejmateriālu mapes caur patēriņa ziņapmaiņas lietotnēm.
+- Uztvert visu uzņemto materiālu kā automātisku klienta pakas daļu.
+- Aizmirst, ka arī dublējumkopijas ir glabāti personas dati.
+- Turēt vecu materiālu nešifrētos diskos bez glabāšanas grafika.
+</CommonMistakes>
+
+<MiniQuiz questions={[
+  {
+    id: "pr-dr1",
+    stem: "Kurš ir spēcīgākais iemesls glabāt neapstrādātu drona materiālu ilgāk par gala montāžas ciklu?",
+    options: [
+      { id: "a", text: "Tas vēlāk varētu būt interesanti paskatīties." },
+      { id: "b", text: "Ir skaidrs līgumisks, juridisks, apdrošināšanas vai incidenta pamatojums." },
+      { id: "c", text: "Lieli diski ir lēti." },
+      { id: "d", text: "Operators negrib organizēt failus." },
+    ],
+    correctOptionId: "b",
+    explanation: "Pagarinātai glabāšanai jābalstās uz reālu mērķi, piemēram, līguma izpildi, strīdu, apdrošināšanu, incidenta ziņošanu vai juridisku pienākumu.",
+    distractorRationales: {
+      a: "Personiska interese nav pietiekams glabāšanas pamats privātuma jutīgam materiālam.",
+      c: "Lēta glabāšana neattaisno nevajadzīgu personas datu turēšanu.",
+      d: "Slikta failu disciplīna nav juridisks vai ētisks glabāšanas iemesls.",
+    },
+  },
+  {
+    id: "pr-dr2",
+    stem: "Kāda ir labāka noklusējuma plūsma pēc klienta filmēšanas?",
+    options: [
+      { id: "a", text: "Automātiski iedot klientam visu neapstrādāto kartes saturu." },
+      { id: "b", text: "Atdalīt gala materiālu no izejmateriāla un atstāt tikai to, kam vēl ir skaidrs mērķis." },
+      { id: "c", text: "Augšupielādēt visu personīgā mākoņa mapē ar atvērtu piekļuvi." },
+      { id: "d", text: "Glabāt visas kopijas mūžīgi, lai izvairītos no nejaušas dzēšanas." },
+    ],
+    correctOptionId: "b",
+    explanation: "Labākā plūsma ir mērķī balstīta glabāšana: atstāt tikai to, kas vajadzīgs nodošanai, pierādīšanai vai drošības vajadzībām, un noņemt materiālu, kam vairs nav derīga mērķa.",
+    distractorRationales: {
+      a: "Klientam parasti vajag saskaņoto rezultātu, nevis nekontrolētu datu masu.",
+      c: "Atvērta dalīšanās palielina noplūdes risku un vājina kontroli pār personas datiem.",
+      d: "Bezgalīga glabāšana palielina privātuma un drošības risku.",
+    },
+  },
+]} />
+
+<Debrief unlocks={["pr-004"]}>
+Tev tagad ir praktiska privātuma plūsma tam, kas notiek pēc lidojuma: pārskati, nodali, pamato, glabā šauri un dzēs apzināti.
+
+Tālāk: sasaisti filmēšanas likumību, piekrišanu un pēc-lidojuma apstrādi vienā konsekventā privātuma praksē, nevis atsevišķos lodziņos.
+</Debrief>
