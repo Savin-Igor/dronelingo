@@ -1,9 +1,13 @@
 import { Link } from "@/i18n/navigation";
+import { auth } from "@/auth";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { MobileDrawer } from "./MobileDrawer";
 import { NavLinks } from "./NavLinks";
+import { UserMenu } from "./auth/UserMenu";
 
-export function Header() {
+export async function Header() {
+  const session = await auth();
+
   return (
     <header className="sticky top-0 z-30 border-b border-horizon bg-cockpit/90 backdrop-blur-xl">
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-6 px-6 py-4">
@@ -26,6 +30,7 @@ export function Header() {
           <div className="hidden sm:block">
             <LocaleSwitcher />
           </div>
+          <UserMenu user={session?.user ?? null} />
           <MobileDrawer />
         </div>
       </div>

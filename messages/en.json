@@ -266,16 +266,32 @@
     "nextLabel": "Next:",
     "certifiedHint": "You're certified — fly the real exam at e.caa.gov.lv.",
     "tiers": {
-      "recruit": { "name": "Recruit" },
-      "cadet": { "name": "Cadet" },
-      "pilotReady": { "name": "A1/A3 ready" },
-      "certified": { "name": "Certified" }
+      "recruit": {
+        "name": "Recruit"
+      },
+      "cadet": {
+        "name": "Cadet"
+      },
+      "pilotReady": {
+        "name": "A1/A3 ready"
+      },
+      "certified": {
+        "name": "Certified"
+      }
     },
     "criteria": {
-      "lessonsVisited": { "label": "Visit {target} lessons ({current}/{target})" },
-      "recentMockPasses": { "label": "Pass {target} mock exams ≥ 85 % this week ({current}/{target})" },
-      "topicsAt70": { "label": "Reach 70 % mastery across all topics ({current}/{target})" },
-      "hasCertificate": { "label": "Upload your CAA Latvia certificate" }
+      "lessonsVisited": {
+        "label": "Visit {target} lessons ({current}/{target})"
+      },
+      "recentMockPasses": {
+        "label": "Pass {target} mock exams ≥ 85 % this week ({current}/{target})"
+      },
+      "topicsAt70": {
+        "label": "Reach 70 % mastery across all topics ({current}/{target})"
+      },
+      "hasCertificate": {
+        "label": "Upload your CAA Latvia certificate"
+      }
     }
   },
   "masteryMap": {
@@ -338,13 +354,27 @@
       "bvlosCapable": "BVLOS-capable",
       "dash": "—",
       "classes": {
-        "C0": { "restriction": "Over individuals OK · never over assemblies" },
-        "C1": { "restriction": "No expected overflight of uninvolved persons" },
-        "C2": { "restriction": "Low-speed mode (≤ 3 m/s) → 5 m · normal → 30 m" },
-        "C3": { "restriction": "≥ 150 m from inhabited areas · ≥ 30 m or 1:1 from people" },
-        "C4": { "restriction": "No autonomous modes — manual control only" },
-        "C5": { "restriction": "VLOS, controlled ground area, airspace observers" },
-        "C6": { "restriction": "BVLOS over sparsely populated · observer chain required" }
+        "C0": {
+          "restriction": "Over individuals OK · never over assemblies"
+        },
+        "C1": {
+          "restriction": "No expected overflight of uninvolved persons"
+        },
+        "C2": {
+          "restriction": "Low-speed mode (≤ 3 m/s) → 5 m · normal → 30 m"
+        },
+        "C3": {
+          "restriction": "≥ 150 m from inhabited areas · ≥ 30 m or 1:1 from people"
+        },
+        "C4": {
+          "restriction": "No autonomous modes — manual control only"
+        },
+        "C5": {
+          "restriction": "VLOS, controlled ground area, airspace observers"
+        },
+        "C6": {
+          "restriction": "BVLOS over sparsely populated · observer chain required"
+        }
       }
     },
     "whCalculator": {
@@ -372,12 +402,36 @@
       "yes": "Yes",
       "no": "No",
       "items": {
-        "illness": { "letter": "I", "label": "Illness", "prompt": "Any active infection, cold, or symptoms affecting concentration?" },
-        "medication": { "letter": "M", "label": "Medication", "prompt": "Any medication that may cause drowsiness or affect alertness?" },
-        "stress": { "letter": "S", "label": "Stress", "prompt": "Acute emotional stress (argument, bad news, financial pressure)?" },
-        "alcohol": { "letter": "A", "label": "Alcohol", "prompt": "Any alcohol consumed in the last 8 hours?" },
-        "fatigue": { "letter": "F", "label": "Fatigue", "prompt": "Fewer than 6 hours of sleep last night, or sustained sleep debt?" },
-        "eating": { "letter": "E", "label": "Eating", "prompt": "No food in the last 4 hours, or feeling hypoglycaemic?" }
+        "illness": {
+          "letter": "I",
+          "label": "Illness",
+          "prompt": "Any active infection, cold, or symptoms affecting concentration?"
+        },
+        "medication": {
+          "letter": "M",
+          "label": "Medication",
+          "prompt": "Any medication that may cause drowsiness or affect alertness?"
+        },
+        "stress": {
+          "letter": "S",
+          "label": "Stress",
+          "prompt": "Acute emotional stress (argument, bad news, financial pressure)?"
+        },
+        "alcohol": {
+          "letter": "A",
+          "label": "Alcohol",
+          "prompt": "Any alcohol consumed in the last 8 hours?"
+        },
+        "fatigue": {
+          "letter": "F",
+          "label": "Fatigue",
+          "prompt": "Fewer than 6 hours of sleep last night, or sustained sleep debt?"
+        },
+        "eating": {
+          "letter": "E",
+          "label": "Eating",
+          "prompt": "No food in the last 4 hours, or feeling hypoglycaemic?"
+        }
       }
     },
     "zoneClassifier": {
@@ -421,15 +475,51 @@
       "altitudeAriaLabel": "Altitude in metres above ground",
       "ceilingMark": "120 m ceiling",
       "subcats": {
-        "a1-c0": { "label": "A1 — C0 (<250 g)", "note": "Overflight of individuals OK · never over assemblies" },
-        "a1-c1": { "label": "A1 — C1 (<900 g)", "note": "Plan around people · no expected overflight" },
-        "a2-low": { "label": "A2 — C2 low-speed (≤ 3 m/s)", "note": "Activate low-speed mode BEFORE closing to 5 m" },
-        "a2-normal": { "label": "A2 — C2 normal speed", "note": "Flat 30 m horizontal" },
-        "a3": { "label": "A3 — C2 / C3 / C4 / legacy" }
+        "a1-c0": {
+          "label": "A1 — C0 (<250 g)",
+          "note": "Overflight of individuals OK · never over assemblies"
+        },
+        "a1-c1": {
+          "label": "A1 — C1 (<900 g)",
+          "note": "Plan around people · no expected overflight"
+        },
+        "a2-low": {
+          "label": "A2 — C2 low-speed (≤ 3 m/s)",
+          "note": "Activate low-speed mode BEFORE closing to 5 m"
+        },
+        "a2-normal": {
+          "label": "A2 — C2 normal speed",
+          "note": "Flat 30 m horizontal"
+        },
+        "a3": {
+          "label": "A3 — C2 / C3 / C4 / legacy"
+        }
       },
       "a3NoteFloor": "30 m floor applies — 1:1 not yet binding",
       "a3NoteActive": "1:1 rule active · {altitude} m altitude → {altitude} m distance",
       "footer": "Remember: the 1:1 rule in A3 means horizontal distance ≥ flight altitude, with a 30 m floor. The crowd prohibition applies in every sub-category regardless of altitude or distance."
     }
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "signInDesc": "Enter your email — we'll send a magic link.",
+    "email": "Email",
+    "sendLink": "Send magic link",
+    "sending": "Sending…",
+    "sendError": "Could not send the link. Try again.",
+    "checkEmail": "Check your email",
+    "checkEmailDesc": "We sent a sign-in link. Check your inbox (and spam folder).",
+    "backHome": "Back to home"
+  },
+  "profile": {
+    "title": "Profile",
+    "examsTotal": "Exams taken",
+    "passRate": "Pass rate",
+    "questionsAnswered": "Questions answered",
+    "memberSince": "Member since",
+    "topicAccuracy": "Accuracy by topic",
+    "examHistory": "Exam history",
+    "noData": "No data yet — take practice or an exam first."
   }
 }

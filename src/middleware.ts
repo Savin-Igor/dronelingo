@@ -1,9 +1,14 @@
-import createMiddleware from "next-intl/middleware";
+import { auth } from "@/auth";
+import createIntlMiddleware from "next-intl/middleware";
 import { routing } from "./i18n/routing";
+import type { NextRequest } from "next/server";
 
-export default createMiddleware(routing);
+const intl = createIntlMiddleware(routing);
+
+export default auth((req: NextRequest & { auth: unknown }) => {
+  return intl(req);
+});
 
 export const config = {
-  // Match all paths except: api, _next, static assets.
   matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };

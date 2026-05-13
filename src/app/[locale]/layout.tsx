@@ -3,12 +3,15 @@ import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { SessionProvider } from "next-auth/react";
+import { auth } from "@/auth";
 import { ConsentBanner } from "@/components/ConsentBanner";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/Header";
 import { ClientWrapper } from "@/components/layout/ClientWrapper";
 import { Plausible } from "@/components/Plausible";
 import { SkipToContent } from "@/components/SkipToContent";
+import { SyncOnSignIn } from "@/components/auth/SyncOnSignIn";
 import { env } from "@/env";
 import { routing } from "@/i18n/routing";
 import { SITE_NAME, SITE_URL, buildMetadata } from "@/lib/seo";
@@ -66,6 +69,7 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  const session = await auth();
   const plausibleDomain = env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
 
   const fontVars = [
@@ -77,18 +81,21 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={fontVars}>
       <body className="antialiased">
-        <NextIntlClientProvider>
-          <SkipToContent />
-          <div className="flex min-h-screen flex-col">
-            <Header />
-            <div id="main" className="flex-1">
-              <ClientWrapper>{children}</ClientWrapper>
+        <SessionProvider session={session}>
+          <NextIntlClientProvider>
+            <SkipToContent />
+            <div className="flex min-h-screen flex-col">
+              <Header />
+              <div id="main" className="flex-1">
+                <ClientWrapper>{children}</ClientWrapper>
+              </div>
+              <Footer />
             </div>
-            <Footer />
-          </div>
-          <ConsentBanner />
-          {plausibleDomain ? <Plausible domain={plausibleDomain} /> : null}
-        </NextIntlClientProvider>
+            <ConsentBanner />
+            <SyncOnSignIn />
+            {plausibleDomain ? <Plausible domain={plausibleDomain} /> : null}
+          </NextIntlClientProvider>
+        </SessionProvider>
       </body>
     </html>
   );

@@ -266,16 +266,32 @@
     "nextLabel": "Tālāk:",
     "certifiedHint": "Tu esi sertificēts — kārto īsto eksāmenu e.caa.gov.lv.",
     "tiers": {
-      "recruit": { "name": "Iesācējs" },
-      "cadet": { "name": "Kadets" },
-      "pilotReady": { "name": "A1/A3 gatavs" },
-      "certified": { "name": "Sertificēts" }
+      "recruit": {
+        "name": "Iesācējs"
+      },
+      "cadet": {
+        "name": "Kadets"
+      },
+      "pilotReady": {
+        "name": "A1/A3 gatavs"
+      },
+      "certified": {
+        "name": "Sertificēts"
+      }
     },
     "criteria": {
-      "lessonsVisited": { "label": "Apmeklē {target} nodarbības ({current}/{target})" },
-      "recentMockPasses": { "label": "Šonedēļ nokārto {target} mock eksāmenus ≥ 85 % ({current}/{target})" },
-      "topicsAt70": { "label": "Sasniedz 70 % apgūšanu visās tēmās ({current}/{target})" },
-      "hasCertificate": { "label": "Augšupielādē savu CAA Latvia sertifikātu" }
+      "lessonsVisited": {
+        "label": "Apmeklē {target} nodarbības ({current}/{target})"
+      },
+      "recentMockPasses": {
+        "label": "Šonedēļ nokārto {target} mock eksāmenus ≥ 85 % ({current}/{target})"
+      },
+      "topicsAt70": {
+        "label": "Sasniedz 70 % apgūšanu visās tēmās ({current}/{target})"
+      },
+      "hasCertificate": {
+        "label": "Augšupielādē savu CAA Latvia sertifikātu"
+      }
     }
   },
   "masteryMap": {
@@ -338,13 +354,27 @@
       "bvlosCapable": "BVLOS spējīgs",
       "dash": "—",
       "classes": {
-        "C0": { "restriction": "Pārlidot atsevišķas personas — drīkst · pulcēšanos — nekad" },
-        "C1": { "restriction": "Pārlidojums virs nepiederošām personām nav gaidāms" },
-        "C2": { "restriction": "Zema ātruma režīms (≤ 3 m/s) → 5 m · parasti → 30 m" },
-        "C3": { "restriction": "≥ 150 m no apdzīvotām zonām · ≥ 30 m vai 1:1 no cilvēkiem" },
-        "C4": { "restriction": "Bez autonomiem režīmiem — tikai manuāla vadība" },
-        "C5": { "restriction": "VLOS, kontrolēta zemes zona, gaisa telpas novērotāji" },
-        "C6": { "restriction": "BVLOS pār mazapdzīvotām zonām · novērotāju ķēde" }
+        "C0": {
+          "restriction": "Pārlidot atsevišķas personas — drīkst · pulcēšanos — nekad"
+        },
+        "C1": {
+          "restriction": "Pārlidojums virs nepiederošām personām nav gaidāms"
+        },
+        "C2": {
+          "restriction": "Zema ātruma režīms (≤ 3 m/s) → 5 m · parasti → 30 m"
+        },
+        "C3": {
+          "restriction": "≥ 150 m no apdzīvotām zonām · ≥ 30 m vai 1:1 no cilvēkiem"
+        },
+        "C4": {
+          "restriction": "Bez autonomiem režīmiem — tikai manuāla vadība"
+        },
+        "C5": {
+          "restriction": "VLOS, kontrolēta zemes zona, gaisa telpas novērotāji"
+        },
+        "C6": {
+          "restriction": "BVLOS pār mazapdzīvotām zonām · novērotāju ķēde"
+        }
       }
     },
     "whCalculator": {
@@ -372,12 +402,36 @@
       "yes": "Jā",
       "no": "Nē",
       "items": {
-        "illness": { "letter": "I", "label": "Slimība", "prompt": "Aktīva infekcija, saaukstēšanās vai simptomi, kas ietekmē koncentrāciju?" },
-        "medication": { "letter": "M", "label": "Medikamenti", "prompt": "Medikaments, kas var izraisīt miegainību vai ietekmēt modrību?" },
-        "stress": { "letter": "S", "label": "Stress", "prompt": "Akūts emocionāls stress (strīds, sliktas ziņas, finansiāls spiediens)?" },
-        "alcohol": { "letter": "A", "label": "Alkohols", "prompt": "Vai esi lietojis alkoholu pēdējās 8 stundās?" },
-        "fatigue": { "letter": "F", "label": "Nogurums", "prompt": "Mazāk par 6 stundām miega pagājušajā naktī vai uzkrāts miega trūkums?" },
-        "eating": { "letter": "E", "label": "Ēšana", "prompt": "Bez ēdiena pēdējās 4 stundās vai jūties hipoglikēmisks?" }
+        "illness": {
+          "letter": "I",
+          "label": "Slimība",
+          "prompt": "Aktīva infekcija, saaukstēšanās vai simptomi, kas ietekmē koncentrāciju?"
+        },
+        "medication": {
+          "letter": "M",
+          "label": "Medikamenti",
+          "prompt": "Medikaments, kas var izraisīt miegainību vai ietekmēt modrību?"
+        },
+        "stress": {
+          "letter": "S",
+          "label": "Stress",
+          "prompt": "Akūts emocionāls stress (strīds, sliktas ziņas, finansiāls spiediens)?"
+        },
+        "alcohol": {
+          "letter": "A",
+          "label": "Alkohols",
+          "prompt": "Vai esi lietojis alkoholu pēdējās 8 stundās?"
+        },
+        "fatigue": {
+          "letter": "F",
+          "label": "Nogurums",
+          "prompt": "Mazāk par 6 stundām miega pagājušajā naktī vai uzkrāts miega trūkums?"
+        },
+        "eating": {
+          "letter": "E",
+          "label": "Ēšana",
+          "prompt": "Bez ēdiena pēdējās 4 stundās vai jūties hipoglikēmisks?"
+        }
       }
     },
     "zoneClassifier": {
@@ -421,15 +475,51 @@
       "altitudeAriaLabel": "Augstums metros virs zemes",
       "ceilingMark": "120 m griesti",
       "subcats": {
-        "a1-c0": { "label": "A1 — C0 (<250 g)", "note": "Pārlidojums virs atsevišķām personām — drīkst · virs pulcēšanās — nekad" },
-        "a1-c1": { "label": "A1 — C1 (<900 g)", "note": "Plāno ceļu apkārt cilvēkiem · pārlidojums nav gaidāms" },
-        "a2-low": { "label": "A2 — C2 zems ātrums (≤ 3 m/s)", "note": "Aktivizē zema ātruma režīmu PIRMS pietuvošanās 5 m" },
-        "a2-normal": { "label": "A2 — C2 parastais ātrums", "note": "Pastāvīgi 30 m horizontāli" },
-        "a3": { "label": "A3 — C2 / C3 / C4 / mantots" }
+        "a1-c0": {
+          "label": "A1 — C0 (<250 g)",
+          "note": "Pārlidojums virs atsevišķām personām — drīkst · virs pulcēšanās — nekad"
+        },
+        "a1-c1": {
+          "label": "A1 — C1 (<900 g)",
+          "note": "Plāno ceļu apkārt cilvēkiem · pārlidojums nav gaidāms"
+        },
+        "a2-low": {
+          "label": "A2 — C2 zems ātrums (≤ 3 m/s)",
+          "note": "Aktivizē zema ātruma režīmu PIRMS pietuvošanās 5 m"
+        },
+        "a2-normal": {
+          "label": "A2 — C2 parastais ātrums",
+          "note": "Pastāvīgi 30 m horizontāli"
+        },
+        "a3": {
+          "label": "A3 — C2 / C3 / C4 / mantots"
+        }
       },
       "a3NoteFloor": "30 m grīda piemērojama — 1:1 vēl nav saistošs",
       "a3NoteActive": "1:1 noteikums aktīvs · {altitude} m augstums → {altitude} m attālums",
       "footer": "Atceries: A3 1:1 noteikums nozīmē horizontālais attālums ≥ lidojuma augstumam, ar 30 m grīdu. Pulcēšanās aizliegums darbojas katrā apakškategorijā neatkarīgi no augstuma vai attāluma."
     }
+  },
+  "auth": {
+    "signIn": "Pieslēgties",
+    "signOut": "Atslēgties",
+    "signInDesc": "Ievadi e-pastu — nosūtīsim maģisko saiti.",
+    "email": "E-pasts",
+    "sendLink": "Sūtīt maģisko saiti",
+    "sending": "Sūta…",
+    "sendError": "Nevarēja nosūtīt saiti. Mēģini vēlreiz.",
+    "checkEmail": "Pārbaud e-pastu",
+    "checkEmailDesc": "Nosūtījām pieslēgšanās saiti. Pārbaudi iesūtni (un mēstules mapi).",
+    "backHome": "Atpakaļ uz sākumu"
+  },
+  "profile": {
+    "title": "Profils",
+    "examsTotal": "Eksāmeni",
+    "passRate": "Izturēšanas %",
+    "questionsAnswered": "Atbildēti jautājumi",
+    "memberSince": "Biedrs kopš",
+    "topicAccuracy": "Precizitāte pa tēmām",
+    "examHistory": "Eksāmenu vēsture",
+    "noData": "Datu vēl nav — sāc praktizēties vai kārtot eksāmenu."
   }
 }
