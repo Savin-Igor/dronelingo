@@ -1626,487 +1626,433 @@
   scenarioType: decision
 - id: ar-032
   stem:
-    lv: Pilots pārbauda, vai plānotā operācija joprojām ietilpst Atvērtajā kategorijā. Kuri Latvijas MK noteikumi nosaka UAS pilota kvalifikācijas kārtību?
-    en: A pilot is checking whether the planned operation still fits the Open category. Which Latvian Cabinet Regulation governs UAS pilot qualification?
-    ru: Пилот проверяет, остаётся ли запланированная операция в Open category. Какие правила Кабинета министров Латвии регулируют квалификацию пилота UAS?
+    lv: Latvijā reģistrēts pilots ar A1/A3 apliecinājumu dodas filmēt pasākumu Igaunijā. Kas jādara pirms lidojuma?
+    en: A Latvia-registered pilot with A1/A3 proof plans to film an event in Estonia. What must be done before flight?
+    ru: Пилот с латвийской регистрацией и A1/A3 едет снимать мероприятие в Эстонии. Что нужно сделать до полёта?
   options:
   - id: a
     text:
-      lv: MK noteikumi Nr. 627.
-      en: Cabinet Regulation No. 627.
-      ru: Правила КМ № 627.
+      lv: Jāpārreģistrējas kā operators Igaunijā katram braucienam.
+      en: Register again as an operator in Estonia for every trip.
+      ru: Каждый раз заново регистрироваться оператором в Эстонии.
   - id: b
     text:
-      lv: MK noteikumi Nr. 447.
-      en: Cabinet Regulation No. 447.
-      ru: Правила КМ № 447.
+      lv: Jāievēro tikai Latvijas noteikumi, jo apliecinājums izdots Latvijā.
+      en: Follow only Latvian rules because the certificate was issued in Latvia.
+      ru: Соблюдать только латвийские правила, потому что удостоверение выдано в Латвии.
   - id: c
     text:
-      lv: MK noteikumi Nr. 248.
-      en: Cabinet Regulation No. 248.
-      ru: Правила КМ № 248.
+      lv: Jālieto tikai airspace.lv karte, jo operators ir no Latvijas.
+      en: Use only airspace.lv because the operator is from Latvia.
+      ru: Пользоваться только airspace.lv, потому что оператор из Латвии.
   - id: d
     text:
-      lv: MK noteikumi Nr. 436.
-      en: Cabinet Regulation No. 436.
-      ru: Правила КМ № 436.
+      lv: Jāpārbauda Igaunijas UAS ģeogrāfiskās zonas un vietējie nosacījumi.
+      en: Check Estonia’s UAS geographical zones and local conditions.
+      ru: Проверить географические зоны БВС и местные условия Эстонии.
   correctOptionId: d
   explanation:
-    lv: 'MK Nr. 436 ir par UAS pilota kvalifikāciju. MK Nr. 248 — par lidojuma noteikumiem; MK Nr. 627 — par modeļa lidaparātu klubiem.
-
-      '
-    en: 'Cabinet Reg. No. 436 covers UAS pilot qualification. No. 248 sets flight rules; No. 627 deals with model-aircraft clubs.
-
-      '
-    ru: 'Правила КМ № 436 — о квалификации пилота UAS. № 248 — о правилах полётов; № 627 — о клубах авиамоделистов.
-
-      '
+    lv: A1/A3 kompetence ir atzīstama ES, bet katras valsts zonas, ierobežojumi un procedūras paliek saistošas.
+    en: A1/A3 competence is recognised in the EU, but each country’s zones, restrictions and procedures remain binding.
+    ru: Компетенция A1/A3 признаётся в ЕС, но зоны, ограничения и процедуры каждой страны остаются обязательными.
   distractorRationales:
     a:
-      lv: MK Nr. 627 ir par modeļa lidaparātu klubiem, ne par UAS pilota individuālo kvalifikāciju.
-      en: Cabinet Reg. No. 627 covers model-aircraft clubs, not the individual UAS pilot qualification.
-      ru: Правила КМ № 627 — о клубах авиамоделистов, не об индивидуальной квалификации пилота UAS.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     b:
-      lv: MK Nr. 447 reglamentē civiltiesisko apdrošināšanu, nevis pilota kvalifikāciju.
-      en: Cabinet Reg. No. 447 governs civil-liability insurance, not pilot qualification.
-      ru: Правила КМ № 447 регулируют гражданскую страховку, а не квалификацию пилота.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     c:
-      lv: MK Nr. 248 nosaka lidojuma noteikumus kopumā, nevis pilota kvalifikāciju.
-      en: Cabinet Reg. No. 248 sets general flight rules, not pilot qualification.
-      ru: Правила КМ № 248 задают общие правила полётов, а не квалификацию пилота.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — MK noteikumi Nr. 436 (Latvia) — UAS pilot qualification
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/16-flying-outside-latvia.md — Latvian CAA guidance on flying outside Latvia
   difficulty: 3
   cognitiveLevel: apply
-  scenarioType: decision
+  scenarioType: regulatory
 - id: ar-033
   stem:
-    lv: Latvijas operators sagatavo dokumentāciju pirms lidojuma piešķiršanas tālvadības pilotam. Papildus A2 teorijas eksāmenam, kas vēl nepieciešams, lai iegūtu A2 kompetences sertifikātu?
-    en: A Latvian operator prepares documentation before assigning the flight to a remote pilot. Beyond the A2 theory exam, what else is required to obtain the A2 competence certificate?
-    ru: Латвийский оператор готовит документы перед назначением полёта удалённому пилоту. Помимо теоретического экзамена A2, что ещё требуется для получения свидетельства о компетентности A2?
+    lv: Pilots Latvijā vēlas pāriet no A1/A3 uz A2 darbam ar C2 dronu tuvāk cilvēkiem. Kas ir pareizā prasība?
+    en: A pilot in Latvia wants to move from A1/A3 to A2 for C2 operations closer to people. What is required?
+    ru: Пилот в Латвии хочет перейти с A1/A3 на A2 для работы с C2 ближе к людям. Что требуется?
   options:
   - id: a
     text:
-      lv: Pašdeklarācija par 5 praktisko prasmju jomām pēc patstāvīgas apmācības.
-      en: Self-declaration of practical skills covering 5 skill areas after self-study training.
-      ru: Самодекларация о практических навыках в 5 областях после самостоятельного обучения.
+      lv: Jānokārto A2 teorētiskais eksāmens un jāveic praktiskā pašmācība.
+      en: Pass the A2 theory exam and complete practical self-training.
+      ru: Сдать теоретический экзамен A2 и выполнить практическую самоподготовку.
   - id: b
     text:
-      lv: Pilnīgs praktiskais kurss ar instruktoru un praktiskais eksāmens.
-      en: A full practical course with an instructor and a practical exam.
-      ru: Полный практический курс с инструктором и практический экзамен.
+      lv: Pietiek ar apdrošināšanu un operatora numuru uz drona.
+      en: Insurance and an operator number on the drone are enough.
+      ru: Достаточно страховки и номера оператора на дроне.
   - id: c
     text:
-      lv: 100 stundu praktiskā lidojuma laika pierādīšana.
-      en: Demonstrating 100 hours of practical flight time.
-      ru: Подтверждение 100 часов практического налёта.
+      lv: Katram A2 lidojumam jāsaņem Specific kategorijas atļauja.
+      en: Each A2 flight requires a Specific category authorisation.
+      ru: На каждый полёт A2 нужно разрешение Specific category.
   - id: d
     text:
-      lv: Pilnīgi nekā — teorijas eksāmens ir pietiekams.
-      en: Nothing else — the theory exam alone is sufficient.
-      ru: Ничего — теоретического экзамена достаточно.
+      lv: Katrs pilots jāreģistrē kā atsevišķs operators.
+      en: Every pilot must register as a separate operator.
+      ru: Каждый пилот должен регистрироваться отдельным оператором.
   correctOptionId: a
   explanation:
-    lv: 'A2 kompetences sertifikāts prasa: (1) spēkā esošu A1/A3 sertifikātu, (2) A2 papildu teorijas eksāmenu (60 jautājumi, ≥75 %), un (3) pašdeklarāciju par patstāvīgi apmācīto praktisko prasmju 5 jomām. Nav obligāta instruktora uzraudzīta apmācība vai formāls praktiskais eksāmens.
-
-      '
-    en: 'The A2 competence certificate requires: (1) a valid A1/A3 certificate, (2) the A2 additional theory exam (60 questions, ≥75 %), and (3) a self-declaration of practical skills covering 5 areas after self-study. No instructor-supervised training or formal practical exam is mandatory.
-
-      '
-    ru: 'Свидетельство компетентности A2 требует: (1) действующего сертификата A1/A3, (2) дополнительного теоретического экзамена A2 (60 вопросов, ≥75 %), и (3) самодекларации о практических навыках в 5 областях после самостоятельного обучения. Обязательного курса под руководством инструктора или формального практического экзамена нет.
-
-      '
+    lv: A2 nav tikai administratīva atzīme. Tam vajag papildu teorētisko pārbaudi un praktisko pašmācību.
+    en: A2 is not just an administrative label. It requires additional theory testing and practical self-training.
+    ru: A2 — не административная отметка. Нужны дополнительная теория и практическая самоподготовка.
   distractorRationales:
     b:
-      lv: A2 neparedz obligātu instruktora kursu vai formālu praktisko eksāmenu. Praktiskās prasmes apliecina pašdeklarācijā.
-      en: A2 does not require a mandatory instructor course or formal practical exam. Practical skills are attested through self-declaration.
-      ru: A2 не предусматривает обязательного курса с инструктором или формального практического экзамена. Практические навыки подтверждаются самодекларацией.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     c:
-      lv: Nav noteiktas minimālās stundu prasības A2 sertifikātam. Pašdeklarācija nav atkarīga no skaitliski uzraudzīta lidojuma laika.
-      en: There is no minimum flight-hour requirement for the A2 certificate. The self-declaration is not contingent on a numerically audited flight time.
-      ru: Для сертификата A2 нет требований по минимальному налёту. Самодекларация не зависит от подтверждённого количества часов налёта.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     d:
-      lv: Teorijas eksāmens vien nav pietiekams — pašdeklarācija par praktiskajām prasmēm ir obligāta A2 prasība.
-      en: The theory exam alone is insufficient — the self-declaration of practical skills is a mandatory A2 requirement.
-      ru: Одного теоретического экзамена недостаточно — самодекларация о практических навыках является обязательным требованием A2.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. UAS.OPEN.030; EASA AMC1 UAS.OPEN.030
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/03-a2-theoretical-exam.md — Latvian A2 examination requirements
   difficulty: 3
   cognitiveLevel: apply
-  scenarioType: decision
+  scenarioType: regulatory
 - id: ar-034
   stem:
-    lv: Operators plānoto lidojumu sasaista ar pareizo ES regulatīvo kategoriju. Pilots ar A1/A3 sertifikātu vēlas ar C2 dronu filmēt būvlaukumu 20 m no strādniekiem (bez piekrišanas). Kurā apakškategorijā jādarbojas un vai 20 m ir atļauti?
-    en: An operator is mapping a planned flight to the correct EU regulatory category. A pilot with only the A1/A3 certificate wants to film a construction site with a C2 drone at 20 m from workers (without consent). Which sub-category applies and is 20 m permitted?
-    ru: Оператор сопоставляет запланированный полёт с правильной регуляторной категорией ЕС. Пилот, имеющий только сертификат A1/A3, хочет снимать строительную площадку дроном C2 в 20 м от рабочих (без согласия). Какая подкатегория применяется и разрешены ли 20 м?
+    lv: Būvobjekts Rīgā lūdz ar C2 dronu lidot 20 m no strādniekiem. Pilotam ir tikai A1/A3. Kāds secinājums?
+    en: A Riga construction site asks for a C2 drone flight 20 m from workers. The pilot only has A1/A3. What is the conclusion?
+    ru: Стройплощадка в Риге просит полёт C2 в 20 м от рабочих. У пилота только A1/A3. Какой вывод?
   options:
   - id: a
     text:
-      lv: A1 — C2 drons var darboties A1, kur nav distanču prasību.
-      en: A1 — a C2 drone can operate in A1, where there are no distance requirements.
-      ru: A1 — C2-дрон может работать в A1, где нет требований к дистанции.
+      lv: Atļauts, ja strādnieki redz dronu un neiebilst.
+      en: Allowed if workers see the drone and do not object.
+      ru: Разрешено, если рабочие видят дрон и не возражают.
   - id: b
     text:
-      lv: A3 — C2 ar tikai A1/A3 sertifikātu prasa A3 noteikumus. A3 prasa ≥30 m no nepiederošām personām. 20 m nav atļauti.
-      en: A3 — a C2 with only the A1/A3 certificate must follow A3 rules. A3 requires ≥30 m from uninvolved persons. 20 m is not permitted.
-      ru: A3 — C2 только с сертификатом A1/A3 должен соответствовать правилам A3. A3 требует ≥30 м от посторонних. 20 м не разрешены.
+      lv: Ar A1/A3 šādu C2 lidojumu tuvumā cilvēkiem neplāno; jāmaina kompetence vai operācija.
+      en: With A1/A3 this close C2 operation near people should not be planned; change competence or operation.
+      ru: С A1/A3 такой близкий полёт C2 рядом с людьми не планируют; нужна другая компетенция или операция.
   - id: c
     text:
-      lv: A3 — bet strādnieku piekrišana ļauj tuvināties līdz 5 m.
-      en: A3 — but the workers' consent allows approach to 5 m.
-      ru: A3 — но согласие рабочих позволяет приблизиться до 5 м.
+      lv: Tas vienmēr ir Specific kategorijā neatkarīgi no cilvēku statusa.
+      en: It is always Specific category regardless of people status.
+      ru: Это всегда Specific category независимо от статуса людей.
   - id: d
     text:
-      lv: A2 — 20 m ir atļauti zemā ātruma režīmā.
-      en: A2 — 20 m is permitted in low-speed mode.
-      ru: A2 — 20 м разрешены в режиме малой скорости.
+      lv: Būvobjektā Open kategorijas attālumi neattiecas.
+      en: Open category distances do not apply on construction sites.
+      ru: На стройплощадке дистанции Open category не применяются.
   correctOptionId: b
   explanation:
-    lv: 'C2 drons bez A2 kompetences sertifikāta var darboties tikai A3 apakškategorijā. A3 prasa ≥30 m no nepiederošām personām (vai 1:1 noteikumu). 20 m ir mazāk par 30 m — tas nav atļauts. 5 m distanču atvieglojums (zemā ātruma režīmā) attiecas tikai uz A2 operācijām ar A2 sertifikātu.
-
-      '
-    en: 'A C2 drone without the A2 competence certificate may only operate in A3. A3 requires ≥30 m from uninvolved persons (or the 1:1 rule). 20 m is less than 30 m — not permitted. The 5 m distance reduction (in low-speed mode) applies only to A2 operations with the A2 certificate.
-
-      '
-    ru: 'C2-дрон без сертификата A2 может работать только в A3. A3 требует ≥30 м от посторонних (или правило 1:1). 20 м меньше 30 м — не разрешено. Уменьшение до 5 м (в режиме малой скорости) применяется только к операциям A2 с сертификатом A2.
-
-      '
+    lv: C2 tuvāk cilvēkiem prasa atbilstošu apakškategoriju, kompetenci un cilvēku statusa kontroli. A1/A3 to automātiski nenodrošina.
+    en: C2 operations closer to people require the right subcategory, competence and control of people status. A1/A3 does not automatically satisfy that.
+    ru: Полёты C2 ближе к людям требуют правильной подкатегории, компетенции и контроля статуса людей. A1/A3 этого автоматически не даёт.
   distractorRationales:
     a:
-      lv: C2 klase nevar darboties A1 apakškategorijā. Klase nosaka minimālo apakškategoriju — C2 sākas ar A2 vai A3.
-      en: C2 class cannot operate in A1. The class determines the minimum sub-category — C2 starts at A2 or A3.
-      ru: Класс C2 не может работать в A1. Класс определяет минимальную подкатегорию — C2 начинается с A2 или A3.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     c:
-      lv: Strādnieku piekrišana A3 kontekstā neietekmē minimālās distanču prasības. A3 distanču noteikumi ir absolūti — tos nevar aizstāt ar privātu piekrišanu.
-      en: Worker consent in the A3 context does not affect the minimum distance requirements. A3 distance rules are absolute — they cannot be replaced by private consent.
-      ru: Согласие рабочих в контексте A3 не влияет на минимальные требования к дистанции. Правила расстояний A3 абсолютны — их нельзя заменить частным согласием.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     d:
-      lv: A2 rules (including the 5 m low-speed reduction) require both a C2 drone AND the A2 competence certificate. The pilot in this scenario holds only A1/A3.
-      en: A2 rules (including the 5 m low-speed reduction) require both a C2 drone AND the A2 competence certificate. The pilot in this scenario holds only A1/A3.
-      ru: Правила A2 (включая снижение до 5 м в режиме малой скорости) требуют как C2-дрона, так и сертификата A2. Пилот в данном сценарии имеет только A1/A3.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.030/040; UAS.OPEN.030(2)
-  difficulty: 3
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/07-open-category.md — Open category subcategories and conditions
+  difficulty: 4
   cognitiveLevel: analyze
   scenarioType: decision
 - id: ar-035
   stem:
-    lv: Pilots pārbauda, vai plānotā operācija joprojām ietilpst Atvērtajā kategorijā. Uzņēmums nosūta darbinieku lidot ar uzņēmuma dronu. Kurš jāreģistrē kā UAS operators?
-    en: A pilot is checking whether the planned operation still fits the Open category. A company sends an employee to fly the company's drone. Who must register as the UAS operator?
-    ru: Пилот проверяет, остаётся ли запланированная операция в Open category. Компания посылает сотрудника летать на корпоративном дроне. Кто должен быть зарегистрирован как оператор UAS?
+    lv: Latvijas uzņēmums nopērk dronu un dod darbiniekam filmēt klientu objektus. Uz kā vārda parasti jābūt operatora reģistrācijai?
+    en: A Latvian company buys a drone and gives it to an employee to film client sites. In whose name should operator registration normally be?
+    ru: Латвийская компания покупает дрон и выдаёт сотруднику для съёмки объектов клиентов. На чьё имя обычно нужна регистрация оператора?
   options:
   - id: a
     text:
-      lv: Abi — uzņēmums un darbinieks atsevišķi jāreģistrē.
-      en: Both — the company and employee must register separately.
-      ru: Оба — компания и сотрудник должны регистрироваться отдельно.
+      lv: Uz pilota vārda, jo viņš tur kontrolieri.
+      en: In the pilot’s name because they hold the controller.
+      ru: На имя пилота, потому что он держит пульт.
   - id: b
     text:
-      lv: Neviens — juridiskas personas ir atbrīvotas no reģistrācijas.
-      en: Neither — legal entities are exempt from registration.
-      ru: Никто — юридические лица освобождены от регистрации.
+      lv: Uz klienta vārda, jo filmēšana notiek viņa objektā.
+      en: In the client’s name because filming is at their site.
+      ru: На имя клиента, потому что съёмка на его объекте.
   - id: c
     text:
-      lv: Uzņēmums — UAS operators ir juridiskā vai fiziskā persona, kas ekspluatē UAS.
-      en: The company — the UAS operator is the legal or natural person operating the UAS.
-      ru: Компания — оператор UAS — это юридическое или физическое лицо, эксплуатирующее UAS.
+      lv: Uz uzņēmuma vārda, ja uzņēmums organizē un kontrolē UAS operācijas.
+      en: In the company’s name if the company organises and controls the UAS operations.
+      ru: На имя компании, если она организует и контролирует операции БВС.
   - id: d
     text:
-      lv: Darbinieks — jo viņš ir tālvadības pilots.
-      en: The employee — because they are the remote pilot.
-      ru: Сотрудник — потому что он дистанционный пилот.
+      lv: Reģistrācija nav vajadzīga, ja drons tiek lietots darba laikā.
+      en: Registration is not needed if the drone is used during working hours.
+      ru: Регистрация не нужна, если дрон используется в рабочее время.
   correctOptionId: c
   explanation:
-    lv: 'Reg 2019/947 definē UAS operatoru kā juridisko vai fizisko personu, kas ekspluatē UAS. Uzņēmums, kura īpašums ir drons, ir operators un jāreģistrē. Darbinieks ir tālvadības pilots un jākvalificē (sertifikāts), bet nav operators. Reģistrācija un kvalifikācija ir atsevišķas prasības atsevišķām pusēm.
-
-      '
-    en: 'Reg 2019/947 defines the UAS operator as the legal or natural person operating the UAS. The company that owns the drone is the operator and must register. The employee is the remote pilot and must be qualified (certificate) but is not the operator. Registration and qualification are separate requirements for separate parties.
-
-      '
-    ru: 'Регл. 2019/947 определяет оператора UAS как юридическое или физическое лицо, эксплуатирующее UAS. Компания, которой принадлежит дрон, — оператор и должна зарегистрироваться. Сотрудник — дистанционный пилот и должен иметь квалификацию (сертификат), но не является оператором.
-
-      '
+    lv: Operators ir persona vai organizācija, kas ekspluatē vai plāno ekspluatēt UAS. Komercoperācijā tā bieži ir juridiskā persona.
+    en: The operator is the person or organisation operating or intending to operate the UAS. In company operations this is often the legal entity.
+    ru: Оператор — лицо или организация, эксплуатирующая или планирующая эксплуатацию БВС. В корпоративных операциях это часто юридическое лицо.
   distractorRationales:
     a:
-      lv: Atsevišķa darbinieka reģistrācija nav prasīta. Operators reģistrējas; pilots iegūst sertifikātu. Šīs ir divas dažādas prasības — nevis dubultā reģistrācija.
-      en: Separate employee registration is not required. The operator registers; the pilot gets certified. These are two different requirements — not double registration.
-      ru: Отдельная регистрация сотрудника не требуется. Оператор регистрируется; пилот сертифицируется. Это два разных требования, а не двойная регистрация.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     b:
-      lv: Juridiskas personas nav atbrīvotas — tās ir galvenais reģistrācijas subjekts kā UAS operatori.
-      en: Legal entities are not exempt — they are the primary registration subject as UAS operators.
-      ru: Юридические лица не освобождены — они являются основным субъектом регистрации как операторы UAS.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     d:
-      lv: Tālvadības pilots nav tas pats, kas UAS operators. Pilots var būt darbinieks; operators ir tas, kurš ekspluatē sistēmu (parasti īpašnieks/darba devējs).
-      en: The remote pilot is not the same as the UAS operator. The pilot may be an employee; the operator is the entity that operates the system (typically the owner/employer).
-      ru: Дистанционный пилот — не то же самое, что оператор UAS. Пилот может быть сотрудником; оператор — юридическое лицо, эксплуатирующее систему.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. 2(2) — definition of UAS operator; Art. 14 — registration
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/08-registracija.md — Latvian UAS operator registration
   difficulty: 3
   cognitiveLevel: apply
-  scenarioType: decision
+  scenarioType: regulatory
 - id: ar-036
   stem:
-    lv: Latvijas operators sagatavo dokumentāciju pirms lidojuma piešķiršanas tālvadības pilotam. Kāds ir C4 klases UAS unikālais operacionālais ierobežojums salīdzinājumā ar C3?
-    en: A Latvian operator prepares documentation before assigning the flight to a remote pilot. What is the unique operational restriction of a C4 class UAS compared to C3?
-    ru: Латвийский оператор готовит документы перед назначением полёта удалённому пилоту. Каково уникальное операционное ограничение UAS класса C4 по сравнению с C3?
+    lv: Pārdevējs C4 klases dronam reklamē pilnībā automātisku maršruta lidošanu. Kas šeit ir jāpārbauda?
+    en: A seller advertises fully automatic route flying for a C4 class drone. What must be checked?
+    ru: Продавец рекламирует полностью автоматический маршрутный полёт для дрона C4. Что нужно проверить?
   options:
   - id: a
     text:
-      lv: C4 droniem ir ļoti zems ātruma limits — 19 m/s.
-      en: C4 drones have a very low speed limit — 19 m/s.
-      ru: У дронов C4 очень низкий предел скорости — 19 м/с.
+      lv: 'Nekas: C4 klase paredzēta autonomām misijām.'
+      en: 'Nothing: C4 class is intended for autonomous missions.'
+      ru: 'Ничего: класс C4 предназначен для автономных миссий.'
   - id: b
     text:
-      lv: C4 droni nevar laisties ārā no A3 zonas.
-      en: C4 drones cannot be operated outside A3 zones.
-      ru: Дроны C4 не могут эксплуатироваться за пределами зон A3.
+      lv: Automātika ir atļauta, ja drons ir zem 25 kg.
+      en: Automation is allowed if the drone is below 25 kg.
+      ru: Автоматика разрешена, если дрон легче 25 кг.
   - id: c
     text:
-      lv: C4 droni nedrīkst izmantot kameras.
-      en: C4 drones may not use cameras.
-      ru: Дроны C4 не могут использовать камеры.
+      lv: C4 droni ir tikai iekštelpu lietošanai.
+      en: C4 drones are for indoor use only.
+      ru: Дроны C4 только для помещений.
   - id: d
     text:
-      lv: C4 droni nedrīkst izmantot autonomos vai daļēji autonomos lidojuma režīmus — tikai manuālā vadība.
-      en: C4 drones must not use autonomous or semi-autonomous flight modes — manual control only.
-      ru: Дроны C4 не должны использовать автономные или полуавтономные режимы полёта — только ручное управление.
+      lv: C4 klasei parasti nedrīkst būt automātiskas vadības režīmi, izņemot stabilizāciju.
+      en: C4 class generally must not have automatic control modes except stabilisation.
+      ru: У класса C4 обычно не должно быть автоматических режимов управления, кроме стабилизации.
   correctOptionId: d
   explanation:
-    lv: 'C4 klase definē manuālās vadības aviomodeļa stilu, kas ir nozarē pirmsregulācijas periodā. C4 droni var darboties A3, bet tiem nav atļautas autonomas vai daļēji autonomas sistēmas (GPS autopilots, maršruta sekošana, sevis uzturēšanas režīmi). C3 šādu ierobežojumu nav — tas var būt pilnībā autonoms.
-
-      '
-    en: 'C4 class defines the manual-control model-aircraft style that predates regulation in the industry. C4 may operate in A3 but must not use autonomous or semi-autonomous systems (GPS autopilot, route following, hold modes). C3 has no such restriction — it can be fully autonomous.
-
-      '
-    ru: 'Класс C4 определяет стиль авиамодели с ручным управлением, существовавший до регулирования. C4 может работать в A3, но не должен использовать автономные или полуавтономные системы (GPS-автопилот, следование маршруту, режимы удержания). У C3 такого ограничения нет.
-
-      '
+    lv: C4 ir vienkāršāka manuāli vadāma klase, tāpēc automātisku misiju reklāma jāsalīdzina ar atbilstības dokumentiem.
+    en: C4 is a simpler manually controlled class, so automatic-mission claims must be checked against conformity documents.
+    ru: C4 — более простой класс ручного управления, поэтому заявления об автоматических миссиях нужно сверять с документами соответствия.
   distractorRationales:
     a:
-      lv: 19 m/s ātruma limits ir C0, nevis C4 prasība. C4 (< 25 kg) nav šāds specifisks ātruma limits.
-      en: The 19 m/s speed cap is a C0, not a C4, requirement. C4 (< 25 kg) has no such specific speed limit.
-      ru: Предел 19 м/с — требование C0, а не C4. C4 (< 25 кг) не имеет такого конкретного ограничения скорости.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     b:
-      lv: C3 arī darbojas tikai A3 — A3 nav C4 unikāls ierobežojums.
-      en: C3 also operates only in A3 — A3 is not a unique C4 restriction.
-      ru: C3 также работает только в A3 — это не уникальное ограничение C4.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     c:
-      lv: Kamera nav C4 ierobežojums — C4 droni var būt aprīkoti ar kamerām. Ierobežojums attiecas uz vadības veidu, ne uz aprīkojumu.
-      en: Cameras are not a C4 restriction — C4 drones may be equipped with cameras. The restriction concerns the control mode, not the equipment.
-      ru: Камеры не являются ограничением C4 — дроны C4 могут быть оснащены камерами. Ограничение касается режима управления, а не оборудования.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/945 Annex Part 5 — C4 requirements
-  difficulty: 3
-  cognitiveLevel: apply
-  scenarioType: decision
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
+  sourceRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — C4 class technical requirements
+  difficulty: 4
+  cognitiveLevel: analyze
+  scenarioType: regulatory
 - id: ar-037
   stem:
-    lv: Operators plānoto lidojumu sasaista ar pareizo ES regulatīvo kategoriju. Kāda ir Atvērtās kategorijas maksimālā UAS masa (MTOM)?
-    en: An operator is mapping a planned flight to the correct EU regulatory category. What is the maximum UAS mass (MTOM) for the Open category?
-    ru: Оператор сопоставляет запланированный полёт с правильной регуляторной категорией ЕС. Какова максимальная масса UAS (MTOM) для Открытой категории?
+    lv: Lauksaimnieks Latgalē vēlas Open kategorijā lidot ar 26 kg pašbūvētu dronu virs savas pļavas, tālu no cilvēkiem. Kāds secinājums?
+    en: A farmer in Latgale wants to fly a 26 kg privately built drone in Open category over his meadow, far from people. What is the conclusion?
+    ru: Фермер в Латгалии хочет летать в Open category на самодельном дроне 26 кг над своим лугом, далеко от людей. Какой вывод?
   options:
   - id: a
     text:
-      lv: 25 kg.
-      en: 25 kg.
-      ru: 25 кг.
+      lv: Tas nav Open kategorijas lidojums, jo Open robeža ir 25 kg.
+      en: It is not an Open category flight because the Open limit is 25 kg.
+      ru: Это не полёт Open category, потому что предел Open — 25 кг.
   - id: b
     text:
-      lv: 150 kg.
-      en: 150 kg.
-      ru: 150 кг.
+      lv: Tas ir A3, jo nav cilvēku tuvumā.
+      en: It is A3 because there are no people nearby.
+      ru: Это A3, потому что рядом нет людей.
   - id: c
     text:
-      lv: Nav ierobežojuma.
-      en: No limit.
-      ru: Без ограничений.
+      lv: Tas ir atļauts, ja drons nav rūpnieciski ražots.
+      en: It is allowed if the drone is not factory-made.
+      ru: Это разрешено, если дрон не заводского производства.
   - id: d
     text:
-      lv: 4 kg.
-      en: 4 kg.
-      ru: 4 кг.
+      lv: Virs privātas zemes masa Latvijā nav ierobežota.
+      en: Over private land, mass is not limited in Latvia.
+      ru: Над частной землёй масса в Латвии не ограничена.
   correctOptionId: a
   explanation:
-    lv: 'Atvērtā kategorija ir ierobežota UAS ar MTOM < 25 kg. Virs 25 kg nepieciešama Specifiskā kategorija ar SORA riska novērtējumu vai STS standartscenāriju, vai Sertificētā kategorija attiecīgajiem riska līmeņiem.
-
-      '
-    en: 'Open category is limited to UAS with MTOM < 25 kg. Above 25 kg a Specific category with SORA risk assessment or STS standard scenario is required, or the Certified category for appropriate risk levels.
-
-      '
-    ru: 'Открытая категория ограничена UAS с MTOM < 25 кг. Свыше 25 кг требуется Специальная категория с оценкой риска SORA или стандартным сценарием STS, либо Сертифицированная категория.
-
-      '
+    lv: Open kategorijā masa ir cieta robeža. Attālums no cilvēkiem un privāta zeme nepalielina 25 kg limitu.
+    en: Mass is a hard boundary in Open category. Distance from people and private land do not increase the 25 kg limit.
+    ru: Масса — жёсткая граница Open category. Удалённость от людей и частная земля не увеличивают лимит 25 кг.
   distractorRationales:
     b:
-      lv: 150 kg ir Sertificētās kategorijas slieksnis, nevis Atvērtās. Atvērtā beidzas pie 25 kg.
-      en: 150 kg is the Certified category threshold, not Open. Open ends at 25 kg.
-      ru: 150 кг — порог Сертифицированной категории, а не Открытой. Открытая заканчивается на 25 кг.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     c:
-      lv: Atvērtajai kategorijai ir stingra 25 kg masa. Tā nav bezmasa kategorija.
-      en: The Open category has a firm 25 kg mass cap. It is not a mass-unlimited category.
-      ru: Открытая категория имеет жёсткий предел в 25 кг. Это не категория без ограничений по массе.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     d:
-      lv: 4 kg ir C2 klases limits, nevis Atvērtās kategorijas kopējais limits. C3 un C4 ļauj lidot Atvērtajā līdz 25 kg.
-      en: 4 kg is the C2 class limit, not the Open category overall limit. C3 and C4 allow Open operations up to 25 kg.
-      ru: 4 кг — предел класса C2, а не общий предел Открытой категории. C3 и C4 разрешают Открытые операции до 25 кг.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. 4(1) — Open category definition
-  difficulty: 2
-  cognitiveLevel: apply
-  scenarioType: decision
-- id: ar-038
-  stem:
-    lv: Pilots pārbauda, vai plānotā operācija joprojām ietilpst Atvērtajā kategorijā. Kas ir UAS operatora reģistrācija un no kādas masas tā ir obligāta?
-    en: A pilot is checking whether the planned operation still fits the Open category. What is UAS operator registration and from what mass is it mandatory?
-    ru: Пилот проверяет, остаётся ли запланированная операция в Open category. Что такое регистрация оператора UAS и с какой массы она обязательна?
-  options:
-  - id: a
-    text:
-      lv: Reģistrācija identificē pilotu; obligāta visiem pilotiem neatkarīgi no masas.
-      en: Registration identifies the pilot; mandatory for all pilots regardless of mass.
-      ru: Регистрация идентифицирует пилота; обязательна для всех пилотов независимо от массы.
-  - id: b
-    text:
-      lv: Reģistrācija identificē operatoru (juridisko/fizisko personu); obligāta visiem UAS ≥ 250 g vai tiem, kas ar sensoru/kameru, vai Specifiskajā kategorijā.
-      en: Registration identifies the operator (legal/natural person); mandatory for all UAS ≥ 250 g or those with a sensor/camera, or in the Specific category.
-      ru: Регистрация идентифицирует оператора (юридическое/физическое лицо); обязательна для всех UAS ≥ 250 г, а также оснащённых датчиком/камерой или в Специальной категории.
-  - id: c
-    text:
-      lv: Reģistrācija ir dronam piešķirts numurs; obligāta no 1 kg.
-      en: Registration is a number assigned to the drone; mandatory from 1 kg.
-      ru: Регистрация — это номер, присвоенный дрону; обязательна с 1 кг.
-  - id: d
-    text:
-      lv: Reģistrācija ir lidojuma atļauja; tā jāsaņem pirms katra lidojuma.
-      en: Registration is a flight permit; it must be obtained before each flight.
-      ru: Регистрация — это разрешение на полёт; её необходимо получать перед каждым полётом.
-  correctOptionId: b
-  explanation:
-    lv: 'Saskaņā ar Reg 2019/947 Art. 14, operators (nevis drons, nevis pilots) reģistrējas dalībvalsts kompetentajā iestādē. Reģistrācija obligāta: UAS MTOM ≥ 250 g, vai jebkuram UAS ar sensoru/kameru, vai Specifiskajā kategorijā. Reģistrācija piešķir operatoram numuru, kas tiek norādīts dronam (uzlīme/Remote ID). Latvijā reģistrācija notiek e.caa.gov.lv.
-
-      '
-    en: 'Under Reg 2019/947 Art. 14, the operator (not the drone, not the pilot) registers with the member state competent authority. Registration is mandatory: UAS MTOM ≥ 250 g, or any UAS with a sensor/camera, or in the Specific category. Registration assigns the operator a number displayed on the drone (sticker/Remote ID). In Latvia registration is at e.caa.gov.lv.
-
-      '
-    ru: 'Согласно ст. 14 Регл. 2019/947, оператор (не дрон, не пилот) регистрируется в компетентном органе государства-члена. Регистрация обязательна: MTOM UAS ≥ 250 г, или для любого UAS с датчиком/камерой, или в Специальной категории. Регистрация присваивает оператору номер, отображаемый на дроне (наклейка/Remote ID). В Латвии регистрация осуществляется через e.caa.gov.lv.
-
-      '
-  distractorRationales:
-    a:
-      lv: Operators reģistrējas, nevis pilots. Pilota kompetenci apliecina atsevišķs sertifikāts (piemēram, A1/A3 tiešsaistes apmācības apliecība).
-      en: The operator registers, not the pilot. Pilot competence is demonstrated by a separate certificate (e.g. A1/A3 online training certificate).
-      ru: Регистрируется оператор, а не пилот. Компетентность пилота подтверждается отдельным сертификатом (например, свидетельством об онлайн-обучении A1/A3).
-    c:
-      lv: Reģistrācija identificē operatoru, nevis dronu, un piešķir operatora numuru. Obligātais sliekšnis ir 250 g, nevis 1 kg.
-      en: Registration identifies the operator, not the drone, and assigns an operator number. The mandatory threshold is 250 g, not 1 kg.
-      ru: Регистрация идентифицирует оператора, а не дрон, и присваивает номер оператора. Обязательный порог — 250 г, а не 1 кг.
-    d:
-      lv: Operatora reģistrācija ir vienreizēja vai periodiska administrācijas procedūra, nevis katras lidojuma atļauja. Tā nav lidojuma atļauja.
-      en: Operator registration is a one-time or periodic administrative procedure, not a per-flight permit. It is not a flight permit.
-      ru: Регистрация оператора — это единовременная или периодическая административная процедура, а не разрешение на каждый полёт. Это не разрешение на полёт.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. 14 — UAS operator registration
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Open category mass limits
   difficulty: 3
   cognitiveLevel: apply
-  scenarioType: decision
+  scenarioType: numeric
+- id: ar-038
+  stem:
+    lv: Tūrists Latvijā nopērk 230 g dronu ar kameru, kas nav rotaļlieta. Vai operatora reģistrācija jāvērtē?
+    en: A tourist in Latvia buys a 230 g camera drone that is not a toy. Must operator registration be considered?
+    ru: Турист в Латвии покупает дрон 230 г с камерой, не являющийся игрушкой. Нужно ли учитывать регистрацию оператора?
+  options:
+  - id: a
+    text:
+      lv: Nē, viss zem 250 g vienmēr ir bez reģistrācijas.
+      en: No, everything below 250 g is always registration-free.
+      ru: Нет, всё ниже 250 г всегда без регистрации.
+  - id: b
+    text:
+      lv: Jā, jo kamera var iegūt personas datus un drons nav rotaļlieta.
+      en: Yes, because the camera can capture personal data and the drone is not a toy.
+      ru: Да, потому что камера может получать персональные данные, а дрон не игрушка.
+  - id: c
+    text:
+      lv: Nē, ja video netiek publicēts internetā.
+      en: No, if the video is not posted online.
+      ru: Нет, если видео не публикуется в интернете.
+  - id: d
+    text:
+      lv: Reģistrācija vajadzīga tikai virs 900 g.
+      en: Registration is required only above 900 g.
+      ru: Регистрация нужна только выше 900 г.
+  correctOptionId: b
+  explanation:
+    lv: Zem 250 g nav automātisks izņēmums, ja UAS nav rotaļlieta un tam ir sensors personas datu iegūšanai.
+    en: Below 250 g is not an automatic exemption when the UAS is not a toy and has a sensor able to capture personal data.
+    ru: Масса ниже 250 г не является автоматическим исключением, если БВС не игрушка и имеет сенсор для персональных данных.
+  distractorRationales:
+    a:
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
+    c:
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
+    d:
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/08-registracija.md — registration for drones with sensors
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: regulatory
 - id: ar-039
   stem:
-    lv: Pilotam ir A1/A3 sertifikāts, un viņš vēlas ar C1 dronu lidot virs atsevišķas nepiederošas personas. Kāds ir C1 klases UAS masas slieksnis?
-    en: A pilot with an A1/A3 certificate wants to use a C1 drone near an isolated uninvolved person. What mass threshold defines a C1-class UAS?
-    ru: Пилот с сертификатом A1/A3 хочет использовать дрон C1 рядом с отдельным неучаствующим человеком. Какой порог массы определяет класс C1?
+    lv: Sludinājumā drons norādīts kā C1, bet datu plāksnītē masa ir 910 g. Kāpēc tas ir risks?
+    en: A listing says a drone is C1, but the data plate shows 910 g. Why is that a risk?
+    ru: В объявлении дрон указан как C1, но на табличке масса 910 г. Почему это риск?
   options:
   - id: a
     text:
-      lv: < 2 kg.
-      en: < 2 kg.
-      ru: < 2 кг.
+      lv: C1 vienmēr ir līdz 2 kg, tāpēc viss kārtībā.
+      en: C1 is always up to 2 kg, so it is fine.
+      ru: C1 всегда до 2 кг, значит всё в порядке.
   - id: b
     text:
-      lv: < 250 g.
-      en: < 250 g.
-      ru: < 250 г.
+      lv: Masa nav svarīga, ja pārdevējs raksta “EU compliant”.
+      en: Mass does not matter if the seller writes “EU compliant”.
+      ru: Масса не важна, если продавец пишет “EU compliant”.
   - id: c
     text:
-      lv: < 900 g.
-      en: < 900 g.
-      ru: < 900 г.
+      lv: C1 robeža ir zem 900 g; jāpārbauda atbilstības marķējums un dokumenti.
+      en: The C1 threshold is below 900 g; conformity marking and documents must be checked.
+      ru: Порог C1 — менее 900 г; нужно проверить маркировку и документы соответствия.
   - id: d
     text:
-      lv: < 4 kg.
-      en: < 4 kg.
-      ru: < 4 кг.
+      lv: 910 g drons Latvijā vienmēr ir aizliegts.
+      en: A 910 g drone is always prohibited in Latvia.
+      ru: Дрон 910 г в Латвии всегда запрещён.
   correctOptionId: c
   explanation:
-    lv: 'Regula 2019/945 definē C1 klasi: UAS ar MTOM < 900 g (bez uzlādētāja vai baterijas). C1 klases UAS darbojas A1 apakškategorijā, kur ir atļauts lidot pāri atsevišķām personām (bet nekad virs pulcēšanās). C0 robežvērtība ir < 250 g; C2 — < 4 kg; C3 — < 25 kg.
-
-      '
-    en: 'Reg 2019/945 defines C1 class: UAS with MTOM < 900 g (excluding charger or battery). C1-class UAS operates in A1 sub-category, where overflight of isolated individuals is permitted (but never over assemblies). C0 threshold is < 250 g; C2 — < 4 kg; C3 — < 25 kg.
-
-      '
-    ru: 'Регл. 2019/945 определяет класс C1: UAS с MTOM < 900 г (без зарядного устройства или аккумулятора). UAS класса C1 работает в подкатегории A1, где облёт отдельных лиц разрешён (но никогда над скоплениями). Порог C0 — < 250 г; C2 — < 4 кг; C3 — < 25 кг.
-
-      '
+    lv: C klases apgalvojumu nevar pieņemt tikai pēc reklāmas. Masa un atbilstības dokumenti nosaka pareizos Open nosacījumus.
+    en: A C-class claim cannot be accepted from advertising alone. Mass and conformity documents determine the correct Open conditions.
+    ru: Заявление о классе C нельзя принимать только по рекламе. Масса и документы соответствия определяют правильные условия Open.
   distractorRationales:
     a:
-      lv: 2 kg nav nevienas C klases robežvērtība. Klases ir C0 (< 250 g), C1 (< 900 g), C2 (< 4 kg), C3 (< 25 kg), C4 (< 25 kg ar papildu apstākļiem).
-      en: 2 kg is not a threshold for any C class. The classes are C0 (< 250 g), C1 (< 900 g), C2 (< 4 kg), C3 (< 25 kg), C4 (< 25 kg with additional conditions).
-      ru: '2 кг не является порогом ни для одного класса C. Классы: C0 (< 250 г), C1 (< 900 г), C2 (< 4 кг), C3 (< 25 кг), C4 (< 25 кг с дополнительными условиями).'
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     b:
-      lv: 250 g ir C0 klases robežvērtība, nevis C1. C0 ir vieglākā un mazāk ierobežotā klase.
-      en: 250 g is the C0 class threshold, not C1. C0 is the lightest and least restricted class.
-      ru: 250 г — порог класса C0, а не C1. C0 — самый лёгкий и наименее ограниченный класс.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     d:
-      lv: 4 kg ir C2 klases robežvērtība, nevis C1. C2 klase darbojas A2 apakškategorijā.
-      en: 4 kg is the C2 class threshold, not C1. C2 class operates in the A2 sub-category.
-      ru: 4 кг — порог класса C2, а не C1. Класс C2 работает в подкатегории A2.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/945 Part 2 — C1 class definition; Reg 2019/947 A1 sub-category
-  difficulty: 2
-  cognitiveLevel: apply
-  scenarioType: decision
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
+  sourceRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — C1 class mass threshold
+  difficulty: 4
+  cognitiveLevel: analyze
+  scenarioType: numeric
 - id: ar-040
   stem:
-    lv: Operators plānoto lidojumu sasaista ar pareizo ES regulatīvo kategoriju. Kāds ir minimālais vecums A1/A3 drona pilotam saskaņā ar Regulu 2019/947?
-    en: An operator is mapping a planned flight to the correct EU regulatory category. What is the minimum age for an A1/A3 drone pilot under Regulation 2019/947?
-    ru: Оператор сопоставляет запланированный полёт с правильной регуляторной категорией ЕС. Каков минимальный возраст пилота дрона A1/A3 согласно Регламенту 2019/947?
+    lv: 15 gadus vecs skolēns Latvijā vēlas patstāvīgi lidot Open kategorijā bez uzraudzības. Kas jāpārbauda?
+    en: A 15-year-old student in Latvia wants to fly independently in Open category without supervision. What must be checked?
+    ru: 15-летний школьник в Латвии хочет самостоятельно летать в Open category без надзора. Что нужно проверить?
   options:
   - id: a
     text:
-      lv: 14 gadi.
-      en: 14 years.
-      ru: 14 лет.
+      lv: Vecumam nav nozīmes, ja drons ir zem 250 g.
+      en: Age does not matter if the drone is below 250 g.
+      ru: Возраст не важен, если дрон легче 250 г.
   - id: b
     text:
-      lv: 18 gadi.
-      en: 18 years.
-      ru: 18 лет.
+      lv: Patstāvīgi drīkst lidot no 12 gadiem visās Open apakškategorijās.
+      en: Independent flying is allowed from age 12 in all Open subcategories.
+      ru: Самостоятельные полёты разрешены с 12 лет во всех Open подкатегориях.
   - id: c
     text:
-      lv: Nav minimālā vecuma prasības.
-      en: There is no minimum age requirement.
-      ru: Минимального возрастного требования нет.
+      lv: Vecāku rakstiska atļauja aizstāj vecuma prasību.
+      en: Written parental permission replaces the age requirement.
+      ru: Письменное разрешение родителей заменяет возрастное требование.
   - id: d
     text:
-      lv: 16 gadi.
-      en: 16 years.
-      ru: 16 лет.
+      lv: Minimālais tālvadības pilota vecums; parasti Open kategorijā tas ir 16 gadi, ja nav izņēmuma vai uzraudzības.
+      en: The minimum remote-pilot age; normally it is 16 in Open category unless an exception or supervision applies.
+      ru: Минимальный возраст дистанционного пилота; обычно в Open category это 16 лет, если нет исключения или надзора.
   correctOptionId: d
   explanation:
-    lv: 'Reg 2019/947 nosaka minimālo vecumu 16 gadi A1/A3 sertifikāta saņemšanai. Izņēmumi: < 250 g UAS bez kameras (C0 bez sensora) — vecuma prasību nav. Jaunāki piloti var lidot kluba vai asociācijas uzraudzībā. Dalībvalstis var noteikt augstāku, bet ne zemāku minimālo vecumu.
-
-      '
-    en: 'Reg 2019/947 sets the minimum age at 16 years for obtaining the A1/A3 certificate. Exceptions: < 250 g UAS without camera (C0 without sensor) — no age requirement. Younger pilots may fly under club or association supervision. Member states may set a higher but not lower minimum age.
-
-      '
-    ru: 'Регл. 2019/947 устанавливает минимальный возраст 16 лет для получения сертификата A1/A3. Исключения: UAS < 250 г без камеры (C0 без датчика) — возрастных требований нет. Молодые пилоты могут летать под надзором клуба или ассоциации. Государства-члены могут устанавливать более высокий, но не более низкий минимальный возраст.
-
-      '
+    lv: Vecums ir daļa no pilota atbilstības. Nepilngadīgais nevar vienkārši aizstāt prasību ar vecāku piekrišanu.
+    en: Age is part of pilot eligibility. A minor cannot simply replace the requirement with parental consent.
+    ru: Возраст — часть допуска пилота. Несовершеннолетний не может просто заменить требование согласием родителей.
   distractorRationales:
     a:
-      lv: 14 gadi nav norādīti kā minimālais vecums Reg 2019/947. Regulā norādīts 16 gadi.
-      en: 14 years is not stated as the minimum age in Reg 2019/947. The regulation states 16 years.
-      ru: 14 лет не указано как минимальный возраст в Регл. 2019/947. В регламенте указано 16 лет.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     b:
-      lv: 18 gadi ir vecāku darbību tiesiskās kapacitātes vecums dažās valstīs, bet Reg 2019/947 minimums ir 16 gadi, nevis 18.
-      en: 18 years is the legal capacity age for adults in some countries, but Reg 2019/947 minimum is 16 years, not 18.
-      ru: 18 лет — возраст правовой дееспособности совершеннолетних в некоторых странах, но минимум Регл. 2019/947 составляет 16 лет, а не 18.
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
     c:
-      lv: Vecuma prasība pastāv — 16 gadi par A1/A3 sertifikātu. Bez prasības ir tikai UAS bez sensora < 250 g.
-      en: An age requirement exists — 16 years for the A1/A3 certificate. Only UAS without sensor < 250 g have no age requirement.
-      ru: Возрастное требование существует — 16 лет для сертификата A1/A3. Только UAS без датчика < 250 г не имеют возрастного требования.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. UAS.OPEN.020 — minimum age
-  difficulty: 2
+      lv: Šis variants nepareizi piemēro regulējumu vai ignorē konkrētās valsts/operācijas nosacījumus.
+      en: This option misapplies the regulation or ignores the specific state or operation conditions.
+      ru: Этот вариант неверно применяет регулирование или игнорирует условия конкретной страны/операции.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/01-talvadibas-pilotu-kvalifikacija.md — remote pilot qualification context
+  difficulty: 3
   cognitiveLevel: apply
-  scenarioType: decision
+  scenarioType: regulatory
