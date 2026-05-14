@@ -2405,3 +2405,888 @@
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
+- id: met-046
+  image: met-046-cumulus-humilis.png
+  imageAlt:
+    lv: Vairāki nelieli, izolēti pūkaini cumulus humilis mākoņi (labu laikapstākļu kumulusi) ar plakanu pamatu ~1500 m augstumā, zils debess starp tiem, saule pamatā redzama.
+    en: A row of small, isolated, puffy cumulus humilis (fair-weather cumulus) clouds with flat bases at ~1500 m altitude, blue sky between them, sun visible.
+    ru: Ряд небольших обособленных пухлых облаков cumulus humilis (кучевые ясной погоды) с плоским основанием на высоте ~1500 м, между ними синее небо, видно солнце.
+  stem:
+    lv: Attēlā redzams mākoņa veids. Ko tas norāda par lidojuma apstākļiem A1/A3 droniem?
+    en: The image shows a cloud type. What does it indicate about flight conditions for an A1/A3 drone?
+    ru: На изображении показан тип облака. О чём он говорит относительно условий полёта дрона A1/A3?
+  options:
+  - id: a
+    text:
+      lv: Stabili apstākļi un viegls termiskais aktivitātes līmenis — kopumā labi lidojuma apstākļi.
+      en: Stable conditions with mild thermal activity — generally good flying conditions.
+      ru: Стабильные условия и слабая термическая активность — в целом хорошие условия полёта.
+  - id: b
+    text:
+      lv: Tūlītēja CB attīstība — drons jānolaiž.
+      en: Imminent CB development — drone must land.
+      ru: Скорое развитие CB — дрон должен сесть.
+  - id: c
+    text:
+      lv: Stiprs vējš augstumā, tāpēc lidot nedrīkst.
+      en: Strong wind aloft, flying is forbidden.
+      ru: Сильный ветер на высоте, летать запрещено.
+  - id: d
+    text:
+      lv: Apledojuma risks zem 200 m.
+      en: Icing risk below 200 m.
+      ru: Риск обледенения ниже 200 м.
+  correctOptionId: a
+  explanation:
+    lv: 'Cumulus humilis ("labu laikapstākļu" kumulusi) ir mazi, ar nelielu vertikālo attīstību un plakanu pamatu. Tie veidojas vidēji stabilā atmosfērā un norāda mērenu konvektīvo aktivitāti — bez stipras turbulences vai nokrišņiem. Pārbaudīt vēja prognozi un brāzmas, bet kopumā tie ir indikators labai lidojuma dienai.
+
+      '
+    en: 'Cumulus humilis ("fair-weather" cumulus) are small, with low vertical development and flat bases. They form in a moderately stable atmosphere and indicate mild convective activity — no severe turbulence or precipitation. Verify wind forecast and gusts, but overall they signal a good flying day.
+
+      '
+    ru: 'Cumulus humilis (кучевые «хорошей погоды») — небольшие, с малой вертикальной протяжённостью и плоским основанием. Образуются в умеренно устойчивой атмосфере и означают слабую конвективную активность — без сильной турбулентности или осадков. Проверить прогноз ветра и порывы, но в целом это признак хорошего лётного дня.
+
+      '
+  distractorRationales:
+    b:
+      lv: Cumulus humilis nav CB. CB ir augsti, ar laktu un nokrišņu šaftu — vizuāli pavisam atšķirīgi.
+      en: Cumulus humilis is not a CB. CB is tall with an anvil and rain shaft — visually very different.
+      ru: Cumulus humilis — не CB. CB высокое, с наковальней и осадковым стволом — визуально очень разное.
+    c:
+      lv: Mākoņu forma neliecina par stipru vēju augstumā. Stipru vēju indikators ir lenticular vai cirrus uncinus.
+      en: This cloud shape does not indicate strong wind aloft. Strong-wind indicators are lenticulars or cirrus uncinus.
+      ru: Эта форма облаков не говорит о сильном ветре на высоте. Признаки сильного ветра — лентикулярные или cirrus uncinus.
+    d:
+      lv: Apledojuma risku nosaka temperatūra un mitrums, nevis mākoņu veids. Cumulus humilis pats par sevi nav apledojuma indikators.
+      en: Icing risk is set by temperature and humidity, not by cloud type. Cumulus humilis itself is not an icing indicator.
+      ru: Риск обледенения определяется температурой и влажностью, а не типом облака. Cumulus humilis сам по себе — не признак обледенения.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; ICAO Doc 8896 — cloud classification
+  difficulty: 2
+  cognitiveLevel: recall
+  scenarioType: factual
+- id: met-047
+  image: met-047-stratus.png
+  imageAlt:
+    lv: Plašs pelēks stratus mākoņu slānis pie virszemes (~200-400 m), kas pārklāj visu debesi, miglas/lietusgāzes hatching zem slāņa, ainavas elementi zem mākoņa neskaidri.
+    en: Continuous grey stratus cloud layer at very low altitude (~200-400 m) covering the whole sky, mist/drizzle hatching under the layer, landscape barely visible.
+    ru: Сплошной серый слой stratus у поверхности (~200-400 м) закрывающий всё небо, штриховка мороси под слоем, элементы пейзажа едва различимы.
+  stem:
+    lv: Pilots redz attēlā parādītos apstākļus. Vai šajā situācijā ir droši veikt A3 lidojumu?
+    en: A pilot sees the conditions in the image. Is it safe to perform an A3 flight in this situation?
+    ru: Пилот видит условия, показанные на изображении. Безопасно ли проводить полёт A3 в этой ситуации?
+  options:
+  - id: a
+    text:
+      lv: Jā, ja drons paliek zem mākoņiem.
+      en: Yes, if the drone stays below the clouds.
+      ru: Да, если дрон находится ниже облаков.
+  - id: b
+    text:
+      lv: Nē — zema griestu, mitrums un slikta redzamība rada VLOS un apledojuma risku.
+      en: No — low ceiling, humidity and poor visibility create VLOS and icing risks.
+      ru: Нет — низкая нижняя граница, влажность и плохая видимость создают риски VLOS и обледенения.
+  - id: c
+    text:
+      lv: Jā, jo stratus norāda stabilus apstākļus bez turbulences.
+      en: Yes, because stratus indicates stable conditions without turbulence.
+      ru: Да, потому что stratus означает стабильные условия без турбулентности.
+  - id: d
+    text:
+      lv: Jā, ja izmanto FPV pārraidi attāluma pārvarēšanai.
+      en: Yes, if using FPV transmission to extend range.
+      ru: Да, если использовать FPV-передачу для увеличения дальности.
+  correctOptionId: b
+  explanation:
+    lv: 'Stratus ir zems, viendabīgs pelēks mākoņu slānis ar griestiem 200-400 m un bieži saistīts ar lietusgāzi, miglu un samazinātu redzamību. Pat ja drons paliek zem mākoņa, samazinātā horizontālā redzamība apdraud VLOS, un mitrums + zema temperatūra rada apledojuma risku uz propelleriem. FPV nav VLOS aizvietotājs — Open kategorijā tas nav atļauts bez novērotāja. Atturēties no lidojumiem stratus apstākļos.
+
+      '
+    en: 'Stratus is a low, uniform grey cloud layer with bases at 200-400 m, often associated with drizzle, mist, and reduced visibility. Even if the drone stays below the cloud, the reduced horizontal visibility threatens VLOS, and humidity + low temperature create propeller icing risk. FPV is not a VLOS substitute — in the Open category it is not allowed without an observer. Refrain from flying in stratus conditions.
+
+      '
+    ru: 'Stratus — низкий однородный серый слой облаков с основанием 200-400 м, часто сопровождается моросью, дымкой и сниженной видимостью. Даже если дрон ниже облаков, сниженная горизонтальная видимость угрожает VLOS, а влажность + низкая температура создают риск обледенения пропеллеров. FPV не заменяет VLOS — в категории Open это запрещено без наблюдателя. Воздержаться от полётов в условиях stratus.
+
+      '
+  distractorRationales:
+    a:
+      lv: Pat zem mākoņa horizontālā redzamība bieži ir slikta — VLOS prasība var tikt pārkāpta.
+      en: Even below the cloud, horizontal visibility is often poor — the VLOS requirement may be violated.
+      ru: Даже под облаком горизонтальная видимость часто плохая — требование VLOS может нарушаться.
+    c:
+      lv: Stabilitāte nenozīmē drošību — stratus apstākļos galvenais risks ir redzamība un apledojums, nevis turbulence.
+      en: Stability does not equal safety — in stratus the main risks are visibility and icing, not turbulence.
+      ru: Стабильность не значит безопасность — в stratus главные риски это видимость и обледенение, а не турбулентность.
+    d:
+      lv: FPV bez novērotāja nav atļauts Open kategorijā — VLOS prasība paliek spēkā.
+      en: FPV without an observer is not allowed in the Open category — the VLOS requirement still applies.
+      ru: FPV без наблюдателя в категории Open не разрешён — требование VLOS остаётся.
+  sourceRef: docs/knowledge/eu-regulations/Reg-2019-947.pdf — UAS.OPEN.060; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — VLOS, FPV with observer
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: met-048
+  image: met-048-cirrus.png
+  imageAlt:
+    lv: Plāni, balti, šķietami matveida cirrus mākoņi augstu pie debess (~8-12 km augstumā), šķiedrainas joslas izliektas pār skaidri zilu debesi.
+    en: Thin, white, hair-like cirrus clouds high in the sky (~8-12 km altitude), fibrous streaks arcing across a clear blue sky.
+    ru: Тонкие, белые, словно волосовидные облака cirrus высоко в небе (~8-12 км), волокнистые полосы дугами по ясному синему небу.
+  stem:
+    lv: Pilots redz attēlā parādīto mākoņu veidu. Kā tie ietekmē plānoto A1/A3 dronu lidojumu?
+    en: A pilot sees the cloud type shown in the image. How do they affect a planned A1/A3 drone flight?
+    ru: Пилот видит тип облаков на изображении. Как они влияют на запланированный полёт дрона A1/A3?
+  options:
+  - id: a
+    text:
+      lv: Stipra turbulence drona augstumā — lidojums jāatceļ.
+      en: Severe turbulence at drone altitude — flight must be cancelled.
+      ru: Сильная турбулентность на высоте дрона — полёт нужно отменить.
+  - id: b
+    text:
+      lv: Apledojuma risks droniem zem 50 m.
+      en: Icing risk for drones below 50 m.
+      ru: Риск обледенения для дронов ниже 50 м.
+  - id: c
+    text:
+      lv: Nekādi tieši — cirrus ir 8-12 km augstumā, dziļi virs drona darbības zonas. Tomēr tie var liecināt par tuvojošos siltu fronti tuvākajās 24 stundās.
+      en: No direct effect — cirrus is at 8-12 km altitude, well above drone operating range. However, they may signal an approaching warm front within the next 24 hours.
+      ru: Никак напрямую — cirrus на высоте 8-12 км, значительно выше зоны работы дрона. Но они могут указывать на приближающийся тёплый фронт в ближайшие 24 часа.
+  - id: d
+    text:
+      lv: GPS signāla zudums cirrus ledus kristālu dēļ.
+      en: GPS signal loss due to cirrus ice crystals.
+      ru: Потеря GPS-сигнала из-за ледяных кристаллов cirrus.
+  correctOptionId: c
+  explanation:
+    lv: 'Cirrus ir augsto mākoņu (vairāk nekā 6-8 km) ledus kristālu mākoņi, kas neietekmē drona apstākļus tieši — tie ir daudz augstāk par 120 m Open kategorijas limitu. Tomēr cirrus klāsts, kas pakāpeniski sabiezē par cirrostratus, ir klasiska zīme siltas frontes tuvošanai, ar uzlabotām lietusgāzēm 12-24 stundās. Tā ir noderīga prognozes informācija, bet ne tūlītējs lidojuma drauds.
+
+      '
+    en: 'Cirrus are high-altitude (above 6-8 km) ice-crystal clouds that do not affect drone conditions directly — they are far above the 120 m Open-category ceiling. However, a cirrus cover gradually thickening to cirrostratus is a classic sign of an approaching warm front, with light precipitation in 12-24 hours. This is useful forecast information, not an immediate flight threat.
+
+      '
+    ru: 'Cirrus — облака больших высот (выше 6-8 км) из ледяных кристаллов, которые напрямую не влияют на дрон — они значительно выше потолка 120 м для категории Open. Однако постепенно густеющий покров cirrus, переходящий в cirrostratus — классический признак приближающегося тёплого фронта со слабыми осадками через 12-24 часа. Это полезная прогнозная информация, но не непосредственная угроза полёту.
+
+      '
+  distractorRationales:
+    a:
+      lv: Cirrus pats par sevi neizraisa turbulenci drona augstumā. Drons darbojas tūkstošiem metru zem cirrus.
+      en: Cirrus itself does not cause turbulence at drone altitude. The drone operates thousands of metres below cirrus.
+      ru: Cirrus сам по себе не вызывает турбулентность на высоте дрона. Дрон работает на тысячи метров ниже cirrus.
+    b:
+      lv: Apledojumu nosaka temperatūra un mitrums drona augstumā, nevis cirrus klātbūtne.
+      en: Icing is determined by temperature and humidity at the drone altitude, not by cirrus presence.
+      ru: Обледенение определяется температурой и влажностью на высоте дрона, а не наличием cirrus.
+    d:
+      lv: GPS signāls neuztver nekādu ietekmi no cirrus ledus kristāliem.
+      en: GPS signal is not affected by cirrus ice crystals.
+      ru: GPS-сигнал не подвержен влиянию ледяных кристаллов cirrus.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; ICAO Doc 8896 — cloud classification and frontal indicators
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: factual
+- id: met-049
+  image: met-049-lenticular.png
+  imageAlt:
+    lv: Augsts kalns ar stipriem horizontāliem vēja arrows pār to; vēja virzienā lejā no virsotnes — sērija gludu, lēcas formas (lenticular) mākoņu, kas norāda kalna viļņa modeļa virsotnes.
+    en: Tall mountain with strong horizontal wind arrows over it; downwind of the peak, a series of smooth lens-shaped (lenticular) clouds marking the crests of a mountain-wave pattern.
+    ru: Высокая гора с сильными горизонтальными стрелками ветра над ней; с подветренной стороны вершины — серия гладких линзовидных (lenticular) облаков, отмечающих гребни картины горной волны.
+  stem:
+    lv: Pilots redz attēlā parādīto mākoņu veidu virs kalna. Ko tas norāda par lidojuma apstākļiem šajā reģionā?
+    en: A pilot sees the cloud type in the image over a mountain. What does it indicate about flight conditions in this area?
+    ru: Пилот видит тип облаков на изображении над горой. О чём он говорит относительно условий полёта в этом регионе?
+  options:
+  - id: a
+    text:
+      lv: Klusi, stabili apstākļi — labi lidojuma apstākļi.
+      en: Calm, stable conditions — good flying conditions.
+      ru: Тихие, стабильные условия — хорошие условия полёта.
+  - id: b
+    text:
+      lv: Tuvojas miglas slānis — VLOS bojāts.
+      en: Approaching fog layer — VLOS compromised.
+      ru: Приближается слой тумана — VLOS под угрозой.
+  - id: c
+    text:
+      lv: CB tuvumā — gaidāms zibens.
+      en: Nearby CB — lightning expected.
+      ru: Поблизости CB — ожидаются молнии.
+  - id: d
+    text:
+      lv: Stipri vēji augstumā un smaga turbulence kalna vēja pusē — augsts risks droniem.
+      en: Strong wind aloft and severe turbulence on the lee side of the mountain — high risk for drones.
+      ru: Сильный ветер на высоте и тяжёлая турбулентность с подветренной стороны горы — высокий риск для дронов.
+  correctOptionId: d
+  explanation:
+    lv: 'Lenticulāri (lēcas formas) mākoņi veidojas kalna viļņa (mountain wave) sistēmas virsotnēs, kad stiprs vējš (parasti virs 25 kt) pūš pār kalnu. Lai gan pati lenticulāri ir gludi, telpa zem un starp tiem satur smagu turbulenci — sevišķi rotora zonā tieši aiz kalna. Tā ir klasiska brīdinājuma zīme aviācijai: lidojums kalna vēja pusē ar lenticulāriem ir augsta riska. Droniem — atturēties no lidojumiem šādos apstākļos.
+
+      '
+    en: 'Lenticular (lens-shaped) clouds form at the crests of a mountain-wave system when strong winds (typically > 25 kt) blow over a mountain. Although the lenticulars themselves are smooth, the space below and between them contains severe turbulence — especially in the rotor zone directly behind the mountain. This is a classic warning sign in aviation: flying on the lee side of a mountain with lenticulars is high-risk. For drones — refrain from operating in such conditions.
+
+      '
+    ru: 'Линзовидные (lenticular) облака формируются на гребнях системы горной волны, когда сильный ветер (обычно > 25 узлов) дует над горой. Хотя сами lenticular гладкие, пространство под ними и между ними содержит тяжёлую турбулентность — особенно в зоне ротора непосредственно за горой. Это классический предупреждающий знак авиации: полёт с подветренной стороны горы с lenticular — высокого риска. Для дронов — воздержаться от полётов в таких условиях.
+
+      '
+  distractorRationales:
+    a:
+      lv: Lenticulāri vizuāli gludi, bet tie veidojas tikai stipra vēja un ievērojamas turbulences apstākļos — tas nav stabils laiks.
+      en: Lenticulars look smooth, but they only form in strong-wind and significant-turbulence conditions — that is not stable weather.
+      ru: Lenticular выглядят гладкими, но образуются только в условиях сильного ветра и значительной турбулентности — это не стабильная погода.
+    b:
+      lv: Lenticulāri nav miglas indikators. Migla veidojas pie virszemes, lenticulāri — kalna viļņa virsotnēs.
+      en: Lenticulars are not a fog indicator. Fog forms at the surface; lenticulars at mountain-wave crests.
+      ru: Lenticular не индикатор тумана. Туман образуется у поверхности, lenticular — на гребнях горной волны.
+    c:
+      lv: Lenticulāri nav CB tuvuma zīme. CB indikatori ir lielie vertikālie kumulusi ar laktu.
+      en: Lenticulars are not a sign of nearby CB. CB indicators are large vertical cumulus with anvils.
+      ru: Lenticular — не признак близкого CB. Признаки CB — большие вертикальные кучевые с наковальнями.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; FAA H-8083-25B Ch. 12 — mountain wave hazards
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision
+- id: met-050
+  image: met-050-altostratus.png
+  imageAlt:
+    lv: Viendabīgs pelēks-zilgans altostratus mākoņu slānis, kas pārklāj visu augšējo debesi ~3-5 km augstumā. Saule redzama caur to kā vāji difūzs disks ("ūdens" sauls efekts). Zem mākoņa — viegls nokrišņu hatching.
+    en: A uniform grey-blue altostratus cloud layer covering the whole upper sky at ~3-5 km altitude. The sun is visible through it as a faint diffuse disc ("watery sun" effect). Below the cloud, light precipitation hatching.
+    ru: Однородный серо-голубой слой altostratus на высоте ~3-5 км, закрывающий всё верхнее небо. Солнце видно сквозь него как слабый рассеянный диск (эффект «водянистого солнца»). Под облаком — лёгкая штриховка осадков.
+  stem:
+    lv: Pilots redz attēlā parādīto mākoņu veidu ar "ūdens" saules efektu. Ko tas norāda par tuvākajām 12-24 stundām?
+    en: A pilot sees the cloud type in the image with a "watery sun" effect. What does it indicate about the next 12-24 hours?
+    ru: Пилот видит тип облаков с эффектом «водянистого солнца». О чём это говорит на ближайшие 12-24 часа?
+  options:
+  - id: a
+    text:
+      lv: Sāksies bezmākoņu apstākļi.
+      en: Cloud-free conditions will set in.
+      ru: Наступят безоблачные условия.
+  - id: b
+    text:
+      lv: Tuvojas siltā fronte — gaidāmi stabili nokrišņi un pasliktinās redzamība.
+      en: A warm front is approaching — steady precipitation and worsening visibility are expected.
+      ru: Приближается тёплый фронт — ожидаются устойчивые осадки и ухудшение видимости.
+  - id: c
+    text:
+      lv: Apstākļi paliek nemainīgi visu nedēļu.
+      en: Conditions will remain unchanged for the whole week.
+      ru: Условия останутся неизменными всю неделю.
+  - id: d
+    text:
+      lv: Tuvojas spēcīga aukstā fronte ar krusu.
+      en: A strong cold front with hail is approaching.
+      ru: Приближается сильный холодный фронт с градом.
+  correctOptionId: b
+  explanation:
+    lv: 'Altostratus ar "ūdens" saules efektu ir klasiska siltas frontes tuvošanās zīme. Mākoņu slāņi pakāpeniski sabiezē — sākumā cirrus, tad cirrostratus, pēc tam altostratus, beidzot nimbostratus. Altostratus stadijā parasti paliek 6-12 stundas līdz stabilai lietusgāzei un mākoņu pamats nokrītas. Plānot lidojumus laikā, kad cirrus parādās — pirms altostratus.
+
+      '
+    en: 'Altostratus with the "watery sun" effect is a classic sign of an approaching warm front. The cloud layers thicken progressively — first cirrus, then cirrostratus, then altostratus, finally nimbostratus. The altostratus stage typically lasts 6-12 hours before steady drizzle starts and the cloud base drops. Plan flights for when cirrus first appears — before altostratus arrives.
+
+      '
+    ru: 'Altostratus с эффектом «водянистого солнца» — классический признак приближения тёплого фронта. Слои облаков постепенно густеют: сначала cirrus, затем cirrostratus, потом altostratus, наконец nimbostratus. Стадия altostratus обычно длится 6-12 часов до устойчивой мороси и снижения нижней границы. Планировать полёты на время появления cirrus — до altostratus.
+
+      '
+  distractorRationales:
+    a:
+      lv: Altostratus nav bezmākoņu apstākļu indikators — tieši pretēji, gaidāms vēl vairāk mākoņu un nokrišņi.
+      en: Altostratus is not a sign of cloud-free weather — on the contrary, more clouds and precipitation are coming.
+      ru: Altostratus не признак безоблачной погоды — наоборот, ожидается ещё больше облаков и осадки.
+    c:
+      lv: Altostratus ir frontes pārejas zīme — apstākļi mainās, nevis paliek nemainīgi.
+      en: Altostratus is a sign of frontal passage — conditions change, not stay the same.
+      ru: Altostratus — признак прохождения фронта, условия меняются, а не остаются прежними.
+    d:
+      lv: Aukstu fronti raksturo strauja kumulonimba attīstība un brāzmas, nevis altostratus klāsts.
+      en: Cold fronts are characterised by rapid cumulonimbus development and gusts, not an altostratus cover.
+      ru: Холодные фронты характеризуются быстрым развитием cumulonimbus и шквалами, а не покровом altostratus.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; ICAO Doc 8896 — warm-front cloud sequence
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision
+- id: met-051
+  image: met-051-warm-front.png
+  imageAlt:
+    lv: 'Siltās frontes šķērsgriezums: maigs sekls siltā gaisa ķīlis, kas paceļas pār aukstā gaisa masu. Mākoņu sērija no labās uz kreiso: cirrus, cirrostratus, altostratus, nimbostratus ar stabilu lietusgāzi.'
+    en: 'Cross-section of a warm front: a gentle shallow wedge of warm air rising over a cold air mass. Cloud sequence from right to left: cirrus, cirrostratus, altostratus, nimbostratus with steady drizzle.'
+    ru: 'Поперечное сечение тёплого фронта: пологий клин тёплого воздуха, поднимающийся над холодной воздушной массой. Последовательность облаков справа налево: cirrus, cirrostratus, altostratus, nimbostratus с устойчивой моросью.'
+  stem:
+    lv: Saskaņā ar attēlu — kāda ir siltās frontes pārejas laika tipiskā iezīme, kas atšķir to no aukstās frontes?
+    en: According to the image — what typical feature of a warm-front passage distinguishes it from a cold front?
+    ru: Согласно изображению — какой типичный признак прохождения тёплого фронта отличает его от холодного?
+  options:
+  - id: a
+    text:
+      lv: Stiprā brāzma 30-50 kt un krusas lietus.
+      en: Strong 30-50 kt gusts and hail showers.
+      ru: Сильные порывы 30-50 узлов и град.
+  - id: b
+    text:
+      lv: Klaja debess un saule, kas turpinās 24 stundas.
+      en: Clear sky and sun lasting 24 hours.
+      ru: Ясное небо и солнце на 24 часа.
+  - id: c
+    text:
+      lv: Lēnāka pāreja (12-24 stundas), pakāpeniski mākoņi (cirrus → nimbostratus) un stabili nokrišņi, nevis īsa, vardarbīga.
+      en: A slower passage (12-24 hours), gradual cloud sequence (cirrus → nimbostratus) and steady precipitation, not a short and violent event.
+      ru: Более медленное прохождение (12-24 часа), постепенная последовательность облаков (cirrus → nimbostratus) и устойчивые осадки, а не короткое и бурное событие.
+  - id: d
+    text:
+      lv: Strauja temperatūras pazemināšanās par 10°C dažu minūšu laikā.
+      en: Sudden temperature drop by 10°C within minutes.
+      ru: Резкое падение температуры на 10°C за минуты.
+  correctOptionId: c
+  explanation:
+    lv: 'Siltā fronte kustas lēnāk (~15-25 km/h) un ar maigāku slīpumu nekā aukstā fronte. Tās tuvošanos var paredzēt 12-24 stundas iepriekš, sākot ar cirrus, tad cirrostratus, altostratus, beidzot nimbostratus ar stabilu lietusgāzi. Pretstatā aukstajai frontei, kura iziet 1-3 stundās ar brāzmām un krusas lietu. Droniem — siltā frontē galvenais risks ir zems mākoņu griestu un samazināta redzamība, nevis brāzmas.
+
+      '
+    en: 'A warm front moves more slowly (~15-25 km/h) and with a shallower slope than a cold front. Its approach can be forecast 12-24 hours ahead, starting with cirrus, then cirrostratus, altostratus, finally nimbostratus with steady drizzle. In contrast, a cold front passes in 1-3 hours with gusts and hail. For drones, the main risk during a warm front is low ceiling and reduced visibility, not gusts.
+
+      '
+    ru: 'Тёплый фронт движется медленнее (~15-25 км/ч) и с более пологим наклоном, чем холодный. Его приближение можно предсказать за 12-24 часа: сначала cirrus, затем cirrostratus, altostratus, наконец nimbostratus с устойчивой моросью. В отличие от холодного, который проходит за 1-3 часа со шквалами и градом. Для дронов главный риск тёплого фронта — низкая нижняя граница и сниженная видимость, а не шквалы.
+
+      '
+  distractorRationales:
+    a:
+      lv: Brāzmas un krusas lietus ir aukstās frontes iezīmes, nevis siltās.
+      en: Gusts and hail are features of a cold front, not a warm one.
+      ru: Шквалы и град — признаки холодного фронта, а не тёплого.
+    d:
+      lv: Strauja temperatūras pazemināšanās ir aukstās frontes iezīme. Siltā fronte ceļ temperatūru lēni.
+      en: A sudden temperature drop is a cold-front feature. A warm front raises temperature slowly.
+      ru: Резкое падение температуры — признак холодного фронта. Тёплый фронт медленно повышает температуру.
+    b:
+      lv: Klaja debess seko aukstās frontes pārejai. Siltā frontē mākoņi paliek vairākas stundas.
+      en: Clear skies follow a cold-front passage. In a warm front the clouds persist for many hours.
+      ru: Ясное небо наступает после холодного фронта. При тёплом фронте облака сохраняются часами.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; ICAO Doc 8896 — fronts and air masses
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: factual
+- id: met-052
+  image: met-052-occluded-front.png
+  imageAlt:
+    lv: Okludētās frontes šķērsgriezums — aukstais frontes ķīlis (ātrāks) ir noķēris silto fronti, paceļot silto gaisa masu pilnībā no virszemes. Mākoņi un jaukti nokrišņi pa visu apvienoto fronti.
+    en: Cross-section of an occluded front — the cold-front wedge (faster) has caught up with the warm front, lifting the warm air mass completely off the ground. Clouds and mixed precipitation along the merged front.
+    ru: Поперечное сечение окклюдированного фронта — клин холодного фронта (более быстрый) догнал тёплый фронт, полностью подняв тёплую воздушную массу от поверхности. Облака и смешанные осадки вдоль объединённого фронта.
+  stem:
+    lv: Kāpēc okludētā fronte ir īpaši sarežģīta meteoroloģiskā situācija?
+    en: Why is an occluded front an especially complex meteorological situation?
+    ru: Почему окклюдированный фронт — особенно сложная метеорологическая ситуация?
+  options:
+  - id: a
+    text:
+      lv: Tā ir tikai siltās frontes variants ar nelielām atšķirībām.
+      en: It is just a variant of a warm front with minor differences.
+      ru: Это просто вариант тёплого фронта с небольшими отличиями.
+  - id: b
+    text:
+      lv: Tās laikā nav nokrišņu.
+      en: It produces no precipitation.
+      ru: Во время него нет осадков.
+  - id: c
+    text:
+      lv: Tā nepastāv ziemeļu platuma grādos.
+      en: It does not exist in northern latitudes.
+      ru: Его не бывает в северных широтах.
+  - id: d
+    text:
+      lv: Apvieno aukstās un siltās frontes pazīmes — gan stabilu nokrišņus, gan brāzmas, gan turbulenci dažādās augstumos.
+      en: It combines features of both cold and warm fronts — steady precipitation, gusts, and turbulence at different altitudes.
+      ru: Сочетает признаки и холодного, и тёплого фронта — устойчивые осадки, шквалы и турбулентность на разных высотах.
+  correctOptionId: d
+  explanation:
+    lv: 'Okludētā fronte veidojas, kad ātri kustīgā aukstā fronte noķer lēnāko silto fronti, paceļot silto gaisa masu no virszemes. Tas apvieno gan stabilus, gan konvektīvus nokrišņus, gan zemus stratus tipa mākoņus, gan kumulonimba aktivitāti — atkarībā no augstuma slāņa. Laika apstākļi var ātri mainīties, un prognozēšana ir grūta. Droniem — pilnībā atturēties no lidojumiem okludētas frontes pārejas laikā.
+
+      '
+    en: 'An occluded front forms when a fast-moving cold front catches up with a slower warm front, lifting the warm air mass off the surface. This combines both stratus-type stable precipitation and cumulonimbus convective activity — depending on the altitude layer. Weather can change rapidly and is difficult to forecast. For drones — refrain entirely from flying during an occluded-front passage.
+
+      '
+    ru: 'Окклюдированный фронт образуется, когда быстро движущийся холодный фронт догоняет более медленный тёплый, поднимая тёплую воздушную массу от поверхности. Это сочетает устойчивые осадки stratus-типа и конвективную активность cumulonimbus — в зависимости от слоя высоты. Погода может быстро меняться, прогноз затруднён. Для дронов — полностью воздержаться от полётов во время прохождения окклюдированного фронта.
+
+      '
+  distractorRationales:
+    a:
+      lv: Okludētā fronte ir atsevišķs frontes veids ar unikālām iezīmēm — tā nav vienkārši siltā fronte.
+      en: An occluded front is its own type with unique features — it is not just a warm front.
+      ru: Окклюдированный фронт — это отдельный тип со своими особенностями, а не просто тёплый фронт.
+    c:
+      lv: Okludētās frontes bieži veidojas ziemeļu platumos, sevišķi Atlantijas ciklonu sistēmās.
+      en: Occluded fronts frequently form in northern latitudes, especially in Atlantic cyclone systems.
+      ru: Окклюдированные фронты часто образуются в северных широтах, особенно в атлантических циклонах.
+    b:
+      lv: Tieši pretēji — okludētās frontes parasti ražo daudz un dažāda veida nokrišņus.
+      en: On the contrary — occluded fronts typically produce abundant and varied precipitation.
+      ru: Наоборот — окклюдированные фронты обычно дают обильные и разнообразные осадки.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; ICAO Doc 8896 — frontal occlusion
+  difficulty: 4
+  cognitiveLevel: analyze
+  scenarioType: factual
+- id: met-053
+  image: met-053-stationary-front.png
+  imageAlt:
+    lv: Stacionāras frontes šķērsgriezums — gandrīz vertikāla, nekustīga robeža starp aukstā gaisa masu (vienā pusē) un siltā gaisa masu (otrā pusē). Pastāvīgi mākoņi un stabila lietusgāze pa visu frontes garumu.
+    en: Cross-section of a stationary front — a nearly vertical, motionless boundary between a cold air mass (one side) and a warm air mass (other side). Persistent clouds and steady drizzle along the entire front.
+    ru: Поперечное сечение стационарного фронта — почти вертикальная, неподвижная граница между холодной воздушной массой (с одной стороны) и тёплой (с другой). Постоянные облака и устойчивая морось вдоль всего фронта.
+  stem:
+    lv: Kāda ir stacionāras frontes galvenā iezīme, kas to atšķir no kustīgām frontēm?
+    en: What is the key feature of a stationary front that distinguishes it from a moving front?
+    ru: Какова главная особенность стационарного фронта, отличающая его от движущихся фронтов?
+  options:
+  - id: a
+    text:
+      lv: Ātri pāriet pār reģionu 30 minūtēs.
+      en: It passes over the area within 30 minutes.
+      ru: Быстро проходит над регионом за 30 минут.
+  - id: b
+    text:
+      lv: Tā veidojas tikai virs okeāniem.
+      en: It only forms over oceans.
+      ru: Образуется только над океанами.
+  - id: c
+    text:
+      lv: Tā praktiski nekustas (< 5 kt) un izraisa ilgstošu, vairāku dienu mākoņu un nokrišņu periodu šajā reģionā.
+      en: It barely moves (< 5 kt) and causes a multi-day cloud and precipitation period in the area.
+      ru: Он практически не движется (< 5 узлов) и вызывает многодневный период облачности и осадков в регионе.
+  - id: d
+    text:
+      lv: Tā vienmēr satur tornādo veidošanos.
+      en: It always involves tornado formation.
+      ru: В нём всегда происходит образование торнадо.
+  correctOptionId: c
+  explanation:
+    lv: 'Stacionāra fronte ir robeža starp divām pretējām gaisa masām, kur neviena nedominē — tā praktiski nekustas. Tas rada ilgstošu mākoņu un nokrišņu periodu (bieži vairākas dienas) reģionā, kas atrodas tuvu frontei. Tā var izveidoties, kad aukstā fronte palēninās un samazinās līdz mazākam ātrumam, sasniedzot līdzsvaru ar tuvojošos silto gaisa masu. Droniem — sliktas redzamības un mitruma dēļ lidot nav ieteicams visa stacionāras frontes laika.
+
+      '
+    en: 'A stationary front is a boundary between two opposing air masses where neither dominates — it barely moves. This produces a long-lasting period of clouds and precipitation (often several days) in the area near the front. It can form when a cold front decelerates and reaches equilibrium with the approaching warm air mass. For drones — due to poor visibility and humidity, flying is not advisable for the duration of a stationary front.
+
+      '
+    ru: 'Стационарный фронт — граница между двумя противоположными воздушными массами, где ни одна не доминирует — он практически не движется. Это создаёт длительный период облачности и осадков (часто несколько суток) в районе вблизи фронта. Может образоваться, когда холодный фронт замедляется и достигает равновесия с приближающейся тёплой массой. Для дронов — из-за плохой видимости и влажности летать не рекомендуется на всё время стационарного фронта.
+
+      '
+  distractorRationales:
+    a:
+      lv: Ātra pāreja ir aukstās frontes iezīme. Stacionāra fronte pretēji — praktiski nekustas.
+      en: A rapid passage is a feature of a cold front. A stationary front, on the contrary, hardly moves.
+      ru: Быстрое прохождение — признак холодного фронта. Стационарный, напротив, практически не движется.
+    d:
+      lv: Tornādo veidošanās prasa specifiskus konvektīvos apstākļus, ne stacionāru fronti.
+      en: Tornado formation requires specific convective conditions, not a stationary front.
+      ru: Образование торнадо требует особых конвективных условий, а не стационарного фронта.
+    b:
+      lv: Stacionāras frontes veidojas gan virs okeāniem, gan kontinentālajiem reģioniem.
+      en: Stationary fronts form both over oceans and continental regions.
+      ru: Стационарные фронты образуются и над океанами, и над континентами.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; ICAO Doc 8896 — stationary front classification
+  difficulty: 3
+  cognitiveLevel: recall
+  scenarioType: factual
+- id: met-054
+  image: met-054-metar-decode.png
+  imageAlt:
+    lv: 'METAR ziņojuma piemērs ar paskaidrojumiem: "EVRA 121200Z 24015G25KT 9999 SCT025 BKN040 15/08 Q1015" — sadalīts pa grupām ar to angļu valodas nozīmēm: lidlauks, datums/laiks, vējš, redzamība, mākoņi, temperatūra/rasas punkts, QNH.'
+    en: 'A METAR example with annotations: "EVRA 121200Z 24015G25KT 9999 SCT025 BKN040 15/08 Q1015" — split into groups with their English meanings: airport, date/time, wind, visibility, clouds, temperature/dew point, QNH.'
+    ru: 'Пример METAR с пояснениями: "EVRA 121200Z 24015G25KT 9999 SCT025 BKN040 15/08 Q1015" — разбит по группам с их английскими значениями: аэропорт, дата/время, ветер, видимость, облака, температура/точка росы, QNH.'
+  stem:
+    lv: Saskaņā ar attēlā parādīto METAR — kāds bija vējš ziņojuma laikā?
+    en: According to the METAR shown in the image — what was the wind at the time of the report?
+    ru: Согласно METAR на изображении — каким был ветер на момент сообщения?
+  options:
+  - id: a
+    text:
+      lv: Vējš no 250° ar ātrumu 15 kt.
+      en: Wind from 250° at 15 kt.
+      ru: Ветер с 250° со скоростью 15 узлов.
+  - id: b
+    text:
+      lv: Vējš no 240° ar vidējo ātrumu 15 kt un brāzmām līdz 25 kt.
+      en: Wind from 240° at a mean speed of 15 kt with gusts to 25 kt.
+      ru: Ветер с 240° со средней скоростью 15 узлов и порывами до 25 узлов.
+  - id: c
+    text:
+      lv: Vējš no 25° ar ātrumu 24015 kt.
+      en: Wind from 25° at 24015 kt.
+      ru: Ветер с 25° со скоростью 24015 узлов.
+  - id: d
+    text:
+      lv: Bezvēja apstākļi.
+      en: Calm conditions.
+      ru: Безветренные условия.
+  correctOptionId: b
+  explanation:
+    lv: 'METAR vēja formāts ir "DDDFFGFFKT", kur DDD ir virziens grādos no ziemeļiem, FF ir vidējais ātrums, G atdalītājs un FF brāzmas. "24015G25KT" nozīmē 240° (rietumi-dienvidrietumi), vidējais ātrums 15 mezgli, brāzmas līdz 25 mezgliem. Tā ir nozīmīga vēja brāzmu atšķirība (10 kt), ko droni jāņem vērā.
+
+      '
+    en: 'The METAR wind format is "DDDFFGFFKT", where DDD is direction in degrees from north, FF is the mean speed, G is a separator, and FF is the gust speed. "24015G25KT" means 240° (west-southwest), mean speed 15 knots, gusts to 25 knots. This is a significant gust difference (10 kt) that drones must take into account.
+
+      '
+    ru: 'Формат ветра METAR — "DDDFFGFFKT", где DDD — направление в градусах от севера, FF — средняя скорость, G — разделитель, FF — порывы. "24015G25KT" означает 240° (запад-юго-запад), средняя скорость 15 узлов, порывы до 25 узлов. Это значительная разница в порывах (10 узлов), которую дроны должны учитывать.
+
+      '
+  distractorRationales:
+    a:
+      lv: Virziens ir 240°, nevis 250°. Trīs pirmie cipari nosaka virzienu precīzi.
+      en: The direction is 240°, not 250°. The first three digits specify the direction precisely.
+      ru: Направление 240°, а не 250°. Первые три цифры точно задают направление.
+    c:
+      lv: Pirmie trīs cipari (240) ir virziens, nevis tikai divi. Atrumi nepārsniedz reālo robežu.
+      en: The first three digits (240) are the direction, not just two. Speeds do not exceed realistic ranges.
+      ru: Первые три цифры (240) — это направление, не две. Скорости не превышают реальных пределов.
+    d:
+      lv: Bezvēja apstākļus METAR norādītu kā "00000KT", nevis "24015G25KT".
+      en: Calm conditions in METAR would be denoted "00000KT", not "24015G25KT".
+      ru: Безветрие в METAR обозначалось бы как "00000KT", а не "24015G25KT".
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; ICAO Annex 3 — METAR format
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: numeric
+- id: met-055
+  image: met-055-cloud-coverage.png
+  imageAlt:
+    lv: 'METAR mākoņu pārklājuma kodu shēma: četri paneļi ar pieaugošo aizpildījumu — FEW (1-2 oktas), SCT (3-4 oktas, izklaidēti), BKN (5-7 oktas, lauzti), OVC (8 oktas, pilnīgs apmākums). Apakšā: "Pārklājums METAR tiek ziņots oktās (debess astotdaļās)".'
+    en: 'METAR cloud-coverage codes chart: four panels with progressively more fill — FEW (1-2 oktas), SCT (3-4 oktas, scattered), BKN (5-7 oktas, broken), OVC (8 oktas, fully overcast). Bottom: "Coverage in METAR is reported in oktas (eighths of the sky)".'
+    ru: 'Схема кодов покрытия облаками METAR: четыре панели с возрастающим заполнением — FEW (1-2 окты), SCT (3-4 окты, рассеянные), BKN (5-7 окт, разорванные), OVC (8 окт, сплошной). Внизу: "Покрытие в METAR указывается в октах (восьмые части неба)".'
+  stem:
+    lv: METAR ziņo "BKN025 OVC080". Saskaņā ar attēlā parādītajiem kodiem — kāds ir lidojuma griestu sapratums šajā ziņojumā?
+    en: A METAR reports "BKN025 OVC080". Based on the codes shown in the image — what is the flying ceiling implication of this report?
+    ru: METAR сообщает "BKN025 OVC080". Согласно показанным на изображении кодам — каково следствие для лётного «потолка» в этом сообщении?
+  options:
+  - id: a
+    text:
+      lv: Skaidri lidojuma apstākļi — neviens mākonis netraucē.
+      en: Clear flying conditions — no clouds blocking.
+      ru: Ясные условия полёта — облака не мешают.
+  - id: b
+    text:
+      lv: Pirmais nozīmīgs mākoņu slānis (5+ oktas) ir 2500 ft (~760 m), bet zem 120 m drons paliek brīvs.
+      en: There is no obstruction at A1/A3 altitude because the first significant cloud layer (5+ oktas) is at 2500 ft (~760 m), but below 120 m the drone is unobstructed.
+      ru: 'На высоте A1/A3 нет ограничений: первый значительный слой облаков (5+ окт) на 2500 фт (~760 м), но ниже 120 м дрон свободен.'
+  - id: c
+    text:
+      lv: Lidojuma griesti ir 2500 ft (~760 m) — pirmais "lauztais" (BKN, 5+ oktas) slānis. Drons paliek brīvs zem 120 m, bet jāņem vērā samazināta ambient gaisma un VLOS apstākļi.
+      en: The flying ceiling is 2500 ft (~760 m) — the first "broken" (BKN, 5+ oktas) layer. The drone is unobstructed below 120 m, but reduced ambient light and VLOS conditions must be considered.
+      ru: Лётный потолок — 2500 фт (~760 м), это первый «разорванный» слой (BKN, 5+ окт). Дрон свободен ниже 120 м, но нужно учитывать сниженное освещение и условия VLOS.
+  - id: d
+    text:
+      lv: Pirmais nozīmīgais mākoņu slānis ir 8000 ft.
+      en: The first significant cloud layer is at 8000 ft.
+      ru: Первый значительный слой облаков на 8000 фт.
+  correctOptionId: c
+  explanation:
+    lv: 'METAR augstumi tiek ziņoti simtos pēdās virs lidlauka līmeņa (AGL). "BKN025" = lauzts pārklājums 2500 ft AGL (~760 m), "OVC080" = pilnīgs apmākums 8000 ft AGL (~2440 m). "Griesti" aviācijā nozīmē pirmais BKN vai OVC slānis. Šajā gadījumā tas ir 2500 ft. Drons darbojas zem 120 m, tāpēc fiziski mākoņi netraucē, bet samazināta saules gaisma un slikta horizontālā redzamība ietekmē VLOS.
+
+      '
+    en: 'METAR cloud heights are reported in hundreds of feet above aerodrome level (AGL). "BKN025" = broken at 2500 ft AGL (~760 m), "OVC080" = overcast at 8000 ft AGL (~2440 m). The "ceiling" in aviation is the first BKN or OVC layer — here, 2500 ft. The drone operates below 120 m so clouds do not physically interfere, but reduced sunlight and poor horizontal visibility affect VLOS.
+
+      '
+    ru: 'Высоты облаков в METAR указываются в сотнях футов над аэродромом (AGL). "BKN025" = разорванные на 2500 фт AGL (~760 м), "OVC080" = сплошные на 8000 фт AGL (~2440 м). «Потолок» в авиации — первый слой BKN или OVC, в данном случае 2500 фт. Дрон работает ниже 120 м, поэтому облака физически не мешают, но сниженный свет и плохая горизонтальная видимость влияют на VLOS.
+
+      '
+  distractorRationales:
+    a:
+      lv: BKN un OVC nozīmē nozīmīgu mākoņu pārklājumu, nevis skaidras debesis.
+      en: BKN and OVC denote significant cloud cover, not clear skies.
+      ru: BKN и OVC означают значительное облачное покрытие, а не ясное небо.
+    b:
+      lv: Atbilde nedaudz nepatiess — pirmais nozīmīgais slānis ir uz 2500 ft (BKN), nevis OVC 8000 ft, kā netieši norāda atbilde "no first significant layer at A1/A3 altitude".
+      en: This is partially incorrect — the first significant layer is at 2500 ft (BKN), not the OVC at 8000 ft.
+      ru: Частично неверно — первый значительный слой на 2500 фт (BKN), а не OVC на 8000 фт.
+    d:
+      lv: '"Pirmais nozīmīgais slānis" ir BKN025 (2500 ft), nevis OVC080 (8000 ft). Aviācijā griestus definē pirmais BKN vai OVC.'
+      en: 'The "first significant layer" is BKN025 (2500 ft), not OVC080 (8000 ft). In aviation, the ceiling is defined by the first BKN or OVC.'
+      ru: '«Первый значительный слой» — это BKN025 (2500 фт), а не OVC080 (8000 фт). В авиации потолок определяется первым BKN или OVC.'
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; ICAO Annex 3 — cloud coverage in oktas
+  difficulty: 4
+  cognitiveLevel: apply
+  scenarioType: numeric
+- id: met-056
+  image: met-056-sea-breeze.png
+  imageAlt:
+    lv: 'Jūras vēja diagramma diurnāla cikla laikā: kreisajā pusē vēsa jūra un zila krāsa virs tās, labajā pusē silts saulains krasts un oranža krāsa virs tā. Gaisa cirkulācijas bultiņas: vēsais gaiss plūst no jūras uz krastu zemē, atgriežas no krasta uz jūru augstumā. Saule virspusē.'
+    en: 'Sea-breeze diagram for a diurnal cycle: cool sea and blue tint above on the left, warm sunlit coast and orange tint above on the right. Air-circulation arrows: cool air flows from sea to coast at the surface, returns from coast to sea aloft. Sun overhead.'
+    ru: 'Диаграмма морского бриза в суточном цикле: слева холодное море и синий оттенок над ним, справа тёплый солнечный берег и оранжевый оттенок над ним. Стрелки циркуляции воздуха: холодный воздух идёт с моря на берег у поверхности, возвращается с берега на море на высоте. Солнце над головой.'
+  stem:
+    lv: Saskaņā ar attēlu — kad jūras vējš ir visstiprākais, un kāds ir tā efekts droniem?
+    en: According to the image — when is the sea breeze strongest, and what is its effect on drones?
+    ru: Согласно изображению — когда морской бриз сильнее всего и каков его эффект на дроны?
+  options:
+  - id: a
+    text:
+      lv: Naktī, kad krasta temperatūra ir augstāka par jūras.
+      en: At night, when the coast is warmer than the sea.
+      ru: Ночью, когда берег теплее моря.
+  - id: b
+    text:
+      lv: Visu dienu vienlīdzīgi — temperatūras kontrasts paliek nemainīgs.
+      en: All day equally — the temperature contrast stays constant.
+      ru: Весь день равномерно — температурный контраст постоянен.
+  - id: c
+    text:
+      lv: Rītā saulrieta laikā, kad veidojas zemes vēja apgriezīgs.
+      en: At sunset, when the reverse land-breeze forms.
+      ru: На закате, когда формируется обратный береговой бриз.
+  - id: d
+    text:
+      lv: Vidējā pēcpusdienā (~14-16h), kad krasta temperatūra ir maksimālā — drons piekrastē sastaps stiprākas onshore brāzmas un pretvēju.
+      en: In mid-afternoon (~14-16h), when the coast is at its warmest — drones near the shore will encounter stronger onshore gusts and headwind.
+      ru: В середине дня (~14-16ч), когда температура берега максимальна — дроны у берега столкнутся с более сильными порывами в направлении берега и встречным ветром.
+  correctOptionId: d
+  explanation:
+    lv: 'Jūras vējš (sea breeze) ir lokāls cirkulācijas modelis, kurš veidojas, kad saule sasilda zemi ātrāk nekā jūru. Siltais gaiss virs zemes ceļas, izveidojot zema spiediena zonu, un vēsais gaiss no jūras plūst uz krastu, lai aizvietotu to. Maksimālā stiprība parasti ap pl. 14-16, kad temperatūras kontrasts ir lielākais. Droniem piekrastē: pretvēja gradients var sasniegt 5-10 kt, un brāzmas var pārsteigt — sevišķi pavasarī un vasarā.
+
+      '
+    en: 'The sea breeze is a local circulation pattern that forms when the sun warms the land faster than the sea. Warm air over the land rises, creating low pressure, and cool air from the sea flows in to replace it. Peak strength is typically around 14-16h when the temperature contrast is greatest. For drones on the coast: a headwind gradient up to 5-10 kt is common, and gusts may surprise — especially in spring and summer.
+
+      '
+    ru: 'Морской бриз — локальная циркуляция, которая образуется, когда солнце прогревает сушу быстрее, чем море. Тёплый воздух над сушей поднимается, образуя зону низкого давления, и холодный воздух с моря идёт ему на смену. Максимум обычно к 14-16ч, когда температурный контраст наибольший. Для дронов у берега: градиент встречного ветра до 5-10 узлов обычен, и порывы могут неожиданно ударить — особенно весной и летом.
+
+      '
+  distractorRationales:
+    a:
+      lv: Naktī veidojas pretējais — zemes vējš (land breeze), kad jūra ir siltāka par zemi. Jūras vējš darbojas dienā.
+      en: At night the opposite forms — a land breeze, when the sea is warmer than the land. The sea breeze operates during the day.
+      ru: Ночью образуется противоположный береговой бриз, когда море теплее суши. Морской бриз работает днём.
+    b:
+      lv: Jūras vējš ir diurnāls — tas mainās ar saules pozīciju un sasniedz maksimumu pēcpusdienā.
+      en: The sea breeze is diurnal — it varies with the sun's position and peaks in the afternoon.
+      ru: Морской бриз — суточный, он меняется с положением солнца и максимален во второй половине дня.
+    c:
+      lv: Saulrietā jūras vējš pakāpeniski izgaist, un veidojas pretējais zemes vējš tikai pēc 2-4 stundām.
+      en: At sunset the sea breeze gradually dissipates, and the reverse land breeze only forms 2-4 hours later.
+      ru: На закате морской бриз постепенно затухает, и обратный береговой бриз появляется только через 2-4 часа.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; ICAO Doc 8896 — local wind systems
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: met-057
+  image: met-057-mountain-wave.png
+  imageAlt:
+    lv: 'Kalna viļņa (mountain wave) diagramma: kalns ar stipriem vēja arrows pret to, vēja virzienā lejup — vairāku posmu viļņains plūsmas modelis ar lenticular mākoņiem virsotnēs, un haotisks rotors tieši zem pirmā viļņa.'
+    en: 'Mountain-wave (lee-wave) diagram: a mountain with strong wind arrows hitting it, downwind a multi-segment wavy airflow pattern with lenticular clouds at the crests, and a chaotic rotor zone directly below the first wave.'
+    ru: 'Диаграмма горной волны (lee wave): гора с сильными стрелками ветра на неё, с подветренной стороны — многосегментный волнистый поток с lenticular облаками на гребнях, и хаотичная зона ротора непосредственно под первой волной.'
+  stem:
+    lv: Drons jālido kalna vēja pusē (downwind), kur attēlā parādās mountain wave un rotor zona. Kur drons ir VISLIELĀKAJĀ riskā?
+    en: A drone must fly on the lee (downwind) side of a mountain, where the image shows a mountain wave and rotor zone. Where is the drone at the GREATEST risk?
+    ru: Дрон должен лететь с подветренной стороны горы, где на изображении видны горная волна и зона ротора. Где дрон в НАИБОЛЬШЕЙ опасности?
+  options:
+  - id: a
+    text:
+      lv: Tieši zem pirmā viļņa virsotnes, rotora zonā — haotisks plūsmas modelis var izraisīt pilnīgu kontroles zudumu.
+      en: Directly below the first wave crest, in the rotor zone — the chaotic flow pattern can cause complete loss of control.
+      ru: Прямо под гребнем первой волны, в зоне ротора — хаотичный поток может вызвать полную потерю управления.
+  - id: b
+    text:
+      lv: Augstumā virs lenticular mākoņiem — tur plūsma ir gluda.
+      en: At an altitude above the lenticular clouds — the flow is smooth there.
+      ru: На высоте выше lenticular облаков — там поток ровный.
+  - id: c
+    text:
+      lv: Otrās viļņa virsotnes attālumā no kalna — tur viļņa enerģija jau ir zaudēta.
+      en: At the second wave crest's distance from the mountain — the wave energy is already lost there.
+      ru: На расстоянии второго гребня от горы — энергия волны там уже потеряна.
+  - id: d
+    text:
+      lv: Pretvēja pusē (windward) kalna — vēja kontakta zonā.
+      en: On the windward side of the mountain — in the wind-contact zone.
+      ru: С наветренной стороны горы — в зоне контакта с ветром.
+  correctOptionId: a
+  explanation:
+    lv: 'Mountain wave veido sēriju gludu, stabilu viļņu vēja virzienā lejup no kalna, bet TIEŠI ZEM pirmā viļņa virsotnes veidojas rotora zona — haotisks, virpuļojošs plūsmas modelis ar plus/mīnus 1500 ft/min vertikāliem ātrumiem. Tas ir vienīgais izteikti turbulents reģions visā sistēmā. Maziem droniem rotora zona ir letāla — vēja brāzmas un virziens mainās sekundēs. Pretvēja puse parasti ir relatīvi stabila ar mēreniem vēja gradientiem, otrais vilnis jau zaudē enerģiju, un virs lenticular mākoņiem plūsma ir gluda.
+
+      '
+    en: 'A mountain wave produces a series of smooth, stable waves downwind of the mountain, but DIRECTLY BELOW the first wave crest a rotor zone forms — a chaotic, churning flow with vertical speeds of ±1500 ft/min. This is the only strongly turbulent region in the system. For small drones the rotor zone is lethal — wind speed and direction change within seconds. The windward side is usually relatively stable with mild gradients, the second wave has already lost energy, and above the lenticulars the flow is smooth.
+
+      '
+    ru: 'Горная волна создаёт серию ровных, устойчивых волн с подветренной стороны горы, но НЕПОСРЕДСТВЕННО ПОД гребнем первой волны образуется зона ротора — хаотичный, вихревой поток с вертикальными скоростями ±1500 фт/мин. Это единственный сильно турбулентный регион системы. Для малых дронов зона ротора смертельна — скорость и направление ветра меняются за секунды. Наветренная сторона обычно относительно стабильна с умеренными градиентами, вторая волна уже теряет энергию, а над lenticular поток ровный.
+
+      '
+  distractorRationales:
+    b:
+      lv: Plūsma virs lenticular ir gluda un stabilā, kā arī attēlā skaidri redzams. Tas ir drošākais reģions, nevis bīstamākais.
+      en: The flow above lenticulars is smooth and stable, as the image clearly shows. It is the safest region, not the most dangerous.
+      ru: Поток над lenticular — ровный и стабильный, как ясно видно на изображении. Это самая безопасная зона, а не самая опасная.
+    c:
+      lv: Otrās viļņa virsotne ir mazāk turbulenta nekā pirmā rotora zona, un enerģija pakāpeniski zaudējas.
+      en: The second wave crest is less turbulent than the first rotor zone, and the energy gradually dissipates.
+      ru: Гребень второй волны менее турбулентен, чем первая зона ротора, и энергия постепенно теряется.
+    d:
+      lv: Pretvēja pusē plūsma ir stabilā un prognozējama. Bīstamība parādās tieši lejas pusē kalna.
+      en: On the windward side the flow is stable and predictable. Danger appears specifically downwind of the mountain.
+      ru: С наветренной стороны поток стабильный и предсказуемый. Опасность возникает именно с подветренной стороны горы.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; FAA H-8083-25B Ch. 12 — mountain-wave rotor
+  difficulty: 4
+  cognitiveLevel: analyze
+  scenarioType: decision
+- id: met-058
+  image: met-058-haze.png
+  imageAlt:
+    lv: 'Drons zema augstumā atklātā vietā; vidējā attālumā — koki, ēka un ceļš caur brūngani-pelēku miglas slāni (putekļi/dūmi); tālā attālumā — pakalni tikko saskatāmi. Augstumā skaidra zila debess. Vienots indikators: "Redzamība ~3 km".'
+    en: 'A drone at low altitude in the open; in the middle distance — trees, a building, and a road through a brownish-grey haze layer (dust/smoke); in the far distance — hills barely visible. Above: a clear blue sky. Distance label: "Visibility ~3 km".'
+    ru: 'Дрон на низкой высоте на открытой местности; в среднем плане — деревья, здание и дорога сквозь буровато-серый слой мглы (пыль/дым); вдали — холмы едва различимы. Сверху — ясное синее небо. Подпись: "Видимость ~3 км".'
+  stem:
+    lv: Pilots redz attēlā parādītos apstākļus — horizontāla redzamība ~3 km. Vai ir droši lidot A3 zonā 100 m attālumā?
+    en: A pilot sees the conditions in the image — horizontal visibility ~3 km. Is it safe to fly in an A3 area at 100 m distance?
+    ru: Пилот видит условия на изображении — горизонтальная видимость ~3 км. Безопасно ли летать в зоне A3 на расстоянии 100 м?
+  options:
+  - id: a
+    text:
+      lv: Jā, jo 3 km ir daudz vairāk par 100 m lidojuma attālumu.
+      en: Yes, because 3 km is far more than the 100 m flight distance.
+      ru: Да, потому что 3 км — намного больше, чем дальность полёта 100 м.
+  - id: b
+    text:
+      lv: Nē, jo nepietiek redzamības, lai uztvertu citus gaisa kuģus laicīgi (VLOS un see-and-avoid prasība).
+      en: No, because there is insufficient visibility to spot other aircraft in time (VLOS and see-and-avoid requirement).
+      ru: Нет — недостаточно видимости, чтобы вовремя заметить другие воздушные суда (требование VLOS и see-and-avoid).
+  - id: c
+    text:
+      lv: Jā, ja drons aprīkots ar collision-avoidance sensoriem.
+      en: Yes, if the drone has collision-avoidance sensors.
+      ru: Да, если дрон оснащён датчиками предотвращения столкновений.
+  - id: d
+    text:
+      lv: Jā, ja izmanto FPV kamēras palielinātu attālumu.
+      en: Yes, with an FPV camera the range is increased.
+      ru: Да, при использовании FPV-камеры дальность увеличивается.
+  correctOptionId: b
+  explanation:
+    lv: 'Lai gan 3 km ir daudz vairāk par 100 m lidojuma attālumu pašam dronam, VLOS prasība iekļauj arī see-and-avoid — pilotam jāspēj uztvert citu lidaparātu (helikopteru, citu dronu) laicīgi, lai izvairītos. Pie 3 km redzamības mazs helikopters var parādīties tieši virs drona ar atrumu 100 kt (~50 m/s) — pilotam paliek tikai 60 sekundes reaģēšanas laikam, kas ir maz, ja pilots fokusējas uz dronu. EASA Open kategorijas labākā prakse: lidot, kad redzamība ir vismaz 5 km, jo see-and-avoid ir efektīva. FPV un sensori NAV VLOS aizstājēji bez novērotāja.
+
+      '
+    en: 'Although 3 km is much more than the 100 m flight distance of the drone itself, the VLOS requirement also includes see-and-avoid — the pilot must spot other aircraft (a helicopter, another drone) in time to avoid a collision. At 3 km visibility, a small helicopter can appear directly above the drone at 100 kt (~50 m/s) — leaving the pilot only 60 seconds reaction time, which is little if the pilot is focused on the drone. EASA Open-category best practice: fly when visibility is at least 5 km so that see-and-avoid is effective. FPV and sensors are NOT a VLOS substitute without an observer.
+
+      '
+    ru: 'Хотя 3 км — намного больше 100 м дальности полёта самого дрона, требование VLOS включает и see-and-avoid: пилот должен вовремя увидеть другое воздушное судно (вертолёт, другой дрон), чтобы избежать столкновения. При видимости 3 км маленький вертолёт может появиться прямо над дроном на 100 узлах (~50 м/с), и у пилота останется лишь 60 секунд на реакцию — мало, если внимание сосредоточено на дроне. Лучшая практика EASA Open: летать при видимости не менее 5 км, чтобы see-and-avoid работал. FPV и датчики НЕ заменяют VLOS без наблюдателя.
+
+      '
+  distractorRationales:
+    a:
+      lv: VLOS nav tikai par drona redzamību — tas ir arī par citu lidaparātu uztveršanu un izvairīšanos no sadursmes.
+      en: VLOS is not just about seeing the drone — it also includes spotting other aircraft and avoiding collisions.
+      ru: VLOS — это не только видеть дрон, но и замечать другие воздушные суда и избегать столкновений.
+    c:
+      lv: Sensori palīdz, bet Open kategorijā tie nav VLOS aizstājēji. Pilotam jāspēj vizuāli redzēt citus lidaparātus.
+      en: Sensors help, but in the Open category they are not a VLOS substitute. The pilot must be able to visually see other aircraft.
+      ru: Датчики помогают, но в категории Open они не заменяют VLOS. Пилот должен визуально видеть другие воздушные суда.
+    d:
+      lv: FPV bez novērotāja nav atļauts Open kategorijā. Pat ar FPV pilots/novērotājs nedrīkst pārvarēt VLOS prasību.
+      en: FPV without an observer is not allowed in the Open category. Even with FPV, the pilot/observer cannot override the VLOS requirement.
+      ru: FPV без наблюдателя в категории Open не разрешён. Даже с FPV пилот/наблюдатель не может игнорировать требование VLOS.
+  sourceRef: docs/knowledge/eu-regulations/Reg-2019-947.pdf — UAS.OPEN.060 (VLOS); docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — see-and-avoid guidance
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision
+- id: met-059
+  image: met-059-microburst.png
+  imageAlt:
+    lv: 'Microburst diagramma: kumulonimba mākoņa pamatā stiprs vertikāls lejas plūsmas stabs, kas pie virszemes izplatās radiāli visos virzienos ar izlīdzīgām bultiņām. Drons izlēkkājošā outflow zonā ar brīdinājuma simbolu.'
+    en: 'Microburst diagram: at the base of a cumulonimbus cloud, a strong vertical downdraft column that spreads radially in all directions at the surface with outflow arrows. A drone in the radiating outflow zone with a warning indicator.'
+    ru: 'Диаграмма микропорыва: у основания кучево-дождевого облака — мощный вертикальный нисходящий столб, который у поверхности расходится радиально во все стороны с выровненными стрелками. Дрон в зоне расходящегося потока с предупреждающим знаком.'
+  stem:
+    lv: Saskaņā ar attēlu — kāda ir microburst galvenā briesmu īpatnība, kas to padara īpaši bīstamu maziem droniem?
+    en: According to the image — what is the principal danger of a microburst that makes it especially hazardous to small drones?
+    ru: Согласно изображению — какова основная опасность микропорыва, делающая его особенно угрожающим для малых дронов?
+  options:
+  - id: a
+    text:
+      lv: Microburst veidojas tikai virs okeāniem, tāpēc kontinentālajā Latvijā nav riska.
+      en: Microbursts only form over oceans, so there is no risk in continental Latvia.
+      ru: Микропорывы образуются только над океанами, поэтому в континентальной Латвии риска нет.
+  - id: b
+    text:
+      lv: Strauja vēja virziena maiņa (līdz 180°) īsā attālumā un laikā (sekundēs) — drons var saņemt pretvēju, pēc tam pēkšņu līdzvēju, izraisot mehānisku pārslodzi.
+      en: Sudden wind-direction reversal (up to 180°) over a short distance and time (seconds) — the drone may receive a headwind followed by a sudden tailwind, causing mechanical overload.
+      ru: Резкая смена направления ветра (до 180°) на коротком расстоянии и за секунды — дрон может получить встречный ветер, а затем неожиданный попутный, что вызовет механическую перегрузку.
+  - id: c
+    text:
+      lv: Microburst notiek tikai naktī.
+      en: Microbursts only happen at night.
+      ru: Микропорывы случаются только ночью.
+  - id: d
+    text:
+      lv: Microburst rada tikai vāju lietusgāzi bez stipra vēja.
+      en: Microbursts produce only light drizzle without strong wind.
+      ru: Микропорывы дают только лёгкую морось без сильного ветра.
+  correctOptionId: b
+  explanation:
+    lv: 'Microburst ir kompakts (1-4 km plats), spēcīgs vertikālais lejas plūsmas notikums no kumulonimba mākoņa pamatā. Pie virszemes plūsma izplatās radiāli, izveidojot vēja shear (gradient) — viena puse outflow zonas ir spēcīgs pretvējš, otrā — spēcīgs līdzvējš. Drons, kas pāriet caur outflow zonu, var saskartos ar 60+ kt vēja izmaiņām dažu sekundēs — krietni vairāk nekā mazo droņu lidoklis ir paredzēts izturēt. Microburst notiek arī kontinentāli ar konvektīvajiem mākoņiem, jebkurā diennakts laikā, un dod ļoti stipru vēju un krusas lietu.
+
+      '
+    en: 'A microburst is a compact (1-4 km wide), powerful vertical downdraft from the base of a cumulonimbus cloud. At the surface, the airflow spreads radially, creating wind shear (gradient) — one side of the outflow zone is a strong headwind, the other a strong tailwind. A drone crossing through the outflow zone can encounter 60+ kt wind changes in seconds — far beyond what small drones are designed to handle. Microbursts also occur over continents in convective clouds, at any time of day, and produce very strong winds and hail.
+
+      '
+    ru: 'Микропорыв — компактное (1-4 км шириной) мощное вертикальное нисходящее явление от основания кучево-дождевого облака. У поверхности поток расходится радиально, образуя сдвиг ветра (градиент): с одной стороны зоны — сильный встречный ветер, с другой — сильный попутный. Дрон, пересекающий зону outflow, может столкнуться с изменениями ветра 60+ узлов за секунды — значительно больше, чем малые дроны рассчитаны выдержать. Микропорывы случаются и в континентальном климате при конвективной облачности, в любое время суток, и дают очень сильный ветер и град.
+
+      '
+  distractorRationales:
+    a:
+      lv: Microburst veidojas no jebkura kumulonimba — gan kontinentāli, gan piekrastē.
+      en: Microbursts form from any cumulonimbus — both continental and coastal.
+      ru: Микропорывы образуются от любых кучево-дождевых облаков — и в континентальных, и в прибрежных зонах.
+    c:
+      lv: Microburst notiek visā diennakts laikā, sevišķi pēcpusdienā un agrā vakarā, kad konvektīvā aktivitāte ir maksimālā.
+      en: Microbursts occur at all times of day, especially in the afternoon and early evening when convective activity peaks.
+      ru: Микропорывы случаются в любое время суток, особенно во второй половине дня и ранним вечером при максимуме конвекции.
+    d:
+      lv: Microburst rada tieši pretējo — ļoti stipru vēju (60+ kt) un krusas lietu īsa laika periodā.
+      en: Microbursts produce the opposite — very strong wind (60+ kt) and hail in a short time.
+      ru: Микропорывы дают противоположное — очень сильный ветер (60+ узлов) и град за короткое время.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; FAA H-8083-25B Ch. 12 — microburst characteristics
+  difficulty: 4
+  cognitiveLevel: analyze
+  scenarioType: decision
+- id: met-060
+  image: met-060-gust-front.png
+  imageAlt:
+    lv: 'Gust front diagramma: kreisajā pusē augsts kumulonimba mākonis ar smago lietus šaftu; zem un labajā pusē — vēsa gaisa ķīlis, kas plūst ārā pa virszemi (gust front). Vadošā mala ar dust un asu robežu. Drons priekšā ar brīdinājuma simbolu un izliektām vēja bultiņām.'
+    en: 'Gust-front diagram: tall cumulonimbus cloud on the left with heavy rain shaft; below and to the right — a wedge of cool air flowing outward across the surface (the gust front). Leading edge with dust and a sharp boundary. A drone ahead of it with a warning indicator and curved wind arrows.'
+    ru: 'Диаграмма фронта порывов: слева — высокое кучево-дождевое облако с тяжёлой полосой дождя; ниже и справа — клин холодного воздуха, растекающийся по поверхности (gust front). Передняя кромка с пылью и резкой границей. Дрон впереди фронта с предупреждающим знаком и изогнутыми стрелками ветра.'
+  stem:
+    lv: Drons lido attēlā parādītajā situācijā — gust front pāris kilometru attālumā. Kāda ir pareizā darbība?
+    en: A drone is in the situation shown in the image — a gust front a few kilometres away. What is the correct action?
+    ru: Дрон находится в ситуации, показанной на изображении — gust front в нескольких километрах. Какое действие правильное?
+  options:
+  - id: a
+    text:
+      lv: Tūlīt nolaist dronu, jo gust front var sasniegt 30-50 kt brāzmas dažās minūtēs un pārsteigt nesaprātīgi gatavu pilotu.
+      en: Land the drone immediately — a gust front can produce 30-50 kt gusts within minutes and surprise an unprepared pilot.
+      ru: Немедленно посадить дрон — gust front может дать порывы 30-50 узлов за несколько минут и застать неподготовленного пилота врасплох.
+  - id: b
+    text:
+      lv: Lidot pretī gust front, lai novērtētu tā stiprumu.
+      en: Fly toward the gust front to assess its strength.
+      ru: Лететь навстречу gust front, чтобы оценить его силу.
+  - id: c
+    text:
+      lv: Palielināt drona augstumu, lai izvairītos no gust front.
+      en: Increase the drone's altitude to avoid the gust front.
+      ru: Увеличить высоту дрона, чтобы избежать gust front.
+  - id: d
+    text:
+      lv: Turpināt lidojumu — gust front ietekmē tikai lielo aviāciju.
+      en: Continue the flight — gust fronts only affect large aviation.
+      ru: Продолжить полёт — gust front влияет только на крупную авиацию.
+  correctOptionId: a
+  explanation:
+    lv: 'Gust front ir kumulonimba (CB) izplūdes mala — vēsa, lejas plūsma izplatās radiāli no CB pamatu, lielāka āra pa virszemei. Gust front var sasniegt 10-30 km attālumu no CB un radīt brāzmas 30-50 kt, kā arī pēkšņu temperatūras pazemināšanos, putekļu mākoņus un krītošas papildu mākoņus (shelf cloud). Drons tāda apjoma brāzmā nav vadāms. Pareizā darbība: TŪLĪT nolaist dronu, kad redzes CB tuvumā vai gust front uz radara/aplikācijā. Negaidīt — gust front var sasniegt 30 km/h, tāpēc minūtes ir kritiskas.
+
+      '
+    en: 'A gust front is the outflow boundary of a cumulonimbus (CB) — cool downdraft air spreading radially from the CB base, expanding outward at the surface. A gust front can reach 10-30 km from the CB and produce 30-50 kt gusts, sudden temperature drops, dust clouds, and looming shelf clouds. A drone cannot be controlled in such gusts. Correct action: land IMMEDIATELY whenever a CB is visible nearby or a gust front shows on radar/app. Do not wait — a gust front can advance at 30 km/h, so minutes are critical.
+
+      '
+    ru: 'Gust front — выходной фронт кучево-дождевого облака (CB): холодный нисходящий поток, расходящийся радиально от основания CB и расширяющийся по поверхности. Gust front может удаляться от CB на 10-30 км и давать порывы 30-50 узлов, резкое падение температуры, пыльные облака и нависающие shelf-облака. Дрон в таких порывах не управляем. Правильное действие: НЕМЕДЛЕННО посадить дрон, как только CB заметно поблизости или gust front видно на радаре/в приложении. Не ждать — gust front может двигаться со скоростью 30 км/ч, поэтому минуты критичны.
+
+      '
+  distractorRationales:
+    b:
+      lv: Lidot pretī gust front ir pretrunā ar drošības principu — nav iemesla pakļaut dronu paredzami bīstamai turbulencei.
+      en: Flying toward a gust front contradicts the safety principle — there is no reason to expose the drone to predictable severe turbulence.
+      ru: Лететь навстречу gust front противоречит принципу безопасности — нет смысла подвергать дрон ожидаемой сильной турбулентности.
+    c:
+      lv: Augstuma palielināšana nepalīdz — gust front izplatās līdz vairāku km augstumā, un Open kategorijas 120 m limits ievērojami zemāks.
+      en: Increasing altitude does not help — the gust front extends to several km in height, and the 120 m Open-category limit is well below that.
+      ru: Увеличение высоты не помогает — gust front простирается на несколько км вверх, а ограничение Open в 120 м намного ниже.
+    d:
+      lv: Gust front skar JEBKURU lidaparātu — sevišķi mazos droniem ar zemu masu un mehānisko pretestību.
+      en: A gust front affects ANY aircraft — especially small drones with low mass and mechanical robustness.
+      ru: Gust front воздействует на ЛЮБОЕ воздушное судно — особенно на малые дроны с низкой массой и механической устойчивостью.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; FAA H-8083-25B Ch. 12 — gust front and outflow boundary
+  difficulty: 3
+  cognitiveLevel: apply
+  scenarioType: decision
