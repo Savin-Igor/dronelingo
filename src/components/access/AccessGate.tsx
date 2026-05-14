@@ -1,20 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { hasAccess } from "@/lib/access";
+import { useAccessStatus } from "./useAccessStatus";
 
 export function AccessGate({ children }: { children: React.ReactNode }) {
-  const [access, setAccess] = useState<boolean | null>(null);
-
-  useEffect(() => {
-    setAccess(hasAccess());
-    function refresh() {
-      setAccess(hasAccess());
-    }
-    window.addEventListener("dronelingo:access-changed", refresh);
-    return () => window.removeEventListener("dronelingo:access-changed", refresh);
-  }, []);
+  const access = useAccessStatus();
 
   // null = still checking localStorage — render skeleton to avoid layout shift
   if (access === null) return <AccessSkeleton />;
@@ -37,26 +28,28 @@ function AccessSkeleton() {
 }
 
 function PaywallPanel() {
+  const t = useTranslations("access");
+
   return (
     <div className="mx-auto max-w-lg py-16 text-center">
       <div className="rounded-sm border border-cyan-pulse/20 bg-cockpit p-8">
         <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
-          Full access required
+          {t("gateTitle")}
         </p>
         <h2 className="mt-3 font-display text-2xl font-semibold text-hud-white">
-          Unlock all 9 topics
+          {t("panelTitle")}
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-telemetry">
-          You are viewing a locked topic. Get full access to all lessons, practice drills, and mock exams for a one-time payment of €19.
+          {t("gateBody")}
         </p>
 
         <ul className="mt-6 space-y-2 text-left text-sm text-telemetry">
           {[
-            "All 9 EASA topics with full lessons",
-            "45+ practice questions per topic",
-            "Unlimited mock exams",
-            "Latvian, English & Russian",
-            "One-time — no subscription",
+            t("features.lessons"),
+            t("features.practice"),
+            t("features.exams"),
+            t("features.languages"),
+            t("features.payment"),
           ].map((item) => (
             <li key={item} className="flex items-center gap-2">
               <span className="text-green-clear">✓</span>
@@ -69,11 +62,11 @@ function PaywallPanel() {
           href="/pricing"
           className="mt-8 inline-flex w-full items-center justify-center rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-6 py-3 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void"
         >
-          Get full access — €19 →
+          {t("gateCta")} →
         </Link>
 
         <p className="mt-4 font-mono text-xs text-muted">
-          Air Safety topic is free — no account needed.
+          {t("freeNote")}
         </p>
       </div>
     </div>

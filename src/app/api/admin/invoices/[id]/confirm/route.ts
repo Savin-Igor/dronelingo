@@ -115,9 +115,10 @@ function errorPageHtml(message: string): string {
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
     const { searchParams } = new URL(request.url);
     const secret = searchParams.get("secret");
 
@@ -129,7 +130,7 @@ export async function GET(
     }
 
     const invoice = await prisma.invoiceRequest.findUnique({
-      where: { id: params.id },
+      where: { id },
     });
 
     if (!invoice) {

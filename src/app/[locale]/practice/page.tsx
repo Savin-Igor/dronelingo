@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
 import {
   MasteryMap,
   type MasteryMapTopic,
 } from "@/components/practice/MasteryMap";
+import {
+  PracticeTopicsList,
+  type PracticeTopicListItem,
+} from "@/components/practice/PracticeTopicsList";
 import { FREE_TOPIC_SLUG } from "@/lib/access";
 import { localize } from "@/lib/localize";
 import { prisma } from "@/lib/prisma";
@@ -64,6 +67,20 @@ export default async function PracticeIndex({
       };
     });
 
+  const practiceTopics: PracticeTopicListItem[] = topics.map((topic) => ({
+    id: topic.id,
+    slug: topic.slug,
+    title: localize(topic.title, locale),
+    questionCount: topic._count.questions,
+    free: topic.slug === FREE_TOPIC_SLUG,
+    disabled: topic._count.questions === 0,
+  }));
+  const availableTopics = practiceTopics.filter((topic) => !topic.disabled).length;
+  const totalQuestions = practiceTopics.reduce(
+    (sum, topic) => sum + topic.questionCount,
+    0,
+  );
+
   return (
     <main className="mx-auto max-w-3xl px-6 py-12">
       <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
@@ -78,67 +95,34 @@ export default async function PracticeIndex({
         <MasteryMap topics={masteryTopics} />
       </div>
 
-      <ul className="divide-y divide-horizon rounded-sm border border-horizon">
-        {topics.map((topic, i) => {
-          const count = topic._count.questions;
-          const disabled = count === 0;
-          const free = topic.slug === FREE_TOPIC_SLUG;
-          const href = free ? `/practice/${topic.slug}` : "/pricing";
+      <section className="mb-6 grid gap-3 sm:grid-cols-3">
+        <div className="rounded-sm border border-horizon bg-cockpit p-4">
+          <p className="font-mono text-[0.65rem] uppercase tracking-widest text-muted">
+            {t("overview.topicsLabel")}
+          </p>
+          <p className="mt-2 font-display text-2xl font-semibold text-hud-white">
+            {availableTopics}
+          </p>
+        </div>
+        <div className="rounded-sm border border-horizon bg-cockpit p-4">
+          <p className="font-mono text-[0.65rem] uppercase tracking-widest text-muted">
+            {t("overview.totalQuestionsLabel")}
+          </p>
+          <p className="mt-2 font-display text-2xl font-semibold text-hud-white">
+            {totalQuestions}
+          </p>
+        </div>
+        <div className="rounded-sm border border-horizon bg-cockpit p-4">
+          <p className="font-mono text-[0.65rem] uppercase tracking-widest text-muted">
+            {t("overview.mockExamLabel")}
+          </p>
+          <p className="mt-2 font-display text-2xl font-semibold text-hud-white">
+            40
+          </p>
+        </div>
+      </section>
 
-          return (
-            <li key={topic.id}>
-              {disabled ? (
-                <div className="flex items-center justify-between p-5 opacity-30">
-                  <div className="flex items-center gap-3">
-                    <span className="font-mono text-xs text-muted">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <div>
-                      <p className="text-sm font-medium text-hud-white">
-                        {localize(topic.title, locale)}
-                      </p>
-                      <p className="mt-0.5 font-mono text-xs text-muted">
-                        {t("noQuestions")}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                <Link
-                  href={href}
-                  className="flex items-center justify-between p-5 transition-colors hover:bg-hull/50"
-                >
-                  <div className="flex items-center gap-3">
-                    <span className="font-mono text-xs text-muted">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <div>
-                      <p className="text-sm font-medium text-hud-white">
-                        {localize(topic.title, locale)}
-                      </p>
-                      <p className="mt-0.5 font-mono text-xs text-muted">
-                        {t("questionCount", { count })}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    {free ? (
-                      <span className="rounded-sm border border-green-clear/30 bg-green-clear/10 px-1.5 py-0.5 font-mono text-xs text-green-clear">
-                        FREE
-                      </span>
-                    ) : (
-                      <span className="font-mono text-xs text-muted">🔒</span>
-                    )}
-                    <span className="font-mono text-xs text-muted" aria-hidden>
-                      →
-                    </span>
-                  </div>
-                </Link>
-              )}
-            </li>
-          );
-        })}
-      </ul>
+      <PracticeTopicsList topics={practiceTopics} />
     </main>
   );
 }

@@ -63,12 +63,26 @@
   "learn": {
     "title": "Mācies",
     "subtitle": "9 tēmas, kas sagatavo Latvijas A1/A3 eksāmenam.",
-    "back": "Atpakaļ"
+    "back": "Atpakaļ",
+    "topicKicker": "Tēma",
+    "topicStats": {
+      "lessons": "Nodarbības",
+      "questions": "Jautājumi",
+      "access": "Piekļuve",
+      "free": "Bezmaksas sākuma tēma",
+      "fullAccess": "Pilnas piekļuves tēma"
+    },
+    "topicActions": {
+      "kicker": "Ieteicamais nākamais solis",
+      "body": "Vispirms izej nodarbības, pēc tam pārbaudi atcerēšanos ar īsu treniņu eksāmena stilā.",
+      "startLesson": "Sākt ar 1. nodarbību"
+    }
   },
   "practice": {
     "title": "Trenējies",
     "subtitle": "Izvēlies tēmu, lai sāktu trenēties. Atbildes glabājas pārlūkprogrammā — bez reģistrācijas.",
     "questionCount": "{count} jautājumi",
+    "lockedHint": "{count} jautājumi · atver priekšskatu vai atslēdz pilnu piekļuvi",
     "noQuestions": "Šai tēmai vēl nav jautājumu.",
     "checkAnswer": "Pārbaudīt atbildi",
     "next": "Nākamais jautājums",
@@ -82,6 +96,23 @@
     "allDone": "Esi izgājis visus šīs tēmas jautājumus.",
     "anonymousNote": "Atbildes glabājas tikai šajā pārlūkā — bez reģistrācijas.",
     "ctaFromTopic": "Trenējies šajā tēmā",
+    "lockedBadge": "Slēgts",
+    "includedBadge": "Iekļauts",
+    "overview": {
+      "topicsLabel": "Pieejamās tēmas",
+      "totalQuestionsLabel": "Jautājumu banka",
+      "mockExamLabel": "Mock eksāmens"
+    },
+    "upgrade": {
+      "kicker": "Pilnā banka",
+      "body": "Atslēdz pārējās tēmas, lai trenētos ar pilnu jautājumu banku un pārietu no īsiem treniņiem uz pilniem mock eksāmeniem.",
+      "cta": "Atslēgt visas tēmas"
+    },
+    "nextStep": {
+      "kicker": "Pilna piekļuve aktīva",
+      "body": "Kad tēmas treniņi kļūst stabili, pārej uz pilno mock eksāmenu, lai pārbaudītu tempu un pārklājumu.",
+      "cta": "Atvērt mock eksāmenu"
+    },
     "srs": {
       "due": "Termiņā",
       "fresh": "Jauns",
@@ -94,8 +125,14 @@
     }
   },
   "exam": {
+    "kicker": "Sertifikācijas lidojums",
     "title": "Pārbaudes eksāmens",
     "subtitle": "Imitē oficiālo A1/A3 eksāmenu vietnē e.caa.gov.lv. Ja stabili sasniedz 80 %+, esi gatavs reālajam eksāmenam.",
+    "stats": {
+      "questions": "Jautājumi",
+      "minutes": "Minūtes",
+      "threshold": "Slieksnis"
+    },
     "coverage": {
       "heading": "Jautājumu sadalījums",
       "subtitle": "Atveido oficiālo CAA Latvia eksāmena svēršanu.",
@@ -191,9 +228,17 @@
   },
   "access": {
     "gateTitle": "Nepieciešama pilna piekļuve",
-    "gateBody": "Iegūsti pilnu piekļuvi visām nodarbībām, treniņiem un eksāmeniem.",
+    "panelTitle": "Atslēdz visas 9 tēmas",
+    "gateBody": "Tu skaties slēgtu tēmu. Iegūsti pilnu piekļuvi visām nodarbībām, treniņiem un mock eksāmeniem ar vienreizēju €19 maksājumu.",
     "gateCta": "Iegūt pilnu piekļuvi — €19",
-    "freeNote": "Gaisa drošības tēma vienmēr ir bez maksas."
+    "freeNote": "Gaisa drošības tēma vienmēr ir bez maksas.",
+    "features": {
+      "lessons": "Visas 9 EASA tēmas ar pilnām nodarbībām",
+      "practice": "Pilna treniņu banka visās tēmās",
+      "exams": "Neierobežoti mock eksāmeni un tēmu treniņi",
+      "languages": "Latviešu, angļu un krievu valodā",
+      "payment": "Vienreizējs maksājums — bez abonēšanas"
+    }
   },
   "pricing": {
     "title": "Atslēdz visu platformu",
@@ -229,7 +274,7 @@
   "meteorologyA2Exam": {
     "kicker": "Bonusa eksāmens",
     "title": "A2 meteoroloģijas bonuss",
-    "subtitle": "A2 līmeņa mock, kas fokusēts uz reāliem laikapstākļiem dronu pilotiem — mākoņi, frontes, METAR kodi, vēja shears.",
+    "subtitle": "A2 līmeņa mock eksāmens par laikapstākļiem, ar kuriem dronu piloti sastopas praksē — mākoņi, frontes, METAR kodi un vēja šķēre.",
     "backToExam": "Eksāmena sākums",
     "rules": {
       "heading": "Noteikumi",
@@ -327,6 +372,7 @@
     "subtitle": "{seen} no {total} jautājumiem izpildīti",
     "overallMastery": "Kopā",
     "rowStats": "{mastered} apgūti · {seen}/{total} redzēti",
+    "locked": "Slēgts",
     "dueCount": "{count, plural, one {# termiņā} other {# termiņā}}",
     "ariaProgress": "{topic} — {percent}% apgūts",
     "tier": {

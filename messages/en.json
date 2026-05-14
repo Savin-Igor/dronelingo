@@ -63,12 +63,26 @@
   "learn": {
     "title": "Learn",
     "subtitle": "Nine topics that prepare you for Latvia's A1/A3 exam.",
-    "back": "Back"
+    "back": "Back",
+    "topicKicker": "Topic",
+    "topicStats": {
+      "lessons": "Lessons",
+      "questions": "Questions",
+      "access": "Access",
+      "free": "Free starter topic",
+      "fullAccess": "Full-access topic"
+    },
+    "topicActions": {
+      "kicker": "Recommended next step",
+      "body": "Work through the lessons first, then use a short drill to check retention under exam-style pressure.",
+      "startLesson": "Start with lesson 1"
+    }
   },
   "practice": {
     "title": "Practice",
     "subtitle": "Pick a topic to start practising. Answers stay in your browser — no sign-up needed.",
     "questionCount": "{count} questions",
+    "lockedHint": "{count} questions · open preview or unlock to practise",
     "noQuestions": "No questions yet for this topic.",
     "checkAnswer": "Check answer",
     "next": "Next question",
@@ -82,6 +96,23 @@
     "allDone": "You've gone through all questions in this topic.",
     "anonymousNote": "Answers are kept only in this browser — no sign-up needed.",
     "ctaFromTopic": "Practice this topic",
+    "lockedBadge": "Locked",
+    "includedBadge": "Included",
+    "overview": {
+      "topicsLabel": "Topics ready",
+      "totalQuestionsLabel": "Question bank",
+      "mockExamLabel": "Mock exam"
+    },
+    "upgrade": {
+      "kicker": "Full bank",
+      "body": "Unlock the remaining topics to practise the complete question bank and move from drills into full mocks.",
+      "cta": "Unlock all topics"
+    },
+    "nextStep": {
+      "kicker": "Full access active",
+      "body": "Once your topic drills feel stable, switch to the full mock exam to test pacing and coverage.",
+      "cta": "Open mock exam"
+    },
     "srs": {
       "due": "Due",
       "fresh": "Fresh",
@@ -94,8 +125,14 @@
     }
   },
   "exam": {
+    "kicker": "Certification flight",
     "title": "Mock exam",
     "subtitle": "Mirrors the official A1/A3 exam at e.caa.gov.lv. If you consistently score 80%+, you are ready for the real exam.",
+    "stats": {
+      "questions": "Questions",
+      "minutes": "Minutes",
+      "threshold": "Threshold"
+    },
     "rules": {
       "heading": "Rules",
       "questions": "40 questions covering all 9 EASA topics",
@@ -191,9 +228,17 @@
   },
   "access": {
     "gateTitle": "Full access required",
-    "gateBody": "Get full access to all lessons, practice drills, and mock exams.",
+    "panelTitle": "Unlock all 9 topics",
+    "gateBody": "You are viewing a locked topic. Get full access to every lesson, drill, and mock exam for a one-time payment of €19.",
     "gateCta": "Get full access — €19",
-    "freeNote": "Air Safety topic is always free."
+    "freeNote": "Air Safety topic is always free.",
+    "features": {
+      "lessons": "All 9 EASA topics with complete lessons",
+      "practice": "Full practice bank across every topic",
+      "exams": "Unlimited mock exams and topic drills",
+      "languages": "Latvian, English, and Russian",
+      "payment": "One-time payment — no subscription"
+    }
   },
   "pricing": {
     "title": "Unlock the full platform",
@@ -229,7 +274,7 @@
   "meteorologyA2Exam": {
     "kicker": "Bonus exam",
     "title": "A2 Meteorology bonus",
-    "subtitle": "An A2-level mock focused on weather phenomena drone pilots actually meet — clouds, fronts, METAR codes, wind shear.",
+    "subtitle": "An A2-level mock focused on the weather situations drone pilots actually face — clouds, fronts, METAR codes, and wind shear.",
     "backToExam": "Exam home",
     "rules": {
       "heading": "Rules",
@@ -327,6 +372,7 @@
     "subtitle": "{seen} of {total} questions practised",
     "overallMastery": "Overall",
     "rowStats": "{mastered} mastered · {seen}/{total} seen",
+    "locked": "Locked",
     "dueCount": "{count, plural, =1 {# due} other {# due}}",
     "ariaProgress": "{topic} — {percent}% mastered",
     "tier": {

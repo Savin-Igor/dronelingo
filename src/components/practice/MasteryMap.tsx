@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
+import { useAccessStatus } from "@/components/access/useAccessStatus";
 import { readSRS, type SRSMap } from "@/lib/srs";
 import {
   buildOverallMastery,
@@ -108,8 +109,9 @@ function MasteryRow({
   const percent = Math.round(stats.masteryRatio * 100);
   const palette = TIER_PALETTE[stats.tier];
   const hasDue = stats.dueCount > 0;
-  const accessible = topic.free; // paid topics show row but link goes to /pricing
-  const href = accessible ? `/practice/${topic.slug}` : "/pricing";
+  const access = useAccessStatus();
+  const accessible = topic.free || access === true;
+  const href = `/practice/${topic.slug}`;
 
   return (
     <Link
@@ -157,7 +159,11 @@ function MasteryRow({
             total: stats.totalQuestions,
           })}
         </span>
-        {hasDue ? (
+        {!accessible ? (
+          <span className="font-mono text-[0.65rem] uppercase tracking-widest text-muted">
+            {t("locked")}
+          </span>
+        ) : hasDue ? (
           <span
             className="inline-flex items-center gap-1 font-mono text-[0.65rem] uppercase tracking-widest text-amber-300"
             aria-label={t("dueCount", { count: stats.dueCount })}
