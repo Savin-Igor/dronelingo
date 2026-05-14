@@ -36,7 +36,7 @@ Piemērs: `EVRA 101700Z 1018/1118 27012KT 9999 FEW020 BECMG 1022/1024 29018KT`
 | BECMG 1022/1024 | Pakāpeniska maiņa starp 22:00 un 24:00 |
 | 29018KT | Vējš mainās uz 290°/18 KT |
 
-**BECMG** = pakāpeniska maiņa. **TEMPO** = pagaidu apstākļi. **FM** = no noteikta laika apstākļi mainās pilnīgi.
+**BECMG** = pakāpeniska maiņa. **TEMPO** = pagaidu pasliktinājumi vai novirzes, kas gaidāmas mazāk nekā pusi no norādītā perioda. **FM** = no noteikta laika apstākļi pilnībā nomainās.
 
 ## Vēja robežas pēc drona klases
 
@@ -57,11 +57,11 @@ Strādā caur šo secību **pirms katra lidojuma**:
 
 1. **Vējš specifikācijās?** Pārbaudīt METAR vidējo vēju UN brāzmas. Salīdzināt ar ražotāja limitu. Ja brāzmas pārsniedz limitu: **NEIET**.
 
-2. **Redzamība pietiekama VLOS?** Vai horizontālā redzamība pietiekama vizuālam kontaktam plānotajā maksimālajā attālumā? Praktiskais minimums: 3 km. Ja zem 3 km: **NEIET**.
+2. **Redzamība pietiekama VLOS?** Vai vari ar neapbruņotu aci nepārtraukti redzēt dronu un noteikt tā orientāciju plānotajā attālumā? Regulā nav fiksēta kilometru sliekšņa. Ja dūmaka, migla vai fons padara dronu robežredzamu: **NEIET**.
 
 3. **Nokrišņas?** Lietus, sniegs, sarma, saldējoša migla: **NEIET** visiem UAS, kas nav sertificēti nokrišņiem.
 
-4. **Pērkona negaiss 10 km tuvumā?** Pārbaudīt radaru (meteo.lv radara cilne) aktīviem Cb šūnām 10 km rādiusā: **NEIET**. Jebkur redzams zibens: **NEIET**.
+4. **Aktīvs pērkona negaiss maršruta tuvumā?** Pārbaudīt radaru (meteo.lv radara cilne) aktīvām Cb šūnām maršruta tuvumā vai kustībā uz to. Konservatīvs mācību noteikums — pērkona negaisu apmēram 10 km rādiusā uzskatīt par **NEIET**. Jebkur redzams zibens: **NEIET**.
 
 5. **Temperatūra tuvu 0°C + mitrums?** Apledojuma risks: **NEIET**.
 
@@ -69,21 +69,21 @@ Ja visi pieci pozitīvi: **IET** — taču nepārtraukti vērot un būt gatavam 
 
 ## Vējš augstumā vs. pie zemes
 
-Virszemes vējš mērīts 10 m virs zemes. 80 m AGL augstumā vējš var būt par 30–50 % stiprāks. Tas ietekmē:
+Virszemes vējš mērīts 10 m virs zemes. Tipiskā drona darba augstumā vējš bieži ir stiprāks nekā pie virszemes. Tas ietekmē:
 - RTH — drons atgriežas pret vēju augstumā, ātrāk iztukšo bateriju.
 - Filmēšanu — drons cīnās ar vēju novietojumā, samazinot stabilitāti.
 - Ārkārtas baterijas rezerves — pretpūte atgriešanās laikā patērē vairāk enerģijas.
 
-Ja šaubas — vidējam virszemes vēja ātrumam pievienot 50 % darbības augstumam.
+Ja prognozē pieejams vējš 100 m augstumā, izmanto to. Ja nav, atstāj drošu rezervi un nepieņem, ka pie zemes un augstumā būs viens un tas pats vējš.
 
 <Scenario title="Priekšlidojuma pārbaude: METAR rāda vēju 22008KT. Tavs drons novērtēts 10 m/s. TAF rāda TEMPO 1012/1014 29018G28KT. Plānotais lidojums 11:00–12:00. Vai iet?">
-**NEIET plānotajā logā.** TAF TEMPO grupa 1012/1014 (starp 12:00 un 14:00 UTC) rāda vēju 18 mezgļi ar brāzmām 28 mezgļi = 14,4 m/s brāzmas. Tas pārsniedz 10 m/s drona limitu.
+**NEIET plānotajā logā.** TAF TEMPO grupa pārklājas ar lidojuma laiku un ietver brāzmas virs drona limita.
 
-Pārcelt uz laiku pēc 14:00 UTC, ja TEMPO ir pagājis un apstākļi apstiprinās.
+Pašreizējais METAR var būt pieņemams, bet prognozēts īslaicīgs pasliktinājums tieši tava loga laikā. Pareizā rīcība — nogaidīt, līdz TEMPO periods ir beidzies, un pirms pacelšanās pārbaudīt svaigu novērojumu.
 </Scenario>
 
 <MemoryAnchor
-  rule="Pārbaudīt METAR + TAF no meteo.lv vai NOAA. Iziet caur visām 5 iet/neiet pārbaudēm. Ja kāda neizdodas — NEIET. Virszemes vējš augstumā = reizināt ar 1,3–1,5."
+  rule="Pārbaudīt METAR + TAF no meteo.lv vai NOAA. Iziet caur visām 5 iet/neiet pārbaudēm. Ja kāda neizdodas — NEIET. Augstumā gaidi vairāk vēja nekā pie zemes."
   hint="'Droši vien labi' laika apstākļu pārbaude nav laika apstākļu pārbaude. Visām piecām jāiziet skaidri."
 />
 
@@ -91,7 +91,7 @@ Pārcelt uz laiku pēc 14:00 UTC, ja TEMPO ir pagājis un apstākļi apstiprinā
 - Pārbaudīt laiku pēdējā brīdī bez laika pārcelt, ja apstākļi neizdodas — pārbaudīt 24 h iepriekš.
 - Izmantot ražotāja lietotnes laika logrīku kā vienīgo laika pārbaudi — tas nav aviācijas klases avots.
 - Nepārbaudīt TAF plānotā lidojuma logam, tikai pašreizējo METAR — pašreizējie apstākļi var būt labi, kamēr prognozēts pasliktinājums.
-- Noraidīt TEMPO kā "pagaidu, droši vien nenotiks" — TEMPO ir apstākļu prognoze, kas notiks.
+- Atmest TEMPO kā nebūtisku, jo tas ir “tikai pagaidu” — arī īslaicīgs pasliktinājums tavā lidojuma logā ir svarīgs.
 - Ignorēt augstuma vēju — pieņemot, ka zemes apstākļi vienādi ar lidojuma augstumu.
 </CommonMistakes>
 
@@ -115,19 +115,19 @@ Pārcelt uz laiku pēc 14:00 UTC, ja TEMPO ir pagājis un apstākļi apstiprinā
   },
   {
     id: "met-lv-g2",
-    stem: "Virszemes METAR rāda 06008KT (8 mezgļi). Tavs drons novērtēts 12 m/s. Plāno lidot 100 m AGL. Kādu vēja ātrumu var gaidīt augstumā?",
+    stem: "Virszemes METAR rāda 06008KT (8 mezgļi). Plāno lidot 100 m AGL. Kāds ir drošākais pieņēmums plānošanā?",
     options: [
-      { id: "a", text: "Aptuveni 4 m/s — vējš samazinās ar augstumu." },
-      { id: "b", text: "Aptuveni 4 m/s — tāpat kā pie virszemes." },
-      { id: "c", text: "Aptuveni 5,5–6,2 m/s — virszemes vējš (4,1 m/s) × 1,3–1,5." },
-      { id: "d", text: "Tieši 8 mezgļi — METAR mēra lidojuma augstumā." },
+      { id: "a", text: "Pieņemt, ka augstumā vējš būs vājāks nekā pie zemes." },
+      { id: "b", text: "Pieņemt, ka pie zemes un darba augstumā vējš būs vienāds." },
+      { id: "c", text: "Pieņemt, ka darba augstumā vējš var būt stiprāks nekā virszemē, un atstāt rezervi." },
+      { id: "d", text: "Pieņemt, ka METAR jau ir mērījums plānotajā lidojuma augstumā." },
     ],
     correctOptionId: "c",
-    explanation: "METAR vējš mērīts 10 m AGL. 100 m AGL vēja ātrums parasti ir par 30–50 % lielāks nekā pie virszemes, jo samazinās berze no zemes šķēršļiem. 8 KT = 4,1 m/s × 1,5 ≈ 6,2 m/s augstumā.",
+    explanation: "METAR ir virszemes novērojums. Drona darba augstumā vējš bieži ir stiprāks, īpaši virs atklātas teritorijas vai piekrastē. Drošā plānošanas pieeja ir atstāt rezervi, nevis pieņemt, ka virszemes vērtība saglabāsies nemainīga.",
     distractorRationales: {
-      a: "Vējš parasti palielinās ar augstumu virszemes berzes samazināšanās dēļ, nevis samazinās.",
-      b: "Vējš augstumā nav vienāds ar virszemi — METAR mēra 10 m augstumā, ne darbības augstumā.",
-      d: "METAR pēc standarta mēra 10 m AGL, nevis 100 m. Tas ir virszemes novērojums, nevis mērījums augstumā.",
+      a: "Tuvu virszemei berze parasti vēju bremzē, nevis pastiprina.",
+      b: "Darba augstumā vējš ne vienmēr sakrīt ar virszemes novērojumu.",
+      d: "METAR nav mērījums plānotajā lidojuma augstumā; tas ir virszemes ziņojums.",
     },
   },
 ]} />

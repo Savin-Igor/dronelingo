@@ -110,6 +110,7 @@
     }
   },
   "exam": {
+    "kicker": "Certification-style exam",
     "title": "Mock exam",
     "subtitle": "Mirrors the official A1/A3 exam at e.caa.gov.lv. If you consistently score 80%+, you are ready for the real exam.",
     "rules": {
@@ -140,6 +141,7 @@
     "confirmNo": "Go back",
     "unansweredOne": "Unanswered: {count}",
     "unansweredMany": "Unanswered: {count}",
+    "allAnswered": "All answered",
     "timeUp": "Time is up — submitting exam.",
     "leaveWarning": "The exam is not yet submitted. Leave anyway?",
     "passed": "Passed ({percent}%)",

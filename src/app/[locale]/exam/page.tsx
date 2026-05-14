@@ -56,7 +56,7 @@ export default async function ExamStart({
   return (
     <main className="mx-auto max-w-3xl px-6 py-12">
       <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
-        Certification flight
+        {t("kicker")}
       </p>
       <h1 className="mt-2 font-display text-3xl font-semibold text-hud-white">
         {t("title")}

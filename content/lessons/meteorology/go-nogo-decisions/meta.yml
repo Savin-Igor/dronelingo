@@ -4,7 +4,7 @@ title:
   lv: Iet/neiet lēmumi laika apstākļos
   en: Weather go/no-go decisions
   ru: Принятие решения о полёте в зависимости от погоды
-sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; A2 syllabus Theme 1; meteo.lv; LVGMC"
+sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf; docs/knowledge/training-guides/syllabus/A2-detailed-syllabus.md; docs/knowledge/latvia-caa/web-snapshots/07-open-category.md"
 blocks:
   - missionBriefing
   - cinematicScene

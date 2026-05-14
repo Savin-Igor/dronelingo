@@ -1,6 +1,6 @@
 # Bīstamie meteoroloģiskie apstākļi
 
-<MissionBriefing objective="Pēc šī nodarbības tu identificēsi sešus bīstamus meteoroloģiskos apstākļus pirms un lidojuma laikā, piemērosi 10 km noteikumu pērkona negaisam un zināsi tūlītējo darbību, kad laika apstākļi negaidīti pasliktinās.">
+<MissionBriefing objective="Pēc šīs nodarbības tu atpazīsi sešus bīstamus meteoroloģiskos apstākļus pirms lidojuma un lidojuma laikā, izmantosi konservatīvu atstatuma pieeju pērkona negaisam un zināsi tūlītējo rīcību, ja laiks negaidīti pasliktinās.">
 Laika apstākļi nebrīdina pirms kļūst bīstami. Kumulonimbs 15 km attālumā var dažu minūšu laikā radīt stipru turbulenci tavā vietā. Atpazīšana un agrīna rīcība ir vienīgā aizsardzība.
 </MissionBriefing>
 
@@ -20,7 +20,7 @@ Laika apstākļi nebrīdina pirms kļūst bīstami. Kumulonimbs 15 km attālumā
 - **Mikrobirastu** — vardarbīga lejupvērsta gaisa kolonna, kas var piespiest dronu pie zemes sekunžu laikā.
 - **Stiprām vēja brāzmām** — kumulonimba priekšpuse rada brāzmu fronti pirms redzamais mākonis nonāk virs galvas.
 
-**Noteikums: paliec vismaz 10 km attālumā no jebkura aktīva kumulonimba.** Nekad nelidot, ja šo atdalīšanu nevar uzturēt.
+Regulā nav viena fiksēta kilometru skaitļa pērkona negaisam. Praktiskai plānošanai izmanto konservatīvu pieeju: ja aktīvs negaisa mākonis ir tuvu rajonam vai apmēram 10 km attālumā, nelido un, ja jau esi gaisā, nolaidies laicīgi.
 
 Kā atpazīt veidojošos Cb:
 1. Strauja kumulusa mākoņa vertikāla augšana — minūšu laikā pieaug redzami.
@@ -44,7 +44,7 @@ Ledus uz propelleriem rada aerodinamisku disbalansu, vibrācijas un samazinātu 
 - VLOS tiek pārkāpts, kad drons pazūd miglā tuvā attālumā.
 - Migla + aukstums = potenciāls apledojums.
 
-**Minimālā redzamība VLOS ievērošanai**: praksē apstākļiem jābūt pietiekami labiem, lai uzturētu nepārtrauktu vizuālo kontaktu. Izvairīties no pacelšanās redzamībā zem 3 km.
+**Minimālā redzamība VLOS ievērošanai**: praksē apstākļiem jābūt pietiekami labiem, lai uzturētu nepārtrauktu vizuālo kontaktu. Ja redzamība ir degradēta, izvēlies konservatīvu nelidošanas lēmumu.
 
 ## Pasliktinošos apstākļu identificēšana lidojuma laikā
 
@@ -56,16 +56,16 @@ Brīdinājuma pazīmes lidojuma laikā:
 - **Zibens redzams** jebkurā debesu daļā: ārkārtas nolaišanās.
 
 <Artefact
-  description="Seši bīstami meteoroloģiskie apstākļi un tūlītējās darbības: Cb 10 km tuvumā → nelidot; Apledojuma apstākļi → nelidot; Redzamība < 3 km → nelidot; Nokrišņas lidojuma laikā → nekavējoties nolaisties; Brāzmas pārsniedz limitu → atgriezties; Zibens redzams → ārkārtas nolaišanās"
+  description="Seši bīstami meteoroloģiskie apstākļi un tūlītējās darbības: pērkona negaiss rajona tuvumā → nelidot; apledojuma apstākļi → nelidot; pārāk slikta redzamība drošam VLOS → nelidot; nokrišņas lidojuma laikā → nekavējoties nolaisties; brāzmas pārsniedz limitu → atgriezties; redzams zibens → ārkārtas nolaišanās"
   caption="Tabula · bīstamie apstākļi un darbības"
 >
   <table className="text-sm w-full text-telemetry">
     <thead><tr className="text-cyan-pulse font-mono text-xs"><th className="text-left pr-3 pb-2">Apstākļi</th><th className="text-left pb-2">Darbība</th></tr></thead>
     <tbody>
       {[
-        ["Kumulonimbs 10 km tuvumā", "Nelidot. Atlikt, līdz Cb ir pagājis un atrodas > 10 km attālumā."],
+        ["Aktīvs pērkona negaiss rajona tuvumā", "Nelidot. Gaidīt, līdz šūna ir aizgājusi drošā attālumā un apstākļi stabilizējušies."],
         ["Temperatūra tuvu 0°C + mākonis/mitrums", "Nelidot. Apledojuma risks. Pārbaudīt virsmu apledojumu."],
-        ["Redzamība < 3 km", "Nelidot. VLOS nevar uzticami uzturēt."],
+        ["Redzamība par sliktu drošam VLOS", "Nelidot. Jāspēj nepārtraukti redzēt dronu ar neapbruņotu aci."],
         ["Lidojuma laikā sākas nokrišņas", "Nekavējoties nolaisties tuvākajā drošajā vietā."],
         ["Brāzmas pārsniedz drona novērtējumu lidojuma laikā", "Uzsākt tūlītēju atgriešanos. Misiju neturpināt."],
         ["Jebkur redzams zibens", "Ārkārtas nolaišanās. Ātrākais drošais ceļš uz zemi."],
@@ -80,19 +80,19 @@ Brīdinājuma pazīmes lidojuma laikā:
 </Artefact>
 
 <Scenario title="Tu filmē āra pasākumu. Laiks bija skaidrs pacelšanās brīdī. 20 minūtes lidojumā pamanāt tumšu laktas formas mākoni 12 km uz rietumiem. Virszemes vējš ir pastiprinājies. Ko dari?">
-**Nekavējoties uzsākt atgriešanos.** Laktas formas mākonis 12 km attālumā ir nobriedis kumulonimbs. 10 km noteikums nozīmē, ka tu jau atrodas riska zonā. Pastiprinātais virszemes vējš ir brāzmu fronte, kas ierodas pirms Cb.
+**Nekavējoties uzsākt atgriešanos.** Laktas formas mākonis 12 km attālumā ir nobriedis kumulonimbs, un pastiprinātais virszemes vējš rāda, ka tā ietekme jau tuvojas tavai vietai.
 
 Nolaisties, nodrošināt aprīkojumu un gaidīt vētras pāreju.
 </Scenario>
 
 <MemoryAnchor
-  rule="Cb: 10 km noteikums, bez izņēmumiem. Apledojums: temperatūra tuvu 0°C + mitrums = nelidot. Redzams zibens = ārkārtas nolaišanās, ne 'turpināšu vērot'."
+  rule="Cb maršruta tuvumā + pieaugošas brāzmas = nolaisties laicīgi. Apledojums: temperatūra tuvu 0°C + mitrums = nelidot. Redzams zibens = ārkārtas nolaišanās, nevis 'vēl pavērošu'."
   hint="Ja redzi zibeni jebkurā debesu daļā, tu jau esi apdraudētajā zonā. Nolaidies tagad."
 />
 
 <CommonMistakes>
 - Gaidīt, līdz Cb ir tieši virs galvas, pirms nolemj nolaisties — tajā brīdī turbulences un zibens risks jau ir maksimāls.
-- Noraidīt Cb kā "vēl tālu" — 10 km ir minimālais drošais attālums, ne ērtais.
+- Noraidīt Cb kā "vēl tālu", kaut gan šūna nāk virsū un vējš jau mainās.
 - Turpināt filmēt vieglā lietus laikā, jo "drons ir splash-novērtēts" — splash novērtējumi nav lietus sertifikāti.
 - Sajaukt "redzu dronu" miglā ar VLOS — ja nevari noteikt attieksmi un virzienu, VLOS ir zaudēts.
 </CommonMistakes>
@@ -108,10 +108,10 @@ Nolaisties, nodrošināt aprīkojumu un gaidīt vētras pāreju.
       { id: "d", text: "Samazināt augstumu zem mākoņa pamata un turpināt filmēt." },
     ],
     correctOptionId: "c",
-    explanation: "10 km noteikums prasa vismaz 10 km atdalīšanu no jebkura aktīva kumulonimba. 8 km atrodas bīstamajā zonā — zibens un stipra turbulence var sasniegt tevi pirms mākonis nonāk virs galvas. Nekavējoties uzsākt atgriešanos.",
+    explanation: "8 km attālumā ar pieaugošu vēju kumulonimbs mazam dronam jau ir tūlītējs nelidošanas apstāklis. Spēcīgs outflow, turbulence un zibens risks var sasniegt rajonu vēl pirms lietus kodola. Drošā rīcība ir nekavējoties atgriezties.",
     distractorRationales: {
-      a: "8 km atrodas iekšā, nevis ārpus 10 km izslēgšanas zonas. Risks jau pastāv.",
-      b: "Gaidīt, līdz 5 km, ir daudz par vēlu — 5 km brāzmu fronte un zibens risks ir kritisks. Slieksnis ir 10 km.",
+      a: "8 km no nobrieduša negaisa nav droša situācija, īpaši ja vējš jau pastiprinās.",
+      b: "Gaidīt, līdz negaiss ir vēl tuvāk, nozīmē zaudēt pēdējo drošības rezervi.",
       d: "Augstuma samazināšana nesamazina zibens risku. Turbulence arī stiepjas lejup no Cb.",
     },
   },
@@ -135,7 +135,7 @@ Nolaisties, nodrošināt aprīkojumu un gaidīt vētras pāreju.
 ]} />
 
 <Debrief unlocks={["met-003"]}>
-Tu vari identificēt sešus bīstamus meteoroloģiskos apstākļus, zini 10 km Cb noteikumu un zini, kad lidojuma laikā uzsākt ārkārtas nolaišanos.
+Tu vari identificēt sešus bīstamus meteoroloģiskos apstākļus, izmantot konservatīvu atstatuma pieeju pērkona negaisam un zini, kad lidojuma laikā uzsākt ārkārtas nolaišanos.
 
 Nākamais: Iet/Neiet lēmumi — strukturēta sistēma svarīgākajam lēmumam katrā lidojumā: vai sākt.
 </Debrief>
