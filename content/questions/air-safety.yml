@@ -378,9 +378,9 @@
   scenarioType: decision
 - id: as-008
   stem:
-    lv: Pilots grib lidot netālu no 95 m augsta torņa. Horizontālā distance no torņa ir mazāka par torņa augstumu. Kāds ir maksimālais pieļaujamais lidojuma augstums?
-    en: A pilot wants to fly near a 95 m tall tower. The horizontal distance to the tower is less than the tower height. What is the maximum permitted flight altitude?
-    ru: Пилот хочет летать рядом с башней высотой 95 м. Горизонтальное расстояние до башни меньше высоты башни. Какова максимально допустимая высота полёта?
+    lv: Pilots pēc infrastruktūras īpašnieka pieprasījuma pārbauda 130 m augstu mākslīgu mastu un lido 40 m horizontālā attālumā no tā. Kāds ir maksimālais atļautais augstums šajā īpašajā gadījumā?
+    en: A pilot inspects a 130 m artificial mast at the request of the infrastructure owner and flies 40 m horizontally from it. What is the maximum permitted height in this special case?
+    ru: Пилот по запросу владельца инфраструктуры инспектирует искусственную мачту 130 м и летит в 40 м по горизонтали от неё. Какая максимальная высота разрешена в этом особом случае?
   options:
   - id: a
     text:
@@ -389,9 +389,9 @@
       ru: 120 м — предел высоты Открытой категории.
   - id: b
     text:
-      lv: 95 m — torņa augstums.
-      en: 95 m — the tower height.
-      ru: 95 м — высота башни.
+      lv: 130 m — masta augstums.
+      en: 130 m — the mast height.
+      ru: 130 м — высота мачты.
   - id: c
     text:
       lv: 50 m — rezerves augstums blakus šķēršļiem.
@@ -399,34 +399,34 @@
       ru: 50 м — консервативная высота рядом с препятствиями.
   - id: d
     text:
-      lv: 110 m — torņa augstums + 15 m pagarinājums.
-      en: 110 m — tower height + 15 m extension.
-      ru: 110 м — высота башни + расширение 15 м.
+      lv: 145 m — masta augstums + 15 m pagarinājums.
+      en: 145 m — mast height + 15 m extension.
+      ru: 145 м — высота мачты + расширение 15 м.
   correctOptionId: d
   explanation:
-    lv: 'Reg 2019/947 paredz augstuma robežu 15 m virs augstākā fiksētā šķēršļa 100 m rādiusā no UAS, kad pilots darbojas noteiktos apstākļos netālu no infrastruktūras. Ja tornis ir 95 m un horizontālā distance ir mazāka par torņa augstumu, maksimālais pieļaujamais augstums ir 95 + 15 = 110 m.
+    lv: 'Regula 2019/947 ļauj pārsniegt standarta 120 m robežu tikai tad, ja UAS lido ne tālāk kā 50 m horizontāli no mākslīga šķēršļa, kas ir augstāks par 105 m, un tas notiek pēc par šķērsli atbildīgās personas pieprasījuma. 130 + 15 = 145 m.
 
       '
-    en: 'Reg 2019/947 provides a 15 m altitude extension above the highest fixed obstacle within 100 m of the UAS when the pilot operates near infrastructure under specific conditions. Tower at 95 m + 15 m extension = 110 m maximum.
+    en: 'Regulation 2019/947 allows the standard 120 m ceiling to be exceeded only when the UAS flies within 50 m horizontally of an artificial obstacle taller than 105 m, at the request of the entity responsible for the obstacle. 130 + 15 = 145 m.
 
       '
-    ru: 'Регл. 2019/947 предусматривает расширение высоты на 15 м над самым высоким неподвижным препятствием в радиусе 100 м от UAS при работе вблизи инфраструктуры. Башня 95 м + 15 м = 110 м максимально.
+    ru: 'Регламент 2019/947 позволяет превысить стандартный потолок 120 м только если БВС летит в пределах 50 м по горизонтали от искусственного препятствия выше 105 м и это делается по запросу лица, ответственного за препятствие. 130 + 15 = 145 м.
 
       '
   distractorRationales:
     a:
-      lv: 120 m ir standarta Atvērtās kategorijas robeža, bet šajā gadījumā netālu no šķēršļa tiek piemērota +15 m taisna kārtula, nevis standarta robeža.
-      en: 120 m is the standard Open-category cap, but here the +15 m structure rule applies rather than the standard cap.
-      ru: 120 м — стандартный предел Открытой категории, но здесь применяется правило +15 м к строению, а не стандартный предел.
+      lv: 120 m ir standarta robeža, bet šajā scenārijā izpildās konkrētais mākslīgā šķēršļa izņēmums.
+      en: 120 m is the standard ceiling, but this scenario satisfies the specific artificial-obstacle exception.
+      ru: 120 м — стандартный потолок, но в этом сценарии выполняется специальное исключение для искусственного препятствия.
     b:
-      lv: Torņa augstums ir pamats, bet regulā atļauta +15 m pagarinājums virs šī augstuma, lai ļautu pilotam darboties netālu no infrastruktūras.
-      en: The tower height is the base, but the regulation allows a +15 m extension above that height to permit operations near infrastructure.
-      ru: Высота башни — базовое значение, но правила допускают расширение +15 м сверх, чтобы обеспечить работу вблизи инфраструктуры.
+      lv: Masta augstums ir pamats, bet regulā šādos apstākļos atļauts +15 m virs tā.
+      en: The mast height is the base, but the regulation allows +15 m above it in these conditions.
+      ru: Высота мачты — базовое значение, но в этих условиях разрешены ещё +15 м.
     c:
-      lv: 50 m ir piesardzīga prakse, bet nav juridiski noteikta robeža šajā gadījumā. 110 m ir reglamentētais maksimums.
-      en: 50 m is cautious practice but not the legally defined limit in this case. 110 m is the regulated maximum.
-      ru: 50 м — осторожная практика, но не юридически установленный предел в данном случае. 110 м — регламентированный максимум.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. UAS.OPEN.020/030/040(2)(b) — altitude extension near structures
+      lv: 50 m ir horizontālās distances nosacījums līdz šķērslim, nevis maksimālais lidojuma augstums.
+      en: 50 m is the horizontal-distance condition from the obstacle, not the maximum flight height.
+      ru: 50 м — условие горизонтального расстояния до препятствия, а не максимальная высота полёта.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.010(3) — artificial obstacle altitude exception
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: numeric
@@ -2162,46 +2162,46 @@
   stem:
     lv: Tu lido ar C0 UAS (190 g) virs publiska parka. Tieši zem tevis pikniku rīko 30 cilvēku grupa. Vai tas ir atļauts?
     en: You are flying a C0 drone (190 g) over a public park. A group of 30 people is having a picnic directly below you. Is this permitted?
-    ru: Дрон маркирован C2, пилот имеет только сертификат A1/A3. Какая минимальная подкатегория и дистанция от посторонних?
+    ru: Ты летишь на C0-дроне (190 г) над общественным парком. Прямо под тобой группа из 30 человек устроила пикник. Это разрешено?
   options:
   - id: a
     text:
       lv: Nē — pulcēšanās ir aizliegta visās Atvērtās apakškategorijās.
       en: No — assemblies of people are forbidden in all Open sub-categories.
-      ru: A3 — ≥ 30 м (или правило 1:1) от посторонних, ≥ 150 м от жилых зон.
+      ru: Нет — полёт над скоплениями людей запрещён во всех подкатегориях Open.
   - id: b
     text:
       lv: Jā — parks ir publiska atklāta vieta, ne kontrolēta zona.
       en: Yes — the park is a public open space, not a controlled area.
-      ru: 'A2 — 5 м (малая скорость) или 30 м (обычная): A1/A3 покрывает A2.'
+      ru: Да — парк является открытым общественным местом, а не контролируемой зоной.
   - id: c
     text:
       lv: Jā — C0 zem 250 g drīkst lidot virs atsevišķām personām.
       en: Yes — C0 drones under 250 g may fly over individuals.
-      ru: A1 — дистанции нет, A1 допускает пролёт над людьми.
+      ru: Да — C0 до 250 г может летать над отдельными людьми.
   - id: d
     text:
       lv: Jā — ja lidojums ir zem 30 m.
       en: Yes — if the flight is below 30 m.
-      ru: Полёт запрещён — C2 требует сертификат A2 для любых операций.
+      ru: Да — если полёт ниже 30 м.
   correctOptionId: a
   explanation:
     lv: Pulcēšanās noteikums (nelido virs cilvēku saiešanās) attiecas uz katru Atvērto apakškategoriju, ieskaitot A1 ar C0 UAS. 250 g izņēmums ļauj pārlidot tikai atsevišķas personas — ne pulcēšanos.
     en: The assembly rule (no overflight of gatherings of people) applies to every Open sub-category, including A1 with C0 drones. The 250 g exemption allows overflight of individuals only — not assemblies.
-    ru: C2 без сертификата A2 может работать только в A3. A3 требует ≥ 30 м от посторонних (или правило 1:1) и ≥ 150 м от населённых зон. Для работы по правилам A2 (5 м / 30 м) нужен дополнительный сертификат компетентности A2.
+    ru: Правило о скоплениях людей действует во всех подкатегориях Open, включая A1 с C0-дроном. Исключение до 250 г допускает пролёт над отдельными людьми, но не над скоплением.
   distractorRationales:
     b:
       lv: Vietas raksturs pulcēšanās noteikumu neatceļ.
       en: The type of space does not override the assembly rule.
-      ru: Правила A2 (5 м / 30 м) требуют отдельного сертификата A2 помимо A1/A3. Сертификата A1/A3 для A2 недостаточно.
+      ru: Тип места не отменяет запрет на полёт над скоплением людей.
     c:
       lv: C0 ļauj pārlidot atsevišķas personas, ne pulcēšanos. Pikniku grupa ir pulcēšanās.
       en: C0 allows overflight of individuals, not assemblies. A picnic group is an assembly.
-      ru: C2 не может работать в A1 — класс определяет минимальную подкатегорию. C2 начинается с A2 или A3.
+      ru: C0 может пролетать над отдельными людьми, но не над скоплениями. Группа на пикнике — это скопление.
     d:
       lv: Augstums nerada izņēmumu pulcēšanās noteikumam.
       en: Altitude does not create an exception to the assembly rule.
-      ru: C2 в A3 с только A1/A3 разрешено. Только для работы по A2 нужен дополнительный сертификат.
+      ru: Высота полёта не создаёт исключения из правила о скоплениях людей.
   sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — air safety and VLOS principles
   difficulty: 2
   cognitiveLevel: apply
@@ -2210,46 +2210,46 @@
   stem:
     lv: Lidojums A3 60 m augstumā. Kāds ir minimālais horizontālais attālums līdz nepiederošām personām?
     en: Flying in A3 at 60 m altitude. What is the minimum horizontal distance you must keep from uninvolved persons?
-    ru: Какие дроны не требуют сертификата пилота для полёта в A1?
+    ru: Полёт в A3 на высоте 60 м. Какую минимальную горизонтальную дистанцию нужно держать от посторонних лиц?
   options:
   - id: a
     text:
       lv: 30 m — fiksētais A3 minimums.
       en: 30 m — the fixed A3 minimum.
-      ru: C0 — дроны до 250 г.
+      ru: 30 м — фиксированный минимум A3.
   - id: b
     text:
       lv: 60 m — 1:1 noteikums vienāds ar lidojuma augstumu.
       en: 60 m — the 1:1 rule equals flight altitude.
-      ru: C0 и C1, так как A1 — начальная подкатегория.
+      ru: 60 м — правило 1:1 равно высоте полёта.
   - id: c
     text:
       lv: 120 m — divkāršs augstums drošībai.
       en: 120 m — double the altitude for safety.
-      ru: Любой дрон до 250 г, если используется только в рекреационных целях.
+      ru: 120 м — двойная высота для безопасности.
   - id: d
     text:
       lv: 150 m — tāds pats kā attālums līdz dzīvojamai zonai.
       en: 150 m — same as the residential area distance.
-      ru: Все дроны при полётах пилотов до 16 лет.
+      ru: 150 м — как дистанция до жилой зоны.
   correctOptionId: b
   explanation:
     lv: 1:1 noteikums prasa horizontālo attālumu ≥ lidojuma augstumam. Pie 60 m tas nozīmē ≥ 60 m. 30 m ir grīda, kas darbojas ļoti zemā augstumā (piem., pie 10 m augstuma tev joprojām vajadzīgi 30 m, nevis 10 m).
     en: The 1:1 rule requires horizontal distance ≥ flight altitude. At 60 m, that means ≥ 60 m. The 30 m is a floor that applies when flying very low (e.g. at 10 m altitude, you still need 30 m, not 10 m).
-    ru: Только C0 (до 250 г, макс. скорость 19 м/с) может летать в A1 без сертификата. C1 в A1 требует онлайн-экзамен A1/A3. Рекреационное использование и возраст не меняют требований к классу.
+    ru: Правило 1:1 требует горизонтальную дистанцию не меньше высоты полёта. При 60 м это означает минимум 60 м. 30 м — нижняя граница, которая работает на очень малых высотах (например, при 10 м всё равно нужно 30 м, а не 10 м).
   distractorRationales:
     a:
       lv: 30 m ir minimālā grīda, bet 60 m augstumā strādā 1:1, tāpēc vajadzīgi 60 m.
       en: 30 m is the minimum floor, but 1:1 applies at 60 m altitude, making the required distance 60 m.
-      ru: Этот вариант не соответствует правильному правилу или действию.
+      ru: 30 м — минимальная нижняя граница, но при высоте 60 м действует правило 1:1, поэтому нужно 60 м.
     c:
       lv: Noteikums ir 1:1, ne 2:1.
       en: The rule is 1:1, not 2:1.
-      ru: Рекреационное использование не освобождает C1 от требования сертификата.
+      ru: Правило — 1:1, а не 2:1.
     d:
       lv: 150 m ir atsevišķs noteikums attālumam līdz apdzīvotām zonām — ne līdz atsevišķiem cilvēkiem.
       en: 150 m is a separate rule for distance from inhabited areas — not from individuals.
-      ru: Минимальный возраст для пилота — 16 лет. Это не освобождение от сертификата, а условие допуска.
+      ru: 150 м — отдельное правило для дистанции до жилых, коммерческих, промышленных или рекреационных зон, а не до отдельных людей.
   sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — air safety and VLOS principles
   difficulty: 2
   cognitiveLevel: apply

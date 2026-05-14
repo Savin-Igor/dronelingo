@@ -399,18 +399,18 @@
       ru: Если оператор зарегистрирован как коммерческий.
   - id: d
     text:
-      lv: Pie infrastruktūras objekta (ēkas, antenu masta utt.), kas ir augstāks par 105 m, lidojot 1:1 horizontālā attālumā — līdz šķērsļa augstumam + 15 m.
-      en: Near an infrastructure structure (building, antenna mast, etc.) taller than 105 m, flying within 1:1 horizontal distance — up to the structure height + 15 m.
-      ru: Рядом с объектом инфраструктуры (здание, антенная мачта и т. д.) выше 105 м, летя в горизонтальном расстоянии 1:1 — до высоты объекта + 15 м.
+      lv: Pie mākslīga šķēršļa, kas ir augstāks par 105 m, lidojot ne tālāk kā 50 m horizontāli pēc atbildīgās personas pieprasījuma — līdz šķēršļa augstumam + 15 m.
+      en: Near an artificial obstacle taller than 105 m, flying within 50 m horizontally at the request of the responsible entity — up to the obstacle height + 15 m.
+      ru: Рядом с искусственным препятствием выше 105 м, в пределах 50 м по горизонтали и по запросу ответственного лица — до высоты препятствия + 15 м.
   correctOptionId: d
   explanation:
-    lv: 'Reg 2019/947 paredz pagarinājumu virs 120 m tikai pie augstiem mākslīgiem šķēršļiem: ja UAS darbojas 1:1 horizontālā attālumā no šķēršļa, kas augstāks par 105 m, pilots var lidot līdz šķēršļa augstumam + 15 m. Šī izņēmuma nav automātiski — tas attiecas uz infrastruktūras apkopšanu vai inspekciju.
+    lv: 'Regula 2019/947 paredz pagarinājumu virs 120 m tikai pie augstiem mākslīgiem šķēršļiem: ja UAS darbojas ne tālāk kā 50 m horizontāli no šķēršļa, kas augstāks par 105 m, un tas notiek pēc par šķērsli atbildīgās personas pieprasījuma, pilots var lidot līdz šķēršļa augstumam + 15 m.
 
       '
-    en: 'Reg 2019/947 provides the above-120 m extension only near tall artificial structures: when the UAS operates within a 1:1 horizontal distance of a structure taller than 105 m, the pilot may fly up to structure height + 15 m. This is not automatic — it applies to infrastructure maintenance or inspection operations.
+    en: 'Regulation 2019/947 provides the above-120 m extension only near tall artificial obstacles: when the UAS operates within 50 m horizontally of an obstacle taller than 105 m, at the request of the entity responsible for that obstacle, the pilot may fly up to obstacle height + 15 m.
 
       '
-    ru: 'Регл. 2019/947 предусматривает превышение 120 м только вблизи высоких искусственных препятствий: когда UAS работает в горизонтальном расстоянии 1:1 от объекта выше 105 м, пилот может летать до высоты объекта + 15 м. Это не автоматически — применяется к техническому обслуживанию или инспекции инфраструктуры.
+    ru: 'Регламент 2019/947 допускает превышение 120 м только рядом с высокими искусственными препятствиями: когда БВС работает в пределах 50 м по горизонтали от препятствия выше 105 м и по запросу лица, ответственного за это препятствие, пилот может лететь до высоты препятствия + 15 м.
 
       '
   distractorRationales:
@@ -426,7 +426,7 @@
       lv: Komerciālā reģistrācija neietekmē augstuma limitu. Limits ir tehniski-tiesisks, ne komerciāls.
       en: Commercial registration does not affect the altitude limit. The limit is technical-regulatory, not commercial.
       ru: Коммерческая регистрация не влияет на предел высоты. Предел технико-правовой, не коммерческий.
-  sourceRef: docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — Reg (EU) 2019/947 UAS.OPEN.020/030/040(2)(b)
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.010(3) — artificial obstacle altitude exception
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: regulatory
@@ -702,9 +702,9 @@
   scenarioType: regulatory
 - id: al-014
   stem:
-    lv: Pilots vēlas lidot 200 m no pilsētas dzīvojamā rajona ar mantotu C3 klases dronu (25 kg). Vai tas ir atļauts A3 apakškategorijā?
-    en: A pilot wants to fly 200 m from a residential area with a legacy C3-class drone (25 kg). Is this permitted in A3?
-    ru: Пилот хочет летать в 200 м от жилого района с дроном устаревшей категории C3 (25 кг). Разрешено ли это в подкатегории A3?
+    lv: Pilots vēlas lidot 200 m no pilsētas dzīvojamā rajona ar C3 klases dronu, kura MTOM ir 24 kg. Vai tas ir atļauts A3 apakškategorijā?
+    en: A pilot wants to fly 200 m from a residential area with a C3-class drone with a 24 kg MTOM. Is this permitted in A3?
+    ru: Пилот хочет летать в 200 м от жилого района с дроном класса C3 с MTOM 24 кг. Разрешено ли это в подкатегории A3?
   options:
   - id: a
     text:
@@ -718,9 +718,9 @@
       ru: Да — 200 м превышает минимум 150 м.
   - id: c
     text:
-      lv: Nē — 25 kg pārsniedz Atvērtās kategorijas 25 kg limitu un nav atļauts.
-      en: No — 25 kg exceeds the Open-category 25 kg limit and is not permitted.
-      ru: Нет — 25 кг превышает лимит Открытой категории 25 кг и не разрешено.
+      lv: Nē — 24 kg ir virs C3/A3 masas robežas.
+      en: No — 24 kg is above the C3/A3 mass limit.
+      ru: Нет — 24 кг выше предела массы для C3/A3.
   - id: d
     text:
       lv: Jā — bet tikai ja pilots ir reģistrēts operators.
@@ -728,13 +728,13 @@
       ru: Да — но только если пилот является зарегистрированным оператором.
   correctOptionId: b
   explanation:
-    lv: 'A3 apakškategorija prasa vismaz 150 m no dzīvojamām, komerciālām, industriālām un atpūtas zonām. 200 m apmierina šo prasību. C3 klase (līdz 25 kg) atļauta A3. 25 kg ir tieši Atvērtās kategorijas robežvērtība — tas ir atļauts, jo Atvērtā kategorija attiecas uz UAS ar MTOM < 25 kg; tas nozīmē, ka 25 kg ir A3 augšējā robeža, kas ir iekļaujoša.
+    lv: 'A3 apakškategorija prasa vismaz 150 m no dzīvojamām, komerciālām, industriālām un atpūtas zonām. 200 m apmierina šo prasību. C3 klase ir paredzēta UAS ar MTOM zem 25 kg, tāpēc 24 kg C3 drons var darboties A3, ja pārējie Open kategorijas nosacījumi ir izpildīti.
 
       '
-    en: 'A3 requires at least 150 m from residential, commercial, industrial, and recreational areas. 200 m satisfies this requirement. C3 class (up to 25 kg) is permitted in A3. 25 kg is exactly the Open-category threshold — it is permitted because the Open category applies to UAS with MTOM < 25 kg, where 25 kg is the upper A3 limit that is inclusive.
+    en: 'A3 requires at least 150 m from residential, commercial, industrial, and recreational areas. 200 m satisfies this requirement. C3 class is intended for UAS with MTOM below 25 kg, so a 24 kg C3 drone can operate in A3 if the other Open-category conditions are met.
 
       '
-    ru: 'A3 требует не менее 150 м от жилых, коммерческих, промышленных и рекреационных зон. 200 м удовлетворяет этому требованию. Класс C3 (до 25 кг) разрешён в A3. 25 кг — точная граница Открытой категории; она разрешена, поскольку Открытая категория применяется к UAS с MTOM < 25 кг, где 25 кг является верхней границей A3 (включительно).
+    ru: 'A3 требует не менее 150 м от жилых, коммерческих, промышленных и рекреационных зон. 200 м удовлетворяет этому требованию. Класс C3 предназначен для БВС с MTOM ниже 25 кг, поэтому дрон C3 с MTOM 24 кг может работать в A3, если выполнены остальные условия Open category.
 
       '
   distractorRationales:
@@ -743,9 +743,9 @@
       en: C3 drones are permitted in A3. C3 class specifically corresponds to A3 operations.
       ru: Дроны C3 разрешены в A3. Класс C3 непосредственно соответствует операциям A3.
     c:
-      lv: Atvērtās kategorijas limits ir MTOM < 25 kg. Drons tieši 25 kg ir pieļaujams — tas nepārsniedz limitu.
-      en: The Open-category limit is MTOM < 25 kg. A drone at exactly 25 kg is permissible — it does not exceed the limit.
-      ru: Лимит Открытой категории составляет MTOM < 25 кг. Дрон ровно 25 кг допустим — он не превышает лимит.
+      lv: C3/A3 robeža ir zem 25 kg MTOM. 24 kg ir zem šīs robežas; problēma būtu pie 25 kg vai vairāk.
+      en: The C3/A3 threshold is below 25 kg MTOM. 24 kg is below that threshold; the issue would arise at 25 kg or more.
+      ru: Порог C3/A3 — ниже 25 кг MTOM. 24 кг ниже этого порога; проблема возникла бы при 25 кг или больше.
     d:
       lv: Operators reģistrācija ir prasība visiem operatoriem ar UAS ≥ 250 g, bet tā nav papildu nosacījums 200 m attālumam. Atbilde "jā" ir pareiza ar nosacījumu — operators reģistrācija ir neatkarīga prasība.
       en: Operator registration is required for all operators with UAS ≥ 250 g, but it is not an additional condition for the 200 m distance. The "yes" answer is correct as stated — operator registration is an independent requirement.
@@ -1298,47 +1298,47 @@
   stem:
     lv: Tu pacelies no līdzenas zemes un dodies karāties virs 50 m augsta pakalna. Kāds ir tavs maksimālais augstums virs starta punkta, pirms tu pārkāp 120 m AGL griestus?
     en: You launch from flat ground and fly to hover above a 50 m hill. What is your maximum altitude above your launch point before you breach the 120 m AGL ceiling?
-    ru: Пилот летит над зданием высотой 80 м. На сколько метров над крышей допустим полёт, не превышая 120 м AGL?
+    ru: Ты взлетаешь с ровной площадки и зависаешь над холмом высотой 50 м. Какова максимальная высота над точкой взлёта до нарушения потолка 120 м AGL?
   options:
   - id: a
     text:
       lv: 70 m virs starta — 120 m mīnus 50 m kāpums zem aparāta.
       en: 70 m above launch — 120 m minus the 50 m rise underneath.
-      ru: 0 м — здание уже занимает весь лимит.
+      ru: 70 м над точкой взлёта — 120 м минус подъём рельефа 50 м.
   - id: b
     text:
       lv: 170 m virs starta — 120 m griesti plus 50 m pakalna augstums.
       en: 170 m above launch — 120 m ceiling plus the 50 m hill height.
-      ru: 120 м над крышей.
+      ru: 170 м над точкой взлёта — потолок 120 м плюс высота холма 50 м.
   - id: c
     text:
       lv: 120 m — 120 m noteikumu mēra no starta punkta.
       en: 120 m — the 120 m rule is measured from the launch point.
-      ru: 40 м над крышей.
+      ru: 120 м — правило 120 м измеряется от точки взлёта.
   - id: d
     text:
       lv: 50 m virs starta — vienāds ar pakalna augstumu.
       en: 50 m above launch — equal to the hill height.
-      ru: 15 м над крышей — правило +15 м.
-  correctOptionId: a
+      ru: 50 м над точкой взлёта — равно высоте холма.
+  correctOptionId: b
   explanation:
-    lv: Kad aparāts karājas virs 50 m pakalna, zeme zem tā ir par 50 m augstāka nekā starta punktā. 120 m AGL griesti šajā vietā atļauj tikai 120 − 50 = 70 m virs starta punkta.
-    en: When the drone hovers above the 50 m hill, the ground under it is 50 m higher than the launch point. The 120 m AGL ceiling allows only 120 - 50 = 70 m of altitude above the launch point at that location.
-    ru: 120 м считается от земли. Здание занимает 80 м, значит пилот может быть не выше 40 м над крышей. Правило +15 м применяется только к сооружениям выше 105 м.
+    lv: Kad aparāts karājas virs 50 m pakalna, zeme zem tā ir par 50 m augstāka nekā starta punktā. 120 m AGL griesti ļauj lidot 120 m virs pakalna virsotnes, tātad 50 + 120 = 170 m virs starta punkta.
+    en: When the drone hovers above the 50 m hill, the ground under it is 50 m higher than the launch point. The 120 m AGL ceiling allows flight 120 m above the hilltop, so 50 + 120 = 170 m above the launch point.
+    ru: Когда дрон зависает над холмом 50 м, земля под ним на 50 м выше точки взлёта. Потолок 120 м AGL позволяет лететь на 120 м над вершиной холма, то есть 50 + 120 = 170 м над точкой взлёта.
   distractorRationales:
-    b:
-      lv: Tas nozīmētu 170 m virs starta un 120 m virs pakalna virsotnes — pa daļai pareizi, bet nekur lidojuma laikā nedrīkst pārsniegt 120 m AGL.
-      en: This would mean you are 170 m above the launch point and 120 m above the hilltop — correct for the hilltop part, but you still cannot exceed 120 m AGL at any point.
-      ru: 120 м — не дополнение к крыше, а абсолютный предел от земли.
+    a:
+      lv: 70 m būtu pareizi, ja reljefs zem aparāta būtu zemāks par starta punktu. Šeit reljefs paceļas, tāpēc griesti paceļas līdzi pakalnam.
+      en: 70 m would be correct if the terrain under the drone were lower than the launch point. Here the terrain rises, so the legal ceiling rises with the hill.
+      ru: 70 м было бы логично при снижении рельефа относительно точки взлёта. Здесь рельеф поднимается, поэтому законный потолок поднимается вместе с холмом.
     c:
       lv: 120 m mēra virs zemes tieši zem aparāta — ne virs starta punkta.
       en: The 120 m is measured above the ground directly under the drone — not above the launch point.
-      ru: Этот вариант не соответствует правильному правилу или действию.
+      ru: 120 м измеряются над землёй прямо под дроном, а не над точкой взлёта.
     d:
       lv: Vienāds ar pakalna augstumu — bez regulas pamata.
       en: Equal to the hill height has no regulatory basis.
-      ru: Правило +15 м применяется только к сооружениям выше 105 м. Здание 80 м это условие не выполняет.
-  sourceRef: docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — Latvia UGZ and BGKIS guidance
+      ru: Высота, равная высоте холма, не имеет нормативной основы.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.010(2) — altitude measured from closest point of earth surface
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
@@ -1346,46 +1346,46 @@
   stem:
     lv: Airspace.lv karte rāda plānoto vietu kā 'Ierobežotu'. Kas obligāti jādara pirms lidojuma?
     en: The airspace.lv map shows your planned area as 'Restricted'. What must you do before flying?
-    ru: Ветряная турбина высотой 130 м. Горизонтальное расстояние от основания — 100 м. Каков максимальный потолок?
+    ru: Карта airspace.lv показывает планируемый район как «Ограниченный». Что обязательно сделать до полёта?
   options:
   - id: a
     text:
       lv: Palikt zem 50 m — ierobežotās zonās zemu augstumu lidojums ir automātiski atļauts.
       en: Stay below 50 m — restricted zones allow low-altitude flight automatically.
-      ru: 120 м — стандартный предел Открытой категории.
+      ru: Оставаться ниже 50 м — в ограниченных зонах низкий полёт разрешён автоматически.
   - id: b
     text:
       lv: Iesniegt BGKIS pieteikumu un saņemt apstiprinājumu pirms lidojuma.
       en: Submit a BGKIS application and receive approval before the flight.
-      ru: 145 м — высота турбины (130 м) + 15 м расширение.
+      ru: Подать заявку BGKIS и получить одобрение до полёта.
   - id: c
     text:
       lv: Piezvanīt tuvākajai lidostas tornī, lai saņemtu mutisku atļauju.
       en: Call the nearest airport tower to obtain verbal clearance.
-      ru: 130 м — точно на уровне вершины.
+      ru: Позвонить в ближайшую диспетчерскую вышку и получить устное разрешение.
   - id: d
     text:
       lv: Pa e-pastu paziņot zonas pārvaldītājam 24 h pēc lidojuma.
       en: Notify the zone manager by email within 24 h after the flight.
-      ru: Любая высота при работе вблизи инфраструктуры.
+      ru: Сообщить менеджеру зоны по электронной почте в течение 24 часов после полёта.
   correctOptionId: b
   explanation:
     lv: Ierobežotās zonas prasa BGKIS pieteikumu, kas iesniegts un apstiprināts pirms lidojuma. Lidojums bez apstiprinātas atbildes ir prettiesisks neatkarīgi no augstuma vai UAS klases.
     en: Restricted zones require a BGKIS application submitted and approved before the flight. Flying without an approved application is illegal regardless of altitude or UAS class.
-    ru: '130 м > 105 м. Горизонтальное расстояние 100 м < 130 м (условие 1:1 выполнено). Потолок: 130 + 15 = 145 м AGL.'
+    ru: Ограниченные зоны требуют заявки BGKIS, поданной и одобренной до полёта. Полёт без подтверждённого одобрения незаконен независимо от высоты или класса UAS.
   distractorRationales:
     a:
       lv: Augstuma samazināšana neatceļ atļaujas prasību ierobežotā zonā.
       en: Altitude reduction does not waive the authorisation requirement in a Restricted zone.
-      ru: Стандартный 120 м здесь не применяется — условие расширения выполнено.
+      ru: Снижение высоты не отменяет требование авторизации в ограниченной зоне.
     c:
       lv: Lidostas torņi UAS zonu pieteikumus nepārvalda; BGKIS ir obligātais kanāls.
       en: Airport towers do not manage UAS zone applications; BGKIS is the mandatory channel.
-      ru: Потолок — высота сооружения плюс 15 м, не точно на уровне вершины.
+      ru: Диспетчерские вышки не обрабатывают заявки UAS на геозоны; обязательный канал — BGKIS.
     d:
       lv: Paziņojums pēc fakta nav atļauja — apstiprinājums vajadzīgs pirms.
       en: Notification after the fact is not authorisation — you need approval before flying.
-      ru: 'Расширение строго ограничено: +15 м сверх высоты сооружения, не произвольно.'
+      ru: Уведомление после факта не является разрешением — одобрение нужно до взлёта.
   sourceRef: docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — Latvia UGZ and BGKIS guidance
   difficulty: 2
   cognitiveLevel: apply
@@ -1538,46 +1538,46 @@
   stem:
     lv: Zona ir marķēta kā 'Ierobežota — vajadzīgs BGKIS pieteikums'. Tu iesniedz pieteikumu un saņem apstiprinājumu. Kurš no šiem noteikumiem zonas iekšienē joprojām strādā?
     en: A zone is marked as 'Restricted — BGKIS application required'. You file an application and receive an approval. Which of the following rules still applies inside the zone?
-    ru: Пилот проверил airspace.lv/drones три дня назад и не увидел ограничений. Достаточно ли этого для полёта сегодня?
+    ru: Зона отмечена как «Ограниченная — требуется заявка BGKIS». Ты подал заявку и получил одобрение. Какое правило всё равно действует внутри зоны?
   options:
   - id: a
     text:
       lv: VLOS vairs nav vajadzīga, jo zonas apstiprinājums tevi paceļ uz Specifisko kategoriju.
       en: VLOS is no longer required because the zone approval upgrades you to Specific category.
-      ru: Да — UGZ-зоны стабильны и редко меняются.
+      ru: VLOS больше не нужен, потому что одобрение зоны переводит операцию в Specific category.
   - id: b
     text:
       lv: Tev joprojām jāsaglabā VLOS, un nedrīkst pārsniegt apstiprinājumā norādītos griestus.
       en: You must still maintain VLOS and may not exceed the ceiling stated in the approval.
-      ru: Нет — нужно проверить airspace.lv/drones и NOTAM в день полёта.
+      ru: Нужно сохранять VLOS и не превышать потолок, указанный в одобрении.
   - id: c
     text:
       lv: 120 m griesti vairs nestrādā — vari lidot tik augstu, cik vajag.
       en: The 120 m ceiling no longer applies — you can fly as high as needed.
-      ru: Да, если пилот уже летал в этом месте без проблем.
+      ru: Потолок 120 м больше не действует — можно лететь настолько высоко, насколько нужно.
   - id: d
     text:
       lv: Aizliegums lidot virs pulcēšanās atcelts, jo iestāde tavu plānu pārbaudīja.
       en: The crowd restriction is lifted because the authority reviewed your flight plan.
-      ru: Достаточно, если приложение производителя тоже не показывает ограничений.
+      ru: Запрет полёта над скоплениями людей отменён, потому что орган рассмотрел план.
   correctOptionId: b
   explanation:
     lv: Zonas atļauja paplašina piekļuvi ierobežotai zonai. Tā nemaina Atvērtās kategorijas noteikumus — VLOS, augstuma griesti (ieskaitot zemāku robežu apstiprinājumā) un pulcēšanās aizliegums paliek spēkā.
     en: Zone authorisation expands access to the restricted area. It does not change Open-category rules — VLOS, altitude limits (including any lower limit in the approval), and the crowd prohibition all remain in force.
-    ru: Зоны и NOTAM могут меняться ежедневно. Проверка в день полёта — не формальность, а единственный способ убедиться в актуальности данных. Трёхдневней давности проверка не даёт правовой защиты.
+    ru: Разрешение зоны открывает доступ к ограниченной зоне. Оно не меняет правила Open category — VLOS, ограничения высоты, включая более низкий потолок в одобрении, и запрет полёта над скоплениями людей остаются в силе.
   distractorRationales:
     a:
       lv: BGKIS apstiprinājums kategoriju nemaina. Tu paliec Atvērtajā.
       en: BGKIS approval does not change your category. You remain in Open category.
-      ru: Постоянные UGZ-зоны действительно стабильны, но NOTAM вводит временны́е ограничения в любой момент.
+      ru: Одобрение BGKIS не меняет категорию операции. Ты остаёшься в Open category.
     c:
       lv: Apstiprinājums var noteikt zemākus griestus par 120 m. Tas nekad necels griestus virs 120 m.
       en: The approval may set a lower ceiling than 120 m. It never raises the ceiling above 120 m.
-      ru: Прошлый опыт не является правовым основанием. Каждый полёт требует самостоятельной проверки.
+      ru: Одобрение может установить потолок ниже 120 м. Оно не является разрешением лететь выше стандартного потолка Open category.
     d:
       lv: Pulcēšanās aizliegums ir kategorijas līmeņa noteikums, ko Atvērtajā nekāda zonas atļauja neatceļ.
       en: The assembly prohibition is a category-level rule that no zone approval can override in Open category.
-      ru: Приложение производителя — не юридически обязывающий источник и может запаздывать с обновлениями.
+      ru: Запрет полёта над скоплениями — правило уровня категории; обычное разрешение зоны его не отменяет.
   sourceRef: docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — Latvia UGZ and BGKIS guidance
   difficulty: 2
   cognitiveLevel: apply
@@ -2079,18 +2079,18 @@
       ru: Никогда — 120 м — абсолютный предел высоты.
   - id: d
     text:
-      lv: Pie infrastruktūras objekta (ēkas, antenu masta utt.), kas ir augstāks par 105 m, lidojot 1:1 horizontālā attālumā — līdz šķērsļa augstumam + 15 m.
-      en: Near an infrastructure structure (building, antenna mast, etc.) taller than 105 m, flying within 1:1 horizontal distance — up to the structure height + 15 m.
-      ru: Рядом с объектом инфраструктуры (здание, антенная мачта и т. д.) выше 105 м, летя в горизонтальном расстоянии 1:1 — до высоты объекта + 15 м.
+      lv: Pie mākslīga šķēršļa, kas ir augstāks par 105 m, lidojot ne tālāk kā 50 m horizontāli pēc atbildīgās personas pieprasījuma — līdz šķēršļa augstumam + 15 m.
+      en: Near an artificial obstacle taller than 105 m, flying within 50 m horizontally at the request of the responsible entity — up to the obstacle height + 15 m.
+      ru: Рядом с искусственным препятствием выше 105 м, в пределах 50 м по горизонтали и по запросу ответственного лица — до высоты препятствия + 15 м.
   correctOptionId: d
   explanation:
-    lv: 'Reg 2019/947 paredz pagarinājumu virs 120 m tikai pie augstiem mākslīgiem šķēršļiem: ja UAS darbojas 1:1 horizontālā attālumā no šķēršļa, kas augstāks par 105 m, pilots var lidot līdz šķēršļa augstumam + 15 m. Šī izņēmuma nav automātiski — tas attiecas uz infrastruktūras apkopšanu vai inspekciju.
+    lv: 'Regula 2019/947 paredz pagarinājumu virs 120 m tikai pie augstiem mākslīgiem šķēršļiem: ja UAS darbojas ne tālāk kā 50 m horizontāli no šķēršļa, kas augstāks par 105 m, un tas notiek pēc par šķērsli atbildīgās personas pieprasījuma, pilots var lidot līdz šķēršļa augstumam + 15 m.
 
       '
-    en: 'Reg 2019/947 provides the above-120 m extension only near tall artificial structures: when the UAS operates within a 1:1 horizontal distance of a structure taller than 105 m, the pilot may fly up to structure height + 15 m. This is not automatic — it applies to infrastructure maintenance or inspection operations.
+    en: 'Regulation 2019/947 provides the above-120 m extension only near tall artificial obstacles: when the UAS operates within 50 m horizontally of an obstacle taller than 105 m, at the request of the entity responsible for that obstacle, the pilot may fly up to obstacle height + 15 m.
 
       '
-    ru: 'Регл. 2019/947 предусматривает превышение 120 м только вблизи высоких искусственных препятствий: когда UAS работает в горизонтальном расстоянии 1:1 от объекта выше 105 м, пилот может летать до высоты объекта + 15 м. Это не автоматически — применяется к техническому обслуживанию или инспекции инфраструктуры.
+    ru: 'Регламент 2019/947 допускает превышение 120 м только рядом с высокими искусственными препятствиями: когда БВС работает в пределах 50 м по горизонтали от препятствия выше 105 м и по запросу лица, ответственного за это препятствие, пилот может лететь до высоты препятствия + 15 м.
 
       '
   distractorRationales:
@@ -2106,7 +2106,7 @@
       lv: 120 m ir standarta robeža, bet regulā ir paredzēts šķērsļa pagarinājums (+15 m) konkrētos apstākļos.
       en: 120 m is the standard limit but the regulation provides the structure extension (+15 m) under specific conditions.
       ru: 120 м — стандартный предел, но правила предусматривают расширение (+15 м) в конкретных условиях.
-  sourceRef: docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — Reg (EU) 2019/947 UAS.OPEN.020/030/040(2)(b)
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.010(3) — artificial obstacle altitude exception
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision

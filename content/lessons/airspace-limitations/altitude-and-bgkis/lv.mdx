@@ -18,7 +18,13 @@ No tā izriet viena būtiska sekas: **griesti pārvietojas līdzi reljefam.**
 
 UAS, kas pacelts pie 60 m augsta paugura pakājes, jāpaliek zem 120 m virs tās zemes, kur tas lido. Ja tas pārvietojas pār paugura virsotni, 120 m mēra no paugura virsotnes — ne no vietas, kur tas pacelts.
 
-UGZ var pazemināt griestus konkrētai vietai. Tā **nekad nevar pacelt** tos virs 120 m.
+## Augstā šķēršļa izņēmums
+
+Atvērtajā kategorijā ir viens šaurs izņēmums 120 m griestiem. Ja operācija notiek pēc par mākslīgu šķērsli atbildīgās personas pieprasījuma, šķērslis ir augstāks par 105 m un UAS paliek ne tālāk kā 50 m horizontāli no šī šķēršļa, griestus drīkst palielināt līdz šķēršļa augstumam + 15 m.
+
+Piemērs: 130 m masta inspekcijā, lidojot 40 m horizontāli no masta, maksimālais augstums ir 145 m AGL. Pie 100 m horizontāla attāluma šis izņēmums vairs nedarbojas.
+
+UGZ vai BGKIS apstiprinājums var noteikt zemākus griestus. Tas pats par sevi nepaceļ Open kategorijas limitus; lidojumam virs 120 m vajadzīgs šaurais šķēršļa izņēmums vai atbilstoša Specifiskās kategorijas autorizācija.
 
 ## Kad BGKIS ir obligāts
 
@@ -51,14 +57,14 @@ Dažas zonas papildus BGKIS pieteikumam prasa atsevišķu atļauju — īpaši l
 <Scenario title="Tu vēlies filmēt pilskalna pili. Pils atrodas 180 m virs jūras līmeņa; pacelies no ielejas grīdas 120 m augstumā. Zona ir zaļa (informatīvā). Cik augstu drīksti lidot no starta punkta?">
 Jādomā AGL virs reljefa, pār kuru aparāts lido, nevis virs sava starta punkta.
 
-Ielejas grīda ir 120 m. Pilskalna virsotne ir 180 m, kāpums 60 m. Kad lido virs pilskalna, tavi griesti ir 120 m virs virsotnes — kas ir 180 + 120 = 300 m virs jūras līmeņa, bet tikai 120 m virs zemes zem aparāta. No starta punkta (120 m augstuma) tev vizuāli būtu pieejami 180 m kāpuma pār ieleju, bet tikai 120 m, tiklīdz atrodies pār pakalnu.
+Ielejas grīda ir 120 m. Pilskalna virsotne ir 180 m, kāpums 60 m. Kad lido virs pilskalna, tavi griesti ir 120 m virs virsotnes — kas ir 180 + 120 = 300 m virs jūras līmeņa, bet joprojām tikai 120 m virs zemes zem aparāta. No starta punkta tas ir 180 m kāpuma virs pilskalna, nevis 120 m.
 
 Vienkārši: nepārkāp 120 m virs jebkāda reljefa, kas tieši zem tevis.
 </Scenario>
 
 <MemoryAnchor
   rule="120 m AGL — mēra zem aparāta, ne no vietas, kur tu stāvi starta brīdī."
-  hint="Ja zem tevis ir 40 m pakalns, tavs lietojamais augstums tikko saruka par 40 m."
+  hint="Ja reljefs zem aparāta paceļas par 40 m, juridiskais griestu līmenis paceļas līdzi — bet altimetrs joprojām var rādīt augstumu pret starta punktu."
 />
 
 <CommonMistakes>
@@ -79,11 +85,11 @@ Vienkārši: nepārkāp 120 m virs jebkāda reljefa, kas tieši zem tevis.
       { id: "c", text: "70 m virs starta — 120 m mīnus 50 m kāpums zem aparāta." },
       { id: "d", text: "50 m virs starta — vienāds ar pakalna augstumu." },
     ],
-    correctOptionId: "c",
-    explanation: "Kad aparāts karājas virs 50 m pakalna, zeme zem tā ir par 50 m augstāka nekā starta punktā. 120 m AGL griesti šajā vietā atļauj tikai 120 − 50 = 70 m virs starta punkta.",
+    correctOptionId: "b",
+    explanation: "Kad aparāts karājas virs 50 m pakalna, zeme zem tā ir par 50 m augstāka nekā starta punktā. 120 m AGL griesti ļauj lidot 120 m virs pakalna virsotnes, tātad 50 + 120 = 170 m virs starta punkta.",
     distractorRationales: {
       a: "120 m mēra virs zemes tieši zem aparāta — ne virs starta punkta.",
-      b: "Tas nozīmētu 170 m virs starta un 120 m virs pakalna virsotnes — pa daļai pareizi, bet nekur lidojuma laikā nedrīkst pārsniegt 120 m AGL.",
+      c: "Šis variants atņem reljefa kāpumu no limita. Patiesībā atskaites virsma zem aparāta paceļas kopā ar pakalnu.",
       d: "Vienāds ar pakalna augstumu — bez regulas pamata.",
     },
   },

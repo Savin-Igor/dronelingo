@@ -920,46 +920,46 @@
   stem:
     lv: Lidojuma laikā UAS GPS pozīcija lietotnē pēkšņi pārlec 6 km no UAS reālās vizuālās pozīcijas. Pilots UAS skaidri redz. Kāds ir visticamākais cēlonis?
     en: During a flight, the drone's GPS position in the app suddenly shifts 6 km from the drone's actual visual position. The pilot can still see the drone clearly. What is the most likely cause?
-    ru: В полёте карта GPS в приложении становится серой, количество спутников падает до нуля. Дрон активирует RTH. Наиболее вероятная причина?
+    ru: Во время полёта GPS-позиция дрона в приложении внезапно смещается на 6 км от его реального визуального положения. Пилот всё ещё ясно видит дрон. Наиболее вероятная причина?
   options:
   - id: a
     text:
       lv: GPS signāla zudums — UAS zaudējis saiti ar satelītiem.
       en: GPS signal loss — the drone has lost satellite lock.
-      ru: GNSS-спуфинг — поддельные сигналы перенаправляют дрон.
+      ru: Потеря GPS-сигнала — дрон потерял спутниковый захват.
   - id: b
     text:
       lv: GNSS spoofings — viltus GPS signāli pārmāc īsto pozīciju.
       en: GNSS spoofing — fake GPS signals are overriding the legitimate position.
-      ru: Взлом прошивки — программное обеспечение дрона повреждено.
+      ru: GNSS-спуфинг — ложные GPS-сигналы подменяют реальную позицию.
   - id: c
     text:
       lv: Lietotnes programmatūras kļūda — pārstartē lietotni.
       en: App software error — restart the app.
-      ru: GNSS-глушение — радиопомехи подавляют полосу GPS-сигнала.
+      ru: Ошибка приложения — перезапустить приложение.
   - id: d
     text:
       lv: Kompasa traucējumi — kalibrē kompasu lidojuma laikā.
       en: Compass interference — recalibrate the compass mid-flight.
-      ru: Атака через Wi-Fi — пульт управления отключён.
+      ru: Помехи компаса — откалибровать компас в полёте.
   correctOptionId: b
   explanation:
     lv: Pēkšņa pozīcijas pārlēkšana uz ģeogrāfiski neticamu vietu (kilometros prom no reālās) ar UAS vizuāli apstiprinātu klātbūtni ir GNSS spoofinga raksturīgs simptoms. GPS zudums (traucēšana) rada 'pelēko karti' un satelītu skaita kritumu, ne viltus pozīcijas pārlēkšanu. Kompasa traucējumi ietekmē kursu, ne GPS pozīciju.
     en: A sudden position jump to a geographically implausible location (kilometres away from the actual position) while the drone remains visually confirmed is the signature symptom of GNSS spoofing. GPS loss (jamming) produces a 'grey map' and satellite count drop, not a false location jump. Compass interference affects heading, not GPS position.
-    ru: 'Серая карта и падение числа спутников до нуля — признаки GNSS-глушения: сигнал полностью подавлен. При спуфинге карта показывает поддельную позицию (не потерю сигнала). Активация RTH без GPS — штатная реакция дрона на потерю позиции.'
+    ru: Внезапный скачок позиции в географически невозможное место — на километры от реального визуального положения — является типичным признаком GNSS-спуфинга. Потеря GPS или глушение обычно дают серую карту и падение числа спутников, а не ложную позицию. Помехи компаса влияют на курс, а не на GPS-координаты.
   distractorRationales:
     a:
       lv: GPS signāla zudums (traucēšana) noved pie pozīcijas pazaudēšanas — karte kļūst pelēka vai parāda 'GPS lost'. Pārlēkšana uz konkrētu viltus vietu norāda uz aktīvu spoofingu, ne zudumu.
       en: GPS signal loss (jamming) results in loss of position — the map goes grey or shows 'GPS lost'. A jump to a specific false location indicates active spoofing, not loss.
-      ru: Спуфинг приводит к ложной позиции (прыжок в невозможное место), а не к потере сигнала и серой карте.
+      ru: Потеря GPS или глушение приводят к потере позиции — карта сереет или показывает «GPS lost». Скачок в конкретную ложную точку указывает на активный спуфинг, а не на потерю сигнала.
     c:
       lv: Konsekventa ģeogrāfiska 6 km pārlēkšana nav lietotnes attēlošanas kļūda — tā norāda, ka pati GPS datu plūsma ir bojāta.
       en: A consistent geographic position jump of 6 km is not an app rendering error — it indicates the GPS data feed itself is corrupted.
-      ru: Этот вариант не соответствует правильному правилу или действию.
+      ru: Устойчивый скачок позиции на 6 км — не ошибка отрисовки приложения; он указывает, что повреждён сам поток GPS-данных.
     d:
       lv: Kompasa traucējumi rada kursa kļūdas (UAS rāda nepareizu virzienu). Tie neizraisa GPS pozīcijas pārlēkšanu uz citu vietu.
       en: Compass interference causes heading errors (the drone points in the wrong direction). It does not cause the GPS position to jump to a different location.
-      ru: Атака через Wi-Fi может нарушить управляющий канал, но не GPS-сигнал спутника. Серая карта и потеря спутников — проблема уровня GPS.
+      ru: 'Помехи компаса вызывают ошибки курса: дрон показывает неправильное направление. Они не переносят GPS-позицию в другое место.'
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — UAS security awareness
   difficulty: 2
   cognitiveLevel: apply

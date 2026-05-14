@@ -18,7 +18,13 @@ This has one critical consequence: **the ceiling moves with the terrain.**
 
 A drone launched at the base of a 60 m hill must stay below 120 m above the ground where it flies. If it crosses to the top of the hill, the 120 m is measured from the hilltop — not from where it launched.
 
-A UGZ can lower the ceiling for a specific area. It can **never raise it above 120 m**.
+## The tall-obstacle exception
+
+Open category has one narrow exception to the 120 m ceiling. If the operation is requested by the entity responsible for an artificial obstacle taller than 105 m, and the UAS stays within 50 m horizontally of that obstacle, the ceiling may be increased to the obstacle height + 15 m.
+
+Example: a 130 m mast inspected at 40 m horizontal distance may be flown up to 145 m AGL. At 100 m horizontal distance, the exception no longer applies.
+
+A UGZ or BGKIS approval can impose a lower ceiling. It does not by itself raise Open-category limits; above-120 m flight needs the narrow obstacle exception or an appropriate Specific-category authorisation.
 
 ## When BGKIS is mandatory
 
@@ -51,14 +57,14 @@ Some zones require additional authorisation on top of a BGKIS submission — par
 <Scenario title="You want to film a hilltop castle. The castle sits at 180 m elevation; you launch from the valley floor at 120 m. The zone is green (information). How high can you fly from your launch point?">
 You need to think in AGL above the terrain the drone flies over — not above your launch point.
 
-The valley floor is at 120 m. The castle hilltop is at 180 m, a rise of 60 m. When you fly over the castle hill, your ceiling is 120 m above the hilltop — which is 180 + 120 = 300 m above sea level, but only 120 m above the ground under the drone. From your launch point (120 m elevation), the ceiling would appear as 180 m of climb available when you're over the valley, but only 120 m once you're over the hill.
+The valley floor is at 120 m. The castle hilltop is at 180 m, a rise of 60 m. When you fly over the castle hill, your ceiling is 120 m above the hilltop — which is 180 + 120 = 300 m above sea level, but still only 120 m above the ground under the drone. From your launch point, that is 180 m of climb available when over the hilltop, not 120 m.
 
 In plain terms: do not exceed 120 m above whatever terrain is directly below you at any point.
 </Scenario>
 
 <MemoryAnchor
   rule="120 m AGL — measured below the drone, not from where you stood when you launched."
-  hint="If the hill rises 40 m under you, your usable altitude just shrank by 40 m."
+  hint="If the terrain rises 40 m under the drone, the legal ceiling rises with that terrain — but your altimeter may still be referenced to launch point."
 />
 
 <CommonMistakes>
@@ -79,11 +85,11 @@ In plain terms: do not exceed 120 m above whatever terrain is directly below you
       { id: "c", text: "70 m above launch — 120 m minus the 50 m rise underneath." },
       { id: "d", text: "50 m above launch — equal to the hill height." },
     ],
-    correctOptionId: "c",
-    explanation: "When the drone hovers above the 50 m hill, the ground under it is 50 m higher than the launch point. The 120 m AGL ceiling allows only 120 - 50 = 70 m of altitude above the launch point at that location.",
+    correctOptionId: "b",
+    explanation: "When the drone hovers above the 50 m hill, the ground under it is 50 m higher than the launch point. The 120 m AGL ceiling allows flight 120 m above the hilltop, so 50 + 120 = 170 m above the launch point.",
     distractorRationales: {
       a: "The 120 m is measured above the ground directly under the drone — not above the launch point.",
-      b: "This would mean you are 170 m above the launch point and 120 m above the hilltop — correct for the hilltop part, but you still cannot exceed 120 m AGL at any point.",
+      c: "This subtracts the terrain rise from the limit. In fact, the reference surface under the drone has moved upward with the hill.",
       d: "Equal to the hill height has no regulatory basis.",
     },
   },
