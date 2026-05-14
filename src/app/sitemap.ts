@@ -7,6 +7,7 @@ const PUBLIC_PATHS = [
   "/learn",
   "/practice",
   "/exam",
+  "/exam/meteorology-a2",
   "/pricing",
   "/guide",
   "/faq",

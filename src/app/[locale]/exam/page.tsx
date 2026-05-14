@@ -178,6 +178,28 @@ export default async function ExamStart({
         </div>
       </section>
 
+      <section
+        aria-label={t("bonus.heading")}
+        className="mt-6 rounded-sm border border-amber-alert/30 bg-cockpit p-6"
+      >
+        <p className="font-mono text-xs uppercase tracking-widest text-amber-alert">
+          ◇ {t("bonus.kicker")}
+        </p>
+        <h2 className="mt-1 font-display text-xl font-semibold text-hud-white">
+          {t("bonus.heading")}
+        </h2>
+        <p className="mt-2 text-sm text-telemetry">{t("bonus.subtitle")}</p>
+        <div className="mt-4 flex items-center justify-between gap-4">
+          <p className="text-xs text-muted">{t("bonus.hint")}</p>
+          <Link
+            href="/exam/meteorology-a2"
+            className="inline-flex shrink-0 items-center justify-center rounded-sm border border-amber-alert/60 bg-amber-alert/10 px-4 py-2 text-sm font-medium text-amber-alert transition-colors hover:bg-amber-alert hover:text-void"
+          >
+            {t("bonus.cta")} →
+          </Link>
+        </div>
+      </section>
+
       <ExamHistorySection />
     </main>
   );

@@ -32,14 +32,18 @@ export function ExamSession({
   durationMin = EXAM_DURATION_MIN,
   examType = "full",
   topicSlug,
+  passThreshold = EXAM_PASS_THRESHOLD,
 }: {
   questions: ExamQuestion[];
-  /** Override the timer length — used by per-topic drills (~1 min/Q). */
+  /** Override the timer length — used by per-topic drills and the
+   *  meteorology A2 bonus (35 min / 30 Q). */
   durationMin?: number;
   /** Persisted on StoredExamResult so the readiness gauge can filter. */
-  examType?: "full" | "topic";
+  examType?: "full" | "topic" | "meteorology-a2";
   /** Topic slug for per-topic drills (only set when examType === "topic"). */
   topicSlug?: string;
+  /** Override pass threshold (default 75 % for the A1/A3 mock). */
+  passThreshold?: number;
 }) {
   const t = useTranslations("exam");
   const router = useRouter();
@@ -105,7 +109,7 @@ export function ExamSession({
       durationSec,
       total,
       correct: correctCount,
-      passed: percent >= EXAM_PASS_THRESHOLD,
+      passed: percent >= passThreshold,
       type: examType,
       topicSlug: examType === "topic" ? topicSlug : undefined,
       perTopic,
@@ -113,7 +117,7 @@ export function ExamSession({
     };
     writeExamResult(result);
     router.replace("/exam/result");
-  }, [answers, questions, router, total, examType, topicSlug]);
+  }, [answers, questions, router, total, examType, topicSlug, passThreshold]);
 
   useEffect(() => {
     const tick = setInterval(() => {

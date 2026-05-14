@@ -14,11 +14,12 @@ export type StoredExamResult = {
   correct: number;
   passed: boolean;
   /**
-   * Exam mode. `full` is the 40-Q stratified mock; `topic` is the
-   * shorter per-topic drill at /exam/[topic]. Undefined on legacy
-   * records (treated as `full` by the readiness gauge).
+   * Exam mode. `full` is the 40-Q stratified A1/A3 mock; `topic` is the
+   * shorter per-topic drill at /exam/[topic]; `meteorology-a2` is the
+   * 30-Q / 35-min A2 bonus exam. Undefined on legacy records (treated
+   * as `full` by the readiness gauge).
    */
-  type?: "full" | "topic";
+  type?: "full" | "topic" | "meteorology-a2";
   /** Topic slug — only set when type is `topic`. */
   topicSlug?: string;
   perTopic: Record<
@@ -77,9 +78,12 @@ export function computeReadiness(
   history: StoredExamResult[],
   threshold: number,
 ): Readiness {
-  // Readiness is about the official mock exam — topic-scoped drills
-  // (`type: 'topic'`) are useful but don't predict the real 40-Q exam.
-  const fullMocks = history.filter((h) => h.type !== "topic");
+  // Readiness is about the official A1/A3 mock exam — neither topic
+  // drills nor the A2 bonus predicts it, so they are excluded from the
+  // readiness window.
+  const fullMocks = history.filter(
+    (h) => h.type !== "topic" && h.type !== "meteorology-a2",
+  );
   if (fullMocks.length === 0) return "no-data";
   const last3 = fullMocks.slice(-3);
   const percents = last3.map((h) => Math.round((h.correct / h.total) * 100));
