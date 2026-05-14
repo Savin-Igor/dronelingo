@@ -60,14 +60,14 @@
   options:
   - id: a
     text:
-      lv: C0 (< 250 g).
-      en: C0 (< 250 g).
-      ru: C0 (< 250 г).
-  - id: b
-    text:
       lv: C1.
       en: C1.
       ru: C1.
+  - id: b
+    text:
+      lv: C0 (< 250 g).
+      en: C0 (< 250 g).
+      ru: C0 (< 250 г).
   - id: c
     text:
       lv: C2.
@@ -78,7 +78,7 @@
       lv: C3.
       en: C3.
       ru: C3.
-  correctOptionId: a
+  correctOptionId: b
   explanation:
     lv: 'Direct Remote ID ir obligāts klasēm C1, C2, C3. C0 nav prasības, jo tas ir zemākā riska klase.
 
@@ -90,7 +90,7 @@
 
       '
   distractorRationales:
-    b:
+    a:
       lv: C1 ir obligāts Remote ID — tas ir daļa no klases pamata prasībām.
       en: C1 mandates Remote ID — it is part of the class's core requirements.
       ru: C1 обязательно требует Remote ID — это часть базовых требований класса.
@@ -114,9 +114,9 @@
   options:
   - id: a
     text:
-      lv: ≈ 74 Wh.
-      en: ≈ 74 Wh.
-      ru: ≈ 74 Wh.
+      lv: ≈ 740 Wh.
+      en: ≈ 740 Wh.
+      ru: ≈ 740 Wh.
   - id: b
     text:
       lv: ≈ 5 Wh.
@@ -124,15 +124,15 @@
       ru: ≈ 5 Wh.
   - id: c
     text:
-      lv: ≈ 740 Wh.
-      en: ≈ 740 Wh.
-      ru: ≈ 740 Wh.
+      lv: ≈ 74 Wh.
+      en: ≈ 74 Wh.
+      ru: ≈ 74 Wh.
   - id: d
     text:
       lv: ≈ 20 Wh.
       en: ≈ 20 Wh.
       ru: ≈ 20 Wh.
-  correctOptionId: a
+  correctOptionId: c
   explanation:
     lv: 'Wh = Ah × V = 5,0 × 14,8 ≈ 74 Wh. Tas ir svarīgi aviopārvadājumiem: lielākā daļa avioliniju neatļauj pārvadāt baterijas virs 100 Wh bagāžā vai virs 160 Wh nemaz.
 
@@ -144,14 +144,14 @@
 
       '
   distractorRationales:
+    a:
+      lv: 740 Wh ir tieši x10 — iespējams, pilots aizmirsis dalīt mAh ar 1000 vai jaucis spriegumu. Pareizs aprēķins dod 74 Wh.
+      en: 740 Wh is exactly 10× — likely the pilot forgot to divide mAh by 1000 or confused voltages. Correct math yields 74 Wh.
+      ru: 740 Wh — это ровно в 10 раз больше. Скорее всего, не разделили mAh на 1000 или ошиблись с напряжением. Правильный ответ — 74 Wh.
     b:
       lv: '5 Wh ir krietni par maz — tā būtu mAh, ne Ah. Atceries: dalīt mAh ar 1000, lai iegūtu Ah.'
       en: '5 Wh is far too low — that would treat mAh as Ah. Remember: divide mAh by 1000 to get Ah.'
       ru: '5 Wh — слишком мало. Это бы значило mAh вместо Ah. Запомни: делишь mAh на 1000.'
-    c:
-      lv: 740 Wh ir tieši x10 — iespējams, pilots aizmirsis dalīt mAh ar 1000 vai jaucis spriegumu. Pareizs aprēķins dod 74 Wh.
-      en: 740 Wh is exactly 10× — likely the pilot forgot to divide mAh by 1000 or confused voltages. Correct math yields 74 Wh.
-      ru: 740 Wh — это ровно в 10 раз больше. Скорее всего, не разделили mAh на 1000 или ошиблись с напряжением. Правильный ответ — 74 Wh.
     d:
       lv: 20 Wh ir mazāk nekā vienas šūnas (~18 Wh) komplekts — 4S sistēmā tas ir krietni par maz.
       en: 20 Wh is less than a single-cell (~18 Wh) pack — far too low for a 4S configuration.
@@ -168,9 +168,9 @@
   options:
   - id: a
     text:
-      lv: 19 m/s.
-      en: 19 m/s.
-      ru: 19 м/с.
+      lv: 10 m/s.
+      en: 10 m/s.
+      ru: 10 м/с.
   - id: b
     text:
       lv: 30 m/s.
@@ -183,10 +183,10 @@
       ru: 50 м/с.
   - id: d
     text:
-      lv: 10 m/s.
-      en: 10 m/s.
-      ru: 10 м/с.
-  correctOptionId: a
+      lv: 19 m/s.
+      en: 19 m/s.
+      ru: 19 м/с.
+  correctOptionId: d
   explanation:
     lv: 'C0 klases drošības prasības ietver maksimālo ātrumu 19 m/s (≈68 km/h), lai mazinātu trieciena enerģiju, ja drons nokļūst saskarē ar cilvēku.
 
@@ -198,6 +198,10 @@
 
       '
   distractorRationales:
+    a:
+      lv: 10 m/s ir krietni zem regulā noteiktās robežas. C0 var lidot līdz 19 m/s.
+      en: 10 m/s is well below the regulatory cap. C0 is permitted up to 19 m/s.
+      ru: 10 м/с — значительно ниже регуляторного предела. C0 допускается до 19 м/с.
     b:
       lv: 30 m/s ir lielāks par C0 limitu. Pie šādas trieciena enerģijas C0 vairs nebūtu zemākā riska klase.
       en: 30 m/s exceeds the C0 limit. At that impact energy C0 would no longer be the lowest-risk class.
@@ -206,10 +210,6 @@
       lv: 50 m/s ir tipiskāka liela komerciālā drona vērtība, ne C0 zemākā riska kategorija.
       en: 50 m/s is more typical for larger commercial drones, not the C0 low-risk class.
       ru: 50 м/с — типичная скорость крупных коммерческих дронов, а не низкорискового C0.
-    d:
-      lv: 10 m/s ir krietni zem regulā noteiktās robežas. C0 var lidot līdz 19 m/s.
-      en: 10 m/s is well below the regulatory cap. C0 is permitted up to 19 m/s.
-      ru: 10 м/с — значительно ниже регуляторного предела. C0 допускается до 19 м/с.
   sourceRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg (EU) 2019/945 Annex Part 1 — C0(2)
   difficulty: 2
   cognitiveLevel: recall
@@ -281,20 +281,20 @@
       ru: 30 м.
   - id: b
     text:
-      lv: 10 m.
-      en: 10 m.
-      ru: 10 м.
-  - id: c
-    text:
       lv: 5 m.
       en: 5 m.
       ru: 5 м.
+  - id: c
+    text:
+      lv: 10 m.
+      en: 10 m.
+      ru: 10 м.
   - id: d
     text:
       lv: Nav distance prasību A2 zemā ātruma režīmā.
       en: No distance requirement in A2 low-speed mode.
       ru: В режиме малой скорости A2 требований к дистанции нет.
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: 'C2 droniem A2 apakškategorijā ir divas attāluma prasības atkarībā no ātruma: normālā ātrumā — 30 m no nepiederošām personām; zemā ātruma režīmā (≤3 m/s) — 5 m no nepiederošām personām. Zemā ātruma režīms ir aparatūras sertifikācija, ne tikai ātruma ierobežojums — tas paredzēts C2 klases specifikācijā.
 
@@ -310,7 +310,7 @@
       lv: 30 m ir A2 distance normālā ātruma apstākļos. Ar aktīvu zemā ātruma režīmu (≤3 m/s) atļautā distance tiek samazināta līdz 5 m.
       en: 30 m is the A2 distance at normal speed. With active low-speed mode (≤3 m/s) the permitted distance reduces to 5 m.
       ru: 30 м — дистанция A2 при нормальной скорости. В активном режиме малой скорости (≤3 м/с) допустимая дистанция сокращается до 5 м.
-    b:
+    c:
       lv: 10 m nav A2 apakškategorijas distance. A2 norādītās distances ir 30 m (normāli) vai 5 m (zemā ātruma režīmā).
       en: 10 m is not an A2 sub-category distance. The A2 specified distances are 30 m (normal) or 5 m (low-speed mode).
       ru: 10 м — не дистанция подкатегории A2. Указанные дистанции A2 — 30 м (нормальная) или 5 м (режим малой скорости).
@@ -335,20 +335,20 @@
       ru: Только регистрационный номер оператора.
   - id: b
     text:
-      lv: UAS ID, reāllaika pozīciju un augstumu, pacelšanās vietu, operatora pozīciju vai meklēšanas rādītāju.
-      en: UAS ID, real-time position and altitude, takeoff position, operator position or locator.
-      ru: ID UAS, текущее положение и высоту, точку взлёта, положение оператора или локатор.
-  - id: c
-    text:
       lv: Pilota vārdu, uzvārdu un baterijas uzlādes līmeni.
       en: The pilot's name, surname, and battery charge level.
       ru: Имя, фамилию пилота и уровень заряда аккумулятора.
+  - id: c
+    text:
+      lv: UAS ID, reāllaika pozīciju un augstumu, pacelšanās vietu, operatora pozīciju vai meklēšanas rādītāju.
+      en: UAS ID, real-time position and altitude, takeoff position, operator position or locator.
+      ru: ID UAS, текущее положение и высоту, точку взлёта, положение оператора или локатор.
   - id: d
     text:
       lv: Tikai drona sērijas numuru un ražošanas datumu.
       en: Only the drone serial number and manufacturing date.
       ru: Только серийный номер дрона и дату производства.
-  correctOptionId: b
+  correctOptionId: c
   explanation:
     lv: 'Direct Remote ID pārraida: UAS unikālo identifikatoru (UAS ID), reāllaika atrašanās vietu un augstumu, pacelšanās vietu, operatora atrašanās vietu vai lokalizācijas rādītāju, laika zīmogu. Šie dati ļauj iestādēm identificēt un lokalizēt operatoru nekontrolētas darbības gadījumā.
 
@@ -364,7 +364,7 @@
       lv: Operators reģistrācijas numurs ir daļa no UAS ID, bet Remote ID pārsūta vairāk — reāllaika pozīciju, augstumu, pacelšanās vietu un operatora rādītāju.
       en: The operator registration number is part of the UAS ID, but Remote ID transmits more — real-time position, altitude, takeoff position, and operator locator.
       ru: 'Регистрационный номер оператора — часть UAS ID, но Remote ID передаёт больше: текущее положение, высоту, точку взлёта и локатор оператора.'
-    c:
+    b:
       lv: Pilota personas dati (vārds, uzvārds) nav tiešie Remote ID dati — tie ir saistīti ar operatora reģistrāciju, nevis pārsūtīti lidojuma laikā.
       en: The pilot's personal data (name, surname) are not directly broadcast by Remote ID — they are linked to the operator registration, not transmitted during flight.
       ru: Личные данные пилота (имя, фамилия) Remote ID напрямую не передаёт — они привязаны к регистрации оператора, а не передаются в полёте.
@@ -394,15 +394,15 @@
       ru: C0, C1, C2, C3, C4 — все классы.
   - id: c
     text:
-      lv: C1, C2, C3.
-      en: C1, C2, C3.
-      ru: C1, C2, C3.
-  - id: d
-    text:
       lv: Tikai C2 un C3.
       en: C2 and C3 only.
       ru: Только C2 и C3.
-  correctOptionId: c
+  - id: d
+    text:
+      lv: C1, C2, C3.
+      en: C1, C2, C3.
+      ru: C1, C2, C3.
+  correctOptionId: d
   explanation:
     lv: 'Geo-awareness ir obligāta C1, C2 un C3 klasēm. C0 (< 250 g) ir atbrīvots kā zemākā riska klase. C4 ir atbrīvots no geo-awareness prasības, atspoguļojot tā "manuālā modeļa" raksturu bez autonomiem lidojuma režīmiem.
 
@@ -422,7 +422,7 @@
       lv: C4 nav obligāta geo-awareness — tas atbilst manuālā vadības modeļa operatora darbības raksturam.
       en: C4 does not require geo-awareness — it corresponds to the manual-control model aircraft operational character.
       ru: C4 не требует geo-awareness — это соответствует характеру эксплуатации авиамодели с ручным управлением.
-    d:
+    c:
       lv: C1 arī ir obligāta geo-awareness — šis atbilsme ir nepilnīga.
       en: C1 also requires geo-awareness — this answer is incomplete.
       ru: C1 также требует geo-awareness — этот ответ неполный.
@@ -438,14 +438,14 @@
   options:
   - id: a
     text:
-      lv: ≈74 Wh — rokas bagāžā bez apstiprinājuma.
-      en: ≈74 Wh — carry-on without approval.
-      ru: ≈74 Wh — ручная кладь без одобрения.
-  - id: b
-    text:
       lv: ≈111 Wh — rokas bagāžā ar aviolīnijas rakstveida apstiprinājumu.
       en: ≈111 Wh — carry-on only with airline written approval.
       ru: ≈111 Wh — только ручная кладь с письменным одобрением авиакомпании.
+  - id: b
+    text:
+      lv: ≈74 Wh — rokas bagāžā bez apstiprinājuma.
+      en: ≈74 Wh — carry-on without approval.
+      ru: ≈74 Wh — ручная кладь без одобрения.
   - id: c
     text:
       lv: ≈111 Wh — aizliegts pasažieru gaisa kuģos.
@@ -456,7 +456,7 @@
       lv: ≈333 Wh — aizliegts.
       en: ≈333 Wh — forbidden.
       ru: ≈333 Wh — запрещён.
-  correctOptionId: b
+  correctOptionId: a
   explanation:
     lv: '6S nominālais spriegums = 22,2 V. Wh = 5,0 Ah × 22,2 V ≈ 111 Wh. Tas ietilpst 100–160 Wh kategorijā — rokas bagāžā ar aviolīnijas rakstveida apstiprinājumu. Virs 160 Wh — aizliegts pasažieru gaisa kuģos.
 
@@ -468,7 +468,7 @@
 
       '
   distractorRationales:
-    a:
+    b:
       lv: 74 Wh ir aprēķins 4S baterijai (14,8 V × 5 Ah). Šī baterija ir 6S (22,2 V), kas dod ≈111 Wh — cita kategorija ar citiem noteikumiem.
       en: 74 Wh is the calculation for a 4S battery (14.8 V × 5 Ah). This battery is 6S (22.2 V), yielding ≈111 Wh — a different category with different rules.
       ru: 74 Wh — расчёт для 4S аккумулятора (14,8 В × 5 Ач). Данный аккумулятор 6S (22,2 В) даёт ≈111 Wh — другая категория с другими правилами.
@@ -497,20 +497,20 @@
       ru: C4 имеет меньшую максимальную массу, чем C3.
   - id: b
     text:
-      lv: C4 var lidot tikai pilsētās.
-      en: C4 can only fly in cities.
-      ru: C4 может летать только в городах.
-  - id: c
-    text:
       lv: C4 ir atļauts tikai manuāla vadība — nav autonomo vai daļēji autonomo lidojuma režīmu.
       en: C4 is limited to manual control only — no autonomous or semi-autonomous flight modes.
       ru: C4 допускает только ручное управление — без автономных или полуавтономных режимов полёта.
+  - id: c
+    text:
+      lv: C4 var lidot tikai pilsētās.
+      en: C4 can only fly in cities.
+      ru: C4 может летать только в городах.
   - id: d
     text:
       lv: C4 nav jāreģistrē operators.
       en: C4 does not require operator registration.
       ru: C4 не требует регистрации оператора.
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: 'C4 klase ir definēta kā manuālās vadības aviomodeļa operators — nav GPS autopilota, nav maršruta sekošanas, nav pozīcijas uzturēšanas režīmu. Gan C3, gan C4 ir < 25 kg un darbojas A3, bet C3 var izmantot autonomas sistēmas, C4 nedrīkst.
 
@@ -526,7 +526,7 @@
       lv: C3 un C4 abi ir < 25 kg. Nav masas atšķirības starp tiem — atšķirība ir ekspluatācijas ierobežojumā (autonomie režīmi).
       en: Both C3 and C4 are < 25 kg. There is no mass distinction between them — the distinction is the operational restriction (autonomous modes).
       ru: Оба C3 и C4 < 25 кг. Разницы по массе нет — различие в операционном ограничении (автономные режимы).
-    b:
+    c:
       lv: C4 darbojas A3 — kas prasa ≥150 m no apdzīvotajām zonām. C4 nav pilsētu klase; tas ir vismazāk piemērots pilsētai.
       en: C4 operates in A3 — which requires ≥150 m from inhabited areas. C4 is not an urban class; it is least suitable for cities.
       ru: C4 работает в A3, что требует ≥150 м от населённых пунктов. C4 — не городской класс; он наименее подходит для городов.
@@ -605,9 +605,9 @@
       ru: Только Direct Remote ID — другие функции не обязательны.
   - id: b
     text:
-      lv: Direct Remote ID, geo-awareness, fail-safe (RTH vai nosēšanās), maksimālais ātrums ≤ 19 m/s, maksimālais troksnis ≤ 70 dB(A).
-      en: Direct Remote ID, geo-awareness, fail-safe (RTH or landing), maximum speed ≤ 19 m/s, maximum noise ≤ 70 dB(A).
-      ru: Direct Remote ID, гео-осведомлённость, fail-safe (RTH или посадка), максимальная скорость ≤ 19 м/с, максимальный шум ≤ 70 дБ(А).
+      lv: Zema ātruma režīms un 5 m attāluma sensors.
+      en: Low-speed mode and 5 m proximity sensor.
+      ru: Режим малой скорости и датчик близости 5 м.
   - id: c
     text:
       lv: Tikai fail-safe un trokšņa limits — Remote ID nav obligāts C1.
@@ -615,10 +615,10 @@
       ru: Только fail-safe и ограничение шума — Remote ID не обязателен для C1.
   - id: d
     text:
-      lv: Zema ātruma režīms un 5 m attāluma sensors.
-      en: Low-speed mode and 5 m proximity sensor.
-      ru: Режим малой скорости и датчик близости 5 м.
-  correctOptionId: b
+      lv: Direct Remote ID, geo-awareness, fail-safe (RTH vai nosēšanās), maksimālais ātrums ≤ 19 m/s, maksimālais troksnis ≤ 70 dB(A).
+      en: Direct Remote ID, geo-awareness, fail-safe (RTH or landing), maximum speed ≤ 19 m/s, maximum noise ≤ 70 dB(A).
+      ru: Direct Remote ID, гео-осведомлённость, fail-safe (RTH или посадка), максимальная скорость ≤ 19 м/с, максимальный шум ≤ 70 дБ(А).
+  correctOptionId: d
   explanation:
     lv: 'Regula 2019/945 Part 2 (C1) nosaka: Direct Remote ID, geo-awareness sistēmu, fail-safe (RTH vai droša nosēšanās), max ātrums 19 m/s, troksnis ≤ 70 dB(A) un kinētiskās enerģijas limitu (pie max ātruma < 80 J). C1 nav obligāts zema ātruma režīms (tas ir C2 prasība).
 
@@ -634,14 +634,14 @@
       lv: C1 prasa vairāk par tikai Remote ID. Visi minētie tehniskie raksturlielumi (geo-awareness, fail-safe, troksnis, ātrums) ir obligāti.
       en: C1 requires more than just Remote ID. All listed technical features (geo-awareness, fail-safe, noise, speed) are mandatory.
       ru: C1 требует большего, чем просто Remote ID. Все перечисленные технические характеристики (гео-осведомлённость, fail-safe, шум, скорость) обязательны.
+    b:
+      lv: Zema ātruma režīms ir C2 prasība, nevis C1. C1 ir ātruma un kinētiskās enerģijas limits, nevis zema ātruma sensors.
+      en: Low-speed mode is a C2 requirement, not C1. C1 has a speed and kinetic energy limit, not a low-speed mode.
+      ru: Режим малой скорости — требование C2, а не C1. C1 имеет ограничение скорости и кинетической энергии, а не режим малой скорости.
     c:
       lv: Direct Remote ID ir obligāts C1. Arī geo-awareness ir obligāts, nevis opcija.
       en: Direct Remote ID is mandatory for C1. Geo-awareness is also mandatory, not optional.
       ru: Direct Remote ID обязателен для C1. Гео-осведомлённость также обязательна, а не опциональна.
-    d:
-      lv: Zema ātruma režīms ir C2 prasība, nevis C1. C1 ir ātruma un kinētiskās enerģijas limits, nevis zema ātruma sensors.
-      en: Low-speed mode is a C2 requirement, not C1. C1 has a speed and kinetic energy limit, not a low-speed mode.
-      ru: Режим малой скорости — требование C2, а не C1. C1 имеет ограничение скорости и кинетической энергии, а не режим малой скорости.
   sourceRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg 2019/945 Part 2 — C1 class technical requirements
   difficulty: 2
   cognitiveLevel: recall
@@ -654,14 +654,14 @@
   options:
   - id: a
     text:
-      lv: C4 ir bez vadības pults.
-      en: C4 has no controller.
-      ru: C4 не имеет пульта управления.
-  - id: b
-    text:
       lv: C4 nav jābūt geo-awareness sistēmai vai fail-safe — tas neatbalsta automātisku darbību.
       en: C4 is not required to have a geo-awareness system or fail-safe — it does not support automatic operation.
       ru: C4 не обязан иметь систему гео-осведомлённости или fail-safe — он не поддерживает автоматическую работу.
+  - id: b
+    text:
+      lv: C4 ir bez vadības pults.
+      en: C4 has no controller.
+      ru: C4 не имеет пульта управления.
   - id: c
     text:
       lv: C4 ir smagāks par 25 kg.
@@ -672,7 +672,7 @@
       lv: C4 prasa speciālu servera atļauju katram autonomam lidojumam.
       en: C4 requires a special server authorisation for each autonomous flight.
       ru: C4 требует специального серверного разрешения для каждого автономного полёта.
-  correctOptionId: b
+  correctOptionId: a
   explanation:
     lv: 'C4 klase (Reg 2019/945 Part 6) ir paredzēta jau esošo "augstāka riska" dronu integrācijai. Atšķirībā no C3 un citām klasēm, C4 nav obligāti jābūt geo-awareness un fail-safe sistēmām. Tāpēc C4 nedrīkst izmantot autonomā lidojuma režīmos (follow-me u.c.) — tikai manuāla vadība A3 apakškategorijā, tālu no cilvēkiem.
 
@@ -684,7 +684,7 @@
 
       '
   distractorRationales:
-    a:
+    b:
       lv: C4 UAS ir vadības pults — autonomā ierobežojuma iemesls ir nevis kontroles saites neesamība, bet gan obligāto drošības sistēmu (geo-awareness, fail-safe) neesamība.
       en: C4 UAS has a controller — the reason for the autonomous restriction is not absence of a control link but absence of mandatory safety systems (geo-awareness, fail-safe).
       ru: UAS C4 имеет пульт управления — причина ограничения на автономные режимы не в отсутствии канала управления, а в отсутствии обязательных систем безопасности (гео-осведомлённость, fail-safe).
@@ -821,9 +821,9 @@
       ru: Помогать пилоту в навигации по GPS.
   - id: b
     text:
-      lv: Brīdināt pilotu vai automātiski ierobežot darbību, tuvojoties aizliegtām vai ierobežotām zonām, pamatojoties uz aktuālo gaisa telpas datu bāzi.
-      en: Warn the pilot or automatically restrict operation when approaching prohibited or restricted zones, based on an up-to-date airspace database.
-      ru: Предупреждать пилота или автоматически ограничивать работу при приближении к запретным или ограниченным зонам на основе актуальной базы данных воздушного пространства.
+      lv: Automātiski nosēsties, ja akumulators nokrīt zem 20 %.
+      en: Automatically land when the battery falls below 20 %.
+      ru: Автоматически приземляться при падении заряда батареи ниже 20 %.
   - id: c
     text:
       lv: Izsekot kaimiņu UAS atrašanās vietām sadursmes novēršanai.
@@ -831,10 +831,10 @@
       ru: Отслеживать местоположения соседних UAS для предотвращения столкновений.
   - id: d
     text:
-      lv: Automātiski nosēsties, ja akumulators nokrīt zem 20 %.
-      en: Automatically land when the battery falls below 20 %.
-      ru: Автоматически приземляться при падении заряда батареи ниже 20 %.
-  correctOptionId: b
+      lv: Brīdināt pilotu vai automātiski ierobežot darbību, tuvojoties aizliegtām vai ierobežotām zonām, pamatojoties uz aktuālo gaisa telpas datu bāzi.
+      en: Warn the pilot or automatically restrict operation when approaching prohibited or restricted zones, based on an up-to-date airspace database.
+      ru: Предупреждать пилота или автоматически ограничивать работу при приближении к запретным или ограниченным зонам на основе актуальной базы данных воздушного пространства.
+  correctOptionId: d
   explanation:
     lv: 'Geo-awareness sistēma C1 (un C2, C3) UAS pārbauda drona pozīciju pret lejupielādētu UAS ģeogrāfisko zonu datu bāzi (piemēram, ED-269 formātā). Tuvojoties aizliegtai vai ierobežotai zonai, sistēma brīdina pilotu vai ierobežo piekļuvi. Tas palīdz pilotam ievērot gaisa telpas ierobežojumus, bet neatbrīvo viņu no patstāvīgas pārbaudes pienākuma.
 
@@ -850,14 +850,14 @@
       lv: Geo-awareness nav navigācijas sistēma. Tā ir gaisa telpas ierobežojumu atbilstības rīks, nevis GPS navigācija.
       en: Geo-awareness is not a navigation system. It is an airspace compliance tool, not GPS navigation.
       ru: Гео-осведомлённость — не навигационная система. Это инструмент соответствия ограничениям воздушного пространства, а не GPS-навигация.
+    b:
+      lv: Automātiskā nosēšanās pie 20 % baterijas ir fail-safe funkcija, nevis geo-awareness. Tās ir divas dažādas sistēmas.
+      en: Automatic landing at 20 % battery is a fail-safe function, not geo-awareness. These are two separate systems.
+      ru: Автоматическая посадка при 20 % батареи — функция fail-safe, а не гео-осведомлённости. Это две разные системы.
     c:
       lv: Kaimiņu UAS izsekošana ir TCAS (sadursmes novēršanas sistēmas) funkcija, nevis geo-awareness. Geo-awareness darbojas ar statiskiem ģeogrāfiskajiem datiem, nevis dinamiskajiem lidojuma datiem.
       en: Tracking neighbouring UAS is a TCAS (collision avoidance system) function, not geo-awareness. Geo-awareness works with static geographical data, not dynamic flight data.
       ru: Отслеживание соседних UAS — функция TCAS (системы предотвращения столкновений), а не гео-осведомлённости. Гео-осведомлённость работает со статическими географическими данными, а не динамическими лётными данными.
-    d:
-      lv: Automātiskā nosēšanās pie 20 % baterijas ir fail-safe funkcija, nevis geo-awareness. Tās ir divas dažādas sistēmas.
-      en: Automatic landing at 20 % battery is a fail-safe function, not geo-awareness. These are two separate systems.
-      ru: Автоматическая посадка при 20 % батареи — функция fail-safe, а не гео-осведомлённости. Это две разные системы.
   sourceRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg 2019/945 Part 2 — C1 geo-awareness; Reg 2019/947 Art. 13 — geo-awareness
   difficulty: 2
   cognitiveLevel: recall
@@ -870,14 +870,14 @@
   options:
   - id: a
     text:
-      lv: Tikai caur Remote ID — fiziski to nedrīkst uzlīmēt.
-      en: Only via Remote ID — it must not be physically affixed.
-      ru: Только через Remote ID — физически его не нужно наносить.
-  - id: b
-    text:
       lv: Ar neatņemamu uzlīmi vai gravējumu, ko var nolasīt bez speciāla aprīkojuma.
       en: By a non-removable label or engraving, readable without special equipment.
       ru: С помощью несъёмной наклейки или гравировки, читаемой без специального оборудования.
+  - id: b
+    text:
+      lv: Tikai caur Remote ID — fiziski to nedrīkst uzlīmēt.
+      en: Only via Remote ID — it must not be physically affixed.
+      ru: Только через Remote ID — физически его не нужно наносить.
   - id: c
     text:
       lv: Ciparu pildspalvu uz baterijas.
@@ -888,7 +888,7 @@
       lv: Operators numurs ir jāievada tikai Remote ID sistēmā — fiziskas marķēšanas nav.
       en: The operator number must only be entered in the Remote ID system — no physical marking needed.
       ru: Номер оператора должен быть введён только в системе Remote ID — физическая маркировка не нужна.
-  correctOptionId: b
+  correctOptionId: a
   explanation:
     lv: 'Reg 2019/947 Art. 14(6) prasa, lai operators reģistrācijas numurs būtu norādīts uz UAS ar neatņemamu uzlīmi vai gravējumu, kas lasāms bez speciāla aprīkojuma. Tas papildina Remote ID pārraidi — abi ir obligāti. Uzlīmei jābūt skaidri salasāmai, izturīgai un neatdalāmai.
 
@@ -900,7 +900,7 @@
 
       '
   distractorRationales:
-    a:
+    b:
       lv: Remote ID un fiziskā marķēšana ir abi obligāti, nevis savstarpēji aizstājami. Fiziskā uzlīme ir prasīta papildinājumā Remote ID.
       en: Remote ID and physical marking are both required, not mutually exclusive. The physical label is required in addition to Remote ID.
       ru: Remote ID и физическая маркировка — оба обязательны, а не взаимозаменяемы. Физическая наклейка требуется в дополнение к Remote ID.
@@ -929,20 +929,20 @@
       ru: 100 % — держать готовой к следующей работе.
   - id: b
     text:
-      lv: 0 % — pilnībā izlādē pirms uzglabāšanas.
-      en: 0 % — fully discharge before storage.
-      ru: 0 % — полностью разрядить перед хранением.
-  - id: c
-    text:
       lv: 50–60 % — ieteiktais uzglabāšanas līmenis periodiem virs 2 nedēļām.
       en: 50–60 % — the recommended storage charge for periods over 2 weeks.
       ru: 50–60 % — рекомендуемый заряд для хранения более 2 недель.
+  - id: c
+    text:
+      lv: 0 % — pilnībā izlādē pirms uzglabāšanas.
+      en: 0 % — fully discharge before storage.
+      ru: 0 % — полностью разрядить перед хранением.
   - id: d
     text:
       lv: 80–90 % — drošs kompromiss starp pilnu un uzglabāšanas uzlādi.
       en: 80–90 % — a safe compromise between full and storage charge.
       ru: 80–90 % — компромисс между полным и хранимым зарядом.
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: Baterijas, ko uzglabā virs 2 nedēļām, jātur pie 50–60 % (uzglabāšanas uzlādes). Pilna uzlāde paātrina šūnu degradāciju un palielina ugunsgrēka risku. Pilnīga izlāde bojā šūnas — uzglabāšanas laikā tās nedrīkst nokrist zem 3,0 V uz šūnu.
     en: Batteries stored over 2 weeks should be at 50–60 % (storage charge). Full charge accelerates cell degradation and raises fire risk. Complete discharge damages the cells — cells should not go below 3.0 V per cell during storage.
@@ -952,7 +952,7 @@
       lv: Pilna uzlāde ilgstošā uzglabāšanā rada iekšēju siltumu un degradē šūnu ķīmiju, saīsinot baterijas mūžu.
       en: Full charge during long storage generates internal heat and degrades the cell chemistry, reducing battery lifespan.
       ru: Длительное хранение с полным зарядом создаёт внутренний нагрев и деградирует химию, сокращая ресурс батареи.
-    b:
+    c:
       lv: Pilnībā izlādēta LiPo uzglabāšanā nokritīs zem minimālā šūnas sprieguma un kļūs neatgriezeniski bojāta.
       en: A fully discharged LiPo will drop below the minimum cell voltage during storage and become permanently damaged.
       ru: Полностью разряженный LiPo при хранении опустится ниже минимального напряжения и получит необратимые повреждения.
@@ -972,9 +972,9 @@
   options:
   - id: a
     text:
-      lv: Aptuveni 77 Wh — rokas bagāža bez atļaujas.
-      en: Approximately 77 Wh — carry-on without approval.
-      ru: ≈ 77 Вт·ч — ручная кладь без одобрения.
+      lv: Aptuveni 100 Wh — vajadzīga aviokompānijas atļauja.
+      en: Approximately 100 Wh — airline approval required.
+      ru: ≈ 100 Вт·ч — требуется одобрение авиакомпании.
   - id: b
     text:
       lv: Aptuveni 77 Wh — rokas bagāža ar aviokompānijas atļauju.
@@ -982,28 +982,28 @@
       ru: ≈ 77 Вт·ч — ручная кладь с одобрением авиакомпании.
   - id: c
     text:
-      lv: Aptuveni 100 Wh — vajadzīga aviokompānijas atļauja.
-      en: Approximately 100 Wh — airline approval required.
-      ru: ≈ 100 Вт·ч — требуется одобрение авиакомпании.
+      lv: Aptuveni 77 Wh — rokas bagāža bez atļaujas.
+      en: Approximately 77 Wh — carry-on without approval.
+      ru: ≈ 77 Вт·ч — ручная кладь без одобрения.
   - id: d
     text:
       lv: Virs 160 Wh — aizliegts pasažieru gaisa kuģī.
       en: Over 160 Wh — forbidden on passenger aircraft.
       ru: Свыше 160 Вт·ч — запрещена в самолёте.
-  correctOptionId: a
+  correctOptionId: c
   explanation:
     lv: 4S nominālais spriegums = 14,8 V. Wh = 5,2 Ah × 14,8 V ≈ 77 Wh. Zem 100 Wh nozīmē rokas vai reģistrēto bagāžu bez īpašas aviokompānijas atļaujas.
     en: 4S nominal voltage = 14.8 V. Wh = 5.2 Ah × 14.8 V ≈ 77 Wh. Below 100 Wh means carry-on or checked baggage without special airline approval.
     ru: 4S номинальное напряжение = 14,8 В. Вт·ч = 5,2 А·ч × 14,8 В ≈ 77 Вт·ч. Ниже 100 Вт·ч — ручная кладь или багаж без специального одобрения.
   distractorRationales:
+    a:
+      lv: 'Aprēķins: 5,2 × 14,8 ≈ 77 Wh, ne 100. Pārbaudi šūnu skaitu S klasē.'
+      en: 'The Wh calculation: 5.2 × 14.8 ≈ 77 Wh, not 100 Wh. Check the cell count in the S rating.'
+      ru: 'Расчёт Вт·ч: 5,2 × 14,8 ≈ 77 Вт·ч, а не 100. Не забудь про S-рейтинг (количество ячеек).'
     b:
       lv: Aviokompānijas atļauja nepieciešama tikai baterijām starp 100 Wh un 160 Wh. Pie ~77 Wh šī baterija ir zem atļaujas sliekšņa.
       en: Airline approval is only required for batteries between 100 Wh and 160 Wh. At ~77 Wh, this battery is below the approval threshold.
       ru: Одобрение авиакомпании требуется для 100–160 Вт·ч. При ≈ 77 Вт·ч этот порог не достигнут.
-    c:
-      lv: 'Aprēķins: 5,2 × 14,8 ≈ 77 Wh, ne 100. Pārbaudi šūnu skaitu S klasē.'
-      en: 'The Wh calculation: 5.2 × 14.8 ≈ 77 Wh, not 100 Wh. Check the cell count in the S rating.'
-      ru: 'Расчёт Вт·ч: 5,2 × 14,8 ≈ 77 Вт·ч, а не 100. Не забудь про S-рейтинг (количество ячеек).'
     d:
       lv: 160 Wh limits attiecas uz daudz lielākiem komplektiem — parasti 6S vai vairāk ar augstu mAh. 4S 5200 mAh ir krietni zem šī.
       en: 160 Wh limit applies to much larger packs — typically 6S or higher with high mAh ratings. A 4S 5200 mAh is well below this.
@@ -1025,9 +1025,9 @@
       ru: Компас.
   - id: b
     text:
-      lv: Home point.
-      en: The home point.
-      ru: Home point.
+      lv: Propelleru ātruma vadība.
+      en: The propeller speed controller.
+      ru: Контроллер скорости пропеллеров.
   - id: c
     text:
       lv: Baterijas vadības sistēma.
@@ -1035,10 +1035,10 @@
       ru: Система управления батареей.
   - id: d
     text:
-      lv: Propelleru ātruma vadība.
-      en: The propeller speed controller.
-      ru: Контроллер скорости пропеллеров.
-  correctOptionId: b
+      lv: Home point.
+      en: The home point.
+      ru: Home point.
+  correctOptionId: d
   explanation:
     lv: Home point ir saglabātā atgriešanās atsauce, ko izmanto return-to-home loģika. Tā ir atsevišķa no GNSS pozīcijas un kompasa virziena.
     en: The home point is the stored recovery reference used by return-to-home logic. It is separate from GNSS position and compass heading.
@@ -1048,14 +1048,14 @@
       lv: Kompass dod virzienu, nevis atgriešanās galamērķi.
       en: The compass gives heading, not return destination.
       ru: Компас даёт курс, а не точку возврата.
+    b:
+      lv: Propelleru ātruma vadība ietekmē vilci, nevis navigācijas atsauci.
+      en: Propeller speed control affects thrust, not navigation reference.
+      ru: Контроллер тяги не создаёт навигационную reference-точку.
     c:
       lv: Baterijas vadība ietekmē izturību, nevis atgriešanās atsauces vietu.
       en: Battery management affects endurance, not return reference location.
       ru: Управление батареей влияет на endurance, а не на точку возврата.
-    d:
-      lv: Propelleru ātruma vadība ietekmē vilci, nevis navigācijas atsauci.
-      en: Propeller speed control affects thrust, not navigation reference.
-      ru: Контроллер тяги не создаёт навигационную reference-точку.
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — UAS general knowledge; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — safe operating responsibilities
   difficulty: 2
   cognitiveLevel: apply
@@ -1116,14 +1116,14 @@
   options:
   - id: a
     text:
-      lv: Pārraidīt identifikācijas un pozīcijas datus par UAS operāciju.
-      en: To broadcast identifying and positional data about the UAS operation.
-      ru: Передавать идентификационные и позиционные данные об операции UAS.
-  - id: b
-    text:
       lv: Automātiski pieprasīt BGKIS apstiprinājumu Latvijā.
       en: To automatically request BGKIS approval in Latvia.
       ru: Автоматически подавать BGKIS в Латвии.
+  - id: b
+    text:
+      lv: Pārraidīt identifikācijas un pozīcijas datus par UAS operāciju.
+      en: To broadcast identifying and positional data about the UAS operation.
+      ru: Передавать идентификационные и позиционные данные об операции UAS.
   - id: c
     text:
       lv: Atcelt operatora reģistrācijas pienākumu.
@@ -1134,13 +1134,13 @@
       lv: Aizvietot VLOS ar digitālo sekošanu.
       en: To replace VLOS with digital tracking.
       ru: Заменять VLOS цифровым отслеживанием.
-  correctOptionId: a
+  correctOptionId: b
   explanation:
     lv: 'Direct Remote ID mērķis ir identifikācija un izsekojamība: kas lido, kur atrodas UAS un ar kādiem saistītiem datiem tas tiek pārraidīts.'
     en: 'Direct Remote ID is about identification and traceability: who is operating, where the aircraft is, and related broadcast data.'
     ru: 'Direct Remote ID нужен для идентификации и прослеживаемости: кто летит, где находится аппарат и какие базовые операционные данные он транслирует.'
   distractorRationales:
-    b:
+    a:
       lv: BGKIS ir administratīvs process, nevis Remote ID funkcija.
       en: BGKIS approval is an administrative process, not a Remote ID function.
       ru: BGKIS — это административная процедура, а не функция Remote ID.
@@ -1169,20 +1169,20 @@
       ru: Geo-awareness заменяет официальную проверку зон, если приложение обновлено.
   - id: b
     text:
-      lv: Geo-awareness ir atbalsta rīks; juridiski saistošais lēmums joprojām balstās uz oficiālo zonas avotu.
-      en: Geo-awareness is a supporting aid; official zone sources still govern legality.
-      ru: Geo-awareness — вспомогательный инструмент; юридическое решение всё равно основано на официальном источнике по зонам.
-  - id: c
-    text:
       lv: Geo-awareness ir svarīgs tikai UAS virs 25 kg.
       en: Geo-awareness matters only for drones above 25 kg.
       ru: Geo-awareness важен только для дронов тяжелее 25 кг.
+  - id: c
+    text:
+      lv: Geo-awareness ir atbalsta rīks; juridiski saistošais lēmums joprojām balstās uz oficiālo zonas avotu.
+      en: Geo-awareness is a supporting aid; official zone sources still govern legality.
+      ru: Geo-awareness — вспомогательный инструмент; юридическое решение всё равно основано на официальном источнике по зонам.
   - id: d
     text:
       lv: Geo-awareness ir būtisks tikai Specifiskajā kategorijā.
       en: Geo-awareness is relevant only in Specific category.
       ru: Geo-awareness нужен только в Специальной категории.
-  correctOptionId: b
+  correctOptionId: c
   explanation:
     lv: Geo-awareness palīdz pilotam, bet neaizvieto oficiālo gaisa telpas vai UAS ģeogrāfisko zonu pārbaudi. Atbilstības lēmumu joprojām nosaka oficiālais avots.
     en: Geo-awareness helps the pilot but does not replace legal/official airspace or UAS geographical-zone checks. The official source still controls the compliance decision.
@@ -1192,7 +1192,7 @@
       lv: Pat aktuāli UAS dati nav tas pats, kas juridiski saistošais zonas statuss.
       en: Even updated aircraft data is not the same thing as the official legal source of zone status.
       ru: Даже актуальные данные в аппарате не равны официальному правовому статусу зоны.
-    c:
+    b:
       lv: Šī funkcija ir svarīga arī Atvērtās kategorijas praksē, īpaši ap C1/C2/C3 operācijām.
       en: The concept matters in the Open ecosystem, especially around C1/C2/C3 operations.
       ru: Эта функция важна и в экосистеме Открытой категории, особенно рядом с C1/C2/C3.
@@ -1222,15 +1222,15 @@
       ru: A2 — 30 м от посторонних при обычной скорости.
   - id: c
     text:
-      lv: A3 — ≥ 30 m no nepiederošām personām un ≥ 150 m no apdzīvotām zonām.
-      en: A3 — ≥ 30 m from uninvolved persons and ≥ 150 m from inhabited areas.
-      ru: A3 — ≥ 30 м от посторонних, ≥ 150 м от жилых зон.
-  - id: d
-    text:
       lv: Lidot nedrīkst — C3 prasa A2 sertifikātu.
       en: No flight permitted — C3 drones require an A2 certificate.
       ru: Полёт запрещён — C3 требует сертификат A2.
-  correctOptionId: c
+  - id: d
+    text:
+      lv: A3 — ≥ 30 m no nepiederošām personām un ≥ 150 m no apdzīvotām zonām.
+      en: A3 — ≥ 30 m from uninvolved persons and ≥ 150 m from inhabited areas.
+      ru: A3 — ≥ 30 м от посторонних, ≥ 150 м от жилых зон.
+  correctOptionId: d
   explanation:
     lv: C3 UAS strādā tikai A3. A1/A3 sertifikāts A3 ir pietiekams. A3 noteikumi prasa ≥ 30 m no nepiederošām personām (vai 1:1 augstuma noteikumu, atkarībā no tā, kurš ir lielāks) un ≥ 150 m no dzīvojamām, komerciālām, industriālām vai atpūtas zonām.
     en: C3 drones operate exclusively in A3. The A1/A3 certificate is sufficient for A3. A3 rules require ≥ 30 m from uninvolved persons (or 1:1 altitude rule, whichever is greater) and ≥ 150 m from residential, commercial, industrial, or recreational areas.
@@ -1244,7 +1244,7 @@
       lv: A2 noteikumi prasa C2 UAS un A2 kompetences sertifikātu — neviens no tiem šeit neattiecas.
       en: A2 rules require a C2 drone plus the A2 competence certificate — neither applies here.
       ru: Правила A2 требуют C2-дрон и сертификат A2. Ни то, ни другое здесь не применимо.
-    d:
+    c:
       lv: C3 UAS A3 prasa tikai A1/A3 sertifikātu. A2 sertifikāts A3 nav vajadzīgs.
       en: C3 drones in A3 require only the A1/A3 certificate. No A2 certificate is needed for A3.
       ru: C3 в A3 с A1/A3 разрешено. Сертификат A2 не нужен для A3.
@@ -1260,14 +1260,14 @@
   options:
   - id: a
     text:
-      lv: A1, kā C1 — masa zem 900 g.
-      en: A1, like a C1 drone — the mass is under 900 g.
-      ru: A1, как C1 — масса до 900 г.
-  - id: b
-    text:
       lv: A3, kā C3 — tas ir mantots UAS virs 250 g.
       en: A3, like a C3 drone — it is a legacy drone over 250 g.
       ru: A3, как C3 — legacy-дрон свыше 250 г.
+  - id: b
+    text:
+      lv: A1, kā C1 — masa zem 900 g.
+      en: A1, like a C1 drone — the mass is under 900 g.
+      ru: A1, как C1 — масса до 900 г.
   - id: c
     text:
       lv: A2, jo svars ir starp 250 g un 4 kg.
@@ -1278,13 +1278,13 @@
       lv: Pilots pats izvēlas apakškategoriju, jo marķējuma nav.
       en: The pilot chooses the sub-category since there is no marking.
       ru: Пилот выбирает подкатегорию самостоятельно, если маркировки нет.
-  correctOptionId: b
+  correctOptionId: a
   explanation:
     lv: Mantoti UAS (bez klases marķējuma) starp 250 g un 25 kg pielīdzināmi C3 un strādā A3. Masas salīdzinājums ar C1 šeit nestrādā — klases marķējumu, ne tikai masu, izšķir jauniem UAS. Mantoti UAS seko masas balstītam izvietojuma noteikumam.
     en: Legacy drones (no class marking) between 250 g and 25 kg are treated as C3 and must operate in A3. The mass comparison to C1 does not apply — class marking, not mass alone, determines the sub-category for new drones. Legacy drones follow the mass-based placement rule.
     ru: Legacy-дроны без маркировки от 250 г до 25 кг приравниваются к C3 и должны работать в A3. Сравнение с C1 по массе неприменимо — классовая маркировка, а не только масса, определяет подкатегорию для современных дронов.
   distractorRationales:
-    a:
+    b:
       lv: C1/A1 izvietojums attiecas uz UAS ar reālu C1 marķējumu. Mantots 450 g UAS nav C1.
       en: The C1/A1 placement applies to drones with an actual C1 marking. A legacy drone at 450 g is not C1.
       ru: Размещение по C1/A1 применяется к дронам с реальной маркировкой C1. Legacy-дрон 450 г — не C1.
@@ -1302,9 +1302,9 @@
   scenarioType: decision
 - id: ug-026
   stem:
-    lv: Pilots sasaista lidaparāta tehnisko klasi ar plānoto operāciju. Kāda ir maksimālā C0 klases UAS masa?
-    en: A pilot is matching the aircraft’s technical class to the operation being planned. What is the maximum mass of a C0 class UAS?
-    ru: Пилот сопоставляет технический класс аппарата с запланированной операцией. Какова максимальная масса UAS класса C0?
+    en: A pilot buys a very small class-marked drone for A1 practice flights. What maximum mass defines the C0 class?
+    lv: Pilots A1 treniņlidojumiem iegādājas ļoti mazu klases marķētu dronu. Kāda maksimālā masa nosaka C0 klasi?
+    ru: Пилот покупает очень маленький дрон с классом для тренировок A1. Какая максимальная масса определяет класс C0?
   options:
   - id: a
     text:
@@ -1313,9 +1313,9 @@
       ru: Менее 900 г.
   - id: b
     text:
-      lv: Mazāk par 4 kg.
-      en: Less than 4 kg.
-      ru: Менее 4 кг.
+      lv: Mazāk par 250 g.
+      en: Less than 250 g.
+      ru: Менее 250 г.
   - id: c
     text:
       lv: Mazāk par 25 kg.
@@ -1323,10 +1323,10 @@
       ru: Менее 25 кг.
   - id: d
     text:
-      lv: Mazāk par 250 g.
-      en: Less than 250 g.
-      ru: Менее 250 г.
-  correctOptionId: d
+      lv: Mazāk par 4 kg.
+      en: Less than 4 kg.
+      ru: Менее 4 кг.
+  correctOptionId: b
   explanation:
     lv: 'C0 klase ir UAS masā < 250 g (un maks. ātrums 19 m/s). Tas atbilst A1 apakškategorijai un ir vienīgais, ko atļauts izmantot virs atsevišķām nepiederošām personām.
 
@@ -1342,23 +1342,23 @@
       lv: 900 g ir C1 klases masas limits, ne C0. C1 atbilst A1 apakškategorijai, bet ar stingrākiem ierobežojumiem.
       en: 900 g is the C1 class mass limit, not C0. C1 maps to A1 but with stricter limits.
       ru: 900 г — предел массы C1, а не C0. C1 относится к A1, но с более строгими ограничениями.
-    b:
-      lv: 4 kg ir C2 klases limits. C2 atbilst A2 vai A3, ne A1 ar pārlidojuma privilēģijām.
-      en: 4 kg is the C2 class limit. C2 maps to A2 or A3, not A1 with overflight privilege.
-      ru: 4 кг — предел C2. C2 относится к A2 или A3, не к A1 с правом пролёта.
     c:
       lv: 25 kg ir augšējais Atvērtās kategorijas limits (C3/C4). C0 ir uz citas masas spektra ekstrēma — < 250 g.
       en: 25 kg is the upper Open-category limit (C3/C4). C0 sits at the opposite end of the mass spectrum — < 250 g.
       ru: 25 кг — верхний предел Открытой категории (C3/C4). C0 — на противоположном конце шкалы массы (< 250 г).
+    d:
+      lv: 4 kg ir C2 klases limits. C2 atbilst A2 vai A3, ne A1 ar pārlidojuma privilēģijām.
+      en: 4 kg is the C2 class limit. C2 maps to A2 or A3, not A1 with overflight privilege.
+      ru: 4 кг — предел C2. C2 относится к A2 или A3, не к A1 с правом пролёта.
   sourceRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg (EU) 2019/945 Annex Part 1 — C0 requirements
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
 - id: ug-027
   stem:
-    lv: Lidaparāta sagatavošanas laikā pilots pārbauda, kuras iebūvētās drošības funkcijas šim lidojumam ir svarīgas. Kura UAS klase NAV jāaprīko ar Direct Remote ID?
-    en: During aircraft setup, the pilot checks which built-in safety features matter for this flight. Which UAS class is NOT required to have Direct Remote ID?
-    ru: Во время подготовки аппарата пилот проверяет, какие встроенные функции безопасности важны для этого полёта. Какой класс UAS НЕ обязан иметь Direct Remote ID?
+    en: During setup, the pilot checks whether the aircraft must broadcast Direct Remote ID. Which UAS class is exempt from that requirement?
+    lv: Sagatavošanas laikā pilots pārbauda, vai lidaparātam jāraida Direct Remote ID. Kura UAS klase ir atbrīvota no šīs prasības?
+    ru: Во время подготовки пилот проверяет, должен ли аппарат передавать Direct Remote ID. Какой класс UAS освобождён от этого требования?
   options:
   - id: a
     text:
@@ -1410,9 +1410,9 @@
   scenarioType: decision
 - id: ug-028
   stem:
-    lv: UAS tehnisks ierobežojums maina to, ko pilots drīkst darīt Atvērtajā kategorijā. Kāds enerģijas daudzums (Wh) ir Li-Po baterijai 4S 5000 mAh (≈ 14,8 V)?
-    en: A technical limitation of the UAS changes what the pilot may do in the Open category. How much energy (Wh) does a 4S 5000 mAh (≈ 14.8 V) Li-Po battery hold?
-    ru: Техническое ограничение UAS меняет то, что пилот может делать в Open category. Сколько энергии (Wh) содержит Li-Po аккумулятор 4S 5000 mAh (≈ 14,8 V)?
+    en: Before travelling, the pilot must calculate the energy of a 4S 5000 mAh battery, approximately 14.8 V nominal. What is the battery energy?
+    lv: Pirms ceļošanas pilotam jāaprēķina 4S 5000 mAh baterijas enerģija ar aptuveni 14,8 V nominālo spriegumu. Kāda ir baterijas enerģija?
+    ru: Перед поездкой пилот должен рассчитать энергию батареи 4S 5000 mAh с номиналом около 14,8 В. Какова энергия батареи?
   options:
   - id: a
     text:
@@ -1421,9 +1421,9 @@
       ru: ≈ 20 Wh.
   - id: b
     text:
-      lv: ≈ 74 Wh.
-      en: ≈ 74 Wh.
-      ru: ≈ 74 Wh.
+      lv: ≈ 740 Wh.
+      en: ≈ 740 Wh.
+      ru: ≈ 740 Wh.
   - id: c
     text:
       lv: ≈ 5 Wh.
@@ -1431,10 +1431,10 @@
       ru: ≈ 5 Wh.
   - id: d
     text:
-      lv: ≈ 740 Wh.
-      en: ≈ 740 Wh.
-      ru: ≈ 740 Wh.
-  correctOptionId: b
+      lv: ≈ 74 Wh.
+      en: ≈ 74 Wh.
+      ru: ≈ 74 Wh.
+  correctOptionId: d
   explanation:
     lv: 'Wh = Ah × V = 5,0 × 14,8 ≈ 74 Wh. Tas ir svarīgi aviopārvadājumiem: lielākā daļa avioliniju neatļauj pārvadāt baterijas virs 100 Wh bagāžā vai virs 160 Wh nemaz.
 
@@ -1450,29 +1450,29 @@
       lv: 20 Wh ir mazāk nekā vienas šūnas (~18 Wh) komplekts — 4S sistēmā tas ir krietni par maz.
       en: 20 Wh is less than a single-cell (~18 Wh) pack — far too low for a 4S configuration.
       ru: 20 Wh — это меньше, чем у одной ячейки (~18 Wh). Для конфигурации 4S — слишком мало.
+    b:
+      lv: 740 Wh ir tieši x10 — iespējams, pilots aizmirsis dalīt mAh ar 1000 vai jaucis spriegumu. Pareizs aprēķins dod 74 Wh.
+      en: 740 Wh is exactly 10× — likely the pilot forgot to divide mAh by 1000 or confused voltages. Correct math yields 74 Wh.
+      ru: 740 Wh — это ровно в 10 раз больше. Скорее всего, не разделили mAh на 1000 или ошиблись с напряжением. Правильный ответ — 74 Wh.
     c:
       lv: '5 Wh ir krietni par maz — tā būtu mAh, ne Ah. Atceries: dalīt mAh ar 1000, lai iegūtu Ah.'
       en: '5 Wh is far too low — that would treat mAh as Ah. Remember: divide mAh by 1000 to get Ah.'
       ru: '5 Wh — слишком мало. Это бы значило mAh вместо Ah. Запомни: делишь mAh на 1000.'
-    d:
-      lv: 740 Wh ir tieši x10 — iespējams, pilots aizmirsis dalīt mAh ar 1000 vai jaucis spriegumu. Pareizs aprēķins dod 74 Wh.
-      en: 740 Wh is exactly 10× — likely the pilot forgot to divide mAh by 1000 or confused voltages. Correct math yields 74 Wh.
-      ru: 740 Wh — это ровно в 10 раз больше. Скорее всего, не разделили mAh на 1000 или ошиблись с напряжением. Правильный ответ — 74 Wh.
   sourceRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — IATA Lithium Battery Guidance; Reg (EU) 2019/945 — battery safety
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
 - id: ug-029
   stem:
-    lv: Pilots sasaista lidaparāta tehnisko klasi ar plānoto operāciju. Kāds ir maksimālais ātrums C0 klases UAS?
-    en: A pilot is matching the aircraft’s technical class to the operation being planned. What is the maximum speed of a C0 class UAS?
-    ru: Пилот сопоставляет технический класс аппарата с запланированной операцией. Какова максимальная скорость UAS класса C0?
+    en: A C0 drone is selected for beginner training near people in A1. What maximum design speed applies to the C0 class?
+    lv: Iesācēju treniņiem A1 tuvumā cilvēkiem izvēlēts C0 drons. Kāds maksimālais konstrukcijas ātrums attiecas uz C0 klasi?
+    ru: Для начальных тренировок A1 рядом с людьми выбран дрон C0. Какая максимальная конструктивная скорость относится к классу C0?
   options:
   - id: a
     text:
-      lv: 30 m/s.
-      en: 30 m/s.
-      ru: 30 м/с.
+      lv: 19 m/s.
+      en: 19 m/s.
+      ru: 19 м/с.
   - id: b
     text:
       lv: 50 m/s.
@@ -1485,10 +1485,10 @@
       ru: 10 м/с.
   - id: d
     text:
-      lv: 19 m/s.
-      en: 19 m/s.
-      ru: 19 м/с.
-  correctOptionId: d
+      lv: 30 m/s.
+      en: 30 m/s.
+      ru: 30 м/с.
+  correctOptionId: a
   explanation:
     lv: 'C0 klases drošības prasības ietver maksimālo ātrumu 19 m/s (≈68 km/h), lai mazinātu trieciena enerģiju, ja drons nokļūst saskarē ar cilvēku.
 
@@ -1500,10 +1500,6 @@
 
       '
   distractorRationales:
-    a:
-      lv: 30 m/s ir lielāks par C0 limitu. Pie šādas trieciena enerģijas C0 vairs nebūtu zemākā riska klase.
-      en: 30 m/s exceeds the C0 limit. At that impact energy C0 would no longer be the lowest-risk class.
-      ru: 30 м/с превышают предел C0. С такой энергией удара C0 перестал бы быть низкорисковым классом.
     b:
       lv: 50 m/s ir tipiskāka liela komerciālā drona vērtība, ne C0 zemākā riska kategorija.
       en: 50 m/s is more typical for larger commercial drones, not the C0 low-risk class.
@@ -1512,15 +1508,19 @@
       lv: 10 m/s ir krietni zem regulā noteiktās robežas. C0 var lidot līdz 19 m/s.
       en: 10 m/s is well below the regulatory cap. C0 is permitted up to 19 m/s.
       ru: 10 м/с — значительно ниже регуляторного предела. C0 допускается до 19 м/с.
+    d:
+      lv: 30 m/s ir lielāks par C0 limitu. Pie šādas trieciena enerģijas C0 vairs nebūtu zemākā riska klase.
+      en: 30 m/s exceeds the C0 limit. At that impact energy C0 would no longer be the lowest-risk class.
+      ru: 30 м/с превышают предел C0. С такой энергией удара C0 перестал бы быть низкорисковым классом.
   sourceRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg (EU) 2019/945 Annex Part 1 — C0(2)
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
 - id: ug-030
   stem:
-    lv: Lidaparāta sagatavošanas laikā pilots pārbauda, kuras iebūvētās drošības funkcijas šim lidojumam ir svarīgas. Kāda klase atbilst legacy dronam < 250 g, kas nav marķēts?
-    en: During aircraft setup, the pilot checks which built-in safety features matter for this flight. Which class does an unmarked legacy drone < 250 g map to?
-    ru: Во время подготовки аппарата пилот проверяет, какие встроенные функции безопасности важны для этого полёта. К какому классу относится немаркированный legacy-дрон < 250 г?
+    en: The pilot owns an older unmarked drone below 250 g and wants to know which Open subcategory logic applies. How is it treated?
+    lv: Pilotam ir vecāks nemarķēts drons zem 250 g, un viņš vēlas saprast, kura Atvērtās kategorijas loģika attiecas. Kā tas tiek vērtēts?
+    ru: У пилота есть старый немаркированный дрон менее 250 г, и он хочет понять, какая логика Open category применяется. Как он рассматривается?
   options:
   - id: a
     text:
@@ -1529,20 +1529,20 @@
       ru: A3 как эквивалент C3.
   - id: b
     text:
-      lv: Drons nav atļauts vispār bez klases marķējuma.
-      en: The drone is not allowed at all without a class marking.
-      ru: Дрон без классовой маркировки не разрешён вообще.
-  - id: c
-    text:
       lv: A1 kā C0 ekvivalents.
       en: A1 as the C0 equivalent.
       ru: A1 как эквивалент C0.
+  - id: c
+    text:
+      lv: Drons nav atļauts vispār bez klases marķējuma.
+      en: The drone is not allowed at all without a class marking.
+      ru: Дрон без классовой маркировки не разрешён вообще.
   - id: d
     text:
       lv: A2 kā C2 ekvivalents.
       en: A2 as the C2 equivalent.
       ru: A2 как эквивалент C2.
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: 'Pārejas noteikumos legacy droni bez marķējuma tiek pielīdzināti pēc masas: < 250 g lido kā C0 (A1), < 25 kg — kā C3 (A3).
 
@@ -1558,7 +1558,7 @@
       lv: A3 attiecas uz legacy droniem virs 250 g, ne uz tiem zem 250 g. Pareizais izvietojums atkarīgs no masas.
       en: A3 applies to legacy drones above 250 g, not below. Correct placement depends on mass.
       ru: A3 — для legacy-дронов свыше 250 г, не меньше. Правильное размещение зависит от массы.
-    b:
+    c:
       lv: Pārejas noteikumi (Reg 2019/947 Art. 22) tieši ļauj legacy droniem turpināt lidot pēc masas — tie nav aizliegti.
       en: Transitional rules (Reg 2019/947 Art. 22) explicitly allow legacy drones to fly by mass — they are not prohibited.
       ru: Переходные правила (Регл. 2019/947 ст. 22) прямо разрешают legacy-дронам летать по массе — они не запрещены.
@@ -1572,9 +1572,9 @@
   scenarioType: decision
 - id: ug-031
   stem:
-    lv: UAS tehnisks ierobežojums maina to, ko pilots drīkst darīt Atvērtajā kategorijā. C2 klases drons darbojas A2 apakškategorijā ar aktīvu zemā ātruma režīmu (≤3 m/s). Kāda ir minimālā horizontālā distance no nepiederošām personām?
-    en: A technical limitation of the UAS changes what the pilot may do in the Open category. A C2 class drone operates in A2 with active low-speed mode (≤3 m/s). What is the minimum horizontal distance from uninvolved persons?
-    ru: Техническое ограничение UAS меняет то, что пилот может делать в Open category. Дрон класса C2 работает в A2 с активным режимом малой скорости (≤3 м/с). Какова минимальная горизонтальная дистанция от посторонних?
+    en: A C2 drone is operated in A2 close to a work area with low-speed mode active. What minimum horizontal distance from uninvolved persons applies?
+    lv: C2 drons A2 režīmā tiek ekspluatēts tuvu darba zonai ar aktivizētu zema ātruma režīmu. Kāda minimālā horizontālā distance līdz nepiederošām personām jāievēro?
+    ru: Дрон C2 используется в A2 рядом с рабочей зоной с активным low-speed mode. Какая минимальная горизонтальная дистанция до неучаствующих лиц применяется?
   options:
   - id: a
     text:
@@ -1588,15 +1588,15 @@
       ru: 30 м.
   - id: c
     text:
-      lv: 10 m.
-      en: 10 m.
-      ru: 10 м.
-  - id: d
-    text:
       lv: 5 m.
       en: 5 m.
       ru: 5 м.
-  correctOptionId: d
+  - id: d
+    text:
+      lv: 10 m.
+      en: 10 m.
+      ru: 10 м.
+  correctOptionId: c
   explanation:
     lv: 'C2 droniem A2 apakškategorijā ir divas attāluma prasības atkarībā no ātruma: normālā ātrumā — 30 m no nepiederošām personām; zemā ātruma režīmā (≤3 m/s) — 5 m no nepiederošām personām. Zemā ātruma režīms ir aparatūras sertifikācija, ne tikai ātruma ierobežojums — tas paredzēts C2 klases specifikācijā.
 
@@ -1616,7 +1616,7 @@
       lv: 30 m ir A2 distance normālā ātruma apstākļos. Ar aktīvu zemā ātruma režīmu (≤3 m/s) atļautā distance tiek samazināta līdz 5 m.
       en: 30 m is the A2 distance at normal speed. With active low-speed mode (≤3 m/s) the permitted distance reduces to 5 m.
       ru: 30 м — дистанция A2 при нормальной скорости. В активном режиме малой скорости (≤3 м/с) допустимая дистанция сокращается до 5 м.
-    c:
+    d:
       lv: 10 m nav A2 apakškategorijas distance. A2 norādītās distances ir 30 m (normāli) vai 5 m (zemā ātruma režīmā).
       en: 10 m is not an A2 sub-category distance. The A2 specified distances are 30 m (normal) or 5 m (low-speed mode).
       ru: 10 м — не дистанция подкатегории A2. Указанные дистанции A2 — 30 м (нормальная) или 5 м (режим малой скорости).
@@ -1626,15 +1626,15 @@
   scenarioType: decision
 - id: ug-032
   stem:
-    lv: Pilots sasaista lidaparāta tehnisko klasi ar plānoto operāciju. Kādus datus pārraida Direct Remote ID?
-    en: A pilot is matching the aircraft’s technical class to the operation being planned. What data does Direct Remote ID broadcast?
-    ru: Пилот сопоставляет технический класс аппарата с запланированной операцией. Какие данные передаёт Direct Remote ID?
+    en: An authorised authority receives a Direct Remote ID signal during a city flight. Which data set is normally broadcast?
+    lv: Pilnvarota iestāde pilsētas lidojuma laikā uztver Direct Remote ID signālu. Kāda datu kopa parasti tiek raidīta?
+    ru: Уполномоченный орган во время городского полёта принимает сигнал Direct Remote ID. Какой набор данных обычно передаётся?
   options:
   - id: a
     text:
-      lv: UAS ID, reāllaika pozīciju un augstumu, pacelšanās vietu, operatora pozīciju vai meklēšanas rādītāju.
-      en: UAS ID, real-time position and altitude, takeoff position, operator position or locator.
-      ru: ID UAS, текущее положение и высоту, точку взлёта, положение оператора или локатор.
+      lv: Tikai operatora reģistrācijas numuru.
+      en: Only the operator registration number.
+      ru: Только регистрационный номер оператора.
   - id: b
     text:
       lv: Pilota vārdu, uzvārdu un baterijas uzlādes līmeni.
@@ -1647,10 +1647,10 @@
       ru: Только серийный номер дрона и дату производства.
   - id: d
     text:
-      lv: Tikai operatora reģistrācijas numuru.
-      en: Only the operator registration number.
-      ru: Только регистрационный номер оператора.
-  correctOptionId: a
+      lv: UAS ID, reāllaika pozīciju un augstumu, pacelšanās vietu, operatora pozīciju vai meklēšanas rādītāju.
+      en: UAS ID, real-time position and altitude, takeoff position, operator position or locator.
+      ru: ID UAS, текущее положение и высоту, точку взлёта, положение оператора или локатор.
+  correctOptionId: d
   explanation:
     lv: 'Direct Remote ID pārraida: UAS unikālo identifikatoru (UAS ID), reāllaika atrašanās vietu un augstumu, pacelšanās vietu, operatora atrašanās vietu vai lokalizācijas rādītāju, laika zīmogu. Šie dati ļauj iestādēm identificēt un lokalizēt operatoru nekontrolētas darbības gadījumā.
 
@@ -1662,6 +1662,10 @@
 
       '
   distractorRationales:
+    a:
+      lv: Operators reģistrācijas numurs ir daļa no UAS ID, bet Remote ID pārsūta vairāk — reāllaika pozīciju, augstumu, pacelšanās vietu un operatora rādītāju.
+      en: The operator registration number is part of the UAS ID, but Remote ID transmits more — real-time position, altitude, takeoff position, and operator locator.
+      ru: 'Регистрационный номер оператора — часть UAS ID, но Remote ID передаёт больше: текущее положение, высоту, точку взлёта и локатор оператора.'
     b:
       lv: Pilota personas dati (vārds, uzvārds) nav tiešie Remote ID dati — tie ir saistīti ar operatora reģistrāciju, nevis pārsūtīti lidojuma laikā.
       en: The pilot's personal data (name, surname) are not directly broadcast by Remote ID — they are linked to the operator registration, not transmitted during flight.
@@ -1670,19 +1674,15 @@
       lv: Sērijas numurs ir daļa no UAS ID, bet Remote ID pārsūta dinamisku reāllaika informāciju, nevis tikai statiskus manufaktūras datus.
       en: The serial number is part of the UAS ID, but Remote ID broadcasts dynamic real-time data, not only static manufacturing data.
       ru: Серийный номер — часть UAS ID, но Remote ID передаёт динамические данные в реальном времени, а не только статические данные производства.
-    d:
-      lv: Operators reģistrācijas numurs ir daļa no UAS ID, bet Remote ID pārsūta vairāk — reāllaika pozīciju, augstumu, pacelšanās vietu un operatora rādītāju.
-      en: The operator registration number is part of the UAS ID, but Remote ID transmits more — real-time position, altitude, takeoff position, and operator locator.
-      ru: 'Регистрационный номер оператора — часть UAS ID, но Remote ID передаёт больше: текущее положение, высоту, точку взлёта и локатор оператора.'
   sourceRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg (EU) 2019/945 Annex Parts 2–4 — Remote ID broadcast requirements
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
 - id: ug-033
   stem:
-    lv: Lidaparāta sagatavošanas laikā pilots pārbauda, kuras iebūvētās drošības funkcijas šim lidojumam ir svarīgas. Kurām UAS klasēm ir obligāta geo-awareness (ģeogrāfiskās informētības) spēja?
-    en: During aircraft setup, the pilot checks which built-in safety features matter for this flight. Which UAS classes are required to have geo-awareness capability?
-    ru: Во время подготовки аппарата пилот проверяет, какие встроенные функции безопасности важны для этого полёта. Каким классам UAS необходима функция geo-awareness (географической осведомлённости)?
+    en: Before flying near a zone boundary, the pilot checks whether the aircraft class requires geo-awareness. Which classes must have it?
+    lv: Pirms lidojuma pie zonas robežas pilots pārbauda, vai lidaparāta klasei vajadzīga geo-awareness funkcija. Kurām klasēm tai jābūt?
+    ru: Перед полётом рядом с границей зоны пилот проверяет, требует ли класс аппарата geo-awareness. Какие классы должны иметь эту функцию?
   options:
   - id: a
     text:
@@ -1745,20 +1745,20 @@
       ru: ≈333 Wh — запрещён.
   - id: b
     text:
-      lv: ≈74 Wh — rokas bagāžā bez apstiprinājuma.
-      en: ≈74 Wh — carry-on without approval.
-      ru: ≈74 Wh — ручная кладь без одобрения.
-  - id: c
-    text:
       lv: ≈111 Wh — rokas bagāžā ar aviolīnijas rakstveida apstiprinājumu.
       en: ≈111 Wh — carry-on only with airline written approval.
       ru: ≈111 Wh — только ручная кладь с письменным одобрением авиакомпании.
+  - id: c
+    text:
+      lv: ≈74 Wh — rokas bagāžā bez apstiprinājuma.
+      en: ≈74 Wh — carry-on without approval.
+      ru: ≈74 Wh — ручная кладь без одобрения.
   - id: d
     text:
       lv: ≈111 Wh — aizliegts pasažieru gaisa kuģos.
       en: ≈111 Wh — forbidden on passenger aircraft.
       ru: ≈111 Wh — запрещён на пассажирских воздушных судах.
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: '6S nominālais spriegums = 22,2 V. Wh = 5,0 Ah × 22,2 V ≈ 111 Wh. Tas ietilpst 100–160 Wh kategorijā — rokas bagāžā ar aviolīnijas rakstveida apstiprinājumu. Virs 160 Wh — aizliegts pasažieru gaisa kuģos.
 
@@ -1774,7 +1774,7 @@
       lv: 333 Wh ir nepareizs aprēķins. 5 Ah × 22,2 V = 111 Wh. 333 Wh rastos, ja mAh tiktu kļūdaini izmantots kā Ah bez pārveidojuma.
       en: 333 Wh is an incorrect calculation. 5 Ah × 22.2 V = 111 Wh. 333 Wh would result from mistakenly using mAh as Ah without conversion.
       ru: 333 Wh — неверный расчёт. 5 Ач × 22,2 В = 111 Wh. 333 Wh получится при ошибочном использовании mAh как Ач без перевода.
-    b:
+    c:
       lv: 74 Wh ir aprēķins 4S baterijai (14,8 V × 5 Ah). Šī baterija ir 6S (22,2 V), kas dod ≈111 Wh — cita kategorija ar citiem noteikumiem.
       en: 74 Wh is the calculation for a 4S battery (14.8 V × 5 Ah). This battery is 6S (22.2 V), yielding ≈111 Wh — a different category with different rules.
       ru: 74 Wh — расчёт для 4S аккумулятора (14,8 В × 5 Ач). Данный аккумулятор 6S (22,2 В) даёт ≈111 Wh — другая категория с другими правилами.
@@ -1799,20 +1799,20 @@
       ru: C4 может летать только в городах.
   - id: b
     text:
-      lv: C4 ir atļauts tikai manuāla vadība — nav autonomo vai daļēji autonomo lidojuma režīmu.
-      en: C4 is limited to manual control only — no autonomous or semi-autonomous flight modes.
-      ru: C4 допускает только ручное управление — без автономных или полуавтономных режимов полёта.
-  - id: c
-    text:
       lv: C4 nav jāreģistrē operators.
       en: C4 does not require operator registration.
       ru: C4 не требует регистрации оператора.
+  - id: c
+    text:
+      lv: C4 ir atļauts tikai manuāla vadība — nav autonomo vai daļēji autonomo lidojuma režīmu.
+      en: C4 is limited to manual control only — no autonomous or semi-autonomous flight modes.
+      ru: C4 допускает только ручное управление — без автономных или полуавтономных режимов полёта.
   - id: d
     text:
       lv: C4 ir zemāka maksimālā masa par C3.
       en: C4 has a lower maximum mass than C3.
       ru: C4 имеет меньшую максимальную массу, чем C3.
-  correctOptionId: b
+  correctOptionId: c
   explanation:
     lv: 'C4 klase ir definēta kā manuālās vadības aviomodeļa operators — nav GPS autopilota, nav maršruta sekošanas, nav pozīcijas uzturēšanas režīmu. Gan C3, gan C4 ir < 25 kg un darbojas A3, bet C3 var izmantot autonomas sistēmas, C4 nedrīkst.
 
@@ -1828,7 +1828,7 @@
       lv: C4 darbojas A3 — kas prasa ≥150 m no apdzīvotajām zonām. C4 nav pilsētu klase; tas ir vismazāk piemērots pilsētai.
       en: C4 operates in A3 — which requires ≥150 m from inhabited areas. C4 is not an urban class; it is least suitable for cities.
       ru: C4 работает в A3, что требует ≥150 м от населённых пунктов. C4 — не городской класс; он наименее подходит для городов.
-    c:
+    b:
       lv: Operatora reģistrācija ir atkarīga no masas un ekrāna, nevis UAS klases. C4 operators ir jāreģistrē, ja drona masa prasa to (≥250 g vai aprīkots ar kameru).
       en: Operator registration depends on mass and payload, not UAS class. C4 operators must register if the drone mass requires it (≥250 g or equipped with a camera).
       ru: Регистрация оператора зависит от массы и нагрузки, а не от класса UAS. Операторы C4 должны регистрироваться, если масса дрона требует этого (≥250 г или оснащён камерой).
@@ -1848,9 +1848,9 @@
   options:
   - id: a
     text:
-      lv: < 4 kg.
-      en: < 4 kg.
-      ru: < 4 кг.
+      lv: < 2 kg.
+      en: < 2 kg.
+      ru: < 2 кг.
   - id: b
     text:
       lv: < 10 kg.
@@ -1863,10 +1863,10 @@
       ru: < 900 г.
   - id: d
     text:
-      lv: < 2 kg.
-      en: < 2 kg.
-      ru: < 2 кг.
-  correctOptionId: a
+      lv: < 4 kg.
+      en: < 4 kg.
+      ru: < 4 кг.
+  correctOptionId: d
   explanation:
     lv: 'Regula 2019/945 Part 4 definē C2 klasi: UAS ar MTOM < 4 kg. C2 darbojas A2 apakškategorijā un prasa A2 kompetences sertifikātu papildus A1/A3. Salīdzinājumam: C0 < 250 g, C1 < 900 g, C3 < 25 kg.
 
@@ -1878,6 +1878,10 @@
 
       '
   distractorRationales:
+    a:
+      lv: '2 kg nav nevienas C klases robeža. Robežvērtības: C0 < 250 g, C1 < 900 g, C2 < 4 kg, C3 < 25 kg.'
+      en: '2 kg is not a boundary for any C class. Boundaries: C0 < 250 g, C1 < 900 g, C2 < 4 kg, C3 < 25 kg.'
+      ru: '2 кг не является границей ни одного класса C. Границы: C0 < 250 г, C1 < 900 г, C2 < 4 кг, C3 < 25 кг.'
     b:
       lv: 10 kg nav nevienas C klases robeža. C2 robeža ir 4 kg.
       en: 10 kg is not a boundary for any C class. The C2 boundary is 4 kg.
@@ -1886,10 +1890,6 @@
       lv: 900 g ir C1 klases robeža, nevis C2. C2 ir smagāka, specializēta klase A2 apakškategorijai.
       en: 900 g is the C1 class boundary, not C2. C2 is a heavier, specialised class for the A2 sub-category.
       ru: 900 г — граница класса C1, а не C2. C2 — более тяжёлый специализированный класс для подкатегории A2.
-    d:
-      lv: '2 kg nav nevienas C klases robeža. Robežvērtības: C0 < 250 g, C1 < 900 g, C2 < 4 kg, C3 < 25 kg.'
-      en: '2 kg is not a boundary for any C class. Boundaries: C0 < 250 g, C1 < 900 g, C2 < 4 kg, C3 < 25 kg.'
-      ru: '2 кг не является границей ни одного класса C. Границы: C0 < 250 г, C1 < 900 г, C2 < 4 кг, C3 < 25 кг.'
   sourceRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg 2019/945 Part 4 — C2 class definition
   difficulty: 2
   cognitiveLevel: apply
@@ -1902,9 +1902,9 @@
   options:
   - id: a
     text:
-      lv: Zema ātruma režīms un 5 m attāluma sensors.
-      en: Low-speed mode and 5 m proximity sensor.
-      ru: Режим малой скорости и датчик близости 5 м.
+      lv: Direct Remote ID, geo-awareness, fail-safe (RTH vai nosēšanās), maksimālais ātrums ≤ 19 m/s, maksimālais troksnis ≤ 70 dB(A).
+      en: Direct Remote ID, geo-awareness, fail-safe (RTH or landing), maximum speed ≤ 19 m/s, maximum noise ≤ 70 dB(A).
+      ru: Direct Remote ID, гео-осведомлённость, fail-safe (RTH или посадка), максимальная скорость ≤ 19 м/с, максимальный шум ≤ 70 дБ(А).
   - id: b
     text:
       lv: Tikai Direct Remote ID — citas iezīmes nav obligātas.
@@ -1912,15 +1912,15 @@
       ru: Только Direct Remote ID — другие функции не обязательны.
   - id: c
     text:
-      lv: Direct Remote ID, geo-awareness, fail-safe (RTH vai nosēšanās), maksimālais ātrums ≤ 19 m/s, maksimālais troksnis ≤ 70 dB(A).
-      en: Direct Remote ID, geo-awareness, fail-safe (RTH or landing), maximum speed ≤ 19 m/s, maximum noise ≤ 70 dB(A).
-      ru: Direct Remote ID, гео-осведомлённость, fail-safe (RTH или посадка), максимальная скорость ≤ 19 м/с, максимальный шум ≤ 70 дБ(А).
+      lv: Zema ātruma režīms un 5 m attāluma sensors.
+      en: Low-speed mode and 5 m proximity sensor.
+      ru: Режим малой скорости и датчик близости 5 м.
   - id: d
     text:
       lv: Tikai fail-safe un trokšņa limits — Remote ID nav obligāts C1.
       en: Only fail-safe and noise limit — Remote ID is not mandatory for C1.
       ru: Только fail-safe и ограничение шума — Remote ID не обязателен для C1.
-  correctOptionId: c
+  correctOptionId: a
   explanation:
     lv: 'Regula 2019/945 Part 2 (C1) nosaka: Direct Remote ID, geo-awareness sistēmu, fail-safe (RTH vai droša nosēšanās), max ātrums 19 m/s, troksnis ≤ 70 dB(A) un kinētiskās enerģijas limitu (pie max ātruma < 80 J). C1 nav obligāts zema ātruma režīms (tas ir C2 prasība).
 
@@ -1932,14 +1932,14 @@
 
       '
   distractorRationales:
-    a:
-      lv: Zema ātruma režīms ir C2 prasība, nevis C1. C1 ir ātruma un kinētiskās enerģijas limits, nevis zema ātruma sensors.
-      en: Low-speed mode is a C2 requirement, not C1. C1 has a speed and kinetic energy limit, not a low-speed mode.
-      ru: Режим малой скорости — требование C2, а не C1. C1 имеет ограничение скорости и кинетической энергии, а не режим малой скорости.
     b:
       lv: C1 prasa vairāk par tikai Remote ID. Visi minētie tehniskie raksturlielumi (geo-awareness, fail-safe, troksnis, ātrums) ir obligāti.
       en: C1 requires more than just Remote ID. All listed technical features (geo-awareness, fail-safe, noise, speed) are mandatory.
       ru: C1 требует большего, чем просто Remote ID. Все перечисленные технические характеристики (гео-осведомлённость, fail-safe, шум, скорость) обязательны.
+    c:
+      lv: Zema ātruma režīms ir C2 prasība, nevis C1. C1 ir ātruma un kinētiskās enerģijas limits, nevis zema ātruma sensors.
+      en: Low-speed mode is a C2 requirement, not C1. C1 has a speed and kinetic energy limit, not a low-speed mode.
+      ru: Режим малой скорости — требование C2, а не C1. C1 имеет ограничение скорости и кинетической энергии, а не режим малой скорости.
     d:
       lv: Direct Remote ID ir obligāts C1. Arī geo-awareness ir obligāts, nevis opcija.
       en: Direct Remote ID is mandatory for C1. Geo-awareness is also mandatory, not optional.
@@ -1956,14 +1956,14 @@
   options:
   - id: a
     text:
-      lv: C4 nav jābūt geo-awareness sistēmai vai fail-safe — tas neatbalsta automātisku darbību.
-      en: C4 is not required to have a geo-awareness system or fail-safe — it does not support automatic operation.
-      ru: C4 не обязан иметь систему гео-осведомлённости или fail-safe — он не поддерживает автоматическую работу.
-  - id: b
-    text:
       lv: C4 ir smagāks par 25 kg.
       en: C4 is heavier than 25 kg.
       ru: C4 тяжелее 25 кг.
+  - id: b
+    text:
+      lv: C4 nav jābūt geo-awareness sistēmai vai fail-safe — tas neatbalsta automātisku darbību.
+      en: C4 is not required to have a geo-awareness system or fail-safe — it does not support automatic operation.
+      ru: C4 не обязан иметь систему гео-осведомлённости или fail-safe — он не поддерживает автоматическую работу.
   - id: c
     text:
       lv: C4 prasa speciālu servera atļauju katram autonomam lidojumam.
@@ -1974,7 +1974,7 @@
       lv: C4 ir bez vadības pults.
       en: C4 has no controller.
       ru: C4 не имеет пульта управления.
-  correctOptionId: a
+  correctOptionId: b
   explanation:
     lv: 'C4 klase (Reg 2019/945 Part 6) ir paredzēta jau esošo "augstāka riska" dronu integrācijai. Atšķirībā no C3 un citām klasēm, C4 nav obligāti jābūt geo-awareness un fail-safe sistēmām. Tāpēc C4 nedrīkst izmantot autonomā lidojuma režīmos (follow-me u.c.) — tikai manuāla vadība A3 apakškategorijā, tālu no cilvēkiem.
 
@@ -1986,7 +1986,7 @@
 
       '
   distractorRationales:
-    b:
+    a:
       lv: C4 maksimālā masa ir < 25 kg, tāpat kā C3. Masas atšķirība nav iemesls autonomo ierobežojumam.
       en: C4 maximum mass is < 25 kg, same as C3. Mass difference is not the reason for the autonomous restriction.
       ru: Максимальная масса C4 составляет < 25 кг, как и C3. Разница в массе не является причиной ограничения на автономность.
@@ -2020,15 +2020,15 @@
       ru: Нет ограничения по скорости.
   - id: c
     text:
-      lv: 12 m/s.
-      en: 12 m/s.
-      ru: 12 м/с.
-  - id: d
-    text:
       lv: 19 m/s.
       en: 19 m/s.
       ru: 19 м/с.
-  correctOptionId: d
+  - id: d
+    text:
+      lv: 12 m/s.
+      en: 12 m/s.
+      ru: 12 м/с.
+  correctOptionId: c
   explanation:
     lv: 'Reg 2019/945 Part 2 nosaka C1 klases maksimālo ātrumu horizontālā lidojumā ≤ 19 m/s (≈ 68 km/h). Šis limits ir saistīts ar kinētiskās enerģijas pārvaldību — C1 pie max ātruma nedrīkst pārsniegt 80 J. C0 maksimālais ātrums ir 19 m/s; C2 nav fiksēta ātruma limita, bet ir zema ātruma režīma prasība 5 m tuvumam.
 
@@ -2048,7 +2048,7 @@
       lv: C1 ir fiksēts ātruma limits — 19 m/s. "Nav limita" neatbilst regulatīvajai prasībai.
       en: C1 has a fixed speed limit — 19 m/s. "No limit" does not comply with the regulatory requirement.
       ru: C1 имеет фиксированное ограничение скорости — 19 м/с. «Нет ограничения» не соответствует нормативному требованию.
-    c:
+    d:
       lv: 12 m/s nav C1 klases maksimālais ātrums. Regulā norādīts 19 m/s.
       en: 12 m/s is not the C1 class maximum speed. The regulation states 19 m/s.
       ru: 12 м/с не является максимальной скоростью класса C1. В регламенте указано 19 м/с.

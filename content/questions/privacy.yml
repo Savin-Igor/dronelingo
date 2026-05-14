@@ -60,14 +60,14 @@
   options:
   - id: a
     text:
-      lv: Jā, jo to var sasaistīt ar konkrētu personu.
-      en: Yes, because it can be linked to a specific person.
-      ru: Да, его можно связать с конкретным лицом.
-  - id: b
-    text:
       lv: Nē, jo numurs ir publisks.
       en: No, because the plate is public.
       ru: Нет, потому что номер публичен.
+  - id: b
+    text:
+      lv: Jā, jo to var sasaistīt ar konkrētu personu.
+      en: Yes, because it can be linked to a specific person.
+      ru: Да, его можно связать с конкретным лицом.
   - id: c
     text:
       lv: Tikai komercreģistrācijai.
@@ -78,7 +78,7 @@
       lv: Tikai tad, ja kadrā ir redzams arī vadītājs.
       en: Only if the driver is also visible in the frame.
       ru: Только если в кадре виден и водитель.
-  correctOptionId: a
+  correctOptionId: b
   explanation:
     lv: 'GDPR personas dati ir jebkura informācija, kas ļauj identificēt personu — tieši vai netieši. Numurs ir reģistrēts uz fiziskas personas un tādēļ ir personas dati.
 
@@ -90,7 +90,7 @@
 
       '
   distractorRationales:
-    b:
+    a:
       lv: Datu publiskums neizslēdz to no GDPR. Publiska informācija paliek personas dati, ja to var attiecināt uz indivīdu.
       en: Public visibility does not remove data from GDPR scope. Public information remains personal data if it can be linked to an individual.
       ru: Публичность данных не выводит их из GDPR. Публичная информация остаётся персональными данными, если её можно соотнести с лицом.
@@ -114,9 +114,9 @@
   options:
   - id: a
     text:
-      lv: 4 % no gada apgrozījuma vai 20 milj. EUR (lielākā summa).
-      en: 4 % of annual turnover or €20 million (whichever is higher).
-      ru: 4 % годового оборота или 20 млн евро (что больше).
+      lv: 1000 EUR.
+      en: €1000.
+      ru: 1000 евро.
   - id: b
     text:
       lv: 100 EUR par incidentu.
@@ -124,15 +124,15 @@
       ru: 100 евро за инцидент.
   - id: c
     text:
-      lv: 1000 EUR.
-      en: €1000.
-      ru: 1000 евро.
+      lv: 4 % no gada apgrozījuma vai 20 milj. EUR (lielākā summa).
+      en: 4 % of annual turnover or €20 million (whichever is higher).
+      ru: 4 % годового оборота или 20 млн евро (что больше).
   - id: d
     text:
       lv: 2 % no apgrozījuma vai 10 milj. EUR.
       en: 2 % of turnover or €10 million.
       ru: 2 % оборота или 10 млн евро.
-  correctOptionId: a
+  correctOptionId: c
   explanation:
     lv: 'GDPR Art. 83 paredz maksimumu 4 % no globālā gada apgrozījuma vai 20 milj. EUR, atkarībā no tā, kura summa ir lielāka.
 
@@ -144,14 +144,14 @@
 
       '
   distractorRationales:
+    a:
+      lv: 1000 EUR būtu administratīva soda fragmentārs minimums, ne maksimums. GDPR sods var sasniegt desmitiem miljonu.
+      en: €1000 would be a fragmentary minimum of an administrative penalty, not the maximum. GDPR fines reach tens of millions.
+      ru: 1000 EUR — фрагмент минимума административного штрафа, а не максимум. Штрафы GDPR доходят до десятков миллионов.
     b:
       lv: 100 EUR par incidentu ir simboliska summa, kas neatbilst GDPR riska un ietekmes mērogam.
       en: €100 per incident is a token amount and does not match the risk and impact scale GDPR is designed for.
       ru: 100 EUR за инцидент — символическая сумма, не соответствующая масштабу риска GDPR.
-    c:
-      lv: 1000 EUR būtu administratīva soda fragmentārs minimums, ne maksimums. GDPR sods var sasniegt desmitiem miljonu.
-      en: €1000 would be a fragmentary minimum of an administrative penalty, not the maximum. GDPR fines reach tens of millions.
-      ru: 1000 EUR — фрагмент минимума административного штрафа, а не максимум. Штрафы GDPR доходят до десятков миллионов.
     d:
       lv: 2 % / 10 milj. EUR ir GDPR mazāks sliedzis (Art. 83(4)), kas attiecas uz operatīvām pārkāpšanām, ne uz augstākajiem nopietnajiem (4 % / 20 milj.).
       en: 2 % / €10 million is the lower GDPR tier (Art. 83(4)) for operational infringements, not the highest one (4 % / €20 million).
@@ -168,9 +168,9 @@
   options:
   - id: a
     text:
-      lv: Leģitīmas intereses (Art. 6(1)(f)).
-      en: Legitimate interests (Art. 6(1)(f)).
-      ru: Законные интересы (ст. 6(1)(f)).
+      lv: Piekrišana (Art. 6(1)(a)) no visiem nejaušiem garāmgājējiem.
+      en: Consent (Art. 6(1)(a)) from every incidental passer-by.
+      ru: Согласие (ст. 6(1)(a)) от каждого случайного прохожего.
   - id: b
     text:
       lv: Līgums (Art. 6(1)(b)).
@@ -183,10 +183,10 @@
       ru: Жизненно важные интересы (ст. 6(1)(d)).
   - id: d
     text:
-      lv: Piekrišana (Art. 6(1)(a)) no visiem nejaušiem garāmgājējiem.
-      en: Consent (Art. 6(1)(a)) from every incidental passer-by.
-      ru: Согласие (ст. 6(1)(a)) от каждого случайного прохожего.
-  correctOptionId: a
+      lv: Leģitīmas intereses (Art. 6(1)(f)).
+      en: Legitimate interests (Art. 6(1)(f)).
+      ru: Законные интересы (ст. 6(1)(f)).
+  correctOptionId: d
   explanation:
     lv: 'Tehniskās apsekošanas, kur cilvēki kadrā ir nejauši, parasti pamatojas uz leģitīmām interesēm. Pilotam jāveic interešu līdzsvara tests un jādokumentē rezultāts.
 
@@ -198,6 +198,10 @@
 
       '
   distractorRationales:
+    a:
+      lv: Piekrišana no katra nejauša garāmgājēja praktiski nav iespējama un nav prasīta — leģitīmā interese šādiem gadījumiem ir piemērotāks pamats.
+      en: Consent from every incidental passer-by is practically impossible and not required — legitimate interest fits such cases better.
+      ru: Согласие от каждого случайного прохожего практически невозможно и не требуется — для таких случаев лучше подходит законный интерес.
     b:
       lv: Līgums attiecas uz datu subjekta līgumu (klients-uzņēmums). Tehniskā apsekošana ar nejaušiem cilvēkiem kadrā nav līguma pamats.
       en: Contract basis covers the data subject's contract (client-business). Technical inspection with incidental people in frame does not fit it.
@@ -206,10 +210,6 @@
       lv: Vitālas intereses ir dzīvības glābšana — neattiecas uz tehnisko apsekošanu.
       en: Vital interests covers life-saving emergencies — it does not fit a routine technical inspection.
       ru: Жизненно важные интересы — про спасение жизни. К плановому осмотру это не относится.
-    d:
-      lv: Piekrišana no katra nejauša garāmgājēja praktiski nav iespējama un nav prasīta — leģitīmā interese šādiem gadījumiem ir piemērotāks pamats.
-      en: Consent from every incidental passer-by is practically impossible and not required — legitimate interest fits such cases better.
-      ru: Согласие от каждого случайного прохожего практически невозможно и не требуется — для таких случаев лучше подходит законный интерес.
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Reg (EU) 2016/679 (GDPR) Art. 6(1)(f); EDPB Guidelines 06/2020
   difficulty: 3
   cognitiveLevel: apply
@@ -389,9 +389,9 @@
       ru: Бессрочно — это рабочий материал пилота.
   - id: b
     text:
-      lv: Tik ilgi, cik nepieciešams konkrētajam nolūkam, pēc tam dzēst.
-      en: Only as long as necessary for the specific purpose, then delete.
-      ru: Только пока необходимо для конкретной цели, затем удалить.
+      lv: Kamēr operators ir reģistrēts CAA Latvia — pēc tam var dzēst.
+      en: Until the operator's CAA Latvia registration expires — then may delete.
+      ru: До истечения регистрации оператора в CAA Latvia — затем можно удалить.
   - id: c
     text:
       lv: Vismaz 5 gadus — kā pierādījums potenciālām juridiskām prasībām.
@@ -399,10 +399,10 @@
       ru: Не менее 5 лет — как доказательство для возможных претензий.
   - id: d
     text:
-      lv: Kamēr operators ir reģistrēts CAA Latvia — pēc tam var dzēst.
-      en: Until the operator's CAA Latvia registration expires — then may delete.
-      ru: До истечения регистрации оператора в CAA Latvia — затем можно удалить.
-  correctOptionId: b
+      lv: Tik ilgi, cik nepieciešams konkrētajam nolūkam, pēc tam dzēst.
+      en: Only as long as necessary for the specific purpose, then delete.
+      ru: Только пока необходимо для конкретной цели, затем удалить.
+  correctOptionId: d
   explanation:
     lv: 'GDPR Art. 5(1)(e) — datu minimizēšanas un uzglabāšanas ierobežojuma principi — prasa personas datu dzēšanu, tiklīdz tie vairs nav nepieciešami nolūkam, kādam tika savākti. Pēc klienta pieņemšanas inspekcijas materiāls nav nepieciešams, ja vien nav atsevišķas juridiskās prasības. Paziņojums par GDPR pamatā ir nolūks, ne ilgums.
 
@@ -418,14 +418,14 @@
       lv: '"Darba materiāls" nav GDPR kategorija. Personas dati ir jādzēš, kad to nolūks ir izpildīts — neatkarīgi no to komerciālās vērtības.'
       en: '"Work product" is not a GDPR category. Personal data must be deleted when its purpose is fulfilled — regardless of its commercial value.'
       ru: «Рабочий материал» — не категория GDPR. Персональные данные должны быть удалены по выполнении цели — независимо от их коммерческой ценности.
+    b:
+      lv: CAA Latvia reģistrācijas termiņš nav saistīts ar GDPR datu uzglabāšanas termiņu. Tie ir neatkarīgas tiesiskās prasības.
+      en: CAA Latvia registration period is not linked to GDPR data retention periods. They are independent legal requirements.
+      ru: Период регистрации CAA Latvia не связан со сроками хранения данных GDPR. Это независимые правовые требования.
     c:
       lv: 5 gadu uzglabāšana bez konkrēta juridiskā pamata pārkāpj GDPR uzglabāšanas ierobežojumu principu.
       en: 5-year retention without a specific legal basis violates the GDPR storage limitation principle.
       ru: Хранение 5 лет без конкретного правового основания нарушает принцип ограничения хранения GDPR.
-    d:
-      lv: CAA Latvia reģistrācijas termiņš nav saistīts ar GDPR datu uzglabāšanas termiņu. Tie ir neatkarīgas tiesiskās prasības.
-      en: CAA Latvia registration period is not linked to GDPR data retention periods. They are independent legal requirements.
-      ru: Период регистрации CAA Latvia не связан со сроками хранения данных GDPR. Это независимые правовые требования.
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Reg (EU) 2016/679 (GDPR) Art. 5(1)(e) — storage limitation
   difficulty: 2
   cognitiveLevel: apply
@@ -438,14 +438,14 @@
   options:
   - id: a
     text:
-      lv: Nav pienākuma dzēst — lidojums bija no publiskas gaisa telpas.
-      en: No obligation to delete — the flight was from public airspace.
-      ru: Обязательства по удалению нет — полёт выполнялся из общедоступного воздушного пространства.
-  - id: b
-    text:
       lv: Materiāls jādzēš nekavējoties, jo nav tiesiska pamata personas personas datu apstrādei.
       en: The footage must be deleted immediately, as there is no legal basis for processing the person's personal data.
       ru: Запись должна быть немедленно удалена, так как нет правового основания для обработки персональных данных лица.
+  - id: b
+    text:
+      lv: Nav pienākuma dzēst — lidojums bija no publiskas gaisa telpas.
+      en: No obligation to delete — the flight was from public airspace.
+      ru: Обязательства по удалению нет — полёт выполнялся из общедоступного воздушного пространства.
   - id: c
     text:
       lv: Operators var glabāt materiālu, bet nedrīkst to publicēt.
@@ -456,7 +456,7 @@
       lv: Persona var prasīt dzēšanu tikai tad, ja tā var pierādīt, ka tika nodarīts kaitējums.
       en: The person can only demand deletion if they can prove harm was caused.
       ru: Лицо может требовать удаления только при наличии доказательств причинённого вреда.
-  correctOptionId: b
+  correctOptionId: a
   explanation:
     lv: 'GDPR Art. 17 paredz tiesības uz dzēšanu ("tiesības tikt aizmirstam"). Personas attēls privātajā pagalmā ir personas dati. Ja nav tiesiska pamata (piekrišana, leģitīmas intereses u.c.) personas datu apstrādei, operators pēc pieprasījuma ir pienākums dzēst materiālu. Publiskas gaisa telpas izmantošana neatceļ GDPR pienākumus.
 
@@ -468,7 +468,7 @@
 
       '
   distractorRationales:
-    a:
+    b:
       lv: Publiskā gaisa telpa ir par lidojuma atļauju; GDPR attiecas uz personas datu apstrādi neatkarīgi no tā, no kurienes tas tika ierakstīts.
       en: Public airspace is about flight permission; GDPR applies to personal data processing regardless of where the recording was made from.
       ru: Общедоступное воздушное пространство касается разрешения на полёт; GDPR применяется к обработке персональных данных независимо от того, откуда сделана запись.
@@ -605,9 +605,9 @@
       ru: Да — одобрение BGKIS разрешает как полёт, так и съёмку.
   - id: b
     text:
-      lv: Nē — BGKIS apstiprina lidojumu gaisa telpā, bet aizlieguma zīme attiecas uz citiem tiesību aktiem (drošība, valsts noslēpums) un ir spēkā neatkarīgi.
-      en: No — BGKIS approves airspace flight, but the prohibition sign relates to other legislation (security, state secrets) and is in force independently.
-      ru: Нет — BGKIS одобряет полёт в воздушном пространстве, но запретный знак относится к другому законодательству (безопасность, государственная тайна) и действует независимо.
+      lv: Jā — "Fotografēšana aizliegta" attiecas tikai uz virszemes foto, nevis uz dronu.
+      en: Yes — "Photography prohibited" applies only to ground-level photos, not drones.
+      ru: Да — «Съёмка запрещена» относится только к наземной съёмке, а не к дронам.
   - id: c
     text:
       lv: Jā, ja uzņemtais materiāls netiek publicēts.
@@ -615,10 +615,10 @@
       ru: Да, если запись не публикуется.
   - id: d
     text:
-      lv: Jā — "Fotografēšana aizliegta" attiecas tikai uz virszemes foto, nevis uz dronu.
-      en: Yes — "Photography prohibited" applies only to ground-level photos, not drones.
-      ru: Да — «Съёмка запрещена» относится только к наземной съёмке, а не к дронам.
-  correctOptionId: b
+      lv: Nē — BGKIS apstiprina lidojumu gaisa telpā, bet aizlieguma zīme attiecas uz citiem tiesību aktiem (drošība, valsts noslēpums) un ir spēkā neatkarīgi.
+      en: No — BGKIS approves airspace flight, but the prohibition sign relates to other legislation (security, state secrets) and is in force independently.
+      ru: Нет — BGKIS одобряет полёт в воздушном пространстве, но запретный знак относится к другому законодательству (безопасность, государственная тайна) и действует независимо.
+  correctOptionId: d
   explanation:
     lv: 'BGKIS atļauja ir gaisa telpas atļauja — tā regulē, vai UAS drīkst atraties konkrētā gaisa telpas sadaļā. "Fotografēšana aizliegta" zīme norāda uz atsevišķu tiesību normu — parasti valsts drošības likumu vai Kriminālkodeksa noteikumu par kritiskās infrastruktūras dokumentēšanu. Šī aizlieguma pārkāpums ir neatkarīgi no BGKIS atļaujas statusa.
 
@@ -634,14 +634,14 @@
       lv: BGKIS atļauja ir gaisa telpas atļauja, nevis filmēšanas atļauja. Tās ir divi dažādi tiesiskuma aspekti.
       en: BGKIS authorisation is an airspace authorisation, not a filming authorisation. These are two separate legal aspects.
       ru: Разрешение BGKIS — это разрешение воздушного пространства, а не разрешение на съёmку. Это два разных правовых аспекта.
+    b:
+      lv: '"Fotografēšana aizliegta" attiecas uz jebkādu dokumentēšanu — ar kameru uz zemes, no drona vai ar jebkuru citu līdzekli. Tas nav ierobežots tikai ar virszemes foto.'
+      en: '"Photography prohibited" refers to any documentation — with a camera on the ground, from a drone, or by any other means. It is not restricted to ground-level photos.'
+      ru: «Съёмка запрещена» относится к любой документации — наземной камерой, с дрона или любым другим способом. Это не ограничивается только наземными фотографиями.
     c:
       lv: Publicēšana ir atsevišķs GDPR jautājums. Pats uzņemšanas fakts var būt pārkāpums, ja ir aizliegts filmēt.
       en: Publishing is a separate GDPR matter. The act of filming itself may be a violation if photography is prohibited.
       ru: Публикация — отдельный вопрос GDPR. Сам факт съёмки может быть нарушением, если фотографирование запрещено.
-    d:
-      lv: '"Fotografēšana aizliegta" attiecas uz jebkādu dokumentēšanu — ar kameru uz zemes, no drona vai ar jebkuru citu līdzekli. Tas nav ierobežots tikai ar virszemes foto.'
-      en: '"Photography prohibited" refers to any documentation — with a camera on the ground, from a drone, or by any other means. It is not restricted to ground-level photos.'
-      ru: «Съёмка запрещена» относится к любой документации — наземной камерой, с дрона или любым другим способом. Это не ограничивается только наземными фотографиями.
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Latvia security legislation; GDPR Art. 6; Datu valsts inspekcija guidance
   difficulty: 3
   cognitiveLevel: analyze
@@ -654,14 +654,14 @@
   options:
   - id: a
     text:
-      lv: Art. 6(1)(b) — nepieciešamība līguma izpildei.
-      en: Art. 6(1)(b) — necessity for contract performance.
-      ru: Ст. 6(1)(b) — необходимость для исполнения договора.
-  - id: b
-    text:
       lv: Art. 6(1)(f) — leģitīmās intereses ar iepriekšēju LIA un pastāvīgu informēšanu (GDPR ietvars sporta sacensībām ir leģitīmas intereses).
       en: Art. 6(1)(f) — legitimate interests with a prior LIA and prominent informing (GDPR framework for sports events is legitimate interests).
       ru: Ст. 6(1)(f) — законные интересы с предварительной оценкой LIA и видимым информированием (структура GDPR для спортивных мероприятий — законные интересы).
+  - id: b
+    text:
+      lv: Art. 6(1)(b) — nepieciešamība līguma izpildei.
+      en: Art. 6(1)(b) — necessity for contract performance.
+      ru: Ст. 6(1)(b) — необходимость для исполнения договора.
   - id: c
     text:
       lv: Art. 6(1)(a) — piekrišana — katra dalībnieka individuāla piekrišana.
@@ -672,7 +672,7 @@
       lv: Nav vajadzīgs tiesiskais pamats — sporta sacensības ir publisks pasākums.
       en: No legal basis is needed — sports competitions are public events.
       ru: Правовое основание не требуется — спортивные соревнования являются публичным мероприятием.
-  correctOptionId: b
+  correctOptionId: a
   explanation:
     lv: 'GDPR Art. 6(1)(f) (leģitīmās intereses) ir tipiskākais pamats komerciālai filmēšanai publiskos sporta pasākumos. Tas prasa: (1) Leģitīmo Interešu Novērtējumu (LIA) — komerciāls mērķis sver pret personu interesēm; (2) redzamu informēšanu sacensības vietā (plakāti, skaļrunis). Individuāla piekrišana katram dalībniekam nav praktiski iespējama lielā pasākumā.
 
@@ -684,7 +684,7 @@
 
       '
   distractorRationales:
-    a:
+    b:
       lv: Art. 6(1)(b) attiecas uz līgumattiecībās esošo pušu datu apstrādi — sporta dalībnieki nav operators līgumdarba puse.
       en: Art. 6(1)(b) applies to data processing of parties in a contractual relationship — sports participants are not a party in the operator's contract.
       ru: Ст. 6(1)(b) применяется к обработке данных сторон в договорных отношениях — участники соревнований не являются стороной договора оператора.
@@ -713,20 +713,20 @@
       ru: CAA Latvia как регулятор полётов дронов.
   - id: b
     text:
-      lv: Drona ražotājs.
-      en: The drone manufacturer.
-      ru: Производитель дрона.
-  - id: c
-    text:
       lv: Operators — persona vai uzņēmums, kas lemj par filmēšanas mērķiem un metodēm.
       en: The operator — the person or company that decides on the filming purposes and means.
       ru: Оператор — лицо или компания, определяющее цели и средства съёмки.
+  - id: c
+    text:
+      lv: Drona ražotājs.
+      en: The drone manufacturer.
+      ru: Производитель дрона.
   - id: d
     text:
       lv: Remote pilota kompetences sertifikāta izdevējs.
       en: The issuer of the remote pilot competence certificate.
       ru: Орган, выдавший свидетельство компетентности дистанционного пилота.
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: 'GDPR Art. 4(7) definē "pārzini" kā fizisku vai juridisku personu, kas nosaka personas datu apstrādes mērķus un līdzekļus. Drona operācijā tas ir operators — tas, kurš nolemj, KO filmēt, KĀ filmēt un KO darīt ar materiālu. Faktiskais pilots var būt datu apstrādātājs, ja operators ir atsevišķa juridiskā persona.
 
@@ -742,7 +742,7 @@
       lv: CAA Latvia ir regulators, kas uzrauga lidojumu atbilstību — tā nav persona, kas nosaka filmēšanas mērķus un metodes.
       en: CAA Latvia is a regulator overseeing flight compliance — it is not the person who determines filming purposes and means.
       ru: CAA Latvia — регулятор, контролирующий соответствие полётов — это не лицо, определяющее цели и средства съёмки.
-    b:
+    c:
       lv: Ražotājs izstrādā dronu, bet nenosaka, ko, kā un kāpēc konkrēts operators filmē.
       en: The manufacturer builds the drone but does not determine what, how, and why a specific operator films.
       ru: Производитель строит дрон, но не определяет, что, как и почему конкретный оператор снимает.
@@ -767,20 +767,20 @@
       ru: Нет — ст. 30 применяется только к крупным компаниям с более чем 250 сотрудниками.
   - id: b
     text:
-      lv: Jā — komerciālam operatoram jāuztur apstrādes darbību reģistrs, iekļaujot drona filmēšanas operācijas ar personas datiem.
-      en: Yes — a commercial operator must maintain a register of processing activities, including drone filming operations involving personal data.
-      ru: Да — коммерческий оператор обязан вести реестр операций обработки, включая съёмку с дрона с участием персональных данных.
-  - id: c
-    text:
       lv: Nē — drona filmēšana ir atbrīvota no Art. 30 prasībām.
       en: No — drone filming is exempt from Art. 30 requirements.
       ru: Нет — съёмка с дрона освобождена от требований ст. 30.
+  - id: c
+    text:
+      lv: Jā — komerciālam operatoram jāuztur apstrādes darbību reģistrs, iekļaujot drona filmēšanas operācijas ar personas datiem.
+      en: Yes — a commercial operator must maintain a register of processing activities, including drone filming operations involving personal data.
+      ru: Да — коммерческий оператор обязан вести реестр операций обработки, включая съёмку с дрона с участием персональных данных.
   - id: d
     text:
       lv: Tikai tad, ja operators pārsniedz 5000 EUR apgrozījumu gadā.
       en: Only if the operator exceeds €5,000 turnover per year.
       ru: Только если оборот оператора превышает 5 000 EUR в год.
-  correctOptionId: b
+  correctOptionId: c
   explanation:
     lv: 'GDPR Art. 30 prasa, lai pārziņi uzturētu apstrādes darbību reģistru. Izņēmums (< 250 darbinieki) ir ierobežots — tas neattiecas, ja apstrāde var radīt risku personu tiesībām un brīvībām. Cilvēku filmēšana pilsētā ir riskanta apstrāde, kas izslēdz izņēmumu. Komerciāls operators parasti arī pārsniedz 250 darbinieku slieksni vai nebauda izņēmumu.
 
@@ -796,7 +796,7 @@
       lv: 250 darbinieku izņēmums tieši nesedz apstrādes operācijas, kas rada risku. Filmēšana apdzīvotos rajonos ir riska operācija.
       en: The 250 employee exception does not cover processing operations that pose a risk. Filming in populated areas is a risk operation.
       ru: Исключение для 250 сотрудников не распространяется на операции обработки, создающие риск. Съёмка в населённых районах является рискованной операцией.
-    c:
+    b:
       lv: Drona filmēšana nav atbrīvota no Art. 30. Tā ir personas datu apstrāde, kurai piemērojamas GDPR prasības.
       en: Drone filming is not exempt from Art. 30. It is personal data processing subject to GDPR requirements.
       ru: Съёмка с дрона не освобождена от ст. 30. Это обработка персональных данных, на которую распространяются требования GDPR.
@@ -826,15 +826,15 @@
       ru: Оператор должен зарегистрироваться в DVI Latvia.
   - id: c
     text:
-      lv: Mājas izņēmums var attiekties, ja filmēšana ir tīri personiskai, ne sabiedriskai publiskošanai; ja materiāls tiek publicēts tiešsaistē — GDPR piemērojams pilnā mērā.
-      en: The household exemption may apply if filming is purely personal with no public dissemination; if footage is published online — GDPR applies in full.
-      ru: Исключение для домохозяйств может применяться при условии, что съёмка носит сугубо личный характер без публичного распространения; если запись публикуется онлайн — GDPR применяется в полном объёме.
-  - id: d
-    text:
       lv: Atpūtas pilots nekad nav GDPR pārzinis.
       en: A recreational pilot is never a GDPR controller.
       ru: Рекреационный пилот никогда не является контролёром по GDPR.
-  correctOptionId: c
+  - id: d
+    text:
+      lv: Mājas izņēmums var attiekties, ja filmēšana ir tīri personiskai, ne sabiedriskai publiskošanai; ja materiāls tiek publicēts tiešsaistē — GDPR piemērojams pilnā mērā.
+      en: The household exemption may apply if filming is purely personal with no public dissemination; if footage is published online — GDPR applies in full.
+      ru: Исключение для домохозяйств может применяться при условии, что съёмка носит сугубо личный характер без публичного распространения; если запись публикуется онлайн — GDPR применяется в полном объёме.
+  correctOptionId: d
   explanation:
     lv: 'GDPR Art. 2(2)(c) atbrīvo personas datu apstrādi "fiziskas personas veikta darbība, kas ir tīri personiska vai mājas darbība". Pilsētas panorāma personiskai glabāšanai var atbilst. Taču, ja attēli tiek publicēti sociālajos tīklos vai citā platformā — tie kļūst publiski, un izņēmums beidzas.
 
@@ -854,7 +854,7 @@
       lv: Atpūtas filmētājam nav obligāti jāreģistrējas DVI kā pārzinim — reģistrācija ir komerciālo operatoru jautājums ar liela mēroga vai augsta riska apstrādi.
       en: A recreational filmmaker is not required to register with DVI as a controller — registration is a matter for commercial operators with large-scale or high-risk processing.
       ru: Рекреационный оператор не обязан регистрироваться в DVI как контролёр — регистрация касается коммерческих операторов с масштабной или высокорисковой обработкой.
-    d:
+    c:
       lv: Atpūtas pilots var kļūt par GDPR pārzini, ja publicē materiālu ar identificējamām personām. Darbības raksturs (atpūtas/komerciāls) neatceļ GDPR, kad materiāls tiek izplatīts.
       en: A recreational pilot can become a GDPR controller if they publish footage with identifiable persons. The recreational nature of the activity does not override GDPR when material is disseminated.
       ru: Рекреационный пилот может стать контролёром по GDPR, если публикует материал с идентифицируемыми лицами. Рекреационный характер деятельности не отменяет GDPR при распространении материала.
@@ -870,14 +870,14 @@
   options:
   - id: a
     text:
-      lv: CAA Latvia.
-      en: CAA Latvia.
-      ru: CAA Latvia.
-  - id: b
-    text:
       lv: Datu valsts inspekcija (DVI).
       en: Datu valsts inspekcija (DVI).
       ru: Datu valsts inspekcija (DVI).
+  - id: b
+    text:
+      lv: CAA Latvia.
+      en: CAA Latvia.
+      ru: CAA Latvia.
   - id: c
     text:
       lv: Eiropas Datu aizsardzības uzraudzītājs (EDAU).
@@ -888,7 +888,7 @@
       lv: Latvijas Policija.
       en: Latvian Police.
       ru: Полиция Латвии.
-  correctOptionId: b
+  correctOptionId: a
   explanation:
     lv: 'Datu valsts inspekcija (DVI) ir Latvijas nacionālā datu aizsardzības uzraudzības iestāde (GDPR Art. 51 prasītā "supervisory authority"). Sūdzības par personas datu aizsardzības pārkāpumiem, ieskaitot drona filmēšanu, iesniedz DVI. CAA Latvia uzrauga aviācijas drošību, nevis datu aizsardzību.
 
@@ -900,7 +900,7 @@
 
       '
   distractorRationales:
-    a:
+    b:
       lv: CAA Latvia ir aviācijas drošības iestāde — tā nesaņem GDPR sūdzības par drona filmēšanu.
       en: CAA Latvia is the aviation safety authority — it does not receive GDPR complaints about drone filming.
       ru: CAA Latvia — орган авиационной безопасности, он не принимает жалобы по GDPR о съёмке с дрона.
@@ -977,20 +977,20 @@
       ru: Они идентичны — если объект в UGZ, съёмка запрещена; если нет — разрешена.
   - id: b
     text:
-      lv: Tie ir paralēli ietvari — vieta var atrasties ārpus jebkuras UGZ zonas un joprojām nest filmēšanas aizliegumu.
-      en: They are parallel frameworks — a site can be outside any UGZ zone while still carrying a filming prohibition.
-      ru: Это параллельные системы — объект может быть вне UGZ, но иметь запрет на съёмку.
-  - id: c
-    text:
       lv: UGZ ir prioritāte — UGZ apstiprinājums pārmāc jebkuru filmēšanas aizliegumu.
       en: UGZ takes precedence — a UGZ approval overrides any filming prohibition.
       ru: UGZ имеет приоритет — одобрение UGZ отменяет любой запрет на съёмку.
+  - id: c
+    text:
+      lv: Tie ir paralēli ietvari — vieta var atrasties ārpus jebkuras UGZ zonas un joprojām nest filmēšanas aizliegumu.
+      en: They are parallel frameworks — a site can be outside any UGZ zone while still carrying a filming prohibition.
+      ru: Это параллельные системы — объект может быть вне UGZ, но иметь запрет на съёмку.
   - id: d
     text:
       lv: Filmēšanas aizliegumi piemērojami tikai UGZ ierobežotās zonās.
       en: Filming bans only apply within UGZ restricted zones.
       ru: Запреты на съёмку действуют только внутри UGZ-зон ограничений.
-  correctOptionId: b
+  correctOptionId: c
   explanation:
     lv: UGZ (gaisa telpas ierobežojums) un filmēšanas aizliegums (satura ierobežojums) ir neatkarīgi tiesiskie instrumenti pēc dažādām iestādēm. Vieta var atrasties ārpus jebkuras UGZ zonas un joprojām nest derīgu filmēšanas aizliegumu. Abi jāpārbauda atsevišķi pirmslidojuma vides novērtējumā.
     en: UGZ (airspace restriction) and the filming ban (content restriction) are independent legal instruments under different authorities. A site may sit outside any UGZ zone and still carry a valid filming prohibition. Both must be checked separately during the pre-flight environment assessment.
@@ -1000,7 +1000,7 @@
       lv: Vieta var atrasties ārpus UGZ zonas un joprojām nest filmēšanas aizliegumu. Abas sistēmas savstarpēji nesakrīt.
       en: A site may be outside any UGZ zone and still have a filming prohibition sign. The two systems are not co-extensive.
       ru: Объект может быть вне любой UGZ и всё равно иметь знак запрета. Эти системы не совпадают.
-    c:
+    b:
       lv: UGZ apstiprinājums neatceļ filmēšanas aizliegumus. Tos izdod dažādas iestādes dažādiem mērķiem.
       en: A UGZ approval does not override filming bans. They are issued by different authorities for different purposes.
       ru: Одобрение UGZ не отменяет запреты на съёмку — они выданы разными органами для разных целей.
@@ -1025,9 +1025,9 @@
       ru: Потом может быть интересно посмотреть.
   - id: b
     text:
-      lv: Ir skaidrs līgumisks, juridisks, apdrošināšanas vai incidenta pamatojums.
-      en: There is a clear contractual, legal, insurance, or incident-related reason.
-      ru: Есть ясное договорное, юридическое, страховое или инцидентное основание.
+      lv: Operators negrib organizēt failus.
+      en: The operator prefers not to organise files.
+      ru: Оператору не хочется организовывать файлы.
   - id: c
     text:
       lv: Lieli diski ir lēti.
@@ -1035,10 +1035,10 @@
       ru: Большие диски стоят недорого.
   - id: d
     text:
-      lv: Operators negrib organizēt failus.
-      en: The operator prefers not to organise files.
-      ru: Оператору не хочется организовывать файлы.
-  correctOptionId: b
+      lv: Ir skaidrs līgumisks, juridisks, apdrošināšanas vai incidenta pamatojums.
+      en: There is a clear contractual, legal, insurance, or incident-related reason.
+      ru: Есть ясное договорное, юридическое, страховое или инцидентное основание.
+  correctOptionId: d
   explanation:
     lv: Pagarinātai glabāšanai jābalstās uz reālu mērķi, piemēram, līguma izpildi, strīdu, apdrošināšanu, incidenta ziņošanu vai juridisku pienākumu.
     en: Extended retention should be tied to a real purpose such as contract performance, dispute handling, insurance evidence, incident reporting, or legal obligation.
@@ -1048,14 +1048,14 @@
       lv: Personiska interese nav pietiekams glabāšanas pamats privātuma jutīgam materiālam.
       en: Personal curiosity is not a strong retention basis for privacy-sensitive footage.
       ru: Личный интерес не является сильным основанием для хранения приватностно чувствительного материала.
+    b:
+      lv: Slikta failu disciplīna nav juridisks vai ētisks glabāšanas iemesls.
+      en: Poor file discipline is not a legal or ethical retention reason.
+      ru: Плохая файловая дисциплина не является правовым или этическим основанием хранения.
     c:
       lv: Lēta glabāšana neattaisno nevajadzīgu personas datu turēšanu.
       en: Cheap storage does not justify retaining unnecessary personal data.
       ru: Дешёвое хранилище не оправдывает удержание лишних персональных данных.
-    d:
-      lv: Slikta failu disciplīna nav juridisks vai ētisks glabāšanas iemesls.
-      en: Poor file discipline is not a legal or ethical retention reason.
-      ru: Плохая файловая дисциплина не является правовым или этическим основанием хранения.
   sourceRef: docs/knowledge/eu-regulations/ — GDPR principles; docs/knowledge/latvia-caa/web-snapshots/ and training materials — privacy handling in UAS operations
   difficulty: 2
   cognitiveLevel: apply
@@ -1068,14 +1068,14 @@
   options:
   - id: a
     text:
-      lv: Automātiski iedot klientam visu neapstrādāto kartes saturu.
-      en: Give the client the full raw card dump automatically.
-      ru: Автоматически отдать клиенту весь сырой дамп карты.
-  - id: b
-    text:
       lv: Atdalīt gala materiālu no izejmateriāla un atstāt tikai to, kam vēl ir skaidrs mērķis.
       en: Separate deliverables from raw material and retain only what still has a defined purpose.
       ru: Отделить deliverables от сырого материала и оставить только то, у чего ещё есть ясная цель.
+  - id: b
+    text:
+      lv: Automātiski iedot klientam visu neapstrādāto kartes saturu.
+      en: Give the client the full raw card dump automatically.
+      ru: Автоматически отдать клиенту весь сырой дамп карты.
   - id: c
     text:
       lv: Augšupielādēt visu personīgā mākoņa mapē ar atvērtu piekļuvi.
@@ -1086,13 +1086,13 @@
       lv: Glabāt visas kopijas mūžīgi, lai izvairītos no nejaušas dzēšanas.
       en: Keep all copies forever to avoid accidental deletion.
       ru: Хранить все копии вечно, чтобы избежать случайного удаления.
-  correctOptionId: b
+  correctOptionId: a
   explanation:
     lv: 'Labākā plūsma ir mērķī balstīta glabāšana: atstāt tikai to, kas vajadzīgs nodošanai, pierādīšanai vai drošības vajadzībām, un noņemt materiālu, kam vairs nav derīga mērķa.'
     en: 'The better workflow is purpose-based retention: isolate what is needed for delivery, proof, or evidence, and remove material that no longer has a valid purpose.'
     ru: 'Лучший workflow — хранение по цели: оставить только то, что нужно для передачи, доказательства или безопасности, и удалить материал без действительной цели.'
   distractorRationales:
-    a:
+    b:
       lv: Klientam parasti vajag saskaņoto rezultātu, nevis nekontrolētu datu masu.
       en: Clients usually need the agreed deliverables, not uncontrolled bulk data.
       ru: Клиенту обычно нужен согласованный результат, а не неконтролируемая масса сырых данных.
@@ -1121,20 +1121,20 @@
       ru: Ничего — съёмка на улице всегда разрешена.
   - id: b
     text:
-      lv: Iegūt pārgājēju piekrišanu pēc fakta sociālajos tīklos.
-      en: Get the hikers' retrospective consent via social media.
-      ru: Получить ретроспективное согласие туристов через соцсети.
-  - id: c
-    text:
       lv: Aizmiglot pārgājēju sejas pirms publicēšanas.
       en: Blur the hikers' faces before publishing.
       ru: Размыть лица туристов перед публикацией.
+  - id: c
+    text:
+      lv: Iegūt pārgājēju piekrišanu pēc fakta sociālajos tīklos.
+      en: Get the hikers' retrospective consent via social media.
+      ru: Получить ретроспективное согласие туристов через соцсети.
   - id: d
     text:
       lv: Dzēst tikai kadrus, kur pārgājēji ir priekšplānā.
       en: Delete only the shots where the hikers are in the foreground.
       ru: Удалить только крупные планы с туристами.
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: GDPR strādā neatkarīgi no tā, ka vieta ir publiska. Identificējamas sejas ir personas dati. Bez piekrišanas vai cita derīga tiesiska pamata materiāls pirms publicēšanas ir jāanonimizē (sejas jāaizmiglo). Retrospektīva piekrišana sociālajos tīklos GDPR ietvaros nav derīga mehānisms jau apstrādātiem datiem.
     en: GDPR applies regardless of the location being public. Identifiable faces constitute personal data. Without consent or another valid lawful basis, the footage must be anonymised (faces blurred) before publishing. Retrospective social media consent is not a valid GDPR mechanism for data already processed.
@@ -1144,7 +1144,7 @@
       lv: Publiska vieta neatbrīvo pilotu no GDPR pienākumiem par identificējamiem indivīdiem.
       en: Public location does not exempt the pilot from GDPR obligations regarding identifiable individuals.
       ru: Публичное расположение не освобождает пилота от GDPR-обязательств в отношении идентифицируемых людей.
-    b:
+    c:
       lv: GDPR piekrišana jādod pirms datu vākšanas, ne pēc. 'Piekrišana' sociālajos tīklos pēc fakta nav juridiski derīga.
       en: GDPR consent must be given before the data is collected, not after. Social media 'consent' after the fact is not legally valid.
       ru: Согласие GDPR должно быть получено до сбора данных. Ретроспективное согласие через соцсети юридически не действительно.
@@ -1169,20 +1169,20 @@
       ru: Пилот заплатил за разрешение на полёт.
   - id: b
     text:
-      lv: Leģitīma interese, kur privātuma ietekme ir proporcionāla un dokumentēta.
-      en: Legitimate interest, where the privacy impact is proportionate and documented.
-      ru: Законные интересы — с документально подтверждённой соразмерностью воздействия на конфиденциальность.
-  - id: c
-    text:
       lv: Operators ir reģistrēta uzņēmējdarbības struktūra.
       en: The operator is a registered business entity.
       ru: Пилот является зарегистрированным юридическим лицом.
+  - id: c
+    text:
+      lv: Leģitīma interese, kur privātuma ietekme ir proporcionāla un dokumentēta.
+      en: Legitimate interest, where the privacy impact is proportionate and documented.
+      ru: Законные интересы — с документально подтверждённой соразмерностью воздействия на конфиденциальность.
   - id: d
     text:
       lv: Indivīdi atrodas publiski pieejamā vietā.
       en: The individuals are in a publicly accessible area.
       ru: Люди находятся в общедоступном месте.
-  correctOptionId: b
+  correctOptionId: c
   explanation:
     lv: Leģitīma interese (6. panta 1. (f) punkts) ir derīgs tiesiskais pamats, kad operatoram ir patiess mērķis un privātuma ietekme ir proporcionāla šim mērķim. Tas prasa dokumentētu leģitīmās intereses novērtējumu (LIA). Uzņēmuma reģistrācija vai lidojuma atļauja nav GDPR tiesiskie pamati.
     en: Legitimate interest (Art. 6(1)(f)) is a valid lawful basis when the operator has a genuine purpose and the privacy impact is proportionate to that purpose. This requires a documented Legitimate Interest Assessment (LIA). Being a registered business or holding a flight permit are not GDPR legal bases.
@@ -1192,7 +1192,7 @@
       lv: Lidojuma atļauja ir gaisa telpas autorizācija no aviācijas iestādes. Tai nav saistības ar GDPR.
       en: A flight permit is airspace authorisation from the aviation authority. It has no bearing on GDPR.
       ru: Разрешение на полёт — это доступ к воздушному пространству от авиационных органов. К GDPR не имеет отношения.
-    c:
+    b:
       lv: Uzņēmējdarbības reģistrācijas statuss neietekmē GDPR pienākumus. GDPR vienlīdz strādā indivīdiem un uzņēmumiem.
       en: Business registration status does not affect GDPR obligations. GDPR applies to individuals and businesses equally.
       ru: Статус юридического лица не влияет на GDPR-обязательства. GDPR применяется к физическим и юридическим лицам одинаково.
@@ -1217,9 +1217,9 @@
       ru: Если полёт был законным по правилам воздушного пространства, публикация тоже автоматически законна.
   - id: b
     text:
-      lv: Gaisa telpas likumība un datu aizsardzības likumība ir divi dažādi jautājumi.
-      en: Airspace legality and data-protection legality are separate questions.
-      ru: Законность полёта и законность обработки/публикации данных — это разные вопросы.
+      lv: Privātums ir svarīgs tikai privātā teritorijā.
+      en: Privacy matters only when filming on private property.
+      ru: Приватность важна только при съёмке на частной территории.
   - id: c
     text:
       lv: GDPR attiecas tikai uz iekštelpām.
@@ -1227,10 +1227,10 @@
       ru: GDPR действует только внутри помещений.
   - id: d
     text:
-      lv: Privātums ir svarīgs tikai privātā teritorijā.
-      en: Privacy matters only when filming on private property.
-      ru: Приватность важна только при съёмке на частной территории.
-  correctOptionId: b
+      lv: Gaisa telpas likumība un datu aizsardzības likumība ir divi dažādi jautājumi.
+      en: Airspace legality and data-protection legality are separate questions.
+      ru: Законность полёта и законность обработки/публикации данных — это разные вопросы.
+  correctOptionId: d
   explanation:
     lv: Legāls lidojums un legāla uzņemto datu izmantošana/publicēšana ir divi atsevišķi juridiski jautājumi. Gaisa telpas atļauja neatceļ privātuma pienākumus.
     en: A lawful flight and a lawful use/publication of footage are different legal questions. Airspace permission does not erase privacy obligations.
@@ -1240,14 +1240,14 @@
       lv: Tiesības lidot automātiski nedod tiesības publicēt identificējamus cilvēkus.
       en: The legal right to fly does not automatically include the legal right to publish identifiable people.
       ru: Право летать не означает автоматического права публиковать узнаваемых людей.
+    b:
+      lv: Privātuma pienākumi var rasties arī publiskā vidē.
+      en: Privacy obligations can arise in public spaces as well.
+      ru: Обязанности по приватности могут возникать и в публичной среде.
     c:
       lv: GDPR neattiecas tikai uz telpām; arī ārā atpazīstami cilvēki var radīt pienākumus.
       en: GDPR is not an indoor-only rule; identifiable people outdoors can trigger it too.
       ru: GDPR не ограничен помещениями; узнаваемые люди на улице тоже могут подпадать под защиту.
-    d:
-      lv: Privātuma pienākumi var rasties arī publiskā vidē.
-      en: Privacy obligations can arise in public spaces as well.
-      ru: Обязанности по приватности могут возникать и в публичной среде.
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR and identifiable persons; docs/knowledge/latvia-caa/web-snapshots/14-normativais-regulejums.md — Latvian privacy and critical-infrastructure context
   difficulty: 2
   cognitiveLevel: apply
@@ -1260,14 +1260,14 @@
   options:
   - id: a
     text:
-      lv: Publicēt ātri, pirms kāds pamana.
-      en: Publish quickly before anyone notices.
-      ru: Публиковать быстро, пока никто не заметил.
-  - id: b
-    text:
       lv: Anonimizēt materiālu pirms kopīgošanas vai publikācijas.
       en: Anonymise the footage before sharing or publishing.
       ru: Анонимизировать материал до передачи или публикации.
+  - id: b
+    text:
+      lv: Publicēt ātri, pirms kāds pamana.
+      en: Publish quickly before anyone notices.
+      ru: Публиковать быстро, пока никто не заметил.
   - id: c
     text:
       lv: Pieņemt, ka pūlis piekrita, vienkārši paliekot tur.
@@ -1278,13 +1278,13 @@
       lv: Ignorēt jautājumu, ja lidojums bija zem 120 m.
       en: Ignore the issue if the drone flew under 120 m.
       ru: Игнорировать проблему, если полёт был ниже 120 м.
-  correctOptionId: b
+  correctOptionId: a
   explanation:
     lv: 'Ja cilvēki kadrā ir nejauši, bet materiāls citādi noderīgs, bieži tīrākais ceļš ir anonimizācija: seju un numurzīmju aizmiglošana, kadrējuma maiņa vai kadra aizvietošana.'
     en: 'When incidental people appear but the footage is otherwise useful, anonymisation is often the cleanest route: blur faces, blur plates, crop or replace the shot.'
     ru: 'Если люди попали в полезный материал случайно, самым чистым маршрутом часто будет анонимизация: размытие лиц и номеров, кадрирование или замена кадра.'
   distractorRationales:
-    a:
+    b:
       lv: Publicēšanas ātrums neatceļ privātuma pienākumus.
       en: Speed of publication does not reduce privacy obligations.
       ru: Скорость публикации не уменьшает обязанности по приватности.
@@ -1302,9 +1302,9 @@
   scenarioType: decision
 - id: pr-026
   stem:
-    lv: Legāls lidojums operatoram joprojām rada atsevišķu privātuma lēmumu. Kura institūcija ir UAS datu aizsardzības uzraugs Latvijā?
-    en: A legal flight still creates a separate privacy decision for the operator. Which authority supervises UAS data protection in Latvia?
-    ru: Законный полёт всё равно создаёт отдельное privacy-решение для оператора. Какой орган надзирает за защитой данных UAS в Латвии?
+    en: A Latvian drone operator receives a complaint that identifiable people were published without a lawful basis. Which authority supervises data protection in Latvia?
+    lv: Latvijas drona operators saņem sūdzību, ka identificējami cilvēki publicēti bez tiesiska pamata. Kura iestāde Latvijā uzrauga datu aizsardzību?
+    ru: Латвийский оператор дрона получает жалобу, что идентифицируемые люди опубликованы без правового основания. Какой орган в Латвии контролирует защиту данных?
   options:
   - id: a
     text:
@@ -1313,9 +1313,9 @@
       ru: Агентство гражданской авиации (CAA Latvia).
   - id: b
     text:
-      lv: Valsts robežsardze.
-      en: State Border Guard.
-      ru: Государственная пограничная служба.
+      lv: Datu valsts inspekcija (DVI).
+      en: Datu valsts inspekcija (DVI).
+      ru: Datu valsts inspekcija (DVI).
   - id: c
     text:
       lv: Patērētāju tiesību aizsardzības centrs.
@@ -1323,10 +1323,10 @@
       ru: Центр защиты прав потребителей.
   - id: d
     text:
-      lv: Datu valsts inspekcija (DVI).
-      en: Datu valsts inspekcija (DVI).
-      ru: Datu valsts inspekcija (DVI).
-  correctOptionId: d
+      lv: Valsts robežsardze.
+      en: State Border Guard.
+      ru: Государственная пограничная служба.
+  correctOptionId: b
   explanation:
     lv: 'Datu aizsardzības uzraudzību Latvijā veic Datu valsts inspekcija (DVI). CAA Latvia uzrauga aviācijas drošības prasības, ne datu aizsardzību.
 
@@ -1342,23 +1342,23 @@
       lv: CAA Latvia uzrauga aviācijas drošības prasības (UGZ, sertifikāti, BGKIS). Datu aizsardzība ir DVI kompetencē.
       en: CAA Latvia oversees aviation safety (UGZ, certificates, BGKIS). Data protection is DVI's competence.
       ru: CAA Latvia надзирает за безопасностью авиации (UGZ, сертификаты, BGKIS). Защита данных — компетенция DVI.
-    b:
-      lv: Robežsardze nodarbojas ar valsts robežas aizsardzību, ne ar datu aizsardzību.
-      en: The Border Guard handles state border protection, not data protection.
-      ru: Пограничная служба занимается охраной государственной границы, а не защитой данных.
     c:
       lv: Patērētāju centrs uzrauga patērētāju tiesības, nevis GDPR — pat ja datu pārkāpumi var skart patērētājus, formālais regulators ir DVI.
       en: The Consumer Centre oversees consumer rights, not GDPR — even though data breaches can affect consumers, the formal regulator is DVI.
       ru: Центр защиты прав потребителей надзирает за правами потребителей, а не за GDPR — формальный регулятор это DVI.
+    d:
+      lv: Robežsardze nodarbojas ar valsts robežas aizsardzību, ne ar datu aizsardzību.
+      en: The Border Guard handles state border protection, not data protection.
+      ru: Пограничная служба занимается охраной государственной границы, а не защитой данных.
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR Art. 51; Latvian Personal Data Processing Law
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
 - id: pr-027
   stem:
-    lv: Klients pieprasa materiālu, kurā var būt identificējami cilvēki vai aizsargāts īpašums. Vai automašīnas valsts numurs uzskatāms par personas datiem GDPR izpratnē?
-    en: A client asks for footage that may include identifiable people or protected property. Is a vehicle licence plate personal data under GDPR?
-    ru: Клиент просит материал, где могут быть идентифицируемые люди или защищённый объект. Является ли автомобильный номер персональными данными по GDPR?
+    en: A car number plate is clearly visible in an inspection clip that the client wants to publish. Under GDPR, how should the licence plate be treated?
+    lv: Inspekcijas klipā skaidri redzama automašīnas numura zīme, un klients grib to publicēt. Kā saskaņā ar GDPR jāvērtē numura zīme?
+    ru: В инспекционном ролике чётко виден номер автомобиля, и клиент хочет опубликовать материал. Как по GDPR следует рассматривать номерной знак?
   options:
   - id: a
     text:
@@ -1410,9 +1410,9 @@
   scenarioType: decision
 - id: pr-028
   stem:
-    lv: Pēc-lidojuma pārskatā operatoram jāizlemj, ko drīkst glabāt, nodot vai dzēst. Cik liels var būt maksimālais GDPR sods?
-    en: During post-flight review, the operator must decide what may be kept, shared or deleted. What is the maximum GDPR fine?
-    ru: Во время послеполётного просмотра оператор решает, что можно хранить, передавать или удалять. Каков максимальный штраф по GDPR?
+    en: A commercial operator ignores GDPR obligations during repeated public filming. What is the upper fine level under GDPR for the most serious infringements?
+    lv: Komerciāls operators atkārtoti ignorē GDPR pienākumus publiskas filmēšanas laikā. Kāds ir maksimālais sods par smagākajiem GDPR pārkāpumiem?
+    ru: Коммерческий оператор repeatedly игнорирует обязанности GDPR при публичной съёмке. Каков верхний уровень штрафа GDPR за самые серьёзные нарушения?
   options:
   - id: a
     text:
@@ -1421,9 +1421,9 @@
       ru: 2 % оборота или 10 млн евро.
   - id: b
     text:
-      lv: 4 % no gada apgrozījuma vai 20 milj. EUR (lielākā summa).
-      en: 4 % of annual turnover or €20 million (whichever is higher).
-      ru: 4 % годового оборота или 20 млн евро (что больше).
+      lv: 1000 EUR.
+      en: €1000.
+      ru: 1000 евро.
   - id: c
     text:
       lv: 100 EUR par incidentu.
@@ -1431,10 +1431,10 @@
       ru: 100 евро за инцидент.
   - id: d
     text:
-      lv: 1000 EUR.
-      en: €1000.
-      ru: 1000 евро.
-  correctOptionId: b
+      lv: 4 % no gada apgrozījuma vai 20 milj. EUR (lielākā summa).
+      en: 4 % of annual turnover or €20 million (whichever is higher).
+      ru: 4 % годового оборота или 20 млн евро (что больше).
+  correctOptionId: d
   explanation:
     lv: 'GDPR Art. 83 paredz maksimumu 4 % no globālā gada apgrozījuma vai 20 milj. EUR, atkarībā no tā, kura summa ir lielāka.
 
@@ -1450,29 +1450,29 @@
       lv: 2 % / 10 milj. EUR ir GDPR mazāks sliedzis (Art. 83(4)), kas attiecas uz operatīvām pārkāpšanām, ne uz augstākajiem nopietnajiem (4 % / 20 milj.).
       en: 2 % / €10 million is the lower GDPR tier (Art. 83(4)) for operational infringements, not the highest one (4 % / €20 million).
       ru: 2 % / 10 млн EUR — это нижний уровень GDPR (ст. 83(4)) для операционных нарушений, а не максимум.
+    b:
+      lv: 1000 EUR būtu administratīva soda fragmentārs minimums, ne maksimums. GDPR sods var sasniegt desmitiem miljonu.
+      en: €1000 would be a fragmentary minimum of an administrative penalty, not the maximum. GDPR fines reach tens of millions.
+      ru: 1000 EUR — фрагмент минимума административного штрафа, а не максимум. Штрафы GDPR доходят до десятков миллионов.
     c:
       lv: 100 EUR par incidentu ir simboliska summa, kas neatbilst GDPR riska un ietekmes mērogam.
       en: €100 per incident is a token amount and does not match the risk and impact scale GDPR is designed for.
       ru: 100 EUR за инцидент — символическая сумма, не соответствующая масштабу риска GDPR.
-    d:
-      lv: 1000 EUR būtu administratīva soda fragmentārs minimums, ne maksimums. GDPR sods var sasniegt desmitiem miljonu.
-      en: €1000 would be a fragmentary minimum of an administrative penalty, not the maximum. GDPR fines reach tens of millions.
-      ru: 1000 EUR — фрагмент минимума административного штрафа, а не максимум. Штрафы GDPR доходят до десятков миллионов.
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Reg (EU) 2016/679 (GDPR) Art. 83(5)
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
 - id: pr-029
   stem:
-    lv: Legāls lidojums operatoram joprojām rada atsevišķu privātuma lēmumu. Kāds GDPR pamatojums visdrošāk attiecas uz tehniskā objekta apsekošanas drona lidojumu?
-    en: A legal flight still creates a separate privacy decision for the operator. Which GDPR lawful basis most safely fits a technical-site inspection drone flight?
-    ru: Законный полёт всё равно создаёт отдельное privacy-решение для оператора. Какое правовое основание GDPR безопаснее всего подходит для осмотра технического объекта?
+    en: A utility company hires a drone operator to inspect a technical site, and some passers-by may appear incidentally. Which lawful basis normally fits this processing best?
+    lv: Komunālo pakalpojumu uzņēmums nolīgst drona operatoru tehniska objekta inspekcijai, un kadrā var nejauši nonākt garāmgājēji. Kurš tiesiskais pamats parasti šādai apstrādei der vislabāk?
+    ru: Коммунальная компания нанимает оператора дрона для инспекции технического объекта, и в кадр могут случайно попасть прохожие. Какое правовое основание обычно лучше всего подходит для такой обработки?
   options:
   - id: a
     text:
-      lv: Līgums (Art. 6(1)(b)).
-      en: Contract (Art. 6(1)(b)).
-      ru: Договор (ст. 6(1)(b)).
+      lv: Leģitīmas intereses (Art. 6(1)(f)).
+      en: Legitimate interests (Art. 6(1)(f)).
+      ru: Законные интересы (ст. 6(1)(f)).
   - id: b
     text:
       lv: Vitālas intereses (Art. 6(1)(d)).
@@ -1485,10 +1485,10 @@
       ru: Согласие (ст. 6(1)(a)) от каждого случайного прохожего.
   - id: d
     text:
-      lv: Leģitīmas intereses (Art. 6(1)(f)).
-      en: Legitimate interests (Art. 6(1)(f)).
-      ru: Законные интересы (ст. 6(1)(f)).
-  correctOptionId: d
+      lv: Līgums (Art. 6(1)(b)).
+      en: Contract (Art. 6(1)(b)).
+      ru: Договор (ст. 6(1)(b)).
+  correctOptionId: a
   explanation:
     lv: 'Tehniskās apsekošanas, kur cilvēki kadrā ir nejauši, parasti pamatojas uz leģitīmām interesēm. Pilotam jāveic interešu līdzsvara tests un jādokumentē rezultāts.
 
@@ -1500,10 +1500,6 @@
 
       '
   distractorRationales:
-    a:
-      lv: Līgums attiecas uz datu subjekta līgumu (klients-uzņēmums). Tehniskā apsekošana ar nejaušiem cilvēkiem kadrā nav līguma pamats.
-      en: Contract basis covers the data subject's contract (client-business). Technical inspection with incidental people in frame does not fit it.
-      ru: Договорное основание касается договора с самим субъектом данных. Технический осмотр со случайными людьми в кадре под него не подпадает.
     b:
       lv: Vitālas intereses ir dzīvības glābšana — neattiecas uz tehnisko apsekošanu.
       en: Vital interests covers life-saving emergencies — it does not fit a routine technical inspection.
@@ -1512,15 +1508,19 @@
       lv: Piekrišana no katra nejauša garāmgājēja praktiski nav iespējama un nav prasīta — leģitīmā interese šādiem gadījumiem ir piemērotāks pamats.
       en: Consent from every incidental passer-by is practically impossible and not required — legitimate interest fits such cases better.
       ru: Согласие от каждого случайного прохожего практически невозможно и не требуется — для таких случаев лучше подходит законный интерес.
+    d:
+      lv: Līgums attiecas uz datu subjekta līgumu (klients-uzņēmums). Tehniskā apsekošana ar nejaušiem cilvēkiem kadrā nav līguma pamats.
+      en: Contract basis covers the data subject's contract (client-business). Technical inspection with incidental people in frame does not fit it.
+      ru: Договорное основание касается договора с самим субъектом данных. Технический осмотр со случайными людьми в кадре под него не подпадает.
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Reg (EU) 2016/679 (GDPR) Art. 6(1)(f); EDPB Guidelines 06/2020
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
 - id: pr-030
   stem:
-    lv: Klients pieprasa materiālu, kurā var būt identificējami cilvēki vai aizsargāts īpašums. Kā apzīmē objektu, kuru aizliegts fotografēt vai filmēt bez saskaņošanas?
-    en: A client asks for footage that may include identifiable people or protected property. How is a site marked that is forbidden to photograph or film without authorisation?
-    ru: Клиент просит материал, где могут быть идентифицируемые люди или защищённый объект. Как обозначен объект, который запрещено фотографировать или снимать без согласования?
+    en: While planning a route near infrastructure, the pilot sees a Latvian sign prohibiting filming without authorisation. What wording should the pilot recognise?
+    lv: Plānojot maršrutu pie infrastruktūras, pilots redz Latvijas zīmi, kas aizliedz filmēt bez saskaņošanas. Kādu tekstu pilotam jāatpazīst?
+    ru: Планируя маршрут рядом с инфраструктурой, пилот видит латвийский знак, запрещающий съёмку без согласования. Какую надпись должен распознать пилот?
   options:
   - id: a
     text:
@@ -1529,20 +1529,20 @@
       ru: Жёлтой линией.
   - id: b
     text:
-      lv: Ar sarkanu krustu.
-      en: With a red cross.
-      ru: Красным крестом.
-  - id: c
-    text:
       lv: Ar zīmi "BEZ SASKAŅOŠANAS FOTOGRAFĒT, FILMĒT AIZLIEGTS".
       en: With a sign "BEZ SASKAŅOŠANAS FOTOGRAFĒT, FILMĒT AIZLIEGTS".
       ru: Знаком «BEZ SASKAŅOŠANAS FOTOGRAFĒT, FILMĒT AIZLIEGTS».
+  - id: c
+    text:
+      lv: Ar sarkanu krustu.
+      en: With a red cross.
+      ru: Красным крестом.
   - id: d
     text:
       lv: Ar trīsstūri.
       en: With a triangle.
       ru: Треугольником.
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: 'Latvijā kritiskās infrastruktūras objektus apzīmē ar šo tieši formulēto zīmi. Filmēšana bez saskaņošanas ir administratīvi sodāma.
 
@@ -1558,7 +1558,7 @@
       lv: Dzeltena līnija parasti apzīmē perimetra robežu, ne filmēšanas aizliegumu.
       en: A yellow line usually marks a perimeter boundary, not a filming prohibition.
       ru: Жёлтая линия обычно отмечает границу периметра, а не запрет на съёмку.
-    b:
+    c:
       lv: Sarkans krusts ir medicīnas vai bīstamības simbols, kas neapzīmē filmēšanas aizliegumu.
       en: A red cross is a medical or danger symbol, unrelated to filming prohibitions.
       ru: Красный крест — медицинский или знак опасности, не запрет на съёмку.
@@ -1572,9 +1572,9 @@
   scenarioType: decision
 - id: pr-031
   stem:
-    lv: Pēc-lidojuma pārskatā operatoram jāizlemj, ko drīkst glabāt, nodot vai dzēst. Pilots filmē pilsētas maratonu komerciālam klientam. Dalībnieku sejas ir atpazīstamas. Kāds GDPR juridiskais pamats der un kas jādara pirms publicēšanas?
-    en: During post-flight review, the operator must decide what may be kept, shared or deleted. A pilot films a city marathon for a commercial client. Runners' faces are identifiable. Which GDPR lawful basis applies and what must be done before publishing?
-    ru: Во время послеполётного просмотра оператор решает, что можно хранить, передавать или удалять. Пилот снимает городской марафон для коммерческого клиента. Лица участников узнаваемы. Какое правовое основание GDPR применяется и что необходимо сделать перед публикацией?
+    en: A commercial client asks for a public city-marathon video where runners’ faces are identifiable. What GDPR handling is required before publication?
+    lv: Komerciāls klients prasa publicēt pilsētas maratona video, kur skrējēju sejas ir identificējamas. Kāda GDPR apstrāde vajadzīga pirms publicēšanas?
+    ru: Коммерческий клиент просит опубликовать видео городского марафона, где лица бегунов идентифицируемы. Какая обработка по GDPR нужна до публикации?
   options:
   - id: a
     text:
@@ -1626,9 +1626,9 @@
   scenarioType: decision
 - id: pr-032
   stem:
-    lv: Legāls lidojums operatoram joprojām rada atsevišķu privātuma lēmumu. Objekts neatrodas UGZ ierobežotajā zonā, bet tam ir filmēšanas aizlieguma zīme. Vai apstiprināts BGKIS pieteikums dod tiesības filmēt?
-    en: A legal flight still creates a separate privacy decision for the operator. A site is not in a restricted UGZ zone but carries a filming prohibition sign. Does an approved BGKIS application grant filming rights?
-    ru: Законный полёт всё равно создаёт отдельное privacy-решение для оператора. Объект не находится в ограниченной зоне UGZ, но имеет знак запрета съёмки. Даёт ли одобренная заявка BGKIS право снимать?
+    en: The airspace approval is valid, but the site itself displays a filming-prohibition sign. Does BGKIS approval give the operator filming rights?
+    lv: Gaisa telpas atļauja ir derīga, bet pašā objektā ir filmēšanas aizlieguma zīme. Vai BGKIS atļauja dod operatoram filmēšanas tiesības?
+    ru: Разрешение на воздушное пространство действительно, но на самом объекте есть знак запрета съёмки. Даёт ли одобрение BGKIS право на съёмку?
   options:
   - id: a
     text:
@@ -1637,9 +1637,9 @@
       ru: Да, но только для коммерческих операторов.
   - id: b
     text:
-      lv: Nē — UGZ atļauja un filmēšanas aizliegums ir paralēlas tiesiskās sistēmas. BGKIS neaizstāj objekta operatora atļauju.
-      en: No — UGZ airspace access and the filming prohibition are parallel legal frameworks. BGKIS does not replace the site operator's authorisation.
-      ru: Нет — UGZ (доступ к воздушному пространству) и запрет съёмки — параллельные правовые системы. BGKIS не заменяет разрешение оператора объекта.
+      lv: Jā — BGKIS apstiprinājums aptver visus izmantošanas tiesību aspektus.
+      en: Yes — BGKIS approval covers all use-rights aspects.
+      ru: Да — одобрение BGKIS охватывает все аспекты прав использования.
   - id: c
     text:
       lv: Tikai tad, ja zīme ir novecojusi — jaunās UGZ izstrādes atceļ vecās aizlieguma zīmes.
@@ -1647,10 +1647,10 @@
       ru: Только если знак устарел — новые решения UGZ отменяют старые знаки запрета.
   - id: d
     text:
-      lv: Jā — BGKIS apstiprinājums aptver visus izmantošanas tiesību aspektus.
-      en: Yes — BGKIS approval covers all use-rights aspects.
-      ru: Да — одобрение BGKIS охватывает все аспекты прав использования.
-  correctOptionId: b
+      lv: Nē — UGZ atļauja un filmēšanas aizliegums ir paralēlas tiesiskās sistēmas. BGKIS neaizstāj objekta operatora atļauju.
+      en: No — UGZ airspace access and the filming prohibition are parallel legal frameworks. BGKIS does not replace the site operator's authorisation.
+      ru: Нет — UGZ (доступ к воздушному пространству) и запрет съёмки — параллельные правовые системы. BGKIS не заменяет разрешение оператора объекта.
+  correctOptionId: d
   explanation:
     lv: 'BGKIS ir gaisa telpas pārvaldības sistēma, ko pārvalda CAA Latvia. Filmēšanas aizliegums ir nacionālās drošības/privātuma prasība, ko pārvalda attiecīgais ministrija vai drošības dienests. Tās ir divas neatkarīgas tiesiskās sistēmas ar atšķirīgām izdevošajām iestādēm. Abas jāatrisina atsevišķi.
 
@@ -1666,29 +1666,29 @@
       lv: Komerciālais statuss neietekmē filmēšanas aizlieguma neatkarību no BGKIS. Abi — gan komerciālie, gan atpūtas piloti — jāizvērtē atsevišķi.
       en: Commercial status does not affect the filming prohibition's independence from BGKIS. Both commercial and recreational pilots must resolve both separately.
       ru: Коммерческий статус не влияет на независимость запрета съёмки от BGKIS. Как коммерческие, так и рекреационные пилоты должны решать оба вопроса отдельно.
+    b:
+      lv: BGKIS aptver tikai gaisa telpas piekļuvi. Tas nav juridisks instruments filmēšanas tiesību piešķiršanai.
+      en: BGKIS covers only airspace access. It is not a legal instrument for granting filming rights.
+      ru: BGKIS охватывает только доступ к воздушному пространству. Это не юридический инструмент для предоставления прав на съёмку.
     c:
       lv: UGZ zonas un filmēšanas aizlieguma zīmes ir neatkarīgas — pirmā neaizstāj otru. Nav mehānisma, kurā UGZ izstrāde "atceļ" drošības marķētas zonas filmēšanas aizliegumu.
       en: UGZ zones and filming prohibition signs are independent — the former does not replace the latter. There is no mechanism by which UGZ developments "override" security-marked site filming prohibitions.
       ru: Зоны UGZ и знаки запрета съёмки независимы — первое не заменяет второе. Не существует механизма, при котором решения UGZ «отменяют» запреты съёмки на объектах с охраной.
-    d:
-      lv: BGKIS aptver tikai gaisa telpas piekļuvi. Tas nav juridisks instruments filmēšanas tiesību piešķiršanai.
-      en: BGKIS covers only airspace access. It is not a legal instrument for granting filming rights.
-      ru: BGKIS охватывает только доступ к воздушному пространству. Это не юридический инструмент для предоставления прав на съёмку.
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Latvia Critical Infrastructure Protection Law; CAA Latvia BGKIS rules
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
 - id: pr-033
   stem:
-    lv: Klients pieprasa materiālu, kurā var būt identificējami cilvēki vai aizsargāts īpašums. Pilots uzfilmē inspekcijas materiālu klientam. Klients ir pieņēmis darbu. Cik ilgi pilotam ir tiesības uzglabāt attēlus?
-    en: A client asks for footage that may include identifiable people or protected property. A pilot captures inspection footage for a client. The client has accepted the deliverable. How long may the pilot retain the footage?
-    ru: Клиент просит материал, где могут быть идентифицируемые люди или защищённый объект. Пилот снимает инспекционные материалы для клиента. Клиент принял результат. Как долго пилот может хранить видеозаписи?
+    en: Inspection footage has been delivered and accepted by the client. No dispute, incident or legal hold exists. What is the correct retention approach?
+    lv: Inspekcijas materiāls ir nodots un klienta pieņemts. Nav strīda, incidenta vai juridiskas glabāšanas prasības. Kāda ir pareizā glabāšanas pieeja?
+    ru: Инспекционный материал передан и принят клиентом. Нет спора, инцидента или юридического удержания. Какой подход к хранению правильный?
   options:
   - id: a
     text:
-      lv: Vismaz 5 gadus — kā pierādījums potenciālām juridiskām prasībām.
-      en: At least 5 years — as evidence for potential legal claims.
-      ru: Не менее 5 лет — как доказательство для возможных претензий.
+      lv: Tik ilgi, cik nepieciešams konkrētajam nolūkam, pēc tam dzēst.
+      en: Only as long as necessary for the specific purpose, then delete.
+      ru: Только пока необходимо для конкретной цели, затем удалить.
   - id: b
     text:
       lv: Kamēr operators ir reģistrēts CAA Latvia — pēc tam var dzēst.
@@ -1701,10 +1701,10 @@
       ru: Бессрочно — это рабочий материал пилота.
   - id: d
     text:
-      lv: Tik ilgi, cik nepieciešams konkrētajam nolūkam, pēc tam dzēst.
-      en: Only as long as necessary for the specific purpose, then delete.
-      ru: Только пока необходимо для конкретной цели, затем удалить.
-  correctOptionId: d
+      lv: Vismaz 5 gadus — kā pierādījums potenciālām juridiskām prasībām.
+      en: At least 5 years — as evidence for potential legal claims.
+      ru: Не менее 5 лет — как доказательство для возможных претензий.
+  correctOptionId: a
   explanation:
     lv: 'GDPR Art. 5(1)(e) — datu minimizēšanas un uzglabāšanas ierobežojuma principi — prasa personas datu dzēšanu, tiklīdz tie vairs nav nepieciešami nolūkam, kādam tika savākti. Pēc klienta pieņemšanas inspekcijas materiāls nav nepieciešams, ja vien nav atsevišķas juridiskās prasības. Paziņojums par GDPR pamatā ir nolūks, ne ilgums.
 
@@ -1716,10 +1716,6 @@
 
       '
   distractorRationales:
-    a:
-      lv: 5 gadu uzglabāšana bez konkrēta juridiskā pamata pārkāpj GDPR uzglabāšanas ierobežojumu principu.
-      en: 5-year retention without a specific legal basis violates the GDPR storage limitation principle.
-      ru: Хранение 5 лет без конкретного правового основания нарушает принцип ограничения хранения GDPR.
     b:
       lv: CAA Latvia reģistrācijas termiņš nav saistīts ar GDPR datu uzglabāšanas termiņu. Tie ir neatkarīgas tiesiskās prasības.
       en: CAA Latvia registration period is not linked to GDPR data retention periods. They are independent legal requirements.
@@ -1728,6 +1724,10 @@
       lv: '"Darba materiāls" nav GDPR kategorija. Personas dati ir jādzēš, kad to nolūks ir izpildīts — neatkarīgi no to komerciālās vērtības.'
       en: '"Work product" is not a GDPR category. Personal data must be deleted when its purpose is fulfilled — regardless of its commercial value.'
       ru: «Рабочий материал» — не категория GDPR. Персональные данные должны быть удалены по выполнении цели — независимо от их коммерческой ценности.
+    d:
+      lv: 5 gadu uzglabāšana bez konkrēta juridiskā pamata pārkāpj GDPR uzglabāšanas ierobežojumu principu.
+      en: 5-year retention without a specific legal basis violates the GDPR storage limitation principle.
+      ru: Хранение 5 лет без конкретного правового основания нарушает принцип ограничения хранения GDPR.
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Reg (EU) 2016/679 (GDPR) Art. 5(1)(e) — storage limitation
   difficulty: 3
   cognitiveLevel: apply
@@ -1745,20 +1745,20 @@
       ru: Лицо может требовать удаления только при наличии доказательств причинённого вреда.
   - id: b
     text:
-      lv: Nav pienākuma dzēst — lidojums bija no publiskas gaisa telpas.
-      en: No obligation to delete — the flight was from public airspace.
-      ru: Обязательства по удалению нет — полёт выполнялся из общедоступного воздушного пространства.
-  - id: c
-    text:
       lv: Materiāls jādzēš nekavējoties, jo nav tiesiska pamata personas personas datu apstrādei.
       en: The footage must be deleted immediately, as there is no legal basis for processing the person's personal data.
       ru: Запись должна быть немедленно удалена, так как нет правового основания для обработки персональных данных лица.
+  - id: c
+    text:
+      lv: Nav pienākuma dzēst — lidojums bija no publiskas gaisa telpas.
+      en: No obligation to delete — the flight was from public airspace.
+      ru: Обязательства по удалению нет — полёт выполнялся из общедоступного воздушного пространства.
   - id: d
     text:
       lv: Operators var glabāt materiālu, bet nedrīkst to publicēt.
       en: The operator may retain the footage but must not publish it.
       ru: Оператор может хранить запись, но не должен её публиковать.
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: 'GDPR Art. 17 paredz tiesības uz dzēšanu ("tiesības tikt aizmirstam"). Personas attēls privātajā pagalmā ir personas dati. Ja nav tiesiska pamata (piekrišana, leģitīmas intereses u.c.) personas datu apstrādei, operators pēc pieprasījuma ir pienākums dzēst materiālu. Publiskas gaisa telpas izmantošana neatceļ GDPR pienākumus.
 
@@ -1774,7 +1774,7 @@
       lv: Kaitējums nav priekšnoteikums dzēšanas tiesībām GDPR Art. 17. Pietiek ar personas pieprasījumu un tiesiska pamata neesamību.
       en: Harm is not a prerequisite for erasure rights under GDPR Art. 17. A person's request and the absence of a legal basis are sufficient.
       ru: Причинённый вред не является предварительным условием для права на стирание по ст. 17 GDPR. Достаточно запроса лица и отсутствия правового основания.
-    b:
+    c:
       lv: Publiskā gaisa telpa ir par lidojuma atļauju; GDPR attiecas uz personas datu apstrādi neatkarīgi no tā, no kurienes tas tika ierakstīts.
       en: Public airspace is about flight permission; GDPR applies to personal data processing regardless of where the recording was made from.
       ru: Общедоступное воздушное пространство касается разрешения на полёт; GDPR применяется к обработке персональных данных независимо от того, откуда сделана запись.
@@ -1794,9 +1794,9 @@
   options:
   - id: a
     text:
-      lv: Jā, ja tie atklāj identificējamas personas atrašanās vietu vai darbības laiku un vietu.
-      en: Yes, if they reveal an identifiable person's location or activity time and place.
-      ru: Да, если они раскрывают местонахождение или время и место деятельности идентифицируемого лица.
+      lv: Nē — GDPR attiecas tikai uz attēliem un video, nevis metadatiem.
+      en: No — GDPR applies only to images and video, not metadata.
+      ru: Нет — GDPR применяется только к изображениям и видео, а не к метаданным.
   - id: b
     text:
       lv: Tikai tad, ja lidojumu žurnālā ir iekļauts arī pilota vārds.
@@ -1804,15 +1804,15 @@
       ru: Только если журнал полётов также содержит имя пилота.
   - id: c
     text:
-      lv: Nē — GDPR attiecas tikai uz attēliem un video, nevis metadatiem.
-      en: No — GDPR applies only to images and video, not metadata.
-      ru: Нет — GDPR применяется только к изображениям и видео, а не к метаданным.
+      lv: Jā, ja tie atklāj identificējamas personas atrašanās vietu vai darbības laiku un vietu.
+      en: Yes, if they reveal an identifiable person's location or activity time and place.
+      ru: Да, если они раскрывают местонахождение или время и место деятельности идентифицируемого лица.
   - id: d
     text:
       lv: Nē — GPS koordinātas un laika zīmogi ir tehniski dati, nevis personas dati.
       en: No — GPS coordinates and time stamps are technical data, not personal data.
       ru: Нет — координаты GPS и метки времени являются техническими данными, а не персональными.
-  correctOptionId: a
+  correctOptionId: c
   explanation:
     lv: 'GDPR Art. 4(1) definē personas datus kā "jebkādu informāciju par identificētu vai identificējamu fizisku personu". GPS koordinātes un laika zīmogi, kas atklāj identificētas personas atrašanās vietu vai kustības modeli, ir personas dati. Atrašanās vietas dati tieši minēti GDPR recitālos.
 
@@ -1824,14 +1824,14 @@
 
       '
   distractorRationales:
+    a:
+      lv: GDPR attiecas uz jebkādu personas datu apstrādi — attēlus, video, metadatus, finanšu datus u.c. Nav ierobežojuma tikai uz vizuālajiem formātiem.
+      en: GDPR applies to any processing of personal data — images, video, metadata, financial data, etc. There is no restriction to visual formats only.
+      ru: GDPR применяется к любой обработке персональных данных — изображения, видео, метаданные, финансовые данные и т.д. Нет ограничения только на визуальные форматы.
     b:
       lv: Personas dati nav atkarīgi tikai no pilota vārda esamības. Atrašanās vieta + laiks var būt pietiekami identifikācijai bez vārda.
       en: Personal data does not depend solely on the pilot's name being present. Location + time can be sufficient for identification without a name.
       ru: Персональные данные не зависят только от наличия имени пилота. Местоположение + время может быть достаточным для идентификации без имени.
-    c:
-      lv: GDPR attiecas uz jebkādu personas datu apstrādi — attēlus, video, metadatus, finanšu datus u.c. Nav ierobežojuma tikai uz vizuālajiem formātiem.
-      en: GDPR applies to any processing of personal data — images, video, metadata, financial data, etc. There is no restriction to visual formats only.
-      ru: GDPR применяется к любой обработке персональных данных — изображения, видео, метаданные, финансовые данные и т.д. Нет ограничения только на визуальные форматы.
     d:
       lv: GDPR neierobežo "personas datu" jēdzienu ar vārdu vai attēlu. Jebkura informācija, kas ļauj identificēt personu (ieskaitot atrašanās vietu), ir personas dati.
       en: GDPR does not limit the concept of "personal data" to names or images. Any information enabling identification of a person (including location) is personal data.
@@ -1848,9 +1848,9 @@
   options:
   - id: a
     text:
-      lv: Iespējams jā — gaisa telpa atļauj lidojumu, bet nacionālie privātuma likumi var aizliegt filmēšanu virs privātīpašuma pat bez identifikācijas.
-      en: Possibly yes — airspace permits the flight, but national privacy laws may prohibit filming above private property even without identification.
-      ru: Возможно да — воздушное пространство разрешает полёт, но национальные законы о конфиденциальности могут запрещать съёмку над частной собственностью даже без идентификации.
+      lv: Jā — tā kā īpašnieks nav identificējams, GDPR nav piemērojams.
+      en: Yes — since the owner is not identifiable, GDPR does not apply.
+      ru: Да — поскольку владелец не идентифицируем, GDPR не применяется.
   - id: b
     text:
       lv: Nē — jebkāda filmēšana no drona ir aizliegta ārpus pilnvarotajiem lidlaukiem.
@@ -1863,10 +1863,10 @@
       ru: Да — общедоступное воздушное пространство означает свободную съёмку.
   - id: d
     text:
-      lv: Jā — tā kā īpašnieks nav identificējams, GDPR nav piemērojams.
-      en: Yes — since the owner is not identifiable, GDPR does not apply.
-      ru: Да — поскольку владелец не идентифицируем, GDPR не применяется.
-  correctOptionId: a
+      lv: Iespējams jā — gaisa telpa atļauj lidojumu, bet nacionālie privātuma likumi var aizliegt filmēšanu virs privātīpašuma pat bez identifikācijas.
+      en: Possibly yes — airspace permits the flight, but national privacy laws may prohibit filming above private property even without identification.
+      ru: Возможно да — воздушное пространство разрешает полёт, но национальные законы о конфиденциальности могут запрещать съёмку над частной собственностью даже без идентификации.
+  correctOptionId: d
   explanation:
     lv: 'Tiesisko regulējumu nosaka divi slāņi: (1) gaisa telpas regulējums (BGKIS, CAA Latvia) — atļauj lidot vai nē; (2) privātuma likumi (GDPR + nacionālie) — nosaka, vai filmēšana ir legāla. Gaisa telpa var būt brīva, bet dažas valstis aizliedz filmēt no augšas virs privātā īpašuma bez atļaujas, pat ja persona nav identificēta. Latvijā piemēro GDPR un Fizisko personu datu apstrādes likumu.
 
@@ -1878,6 +1878,10 @@
 
       '
   distractorRationales:
+    a:
+      lv: Pat bez personas identifikācijas atrašanās vietas dati (kura mājā tika filmēts) var būt personas dati. Turklāt nacionālie privātuma likumi var aizsargāt vairāk nekā GDPR.
+      en: Even without personal identification, location data (which property was filmed) can be personal data. Additionally national privacy laws may protect more than GDPR.
+      ru: Даже без идентификации лица данные о местоположении (какое имущество снималось) могут быть персональными данными. Кроме того, национальные законы о конфиденциальности могут предоставлять большую защиту, чем GDPR.
     b:
       lv: Nav vispārēja filmēšanas aizlieguma ārpus lidlaukiem. Filmēšanas legālumu nosaka konkrētie gaisa telpas un privātuma noteikumi.
       en: There is no general filming prohibition outside aerodromes. Filming legality is determined by specific airspace and privacy rules.
@@ -1886,10 +1890,6 @@
       lv: Publiska gaisa telpa ir par tiesībām lidot, nevis par tiesībām filmēt. Filmēšanas tiesiskumu nosaka privātuma un datu aizsardzības likums.
       en: Public airspace is about the right to fly, not the right to film. The legality of filming is determined by privacy and data protection law.
       ru: Общедоступное воздушное пространство касается права летать, а не права снимать. Законность съёмки определяется законодательством о конфиденциальности и защите данных.
-    d:
-      lv: Pat bez personas identifikācijas atrašanās vietas dati (kura mājā tika filmēts) var būt personas dati. Turklāt nacionālie privātuma likumi var aizsargāt vairāk nekā GDPR.
-      en: Even without personal identification, location data (which property was filmed) can be personal data. Additionally national privacy laws may protect more than GDPR.
-      ru: Даже без идентификации лица данные о местоположении (какое имущество снималось) могут быть персональными данными. Кроме того, национальные законы о конфиденциальности могут предоставлять большую защиту, чем GDPR.
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR Art. 6 — lawful basis; Latvia Personal Data Processing Law; Datu valsts inspekcija
   difficulty: 3
   cognitiveLevel: analyze
@@ -1902,9 +1902,9 @@
   options:
   - id: a
     text:
-      lv: Jā — "Fotografēšana aizliegta" attiecas tikai uz virszemes foto, nevis uz dronu.
-      en: Yes — "Photography prohibited" applies only to ground-level photos, not drones.
-      ru: Да — «Съёмка запрещена» относится только к наземной съёмке, а не к дронам.
+      lv: Nē — BGKIS apstiprina lidojumu gaisa telpā, bet aizlieguma zīme attiecas uz citiem tiesību aktiem (drošība, valsts noslēpums) un ir spēkā neatkarīgi.
+      en: No — BGKIS approves airspace flight, but the prohibition sign relates to other legislation (security, state secrets) and is in force independently.
+      ru: Нет — BGKIS одобряет полёт в воздушном пространстве, но запретный знак относится к другому законодательству (безопасность, государственная тайна) и действует независимо.
   - id: b
     text:
       lv: Jā — BGKIS apstiprinājums atļauj gan lidojumu, gan filmēšanu.
@@ -1912,15 +1912,15 @@
       ru: Да — одобрение BGKIS разрешает как полёт, так и съёмку.
   - id: c
     text:
-      lv: Nē — BGKIS apstiprina lidojumu gaisa telpā, bet aizlieguma zīme attiecas uz citiem tiesību aktiem (drošība, valsts noslēpums) un ir spēkā neatkarīgi.
-      en: No — BGKIS approves airspace flight, but the prohibition sign relates to other legislation (security, state secrets) and is in force independently.
-      ru: Нет — BGKIS одобряет полёт в воздушном пространстве, но запретный знак относится к другому законодательству (безопасность, государственная тайна) и действует независимо.
+      lv: Jā — "Fotografēšana aizliegta" attiecas tikai uz virszemes foto, nevis uz dronu.
+      en: Yes — "Photography prohibited" applies only to ground-level photos, not drones.
+      ru: Да — «Съёмка запрещена» относится только к наземной съёмке, а не к дронам.
   - id: d
     text:
       lv: Jā, ja uzņemtais materiāls netiek publicēts.
       en: Yes, if the footage is not published.
       ru: Да, если запись не публикуется.
-  correctOptionId: c
+  correctOptionId: a
   explanation:
     lv: 'BGKIS atļauja ir gaisa telpas atļauja — tā regulē, vai UAS drīkst atraties konkrētā gaisa telpas sadaļā. "Fotografēšana aizliegta" zīme norāda uz atsevišķu tiesību normu — parasti valsts drošības likumu vai Kriminālkodeksa noteikumu par kritiskās infrastruktūras dokumentēšanu. Šī aizlieguma pārkāpums ir neatkarīgi no BGKIS atļaujas statusa.
 
@@ -1932,14 +1932,14 @@
 
       '
   distractorRationales:
-    a:
-      lv: '"Fotografēšana aizliegta" attiecas uz jebkādu dokumentēšanu — ar kameru uz zemes, no drona vai ar jebkuru citu līdzekli. Tas nav ierobežots tikai ar virszemes foto.'
-      en: '"Photography prohibited" refers to any documentation — with a camera on the ground, from a drone, or by any other means. It is not restricted to ground-level photos.'
-      ru: «Съёмка запрещена» относится к любой документации — наземной камерой, с дрона или любым другим способом. Это не ограничивается только наземными фотографиями.
     b:
       lv: BGKIS atļauja ir gaisa telpas atļauja, nevis filmēšanas atļauja. Tās ir divi dažādi tiesiskuma aspekti.
       en: BGKIS authorisation is an airspace authorisation, not a filming authorisation. These are two separate legal aspects.
       ru: Разрешение BGKIS — это разрешение воздушного пространства, а не разрешение на съёmку. Это два разных правовых аспекта.
+    c:
+      lv: '"Fotografēšana aizliegta" attiecas uz jebkādu dokumentēšanu — ar kameru uz zemes, no drona vai ar jebkuru citu līdzekli. Tas nav ierobežots tikai ar virszemes foto.'
+      en: '"Photography prohibited" refers to any documentation — with a camera on the ground, from a drone, or by any other means. It is not restricted to ground-level photos.'
+      ru: «Съёмка запрещена» относится к любой документации — наземной камерой, с дрона или любым другим способом. Это не ограничивается только наземными фотографиями.
     d:
       lv: Publicēšana ir atsevišķs GDPR jautājums. Pats uzņemšanas fakts var būt pārkāpums, ja ir aizliegts filmēt.
       en: Publishing is a separate GDPR matter. The act of filming itself may be a violation if photography is prohibited.
@@ -1956,14 +1956,14 @@
   options:
   - id: a
     text:
-      lv: Art. 6(1)(f) — leģitīmās intereses ar iepriekšēju LIA un pastāvīgu informēšanu (GDPR ietvars sporta sacensībām ir leģitīmas intereses).
-      en: Art. 6(1)(f) — legitimate interests with a prior LIA and prominent informing (GDPR framework for sports events is legitimate interests).
-      ru: Ст. 6(1)(f) — законные интересы с предварительной оценкой LIA и видимым информированием (структура GDPR для спортивных мероприятий — законные интересы).
-  - id: b
-    text:
       lv: Art. 6(1)(a) — piekrišana — katra dalībnieka individuāla piekrišana.
       en: Art. 6(1)(a) — consent — individual consent from each participant.
       ru: Ст. 6(1)(a) — согласие — индивидуальное согласие от каждого участника.
+  - id: b
+    text:
+      lv: Art. 6(1)(f) — leģitīmās intereses ar iepriekšēju LIA un pastāvīgu informēšanu (GDPR ietvars sporta sacensībām ir leģitīmas intereses).
+      en: Art. 6(1)(f) — legitimate interests with a prior LIA and prominent informing (GDPR framework for sports events is legitimate interests).
+      ru: Ст. 6(1)(f) — законные интересы с предварительной оценкой LIA и видимым информированием (структура GDPR для спортивных мероприятий — законные интересы).
   - id: c
     text:
       lv: Nav vajadzīgs tiesiskais pamats — sporta sacensības ir publisks pasākums.
@@ -1974,7 +1974,7 @@
       lv: Art. 6(1)(b) — nepieciešamība līguma izpildei.
       en: Art. 6(1)(b) — necessity for contract performance.
       ru: Ст. 6(1)(b) — необходимость для исполнения договора.
-  correctOptionId: a
+  correctOptionId: b
   explanation:
     lv: 'GDPR Art. 6(1)(f) (leģitīmās intereses) ir tipiskākais pamats komerciālai filmēšanai publiskos sporta pasākumos. Tas prasa: (1) Leģitīmo Interešu Novērtējumu (LIA) — komerciāls mērķis sver pret personu interesēm; (2) redzamu informēšanu sacensības vietā (plakāti, skaļrunis). Individuāla piekrišana katram dalībniekam nav praktiski iespējama lielā pasākumā.
 
@@ -1986,7 +1986,7 @@
 
       '
   distractorRationales:
-    b:
+    a:
       lv: Individuāla piekrišana ikvienam dalībniekam lielā sporta pasākumā nav praktiski iespējama un ir nevajadzīga, ja leģitīmās intereses ir pienācīgi novērtētas.
       en: Individual consent from every participant at a large sports event is not practically feasible and is unnecessary if legitimate interests are properly assessed.
       ru: Индивидуальное согласие от каждого участника на крупном спортивном мероприятии практически нецелесообразно и не обязательно при правильно оценённых законных интересах.
@@ -2010,9 +2010,9 @@
   options:
   - id: a
     text:
-      lv: Operators — persona vai uzņēmums, kas lemj par filmēšanas mērķiem un metodēm.
-      en: The operator — the person or company that decides on the filming purposes and means.
-      ru: Оператор — лицо или компания, определяющее цели и средства съёмки.
+      lv: CAA Latvia kā drona lidojumu regulators.
+      en: CAA Latvia as the drone flight regulator.
+      ru: CAA Latvia как регулятор полётов дронов.
   - id: b
     text:
       lv: Remote pilota kompetences sertifikāta izdevējs.
@@ -2020,15 +2020,15 @@
       ru: Орган, выдавший свидетельство компетентности дистанционного пилота.
   - id: c
     text:
-      lv: CAA Latvia kā drona lidojumu regulators.
-      en: CAA Latvia as the drone flight regulator.
-      ru: CAA Latvia как регулятор полётов дронов.
+      lv: Operators — persona vai uzņēmums, kas lemj par filmēšanas mērķiem un metodēm.
+      en: The operator — the person or company that decides on the filming purposes and means.
+      ru: Оператор — лицо или компания, определяющее цели и средства съёмки.
   - id: d
     text:
       lv: Drona ražotājs.
       en: The drone manufacturer.
       ru: Производитель дрона.
-  correctOptionId: a
+  correctOptionId: c
   explanation:
     lv: 'GDPR Art. 4(7) definē "pārzini" kā fizisku vai juridisku personu, kas nosaka personas datu apstrādes mērķus un līdzekļus. Drona operācijā tas ir operators — tas, kurš nolemj, KO filmēt, KĀ filmēt un KO darīt ar materiālu. Faktiskais pilots var būt datu apstrādātājs, ja operators ir atsevišķa juridiskā persona.
 
@@ -2040,14 +2040,14 @@
 
       '
   distractorRationales:
+    a:
+      lv: CAA Latvia ir regulators, kas uzrauga lidojumu atbilstību — tā nav persona, kas nosaka filmēšanas mērķus un metodes.
+      en: CAA Latvia is a regulator overseeing flight compliance — it is not the person who determines filming purposes and means.
+      ru: CAA Latvia — регулятор, контролирующий соответствие полётов — это не лицо, определяющее цели и средства съёмки.
     b:
       lv: Sertifikāta izdevējs (CAA) apliecina pilota kompetenci, bet nenosaka personas datu apstrādes mērķus operācijā.
       en: The certificate issuer (CAA) certifies pilot competence but does not determine personal data processing purposes in an operation.
       ru: Орган, выдавший сертификат (CAA), удостоверяет компетентность пилота, но не определяет цели обработки персональных данных в операции.
-    c:
-      lv: CAA Latvia ir regulators, kas uzrauga lidojumu atbilstību — tā nav persona, kas nosaka filmēšanas mērķus un metodes.
-      en: CAA Latvia is a regulator overseeing flight compliance — it is not the person who determines filming purposes and means.
-      ru: CAA Latvia — регулятор, контролирующий соответствие полётов — это не лицо, определяющее цели и средства съёмки.
     d:
       lv: Ražotājs izstrādā dronu, bet nenosaka, ko, kā un kāpēc konkrēts operators filmē.
       en: The manufacturer builds the drone but does not determine what, how, and why a specific operator films.
@@ -2074,15 +2074,15 @@
       ru: Нет — ст. 30 применяется только к крупным компаниям с более чем 250 сотрудниками.
   - id: c
     text:
-      lv: Jā — komerciālam operatoram jāuztur apstrādes darbību reģistrs, iekļaujot drona filmēšanas operācijas ar personas datiem.
-      en: Yes — a commercial operator must maintain a register of processing activities, including drone filming operations involving personal data.
-      ru: Да — коммерческий оператор обязан вести реестр операций обработки, включая съёмку с дрона с участием персональных данных.
-  - id: d
-    text:
       lv: Nē — drona filmēšana ir atbrīvota no Art. 30 prasībām.
       en: No — drone filming is exempt from Art. 30 requirements.
       ru: Нет — съёмка с дрона освобождена от требований ст. 30.
-  correctOptionId: c
+  - id: d
+    text:
+      lv: Jā — komerciālam operatoram jāuztur apstrādes darbību reģistrs, iekļaujot drona filmēšanas operācijas ar personas datiem.
+      en: Yes — a commercial operator must maintain a register of processing activities, including drone filming operations involving personal data.
+      ru: Да — коммерческий оператор обязан вести реестр операций обработки, включая съёмку с дрона с участием персональных данных.
+  correctOptionId: d
   explanation:
     lv: 'GDPR Art. 30 prasa, lai pārziņi uzturētu apstrādes darbību reģistru. Izņēmums (< 250 darbinieki) ir ierobežots — tas neattiecas, ja apstrāde var radīt risku personu tiesībām un brīvībām. Cilvēku filmēšana pilsētā ir riskanta apstrāde, kas izslēdz izņēmumu. Komerciāls operators parasti arī pārsniedz 250 darbinieku slieksni vai nebauda izņēmumu.
 
@@ -2102,7 +2102,7 @@
       lv: 250 darbinieku izņēmums tieši nesedz apstrādes operācijas, kas rada risku. Filmēšana apdzīvotos rajonos ir riska operācija.
       en: The 250 employee exception does not cover processing operations that pose a risk. Filming in populated areas is a risk operation.
       ru: Исключение для 250 сотрудников не распространяется на операции обработки, создающие риск. Съёмка в населённых районах является рискованной операцией.
-    d:
+    c:
       lv: Drona filmēšana nav atbrīvota no Art. 30. Tā ir personas datu apstrāde, kurai piemērojamas GDPR prasības.
       en: Drone filming is not exempt from Art. 30. It is personal data processing subject to GDPR requirements.
       ru: Съёмка с дрона не освобождена от ст. 30. Это обработка персональных данных, на которую распространяются требования GDPR.

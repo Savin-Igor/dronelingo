@@ -114,9 +114,9 @@
   options:
   - id: a
     text:
-      lv: Tāpēc, ka brilles aizsedz redzamību apkārtējai gaisa telpai.
-      en: Because the goggles block the view of the surrounding airspace.
-      ru: Потому что очки блокируют обзор окружающей воздушной обстановки.
+      lv: Tāpēc, ka kamera nepārraida HDR.
+      en: Because the camera does not transmit HDR.
+      ru: Потому что камера не передаёт HDR.
   - id: b
     text:
       lv: Tāpēc, ka FPV signāls ir vājāks par WiFi.
@@ -124,15 +124,15 @@
       ru: Потому что сигнал FPV слабее WiFi.
   - id: c
     text:
-      lv: Tāpēc, ka kamera nepārraida HDR.
-      en: Because the camera does not transmit HDR.
-      ru: Потому что камера не передаёт HDR.
+      lv: Tāpēc, ka brilles aizsedz redzamību apkārtējai gaisa telpai.
+      en: Because the goggles block the view of the surrounding airspace.
+      ru: Потому что очки блокируют обзор окружающей воздушной обстановки.
   - id: d
     text:
       lv: Tāpēc, ka brilles patērē baterijas jaudu.
       en: Because the goggles drain battery power.
       ru: Потому что очки потребляют энергию батареи.
-  correctOptionId: a
+  correctOptionId: c
   explanation:
     lv: 'FPV brilles aizsedz dabisko skatu uz UAS un apkārtējo gaisa telpu. Tāpēc Atvērtajā kategorijā FPV ir atļauts tikai ar UAS novērotāju blakus pilotam.
 
@@ -144,14 +144,14 @@
 
       '
   distractorRationales:
+    a:
+      lv: HDR pārraide ir video kvalitātes parametrs, kas nemaina pamata problēmu — brilles aizsedz dabisko apkārtējās gaisa telpas skatu.
+      en: HDR transmission is a video-quality parameter that does not change the core issue — the goggles block the natural view of the surrounding airspace.
+      ru: 'HDR-передача — это параметр качества видео, не меняющий главной проблемы: очки закрывают естественный обзор воздушной обстановки.'
     b:
       lv: Signāla stiprums attiecas uz kontroli ar drona pulti, ne uz pilota redzes lauku. VLOS prasība ir par to, ko pilots redz, ne par radio kvalitāti.
       en: Signal strength is about link control, not the pilot's field of view. VLOS is about what the pilot sees, not radio quality.
       ru: Сила сигнала — про управление каналом, а не про поле зрения пилота. VLOS — про то, что видит пилот, а не про качество радиосигнала.
-    c:
-      lv: HDR pārraide ir video kvalitātes parametrs, kas nemaina pamata problēmu — brilles aizsedz dabisko apkārtējās gaisa telpas skatu.
-      en: HDR transmission is a video-quality parameter that does not change the core issue — the goggles block the natural view of the surrounding airspace.
-      ru: 'HDR-передача — это параметр качества видео, не меняющий главной проблемы: очки закрывают естественный обзор воздушной обстановки.'
     d:
       lv: Baterijas patēriņš ir aprīkojuma jautājums, ne VLOS prasība. VLOS ir par to, ka pilots fiziski redz UAS — kameru iegrāmatošana to nemaina.
       en: Battery drain is an equipment matter, not a VLOS requirement. VLOS is about the pilot physically seeing the UAS — camera-feed framing does not change that.
@@ -168,9 +168,9 @@
   options:
   - id: a
     text:
-      lv: Empty-field myopia — acs fokusējas uz ~1–2 m, palaižot tālus objektus.
-      en: Empty-field myopia — the eye refocuses to ~1–2 m, missing distant objects.
-      ru: Empty-field myopia — глаз перефокусируется на ~1–2 м, упуская далёкие объекты.
+      lv: Tuneļa redzeslauks (samazināta perifērā uzmanība).
+      en: Tunnel vision (reduced peripheral attention).
+      ru: Тоннельное зрение (сужение периферии).
   - id: b
     text:
       lv: Spilgtuma adaptācija (uzlabota nakts redzeslauks).
@@ -183,10 +183,10 @@
       ru: Постоянство цвета.
   - id: d
     text:
-      lv: Tuneļa redzeslauks (samazināta perifērā uzmanība).
-      en: Tunnel vision (reduced peripheral attention).
-      ru: Тоннельное зрение (сужение периферии).
-  correctOptionId: a
+      lv: Empty-field myopia — acs fokusējas uz ~1–2 m, palaižot tālus objektus.
+      en: Empty-field myopia — the eye refocuses to ~1–2 m, missing distant objects.
+      ru: Empty-field myopia — глаз перефокусируется на ~1–2 м, упуская далёкие объекты.
+  correctOptionId: d
   explanation:
     lv: 'Empty-field myopia ir labi dokumentēts efekts: bez fiksācijas punkta acs fokusējas tuvu, kas apgrūtina tālu objektu (tostarp drona) noteikšanu. Aktīva skenēšana to novērš.
 
@@ -198,6 +198,10 @@
 
       '
   distractorRationales:
+    a:
+      lv: Tuneļa redzeslauks rodas no stresa vai FPV brillēm, ne no skatīšanās debesīs. Tas ir cita ģenēze.
+      en: Tunnel vision arises from stress or FPV goggles, not from looking at sky. Different cause.
+      ru: Тоннельное зрение возникает от стресса или FPV-очков, а не от взгляда в небо. Иной источник.
     b:
       lv: Spilgtuma adaptācija ir reālā parādība, bet tā uzlabo nakts redzi tumsā, nevis tukšā debesī. Mehānika atšķiras.
       en: Brightness adaptation is real but improves night vision in the dark — not in empty sky. Different mechanism.
@@ -206,10 +210,6 @@
       lv: Krāsu konstantums ir spēja uztvert objekta krāsu vienādu dažādā gaismā — nesaistīts efekts.
       en: Colour constancy is the ability to perceive an object's colour as the same under different lighting — an unrelated phenomenon.
       ru: Постоянство цвета — способность воспринимать цвет объекта одинаково при разном освещении. Это другой эффект.
-    d:
-      lv: Tuneļa redzeslauks rodas no stresa vai FPV brillēm, ne no skatīšanās debesīs. Tas ir cita ģenēze.
-      en: Tunnel vision arises from stress or FPV goggles, not from looking at sky. Different cause.
-      ru: Тоннельное зрение возникает от стресса или FPV-очков, а не от взгляда в небо. Иной источник.
   sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — FAA AC 60-22; EASA Easy Access Rules — Vision and perception
   difficulty: 3
   cognitiveLevel: recall
@@ -281,20 +281,20 @@
       ru: Хронический стресс.
   - id: b
     text:
-      lv: Akūts stress.
-      en: Acute stress.
-      ru: Острый стресс.
-  - id: c
-    text:
       lv: Tehnisks stress.
       en: Technical stress.
       ru: Технический стресс.
+  - id: c
+    text:
+      lv: Akūts stress.
+      en: Acute stress.
+      ru: Острый стресс.
   - id: d
     text:
       lv: Šāda situācija nerada nozīmīgu stresu pieredzējušiem pilotiem.
       en: This situation does not cause significant stress for experienced pilots.
       ru: Такая ситуация не вызывает значительного стресса у опытных пилотов.
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: 'Tehnisks stress rodas no nepazīstamas vai nestrādājošas tehniskās iekārtas — jauns drona modelis, ierīces kļūme, nevēlama aparatūras maiņa. Rezerves pults, kuru pilots nav izmantojis, ir tehnisks stress. Tas ietekmē pat pieredzējušus pilotus, tāpēc IMSAFE jāvērtē pirms katra lidojuma.
 
@@ -310,7 +310,7 @@
       lv: Hronisks stress uzkrājas dienu un nedēļu laikā — pastāvīga darba slodze, miega trūkums, personiskās problēmas. Šis ir situatīvs, tūlītējs stress.
       en: Chronic stress accumulates over days and weeks — sustained workload, poor sleep, personal circumstances. This is situational, immediate stress.
       ru: Хронический стресс накапливается дни и недели — длительная нагрузка, недосып, личные проблемы. Это ситуативный, немедленный стресс.
-    b:
+    c:
       lv: Akūts stress ir tūlītējs situatīvs spiediens — klients kavējas, veldze laikā, sociāls vai laika spiediens. Tehniskas iekārtas problēma ir tehnisks, nevis akūts stress.
       en: Acute stress is immediate situational pressure — a late client, time pressure, social or schedule pressure. A technical equipment problem is technical, not acute, stress.
       ru: 'Острый стресс — это немедленное ситуативное давление: задержка клиента, давление времени, социальное или плановое давление. Проблема с техническим оборудованием — это технический, а не острый стресс.'
@@ -389,9 +389,9 @@
       ru: Знаю ли я маршрут? Заряжены ли аккумуляторы? Благоприятна ли погода?
   - id: b
     text:
-      lv: Vai es varu pieņemt droš lēmumu laika spiedienā? Vai mana uzmanība ir šim lidojumam? Vai esmu gatavs pārtraukt misiju, ja nepieciešams?
-      en: Can I make a safe decision under pressure right now? Is my attention on this flight? Am I ready to abort if needed?
-      ru: Могу ли я сейчас принять безопасное решение под давлением? Моё внимание на этом полёте? Готов ли я прервать миссию при необходимости?
+      lv: Vai BGKIS pieteikums apstiprināts? Vai laikapstākļi atbilst prasībām? Vai drons atjauno GPS savienojumu?
+      en: Is the BGKIS application approved? Is weather within limits? Is the drone acquiring GPS?
+      ru: Одобрена ли заявка BGKIS? Погода в пределах нормы? Получает ли дрон GPS?
   - id: c
     text:
       lv: Vai man ir A1/A3 sertifikāts? Vai apdrošināšana ir spēkā? Vai drona marķējums ir pareizs?
@@ -399,10 +399,10 @@
       ru: Есть ли у меня сертификат A1/A3? Действует ли страховка? Правильна ли маркировка дрона?
   - id: d
     text:
-      lv: Vai BGKIS pieteikums apstiprināts? Vai laikapstākļi atbilst prasībām? Vai drons atjauno GPS savienojumu?
-      en: Is the BGKIS application approved? Is weather within limits? Is the drone acquiring GPS?
-      ru: Одобрена ли заявка BGKIS? Погода в пределах нормы? Получает ли дрон GPS?
-  correctOptionId: b
+      lv: Vai es varu pieņemt droš lēmumu laika spiedienā? Vai mana uzmanība ir šim lidojumam? Vai esmu gatavs pārtraukt misiju, ja nepieciešams?
+      en: Can I make a safe decision under pressure right now? Is my attention on this flight? Am I ready to abort if needed?
+      ru: Могу ли я сейчас принять безопасное решение под давлением? Моё внимание на этом полёте? Готов ли я прервать миссию при необходимости?
+  correctOptionId: d
   explanation:
     lv: 'Trīs pašpārbaudes jautājumi pirms lidojuma: (1) Vai es varu pieņemt drošu lēmumu laika spiedienā tieši tagad? (2) Vai mana uzmanība ir šim lidojumam — vai arī uz daudzām citām lietām? (3) Vai esmu gatavs pārtraukt misiju, ja kaut kas noiet greizi? Ja kāda atbilde ir "nē" vai "domāju, ka jā" — tas ir "nē".
 
@@ -418,14 +418,14 @@
       lv: Šie ir pirmslido vides un aparatūras pārbaudes jautājumi, nevis pilota pašpārbaudē iekļautie jautājumi par kognitīvo gatavību.
       en: These are pre-flight environment and hardware check questions, not the pilot self-test questions about cognitive readiness.
       ru: Это вопросы предполётной проверки окружающей среды и оборудования, а не вопросы самопроверки пилота о когнитивной готовности.
+    b:
+      lv: BGKIS, laikapstākļi un GPS — vides pārbaudes pirms lidojuma, nevis kognitīvās pašpārbaudes jautājumi.
+      en: BGKIS, weather, and GPS are pre-flight environment checks, not cognitive self-test questions.
+      ru: BGKIS, погода и GPS — предполётные проверки окружающей среды, а не вопросы когнитивной самопроверки.
     c:
       lv: Sertifikāts, apdrošināšana un marķējums ir atbilstības pārbaudes — tos nevajadzētu jaukt ar kognitīvās gatavības pašpārbaudi.
       en: Certificate, insurance, and marking are compliance checks — they should not be confused with the cognitive readiness self-test.
       ru: Сертификат, страховка и маркировка — проверки соответствия, их не следует путать с самопроверкой когнитивной готовности.
-    d:
-      lv: BGKIS, laikapstākļi un GPS — vides pārbaudes pirms lidojuma, nevis kognitīvās pašpārbaudes jautājumi.
-      en: BGKIS, weather, and GPS are pre-flight environment checks, not cognitive self-test questions.
-      ru: BGKIS, погода и GPS — предполётные проверки окружающей среды, а не вопросы когнитивной самопроверки.
   sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Human performance; ICAO Doc 9966
   difficulty: 2
   cognitiveLevel: recall
@@ -438,14 +438,14 @@
   options:
   - id: a
     text:
-      lv: Apdrošināšana (Insurance).
-      en: Insurance.
-      ru: Страхование (Insurance).
-  - id: b
-    text:
       lv: Slimība (Illness).
       en: Illness.
       ru: Болезнь (Illness).
+  - id: b
+    text:
+      lv: Apdrošināšana (Insurance).
+      en: Insurance.
+      ru: Страхование (Insurance).
   - id: c
     text:
       lv: Incidenti (Incidents).
@@ -456,7 +456,7 @@
       lv: Iedvesma (Inspiration).
       en: Inspiration.
       ru: Вдохновение (Inspiration).
-  correctOptionId: b
+  correctOptionId: a
   explanation:
     lv: 'IMSAFE: I — Illness (slimība), M — Medication (medikamenti), S — Stress (stress), A — Alcohol (alkohols), F — Fatigue (nogurums), E — Emotion (emocijas). "I" apzīmē pātrumu vai fiziskās veselības stāvokli, kas var ietekmēt pilota spēju droši vadīt.
 
@@ -468,7 +468,7 @@
 
       '
   distractorRationales:
-    a:
+    b:
       lv: Apdrošināšana nav IMSAFE pašpārbaudes elements. IMSAFE koncentrējas uz pilota fizisko un garīgo stāvokli.
       en: Insurance is not an IMSAFE element. IMSAFE focuses on the pilot's physical and mental condition.
       ru: Страхование не является элементом IMSAFE. IMSAFE фокусируется на физическом и психическом состоянии пилота.
@@ -551,20 +551,20 @@
       ru: Полёт разрешён, если симптомов сонливости нет в момент начала полёта.
   - id: b
     text:
-      lv: Atlikt lidojumu līdz brīdim, kad medikamenta iedarbība ir beigusies, vai konsultēties ar ārstu par aviācijas drošu alternatīvu.
-      en: Postpone the flight until the medication's effect has worn off, or consult a doctor for an aviation-safe alternative.
-      ru: Отложить полёт до окончания действия препарата или проконсультироваться с врачом об авиационно-безопасной альтернативе.
-  - id: c
-    text:
       lv: Lidot var — bezrecepšu zāles nav IMSAFE kategorija.
       en: Flying is permitted — over-the-counter drugs are not an IMSAFE category.
       ru: Полёт разрешён — безрецептурные препараты не относятся к категории IMSAFE.
+  - id: c
+    text:
+      lv: Atlikt lidojumu līdz brīdim, kad medikamenta iedarbība ir beigusies, vai konsultēties ar ārstu par aviācijas drošu alternatīvu.
+      en: Postpone the flight until the medication's effect has worn off, or consult a doctor for an aviation-safe alternative.
+      ru: Отложить полёт до окончания действия препарата или проконсультироваться с врачом об авиационно-безопасной альтернативе.
   - id: d
     text:
       lv: Lidot var, bet tikai tuvākajā atvērtajā laukā bez cilvēkiem.
       en: Flying is permitted, but only in the nearest open field without people.
       ru: Полёт разрешён, но только на ближайшем открытом поле без людей.
-  correctOptionId: b
+  correctOptionId: c
   explanation:
     lv: 'Antihistamīni ar miegainību kā blakni tieši ietekmē IMSAFE "M" (medikamenti). Miegainība pasliktina reakcijas laiku, situācijas apzināšanos un lēmumu pieņemšanu. Pilotam jāatliek lidojums līdz zāles ir izvadītas vai jāizmanto aviācijas drošs analogs. Simptomu neesamība konkrētā brīdī negarantē drošību visā lidojuma laikā.
 
@@ -580,7 +580,7 @@
       lv: Symptomu neesamība brīdī "x" nedrošina, ka miegainība neradīsies lidojuma laikā. Medikamentam var būt aizkavēta iedarbība.
       en: Absence of symptoms at moment "x" does not guarantee drowsiness will not appear during flight. The medication may have a delayed effect.
       ru: Отсутствие симптомов в момент «x» не гарантирует, что сонливость не появится во время полёта. У препарата может быть отсроченный эффект.
-    c:
+    b:
       lv: Bezrecepšu zāles ir daļa no IMSAFE "M" kategorijas. IMSAFE neizslēdz neviena medikamenta veidu.
       en: Over-the-counter drugs are part of the IMSAFE "M" category. IMSAFE does not exclude any type of medication.
       ru: Безрецептурные препараты входят в категорию IMSAFE «M». IMSAFE не исключает никаких видов лекарств.
@@ -610,15 +610,15 @@
       ru: Улучшенная концентрация от адреналина, вызванного жаждой.
   - id: c
     text:
-      lv: Pasliktināta koncentrācija, lēnāks reakcijas laiks un novājināta lēmumu pieņemšana jau pie 1–2 % ķermeņa masas dehidratācijas.
-      en: Impaired concentration, slower reaction time, and weakened decision-making already at 1–2 % body mass dehydration.
-      ru: Нарушение концентрации, замедление времени реакции и ослабление принятия решений уже при дегидратации 1–2 % массы тела.
-  - id: d
-    text:
       lv: Ietekme ir jūtama tikai pie > 5 % dehidratācijas.
       en: Effects are noticeable only above 5 % dehydration.
       ru: Эффекты заметны только при дегидратации более 5 %.
-  correctOptionId: c
+  - id: d
+    text:
+      lv: Pasliktināta koncentrācija, lēnāks reakcijas laiks un novājināta lēmumu pieņemšana jau pie 1–2 % ķermeņa masas dehidratācijas.
+      en: Impaired concentration, slower reaction time, and weakened decision-making already at 1–2 % body mass dehydration.
+      ru: Нарушение концентрации, замедление времени реакции и ослабление принятия решений уже при дегидратации 1–2 % массы тела.
+  correctOptionId: d
   explanation:
     lv: 'Pētījumi rāda, ka jau 1–2 % ķermeņa masas ūdens zudums (apm. 700 ml–1 l 70 kg cilvēkam) pasliktina kognitīvo funkciju — īpaši uzmanību, darba atmiņu un lēmumu pieņemšanu. Karstā laikā pēc 2 stundu lidojuma šis slieksnis ir viegli pārsniedzams. Padzeries pirms lidojuma un pārtraukumos.
 
@@ -638,7 +638,7 @@
       lv: Adrenalīns no slāpēm nav dokumentēts mehānisms koncentrācijas uzlabošanai. Slāpes ir diskomforts, kas parasti novērš uzmanību.
       en: Adrenaline from thirst is not a documented mechanism for improving concentration. Thirst is a distraction, not a stimulant.
       ru: Адреналин от жажды не является задокументированным механизмом улучшения концентрации. Жажда отвлекает, а не стимулирует.
-    d:
+    c:
       lv: 5 % dehidratācija ir smaga klīniskā dehidratācija. Kognitīvā pasliktināšanās sākas daudz agrāk — pie 1–2 %.
       en: 5 % dehydration is severe clinical dehydration. Cognitive impairment begins far earlier — at 1–2 %.
       ru: 5 % дегидратация — тяжёлая клиническая дегидратация. Когнитивное ухудшение начинается намного раньше — при 1–2 %.
@@ -654,14 +654,14 @@
   options:
   - id: a
     text:
-      lv: Telpiskā dezorientācija.
-      en: Spatial disorientation.
-      ru: Пространственная дезориентация.
-  - id: b
-    text:
       lv: Plāna turpināšanas aizspriedums (get-there-itis / plan continuation bias).
       en: Plan continuation bias (get-there-itis).
       ru: Предвзятость продолжения плана (get-there-itis).
+  - id: b
+    text:
+      lv: Telpiskā dezorientācija.
+      en: Spatial disorientation.
+      ru: Пространственная дезориентация.
   - id: c
     text:
       lv: Inverted-U efekts (Yerkesa-Dodsona likums).
@@ -672,7 +672,7 @@
       lv: Mnemonikas kļūda.
       en: Mnemonic error.
       ru: Мнемоническая ошибка.
-  correctOptionId: b
+  correctOptionId: a
   explanation:
     lv: 'Plāna turpināšanas aizspriedums rodas, kad pilots turpina ar plānu pat tad, kad situācija ir mainījusies un bīstami. Sociālais spiediens ("komanda gaida") un laika trūkums pastiprina šo efektu. Pietūcis akumulators ir klīniska defekta pazīme — drošs lēmums ir atteikties no lidojuma, nevis "tikai vienu reizi" riskēt ar aizdegšanos.
 
@@ -684,7 +684,7 @@
 
       '
   distractorRationales:
-    a:
+    b:
       lv: Telpiskā dezorientācija rodas, kad pilots nevar noteikt drona orientāciju gaisā — tas ir percepcijas, nevis lēmumu pieņemšanas kļūdas veids.
       en: Spatial disorientation occurs when the pilot cannot determine the drone's orientation in the air — that is a perception failure, not a decision-making error type.
       ru: Пространственная дезориентация возникает, когда пилот не может определить ориентацию дрона в воздухе — это ошибка восприятия, а не тип ошибки принятия решений.
@@ -713,20 +713,20 @@
       ru: Никакого эффекта — 2000 м слишком мало для влияния на когнитивные функции.
   - id: b
     text:
-      lv: Paaugstināts skābekļa līmenis kalnu gaisā uzlabo uzmanību.
-      en: Elevated oxygen levels in mountain air improve attention.
-      ru: Повышенный уровень кислорода в горном воздухе улучшает внимание.
-  - id: c
-    text:
       lv: Pazeminātais skābekļa spiediens 2000 m var izraisīt vieglu hipoksiju ar neskaidru domāšanu, nogurumu un lēnāku reakciju.
       en: The reduced oxygen partial pressure at 2000 m can cause mild hypoxia with unclear thinking, fatigue, and slower reactions.
       ru: Сниженное парциальное давление кислорода на 2000 м может вызвать лёгкую гипоксию с нечётким мышлением, усталостью и замедленной реакцией.
+  - id: c
+    text:
+      lv: Paaugstināts skābekļa līmenis kalnu gaisā uzlabo uzmanību.
+      en: Elevated oxygen levels in mountain air improve attention.
+      ru: Повышенный уровень кислорода в горном воздухе улучшает внимание.
   - id: d
     text:
       lv: Augstums ietekmē tikai drona lidojuma veiktspēju, ne pilota kognitīvo funkciju.
       en: Altitude affects only drone flight performance, not the pilot's cognitive function.
       ru: Высота влияет только на лётные характеристики дрона, а не на когнитивные функции пилота.
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: 'No 2000 m un augstāk skābekļa daļējais spiediens sāk būtiski samazināties. Personas ar hipoksijas jutīgumu var sajust kognitīvu pasliktināšanos — lēnāku reakciju, neskaidru domāšanu un novājinātu lēmumu pieņemšanu — pat bez fiziskiem simptomiem. Alpīnā vidē jāplāno biežākas pārtraukumos, ēnā, un sākotnēji jāpielāgojas.
 
@@ -742,7 +742,7 @@
       lv: 2000 m nav augsti tikai pēc absolūtiem standartiem, bet skābekļa daļējais spiediens jau ir par ~20 % zemāks nekā jūras līmenī, un jutīgām personām tas ir nozīmīgi.
       en: 2000 m is not high only by absolute standards, but the partial oxygen pressure is already ~20 % lower than at sea level, which is significant for sensitive individuals.
       ru: 2000 м не является большой высотой по абсолютным стандартам, но парциальное давление кислорода уже на ~20 % ниже, чем на уровне моря, что значимо для чувствительных людей.
-    b:
+    c:
       lv: Skābekļa līmenis gaisā ir aptuveni 21 % neatkarīgi no augstuma, bet daļējais spiediens (un tādejādi absorbcija) samazinās ar augstumu.
       en: The oxygen percentage in air is approximately 21 % regardless of altitude, but the partial pressure (and thus absorption) decreases with altitude.
       ru: Процент кислорода в воздухе составляет около 21 % независимо от высоты, но парциальное давление (и, следовательно, поглощение) снижается с высотой.
@@ -826,15 +826,15 @@
       ru: Оборудование (Equipment) — устаревшая прошивка пульта управления.
   - id: c
     text:
-      lv: Emocijas (Emotion) — piemēram, nervozitāte pirms svarīga komerclidojuma, bēdas vai dusmas, kas novērš uzmanību.
-      en: Emotion — for example nervousness before an important commercial flight, grief or anger distracting attention.
-      ru: Эмоции (Emotion) — например, нервозность перед важным коммерческим полётом, горе или гнев, отвлекающие внимание.
-  - id: d
-    text:
       lv: Ārkārtas procedūras (Emergency) — nezināmas nolaidināšanas procedūras.
       en: Emergency — unknown landing procedures.
       ru: Аварийные процедуры (Emergency) — неизвестные процедуры посадки.
-  correctOptionId: c
+  - id: d
+    text:
+      lv: Emocijas (Emotion) — piemēram, nervozitāte pirms svarīga komerclidojuma, bēdas vai dusmas, kas novērš uzmanību.
+      en: Emotion — for example nervousness before an important commercial flight, grief or anger distracting attention.
+      ru: Эмоции (Emotion) — например, нервозность перед важным коммерческим полётом, горе или гнев, отвлекающие внимание.
+  correctOptionId: d
   explanation:
     lv: '"E" IMSAFE apzīmē Emotions (emocijas). Spēcīgas emocijas — uztraukums, dusmas, bēdas, sasprindzinājums — var novērst uzmanību no lidojuma uzdevuma. Emocijpārslogots pilots var pieņemt sliktus lēmumus vai nepamanīt svarīgu informāciju. Pirms lidojuma jānovērtē, vai emocionālais stāvoklis ļauj droši koncentrēties.
 
@@ -854,7 +854,7 @@
       lv: '"Ekipējums" (Equipment) nav IMSAFE kategorija. IMSAFE ir pilota pašpārbaude, ne aprīkojuma pārbaude.'
       en: '"Equipment" is not an IMSAFE category. IMSAFE is a pilot self-check, not an equipment check.'
       ru: «Оборудование» (Equipment) не является категорией IMSAFE. IMSAFE — самопроверка пилота, а не проверка оборудования.
-    d:
+    c:
       lv: '"Ārkārtas procedūras" (Emergency) nav IMSAFE kategorija. Ārkārtas procedūru pārzināšana ir preflight plānošanas jautājums, nevis emocionālais faktors.'
       en: '"Emergency" is not an IMSAFE category. Emergency procedure knowledge is a preflight planning matter, not an emotional factor.'
       ru: «Аварийные процедуры» (Emergency) не является категорией IMSAFE. Знание аварийных процедур — вопрос предполётного планирования, а не эмоциональный фактор.
@@ -870,14 +870,14 @@
   options:
   - id: a
     text:
-      lv: Stress vienmēr uzlabo sniegumu, jo adrenalīns paaugstina uzmanību.
-      en: Stress always improves performance because adrenaline increases attention.
-      ru: Стресс всегда улучшает производительность, так как адреналин повышает внимание.
-  - id: b
-    text:
       lv: Augsts stress sašaurina uzmanību ("tunelredzē"), samazina darba atmiņu un var izraisīt lēmu pieņemšanas kļūdas.
       en: High stress narrows attention ("tunnel vision"), reduces working memory, and can cause decision-making errors.
       ru: Высокий стресс сужает внимание («туннельное зрение»), снижает рабочую память и может вызывать ошибки принятия решений.
+  - id: b
+    text:
+      lv: Stress vienmēr uzlabo sniegumu, jo adrenalīns paaugstina uzmanību.
+      en: Stress always improves performance because adrenaline increases attention.
+      ru: Стресс всегда улучшает производительность, так как адреналин повышает внимание.
   - id: c
     text:
       lv: Stresam nav ietekmes uz lēmumu pieņemšanu — tikai fiziskā nogurums ir būtisks.
@@ -888,7 +888,7 @@
       lv: Stress ietekmē tikai jaunos pilotus — pieredze pilnībā neitralizē tā efektu.
       en: Stress only affects novice pilots — experience fully neutralises its effect.
       ru: Стресс влияет только на новичков — опыт полностью нейтрализует его эффект.
-  correctOptionId: b
+  correctOptionId: a
   explanation:
     lv: 'Augsts stress aktivizē "cīnies vai bēdz" reakciju, kas paaugstina adrenalīnu un kortizolu. Īstermiņā tas var uzlabot sniegumu vienkāršos uzdevumos, bet sarežģītos uzdevumos tas sašaurina uzmanību (tuneļredze), samazina darba atmiņas kapacitāti un var izraisīt impulsīvus, neapsvērtus lēmumus. Yerkesa-Dodsona kross apraksta šo attiecību starp uzbudinājumu un sniegumu.
 
@@ -900,7 +900,7 @@
 
       '
   distractorRationales:
-    a:
+    b:
       lv: Zems līdz mērens stress var uzlabot sniegumu (Yerkesas-Dodsona princips), bet augsts stress (pārslogots) pasliktina to, it īpaši sarežģītos uzdevumos.
       en: Low to moderate stress can improve performance (Yerkes-Dodson principle), but high stress (overload) degrades it, especially on complex tasks.
       ru: Низкий и умеренный стресс может улучшить производительность (принцип Йеркса-Додсона), но высокий стресс (перегрузка) ухудшает её, особенно при сложных задачах.
@@ -924,14 +924,14 @@
   options:
   - id: a
     text:
-      lv: Pilota uzmanība tik spēcīgi ieķeras vienā uzdevumā, ka plašā skenēšana sabrūk.
-      en: The pilot concentrates so strongly on one task that broader scanning collapses.
-      ru: Пилот настолько концентрируется на одной задаче, что общая сканирующая картина рушится.
-  - id: b
-    text:
       lv: Pilots uztur UAS VLOS.
       en: The pilot keeps the drone in VLOS.
       ru: Пилот сохраняет VLOS.
+  - id: b
+    text:
+      lv: Pilota uzmanība tik spēcīgi ieķeras vienā uzdevumā, ka plašā skenēšana sabrūk.
+      en: The pilot concentrates so strongly on one task that broader scanning collapses.
+      ru: Пилот настолько концентрируется на одной задаче, что общая сканирующая картина рушится.
   - id: c
     text:
       lv: Pilots rūpīgi lasa telemetriju pirms katra lidojuma.
@@ -942,13 +942,13 @@
       lv: Pilots izmanto statīvu nolaišanās kadriem.
       en: The pilot uses a tripod for landing shots.
       ru: Пилот использует штатив для посадочных кадров.
-  correctOptionId: a
+  correctOptionId: b
   explanation:
     lv: 'Fiksācija ir uzmanības sašaurināšanās: pilots iestrēgst vienā uzdevumā vai displejā un vairs kvalitatīvi neskenē pārējo vidi.'
     en: 'Fixation is attention narrowing: the pilot becomes absorbed in one task or display and stops scanning the wider environment effectively.'
     ru: 'Фиксация — это сужение внимания: пилот застревает в одной задаче или дисплее и перестаёт качественно сканировать остальную среду.'
   distractorRationales:
-    b:
+    a:
       lv: VLOS ir juridisks/vizuāls stāvoklis, nevis fiksācijas definīcija.
       en: VLOS is a legal/visual condition, not the definition of fixation.
       ru: VLOS — это юридическое и визуальное условие, а не определение фиксации.
@@ -972,9 +972,9 @@
   options:
   - id: a
     text:
-      lv: Apzināts atkārtojošs skenēšanas cikls, kas pēc katra skatiena pultī atgriež uzmanību ārā.
-      en: A deliberate repeating scan loop that returns outside after every controller glance.
-      ru: Сознательный повторяющийся цикл сканирования с немедленным возвратом наружу после взгляда на экран.
+      lv: Palielināt ekrāna spilgtumu, lai datus būtu vieglāk lasīt.
+      en: Keeping the controller brighter so the data is easier to read.
+      ru: Сделать экран ярче, чтобы данные было проще читать.
   - id: b
     text:
       lv: Nepārtraukti skatīties baterijas procentus.
@@ -982,28 +982,28 @@
       ru: Постоянно смотреть только на процент батареи.
   - id: c
     text:
-      lv: Palielināt ekrāna spilgtumu, lai datus būtu vieglāk lasīt.
-      en: Keeping the controller brighter so the data is easier to read.
-      ru: Сделать экран ярче, чтобы данные было проще читать.
+      lv: Apzināts atkārtojošs skenēšanas cikls, kas pēc katra skatiena pultī atgriež uzmanību ārā.
+      en: A deliberate repeating scan loop that returns outside after every controller glance.
+      ru: Сознательный повторяющийся цикл сканирования с немедленным возвратом наружу после взгляда на экран.
   - id: d
     text:
       lv: Lidot ātrāk, lai samazinātu laiku gaisā.
       en: Flying faster to reduce time in the air.
       ru: Летать быстрее, чтобы меньше времени проводить в воздухе.
-  correctOptionId: a
+  correctOptionId: c
   explanation:
     lv: Apzināts skenēšanas cikls neļauj uzmanībai iestrēgt vienā punktā un notur UAS, gaisa telpu un cilvēkus vienā mentālajā modelī.
     en: A deliberate scan loop prevents attention from getting trapped on one target and keeps the aircraft, airspace, and people in the same mental model.
     ru: Дисциплинированный цикл сканирования не даёт вниманию застревать на одном объекте и удерживает аппарат, воздушное пространство и людей в одной ментальной модели.
   distractorRationales:
+    a:
+      lv: Spilgtāks ekrāns var palīdzēt redzamībai, bet neizārstē uzmanības sašaurināšanos.
+      en: Brighter screens may help visibility, but they do not solve attention narrowing.
+      ru: Яркий экран может помочь читаемости, но не решает когнитивное сужение внимания.
     b:
       lv: Nepārtraukta viena lauka kontrole ir fiksācija, nevis tās ārstēšana.
       en: Continuous monitoring of one field is fixation, not its cure.
       ru: Непрерывный контроль одного поля — это фиксация, а не защита от неё.
-    c:
-      lv: Spilgtāks ekrāns var palīdzēt redzamībai, bet neizārstē uzmanības sašaurināšanos.
-      en: Brighter screens may help visibility, but they do not solve attention narrowing.
-      ru: Яркий экран может помочь читаемости, но не решает когнитивное сужение внимания.
     d:
       lv: Ātrums samazina laika rezervi un neatrisina kognitīvo problēmu.
       en: Speed reduces time margin and does not address the cognitive problem.
@@ -1030,15 +1030,15 @@
       ru: 0,5 ‰ — латвийский допустимый предел за рулём.
   - id: c
     text:
-      lv: 0,8 ‰ — virs likumīgās robežas vairumā ES valstu.
-      en: 0.8 ‰ — above the legal limit in most EU countries.
-      ru: Выше 0,5 ‰, ближе к 0,8 ‰.
-  - id: d
-    text:
       lv: Nav traucējuma — ķermenis pielāgojas paildzinātam nomodam.
       en: No impairment — the body adapts to extended wakefulness.
       ru: Нет нарушения — организм адаптируется к длительному бодрствованию.
-  correctOptionId: c
+  - id: d
+    text:
+      lv: 0,8 ‰ — virs likumīgās robežas vairumā ES valstu.
+      en: 0.8 ‰ — above the legal limit in most EU countries.
+      ru: Выше 0,5 ‰, ближе к 0,8 ‰.
+  correctOptionId: d
   explanation:
     lv: 18 stundas nomoda parasti atbilst traucējumam virs 0,5 ‰ BAC ekvivalences — tuvojas 0,8 ‰. 0,5 ‰ ekvivalents minēts pie 16 stundām; 18 stundas šo robežu pārsniedz. Ķermenis paildzinātam nomodam nepielāgojas — veiktspēja turpina krist.
     en: 18 hours of wakefulness typically corresponds to impairment exceeding 0.5 ‰ BAC equivalence — heading toward 0.8 ‰. The 0.5 ‰ equivalence is cited for 16 hours; 18 hours exceeds that. The body does not adapt to extended wakefulness — performance continues to degrade.
@@ -1052,7 +1052,7 @@
       lv: 0,5 ‰ ekvivalents atbilst aptuveni 16 stundām nomodā. 18 stundas ir sliktāk.
       en: 0.5 ‰ equivalence corresponds to approximately 16 hours awake. 18 hours is worse.
       ru: Эквивалент 0,5 ‰ — около 16 часов. 18 часов превышают это значение.
-    d:
+    c:
       lv: Ķermenis nepielāgojas — bez miega veiktspēja turpina krist lineāri.
       en: The body does not adapt — without sleep, performance continues to degrade linearly.
       ru: Организм не адаптируется. Без сна когнитивная деградация продолжается. Ощущение «я нормально себя чувствую» при длительном бодрствовании — сам по себе признак нарушения.
@@ -1068,9 +1068,9 @@
   options:
   - id: a
     text:
-      lv: Hronisks stress.
-      en: Chronic stress.
-      ru: Хронический стресс.
+      lv: Akūts stress.
+      en: Acute stress.
+      ru: Острый стресс.
   - id: b
     text:
       lv: Tehnisks stress.
@@ -1078,28 +1078,28 @@
       ru: Технический стресс.
   - id: c
     text:
-      lv: Akūts stress.
-      en: Acute stress.
-      ru: Острый стресс.
+      lv: Hronisks stress.
+      en: Chronic stress.
+      ru: Хронический стресс.
   - id: d
     text:
       lv: Ievērojama stresa nav — tā ir parasta darba situācija.
       en: No significant stress — it is a normal work situation.
       ru: Не значимый — рабочая ситуация.
-  correctOptionId: c
+  correctOptionId: a
   explanation:
     lv: Akūtu stresu izraisa tūlītējs situācijas spiediens — gaidošs klients, laika ierobežojums, kavēšanās. Tas sašaurina uzmanību un paātrina lēmumus tā, ka apzināts riska novērtējums tiek apiets.
     en: Acute stress is triggered by immediate situational pressure — a waiting client, time pressure, running late. It narrows attention and speeds up decision-making in ways that bypass careful risk assessment.
     ru: 'Острый стресс — это немедленное ситуативное давление: опоздание, ожидающий клиент, цейтнот. Он сужает внимание и ускоряет принятие решений в ущерб тщательности.'
   distractorRationales:
-    a:
-      lv: Hronisks stress uzkrājas dienām un nedēļām. Viens gaidošs klients ir akūts, ne hronisks.
-      en: Chronic stress accumulates over days and weeks. A single waiting client is acute, not chronic.
-      ru: Хронический накапливается днями и неделями. Один ожидающий клиент — острый стресс.
     b:
       lv: Tehnisks stress saistīts ar nepazīstamu vai traucētu aparatūru, ne ar klienta spiedienu.
       en: Technical stress relates to unfamiliar or malfunctioning equipment, not client pressure.
       ru: Технический стресс связан с незнакомым или неисправным оборудованием, а не с давлением клиента.
+    c:
+      lv: Hronisks stress uzkrājas dienām un nedēļām. Viens gaidošs klients ir akūts, ne hronisks.
+      en: Chronic stress accumulates over days and weeks. A single waiting client is acute, not chronic.
+      ru: Хронический накапливается днями и неделями. Один ожидающий клиент — острый стресс.
     d:
       lv: Parastas darba situācijas izraisa reālu fizioloģisku stresa reakciju, kas ietekmē veiktspēju.
       en: Normal work situations produce real physiological stress responses that affect performance.
@@ -1121,20 +1121,20 @@
       ru: Да — сенная лихорадка несерьёзна, препарат обычный.
   - id: b
     text:
-      lv: Jā — 2 stundas ir pietiekami, lai medikaments pārtraukt darbību.
-      en: Yes — two hours is enough time for the medication to wear off.
-      ru: Да — двух часов достаточно для выведения препарата.
-  - id: c
-    text:
       lv: Nē — medikaments, kas ietekmē modrību, ir IMSAFE diskvalifikators.
       en: No — medication affecting alertness is an IMSAFE disqualifier.
       ru: Нет — препарат, влияющий на реакцию, является дисквалификатором по IMSAFE.
+  - id: c
+    text:
+      lv: Jā — 2 stundas ir pietiekami, lai medikaments pārtraukt darbību.
+      en: Yes — two hours is enough time for the medication to wear off.
+      ru: Да — двух часов достаточно для выведения препарата.
   - id: d
     text:
       lv: Jā — bet tikai tad, ja lidojums ir īsāks par 30 minūtēm.
       en: Yes — but only if the flight is under 30 minutes.
       ru: Да, если полёт короче 30 минут.
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: IMSAFE 'M' aptver jebkuru medikamentu, kas var ietekmēt reakciju vai modrību. 'Var izraisīt miegainību' ir tieši norādīts. 2 stundas vairumam antihistamīnu nav pietiekams atklārējums, un lidojuma ilgums diskvalifikatoru nemaina.
     en: IMSAFE 'M' covers any medication that could affect reactions or alertness. 'May cause drowsiness' is explicit. Two hours is not sufficient clearance for most antihistamines, and flight duration does not change the disqualifier.
@@ -1144,7 +1144,7 @@
       lv: Pamatslimības smagums šeit nav būtisks. Jautājums ir par medikamenta ietekmi.
       en: The severity of the underlying condition is irrelevant. The medication effect is the issue.
       ru: Серьёзность основного заболевания не имеет значения. Важен эффект препарата.
-    b:
+    c:
       lv: Vairumam antihistamīnu pussabrukšanas periods ir 4–6 stundas. 2 stundas vairumam ir aktīvajā logā.
       en: Most antihistamines have 4–6 hour half-lives. Two hours is within the active window for most.
       ru: Большинство антигистаминных имеют период полувыведения 4–6 часов. Через два часа препарат ещё в активной фазе.
@@ -1169,20 +1169,20 @@
       ru: Продолжить, если «да» в менее приоритетной категории, например Eating.
   - id: b
     text:
-      lv: Atlikt vai deleģēt lidojumu.
-      en: Postpone or delegate the flight.
-      ru: Отложить или передать полёт.
-  - id: c
-    text:
       lv: Samazināt plānoto lidojuma augstumu uz pusi.
       en: Reduce the planned flight altitude by half.
       ru: Снизить запланированную высоту вдвое.
+  - id: c
+    text:
+      lv: Atlikt vai deleģēt lidojumu.
+      en: Postpone or delegate the flight.
+      ru: Отложить или передать полёт.
   - id: d
     text:
       lv: Turpināt ar lielāku piesardzību un īsāku plānu.
       en: Proceed with additional caution and a shorter flight plan.
       ru: Продолжить с дополнительной осторожностью и укороченным планом.
-  correctOptionId: b
+  correctOptionId: c
   explanation:
     lv: Viens 'jā' IMSAFE pietiek, lai pārtrauktu operāciju. Sarakstā nav 'zemas prioritātes' kategorijas — katrs punkts iekļauts, jo apzīmē reālu drošības risku. Turpināt 'ar piesardzību' traucētā stāvoklī ir cikliska loģika.
     en: One 'yes' in IMSAFE is sufficient to ground the operation. The checklist does not have a 'low-priority' category — each item was included because it represents a genuine safety risk. Proceeding with 'additional caution' while impaired is circular logic.
@@ -1192,7 +1192,7 @@
       lv: IMSAFE punktiem hierarhijas nav — visi seši ir diskvalifikatori, ja atbilde 'jā'.
       en: There is no hierarchy of IMSAFE items — all six are disqualifiers if answered 'yes'.
       ru: Иерархии пунктов IMSAFE не существует — все шесть являются дисквалификаторами при ответе «да».
-    c:
+    b:
       lv: Augstuma samazināšana neatrisina kognitīvo traucējumu.
       en: Altitude reduction does not address cognitive impairment.
       ru: Снижение высоты не устраняет когнитивное нарушение — причину проблемы.
@@ -1217,9 +1217,9 @@
       ru: Задержать миссию, чтобы клиент увидел больше процедуры.
   - id: b
     text:
-      lv: Piemērot iepriekš plānotu noteikumu, pirms spiediens un slodze sagroza spriestspēju.
-      en: To apply a planned rule before pressure and workload distort judgement.
-      ru: Применить заранее запланированное правило до того, как давление и нагрузка исказят суждение.
+      lv: Padarīt katru misiju ilgāku nekā nepieciešams.
+      en: To make every mission take longer than necessary.
+      ru: Сделать каждую миссию дольше, чем нужно.
   - id: c
     text:
       lv: Izveidot papildu papīrus pēc lidojuma.
@@ -1227,10 +1227,10 @@
       ru: Создать дополнительную бумажную работу после полёта.
   - id: d
     text:
-      lv: Padarīt katru misiju ilgāku nekā nepieciešams.
-      en: To make every mission take longer than necessary.
-      ru: Сделать каждую миссию дольше, чем нужно.
-  correctOptionId: b
+      lv: Piemērot iepriekš plānotu noteikumu, pirms spiediens un slodze sagroza spriestspēju.
+      en: To apply a planned rule before pressure and workload distort judgement.
+      ru: Применить заранее запланированное правило до того, как давление и нагрузка исказят суждение.
+  correctOptionId: d
   explanation:
     lv: Lēmumu vārti ir iepriekš noteikts kontroles punkts, kas sargā spriestspēju, pārceļot svarīgus lēmumus agrāk — pirms laika spiediens un uzdevumu kaudze sāk ietekmēt domāšanu.
     en: A decision gate is a predefined checkpoint that protects judgement by moving key decisions earlier, before time stress and task load distort thinking.
@@ -1240,14 +1240,14 @@
       lv: Mērķis ir drošība un spriestspējas kvalitāte, nevis procedūru demonstrēšana.
       en: The purpose is safety and judgement quality, not performative procedure.
       ru: Цель — безопасность и качество суждения, а не показательная процедура.
+    b:
+      lv: Tie var pat ietaupīt laiku, neļaujot nestabilai misijai kļūt sliktākai.
+      en: They can actually save time by preventing unstable missions from getting worse.
+      ru: Они могут экономить время, не давая нестабильной миссии ухудшиться.
     c:
       lv: Lēmumu vārti ir operatīvs rīks, nevis pēc-lidojuma birokrātija.
       en: Decision gates are operational tools, not post-flight paperwork.
       ru: Ворота решений — operational tool, а не послеполётная бюрократия.
-    d:
-      lv: Tie var pat ietaupīt laiku, neļaujot nestabilai misijai kļūt sliktākai.
-      en: They can actually save time by preventing unstable missions from getting worse.
-      ru: Они могут экономить время, не давая нестабильной миссии ухудшиться.
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — human performance; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pilot responsibility and safe conduct
   difficulty: 2
   cognitiveLevel: apply
@@ -1260,14 +1260,14 @@
   options:
   - id: a
     text:
-      lv: Pilots izmanto kontrolsarakstu.
-      en: The pilot is using a checklist.
-      ru: Пилот использует чек-лист.
-  - id: b
-    text:
       lv: Pilots pārstāj skenēt un fiksējas uz viena uzdevuma, kamēr citas prasības aug.
       en: The pilot stops scanning and becomes fixed on one task while other demands keep growing.
       ru: Пилот перестаёт сканировать и фиксируется на одной задаче, пока остальные требования растут.
+  - id: b
+    text:
+      lv: Pilots izmanto kontrolsarakstu.
+      en: The pilot is using a checklist.
+      ru: Пилот использует чек-лист.
   - id: c
     text:
       lv: Lidaparāts joprojām ir kontrolējams.
@@ -1278,13 +1278,13 @@
       lv: Klients grib citu kameras leņķi.
       en: The client wants a different angle.
       ru: Клиент хочет другой угол съёмки.
-  correctOptionId: b
+  correctOptionId: a
   explanation:
     lv: Fiksācija uz viena uzdevuma augošas slodzes apstākļos ir galvenais brīdinājums, ka situācijas apzināšanās un lēmumu kvalitāte jau sāk pasliktināties.
     en: Fixation under growing task load is a core warning sign that workload is already degrading situational awareness and decision quality.
     ru: Фиксация на одной задаче при росте количества требований — ключевой сигнал, что situational awareness и качество решений уже деградируют.
   distractorRationales:
-    a:
+    b:
       lv: Kontrolsaraksta lietošana parasti ir aizsargājoša uzvedība, nevis brīdinājums.
       en: Checklist use is usually a protective behaviour, not a warning sign.
       ru: Использование чек-листа обычно защищает, а не предупреждает о проблеме.
@@ -1313,9 +1313,9 @@
       ru: Скорость.
   - id: b
     text:
-      lv: Safety.
-      en: Safety.
-      ru: Безопасность.
+      lv: Stress.
+      en: Stress.
+      ru: Стресс.
   - id: c
     text:
       lv: Skill.
@@ -1323,10 +1323,10 @@
       ru: Навык.
   - id: d
     text:
-      lv: Stress.
-      en: Stress.
-      ru: Стресс.
-  correctOptionId: d
+      lv: Safety.
+      en: Safety.
+      ru: Безопасность.
+  correctOptionId: b
   explanation:
     lv: 'IMSAFE = Illness, Medication, Stress, Alcohol, Fatigue, Eating. "S" ir Stress.
 
@@ -1342,14 +1342,14 @@
       lv: Ātrums (Speed) ir lidojuma parametrs, nevis pašpārbaudes elements. IMSAFE attiecas uz pilota stāvokli.
       en: Speed is a flight parameter, not a self-check item. IMSAFE addresses the pilot's state.
       ru: Скорость — параметр полёта, а не пункт самопроверки. IMSAFE — про состояние пилота.
-    b:
-      lv: Drošība (Safety) ir mērķis, nevis konkrēts IMSAFE pārbaudes punkts. Stress ir specifiskais "S" elements.
-      en: Safety is the goal, not a specific IMSAFE item. Stress is the specific "S" element.
-      ru: Безопасность — это цель, а не конкретный пункт IMSAFE. Stress — это и есть «S».
     c:
       lv: Iemaņas (Skill) tiek attīstītas treniņos, IMSAFE turpretim ir 6 īstermiņa fizioloģisko un emocionālo riska faktoru saraksts.
       en: Skill is built through training, whereas IMSAFE is a 6-item short-term physiological and emotional risk-factor checklist.
       ru: Навык формируется тренировками, а IMSAFE — это список из 6 краткосрочных физиологических и эмоциональных факторов риска.
+    d:
+      lv: Drošība (Safety) ir mērķis, nevis konkrēts IMSAFE pārbaudes punkts. Stress ir specifiskais "S" elements.
+      en: Safety is the goal, not a specific IMSAFE item. Stress is the specific "S" element.
+      ru: Безопасность — это цель, а не конкретный пункт IMSAFE. Stress — это и есть «S».
   sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules for UAS — Human performance limitations
   difficulty: 2
   cognitiveLevel: apply
@@ -1372,15 +1372,15 @@
       ru: 12 часов.
   - id: c
     text:
-      lv: 2 stundas.
-      en: 2 hours.
-      ru: 2 часа.
-  - id: d
-    text:
       lv: 8 stundas.
       en: 8 hours.
       ru: 8 часов.
-  correctOptionId: d
+  - id: d
+    text:
+      lv: 2 stundas.
+      en: 2 hours.
+      ru: 2 часа.
+  correctOptionId: c
   explanation:
     lv: '"Bottle to throttle" robeža ir 8 stundas. Praksē rekomendēts ilgāks intervāls atkarībā no patērētā daudzuma.
 
@@ -1400,7 +1400,7 @@
       lv: '12 stundas pārsniedz minimumu — drošāk, bet nav obligātās regulas robeža. Atceries: 8 stundas — minimālais limits.'
       en: '12 hours exceeds the minimum — safer, but not the mandatory regulatory threshold. Remember: 8 hours is the floor.'
       ru: '12 часов превышают минимум — безопаснее, но не обязательный регуляторный порог. Помни: 8 часов — это нижняя граница.'
-    c:
+    d:
       lv: 2 stundas pārāk maz — pat neliels patēriņš ietekmē spriestspēju daudz ilgāk.
       en: 2 hours is far too short — even small consumption affects judgement for much longer.
       ru: 2 часа — слишком мало. Даже малое количество влияет на принятие решений намного дольше.
@@ -1421,9 +1421,9 @@
       ru: Потому что очки потребляют энергию батареи.
   - id: b
     text:
-      lv: Tāpēc, ka brilles aizsedz redzamību apkārtējai gaisa telpai.
-      en: Because the goggles block the view of the surrounding airspace.
-      ru: Потому что очки блокируют обзор окружающей воздушной обстановки.
+      lv: Tāpēc, ka kamera nepārraida HDR.
+      en: Because the camera does not transmit HDR.
+      ru: Потому что камера не передаёт HDR.
   - id: c
     text:
       lv: Tāpēc, ka FPV signāls ir vājāks par WiFi.
@@ -1431,10 +1431,10 @@
       ru: Потому что сигнал FPV слабее WiFi.
   - id: d
     text:
-      lv: Tāpēc, ka kamera nepārraida HDR.
-      en: Because the camera does not transmit HDR.
-      ru: Потому что камера не передаёт HDR.
-  correctOptionId: b
+      lv: Tāpēc, ka brilles aizsedz redzamību apkārtējai gaisa telpai.
+      en: Because the goggles block the view of the surrounding airspace.
+      ru: Потому что очки блокируют обзор окружающей воздушной обстановки.
+  correctOptionId: d
   explanation:
     lv: 'FPV brilles aizsedz dabisko skatu uz UAS un apkārtējo gaisa telpu. Tāpēc Atvērtajā kategorijā FPV ir atļauts tikai ar UAS novērotāju blakus pilotam.
 
@@ -1450,14 +1450,14 @@
       lv: Baterijas patēriņš ir aprīkojuma jautājums, ne VLOS prasība. VLOS ir par to, ka pilots fiziski redz UAS — kameru iegrāmatošana to nemaina.
       en: Battery drain is an equipment matter, not a VLOS requirement. VLOS is about the pilot physically seeing the UAS — camera-feed framing does not change that.
       ru: Расход батареи — вопрос оборудования, а не требование VLOS. VLOS — про то, что пилот видит UAS физически; обрамление кадра ничего не меняет.
+    b:
+      lv: HDR pārraide ir video kvalitātes parametrs, kas nemaina pamata problēmu — brilles aizsedz dabisko apkārtējās gaisa telpas skatu.
+      en: HDR transmission is a video-quality parameter that does not change the core issue — the goggles block the natural view of the surrounding airspace.
+      ru: 'HDR-передача — это параметр качества видео, не меняющий главной проблемы: очки закрывают естественный обзор воздушной обстановки.'
     c:
       lv: Signāla stiprums attiecas uz kontroli ar drona pulti, ne uz pilota redzes lauku. VLOS prasība ir par to, ko pilots redz, ne par radio kvalitāti.
       en: Signal strength is about link control, not the pilot's field of view. VLOS is about what the pilot sees, not radio quality.
       ru: Сила сигнала — про управление каналом, а не про поле зрения пилота. VLOS — про то, что видит пилот, а не про качество радиосигнала.
-    d:
-      lv: HDR pārraide ir video kvalitātes parametrs, kas nemaina pamata problēmu — brilles aizsedz dabisko apkārtējās gaisa telpas skatu.
-      en: HDR transmission is a video-quality parameter that does not change the core issue — the goggles block the natural view of the surrounding airspace.
-      ru: 'HDR-передача — это параметр качества видео, не меняющий главной проблемы: очки закрывают естественный обзор воздушной обстановки.'
   sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 Art. UAS.OPEN.060(2)(a); EASA HF guidance
   difficulty: 3
   cognitiveLevel: apply
@@ -1470,9 +1470,9 @@
   options:
   - id: a
     text:
-      lv: Spilgtuma adaptācija (uzlabota nakts redzeslauks).
-      en: Brightness adaptation (improved night vision).
-      ru: Яркостная адаптация (улучшение ночного зрения).
+      lv: Empty-field myopia — acs fokusējas uz ~1–2 m, palaižot tālus objektus.
+      en: Empty-field myopia — the eye refocuses to ~1–2 m, missing distant objects.
+      ru: Empty-field myopia — глаз перефокусируется на ~1–2 м, упуская далёкие объекты.
   - id: b
     text:
       lv: Krāsu konstantums.
@@ -1485,10 +1485,10 @@
       ru: Тоннельное зрение (сужение периферии).
   - id: d
     text:
-      lv: Empty-field myopia — acs fokusējas uz ~1–2 m, palaižot tālus objektus.
-      en: Empty-field myopia — the eye refocuses to ~1–2 m, missing distant objects.
-      ru: Empty-field myopia — глаз перефокусируется на ~1–2 м, упуская далёкие объекты.
-  correctOptionId: d
+      lv: Spilgtuma adaptācija (uzlabota nakts redzeslauks).
+      en: Brightness adaptation (improved night vision).
+      ru: Яркостная адаптация (улучшение ночного зрения).
+  correctOptionId: a
   explanation:
     lv: 'Empty-field myopia ir labi dokumentēts efekts: bez fiksācijas punkta acs fokusējas tuvu, kas apgrūtina tālu objektu (tostarp drona) noteikšanu. Aktīva skenēšana to novērš.
 
@@ -1500,10 +1500,6 @@
 
       '
   distractorRationales:
-    a:
-      lv: Spilgtuma adaptācija ir reālā parādība, bet tā uzlabo nakts redzi tumsā, nevis tukšā debesī. Mehānika atšķiras.
-      en: Brightness adaptation is real but improves night vision in the dark — not in empty sky. Different mechanism.
-      ru: Яркостная адаптация существует, но улучшает зрение в темноте, а не в пустом небе. Это другой механизм.
     b:
       lv: Krāsu konstantums ir spēja uztvert objekta krāsu vienādu dažādā gaismā — nesaistīts efekts.
       en: Colour constancy is the ability to perceive an object's colour as the same under different lighting — an unrelated phenomenon.
@@ -1512,6 +1508,10 @@
       lv: Tuneļa redzeslauks rodas no stresa vai FPV brillēm, ne no skatīšanās debesīs. Tas ir cita ģenēze.
       en: Tunnel vision arises from stress or FPV goggles, not from looking at sky. Different cause.
       ru: Тоннельное зрение возникает от стресса или FPV-очков, а не от взгляда в небо. Иной источник.
+    d:
+      lv: Spilgtuma adaptācija ir reālā parādība, bet tā uzlabo nakts redzi tumsā, nevis tukšā debesī. Mehānika atšķiras.
+      en: Brightness adaptation is real but improves night vision in the dark — not in empty sky. Different mechanism.
+      ru: Яркостная адаптация существует, но улучшает зрение в темноте, а не в пустом небе. Это другой механизм.
   sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — FAA AC 60-22; EASA Easy Access Rules — Vision and perception
   difficulty: 3
   cognitiveLevel: apply
@@ -1529,20 +1529,20 @@
       ru: Лететь — усталость не влияет на пилота-оператора.
   - id: b
     text:
-      lv: Nogulēt 30 minūšu sniegu un sākt lidojumu.
-      en: Take a 30-minute nap and start flying.
-      ru: Поспать 30 минут и начать полёт.
-  - id: c
-    text:
       lv: Atlikt lidojumu vai paļauties uz atpūtušos novērotāju.
       en: Postpone the flight or rely on a rested observer.
       ru: Отложить полёт или положиться на отдохнувшего наблюдателя.
+  - id: c
+    text:
+      lv: Nogulēt 30 minūšu sniegu un sākt lidojumu.
+      en: Take a 30-minute nap and start flying.
+      ru: Поспать 30 минут и начать полёт.
   - id: d
     text:
       lv: Iedzert kafiju un sākt lidojumu.
       en: Drink coffee and start flying.
       ru: Выпить кофе и начать полёт.
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: 'Nogurums samazina reakcijas ātrumu un uzmanības spektru. Profesionālā disciplīna prasa pārcelt lidojumu — kofeīns neaizvieto miegu.
 
@@ -1558,7 +1558,7 @@
       lv: Nogurums ietekmē jebkuru pilotu — tālvadības pilots saskaras ar tiem pašiem reakcijas, uzmanības un spriestspējas riskiem.
       en: Fatigue affects every pilot — remote pilots face the same risks to reaction, attention, and judgement.
       ru: Усталость влияет на любого пилота — пилот-оператор сталкивается с теми же рисками для реакции, внимания и принятия решений.
-    b:
+    c:
       lv: 30 minūšu sniegs var dot īsu modrību, bet tas neaizvieto pilnu nakts miegu. Pēc 4 h kopējā miega kumulatīvais deficīts paliek.
       en: A 30-minute nap may give brief alertness, but it does not replace a full night's sleep. After 4 h total the cumulative deficit remains.
       ru: 30-минутный сон даёт кратковременную бодрость, но не заменяет полноценный ночной сон. После 4 часов общий дефицит сохраняется.
@@ -1588,15 +1588,15 @@
       ru: Хронический стресс.
   - id: c
     text:
-      lv: Akūts stress.
-      en: Acute stress.
-      ru: Острый стресс.
-  - id: d
-    text:
       lv: Tehnisks stress.
       en: Technical stress.
       ru: Технический стресс.
-  correctOptionId: d
+  - id: d
+    text:
+      lv: Akūts stress.
+      en: Acute stress.
+      ru: Острый стресс.
+  correctOptionId: c
   explanation:
     lv: 'Tehnisks stress rodas no nepazīstamas vai nestrādājošas tehniskās iekārtas — jauns drona modelis, ierīces kļūme, nevēlama aparatūras maiņa. Rezerves pults, kuru pilots nav izmantojis, ir tehnisks stress. Tas ietekmē pat pieredzējušus pilotus, tāpēc IMSAFE jāvērtē pirms katra lidojuma.
 
@@ -1616,7 +1616,7 @@
       lv: Hronisks stress uzkrājas dienu un nedēļu laikā — pastāvīga darba slodze, miega trūkums, personiskās problēmas. Šis ir situatīvs, tūlītējs stress.
       en: Chronic stress accumulates over days and weeks — sustained workload, poor sleep, personal circumstances. This is situational, immediate stress.
       ru: Хронический стресс накапливается дни и недели — длительная нагрузка, недосып, личные проблемы. Это ситуативный, немедленный стресс.
-    c:
+    d:
       lv: Akūts stress ir tūlītējs situatīvs spiediens — klients kavējas, veldze laikā, sociāls vai laika spiediens. Tehniskas iekārtas problēma ir tehnisks, nevis akūts stress.
       en: Acute stress is immediate situational pressure — a late client, time pressure, social or schedule pressure. A technical equipment problem is technical, not acute, stress.
       ru: 'Острый стресс — это немедленное ситуативное давление: задержка клиента, давление времени, социальное или плановое давление. Проблема с техническим оборудованием — это технический, а не острый стресс.'
@@ -1637,9 +1637,9 @@
       ru: 0,5 ‰ — допустимый предел вождения в Латвии.
   - id: b
     text:
-      lv: Virs 0,5 ‰, tuvojoties 0,8 ‰.
-      en: Above 0.5 ‰, approaching 0.8 ‰.
-      ru: Выше 0,5 ‰, приближаясь к 0,8 ‰.
+      lv: 0,2 ‰ — virs nulles.
+      en: 0.2 ‰ — slightly above zero.
+      ru: 0,2 ‰ — немного выше нуля.
   - id: c
     text:
       lv: Nav ievērojama ietekme — organisms pielāgojas ilgai nomoda periodam.
@@ -1647,10 +1647,10 @@
       ru: Нет значительного нарушения — организм адаптируется к длительному бодрствованию.
   - id: d
     text:
-      lv: 0,2 ‰ — virs nulles.
-      en: 0.2 ‰ — slightly above zero.
-      ru: 0,2 ‰ — немного выше нуля.
-  correctOptionId: b
+      lv: Virs 0,5 ‰, tuvojoties 0,8 ‰.
+      en: Above 0.5 ‰, approaching 0.8 ‰.
+      ru: Выше 0,5 ‰, приближаясь к 0,8 ‰.
+  correctOptionId: d
   explanation:
     lv: '0,5 ‰ BAC ekvivalents parasti tiek saistīts ar ~16 stundu nomodā. 18 stundas pārsniedz šo slieksni — atbilstošs ekvivalents ir virs 0,5 ‰, tuvojoties 0,8 ‰. Organisms nepielāgojas ilgstošai nomodā uzturēšanai — veiktspēja turpina degradēties.
 
@@ -1666,14 +1666,14 @@
       lv: 0,5 ‰ ekvivalents ir saistīts ar ~16 stundu nomodā. 18 stundas pārsniedz šo slieksni — ietekme ir lielāka.
       en: The 0.5 ‰ equivalent is associated with ~16 hours awake. 18 hours exceeds this threshold — the impairment is greater.
       ru: Эквивалент 0,5 ‰ связан с ~16 часами без сна. 18 часов превышают этот порог — нарушение сильнее.
+    b:
+      lv: 0,2 ‰ atbilst vieglai nogurdinātībai — ievērojami mazāk par 16 stundu nomodā. 18 stundas ir ievērojami augstāka iedarbība.
+      en: 0.2 ‰ corresponds to mild tiredness — well short of 16 hours awake. 18 hours is a significantly higher level of impairment.
+      ru: 0,2 ‰ соответствует лёгкой усталости — значительно меньше 16 часов без сна. 18 часов — значительно более высокий уровень нарушения.
     c:
       lv: Organisms nepielāgojas — kognitīvā veiktspēja turpina pasliktināties lineāri bez miega. Pielāgošanas mīts ir dokumentēts kā neprecīzs.
       en: The body does not adapt — cognitive performance continues to degrade linearly without sleep. The adaptation myth is documented as inaccurate.
       ru: Организм не адаптируется — когнитивные способности продолжают линейно ухудшаться без сна. Миф об адаптации задокументирован как неточный.
-    d:
-      lv: 0,2 ‰ atbilst vieglai nogurdinātībai — ievērojami mazāk par 16 stundu nomodā. 18 stundas ir ievērojami augstāka iedarbība.
-      en: 0.2 ‰ corresponds to mild tiredness — well short of 16 hours awake. 18 hours is a significantly higher level of impairment.
-      ru: 0,2 ‰ соответствует лёгкой усталости — значительно меньше 16 часов без сна. 18 часов — значительно более высокий уровень нарушения.
   sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — ICAO Doc 9966; Dawson & Reid (1997) — wakefulness and BAC equivalence
   difficulty: 3
   cognitiveLevel: apply
@@ -1686,9 +1686,9 @@
   options:
   - id: a
     text:
-      lv: Vai man ir A1/A3 sertifikāts? Vai apdrošināšana ir spēkā? Vai drona marķējums ir pareizs?
-      en: Do I hold an A1/A3 certificate? Is insurance current? Is the drone marking correct?
-      ru: Есть ли у меня сертификат A1/A3? Действует ли страховка? Правильна ли маркировка дрона?
+      lv: Vai es varu pieņemt droš lēmumu laika spiedienā? Vai mana uzmanība ir šim lidojumam? Vai esmu gatavs pārtraukt misiju, ja nepieciešams?
+      en: Can I make a safe decision under pressure right now? Is my attention on this flight? Am I ready to abort if needed?
+      ru: Могу ли я сейчас принять безопасное решение под давлением? Моё внимание на этом полёте? Готов ли я прервать миссию при необходимости?
   - id: b
     text:
       lv: Vai BGKIS pieteikums apstiprināts? Vai laikapstākļi atbilst prasībām? Vai drons atjauno GPS savienojumu?
@@ -1701,10 +1701,10 @@
       ru: Знаю ли я маршрут? Заряжены ли аккумуляторы? Благоприятна ли погода?
   - id: d
     text:
-      lv: Vai es varu pieņemt droš lēmumu laika spiedienā? Vai mana uzmanība ir šim lidojumam? Vai esmu gatavs pārtraukt misiju, ja nepieciešams?
-      en: Can I make a safe decision under pressure right now? Is my attention on this flight? Am I ready to abort if needed?
-      ru: Могу ли я сейчас принять безопасное решение под давлением? Моё внимание на этом полёте? Готов ли я прервать миссию при необходимости?
-  correctOptionId: d
+      lv: Vai man ir A1/A3 sertifikāts? Vai apdrošināšana ir spēkā? Vai drona marķējums ir pareizs?
+      en: Do I hold an A1/A3 certificate? Is insurance current? Is the drone marking correct?
+      ru: Есть ли у меня сертификат A1/A3? Действует ли страховка? Правильна ли маркировка дрона?
+  correctOptionId: a
   explanation:
     lv: 'Trīs pašpārbaudes jautājumi pirms lidojuma: (1) Vai es varu pieņemt drošu lēmumu laika spiedienā tieši tagad? (2) Vai mana uzmanība ir šim lidojumam — vai arī uz daudzām citām lietām? (3) Vai esmu gatavs pārtraukt misiju, ja kaut kas noiet greizi? Ja kāda atbilde ir "nē" vai "domāju, ka jā" — tas ir "nē".
 
@@ -1716,10 +1716,6 @@
 
       '
   distractorRationales:
-    a:
-      lv: Sertifikāts, apdrošināšana un marķējums ir atbilstības pārbaudes — tos nevajadzētu jaukt ar kognitīvās gatavības pašpārbaudi.
-      en: Certificate, insurance, and marking are compliance checks — they should not be confused with the cognitive readiness self-test.
-      ru: Сертификат, страховка и маркировка — проверки соответствия, их не следует путать с самопроверкой когнитивной готовности.
     b:
       lv: BGKIS, laikapstākļi un GPS — vides pārbaudes pirms lidojuma, nevis kognitīvās pašpārbaudes jautājumi.
       en: BGKIS, weather, and GPS are pre-flight environment checks, not cognitive self-test questions.
@@ -1728,6 +1724,10 @@
       lv: Šie ir pirmslido vides un aparatūras pārbaudes jautājumi, nevis pilota pašpārbaudē iekļautie jautājumi par kognitīvo gatavību.
       en: These are pre-flight environment and hardware check questions, not the pilot self-test questions about cognitive readiness.
       ru: Это вопросы предполётной проверки окружающей среды и оборудования, а не вопросы самопроверки пилота о когнитивной готовности.
+    d:
+      lv: Sertifikāts, apdrošināšana un marķējums ir atbilstības pārbaudes — tos nevajadzētu jaukt ar kognitīvās gatavības pašpārbaudi.
+      en: Certificate, insurance, and marking are compliance checks — they should not be confused with the cognitive readiness self-test.
+      ru: Сертификат, страховка и маркировка — проверки соответствия, их не следует путать с самопроверкой когнитивной готовности.
   sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Human performance; ICAO Doc 9966
   difficulty: 3
   cognitiveLevel: apply
@@ -1745,20 +1745,20 @@
       ru: Вдохновение (Inspiration).
   - id: b
     text:
-      lv: Apdrošināšana (Insurance).
-      en: Insurance.
-      ru: Страхование (Insurance).
-  - id: c
-    text:
       lv: Slimība (Illness).
       en: Illness.
       ru: Болезнь (Illness).
+  - id: c
+    text:
+      lv: Apdrošināšana (Insurance).
+      en: Insurance.
+      ru: Страхование (Insurance).
   - id: d
     text:
       lv: Incidenti (Incidents).
       en: Incidents.
       ru: Инциденты (Incidents).
-  correctOptionId: c
+  correctOptionId: b
   explanation:
     lv: 'IMSAFE: I — Illness (slimība), M — Medication (medikamenti), S — Stress (stress), A — Alcohol (alkohols), F — Fatigue (nogurums), E — Emotion (emocijas). "I" apzīmē pātrumu vai fiziskās veselības stāvokli, kas var ietekmēt pilota spēju droši vadīt.
 
@@ -1774,7 +1774,7 @@
       lv: Iedvesma nav IMSAFE kategorija. IMSAFE mēra stāvokļus, kas var pasliktināt sniegumu, nevis motivāciju.
       en: Inspiration is not an IMSAFE category. IMSAFE measures conditions that can impair performance, not motivation.
       ru: Вдохновение не является категорией IMSAFE. IMSAFE измеряет состояния, которые могут ухудшить производительность, а не мотивацию.
-    b:
+    c:
       lv: Apdrošināšana nav IMSAFE pašpārbaudes elements. IMSAFE koncentrējas uz pilota fizisko un garīgo stāvokli.
       en: Insurance is not an IMSAFE element. IMSAFE focuses on the pilot's physical and mental condition.
       ru: Страхование не является элементом IMSAFE. IMSAFE фокусируется на физическом и психическом состоянии пилота.
@@ -1794,9 +1794,9 @@
   options:
   - id: a
     text:
-      lv: Medikamenti (Medication).
-      en: Medication.
-      ru: Лекарства (Medication).
+      lv: Manevrs (Manoeuvre).
+      en: Manoeuvre.
+      ru: Манёвр (Manoeuvre).
   - id: b
     text:
       lv: Meteoroloģija (Meteorology).
@@ -1804,15 +1804,15 @@
       ru: Метеорология (Meteorology).
   - id: c
     text:
-      lv: Manevrs (Manoeuvre).
-      en: Manoeuvre.
-      ru: Манёвр (Manoeuvre).
+      lv: Medikamenti (Medication).
+      en: Medication.
+      ru: Лекарства (Medication).
   - id: d
     text:
       lv: Motivācija (Motivation).
       en: Motivation.
       ru: Мотивация (Motivation).
-  correctOptionId: a
+  correctOptionId: c
   explanation:
     lv: '"M" IMSAFE nozīmē Medication — medikamenti. Pilots vērtē, vai lieto jebkādus medikamentus, kas var ietekmēt koncentrāciju, reakcijas laiku vai situācijas apzināšanos. Pat bezrecepšu zāles (antihistamīni, miegazāles) var būt kaitīgas lidojuma drošībai.
 
@@ -1824,14 +1824,14 @@
 
       '
   distractorRationales:
+    a:
+      lv: Manevrs nav IMSAFE kategorija. IMSAFE ir pašpārbaude, kas novērtē pilota stāvokli.
+      en: Manoeuvre is not an IMSAFE category. IMSAFE is a self-check evaluating the pilot's condition.
+      ru: Манёвр не является категорией IMSAFE. IMSAFE — самопроверка, оценивающая состояние пилота.
     b:
       lv: Meteoroloģija ir ārējs faktors, nevis IMSAFE personiskās pārbaudes elements.
       en: Meteorology is an external factor, not an element of the personal IMSAFE check.
       ru: Метеорология — внешний фактор, а не элемент личной проверки IMSAFE.
-    c:
-      lv: Manevrs nav IMSAFE kategorija. IMSAFE ir pašpārbaude, kas novērtē pilota stāvokli.
-      en: Manoeuvre is not an IMSAFE category. IMSAFE is a self-check evaluating the pilot's condition.
-      ru: Манёвр не является категорией IMSAFE. IMSAFE — самопроверка, оценивающая состояние пилота.
     d:
       lv: Motivācija nav IMSAFE kategorija. IMSAFE koncentrējas uz fiziskajiem un psihiskajiem stāvokļiem, kas pasliktina sniegumu.
       en: Motivation is not an IMSAFE category. IMSAFE focuses on physical and mental states that impair performance.
@@ -1902,9 +1902,9 @@
   options:
   - id: a
     text:
-      lv: Ietekme ir jūtama tikai pie > 5 % dehidratācijas.
-      en: Effects are noticeable only above 5 % dehydration.
-      ru: Эффекты заметны только при дегидратации более 5 %.
+      lv: Pasliktināta koncentrācija, lēnāks reakcijas laiks un novājināta lēmumu pieņemšana jau pie 1–2 % ķermeņa masas dehidratācijas.
+      en: Impaired concentration, slower reaction time, and weakened decision-making already at 1–2 % body mass dehydration.
+      ru: Нарушение концентрации, замедление времени реакции и ослабление принятия решений уже при дегидратации 1–2 % массы тела.
   - id: b
     text:
       lv: Nav ietekmes — dehidratācija ietekmē tikai fizisko izturību, ne kognitīvo darbību.
@@ -1917,10 +1917,10 @@
       ru: Улучшенная концентрация от адреналина, вызванного жаждой.
   - id: d
     text:
-      lv: Pasliktināta koncentrācija, lēnāks reakcijas laiks un novājināta lēmumu pieņemšana jau pie 1–2 % ķermeņa masas dehidratācijas.
-      en: Impaired concentration, slower reaction time, and weakened decision-making already at 1–2 % body mass dehydration.
-      ru: Нарушение концентрации, замедление времени реакции и ослабление принятия решений уже при дегидратации 1–2 % массы тела.
-  correctOptionId: d
+      lv: Ietekme ir jūtama tikai pie > 5 % dehidratācijas.
+      en: Effects are noticeable only above 5 % dehydration.
+      ru: Эффекты заметны только при дегидратации более 5 %.
+  correctOptionId: a
   explanation:
     lv: 'Pētījumi rāda, ka jau 1–2 % ķermeņa masas ūdens zudums (apm. 700 ml–1 l 70 kg cilvēkam) pasliktina kognitīvo funkciju — īpaši uzmanību, darba atmiņu un lēmumu pieņemšanu. Karstā laikā pēc 2 stundu lidojuma šis slieksnis ir viegli pārsniedzams. Padzeries pirms lidojuma un pārtraukumos.
 
@@ -1932,10 +1932,6 @@
 
       '
   distractorRationales:
-    a:
-      lv: 5 % dehidratācija ir smaga klīniskā dehidratācija. Kognitīvā pasliktināšanās sākas daudz agrāk — pie 1–2 %.
-      en: 5 % dehydration is severe clinical dehydration. Cognitive impairment begins far earlier — at 1–2 %.
-      ru: 5 % дегидратация — тяжёлая клиническая дегидратация. Когнитивное ухудшение начинается намного раньше — при 1–2 %.
     b:
       lv: Dehidratācija ietekmē gan fizisko, gan kognitīvo funkciju. Kognitīvā pasliktināšanās var rasties pat pirms fiziskiem simptomiem.
       en: Dehydration affects both physical and cognitive function. Cognitive impairment can occur even before physical symptoms.
@@ -1944,6 +1940,10 @@
       lv: Adrenalīns no slāpēm nav dokumentēts mehānisms koncentrācijas uzlabošanai. Slāpes ir diskomforts, kas parasti novērš uzmanību.
       en: Adrenaline from thirst is not a documented mechanism for improving concentration. Thirst is a distraction, not a stimulant.
       ru: Адреналин от жажды не является задокументированным механизмом улучшения концентрации. Жажда отвлекает, а не стимулирует.
+    d:
+      lv: 5 % dehidratācija ir smaga klīniskā dehidratācija. Kognitīvā pasliktināšanās sākas daudz agrāk — pie 1–2 %.
+      en: 5 % dehydration is severe clinical dehydration. Cognitive impairment begins far earlier — at 1–2 %.
+      ru: 5 % дегидратация — тяжёлая клиническая дегидратация. Когнитивное ухудшение начинается намного раньше — при 1–2 %.
   sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules UAS 2024 — human performance; physiological factors
   difficulty: 3
   cognitiveLevel: apply
@@ -1956,14 +1956,14 @@
   options:
   - id: a
     text:
-      lv: Plāna turpināšanas aizspriedums (get-there-itis / plan continuation bias).
-      en: Plan continuation bias (get-there-itis).
-      ru: Предвзятость продолжения плана (get-there-itis).
-  - id: b
-    text:
       lv: Inverted-U efekts (Yerkesa-Dodsona likums).
       en: Inverted-U effect (Yerkes-Dodson law).
       ru: Эффект перевёрнутой U (закон Йеркса-Додсона).
+  - id: b
+    text:
+      lv: Plāna turpināšanas aizspriedums (get-there-itis / plan continuation bias).
+      en: Plan continuation bias (get-there-itis).
+      ru: Предвзятость продолжения плана (get-there-itis).
   - id: c
     text:
       lv: Mnemonikas kļūda.
@@ -1974,7 +1974,7 @@
       lv: Telpiskā dezorientācija.
       en: Spatial disorientation.
       ru: Пространственная дезориентация.
-  correctOptionId: a
+  correctOptionId: b
   explanation:
     lv: 'Plāna turpināšanas aizspriedums rodas, kad pilots turpina ar plānu pat tad, kad situācija ir mainījusies un bīstami. Sociālais spiediens ("komanda gaida") un laika trūkums pastiprina šo efektu. Pietūcis akumulators ir klīniska defekta pazīme — drošs lēmums ir atteikties no lidojuma, nevis "tikai vienu reizi" riskēt ar aizdegšanos.
 
@@ -1986,7 +1986,7 @@
 
       '
   distractorRationales:
-    b:
+    a:
       lv: Inverted-U efekts attiecas uz saistību starp uzbudinājumu un sniegumu — ne uz lēmumu turpināt ar zināmu risku.
       en: The Inverted-U effect refers to the relationship between arousal and performance — not to the decision to continue despite a known risk.
       ru: Эффект перевёрнутой U описывает связь между возбуждением и производительностью — не решение продолжать несмотря на известный риск.
@@ -2010,9 +2010,9 @@
   options:
   - id: a
     text:
-      lv: Pazeminātais skābekļa spiediens 2000 m var izraisīt vieglu hipoksiju ar neskaidru domāšanu, nogurumu un lēnāku reakciju.
-      en: The reduced oxygen partial pressure at 2000 m can cause mild hypoxia with unclear thinking, fatigue, and slower reactions.
-      ru: Сниженное парциальное давление кислорода на 2000 м может вызвать лёгкую гипоксию с нечётким мышлением, усталостью и замедленной реакцией.
+      lv: Nav ietekmes — 2000 m ir pārāk zems, lai ietekmētu kognitīvo darbību.
+      en: No effect — 2000 m is too low to affect cognitive performance.
+      ru: Никакого эффекта — 2000 м слишком мало для влияния на когнитивные функции.
   - id: b
     text:
       lv: Augstums ietekmē tikai drona lidojuma veiktspēju, ne pilota kognitīvo funkciju.
@@ -2020,15 +2020,15 @@
       ru: Высота влияет только на лётные характеристики дрона, а не на когнитивные функции пилота.
   - id: c
     text:
-      lv: Nav ietekmes — 2000 m ir pārāk zems, lai ietekmētu kognitīvo darbību.
-      en: No effect — 2000 m is too low to affect cognitive performance.
-      ru: Никакого эффекта — 2000 м слишком мало для влияния на когнитивные функции.
+      lv: Pazeminātais skābekļa spiediens 2000 m var izraisīt vieglu hipoksiju ar neskaidru domāšanu, nogurumu un lēnāku reakciju.
+      en: The reduced oxygen partial pressure at 2000 m can cause mild hypoxia with unclear thinking, fatigue, and slower reactions.
+      ru: Сниженное парциальное давление кислорода на 2000 м может вызвать лёгкую гипоксию с нечётким мышлением, усталостью и замедленной реакцией.
   - id: d
     text:
       lv: Paaugstināts skābekļa līmenis kalnu gaisā uzlabo uzmanību.
       en: Elevated oxygen levels in mountain air improve attention.
       ru: Повышенный уровень кислорода в горном воздухе улучшает внимание.
-  correctOptionId: a
+  correctOptionId: c
   explanation:
     lv: 'No 2000 m un augstāk skābekļa daļējais spiediens sāk būtiski samazināties. Personas ar hipoksijas jutīgumu var sajust kognitīvu pasliktināšanos — lēnāku reakciju, neskaidru domāšanu un novājinātu lēmumu pieņemšanu — pat bez fiziskiem simptomiem. Alpīnā vidē jāplāno biežākas pārtraukumos, ēnā, un sākotnēji jāpielāgojas.
 
@@ -2040,14 +2040,14 @@
 
       '
   distractorRationales:
+    a:
+      lv: 2000 m nav augsti tikai pēc absolūtiem standartiem, bet skābekļa daļējais spiediens jau ir par ~20 % zemāks nekā jūras līmenī, un jutīgām personām tas ir nozīmīgi.
+      en: 2000 m is not high only by absolute standards, but the partial oxygen pressure is already ~20 % lower than at sea level, which is significant for sensitive individuals.
+      ru: 2000 м не является большой высотой по абсолютным стандартам, но парциальное давление кислорода уже на ~20 % ниже, чем на уровне моря, что значимо для чувствительных людей.
     b:
       lv: Augstums ietekmē gan dronu (mazāka pacelšanās jauda, ātrāka baterijas izlāde), gan pilotu (kognitīvā pasliktināšanās). Abi jāņem vērā.
       en: Altitude affects both the drone (reduced lift, faster battery drain) and the pilot (cognitive impairment). Both must be considered.
       ru: Высота влияет как на дрон (уменьшение подъёмной силы, более быстрая разрядка батареи), так и на пилота (когнитивное ухудшение). Необходимо учитывать оба аспекта.
-    c:
-      lv: 2000 m nav augsti tikai pēc absolūtiem standartiem, bet skābekļa daļējais spiediens jau ir par ~20 % zemāks nekā jūras līmenī, un jutīgām personām tas ir nozīmīgi.
-      en: 2000 m is not high only by absolute standards, but the partial oxygen pressure is already ~20 % lower than at sea level, which is significant for sensitive individuals.
-      ru: 2000 м не является большой высотой по абсолютным стандартам, но парциальное давление кислорода уже на ~20 % ниже, чем на уровне моря, что значимо для чувствительных людей.
     d:
       lv: Skābekļa līmenis gaisā ir aptuveni 21 % neatkarīgi no augstuma, bet daļējais spiediens (un tādejādi absorbcija) samazinās ar augstumu.
       en: The oxygen percentage in air is approximately 21 % regardless of altitude, but the partial pressure (and thus absorption) decreases with altitude.
