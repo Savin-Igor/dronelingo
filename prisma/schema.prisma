@@ -179,3 +179,27 @@ model Certificate {
 
   @@index([userId])
 }
+
+enum InvoiceStatus {
+  PENDING
+  PAID
+  ACTIVATED
+  CANCELLED
+}
+
+model InvoiceRequest {
+  id          String        @id @default(cuid())
+  email       String
+  name        String?
+  amount      Int
+  currency    String        @default("EUR")
+  reference   String        @unique
+  status      InvoiceStatus @default(PENDING)
+  accessToken String?       @unique
+  createdAt   DateTime      @default(now())
+  paidAt      DateTime?
+  activatedAt DateTime?
+
+  @@index([email])
+  @@index([status])
+}
