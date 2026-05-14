@@ -1302,9 +1302,9 @@
   scenarioType: decision
 - id: se-026
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Cik stundu laikā jāziņo par tuvtrāpījumu ar pilotētu gaisa kuģi?'
-    en: 'During preflight review, the operator asks: Within how many hours must a near-miss with a manned aircraft be reported?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: В течение скольких часов нужно сообщить о сближении с пилотируемым воздушным судном?'
+    lv: UAS operācijas laikā vai pēc tās parādās drošības anomālija. Cik stundu laikā jāziņo par tuvtrāpījumu ar pilotētu gaisa kuģi?
+    en: A security anomaly appears during or after a UAS operation. Within how many hours must a near-miss with a manned aircraft be reported?
+    ru: Во время или после операции UAS появляется security-аномалия. В течение скольких часов нужно сообщить о сближении с пилотируемым воздушным судном?
   options:
   - id: a
     text:
@@ -1356,9 +1356,9 @@
   scenarioType: decision
 - id: se-027
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Kur Latvijā iesniedz UAS atgadījumu ziņojumu?
-    en: Which answer best fits the situation? Where in Latvia is a UAS occurrence report submitted?
-    ru: Какой ответ лучше всего подходит к ситуации? Куда в Латвии подаётся уведомление о происшествии UAS?
+    lv: Operators izlemj, vai tehnisks notikums ir tikai neērtība vai ziņojams drošības jautājums. Kur Latvijā iesniedz UAS atgadījumu ziņojumu?
+    en: The operator is deciding whether a technical event is just inconvenience or a reportable security issue. Where in Latvia is a UAS occurrence report submitted?
+    ru: Оператор решает, является ли техническое событие просто неудобством или security-событием для сообщения. Куда в Латвии подаётся уведомление о происшествии UAS?
   options:
   - id: a
     text:
@@ -1410,9 +1410,9 @@
   scenarioType: decision
 - id: se-028
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Kāds ir galvenais ieguvums no "just culture" pieejas atgadījumu ziņošanā?
-    en: Operational scenario — choose the correct decision. What is the main benefit of "just culture" in occurrence reporting?
-    ru: Операционная ситуация — выбери правильное решение. Какова главная цель подхода «just culture» в уведомлениях о происшествиях?
+    lv: Pirms aprīkojuma pieslēgšanas vai žurnālu nodošanas pilots pārbauda drošības ietekmi. Kāds ir galvenais ieguvums no "just culture" pieejas atgadījumu ziņošanā?
+    en: Before connecting equipment or sharing logs, the pilot checks the security impact. What is the main benefit of "just culture" in occurrence reporting?
+    ru: Перед подключением оборудования или передачей логов пилот проверяет security-последствия. Какова главная цель подхода «just culture» в уведомлениях о происшествиях?
   options:
   - id: a
     text:
@@ -1464,9 +1464,9 @@
   scenarioType: decision
 - id: se-029
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Ko nozīmē GPS spoofing ar UAS uzbrukuma kontekstā?'
-    en: 'During preflight review, the operator asks: What does GPS spoofing mean in the context of a UAS attack?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Что такое GPS spoofing в контексте атаки на UAS?'
+    lv: UAS operācijas laikā vai pēc tās parādās drošības anomālija. Ko nozīmē GPS spoofing ar UAS uzbrukuma kontekstā?
+    en: A security anomaly appears during or after a UAS operation. What does GPS spoofing mean in the context of a UAS attack?
+    ru: Во время или после операции UAS появляется security-аномалия. Что такое GPS spoofing в контексте атаки на UAS?
   options:
   - id: a
     text:
@@ -1518,9 +1518,9 @@
   scenarioType: decision
 - id: se-030
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Kura no šīm ir laba prakse UAS kiberdrošībā?
-    en: Which answer best fits the situation? Which of the following is good UAS cyber security practice?
-    ru: Какой ответ лучше всего подходит к ситуации? Что из перечисленного — хорошая практика кибербезопасности UAS?
+    lv: Operators izlemj, vai tehnisks notikums ir tikai neērtība vai ziņojams drošības jautājums. Kura no šīm ir laba prakse UAS kiberdrošībā?
+    en: The operator is deciding whether a technical event is just inconvenience or a reportable security issue. Which of the following is good UAS cyber security practice?
+    ru: Оператор решает, является ли техническое событие просто неудобством или security-событием для сообщения. Что из перечисленного — хорошая практика кибербезопасности UAS?
   options:
   - id: a
     text:
@@ -1572,9 +1572,9 @@
   scenarioType: decision
 - id: se-031
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Lidojuma laikā kartes attēls pārvēršas pelēks un satelītu skaits krīt uz nulli. Drons aktivē RTH. Kāds ir visticamākais kiberuzbrukuma veids?
-    en: Operational scenario — choose the correct decision. Mid-flight, the map display goes grey and the satellite count drops to zero. The drone activates RTH. What cyber threat is most likely?
-    ru: Операционная ситуация — выбери правильное решение. В середине полёта карта сереет, количество спутников падает до нуля. Дрон активирует RTH. Какая кибератака наиболее вероятна?
+    lv: Pirms aprīkojuma pieslēgšanas vai žurnālu nodošanas pilots pārbauda drošības ietekmi. Lidojuma laikā kartes attēls pārvēršas pelēks un satelītu skaits krīt uz nulli. Drons aktivē RTH. Kāds ir visticamākais kiberuzbrukuma veids?
+    en: Before connecting equipment or sharing logs, the pilot checks the security impact. Mid-flight, the map display goes grey and the satellite count drops to zero. The drone activates RTH. What cyber threat is most likely?
+    ru: Перед подключением оборудования или передачей логов пилот проверяет security-последствия. В середине полёта карта сереет, количество спутников падает до нуля. Дрон активирует RTH. Какая кибератака наиболее вероятна?
   options:
   - id: a
     text:
@@ -1626,9 +1626,9 @@
   scenarioType: decision
 - id: se-032
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Lidojuma laikā drons zaudē datu saiti 30 sekundes. Fail-safe aktivējas un drons drošā kārtā atgriežas. Nav ievainojumu, nav pilotētu gaisa kuģu tuvumā. Kāds ir ziņošanas pienākums?'
-    en: 'During preflight review, the operator asks: Mid-flight the drone loses the data link for 30 seconds. Fail-safe activates and the drone returns safely. No injuries, no manned aircraft nearby. What is the reporting obligation?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: В середине полёта дрон теряет канал данных на 30 секунд. Fail-safe активируется, дрон возвращается безопасно. Травм нет, пилотируемых воздушных судов рядом нет. Каково обязательство по уведомлению?'
+    lv: UAS operācijas laikā vai pēc tās parādās drošības anomālija. Lidojuma laikā drons zaudē datu saiti 30 sekundes. Fail-safe aktivējas un drons drošā kārtā atgriežas. Nav ievainojumu, nav pilotētu gaisa kuģu tuvumā. Kāds ir ziņošanas pienākums?
+    en: A security anomaly appears during or after a UAS operation. Mid-flight the drone loses the data link for 30 seconds. Fail-safe activates and the drone returns safely. No injuries, no manned aircraft nearby. What is the reporting obligation?
+    ru: Во время или после операции UAS появляется security-аномалия. В середине полёта дрон теряет канал данных на 30 секунд. Fail-safe активируется, дрон возвращается безопасно. Травм нет, пилотируемых воздушных судов рядом нет. Каково обязательство по уведомлению?
   options:
   - id: a
     text:
@@ -1680,9 +1680,9 @@
   scenarioType: decision
 - id: se-033
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Pilots vēro, ka kāds mēģina pārtvert viņa drona vadības signālu ar radio interferences iekārtu. Kāda ir tiesiskā situācija?
-    en: Which answer best fits the situation? A pilot observes someone attempting to intercept their drone's control signal with a radio interference device. What is the legal situation?
-    ru: Какой ответ лучше всего подходит к ситуации? Пилот наблюдает, как кто-то пытается перехватить сигнал управления его дроном с помощью устройства радиопомех. Какова правовая ситуация?
+    lv: Operators izlemj, vai tehnisks notikums ir tikai neērtība vai ziņojams drošības jautājums. Pilots vēro, ka kāds mēģina pārtvert viņa drona vadības signālu ar radio interferences iekārtu. Kāda ir tiesiskā situācija?
+    en: The operator is deciding whether a technical event is just inconvenience or a reportable security issue. A pilot observes someone attempting to intercept their drone's control signal with a radio interference device. What is the legal situation?
+    ru: Оператор решает, является ли техническое событие просто неудобством или security-событием для сообщения. Пилот наблюдает, как кто-то пытается перехватить сигнал управления его дроном с помощью устройства радиопомех. Какова правовая ситуация?
   options:
   - id: a
     text:
@@ -1734,9 +1734,9 @@
   scenarioType: decision
 - id: se-034
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pēc lidojuma pilots konstatē, ka drona GPS žurnāls rāda neizskaidrojamu pozīciju novirzi 2 km prom no faktiskās lidojuma vietas. Kas ir visticamākais skaidrojums un kāda ir tūlītējā darbība?
-    en: Operational scenario — choose the correct decision. After a flight a pilot notices the drone's GPS log shows an unexplained position drift 2 km from the actual flight location. What is the most likely explanation and what is the immediate action?
-    ru: Операционная ситуация — выбери правильное решение. После полёта пилот замечает, что журнал GPS дрона показывает необъяснимое отклонение позиции на 2 км от фактического места полёта. Каков наиболее вероятный объяснение и каковы немедленные действия?
+    lv: Pirms aprīkojuma pieslēgšanas vai žurnālu nodošanas pilots pārbauda drošības ietekmi. Pēc lidojuma pilots konstatē, ka drona GPS žurnāls rāda neizskaidrojamu pozīciju novirzi 2 km prom no faktiskās lidojuma vietas. Kas ir visticamākais skaidrojums un kāda ir tūlītējā darbība?
+    en: Before connecting equipment or sharing logs, the pilot checks the security impact. After a flight a pilot notices the drone's GPS log shows an unexplained position drift 2 km from the actual flight location. What is the most likely explanation and what is the immediate action?
+    ru: Перед подключением оборудования или передачей логов пилот проверяет security-последствия. После полёта пилот замечает, что журнал GPS дрона показывает необъяснимое отклонение позиции на 2 км от фактического места полёта. Каков наиболее вероятный объяснение и каковы немедленные действия?
   options:
   - id: a
     text:
@@ -1788,63 +1788,57 @@
   scenarioType: decision
 - id: se-035
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Operators saņem e-pastu no "UAS drošības dienesta" ar prasību piekļūt viņa drona sistēmas datiem, lai "verificētu drošību". E-pastā ir saite uz trešo pušu vietni. Ko operators drīkst darīt?'
-    en: 'During preflight review, the operator asks: An operator receives an email from a "UAS security service" asking access to their drone system data to "verify security". The email contains a link to a third-party website. What should the operator do?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Оператор получает электронное письмо от «службы безопасности UAS» с просьбой предоставить доступ к данным системы его дрона для «проверки безопасности». В письме — ссылка на сторонний сайт. Что должен сделать оператор?'
+    lv: Pēc inspekcijas lidojuma pilots atrod vaļīgu SD karti blakus atvērtam koferim, un nav skaidrs, kurš tai piekļuva. Kāda ir pareizā security rīcība?
+    en: After an inspection flight, the pilot finds a loose SD card beside an open case and cannot confirm who accessed it. What is the correct security action?
+    ru: После инспекционного полёта пилот находит свободно лежащую SD-карту рядом с открытым кейсом и не может подтвердить, кто имел к ней доступ. Какое security-действие правильное?
   options:
   - id: a
     text:
-      lv: Dzēst e-pastu un neievadīt nekādus datus — šis ir sociālās inženierijas uzbrukuma raksturīgs modelis.
-      en: Delete the email and enter no data — this is a characteristic social engineering attack pattern.
-      ru: Удалить письмо и не вводить никаких данных — это типичная схема атаки социальной инженерии.
+      lv: Fiksēt notikumu, izolēt datu nesēju un pārbaudīt, vai nepieciešama klienta, operatora vai incidenta ziņošana.
+      en: Record the event, isolate the media and check whether client, operator or incident reporting is required.
+      ru: Зафиксировать событие, изолировать носитель и проверить, требуется ли уведомление клиента, оператора или сообщение об инциденте.
   - id: b
     text:
-      lv: Sazināties ar savu drona ražotāju, lai pārbaudītu, vai saite ir legāla.
-      en: Contact their drone manufacturer to verify whether the link is legitimate.
-      ru: Связаться с производителем своего дрона, чтобы проверить легитимность ссылки.
+      lv: Ievietot karti atpakaļ koferī un turpināt darbu, ja faili vēl atveras.
+      en: Put the card back in the case and continue if the files still open.
+      ru: Положить карту обратно в кейс и продолжать работу, если файлы открываются.
   - id: c
     text:
-      lv: Atbildēt e-pastam, pieprasot papildu identifikāciju.
-      en: Reply to the email requesting additional identification.
-      ru: Ответить на письмо, запросив дополнительную идентификацию.
+      lv: Nekavējoties dzēst karti, lai nebūtu jāziņo par iespējamu piekļuvi.
+      en: Immediately erase the card so possible access does not need to be reported.
+      ru: Сразу стереть карту, чтобы не пришлось сообщать о возможном доступе.
   - id: d
     text:
-      lv: Sekot saitei un ievadīt pieprasītos datus.
-      en: Follow the link and enter the requested data.
-      ru: Перейти по ссылке и ввести запрошенные данные.
+      lv: Nosūtīt visus failus klientam ātrāk, lai atbildība pāriet klientam.
+      en: Send all files to the client quickly so responsibility transfers to the client.
+      ru: Быстро отправить все файлы клиенту, чтобы ответственность перешла клиенту.
   correctOptionId: a
   explanation:
-    lv: '"UAS drošības dienests" nav EASA, CAA Latvia vai citas oficiālās iestādes pazīstama organizācija. Pieprasījums piekļūt sistēmas datiem ar trešo pušu saiti ir sociālās inženierijas uzbrukums — krāpšanas mēģinājums (phishing). Pareizā darbība: nekavējoties dzēst; nekādā gadījumā nesekot saitei; ja rodas šaubas — pārbaudīt tieši pie ražotāja, nevis izmantojot e-pastā norādīto kontaktu.
-
-      '
-    en: '"UAS security service" is not a known organisation of EASA, CAA Latvia, or other official bodies. A request to access system data via a third-party link is a social engineering attack — a phishing attempt. Correct action: delete immediately; never follow the link; if in doubt — verify directly with the manufacturer, not using the email contact.
-
-      '
-    ru: '«Служба безопасности UAS» — не известная организация EASA, CAA Latvia или других официальных органов. Запрос доступа к данным системы через ссылку на сторонний сайт — атака социальной инженерии, попытка фишинга. Правильное действие: немедленно удалить; ни в коем случае не переходить по ссылке; при сомнениях — проверить напрямую у производителя, не используя контакты из письма.
-
-      '
+    lv: Nezināma piekļuve datu nesējam ir security un privātuma risks. Pareizā rīcība ir saglabāt pierādāmību, izolēt karti, dokumentēt notikumu un novērtēt ziņošanas pienākumus.
+    en: Unknown access to storage media is a security and privacy risk. The correct response is to preserve accountability, isolate the card, document the event and assess reporting duties.
+    ru: 'Неизвестный доступ к носителю данных является риском security и privacy. Правильное действие: сохранить подотчётность, изолировать карту, задокументировать событие и оценить обязанности уведомления.'
   distractorRationales:
     b:
-      lv: Sazinoties ar ražotāju varētu palīdzēt, bet primārā darbība ir dzēst e-pastu un nesekot saitei. Sazināties var, ja ir pamatotas šaubas.
-      en: Contacting the manufacturer could help, but the primary action is to delete the email and not follow the link. Contact can be made if there are genuine doubts.
-      ru: Связь с производителем могла бы помочь, но первичное действие — удалить письмо и не переходить по ссылке. Связаться можно, если есть обоснованные сомнения.
+      lv: Tas ignorē iespējamu piekļuvi un pārrauj glabāšanas ķēdi.
+      en: This ignores possible access and breaks chain-of-custody control.
+      ru: Это игнорирует возможный доступ и ломает контроль цепочки хранения.
     c:
-      lv: Atbildot phishing e-pastam, operators apstiprina, ka e-pasts ir aktīvs — tas var palielināt uzbrukumu skaitu. Atbildēšana nav drošs risinājums.
-      en: Replying to a phishing email confirms the address is active — this may increase attack frequency. Replying is not a safe solution.
-      ru: Ответ на фишинговое письмо подтверждает, что адрес активен — это может увеличить число атак. Ответ — небезопасное решение.
+      lv: Dzēšana iznīcina pierādījumus un var pasliktināt gan security, gan privātuma situāciju.
+      en: Erasure destroys evidence and can make both security and privacy handling worse.
+      ru: Удаление уничтожает доказательства и может ухудшить обработку security и privacy-ситуации.
     d:
-      lv: Sekošana saitei un datu ievade ir tieši tas, ko uzbrucējs vēlas. Tas varētu kompromitēt sistēmas datus vai akreditācijas datus.
-      en: Following the link and entering data is exactly what the attacker wants. This could compromise system data or credentials.
-      ru: Переход по ссылке и ввод данных — именно то, чего хочет злоумышленник. Это может скомпрометировать данные системы или учётные данные.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — ENISA Good Practices for UAS cyber security — social engineering
+      lv: Failu nosūtīšana neizbeidz operatora atbildību un var palielināt noplūdes risku.
+      en: Sending files does not end operator responsibility and may increase disclosure risk.
+      ru: Передача файлов не прекращает ответственность оператора и может увеличить риск раскрытия.
+  sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — UAS security awareness; media handling and chain of custody
   difficulty: 3
-  cognitiveLevel: apply
+  cognitiveLevel: analyze
   scenarioType: decision
 - id: se-036
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Kāds ir Direct Remote ID mērķis drošības perspektīvā?
-    en: Which answer best fits the situation? What is the purpose of Direct Remote ID from a security perspective?
-    ru: Какой ответ лучше всего подходит к ситуации? Какова цель Direct Remote ID с точки зрения безопасности?
+    lv: Operators izlemj, vai tehnisks notikums ir tikai neērtība vai ziņojams drošības jautājums. Kāds ir Direct Remote ID mērķis drošības perspektīvā?
+    en: The operator is deciding whether a technical event is just inconvenience or a reportable security issue. What is the purpose of Direct Remote ID from a security perspective?
+    ru: Оператор решает, является ли техническое событие просто неудобством или security-событием для сообщения. Какова цель Direct Remote ID с точки зрения безопасности?
   options:
   - id: a
     text:
@@ -1896,9 +1890,9 @@
   scenarioType: decision
 - id: se-037
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Kāda ir "tīkla Remote ID" (Network Remote ID) atšķirība no "tiešā Remote ID" (Direct Remote ID)?
-    en: Operational scenario — choose the correct decision. What is the difference between "Network Remote ID" and "Direct Remote ID"?
-    ru: Операционная ситуация — выбери правильное решение. В чём разница между «Network Remote ID» и «Direct Remote ID»?
+    lv: Pirms aprīkojuma pieslēgšanas vai žurnālu nodošanas pilots pārbauda drošības ietekmi. Kāda ir "tīkla Remote ID" (Network Remote ID) atšķirība no "tiešā Remote ID" (Direct Remote ID)?
+    en: Before connecting equipment or sharing logs, the pilot checks the security impact. What is the difference between "Network Remote ID" and "Direct Remote ID"?
+    ru: Перед подключением оборудования или передачей логов пилот проверяет security-последствия. В чём разница между «Network Remote ID» и «Direct Remote ID»?
   options:
   - id: a
     text:
@@ -1950,9 +1944,9 @@
   scenarioType: decision
 - id: se-038
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Pilots lido pāri lielpilsētas centram. Tā kā Remote ID ir aktīvs, pilnvarota institūcija var identificēt operatoru. Kādu datu kopumu Remote ID nepārraida?'
-    en: 'During preflight review, the operator asks: A pilot flies over a city centre. With Remote ID active, an authorised authority can identify the operator. What data set does Remote ID NOT broadcast?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Пилот летит над центром мегаполиса. При активном Remote ID уполномоченный орган может идентифицировать оператора. Какой набор данных Remote ID НЕ транслирует?'
+    lv: UAS operācijas laikā vai pēc tās parādās drošības anomālija. Pilots lido pāri lielpilsētas centram. Tā kā Remote ID ir aktīvs, pilnvarota institūcija var identificēt operatoru. Kādu datu kopumu Remote ID nepārraida?
+    en: A security anomaly appears during or after a UAS operation. A pilot flies over a city centre. With Remote ID active, an authorised authority can identify the operator. What data set does Remote ID NOT broadcast?
+    ru: Во время или после операции UAS появляется security-аномалия. Пилот летит над центром мегаполиса. При активном Remote ID уполномоченный орган может идентифицировать оператора. Какой набор данных Remote ID НЕ транслирует?
   options:
   - id: a
     text:
@@ -2004,9 +1998,9 @@
   scenarioType: decision
 - id: se-039
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Pilots saņem paziņojumu par jaunu firmware versiju no neoficiāla avota (foruma). Versijā tiek solīti "papildu lidojuma augstumi" un "atbloķētas zonas". Ko pilotam jādara?
-    en: Which answer best fits the situation? A pilot receives a notification of a new firmware version from an unofficial source (a forum). The version promises "extended flight altitudes" and "unlocked zones". What should the pilot do?
-    ru: Какой ответ лучше всего подходит к ситуации? Пилот получает уведомление о новой версии прошивки из неофициального источника (форума). Версия обещает «расширенные высоты полёта» и «разблокированные зоны». Что должен сделать пилот?
+    lv: Operators izlemj, vai tehnisks notikums ir tikai neērtība vai ziņojams drošības jautājums. Pilots saņem paziņojumu par jaunu firmware versiju no neoficiāla avota (foruma). Versijā tiek solīti "papildu lidojuma augstumi" un "atbloķētas zonas". Ko pilotam jādara?
+    en: The operator is deciding whether a technical event is just inconvenience or a reportable security issue. A pilot receives a notification of a new firmware version from an unofficial source (a forum). The version promises "extended flight altitudes" and "unlocked zones". What should the pilot do?
+    ru: Оператор решает, является ли техническое событие просто неудобством или security-событием для сообщения. Пилот получает уведомление о новой версии прошивки из неофициального источника (форума). Версия обещает «расширенные высоты полёта» и «разблокированные зоны». Что должен сделать пилот?
   options:
   - id: a
     text:
@@ -2058,9 +2052,9 @@
   scenarioType: decision
 - id: se-040
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pilots veic inspekcijas lidojumu aiz rūpnīcas. Drona kamera fiksē, ka darbinieki apspriež ražošanas procesu, un lidojumā tiek uzņemts konfidenciāls dokumentu mape. Kāds ir operators pienākums?
-    en: Operational scenario — choose the correct decision. A pilot conducts an inspection flight behind a factory. The drone camera captures workers discussing a manufacturing process, and a folder of confidential documents is recorded during the flight. What is the operator's obligation?
-    ru: Операционная ситуация — выбери правильное решение. Пилот проводит инспекционный полёт за заводом. Камера дрона фиксирует работников, обсуждающих производственный процесс, и в ходе полёта записывается папка конфиденциальных документов. Каково обязательство оператора?
+    lv: Pirms aprīkojuma pieslēgšanas vai žurnālu nodošanas pilots pārbauda drošības ietekmi. Pilots veic inspekcijas lidojumu aiz rūpnīcas. Drona kamera fiksē, ka darbinieki apspriež ražošanas procesu, un lidojumā tiek uzņemts konfidenciāls dokumentu mape. Kāds ir operators pienākums?
+    en: Before connecting equipment or sharing logs, the pilot checks the security impact. A pilot conducts an inspection flight behind a factory. The drone camera captures workers discussing a manufacturing process, and a folder of confidential documents is recorded during the flight. What is the operator's obligation?
+    ru: Перед подключением оборудования или передачей логов пилот проверяет security-последствия. Пилот проводит инспекционный полёт за заводом. Камера дрона фиксирует работников, обсуждающих производственный процесс, и в ходе полёта записывается папка конфиденциальных документов. Каково обязательство оператора?
   options:
   - id: a
     text:

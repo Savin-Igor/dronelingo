@@ -1302,9 +1302,9 @@
   scenarioType: decision
 - id: hp-026
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Ko nozīmē burts "S" IMSAFE pašpārbaudē?'
-    en: 'During preflight review, the operator asks: What does the letter "S" stand for in the IMSAFE self-check?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Что означает буква "S" в самопроверке IMSAFE?'
+    lv: Pirms lidojuma pieņemšanas pilots izmanto cilvēka veiktspējas pārbaudi, nevis paļaujas uz pārliecību. Ko nozīmē burts "S" IMSAFE pašpārbaudē?
+    en: Before accepting a flight, the pilot uses a human-performance check rather than relying on confidence. What does the letter "S" stand for in the IMSAFE self-check?
+    ru: Перед принятием полёта пилот использует проверку human performance, а не полагается на уверенность. Что означает буква "S" в самопроверке IMSAFE?
   options:
   - id: a
     text:
@@ -1356,9 +1356,9 @@
   scenarioType: decision
 - id: hp-027
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Cik stundu pirms lidojuma nedrīkst lietot alkoholu ("bottle to throttle")?
-    en: Which answer best fits the situation? How many hours before flight is alcohol prohibited ("bottle to throttle")?
-    ru: Какой ответ лучше всего подходит к ситуации? За сколько часов до полёта запрещён алкоголь («bottle to throttle»)?
+    lv: Ikdienišķs darbs sāk radīt spiedienu uz pilota uzmanību un spriestspēju. Cik stundu pirms lidojuma nedrīkst lietot alkoholu ("bottle to throttle")?
+    en: A routine job starts to create pressure on the pilot’s attention and judgement. How many hours before flight is alcohol prohibited ("bottle to throttle")?
+    ru: Обычная работа начинает давить на внимание и суждение пилота. За сколько часов до полёта запрещён алкоголь («bottle to throttle»)?
   options:
   - id: a
     text:
@@ -1410,9 +1410,9 @@
   scenarioType: decision
 - id: hp-028
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Kāpēc vienlaicīga FPV brillēs un VLOS nav iespējama vienam pilotam?
-    en: Operational scenario — choose the correct decision. Why can one pilot not maintain FPV (in goggles) and VLOS at the same time?
-    ru: Операционная ситуация — выбери правильное решение. Почему один пилот не может одновременно вести полёт в FPV и VLOS?
+    lv: Pilots pamana personisku stāvokli, kas var pasliktināt lēmumu pieņemšanu lidojumā. Kāpēc vienlaicīga FPV brillēs un VLOS nav iespējama vienam pilotam?
+    en: The pilot notices a personal condition that can degrade decision-making in flight. Why can one pilot not maintain FPV (in goggles) and VLOS at the same time?
+    ru: Пилот замечает личное состояние, которое может ухудшить принятие решений в полёте. Почему один пилот не может одновременно вести полёт в FPV и VLOS?
   options:
   - id: a
     text:
@@ -1464,9 +1464,9 @@
   scenarioType: decision
 - id: hp-029
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kāds redzes efekts rodas, ilgi skatoties tukšā debesī bez fiksācijas punkta?'
-    en: 'During preflight review, the operator asks: What visual effect arises from prolonged looking at empty sky without a fixation point?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Какой зрительный эффект возникает при долгом взгляде на пустое небо без точки фиксации?'
+    lv: Pirms lidojuma pieņemšanas pilots izmanto cilvēka veiktspējas pārbaudi, nevis paļaujas uz pārliecību. Kāds redzes efekts rodas, ilgi skatoties tukšā debesī bez fiksācijas punkta?
+    en: Before accepting a flight, the pilot uses a human-performance check rather than relying on confidence. What visual effect arises from prolonged looking at empty sky without a fixation point?
+    ru: Перед принятием полёта пилот использует проверку human performance, а не полагается на уверенность. Какой зрительный эффект возникает при долгом взгляде на пустое небо без точки фиксации?
   options:
   - id: a
     text:
@@ -1518,9 +1518,9 @@
   scenarioType: decision
 - id: hp-030
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Kā rīkoties, ja IMSAFE pārbaude konstatē "F — fatigue" ar tikai 4 h miega?
-    en: Which answer best fits the situation? What to do if IMSAFE flags "F — fatigue" with only 4 h of sleep?
-    ru: Какой ответ лучше всего подходит к ситуации? Что делать, если IMSAFE отмечает «F — усталость» при сне всего 4 часа?
+    lv: Ikdienišķs darbs sāk radīt spiedienu uz pilota uzmanību un spriestspēju. Kā rīkoties, ja IMSAFE pārbaude konstatē "F — fatigue" ar tikai 4 h miega?
+    en: A routine job starts to create pressure on the pilot’s attention and judgement. What to do if IMSAFE flags "F — fatigue" with only 4 h of sleep?
+    ru: Обычная работа начинает давить на внимание и суждение пилота. Что делать, если IMSAFE отмечает «F — усталость» при сне всего 4 часа?
   options:
   - id: a
     text:
@@ -1572,9 +1572,9 @@
   scenarioType: decision
 - id: hp-031
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pilots ierodas darba uzņēmumā un konstatē, ka primārajai tālvadības pultij baterija ir tukša. Ir tikai rezerves pults, kuru pilots nav iepriekš izmantojis. Kāda veida stress tas ir?
-    en: Operational scenario — choose the correct decision. A pilot arrives at a commercial job and discovers the primary controller battery is dead. Only an unfamiliar backup controller is available. What type of stress is this?
-    ru: Операционная ситуация — выбери правильное решение. Пилот приезжает на коммерческую съёмку и обнаруживает, что аккумулятор основного пульта разряжен. Есть только незнакомый резервный пульт. Какой это тип стресса?
+    lv: Pilots pamana personisku stāvokli, kas var pasliktināt lēmumu pieņemšanu lidojumā. Pilots ierodas darba uzņēmumā un konstatē, ka primārajai tālvadības pultij baterija ir tukša. Ir tikai rezerves pults, kuru pilots nav iepriekš izmantojis. Kāda veida stress tas ir?
+    en: The pilot notices a personal condition that can degrade decision-making in flight. A pilot arrives at a commercial job and discovers the primary controller battery is dead. Only an unfamiliar backup controller is available. What type of stress is this?
+    ru: Пилот замечает личное состояние, которое может ухудшить принятие решений в полёте. Пилот приезжает на коммерческую съёмку и обнаруживает, что аккумулятор основного пульта разряжен. Есть только незнакомый резервный пульт. Какой это тип стресса?
   options:
   - id: a
     text:
@@ -1626,9 +1626,9 @@
   scenarioType: decision
 - id: hp-032
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Pilots ir nomodā 18 stundas. Aptuveni kādam alkohola koncentrācijas ekvivalentam asinīs (pēc BAC) tas atbilst?'
-    en: 'During preflight review, the operator asks: A pilot has been awake for 18 hours. This corresponds approximately to what blood-alcohol concentration (BAC) equivalent?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Пилот не спит 18 часов. Это приблизительно соответствует какому эквиваленту концентрации алкоголя в крови (BAC)?'
+    lv: Pirms lidojuma pieņemšanas pilots izmanto cilvēka veiktspējas pārbaudi, nevis paļaujas uz pārliecību. Pilots ir nomodā 18 stundas. Aptuveni kādam alkohola koncentrācijas ekvivalentam asinīs (pēc BAC) tas atbilst?
+    en: Before accepting a flight, the pilot uses a human-performance check rather than relying on confidence. A pilot has been awake for 18 hours. This corresponds approximately to what blood-alcohol concentration (BAC) equivalent?
+    ru: Перед принятием полёта пилот использует проверку human performance, а не полагается на уверенность. Пилот не спит 18 часов. Это приблизительно соответствует какому эквиваленту концентрации алкоголя в крови (BAC)?
   options:
   - id: a
     text:
@@ -1680,9 +1680,9 @@
   scenarioType: decision
 - id: hp-033
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Kurš no šiem apraksta VISAS trīs pilota pašpārbaudes jautājumu tēmas pirms lidojuma?
-    en: Which answer best fits the situation? Which of these describes ALL three pilot self-test question topics before a flight?
-    ru: Какой ответ лучше всего подходит к ситуации? Какой из вариантов описывает ВСЕ три темы самопроверки пилота перед полётом?
+    lv: Ikdienišķs darbs sāk radīt spiedienu uz pilota uzmanību un spriestspēju. Kurš no šiem apraksta VISAS trīs pilota pašpārbaudes jautājumu tēmas pirms lidojuma?
+    en: A routine job starts to create pressure on the pilot’s attention and judgement. Which of these describes ALL three pilot self-test question topics before a flight?
+    ru: Обычная работа начинает давить на внимание и суждение пилота. Какой из вариантов описывает ВСЕ три темы самопроверки пилота перед полётом?
   options:
   - id: a
     text:
@@ -1734,9 +1734,9 @@
   scenarioType: decision
 - id: hp-034
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Ko apzīmē burts "I" IMSAFE pašpārbaudē?
-    en: Operational scenario — choose the correct decision. What does the letter "I" stand for in the IMSAFE self-check?
-    ru: Операционная ситуация — выбери правильное решение. Что обозначает буква «I» в самопроверке IMSAFE?
+    lv: Pilots pamana personisku stāvokli, kas var pasliktināt lēmumu pieņemšanu lidojumā. Ko apzīmē burts "I" IMSAFE pašpārbaudē?
+    en: The pilot notices a personal condition that can degrade decision-making in flight. What does the letter "I" stand for in the IMSAFE self-check?
+    ru: Пилот замечает личное состояние, которое может ухудшить принятие решений в полёте. Что обозначает буква «I» в самопроверке IMSAFE?
   options:
   - id: a
     text:
@@ -1788,9 +1788,9 @@
   scenarioType: decision
 - id: hp-035
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Ko apzīmē burts "M" IMSAFE pašpārbaudē?'
-    en: 'During preflight review, the operator asks: What does the letter "M" stand for in the IMSAFE self-check?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Что обозначает буква «M» в самопроверке IMSAFE?'
+    lv: Pirms lidojuma pieņemšanas pilots izmanto cilvēka veiktspējas pārbaudi, nevis paļaujas uz pārliecību. Ko apzīmē burts "M" IMSAFE pašpārbaudē?
+    en: Before accepting a flight, the pilot uses a human-performance check rather than relying on confidence. What does the letter "M" stand for in the IMSAFE self-check?
+    ru: Перед принятием полёта пилот использует проверку human performance, а не полагается на уверенность. Что обозначает буква «M» в самопроверке IMSAFE?
   options:
   - id: a
     text:
@@ -1842,9 +1842,9 @@
   scenarioType: decision
 - id: hp-036
   stem:
-    lv: 'Kura atbilde vislabāk atbilst situācijai? Pilots lieto antihistamīna tabletes pret siena drudzi. Tabletes anotācijā norādīts: "var izraisīt miegainību". Ko pilotam jādara?'
-    en: 'Which answer best fits the situation? A pilot is taking antihistamine tablets for hay fever. The leaflet states: "may cause drowsiness". What should the pilot do?'
-    ru: 'Какой ответ лучше всего подходит к ситуации? Пилот принимает таблетки от антигистамина от сенной лихорадки. В листке-вкладыше указано: «может вызывать сонливость». Что должен сделать пилот?'
+    lv: 'Ikdienišķs darbs sāk radīt spiedienu uz pilota uzmanību un spriestspēju. Pilots lieto antihistamīna tabletes pret siena drudzi. Tabletes anotācijā norādīts: "var izraisīt miegainību". Ko pilotam jādara?'
+    en: 'A routine job starts to create pressure on the pilot’s attention and judgement. A pilot is taking antihistamine tablets for hay fever. The leaflet states: "may cause drowsiness". What should the pilot do?'
+    ru: 'Обычная работа начинает давить на внимание и суждение пилота. Пилот принимает таблетки от антигистамина от сенной лихорадки. В листке-вкладыше указано: «может вызывать сонливость». Что должен сделать пилот?'
   options:
   - id: a
     text:
@@ -1896,9 +1896,9 @@
   scenarioType: decision
 - id: hp-037
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Karstu vasaras dienu pilots lido 2 stundas bez ūdens. Kādu kognitīvo ietekmi var sagaidīt?
-    en: Operational scenario — choose the correct decision. On a hot summer day a pilot flies for 2 hours without water. What cognitive effect can be expected?
-    ru: Операционная ситуация — выбери правильное решение. В жаркий летний день пилот летает 2 часа без воды. Какого когнитивного эффекта можно ожидать?
+    lv: Pilots pamana personisku stāvokli, kas var pasliktināt lēmumu pieņemšanu lidojumā. Karstu vasaras dienu pilots lido 2 stundas bez ūdens. Kādu kognitīvo ietekmi var sagaidīt?
+    en: The pilot notices a personal condition that can degrade decision-making in flight. On a hot summer day a pilot flies for 2 hours without water. What cognitive effect can be expected?
+    ru: Пилот замечает личное состояние, которое может ухудшить принятие решений в полёте. В жаркий летний день пилот летает 2 часа без воды. Какого когнитивного эффекта можно ожидать?
   options:
   - id: a
     text:
@@ -1950,9 +1950,9 @@
   scenarioType: decision
 - id: hp-038
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Pilots pārbauda drona akumulatoru un pamana nelielus pietūkuma pazīmes (swelling). Komanda gaida un laiks ir ierobežots. Pilots nolemj lidot "tikai šo vienu reizi". Kāds kognitīvs kļūdas veids šeit ir redzams?'
-    en: 'During preflight review, the operator asks: A pilot inspects the drone battery and notices slight swelling signs. The team is waiting and time is short. The pilot decides to fly "just this once". What type of cognitive error is demonstrated?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Пилот осматривает аккумулятор дрона и замечает лёгкие признаки вздутия. Команда ждёт, времени мало. Пилот решает лететь «только этот раз». Какой тип когнитивной ошибки здесь демонстрируется?'
+    lv: Pirms lidojuma pieņemšanas pilots izmanto cilvēka veiktspējas pārbaudi, nevis paļaujas uz pārliecību. Pilots pārbauda drona akumulatoru un pamana nelielus pietūkuma pazīmes (swelling). Komanda gaida un laiks ir ierobežots. Pilots nolemj lidot "tikai šo vienu reizi". Kāds kognitīvs kļūdas veids šeit ir redzams?
+    en: Before accepting a flight, the pilot uses a human-performance check rather than relying on confidence. A pilot inspects the drone battery and notices slight swelling signs. The team is waiting and time is short. The pilot decides to fly "just this once". What type of cognitive error is demonstrated?
+    ru: Перед принятием полёта пилот использует проверку human performance, а не полагается на уверенность. Пилот осматривает аккумулятор дрона и замечает лёгкие признаки вздутия. Команда ждёт, времени мало. Пилот решает лететь «только этот раз». Какой тип когнитивной ошибки здесь демонстрируется?
   options:
   - id: a
     text:
@@ -2004,9 +2004,9 @@
   scenarioType: decision
 - id: hp-039
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Pilots plāno lidojumu 2000 m augstumā virs jūras līmeņa (alpīna vieta). Kā augstums ietekmē viņa kognitīvo darbību?
-    en: Which answer best fits the situation? A pilot plans a flight at 2000 m above sea level (alpine location). How does altitude affect their cognitive performance?
-    ru: Какой ответ лучше всего подходит к ситуации? Пилот планирует полёт на высоте 2000 м над уровнем моря (альпийское место). Как высота влияет на его когнитивные функции?
+    lv: Ikdienišķs darbs sāk radīt spiedienu uz pilota uzmanību un spriestspēju. Pilots plāno lidojumu 2000 m augstumā virs jūras līmeņa (alpīna vieta). Kā augstums ietekmē viņa kognitīvo darbību?
+    en: A routine job starts to create pressure on the pilot’s attention and judgement. A pilot plans a flight at 2000 m above sea level (alpine location). How does altitude affect their cognitive performance?
+    ru: Обычная работа начинает давить на внимание и суждение пилота. Пилот планирует полёт на высоте 2000 м над уровнем моря (альпийское место). Как высота влияет на его когнитивные функции?
   options:
   - id: a
     text:
@@ -2058,9 +2058,9 @@
   scenarioType: decision
 - id: hp-040
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pilots konstatē, ka apkārtējā teritorijā pēkšņi parādījušies neidentificēti cilvēki, kas var nonākt drona trajektorijas tuvumā. Kāda ir pareizā darbība?
-    en: Operational scenario — choose the correct decision. A pilot notices that unidentified people have unexpectedly appeared in the area and could come near the drone's trajectory. What is the correct action?
-    ru: Операционная ситуация — выбери правильное решение. Пилот замечает, что в районе неожиданно появились неизвестные люди, которые могут приблизиться к траектории дрона. Каковы правильные действия?
+    lv: Pilots pamana personisku stāvokli, kas var pasliktināt lēmumu pieņemšanu lidojumā. Pilots konstatē, ka apkārtējā teritorijā pēkšņi parādījušies neidentificēti cilvēki, kas var nonākt drona trajektorijas tuvumā. Kāda ir pareizā darbība?
+    en: The pilot notices a personal condition that can degrade decision-making in flight. A pilot notices that unidentified people have unexpectedly appeared in the area and could come near the drone's trajectory. What is the correct action?
+    ru: Пилот замечает личное состояние, которое может ухудшить принятие решений в полёте. Пилот замечает, что в районе неожиданно появились неизвестные люди, которые могут приблизиться к траектории дрона. Каковы правильные действия?
   options:
   - id: a
     text:

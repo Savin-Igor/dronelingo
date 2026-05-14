@@ -1302,9 +1302,9 @@
   scenarioType: decision
 - id: op-026
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kas obligāti jāpārbauda pirms katra lidojuma attiecībā uz baterijām?'
-    en: 'During preflight review, the operator asks: What must be verified for the batteries before every flight?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Что обязательно проверять у аккумуляторов перед каждым полётом?'
+    lv: Starta vietā pilots pārvērš kontrolsarakstu operatīvā lēmumā. Kas obligāti jāpārbauda pirms katra lidojuma attiecībā uz baterijām?
+    en: At the launch site, the pilot turns the checklist into an operational decision. What must be verified for the batteries before every flight?
+    ru: На площадке запуска пилот превращает чек-лист в операционное решение. Что обязательно проверять у аккумуляторов перед каждым полётом?
   options:
   - id: a
     text:
@@ -1356,9 +1356,9 @@
   scenarioType: decision
 - id: op-027
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Ko UAS pilots pirmām kārtām dara, ja zaudē vadības saiti (lost link)?
-    en: Which answer best fits the situation? What is the pilot's first action when the control link is lost?
-    ru: Какой ответ лучше всего подходит к ситуации? Какое первое действие пилота при потере канала управления?
+    lv: Parasts lidojums sāk pāriet neparastā situācijā. Ko UAS pilots pirmām kārtām dara, ja zaudē vadības saiti (lost link)?
+    en: A normal flight begins to move toward an abnormal situation. What is the pilot's first action when the control link is lost?
+    ru: Обычный полёт начинает переходить в нестандартную ситуацию. Какое первое действие пилота при потере канала управления?
   options:
   - id: a
     text:
@@ -1410,9 +1410,9 @@
   scenarioType: decision
 - id: op-028
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Kāds ir Follow-Me režīma maksimālais attālums no pilota A1 apakškategorijā?
-    en: Operational scenario — choose the correct decision. What is the maximum Follow-Me distance from the pilot in A1?
-    ru: Операционная ситуация — выбери правильное решение. Какова максимальная дистанция режима Follow-Me от пилота в A1?
+    lv: Pilots sagatavo atgūšanas iespējas vēl pirms lidaparāts paceļas. Kāds ir Follow-Me režīma maksimālais attālums no pilota A1 apakškategorijā?
+    en: The pilot is preparing recovery options before the aircraft leaves the ground. What is the maximum Follow-Me distance from the pilot in A1?
+    ru: Пилот готовит варианты восстановления ещё до взлёта аппарата. Какова максимальная дистанция режима Follow-Me от пилота в A1?
   options:
   - id: a
     text:
@@ -1464,9 +1464,9 @@
   scenarioType: decision
 - id: op-029
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kā uzglabāt Li-Po bateriju, ja to neplāno lietot tuvākajās 2 nedēļās?'
-    en: 'During preflight review, the operator asks: How to store a Li-Po battery if it will not be used for the next 2 weeks?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Как хранить Li-Po аккумулятор, если он не будет использоваться 2 недели?'
+    lv: Starta vietā pilots pārvērš kontrolsarakstu operatīvā lēmumā. Kā uzglabāt Li-Po bateriju, ja to neplāno lietot tuvākajās 2 nedēļās?
+    en: At the launch site, the pilot turns the checklist into an operational decision. How to store a Li-Po battery if it will not be used for the next 2 weeks?
+    ru: На площадке запуска пилот превращает чек-лист в операционное решение. Как хранить Li-Po аккумулятор, если он не будет использоваться 2 недели?
   options:
   - id: a
     text:
@@ -1518,9 +1518,9 @@
   scenarioType: decision
 - id: op-030
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Ko pirmām kārtām dara, ja UAS lidojuma laikā parādās "low battery" brīdinājums?
-    en: Which answer best fits the situation? What is the first action when a "low battery" warning appears in flight?
-    ru: Какой ответ лучше всего подходит к ситуации? Какое первое действие при появлении предупреждения «low battery» в полёте?
+    lv: Parasts lidojums sāk pāriet neparastā situācijā. Ko pirmām kārtām dara, ja UAS lidojuma laikā parādās "low battery" brīdinājums?
+    en: A normal flight begins to move toward an abnormal situation. What is the first action when a "low battery" warning appears in flight?
+    ru: Обычный полёт начинает переходить в нестандартную ситуацию. Какое первое действие при появлении предупреждения «low battery» в полёте?
   options:
   - id: a
     text:
@@ -1572,9 +1572,9 @@
   scenarioType: decision
 - id: op-031
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pilots plāno lidojumu virs augļu dārza ar 8 m augstiem kokiem. Atgriešanās maršruts šķērso elektrolīnijas 15 m augstumā. Kādam minimumam jāatbilst RTH augstumam?
-    en: Operational scenario — choose the correct decision. A pilot plans a flight over an orchard with 8 m trees. The return route crosses power lines at 15 m height. What is the minimum RTH altitude that must be set?
-    ru: Операционная ситуация — выбери правильное решение. Пилот планирует полёт над садом с деревьями 8 м. Маршрут возврата пересекает линии электропередачи высотой 15 м. Какой минимальный RTH-высоты необходимо установить?
+    lv: Pilots sagatavo atgūšanas iespējas vēl pirms lidaparāts paceļas. Pilots plāno lidojumu virs augļu dārza ar 8 m augstiem kokiem. Atgriešanās maršruts šķērso elektrolīnijas 15 m augstumā. Kādam minimumam jāatbilst RTH augstumam?
+    en: The pilot is preparing recovery options before the aircraft leaves the ground. A pilot plans a flight over an orchard with 8 m trees. The return route crosses power lines at 15 m height. What is the minimum RTH altitude that must be set?
+    ru: Пилот готовит варианты восстановления ещё до взлёта аппарата. Пилот планирует полёт над садом с деревьями 8 м. Маршрут возврата пересекает линии электропередачи высотой 15 м. Какой минимальный RTH-высоты необходимо установить?
   options:
   - id: a
     text:
@@ -1626,9 +1626,9 @@
   scenarioType: decision
 - id: op-032
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kāda ir pareizā pirmslido pārbaužu secība?'
-    en: 'During preflight review, the operator asks: What is the correct order of pre-flight checks?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Каков правильный порядок предполётных проверок?'
+    lv: Starta vietā pilots pārvērš kontrolsarakstu operatīvā lēmumā. Kāda ir pareizā pirmslido pārbaužu secība?
+    en: At the launch site, the pilot turns the checklist into an operational decision. What is the correct order of pre-flight checks?
+    ru: На площадке запуска пилот превращает чек-лист в операционное решение. Каков правильный порядок предполётных проверок?
   options:
   - id: a
     text:
@@ -1680,9 +1680,9 @@
   scenarioType: decision
 - id: op-033
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Lidojuma laikā pilsētas vidū drons pēkšņi zaudē GPS signālu. Lietotne rāda "GPS zudums". Kāda ir tūlītējā darbība?
-    en: Which answer best fits the situation? Mid-flight in an urban area the drone suddenly loses GPS signal. The app shows "GPS lost". What is the immediate action?
-    ru: Какой ответ лучше всего подходит к ситуации? В середине полёта в городе дрон внезапно теряет GPS-сигнал. Приложение показывает «GPS потерян». Каково немедленное действие?
+    lv: Parasts lidojums sāk pāriet neparastā situācijā. Lidojuma laikā pilsētas vidū drons pēkšņi zaudē GPS signālu. Lietotne rāda "GPS zudums". Kāda ir tūlītējā darbība?
+    en: A normal flight begins to move toward an abnormal situation. Mid-flight in an urban area the drone suddenly loses GPS signal. The app shows "GPS lost". What is the immediate action?
+    ru: Обычный полёт начинает переходить в нестандартную ситуацию. В середине полёта в городе дрон внезапно теряет GPS-сигнал. Приложение показывает «GPS потерян». Каково немедленное действие?
   options:
   - id: a
     text:
@@ -1734,9 +1734,9 @@
   scenarioType: decision
 - id: op-034
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Drons filmē 500 m no starta vietas. Parādās pirmais baterijas brīdinājums (~20%). Pilotam vēl jāuzfilm 3 minūtes materiāla. Ko darīt?
-    en: Operational scenario — choose the correct decision. A drone is filming 500 m from the launch point. The first battery warning (~20 %) appears. The pilot has 3 more minutes of footage to capture. What should the pilot do?
-    ru: Операционная ситуация — выбери правильное решение. Дрон снимает в 500 м от точки взлёта. Появляется первое предупреждение об аккумуляторе (~20%). Пилоту нужно ещё 3 минуты съёмки. Что делать?
+    lv: Dronam 500 m no starta vietas parādās pirmais baterijas brīdinājums ap 20 %. Vēl palikušas 3 minūtes klienta kadra. Kā jārīkojas?
+    en: A drone is 500 m from the launch point when the first battery warning appears at about 20%. The client still wants 3 minutes of footage. What should the pilot do?
+    ru: Дрон находится в 500 м от точки старта, когда появляется первое предупреждение батареи около 20%. Клиенту нужны ещё 3 минуты материала. Что должен сделать пилот?
   options:
   - id: a
     text:
@@ -1788,9 +1788,9 @@
   scenarioType: decision
 - id: op-035
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Pilots ar auto atbrauc jaunā lidošanas vietā un izvieto UAS. Vai kompass jākalibrē?'
-    en: 'During preflight review, the operator asks: A pilot drives to a new flying location and sets up the UAS. Should the compass be calibrated?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Пилот приезжает на новое место полётов на машине и готовит UAS. Нужно ли калибровать компас?'
+    lv: Starta vietā pilots pārvērš kontrolsarakstu operatīvā lēmumā. Pilots ar auto atbrauc jaunā lidošanas vietā un izvieto UAS. Vai kompass jākalibrē?
+    en: At the launch site, the pilot turns the checklist into an operational decision. A pilot drives to a new flying location and sets up the UAS. Should the compass be calibrated?
+    ru: На площадке запуска пилот превращает чек-лист в операционное решение. Пилот приезжает на новое место полётов на машине и готовит UAS. Нужно ли калибровать компас?
   options:
   - id: a
     text:
@@ -1842,9 +1842,9 @@
   scenarioType: decision
 - id: op-036
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Lidojuma laikā drons sāk lidot nekontrolētā virzienā un nereaģē uz vadības ievadi. Kāda ir PIRMĀ darbība?
-    en: Which answer best fits the situation? During flight the drone begins flying in an uncontrolled direction and does not respond to control inputs. What is the FIRST action?
-    ru: Какой ответ лучше всего подходит к ситуации? Во время полёта дрон начинает лететь в неконтролируемом направлении и не реагирует на управление. Какое ПЕРВОЕ действие?
+    lv: Parasts lidojums sāk pāriet neparastā situācijā. Lidojuma laikā drons sāk lidot nekontrolētā virzienā un nereaģē uz vadības ievadi. Kāda ir PIRMĀ darbība?
+    en: A normal flight begins to move toward an abnormal situation. During flight the drone begins flying in an uncontrolled direction and does not respond to control inputs. What is the FIRST action?
+    ru: Обычный полёт начинает переходить в нестандартную ситуацию. Во время полёта дрон начинает лететь в неконтролируемом направлении и не реагирует на управление. Какое ПЕРВОЕ действие?
   options:
   - id: a
     text:
@@ -1896,9 +1896,9 @@
   scenarioType: decision
 - id: op-037
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Lidojuma laikā drons trāpa elektrolīnijā un nolaižas. Nav ievainojumu. Kāds ir ziņošanas pienākums?
-    en: Operational scenario — choose the correct decision. During flight a drone strikes a power line and lands. No injuries occurred. What is the reporting obligation?
-    ru: Операционная ситуация — выбери правильное решение. Во время полёта дрон задевает линию электропередачи и садится. Травм нет. Каково обязательство по уведомлению?
+    lv: Pilots sagatavo atgūšanas iespējas vēl pirms lidaparāts paceļas. Lidojuma laikā drons trāpa elektrolīnijā un nolaižas. Nav ievainojumu. Kāds ir ziņošanas pienākums?
+    en: The pilot is preparing recovery options before the aircraft leaves the ground. During flight a drone strikes a power line and lands. No injuries occurred. What is the reporting obligation?
+    ru: Пилот готовит варианты восстановления ещё до взлёта аппарата. Во время полёта дрон задевает линию электропередачи и садится. Травм нет. Каково обязательство по уведомлению?
   options:
   - id: a
     text:
@@ -1950,9 +1950,9 @@
   scenarioType: decision
 - id: op-038
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Pirms lidojuma pilots konstatē, ka tā plānotās lidojuma zonas tuvumā ir augstsprieguma elektrolīnijas. Kā pareizi rīkoties?'
-    en: 'During preflight review, the operator asks: Before flight a pilot identifies high-voltage power lines near the planned flight area. What is the correct action?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Перед полётом пилот обнаруживает высоковольтные линии электропередачи вблизи запланированной зоны полётов. Каковы правильные действия?'
+    lv: Starta vietā pilots pārvērš kontrolsarakstu operatīvā lēmumā. Pirms lidojuma pilots konstatē, ka tā plānotās lidojuma zonas tuvumā ir augstsprieguma elektrolīnijas. Kā pareizi rīkoties?
+    en: At the launch site, the pilot turns the checklist into an operational decision. Before flight a pilot identifies high-voltage power lines near the planned flight area. What is the correct action?
+    ru: На площадке запуска пилот превращает чек-лист в операционное решение. Перед полётом пилот обнаруживает высоковольтные линии электропередачи вблизи запланированной зоны полётов. Каковы правильные действия?
   options:
   - id: a
     text:
@@ -2004,9 +2004,9 @@
   scenarioType: decision
 - id: op-039
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Drona lietotne brīdina, ka atrašanās vieta ir 800 m no lidostas un piekļuve ir "atļauts ar nosacījumiem". Ko tas nozīmē?
-    en: Which answer best fits the situation? The drone app warns that the location is 800 m from an airport and access is "allowed with conditions". What does this mean?
-    ru: Какой ответ лучше всего подходит к ситуации? Приложение для дрона предупреждает, что местоположение находится в 800 м от аэропорта и доступ «разрешён с условиями». Что это означает?
+    lv: Parasts lidojums sāk pāriet neparastā situācijā. Drona lietotne brīdina, ka atrašanās vieta ir 800 m no lidostas un piekļuve ir "atļauts ar nosacījumiem". Ko tas nozīmē?
+    en: A normal flight begins to move toward an abnormal situation. The drone app warns that the location is 800 m from an airport and access is "allowed with conditions". What does this mean?
+    ru: Обычный полёт начинает переходить в нестандартную ситуацию. Приложение для дрона предупреждает, что местоположение находится в 800 м от аэропорта и доступ «разрешён с условиями». Что это означает?
   options:
   - id: a
     text:
@@ -2058,9 +2058,9 @@
   scenarioType: decision
 - id: op-040
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Kas ir "Return-to-Home" (RTH) priekšnoteikums, lai tas darbotos pareizi?
-    en: Operational scenario — choose the correct decision. What is a prerequisite for "Return-to-Home" (RTH) to work correctly?
-    ru: Операционная ситуация — выбери правильное решение. Каково предварительное условие для корректной работы «Return-to-Home» (RTH)?
+    lv: Pilots sagatavo atgūšanas iespējas vēl pirms lidaparāts paceļas. Kas ir "Return-to-Home" (RTH) priekšnoteikums, lai tas darbotos pareizi?
+    en: The pilot is preparing recovery options before the aircraft leaves the ground. What is a prerequisite for "Return-to-Home" (RTH) to work correctly?
+    ru: Пилот готовит варианты восстановления ещё до взлёта аппарата. Каково предварительное условие для корректной работы «Return-to-Home» (RTH)?
   options:
   - id: a
     text:

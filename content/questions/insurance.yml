@@ -1302,9 +1302,9 @@
   scenarioType: decision
 - id: in-026
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kāds ir minimālais civiltiesiskās apdrošināšanas segums Latvijā A1 (C1) lidojumiem?'
-    en: 'During preflight review, the operator asks: What is the minimum third-party liability cover in Latvia for A1 (C1) flights?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Каков минимум страхования гражданской ответственности в Латвии для полётов A1 (C1)?'
+    lv: Latvijas operators pirms darba pārbauda apdrošināšanas dokumentus. Kāds ir minimālais civiltiesiskās apdrošināšanas segums Latvijā A1 (C1) lidojumiem?
+    en: A Latvian operator reviews the insurance file before releasing the aircraft for a job. What is the minimum third-party liability cover in Latvia for A1 (C1) flights?
+    ru: Латвийский оператор перед работой проверяет страховые документы. Каков минимум страхования гражданской ответственности в Латвии для полётов A1 (C1)?
   options:
   - id: a
     text:
@@ -1356,9 +1356,9 @@
   scenarioType: decision
 - id: in-027
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Vai obligātā apdrošināšana sedz paša UAS bojājumus (hull)?
-    en: Which answer best fits the situation? Does mandatory insurance cover damage to the UAS itself (hull)?
-    ru: Какой ответ лучше всего подходит к ситуации? Покрывает ли обязательное страхование ущерб самому UAS (hull)?
+    lv: Pēc neliela incidenta operatoram jāzina, kurš polises slānis patiesībā attiecas. Vai obligātā apdrošināšana sedz paša UAS bojājumus (hull)?
+    en: After a small incident, the operator needs to know which policy layer actually applies. Does mandatory insurance cover damage to the UAS itself (hull)?
+    ru: После небольшого инцидента оператору нужно понять, какой слой полиса реально применяется. Покрывает ли обязательное страхование ущерб самому UAS (hull)?
   options:
   - id: a
     text:
@@ -1410,9 +1410,9 @@
   scenarioType: decision
 - id: in-028
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Kuram UAS lidojumam Latvijā apdrošināšana NAV obligāta?
-    en: Operational scenario — choose the correct decision. For which UAS flight in Latvia is insurance NOT mandatory?
-    ru: Операционная ситуация — выбери правильное решение. Для какого полёта UAS в Латвии страхование НЕ обязательно?
+    lv: Komerciālā misijā vienlaikus ir civiltiesiskā atbildība, aprīkojuma vērtība un klienta gaidas. Kuram UAS lidojumam Latvijā apdrošināšana NAV obligāta?
+    en: A commercial mission involves liability, equipment value and client expectations. For which UAS flight in Latvia is insurance NOT mandatory?
+    ru: В коммерческой миссии одновременно есть ответственность, стоимость оборудования и ожидания клиента. Для какого полёта UAS в Латвии страхование НЕ обязательно?
   options:
   - id: a
     text:
@@ -1464,9 +1464,9 @@
   scenarioType: decision
 - id: in-029
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kāds ir minimālais segums Specifiskās kategorijas UAS lidojumam < 500 kg?'
-    en: 'During preflight review, the operator asks: What is the minimum cover for a Specific-category UAS flight under 500 kg?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Каков минимум покрытия для полёта UAS Специальной категории < 500 кг?'
+    lv: Latvijas operators pirms darba pārbauda apdrošināšanas dokumentus. Kāds ir minimālais segums Specifiskās kategorijas UAS lidojumam < 500 kg?
+    en: A Latvian operator reviews the insurance file before releasing the aircraft for a job. What is the minimum cover for a Specific-category UAS flight under 500 kg?
+    ru: Латвийский оператор перед работой проверяет страховые документы. Каков минимум покрытия для полёта UAS Специальной категории < 500 кг?
   options:
   - id: a
     text:
@@ -1518,9 +1518,9 @@
   scenarioType: decision
 - id: in-030
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Kas notiek, ja CAA Latvia inspektors konstatē, ka operatoram nav apdrošināšanas?
-    en: Which answer best fits the situation? What happens if a CAA Latvia inspector finds an operator without insurance?
-    ru: Какой ответ лучше всего подходит к ситуации? Что происходит, если инспектор CAA Latvia обнаружит, что у оператора нет страховки?
+    lv: CAA Latvia inspektors pārbauda operatoru pirms lidojuma un konstatē, ka obligātās apdrošināšanas nav. Kādas ir sekas?
+    en: A CAA Latvia inspector checks an operator before flight and finds that mandatory insurance is missing. What is the consequence?
+    ru: Инспектор CAA Latvia проверяет оператора перед полётом и обнаруживает отсутствие обязательного страхования. Какое последствие?
   options:
   - id: a
     text:
@@ -1572,9 +1572,9 @@
   scenarioType: decision
 - id: in-031
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pilots ar obligāto civiltiesiskās atbildības polisi un hull apdrošināšanu (€200 pašriska) zaudē dronu lidojuma laikā — tas krīt kanālā, tiek applūdināts un iznīcināts. Neviens nav ievainots. Kādi zaudējumi tiek atlīdzināti?
-    en: Operational scenario — choose the correct decision. A pilot with mandatory third-party liability insurance and hull insurance (€200 deductible) loses their drone mid-flight — it falls into a canal, floods, and is destroyed. No one was injured. Which losses are covered?
-    ru: Операционная ситуация — выбери правильное решение. У пилота есть обязательное страхование ответственности перед третьими лицами и страхование корпуса (€200 франшизы). Дрон падает в канал, тонет и уничтожен. Никто не пострадал. Какие убытки покрываются?
+    lv: Komerciālā misijā vienlaikus ir civiltiesiskā atbildība, aprīkojuma vērtība un klienta gaidas. Pilots ar obligāto civiltiesiskās atbildības polisi un hull apdrošināšanu (€200 pašriska) zaudē dronu lidojuma laikā — tas krīt kanālā, tiek applūdināts un iznīcināts. Neviens nav ievainots. Kādi zaudējumi tiek atlīdzināti?
+    en: A commercial mission involves liability, equipment value and client expectations. A pilot with mandatory third-party liability insurance and hull insurance (€200 deductible) loses their drone mid-flight — it falls into a canal, floods, and is destroyed. No one was injured. Which losses are covered?
+    ru: В коммерческой миссии одновременно есть ответственность, стоимость оборудования и ожидания клиента. У пилота есть обязательное страхование ответственности перед третьими лицами и страхование корпуса (€200 франшизы). Дрон падает в канал, тонет и уничтожен. Никто не пострадал. Какие убытки покрываются?
   options:
   - id: a
     text:
@@ -1626,9 +1626,9 @@
   scenarioType: decision
 - id: in-032
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Operators ar C3 dronu (22 kg) plāno A3 operāciju. Kāds ir minimālais civiltiesiskās atbildības segums?'
-    en: 'During preflight review, the operator asks: An operator with a C3 drone (22 kg) plans an A3 operation. What is the minimum third-party liability cover?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Оператор с дроном C3 (22 кг) планирует операцию A3. Каков минимум страхования гражданской ответственности?'
+    lv: Operators plāno A3 lidojumu ar 22 kg C3 dronu. Kāds ir minimālais trešo personu civiltiesiskās atbildības segums?
+    en: An operator plans an A3 operation with a 22 kg C3 drone. What is the minimum third-party liability cover?
+    ru: Оператор планирует операцию A3 с дроном C3 массой 22 кг. Какое минимальное покрытие ответственности перед третьими лицами требуется?
   options:
   - id: a
     text:
@@ -1680,9 +1680,9 @@
   scenarioType: decision
 - id: in-033
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Latvijas operators vēlas lidot ar savu dronu Vācijā. Vai viņa Latvijas apdrošināšanas polise der ES?
-    en: Which answer best fits the situation? A Latvian operator wants to fly their drone in Germany. Is their Latvian insurance policy valid in the EU?
-    ru: Какой ответ лучше всего подходит к ситуации? Латвийский оператор хочет летать со своим дроном в Германии. Действителен ли его латвийский страховой полис в ЕС?
+    lv: Latvijas operators plāno īsu darbu Vācijā un pārbauda, vai Latvijas polise derēs ārpus Latvijas. Kā jāvērtē ES derīgums?
+    en: A Latvian operator plans a short job in Germany and checks whether the Latvian policy applies outside Latvia. How should EU validity be understood?
+    ru: Латвийский оператор планирует короткую работу в Германии и проверяет, действует ли латвийский полис за пределами Латвии. Как понимать действительность в ЕС?
   options:
   - id: a
     text:
@@ -1734,9 +1734,9 @@
   scenarioType: decision
 - id: in-034
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Operators drona kļūdas dēļ notriec ielas laternas stabu. Pilsētas pašvaldība iesniedz prasību par 3 200 EUR remonta izmaksām. Kura polise sedz šo?
-    en: Operational scenario — choose the correct decision. An operator's drone hits a streetlamp post due to pilot error. The city municipality files a claim for €3,200 repair costs. Which policy covers this?
-    ru: Операционная ситуация — выбери правильное решение. Дрон оператора сбивает фонарный столб из-за ошибки пилота. Городская муниципальная власть подаёт иск на €3 200 ремонтных расходов. Какой полис покрывает это?
+    lv: Komerciālā misijā vienlaikus ir civiltiesiskā atbildība, aprīkojuma vērtība un klienta gaidas. Operators drona kļūdas dēļ notriec ielas laternas stabu. Pilsētas pašvaldība iesniedz prasību par 3 200 EUR remonta izmaksām. Kura polise sedz šo?
+    en: A commercial mission involves liability, equipment value and client expectations. An operator's drone hits a streetlamp post due to pilot error. The city municipality files a claim for €3,200 repair costs. Which policy covers this?
+    ru: В коммерческой миссии одновременно есть ответственность, стоимость оборудования и ожидания клиента. Дрон оператора сбивает фонарный столб из-за ошибки пилота. Городская муниципальная власть подаёт иск на €3 200 ремонтных расходов. Какой полис покрывает это?
   options:
   - id: a
     text:
@@ -1788,9 +1788,9 @@
   scenarioType: decision
 - id: in-035
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Pilots atklāj, ka apdrošināšanas polise ir beigusies vakar. Viņam ir steidzams komerciāls lidojums šodien. Ko viņš drīkst darīt?'
-    en: 'During preflight review, the operator asks: A pilot discovers that their insurance policy expired yesterday. They have an urgent commercial flight today. What may they do?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Пилот обнаруживает, что его страховой полис истёк вчера. Сегодня у него срочный коммерческий полёт. Что он может сделать?'
+    lv: Latvijas operators pirms darba pārbauda apdrošināšanas dokumentus. Pilots atklāj, ka apdrošināšanas polise ir beigusies vakar. Viņam ir steidzams komerciāls lidojums šodien. Ko viņš drīkst darīt?
+    en: A Latvian operator reviews the insurance file before releasing the aircraft for a job. A pilot discovers that their insurance policy expired yesterday. They have an urgent commercial flight today. What may they do?
+    ru: Латвийский оператор перед работой проверяет страховые документы. Пилот обнаруживает, что его страховой полис истёк вчера. Сегодня у него срочный коммерческий полёт. Что он может сделать?
   options:
   - id: a
     text:
@@ -1842,9 +1842,9 @@
   scenarioType: decision
 - id: in-036
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Kas ir "pašrisks" (deductible) drona hull apdrošināšanā un kā tas ietekmē prasību?
-    en: Which answer best fits the situation? What is a "deductible" in drone hull insurance and how does it affect a claim?
-    ru: Какой ответ лучше всего подходит к ситуации? Что такое «франшиза» (deductible) в hull-страховании дронов и как она влияет на страховой случай?
+    lv: Pēc neliela incidenta operatoram jāzina, kurš polises slānis patiesībā attiecas. Kas ir "pašrisks" (deductible) drona hull apdrošināšanā un kā tas ietekmē prasību?
+    en: After a small incident, the operator needs to know which policy layer actually applies. What is a "deductible" in drone hull insurance and how does it affect a claim?
+    ru: После небольшого инцидента оператору нужно понять, какой слой полиса реально применяется. Что такое «франшиза» (deductible) в hull-страховании дронов и как она влияет на страховой случай?
   options:
   - id: a
     text:
@@ -1896,9 +1896,9 @@
   scenarioType: decision
 - id: in-037
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Operators lido ar dronu alkohola ietekmē un nodara kaitējumu trešajai personai. Vai civiltiesiskās atbildības polise sedz prasību?
-    en: Operational scenario — choose the correct decision. An operator flies a drone under the influence of alcohol and causes harm to a third party. Does the third-party liability policy cover the claim?
-    ru: Операционная ситуация — выбери правильное решение. Оператор управляет дроном в состоянии алкогольного опьянения и причиняет вред третьему лицу. Покрывает ли полис страхования гражданской ответственности этот иск?
+    lv: Komerciālā misijā vienlaikus ir civiltiesiskā atbildība, aprīkojuma vērtība un klienta gaidas. Operators lido ar dronu alkohola ietekmē un nodara kaitējumu trešajai personai. Vai civiltiesiskās atbildības polise sedz prasību?
+    en: A commercial mission involves liability, equipment value and client expectations. An operator flies a drone under the influence of alcohol and causes harm to a third party. Does the third-party liability policy cover the claim?
+    ru: В коммерческой миссии одновременно есть ответственность, стоимость оборудования и ожидания клиента. Оператор управляет дроном в состоянии алкогольного опьянения и причиняет вред третьему лицу. Покрывает ли полис страхования гражданской ответственности этот иск?
   options:
   - id: a
     text:
@@ -1950,9 +1950,9 @@
   scenarioType: decision
 - id: in-038
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Operators pērkot polisi saņem jautājumu: "Hull vai civiltiesiskās atbildības?" Kāda ir galvenā atšķirība?'
-    en: 'During preflight review, the operator asks: When purchasing a policy an operator is asked: "Hull or third-party liability?" What is the main difference?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: При покупке полиса оператора спрашивают: «Hull или страхование гражданской ответственности?» В чём основная разница?'
+    lv: Pērkot polisi, operatoram jāsaprot atšķirība starp hull un trešo personu civiltiesisko atbildību. Kāda ir galvenā atšķirība?
+    en: When buying a policy, an operator must distinguish hull cover from third-party liability. What is the main difference?
+    ru: При покупке полиса оператор должен различать hull cover и ответственность перед третьими лицами. В чём главное отличие?
   options:
   - id: a
     text:
@@ -2004,63 +2004,57 @@
   scenarioType: decision
 - id: in-039
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Operators veic lidojumu pasākumā ar papildu apdrošināšanu, ko nodrošinājis pasākuma organizators. Vai operators joprojām atbild par obligāto civiltiesisko polisi?
-    en: Which answer best fits the situation? An operator conducts a flight at an event with additional insurance provided by the event organiser. Is the operator still responsible for mandatory third-party liability?
-    ru: Какой ответ лучше всего подходит к ситуации? Оператор выполняет полёт на мероприятии с дополнительным страхованием, предоставленным организатором мероприятия. Несёт ли оператор по-прежнему ответственность за обязательное страхование гражданской ответственности?
+    lv: Latvijas operators īrē dronu no partnera un lido ar savu pilotu komerciālā darbā. Kurš apdrošināšanas jautājums jāpārbauda pirms lidojuma?
+    en: A Latvian operator rents a drone from a partner and uses its own pilot for a commercial job. Which insurance question must be checked before flight?
+    ru: Латвийский оператор арендует дрон у партнёра и использует своего пилота для коммерческой работы. Какой страховой вопрос нужно проверить до полёта?
   options:
   - id: a
     text:
-      lv: Tikai tad, ja organizatora polise ir ar zemāku segumu.
-      en: Only if the organiser's policy has lower coverage.
-      ru: Только если полис организатора имеет более низкое покрытие.
+      lv: Vai partnera vai operatora polise sedz trešo personu atbildību, korpusu un kravu šajā konkrētajā lietošanā.
+      en: Whether the partner or operator policy covers third-party liability, hull and payload for this specific use.
+      ru: Покрывает ли полис партнёра или оператора ответственность перед третьими лицами, корпус и полезную нагрузку именно для этого использования.
   - id: b
     text:
-      lv: Operators var nodot atbildību organizatoram rakstiski.
-      en: The operator can transfer liability to the organiser in writing.
-      ru: Оператор может передать ответственность организатору в письменной форме.
+      lv: Vai pilots ir filmējis ar šo kameras profilu iepriekš.
+      en: Whether the pilot has used this camera profile before.
+      ru: Использовал ли пилот этот профиль камеры раньше.
   - id: c
     text:
-      lv: Nē — organizatora papildu apdrošināšana aizvieto operators obligāto polisi.
-      en: No — the organiser's additional insurance replaces the operator's mandatory policy.
-      ru: Нет — дополнительная страховка организатора заменяет обязательный полис оператора.
+      lv: Vai īrētam dronam vienmēr automātiski ir pilns apdrošināšanas segums.
+      en: Whether a rented drone is always automatically fully insured.
+      ru: Всегда ли арендованный дрон автоматически полностью застрахован.
   - id: d
     text:
-      lv: Jā — operators ir atbildīgs par savu obligāto civiltiesisko polisi neatkarīgi no organizatora apdrošināšanas.
-      en: Yes — the operator is responsible for their own mandatory third-party liability policy regardless of the organiser's insurance.
-      ru: Да — оператор несёт ответственность за свой обязательный полис страхования гражданской ответственности независимо от страховки организатора.
-  correctOptionId: d
+      lv: Vai klienta līgums ļauj nomainīt operatora reģistrācijas numuru pēc lidojuma.
+      en: Whether the client contract allows changing the operator registration number after the flight.
+      ru: Позволяет ли договор с клиентом изменить регистрационный номер оператора после полёта.
+  correctOptionId: a
   explanation:
-    lv: 'Obligātā civiltiesiskās atbildības apdrošināšana ir UAS operatora personiskais pienākums — to nevar aizstāt ar pasākuma organizatora polisi. Inspekcijā operators uzrāda savu polisi. Organizatora apdrošināšana var būt papildinājums vai komerciālā vienošanās, bet nemaina operators regulatīvo pienākumu.
-
-      '
-    en: 'Mandatory third-party liability insurance is the UAS operator''s personal obligation — it cannot be replaced by an event organiser''s policy. In an inspection the operator shows their own policy. The organiser''s insurance may be an addition or a commercial arrangement, but it does not change the operator''s regulatory obligation.
-
-      '
-    ru: 'Обязательное страхование гражданской ответственности является личным обязательством оператора UAS — оно не может быть заменено полисом организатора мероприятия. При инспекции оператор предъявляет свой собственный полис. Страховка организатора может быть дополнением или коммерческим соглашением, но не меняет нормативного обязательства оператора.
-
-      '
+    lv: Īrētā vai koplietotā operācijā jābūt skaidram, kura polise sedz trešo personu atbildību, pašu lidaparātu un kravu konkrētās lietošanas laikā. Pieņēmums, ka īre automātiski visu sedz, ir bīstams.
+    en: In a rented or shared operation, it must be clear which policy covers third-party liability, the aircraft itself and any payload during this specific use. Assuming rental automatically covers everything is unsafe.
+    ru: В арендованной или совместной операции должно быть ясно, какой полис покрывает ответственность перед третьими лицами, сам аппарат и полезную нагрузку именно на период этого использования. Предполагать, что аренда автоматически покрывает всё, опасно.
   distractorRationales:
-    a:
-      lv: Obligātā polise ir jāoperatoram neatkarīgi no organizatora polises seguma apmēra. Seguma apmēra salīdzinājums nav kritērijs.
-      en: The mandatory policy is required for the operator regardless of the organiser's coverage amount. Coverage amount comparison is not a criterion.
-      ru: Обязательный полис необходим оператору независимо от размера покрытия организатора. Сравнение размеров покрытия не является критерием.
     b:
-      lv: Atbildību par obligāto apdrošināšanu nevar nodot ar rakstisku vienošanos. Tā ir personiska regulatīvā prasība.
-      en: Liability for mandatory insurance cannot be transferred by written agreement. It is a personal regulatory requirement.
-      ru: Ответственность за обязательное страхование не может быть передана письменным соглашением. Это личное нормативное требование.
+      lv: Kameras profils ir darba kvalitātes jautājums, nevis apdrošināšanas seguma pārbaude.
+      en: Camera profile familiarity is a work-quality issue, not an insurance coverage check.
+      ru: Профиль камеры относится к качеству работы, а не к проверке страхового покрытия.
     c:
-      lv: Organizatora polise neaizvieto operators personisko regulatīvo pienākumu par obligāto apdrošināšanu.
-      en: The organiser's policy does not replace the operator's personal regulatory obligation for mandatory insurance.
-      ru: Полис организатора не заменяет личное нормативное обязательство оператора по обязательному страхованию.
-  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — MK noteikumi Nr. 447 — operator personal insurance obligation; Latvian Aviation Law
+      lv: Īrēts drons automātiski nenozīmē pilnu segumu; polises tvērums jāpārbauda.
+      en: A rented drone does not automatically mean full cover; the policy scope must be verified.
+      ru: Арендованный дрон не означает автоматического полного покрытия; объём полиса нужно проверить.
+    d:
+      lv: Operatora identitātei jābūt skaidrai pirms lidojuma; to nevar labot pēc fakta kā apdrošināšanas risinājumu.
+      en: Operator identity must be clear before the flight; changing it after the fact is not an insurance solution.
+      ru: Идентичность оператора должна быть ясна до полёта; менять её после факта не является страховым решением.
+  sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Latvia insurance guidance; shared/rented operation coverage checks
   difficulty: 3
-  cognitiveLevel: apply
+  cognitiveLevel: analyze
   scenarioType: decision
 - id: in-040
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Ko regulē Regula (EK) 785/2004?
-    en: Operational scenario — choose the correct decision. What does Regulation (EC) 785/2004 regulate?
-    ru: Операционная ситуация — выбери правильное решение. Что регулирует Регламент (ЕС) 785/2004?
+    lv: Komerciālā misijā vienlaikus ir civiltiesiskā atbildība, aprīkojuma vērtība un klienta gaidas. Ko regulē Regula (EK) 785/2004?
+    en: A commercial mission involves liability, equipment value and client expectations. What does Regulation (EC) 785/2004 regulate?
+    ru: В коммерческой миссии одновременно есть ответственность, стоимость оборудования и ожидания клиента. Что регулирует Регламент (ЕС) 785/2004?
   options:
   - id: a
     text:

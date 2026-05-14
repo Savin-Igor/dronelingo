@@ -1410,9 +1410,9 @@
   scenarioType: decision
 - id: ar-028
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kura ES regula nosaka UAS ekspluatācijas noteikumus (operācijas)?'
-    en: 'During preflight review, the operator asks: Which EU regulation lays down UAS operational rules?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Какой регламент ЕС задаёт правила эксплуатации UAS?'
+    lv: Operators plānoto lidojumu sasaista ar pareizo ES regulatīvo kategoriju. Kura ES regula nosaka UAS ekspluatācijas noteikumus (operācijas)?
+    en: An operator is mapping a planned flight to the correct EU regulatory category. Which EU regulation lays down UAS operational rules?
+    ru: Оператор сопоставляет запланированный полёт с правильной регуляторной категорией ЕС. Какой регламент ЕС задаёт правила эксплуатации UAS?
   options:
   - id: a
     text:
@@ -1464,9 +1464,9 @@
   scenarioType: decision
 - id: ar-029
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Kurā kategorijā ir jāveic SORA riska novērtējums vai jāizmanto STS standarta scenārijs?
-    en: Which answer best fits the situation? In which category is a SORA risk assessment or an STS standard scenario required?
-    ru: Какой ответ лучше всего подходит к ситуации? В какой категории требуется оценка риска SORA или стандартный сценарий STS?
+    lv: Pilots pārbauda, vai plānotā operācija joprojām ietilpst Atvērtajā kategorijā. Kurā kategorijā ir jāveic SORA riska novērtējums vai jāizmanto STS standarta scenārijs?
+    en: A pilot is checking whether the planned operation still fits the Open category. In which category is a SORA risk assessment or an STS standard scenario required?
+    ru: Пилот проверяет, остаётся ли запланированная операция в Open category. В какой категории требуется оценка риска SORA или стандартный сценарий STS?
   options:
   - id: a
     text:
@@ -1518,9 +1518,9 @@
   scenarioType: decision
 - id: ar-030
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Kāds ir Atvērtās kategorijas maksimālais UAS lidojuma augstums virs zemes?
-    en: Operational scenario — choose the correct decision. What is the maximum UAS altitude above ground in the Open category?
-    ru: Операционная ситуация — выбери правильное решение. Какова максимальная высота полёта UAS над землёй в Открытой категории?
+    lv: Latvijas operators sagatavo dokumentāciju pirms lidojuma piešķiršanas tālvadības pilotam. Kāds ir Atvērtās kategorijas maksimālais UAS lidojuma augstums virs zemes?
+    en: A Latvian operator prepares documentation before assigning the flight to a remote pilot. What is the maximum UAS altitude above ground in the Open category?
+    ru: Латвийский оператор готовит документы перед назначением полёта удалённому пилоту. Какова максимальная высота полёта UAS над землёй в Открытой категории?
   options:
   - id: a
     text:
@@ -1572,9 +1572,9 @@
   scenarioType: decision
 - id: ar-031
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kura ES regula nosaka UAS klašu (C0–C6) tehniskās prasības?'
-    en: 'During preflight review, the operator asks: Which EU regulation lays down the technical requirements for UAS classes (C0–C6)?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Какой регламент ЕС задаёт технические требования к классам UAS (C0–C6)?'
+    lv: Operators plānoto lidojumu sasaista ar pareizo ES regulatīvo kategoriju. Kura ES regula nosaka UAS klašu (C0–C6) tehniskās prasības?
+    en: An operator is mapping a planned flight to the correct EU regulatory category. Which EU regulation lays down the technical requirements for UAS classes (C0–C6)?
+    ru: Оператор сопоставляет запланированный полёт с правильной регуляторной категорией ЕС. Какой регламент ЕС задаёт технические требования к классам UAS (C0–C6)?
   options:
   - id: a
     text:
@@ -1626,9 +1626,9 @@
   scenarioType: decision
 - id: ar-032
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Kuri Latvijas MK noteikumi nosaka UAS pilota kvalifikācijas kārtību?
-    en: Which answer best fits the situation? Which Latvian Cabinet Regulation governs UAS pilot qualification?
-    ru: Какой ответ лучше всего подходит к ситуации? Какие правила Кабинета министров Латвии регулируют квалификацию пилота UAS?
+    lv: Pilots pārbauda, vai plānotā operācija joprojām ietilpst Atvērtajā kategorijā. Kuri Latvijas MK noteikumi nosaka UAS pilota kvalifikācijas kārtību?
+    en: A pilot is checking whether the planned operation still fits the Open category. Which Latvian Cabinet Regulation governs UAS pilot qualification?
+    ru: Пилот проверяет, остаётся ли запланированная операция в Open category. Какие правила Кабинета министров Латвии регулируют квалификацию пилота UAS?
   options:
   - id: a
     text:
@@ -1680,9 +1680,9 @@
   scenarioType: decision
 - id: ar-033
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Papildus A2 teorijas eksāmenam, kas vēl nepieciešams, lai iegūtu A2 kompetences sertifikātu?
-    en: Operational scenario — choose the correct decision. Beyond the A2 theory exam, what else is required to obtain the A2 competence certificate?
-    ru: Операционная ситуация — выбери правильное решение. Помимо теоретического экзамена A2, что ещё требуется для получения свидетельства о компетентности A2?
+    lv: Latvijas operators sagatavo dokumentāciju pirms lidojuma piešķiršanas tālvadības pilotam. Papildus A2 teorijas eksāmenam, kas vēl nepieciešams, lai iegūtu A2 kompetences sertifikātu?
+    en: A Latvian operator prepares documentation before assigning the flight to a remote pilot. Beyond the A2 theory exam, what else is required to obtain the A2 competence certificate?
+    ru: Латвийский оператор готовит документы перед назначением полёта удалённому пилоту. Помимо теоретического экзамена A2, что ещё требуется для получения свидетельства о компетентности A2?
   options:
   - id: a
     text:
@@ -1734,9 +1734,9 @@
   scenarioType: decision
 - id: ar-034
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Pilots ar A1/A3 sertifikātu vēlas ar C2 dronu filmēt būvlaukumu 20 m no strādniekiem (bez piekrišanas). Kurā apakškategorijā jādarbojas un vai 20 m ir atļauti?'
-    en: 'During preflight review, the operator asks: A pilot with only the A1/A3 certificate wants to film a construction site with a C2 drone at 20 m from workers (without consent). Which sub-category applies and is 20 m permitted?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Пилот, имеющий только сертификат A1/A3, хочет снимать строительную площадку дроном C2 в 20 м от рабочих (без согласия). Какая подкатегория применяется и разрешены ли 20 м?'
+    lv: Operators plānoto lidojumu sasaista ar pareizo ES regulatīvo kategoriju. Pilots ar A1/A3 sertifikātu vēlas ar C2 dronu filmēt būvlaukumu 20 m no strādniekiem (bez piekrišanas). Kurā apakškategorijā jādarbojas un vai 20 m ir atļauti?
+    en: An operator is mapping a planned flight to the correct EU regulatory category. A pilot with only the A1/A3 certificate wants to film a construction site with a C2 drone at 20 m from workers (without consent). Which sub-category applies and is 20 m permitted?
+    ru: Оператор сопоставляет запланированный полёт с правильной регуляторной категорией ЕС. Пилот, имеющий только сертификат A1/A3, хочет снимать строительную площадку дроном C2 в 20 м от рабочих (без согласия). Какая подкатегория применяется и разрешены ли 20 м?
   options:
   - id: a
     text:
@@ -1788,9 +1788,9 @@
   scenarioType: decision
 - id: ar-035
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Uzņēmums nosūta darbinieku lidot ar uzņēmuma dronu. Kurš jāreģistrē kā UAS operators?
-    en: Which answer best fits the situation? A company sends an employee to fly the company's drone. Who must register as the UAS operator?
-    ru: Какой ответ лучше всего подходит к ситуации? Компания посылает сотрудника летать на корпоративном дроне. Кто должен быть зарегистрирован как оператор UAS?
+    lv: Pilots pārbauda, vai plānotā operācija joprojām ietilpst Atvērtajā kategorijā. Uzņēmums nosūta darbinieku lidot ar uzņēmuma dronu. Kurš jāreģistrē kā UAS operators?
+    en: A pilot is checking whether the planned operation still fits the Open category. A company sends an employee to fly the company's drone. Who must register as the UAS operator?
+    ru: Пилот проверяет, остаётся ли запланированная операция в Open category. Компания посылает сотрудника летать на корпоративном дроне. Кто должен быть зарегистрирован как оператор UAS?
   options:
   - id: a
     text:
@@ -1842,9 +1842,9 @@
   scenarioType: decision
 - id: ar-036
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Kāds ir C4 klases UAS unikālais operacionālais ierobežojums salīdzinājumā ar C3?
-    en: Operational scenario — choose the correct decision. What is the unique operational restriction of a C4 class UAS compared to C3?
-    ru: Операционная ситуация — выбери правильное решение. Каково уникальное операционное ограничение UAS класса C4 по сравнению с C3?
+    lv: Latvijas operators sagatavo dokumentāciju pirms lidojuma piešķiršanas tālvadības pilotam. Kāds ir C4 klases UAS unikālais operacionālais ierobežojums salīdzinājumā ar C3?
+    en: A Latvian operator prepares documentation before assigning the flight to a remote pilot. What is the unique operational restriction of a C4 class UAS compared to C3?
+    ru: Латвийский оператор готовит документы перед назначением полёта удалённому пилоту. Каково уникальное операционное ограничение UAS класса C4 по сравнению с C3?
   options:
   - id: a
     text:
@@ -1896,9 +1896,9 @@
   scenarioType: decision
 - id: ar-037
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kāda ir Atvērtās kategorijas maksimālā UAS masa (MTOM)?'
-    en: 'During preflight review, the operator asks: What is the maximum UAS mass (MTOM) for the Open category?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Какова максимальная масса UAS (MTOM) для Открытой категории?'
+    lv: Operators plānoto lidojumu sasaista ar pareizo ES regulatīvo kategoriju. Kāda ir Atvērtās kategorijas maksimālā UAS masa (MTOM)?
+    en: An operator is mapping a planned flight to the correct EU regulatory category. What is the maximum UAS mass (MTOM) for the Open category?
+    ru: Оператор сопоставляет запланированный полёт с правильной регуляторной категорией ЕС. Какова максимальная масса UAS (MTOM) для Открытой категории?
   options:
   - id: a
     text:
@@ -1950,9 +1950,9 @@
   scenarioType: decision
 - id: ar-038
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Kas ir UAS operatora reģistrācija un no kādas masas tā ir obligāta?
-    en: Which answer best fits the situation? What is UAS operator registration and from what mass is it mandatory?
-    ru: Какой ответ лучше всего подходит к ситуации? Что такое регистрация оператора UAS и с какой массы она обязательна?
+    lv: Pilots pārbauda, vai plānotā operācija joprojām ietilpst Atvērtajā kategorijā. Kas ir UAS operatora reģistrācija un no kādas masas tā ir obligāta?
+    en: A pilot is checking whether the planned operation still fits the Open category. What is UAS operator registration and from what mass is it mandatory?
+    ru: Пилот проверяет, остаётся ли запланированная операция в Open category. Что такое регистрация оператора UAS и с какой массы она обязательна?
   options:
   - id: a
     text:
@@ -2004,9 +2004,9 @@
   scenarioType: decision
 - id: ar-039
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pilots ir A1/A3 sertificēts un vēlas lidot ar C1 klases dronu virs atsevišķas personas. Cik liela masa ir C1 klases UAS robežvērtība?
-    en: Operational scenario — choose the correct decision. A pilot is A1/A3 certified and wants to fly a C1-class drone over an isolated person. What is the mass threshold for a C1-class UAS?
-    ru: Операционная ситуация — выбери правильное решение. Пилот имеет сертификат A1/A3 и хочет летать на дроне класса C1 над одиноким человеком. Каков массовый порог для UAS класса C1?
+    lv: Pilotam ir A1/A3 sertifikāts, un viņš vēlas ar C1 dronu lidot virs atsevišķas nepiederošas personas. Kāds ir C1 klases UAS masas slieksnis?
+    en: A pilot with an A1/A3 certificate wants to use a C1 drone near an isolated uninvolved person. What mass threshold defines a C1-class UAS?
+    ru: Пилот с сертификатом A1/A3 хочет использовать дрон C1 рядом с отдельным неучаствующим человеком. Какой порог массы определяет класс C1?
   options:
   - id: a
     text:
@@ -2058,9 +2058,9 @@
   scenarioType: decision
 - id: ar-040
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kāds ir minimālais vecums A1/A3 drona pilotam saskaņā ar Regulu 2019/947?'
-    en: 'During preflight review, the operator asks: What is the minimum age for an A1/A3 drone pilot under Regulation 2019/947?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Каков минимальный возраст пилота дрона A1/A3 согласно Регламенту 2019/947?'
+    lv: Operators plānoto lidojumu sasaista ar pareizo ES regulatīvo kategoriju. Kāds ir minimālais vecums A1/A3 drona pilotam saskaņā ar Regulu 2019/947?
+    en: An operator is mapping a planned flight to the correct EU regulatory category. What is the minimum age for an A1/A3 drone pilot under Regulation 2019/947?
+    ru: Оператор сопоставляет запланированный полёт с правильной регуляторной категорией ЕС. Каков минимальный возраст пилота дрона A1/A3 согласно Регламенту 2019/947?
   options:
   - id: a
     text:

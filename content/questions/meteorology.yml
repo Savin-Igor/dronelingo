@@ -1302,9 +1302,9 @@
   scenarioType: decision
 - id: met-026
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Ko nozīmē METAR vēja ziņojums "27012G22KT"?'
-    en: 'During preflight review, the operator asks: What does the METAR wind report "27012G22KT" mean?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Что означает ветровой раздел METAR «27012G22KT»?'
+    lv: Pilots salīdzina METAR un TAF pirms došanās uz objektu. Ko nozīmē METAR vēja ziņojums "27012G22KT"?
+    en: A pilot compares METAR and TAF before leaving for the site. What does the METAR wind report "27012G22KT" mean?
+    ru: Пилот сравнивает METAR и TAF перед выездом на площадку. Что означает ветровой раздел METAR «27012G22KT»?
   options:
   - id: a
     text:
@@ -1356,9 +1356,9 @@
   scenarioType: decision
 - id: met-027
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Tavs drons ir novērtēts 10 m/s. METAR rāda 09008G18KT. Vai drīkst lidot?
-    en: Which answer best fits the situation? Your drone is rated at 10 m/s. METAR shows 09008G18KT. Is flight permitted?
-    ru: Какой ответ лучше всего подходит к ситуации? Твой дрон рассчитан на 10 м/с. METAR показывает 09008G18KT. Разрешён ли полёт?
+    lv: Laikapstākļi starta vietā izskatās pieņemami, bet prognozē ir ierobežojoša detaļa. Tavs drons ir novērtēts 10 m/s. METAR rāda 09008G18KT. Vai drīkst lidot?
+    en: Weather at the launch point looks acceptable, but the forecast contains a limiting detail. Your drone is rated at 10 m/s. METAR shows 09008G18KT. Is flight permitted?
+    ru: Погода в точке старта выглядит приемлемой, но в прогнозе есть ограничивающая деталь. Твой дрон рассчитан на 10 м/с. METAR показывает 09008G18KT. Разрешён ли полёт?
   options:
   - id: a
     text:
@@ -1410,9 +1410,9 @@
   scenarioType: decision
 - id: met-028
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Kāds ir kumulonimba (Cb) mazākais drošais attālums UAS lidojumam?
-    en: Operational scenario — choose the correct decision. What is the minimum safe distance from a cumulonimbus (Cb) for UAS operations?
-    ru: Операционная ситуация — выбери правильное решение. Каково минимальное безопасное расстояние от кучево-дождевого (Cb) для полётов UAS?
+    lv: Laikapstākļu plānošanas laikā pilotam jāizlemj, vai lidaparātam vēl būs pietiekama rezerve. Kāds ir kumulonimba (Cb) mazākais drošais attālums UAS lidojumam?
+    en: During weather planning, the pilot must decide whether the aircraft will still have enough margin. What is the minimum safe distance from a cumulonimbus (Cb) for UAS operations?
+    ru: При погодном планировании пилот должен решить, останется ли у аппарата достаточный запас. Каково минимальное безопасное расстояние от кучево-дождевого (Cb) для полётов UAS?
   options:
   - id: a
     text:
@@ -1464,9 +1464,9 @@
   scenarioType: decision
 - id: met-029
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kādā apstākļu kombinācijā veidojas propelleru apledojums?'
-    en: 'During preflight review, the operator asks: Under which combination of conditions does propeller icing form?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: При каком сочетании условий формируется обледенение пропеллеров?'
+    lv: Pilots salīdzina METAR un TAF pirms došanās uz objektu. Kādā apstākļu kombinācijā veidojas propelleru apledojums?
+    en: A pilot compares METAR and TAF before leaving for the site. Under which combination of conditions does propeller icing form?
+    ru: Пилот сравнивает METAR и TAF перед выездом на площадку. При каком сочетании условий формируется обледенение пропеллеров?
   options:
   - id: a
     text:
@@ -1518,9 +1518,9 @@
   scenarioType: decision
 - id: met-030
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Ko nozīmē TAF prognoze ar "TEMPO 1012/1014 29018G28KT"?
-    en: Which answer best fits the situation? What does a TAF forecast of "TEMPO 1012/1014 29018G28KT" mean?
-    ru: Какой ответ лучше всего подходит к ситуации? Что означает прогноз TAF «TEMPO 1012/1014 29018G28KT»?
+    lv: Laikapstākļi starta vietā izskatās pieņemami, bet prognozē ir ierobežojoša detaļa. Ko nozīmē TAF prognoze ar "TEMPO 1012/1014 29018G28KT"?
+    en: Weather at the launch point looks acceptable, but the forecast contains a limiting detail. What does a TAF forecast of "TEMPO 1012/1014 29018G28KT" mean?
+    ru: Погода в точке старта выглядит приемлемой, но в прогнозе есть ограничивающая деталь. Что означает прогноз TAF «TEMPO 1012/1014 29018G28KT»?
   options:
   - id: a
     text:
@@ -1572,9 +1572,9 @@
   scenarioType: decision
 - id: met-031
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pilotam ir lidojums plānots pulksten 11:00. METAR parāda apstākļus robežās. TAF rāda TEMPO starp 10:00 un 12:00 ar brāzmām, kas pārsniedz drona limitu. Kāda ir pareizā darbība?
-    en: Operational scenario — choose the correct decision. A pilot has a flight planned at 11:00. METAR shows conditions within limits. TAF shows TEMPO between 10:00 and 12:00 with gusts exceeding the drone's limit. What is the correct action?
-    ru: Операционная ситуация — выбери правильное решение. Пилот планирует полёт на 11:00. METAR показывает условия в пределах. TAF показывает TEMPO между 10:00 и 12:00 с порывами, превышающими предел дрона. Правильное действие?
+    lv: Laikapstākļu plānošanas laikā pilotam jāizlemj, vai lidaparātam vēl būs pietiekama rezerve. Pilotam ir lidojums plānots pulksten 11:00. METAR parāda apstākļus robežās. TAF rāda TEMPO starp 10:00 un 12:00 ar brāzmām, kas pārsniedz drona limitu. Kāda ir pareizā darbība?
+    en: During weather planning, the pilot must decide whether the aircraft will still have enough margin. A pilot has a flight planned at 11:00. METAR shows conditions within limits. TAF shows TEMPO between 10:00 and 12:00 with gusts exceeding the drone's limit. What is the correct action?
+    ru: При погодном планировании пилот должен решить, останется ли у аппарата достаточный запас. Пилот планирует полёт на 11:00. METAR показывает условия в пределах. TAF показывает TEMPO между 10:00 и 12:00 с порывами, превышающими предел дрона. Правильное действие?
   options:
   - id: a
     text:
@@ -1626,9 +1626,9 @@
   scenarioType: decision
 - id: met-032
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Ko nozīmē "blīvuma augstums" drona lidojuma kontekstā?'
-    en: 'During preflight review, the operator asks: What does "density altitude" mean in the context of drone flight?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Что означает «плотностная высота» в контексте полёта дрона?'
+    lv: Pilots salīdzina METAR un TAF pirms došanās uz objektu. Ko nozīmē "blīvuma augstums" drona lidojuma kontekstā?
+    en: A pilot compares METAR and TAF before leaving for the site. What does "density altitude" mean in the context of drone flight?
+    ru: Пилот сравнивает METAR и TAF перед выездом на площадку. Что означает «плотностная высота» в контексте полёта дрона?
   options:
   - id: a
     text:
@@ -1680,9 +1680,9 @@
   scenarioType: decision
 - id: met-033
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Cik stundu intervālos parasti tiek publicēts TAF?
-    en: Which answer best fits the situation? At what time intervals is a TAF typically published?
-    ru: Какой ответ лучше всего подходит к ситуации? С какой периодичностью обычно публикуется TAF?
+    lv: Laikapstākļi starta vietā izskatās pieņemami, bet prognozē ir ierobežojoša detaļa. Cik stundu intervālos parasti tiek publicēts TAF?
+    en: Weather at the launch point looks acceptable, but the forecast contains a limiting detail. At what time intervals is a TAF typically published?
+    ru: Погода в точке старта выглядит приемлемой, но в прогнозе есть ограничивающая деталь. С какой периодичностью обычно публикуется TAF?
   options:
   - id: a
     text:
@@ -1734,9 +1734,9 @@
   scenarioType: decision
 - id: met-034
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pilots METAR lasa "CAVOK". Ko tas nozīmē?
-    en: Operational scenario — choose the correct decision. A pilot reads "CAVOK" in a METAR. What does it mean?
-    ru: Операционная ситуация — выбери правильное решение. Пилот читает «CAVOK» в METAR. Что это означает?
+    lv: Pirms lidojuma pilots METAR redz kodu CAVOK. Ko tas nozīmē praktiskai laikapstākļu novērtēšanai?
+    en: Before flight, the pilot sees CAVOK in a METAR. What does it mean for practical weather assessment?
+    ru: Перед полётом пилот видит CAVOK в METAR. Что это означает для практической оценки погоды?
   options:
   - id: a
     text:
@@ -1788,9 +1788,9 @@
   scenarioType: decision
 - id: met-035
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Ar cik km skaita Latvijā minimālo redzamību praktiskai VLOS operācijai?'
-    en: 'During preflight review, the operator asks: What is the practical minimum visibility in km for VLOS operations in Latvia?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Какова практическая минимальная видимость в км для операций VLOS в Латвии?'
+    lv: Pilots salīdzina METAR un TAF pirms došanās uz objektu. Ar cik km skaita Latvijā minimālo redzamību praktiskai VLOS operācijai?
+    en: A pilot compares METAR and TAF before leaving for the site. What is the practical minimum visibility in km for VLOS operations in Latvia?
+    ru: Пилот сравнивает METAR и TAF перед выездом на площадку. Какова практическая минимальная видимость в км для операций VLOS в Латвии?
   options:
   - id: a
     text:
@@ -1842,9 +1842,9 @@
   scenarioType: decision
 - id: met-036
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Pilots lido 80 m AGL. METAR virszemes vējš ir 5 m/s. Kādu vēja ātrumu jāplāno 80 m augstumā?
-    en: Which answer best fits the situation? A pilot flies at 80 m AGL. METAR surface wind is 5 m/s. What wind speed should be planned for at 80 m?
-    ru: Какой ответ лучше всего подходит к ситуации? Пилот летит на 80 м AGL. Приземный ветер METAR — 5 м/с. Какую скорость ветра следует планировать на 80 м?
+    lv: METAR pie zemes rāda 5 m/s vēju, bet pilots plāno lidojumu 80 m AGL. Kādu vēja rezervi jāņem vērā šajā augstumā?
+    en: METAR shows 5 m/s wind at the surface, but the pilot plans to fly at 80 m AGL. What wind margin should be considered at that height?
+    ru: METAR показывает ветер 5 м/с у земли, но пилот планирует полёт на 80 м AGL. Какой запас по ветру нужно учитывать на этой высоте?
   options:
   - id: a
     text:
@@ -1896,9 +1896,9 @@
   scenarioType: decision
 - id: met-037
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Ko nozīmē TAF kods "BECMG 1022/1024 29018KT"?
-    en: Operational scenario — choose the correct decision. What does the TAF code "BECMG 1022/1024 29018KT" mean?
-    ru: Операционная ситуация — выбери правильное решение. Что означает код TAF «BECMG 1022/1024 29018KT»?
+    lv: Laikapstākļu plānošanas laikā pilotam jāizlemj, vai lidaparātam vēl būs pietiekama rezerve. Ko nozīmē TAF kods "BECMG 1022/1024 29018KT"?
+    en: During weather planning, the pilot must decide whether the aircraft will still have enough margin. What does the TAF code "BECMG 1022/1024 29018KT" mean?
+    ru: При погодном планировании пилот должен решить, останется ли у аппарата достаточный запас. Что означает код TAF «BECMG 1022/1024 29018KT»?
   options:
   - id: a
     text:
@@ -1950,9 +1950,9 @@
   scenarioType: decision
 - id: met-038
   stem:
-    lv: 'Pirms lidojuma pārbaudes operators sev uzdod jautājumu: Kāda mākoņu izohrona (kods) METAR norāda kumulonimbu?'
-    en: 'During preflight review, the operator asks: Which cloud type code in METAR indicates a cumulonimbus?'
-    ru: 'Во время предполётной проверки оператор задаёт вопрос: Какой код типа облаков в METAR указывает на кучево-дождевое?'
+    lv: Pilots salīdzina METAR un TAF pirms došanās uz objektu. Kāda mākoņu izohrona (kods) METAR norāda kumulonimbu?
+    en: A pilot compares METAR and TAF before leaving for the site. Which cloud type code in METAR indicates a cumulonimbus?
+    ru: Пилот сравнивает METAR и TAF перед выездом на площадку. Какой код типа облаков в METAR указывает на кучево-дождевое?
   options:
   - id: a
     text:
@@ -2004,9 +2004,9 @@
   scenarioType: decision
 - id: met-039
   stem:
-    lv: Kura atbilde vislabāk atbilst situācijai? Kāda ir temperatūras inversijas galvenā sekas UAS lidojumam?
-    en: Which answer best fits the situation? What is the primary consequence of a temperature inversion for UAS operations?
-    ru: Какой ответ лучше всего подходит к ситуации? Каковы основные последствия температурной инверсии для полётов UAS?
+    lv: Laikapstākļi starta vietā izskatās pieņemami, bet prognozē ir ierobežojoša detaļa. Kāda ir temperatūras inversijas galvenā sekas UAS lidojumam?
+    en: Weather at the launch point looks acceptable, but the forecast contains a limiting detail. What is the primary consequence of a temperature inversion for UAS operations?
+    ru: Погода в точке старта выглядит приемлемой, но в прогнозе есть ограничивающая деталь. Каковы основные последствия температурной инверсии для полётов UAS?
   options:
   - id: a
     text:
@@ -2058,9 +2058,9 @@
   scenarioType: decision
 - id: met-040
   stem:
-    lv: Operatīvā situācija — pieņem pareizo lēmumu. Pilots plāno lidojumu pāri piejūras ezeram vēsā rudens rītā. Gaiss ir mitrs, temperatūra +3°C. Ko jāpārbauda papildus standarta laika pārbaudei?
-    en: Operational scenario — choose the correct decision. A pilot plans a flight over a coastal lake on a cool autumn morning. Air is damp, temperature +3°C. What should be checked in addition to the standard weather check?
-    ru: Операционная ситуация — выбери правильное решение. Пилот планирует полёт над прибрежным озером прохладным осенним утром. Воздух влажный, температура +3°C. Что проверить дополнительно к стандартной проверке погоды?
+    lv: 'Plānots lidojums virs piekrastes ezera vēsā rudens rītā: mitrs gaiss un +3 °C. Kas jāpārbauda papildus standarta laikapstākļu pārbaudei?'
+    en: A flight is planned over a coastal lake on a cool autumn morning with damp air and +3°C. What should be checked in addition to the standard weather check?
+    ru: 'Полёт запланирован над прибрежным озером прохладным осенним утром: влажный воздух и +3 °C. Что нужно проверить дополнительно к стандартной погодной проверке?'
   options:
   - id: a
     text:
