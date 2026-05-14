@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { href: "/learn", key: "learn" },
   { href: "/practice", key: "practice" },
   { href: "/exam", key: "exam" },
+  { href: "/blog", key: "blog" },
 ] as const;
 
 export function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
