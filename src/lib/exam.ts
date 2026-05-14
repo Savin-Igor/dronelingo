@@ -14,6 +14,20 @@ export const TOPIC_EXAM_MAX_QUESTIONS = 15;
 export const TOPIC_EXAM_SEC_PER_QUESTION = 60;
 
 /**
+ * Meteorology A2 bonus exam settings.
+ *
+ * Bonus mode, always accessible, recommended after passing the A1/A3
+ * mock. Half-length of the A1/A3 mock with the same pass threshold so
+ * a near-real exam feel is preserved without forcing a full second sitting.
+ */
+export const METEO_A2_TOTAL_QUESTIONS = 30;
+export const METEO_A2_DURATION_MIN = 35;
+export const METEO_A2_PASS_THRESHOLD = 75;
+/** Minimum image-based questions the A2 mock biases towards including. */
+export const METEO_A2_MIN_IMAGE_QUESTIONS = 10;
+export const METEO_A2_TOPIC_SLUG = "meteorology";
+
+/**
  * Official A1/A3 mock-exam stratification.
  *
  * Mirrors the CAA Latvia online exam composition (40 questions / 40 min /
@@ -190,5 +204,68 @@ export async function buildTopicExam(
     topicSlug: topic.slug,
     topicTitle,
     questions: all.slice(0, Math.min(TOPIC_EXAM_MAX_QUESTIONS, all.length)),
+  };
+}
+
+/**
+ * Build the meteorology A2 bonus exam.
+ *
+ * 30 questions from the meteorology bank with two soft biases:
+ *   1. At least METEO_A2_MIN_IMAGE_QUESTIONS are image-based, so the
+ *      bonus actually exercises the visual-recognition skills the
+ *      image content was authored for. If the bank does not have
+ *      enough image questions the rest are filled from the text pool.
+ *   2. Within each pool (image / text), questions are shuffled. The
+ *      final list is shuffled again so image questions are not
+ *      front-loaded.
+ *
+ * Returns null when the meteorology bank is empty (e.g. fresh DB).
+ */
+export async function buildMeteorologyA2Exam(
+  locale: string,
+): Promise<{
+  topicSlug: string;
+  topicTitle: string;
+  questions: ExamQuestion[];
+} | null> {
+  const topic = await prisma.topic.findUnique({
+    where: { slug: METEO_A2_TOPIC_SLUG },
+    include: { questions: true },
+  });
+  if (!topic || topic.questions.length === 0) return null;
+
+  const topicTitle = localize(topic.title, locale);
+  const all = topic.questions.map<ExamQuestion>((q) => ({
+    id: q.id,
+    externalId: q.externalId,
+    topicId: topic.id,
+    topicSlug: topic.slug,
+    topicTitle,
+    stem: localize(q.stem, locale),
+    options: localizeOptions(q.options, locale),
+    correctOptionId: q.correctOptionId,
+    explanation: localize(q.explanation, locale),
+    sourceRef: q.sourceRef,
+    imageUrl: q.imageUrl,
+    imageAlt: q.imageAlt ? localize(q.imageAlt, locale) : null,
+  }));
+
+  const withImage = all.filter((q) => q.imageUrl !== null);
+  const withoutImage = all.filter((q) => q.imageUrl === null);
+  shuffleInPlace(withImage);
+  shuffleInPlace(withoutImage);
+
+  const wantImage = Math.min(METEO_A2_MIN_IMAGE_QUESTIONS, withImage.length);
+  const picked: ExamQuestion[] = [];
+  picked.push(...withImage.slice(0, wantImage));
+  const remainder = METEO_A2_TOTAL_QUESTIONS - picked.length;
+  const fillPool = [...withImage.slice(wantImage), ...withoutImage];
+  shuffleInPlace(fillPool);
+  picked.push(...fillPool.slice(0, remainder));
+
+  return {
+    topicSlug: topic.slug,
+    topicTitle,
+    questions: shuffleInPlace(picked.slice(0, METEO_A2_TOTAL_QUESTIONS)),
   };
 }

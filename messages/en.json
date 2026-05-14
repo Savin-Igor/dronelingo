@@ -148,6 +148,13 @@
       "ready": "You are ready for the real exam (≥80% on the last 3 attempts).",
       "almostReady": "Getting close — a few more practice runs and you'll be ready.",
       "notReady": "More to learn — keep practising."
+    },
+    "bonus": {
+      "kicker": "Bonus exam",
+      "heading": "A2 Meteorology bonus",
+      "subtitle": "Test your weather knowledge against an A2-level mock — 30 image-rich questions in 35 minutes.",
+      "hint": "Always available. Best taken after passing the A1/A3 mock.",
+      "cta": "Try the bonus"
     }
   },
   "meta": {
@@ -218,6 +225,26 @@
       "threshold": "Threshold"
     },
     "start": "Start drill"
+  },
+  "meteorologyA2Exam": {
+    "kicker": "Bonus exam",
+    "title": "A2 Meteorology bonus",
+    "subtitle": "An A2-level mock focused on weather phenomena drone pilots actually meet — clouds, fronts, METAR codes, wind shear.",
+    "backToExam": "Exam home",
+    "rules": {
+      "heading": "Rules",
+      "questions": "{count} questions, weighted toward image recognition",
+      "duration": "{minutes} minutes — a timer runs through the session",
+      "threshold": "≥ {threshold} % correct to pass",
+      "imageHint": "Many questions show a diagram or chart — diagnose, then answer",
+      "bonusNotice": "Bonus exam — does not count toward your A1/A3 readiness gauge"
+    },
+    "stats": {
+      "questions": "Questions",
+      "minutes": "Minutes",
+      "threshold": "Threshold"
+    },
+    "start": "Start bonus exam"
   },
   "diagnostic": {
     "kicker": "Calibration flight",

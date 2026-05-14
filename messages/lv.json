@@ -148,6 +148,13 @@
       "ready": "Esi gatavs reālajam eksāmenam (≥80 % pēdējos 3 mēģinājumos).",
       "almostReady": "Tuvojies — vēl daži treniņi un būsi gatavs.",
       "notReady": "Vēl ir, ko mācīties — turpini trenēties."
+    },
+    "bonus": {
+      "kicker": "Bonusa eksāmens",
+      "heading": "A2 meteoroloģijas bonuss",
+      "subtitle": "Pārbaudi savas laikapstākļu zināšanas A2 līmeņa eksāmenā — 30 attēlu jautājumi 35 minūtēs.",
+      "hint": "Vienmēr pieejams. Ieteicams pēc A1/A3 eksāmena nokārtošanas.",
+      "cta": "Mēģināt bonusu"
     }
   },
   "meta": {
@@ -218,6 +225,26 @@
       "threshold": "Slieksnis"
     },
     "start": "Sākt treniņu"
+  },
+  "meteorologyA2Exam": {
+    "kicker": "Bonusa eksāmens",
+    "title": "A2 meteoroloģijas bonuss",
+    "subtitle": "A2 līmeņa mock, kas fokusēts uz reāliem laikapstākļiem dronu pilotiem — mākoņi, frontes, METAR kodi, vēja shears.",
+    "backToExam": "Eksāmena sākums",
+    "rules": {
+      "heading": "Noteikumi",
+      "questions": "{count} jautājumi, ar uzsvaru uz attēlu atpazīšanu",
+      "duration": "{minutes} minūtes — sesijas laikā darbojas taimers",
+      "threshold": "≥ {threshold} % pareizi, lai nokārtotu",
+      "imageHint": "Daudzi jautājumi rāda diagrammu vai grafiku — vispirms diagnosticē, tad atbildi",
+      "bonusNotice": "Bonusa eksāmens — neietekmē tavu A1/A3 gatavības rādītāju"
+    },
+    "stats": {
+      "questions": "Jautājumi",
+      "minutes": "Minūtes",
+      "threshold": "Slieksnis"
+    },
+    "start": "Sākt bonusa eksāmenu"
   },
   "diagnostic": {
     "kicker": "Kalibrēšanas lidojums",
