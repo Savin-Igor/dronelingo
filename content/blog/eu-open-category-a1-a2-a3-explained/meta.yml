@@ -1,0 +1,22 @@
+slug:
+  lv: open-kategorija-a1-a2-a3-atskiribas
+  en: eu-open-category-a1-a2-a3-explained
+  ru: open-kategoriya-a1-a2-a3-otlichiya
+title:
+  lv: Open kategorija — A1, A2 un A3 atšķirības drona pilotam
+  en: The EU Open category — A1, A2, and A3 explained
+  ru: Категория Open — отличия A1, A2 и A3 для пилота дрона
+excerpt:
+  lv: Trīs apakškategorijas Open kategorijā nosaka, kur drīkst lidot, kāda apliecība vajadzīga un cik tuvu cilvēkiem. Visu trīs salīdzinājums vienā rakstā.
+  en: Three subcategories inside Open define where you can fly, which licence you need, and how close to people. All three compared in one place.
+  ru: Три подкатегории внутри Open определяют, где можно летать, какая лицензия нужна и насколько близко к людям. Все три в одном сравнении.
+publishedAt: 2026-05-14
+updatedAt: 2026-05-14
+lastVerifiedAt: 2026-05-14
+tags: [open-category, regulations, easa, getting-started]
+heroImage: hero.png
+heroImageAlt:
+  lv: Trīs droni dažādu izmēru rindā uz Baltijas zaļas pļavas, katram blakus mazs cyan UI nozīme A1, A2, A3.
+  en: Three drones of different sizes lined up on a Baltic green meadow, each labelled with a small cyan UI badge — A1, A2, A3.
+  ru: Три дрона разного размера в ряд на балтийском зелёном лугу; рядом с каждым небольшой cyan UI-бейдж A1, A2, A3.
+sourceRef: docs/knowledge/eu-regulations/Reg-2019-947.pdf — UAS.OPEN.020/030/040; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf
