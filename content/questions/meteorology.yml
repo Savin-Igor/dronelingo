@@ -296,13 +296,13 @@
       ru: Лететь ниже 30 м, где ветер обычно слабее.
   correctOptionId: b
   explanation:
-    lv: 'TAF TEMPO prognozē apstākļus, kas notiks plānotā lidojuma loga laikā. Kaut arī METAR pašlaik ir robežās, TEMPO norāda, ka apstākļi var kļūt bīstami jebkurā brīdī starp 10:00 un 12:00 UTC. Profesionālais padoms: pārcelt uz pēc 12:00 un apstiprināt ar tā brīža METAR.
+    lv: 'TEMPO norāda uz īslaicīgiem apstākļiem, kas var rasties norādītajā periodā. Ja šajā periodā prognozētās brāzmas pārsniedz drona limitu un pārklājas ar tavu lidojuma logu, drošā rīcība ir pārcelt lidojumu un pēc tam pārbaudīt svaigu METAR.
 
       '
-    en: 'The TAF TEMPO forecasts conditions that will occur during the planned flight window. Although the current METAR is within limits, TEMPO indicates conditions may become hazardous at any point between 10:00 and 12:00 UTC. Professional approach: reschedule to after 12:00 and confirm with the METAR at that time.
+    en: 'TEMPO indicates temporary conditions that may occur during the stated period. If those forecast gusts exceed the drone limit and overlap the planned flight window, the safe decision is to postpone and confirm improvement with a fresh METAR before launch.
 
       '
-    ru: 'TEMPO в TAF прогнозирует условия, которые произойдут в течение планового окна полёта. Хотя текущий METAR в пределах нормы, TEMPO указывает, что условия могут стать опасными в любой момент между 10:00 и 12:00 UTC. Профессиональный подход: перенести на после 12:00 и подтвердить METAR в это время.
+    ru: 'TEMPO указывает на временные условия, которые могут возникать в указанный период. Если такие порывы превышают предел дрона и попадают в твоё окно полёта, безопасное решение — перенести вылет и перед запуском подтвердить улучшение свежим METAR.
 
       '
   distractorRationales:
@@ -312,8 +312,8 @@
       ru: METAR показывает текущие условия; TAF прогнозирует будущие. Оба нужно читать. TEMPO в плановом окне — обоснованное соображение безопасности.
     c:
       lv: TEMPO prognozes nav "iespēja" — tās norāda apstākļus, kas notiks. "Iespējams nenotiks" nav derīgs drošības arguments.
-      en: TEMPO forecasts are not possibilities — they indicate conditions that will occur. "May not occur" is not a valid safety argument.
-      ru: Прогнозы TEMPO — это не возможности, а условия, которые произойдут. «Может не случиться» — не обоснованный довод безопасности.
+      en: Even a temporary TEMPO period matters if it overlaps the flight window and contains conditions above the drone limit.
+      ru: Даже временный период TEMPO важен, если он попадает в окно полёта и содержит условия выше пределов дрона.
     d:
       lv: Vēja ātruma limiti attiecas uz visu darbības augstumu diapazonu, ne tikai augstu augstumu. Lidojums zem 30 m nelikvidē TAF TEMPO apstākļus.
       en: Wind speed limits apply to the full operating altitude range, not only high altitudes. Flying below 30 m does not negate the TAF TEMPO conditions.
@@ -540,9 +540,9 @@
   scenarioType: regulatory
 - id: met-011
   stem:
-    lv: Pilots lido 80 m AGL. METAR virszemes vējš ir 5 m/s. Kādu vēja ātrumu jāplāno 80 m augstumā?
-    en: A pilot flies at 80 m AGL. METAR surface wind is 5 m/s. What wind speed should be planned for at 80 m?
-    ru: Пилот летит на 80 м AGL. Приземный ветер METAR — 5 м/с. Какую скорость ветра следует планировать на 80 м?
+    lv: Pilots lido 80 m AGL. METAR virszemes vējš ir 5 m/s. Kāds ir drošākais plānošanas pieņēmums par vēju šajā augstumā?
+    en: A pilot flies at 80 m AGL. METAR surface wind is 5 m/s. What is the safest planning assumption about the wind at 80 m?
+    ru: Пилот летит на 80 м AGL. Приземный ветер METAR — 5 м/с. Какое допущение о ветре на 80 м безопаснее всего?
   options:
   - id: a
     text:
@@ -556,9 +556,9 @@
       ru: 3–4 м/с — ветер ослабевает с высотой в городе.
   - id: c
     text:
-      lv: 6,5–7,5 m/s — virszemes vējš × 1,3–1,5 koriģēšanai.
-      en: 6.5–7.5 m/s — surface wind × 1.3–1.5 for altitude correction.
-      ru: 6,5–7,5 м/с — приземный ветер × 1,3–1,5 для поправки по высоте.
+      lv: Vējš augstumā var būt stiprāks nekā pie virszemes, tāpēc jāatstāj rezerve un, ja iespējams, jāpārbauda prognozētais vējš darba augstumā.
+      en: Wind aloft may be stronger than at the surface, so leave margin and, if possible, check a forecast wind for operating height.
+      ru: На высоте ветер может быть сильнее, чем у земли, поэтому нужно оставлять запас и, если возможно, смотреть прогноз ветра на рабочей высоте.
   - id: d
     text:
       lv: 10+ m/s — vējš dubultosies katrās 40 m.
@@ -566,24 +566,24 @@
       ru: 10+ м/с — ветер удваивается каждые 40 м.
   correctOptionId: c
   explanation:
-    lv: 'METAR vējš mērīts 10 m AGL. Berzes slānis (aptuveni zemes 300 m) samazina vēja ātrumu tuvāk pie virszemes. 80 m AGL vēja ātrums parasti ir par 30–50 % lielāks nekā pie virszemes: 5 m/s × 1,3–1,5 ≈ 6,5–7,5 m/s. Šī korekcija ir īpaši svarīga bateriju plānošanā atgriešanās braucieniem pret vēju.
+    lv: 'METAR ir virszemes novērojums, nevis mērījums darba augstumā. Tuvu zemei berze bieži bremzē vēju, tāpēc augstāk tas var būt stiprāks. Drošā pieeja ir atstāt rezervi un izmantot prognozēto vēju darba augstumā, ja tāds ir pieejams.
 
       '
-    en: 'METAR wind is measured at 10 m AGL. The friction layer (approximately 300 m of surface atmosphere) reduces wind speed closer to the ground. At 80 m AGL wind speed is typically 30–50 % higher than at the surface: 5 m/s × 1.3–1.5 ≈ 6.5–7.5 m/s. This correction is especially important for battery planning on into-wind return legs.
+    en: 'METAR is a surface observation, not a measurement at operating height. Near the ground, friction often slows the wind, so it may be stronger aloft. The safe approach is to leave margin and use a forecast wind at operating height when one is available.
 
       '
-    ru: 'Ветер METAR измеряется на 10 м AGL. Слой трения (примерно 300 м атмосферы у поверхности) снижает скорость ветра ближе к земле. На 80 м AGL скорость ветра обычно на 30–50 % выше приземной: 5 м/с × 1,3–1,5 ≈ 6,5–7,5 м/с. Эта поправка особенно важна для планирования аккумулятора на возвратных курсах против ветра.
+    ru: 'METAR — это приземное наблюдение, а не измерение на рабочей высоте. У земли ветер часто тормозится трением, поэтому выше он может быть сильнее. Безопасный подход — оставлять запас и, если доступно, использовать прогноз ветра на рабочей высоте.
 
       '
   distractorRationales:
     a:
-      lv: METAR mēra 10 m virs zemes — tas ir par 70 m zemāku par 80 m lidojuma augstumu. Berzes slānis nozīmē, ka vējš palielinās ar augstumu.
-      en: METAR measures 10 m above the ground — this is 70 m lower than the 80 m flight altitude. The friction layer means wind increases with altitude.
-      ru: METAR измеряет в 10 м над землёй — это на 70 м ниже высоты полёта 80 м. Слой трения означает, что ветер усиливается с высотой.
+      lv: METAR nemēra vēju darba augstumā; to nevar lasīt kā tiešu 80 m prognozi.
+      en: METAR does not measure the wind at operating height; it cannot be treated as a direct 80 m forecast.
+      ru: METAR не измеряет ветер на рабочей высоте; его нельзя считать прямым прогнозом для 80 м.
     b:
-      lv: Vējš virs āra vides (lauks, jūra) palielinās ar augstumu. Tikai dažos pilsētas gadījumos var būt minimālas augstuma korekcijas ēku turbulences dēļ.
-      en: Wind over open terrain (field, sea) increases with altitude. Only in some urban cases may there be minimal altitude corrections due to building turbulence.
-      ru: Ветер над открытой местностью (поле, море) усиливается с высотой. Только в некоторых городских случаях могут быть минимальные поправки из-за турбулентности зданий.
+      lv: Pieņēmums, ka vējš droši samazināsies, nav derīgs plānošanai.
+      en: Assuming the wind will safely decrease with height is not sound planning.
+      ru: Предполагать, что с высотой ветер надёжно ослабнет, нельзя.
     d:
       lv: Vēja ātruma dubultošanās katrās 40 m nav precīzs fizisks modelis. 30–50 % pieaugums no 10 m uz 80 m ir labākā piesarobeža.
       en: Wind speed doubling every 40 m is not an accurate physical model. A 30–50 % increase from 10 m to 80 m is the better approximation.
@@ -1062,15 +1062,15 @@
   scenarioType: decision
 - id: met-021
   stem:
-    lv: Virszemes METAR rāda 06008KT (8 mezgļi). Tavs drons novērtēts 12 m/s. Plāno lidot 100 m AGL. Kādu vēja ātrumu var gaidīt augstumā?
-    en: The surface METAR shows 06008KT (8 knots). Your drone is rated at 12 m/s. You plan to fly at 100 m AGL. What wind speed should you expect at altitude?
-    ru: METAR у поверхности показывает 06008KT (8 узлов). Дрон рассчитан на 12 м/с. Планируешь лететь на 100 м AGL. Какую скорость ветра ожидать на высоте?
+    lv: Virszemes METAR rāda 06008KT (8 mezgļi). Plāno lidot 100 m AGL. Kāds ir drošākais plānošanas pieņēmums?
+    en: The surface METAR shows 06008KT (8 knots). You plan to fly at 100 m AGL. What is the safest planning assumption?
+    ru: METAR у поверхности показывает 06008KT (8 узлов). Планируешь лететь на 100 м AGL. Какое допущение для планирования безопаснее?
   options:
   - id: a
     text:
-      lv: Aptuveni 5,5–6,2 m/s — virszemes vējš (4,1 m/s) × 1,3–1,5.
-      en: Approximately 5.5–6.2 m/s — surface wind (4.1 m/s) × 1.3–1.5.
-      ru: Около 5,5–6,2 м/с — приземный ветер (4,1 м/с) × 1,3–1,5.
+      lv: Jāatstāj rezerve, jo darba augstumā vējš var būt stiprāks nekā pie virszemes.
+      en: Leave margin, because wind at operating height may be stronger than at the surface.
+      ru: Нужно оставлять запас, потому что на рабочей высоте ветер может быть сильнее, чем у земли.
   - id: b
     text:
       lv: Aptuveni 4 m/s — tāpat kā pie virszemes.
@@ -1088,22 +1088,22 @@
       ru: Ровно 8 узлов — METAR измеряется на рабочей высоте.
   correctOptionId: a
   explanation:
-    lv: METAR vējš mērīts 10 m AGL. 100 m AGL vēja ātrums parasti ir par 30–50 % lielāks nekā pie virszemes, jo samazinās berze no zemes šķēršļiem. 8 KT = 4,1 m/s × 1,5 ≈ 6,2 m/s augstumā.
-    en: METAR wind is measured at 10 m AGL. At 100 m AGL wind speed is typically 30–50 % higher than at the surface due to decreasing friction from ground obstacles. 8 KT = 4.1 m/s × 1.5 = approximately 6.2 m/s at altitude. While within the drone's 12 m/s limit here, the adjustment matters for battery planning and performance margins.
-    ru: METAR измеряет ветер на 10 м AGL. На 100 м AGL скорость ветра обычно на 30–50 % выше из-за уменьшения трения от наземных препятствий. 8 KT = 4,1 м/с × 1,5 ≈ 6,2 м/с на высоте.
+    lv: METAR ir virszemes novērojums. Darba augstumā vējš bieži ir stiprāks, īpaši virs atklātas teritorijas vai piekrastē. Drošāk ir plānot ar rezervi, nevis pieņemt, ka virszemes vērtība paliks nemainīga.
+    en: METAR is a surface observation. At operating height the wind is often stronger, especially over open terrain or near the coast. It is safer to plan with margin than to assume the surface value stays unchanged aloft.
+    ru: METAR — это приземное наблюдение. На рабочей высоте ветер часто сильнее, особенно над открытой местностью или у побережья. Безопаснее планировать с запасом, чем считать, что приземное значение останется тем же.
   distractorRationales:
     b:
-      lv: Vējš augstumā nav vienāds ar virszemi — METAR mēra 10 m augstumā, ne darbības augstumā.
-      en: Wind at altitude is not the same as at the surface — METAR measures at 10 m, not at operational altitude.
-      ru: Ветер на высоте не равен приземному — METAR измеряет на 10 м, а не на рабочей высоте.
+      lv: Vējš darba augstumā nav obligāti vienāds ar virszemes novērojumu.
+      en: Wind at operating height does not have to match the surface observation.
+      ru: Ветер на рабочей высоте не обязан совпадать с приземным наблюдением.
     c:
-      lv: Vējš parasti palielinās ar augstumu virszemes berzes samazināšanās dēļ, nevis samazinās.
-      en: Wind generally increases with altitude due to decreasing surface friction, not decreases.
-      ru: Ветер обычно усиливается с высотой из-за уменьшения приземного трения, а не ослабевает.
+      lv: Pieņēmums, ka augstumā vējš samazināsies, nav drošs.
+      en: Assuming the wind will decrease with height is not a safe default.
+      ru: Считать, что с высотой ветер ослабнет, небезопасно.
     d:
-      lv: METAR pēc standarta mēra 10 m AGL, nevis 100 m. Tas ir virszemes novērojums, nevis mērījums augstumā.
-      en: METAR is measured at 10 m AGL by standard, not at 100 m. It is a surface observation, not an aloft measurement.
-      ru: METAR по стандарту измеряется на 10 м AGL, а не на 100 м. Это приземное наблюдение.
+      lv: METAR nav mērījums 100 m augstumā.
+      en: METAR is not a measurement taken at 100 m.
+      ru: METAR не измеряется на высоте 100 м.
   sourceRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — meteorology
   difficulty: 2
   cognitiveLevel: apply
@@ -1617,9 +1617,9 @@
       en: METAR shows current conditions; TAF forecasts future conditions. Both must be read. A TEMPO forecast within the planned window is a valid safety consideration.
       ru: METAR показывает текущие условия; TAF прогнозирует будущие. Оба нужно читать. TEMPO в плановом окне — обоснованное соображение безопасности.
     d:
-      lv: TEMPO prognozes nav "iespēja" — tās norāda apstākļus, kas notiks. "Iespējams nenotiks" nav derīgs drošības arguments.
-      en: TEMPO forecasts are not possibilities — they indicate conditions that will occur. "May not occur" is not a valid safety argument.
-      ru: Прогнозы TEMPO — это не возможности, а условия, которые произойдут. «Может не случиться» — не обоснованный довод безопасности.
+      lv: Pat īslaicīgs pasliktinājums nav ignorējams, ja tas iekrīt tavā lidojuma logā un pārsniedz drona limitus.
+      en: Even a temporary deterioration cannot be ignored if it overlaps your flight window and exceeds the aircraft limits.
+      ru: Даже кратковременное ухудшение нельзя игнорировать, если оно попадает в окно полёта и превышает пределы аппарата.
   sourceRef: docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — EASA Easy Access Rules — AMC1 UAS.OPEN.030; TAF interpretation
   difficulty: 3
   cognitiveLevel: apply
@@ -1788,63 +1788,63 @@
   scenarioType: decision
 - id: met-035
   stem:
-    lv: Pilots salīdzina METAR un TAF pirms došanās uz objektu. Ar cik km skaita Latvijā minimālo redzamību praktiskai VLOS operācijai?
-    en: A pilot compares METAR and TAF before leaving for the site. What is the practical minimum visibility in km for VLOS operations in Latvia?
-    ru: Пилот сравнивает METAR и TAF перед выездом на площадку. Какова практическая минимальная видимость в км для операций VLOS в Латвии?
+    lv: Pilots salīdzina METAR un TAF pirms došanās uz objektu. Kā pareizi novērtēt, vai prognozētā redzamība ir pietiekama VLOS lidojumam?
+    en: A pilot compares METAR and TAF before leaving for the site. What is the correct way to judge whether forecast visibility is sufficient for a VLOS flight?
+    ru: Пилот сравнивает METAR и TAF перед выездом на площадку. Как правильно оценить, достаточно ли прогнозируемой видимости для полёта VLOS?
   options:
   - id: a
     text:
-      lv: 1 km.
-      en: 1 km.
-      ru: 1 км.
+      lv: Pietiek ar 500 m — ja drons nav tālāk par to.
+      en: 500 m is enough as long as the drone stays inside that range.
+      ru: Достаточно 500 м, если дрон не улетает дальше.
   - id: b
     text:
-      lv: 10 km.
-      en: 10 km.
-      ru: 10 км.
+      lv: Latvijā VLOS ir likumīgs tikai no 3 km un vairāk.
+      en: In Latvia, VLOS is legal only from 3 km visibility upward.
+      ru: В Латвии VLOS законен только при видимости от 3 км и выше.
   - id: c
     text:
-      lv: 3 km — lai uzturētu nepārtrauktu VLOS plānotajā maksimālajā attālumā.
-      en: 3 km — to maintain continuous VLOS at the planned maximum range.
-      ru: 3 км — для поддержания непрерывного VLOS на планируемой максимальной дистанции.
+      lv: Jāvērtē, vai pilots ar neapbruņotu aci var nepārtraukti redzēt dronu, noteikt tā orientāciju un droši uzturēt VLOS plānotajā attālumā.
+      en: Judge whether the pilot can keep continuous unaided visual contact, determine the drone’s attitude, and safely maintain VLOS at the planned range.
+      ru: Нужно оценить, сможет ли пилот непрерывно видеть дрон невооружённым глазом, понимать его ориентацию и надёжно сохранять VLOS на планируемой дистанции.
   - id: d
     text:
-      lv: 500 m.
-      en: 500 m.
-      ru: 500 м.
+      lv: Vajag tieši 10 km, jo tā ir vienīgā drošā VLOS redzamība.
+      en: Exactly 10 km is required because that is the only safe VLOS visibility.
+      ru: Нужны ровно 10 км, потому что только такая видимость безопасна для VLOS.
   correctOptionId: c
   explanation:
-    lv: 'VLOS prasība ir funkcionāla: pilots spēj nepārtraukti un neapbruņotu aci noteikt UAS pozīciju, attieksmi un virzienu. Praksē 3 km redzamība ir praktiskais minimums jebkurai jēgpilnai VLOS operācijai. Pie zemākas redzamības VLOS prasību var nebūt iespējams izpildīt pat mazos attālumos.
+    lv: 'VLOS prasība nav piesaistīta vienam kilometru skaitlim. Pareizais tests ir funkcionāls: vai pilots var nepārtraukti redzēt dronu ar neapbruņotu aci, noteikt tā stāvokli un laikus pamanīt konfliktus gaisā paredzētajā lidojuma profilā.
 
       '
-    en: 'The VLOS requirement is functional: the pilot can continuously and unaided determine the UAS position, attitude, and direction. In practice, 3 km visibility is the practical minimum for any meaningful VLOS operation. Below this VLOS may not be achievable even at short ranges.
+    en: 'VLOS is not tied to a single legal visibility number. The correct test is functional: can the pilot continuously keep the drone in unaided visual contact, determine its attitude and direction, and scan the airspace in time for the planned flight profile.
 
       '
-    ru: 'Требование VLOS функциональное: пилот может непрерывно и невооружённым глазом определять положение, ориентацию и направление UAS. На практике 3 км — практический минимум для любой содержательной операции VLOS. При меньшей видимости VLOS может быть недостижим даже на малых расстояниях.
+    ru: 'VLOS не привязан к одному юридическому числу километров. Правильный критерий — функциональный: может ли пилот непрерывно видеть дрон невооружённым глазом, понимать его положение и вовремя контролировать воздушную обстановку для запланированного профиля полёта.
 
       '
   distractorRationales:
     a:
-      lv: 1 km var būt pietiekams ļoti tuvajos operācijās (< 200 m), bet nav pietiekams vidējas attālinātības operācijām.
-      en: 1 km may be adequate for very close-range operations (< 200 m) but is insufficient for medium-range operations.
-      ru: 1 км может быть достаточен для операций очень близкого радиуса (< 200 м), но недостаточен для операций среднего радиуса.
+      lv: Fiksēts īss skaitlis pats par sevi neko negarantē — jāvērtē reālais attālums, fons, kontrasts un lidojuma profils.
+      en: A short fixed number by itself guarantees nothing — the real test depends on range, background, contrast, and mission profile.
+      ru: Короткое фиксированное число само по себе ничего не гарантирует — всё зависит от дистанции, фона, контраста и профиля полёта.
     b:
-      lv: 10 km ir maksimāli ziņojamā redzamība METAR, nevis minimums VLOS. Lielākā daļa VLOS operāciju notiek tuvāk par 1 km attālumā.
-      en: 10 km is the maximum reportable visibility in METAR, not the VLOS minimum. Most VLOS operations take place at under 1 km range.
-      ru: 10 км — максимальная отчётная видимость в METAR, а не минимум VLOS. Большинство операций VLOS происходит на расстоянии менее 1 км.
+      lv: 3 km nav Latvijas “likumiskais minimums” VLOS lidojumiem.
+      en: 3 km is not a Latvian legal minimum for VLOS operations.
+      ru: 3 км — не установленный в Латвии юридический минимум для VLOS.
     d:
-      lv: 500 m redzamībā VLOS var uzturēt tikai ļoti īsam, fiksētam lidojumam pie fiksētas vietas. Tas ir nepraktiski lielākajai daļai operāciju.
-      en: At 500 m visibility VLOS can only be maintained for a very short, fixed-position flight. This is impractical for most operations.
-      ru: При 500 м видимости VLOS можно поддерживать только при очень коротком полёте с фиксированной позицией. Это нецелесообразно для большинства операций.
+      lv: 10 km nav universāls obligāts slieksnis VLOS; svarīgs ir tas, vai konkrētajā misijā var droši uzturēt vizuālu kontaktu.
+      en: 10 km is not a universal mandatory VLOS threshold; the issue is whether safe visual contact can be maintained for that mission.
+      ru: 10 км — не универсальный обязательный порог для VLOS; важно, можно ли безопасно сохранять визуальный контакт в конкретной миссии.
   sourceRef: docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — Reg (EU) 2019/947 UAS.OPEN.060(3); EASA AMC1 UAS.OPEN.060 VLOS
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
 - id: met-036
   stem:
-    lv: METAR pie zemes rāda 5 m/s vēju, bet pilots plāno lidojumu 80 m AGL. Kādu vēja rezervi jāņem vērā šajā augstumā?
-    en: METAR shows 5 m/s wind at the surface, but the pilot plans to fly at 80 m AGL. What wind margin should be considered at that height?
-    ru: METAR показывает ветер 5 м/с у земли, но пилот планирует полёт на 80 м AGL. Какой запас по ветру нужно учитывать на этой высоте?
+    lv: METAR pie zemes rāda 5 m/s vēju, bet pilots plāno lidojumu 80 m AGL. Kāds ir drošākais plānošanas pieņēmums par vēju šajā augstumā?
+    en: METAR shows 5 m/s wind at the surface, but the pilot plans to fly at 80 m AGL. What is the safest planning assumption about the wind at that height?
+    ru: METAR показывает ветер 5 м/с у земли, но пилот планирует полёт на 80 м AGL. Какое допущение о ветре на этой высоте безопаснее всего?
   options:
   - id: a
     text:
@@ -1863,33 +1863,33 @@
       ru: Те же 5 м/с — METAR измеряет на рабочей высоте.
   - id: d
     text:
-      lv: 6,5–7,5 m/s — virszemes vējš × 1,3–1,5 koriģēšanai.
-      en: 6.5–7.5 m/s — surface wind × 1.3–1.5 for altitude correction.
-      ru: 6,5–7,5 м/с — приземный ветер × 1,3–1,5 для поправки по высоте.
+      lv: Vējš augstumā var būt stiprāks nekā pie virszemes, tāpēc jāatstāj rezerve un, ja iespējams, jāpārbauda prognozētais vējš 100 m augstumā.
+      en: Wind aloft may be stronger than at the surface, so leave margin and, if available, check the forecast wind at 100 m.
+      ru: На высоте ветер может быть сильнее, чем у земли, поэтому нужно оставлять запас и, если возможно, смотреть прогноз ветра на 100 м.
   correctOptionId: d
   explanation:
-    lv: 'METAR vējš mērīts 10 m AGL. Berzes slānis (aptuveni zemes 300 m) samazina vēja ātrumu tuvāk pie virszemes. 80 m AGL vēja ātrums parasti ir par 30–50 % lielāks nekā pie virszemes: 5 m/s × 1,3–1,5 ≈ 6,5–7,5 m/s. Šī korekcija ir īpaši svarīga bateriju plānošanā atgriešanās braucieniem pret vēju.
+    lv: 'METAR ir virszemes novērojums, nevis mērījums darba augstumā. Tuvu zemei berze bieži bremzē vēju, tāpēc augstāk tas var būt stiprāks. Drošā pieeja ir atstāt rezervi un izmantot prognozēto vēju darba augstumā, ja tāds ir pieejams.
 
       '
-    en: 'METAR wind is measured at 10 m AGL. The friction layer (approximately 300 m of surface atmosphere) reduces wind speed closer to the ground. At 80 m AGL wind speed is typically 30–50 % higher than at the surface: 5 m/s × 1.3–1.5 ≈ 6.5–7.5 m/s. This correction is especially important for battery planning on into-wind return legs.
+    en: 'METAR is a surface observation, not a measurement at operating height. Near the ground, friction often slows the wind, so it may be stronger aloft. The safe approach is to leave margin and use a forecast wind at operating height when one is available.
 
       '
-    ru: 'Ветер METAR измеряется на 10 м AGL. Слой трения (примерно 300 м атмосферы у поверхности) снижает скорость ветра ближе к земле. На 80 м AGL скорость ветра обычно на 30–50 % выше приземной: 5 м/с × 1,3–1,5 ≈ 6,5–7,5 м/с. Эта поправка особенно важна для планирования аккумулятора на возвратных курсах против ветра.
+    ru: 'METAR — это приземное наблюдение, а не измерение на рабочей высоте. У земли ветер часто тормозится трением, поэтому выше он может быть сильнее. Безопасный подход — оставлять запас и, если доступно, использовать прогноз ветра на рабочей высоте.
 
       '
   distractorRationales:
     a:
-      lv: Vējš virs āra vides (lauks, jūra) palielinās ar augstumu. Tikai dažos pilsētas gadījumos var būt minimālas augstuma korekcijas ēku turbulences dēļ.
-      en: Wind over open terrain (field, sea) increases with altitude. Only in some urban cases may there be minimal altitude corrections due to building turbulence.
-      ru: Ветер над открытой местностью (поле, море) усиливается с высотой. Только в некоторых городских случаях могут быть минимальные поправки из-за турбулентности зданий.
+      lv: Pieņēmums, ka vējš droši samazināsies, nav derīgs plānošanai.
+      en: Assuming the wind will safely decrease with height is not sound planning.
+      ru: Предполагать, что с высотой ветер надёжно ослабнет, нельзя.
     b:
-      lv: Vēja ātruma dubultošanās katrās 40 m nav precīzs fizisks modelis. 30–50 % pieaugums no 10 m uz 80 m ir labākā piesarobeža.
-      en: Wind speed doubling every 40 m is not an accurate physical model. A 30–50 % increase from 10 m to 80 m is the better approximation.
-      ru: Удвоение скорости ветра каждые 40 м — неточная физическая модель. Увеличение на 30–50 % от 10 м до 80 м — лучшее приближение.
+      lv: Vienkārša “dubultošanās” formula nav uzticams vēja modelis.
+      en: A simple “doubling” rule is not a reliable wind model.
+      ru: Простое правило «удвоения» не является надёжной моделью ветра.
     c:
-      lv: METAR mēra 10 m virs zemes — tas ir par 70 m zemāku par 80 m lidojuma augstumu. Berzes slānis nozīmē, ka vējš palielinās ar augstumu.
-      en: METAR measures 10 m above the ground — this is 70 m lower than the 80 m flight altitude. The friction layer means wind increases with altitude.
-      ru: METAR измеряет в 10 м над землёй — это на 70 м ниже высоты полёта 80 м. Слой трения означает, что ветер усиливается с высотой.
+      lv: METAR nemēra vēju darba augstumā; to nevar lasīt kā tiešu 80 m prognozi.
+      en: METAR does not measure the wind at operating height; it cannot be treated as a direct 80 m forecast.
+      ru: METAR не измеряет ветер на рабочей высоте; его нельзя считать прямым прогнозом для 80 м.
   sourceRef: docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — EASA Easy Access Rules — AMC1 UAS.OPEN.030; wind profile standard atmosphere
   difficulty: 3
   cognitiveLevel: analyze
@@ -2143,20 +2143,20 @@
       ru: Улучшенная видимость из-за поглощения влаги облаком.
   correctOptionId: b
   explanation:
-    lv: 'Kumulonimba (CB) ir bīstamākais mākoņu veids aviācijai. Brāzmu fronte var izplatīties 10–20 km no mākoņa, lejupejošas plūsmas (microbursts) līdz 6 km, zibens spēj izlādēties horizontāli vairākus km. EASA un ICAO iesaka izvairīties no CB tuvuma vismaz 10 NM (~18 km) lielajai aviācijai; droniem vismaz jāatturas no operācijām, kamēr CB ir redzams horizonā.
+    lv: 'Kumulonimbs ir visbīstamākais mākoņu veids mazam UAS. Pat ja stiprās nokrišņu zonas vēl nav virs tevis, šāds mākonis var nest spēcīgas brāzmas, lejupejošas plūsmas un zibens risku arī attālumā. Pie 5 km konservatīvā atbilde ir nelidot.
 
       '
-    en: 'Cumulonimbus (CB) is the most dangerous cloud type for aviation. The gust front can extend 10–20 km from the cloud, downdrafts (microbursts) up to 6 km, and lightning can discharge horizontally for several km. EASA and ICAO recommend avoiding CB by at least 10 NM (~18 km) for manned aviation; drones should refrain from operations while any CB is visible on the horizon.
+    en: 'A cumulonimbus is the most dangerous cloud type for a small UAS. Even if the heavy rain has not yet reached your position, it can still bring strong gusts, downdrafts and lightning risk at a distance. At 5 km the conservative answer is no-go.
 
       '
-    ru: 'Кучево-дождевые облака (CB) — самый опасный тип облачности в авиации. Шквальный фронт может распространяться на 10–20 км от облака, нисходящие порывы (микропорывы) — до 6 км, молния способна разряжаться горизонтально на несколько км. EASA и ICAO рекомендуют избегать CB как минимум на 10 NM (~18 км) для пилотируемой авиации; дронам следует воздержаться от полётов, пока CB виден на горизонте.
+    ru: 'Кучево-дождевое облако — самый опасный тип облачности для малого UAS. Даже если сильные осадки ещё не дошли до площадки, такое облако может давать резкие порывы, нисходящие потоки и риск молнии на удалении. На 5 км консервативный ответ — не летать.
 
       '
   distractorRationales:
     a:
-      lv: 5 km nav drošs attālums no CB — brāzmu fronte un microbursts var sasniegt 6–20 km. EASA iesaka vismaz 10 NM (~18 km).
-      en: 5 km is not a safe distance from a CB — gust fronts and microbursts can reach 6–20 km. EASA recommends at least 10 NM (~18 km).
-      ru: '5 км — небезопасное расстояние от CB: шквальный фронт и микропорывы могут достигать 6–20 км. EASA рекомендует минимум 10 NM (~18 км).'
+      lv: 5 km no nobrieduša negaisa nav droša rezerve mazam dronam.
+      en: 5 km is not a safe margin from a mature thunderstorm for a small drone.
+      ru: 5 км от зрелой грозовой ячейки — не безопасный запас для малого дрона.
     c:
       lv: CB nekad neizraisa "vāju lietusgāzi" — tikai intensīvas nokrišņus, krusu, zibeni un brāzmas.
       en: A CB never produces "light drizzle" — only intense precipitation, hail, lightning and gusts.
@@ -2202,13 +2202,13 @@
       ru: Температура поднимается на 10°C и облака рассеиваются.
   correctOptionId: a
   explanation:
-    lv: 'Aukstā fronte kustas ātri (~25–40 km/h) un paceļ silto gaisa masu strauji, izraisot kumulonimba (CB) attīstību, brāzmas līdz 30–50 kt, īslaicīgas lietusgāzes un krusu. Pēc pārejas: vējš maina virzienu (parasti pretpulksteņa virzienā ziemeļu puslodē), temperatūra pazeminās par 5–10°C, debesis ātri attīrās. Droniem — neuzsākt lidojumu, kamēr fronte šķērso lidojuma zonu, un vismaz 1–2 stundas pēc tam pārbaudīt brāzmu apstākļus.
+    lv: 'Aukstā fronte parasti nes strauju vēja maiņu, brāzmas, īslaicīgas spēcīgākas lietusgāzes vai krusu, bet pēc pārejas bieži ienāk vēsāks un skaidrāks gaiss. Dronu pilotam svarīgākais ir nelidot frontes pārejas laikā un pēc tās pārbaudīt, vai brāzmas tiešām ir mazinājušās.
 
       '
-    en: 'A cold front moves quickly (~25–40 km/h) and lifts the warm air mass rapidly, triggering cumulonimbus (CB) development, gusts of 30–50 kt, brief heavy showers and hail. After passage: wind shifts (typically counterclockwise in the Northern Hemisphere), temperature drops by 5–10°C, skies clear quickly. For drones: do not launch while the front is crossing the flight area, and verify gust conditions for at least 1–2 hours after passage.
+    en: 'A cold front often brings an abrupt wind shift, gusts, brief heavier showers or hail, followed by cooler and clearer air. For a drone pilot, the key point is not to launch through the frontal passage and to re-check gusts after it has moved through.
 
       '
-    ru: 'Холодный фронт движется быстро (~25–40 км/ч) и стремительно поднимает тёплую воздушную массу, вызывая развитие кучево-дождевых облаков (CB), порывы 30–50 узлов, кратковременные ливни и град. После прохождения: ветер меняет направление (обычно против часовой стрелки в северном полушарии), температура падает на 5–10°C, небо быстро прояснается. Для дронов: не начинать полёт, пока фронт проходит над зоной, и не менее 1–2 часов после проверять порывы.
+    ru: 'Холодный фронт обычно приносит резкую смену ветра, порывы, кратковременные ливни или град, а после прохождения — более прохладный и часто более ясный воздух. Для пилота дрона главное — не пытаться лететь через проход фронта и после него заново проверить порывы.
 
       '
   distractorRationales:
@@ -2364,9 +2364,9 @@
       ru: Прямо за препятствием (в зоне ротора) — препятствие защищает от ветра.
   - id: b
     text:
-      lv: Augstu virs šķēršļa, vismaz 3 reizes augstāk nekā šķērslis — kur plūsma ir gluda.
-      en: High above the obstacle, at least 3× its height — where the airflow is smooth.
-      ru: Высоко над препятствием, не менее чем в 3 раза выше препятствия — где поток ровный.
+      lv: Augstu virs šķēršļa un skaidri ārpus pievēja rotora zonas — kur plūsma ir gludāka.
+      en: High above the obstacle and clearly outside the lee rotor zone — where the airflow is smoother.
+      ru: Высоко над препятствием и явно вне подветренной роторной зоны — там поток ровнее.
   - id: c
     text:
       lv: Šķēršļa pievēja pusē (no kuras puses pūš vējš), tikai pāris metru attālumā.
@@ -2379,13 +2379,13 @@
       ru: Прямо под препятствием (если оно приподнято над землёй), где ветер не достигает.
   correctOptionId: b
   explanation:
-    lv: 'Mehāniska turbulence (rotors) veidojas šķēršļu pievēja pusē, parasti sniedzot 2–3 reizes lielāku augstumu nekā šķērslis, un horizontāli līdz 10–20 reizes lielāku attālumu vēja virzienā. Lai izvairītos no rotora, pilotam jāuztur lidojumu vismaz 3× šķēršļa augstumā vai 20× šķēršļa attālumā vēja virzienā lejup. "Aiz šķēršļa" zona NAV "klusais kakts" — tā ir bīstamākā vieta drona stabilitātei. Pievēja puse ar saspiestām plūsmām un augstāku ātrumu arī nav ieteicama maziem droniem.
+    lv: 'Galvenā doma attēlā ir vienkārša: bīstamākā vieta ir tieši aiz šķēršļa, kur veidojas rotors un plūsma kļūst haotiska. No dotajām zonām drošākā ir augstāk un ārpus šīs turbulences, kur plūsma ir vienmērīgāka.
 
       '
-    en: 'Mechanical turbulence (rotor) forms on the leeward side of obstacles, typically extending 2–3 times the obstacle height vertically and up to 10–20 times the obstacle height downwind. To avoid the rotor, fly at least 3× the obstacle height above it or 20× the obstacle height downwind. The "behind the obstacle" zone is NOT a "quiet corner" — it is the most dangerous spot for drone stability. The windward side, with compressed airflow and increased speed, is also not recommended for small drones.
+    en: 'The key message in the diagram is simple: the most dangerous place is directly behind the obstacle, where the lee rotor forms and the airflow turns chaotic. Of the zones shown, the safest is above and clear of that turbulence.
 
       '
-    ru: 'Механическая турбулентность (ротор) образуется с подветренной стороны препятствия, обычно простирается в высоту в 2–3 раза выше препятствия и по горизонтали до 10–20 раз дальше препятствия по ветру. Чтобы избежать ротора, нужно лететь как минимум на 3× высоты препятствия выше него или на 20× препятствия дальше по ветру. Зона «за препятствием» НЕ «тихий уголок» — это самое опасное место для устойчивости дрона. Наветренная сторона со сжатым потоком и повышенной скоростью также не рекомендуется для малых дронов.
+    ru: 'Главная мысль схемы проста: самое опасное место — сразу за препятствием, где формируется ротор и поток становится хаотичным. Из показанных зон безопаснее всего выше и вне этой турбулентной области.
 
       '
   distractorRationales:
@@ -3023,18 +3023,18 @@
       ru: На закате, когда формируется обратный береговой бриз.
   - id: d
     text:
-      lv: Vidējā pēcpusdienā (~14-16h), kad krasta temperatūra ir maksimālā — drons piekrastē sastaps stiprākas onshore brāzmas un pretvēju.
-      en: In mid-afternoon (~14-16h), when the coast is at its warmest — drones near the shore will encounter stronger onshore gusts and headwind.
-      ru: В середине дня (~14-16ч), когда температура берега максимальна — дроны у берега столкнутся с более сильными порывами в направлении берега и встречным ветром.
+      lv: Pēcpusdienā, kad zeme ir spēcīgi sasilusi — pie krasta drons var sastapt stiprākas jūras puses brāzmas un pretvēju.
+      en: In the afternoon, when the land has warmed strongly — a drone near the shore may meet stronger onshore gusts and headwind.
+      ru: Во второй половине дня, когда суша сильно прогрелась, — у берега дрон может встретить более сильные порывы с моря и встречный ветер.
   correctOptionId: d
   explanation:
-    lv: 'Jūras vējš (sea breeze) ir lokāls cirkulācijas modelis, kurš veidojas, kad saule sasilda zemi ātrāk nekā jūru. Siltais gaiss virs zemes ceļas, izveidojot zema spiediena zonu, un vēsais gaiss no jūras plūst uz krastu, lai aizvietotu to. Maksimālā stiprība parasti ap pl. 14-16, kad temperatūras kontrasts ir lielākais. Droniem piekrastē: pretvēja gradients var sasniegt 5-10 kt, un brāzmas var pārsteigt — sevišķi pavasarī un vasarā.
+    lv: 'Jūras vējš veidojas, kad zeme sasilst ātrāk nekā jūra. Pēcpusdienā temperatūras kontrasts parasti ir visizteiktākais, tāpēc arī piekrastes brāzmas kļūst jūtamākas. Dronam tas nozīmē lielāku pretvēju pie krasta un mazāku rezervi, ja lidojums plānots tikai pēc mierīgākās rīta ainas.
 
       '
-    en: 'The sea breeze is a local circulation pattern that forms when the sun warms the land faster than the sea. Warm air over the land rises, creating low pressure, and cool air from the sea flows in to replace it. Peak strength is typically around 14-16h when the temperature contrast is greatest. For drones on the coast: a headwind gradient up to 5-10 kt is common, and gusts may surprise — especially in spring and summer.
+    en: 'A sea breeze forms when land warms faster than the sea. The contrast is usually stronger in the afternoon, so coastal gusts become more noticeable then. For a drone pilot, that means more headwind near the shoreline and less margin if the flight was planned from a calmer morning picture.
 
       '
-    ru: 'Морской бриз — локальная циркуляция, которая образуется, когда солнце прогревает сушу быстрее, чем море. Тёплый воздух над сушей поднимается, образуя зону низкого давления, и холодный воздух с моря идёт ему на смену. Максимум обычно к 14-16ч, когда температурный контраст наибольший. Для дронов у берега: градиент встречного ветра до 5-10 узлов обычен, и порывы могут неожиданно ударить — особенно весной и летом.
+    ru: 'Морской бриз возникает, когда суша прогревается быстрее моря. Во второй половине дня этот контраст обычно сильнее, поэтому у берега заметнее и порывы. Для пилота дрона это означает более сильный встречный ветер у линии берега и меньший запас, если план строился по более спокойной утренней картине.
 
       '
   distractorRationales:
@@ -3087,13 +3087,13 @@
       ru: С наветренной стороны горы — в зоне контакта с ветром.
   correctOptionId: a
   explanation:
-    lv: 'Mountain wave veido sēriju gludu, stabilu viļņu vēja virzienā lejup no kalna, bet TIEŠI ZEM pirmā viļņa virsotnes veidojas rotora zona — haotisks, virpuļojošs plūsmas modelis ar plus/mīnus 1500 ft/min vertikāliem ātrumiem. Tas ir vienīgais izteikti turbulents reģions visā sistēmā. Maziem droniem rotora zona ir letāla — vēja brāzmas un virziens mainās sekundēs. Pretvēja puse parasti ir relatīvi stabila ar mēreniem vēja gradientiem, otrais vilnis jau zaudē enerģiju, un virs lenticular mākoņiem plūsma ir gluda.
+    lv: 'Attēlā visbīstamākā zona ir tieši zem pirmās viļņa virsotnes, kur veidojas rotors. Tieši tur plūsma ir haotiska, ar asām vēja virziena un stipruma izmaiņām, kas mazam dronam var ļoti ātri izraisīt kontroles zudumu.
 
       '
-    en: 'A mountain wave produces a series of smooth, stable waves downwind of the mountain, but DIRECTLY BELOW the first wave crest a rotor zone forms — a chaotic, churning flow with vertical speeds of ±1500 ft/min. This is the only strongly turbulent region in the system. For small drones the rotor zone is lethal — wind speed and direction change within seconds. The windward side is usually relatively stable with mild gradients, the second wave has already lost energy, and above the lenticulars the flow is smooth.
+    en: 'In the diagram, the most dangerous area is directly below the first wave crest, where the rotor forms. That is where the airflow becomes chaotic and wind speed and direction can change abruptly enough to overwhelm a small drone.
 
       '
-    ru: 'Горная волна создаёт серию ровных, устойчивых волн с подветренной стороны горы, но НЕПОСРЕДСТВЕННО ПОД гребнем первой волны образуется зона ротора — хаотичный, вихревой поток с вертикальными скоростями ±1500 фт/мин. Это единственный сильно турбулентный регион системы. Для малых дронов зона ротора смертельна — скорость и направление ветра меняются за секунды. Наветренная сторона обычно относительно стабильна с умеренными градиентами, вторая волна уже теряет энергию, а над lenticular поток ровный.
+    ru: 'На схеме самая опасная зона — прямо под гребнем первой волны, где формируется ротор. Именно там поток хаотичен, а скорость и направление ветра могут меняться так резко, что малый дрон быстро теряет управляемость.
 
       '
   distractorRationales:
@@ -3146,13 +3146,13 @@
       ru: Да, при использовании FPV-камеры дальность увеличивается.
   correctOptionId: b
   explanation:
-    lv: 'Lai gan 3 km ir daudz vairāk par 100 m lidojuma attālumu pašam dronam, VLOS prasība iekļauj arī see-and-avoid — pilotam jāspēj uztvert citu lidaparātu (helikopteru, citu dronu) laicīgi, lai izvairītos. Pie 3 km redzamības mazs helikopters var parādīties tieši virs drona ar atrumu 100 kt (~50 m/s) — pilotam paliek tikai 60 sekundes reaģēšanas laikam, kas ir maz, ja pilots fokusējas uz dronu. EASA Open kategorijas labākā prakse: lidot, kad redzamība ir vismaz 5 km, jo see-and-avoid ir efektīva. FPV un sensori NAV VLOS aizstājēji bez novērotāja.
+    lv: '3 km var izklausīties pietiekami 100 m lidojumam, taču dūmaka samazina kontrastu, spēju droši noteikt drona orientāciju un laikus pamanīt citu satiksmi. Šādā situācijā konservatīvā atbilde ir “nelidot”, jo FPV vai sensori neaizstāj VLOS.
 
       '
-    en: 'Although 3 km is much more than the 100 m flight distance of the drone itself, the VLOS requirement also includes see-and-avoid — the pilot must spot other aircraft (a helicopter, another drone) in time to avoid a collision. At 3 km visibility, a small helicopter can appear directly above the drone at 100 kt (~50 m/s) — leaving the pilot only 60 seconds reaction time, which is little if the pilot is focused on the drone. EASA Open-category best practice: fly when visibility is at least 5 km so that see-and-avoid is effective. FPV and sensors are NOT a VLOS substitute without an observer.
+    en: '3 km may sound ample for a 100 m flight, but haze reduces contrast, makes the drone harder to read, and leaves less margin to spot other traffic. In that situation the conservative answer is no-go, and FPV or sensors do not replace VLOS.
 
       '
-    ru: 'Хотя 3 км — намного больше 100 м дальности полёта самого дрона, требование VLOS включает и see-and-avoid: пилот должен вовремя увидеть другое воздушное судно (вертолёт, другой дрон), чтобы избежать столкновения. При видимости 3 км маленький вертолёт может появиться прямо над дроном на 100 узлах (~50 м/с), и у пилота останется лишь 60 секунд на реакцию — мало, если внимание сосредоточено на дроне. Лучшая практика EASA Open: летать при видимости не менее 5 км, чтобы see-and-avoid работал. FPV и датчики НЕ заменяют VLOS без наблюдателя.
+    ru: '3 км могут казаться достаточными для полёта на 100 м, но дымка снижает контраст, ухудшает восприятие ориентации дрона и оставляет меньше запаса на обнаружение другой воздушной обстановки. В такой ситуации консервативный ответ — не летать, а FPV и датчики VLOS не заменяют.
 
       '
   distractorRationales:
@@ -3205,13 +3205,13 @@
       ru: Микропорывы дают только лёгкую морось без сильного ветра.
   correctOptionId: b
   explanation:
-    lv: 'Microburst ir kompakts (1-4 km plats), spēcīgs vertikālais lejas plūsmas notikums no kumulonimba mākoņa pamatā. Pie virszemes plūsma izplatās radiāli, izveidojot vēja shear (gradient) — viena puse outflow zonas ir spēcīgs pretvējš, otrā — spēcīgs līdzvējš. Drons, kas pāriet caur outflow zonu, var saskartos ar 60+ kt vēja izmaiņām dažu sekundēs — krietni vairāk nekā mazo droņu lidoklis ir paredzēts izturēt. Microburst notiek arī kontinentāli ar konvektīvajiem mākoņiem, jebkurā diennakts laikā, un dod ļoti stipru vēju un krusas lietu.
+    lv: 'Microburst galvenās briesmas ir ļoti strauja vēja virziena un stipruma maiņa dažu sekunžu laikā. Dronam tas nozīmē pēkšņu pāreju no pretvēja uz līdzvēju, krasu nestspējas maiņu un risku zaudēt kontroli vai nespēt atgriezties.
 
       '
-    en: 'A microburst is a compact (1-4 km wide), powerful vertical downdraft from the base of a cumulonimbus cloud. At the surface, the airflow spreads radially, creating wind shear (gradient) — one side of the outflow zone is a strong headwind, the other a strong tailwind. A drone crossing through the outflow zone can encounter 60+ kt wind changes in seconds — far beyond what small drones are designed to handle. Microbursts also occur over continents in convective clouds, at any time of day, and produce very strong winds and hail.
+    en: 'The key danger of a microburst is the abrupt change in wind direction and strength over seconds. For a drone, that can mean a sudden shift from headwind to tailwind, a sharp change in lift, and a very real risk of losing control or not making it back.
 
       '
-    ru: 'Микропорыв — компактное (1-4 км шириной) мощное вертикальное нисходящее явление от основания кучево-дождевого облака. У поверхности поток расходится радиально, образуя сдвиг ветра (градиент): с одной стороны зоны — сильный встречный ветер, с другой — сильный попутный. Дрон, пересекающий зону outflow, может столкнуться с изменениями ветра 60+ узлов за секунды — значительно больше, чем малые дроны рассчитаны выдержать. Микропорывы случаются и в континентальном климате при конвективной облачности, в любое время суток, и дают очень сильный ветер и град.
+    ru: 'Главная опасность микропорыва — резкая смена направления и силы ветра за секунды. Для дрона это означает внезапный переход от встречного ветра к попутному, резкое изменение несущей способности и высокий риск потери управления или невозможности вернуться.
 
       '
   distractorRationales:
@@ -3224,9 +3224,9 @@
       en: Microbursts occur at all times of day, especially in the afternoon and early evening when convective activity peaks.
       ru: Микропорывы случаются в любое время суток, особенно во второй половине дня и ранним вечером при максимуме конвекции.
     d:
-      lv: Microburst rada tieši pretējo — ļoti stipru vēju (60+ kt) un krusas lietu īsa laika periodā.
-      en: Microbursts produce the opposite — very strong wind (60+ kt) and hail in a short time.
-      ru: Микропорывы дают противоположное — очень сильный ветер (60+ узлов) и град за короткое время.
+      lv: Microburst nav “vāja lietusgāze” — tā galvenā bīstamība ir ļoti agresīvs vēja shear.
+      en: A microburst is not a harmless drizzle event — the danger is violent wind shear.
+      ru: Микропорыв — не безобидная морось; главная угроза в нём — резкий и агрессивный сдвиг ветра.
   sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; FAA H-8083-25B Ch. 12 — microburst characteristics
   difficulty: 4
   cognitiveLevel: analyze
@@ -3244,9 +3244,9 @@
   options:
   - id: a
     text:
-      lv: Tūlīt nolaist dronu, jo gust front var sasniegt 30-50 kt brāzmas dažās minūtēs un pārsteigt nesaprātīgi gatavu pilotu.
-      en: Land the drone immediately — a gust front can produce 30-50 kt gusts within minutes and surprise an unprepared pilot.
-      ru: Немедленно посадить дрон — gust front может дать порывы 30-50 узлов за несколько минут и застать неподготовленного пилота врасплох.
+      lv: Tūlīt nolaist dronu, jo gust front var sasniegt vietu ļoti ātri ar asām brāzmām un pēkšņu vēja maiņu.
+      en: Land the drone immediately — a gust front can arrive very quickly with sharp gusts and a sudden wind shift.
+      ru: Немедленно посадить дрон — gust front может дойти очень быстро с резкими порывами и внезапной сменой ветра.
   - id: b
     text:
       lv: Lidot pretī gust front, lai novērtētu tā stiprumu.
@@ -3264,13 +3264,13 @@
       ru: Продолжить полёт — gust front влияет только на крупную авиацию.
   correctOptionId: a
   explanation:
-    lv: 'Gust front ir kumulonimba (CB) izplūdes mala — vēsa, lejas plūsma izplatās radiāli no CB pamatu, lielāka āra pa virszemei. Gust front var sasniegt 10-30 km attālumu no CB un radīt brāzmas 30-50 kt, kā arī pēkšņu temperatūras pazemināšanos, putekļu mākoņus un krītošas papildu mākoņus (shelf cloud). Drons tāda apjoma brāzmā nav vadāms. Pareizā darbība: TŪLĪT nolaist dronu, kad redzes CB tuvumā vai gust front uz radara/aplikācijā. Negaidīt — gust front var sasniegt 30 km/h, tāpēc minūtes ir kritiskas.
+    lv: 'Gust front ir negaisa izplūdes mala pie zemes. Tā var atnākt ātri, ar asām brāzmām, putekļiem un pēkšņu vēja virziena maiņu vēl pirms galvenajiem nokrišņiem. Mazam dronam tas nozīmē tūlītēju vadāmības risku, tāpēc pareizā darbība ir nekavējoties nolaisties.
 
       '
-    en: 'A gust front is the outflow boundary of a cumulonimbus (CB) — cool downdraft air spreading radially from the CB base, expanding outward at the surface. A gust front can reach 10-30 km from the CB and produce 30-50 kt gusts, sudden temperature drops, dust clouds, and looming shelf clouds. A drone cannot be controlled in such gusts. Correct action: land IMMEDIATELY whenever a CB is visible nearby or a gust front shows on radar/app. Do not wait — a gust front can advance at 30 km/h, so minutes are critical.
+    en: 'A gust front is the leading edge of thunderstorm outflow at the surface. It can race ahead of the rain core and hit a drone with abrupt gusts, dust, and a sudden wind shift. A small drone has no useful margin in that situation, so the correct action is to land immediately.
 
       '
-    ru: 'Gust front — выходной фронт кучево-дождевого облака (CB): холодный нисходящий поток, расходящийся радиально от основания CB и расширяющийся по поверхности. Gust front может удаляться от CB на 10-30 км и давать порывы 30-50 узлов, резкое падение температуры, пыльные облака и нависающие shelf-облака. Дрон в таких порывах не управляем. Правильное действие: НЕМЕДЛЕННО посадить дрон, как только CB заметно поблизости или gust front видно на радаре/в приложении. Не ждать — gust front может двигаться со скоростью 30 км/ч, поэтому минуты критичны.
+    ru: 'Фронт порывов — это передняя кромка грозового outflow у поверхности. Он может быстро прийти раньше основной зоны осадков и принести резкие порывы, пыль и внезапную смену направления ветра. Для малого дрона это означает почти мгновенную потерю запаса по управляемости, поэтому правильное действие — немедленно садиться.
 
       '
   distractorRationales:

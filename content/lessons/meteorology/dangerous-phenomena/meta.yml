@@ -4,7 +4,7 @@ title:
   lv: Bīstamie meteoroloģiskie apstākļi
   en: Dangerous weather phenomena
   ru: Опасные метеорологические явления
-sourceRef: "EASA Easy Access Rules — AMC1 UAS.OPEN.030; A2 syllabus Theme 1: Meteorology; ICAO Doc 8896"
+sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf; docs/knowledge/training-guides/syllabus/A2-detailed-syllabus.md; docs/knowledge/test-samples/A2-question-bank.md"
 blocks:
   - missionBriefing
   - cinematicScene

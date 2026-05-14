@@ -110,6 +110,7 @@
     }
   },
   "exam": {
+    "kicker": "Sertifikācijas tipa eksāmens",
     "title": "Pārbaudes eksāmens",
     "subtitle": "Imitē oficiālo A1/A3 eksāmenu vietnē e.caa.gov.lv. Ja stabili sasniedz 80 %+, esi gatavs reālajam eksāmenam.",
     "coverage": {
@@ -140,6 +141,7 @@
     "confirmNo": "Atgriezties",
     "unansweredOne": "Neatbildēts: {count}",
     "unansweredMany": "Neatbildēti: {count}",
+    "allAnswered": "Uz visiem jautājumiem atbildēts",
     "timeUp": "Laiks beidzies — iesniedzu eksāmenu.",
     "leaveWarning": "Eksāmens vēl nav iesniegts. Tiešām iziet?",
     "passed": "Nokārtoji ({percent} %)",
@@ -226,8 +228,8 @@
   "topicExam": {
     "kicker": "Tēmas treniņš",
     "title": "Tēmas treniņš",
-    "subtitle": "Fokusēts mock par tēmu {topic}. Noderīgs, kad tēma jau pastrādāta praksē.",
-    "backToExam": "Eksāmena sākums",
+    "subtitle": "Fokusēts pārbaudījuma eksāmens par tēmu {topic}. Noderīgs pēc prakses šajā tēmā.",
+    "backToExam": "Uz eksāmenu",
     "rules": {
       "heading": "Noteikumi",
       "questions": "{count} jautājumi no šīs tēmas",
@@ -245,8 +247,8 @@
   "meteorologyA2Exam": {
     "kicker": "Bonusa eksāmens",
     "title": "A2 meteoroloģijas bonuss",
-    "subtitle": "A2 līmeņa mock, kas fokusēts uz reāliem laikapstākļiem dronu pilotiem — mākoņi, frontes, METAR kodi, vēja shears.",
-    "backToExam": "Eksāmena sākums",
+    "subtitle": "A2 līmeņa pārbaudījums par laikapstākļiem, ar kuriem dronu pilots sastopas praksē — mākoņi, frontes, METAR kodi un vēja nobīde.",
+    "backToExam": "Uz eksāmenu",
     "rules": {
       "heading": "Noteikumi",
       "questions": "{count} jautājumi, ar uzsvaru uz attēlu atpazīšanu",

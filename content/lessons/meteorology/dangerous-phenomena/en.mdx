@@ -1,6 +1,6 @@
 # Dangerous weather phenomena
 
-<MissionBriefing objective="After this lesson you will identify six dangerous weather phenomena before flight and during flight, apply the 10 km rule for thunderstorms, and know the immediate action when weather deteriorates unexpectedly.">
+<MissionBriefing objective="After this lesson you will identify six dangerous weather phenomena before flight and during flight, use a conservative separation rule for thunderstorms, and know the immediate action when weather deteriorates unexpectedly.">
 Weather does not warn you before it becomes dangerous. A cumulonimbus 15 km away can produce strong turbulence at your location within minutes. Recognition and early action are the only defences.
 </MissionBriefing>
 
@@ -20,7 +20,7 @@ A **cumulonimbus** is a towering convective cloud that can extend from near the 
 - **Microburst** — violent downward air column that spreads at the surface, capable of forcing a drone to the ground in seconds.
 - **Strong wind gusts** — leading edge of Cb produces a gust front that arrives before the visible cloud reaches overhead.
 
-**Rule: stay at least 10 km from any active cumulonimbus.** At 10 km you are still at risk from lightning and turbulence, but the risk decreases rapidly. Never fly if you cannot maintain this separation.
+The regulation does not give a single thunderstorm distance number. For training and day-to-day decision-making, use a conservative rule: if an active thunderstorm is near the area, or roughly within 10 km, do not launch and recover early if you are already airborne.
 
 How to recognise a developing Cb:
 1. Rapid vertical growth of cumulus cloud — rises visibly within minutes.
@@ -48,7 +48,7 @@ Practical indicator: if surfaces (car roofs, equipment cases) are icing over, do
 
 **Minimum visibility for VLOS**: the regulation has no fixed number, but the functional test is whether the pilot can determine the UAS attitude and direction of travel with the unaided eye. In practice this means conditions must be at least sufficient to maintain continuous, unambiguous visual contact.
 
-Avoid launching in visibility below 3 km for any meaningful VLOS operation. In dense fog, even a 50 m flight can lose VLOS.
+In dense fog, even a 50 m flight can lose VLOS. For routine training or exam-style operations, degraded visibility should push you toward a conservative no-go decision.
 
 ## Identifying deteriorating conditions mid-flight
 
@@ -61,16 +61,16 @@ Do not wait for conditions to become critical before acting. Warning signs durin
 - **Lightning visible** anywhere in the sky: initiate emergency landing at the nearest safe point.
 
 <Artefact
-  description="Six dangerous weather phenomena and their immediate actions: Cb within 10 km → no-fly; Icing conditions → no-fly; Visibility < 3 km → no-fly; Precipitation starts in flight → land immediately; Gusts exceeding drone limit → initiate return; Lightning visible → emergency landing"
+  description="Six dangerous weather phenomena and their immediate actions: thunderstorm close to the area → no-fly; icing conditions → no-fly; visibility too poor for reliable VLOS → no-fly; precipitation starts in flight → land immediately; gusts exceeding drone limit → initiate return; lightning visible → emergency landing"
   caption="Table · dangerous phenomena and actions"
 >
   <table className="text-sm w-full text-telemetry">
     <thead><tr className="text-cyan-pulse font-mono text-xs"><th className="text-left pr-3 pb-2">Phenomenon</th><th className="text-left pb-2">Action</th></tr></thead>
     <tbody>
       {[
-        ["Cumulonimbus within 10 km", "No-fly. Postpone until Cb has passed and cleared by > 10 km."],
+        ["Active thunderstorm close to the area", "No-fly. Wait until the cell has moved well clear and conditions stabilise."],
         ["Temperature near 0°C + cloud/moisture", "No-fly. Icing risk. Check for frost on surfaces."],
-        ["Visibility < 3 km", "No-fly. VLOS cannot be reliably maintained."],
+        ["Visibility too poor for reliable VLOS", "No-fly. You must be able to keep continuous unaided visual contact."],
         ["Precipitation begins mid-flight", "Land immediately at the nearest safe spot."],
         ["Gusts exceeding drone rating in flight", "Initiate immediate return. Do not continue the mission."],
         ["Lightning visible anywhere", "Emergency landing. Fastest safe route to ground."],
@@ -85,21 +85,21 @@ Do not wait for conditions to become critical before acting. Warning signs durin
 </Artefact>
 
 <Scenario title="You are filming an outdoor event. The weather was clear at launch. 20 minutes into the flight you notice a dark anvil-shaped cloud 12 km to the west moving in your direction. The surface wind has increased. What do you do?">
-**Initiate return immediately.** An anvil-shaped cloud at 12 km is a mature cumulonimbus. The 10 km rule means you are already within the risk zone. The increasing surface wind is the gust front arriving ahead of the Cb.
+**Initiate return immediately.** An anvil-shaped cloud at 12 km is a mature cumulonimbus, and the increasing surface wind suggests its outflow is already affecting your area.
 
-Do not wait to see if it will "pass to the south". At 12 km distance, a Cb moving at even 20 km/h will reach your position in 36 minutes — but it can produce severe turbulence and lightning at your location within the next 10–15 minutes.
+Do not wait to see if it will "pass to the south". Once you can already see a mature thunderstorm approaching and the wind is changing, your safety margin is shrinking fast.
 
 Land, secure the equipment, and wait for the storm to pass.
 </Scenario>
 
 <MemoryAnchor
-  rule="Cb: 10 km rule, no exceptions. Icing: any temperature near 0°C + moisture = no fly. Lightning visible = emergency landing, not 'I'll keep an eye on it'."
+  rule="Cb near the route + building gusts = land early. Icing: temperature near 0°C + moisture = no fly. Lightning visible = emergency landing, not 'I'll keep an eye on it'."
   hint="If you see lightning anywhere in the sky, you are already in danger. Land now."
 />
 
 <CommonMistakes>
 - Waiting until a Cb is directly overhead before deciding to land — by that point the turbulence and lightning risk is already at maximum.
-- Dismissing a Cb as "it's still far away" — 10 km is the minimum safe distance, not a comfortable distance.
+- Dismissing a Cb as "still far away" even though the cell is moving toward the site and the wind is already changing.
 - Not checking for icing conditions at the beginning of the flight when the sun is already warming the ground — temperatures at altitude can be below freezing while it is mild at the surface.
 - Continuing to film in light rain because "the drone is splash-rated" — splash ratings are not rain certifications.
 - Confusing "I can still see the drone" in fog with VLOS — if you cannot determine attitude and direction, VLOS is lost regardless of whether you can see the drone.
@@ -116,10 +116,10 @@ Land, secure the equipment, and wait for the storm to pass.
       { id: "d", text: "Reduce altitude to below the cloud base and continue filming." },
     ],
     correctOptionId: "c",
-    explanation: "The 10 km rule requires a minimum 10 km separation from any active cumulonimbus. At 8 km you are already within the risk zone — lightning and severe turbulence can reach you before the cloud arrives overhead. Initiate return now.",
+    explanation: "At 8 km with wind already increasing, a cumulonimbus is an immediate no-go for a small drone. Strong outflow, turbulence and lightning risk can affect the area before the rain core arrives overhead. The safe action is to return immediately.",
     distractorRationales: {
-      a: "8 km is inside, not outside, the 10 km exclusion zone. The risk is already present.",
-      b: "Waiting until 5 km is far too late — at 5 km the gust front and lightning risk are critical. The threshold is 10 km.",
+      a: "A cumulonimbus at 8 km is not a safe situation for a small drone, especially when the wind is already building.",
+      b: "Waiting for the storm to move even closer removes the little margin you still have.",
       d: "Reducing altitude does not reduce the lightning risk — lightning discharges extend from cloud to ground regardless of the drone's altitude. Turbulence also extends downward from the Cb.",
     },
   },
@@ -143,7 +143,7 @@ Land, secure the equipment, and wait for the storm to pass.
 ]} />
 
 <Debrief unlocks={["met-003"]}>
-You can identify six dangerous weather phenomena, know the 10 km Cb rule, and know when to execute an immediate landing during flight.
+You can identify six dangerous weather phenomena, use a conservative thunderstorm-separation rule, and know when to execute an immediate landing during flight.
 
 Next: Go/no-go decisions — a structured framework for the most important call in every flight: whether to start.
 </Debrief>

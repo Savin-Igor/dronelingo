@@ -190,7 +190,7 @@ export function ExamSession({
       <div className="mb-4 flex justify-end">
         <span className="font-mono text-xs text-muted">
           {unanswered === 0
-            ? "All answered"
+            ? t("allAnswered")
             : unanswered === 1
               ? t("unansweredOne", { count: unanswered })
               : t("unansweredMany", { count: unanswered })}
