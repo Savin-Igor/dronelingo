@@ -99,6 +99,13 @@ const QuestionYaml = z.object({
     .string()
     .regex(/^[a-z0-9-]+\/[a-z0-9-]+(#[a-z0-9-]+)?$/)
     .optional(),
+  // Optional file name (without path) of a PNG/JPG/SVG in
+  // public/questions/<topic-slug>/. Loader rewrites it to a public URL.
+  image: z
+    .string()
+    .regex(/^[a-z0-9_-]+\.(png|jpg|jpeg|svg|webp)$/i)
+    .optional(),
+  imageAlt: Multilingual.optional(),
 });
 
 const QuestionsYaml = z.array(QuestionYaml);
@@ -295,6 +302,35 @@ async function importQuestions(
         ? (q.distractorRationales as unknown as Prisma.InputJsonValue)
         : Prisma.JsonNull;
 
+      let imageUrl: string | null = null;
+      let imageAlt: Prisma.InputJsonValue | typeof Prisma.JsonNull =
+        Prisma.JsonNull;
+      if (q.image) {
+        if (!q.imageAlt) {
+          throw new Error(
+            `Question ${q.id} in ${file}: imageAlt is required when image is set`,
+          );
+        }
+        const imagePath = join(
+          process.cwd(),
+          "public",
+          "questions",
+          topicSlug,
+          q.image,
+        );
+        if (!existsSync(imagePath)) {
+          throw new Error(
+            `Question ${q.id} in ${file}: image file not found at public/questions/${topicSlug}/${q.image}`,
+          );
+        }
+        imageUrl = `/questions/${topicSlug}/${q.image}`;
+        imageAlt = q.imageAlt as unknown as Prisma.InputJsonValue;
+      } else if (q.imageAlt) {
+        throw new Error(
+          `Question ${q.id} in ${file}: imageAlt set without an image — remove it`,
+        );
+      }
+
       const existing = await prisma.question.findUnique({
         where: { externalId: q.id },
       });
@@ -313,6 +349,8 @@ async function importQuestions(
           cognitiveLevel: q.cognitiveLevel ?? null,
           scenarioType: q.scenarioType ?? null,
           lessonSectionRef: q.lessonSectionRef ?? null,
+          imageUrl,
+          imageAlt,
         },
         update: {
           topicId,
@@ -326,6 +364,8 @@ async function importQuestions(
           cognitiveLevel: q.cognitiveLevel ?? null,
           scenarioType: q.scenarioType ?? null,
           lessonSectionRef: q.lessonSectionRef ?? null,
+          imageUrl,
+          imageAlt,
         },
       });
       total++;

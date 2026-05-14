@@ -127,6 +127,8 @@ export function WarmUpClient({
     correctOptionId: q.correctOptionId,
     explanation: q.explanation,
     sourceRef: q.sourceRef,
+    imageUrl: q.imageUrl,
+    imageAlt: q.imageAlt,
   }));
 
   return (
