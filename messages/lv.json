@@ -2,7 +2,22 @@
   "nav": {
     "learn": "Mācies",
     "practice": "Trenējies",
-    "exam": "Eksāmens"
+    "exam": "Eksāmens",
+    "blog": "Blogs"
+  },
+  "blog": {
+    "kicker": "Blogs",
+    "indexTitle": "Dronu sertifikācijas ceļveži",
+    "indexDescription": "Padziļināti ceļveži par legālu dronu lidojumu Latvijā un ES — reģistrācija, A1/A3 eksāmens, regulējums un praktiski padomi. Atjaunoti, kad noteikumi mainās.",
+    "empty": "Vēl nav rakstu — pirmie tuvojas.",
+    "backToBlog": "Atpakaļ uz visiem rakstiem",
+    "sources": "Avoti",
+    "cta": {
+      "heading": "Gatavs mācīties eksāmenam?",
+      "body": "Izmēģini bezmaksas Gaisa drošības tēmu vai sāc tieši ar 40 jautājumu mock eksāmenu, lai redzētu, kur tu esi.",
+      "primary": "Sākt ar Gaisa drošību",
+      "secondary": "Kārtot mock eksāmenu"
+    }
   },
   "landing": {
     "hero": {
@@ -55,6 +70,7 @@
     "footer": {
       "tagline": "EASA A1/A3 droniem eksāmenam — Latvijai vispirms.",
       "guide": "Reģistrācijas ceļvedis",
+      "blog": "Blogs",
       "faq": "BUJ",
       "privacy": "Privātums",
       "terms": "Lietošanas noteikumi"
