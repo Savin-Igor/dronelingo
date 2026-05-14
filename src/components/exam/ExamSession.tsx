@@ -198,6 +198,17 @@ export function ExamSession({
         <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
           {current.topicTitle}
         </p>
+        {current.imageUrl && (
+          <div className="mt-3 overflow-hidden rounded-sm border border-horizon bg-hull">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={current.imageUrl}
+              alt={current.imageAlt ?? ""}
+              className="block h-auto w-full"
+              loading="lazy"
+            />
+          </div>
+        )}
         <h2 className="mt-3 text-base font-medium leading-relaxed text-hud-white">
           {current.stem}
         </h2>

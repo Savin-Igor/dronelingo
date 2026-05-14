@@ -46,6 +46,8 @@ export default async function PracticeTopicPage({
     correctOptionId: q.correctOptionId,
     explanation: localize(q.explanation, locale),
     sourceRef: q.sourceRef,
+    imageUrl: q.imageUrl,
+    imageAlt: q.imageAlt ? localize(q.imageAlt, locale) : null,
   }));
 
   const content = (

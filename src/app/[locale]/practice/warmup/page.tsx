@@ -66,6 +66,8 @@ export default async function WarmUpPage({
     explanation: localize(q.explanation, locale),
     sourceRef: q.sourceRef,
     topicSlug: q.topic.slug,
+    imageUrl: q.imageUrl,
+    imageAlt: q.imageAlt ? localize(q.imageAlt, locale) : null,
   }));
 
   return (

@@ -2110,3 +2110,298 @@
   difficulty: 4
   cognitiveLevel: analyze
   scenarioType: decision
+- id: met-041
+  image: met-041-cumulonimbus.png
+  imageAlt:
+    lv: Kumulonimba mākonis ar laktas formas virsotni, kreisajā pusē ar augšupejošām un labajā pusē ar lejupejošām gaisa plūsmām, zibens zonu un stipru nokrišņu joslu.
+    en: Cumulonimbus cloud with anvil top, updrafts on the left, downdrafts and heavy precipitation on the right, lightning zone in the centre.
+    ru: Кучево-дождевое облако с наковальней, восходящие потоки слева, нисходящие и сильные осадки справа, зона молний в центре.
+  stem:
+    lv: Attēlā redzams mākoņa veids. Kāds ir galvenais risks drona ekspluatācijai pat 5 km attālumā no šī mākoņa?
+    en: The image shows a cloud type. What is the primary risk to drone operations even at a distance of 5 km from this cloud?
+    ru: На изображении показан тип облака. Какова основная опасность для дрона даже на расстоянии 5 км от этого облака?
+  options:
+  - id: a
+    text:
+      lv: Nav riska — 5 km ir drošs attālums.
+      en: No risk — 5 km is a safe distance.
+      ru: Никакой опасности — 5 км безопасное расстояние.
+  - id: b
+    text:
+      lv: Stipra turbulence, lejupejošas plūsmas un brāzmas, kas var izplatīties tālu no mākoņa.
+      en: Severe turbulence, downdrafts and gust fronts that can extend far from the cloud.
+      ru: Сильная турбулентность, нисходящие потоки и шквалы, которые могут распространяться далеко от облака.
+  - id: c
+    text:
+      lv: Tikai vāja lietusgāze, ja vējš pūš mākoņa virzienā.
+      en: Only light drizzle if the wind blows from the cloud direction.
+      ru: Только лёгкая морось, если ветер дует со стороны облака.
+  - id: d
+    text:
+      lv: Uzlabota redzamība dēļ mitruma absorbcijas mākonī.
+      en: Improved visibility due to moisture absorption inside the cloud.
+      ru: Улучшенная видимость из-за поглощения влаги облаком.
+  correctOptionId: b
+  explanation:
+    lv: 'Kumulonimba (CB) ir bīstamākais mākoņu veids aviācijai. Brāzmu fronte var izplatīties 10–20 km no mākoņa, lejupejošas plūsmas (microbursts) līdz 6 km, zibens spēj izlādēties horizontāli vairākus km. EASA un ICAO iesaka izvairīties no CB tuvuma vismaz 10 NM (~18 km) lielajai aviācijai; droniem vismaz jāatturas no operācijām, kamēr CB ir redzams horizonā.
+
+      '
+    en: 'Cumulonimbus (CB) is the most dangerous cloud type for aviation. The gust front can extend 10–20 km from the cloud, downdrafts (microbursts) up to 6 km, and lightning can discharge horizontally for several km. EASA and ICAO recommend avoiding CB by at least 10 NM (~18 km) for manned aviation; drones should refrain from operations while any CB is visible on the horizon.
+
+      '
+    ru: 'Кучево-дождевые облака (CB) — самый опасный тип облачности в авиации. Шквальный фронт может распространяться на 10–20 км от облака, нисходящие порывы (микропорывы) — до 6 км, молния способна разряжаться горизонтально на несколько км. EASA и ICAO рекомендуют избегать CB как минимум на 10 NM (~18 км) для пилотируемой авиации; дронам следует воздержаться от полётов, пока CB виден на горизонте.
+
+      '
+  distractorRationales:
+    a:
+      lv: 5 km nav drošs attālums no CB — brāzmu fronte un microbursts var sasniegt 6–20 km. EASA iesaka vismaz 10 NM (~18 km).
+      en: 5 km is not a safe distance from a CB — gust fronts and microbursts can reach 6–20 km. EASA recommends at least 10 NM (~18 km).
+      ru: '5 км — небезопасное расстояние от CB: шквальный фронт и микропорывы могут достигать 6–20 км. EASA рекомендует минимум 10 NM (~18 км).'
+    c:
+      lv: CB nekad neizraisa "vāju lietusgāzi" — tikai intensīvas nokrišņus, krusu, zibeni un brāzmas.
+      en: A CB never produces "light drizzle" — only intense precipitation, hail, lightning and gusts.
+      ru: CB никогда не даёт «лёгкую морось» — только интенсивные осадки, град, молнии и шквалы.
+    d:
+      lv: CB tuvumā redzamība dramatiski pasliktinās lietus un krusa dēļ, nevis uzlabojas.
+      en: Visibility near a CB dramatically worsens due to rain and hail — it does not improve.
+      ru: Вблизи CB видимость резко ухудшается из-за дождя и града, а не улучшается.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — AMC1 UAS.OPEN.030; ICAO Doc 8896 — meteorological hazards (cumulonimbus)
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision
+- id: met-042
+  image: met-042-cold-front.png
+  imageAlt:
+    lv: 'Aukstās frontes šķērsgriezuma diagramma: aukstā gaisa masa kā ķīlis paceļ silto gaisa masu, izveidojoties kumulonimba mākoņiem virs frontes virsmas. Apakšā zilā līnija ar trijstūriem norāda frontes kustības virzienu.'
+    en: 'Cross-section diagram of a cold front: cold air mass as a wedge lifting the warm air mass, forming cumulonimbus clouds above the front surface. A blue line with triangles at the bottom indicates the direction of motion.'
+    ru: 'Поперечное сечение холодного фронта: холодная воздушная масса в виде клина поднимает тёплую воздушную массу, формируя кучево-дождевые облака над поверхностью фронта. Синяя линия с треугольниками внизу указывает направление движения.'
+  stem:
+    lv: Attēlā redzams aukstās frontes šķērsgriezums. Kādi laikapstākļi visdrīzāk gaidāmi pēc tās pārejas pār jūsu lidojuma vietu?
+    en: The image shows a cold-front cross-section. Which weather conditions are most likely after it passes over your flight location?
+    ru: На изображении показано сечение холодного фронта. Какие погодные условия наиболее вероятны после его прохождения над местом полёта?
+  options:
+  - id: a
+    text:
+      lv: Strauja vēja virziena maiņa, brāzmas, īslaicīgas lietusgāzes vai krusa, pēc tam redzamība uzlabojas un temperatūra pazeminās.
+      en: Sudden wind shift, gusts, brief heavy showers or hail, then improving visibility and lower temperature.
+      ru: Резкая смена ветра, шквалы, кратковременные ливни или град, затем улучшение видимости и понижение температуры.
+  - id: b
+    text:
+      lv: Vienmērīgs siltais lietus, kas turpinās 12–24 stundas.
+      en: Steady warm rain lasting 12–24 hours.
+      ru: Равномерный тёплый дождь, продолжающийся 12–24 часа.
+  - id: c
+    text:
+      lv: Bezvēja apstākļi un dūmaka uz vairākām dienām.
+      en: Calm windless conditions and haze for several days.
+      ru: Безветренные условия и дымка на несколько дней.
+  - id: d
+    text:
+      lv: Temperatūra paaugstinās par 10°C un mākoņi izklīst.
+      en: Temperature rises by 10°C and clouds dissipate.
+      ru: Температура поднимается на 10°C и облака рассеиваются.
+  correctOptionId: a
+  explanation:
+    lv: 'Aukstā fronte kustas ātri (~25–40 km/h) un paceļ silto gaisa masu strauji, izraisot kumulonimba (CB) attīstību, brāzmas līdz 30–50 kt, īslaicīgas lietusgāzes un krusu. Pēc pārejas: vējš maina virzienu (parasti pretpulksteņa virzienā ziemeļu puslodē), temperatūra pazeminās par 5–10°C, debesis ātri attīrās. Droniem — neuzsākt lidojumu, kamēr fronte šķērso lidojuma zonu, un vismaz 1–2 stundas pēc tam pārbaudīt brāzmu apstākļus.
+
+      '
+    en: 'A cold front moves quickly (~25–40 km/h) and lifts the warm air mass rapidly, triggering cumulonimbus (CB) development, gusts of 30–50 kt, brief heavy showers and hail. After passage: wind shifts (typically counterclockwise in the Northern Hemisphere), temperature drops by 5–10°C, skies clear quickly. For drones: do not launch while the front is crossing the flight area, and verify gust conditions for at least 1–2 hours after passage.
+
+      '
+    ru: 'Холодный фронт движется быстро (~25–40 км/ч) и стремительно поднимает тёплую воздушную массу, вызывая развитие кучево-дождевых облаков (CB), порывы 30–50 узлов, кратковременные ливни и град. После прохождения: ветер меняет направление (обычно против часовой стрелки в северном полушарии), температура падает на 5–10°C, небо быстро прояснается. Для дронов: не начинать полёт, пока фронт проходит над зоной, и не менее 1–2 часов после проверять порывы.
+
+      '
+  distractorRationales:
+    b:
+      lv: Vienmērīgs ilgstošs lietus ir raksturīgs siltajai frontei, nevis aukstajai.
+      en: Steady prolonged rain is characteristic of a warm front, not a cold front.
+      ru: Равномерный продолжительный дождь характерен для тёплого фронта, а не холодного.
+    c:
+      lv: Bezvēja apstākļi parasti seko augstspiediena rajonam, nevis aukstās frontes pārejai.
+      en: Calm conditions typically follow a high-pressure system, not a cold-front passage.
+      ru: Безветренные условия обычно следуют за антициклоном, а не за прохождением холодного фронта.
+    d:
+      lv: Aukstās frontes pārejas dēļ temperatūra pazeminās, nevis paaugstinās.
+      en: Temperature drops after a cold-front passage, it does not rise.
+      ru: После прохождения холодного фронта температура понижается, а не поднимается.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; ICAO Doc 8896 — fronts and air masses
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision
+- id: met-043
+  image: met-043-isobars.png
+  imageAlt:
+    lv: 'Virszemes laikapstākļu karte ar izobārām: kreisajā pusē zema spiediena centrs (sarkans "L") ar vēja bultiņām pretpulksteņa virzienā, labajā pusē augsta spiediena centrs (zils "H") ar vēja bultiņām pulksteņa virzienā. Izobāras marķētas no 996 līdz 1028 hPa.'
+    en: 'Surface weather map with isobars: a low-pressure centre (red "L") on the left with wind arrows curving counterclockwise, a high-pressure centre (blue "H") on the right with wind arrows curving clockwise. Isobars labelled from 996 to 1028 hPa.'
+    ru: 'Приземная карта погоды с изобарами: слева центр низкого давления (красный «L») со стрелками ветра против часовой стрелки, справа центр высокого давления (синий «H») со стрелками по часовой стрелке. Изобары размечены от 996 до 1028 гПа.'
+  stem:
+    lv: Saskaņā ar laikapstākļu karti — kurā punktā ir prognozējams stiprāks vējš, un kāpēc?
+    en: Based on the weather map — where would you expect stronger wind, and why?
+    ru: По карте погоды — где будет более сильный ветер, и почему?
+  options:
+  - id: a
+    text:
+      lv: Pie "L" centra, jo zems spiediens vienmēr nozīmē stipru vēju.
+      en: Near the "L" centre, because low pressure always means strong wind.
+      ru: У центра «L», потому что низкое давление всегда означает сильный ветер.
+  - id: b
+    text:
+      lv: Pie "L" centra, jo izobāras tur ir ciešāk kopā — lielāks spiediena gradients dod stiprāku vēju.
+      en: Near the "L" centre, because the isobars are closer together there — a steeper pressure gradient produces stronger wind.
+      ru: У центра «L», потому что изобары там расположены ближе друг к другу — крутой барический градиент даёт более сильный ветер.
+  - id: c
+    text:
+      lv: Pie "H" centra, jo augsts spiediens izpūš gaisu ar lielu spēku.
+      en: Near the "H" centre, because high pressure pushes air out with great force.
+      ru: У центра «H», потому что высокое давление выталкивает воздух с большой силой.
+  - id: d
+    text:
+      lv: Vējš ir vienāds visā kartē, jo izobāras parāda tikai spiedienu, nevis vēju.
+      en: Wind is the same across the map, because isobars only show pressure, not wind.
+      ru: Ветер одинаков на всей карте, потому что изобары показывают только давление, а не ветер.
+  correctOptionId: b
+  explanation:
+    lv: 'Vēja stiprums ir tieši proporcionāls spiediena gradientam — t.i., spiediena starpībai uz attāluma vienību. Kartē tas redzams kā izobāru "blīvums": ciešāk kopā izobāras = stiprāks vējs. Šajā kartē izobāras ap "L" ir ciešāk kopā (996, 1000, 1004 hPa tuvu viena otrai), tāpēc tur vējš ir stiprāks. Pie "H" izobāras ir tālāk viena no otras (1016, 1020, 1024, 1028 hPa izplatītas), tāpēc vējš ir vājāks. Kustības virzienu ziemeļu puslodē nosaka Koriolisa efekts: pretpulksteņa ap "L", pulksteņa ap "H".
+
+      '
+    en: 'Wind speed is directly proportional to the pressure gradient — i.e., the difference in pressure per unit distance. On a map this appears as isobar "spacing": closer isobars = stronger wind. In this map the isobars around "L" are closer together (996, 1000, 1004 hPa packed tightly), so wind is stronger there. Around "H" the isobars are further apart (1016, 1020, 1024, 1028 hPa spread out), so wind is weaker. The direction in the Northern Hemisphere is set by the Coriolis effect: counterclockwise around "L", clockwise around "H".
+
+      '
+    ru: 'Скорость ветра прямо пропорциональна барическому градиенту — разности давления на единицу расстояния. На карте это видно как «густота» изобар: чем ближе изобары, тем сильнее ветер. На этой карте вокруг «L» изобары расположены теснее (996, 1000, 1004 гПа близко друг к другу), поэтому ветер там сильнее. Вокруг «H» изобары разнесены (1016, 1020, 1024, 1028 гПа), поэтому ветер слабее. Направление в северном полушарии задаёт сила Кориолиса: против часовой стрелки вокруг «L», по часовой стрелке вокруг «H».
+
+      '
+  distractorRationales:
+    a:
+      lv: Zems spiediens pats par sevi nenosaka vēja stiprumu — stiprumu nosaka spiediena gradients (izobāru blīvums).
+      en: Low pressure alone does not determine wind speed — wind speed is determined by the pressure gradient (isobar spacing).
+      ru: Низкое давление само по себе не определяет силу ветра — её определяет барический градиент (густота изобар).
+    c:
+      lv: Pie "H" centra izobāras ir tālāk viena no otras, tāpēc vējš tur ir vājāks, nevis stiprāks.
+      en: Near the "H" centre, the isobars are spread out, so wind is weaker, not stronger.
+      ru: У центра «H» изобары разнесены, поэтому ветер там слабее, а не сильнее.
+    d:
+      lv: Izobāras tieši nodod informāciju par vēja stiprumu un virzienu — to blīvums atspoguļo spiediena gradientu, kas dzen vēju.
+      en: Isobars directly convey wind information — their spacing reflects the pressure gradient that drives the wind.
+      ru: Изобары как раз показывают информацию о ветре — их густота отражает барический градиент, который и движет ветер.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS meteorology; ICAO Doc 8896 — surface analysis charts
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: map
+- id: met-044
+  image: met-044-fog.png
+  imageAlt:
+    lv: Drons lido zemā augstumā tievā miglas slānī. Virs miglas slāņa skaidras debesis ar sauli. Redzamība miglā mazāk par 100 m, tālumā tikko saskatāmas pakalni un koki.
+    en: A drone flying at low altitude in a thin fog layer. Above the fog layer there are clear skies with the sun. Visibility within the fog is less than 100 m; hills and trees are barely visible in the distance.
+    ru: Дрон летит на низкой высоте в тонком слое тумана. Над слоем тумана — ясное небо с солнцем. Видимость в тумане менее 100 м; вдали едва различимы холмы и деревья.
+  stem:
+    lv: Pilots redz attēlā parādīto situāciju. Kuru EASA Open kategorijas pamatprasību šī operācija pārkāpj?
+    en: A pilot is in the situation shown in the image. Which EASA Open-category core requirement does this operation violate?
+    ru: Пилот находится в ситуации, показанной на изображении. Какое базовое требование EASA Open этот полёт нарушает?
+  options:
+  - id: a
+    text:
+      lv: Maksimālais augstums 120 m no zemes.
+      en: Maximum altitude of 120 m above ground level.
+      ru: Максимальная высота 120 м над землёй.
+  - id: b
+    text:
+      lv: VLOS (Visual Line of Sight) — pilotam jāredz drons ar nepalielinātu redzi visā lidojuma laikā.
+      en: VLOS (Visual Line of Sight) — the pilot must keep the drone visible with unaided vision at all times.
+      ru: VLOS (Visual Line of Sight) — пилот должен видеть дрон невооружённым глазом на протяжении всего полёта.
+  - id: c
+    text:
+      lv: Drona reģistrācija ar EASA.
+      en: Drone registration with EASA.
+      ru: Регистрация дрона в EASA.
+  - id: d
+    text:
+      lv: Maksimālā droša attālums no cilvēkiem (30 m horizontāli).
+      en: Maximum safe distance from people (30 m horizontal).
+      ru: Максимальное безопасное расстояние от людей (30 м по горизонтали).
+  correctOptionId: b
+  explanation:
+    lv: 'EASA Open kategorija (Reg 2019/947, UAS.OPEN.060) pieprasa, lai pilots vai novērotājs vienmēr saglabā tiešu vizuālu kontaktu ar dronu ar nepalielinātu redzi (VLOS). Migla, kas samazina redzamību zem 100 m, padara to neiespējamu — drons attēlā jau ir grūti saskatāms. Šis ir VLOS pārkāpums, neatkarīgi no augstuma vai attāluma. Pirms lidojuma vienmēr pārbaudīt redzamību prognozes (METAR) un atturēties no lidojumiem miglā, sniegputenī, vai stiprā lietus.
+
+      '
+    en: 'EASA Open category (Reg 2019/947, UAS.OPEN.060) requires the pilot or observer to maintain continuous direct visual contact with the drone using unaided vision (VLOS). Fog reducing visibility below 100 m makes this impossible — the drone in the image is already hard to see. This violates VLOS regardless of altitude or distance. Always check visibility forecasts (METAR) before flight and refrain from flying in fog, snowfall, or heavy rain.
+
+      '
+    ru: 'Open-категория EASA (Reg 2019/947, UAS.OPEN.060) требует, чтобы пилот или наблюдатель постоянно сохранял прямой визуальный контакт с дроном невооружённым глазом (VLOS). Туман с видимостью менее 100 м делает это невозможным — дрон на изображении уже плохо различим. Это нарушение VLOS, независимо от высоты или расстояния. Всегда проверяйте прогноз видимости (METAR) перед полётом и не летайте в тумане, снегопаде или сильном дожде.
+
+      '
+  distractorRationales:
+    a:
+      lv: 120 m augstuma limits ir spēkā, bet tas nav saistīts ar redzamības samazināšanos miglā. Galvenais pārkāpums šeit ir VLOS.
+      en: The 120 m altitude limit applies, but is not related to reduced visibility from fog. The primary violation here is VLOS.
+      ru: Лимит 120 м действует, но не связан со снижением видимости в тумане. Главное нарушение здесь — VLOS.
+    c:
+      lv: Drona reģistrācija ir administratīva prasība — tā nav saistīta ar redzamības apstākļiem.
+      en: Drone registration is an administrative requirement — it is unrelated to visibility conditions.
+      ru: Регистрация дрона — административное требование, не связанное с условиями видимости.
+    d:
+      lv: 30 m attālums no cilvēkiem A3 zonā ir spēkā, bet attēlā redzamā problēma ir tieši VLOS, nevis attālums no cilvēkiem.
+      en: The 30 m distance from people in A3 applies, but the issue shown in the image is specifically VLOS, not horizontal distance from people.
+      ru: Дистанция 30 м от людей в A3 действует, но проблема на изображении — именно VLOS, а не расстояние до людей.
+  sourceRef: docs/knowledge/eu-regulations/Reg-2019-947.pdf — Art. UAS.OPEN.060; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — VLOS definition
+  difficulty: 2
+  cognitiveLevel: apply
+  scenarioType: decision
+- id: met-045
+  image: met-045-rotor.png
+  imageAlt:
+    lv: Vēja plūsma satriec šķērsli (ēku vai pakalnu) kreisajā pusē, izveidojot mehāniskās turbulences (rotora) zonu vēja virzienā lejup. Mazs drons rotora zonā ar brīdinājuma simbolu. Augšā gluda gaisa plūsma virs šķēršļa.
+    en: Airflow hits an obstacle (a building or hill) on the left, creating a mechanical-turbulence (rotor) zone downwind. A small drone is shown in the rotor zone with a warning indicator. Smooth airflow continues above the obstacle.
+    ru: Воздушный поток ударяется о препятствие (здание или холм) слева, образуя зону механической турбулентности (ротор) с подветренной стороны. Маленький дрон находится в зоне ротора с предупреждающим знаком. Над препятствием сохраняется ровный поток.
+  stem:
+    lv: Vējš pūš ar 15 kt. Saskaņā ar attēlu — kura zona ir visdrošākā lidojumam šādos apstākļos?
+    en: The wind is blowing at 15 kt. According to the image — which zone is the safest for flight in such conditions?
+    ru: Ветер дует со скоростью 15 узлов. Согласно изображению — какая зона самая безопасная для полёта в таких условиях?
+  options:
+  - id: a
+    text:
+      lv: Tieši aiz šķēršļa (rotora zonā) — šķērslis aizsedz no vēja.
+      en: Directly behind the obstacle (in the rotor zone) — the obstacle shields from wind.
+      ru: Прямо за препятствием (в зоне ротора) — препятствие защищает от ветра.
+  - id: b
+    text:
+      lv: Augstu virs šķēršļa, vismaz 3 reizes augstāk nekā šķērslis — kur plūsma ir gluda.
+      en: High above the obstacle, at least 3× its height — where the airflow is smooth.
+      ru: Высоко над препятствием, не менее чем в 3 раза выше препятствия — где поток ровный.
+  - id: c
+    text:
+      lv: Šķēršļa pievēja pusē (no kuras puses pūš vējš), tikai pāris metru attālumā.
+      en: On the windward side of the obstacle (the side the wind is coming from), only a few metres away.
+      ru: С наветренной стороны препятствия (со стороны, откуда дует ветер), всего в нескольких метрах.
+  - id: d
+    text:
+      lv: Tieši zem šķēršļa (ja tas ir pacelts virs zemes), kur vējš nesasniedz.
+      en: Directly beneath the obstacle (if it is elevated above ground), where wind does not reach.
+      ru: Прямо под препятствием (если оно приподнято над землёй), где ветер не достигает.
+  correctOptionId: b
+  explanation:
+    lv: 'Mehāniska turbulence (rotors) veidojas šķēršļu pievēja pusē, parasti sniedzot 2–3 reizes lielāku augstumu nekā šķērslis, un horizontāli līdz 10–20 reizes lielāku attālumu vēja virzienā. Lai izvairītos no rotora, pilotam jāuztur lidojumu vismaz 3× šķēršļa augstumā vai 20× šķēršļa attālumā vēja virzienā lejup. "Aiz šķēršļa" zona NAV "klusais kakts" — tā ir bīstamākā vieta drona stabilitātei. Pievēja puse ar saspiestām plūsmām un augstāku ātrumu arī nav ieteicama maziem droniem.
+
+      '
+    en: 'Mechanical turbulence (rotor) forms on the leeward side of obstacles, typically extending 2–3 times the obstacle height vertically and up to 10–20 times the obstacle height downwind. To avoid the rotor, fly at least 3× the obstacle height above it or 20× the obstacle height downwind. The "behind the obstacle" zone is NOT a "quiet corner" — it is the most dangerous spot for drone stability. The windward side, with compressed airflow and increased speed, is also not recommended for small drones.
+
+      '
+    ru: 'Механическая турбулентность (ротор) образуется с подветренной стороны препятствия, обычно простирается в высоту в 2–3 раза выше препятствия и по горизонтали до 10–20 раз дальше препятствия по ветру. Чтобы избежать ротора, нужно лететь как минимум на 3× высоты препятствия выше него или на 20× препятствия дальше по ветру. Зона «за препятствием» НЕ «тихий уголок» — это самое опасное место для устойчивости дрона. Наветренная сторона со сжатым потоком и повышенной скоростью также не рекомендуется для малых дронов.
+
+      '
+  distractorRationales:
+    a:
+      lv: Tieši pretēji — tieši aiz šķēršļa ir rotora zona ar haotisku turbulenci, kas ir bīstamākā vieta lidojumam.
+      en: Exactly the opposite — directly behind the obstacle is the rotor zone with chaotic turbulence, which is the most dangerous place to fly.
+      ru: С точностью до наоборот — прямо за препятствием находится зона ротора с хаотичной турбулентностью, самое опасное место для полёта.
+    c:
+      lv: Pievēja pusē plūsma ir saspiesta un paātrināta, tas var izraisīt nestabilu lidojumu maziem droniem.
+      en: On the windward side, the airflow is compressed and accelerated, which can cause unstable flight for small drones.
+      ru: С наветренной стороны поток сжат и ускорен, что может привести к неустойчивости полёта малых дронов.
+    d:
+      lv: Pat ja šķērslis ir pacelts, vējš plūst ap to no visām pusēm, izveidojot turbulenci arī apakšā.
+      en: Even if the obstacle is elevated, wind flows around it from all sides, creating turbulence underneath as well.
+      ru: Даже если препятствие приподнято, ветер обтекает его со всех сторон, образуя турбулентность и снизу.
+  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — UAS.OPEN — environmental conditions; FAA H-8083-25B — Pilot's Handbook of Aeronautical Knowledge, Ch. 12 (mechanical turbulence)
+  difficulty: 3
+  cognitiveLevel: analyze
+  scenarioType: decision

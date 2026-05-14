@@ -14,6 +14,8 @@ export type TrainerQuestion = {
   correctOptionId: string;
   explanation: string;
   sourceRef: string;
+  imageUrl: string | null;
+  imageAlt: string | null;
 };
 
 const ATTEMPTS_KEY = "dronelingo:attempts:v1";
@@ -336,6 +338,17 @@ export function Trainer({
 
       {/* Question card */}
       <article className="mt-4 rounded-sm border border-cyan-pulse/15 bg-cockpit p-6">
+        {current.imageUrl && (
+          <div className="mb-4 overflow-hidden rounded-sm border border-horizon bg-hull">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={current.imageUrl}
+              alt={current.imageAlt ?? ""}
+              className="block h-auto w-full"
+              loading="lazy"
+            />
+          </div>
+        )}
         <h2 className="text-base font-medium leading-relaxed text-hud-white">
           {current.stem}
         </h2>

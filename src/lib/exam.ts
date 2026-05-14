@@ -55,6 +55,8 @@ export type ExamQuestion = {
   correctOptionId: string;
   explanation: string;
   sourceRef: string;
+  imageUrl: string | null;
+  imageAlt: string | null;
 };
 
 type RawOption = { id: string; text: Record<string, string> };
@@ -120,6 +122,8 @@ export async function buildStratifiedExam(
       correctOptionId: q.correctOptionId,
       explanation: localize(q.explanation, locale),
       sourceRef: q.sourceRef,
+      imageUrl: q.imageUrl,
+      imageAlt: q.imageAlt ? localize(q.imageAlt, locale) : null,
     }));
     shuffleInPlace(all);
 
@@ -178,6 +182,8 @@ export async function buildTopicExam(
     correctOptionId: q.correctOptionId,
     explanation: localize(q.explanation, locale),
     sourceRef: q.sourceRef,
+    imageUrl: q.imageUrl,
+    imageAlt: q.imageAlt ? localize(q.imageAlt, locale) : null,
   }));
   shuffleInPlace(all);
   return {

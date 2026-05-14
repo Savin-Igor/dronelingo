@@ -124,6 +124,12 @@ model Question {
   // Reference into a lesson + section to route users on repeated failure
   // (e.g. "air-safety/vlos#fpv-observer"). Optional.
   lessonSectionRef     String?
+  // Optional image rendered above the question stem (path under /public,
+  // e.g. "/questions/meteorology/met-041-cumulonimbus.png").
+  imageUrl             String?
+  // Localized alt text for imageUrl: { lv, en, ru, ... } — required when
+  // imageUrl is set (validated at import time).
+  imageAlt             Json?
   createdAt            DateTime @default(now())
   updatedAt            DateTime @updatedAt
 
