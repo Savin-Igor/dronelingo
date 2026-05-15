@@ -241,16 +241,47 @@
     }
   },
   "pricing": {
+    "kicker": "Full access",
     "title": "Unlock the full platform",
     "subtitle": "First topic free. Pay once to unlock everything.",
     "includedHeading": "Full access includes",
     "payHeading": "One-time payment",
     "productName": "dronelingo — Full Access",
     "emailLabel": "Email (optional — for receipt)",
-    "pay": "Get full access — €19 →",
+    "pay": "Get full access — €19",
     "processing": "Processing...",
     "stubNote": "Stub checkout — no real charge.",
-    "freeNote": "Air Safety topic is always free — no payment needed."
+    "freeNote": "Air Safety topic is always free — no payment needed.",
+    "features": {
+      "lessons": "All 9 EASA A1/A3 topics with complete lessons",
+      "practice": "45+ practice drills per topic",
+      "exams": "Unlimited mock exams and topic drills",
+      "languages": "Latvian, English, and Russian",
+      "sources": "Source-backed explanations and regulation references",
+      "payment": "One-time payment — no subscription, no expiry"
+    },
+    "errors": {
+      "paymentFailed": "Payment failed. Please try again."
+    },
+    "invoice": {
+      "heading": "Request invoice",
+      "nameLabel": "Name (optional)",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email (required)",
+      "productName": "dronelingo — Full Access",
+      "send": "Send invoice",
+      "sending": "Sending...",
+      "note": "You will receive an invoice email with bank transfer details.",
+      "success": {
+        "heading": "Invoice sent",
+        "body": "We’ve sent an invoice to <mono>{email}</mono>. Please pay €19 via bank transfer using the details in your email.",
+        "note": "We’ll activate your access within 1 business day of receiving your payment."
+      },
+      "errors": {
+        "create": "Failed to create invoice.",
+        "generic": "An error occurred. Please try again."
+      }
+    }
   },
   "topicExam": {
     "kicker": "Topic drill",

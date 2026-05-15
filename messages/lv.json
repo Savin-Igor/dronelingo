@@ -241,16 +241,47 @@
     }
   },
   "pricing": {
+    "kicker": "Pilna piekļuve",
     "title": "Atslēdz visu platformu",
     "subtitle": "Pirmā tēma bez maksas. Maksā vienreiz, lai atslēgtu visu.",
     "includedHeading": "Pilna piekļuve ietver",
     "payHeading": "Vienreizējs maksājums",
     "productName": "dronelingo — Pilna piekļuve",
     "emailLabel": "E-pasts (neobligāti — čekiem)",
-    "pay": "Iegūt pilnu piekļuvi — €19 →",
+    "pay": "Iegūt pilnu piekļuvi — €19",
     "processing": "Apstrādā...",
     "stubNote": "Stub checkout — reāla maksa netiek ieturēta.",
-    "freeNote": "Gaisa drošības tēma vienmēr ir bez maksas."
+    "freeNote": "Gaisa drošības tēma vienmēr ir bez maksas.",
+    "features": {
+      "lessons": "Visas 9 EASA A1/A3 tēmas ar pilnām nodarbībām",
+      "practice": "45+ treniņu jautājumi katrā tēmā",
+      "exams": "Neierobežoti mock eksāmeni un tēmu treniņi",
+      "languages": "Latviešu, angļu un krievu valodā",
+      "sources": "Skaidrojumi ar atsaucēm uz avotiem un noteikumiem",
+      "payment": "Vienreizējs maksājums — bez abonēšanas un termiņa"
+    },
+    "errors": {
+      "paymentFailed": "Maksājums neizdevās. Mēģini vēlreiz."
+    },
+    "invoice": {
+      "heading": "Pieprasīt rēķinu",
+      "nameLabel": "Vārds (neobligāti)",
+      "namePlaceholder": "Tavs vārds",
+      "emailLabel": "E-pasts (obligāti)",
+      "productName": "dronelingo — Pilna piekļuve",
+      "send": "Nosūtīt rēķinu",
+      "sending": "Sūtu...",
+      "note": "Tu saņemsi rēķina e-pastu ar bankas pārskaitījuma datiem.",
+      "success": {
+        "heading": "Rēķins nosūtīts",
+        "body": "Rēķins ir nosūtīts uz <mono>{email}</mono>. Lūdzu, apmaksā €19 ar bankas pārskaitījumu, izmantojot detaļas e-pastā.",
+        "note": "Piekļuvi aktivizēsim 1 darba dienas laikā pēc maksājuma saņemšanas."
+      },
+      "errors": {
+        "create": "Neizdevās izveidot rēķinu.",
+        "generic": "Notika kļūda. Mēģini vēlreiz."
+      }
+    }
   },
   "topicExam": {
     "kicker": "Tēmas treniņš",

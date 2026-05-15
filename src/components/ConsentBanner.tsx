@@ -28,9 +28,9 @@ export function ConsentBanner() {
     <div
       role="dialog"
       aria-label={t("title")}
-      className="fixed inset-x-4 bottom-4 z-40 mx-auto max-w-2xl rounded-sm border border-horizon bg-hull/95 p-4 shadow-lg backdrop-blur-xl sm:flex sm:items-start sm:gap-4"
+      className="fixed inset-x-3 bottom-3 z-40 mx-auto max-w-2xl rounded-sm border border-horizon bg-hull/95 p-3 shadow-lg backdrop-blur-xl sm:inset-x-4 sm:bottom-4 sm:flex sm:items-start sm:gap-4 sm:p-4"
     >
-      <div className="flex-1 text-sm text-telemetry">
+      <div className="flex-1 text-xs leading-relaxed text-telemetry sm:text-sm">
         <p className="font-medium text-hud-white">{t("title")}</p>
         <p className="mt-1">
           {t("body")}{" "}
@@ -47,7 +47,7 @@ export function ConsentBanner() {
         <button
           type="button"
           onClick={accept}
-          className="rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-4 py-2 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void"
+          className="w-full rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-4 py-2 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void sm:w-auto"
         >
           {t("accept")}
         </button>
