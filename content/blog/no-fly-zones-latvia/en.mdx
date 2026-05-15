@@ -1,84 +1,72 @@
-"Can I fly here?" is the question every Latvian drone pilot asks before take-off — and the right answer depends on where *here* is. Latvia has four overlapping categories of restricted airspace that can shut down your flight: **airport CTRs**, **military training areas**, **national parks**, and **temporary NOTAM restrictions**. Get any of them wrong and you risk fines starting around €70 — or, in airport CTRs, criminal charges.
+In Latvia, “Can I fly here?” is not a question you answer from memory. The official answer is map-based and can change during the day. That is why the first rule is simple: check the official source before every flight.
 
-## The four categories
+## The official source
 
-| Type | Boundary | What changes |
-|---|---|---|
-| **Airport CTR** | Circular zone around an airport (typical 9.3 km radius) | Drone flight requires ATC authorisation |
-| **Military training area** | Hex-shaped zones marked on AIP charts | Closed when active, see NOTAM |
-| **National parks** | Polygon-shaped protected territories | Restricted; permit required from park administration |
-| **NOTAM** | Temporary, anywhere | Closes airspace for events, presidential movements, search and rescue |
+The Latvian CAA page on UAS geographical zones states that the **only official and legally binding source** for airspace restrictions in Latvia is:
 
-## Airport CTRs — the hardest stop
+- `https://www.airspace.lv/drones/`
 
-Latvia has four civil airports with active Control Zones (CTRs):
+The same CAA page also warns that manufacturer geo-awareness functions may be incomplete or outdated. So an app on the controller is a convenience layer, not the legal answer.
 
-- **Riga (EVRA)** — 9.3 km radius, covers Mārupe, Babīte, parts of Pārdaugava
-- **Liepāja (EVLA)** — 6 km radius
-- **Daugavpils (EVDA)** — 5 km radius (military / civil shared)
-- **Ventspils (EVVA)** — 5 km radius
+## What kinds of zones exist
 
-Inside a CTR, drone flight is **prohibited** unless you obtain explicit authorisation from the airport's Air Traffic Control. For occasional hobby use this is impractical — even a request takes 1–2 weeks. The realistic plan is to fly outside the CTR.
+The CAA explains several UAS geographical-zone types:
 
-CTRs extend to ground level for drones (unlike general aviation, where a CTR may start at 1500 ft). There is no "fly under" exception.
+| Zone type | What it means |
+|---|---|
+| **Informational** | additional awareness, but no extra restriction by itself |
+| **Restrictive — authorisation** | the flight must be coordinated or authorised before take-off |
+| **Restrictive — notification** | the flight must be notified |
+| **Restrictive — conditions** | extra technical, operational, or pilot conditions apply |
+| **Prohibited** | flights are not allowed unless a specific exception exists |
 
-## Military training areas
+If several zones overlap, the conditions stack. In practice, that means the safest reading is the strictest one that applies at your location.
 
-The Latvian Armed Forces operate several training areas across the country. The largest is **Ādaži** (north-east of Riga, ~24 km × 14 km), with smaller ones at **Lāčusils**, **Mežainie tīreļi**, and the coastal **Skrunda** range. Each area is published as a hex-zone on the AIP chart with activation times (typically weekdays 08:00–17:00, sometimes longer for exercises).
+## Approval does not cancel the basic rules
 
-When active, military areas are **closed to all civil aviation**, drones included. Outside activation hours they revert to normal airspace, but you must verify activation status via the daily NOTAM before flying near them. The **Lielvārde Air Base** circles add a permanent restriction zone.
+The CAA also states something many pilots misunderstand: approval inside a geographical zone does **not** cancel the basic Open-category rules.
 
-## National parks and protected areas
+For example, zone approval does not automatically let you ignore:
 
-Latvia's national parks have their own drone rules, set by the park administration rather than CAA:
+- the **120 m** height limit
+- the **VLOS** requirement
+- the other limits that still apply to your category and aircraft
 
-- **Gauja National Park** — drone flight restricted, permit required
-- **Slītere National Park** — drone flight restricted
-- **Ķemeri National Park** — drone flight restricted near wetlands during bird breeding
-- **Rāzna National Park** — restricted in core zones
+Zone approval solves the zone-specific restriction. It does not erase the rest of the rule set.
 
-These restrictions are **not** about safety — they are about protecting wildlife. Penalties are administrative fines under environmental protection law. Permits are case-by-case and require justification (research, journalism, etc.); pure hobby photography is rarely approved.
+## BGKIS requirement from 2025
 
-## NOTAM — the floating restriction
+The published CAA guidance says that from `2025-01-01`, flights in UAS geographical zones must be registered in **BGKIS** before the flight or flight series, where that requirement applies.
 
-A **NOTAM** (Notice to Airmen) is a temporary airspace closure issued for events, security details, search-and-rescue operations, or any reason airspace needs to be cleared. NOTAMs override everything else: even an open A3 area can become a no-fly zone for a few hours.
+That means the practical workflow is not just “look at the map and go”. In many places, the map check and the formal flight submission are part of the same legal routine.
 
-NOTAMs in Latvia are published at:
+## Protected areas and local rules
 
-- **eans.lgs.lv** — Latvian AIS, daily NOTAM bulletin
-- Most drone apps (DJI Fly, Litchi, etc.) display active NOTAMs as a UI layer
+Airspace is not the only layer. In protected nature areas, extra environmental rules may apply alongside the aviation rules. Before filming in national parks, reserves, wetlands, or other protected zones, check whether the site manager or nature-protection authority requires an additional permit or imposes local restrictions.
 
-Always check before take-off. NOTAMs are the most common reason a flight that "should be legal" suddenly is not.
+The safe approach is simple: if the place is environmentally sensitive, do not assume that an aviation-only check is enough.
 
-## Riga specifically
+## A better way to check before take-off
 
-Riga is the hardest city to fly in. Combined restrictions:
+Before every flight:
 
-- **EVRA CTR**: 9.3 km from runway, covering Mārupe, Babīte, Pārdaugava, parts of Imanta
-- **Helicopter routes** at Stradiņš Hospital and the river
-- **Old Town no-fly**: separate municipal restriction over the UNESCO-protected historic center
-- **Presidential / parliamentary** ad-hoc NOTAMs near Saeima and the Riga Castle
+1. open `airspace.lv/drones`
+2. check what zone type applies at the exact location
+3. confirm whether BGKIS notification or authorisation is required
+4. then confirm that the flight still fits your Open-category limits
 
-In practice, almost no part of central Riga is drone-legal under the Open category. Hobbyists fly outside the CTR — Carnikava, Babīte (north of CTR), or further into the Pierīga region.
+The CAA specifically reminds pilots that airspace information can change **several times a day**. Yesterday’s answer is not today’s answer.
 
-## How to check before take-off
+## What not to do
 
-Three sources, in order of trust:
+Avoid three habits:
 
-1. **Latvian AIS daily NOTAM** at eans.lgs.lv — authoritative
-2. **droni.caa.gov.lv UTM map** — official drone-specific overlay
-3. **Drone manufacturer apps** — DJI Fly, Autel Explorer — convenient but not authoritative; treat as a sanity check
+- relying only on the drone manufacturer’s map
+- assuming that a zone approval lets you ignore height or VLOS rules
+- treating protected nature areas as a pure aviation question
 
-For commercial work, all three. For hobby, at minimum (1) on the morning of the flight.
-
-## Common mistakes
-
-1. **Trusting the drone app alone.** Manufacturer apps update zones with delays of weeks. Always cross-check with the AIS NOTAM.
-
-2. **Assuming national park boundary == sign at the entrance.** Park boundaries on the map extend further than the visible signage. Check the actual polygon.
-
-3. **Ignoring military NOTAMs because the area "looks empty."** Empty fields near Ādaži are training areas. The fact that there is no fence does not mean there is no airspace restriction.
+That is how legal flights turn into preventable violations.
 
 ---
 
-**Want to plan a flight?** Master the [Airspace Limitations topic in our exam prep](/learn/airspace-limitations) — it is the second-largest section of the official A1/A3 exam by question count.
+**Need the Open-category basics behind those limits?** See our [A1/A3 overview](/blog/a1-a3-drone-licence-latvia).

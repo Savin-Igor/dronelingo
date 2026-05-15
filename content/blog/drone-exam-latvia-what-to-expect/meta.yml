@@ -7,16 +7,16 @@ title:
   en: The A1/A3 drone exam in Latvia — what to expect
   ru: Экзамен A1/A3 на дрон в Латвии — чего ожидать
 excerpt:
-  lv: Eksāmena formāts, jautājumu sadalījums, kā taisīt navigāciju, izplatītākas slazdas un kā sagatavoties — viss vienā vietā.
-  en: Format, question distribution, navigation, common traps, and how to prepare — all in one place.
-  ru: Формат, распределение вопросов, навигация, типичные ловушки и как готовиться — всё в одном.
+  lv: Tikai pārbaudāmi fakti par Latvijas A1/A3 eksāmenu — formāts, publicētās tēmas, priekšnosacījumi un jēgpilna gatavošanās bez mītiem.
+  en: Verifiable facts about the Latvian A1/A3 exam — the format, the published syllabus, the prerequisites, and a realistic way to prepare.
+  ru: Только проверяемые факты о латвийском экзамене A1/A3 — формат, опубликованные темы, prerequisites и нормальный способ готовиться без мифов.
 publishedAt: 2026-05-14
-updatedAt: 2026-05-14
-lastVerifiedAt: 2026-05-14
+updatedAt: 2026-05-15
+lastVerifiedAt: 2026-05-15
 tags: [exam, latvia, preparation, a1-a3]
 heroImage: hero.png
 heroImageAlt:
   lv: Klēpjdators ar stilizētu eksāmena interfeisu uz ekrāna — galvene "Jautājums 12 no 40", taimers "32:14", četras atbilžu pogas; blakus notepad un drons.
   en: A laptop showing a stylized exam interface — "Question 12 of 40" header, "32:14" timer, four answer-option pill buttons; a notepad and a small drone nearby.
   ru: Ноутбук со стилизованным интерфейсом экзамена — заголовок «Вопрос 12 из 40», таймер «32:14», четыре кнопки вариантов; рядом блокнот и маленький дрон.
-sourceRef: docs/knowledge/latvia-caa/web-snapshots/; docs/knowledge/test-samples/
+sourceRef: docs/knowledge/latvia-caa/web-snapshots/02-a1-a3-online-exam.md; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf

@@ -7,16 +7,16 @@ title:
   en: Drone pre-flight checklist — 12 items that save flights
   ru: Предполётный чеклист дрона — 12 пунктов, спасающих полёт
 excerpt:
-  lv: Visu, ko jāpārbauda pirms ieslēgt motoru — laikapstākļi, atrašanās vieta, drons, dokumenti. Vienkāršs 12 punktu saraksts katram lidojumam.
-  en: Everything to verify before powering up — weather, location, drone, paperwork. A simple 12-item list for every flight.
-  ru: Что проверить до включения мотора — погода, локация, дрон, документы. Простой 12-пунктовый чеклист на каждый полёт.
+  lv: Praktisks pirmslidojuma saraksts bez tukšas dramatizācijas — laikapstākļi, zonas, gaisa kuģa stāvoklis, dokumenti un pārtraukšanas loģika.
+  en: A practical pre-flight checklist without pseudo-precision — weather, zones, aircraft condition, documents, and abort logic before take-off.
+  ru: Спокойный и полезный предполётный чеклист без ложной точности — погода, зоны, состояние аппарата, документы и логика прекращения полёта.
 publishedAt: 2026-05-14
-updatedAt: 2026-05-14
-lastVerifiedAt: 2026-05-14
+updatedAt: 2026-05-15
+lastVerifiedAt: 2026-05-15
 tags: [checklist, safety, operations, pre-flight]
 heroImage: hero.png
 heroImageAlt:
   lv: Plakanā kompozīcija no augšas uz tumša koka galda — drons ar kontrolieri, viedtālrunis ar laikapstākļu lietotni, rezerves akumulators, rezerves propelleri, drukāts saraksts ar atzīmju kvadrātiem.
   en: Flat-lay top-down view on dark wood — drone with controller, phone showing a weather app, spare battery, spare propellers, printed checklist with checkboxes.
   ru: Плоская композиция сверху на тёмной древесине — дрон с пультом, смартфон с погодным приложением, запасной аккумулятор, запасные пропеллеры, печатный чеклист с галочками.
-sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pre-flight responsibilities; FAA H-8083-25B — risk management
+sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf; docs/knowledge/latvia-caa/web-snapshots/07-open-category.md; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md

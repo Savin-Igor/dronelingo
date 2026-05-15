@@ -3,20 +3,20 @@ slug:
   en: no-fly-zones-latvia
   ru: zapretnye-zony-dlya-dronov-v-latvii
 title:
-  lv: Aizliegtas zonas droniem Latvijā — Rīga, lidostas un dabas parki
-  en: No-fly zones in Latvia — airports, military, and nature parks
-  ru: Запретные зоны для дронов в Латвии — Рига, аэропорты и парки
+  lv: Dronu ierobežojumi Latvijā — oficiālā karte, UAS zonas un aizsargājamās teritorijas
+  en: Drone restrictions in Latvia — the official map, UAS zones, and protected areas
+  ru: Ограничения для дронов в Латвии — официальная карта, зоны UAS и охраняемые территории
 excerpt:
-  lv: Kur Latvijā ir aizliegts lidot ar dronu, kur var, un kā pārbaudīt pirms pacelšanās. Rīgas CTR, Liepājas, militārās un dabas parku zonas.
-  en: Where drone flight is prohibited in Latvia, where it is allowed, and how to verify before take-off. Riga CTR, Liepāja, military zones, and nature parks.
-  ru: Где в Латвии запрещены полёты на дроне, где разрешены и как проверить перед взлётом. Зоны CTR Риги, Лиепаи, военные и природные парки.
+  lv: Bez minējumiem un bez “atmiņas kartes” — kā Latvijā pārbaudīt oficiālo avotu, saprast UAS ģeogrāfisko zonu tipus un nepalaist garām vietējos dabas aizsardzības ierobežojumus.
+  en: A factual guide to checking the official Latvian source, understanding UAS geographical-zone types, and not missing local restrictions in protected areas.
+  ru: "Спокойный и практичный разбор: как проверить официальный латвийский источник, понять типы географических зон UAS и не пропустить местные природоохранные ограничения."
 publishedAt: 2026-05-14
-updatedAt: 2026-05-14
-lastVerifiedAt: 2026-05-14
+updatedAt: 2026-05-15
+lastVerifiedAt: 2026-05-15
 tags: [no-fly-zones, latvia, airspace, riga]
 heroImage: hero.png
 heroImageAlt:
   lv: Stilizēta Latvijas karte ar krāsu kodētām aizliegtām zonām — sarkani CTR apļi virs lidostām, zaļas hatching dabas parkos, purpura militārās heksaģenes.
   en: Stylized map of Latvia with colour-coded restricted zones — red CTR circles over airports, green hatched patches over nature parks, purple military hexagons.
   ru: Стилизованная карта Латвии с цветовой маркировкой зон — красные круги CTR над аэропортами, зелёная штриховка природных парков, фиолетовые военные шестиугольники.
-sourceRef: docs/knowledge/latvia-caa/web-snapshots/; docs/knowledge/eu-regulations/Reg-2019-947.pdf — UAS geographical zones
+sourceRef: docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md; docs/knowledge/latvia-caa/2024_11_27-CAA-Par_UAS_geografiskajam_zonam.pdf; docs/knowledge/latvia-caa/UAS-CBO-LVA-Local_conditions-V1_2-2024_04_30.pdf

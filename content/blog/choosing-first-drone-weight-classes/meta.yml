@@ -7,16 +7,16 @@ title:
   en: Choosing your first drone — the weight classes that actually matter
   ru: Как выбрать первый дрон — весовые классы, которые реально значат
 excerpt:
-  lv: Svars ir vissvarīgākais kritērijs, kas nosaka, kur vari lidot, vai vajadzīga apliecība un kas paliek atļauts. Pārbaudīsim četras klases drona pirms iegādes.
-  en: Weight decides where you can fly, which licence you need, and what remains legal. A pre-purchase walk-through of the four C-classes that matter for the first-time buyer.
-  ru: Вес решает, где можно летать, какая лицензия нужна и что остаётся легальным. Разбор четырёх C-классов перед покупкой первого дрона.
+  lv: Praktisks skats uz pirmā drona izvēli no noteikumu puses — nevis pēc reklāmas, bet pēc masas, klases, kvalifikācijas un reālās lietošanas vides.
+  en: A regulatory-first guide to choosing a first drone — by class, mass, qualification burden, and real use case rather than marketing promises.
+  ru: Практический разбор выбора первого дрона с точки зрения правил — по классу, массе, квалификации и реальному сценарию, а не по рекламе.
 publishedAt: 2026-05-14
-updatedAt: 2026-05-14
-lastVerifiedAt: 2026-05-14
+updatedAt: 2026-05-15
+lastVerifiedAt: 2026-05-15
 tags: [shopping, c-classes, beginners, drones]
 heroImage: hero.png
 heroImageAlt:
   lv: Četri droni pieaugošā izmēra rindā uz tīras koka virsmas, katram blakus mazs UI uzraksts ar svara klasi C0, C1, C2, C3.
   en: A row of four hobby drones in increasing size on a clean wooden surface, each labelled with a small UI weight-class tag C0, C1, C2, C3.
   ru: Четыре дрона по нарастанию размера в ряд на чистом деревянном столе; рядом с каждым небольшая UI-метка веса C0, C1, C2, C3.
-sourceRef: docs/knowledge/eu-regulations/Reg-2019-945.pdf — C-class technical requirements
+sourceRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf; docs/knowledge/latvia-caa/web-snapshots/07-open-category.md; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md
