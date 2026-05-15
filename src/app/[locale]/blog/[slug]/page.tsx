@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import { mdxOptions } from "@/lib/mdx-options";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 
@@ -135,7 +136,7 @@ export default async function BlogPostPage({
       <BlogPostHeader post={post.meta} locale={locale} />
 
       <article className="prose prose-dronelingo max-w-none">
-        <MDXRemote source={post.bodyMdx} />
+        <MDXRemote source={post.bodyMdx} options={mdxOptions} />
       </article>
 
       <BlogPostFooter
