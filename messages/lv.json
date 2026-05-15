@@ -17,6 +17,11 @@
       "body": "Izmēģini bezmaksas Gaisa drošības tēmu vai sāc tieši ar 40 jautājumu mock eksāmenu, lai redzētu, kur tu esi.",
       "primary": "Sākt ar Gaisa drošību",
       "secondary": "Kārtot mock eksāmenu"
+    },
+    "latest": {
+      "kicker": "No bloga",
+      "heading": "Jaunākie ceļveži par legālu lidošanu",
+      "seeAll": "Skatīt visus rakstus"
     }
   },
   "landing": {

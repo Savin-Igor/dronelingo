@@ -34,13 +34,13 @@ export function BlogPostFooter({ post, copy }: Props) {
         <div className="mt-4 flex flex-wrap gap-3">
           <Link
             href="/learn/air-safety"
-            className="inline-flex items-center justify-center rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-4 py-2 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void"
+            className="plausible-event-name=Blog+CTA+Learn inline-flex items-center justify-center rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-4 py-2 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void"
           >
             {copy.ctaPrimary} →
           </Link>
           <Link
             href="/exam"
-            className="inline-flex items-center justify-center rounded-sm border border-horizon px-4 py-2 text-sm font-medium text-telemetry transition-colors hover:border-cyan-pulse/40 hover:text-hud-white"
+            className="plausible-event-name=Blog+CTA+Exam inline-flex items-center justify-center rounded-sm border border-horizon px-4 py-2 text-sm font-medium text-telemetry transition-colors hover:border-cyan-pulse/40 hover:text-hud-white"
           >
             {copy.ctaSecondary}
           </Link>
