@@ -1,11 +1,22 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { writeAccess } from "@/lib/access";
 
-export default function ActivatePage() {
+function LoadingState() {
+  return (
+    <div className="flex items-center justify-center min-h-screen">
+      <div className="text-center">
+        <div className="animate-spin h-8 w-8 border-2 border-cyan-pulse border-t-transparent rounded-full mx-auto mb-4" />
+        <p className="text-telemetry">Activating your access...</p>
+      </div>
+    </div>
+  );
+}
+
+function ActivateContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const token = searchParams.get("token");
@@ -60,14 +71,7 @@ export default function ActivatePage() {
   }, [token, router]);
 
   if (state === "loading") {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="text-center">
-          <div className="animate-spin h-8 w-8 border-2 border-cyan-pulse border-t-transparent rounded-full mx-auto mb-4" />
-          <p className="text-telemetry">Activating your access...</p>
-        </div>
-      </div>
-    );
+    return <LoadingState />;
   }
 
   if (state === "success") {
@@ -121,5 +125,13 @@ export default function ActivatePage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ActivatePage() {
+  return (
+    <Suspense fallback={<LoadingState />}>
+      <ActivateContent />
+    </Suspense>
   );
 }
