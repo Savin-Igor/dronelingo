@@ -75,12 +75,18 @@ jobs:
           NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
+          ADMIN_SECRET: ${{ secrets.ADMIN_SECRET }}
+          INVOICE_IBAN: ${{ secrets.INVOICE_IBAN }}
+          INVOICE_BIC: ${{ secrets.INVOICE_BIC }}
+          INVOICE_BANK_NAME: ${{ secrets.INVOICE_BANK_NAME }}
+          INVOICE_BENEFICIARY: ${{ secrets.INVOICE_BENEFICIARY }}
+          NEXT_PUBLIC_STRIPE_ENABLED: ${{ vars.NEXT_PUBLIC_STRIPE_ENABLED }}
           GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           host: ${{ secrets.HETZNER_HOST }}
           username: ${{ secrets.HETZNER_USER }}
           key: ${{ secrets.HETZNER_SSH_KEY }}
-          envs: IMAGE_TAG,GITHUB_REPOSITORY,POSTGRES_PASSWORD,NEXTAUTH_SECRET,RESEND_API_KEY,ADMIN_EMAIL,GHCR_TOKEN
+          envs: IMAGE_TAG,GITHUB_REPOSITORY,POSTGRES_PASSWORD,NEXTAUTH_SECRET,RESEND_API_KEY,ADMIN_EMAIL,ADMIN_SECRET,INVOICE_IBAN,INVOICE_BIC,INVOICE_BANK_NAME,INVOICE_BENEFICIARY,NEXT_PUBLIC_STRIPE_ENABLED,GHCR_TOKEN
           command_timeout: 20m
           script: |
             set -euo pipefail

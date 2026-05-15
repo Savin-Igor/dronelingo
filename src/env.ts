@@ -12,7 +12,10 @@ export const env = createEnv({
     EMAIL_SERVER_PASSWORD: z.string().optional(),
     EMAIL_FROM: z.string().optional(),
     ADMIN_EMAIL: z.string().email().optional(),
-    ADMIN_SECRET: z.string().min(16),
+    // Optional at boot — when unset, the admin invoice-confirm endpoint
+    // refuses every request because `secret !== undefined` for any input.
+    // Set this to enable invoice confirmations.
+    ADMIN_SECRET: z.string().min(16).optional(),
     INVOICE_IBAN: z.string().optional(),
     INVOICE_BIC: z.string().optional(),
     INVOICE_BANK_NAME: z.string().optional(),
