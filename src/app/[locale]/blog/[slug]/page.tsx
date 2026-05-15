@@ -13,7 +13,7 @@ import {
 } from "@/lib/blog";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
 
-export const dynamic = "force-static";
+export const dynamic = "force-dynamic";
 
 /**
  * Pre-render every (locale, localised-slug) pair at build time.

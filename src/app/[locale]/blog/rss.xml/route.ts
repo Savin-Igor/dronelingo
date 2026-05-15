@@ -2,7 +2,7 @@ import { listAllPosts } from "@/lib/blog";
 import { routing } from "@/i18n/routing";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
 
-export const dynamic = "force-static";
+export const dynamic = "force-dynamic";
 
 /**
  * Per-locale RSS 2.0 feed at /<locale>/blog/rss.xml.

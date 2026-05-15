@@ -1,92 +1,82 @@
-Before you fly any drone heavier than 250 g — or any drone with a camera, no matter how light — you must register as a **UAS operator** with Latvia's Civil Aviation Agency (CAA). The good news: it is online, free, and done in about ten minutes. The catch: most people register *the drone* when they should be registering *themselves*.
+If you fly in Latvia, in most cases you register **the operator** — the person or company responsible for the flight — not the drone itself. That distinction matters, because the number you receive is used across all drones operated in your name.
 
-## What you actually register
+## Operator and remote pilot are different roles
 
-Under EU Regulation 2019/947, registration is done by the **operator** — the person legally responsible for the drone — not by the drone itself. One operator number covers every drone you own. If you buy a second drone next year, you reuse the same number.
+The CAA separates two roles:
 
-A separate registration as a **remote pilot** exists implicitly through your A1/A3 certificate ([details here](/blog/a1-a3-drone-licence-latvia)). For most hobby pilots, operator and pilot are the same person.
+- **UAS operator** — the person or company in whose name the flight is carried out
+- **Remote pilot** — the person who actually flies or supervises the flight
 
-## When registration is required
+If you are a private individual flying in your own name, you are usually **both at once**. The Latvian CAA registration page says that in this case you should register as **UAS operator and remote pilot** in the portal.
 
-You must register if:
+## When operator registration is mandatory
 
-- Your drone has a **sensor capable of capturing personal data** (any camera) — this includes sub-250 g drones like the DJI Mini series
-- Your drone weighs **250 g or more**, regardless of camera
-- You are operating under the Specific category (not relevant for hobby use)
+The Latvian CAA lists operator registration as mandatory if the drone:
 
-Sub-250 g drones without a camera flown over private property without other people present are technically exempt. In practice, almost no consumer drone meets that bar.
+- has a maximum take-off mass of **250 g or more**
+- can transfer **more than 80 J** of kinetic energy in a collision
+- carries a sensor capable of collecting personal data, for example a **photo or video camera**
+- is used in the **Specific** category
+
+The main exception is a toy drone that falls under the toy-safety directive. A sub-250 g drone **without** a camera is another common exemption.
+
+## What the registration costs
+
+The current public CAA page states:
+
+- **UAS operator registration:** `5 EUR`
+- **Validity:** `1 year`
+- **Remote pilot portal registration:** free
+
+Operator registration is done once per operator, not once per aircraft. One operator number can cover several drones.
 
 ## What you need before you start
 
-- **Latvian electronic identification**: eID card, eParaksts mobile, or Smart-ID
-- A working email address
-- For commercial use only: civil-liability insurance details (see our [insurance article](/blog/drone-insurance-eu-required-or-recommended))
+Prepare:
 
-You do **not** need the drone in front of you. The drone's serial number is not required at this step — it is for the operator, not the device.
+- Latvian electronic identification: `eID`, `eParaksts mobile`, or `Smart-ID`
+- a working email address
+- insurance details, if your operation requires them
 
-## Step 1 — log in to e.caa.gov.lv
+The portal is `https://e.caa.gov.lv/`.
 
-Open [https://e.caa.gov.lv](https://e.caa.gov.lv) and click "Authenticate". You will be redirected to **Latvija.lv**, the national identity broker. Choose your preferred method (eID, eParaksts mobile, or Smart-ID), authenticate, and you will return to the portal as a verified user.
+## What happens after registration
 
-If you do not have eID or Smart-ID set up, this step will block you. There is no paper alternative.
+After successful operator registration, you receive a **UAS operator number** in the format `LVA...`. That is the number you must use to:
 
-## Step 2 — open the UAS section and start operator registration
+- mark each drone operated in your name
+- enter the operator number into the drone's remote-identification system, if the drone has one
 
-In the portal navigation, look for **Unmanned Aircraft / UAS / Droni**. The English UI labels these slightly differently than the Latvian — both routes lead to the same forms.
+The CAA also notes that the marking must be readable **without tools**. If the drone is too small to mark externally, the number may be placed in the battery compartment, as long as it can still be read without using tools.
 
-Inside the UAS section, click **"New operator registration"**. The form asks for:
+Do not confuse the numbers:
 
-- Your full legal name (pre-filled from your eID)
-- Mailing address
-- Phone number
-- Email
-- Confirmation of age (≥ 16, or younger with a registered legal guardian)
-- Insurance details (commercial only)
+- `LVA...` = **operator number** used for drone marking
+- `LVA-RP-...` = **remote pilot number** used in the portal and for qualifications
 
-Submit the form. Processing is essentially instant; you receive the operator number on the next screen and in a confirmation email.
+## Do camera drones under 250 g always need A1/A3?
 
-## Step 3 — your operator number
+No. This is where many summaries become misleading.
 
-The number is in the format **`LVA` + 12 hex/alphanumeric characters**, for example `LVA3a4b5c6d7e8f`. Save it. You will:
+For a sub-250 g drone with a camera, the CAA registration page says **operator registration is required**. But the separate CAA page for the A1/A3 course says the online training and exam are required when the drone has a **C1, C2, C3 or C4 class mark**, or when its mass is **at least 250 g**.
 
-- Mark every drone you own with this number
-- Enter it into the **Remote ID** field on any drone that supports Remote ID (most C-class drones do)
-- Reference it on any A1/A3 or A2 exam attempt and on insurance documents
+So the safe conclusion is:
 
-The number is **personal and reusable**. Do not let other operators use it; legally they would be operating as you.
+- **registration** and **A1/A3 qualification** are not the same thing
+- a camera drone under 250 g still triggers **operator registration**
+- A1/A3 is mandatory according to the aircraft class and operation, not simply because a camera is present
 
-## Step 4 — mark the drone
+## Practical order
 
-Latvian CAA does not specify exact dimensions, but the marking must be:
+For most private pilots in Latvia, the clean sequence is:
 
-- Visible **without removing any cover or panel**
-- **Indelible** — not a pencil or marker that washes off; a printed sticker or laser engraving is fine
-- On a **fireproof part** of the drone if practical, so the marking survives a crash
-
-A 20 × 40 mm laminated sticker on the underside of the main body, near the battery compartment but not on the battery itself, is the typical convention.
-
-## Step 5 — register Remote ID (if applicable)
-
-If your drone has a **C1, C2, C3, or C5 class label**, it includes a Remote ID transmitter. You must enter your operator number into the drone's onboard settings using the manufacturer's app. The Remote ID broadcasts the operator number live during flight, allowing law-enforcement and other airspace users to identify the operator.
-
-Sub-250 g drones (C0) without Remote ID are exempt. Older legacy drones without Remote ID and without a C-class are restricted to A3-only flight from 2024 onwards.
-
-## What it costs
-
-| Item | Cost |
-|---|---|
-| Operator registration | Free |
-| Operator number | Free |
-| Marking sticker / engraving | ~€5 |
-| Remote ID broadcaster (if drone has none) | drone-specific |
-| **Total** | **~€5** |
-
-## After registration
-
-Your registration is valid **for one year** and renews automatically when you log into the portal annually. You do not need a new operator number — only confirmation that your contact details are current.
-
-The next legal step is the **A1/A3 theory exam**. We cover that in detail in [our A1/A3 licence guide](/blog/a1-a3-drone-licence-latvia).
+1. Create or log into your account at `e.caa.gov.lv`
+2. Register as **UAS operator**
+3. Register as **remote pilot** in the portal
+4. Mark the drone with the **operator number**
+5. Add the operator number to remote ID, if applicable
+6. Then complete the qualification you actually need, usually [A1/A3](/blog/a1-a3-drone-licence-latvia)
 
 ---
 
-**Studying for the exam?** [Start with the free Air Safety topic →](/learn/air-safety) or [take a mock exam](/exam) to gauge your readiness.
+**Next step:** if your drone or operation requires pilot qualification, continue with our [A1/A3 guide](/blog/a1-a3-drone-licence-latvia).

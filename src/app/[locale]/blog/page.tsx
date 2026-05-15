@@ -5,7 +5,7 @@ import { BlogIndexCard } from "@/components/blog/BlogIndexCard";
 import { listAllPosts } from "@/lib/blog";
 import { buildMetadata } from "@/lib/seo";
 
-export const dynamic = "force-static";
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,

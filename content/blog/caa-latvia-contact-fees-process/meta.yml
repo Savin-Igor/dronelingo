@@ -7,16 +7,16 @@ title:
   en: CAA Latvia for drones — contacts, fees, and processes
   ru: CAA Латвии для дронов — контакты, пошлины и процессы
 excerpt:
-  lv: Praktiska atsauce — kā sazināties ar Civilās aviācijas aģentūru, kādas ir aktuālās maksas un cik ilgs ir katrs administratīvais process.
-  en: Practical reference — how to contact the Civil Aviation Agency, current fees, and how long each administrative process takes.
-  ru: Практический справочник — как связаться с Civil Aviation Agency, актуальные пошлины и сроки административных процессов.
+  lv: Praktiska atsauce uz oficiālajiem CAA kontaktiem, skaidri publicētajām maksām un pareizajiem kanāliem reģistrācijai, eksāmeniem un atgadījumu ziņošanai.
+  en: A practical map to the official CAA contacts, clearly published fees, and the right channels for registration, exams, and incident reporting.
+  ru: Практическая карта по официальным контактам CAA, опубликованным суммам и правильным каналам для регистрации, экзаменов и сообщений об инцидентах.
 publishedAt: 2026-05-14
-updatedAt: 2026-05-14
-lastVerifiedAt: 2026-05-14
+updatedAt: 2026-05-15
+lastVerifiedAt: 2026-05-15
 tags: [caa, latvia, fees, contacts, reference]
 heroImage: hero.png
 heroImageAlt:
   lv: Plakana kompozīcija uz galda — Latvijas karoga piespraude, oficiāls aploksne ar "CAA" iespiedumu, drukāta veidlapa, pildspalva, viedtālrunis ar portāla ekrānu, mazs drons stūrī.
   en: Flat-lay desk scene with a Latvian flag pin, an official envelope with subtle "CAA" embossing, a printed form with stamped boxes, a fountain pen, a smartphone showing a portal screen, a small drone in one corner.
   ru: Плоская композиция на столе — значок флага Латвии, официальный конверт с тиснением «CAA», печатный бланк с штампованными графами, перьевая ручка, смартфон с экраном портала, маленький дрон в углу.
-sourceRef: docs/knowledge/latvia-caa/web-snapshots/; caa.gov.lv contact directory
+sourceRef: docs/knowledge/latvia-caa/web-snapshots/13-contacts.md; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md; docs/knowledge/latvia-caa/web-snapshots/03-a2-theoretical-exam.md; docs/knowledge/latvia-caa/web-snapshots/17-incident-reporting.md
