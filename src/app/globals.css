@@ -40,12 +40,14 @@
 html {
   /* Prevent white flash before Tailwind applies bg-void */
   background-color: #070A0F;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #070A0F;
   color: #E8EFF8;
   font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
 }
 
 /* ── Tactical grid background (decorative, aria-hidden containers) ─────────── */

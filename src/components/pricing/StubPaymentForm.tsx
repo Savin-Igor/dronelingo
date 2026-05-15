@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
 import { writeAccess } from "@/lib/access";
 import { stubProvider } from "@/lib/payment/stub";
 
 export function StubPaymentForm() {
+  const t = useTranslations("pricing");
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [processing, setProcessing] = useState(false);
@@ -23,7 +25,7 @@ export function StubPaymentForm() {
     });
     if (!result.ok) {
       setProcessing(false);
-      setError("Payment failed. Please try again.");
+      setError(t("errors.paymentFailed"));
       return;
     }
     writeAccess(result.reference, Date.now());
@@ -33,11 +35,11 @@ export function StubPaymentForm() {
   return (
     <div className="rounded-sm border border-horizon bg-cockpit p-6">
       <h2 className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
-        One-time payment
+        {t("payHeading")}
       </h2>
 
       <div className="mt-4 flex items-center justify-between rounded-sm border border-horizon bg-hull px-4 py-3">
-        <span className="text-sm text-telemetry">dronelingo — Full Access</span>
+        <span className="text-sm text-telemetry">{t("productName")}</span>
         <span className="font-mono text-xl font-semibold text-hud-white">
           €19
         </span>
@@ -48,7 +50,7 @@ export function StubPaymentForm() {
           htmlFor="pricing-email"
           className="font-mono text-xs uppercase tracking-widest text-telemetry"
         >
-          Email (optional — for receipt)
+          {t("emailLabel")}
         </label>
         <input
           id="pricing-email"
@@ -72,11 +74,11 @@ export function StubPaymentForm() {
         disabled={processing}
         className="mt-5 w-full rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-5 py-3 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void disabled:cursor-not-allowed disabled:opacity-40"
       >
-        {processing ? "Processing..." : "Get full access — €19 →"}
+        {processing ? t("processing") : `${t("pay")} →`}
       </button>
 
       <p className="mt-4 text-center font-mono text-xs text-muted">
-        Stub checkout — no real charge. Access stored in your browser.
+        {t("stubNote")}
       </p>
     </div>
   );

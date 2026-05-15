@@ -86,49 +86,49 @@ export function MobileDrawer() {
         {open ? <IconClose /> : <IconMenu />}
       </button>
 
-      {open && (
-        <div
-          className="fixed inset-0 z-40 bg-black/60"
-          aria-hidden="true"
-          onClick={close}
-        />
-      )}
-
-      <div
-        id="mobile-nav"
-        role="dialog"
-        aria-modal="true"
-        aria-label="Navigation"
-        className={`fixed right-0 top-0 z-50 flex h-full w-72 flex-col border-l border-horizon bg-hull transition-transform duration-200 sm:hidden ${
-          open ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="flex items-center justify-between border-b border-horizon px-6 py-4">
-          <span className="font-display text-sm font-semibold tracking-widest text-hud-white">
-            MENU
-          </span>
-          <button
-            type="button"
+      {open ? (
+        <>
+          <div
+            className="fixed inset-0 z-40 bg-black/60"
+            aria-hidden="true"
             onClick={close}
-            aria-label="Close navigation"
-            className="rounded-sm p-1.5 text-telemetry transition-colors hover:text-hud-white"
+          />
+
+          <div
+            id="mobile-nav"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Navigation"
+            className="fixed right-0 top-0 z-50 flex h-full w-72 max-w-[85vw] flex-col border-l border-horizon bg-hull shadow-2xl sm:hidden"
           >
-            <IconClose />
-          </button>
-        </div>
+            <div className="flex items-center justify-between border-b border-horizon px-6 py-4">
+              <span className="font-display text-sm font-semibold tracking-widest text-hud-white">
+                MENU
+              </span>
+              <button
+                type="button"
+                onClick={close}
+                aria-label="Close navigation"
+                className="rounded-sm p-1.5 text-telemetry transition-colors hover:text-hud-white"
+              >
+                <IconClose />
+              </button>
+            </div>
 
-        <nav
-          ref={firstLinkRef}
-          className="flex flex-col gap-1 px-4 py-6"
-          aria-label="Primary"
-        >
-          <NavLinks onNavigate={close} />
-        </nav>
+            <nav
+              ref={firstLinkRef}
+              className="flex flex-col gap-1 px-4 py-6"
+              aria-label="Primary"
+            >
+              <NavLinks onNavigate={close} />
+            </nav>
 
-        <div className="mt-auto border-t border-horizon px-6 py-4">
-          <LocaleSwitcher />
-        </div>
-      </div>
+            <div className="mt-auto border-t border-horizon px-6 py-4">
+              <LocaleSwitcher />
+            </div>
+          </div>
+        </>
+      ) : null}
     </>
   );
 }

@@ -22,6 +22,7 @@ export default async function TopicPage({
   const { locale, topic: topicSlug } = await params;
   const t = await getTranslations({ locale, namespace: "learn" });
   const tPractice = await getTranslations({ locale, namespace: "practice" });
+  const tExam = await getTranslations({ locale, namespace: "exam" });
 
   const topic = await prisma.topic.findUnique({
     where: { slug: topicSlug },
@@ -39,6 +40,7 @@ export default async function TopicPage({
     slug: lesson.slug,
     title: localize(lesson.title, locale),
   }));
+  const firstLesson = topic.lessons[0];
 
   const content = (
     <>
@@ -65,7 +67,7 @@ export default async function TopicPage({
       </Link>
 
       <p className="mt-4 font-mono text-xs uppercase tracking-widest text-cyan-pulse">
-        Sector
+        {t("topicKicker")}
       </p>
       <h1 className="mt-1 font-display text-3xl font-semibold text-hud-white">
         {localize(topic.title, locale)}
@@ -73,6 +75,62 @@ export default async function TopicPage({
       <p className="mt-2 text-sm leading-relaxed text-telemetry">
         {localize(topic.summary, locale)}
       </p>
+
+      <section className="mt-6 grid gap-3 sm:grid-cols-3">
+        <div className="rounded-sm border border-horizon bg-cockpit p-4">
+          <p className="font-mono text-[0.65rem] uppercase tracking-widest text-muted">
+            {t("topicStats.lessons")}
+          </p>
+          <p className="mt-2 font-display text-2xl font-semibold text-hud-white">
+            {topic.lessons.length}
+          </p>
+        </div>
+        <div className="rounded-sm border border-horizon bg-cockpit p-4">
+          <p className="font-mono text-[0.65rem] uppercase tracking-widest text-muted">
+            {t("topicStats.questions")}
+          </p>
+          <p className="mt-2 font-display text-2xl font-semibold text-hud-white">
+            {topic._count.questions}
+          </p>
+        </div>
+        <div className="rounded-sm border border-horizon bg-cockpit p-4">
+          <p className="font-mono text-[0.65rem] uppercase tracking-widest text-muted">
+            {t("topicStats.access")}
+          </p>
+          <p className="mt-2 text-sm font-medium text-hud-white">
+            {free ? t("topicStats.free") : t("topicStats.fullAccess")}
+          </p>
+        </div>
+      </section>
+
+      {firstLesson ? (
+        <section className="mt-6 flex flex-col gap-4 rounded-sm border border-horizon bg-cockpit p-5 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-cyan-pulse">
+              ◇ {t("topicActions.kicker")}
+            </p>
+            <p className="mt-1 text-sm text-telemetry">{t("topicActions.body")}</p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href={`/learn/${topic.slug}/${firstLesson.slug}`}
+              className="inline-flex items-center justify-center rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-5 py-2.5 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void"
+            >
+              {t("topicActions.startLesson")} →
+            </Link>
+            {topic._count.questions > 0 ? (
+              <Link
+                href={`/exam/${topic.slug}`}
+                className="inline-flex items-center justify-center rounded-sm border border-horizon bg-hull/50 px-5 py-2.5 text-sm font-medium text-telemetry transition-colors hover:border-signal hover:text-hud-white"
+              >
+                {tExam("coverage.drillCta", {
+                  topic: localize(topic.title, locale),
+                })}
+              </Link>
+            ) : null}
+          </div>
+        </section>
+      ) : null}
 
       <TopicLessonList topicSlug={topic.slug} lessons={lessons} />
 

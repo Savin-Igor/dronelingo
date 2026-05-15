@@ -15,8 +15,16 @@ export type MiniQuizQuestion = {
 // In-lesson mini quiz. Instant feedback, no scoring, no persistence.
 // Designed to follow a concept immediately — not as exam practice.
 // (Practice and exam pages own those flows.)
-export function MiniQuiz({ questions }: { questions: MiniQuizQuestion[] }) {
+export function MiniQuiz({
+  questions,
+}: {
+  questions?: MiniQuizQuestion[];
+}) {
   const t = useTranslations("lessonWidgets.miniQuiz");
+  const safeQuestions = Array.isArray(questions) ? questions : [];
+
+  if (safeQuestions.length === 0) return null;
+
   return (
     <section
       aria-label={t("heading")}
@@ -26,7 +34,7 @@ export function MiniQuiz({ questions }: { questions: MiniQuizQuestion[] }) {
         {t("heading")}
       </p>
       <ol className="mt-4 space-y-6">
-        {questions.map((q, i) => (
+        {safeQuestions.map((q, i) => (
           <li key={q.id}>
             <MiniQuizItem question={q} index={i + 1} />
           </li>
@@ -45,6 +53,7 @@ function MiniQuizItem({
 }) {
   const t = useTranslations("lessonWidgets.miniQuiz");
   const [selected, setSelected] = useState<string | null>(null);
+  const options = Array.isArray(question.options) ? question.options : [];
   const revealed = selected !== null;
   const isCorrect = selected === question.correctOptionId;
   const groupId = `miniquiz-${question.id}-stem`;
@@ -58,7 +67,7 @@ function MiniQuizItem({
         {question.stem}
       </p>
       <ul role="radiogroup" aria-labelledby={groupId} className="mt-3 space-y-2">
-        {question.options.map((opt) => {
+        {options.map((opt) => {
           const isSelected = selected === opt.id;
           const isAnswer = opt.id === question.correctOptionId;
           let style =

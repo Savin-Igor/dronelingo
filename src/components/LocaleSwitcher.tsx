@@ -1,5 +1,7 @@
+"use client";
+
 import { useLocale } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
 const LABELS: Record<(typeof routing.locales)[number], string> = {
@@ -10,6 +12,8 @@ const LABELS: Record<(typeof routing.locales)[number], string> = {
 
 export function LocaleSwitcher() {
   const current = useLocale();
+  const pathname = usePathname();
+  const href = pathname || "/";
 
   return (
     <nav aria-label="Language" className="flex items-center gap-0.5 font-mono text-xs">
@@ -18,7 +22,7 @@ export function LocaleSwitcher() {
         return (
           <Link
             key={locale}
-            href="/"
+            href={href}
             locale={locale}
             aria-current={isActive ? "true" : undefined}
             className={

@@ -94,9 +94,9 @@ export default async function ExamStart({
 
         <dl className="mt-6 grid grid-cols-3 gap-2">
           {[
-            { label: "QUESTIONS", value: EXAM_TOTAL_QUESTIONS },
-            { label: "MINUTES", value: EXAM_DURATION_MIN },
-            { label: "THRESHOLD", value: `${EXAM_PASS_THRESHOLD}%` },
+            { label: t("stats.questions"), value: EXAM_TOTAL_QUESTIONS },
+            { label: t("stats.minutes"), value: EXAM_DURATION_MIN },
+            { label: t("stats.threshold"), value: `${EXAM_PASS_THRESHOLD}%` },
           ].map(({ label, value }) => (
             <div
               key={label}
@@ -139,7 +139,7 @@ export default async function ExamStart({
               <li key={row.slug}>
                 <Link
                   href={`/exam/${row.slug}`}
-                  className="grid grid-cols-[1fr_3rem_3rem_1.25rem] items-center gap-3 py-2.5 transition-colors hover:bg-hull/50"
+                  className="group grid grid-cols-[1fr_3rem_3rem_1.25rem] items-center gap-3 py-2.5 transition-colors hover:bg-hull/50"
                   aria-label={t("coverage.drillCta", {
                     topic: row.title,
                   })}

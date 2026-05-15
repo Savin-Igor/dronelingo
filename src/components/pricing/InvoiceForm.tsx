@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 type State = "idle" | "submitting" | "success" | "error";
 
 export function InvoiceForm() {
+  const t = useTranslations("pricing.invoice");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [state, setState] = useState<State>("idle");
@@ -26,7 +28,7 @@ export function InvoiceForm() {
 
       if (!response.ok || !data.ok) {
         setState("error");
-        setErrorMessage(data.error || "Failed to create invoice.");
+        setErrorMessage(data.error || t("errors.create"));
         return;
       }
 
@@ -34,7 +36,7 @@ export function InvoiceForm() {
     } catch (err) {
       console.error("Invoice creation error:", err);
       setState("error");
-      setErrorMessage("An error occurred. Please try again.");
+      setErrorMessage(t("errors.generic"));
     }
   }
 
@@ -45,16 +47,16 @@ export function InvoiceForm() {
           <div className="text-2xl text-green-clear">✓</div>
           <div>
             <h3 className="font-mono text-sm font-semibold uppercase tracking-widest text-hud-white mb-2">
-              Invoice Sent
+              {t("success.heading")}
             </h3>
             <p className="text-sm text-telemetry mb-3">
-              We&apos;ve sent an invoice to <span className="font-mono">{email}</span>
-              . Please pay €19 via bank transfer using the details in your
-              email.
+              {t.rich("success.body", {
+                email,
+                mono: (chunks) => <span className="font-mono">{chunks}</span>,
+              })}
             </p>
             <p className="text-xs text-muted">
-              We&apos;ll activate your access within 1 business day of receiving your
-              payment.
+              {t("success.note")}
             </p>
           </div>
         </div>
@@ -66,7 +68,7 @@ export function InvoiceForm() {
     <form onSubmit={handleSubmit}>
       <div className="rounded-sm border border-horizon bg-cockpit p-6">
         <h2 className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">
-          Request Invoice
+          {t("heading")}
         </h2>
 
         <div className="mt-4">
@@ -74,14 +76,14 @@ export function InvoiceForm() {
             htmlFor="invoice-name"
             className="font-mono text-xs uppercase tracking-widest text-telemetry"
           >
-            Name (optional)
+            {t("nameLabel")}
           </label>
           <input
             id="invoice-name"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Your name"
+            placeholder={t("namePlaceholder")}
             className="mt-2 block w-full rounded-sm border border-horizon bg-hull px-3 py-2.5 text-sm text-hud-white placeholder:text-muted focus:border-cyan-pulse/50 focus:outline-none"
           />
         </div>
@@ -91,7 +93,7 @@ export function InvoiceForm() {
             htmlFor="invoice-email"
             className="font-mono text-xs uppercase tracking-widest text-telemetry"
           >
-            Email (required)
+            {t("emailLabel")}
           </label>
           <input
             id="invoice-email"
@@ -105,7 +107,7 @@ export function InvoiceForm() {
         </div>
 
         <div className="mt-4 flex items-center justify-between rounded-sm border border-horizon bg-hull px-4 py-3">
-          <span className="text-sm text-telemetry">dronelingo — Full Access</span>
+          <span className="text-sm text-telemetry">{t("productName")}</span>
           <span className="font-mono text-xl font-semibold text-hud-white">
             €19
           </span>
@@ -122,11 +124,11 @@ export function InvoiceForm() {
           disabled={state === "submitting"}
           className="mt-5 w-full rounded-sm border border-cyan-pulse bg-cyan-pulse/10 px-5 py-3 text-sm font-medium text-cyan-pulse transition-colors hover:bg-cyan-pulse hover:text-void disabled:cursor-not-allowed disabled:opacity-40"
         >
-          {state === "submitting" ? "Sending..." : "Send Invoice → €19"}
+          {state === "submitting" ? t("sending") : `${t("send")} → €19`}
         </button>
 
         <p className="mt-4 text-center font-mono text-xs text-muted">
-          You will receive an invoice email with bank transfer details.
+          {t("note")}
         </p>
       </div>
     </form>
