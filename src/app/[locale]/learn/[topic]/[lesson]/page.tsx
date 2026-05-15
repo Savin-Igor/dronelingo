@@ -6,6 +6,7 @@ import { AccessGate } from "@/components/access/AccessGate";
 import { BreadcrumbSchema } from "@/components/learn/Breadcrumb";
 import { MarkLessonVisited } from "@/components/learn/MarkLessonVisited";
 import { lessonComponents } from "@/components/lesson";
+import { mdxOptions } from "@/lib/mdx-options";
 import { isFreeTopic } from "@/lib/access";
 import { localize } from "@/lib/localize";
 import { prisma } from "@/lib/prisma";
@@ -98,12 +99,12 @@ export default async function LessonPage({
 
         {free ? (
           <article className="prose prose-dronelingo max-w-none">
-            <MDXRemote source={body} components={lessonComponents} />
+            <MDXRemote source={body} components={lessonComponents} options={mdxOptions} />
           </article>
         ) : (
           <AccessGate>
             <article className="prose prose-dronelingo max-w-none">
-              <MDXRemote source={body} components={lessonComponents} />
+              <MDXRemote source={body} components={lessonComponents} options={mdxOptions} />
             </article>
           </AccessGate>
         )}
