@@ -14,12 +14,22 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "blog" });
-  return buildMetadata({
+  const base = buildMetadata({
     locale,
     path: "/blog",
     title: `${t("indexTitle")} — dronelingo`,
     description: t("indexDescription"),
   });
+  // Advertise the RSS feed for autodiscovery.
+  return {
+    ...base,
+    alternates: {
+      ...base.alternates,
+      types: {
+        "application/rss+xml": `/${locale}/blog/rss.xml`,
+      },
+    },
+  };
 }
 
 export default async function BlogIndexPage({

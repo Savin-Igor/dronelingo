@@ -29,10 +29,13 @@ export function Plausible({ domain }: { domain: string }) {
 
   if (!consented) return null;
 
+  // Use the tagged-events extension so DOM elements can fire custom
+  // Plausible events via `className="plausible-event-name=..."` without
+  // additional JavaScript. Automatic page-views still work.
   return (
     <Script
       strategy="afterInteractive"
-      src="https://plausible.io/js/script.js"
+      src="https://plausible.io/js/script.tagged-events.js"
       data-domain={domain}
     />
   );
