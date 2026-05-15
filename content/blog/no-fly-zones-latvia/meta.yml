@@ -1,0 +1,22 @@
+slug:
+  lv: aizliegtas-zonas-droniem-latvija
+  en: no-fly-zones-latvia
+  ru: zapretnye-zony-dlya-dronov-v-latvii
+title:
+  lv: Aizliegtas zonas droniem Latvijā — Rīga, lidostas un dabas parki
+  en: No-fly zones in Latvia — airports, military, and nature parks
+  ru: Запретные зоны для дронов в Латвии — Рига, аэропорты и парки
+excerpt:
+  lv: Kur Latvijā ir aizliegts lidot ar dronu, kur var, un kā pārbaudīt pirms pacelšanās. Rīgas CTR, Liepājas, militārās un dabas parku zonas.
+  en: Where drone flight is prohibited in Latvia, where it is allowed, and how to verify before take-off. Riga CTR, Liepāja, military zones, and nature parks.
+  ru: Где в Латвии запрещены полёты на дроне, где разрешены и как проверить перед взлётом. Зоны CTR Риги, Лиепаи, военные и природные парки.
+publishedAt: 2026-05-14
+updatedAt: 2026-05-14
+lastVerifiedAt: 2026-05-14
+tags: [no-fly-zones, latvia, airspace, riga]
+heroImage: hero.png
+heroImageAlt:
+  lv: Stilizēta Latvijas karte ar krāsu kodētām aizliegtām zonām — sarkani CTR apļi virs lidostām, zaļas hatching dabas parkos, purpura militārās heksaģenes.
+  en: Stylized map of Latvia with colour-coded restricted zones — red CTR circles over airports, green hatched patches over nature parks, purple military hexagons.
+  ru: Стилизованная карта Латвии с цветовой маркировкой зон — красные круги CTR над аэропортами, зелёная штриховка природных парков, фиолетовые военные шестиугольники.
+sourceRef: docs/knowledge/latvia-caa/web-snapshots/; docs/knowledge/eu-regulations/Reg-2019-947.pdf — UAS geographical zones

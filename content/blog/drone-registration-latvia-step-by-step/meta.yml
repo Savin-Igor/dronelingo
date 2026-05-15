@@ -1,0 +1,22 @@
+slug:
+  lv: drona-registracija-latvija-soli-pa-solim
+  en: drone-registration-latvia-step-by-step
+  ru: registratsiya-drona-v-latvii-poshagovo
+title:
+  lv: Drona reģistrācija Latvijā — soli pa solim 2026. gadā
+  en: Drone registration in Latvia — step-by-step for 2026
+  ru: Регистрация дрона в Латвии — пошагово в 2026
+excerpt:
+  lv: Kā reģistrēties par UAS operatoru e.caa.gov.lv, ko vajag, cik tas maksā un kā pareizi marķēt savu dronu.
+  en: How to register as a UAS operator at e.caa.gov.lv — what you need, what it costs, and how to mark your drone correctly.
+  ru: Как зарегистрироваться UAS-оператором на e.caa.gov.lv — что нужно, сколько стоит и как правильно промаркировать дрон.
+publishedAt: 2026-05-14
+updatedAt: 2026-05-14
+lastVerifiedAt: 2026-05-14
+tags: [registration, latvia, getting-started, caa]
+heroImage: hero.png
+heroImageAlt:
+  lv: Darba galds ar klēpjdatoru, kurā redzams e.caa.gov.lv portāls, drons ar redzamu LVA operatora numura uzlīmi, kafijas krūze un ID kartīte.
+  en: A desk with a laptop showing the e.caa.gov.lv portal, a drone with a visible LVA operator-number sticker, a coffee mug, and an ID card.
+  ru: Стол с ноутбуком, на экране портал e.caa.gov.lv, дрон с видимой наклейкой номера оператора LVA, кружка кофе и удостоверение личности.
+sourceRef: docs/knowledge/latvia-caa/web-snapshots/; docs/knowledge/eu-regulations/Reg-2019-947.pdf — Art. 14 (operator registration)
