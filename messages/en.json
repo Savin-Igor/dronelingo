@@ -2,7 +2,27 @@
   "nav": {
     "learn": "Learn",
     "practice": "Practice",
-    "exam": "Exam"
+    "exam": "Exam",
+    "blog": "Blog"
+  },
+  "blog": {
+    "kicker": "Blog",
+    "indexTitle": "Drone certification guides",
+    "indexDescription": "Long-form guides on flying drones legally in Latvia and the EU — registration, the A1/A3 exam, regulations, and practical tips. Updated as the rules evolve.",
+    "empty": "No posts yet — first ones are on the way.",
+    "backToBlog": "Back to all posts",
+    "sources": "Sources",
+    "cta": {
+      "heading": "Ready to study for the exam?",
+      "body": "Try the free Air Safety topic, or jump straight to a 40-question mock exam to see where you stand.",
+      "primary": "Start with Air Safety",
+      "secondary": "Take a mock exam"
+    },
+    "latest": {
+      "kicker": "From the blog",
+      "heading": "Latest guides on flying legally",
+      "seeAll": "See all posts"
+    }
   },
   "landing": {
     "hero": {
@@ -55,6 +75,7 @@
     "footer": {
       "tagline": "EASA A1/A3 drone exam prep — Latvia first.",
       "guide": "Registration guide",
+      "blog": "Blog",
       "faq": "FAQ",
       "privacy": "Privacy",
       "terms": "Terms"
@@ -125,7 +146,7 @@
     }
   },
   "exam": {
-    "kicker": "Certification flight",
+    "kicker": "Certification-style exam",
     "title": "Mock exam",
     "subtitle": "Mirrors the official A1/A3 exam at e.caa.gov.lv. If you consistently score 80%+, you are ready for the real exam.",
     "stats": {
@@ -161,6 +182,7 @@
     "confirmNo": "Go back",
     "unansweredOne": "Unanswered: {count}",
     "unansweredMany": "Unanswered: {count}",
+    "allAnswered": "All answered",
     "timeUp": "Time is up — submitting exam.",
     "leaveWarning": "The exam is not yet submitted. Leave anyway?",
     "passed": "Passed ({percent}%)",

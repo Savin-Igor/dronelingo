@@ -1,0 +1,22 @@
+slug:
+  lv: drona-pirms-lidojuma-saraksts
+  en: pre-flight-checklist-drone
+  ru: predpolyotnyi-cheklist-drona
+title:
+  lv: Drona pirms-lidojuma saraksts — 12 punkti, kas glābj
+  en: Drone pre-flight checklist — 12 items that save flights
+  ru: Предполётный чеклист дрона — 12 пунктов, спасающих полёт
+excerpt:
+  lv: Visu, ko jāpārbauda pirms ieslēgt motoru — laikapstākļi, atrašanās vieta, drons, dokumenti. Vienkāršs 12 punktu saraksts katram lidojumam.
+  en: Everything to verify before powering up — weather, location, drone, paperwork. A simple 12-item list for every flight.
+  ru: Что проверить до включения мотора — погода, локация, дрон, документы. Простой 12-пунктовый чеклист на каждый полёт.
+publishedAt: 2026-05-14
+updatedAt: 2026-05-14
+lastVerifiedAt: 2026-05-14
+tags: [checklist, safety, operations, pre-flight]
+heroImage: hero.png
+heroImageAlt:
+  lv: Plakanā kompozīcija no augšas uz tumša koka galda — drons ar kontrolieri, viedtālrunis ar laikapstākļu lietotni, rezerves akumulators, rezerves propelleri, drukāts saraksts ar atzīmju kvadrātiem.
+  en: Flat-lay top-down view on dark wood — drone with controller, phone showing a weather app, spare battery, spare propellers, printed checklist with checkboxes.
+  ru: Плоская композиция сверху на тёмной древесине — дрон с пультом, смартфон с погодным приложением, запасной аккумулятор, запасные пропеллеры, печатный чеклист с галочками.
+sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pre-flight responsibilities; FAA H-8083-25B — risk management

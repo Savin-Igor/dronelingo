@@ -37,7 +37,7 @@ Example TAF: `EVRA 101700Z 1018/1118 27012KT 9999 FEW020 BECMG 1022/1024 29018KT
 | BECMG 1022/1024 | Becoming (gradual change) between 22:00 and 24:00 |
 | 29018KT | Wind changing to 290°/18 KT |
 
-**BECMG** = gradual change. **TEMPO** = temporary condition, not permanent. **FM** = from a specific time, conditions change completely.
+**BECMG** = gradual change. **TEMPO** = temporary fluctuations expected for less than half of the stated period. **FM** = from a specific time, conditions change completely.
 
 ## Wind limits by drone class
 
@@ -62,16 +62,17 @@ Work through this sequence **before every flight**:
    - If gusts exceed the limit: **NO-GO**.
 
 2. **Visibility adequate for VLOS?**
-   - Is the horizontal visibility sufficient to maintain continuous visual contact at the planned maximum distance?
-   - Practical minimum for meaningful VLOS: 3 km.
-   - If below 3 km or if the drone will be operating near the edge of visibility: **NO-GO**.
+   - Is the visibility sufficient to keep continuous unaided visual contact and judge the drone’s attitude and direction at the planned range?
+   - The regulation gives no fixed visibility number; the test is functional VLOS.
+   - If haze, fog or low contrast would put the drone near the edge of visibility: **NO-GO**.
 
 3. **Precipitation?**
    - Rain, snow, sleet, freezing drizzle: **NO-GO** for all UAS not certified for precipitation.
    - IPX ratings protect against splashing, not sustained precipitation.
 
-4. **Thunderstorm within 10 km?**
-   - Check radar (meteo.lv radar tab) for active Cb cells within 10 km: **NO-GO**.
+4. **Active thunderstorm close to the area?**
+   - Check radar (meteo.lv radar tab) for active Cb cells near the route or moving toward it.
+   - A conservative training rule is to treat any thunderstorm within roughly 10 km as **NO-GO**.
    - Any visible lightning anywhere: **NO-GO**.
 
 5. **Temperature near 0°C + moisture?**
@@ -81,21 +82,21 @@ If all five pass: **GO** — but monitor continuously and be ready to abort.
 
 ## Wind at altitude vs. ground
 
-Surface wind is measured 10 m above ground. At 80 m AGL (a typical filming altitude) wind can be 30–50 % stronger. This matters for:
+Surface wind is measured 10 m above ground. At typical drone operating heights the wind is often stronger than at the surface. This matters for:
 - RTH — the drone must fly into the wind at altitude, which drains the battery faster than expected.
 - Filming — the drone fights wind while hovering, reducing stability and image quality.
 - Emergency battery margins — the headwind on return consumes more power than the tailwind on outbound.
 
-Check the wind at altitude if the forecast provides it (some NWP services show wind at 100 m). When in doubt, add 50 % to the observed surface wind for the operational altitude.
+Check the wind at altitude if the forecast provides it (some NWP services show wind at 100 m). If not, leave a clear margin rather than assuming the surface reading will stay the same aloft.
 
 <Scenario title="Pre-flight check: METAR shows wind 22008KT. Your drone is rated at 10 m/s. TAF shows TEMPO 1012/1014 29018G28KT. Your planned flight is 11:00–12:00. Can you go?">
-**NO-GO for the planned window.** The TAF TEMPO group 1012/1014 (between 12:00 UTC and 14:00 UTC) shows wind 18 knots gusting 28 knots = 14.4 m/s gusts. This exceeds the 10 m/s drone limit.
+**NO-GO for the planned window.** The TAF TEMPO group overlaps the flight window and includes gusts above the drone limit.
 
-The current METAR (8 KT = 4.1 m/s) is within limits, but the TAF forecasts a TEMPO period during your planned flight overlapping with 11:00–14:00 window (assuming UTC corresponds to local + 3 in summer). Reschedule to after 14:00 UTC if the TEMPO has passed and conditions confirm.
+The current METAR is within limits, but a temporary deterioration is forecast for the time you intend to fly. Treat that as operationally relevant, wait until the TEMPO window has passed, and confirm the improvement with a fresh observation before launching.
 </Scenario>
 
 <MemoryAnchor
-  rule="Check METAR + TAF from meteo.lv or NOAA. Work through all 5 go/no-go checks. If any fails: NO-GO. Surface wind at altitude = multiply by 1.3–1.5."
+  rule="Check METAR + TAF from meteo.lv or NOAA. Work through all 5 go/no-go checks. If any fails: NO-GO. Expect more wind aloft than on the ground."
   hint="A 'probably fine' weather check is not a weather check. All five must pass explicitly."
 />
 
@@ -103,7 +104,7 @@ The current METAR (8 KT = 4.1 m/s) is within limits, but the TAF forecasts a TEM
 - Checking weather at the last minute with no time to reschedule if conditions fail — check 24 h ahead for the next day's forecast.
 - Using the manufacturer app weather widget as the sole weather check — it is not an aviation-grade source.
 - Not checking the TAF for conditions during the planned flight window, only checking the current METAR — current conditions may be fine while a deterioration is forecast.
-- Dismissing TEMPO as "temporary, probably won't happen" — TEMPO is a forecast of conditions that will occur, not a possibility.
+- Treating TEMPO as harmless because it is temporary — a temporary deterioration inside your flight window still matters.
 - Ignoring altitude wind — assuming ground conditions equal flight-level conditions.
 </CommonMistakes>
 
@@ -127,19 +128,19 @@ The current METAR (8 KT = 4.1 m/s) is within limits, but the TAF forecasts a TEM
   },
   {
     id: "met-g2",
-    stem: "The surface METAR shows 06008KT (8 knots). Your drone is rated at 12 m/s. You plan to fly at 100 m AGL. What wind speed should you expect at altitude?",
+    stem: "The surface METAR shows 06008KT (8 knots). You plan to fly at 100 m AGL. What planning assumption is safest?",
     options: [
-      { id: "a", text: "Approximately 4 m/s — wind decreases with altitude." },
-      { id: "b", text: "Approximately 4 m/s — the same as surface." },
-      { id: "c", text: "Approximately 5.5–6.2 m/s — surface wind (4.1 m/s) × 1.3–1.5." },
-      { id: "d", text: "Exactly 8 knots — METAR is measured at flight altitude." },
+      { id: "a", text: "Assume wind will be weaker aloft than at the surface." },
+      { id: "b", text: "Assume the surface reading and the wind at operating height are identical." },
+      { id: "c", text: "Assume wind at operating height may be stronger than the surface reading and leave margin." },
+      { id: "d", text: "Assume METAR is already measured at the planned flight height." },
     ],
     correctOptionId: "c",
-    explanation: "METAR wind is measured at 10 m AGL. At 100 m AGL wind speed is typically 30–50 % higher than at the surface due to decreasing friction from ground obstacles. 8 KT = 4.1 m/s × 1.5 = approximately 6.2 m/s at altitude. While within the drone's 12 m/s limit here, the adjustment matters for battery planning and performance margins.",
+    explanation: "METAR wind is a surface observation. At drone operating height the wind is often stronger, especially over open terrain or near the coast. The safe planning habit is to leave margin for stronger wind aloft instead of assuming the surface value will remain unchanged.",
     distractorRationales: {
-      a: "Wind generally increases with altitude due to decreasing surface friction, not decreases.",
-      b: "Wind at altitude is not the same as at the surface — METAR measures at 10 m, not at operational altitude.",
-      d: "METAR is measured at 10 m AGL by standard, not at 100 m. It is a surface observation, not an aloft measurement.",
+      a: "Near the surface, friction usually slows the wind rather than increases it.",
+      b: "Wind at operating height does not reliably match the surface observation.",
+      d: "METAR is not measured at the planned flight height; it is a surface weather report.",
     },
   },
 ]} />
