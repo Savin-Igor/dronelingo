@@ -1,0 +1,12 @@
+id: caa-lv-insurance
+kind: caa-operational
+officialTitle:
+  en: "CAA Latvia — Insurance Requirements for UAS"
+  lv: "CAA Latvia — Apdrošināšanas prasības UAS"
+  ru: "CAA Латвии — Требования к страхованию БВС"
+shortTitle:
+  en: "Mandatory third-party liability insurance for drone operators"
+  lv: "Obligātā civiltiesiskās atbildības apdrošināšana dronu ekspluatantiem"
+  ru: "Обязательное страхование гражданской ответственности операторов дронов"
+canonicalUrl: "https://droni.caa.gov.lv/apdrosinasanas-prasibas/"
+lastVerifiedAt: "2026-05-16"
