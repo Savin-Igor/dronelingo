@@ -1,25 +1,36 @@
-import { readFileSync, readdirSync } from "node:fs";
+import { execFileSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { parse as parseYaml } from "yaml";
 import { hasBareUrlEntry, hasLinkedCitation } from "../src/lib/source-citations";
 
-const ROOT = resolve(process.cwd(), "content");
+const REPO_ROOT = resolve(process.cwd());
+const ROOT = resolve(REPO_ROOT, "content");
 
 type Failure = {
   file: string;
   message: string;
 };
 
-function listFiles(dir: string, matcher: (name: string) => boolean, acc: string[] = []) {
-  for (const entry of readdirSync(dir, { withFileTypes: true })) {
-    const full = join(dir, entry.name);
-    if (entry.isDirectory()) {
-      listFiles(full, matcher, acc);
-    } else if (matcher(entry.name)) {
-      acc.push(full);
-    }
-  }
-  return acc;
+function listTrackedContentFiles(): { questionFiles: string[]; metaFiles: string[] } {
+  const tracked = execFileSync(
+    "git",
+    ["ls-files", "content/questions", "content/lessons", "content/blog"],
+    { cwd: REPO_ROOT, encoding: "utf8" },
+  )
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => resolve(REPO_ROOT, line));
+
+  return {
+    questionFiles: tracked.filter((file) => file.startsWith(join(ROOT, "questions")) && file.endsWith(".yml")),
+    metaFiles: tracked.filter(
+      (file) =>
+        (file.startsWith(join(ROOT, "lessons")) || file.startsWith(join(ROOT, "blog"))) &&
+        file.endsWith("/meta.yml"),
+    ),
+  };
 }
 
 function validateQuestionFile(file: string): Failure[] {
@@ -71,11 +82,7 @@ function validateMetaFile(file: string): Failure[] {
 }
 
 function main() {
-  const questionFiles = listFiles(join(ROOT, "questions"), (name) => name.endsWith(".yml"));
-  const metaFiles = [
-    ...listFiles(join(ROOT, "lessons"), (name) => name === "meta.yml"),
-    ...listFiles(join(ROOT, "blog"), (name) => name === "meta.yml"),
-  ];
+  const { questionFiles, metaFiles } = listTrackedContentFiles();
 
   const failures = [
     ...questionFiles.flatMap(validateQuestionFile),
