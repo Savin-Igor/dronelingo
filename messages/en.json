@@ -77,6 +77,7 @@
       "guide": "Registration guide",
       "blog": "Blog",
       "faq": "FAQ",
+      "regulations": "Regulations",
       "privacy": "Privacy",
       "terms": "Terms"
     }
@@ -232,6 +233,10 @@
     "terms": {
       "title": "Terms of use",
       "description": "Nature of the service, Pass Guarantee, user responsibilities, dronelingo liability limits."
+    },
+    "regulations": {
+      "title": "Regulatory Framework",
+      "description": "Current EU and Latvian regulations governing unmanned aircraft operations."
     }
   },
   "a11y": {

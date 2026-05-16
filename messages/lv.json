@@ -77,6 +77,7 @@
       "guide": "Reģistrācijas ceļvedis",
       "blog": "Blogs",
       "faq": "BUJ",
+      "regulations": "Regulējums",
       "privacy": "Privātums",
       "terms": "Lietošanas noteikumi"
     }
@@ -232,6 +233,10 @@
     "terms": {
       "title": "Lietošanas noteikumi",
       "description": "Pakalpojuma būtība, Pass Guarantee, lietotāja un dronelingo atbildība."
+    },
+    "regulations": {
+      "title": "Normatīvais regulējums",
+      "description": "Spēkā esošie ES un Latvijas normatīvie akti par bezpilota gaisa kuģu lidojumiem."
     }
   },
   "a11y": {

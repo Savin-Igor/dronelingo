@@ -13,6 +13,7 @@ const PUBLIC_PATHS = [
   "/pricing",
   "/guide",
   "/faq",
+  "/regulations",
   "/privacy",
   "/terms",
 ];
@@ -26,6 +27,7 @@ const PRIORITY: Record<string, number> = {
   "/guide": 0.8,
   "/blog": 0.8,
   "/faq": 0.6,
+  "/regulations": 0.6,
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {

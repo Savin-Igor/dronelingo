@@ -1,12 +1,13 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
-const LINKS = ["guide", "blog", "faq", "privacy", "terms"] as const;
+const LINKS = ["guide", "blog", "faq", "regulations", "privacy", "terms"] as const;
 
 const HREF: Record<(typeof LINKS)[number], string> = {
   guide: "/guide",
   blog: "/blog",
   faq: "/faq",
+  regulations: "/regulations",
   privacy: "/privacy",
   terms: "/terms",
 };
