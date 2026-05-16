@@ -248,8 +248,8 @@
     "cta": "Back to home"
   },
   "consent": {
-    "title": "Privacy",
-    "body": "This site keeps your progress in browser storage and — with your consent — uses cookie-free Plausible analytics. Details:",
+    "title": "Analytics consent",
+    "body": "We use cookie-free Plausible analytics to count visits. No tracking, no profile building. Details:",
     "privacyLink": "privacy policy",
     "accept": "Got it"
   },

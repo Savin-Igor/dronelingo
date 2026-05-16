@@ -248,8 +248,8 @@
     "cta": "Atgriezties uz sākumlapu"
   },
   "consent": {
-    "title": "Privātums",
-    "body": "Šī vietne saglabā tavu progresu pārlūka glabātuvē un — ja tu piekrīti — izmanto bezsīkdatņu Plausible analītiku. Sīkāk:",
+    "title": "Analītikas piekrišana",
+    "body": "Mēs izmantojam bezsīkdatņu Plausible analītiku, lai uzskaitītu apmeklējumus. Bez izsekošanas, bez profilu veidošanas. Sīkāk:",
     "privacyLink": "privātuma politika",
     "accept": "Sapratu"
   },
