@@ -1,0 +1,124 @@
+version: 1
+updatedAt: 2026-05-16
+rulesetIssue: 76
+rulesetSummary: Source ingestion, mirroring, storage, and canonical SEO policy for the regulations library.
+
+sourceFamilies:
+  - id: eur-lex-eu-regulations
+    label: EUR-Lex EU regulations and delegated regulations
+    examples:
+      - Reg (EU) 2019/947
+      - Reg (EU) 2019/945
+      - GDPR
+      - Reg (EC) 785/2004
+    sourceTypes: [html, pdf]
+    mirroringPolicy: full
+    licenseStatus: reviewed
+    publicRendering: allowed
+    canonicalStrategy: first-party-canonical
+    rawStorage: git-reviewed
+    searchEligibility: full
+    notes: Structured first-party source pages are allowed. Official source remains linked as authority.
+
+  - id: likumi-lv-public-legal-texts
+    label: Likumi.lv and other Latvian public legal texts
+    examples:
+      - Cabinet Regulation No. 447
+      - Cabinet Regulation No. 457
+    sourceTypes: [html, pdf]
+    mirroringPolicy: full
+    licenseStatus: reviewed
+    publicRendering: allowed
+    canonicalStrategy: first-party-canonical
+    rawStorage: git-reviewed
+    searchEligibility: full
+    notes: Allowed when the specific legal text is reviewed for reuse and rendered with value-added structure.
+
+  - id: easa-guidance
+    label: EASA guidance pages and PDFs
+    examples:
+      - Easy Access Rules for UAS
+      - AMC/GM guidance
+    sourceTypes: [html, pdf]
+    mirroringPolicy: summary-only
+    licenseStatus: unclear
+    publicRendering: limited
+    canonicalStrategy: summary-canonical
+    rawStorage: git-reviewed
+    searchEligibility: lexical
+    notes: Publish summaries and short excerpts, not wholesale full-text mirrors by default.
+
+  - id: caa-latvia-pages
+    label: CAA Latvia public pages
+    examples:
+      - Registration
+      - A1/A3 exam
+      - Open category
+      - Geographical zones
+    sourceTypes: [html]
+    mirroringPolicy: summary-only
+    licenseStatus: reviewed
+    publicRendering: limited
+    canonicalStrategy: summary-canonical
+    rawStorage: git-reviewed
+    searchEligibility: lexical
+    notes: Use summary-first source pages with strong outbound links to the official portal.
+
+  - id: caa-latvia-pdfs
+    label: CAA Latvia public PDFs and guidance documents
+    examples:
+      - Local conditions PDF
+      - UAS geographical zones guidance PDF
+    sourceTypes: [pdf]
+    mirroringPolicy: summary-only
+    licenseStatus: unclear
+    publicRendering: limited
+    canonicalStrategy: summary-canonical
+    rawStorage: git-reviewed
+    searchEligibility: lexical
+    notes: Short excerpts are allowed where justified; do not default to full mirrored PDF pages.
+
+  - id: public-training-guides
+    label: Public training guides used for authoring support
+    examples:
+      - EASA Q&A on UAS regulations
+      - national training handbooks
+    sourceTypes: [pdf, html, md]
+    mirroringPolicy: summary-only
+    licenseStatus: unclear
+    publicRendering: limited
+    canonicalStrategy: summary-canonical
+    rawStorage: git-reviewed
+    searchEligibility: lexical
+    notes: These support authoring and internal audit more than first-party public mirroring.
+
+  - id: vendor-docs-and-brochures
+    label: Vendor docs, brochures, and product pages
+    examples:
+      - DJI product specs
+      - Skydio technical pages
+      - Autel brochures
+    sourceTypes: [html, pdf]
+    mirroringPolicy: outbound-only
+    licenseStatus: unclear
+    publicRendering: limited
+    canonicalStrategy: outbound-primary
+    rawStorage: external-only
+    searchEligibility: metadata-only
+    notes: Use as citations for blog/editorial context, not as first-party mirrored source pages.
+
+  - id: editorial-and-news-sources
+    label: Editorial, news, and analysis sources
+    examples:
+      - RUSI
+      - CSIS
+      - The War Zone
+      - Defense Daily
+    sourceTypes: [html, pdf]
+    mirroringPolicy: outbound-only
+    licenseStatus: restricted
+    publicRendering: limited
+    canonicalStrategy: outbound-primary
+    rawStorage: external-only
+    searchEligibility: metadata-only
+    notes: Keep as outbound citations only unless a future explicit editorial policy says otherwise.
