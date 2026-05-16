@@ -1,0 +1,235 @@
+# Dronu spieti un autonomās karadarbības nākotne
+
+Dronu spieti kļūst svarīgi nevis tāpēc, ka tie izskatās futūristiski, bet tāpēc, ka tie maina autonomās karadarbības ekonomiku un komandvadības loģiku. Tiklīdz bruņots spēks spēj koordinēt desmitiem vai simtiem lētu bezpilota platformu zem viena operacionālā nodoma, galvenais jautājums vairs nav “cik labs ir šis viens drons”, bet gan “kā spēks uztver, sadala uzdevumus, pielāgojas un izdzīvo mērogā”.
+
+Tā ir īstā dronu spietu militārā nozīme 2026. gadā. Spiets nav tikai liels vienlaicīgs starts. Tas ir system-of-systems jautājums, kurā satiekas autonomija, cilvēka–mašīnas sadarbība, attritable masa, sakari, loģistika un aizsardzība pret pretinieka spietiem. DARPA `OFFSET` programma to formulēja ļoti skaidri jau agrāk, koncentrējoties ne tikai uz platformām, bet uz human-swarm interfaces, spieta taktiku ģenerēšanu un spēju vienlaikus vadīt potenciāli simtiem bezpilota sistēmu. NATO autonomijas ietvars šo pašu sarunu pārnes uz mērogu, savietojamību, atbildīgu lietošanu un deployējamām “systems of systems”. Savukārt `Replicator` pievieno industriālo slāni, sasaistot autonomiju ar masveida ieviešanu.
+
+## Dronu spiets patiesībā ir komandvadības modelis
+
+Sabiedriskajā iztēlē spiets parasti nozīmē vienu lietu — daudz dronu gaisā vienlaikus. Tas ir vismazāk interesantais aspekts.
+
+Daudz svarīgāks ir jautājums, kā šis spiets tiek vadīts.
+
+Lai autonomam dronu spietam būtu reāla militāra jēga, vienlaikus jāstrādā vismaz piecām lietām:
+
+- misijas loģikai, kas sadala uzdevumus starp platformām;
+- sakariem, kas saglabā lietderību arī daļējas degradācijas apstākļos;
+- cilvēka uzraudzībai, kas vada efektu, nevis manuāli pilotē katru aparātu;
+- pietiekamai onboard autonomijai, lai spiets turpinātu būt noderīgs, ja vide mainās;
+- attrīcijas un pārdales loģikai, kad daļa platformu tiek zaudēta.
+
+Tieši tāpēc spietu karadarbība atrodas starp programmatūru un doktrīnu. Ja operatoram jāvada katrs aparāts atsevišķi, tas vairs nav īsts spiets. Ja cilvēks krīzes brīdī nevar saprast, ko sistēma dara, un to koriģēt, tā nav uzticama. Vērtība rodas tad, kad viena komanda spēj uzraudzīt daudz koordinētu platformu un virzīt tās uz vienu efektu — meklēšanu, maldināšanu, sakaru relēšanu, piesātinājumu, apspiešanu vai triecienu.
+
+## DARPA konceptuālo arhitektūru saprata ļoti agri
+
+DARPA `OFFensive Swarm-Enabled Tactics` jeb `OFFSET` joprojām ir viens no skaidrākajiem oficiālajiem aprakstiem tam, ko nopietna spietu karadarbība patiesībā prasa.
+
+Programma paredzēja mazām vienībām izmantot spietus, kuru sastāvā var būt vairāk nekā `250` mazu gaisa un zemes bezpilota sistēmu darbam sarežģītā urbānā vidē. Taču daudz svarīgāks par pašu skaitu bija arhitektūras uzsvars:
+
+- cilvēka–spieta interfeisi;
+- swarm interaction grammar;
+- ātra taktiku ģenerēšana;
+- taktiku testēšana simulācijā un dzīvajos eksperimentos;
+- atvērta ekosistēma spietu taktiku apmaiņai.
+
+Tas 2026. gadā joprojām ir ļoti aktuāli, jo **drone swarms** galvenā problēma nav tikai lidojumu blīvums. Tā ir taktiku komponēšana mašīnas tempā. Spieta efektivitāti nosaka tas, cik ātri spēks spēj izstrādāt, pārbaudīt, pielāgot un ieviest jaunus kolektīvos uzvedības modeļus.
+
+Citiem vārdiem, autonomās karadarbības nākotnē, visticamāk, neuzvarēs tas, kuram ir vizuāli iespaidīgākais demo. Priekšrocība drīzāk būs tam, kurš visātrāk aizver spietu adaptācijas ciklu.
+
+## Militārā pievilcība slēpjas attritable masā ar koordināciju
+
+Viens augstas klases autonomais UAV var būt ļoti noderīgs. Spiets kļūst svarīgs tad, kad lētas platformas kļūst pietiekami koordinētas, lai daļēju zaudējumu gadījumā misija nesabruktu.
+
+Tieši šeit svarīgs kļūst jēdziens **attritable autonomous systems**. `Replicator` formulējums ir noderīgs: `DIU` raksturo `Replicator 1` kā daudzdomēnu attritable autonomo sistēmu piegādi daudzskaitlīgā mērogā, uzsverot ātrumu, apjomu, zemāku risku cilvēkiem un īsākus atjaunināšanas ciklus.
+
+Tas maina operacionālo plānošanu.
+
+Spēki sāk jautāt:
+
+- cik platformām jāizdzīvo, lai misija būtu izpildīta;
+- cik plaši var izkliedēt sensorus;
+- cik liels var būt maldināšanas efekts;
+- cik lētu piesātinājumu var radīt aizsardzības pārslogošanai;
+- cik ātri zaudējumus var aizstāt.
+
+Tāpēc spietu karadarbība nav tikai autonomijas stāsts. Tā ir arī par industriālo bāzi, piegādes ķēdēm un programmatūras definētu spēku uzbūvi.
+
+## Cilvēka–spieta sadarbība ir galvenais sliekšņa jautājums
+
+Grūtākais uzdevums nav uzbūvēt autonomiju izolēti. Grūtākais ir saprast, ko cilvēkam joprojām vajag darīt.
+
+DARPA tieši koncentrējās uz human-swarm teaming. NATO autonomijas ietvars uzsver atbildību, izskaidrojamību, izsekojamību, uzticamību un pārvaldāmību. Tā nav abstrakta ētikas valoda, kas piekārta klāt militārai tehnoloģijai. Tā atspoguļo ļoti konkrētu operacionālu problēmu: spiets kļūst militāri noderīgs tikai tad, ja cilvēks tam spēj uzticēties un vajadzības brīdī iejaukties.
+
+Praksē tas nozīmē, ka **AI drone swarm** nākotne, visticamāk, tuvāko gadu laikā balstīsies uz šādiem principiem:
+
+- cilvēks nosaka mērķi un ierobežojumus;
+- programmatūra lokāli koordinē un pielāgojas;
+- operators uzrauga izņēmumus, nevis katru kustību;
+- komandvadības sistēmai jādara spieta uzvedība saprotama stresa apstākļos;
+- taktiskajai autonomijai jādegradējas saprātīgi, ja pazūd sakari, sensori vai daļa platformu.
+
+Ja šis balanss ir slikts, spēks iegūst vai nu pārslodzi, vai neparedzamību. Neviens no šiem stāvokļiem labi nemērogojas.
+
+## Spieti maina uzbrukuma loģiku vairākos veidos
+
+### 1. Tie saīsina ceļu starp uztveri un darbību
+
+Spiets var izkliedēt sensorus, relēšanas mezglus un efektorus daudz plašāk nekā viena platforma. Tas saīsina laiku starp atklāšanu un reakciju.
+
+### 2. Tie apgrūtina aizsardzību ar apjomu un ģeometriju
+
+Aizstāvim vienlaikus jāatklāj, jāklasificē un jāreaģē uz daudziem lētiem mērķiem, kas var nākt no dažādām asīm, augstumiem vai lomām.
+
+### 3. Tie ļauj veidot jauktas funkciju paketes
+
+Daļa spieta var darboties kā sakaru relejs, daļa kā sensori, daļa kā maldināšanas instruments, bet cita daļa kā trieciena vai apspiešanas elements.
+
+### 4. Tie palielina taktisko noturību
+
+Ja misija balstās uz kolektīvu uzvedību, nevis uz vienu “zelta” platformu, attrīciju ir vieglāk absorbēt.
+
+Tieši tāpēc spieti arvien biežāk parādās vienā sarunā ar loitering munition, anti-drone systems, FPV adaptāciju un software-defined C2. Tie nav nišas kategorija. Tie ir darbības loģika.
+
+## Spietu karadarbība maina arī aizsardzību
+
+Uzbrukuma puse piesaista vairāk uzmanības, taču spieti var būt tikpat nozīmīgi ar to, ko tie piespiež darīt aizstāvim.
+
+Pret spieta draudiem ar vienu “ērto” aizsardzības kārtu nepietiek. Atbildei jābūt slāņveida un selektīvai.
+
+Parasti tas nozīmē šādu kombināciju:
+
+- agrīna atklāšana un klasifikācija;
+- AI atbalstīta prioritizācija;
+- elektroniskā karadarbība, kur tā joprojām strādā;
+- kinētiski līdzekļi augstas prioritātes vai “izlauzušamies” mērķiem;
+- pasīva nocietināšana un mobilitāte;
+- battle-management programmatūra, kas operatoram palīdz ātri saprast draudu ainu.
+
+Šis slogs ir viens no iemesliem, kāpēc **drone swarm defense** nākotne ir tik cieši saistīta ar AI balstītu lēmumu atbalstu. Kad apjoms, ātrums un neskaidrība vienlaikus pieaug, cilvēks viens pats ļoti ātri kļūst par šauro vietu.
+
+`Replicator-2` to parāda diezgan tieši, fokusējoties uz `C-sUAS` problēmu ar modulārām, savstarpēji pastiprinošām sensora, AI-enabled decision support un defeat capability kombinācijām.
+
+## Spietu problēma ir tikpat industriāla kā taktiska
+
+Liela mēroga spietu operācijas nav iespējamas bez industriālas disciplīnas.
+
+Lai uzturētu šādu spēju, vajag:
+
+- apjomīgu ražošanu;
+- vienkāršu uzturēšanas ritmu;
+- bateriju, motoru, radio un slodžu piegādes ķēdes;
+- programmatūras integrāciju jauktās flotēs;
+- operatoru un tehniķu apmācības līnijas;
+- poligonus un eksperimentēšanas ciklus.
+
+Tāpēc nopietnākie politikas un aizsardzības dokumenti vairs nerunā par autonomiju tikai kā par tehnoloģisku jaunumu. Tie runā par ātrumu un mērogu.
+
+`Replicator` komerciālā sektora formulējums šeit ir īpaši noderīgs. Programma skaidri pasaka, ka šīs tehnoloģijas ir gatavas mērogošanai un ka jāstiprina industriālā bāze, piegādes ķēdes un pieprasījuma signāli. Tieši tā arī jāskatās uz spietiem. Prototipi vieni paši karu nepārbūvē.
+
+## Jūras kājnieki un citi dienesti jau virzās uz mērogu un doktrīnu
+
+Oficiālajos ASV Jūras kājnieku korpusa materiālos 2025. gadā virziens ir formulēts diezgan skaidri. Drone task force summiti tika sāk­ti, lai organizētu, apmācītu un aprīkotu `MAGTF` elementus letālu un neletālu UAS lietošanai mērogā. Šis formulējums ir svarīgs.
+
+Raksts izceļ arī:
+
+- `Marine Corps Attack Drone Team` lomu;
+- kopēju ekosistēmu un command-and-control arhitektūru;
+- labās prakses rokasgrāmatas;
+- operatoru sagatavošanas līnijas;
+- signature management;
+- advanced manufacturing dronu detaļu remontam sarežģītā vidē.
+
+Tieši tā nobriest spietu loģika spēka iekšienē. Tā pārstāj būt viens eksperiments vai viena “gudrā vienība” un kļūst par doktrīnu, apmācību, remontu, sacensībām un arhitektūru.
+
+## NATO spietu nākotne ir par savietojamību un atbildīgu mērogu
+
+NATO autonomijas ieviešanas ietvars nav tieša spietu doktrīna, taču tas ir ļoti svarīgs, jo definē politiskos un operacionālos nosacījumus, kuros sabiedroto autonomija var kļūt mērogojama.
+
+Galvenie punkti ir praktiski:
+
+- interoperable systems of systems;
+- regulāri autonomy-enabled eksperimentu cikli;
+- atbildīgas AI lietošanas principi aizsardzībā;
+- drošības pasākumi pret jaunajiem draudiem, ko rada autonomās sistēmas;
+- sabiedriskā un institucionālā uzticēšanās.
+
+Koalīciju karā tas ir kritiski. Spietu arhitektūra, ko nevar integrēt starp sabiedrotajiem vai kuru politiski nevar droši lietot, nav liela priekšrocība. Tāpēc autonomās karadarbības nākotne NATO vidē būs atkarīga ne tikai no tehniskā snieguma, bet arī no kopējiem standartiem, doktrīnas, tiesiskās pārliecības un datu disciplīnas.
+
+## Bīstamākais pārpratums ir doma, ka spieti nozīmē “bez cilvēka”
+
+Tā nav.
+
+Reālākais virziens nav cilvēka izņemšana no sistēmas, bet cilvēka uzmanības saspiešana. Mazāk cilvēku uzrauga vairāk mašīnu. Cilvēka loma pārvietojas augstāk — no tiešas pilotēšanas uz misijas nodomu, prioritizāciju, izņēmumu vadību un autorizāciju.
+
+Tas padara interfeisa problēmu izšķirošu. Slikts interfeiss pārvērš spietu haosā. Labs interfeiss pārvērš to pārvaldāmā militārā svirā.
+
+Tieši tāpēc human-swarm interface bija tik centrāls `OFFSET`, un tieši tāpēc atbildīgas lietošanas ietvari nav sekundāri.
+
+## Kā, visticamāk, izskatīsies nākamais posms
+
+Nākamais posms, visticamāk, nebūs viens dramatisks lēciens zinātniskajā fantastikā. Drīzāk tas būs slāņveida process.
+
+### Tuvākais periods
+
+- lielākas semi-autonomu sistēmu grupas;
+- labāka maršrutu koordinācija un dekonflikcija;
+- jauktas sensing un decoy lomas;
+- spēcīgāka counter-swarm programmatūra un battle management.
+
+### Vidējais periods
+
+- dinamiskāka uzdevumu pārdale spieta iekšienē;
+- spēcīgāka onboard uztvere un lokāla sadarbība;
+- plašāka integrācija starp gaisa, zemes un jūras bezpilota sistēmām;
+- vairāk automātikas palaišanā, dokos un pārlādē.
+
+### Stratēģiskais līmenis
+
+- iepirkumi, kas balstīti uz attritable masu;
+- doktrīna, kas pieņem bezpilota apjomu abās pusēs;
+- industriāla sacensība par autonomijas stekiem un atvērtajām arhitektūrām;
+- augošs spiediens uz tiesisko, politisko un eskalācijas kontroli.
+
+## Biežākās kļūdas spietu analīzē
+
+### Sajaukt daudzumu ar spēju
+
+Liels starts vēl nenozīmē spēcīgu spietu. Koordinācijas kvalitāte ir svarīgāka par pašu skaitu.
+
+### Uztvert autonomiju kā maģiju
+
+Autonomija neatceļ sakaru, loģistikas vai doktrīnas problēmas. Tā tās pārbūvē.
+
+### Ignorēt aizsardzību
+
+Jebkura saruna par spietiem, kurā runā tikai par uzbrukumu, ignorē pusi no problēmas.
+
+### Nenovērtēt interfeisu
+
+Ja cilvēks nespēj saprast un pāradresēt spieta uzvedību, koncepts droši nemērogosies.
+
+## FAQ
+
+### Kas militāri nozīmē dronu spiets?
+
+Tas ir koordinēts vairāku bezpilota sistēmu kopums, kas darbojas zem kopīgas misijas loģikas, nevis kā izolētas atsevišķas platformas.
+
+### Kāpēc dronu spieti ir tik svarīgi 2026. gadā?
+
+Tāpēc, ka tie apvieno lētu masu, autonomiju un izkliedētu efektu tā, ka vienlaikus jāmaina gan uzbrukuma, gan aizsardzības doktrīna.
+
+### Vai dronu spieti ir pilnīgi autonomi?
+
+Parasti nē. Reālais virziens ir cilvēka uzraudzīta autonomija, nevis pilnīga cilvēka neesamība.
+
+### Kas ir galvenā problēma spietu karadarbībā?
+
+Komandvadība mērogā — kā piešķirt nodomu, uzturēt uzticēšanos, vadīt pielāgošanos un saglabāt sistēmas lietderību zaudējumu un traucējumu apstākļos.
+
+### Ar ko spietu karadarbība atšķiras no parastas dronu karadarbības?
+
+Ar pāreju no vienas platformas snieguma uz koordinētu sistēmas uzvedību. Spieti vienlaikus maina plānošanu, vadību, apgādi un aizsardzību.
+
+## Secinājums
+
+Dronu spieti kļūst centrāli autonomās karadarbības nākotnē nevis tāpēc, ka tie ir vizuāli iespaidīgi, bet tāpēc, ka tie vienā militārā problēmā apvieno masu, programmatūru un komandvadību. `DARPA OFFSET`, NATO autonomijas ietvars, `Replicator` industriālais impulss un Jūras kājnieku pašreizējā adaptācija visi rāda vienā virzienā. Īstā nākotne nav debesis, kas pilnas ar identiskiem robotiem bez kontroles. Tā ir koordinēta attritable sistēmu masa, ko cilvēks vada caur labākiem interfeisiem, uztur industriāls mērogs un apstrīd tikpat adaptīva aizsardzība.
