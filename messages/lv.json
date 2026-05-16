@@ -77,6 +77,7 @@
       "guide": "Reģistrācijas ceļvedis",
       "blog": "Blogs",
       "faq": "BUJ",
+      "regulations": "Normatīvie akti",
       "privacy": "Privātums",
       "terms": "Lietošanas noteikumi"
     }
@@ -224,6 +225,10 @@
     "faq": {
       "title": "Biežāk uzdotie jautājumi",
       "description": "Atbildes par Pass Guarantee, sertifikāta derīgumu, reģistrāciju Latvijā un avotu aktualitāti."
+    },
+    "regulations": {
+      "title": "Normatīvie akti un oficiālie avoti",
+      "description": "ES regulas, EASA vadlīnijas un CAA Latvia lapas, uz kurām dronelingo atsaucas."
     },
     "privacy": {
       "title": "Privātuma politika",

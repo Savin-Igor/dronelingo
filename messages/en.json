@@ -77,6 +77,7 @@
       "guide": "Registration guide",
       "blog": "Blog",
       "faq": "FAQ",
+      "regulations": "Regulations",
       "privacy": "Privacy",
       "terms": "Terms"
     }
@@ -224,6 +225,10 @@
     "faq": {
       "title": "Frequently asked questions",
       "description": "Answers about Pass Guarantee, certificate validity, registration in Latvia, and content freshness."
+    },
+    "regulations": {
+      "title": "Regulations and official sources",
+      "description": "The official EU regulations, EASA guidance, and CAA Latvia pages cited across dronelingo."
     },
     "privacy": {
       "title": "Privacy policy",
