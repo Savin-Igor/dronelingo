@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { parse as parseYaml } from "yaml";
-import { hasLinkedCitation } from "../src/lib/source-citations";
+import { hasBareUrlEntry, hasLinkedCitation } from "../src/lib/source-citations";
 
 const ROOT = resolve(process.cwd(), "content");
 
@@ -36,6 +36,14 @@ function validateQuestionFile(file: string): Failure[] {
     if (!q.sourceRef) {
       return [{ file, message: `question ${q.id ?? index + 1}: missing sourceRef` }];
     }
+    if (hasBareUrlEntry(q.sourceRef)) {
+      return [
+        {
+          file,
+          message: `question ${q.id ?? index + 1}: sourceRef must use 'citation | public URL' instead of bare URLs`,
+        },
+      ];
+    }
     if (!hasLinkedCitation(q.sourceRef) && !q.internalRef) {
       return [
         {
@@ -53,6 +61,9 @@ function validateMetaFile(file: string): Failure[] {
   if (!raw || typeof raw !== "object") return [];
   const meta = raw as { sourceRef?: string; internalRef?: string };
   if (!meta.sourceRef) return [];
+  if (hasBareUrlEntry(meta.sourceRef)) {
+    return [{ file, message: "sourceRef must use 'citation | public URL' instead of bare URLs" }];
+  }
   if (!hasLinkedCitation(meta.sourceRef) && !meta.internalRef) {
     return [{ file, message: "sourceRef needs at least one public link or internalRef" }];
   }

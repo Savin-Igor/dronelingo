@@ -228,6 +228,16 @@ export function hasLinkedCitation(value: string | null | undefined): boolean {
   return parseSourceRef(value).some((citation) => Boolean(citation.url));
 }
 
+export function hasBareUrlEntry(value: string | null | undefined): boolean {
+  if (!value) return false;
+
+  return value
+    .split(";")
+    .map((item) => item.trim())
+    .filter(Boolean)
+    .some((item) => /^https?:\/\//.test(item) && !item.includes("|"));
+}
+
 export function serializeSourceRef(citations: SourceCitation[]): string {
   return citations
     .map((citation) =>

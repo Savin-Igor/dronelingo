@@ -48,6 +48,8 @@ def parse_source_ref(ref: Any) -> tuple[bool, str]:
   if not isinstance(ref, str) or not ref.strip():
     return False, "sourceRef must be a non-empty string"
   parts = [part.strip() for part in ref.split(";") if part.strip()]
+  if any(part.startswith(("http://", "https://")) and "|" not in part for part in parts):
+    return False, "sourceRef must use 'citation | public URL' instead of bare URLs"
   has_link = any(" | " in part or "|http" in part or "| https" in part for part in parts)
   return has_link, ""
 

@@ -2,7 +2,7 @@
 //
 // Multilingual content fields are Json columns shaped {lv, en, ru, ...} with
 // `en` as the runtime fallback. See CLAUDE.md for the localization contract.
-// Every Question must carry a sourceRef pointing into docs/knowledge/.
+// Every Question must carry a public-facing sourceRef citation string.
 
 generator client {
   provider = "prisma-client-js"
