@@ -37,6 +37,23 @@ const ENISA_TRANSPORT_URL =
 const IATA_LITHIUM_BATTERY_GUIDANCE_URL =
   "https://www.iata.org/contentassets/05e6d8742b0047259bf3a700bc9d42b9/lithium-battery-guidance-document.pdf";
 
+const INTERNAL_SOURCE_PATHS: Record<string, string> = {
+  [EUR_LEX_2019_947_URL]: "/regulations/reg-eu-2019-947",
+  [EUR_LEX_2019_945_URL]: "/regulations/reg-eu-2019-945",
+  [EASA_UAS_RULES_URL]: "/regulations/easa-easy-access-rules",
+  [CAA_QUALIFICATIONS_URL]: "/regulations/caa-lv-qualifications",
+  [CAA_A1_A3_URL]: "/regulations/caa-lv-qualifications",
+  [CAA_A2_URL]: "/regulations/caa-lv-qualifications",
+  [CAA_REGISTRATION_URL]: "/regulations/caa-lv-registration",
+  [CAA_GEOZONES_URL]: "/regulations/caa-lv-geozones",
+  [CAA_INSURANCE_URL]: "/regulations/caa-lv-insurance",
+};
+
+export function getInternalUrl(url: string | null): string | null {
+  if (!url) return null;
+  return INTERNAL_SOURCE_PATHS[url] ?? null;
+}
+
 export type SourceCitation = {
   label: string;
   url: string | null;
