@@ -1,0 +1,223 @@
+# Labākie termālie droni meklēšanai un glābšanai
+
+Labākie termālie droni meklēšanai un glābšanai ne vienmēr ir lielākie vai tehniski “jaudīgākie” lidaparāti. SAR komandām izšķirošais ir cits jautājums: kuru platformu var ātri pacelt gaisā, noturēt stabilu virs reāla reljefa, un ar kuru ekipāža spēj ne tikai pamanīt siltuma avotu, bet arī droši apstiprināt, ko tā patiesībā redz.
+
+Tieši tāpēc 2026. gadā iepirkuma jautājums vairs nav “kuram dronam ir termokamera”. Pareizais jautājums ir — kurš termālais drons atbilst konkrētajam darbam: pazuduša cilvēka meklēšanai mežā, krasta līnijas pārmeklēšanai naktī, applūdušu teritoriju apskatei, kalnainam reljefam, vai pilsētvides incidentam, kur svarīga ir arī šķēršļu apiešana un droša lidošana starp kokiem, ēkām un infrastruktūru.
+
+Oficiālās ražotāju specifikācijas tagad ļoti skaidri sadala tirgu. `DJI Matrice 4T` virza uz priekšu kompakto enterprise klasi ar `640 × 512` termālo kameru, līdz `49` minūšu lidojuma laiku, lāzera tālmēru un spēcīgu vairāku kameru komplektu. `DJI Mavic 3T` joprojām ir viens no loģiskākajiem ātrās reaģēšanas variantiem, jo tas ir mazāks, vieglāk pārnēsājams un vienlaikus saglabā pilnvērtīgu termālo slodzi. `Autel Alpha` iet citā virzienā — lielāks, izturīgāks, `IP55`, ar hot-swappable baterijām un industriālāku darbības filozofiju. `FLIR SIRAS` saglabā vērtību tāpēc, ka tas ir veidots tieši termālajam darbam un pirmās reaģēšanas scenārijiem. Savukārt `Skydio X10D` parāda, cik svarīgi SAR iepirkumos kļūst autonomie sensori, `360°` šķēršļu uztvere un spēcīga skaitļošanas platforma.
+
+## Labākais termālais SAR drons ir atkarīgs no misijas klases
+
+Vienas “pareizās” platformas visiem meklēšanas un glābšanas scenārijiem nav. Praktiskāk ir salīdzināt pēc misijas veida.
+
+| Platforma | Kam der vislabāk | Galvenā priekšrocība | Kompromiss |
+| --- | --- | --- | --- |
+| `DJI Matrice 4T` | Universālām SAR komandām | `49` minūtes, `640 × 512` termālā kamera, tālmērs, spēcīgs zoom un vairāku kameru komplekts | Dārgāks un lielāks komplekts nekā ultra-portatīviem droniem |
+| `DJI Mavic 3T` | Ātrai reaģēšanai, policijai, brīvprātīgo SAR grupām | Ātra izvēršana, laba pārnēsājamība, `45` minūtes, `56×` hybrid zoom, pilnvērtīga termālā kamera | Mazāka rezerve sliktos laikapstākļos un mazākas platformas “muskuļi” |
+| `Autel Alpha` | Sarežģītiem laikapstākļiem, industriālām un smagākām misijām | `IP55`, hot-swappable baterijas, `40` minūtes, `12 m/s` vēja noturība | Lielāks transporta un loģistikas slogs |
+| `FLIR SIRAS` | Termālajam darbam orientētām sabiedriskās drošības komandām | FLIR termālais workflow, quick-connect slodzes, geofence-free pieeja | Īsāks lidojuma laiks nekā jaunākajiem premium konkurentiem |
+| `Skydio X10D` | Apvidum ar kokiem, konstrukcijām un sarežģītu navigāciju | `360°` šķēršļu uztvere, Boson+ termālā kamera, ātra iedarbināšana, stipra autonomija | Sarežģītāks iepirkuma konteksts un premium pozicionējums |
+
+Šī tabula labi parāda tipisku kļūdu. Daudzas organizācijas pārvērtē “kameras ciparus”, bet nenovērtē ekipāžas darbu un izvēršanas ātrumu. SAR pasaulē drons, kas ir gaisā pēc minūtes un dod komandai desmit produktīvas minūtes virs pareizā sektora, bieži ir vērtīgāks par tehniski jaudīgāku platformu, kuru ir grūtāk sagatavot.
+
+## Kas SAR termālajā dronā patiešām ir svarīgs
+
+### Termālā jutība ir svarīga, bet ar to vien nepietiek
+
+Laba SAR platforma nav tikai “drona korpuss ar termokameru”. Jāskatās uz termālo jutību, objektīvu, kontrastu, radiometriskajām iespējām un uz to, vai redzamās gaismas kamera palīdz ekipāžai apstiprināt iespējamo atradumu.
+
+Cilvēks mežā, pie slapjas zemes, akmeņainā reljefā vai daļēji aizsegts ar veģetāciju neizskatās pēc ideāla balta silueta. Mitrums, vējš, saules uzsildīta virsma, ēna, reljefs un lidojuma augstums būtiski maina to, ko operators redz. Tāpēc zemāks `NETD` skaitlis ir vērtīgs, bet tas automātiski negarantē veiksmīgu meklēšanu.
+
+Šeit `FLIR SIRAS` joprojām ir nopietns kandidāts. Tā vērtība nav tikai Boson termālā matrica, bet arī tas, ka platforma jau no sākuma veidota sabiedriskās drošības un termālās interpretācijas darbplūsmai.
+
+### Zoom ir kritisks, jo meklēšanā nepietiek tikai pamanīt
+
+SAR komandai nepietiek konstatēt “kaut ko siltu”. Ir jāspēj atšķirt cilvēku no dzīvnieka, siltu akmeni no cilvēka ķermeņa, svaigi apstājušos transportlīdzekli no reāla meklēšanas objekta.
+
+Tāpēc kombinācija starp termālo kameru un redzamās gaismas zoom kameru bieži ir svarīgāka par pašu termālo izšķirtspēju. `Mavic 3T` ar savu līdz `56×` hybrid zoom joprojām ir ļoti spēcīgs šajā klasē. `Matrice 4T` iet vēl tālāk, jo piedāvā plašāku vairāku kameru komplektu un lāzera tālmēru, kas palīdz ne tikai atrast, bet arī drošāk novērtēt attālumu un koordināciju ar zemes komandām.
+
+### Izvēršanas ātrums ir reāla operacionāla priekšrocība
+
+Meklēšanas un glābšanas droni bieži nestartē no ideāla laukuma dienas vidū. Tie tiek palaisti no ceļmalas, meža stigas, ūdens malas, incidenta komandpunkta vai improvizētas pozīcijas krēslā un vējā.
+
+Šeit izceļas mazākās platformas. `Mavic 3T` joprojām ir viens no labākajiem variantiem tieši tāpēc, ka to ir viegli iemest automašīnā, ātri salikt un sākt darbu. Arī `Skydio X10D` specifikācijā norādītais starta laiks zem `40` sekundēm ir būtisks rādītājs situācijās, kur minūtes patiešām skaita.
+
+### Vēja noturība un korpusa aizsardzība ir tikpat svarīgas kā sensors
+
+Bieža iepirkumu kļūda ir skatīties uz termālo dronu tā, it kā tas būtu tikai kameras statīvs. Meklēšanā tas tā nestrādā. Platformai ir jāspēj noturēt pozīciju, dot pilotam stabilu ainu un izturēt reālos apstākļus.
+
+`DJI Matrice 4T` un `DJI Mavic 3T` oficiāli norāda `12 m/s` vēja noturību. `Autel Alpha` arī norāda `12 m/s`, taču to apvieno ar `IP55` korpusu un hot-swappable baterijām, kas lauka darbā dod citu darba ritmu. `FLIR SIRAS` ar `IP54` un aptuveni `31` minūtes lidojuma laiku savukārt ir saprotama izvēle komandām, kuras vēlas praktisku, termālajam darbam fokusētu platformu, nevis lielāko iespējamo dronu.
+
+### Šķēršļu uztvere SAR misijās nav “ērtības funkcija”
+
+Pazudušu cilvēku meklēšana bieži notiek gar kokiem, stāviem krastiem, komunikāciju koridoriem, sabrukušām konstrukcijām vai pilsētvides malām. Termokamera šo risku nemazina. Dažos gadījumos tā pat palielina slodzi, jo ekipāža lido zemāk vai strādā sliktākā redzamībā.
+
+Tieši tāpēc `Skydio` pieeja ir tik interesanta. `X10D` specifikācijā minētā `true 360° obstacle avoidance coverage` nav dekoratīva iespēja. Blīvā reljefā vai struktūrām bagātā teritorijā tā var samazināt pilota slodzi un ļaut ekipāžai vairāk koncentrēties uz meklēšanu, nevis uz pastāvīgu baili zaudēt platformu.
+
+## `DJI Matrice 4T` pašlaik ir spēcīgākais kompaktais universālais variants
+
+`Matrice 4T` 2026. gadā izskatās pēc pilnīgākā kompaktā termālā SAR drona tirgū.
+
+Oficiālajās specifikācijās tas apvieno vairākas lietas, kas reāli svarīgas meklēšanā:
+
+- līdz `49` minūtēm gaisā bezvēja apstākļos;
+- `640 × 512` termālo sensoru ar `VOx` matricu;
+- termālo jutību `≤50 mK`;
+- `12 m/s` vēja noturību;
+- vairāku redzamās gaismas kameru komplektu;
+- lāzera tālmēru līdz `1800 m` noteiktos apstākļos.
+
+Tas padara `Matrice 4T` nevis par “dronu ar termokameru”, bet par pilnvērtīgu sabiedriskās drošības izlūkošanas instrumentu. Viena platforma var meklēt termāli, apstiprināt vizuāli, novērtēt attālumu un dokumentēt vidi bez nepieciešamības mainīt komplektu.
+
+Galvenais kompromiss ir vienkāršs — tas joprojām ir lielāks enterprise līmeņa rīks nekā klasiskie salokāmie ātrās reaģēšanas droni.
+
+## `DJI Mavic 3T` joprojām ir labākais portatīvais variants daudziem pirmās reaģēšanas dienestiem
+
+`Mavic 3T` joprojām ir ļoti svarīgs tāpēc, ka daudzās SAR misijās uzvar nevis lielākais drons, bet tas, kurš pirmais sāk samazināt meklēšanas zonu.
+
+Tā oficiālā specifikācija joprojām izskatās ļoti spēcīgi:
+
+- līdz `45` minūtēm lidojuma;
+- `640 × 512` termālais video ar `30 fps`;
+- termālā jutība `≤50 mK`;
+- līdz `56×` hybrid zoom;
+- `12 m/s` vēja noturība;
+- daudz mazāks un vieglāks komplekts nekā lielākajiem enterprise droniem.
+
+Brīvprātīgo SAR komandām, policijai un jauktiem reaģēšanas dienestiem šī kombinācija joprojām ir ļoti grūti pārspējama. `Mavic 3T` var glabāt automašīnā, ātri izvērst un ar to paveikt ļoti lielu daļu reālo pazudušu cilvēku meklēšanas izsaukumu.
+
+Tā robeža nav “spēju trūkums”, bet gan darba rezerve. Smagākos laikapstākļos, ilgākās misijās un stingrākos industriālos apstākļos komandai var gribēties robustāku platformu.
+
+## `Autel Alpha` ir paredzēts komandām, kuras prioritizē noturību
+
+`Autel Alpha` nav veidots kā mazākais iespējamais SAR drons. Tā filozofija ir cita — noturīga industriāla platforma darbam skarbākos apstākļos.
+
+Oficiālajā informācijā izcelts:
+
+- `IP55` aizsardzības līmenis;
+- hot-swappable baterijas;
+- līdz `40` minūtēm gaisā;
+- `12 m/s` vēja noturība;
+- darbība no `-20°C` līdz `50°C`;
+- AI balstīta cilvēku, laivu un transportlīdzekļu atpazīšana dažādos kameras režīmos.
+
+Daļai organizāciju tas ir loģiskāks iepirkums nekā mazāks salokāms drons. Infrastruktūras tuvumā, applūdušās teritorijās, pie energotīkliem vai vides, kur svarīga ir lielāka noturība, `Alpha` pieeja ir saprotama.
+
+Kompromiss ir paredzams — lielāks komplekts, lielāka loģistika un mazāk “paņem un lido” sajūtas.
+
+## `FLIR SIRAS` joprojām ir svarīgs, jo termālais workflow nav pazudis
+
+`SIRAS` ir viegli nenovērtēt, ja salīdzinājums sākas un beidzas tikai ar lidojuma laiku. Tas būtu nepareizi.
+
+`FLIR` šo platformu būvēja tieši sabiedriskajai drošībai un termālajam darbam. Ražotājs min `IP54`, priekšējo šķēršļu izvairīšanos, hot-swappable baterijas, aptuveni `31` minūtes lidojuma laiku, quick-connect slodzes un geofence-free pieeju. `Vue TV128` slodze apvieno `16 MP` redzamās gaismas kameru ar `128×` zoom un radiometrisku `640 × 512` Boson termālo kameru.
+
+Tas joprojām ir ļoti labs arguments komandām, kuras īpaši vērtē:
+
+- termālās interpretācijas darbplūsmu;
+- publiskās drošības fokusu, nevis vispārīgu enterprise pozicionējumu;
+- mazāku operacionālo berzi tur, kur geofence ierobežojumi ir jutīgs jautājums.
+
+## `Skydio X10D` rāda, ka SAR tirgū ienāk autonomija un šķēršļu inteliģence
+
+`Skydio X10D` nav klasisks “labākais cenas un kvalitātes SAR termālais drons”. Tas ir interesants tāpēc, ka parāda tirgus virzienu.
+
+Tā tehniskajā specifikācijā redzams:
+
+- starts zem `40` sekundēm;
+- līdz `40` minūtēm lidojuma;
+- `IP55`;
+- `true 360°` šķēršļu uztvere;
+- `FLIR Boson+ 640 × 512` termālā kamera;
+- termālā jutība zem `30 mK`;
+- plašā, šaurā un tele redzamās gaismas kameras;
+- `NVIDIA Jetson Orin` un `Qualcomm` skaitļošanas platforma.
+
+SAR komandām te svarīgākais nav tikai termokamera. Vērtība slēpjas tajā, ka termālā uztvere, navigācija, autonomija un šķēršļu apiešana sāk saplūst vienā darba instrumentā. Sarežģītā reljefā tas var nozīmēt mazāku pilota slodzi un lielāku produktivitāti.
+
+## Termālo SAR dronu ekonomika galvenokārt ir par ietaupītām meklēšanas stundām
+
+Pārāk bieži iepirkumos skatās tikai uz drona cenu. SAR kontekstā svarīgāks jautājums ir cits — cik daudz laika, cilvēku darba un riska platforma spēj noņemt no meklēšanas operācijas.
+
+Laba platforma rada vērtību caur:
+
+- ātrāku meklēšanas zonas samazināšanu;
+- mazāk viltus pozitīvu signālu;
+- mazāk bīstamu nakts iziešanu zemes komandām;
+- ātrāku pārbaudi pie ēkām, auto, ūdensmalām un meža robežām;
+- zemāku nenoteiktības cenu pirmajā incidenta fāzē.
+
+Tas nenozīmē, ka droni aizstāj helikopterus vai zemes komandas. Tas nozīmē, ka tie samazina nenoteiktību. Un tieši nenoteiktība parasti maksā visdārgāk.
+
+## Biežākās iepirkuma kļūdas
+
+### Pirkt pēc maksimālā “range”, nevis reālās misijas ģeometrijas
+
+Daudzas SAR misijas tiek uzvarētas salīdzinoši tuvu ceļiem, takām, ūdensmalām vai pēdējās zināmās atrašanās vietas punktiem. Ļoti liels drons ne vienmēr ir labākais risinājums.
+
+### Jaukt termālo detekciju ar automātisku identifikāciju
+
+Termālā kamera rāda siltuma kontrastu, nevis identitāti. Joprojām vajag apstiprinājumu, disciplīnu un redzamās gaismas kontekstu.
+
+### Nepietiekami ieguldīt termālās interpretācijas apmācībā
+
+Pat labs sensors nedod rezultātu, ja operators nemāk interpretēt fonu, sasilušas virsmas, dzīvniekus un reljefa ietekmi.
+
+### Nenovērtēt laikapstākļus un lauka loģistiku
+
+Dronam jābūt ne tikai labam demonstrācijā, bet arī praktiski lietojamam regulārā nakts, ziemas un ārpusceļu darbā.
+
+## Praktisks iepirkuma rāmis SAR organizācijām
+
+Vienkāršākais veids, kā nopirkt nepareizu platformu, ir jautāt par “labāko SAR dronu” abstrakti. Iepirkums kļūst daudz precīzāks, tiklīdz komanda sāk no savas reālās izvēršanas loģikas.
+
+Mazākām policijas, vides dienestu vai brīvprātīgo vienībām parasti pirmais jautājums ir šāds: cik ātri platformu var pacelt no automašīnas un cik bieži tas pats komplekts noderēs arī ikdienas sabiedriskās drošības darbā ārpus lieliem meklēšanas incidentiem. Šeit ļoti bieži loģiskāka izvēle ir `Mavic 3T` klase.
+
+Reģionālām struktūrām ar plašāku misiju klāstu pareizāks jautājums jau ir cits — vai viena platforma spēj apvienot termālo meklēšanu, vizuālu apstiprinājumu, situācijas pārredzamību, dokumentēšanu un atsevišķus mērīšanas uzdevumus. Šeit `Matrice 4T` tipa platforma kļūst daudz pārliecinošāka.
+
+Komandām, kas regulāri strādā ap energotīkliem, applūdušās teritorijās, skarbākos laikapstākļos vai smagākā infrastruktūras vidē, daudz lielāka uzmanība jāpievērš korpusa aizsardzībai, bateriju maiņas ritmam un pašas platformas robustumam. Šādā loģikā `Autel Alpha` var būt saprātīgāks pirkums nekā viegls ātrās reaģēšanas drons.
+
+Savukārt organizācijām, kurām jau ir izteikta termālā darba kultūra vai process, kas balstās uz `FLIR` rīkiem, nevajadzētu ignorēt operacionālās pazīstamības vērtību. `SIRAS` var nebūt līderis visos izturības salīdzinājumos, bet mazāka berze interpretācijā, apmācībā un izvēršanā dažkārt ir operacionāli svarīgāka par pašu maksimālo lidojuma laiku.
+
+Ja komanda regulāri lido mežos, pie ēkām vai vietās, kur sadursmes risks ir pastāvīga pilota slodze, tad šķēršļu uztvere un navigācijas inteliģence jāvērtē daudz nopietnāk nekā vecākos iepirkuma modeļos. Tieši tur kļūst saprotama `Skydio` pieeja.
+
+## Apmācība un ekipāžas workflow joprojām izšķir rezultātu
+
+Pat labākais termālais drons pats par sevi negarantē labu iznākumu. Termālā meklēšana joprojām ir ekipāžas prasme.
+
+Komandas, kas no droniem iegūst vairāk, parasti standartizē dažas pamata lietas:
+
+- kurš pilotē un kurš interpretē termālo attēlu;
+- kā notiek siltuma avota vizuāls apstiprinājums;
+- kad ekipāža nolaižas zemāk un kad saglabā augstumu;
+- kā iespējamos atradumus marķē un nodod zemes komandām;
+- kādos apstākļos jāmaina meklēšanas shēma.
+
+Tas ir svarīgi tāpēc, ka termālais drons samazina nenoteiktību, bet to neizņem pavisam. Spēcīga platforma saīsina ceļu no “iespējams siltuma avots” līdz “ticama norāde”. Spēcīga ekipāža šo norādi pārvērš drošā un savlaicīgā rezultātā.
+
+## FAQ
+
+### Kurš ir labākais termālais drons meklēšanai un glābšanai 2026. gadā?
+
+Universālai kompaktai SAR lietošanai `DJI Matrice 4T` izskatās kā spēcīgākais all-round variants. Ātrai un portatīvai reaģēšanai `DJI Mavic 3T` joprojām ir viens no labākajiem kompromisiem.
+
+### Vai termālais drons viens pats ir pietiekams, lai naktī atrastu pazudušu cilvēku?
+
+Nē. Tas palīdz atklāt un sašaurināt teritoriju, taču rezultātu joprojām ietekmē reljefs, laikapstākļi, veģetācija un ekipāžas prasmes.
+
+### Vai `640 × 512` termālā izšķirtspēja SAR darbam ir pietiekama?
+
+Daudzām misijām — jā. Taču rezultātu tikpat stipri ietekmē augstums, objektīvs, kontrasts, zoom un operatora disciplīna.
+
+### Kāpēc kāda komanda izvēlētos `FLIR SIRAS` nevis `DJI` vai `Autel`?
+
+Tāpēc, ka `SIRAS` ir izteikti fokusēts uz termālo sabiedriskās drošības workflow, quick-connect slodzēm, hot-swappable baterijām un darbību bez ierobežojoša geofence modeļa.
+
+### Vai šķēršļu uztvere SAR termālajā dronā tiešām ir tik svarīga?
+
+Jā. Mežainās, pilsētas vai infrastruktūras bagātās teritorijās tā tieši ietekmē lidojuma drošību un pilota slodzi.
+
+## Secinājums
+
+Labākie termālie droni meklēšanai un glābšanai 2026. gadā neatšķiras ar vienu “maģisku” parametru. Tie atšķiras ar misijas atbilstību. `Matrice 4T` šobrīd ir spēcīgākais kompaktais universālais variants. `Mavic 3T` joprojām ir gudrākais portatīvās reaģēšanas rīks. `Autel Alpha` uzsver izturību un robustumu. `FLIR SIRAS` joprojām ir loģisks termāli fokusētām sabiedriskās drošības komandām. `Skydio X10D` rāda, kur virzās nākamā paaudze — uz vairāk autonomijas, šķēršļu inteliģences un sensora-datorredzes saplūšanu.
+
+Lielākajai daļai organizāciju pareizais pirkums būs tas, kas ļauj ekipāžai ātri tikt gaisā, noturēt stabilu termālo ainu un droši apstiprināt atradumu, pirms laiks un risks sāk strādāt pret viņiem.
