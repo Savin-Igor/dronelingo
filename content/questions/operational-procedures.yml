@@ -4,37 +4,34 @@
     en: What must be verified for the batteries before every flight?
     ru: Что обязательно проверять у аккумуляторов перед каждым полётом?
   options:
-  - id: a
-    text:
-      lv: Uzlādes līmenis, fiziskā stāvokļa pārbaude (nav uzpūstas), temperatūra.
-      en: Charge level, physical condition (not swollen), temperature.
-      ru: Уровень заряда, физическое состояние (не вздуты), температура.
-  - id: b
-    text:
-      lv: Tikai uzlādes līmenis.
-      en: Charge level only.
-      ru: Только уровень заряда.
-  - id: c
-    text:
-      lv: Tikai sērijas numurs.
-      en: Serial number only.
-      ru: Только серийный номер.
-  - id: d
-    text:
-      lv: Tikai tas, ka baterija ir pievienota.
-      en: Only that the battery is connected.
-      ru: Только то, что аккумулятор подключён.
+    - id: a
+      text:
+        lv: Uzlādes līmenis, fiziskā stāvokļa pārbaude (nav uzpūstas), temperatūra.
+        en: Charge level, physical condition (not swollen), temperature.
+        ru: Уровень заряда, физическое состояние (не вздуты), температура.
+    - id: b
+      text:
+        lv: Tikai uzlādes līmenis.
+        en: Charge level only.
+        ru: Только уровень заряда.
+    - id: c
+      text:
+        lv: Tikai sērijas numurs.
+        en: Serial number only.
+        ru: Только серийный номер.
+    - id: d
+      text:
+        lv: Tikai tas, ka baterija ir pievienota.
+        en: Only that the battery is connected.
+        ru: Только то, что аккумулятор подключён.
   correctOptionId: a
   explanation:
-    lv: 'Li-Po baterijas ir Atvērtās kategorijas drona kritiskais elements. Uzpūsta baterija var aizdegties; pārāk auksta vai karsta — nedos paredzamo jaudu.
-
-      '
-    en: 'Li-Po batteries are the critical element of an Open-category drone. A swollen battery can ignite; one that is too cold or too hot will not deliver predictable power.
-
-      '
-    ru: 'Li-Po аккумуляторы — критический элемент дрона Открытой категории. Вздутый может загореться; слишком холодный или горячий не даст предсказуемую мощность.
-
-      '
+    lv: |
+      Li-Po baterijas ir Atvērtās kategorijas drona kritiskais elements. Uzpūsta baterija var aizdegties; pārāk auksta vai karsta — nedos paredzamo jaudu.
+    en: |
+      Li-Po batteries are the critical element of an Open-category drone. A swollen battery can ignite; one that is too cold or too hot will not deliver predictable power.
+    ru: |
+      Li-Po аккумуляторы — критический элемент дрона Открытой категории. Вздутый может загореться; слишком холодный или горячий не даст предсказуемую мощность.
   distractorRationales:
     b:
       lv: Tikai uzlādes līmenis ir nepietiekami — uzpūsta vai pārāk auksta baterija ar 100 % uzlādi joprojām ir bīstama.
@@ -48,47 +45,45 @@
       lv: Pievienojums ir pirmais solis, bet ne pārbaude. Bojāta baterija var būt pievienota — riska tas nenovērš.
       en: Connection is a precondition, not a check. A damaged battery can be connected — that does not remove the risk.
       ru: Подключение — это предусловие, а не проверка. Повреждённый аккумулятор может быть подключён — это не снимает риск.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Operational procedures; manufacturer manuals
+  sourceRef: "EASA Easy Access Rules — Operational procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; manufacturer manuals | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 1
   cognitiveLevel: apply
   scenarioType: factual
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Operational procedures; manufacturer manuals
 - id: op-002
   stem:
     lv: Ko UAS pilots pirmām kārtām dara, ja zaudē vadības saiti (lost link)?
     en: What is the pilot's first action when the control link is lost?
     ru: Какое первое действие пилота при потере канала управления?
   options:
-  - id: a
-    text:
-      lv: Skrien zem drona un mēģina to noķert.
-      en: Run beneath the drone and try to catch it.
-      ru: Бежать под дрон и пытаться его поймать.
-  - id: b
-    text:
-      lv: Paļaujas uz UAS iepriekš iestatīto fail-safe (RTH vai kontrolēta nolaišanās).
-      en: Rely on the UAS's pre-set fail-safe (RTH or controlled descent).
-      ru: Полагаться на заранее заданный fail-safe UAS (RTH или контролируемый спуск).
-  - id: c
-    text:
-      lv: Atvieno baterijas paku tālvadības pultī.
-      en: Disconnect the battery in the remote controller.
-      ru: Отключить аккумулятор в пульте управления.
-  - id: d
-    text:
-      lv: Restartē mobilo lietotni, lai atjaunotu saiti.
-      en: Restart the mobile app to restore the link.
-      ru: Перезапустить мобильное приложение, чтобы восстановить связь.
+    - id: a
+      text:
+        lv: Skrien zem drona un mēģina to noķert.
+        en: Run beneath the drone and try to catch it.
+        ru: Бежать под дрон и пытаться его поймать.
+    - id: b
+      text:
+        lv: Paļaujas uz UAS iepriekš iestatīto fail-safe (RTH vai kontrolēta nolaišanās).
+        en: Rely on the UAS's pre-set fail-safe (RTH or controlled descent).
+        ru: Полагаться на заранее заданный fail-safe UAS (RTH или контролируемый спуск).
+    - id: c
+      text:
+        lv: Atvieno baterijas paku tālvadības pultī.
+        en: Disconnect the battery in the remote controller.
+        ru: Отключить аккумулятор в пульте управления.
+    - id: d
+      text:
+        lv: Restartē mobilo lietotni, lai atjaunotu saiti.
+        en: Restart the mobile app to restore the link.
+        ru: Перезапустить мобильное приложение, чтобы восстановить связь.
   correctOptionId: b
   explanation:
-    lv: 'Lost link gadījumā UAS izmanto iepriekš iestatīto fail-safe — RTH vai kontrolētu nolaišanos. Pilots pārliecinās, ka šie iestatījumi ir pareizi pirms lidojuma.
-
-      '
-    en: 'On lost link the UAS executes its pre-set fail-safe — RTH or controlled descent. The pilot validates these settings before flight.
-
-      '
-    ru: 'При потере связи UAS выполняет заранее заданный fail-safe — RTH или контролируемый спуск. Пилот должен проверять эти настройки до полёта.
-
-      '
+    lv: |
+      Lost link gadījumā UAS izmanto iepriekš iestatīto fail-safe — RTH vai kontrolētu nolaišanos. Pilots pārliecinās, ka šie iestatījumi ir pareizi pirms lidojuma.
+    en: |
+      On lost link the UAS executes its pre-set fail-safe — RTH or controlled descent. The pilot validates these settings before flight.
+    ru: |
+      При потере связи UAS выполняет заранее заданный fail-safe — RTH или контролируемый спуск. Пилот должен проверять эти настройки до полёта.
   distractorRationales:
     a:
       lv: Mēģinājums skriet zem drona ir tiešs apdraudējums pilotam — krītoša drona trajektorija nav prognozējama.
@@ -102,47 +97,45 @@
       lv: Lietotnes restarts ietekmē tikai pilota ekrānu, nevis radio saiti vai drona uzvedību. Saite tiek atjaunota tehniski citā līmenī.
       en: Restarting the app affects only the pilot's screen, not the radio link or the drone's behaviour. The link recovers at a different technical layer.
       ru: Перезапуск приложения влияет только на экран пилота, а не на радиосвязь или поведение дрона. Связь восстанавливается на другом техническом уровне.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures
+  sourceRef: "EASA Easy Access Rules — Emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures
 - id: op-003
   stem:
     lv: Kāds ir Follow-Me režīma maksimālais attālums no pilota A1 apakškategorijā?
     en: What is the maximum Follow-Me distance from the pilot in A1?
     ru: Какова максимальная дистанция режима Follow-Me от пилота в A1?
   options:
-  - id: a
-    text:
-      lv: 500 m.
-      en: 500 m.
-      ru: 500 м.
-  - id: b
-    text:
-      lv: 120 m.
-      en: 120 m.
-      ru: 120 м.
-  - id: c
-    text:
-      lv: 50 m.
-      en: 50 m.
-      ru: 50 м.
-  - id: d
-    text:
-      lv: 250 m.
-      en: 250 m.
-      ru: 250 м.
+    - id: a
+      text:
+        lv: 500 m.
+        en: 500 m.
+        ru: 500 м.
+    - id: b
+      text:
+        lv: 120 m.
+        en: 120 m.
+        ru: 120 м.
+    - id: c
+      text:
+        lv: 50 m.
+        en: 50 m.
+        ru: 50 м.
+    - id: d
+      text:
+        lv: 250 m.
+        en: 250 m.
+        ru: 250 м.
   correctOptionId: c
   explanation:
-    lv: 'Atvērtajā A1 apakškategorijā Follow-Me režīma maksimālais attālums ir 50 m no tālvadības pilota.
-
-      '
-    en: 'In Open A1 the Follow-Me distance is capped at 50 m from the remote pilot.
-
-      '
-    ru: 'В Открытой A1 максимальное расстояние Follow-Me — 50 м от пилота.
-
-      '
+    lv: |
+      Atvērtajā A1 apakškategorijā Follow-Me režīma maksimālais attālums ir 50 m no tālvadības pilota.
+    en: |
+      In Open A1 the Follow-Me distance is capped at 50 m from the remote pilot.
+    ru: |
+      В Открытой A1 максимальное расстояние Follow-Me — 50 м от пилота.
   distractorRationales:
     a:
       lv: 500 m pārsniedz arī VLOS reālo robežu lielākajai daļai UAS. Follow-Me ir ievērojami stingrāks limits — 50 m.
@@ -156,47 +149,45 @@
       lv: 250 m joprojām pārsniedz Follow-Me limitu. Iespējams, ka VLOS šajā attālumā vēl saglabājas, bet Follow-Me konkrēti — 50 m.
       en: 250 m still exceeds the Follow-Me limit. VLOS may still hold at that range, but Follow-Me specifically is capped at 50 m.
       ru: 250 м всё равно превышает лимит Follow-Me. VLOS может ещё сохраняться на такой дистанции, но именно Follow-Me — 50 м.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.020(1)(a) — follow-me mode
+  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020(1)(a) — follow-me mode | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: factual
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.020(1)(a) — follow-me mode
 - id: op-004
   stem:
     lv: Kā uzglabāt Li-Po bateriju, ja to neplāno lietot tuvākajās 2 nedēļās?
     en: How to store a Li-Po battery if it will not be used for the next 2 weeks?
     ru: Как хранить Li-Po аккумулятор, если он не будет использоваться 2 недели?
   options:
-  - id: a
-    text:
-      lv: Uzlādētu līdz 80–90 % — universāls līmenis jebkurai uzglabāšanai.
-      en: Charged to 80–90 % — a universal level for any storage period.
-      ru: Заряженным до 80–90 % — универсальный уровень для любого хранения.
-  - id: b
-    text:
-      lv: Pilnībā uzlādētu līdz 100 %.
-      en: Fully charged to 100 %.
-      ru: Полностью заряженным до 100 %.
-  - id: c
-    text:
-      lv: Pilnībā izlādētu līdz 0 %.
-      en: Fully discharged to 0 %.
-      ru: Полностью разряженным до 0 %.
-  - id: d
-    text:
-      lv: Uzlādētu līdz 50–60 % (storage charge).
-      en: Charged to 50–60 % (storage charge).
-      ru: Заряженным до 50–60 % (storage charge).
+    - id: a
+      text:
+        lv: Uzlādētu līdz 80–90 % — universāls līmenis jebkurai uzglabāšanai.
+        en: Charged to 80–90 % — a universal level for any storage period.
+        ru: Заряженным до 80–90 % — универсальный уровень для любого хранения.
+    - id: b
+      text:
+        lv: Pilnībā uzlādētu līdz 100 %.
+        en: Fully charged to 100 %.
+        ru: Полностью заряженным до 100 %.
+    - id: c
+      text:
+        lv: Pilnībā izlādētu līdz 0 %.
+        en: Fully discharged to 0 %.
+        ru: Полностью разряженным до 0 %.
+    - id: d
+      text:
+        lv: Uzlādētu līdz 50–60 % (storage charge).
+        en: Charged to 50–60 % (storage charge).
+        ru: Заряженным до 50–60 % (storage charge).
   correctOptionId: d
   explanation:
-    lv: 'Li-Po šūnas degradē, ja tās ilgstoši turot ārpus 3,7–3,85 V/šūnu diapazona. Storage charge (50–60 %) maksimizē kalpošanas laiku.
-
-      '
-    en: 'Li-Po cells degrade if held for long periods outside the 3.7–3.85 V/cell range. Storage charge (50–60 %) maximises shelf life.
-
-      '
-    ru: 'Li-Po элементы деградируют при долгом хранении вне 3,7–3,85 V на ячейку. Storage charge (50–60 %) максимизирует срок службы.
-
-      '
+    lv: |
+      Li-Po šūnas degradē, ja tās ilgstoši turot ārpus 3,7–3,85 V/šūnu diapazona. Storage charge (50–60 %) maksimizē kalpošanas laiku.
+    en: |
+      Li-Po cells degrade if held for long periods outside the 3.7–3.85 V/cell range. Storage charge (50–60 %) maximises shelf life.
+    ru: |
+      Li-Po элементы деградируют при долгом хранении вне 3,7–3,85 V на ячейку. Storage charge (50–60 %) максимизирует срок службы.
   distractorRationales:
     a:
       lv: 80–90 % der tikai īsām uzglabāšanas periodiem (3–14 dienas). Pie 2 nedēļām vai ilgāk pareizais līmenis ir 50–60 %.
@@ -210,47 +201,45 @@
       lv: 0 % izlāde noved šūnu zem drošā minimuma. Šūna kļūst neatgriezeniski bojāta, dažreiz neuzlādējama.
       en: 0 % discharge takes the cell below its safe minimum. The cell becomes permanently damaged, sometimes unchargeable.
       ru: 0 % уводит ячейку ниже безопасного минимума. Ячейка получает необратимое повреждение, иногда не подлежит зарядке.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Manufacturer guidance (DJI / Autel); IEEE 1725 battery guidelines
+  sourceRef: "Manufacturer guidance (DJI / Autel) | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; IEEE 1725 battery guidelines"
   difficulty: 2
   cognitiveLevel: recall
   scenarioType: numeric
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Manufacturer guidance (DJI / Autel); IEEE 1725 battery guidelines
 - id: op-005
   stem:
     lv: Ko pirmām kārtām dara, ja UAS lidojuma laikā parādās "low battery" brīdinājums?
     en: What is the first action when a "low battery" warning appears in flight?
     ru: Какое первое действие при появлении предупреждения «low battery» в полёте?
   options:
-  - id: a
-    text:
-      lv: Pārtrauc misiju un nolaiž drošā vietā.
-      en: Abort the mission and land at a safe spot.
-      ru: Прервать миссию и сесть в безопасном месте.
-  - id: b
-    text:
-      lv: Turpina misiju — drons pats nolaidīsies.
-      en: Continue the mission — the drone will land itself.
-      ru: Продолжать миссию — дрон сядет сам.
-  - id: c
-    text:
-      lv: Aktivē FPV režīmu, lai sasniegtu mērķi ātrāk.
-      en: Switch to FPV to reach the target faster.
-      ru: Включить FPV, чтобы быстрее достичь цели.
-  - id: d
-    text:
-      lv: Pazemina lidojuma augstumu, lai ietaupītu enerģiju.
-      en: Reduce flight altitude to save energy.
-      ru: Снизить высоту, чтобы сэкономить энергию.
+    - id: a
+      text:
+        lv: Pārtrauc misiju un nolaiž drošā vietā.
+        en: Abort the mission and land at a safe spot.
+        ru: Прервать миссию и сесть в безопасном месте.
+    - id: b
+      text:
+        lv: Turpina misiju — drons pats nolaidīsies.
+        en: Continue the mission — the drone will land itself.
+        ru: Продолжать миссию — дрон сядет сам.
+    - id: c
+      text:
+        lv: Aktivē FPV režīmu, lai sasniegtu mērķi ātrāk.
+        en: Switch to FPV to reach the target faster.
+        ru: Включить FPV, чтобы быстрее достичь цели.
+    - id: d
+      text:
+        lv: Pazemina lidojuma augstumu, lai ietaupītu enerģiju.
+        en: Reduce flight altitude to save energy.
+        ru: Снизить высоту, чтобы сэкономить энергию.
   correctOptionId: a
   explanation:
-    lv: '"Low battery" nozīmē, ka pilots zaudē rezervi rīkoties; misija jāpārtrauc un drons jānolaiž drošā vietā vai jāatgriež RTH.
-
-      '
-    en: '"Low battery" means the pilot is losing manoeuvre reserves; the mission must be aborted and the drone landed safely or returned via RTH.
-
-      '
-    ru: '«Low battery» означает потерю запаса манёвра; миссия прерывается и дрон садится в безопасном месте или возвращается через RTH.
-
-      '
+    lv: |
+      "Low battery" nozīmē, ka pilots zaudē rezervi rīkoties; misija jāpārtrauc un drons jānolaiž drošā vietā vai jāatgriež RTH.
+    en: |
+      "Low battery" means the pilot is losing manoeuvre reserves; the mission must be aborted and the drone landed safely or returned via RTH.
+    ru: |
+      «Low battery» означает потерю запаса манёвра; миссия прерывается и дрон садится в безопасном месте или возвращается через RTH.
   distractorRationales:
     b:
       lv: Drons nolaidīsies pats tikai pie kritiskā brīdinājuma. "Low battery" ir agrāks signāls, kas dod pilotam laiku pieņemt lēmumu — tas nav signāls turpināt.
@@ -264,47 +253,45 @@
       lv: Augstuma pazemināšana var palīdzēt nedaudz, bet tas pats par sevi nav pareizs lēmums — misija jāpārtrauc, lai izvairītos no nokrišanas neparedzamā vietā.
       en: Lowering altitude can help a little, but on its own it is not the right action — the mission must end so the drone does not fall in an unpredictable spot.
       ru: Снижение высоты немного помогает, но само по себе не верное решение — миссию нужно прекратить, чтобы дрон не упал в непредсказуемом месте.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures
+  sourceRef: "EASA Easy Access Rules — Emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 1
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures
 - id: op-006
   stem:
     lv: Pilots plāno lidojumu virs augļu dārza ar 8 m augstiem kokiem. Atgriešanās maršruts šķērso elektrolīnijas 15 m augstumā. Kādam minimumam jāatbilst RTH augstumam?
     en: A pilot plans a flight over an orchard with 8 m trees. The return route crosses power lines at 15 m height. What is the minimum RTH altitude that must be set?
     ru: Пилот планирует полёт над садом с деревьями 8 м. Маршрут возврата пересекает линии электропередачи высотой 15 м. Какой минимальный RTH-высоты необходимо установить?
   options:
-  - id: a
-    text:
-      lv: 8 m — augstākie koki maršrutā.
-      en: 8 m — the tallest trees on the route.
-      ru: 8 м — самые высокие деревья на маршруте.
-  - id: b
-    text:
-      lv: 15 m — augstākais šķērslis atgriešanās ceļā.
-      en: 15 m — the tallest obstacle on the return path.
-      ru: 15 м — самое высокое препятствие на пути возврата.
-  - id: c
-    text:
-      lv: 50 m — standarta drošais RTH augstums.
-      en: 50 m — a standard safe RTH altitude.
-      ru: 50 м — стандартная безопасная высота RTH.
-  - id: d
-    text:
-      lv: Augstumam nav nozīmes, ja GPS darbojas.
-      en: Altitude does not matter if GPS is working.
-      ru: Высота не имеет значения, если GPS работает.
+    - id: a
+      text:
+        lv: 8 m — augstākie koki maršrutā.
+        en: 8 m — the tallest trees on the route.
+        ru: 8 м — самые высокие деревья на маршруте.
+    - id: b
+      text:
+        lv: 15 m — augstākais šķērslis atgriešanās ceļā.
+        en: 15 m — the tallest obstacle on the return path.
+        ru: 15 м — самое высокое препятствие на пути возврата.
+    - id: c
+      text:
+        lv: 50 m — standarta drošais RTH augstums.
+        en: 50 m — a standard safe RTH altitude.
+        ru: 50 м — стандартная безопасная высота RTH.
+    - id: d
+      text:
+        lv: Augstumam nav nozīmes, ja GPS darbojas.
+        en: Altitude does not matter if GPS is working.
+        ru: Высота не имеет значения, если GPS работает.
   correctOptionId: b
   explanation:
-    lv: 'RTH augstums jāiestata virs augstākā šķēršļa visā atgriešanās ceļā. Augstākais šķērslis šajā maršrutā ir elektrolīnijas 15 m augstumā — tādēļ RTH augstumam jābūt virs 15 m. Praktiski ieteicams pievienot drošības rezervi (piemēram, 20–25 m) neparedzētu kļūdu gadījumā.
-
-      '
-    en: 'RTH altitude must be set above the tallest obstacle along the entire return path. The tallest obstacle on this route is the power lines at 15 m — therefore RTH altitude must be above 15 m. In practice a safety margin (e.g. 20–25 m) is recommended to allow for position errors.
-
-      '
-    ru: 'Высота RTH должна быть установлена выше самого высокого препятствия на всём пути возврата. Самое высокое препятствие на этом маршруте — линии электропередачи на 15 м, поэтому RTH должна быть выше 15 м. На практике рекомендуется добавить запас (например, 20–25 м).
-
-      '
+    lv: |
+      RTH augstums jāiestata virs augstākā šķēršļa visā atgriešanās ceļā. Augstākais šķērslis šajā maršrutā ir elektrolīnijas 15 m augstumā — tādēļ RTH augstumam jābūt virs 15 m. Praktiski ieteicams pievienot drošības rezervi (piemēram, 20–25 m) neparedzētu kļūdu gadījumā.
+    en: |
+      RTH altitude must be set above the tallest obstacle along the entire return path. The tallest obstacle on this route is the power lines at 15 m — therefore RTH altitude must be above 15 m. In practice a safety margin (e.g. 20–25 m) is recommended to allow for position errors.
+    ru: |
+      Высота RTH должна быть установлена выше самого высокого препятствия на всём пути возврата. Самое высокое препятствие на этом маршруте — линии электропередачи на 15 м, поэтому RTH должна быть выше 15 м. На практике рекомендуется добавить запас (например, 20–25 м).
   distractorRationales:
     a:
       lv: Koki (8 m) ir zemāki par elektrolīnijām (15 m). RTH augstumam jāpārsniedz augstākais šķērslis, ne tikai koku augstums.
@@ -318,47 +305,45 @@
       lv: GPS nodrošina navigāciju RTH laikā, bet negarantē šķērsļu izvairīšanos. Bez pareizi iestatīta RTH augstuma drons var trāpīt elektrolīnijās, ko nevar noteikt GPS.
       en: GPS provides navigation during RTH but does not guarantee obstacle avoidance. Without a correctly set RTH altitude the drone can strike power lines that GPS cannot detect.
       ru: GPS обеспечивает навигацию во время RTH, но не гарантирует обход препятствий. Без правильно установленной высоты RTH дрон может врезаться в линии электропередачи, которые GPS не обнаруживает.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; pre-flight checklist
+  sourceRef: "EASA Easy Access Rules — Emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; pre-flight checklist"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; pre-flight checklist
 - id: op-007
   stem:
     lv: Kāda ir pareizā pirmslido pārbaužu secība?
     en: What is the correct order of pre-flight checks?
     ru: Каков правильный порядок предполётных проверок?
   options:
-  - id: a
-    text:
-      lv: UAS aparatūra → vide → pilots.
-      en: UAS hardware → environment → pilot.
-      ru: Аппаратура UAS → окружающая среда → пилот.
-  - id: b
-    text:
-      lv: Pilots → UAS aparatūra → vide.
-      en: Pilot → UAS hardware → environment.
-      ru: Пилот → аппаратура UAS → окружающая среда.
-  - id: c
-    text:
-      lv: Vide → UAS aparatūra → pilots.
-      en: Environment → UAS hardware → pilot.
-      ru: Окружающая среда → аппаратура UAS → пилот.
-  - id: d
-    text:
-      lv: Secībai nav nozīmes — visas trīs sadaļas jāaizpilda.
-      en: Order does not matter — all three sections must be completed.
-      ru: Порядок не важен — все три раздела должны быть выполнены.
+    - id: a
+      text:
+        lv: UAS aparatūra → vide → pilots.
+        en: UAS hardware → environment → pilot.
+        ru: Аппаратура UAS → окружающая среда → пилот.
+    - id: b
+      text:
+        lv: Pilots → UAS aparatūra → vide.
+        en: Pilot → UAS hardware → environment.
+        ru: Пилот → аппаратура UAS → окружающая среда.
+    - id: c
+      text:
+        lv: Vide → UAS aparatūra → pilots.
+        en: Environment → UAS hardware → pilot.
+        ru: Окружающая среда → аппаратура UAS → пилот.
+    - id: d
+      text:
+        lv: Secībai nav nozīmes — visas trīs sadaļas jāaizpilda.
+        en: Order does not matter — all three sections must be completed.
+        ru: Порядок не важен — все три раздела должны быть выполнены.
   correctOptionId: c
   explanation:
-    lv: 'Vide pirmā: ja zona ir aizliegta vai laika apstākļi nav piemēroti, nav jēgas pārbaudīt dronu vai pilotu. UAS aparatūra otra: ja dronam ir kritisks defekts, pilota pārbaudes nav nozīmes. Pilots pēdējais: galīgais "lidot/nelidot" lēmums ar visu informāciju pieejamu.
-
-      '
-    en: 'Environment first: if the zone is prohibited or weather is out of limits, there is no point checking drone or pilot. UAS hardware second: if the drone has a critical fault, the pilot check is irrelevant. Pilot last: the final go/no-go decision with all information available.
-
-      '
-    ru: 'Сначала окружающая среда: если зона запрещена или погода вне нормы, нет смысла проверять дрон или пилота. Затем аппаратура UAS: при критической неисправности дрона проверка пилота не имеет смысла. Пилот последний: окончательное решение «лететь/не лететь» при наличии всей информации.
-
-      '
+    lv: |
+      Vide pirmā: ja zona ir aizliegta vai laika apstākļi nav piemēroti, nav jēgas pārbaudīt dronu vai pilotu. UAS aparatūra otra: ja dronam ir kritisks defekts, pilota pārbaudes nav nozīmes. Pilots pēdējais: galīgais "lidot/nelidot" lēmums ar visu informāciju pieejamu.
+    en: |
+      Environment first: if the zone is prohibited or weather is out of limits, there is no point checking drone or pilot. UAS hardware second: if the drone has a critical fault, the pilot check is irrelevant. Pilot last: the final go/no-go decision with all information available.
+    ru: |
+      Сначала окружающая среда: если зона запрещена или погода вне нормы, нет смысла проверять дрон или пилота. Затем аппаратура UAS: при критической неисправности дрона проверка пилота не имеет смысла. Пилот последний: окончательное решение «лететь/не лететь» при наличии всей информации.
   distractorRationales:
     a:
       lv: Pārbaude sākas ar dronu pirms vides novērtēšanas ir neefektīva — aizliegta zona atceļ lidojumu neatkarīgi no drona stāvokļa.
@@ -372,47 +357,45 @@
       lv: Secībai ir nozīme laika spiediena situācijās — konsekventa secība novērš izlaidumu. Nestrukturētas pārbaudes var izlaist kritiskus posmus.
       en: Order matters under time pressure — a consistent sequence prevents omissions. Unstructured checks can miss critical elements.
       ru: Порядок важен при временном давлении — последовательная проверка предотвращает пропуски. Неструктурированные проверки могут упустить критические элементы.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Operational procedures; pre-flight checklist
+  sourceRef: "EASA Easy Access Rules — Operational procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; pre-flight checklist"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Operational procedures; pre-flight checklist
 - id: op-008
   stem:
     lv: Lidojuma laikā pilsētas vidū drons pēkšņi zaudē GPS signālu. Lietotne rāda "GPS zudums". Kāda ir tūlītējā darbība?
     en: Mid-flight in an urban area the drone suddenly loses GPS signal. The app shows "GPS lost". What is the immediate action?
     ru: В середине полёта в городе дрон внезапно теряет GPS-сигнал. Приложение показывает «GPS потерян». Каково немедленное действие?
   options:
-  - id: a
-    text:
-      lv: Gaidīt GPS atjaunošanos un turpināt lidojumu.
-      en: Wait for GPS to recover and continue the flight.
-      ru: Ждать восстановления GPS и продолжать полёт.
-  - id: b
-    text:
-      lv: Pacelties augstāk, lai uzlabotu GPS signālu.
-      en: Climb higher to improve the GPS signal.
-      ru: Набрать высоту для улучшения GPS-сигнала.
-  - id: c
-    text:
-      lv: Aktivēt RTH — tas darbosies arī bez GPS.
-      en: Activate RTH — it will work without GPS.
-      ru: Активировать RTH — он работает и без GPS.
-  - id: d
-    text:
-      lv: Nekavējoties pārslēgties uz manuālo/Attitude režīmu, izmantot vizuālas atsauces (ceļi, ēkas), izvēlēties drošu nolaišanās vietu un nolaisties.
-      en: Immediately switch to manual/Attitude mode, use visual references (roads, buildings), select a safe landing spot, and land without delay.
-      ru: Немедленно переключиться в ручной/Attitude режим, использовать визуальные ориентиры (дороги, здания), выбрать безопасное место посадки и садиться.
+    - id: a
+      text:
+        lv: Gaidīt GPS atjaunošanos un turpināt lidojumu.
+        en: Wait for GPS to recover and continue the flight.
+        ru: Ждать восстановления GPS и продолжать полёт.
+    - id: b
+      text:
+        lv: Pacelties augstāk, lai uzlabotu GPS signālu.
+        en: Climb higher to improve the GPS signal.
+        ru: Набрать высоту для улучшения GPS-сигнала.
+    - id: c
+      text:
+        lv: Aktivēt RTH — tas darbosies arī bez GPS.
+        en: Activate RTH — it will work without GPS.
+        ru: Активировать RTH — он работает и без GPS.
+    - id: d
+      text:
+        lv: Nekavējoties pārslēgties uz manuālo/Attitude režīmu, izmantot vizuālas atsauces (ceļi, ēkas), izvēlēties drošu nolaišanās vietu un nolaisties.
+        en: Immediately switch to manual/Attitude mode, use visual references (roads, buildings), select a safe landing spot, and land without delay.
+        ru: Немедленно переключиться в ручной/Attitude режим, использовать визуальные ориентиры (дороги, здания), выбрать безопасное место посадки и садиться.
   correctOptionId: d
   explanation:
-    lv: 'GPS zaudēšana nozīmē, ka drons nevar automātiski turēt pozīciju vai droši navigēt. Attitude/manuālais režīms ļauj pilotam kontrolēt dronu, izmantojot vizuālās atsauces. Tiklīdz droša nolaišanās vieta ir identificēta, jānolaiž nekavējoties — pozīcijas novirze bez GPS var novirzīt dronu no paredzētās vietas.
-
-      '
-    en: 'GPS loss means the drone cannot hold position or navigate autonomously. Attitude/manual mode allows the pilot to control the drone using visual references. Once a safe landing spot is identified, land without delay — position drift without GPS can carry the drone away from the expected location.
-
-      '
-    ru: 'Потеря GPS означает, что дрон не может удерживать позицию или автономно навигировать. Режим Attitude/ручной позволяет пилоту управлять дроном с помощью визуальных ориентиров. Как только обнаружено безопасное место, немедленно садиться — дрейф без GPS может унести дрон от ожидаемого места.
-
-      '
+    lv: |
+      GPS zaudēšana nozīmē, ka drons nevar automātiski turēt pozīciju vai droši navigēt. Attitude/manuālais režīms ļauj pilotam kontrolēt dronu, izmantojot vizuālās atsauces. Tiklīdz droša nolaišanās vieta ir identificēta, jānolaiž nekavējoties — pozīcijas novirze bez GPS var novirzīt dronu no paredzētās vietas.
+    en: |
+      GPS loss means the drone cannot hold position or navigate autonomously. Attitude/manual mode allows the pilot to control the drone using visual references. Once a safe landing spot is identified, land without delay — position drift without GPS can carry the drone away from the expected location.
+    ru: |
+      Потеря GPS означает, что дрон не может удерживать позицию или автономно навигировать. Режим Attitude/ручной позволяет пилоту управлять дроном с помощью визуальных ориентиров. Как только обнаружено безопасное место, немедленно садиться — дрейф без GPS может унести дрон от ожидаемого места.
   distractorRationales:
     a:
       lv: Gaidot GPS atjaunošanos, drons var novirzīties no pozīcijas. Pilsētas vidū drift var novest dronu uz ēkām, ceļiem vai cilvēkiem.
@@ -426,47 +409,45 @@
       lv: RTH izmanto GPS, lai navigētu uz mājas punktu. Bez GPS RTH nedarbojas vai var uzvesties neparedzami.
       en: RTH uses GPS to navigate to the home point. Without GPS, RTH does not function or may behave unpredictably.
       ru: RTH использует GPS для навигации к домашней точке. Без GPS RTH не работает или может вести себя непредсказуемо.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; GPS loss
+  sourceRef: "EASA Easy Access Rules — Emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; GPS loss"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; GPS loss
 - id: op-009
   stem:
     lv: Drons filmē 500 m no starta vietas. Parādās pirmais baterijas brīdinājums (~20%). Pilotam vēl jāuzfilm 3 minūtes materiāla. Ko darīt?
     en: A drone is filming 500 m from the launch point. The first battery warning (~20 %) appears. The pilot has 3 more minutes of footage to capture. What should the pilot do?
     ru: Дрон снимает в 500 м от точки взлёта. Появляется первое предупреждение об аккумуляторе (~20%). Пилоту нужно ещё 3 минуты съёмки. Что делать?
   options:
-  - id: a
-    text:
-      lv: Nekavējoties pārtraukt misiju un sākt atgriešanos.
-      en: Abort the mission immediately and begin returning.
-      ru: Немедленно прервать миссию и начать возврат.
-  - id: b
-    text:
-      lv: Palēnināt dronu, lai pagarinātu baterijas darbību, un pabeigt uzdevumu.
-      en: Slow the drone to extend battery life and complete the task.
-      ru: Замедлить дрон для экономии батареи и завершить задание.
-  - id: c
-    text:
-      lv: Pabeigt filmēšanu — otrs brīdinājums ir drošības rezerve.
-      en: Complete the filming — the second warning is a safety buffer.
-      ru: Завершить съёмку — второе предупреждение является запасом безопасности.
-  - id: d
-    text:
-      lv: Aktivēt Performance režīmu, lai ātrāk atgrieztos pēc filmēšanas pabeigšanas.
-      en: Switch to Performance mode to return faster after completing the filming.
-      ru: Включить режим Performance для ускоренного возврата после завершения съёмки.
+    - id: a
+      text:
+        lv: Nekavējoties pārtraukt misiju un sākt atgriešanos.
+        en: Abort the mission immediately and begin returning.
+        ru: Немедленно прервать миссию и начать возврат.
+    - id: b
+      text:
+        lv: Palēnināt dronu, lai pagarinātu baterijas darbību, un pabeigt uzdevumu.
+        en: Slow the drone to extend battery life and complete the task.
+        ru: Замедлить дрон для экономии батареи и завершить задание.
+    - id: c
+      text:
+        lv: Pabeigt filmēšanu — otrs brīdinājums ir drošības rezerve.
+        en: Complete the filming — the second warning is a safety buffer.
+        ru: Завершить съёмку — второе предупреждение является запасом безопасности.
+    - id: d
+      text:
+        lv: Aktivēt Performance režīmu, lai ātrāk atgrieztos pēc filmēšanas pabeigšanas.
+        en: Switch to Performance mode to return faster after completing the filming.
+        ru: Включить режим Performance для ускоренного возврата после завершения съёмки.
   correctOptionId: a
   explanation:
-    lv: 'Pirmais baterijas brīdinājums (~20%) ir signāls pārtraukt operatīvo misiju un sākt atgriešanos. 500 m atgriešanās mērenā ātrumā var aizņemt 3–4 minūtes. Filmēšanas turpināšana 3 minūtes varētu izraisīt otru brīdinājumu lidojuma laikā vai avārijas nolaišanos. Otrais brīdinājums (~10%) ir ārkārtas nolaišanās signāls — tas nav rezerve.
-
-      '
-    en: 'The first battery warning (~20 %) is the signal to end the operational mission and begin returning. A 500 m return at moderate speed may take 3–4 minutes. Continuing to film for 3 minutes risks triggering the second warning in flight or a forced landing. The second warning (~10 %) is an emergency landing signal — it is not a buffer.
-
-      '
-    ru: 'Первое предупреждение (~20 %) — сигнал прекратить оперативную миссию и начать возврат. Возврат с 500 м при умеренной скорости может занять 3–4 минуты. Продолжение съёмки 3 минуты грозит вторым предупреждением в полёте или вынужденной посадкой. Второе предупреждение (~10 %) — сигнал аварийной посадки, а не резерв.
-
-      '
+    lv: |
+      Pirmais baterijas brīdinājums (~20%) ir signāls pārtraukt operatīvo misiju un sākt atgriešanos. 500 m atgriešanās mērenā ātrumā var aizņemt 3–4 minūtes. Filmēšanas turpināšana 3 minūtes varētu izraisīt otru brīdinājumu lidojuma laikā vai avārijas nolaišanos. Otrais brīdinājums (~10%) ir ārkārtas nolaišanās signāls — tas nav rezerve.
+    en: |
+      The first battery warning (~20 %) is the signal to end the operational mission and begin returning. A 500 m return at moderate speed may take 3–4 minutes. Continuing to film for 3 minutes risks triggering the second warning in flight or a forced landing. The second warning (~10 %) is an emergency landing signal — it is not a buffer.
+    ru: |
+      Первое предупреждение (~20 %) — сигнал прекратить оперативную миссию и начать возврат. Возврат с 500 м при умеренной скорости может занять 3–4 минуты. Продолжение съёмки 3 минуты грозит вторым предупреждением в полёте или вынужденной посадкой. Второе предупреждение (~10 %) — сигнал аварийной посадки, а не резерв.
   distractorRationales:
     b:
       lv: Ātruma samazināšana var pagarināt baterijas darbību, bet ne pietiekoši, lai droši pabeigtu 3 minūtes filmēšanas un atgrieztos 500 m. Drošāk ir atgriezties uzreiz.
@@ -480,47 +461,45 @@
       lv: Performance režīms palielina akumulatora patēriņu. Tā izmantošana, lai "ietaupītu laiku", paaslina problēmu, nevis to risina.
       en: Performance mode increases battery draw. Using it to "save time" worsens the problem rather than solving it.
       ru: Режим Performance увеличивает потребление батареи. Его использование для «экономии времени» усугубляет проблему, а не решает её.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; battery management
+  sourceRef: "EASA Easy Access Rules — Emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; battery management"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; battery management
 - id: op-010
   stem:
     lv: Pilots ar auto atbrauc jaunā lidošanas vietā un izvieto UAS. Vai kompass jākalibrē?
     en: A pilot drives to a new flying location and sets up the UAS. Should the compass be calibrated?
     ru: Пилот приезжает на новое место полётов на машине и готовит UAS. Нужно ли калибровать компас?
   options:
-  - id: a
-    text:
-      lv: Nē — kompass kalibrēts pirms aizbraukšanas, tas joprojām ir precīzs.
-      en: No — the compass was calibrated before departure and is still accurate.
-      ru: Нет — компас откалиброван перед отъездом и по-прежнему точен.
-  - id: b
-    text:
-      lv: Jā — automašīnas metāls var traucēt kompassu, un jaunā vietā var būt atšķirīgs magnētiskais lauks.
-      en: Yes — the car's metal can disturb the compass, and the new location may have a different magnetic field.
-      ru: Да — металл автомобиля может нарушить компас, а на новом месте может быть другое магнитное поле.
-  - id: c
-    text:
-      lv: Tikai tad, ja parādās brīdinājums ekrānā.
-      en: Only if a warning appears on screen.
-      ru: Только если на экране появится предупреждение.
-  - id: d
-    text:
-      lv: Tikai pilsētā — lauku apvidos kompasss ir pietiekami precīzs.
-      en: Only in the city — in rural areas the compass is accurate enough.
-      ru: Только в городе — в сельской местности компас достаточно точен.
+    - id: a
+      text:
+        lv: Nē — kompass kalibrēts pirms aizbraukšanas, tas joprojām ir precīzs.
+        en: No — the compass was calibrated before departure and is still accurate.
+        ru: Нет — компас откалиброван перед отъездом и по-прежнему точен.
+    - id: b
+      text:
+        lv: Jā — automašīnas metāls var traucēt kompassu, un jaunā vietā var būt atšķirīgs magnētiskais lauks.
+        en: Yes — the car's metal can disturb the compass, and the new location may have a different magnetic field.
+        ru: Да — металл автомобиля может нарушить компас, а на новом месте может быть другое магнитное поле.
+    - id: c
+      text:
+        lv: Tikai tad, ja parādās brīdinājums ekrānā.
+        en: Only if a warning appears on screen.
+        ru: Только если на экране появится предупреждение.
+    - id: d
+      text:
+        lv: Tikai pilsētā — lauku apvidos kompasss ir pietiekami precīzs.
+        en: Only in the city — in rural areas the compass is accurate enough.
+        ru: Только в городе — в сельской местности компас достаточно точен.
   correctOptionId: b
   explanation:
-    lv: 'Automašīnas metāla komponenti var ietekmēt kompasa kalibrāciju transportēšanas laikā. Turklāt katrā atrašanās vietā var būt atšķirīgs magnētiskais deklinācija un lokālie traucējumi (ēkas, grunts). Kompasa kalibrācija jaunā vietā ir standarta praksē, ne tikai tad, kad parādās brīdinājums.
-
-      '
-    en: 'The car''s metal components can disturb compass calibration during transit. Additionally each location may have a different magnetic declination and local interference (buildings, soil). Compass calibration at a new location is standard practice, not only when a warning appears.
-
-      '
-    ru: 'Металлические компоненты автомобиля могут нарушить калибровку компаса при транспортировке. Кроме того, на каждом месте может быть разное магнитное склонение и локальные помехи (здания, грунт). Калибровка компаса на новом месте — стандартная практика, а не только при появлении предупреждения.
-
-      '
+    lv: |
+      Automašīnas metāla komponenti var ietekmēt kompasa kalibrāciju transportēšanas laikā. Turklāt katrā atrašanās vietā var būt atšķirīgs magnētiskais deklinācija un lokālie traucējumi (ēkas, grunts). Kompasa kalibrācija jaunā vietā ir standarta praksē, ne tikai tad, kad parādās brīdinājums.
+    en: |
+      The car's metal components can disturb compass calibration during transit. Additionally each location may have a different magnetic declination and local interference (buildings, soil). Compass calibration at a new location is standard practice, not only when a warning appears.
+    ru: |
+      Металлические компоненты автомобиля могут нарушить калибровку компаса при транспортировке. Кроме того, на каждом месте может быть разное магнитное склонение и локальные помехи (здания, грунт). Калибровка компаса на новом месте — стандартная практика, а не только при появлении предупреждения.
   distractorRationales:
     a:
       lv: Kompasa kalibrācija nav stacionāra — tā var mainīties transportēšanas laikā un ir atkarīga no atrašanās vietas magnētiskā lauka.
@@ -534,47 +513,45 @@
       lv: Magnētiskās traucēšanas avoti — metāla struktūras, elektroinstalācija, dzelzs bagāts grunds — pastāv gan pilsētā, gan lauku apvidos.
       en: Sources of magnetic interference — metal structures, wiring, iron-rich soil — exist in both urban and rural environments.
       ru: Источники магнитных помех — металлические конструкции, проводка, железосодержащий грунт — есть как в городе, так и в сельской местности.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Operational procedures; UAS manufacturer manuals
+  sourceRef: "EASA Easy Access Rules — Operational procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; UAS manufacturer manuals | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Operational procedures; UAS manufacturer manuals
 - id: op-011
   stem:
     lv: Lidojuma laikā drons sāk lidot nekontrolētā virzienā un nereaģē uz vadības ievadi. Kāda ir PIRMĀ darbība?
     en: During flight the drone begins flying in an uncontrolled direction and does not respond to control inputs. What is the FIRST action?
     ru: Во время полёта дрон начинает лететь в неконтролируемом направлении и не реагирует на управление. Какое ПЕРВОЕ действие?
   options:
-  - id: a
-    text:
-      lv: Izsaukt tuvāko lidostu pa tālruni.
-      en: Call the nearest airport by phone.
-      ru: Позвонить на ближайший аэропорт.
-  - id: b
-    text:
-      lv: Dokumentēt notikumu un gaidīt, vai drons atgriezties.
-      en: Document the event and wait to see if the drone returns.
-      ru: Документировать событие и ждать, вернётся ли дрон.
-  - id: c
-    text:
-      lv: Mēģināt mainīt lidojuma režīmu (piemēram, uz Attitude režīmu), lai atgūtu daļēju vadību.
-      en: Attempt to switch flight modes (e.g. to Attitude mode) to regain partial control.
-      ru: Попробовать сменить режим полёта (например, на Attitude) для частичного восстановления управления.
-  - id: d
-    text:
-      lv: Nospiest Kill Switch, lai apturētu propellerus.
-      en: Press the Kill Switch to stop the propellers.
-      ru: Нажать Kill Switch для остановки пропеллеров.
+    - id: a
+      text:
+        lv: Izsaukt tuvāko lidostu pa tālruni.
+        en: Call the nearest airport by phone.
+        ru: Позвонить на ближайший аэропорт.
+    - id: b
+      text:
+        lv: Dokumentēt notikumu un gaidīt, vai drons atgriezties.
+        en: Document the event and wait to see if the drone returns.
+        ru: Документировать событие и ждать, вернётся ли дрон.
+    - id: c
+      text:
+        lv: Mēģināt mainīt lidojuma režīmu (piemēram, uz Attitude režīmu), lai atgūtu daļēju vadību.
+        en: Attempt to switch flight modes (e.g. to Attitude mode) to regain partial control.
+        ru: Попробовать сменить режим полёта (например, на Attitude) для частичного восстановления управления.
+    - id: d
+      text:
+        lv: Nospiest Kill Switch, lai apturētu propellerus.
+        en: Press the Kill Switch to stop the propellers.
+        ru: Нажать Kill Switch для остановки пропеллеров.
   correctOptionId: c
   explanation:
-    lv: 'Fly-away gadījumā pirmā darbība ir mēģināt mainīt lidojuma režīmu (piemēram, uz Attitude vai manuālo), lai novērstu GPS vai autopilota problēmu un atgūtu daļēju vadību. Tālrunis uz lidostu un atgadījuma dokumentēšana nāk vēlāk. Kill Switch ir pilnīgas bezcerīgas situācijas pēdēja iespēja — tā apturē propellerus lidojuma laikā.
-
-      '
-    en: 'On fly-away the first action is to attempt a flight mode switch (e.g. to Attitude or manual) to bypass the GPS or autopilot issue and regain partial control. Calling the airport and documenting come later. The kill switch is a last resort in a hopeless situation — it stops the propellers in flight.
-
-      '
-    ru: 'При fly-away первое действие — попытка сменить режим полёта (например, на Attitude или ручной), чтобы обойти проблему GPS или автопилота и восстановить частичное управление. Звонок в аэропорт и документирование — позже. Kill Switch — крайняя мера в безнадёжной ситуации.
-
-      '
+    lv: |
+      Fly-away gadījumā pirmā darbība ir mēģināt mainīt lidojuma režīmu (piemēram, uz Attitude vai manuālo), lai novērstu GPS vai autopilota problēmu un atgūtu daļēju vadību. Tālrunis uz lidostu un atgadījuma dokumentēšana nāk vēlāk. Kill Switch ir pilnīgas bezcerīgas situācijas pēdēja iespēja — tā apturē propellerus lidojuma laikā.
+    en: |
+      On fly-away the first action is to attempt a flight mode switch (e.g. to Attitude or manual) to bypass the GPS or autopilot issue and regain partial control. Calling the airport and documenting come later. The kill switch is a last resort in a hopeless situation — it stops the propellers in flight.
+    ru: |
+      При fly-away первое действие — попытка сменить режим полёта (например, на Attitude или ручной), чтобы обойти проблему GPS или автопилота и восстановить частичное управление. Звонок в аэропорт и документирование — позже. Kill Switch — крайняя мера в безнадёжной ситуации.
   distractorRationales:
     a:
       lv: Zvans uz lidostu ir attiecīgs, ja sadursme ar pilotētu gaisa kuģi ir iespējama — bet tas nav PIRMĀ darbība. Pirmkārt, mēģini atgūt vadību.
@@ -588,47 +565,45 @@
       lv: Kill Switch aptur propellerus lidojuma laikā — drons krīt nekontrolēti. Tas ir pēdējs risinājums, nevis pirmā darbība fly-away situācijā.
       en: The kill switch stops the propellers in flight — the drone falls uncontrolled. It is a last resort, not the first action in a fly-away.
       ru: Kill Switch останавливает пропеллеры в полёте — дрон падает неуправляемо. Это крайняя мера, а не первое действие при fly-away.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; fly-away response
+  sourceRef: "EASA Easy Access Rules — Emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; fly-away response"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; fly-away response
 - id: op-012
   stem:
     lv: Lidojuma laikā drons trāpa elektrolīnijā un nolaižas. Nav ievainojumu. Kāds ir ziņošanas pienākums?
     en: During flight a drone strikes a power line and lands. No injuries occurred. What is the reporting obligation?
     ru: Во время полёта дрон задевает линию электропередачи и садится. Травм нет. Каково обязательство по уведомлению?
   options:
-  - id: a
-    text:
-      lv: Nav ziņošanas pienākuma — nav ievainojumu.
-      en: No reporting obligation — no injuries occurred.
-      ru: Нет обязательства по уведомлению — травм нет.
-  - id: b
-    text:
-      lv: Brīvprātīgs ziņojums — elektriskā kontakts ir drošībai nozīmīgs notikums, bet nav obligāts.
-      en: Voluntary report — electrical contact is a safety-relevant event but not mandatory.
-      ru: Добровольный отчёт — контакт с электросетью — событие, важное для безопасности, но не обязательное.
-  - id: c
-    text:
-      lv: Ziņojums tikai tad, ja drons ir bojāts.
-      en: Report only if the drone is damaged.
-      ru: Отчёт только при повреждении дрона.
-  - id: d
-    text:
-      lv: Obligāts ziņojums 72 stundu laikā — sadursme ar kritisko infrastruktūru ir viens no trim obligātās ziņošanas ierosinātājiem.
-      en: Mandatory report within 72 hours — collision with critical infrastructure is one of the three mandatory reporting triggers.
-      ru: Обязательный отчёт в течение 72 часов — столкновение с критической инфраструктурой — один из трёх обязательных триггеров.
+    - id: a
+      text:
+        lv: Nav ziņošanas pienākuma — nav ievainojumu.
+        en: No reporting obligation — no injuries occurred.
+        ru: Нет обязательства по уведомлению — травм нет.
+    - id: b
+      text:
+        lv: Brīvprātīgs ziņojums — elektriskā kontakts ir drošībai nozīmīgs notikums, bet nav obligāts.
+        en: Voluntary report — electrical contact is a safety-relevant event but not mandatory.
+        ru: Добровольный отчёт — контакт с электросетью — событие, важное для безопасности, но не обязательное.
+    - id: c
+      text:
+        lv: Ziņojums tikai tad, ja drons ir bojāts.
+        en: Report only if the drone is damaged.
+        ru: Отчёт только при повреждении дрона.
+    - id: d
+      text:
+        lv: Obligāts ziņojums 72 stundu laikā — sadursme ar kritisko infrastruktūru ir viens no trim obligātās ziņošanas ierosinātājiem.
+        en: Mandatory report within 72 hours — collision with critical infrastructure is one of the three mandatory reporting triggers.
+        ru: Обязательный отчёт в течение 72 часов — столкновение с критической инфраструктурой — один из трёх обязательных триггеров.
   correctOptionId: d
   explanation:
-    lv: 'Sadursme ar kritisko infrastruktūru (elektrolīnija, dzelzceļš, sakaru masts) ir viens no trim obligātās ziņošanas ierosinātājiem — kopā ar smagu savainojumu un tuvtrāpījumu/sadursmi ar pilotētu gaisa kuģi. Ziņojums jāiesniedz 72 stundu laikā caur `e.caa.gov.lv/incidents`, neatkarīgi no ievainojumiem vai drona bojājumiem.
-
-      '
-    en: 'Collision with critical infrastructure (power line, railway, communications mast) is one of the three mandatory reporting triggers — alongside serious injury and near-miss/collision with a manned aircraft. The report must be filed within 72 hours via `e.caa.gov.lv/incidents`, regardless of injuries or drone damage.
-
-      '
-    ru: 'Столкновение с критической инфраструктурой (линия электропередачи, железная дорога, мачта связи) — один из трёх обязательных триггеров уведомления, наряду с тяжёлыми травмами и сближением/столкновением с пилотируемым воздушным судном. Отчёт подаётся в течение 72 часов через `e.caa.gov.lv/incidents`, независимо от наличия травм.
-
-      '
+    lv: |
+      Sadursme ar kritisko infrastruktūru (elektrolīnija, dzelzceļš, sakaru masts) ir viens no trim obligātās ziņošanas ierosinātājiem — kopā ar smagu savainojumu un tuvtrāpījumu/sadursmi ar pilotētu gaisa kuģi. Ziņojums jāiesniedz 72 stundu laikā caur `e.caa.gov.lv/incidents`, neatkarīgi no ievainojumiem vai drona bojājumiem.
+    en: |
+      Collision with critical infrastructure (power line, railway, communications mast) is one of the three mandatory reporting triggers — alongside serious injury and near-miss/collision with a manned aircraft. The report must be filed within 72 hours via `e.caa.gov.lv/incidents`, regardless of injuries or drone damage.
+    ru: |
+      Столкновение с критической инфраструктурой (линия электропередачи, железная дорога, мачта связи) — один из трёх обязательных триггеров уведомления, наряду с тяжёлыми травмами и сближением/столкновением с пилотируемым воздушным судном. Отчёт подаётся в течение 72 часов через `e.caa.gov.lv/incidents`, независимо от наличия травм.
   distractorRationales:
     a:
       lv: Ievainojumu neesamība neatceļ ziņošanas pienākumu. Kritiskās infrastruktūras kontakts ir neatkarīgs obligātais ierosinātājs.
@@ -642,47 +617,45 @@
       lv: Ziņošanas pienākums nav atkarīgs no drona bojājumiem — tas ir atkarīgs no notikuma rakstura (kritiskās infrastruktūras kontakts).
       en: The reporting obligation is not dependent on drone damage — it depends on the nature of the event (critical infrastructure contact).
       ru: Обязательство по уведомлению не зависит от повреждения дрона, а от характера события (контакт с критической инфраструктурой).
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 376/2014 — occurrence reporting; CAA Latvia e.caa.gov.lv/incidents
+  sourceRef: "Reg (EU) 376/2014 — occurrence reporting | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; CAA Latvia e.caa.gov.lv/incidents | https://e.caa.gov.lv/incidents"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: regulatory
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 376/2014 — occurrence reporting; CAA Latvia e.caa.gov.lv/incidents
 - id: op-013
   stem:
     lv: Pirms lidojuma pilots konstatē, ka tā plānotās lidojuma zonas tuvumā ir augstsprieguma elektrolīnijas. Kā pareizi rīkoties?
     en: Before flight a pilot identifies high-voltage power lines near the planned flight area. What is the correct action?
     ru: Перед полётом пилот обнаруживает высоковольтные линии электропередачи вблизи запланированной зоны полётов. Каковы правильные действия?
   options:
-  - id: a
-    text:
-      lv: Izvairīties no lidošanas zem un vertikāli virs līnijām; iekļaut elektrolīnijas RTH augstuma aprēķinā; nodrošināt drošu horizontālo atstatumu.
-      en: Avoid flying under and directly above the lines; include power lines in the RTH altitude calculation; ensure a safe horizontal clearance.
-      ru: Избегать полётов под и прямо над линиями; включить ЛЭП в расчёт высоты RTH; обеспечить безопасный горизонтальный зазор.
-  - id: b
-    text:
-      lv: Lidot bez ierobežojumiem — elektrolīnijas ir zemes infrastruktūra, ne gaisa šķērslis.
-      en: Fly without restriction — power lines are ground infrastructure, not an aerial obstacle.
-      ru: Летать без ограничений — линии электропередачи являются наземной инфраструктурой, а не воздушным препятствием.
-  - id: c
-    text:
-      lv: Tikai jāievēro drošs 30 m horizontālais atstatums no torņiem.
-      en: Only maintain a safe 30 m horizontal distance from the pylons.
-      ru: Достаточно соблюдать безопасное горизонтальное расстояние 30 м от опор.
-  - id: d
-    text:
-      lv: Ziņot CAA par elektrolīniju klātbūtni un gaidīt atļauju.
-      en: Report the power lines to CAA and await authorisation.
-      ru: Сообщить в CAA о наличии ЛЭП и ожидать разрешения.
+    - id: a
+      text:
+        lv: Izvairīties no lidošanas zem un vertikāli virs līnijām; iekļaut elektrolīnijas RTH augstuma aprēķinā; nodrošināt drošu horizontālo atstatumu.
+        en: Avoid flying under and directly above the lines; include power lines in the RTH altitude calculation; ensure a safe horizontal clearance.
+        ru: Избегать полётов под и прямо над линиями; включить ЛЭП в расчёт высоты RTH; обеспечить безопасный горизонтальный зазор.
+    - id: b
+      text:
+        lv: Lidot bez ierobežojumiem — elektrolīnijas ir zemes infrastruktūra, ne gaisa šķērslis.
+        en: Fly without restriction — power lines are ground infrastructure, not an aerial obstacle.
+        ru: Летать без ограничений — линии электропередачи являются наземной инфраструктурой, а не воздушным препятствием.
+    - id: c
+      text:
+        lv: Tikai jāievēro drošs 30 m horizontālais atstatums no torņiem.
+        en: Only maintain a safe 30 m horizontal distance from the pylons.
+        ru: Достаточно соблюдать безопасное горизонтальное расстояние 30 м от опор.
+    - id: d
+      text:
+        lv: Ziņot CAA par elektrolīniju klātbūtni un gaidīt atļauju.
+        en: Report the power lines to CAA and await authorisation.
+        ru: Сообщить в CAA о наличии ЛЭП и ожидать разрешения.
   correctOptionId: a
   explanation:
-    lv: 'Elektrolīnijas rada vairākus draudus: elektromagnētiskā ietekme uz kompasu un motoriem, fiziska sadursmes risks un traucēta VLOS. Pilots nedrīkst lidot tieši zem vai virs tām un jānodrošina drošs horizontālais atstatums. RTH augstumam jābūt augstākam par visiem šķēršļiem atgriešanās trajektorijā, ieskaitot elektrolīnijas.
-
-      '
-    en: 'Power lines pose multiple threats: electromagnetic interference with compass and motors, physical collision risk, and impaired VLOS. The pilot must not fly directly below or above them and must ensure a safe horizontal clearance. RTH altitude must be set above all obstacles in the return path, including power lines.
-
-      '
-    ru: 'ЛЭП создают несколько угроз: электромагнитное воздействие на компас и моторы, риск физического столкновения и нарушение VLOS. Пилот не должен летать непосредственно под или над ними и должен обеспечить безопасный горизонтальный зазор. Высота RTH должна быть выше всех препятствий на пути возврата, включая ЛЭП.
-
-      '
+    lv: |
+      Elektrolīnijas rada vairākus draudus: elektromagnētiskā ietekme uz kompasu un motoriem, fiziska sadursmes risks un traucēta VLOS. Pilots nedrīkst lidot tieši zem vai virs tām un jānodrošina drošs horizontālais atstatums. RTH augstumam jābūt augstākam par visiem šķēršļiem atgriešanās trajektorijā, ieskaitot elektrolīnijas.
+    en: |
+      Power lines pose multiple threats: electromagnetic interference with compass and motors, physical collision risk, and impaired VLOS. The pilot must not fly directly below or above them and must ensure a safe horizontal clearance. RTH altitude must be set above all obstacles in the return path, including power lines.
+    ru: |
+      ЛЭП создают несколько угроз: электромагнитное воздействие на компас и моторы, риск физического столкновения и нарушение VLOS. Пилот не должен летать непосредственно под или над ними и должен обеспечить безопасный горизонтальный зазор. Высота RTH должна быть выше всех препятствий на пути возврата, включая ЛЭП.
   distractorRationales:
     b:
       lv: Elektrolīnijas rada gan fiziskus, gan elektromagnētiskos draudus UAS. Tās nav tikai "zemes infrastruktūra".
@@ -696,47 +669,45 @@
       lv: Elektrolīnijas nav UAS ģeogrāfiskā zona, kam nepieciešama CAA atļauja. Tas ir telpiskās situācijas apzināšanās jautājums, ko pilots risina pats.
       en: Power lines are not a UAS geographical zone requiring CAA authorisation. This is a situational awareness matter for the pilot to manage.
       ru: ЛЭП не являются географической зоной UAS, требующей разрешения CAA. Это вопрос ситуационной осведомлённости пилота.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 UAS.OPEN.060 — operational procedures; EASA UAS preflight guidelines
+  sourceRef: "Reg 2019/947 UAS.OPEN.060 — operational procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; EASA UAS preflight guidelines"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 UAS.OPEN.060 — operational procedures; EASA UAS preflight guidelines
 - id: op-014
   stem:
     lv: Drona lietotne brīdina, ka atrašanās vieta ir 800 m no lidostas un piekļuve ir "atļauts ar nosacījumiem". Ko tas nozīmē?
     en: The drone app warns that the location is 800 m from an airport and access is "allowed with conditions". What does this mean?
     ru: Приложение для дрона предупреждает, что местоположение находится в 800 м от аэропорта и доступ «разрешён с условиями». Что это означает?
   options:
-  - id: a
-    text:
-      lv: Drons automātiski pielieto ģeofencing un limitēs augstumu.
-      en: The drone automatically applies geofencing and will limit altitude.
-      ru: Дрон автоматически применит геозону и ограничит высоту.
-  - id: b
-    text:
-      lv: Pilots pārbauda konkrētos nosacījumus (iespējams, maksimālo augstumu vai autorizācijas prasību) un ievēro tos pirms lidojuma.
-      en: The pilot checks the specific conditions (possibly a maximum altitude or authorisation requirement) and complies before flying.
-      ru: Пилот проверяет конкретные условия (возможно, максимальную высоту или требование авторизации) и соблюдает их перед полётом.
-  - id: c
-    text:
-      lv: Pilots drīkst lidot bez papildu darbībām — "atļauts" nozīmē brīvu piekļuvi.
-      en: The pilot may fly without further action — "allowed" means free access.
-      ru: Пилот может летать без дополнительных действий — «разрешено» означает свободный доступ.
-  - id: d
-    text:
-      lv: '"Atļauts ar nosacījumiem" nozīmē lidojums aizliegts — jāgaida uz oficiālu atļauju.'
-      en: '"Allowed with conditions" means flight is prohibited — wait for an official permit.'
-      ru: «Разрешено с условиями» означает, что полёт запрещён — необходимо ожидать официального разрешения.
+    - id: a
+      text:
+        lv: Drons automātiski pielieto ģeofencing un limitēs augstumu.
+        en: The drone automatically applies geofencing and will limit altitude.
+        ru: Дрон автоматически применит геозону и ограничит высоту.
+    - id: b
+      text:
+        lv: Pilots pārbauda konkrētos nosacījumus (iespējams, maksimālo augstumu vai autorizācijas prasību) un ievēro tos pirms lidojuma.
+        en: The pilot checks the specific conditions (possibly a maximum altitude or authorisation requirement) and complies before flying.
+        ru: Пилот проверяет конкретные условия (возможно, максимальную высоту или требование авторизации) и соблюдает их перед полётом.
+    - id: c
+      text:
+        lv: Pilots drīkst lidot bez papildu darbībām — "atļauts" nozīmē brīvu piekļuvi.
+        en: The pilot may fly without further action — "allowed" means free access.
+        ru: Пилот может летать без дополнительных действий — «разрешено» означает свободный доступ.
+    - id: d
+      text:
+        lv: '"Atļauts ar nosacījumiem" nozīmē lidojums aizliegts — jāgaida uz oficiālu atļauju.'
+        en: '"Allowed with conditions" means flight is prohibited — wait for an official permit.'
+        ru: «Разрешено с условиями» означает, что полёт запрещён — необходимо ожидать официального разрешения.
   correctOptionId: b
   explanation:
-    lv: '"Atļauts ar nosacījumiem" (conditional access) nozīmē, ka zonā pastāv ierobežojumi, piemēram, maksimālais augstums vai prasība iesniegt lidojuma pieteikumu caur BGKIS / e.caa.gov.lv. Pilots pārbauda nosacījumus lietotnē vai BGKIS un ievēro tos — tas nav brīva piekļuve un nav aizliegums, bet gan nosacīta operācija.
-
-      '
-    en: '"Allowed with conditions" (conditional access) means restrictions apply in the area — for example a maximum altitude or a requirement to submit a flight application via BGKIS / e.caa.gov.lv. The pilot checks the conditions in the app or BGKIS and complies — it is neither free access nor a prohibition but a conditional operation.
-
-      '
-    ru: '«Разрешено с условиями» (условный доступ) означает, что в зоне действуют ограничения — например, максимальная высота или требование подать заявку на полёт через BGKIS / e.caa.gov.lv. Пилот проверяет условия в приложении или BGKIS и соблюдает их — это не свободный доступ и не запрет, а условная операция.
-
-      '
+    lv: |
+      "Atļauts ar nosacījumiem" (conditional access) nozīmē, ka zonā pastāv ierobežojumi, piemēram, maksimālais augstums vai prasība iesniegt lidojuma pieteikumu caur BGKIS / e.caa.gov.lv. Pilots pārbauda nosacījumus lietotnē vai BGKIS un ievēro tos — tas nav brīva piekļuve un nav aizliegums, bet gan nosacīta operācija.
+    en: |
+      "Allowed with conditions" (conditional access) means restrictions apply in the area — for example a maximum altitude or a requirement to submit a flight application via BGKIS / e.caa.gov.lv. The pilot checks the conditions in the app or BGKIS and complies — it is neither free access nor a prohibition but a conditional operation.
+    ru: |
+      «Разрешено с условиями» (условный доступ) означает, что в зоне действуют ограничения — например, максимальная высота или требование подать заявку на полёт через BGKIS / e.caa.gov.lv. Пилот проверяет условия в приложении или BGKIS и соблюдает их — это не свободный доступ и не запрет, а условная операция.
   distractorRationales:
     a:
       lv: Ģeofencing ir automātisks sistēmas ierobežojums dažiem UAS, bet "atļauts ar nosacījumiem" vispirms prasa pilota darbību — nosacījumu pārbaudi.
@@ -750,47 +721,45 @@
       lv: '"Atļauts ar nosacījumiem" nav aizliegums. Nosacīta piekļuve ļauj lidojumu, izpildot prasības.'
       en: '"Allowed with conditions" is not a prohibition. Conditional access permits flight upon meeting requirements.'
       ru: «Разрешено с условиями» — не запрет. Условный доступ разрешает полёт при выполнении требований.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. UAS.OPEN.060; BGKIS / e.caa.gov.lv geo-awareness
+  sourceRef: "Reg 2019/947 Art. UAS.OPEN.060 | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; BGKIS / e.caa.gov.lv geo-awareness | https://e.caa.gov.lv"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. UAS.OPEN.060; BGKIS / e.caa.gov.lv geo-awareness
 - id: op-015
   stem:
     lv: Kas ir "Return-to-Home" (RTH) priekšnoteikums, lai tas darbotos pareizi?
     en: What is a prerequisite for "Return-to-Home" (RTH) to work correctly?
     ru: Каково предварительное условие для корректной работы «Return-to-Home» (RTH)?
   options:
-  - id: a
-    text:
-      lv: Dronam jābūt ar aktīvu GLONASS signālu.
-      en: The drone must have an active GLONASS signal.
-      ru: Дрон должен иметь активный сигнал ГЛОНАСС.
-  - id: b
-    text:
-      lv: Pilotam jābūt A2 sertifikātam.
-      en: The pilot must hold an A2 certificate.
-      ru: Пилот должен иметь сертификат A2.
-  - id: c
-    text:
-      lv: Sākuma punktam jābūt ierakstītam pirms lidojuma, un RTH augstumam jābūt iestatītam augstākam par visiem apkārtējiem šķēršļiem.
-      en: The home point must be recorded before flight, and RTH altitude must be set above all surrounding obstacles.
-      ru: Домашняя точка должна быть записана до полёта, а высота RTH должна быть установлена выше всех окружающих препятствий.
-  - id: d
-    text:
-      lv: RTH ir pieejams tikai C2 vai jaunākajām klasēm, nevis mantotajiem UAS.
-      en: RTH is only available on C2 or newer classes, not legacy UAS.
-      ru: RTH доступен только для C2 или более новых классов, а не для унаследованных UAS.
+    - id: a
+      text:
+        lv: Dronam jābūt ar aktīvu GLONASS signālu.
+        en: The drone must have an active GLONASS signal.
+        ru: Дрон должен иметь активный сигнал ГЛОНАСС.
+    - id: b
+      text:
+        lv: Pilotam jābūt A2 sertifikātam.
+        en: The pilot must hold an A2 certificate.
+        ru: Пилот должен иметь сертификат A2.
+    - id: c
+      text:
+        lv: Sākuma punktam jābūt ierakstītam pirms lidojuma, un RTH augstumam jābūt iestatītam augstākam par visiem apkārtējiem šķēršļiem.
+        en: The home point must be recorded before flight, and RTH altitude must be set above all surrounding obstacles.
+        ru: Домашняя точка должна быть записана до полёта, а высота RTH должна быть установлена выше всех окружающих препятствий.
+    - id: d
+      text:
+        lv: RTH ir pieejams tikai C2 vai jaunākajām klasēm, nevis mantotajiem UAS.
+        en: RTH is only available on C2 or newer classes, not legacy UAS.
+        ru: RTH доступен только для C2 или более новых классов, а не для унаследованных UAS.
   correctOptionId: c
   explanation:
-    lv: 'RTH izmanto GPS, lai atgrieztos sākuma punktā. Sākuma punktam jābūt fiksētam GPS fiksācijā pirms pacelšanās. RTH augstumam jābūt iestatītam augstākam par visiem šķēršļiem atgriešanās trajektorijā — pretējā gadījumā drons var atgriezties zemā augstumā un ietriekties šķērslī.
-
-      '
-    en: 'RTH uses GPS to navigate back to the home point. The home point must be captured at GPS lock before takeoff. RTH altitude must be set above all obstacles in the return path — otherwise the drone may return at low altitude and strike an obstacle.
-
-      '
-    ru: 'RTH использует GPS для навигации к домашней точке. Домашняя точка должна быть зафиксирована при захвате GPS до взлёта. Высота RTH должна быть установлена выше всех препятствий на пути возврата — иначе дрон может вернуться на малой высоте и врезаться в препятствие.
-
-      '
+    lv: |
+      RTH izmanto GPS, lai atgrieztos sākuma punktā. Sākuma punktam jābūt fiksētam GPS fiksācijā pirms pacelšanās. RTH augstumam jābūt iestatītam augstākam par visiem šķēršļiem atgriešanās trajektorijā — pretējā gadījumā drons var atgriezties zemā augstumā un ietriekties šķērslī.
+    en: |
+      RTH uses GPS to navigate back to the home point. The home point must be captured at GPS lock before takeoff. RTH altitude must be set above all obstacles in the return path — otherwise the drone may return at low altitude and strike an obstacle.
+    ru: |
+      RTH использует GPS для навигации к домашней точке. Домашняя точка должна быть зафиксирована при захвате GPS до взлёта. Высота RTH должна быть установлена выше всех препятствий на пути возврата — иначе дрон может вернуться на малой высоте и врезаться в препятствие.
   distractorRationales:
     a:
       lv: GLONASS ir papildu uzlabojums precizitātei, bet RTH darbojas ar jebkura GNSS signāla bloķēšanu (GPS ir pietiekams). GLONASS nav RTH priekšnosacījums.
@@ -804,47 +773,45 @@
       lv: RTH ir pieejams daudzos mantotajos UAS. Prasība nav saistīta ar C klases statusu, bet ar konkrētā drona tehniskajām iespējām.
       en: RTH is available on many legacy UAS. The requirement is not tied to C-class status but to the specific drone's technical capabilities.
       ru: RTH доступен во многих унаследованных UAS. Требование не связано со статусом C-класса, а с техническими возможностями конкретного дрона.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 UAS.OPEN.060 — fail-safe and operational procedures; EASA UAS preflight guidelines
+  sourceRef: "Reg 2019/947 UAS.OPEN.060 — fail-safe and operational procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; EASA UAS preflight guidelines"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 UAS.OPEN.060 — fail-safe and operational procedures; EASA UAS preflight guidelines
 - id: op-016
   stem:
     lv: Operators plāno komerciālu video kadri veidošanu ar dronu publiski pieejamā parkā. Kādu dokumentu operators glabā ar sevi lidojuma laikā?
     en: An operator plans commercial video filming with a drone in a publicly accessible park. What document must the operator carry during the flight?
     ru: Оператор планирует коммерческую видеосъёмку с дроном в общедоступном парке. Какой документ оператор должен иметь при себе во время полёта?
   options:
-  - id: a
-    text:
-      lv: Operators galvojuma dokuments no parka pārvaldes.
-      en: A guarantee document from the park management.
-      ru: Гарантийный документ от администрации парка.
-  - id: b
-    text:
-      lv: Neviens dokuments nav nepieciešams parkā — tas ir publisks gaisa telpa.
-      en: No documents are required in a park — it is public airspace.
-      ru: Никакие документы в парке не нужны — это общедоступное воздушное пространство.
-  - id: c
-    text:
-      lv: Tikai derīga apdrošināšanas polise — sertifikātu un reģistrāciju var pārbaudīt tiešsaistē.
-      en: Only a valid insurance policy — the certificate and registration can be checked online.
-      ru: Только действующий полис страхования — сертификат и регистрацию можно проверить онлайн.
-  - id: d
-    text:
-      lv: Derīga civiltiesiskās atbildības apdrošināšanas polise, pilota kompetences apliecība un UAS operators reģistrācijas apliecība.
-      en: A valid third-party liability insurance policy, remote pilot competence certificate, and UAS operator registration proof.
-      ru: Действующий полис страхования гражданской ответственности, свидетельство о компетентности дистанционного пилота и подтверждение регистрации оператора UAS.
+    - id: a
+      text:
+        lv: Operators galvojuma dokuments no parka pārvaldes.
+        en: A guarantee document from the park management.
+        ru: Гарантийный документ от администрации парка.
+    - id: b
+      text:
+        lv: Neviens dokuments nav nepieciešams parkā — tas ir publisks gaisa telpa.
+        en: No documents are required in a park — it is public airspace.
+        ru: Никакие документы в парке не нужны — это общедоступное воздушное пространство.
+    - id: c
+      text:
+        lv: Tikai derīga apdrošināšanas polise — sertifikātu un reģistrāciju var pārbaudīt tiešsaistē.
+        en: Only a valid insurance policy — the certificate and registration can be checked online.
+        ru: Только действующий полис страхования — сертификат и регистрацию можно проверить онлайн.
+    - id: d
+      text:
+        lv: Derīga civiltiesiskās atbildības apdrošināšanas polise, pilota kompetences apliecība un UAS operators reģistrācijas apliecība.
+        en: A valid third-party liability insurance policy, remote pilot competence certificate, and UAS operator registration proof.
+        ru: Действующий полис страхования гражданской ответственности, свидетельство о компетентности дистанционного пилота и подтверждение регистрации оператора UAS.
   correctOptionId: d
   explanation:
-    lv: 'Pilots brīdī, kad lido komerciālā operācijā, glabā pie sevis: (1) derīgu civiltiesiskās atbildības apdrošināšanas polisi, (2) pilota kompetences apliecību (A1/A3 vai A2), (3) UAS operators reģistrācijas numura pierādījumu. Inspekcijas gadījumā tas jāuzrāda pārstāvim. Bez dokumentācijas uzrādīšanas operators var saņemt administratīvo sodu.
-
-      '
-    en: 'The pilot in commercial operation carries: (1) a valid third-party liability insurance policy, (2) a pilot competence certificate (A1/A3 or A2), (3) proof of UAS operator registration number. In an inspection these must be shown to the authority. Without documentation the operator may receive an administrative fine.
-
-      '
-    ru: 'Пилот в коммерческой операции имеет при себе: (1) действующий полис страхования гражданской ответственности, (2) свидетельство о компетентности пилота (A1/A3 или A2), (3) подтверждение регистрационного номера оператора UAS. При инспекции они должны быть предъявлены представителю. Без документов оператор может получить административный штраф.
-
-      '
+    lv: |
+      Pilots brīdī, kad lido komerciālā operācijā, glabā pie sevis: (1) derīgu civiltiesiskās atbildības apdrošināšanas polisi, (2) pilota kompetences apliecību (A1/A3 vai A2), (3) UAS operators reģistrācijas numura pierādījumu. Inspekcijas gadījumā tas jāuzrāda pārstāvim. Bez dokumentācijas uzrādīšanas operators var saņemt administratīvo sodu.
+    en: |
+      The pilot in commercial operation carries: (1) a valid third-party liability insurance policy, (2) a pilot competence certificate (A1/A3 or A2), (3) proof of UAS operator registration number. In an inspection these must be shown to the authority. Without documentation the operator may receive an administrative fine.
+    ru: |
+      Пилот в коммерческой операции имеет при себе: (1) действующий полис страхования гражданской ответственности, (2) свидетельство о компетентности пилота (A1/A3 или A2), (3) подтверждение регистрационного номера оператора UAS. При инспекции они должны быть предъявлены представителю. Без документов оператор может получить административный штраф.
   distractorRationales:
     a:
       lv: Parka pārvaldes dokuments var būt nepieciešams privātā parkā, bet tas nav regulatīvi nepieciešamais dokuments. Regulatīvā prasība ir apdrošināšana, sertifikāts un reģistrācija.
@@ -858,47 +825,45 @@
       lv: Arī sertifikātam un reģistrācijas apliecinājumam jābūt uzrādāmam inspekcijas laikā. Tiešsaistes pārbaudes iespēja nav atvainojums to nešanai.
       en: The certificate and registration proof must also be producible at inspection. Online verification capability is not an excuse for not carrying them.
       ru: Сертификат и подтверждение регистрации также должны быть предъявлены при инспекции. Возможность онлайн-проверки не является оправданием для их отсутствия.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. UAS.OPEN.060; Latvian Aviation Law — inspection obligations
+  sourceRef: "Reg 2019/947 Art. UAS.OPEN.060 | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; inspection obligations"
   difficulty: 1
   cognitiveLevel: recall
   scenarioType: regulatory
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 Art. UAS.OPEN.060; Latvian Aviation Law — inspection obligations
 - id: op-017
   stem:
     lv: Pilots lido ar dronu pilsētas parkā. Pēkšņi drons patstāvīgi sāk doties augšup un uz sāniem bez pilota ievades. Kāda ir PIRMĀ darbība?
     en: A pilot is flying a drone in a city park. Suddenly the drone independently starts moving upward and sideways without pilot input. What is the FIRST action?
     ru: Пилот управляет дроном в городском парке. Внезапно дрон самостоятельно начинает двигаться вверх и в сторону без ввода пилота. Каково ПЕРВОЕ действие?
   options:
-  - id: a
-    text:
-      lv: Mēģināt pārslēgt dronu uz manuālo režīmu un atgūt kontroli; ja tas neizdodas — aktivizēt RTH vai izsaukt avārijas nosēšanos.
-      en: Attempt to switch the drone to manual mode and regain control; if unsuccessful — activate RTH or trigger emergency landing.
-      ru: Попытаться переключить дрон в ручной режим и восстановить управление; если не удастся — активировать RTH или инициировать аварийную посадку.
-  - id: b
-    text:
-      lv: Ieslēgt kameru, lai dokumentētu incidentu.
-      en: Turn on the camera to document the incident.
-      ru: Включить камеру для документирования инцидента.
-  - id: c
-    text:
-      lv: Izslēgt vadības pulti, lai drons aktivizētu fail-safe automātiski.
-      en: Switch off the controller so the drone activates fail-safe automatically.
-      ru: Выключить пульт управления, чтобы дрон активировал fail-safe автоматически.
-  - id: d
-    text:
-      lv: Saukt cilvēkus, lai tie aizkļūst no zonas, un gaidīt.
-      en: Shout at people to clear the area and wait.
-      ru: Кричать на людей, чтобы они покинули зону, и ждать.
+    - id: a
+      text:
+        lv: Mēģināt pārslēgt dronu uz manuālo režīmu un atgūt kontroli; ja tas neizdodas — aktivizēt RTH vai izsaukt avārijas nosēšanos.
+        en: Attempt to switch the drone to manual mode and regain control; if unsuccessful — activate RTH or trigger emergency landing.
+        ru: Попытаться переключить дрон в ручной режим и восстановить управление; если не удастся — активировать RTH или инициировать аварийную посадку.
+    - id: b
+      text:
+        lv: Ieslēgt kameru, lai dokumentētu incidentu.
+        en: Turn on the camera to document the incident.
+        ru: Включить камеру для документирования инцидента.
+    - id: c
+      text:
+        lv: Izslēgt vadības pulti, lai drons aktivizētu fail-safe automātiski.
+        en: Switch off the controller so the drone activates fail-safe automatically.
+        ru: Выключить пульт управления, чтобы дрон активировал fail-safe автоматически.
+    - id: d
+      text:
+        lv: Saukt cilvēkus, lai tie aizkļūst no zonas, un gaidīt.
+        en: Shout at people to clear the area and wait.
+        ru: Кричать на людей, чтобы они покинули зону, и ждать.
   correctOptionId: a
   explanation:
-    lv: 'Nekontrolēta kustība (flyaway vai ģeogrāfiskās zonas traucējums) prasa tūlītēju pilota darbību: (1) pāriet uz manuālo/altitude-hold режīmu un mēģināt atgūt kontroli; (2) ja neveiksmīgi — aktivizēt RTH vai avārijas nosēšanos drošā vietā. Izslēgt vadības pulti nav pirmā darbība — tas atstāj dronu automātiski darboties, kas var nebūt vēlamais iznākums pilsētas vidē.
-
-      '
-    en: 'Uncontrolled movement (flyaway or geofencing interference) requires immediate pilot action: (1) switch to manual/altitude-hold mode and attempt to regain control; (2) if unsuccessful — activate RTH or emergency landing in a safe spot. Switching off the controller is not the first action — it leaves the drone operating autonomously, which may not be the desired outcome in an urban environment.
-
-      '
-    ru: 'Неконтролируемое движение (улёт или вмешательство геозоны) требует немедленных действий пилота: (1) переключиться в ручной/altitude-hold режим и попытаться восстановить управление; (2) при неудаче — активировать RTH или аварийную посадку в безопасном месте. Выключение пульта — не первое действие: это оставит дрон в автономном режиме, что может быть нежелательным в городской среде.
-
-      '
+    lv: |
+      Nekontrolēta kustība (flyaway vai ģeogrāfiskās zonas traucējums) prasa tūlītēju pilota darbību: (1) pāriet uz manuālo/altitude-hold режīmu un mēģināt atgūt kontroli; (2) ja neveiksmīgi — aktivizēt RTH vai avārijas nosēšanos drošā vietā. Izslēgt vadības pulti nav pirmā darbība — tas atstāj dronu automātiski darboties, kas var nebūt vēlamais iznākums pilsētas vidē.
+    en: |
+      Uncontrolled movement (flyaway or geofencing interference) requires immediate pilot action: (1) switch to manual/altitude-hold mode and attempt to regain control; (2) if unsuccessful — activate RTH or emergency landing in a safe spot. Switching off the controller is not the first action — it leaves the drone operating autonomously, which may not be the desired outcome in an urban environment.
+    ru: |
+      Неконтролируемое движение (улёт или вмешательство геозоны) требует немедленных действий пилота: (1) переключиться в ручной/altitude-hold режим и попытаться восстановить управление; (2) при неудаче — активировать RTH или аварийную посадку в безопасном месте. Выключение пульта — не первое действие: это оставит дрон в автономном режиме, что может быть нежелательным в городской среде.
   distractorRationales:
     b:
       lv: Dokumentēšana ir svarīga, bet tā ir sekundāra prioritāte. Drošības pasākumi ir pirmajā vietā.
@@ -912,36 +877,37 @@
       lv: Brīdināšana ir noderīga, bet tas nav pirmais solis. Aktīva kontroles atgūšana ir prioritāte.
       en: Warning people is useful, but it is not the first step. Active control recovery is the priority.
       ru: Предупреждение людей полезно, но не является первым шагом. Активное восстановление управления является приоритетом.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 UAS.OPEN.060 — emergency procedures; EASA UAS operational guidelines
+  sourceRef: "Reg 2019/947 UAS.OPEN.060 — emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; EASA UAS operational guidelines"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 UAS.OPEN.060 — emergency procedures; EASA UAS operational guidelines
 - id: op-018
   stem:
     lv: Tu zaudē vadības saiti 90 m augstumā virs tukša lauka. RTH ir aktīvs. Kāds bija minimālais RTH augstums, kas pirms šī lidojuma bija jāiestata?
     en: You lose control link at 90 m altitude over an empty field. RTH is active. What is the minimum RTH altitude you should have set before this flight?
     ru: Ты потерял управляющую связь на высоте 90 м над пустым полем. Активен RTH. Какая минимальная высота RTH должна была быть выставлена до полёта?
   options:
-  - id: a
-    text:
-      lv: 90 m — pašreizējais lidojuma augstums.
-      en: 90 m — the current flight altitude.
-      ru: 90 м — текущая высота полёта.
-  - id: b
-    text:
-      lv: Augstāks par augstāko šķērsli starp UAS pozīciju un starta punktu.
-      en: Higher than the tallest obstacle between the drone's position and the home point.
-      ru: Выше самого высокого препятствия между позицией дрона и домашней точкой.
-  - id: c
-    text:
-      lv: 50 m — standarta drošs augstums atklātās vietās.
-      en: 50 m — a standard safe altitude for open areas.
-      ru: 50 м — стандартная безопасная высота для открытых пространств.
-  - id: d
-    text:
-      lv: RTH augstums tukšā laukā nav būtisks.
-      en: RTH altitude is irrelevant in an empty field.
-      ru: Высота RTH не важна на пустом поле.
+    - id: a
+      text:
+        lv: 90 m — pašreizējais lidojuma augstums.
+        en: 90 m — the current flight altitude.
+        ru: 90 м — текущая высота полёта.
+    - id: b
+      text:
+        lv: Augstāks par augstāko šķērsli starp UAS pozīciju un starta punktu.
+        en: Higher than the tallest obstacle between the drone's position and the home point.
+        ru: Выше самого высокого препятствия между позицией дрона и домашней точкой.
+    - id: c
+      text:
+        lv: 50 m — standarta drošs augstums atklātās vietās.
+        en: 50 m — a standard safe altitude for open areas.
+        ru: 50 м — стандартная безопасная высота для открытых пространств.
+    - id: d
+      text:
+        lv: RTH augstums tukšā laukā nav būtisks.
+        en: RTH altitude is irrelevant in an empty field.
+        ru: Высота RTH не важна на пустом поле.
   correctOptionId: b
   explanation:
     lv: RTH augstumam jāpārsniedz visi šķēršļi atgriešanās ceļā — koki, elektrolīnijas, ēkas — neatkarīgi no pašreizējā lidojuma augstuma. Iestatīt to pēc pašreizējā augstuma der tikai tad, ja starp UAS un starta punktu nav nekā augstāka.
@@ -960,36 +926,37 @@
       lv: Pat šķietami tukšos laukos ir elektrolīnijas, žogi un augsti koki — UAS tos jāpārvar atgriežoties.
       en: Open fields may still have power lines, fencing, and tall trees that the drone must clear on return.
       ru: На «пустых» полях бывают провода, ограждения, высокие деревья — дрон должен их обходить при RTH.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operational procedures and emergency handling
+  sourceRef: "operational procedures and emergency handling | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operational procedures and emergency handling
 - id: op-019
   stem:
     lv: Parādās pirmais baterijas brīdinājums. Līdz uzdevuma pabeigšanai vajadzīgas vēl 2 minūtes filmēšanas. Ko darīt?
     en: The first battery warning appears. The pilot has 2 minutes of filming remaining to complete the job. What should the pilot do?
     ru: Появилось первое предупреждение батареи. До завершения задания 2 минуты съёмки. Что делать?
   options:
-  - id: a
-    text:
-      lv: Pabeigt 2 minūtes — otrais brīdinājums dos rezervi.
-      en: Complete the 2 minutes of filming — the second warning provides a safe margin.
-      ru: Закончить 2 минуты — второе предупреждение даст запас.
-  - id: b
-    text:
-      lv: Samazināt augstumu, lai ietaupītu bateriju, un pabeigt kadru.
-      en: Reduce altitude to extend battery life and complete the shot.
-      ru: Снизить высоту для экономии батареи и завершить задание.
-  - id: c
-    text:
-      lv: Pārtraukt misiju un nekavējoties sākt atgriešanos.
-      en: Abort the mission objective and start returning immediately.
-      ru: Прервать задание и немедленно начать возврат.
-  - id: d
-    text:
-      lv: Ieslēgt Performance režīmu, lai ātrāk atgrieztos pēc pabeigšanas.
-      en: Switch to performance mode to return faster after finishing.
-      ru: Включить режим Performance для быстрого возврата после завершения.
+    - id: a
+      text:
+        lv: Pabeigt 2 minūtes — otrais brīdinājums dos rezervi.
+        en: Complete the 2 minutes of filming — the second warning provides a safe margin.
+        ru: Закончить 2 минуты — второе предупреждение даст запас.
+    - id: b
+      text:
+        lv: Samazināt augstumu, lai ietaupītu bateriju, un pabeigt kadru.
+        en: Reduce altitude to extend battery life and complete the shot.
+        ru: Снизить высоту для экономии батареи и завершить задание.
+    - id: c
+      text:
+        lv: Pārtraukt misiju un nekavējoties sākt atgriešanos.
+        en: Abort the mission objective and start returning immediately.
+        ru: Прервать задание и немедленно начать возврат.
+    - id: d
+      text:
+        lv: Ieslēgt Performance režīmu, lai ātrāk atgrieztos pēc pabeigšanas.
+        en: Switch to performance mode to return faster after finishing.
+        ru: Включить режим Performance для быстрого возврата после завершения.
   correctOptionId: c
   explanation:
     lv: Pirmais brīdinājums ir signāls pārtraukt operatīvo uzdevumu un sākt atgriešanos. Otrais brīdinājums ir avārijas indikators nolaišanai, nevis rezerve darba pabeigšanai. Apmainīt drošības rezervi pret 2 minūtēm filmēšanas nozīmē riskēt ar piespiedu nolaišanos nepareizā vietā.
@@ -1008,36 +975,37 @@
       lv: Performance režīms palielina baterijas patēriņu. Tā izmantošana, lai pabeigtu kadru, problēmu tikai padziļina.
       en: Performance mode increases battery draw. Using it to 'buy time' to finish the shot compounds the problem.
       ru: Режим Performance увеличивает расход батареи. Включать его после первого предупреждения — усугублять проблему.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operational procedures and emergency handling
+  sourceRef: "operational procedures and emergency handling | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operational procedures and emergency handling
 - id: op-020
   stem:
     lv: Kā pareizi rīkoties ar siltu lidojuma bateriju pēc nosēšanās?
     en: What is the correct handling of a warm flight battery after landing?
     ru: Как правильно обращаться с тёплой батареей сразу после посадки?
   options:
-  - id: a
-    text:
-      lv: Uzreiz lādēt, kamēr tā vēl ir silta, lai ietaupītu laiku.
-      en: Charge it immediately while it is still warm to save time.
-      ru: Сразу ставить на зарядку, пока она ещё тёплая, чтобы не терять время.
-  - id: b
-    text:
-      lv: Atstāt to pilnībā uzlādētu automašīnā līdz nākamajai misijai.
-      en: Leave it fully charged in the car until the next mission.
-      ru: Оставить полностью заряженной в машине до следующей миссии.
-  - id: c
-    text:
-      lv: Aizvērt somā, lai temperatūra saglabātos vienmērīga.
-      en: Seal it in the carrying bag so temperature stays stable.
-      ru: Закрыть её в кейсе, чтобы температура держалась стабильно.
-  - id: d
-    text:
-      lv: Ļaut tai atdzist uz ugunsdrošas virsmas pirms uzlādes vai iepakošanas.
-      en: Let it cool on a fire-safe surface before charging or packing it.
-      ru: Дать ей остыть на негорючей поверхности до зарядки или упаковки.
+    - id: a
+      text:
+        lv: Uzreiz lādēt, kamēr tā vēl ir silta, lai ietaupītu laiku.
+        en: Charge it immediately while it is still warm to save time.
+        ru: Сразу ставить на зарядку, пока она ещё тёплая, чтобы не терять время.
+    - id: b
+      text:
+        lv: Atstāt to pilnībā uzlādētu automašīnā līdz nākamajai misijai.
+        en: Leave it fully charged in the car until the next mission.
+        ru: Оставить полностью заряженной в машине до следующей миссии.
+    - id: c
+      text:
+        lv: Aizvērt somā, lai temperatūra saglabātos vienmērīga.
+        en: Seal it in the carrying bag so temperature stays stable.
+        ru: Закрыть её в кейсе, чтобы температура держалась стабильно.
+    - id: d
+      text:
+        lv: Ļaut tai atdzist uz ugunsdrošas virsmas pirms uzlādes vai iepakošanas.
+        en: Let it cool on a fire-safe surface before charging or packing it.
+        ru: Дать ей остыть на негорючей поверхности до зарядки или упаковки.
   correctOptionId: d
   explanation:
     lv: Silta pēclidojuma baterija ir jāatdzesē pirms uzlādes vai glabāšanas slēgtā telpā. Siltums kopā ar augstu uzlādes līmeni palielina stresu un risku.
@@ -1056,36 +1024,37 @@
       lv: Aizvērta soma siltumu notur, nevis novada.
       en: Closed storage traps heat instead of dissipating it.
       ru: Закрытый кейс удерживает тепло, а не отводит его.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pilot responsibilities after flight; docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — battery and operational discipline
+  sourceRef: "pilot responsibilities after flight | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; battery and operational discipline | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pilot responsibilities after flight; docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — battery and operational discipline
 - id: op-021
   stem:
     lv: Kāpēc īss pēclidojuma žurnāls ir operatīvi vērtīgs?
     en: Why is a short post-flight log operationally valuable?
     ru: Почему короткая запись в журнале после полёта действительно полезна?
   options:
-  - id: a
-    text:
-      lv: Tas palīdz pamanīt atkārtotas anomālijas un apkopes modeļus laika gaitā.
-      en: It helps detect repeat anomalies and maintenance patterns over time.
-      ru: Она помогает увидеть повторяющиеся аномалии и паттерны обслуживания со временем.
-  - id: b
-    text:
-      lv: Tas aizvieto jebkādas pirmslidojuma pārbaudes.
-      en: It replaces the need for any pre-flight checks.
-      ru: Она заменяет предполётную проверку.
-  - id: c
-    text:
-      lv: Tas automātiski nosūta ziņojumus regulatoram.
-      en: It automatically submits occurrence reports to the authority.
-      ru: Она автоматически отправляет сообщение регулятору.
-  - id: d
-    text:
-      lv: Tas atceļ vajadzību pārbaudīt UAS pēc nosēšanās.
-      en: It removes the need to inspect the aircraft after landing.
-      ru: Она отменяет необходимость осмотра UAS после посадки.
+    - id: a
+      text:
+        lv: Tas palīdz pamanīt atkārtotas anomālijas un apkopes modeļus laika gaitā.
+        en: It helps detect repeat anomalies and maintenance patterns over time.
+        ru: Она помогает увидеть повторяющиеся аномалии и паттерны обслуживания со временем.
+    - id: b
+      text:
+        lv: Tas aizvieto jebkādas pirmslidojuma pārbaudes.
+        en: It replaces the need for any pre-flight checks.
+        ru: Она заменяет предполётную проверку.
+    - id: c
+      text:
+        lv: Tas automātiski nosūta ziņojumus regulatoram.
+        en: It automatically submits occurrence reports to the authority.
+        ru: Она автоматически отправляет сообщение регулятору.
+    - id: d
+      text:
+        lv: Tas atceļ vajadzību pārbaudīt UAS pēc nosēšanās.
+        en: It removes the need to inspect the aircraft after landing.
+        ru: Она отменяет необходимость осмотра UAS после посадки.
   correctOptionId: a
   explanation:
     lv: Īss, faktisks žurnāls saglabā operatīvo atmiņu. Atkārtoti brīdinājumi, propelleru bojājumi, bateriju uzvedība un vietas īpatnības kļūst redzamas tikai tad, ja tās konsekventi pieraksta.
@@ -1104,36 +1073,37 @@
       lv: Žurnāls bez inspekcijas izlaiž fiziskās problēmas; inspekcija bez žurnāla zaudē vēsturi.
       en: Logging without inspection misses physical issues; inspection without logging loses history.
       ru: Запись без осмотра пропускает физические проблемы; осмотр без записи теряет историю.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pilot responsibilities after flight; docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — battery and operational discipline
+  sourceRef: "pilot responsibilities after flight | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; battery and operational discipline | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pilot responsibilities after flight; docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — battery and operational discipline
 - id: op-022
   stem:
     lv: Pirmslidojuma UAS pārbaudes laikā tu pamani, ka vienam propelleram galā ir neliela šķēla. Kā rīkoties?
     en: During the pre-flight UAS check, you notice one propeller has a small chip at the tip. What is the correct action?
     ru: При предполётной проверке ты заметил небольшой скол на конце пропеллера. Правильное действие?
   options:
-  - id: a
-    text:
-      lv: Turpināt — nelielas šķēlas ir kosmētiskas un nekādi neietekmē veiktspēju.
-      en: Continue — small chips are cosmetic and do not affect performance.
-      ru: Продолжить — небольшие сколы косметические и не влияют на полёт.
-  - id: b
-    text:
-      lv: Nomainīt propelleru pirms lidojuma.
-      en: Replace the propeller before flying.
-      ru: Заменить пропеллер до взлёта.
-  - id: c
-    text:
-      lv: Lidot pusātrumā, lai mazinātu bojājuma ietekmi.
-      en: Fly at half-speed to reduce the impact of the damage.
-      ru: Снизить скорость вдвое, чтобы снизить нагрузку.
-  - id: d
-    text:
-      lv: Turpināt, ja lidojums ir īsāks par 5 minūtēm.
-      en: Continue if the flight is under 5 minutes.
-      ru: Продолжить, если полёт короче 5 минут.
+    - id: a
+      text:
+        lv: Turpināt — nelielas šķēlas ir kosmētiskas un nekādi neietekmē veiktspēju.
+        en: Continue — small chips are cosmetic and do not affect performance.
+        ru: Продолжить — небольшие сколы косметические и не влияют на полёт.
+    - id: b
+      text:
+        lv: Nomainīt propelleru pirms lidojuma.
+        en: Replace the propeller before flying.
+        ru: Заменить пропеллер до взлёта.
+    - id: c
+      text:
+        lv: Lidot pusātrumā, lai mazinātu bojājuma ietekmi.
+        en: Fly at half-speed to reduce the impact of the damage.
+        ru: Снизить скорость вдвое, чтобы снизить нагрузку.
+    - id: d
+      text:
+        lv: Turpināt, ja lidojums ir īsāks par 5 minūtēm.
+        en: Continue if the flight is under 5 minutes.
+        ru: Продолжить, если полёт короче 5 минут.
   correctOptionId: b
   explanation:
     lv: Bojāts propelleris izraisa vibrāciju, samazina efektivitāti un var sabrukt slodzē. Pirmslidojuma pārbaude pastāv tieši tāpēc, lai to pamanītu. Nomainīt propelleru. Lidojuma ilgums un ātruma samazināšana bojātu propelleru drošu nepadara.
@@ -1152,41 +1122,42 @@
       lv: Lidojuma ilgums neietekmē propellera atteices risku slodzē.
       en: Flight duration does not change the risk of propeller failure under load.
       ru: Продолжительность не влияет на риск разрушения пропеллера под нагрузкой.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operational procedures and emergency handling
+  sourceRef: "operational procedures and emergency handling | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operational procedures and emergency handling
 - id: op-023
   stem:
     lv: Kāda ir pareizā pirmslidojuma pārbaudes secība?
     en: What is the correct order for a pre-flight check?
     ru: Каков правильный порядок предполётной проверки?
   options:
-  - id: a
-    text:
-      lv: UAS aparatūra → vide → pilots.
-      en: UAS hardware → environment → pilot.
-      ru: Оборудование UAS → Окружение → Пилот.
-  - id: b
-    text:
-      lv: Pilots → UAS aparatūra → vide.
-      en: Pilot → UAS hardware → environment.
-      ru: Пилот → Оборудование UAS → Окружение.
-  - id: c
-    text:
-      lv: Vide → UAS aparatūra → pilots.
-      en: Environment → UAS hardware → pilot.
-      ru: Окружение → Оборудование UAS → Пилот.
-  - id: d
-    text:
-      lv: Secība elastīga — galvenais, lai visi trīs ir izpildīti.
-      en: The order is flexible — all three must be completed.
-      ru: Порядок гибкий — главное пройти все три раздела.
+    - id: a
+      text:
+        lv: UAS aparatūra → vide → pilots.
+        en: UAS hardware → environment → pilot.
+        ru: Оборудование UAS → Окружение → Пилот.
+    - id: b
+      text:
+        lv: Pilots → UAS aparatūra → vide.
+        en: Pilot → UAS hardware → environment.
+        ru: Пилот → Оборудование UAS → Окружение.
+    - id: c
+      text:
+        lv: Vide → UAS aparatūra → pilots.
+        en: Environment → UAS hardware → pilot.
+        ru: Окружение → Оборудование UAS → Пилот.
+    - id: d
+      text:
+        lv: Secība elastīga — galvenais, lai visi trīs ir izpildīti.
+        en: The order is flexible — all three must be completed.
+        ru: Порядок гибкий — главное пройти все три раздела.
   correctOptionId: c
   explanation:
-    lv: 'Vispirms vide: ja zona ir aizliegta vai laikapstākļi ir ārpus robežām, nav jēgas pārbaudīt UAS vai pilotu. Pēc tam UAS: ja aparātam ir kritiska kļūme, pilota pārbaudei nav nozīmes. Pilots pēdējais: galīgais ''ej/neej'' lēmums ar visu informāciju.'
-    en: 'Environment first: if the zone is prohibited or the weather is out of limits, there is no point checking the drone or the pilot. UAS second: if the drone has a critical fault, the pilot check is irrelevant. Pilot last: a final go/no-go decision with all information available.'
-    ru: 'Сначала окружение: если зона запрещена или погода вне нормы, нет смысла проверять дрон или пилота. Затем оборудование: критическая неисправность дрона снимает вопрос о пилоте. Пилот последним: итоговое решение «лететь/не лететь» при наличии всей информации.'
+    lv: "Vispirms vide: ja zona ir aizliegta vai laikapstākļi ir ārpus robežām, nav jēgas pārbaudīt UAS vai pilotu. Pēc tam UAS: ja aparātam ir kritiska kļūme, pilota pārbaudei nav nozīmes. Pilots pēdējais: galīgais 'ej/neej' lēmums ar visu informāciju."
+    en: "Environment first: if the zone is prohibited or the weather is out of limits, there is no point checking the drone or the pilot. UAS second: if the drone has a critical fault, the pilot check is irrelevant. Pilot last: a final go/no-go decision with all information available."
+    ru: "Сначала окружение: если зона запрещена или погода вне нормы, нет смысла проверять дрон или пилота. Затем оборудование: критическая неисправность дрона снимает вопрос о пилоте. Пилот последним: итоговое решение «лететь/не лететь» при наличии всей информации."
   distractorRationales:
     a:
       lv: Pārbaudīt UAS pirms vides ir neefektīvi — aizliegta zona beidz lidojumu neatkarīgi no aparāta stāvokļa.
@@ -1200,36 +1171,37 @@
       lv: Secība zem laika spiediena ir būtiska — konsekventa secība novērš izlaišanu.
       en: Order matters under time pressure — a consistent sequence prevents omissions.
       ru: Порядок важен под давлением времени — постоянная последовательность предотвращает пропуски.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operational procedures and emergency handling
+  sourceRef: "operational procedures and emergency handling | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operational procedures and emergency handling
 - id: op-024
   stem:
     lv: Kāds ir sterilas darba zonas galvenais mērķis?
     en: What is the main purpose of a sterile operating area?
     ru: Какова главная цель стерильной рабочей зоны?
   options:
-  - id: a
-    text:
-      lv: Rezervēt vietu tikai rezerves bateriju glabāšanai.
-      en: To reserve space only for storing spare batteries.
-      ru: Выделить место только для хранения запасных батарей.
-  - id: b
-    text:
-      lv: Turēt klientu pietiekami tuvu, lai viņš var redzēt ekrānu.
-      en: To keep the client close enough to monitor the screen.
-      ru: Держать клиента достаточно близко, чтобы он видел экран.
-  - id: c
-    text:
-      lv: Izpildīt prasību, ka katrā Atvērtās kategorijas lidojumā obligāti jālieto konusi.
-      en: To satisfy a requirement that every Open category flight use cones.
-      ru: Выполнить требование, что каждый полёт Open category обязан использовать конусы.
-  - id: d
-    text:
-      lv: Aizsargāt kritiskās fāzes no traucējumiem un negaidītas ielaušanās.
-      en: To protect critical phases from distraction and unexpected intrusion.
-      ru: Защитить критические фазы от отвлечений и неожиданного вторжения.
+    - id: a
+      text:
+        lv: Rezervēt vietu tikai rezerves bateriju glabāšanai.
+        en: To reserve space only for storing spare batteries.
+        ru: Выделить место только для хранения запасных батарей.
+    - id: b
+      text:
+        lv: Turēt klientu pietiekami tuvu, lai viņš var redzēt ekrānu.
+        en: To keep the client close enough to monitor the screen.
+        ru: Держать клиента достаточно близко, чтобы он видел экран.
+    - id: c
+      text:
+        lv: Izpildīt prasību, ka katrā Atvērtās kategorijas lidojumā obligāti jālieto konusi.
+        en: To satisfy a requirement that every Open category flight use cones.
+        ru: Выполнить требование, что каждый полёт Open category обязан использовать конусы.
+    - id: d
+      text:
+        lv: Aizsargāt kritiskās fāzes no traucējumiem un negaidītas ielaušanās.
+        en: To protect critical phases from distraction and unexpected intrusion.
+        ru: Защитить критические фазы от отвлечений и неожиданного вторжения.
   correctOptionId: d
   explanation:
     lv: Sterila darba zona ir praktiska drošības robeža, kas aizsargā pacelšanos, nolaišanos un citas kritiskās fāzes no traucējumiem un iejaukšanās.
@@ -1248,36 +1220,37 @@
       lv: Ideja ir operatīvā drošība, nevis konkrēta prasība par konusiem.
       en: The idea is operational safety, not a specific cone mandate.
       ru: Смысл в операционной безопасности, а не в обязательном использовании конусов.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities and risk awareness; docs/knowledge/training-guides/ — field procedures and practical safety guidance
+  sourceRef: "operator responsibilities and risk awareness | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; field procedures and practical safety guidance | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities and risk awareness; docs/knowledge/training-guides/ — field procedures and practical safety guidance
 - id: op-025
   stem:
     lv: Kura darbība vislabāk parāda pareizu vietas apskati pirms starta?
     en: Which action best demonstrates a proper site survey before launch?
     ru: Какое действие лучше всего показывает правильный осмотр площадки до запуска?
   options:
-  - id: a
-    text:
-      lv: Izstaigāt vietu, lai noteiktu šķēršļus, cilvēku kustību, pilota pozīciju un avārijas nolaišanās virzienu.
-      en: Walking the site to identify obstacles, people movement, pilot position, and emergency landing direction.
-      ru: Пройти площадку, чтобы выявить препятствия, движение людей, позицию пилота и направление аварийной посадки.
-  - id: b
-    text:
-      lv: Uzreiz ieslēgt lidaparātu, lai ietaupītu sagatavošanās laiku.
-      en: Turning on the aircraft immediately to save setup time.
-      ru: Сразу включить аппарат, чтобы сэкономить время на подготовке.
-  - id: c
-    text:
-      lv: Stāvēt tur, kur klientam ir ērtāk.
-      en: Standing wherever the client prefers for convenience.
-      ru: Стоять там, где клиенту удобнее.
-  - id: d
-    text:
-      lv: Pieņemt, ka teritorija ir laba, jo no mašīnas tā izskatījās tukša.
-      en: Assuming the area is fine because it looked empty from the car.
-      ru: Считать площадку нормальной, потому что из машины она выглядела пустой.
+    - id: a
+      text:
+        lv: Izstaigāt vietu, lai noteiktu šķēršļus, cilvēku kustību, pilota pozīciju un avārijas nolaišanās virzienu.
+        en: Walking the site to identify obstacles, people movement, pilot position, and emergency landing direction.
+        ru: Пройти площадку, чтобы выявить препятствия, движение людей, позицию пилота и направление аварийной посадки.
+    - id: b
+      text:
+        lv: Uzreiz ieslēgt lidaparātu, lai ietaupītu sagatavošanās laiku.
+        en: Turning on the aircraft immediately to save setup time.
+        ru: Сразу включить аппарат, чтобы сэкономить время на подготовке.
+    - id: c
+      text:
+        lv: Stāvēt tur, kur klientam ir ērtāk.
+        en: Standing wherever the client prefers for convenience.
+        ru: Стоять там, где клиенту удобнее.
+    - id: d
+      text:
+        lv: Pieņemt, ka teritorija ir laba, jo no mašīnas tā izskatījās tukša.
+        en: Assuming the area is fine because it looked empty from the car.
+        ru: Считать площадку нормальной, потому что из машины она выглядела пустой.
   correctOptionId: a
   explanation:
     lv: Īsta vietas apskate ir strukturēts zemes novērtējums pirms iedarbināšanas. Tā ļauj atklāt riskus un sakārtot darba zonu vēl pirms laika spiediena pieauguma.
@@ -1296,47 +1269,45 @@
       lv: Skatiens no mašīnas nav vietas apskate.
       en: A quick glance from the car is not a site survey.
       ru: Взгляд из машины не является осмотром площадки.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities and risk awareness; docs/knowledge/training-guides/ — field procedures and practical safety guidance
+  sourceRef: "operator responsibilities and risk awareness | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; field procedures and practical safety guidance | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities and risk awareness; docs/knowledge/training-guides/ — field procedures and practical safety guidance
 - id: op-026
   stem:
     lv: Starta vietā pilots pārvērš kontrolsarakstu operatīvā lēmumā. Kas obligāti jāpārbauda pirms katra lidojuma attiecībā uz baterijām?
     en: At the launch site, the pilot turns the checklist into an operational decision. What must be verified for the batteries before every flight?
     ru: На площадке запуска пилот превращает чек-лист в операционное решение. Что обязательно проверять у аккумуляторов перед каждым полётом?
   options:
-  - id: a
-    text:
-      lv: Tikai uzlādes līmenis.
-      en: Charge level only.
-      ru: Только уровень заряда.
-  - id: b
-    text:
-      lv: Uzlādes līmenis, fiziskā stāvokļa pārbaude (nav uzpūstas), temperatūra.
-      en: Charge level, physical condition (not swollen), temperature.
-      ru: Уровень заряда, физическое состояние (не вздуты), температура.
-  - id: c
-    text:
-      lv: Tikai tas, ka baterija ir pievienota.
-      en: Only that the battery is connected.
-      ru: Только то, что аккумулятор подключён.
-  - id: d
-    text:
-      lv: Tikai sērijas numurs.
-      en: Serial number only.
-      ru: Только серийный номер.
+    - id: a
+      text:
+        lv: Tikai uzlādes līmenis.
+        en: Charge level only.
+        ru: Только уровень заряда.
+    - id: b
+      text:
+        lv: Uzlādes līmenis, fiziskā stāvokļa pārbaude (nav uzpūstas), temperatūra.
+        en: Charge level, physical condition (not swollen), temperature.
+        ru: Уровень заряда, физическое состояние (не вздуты), температура.
+    - id: c
+      text:
+        lv: Tikai tas, ka baterija ir pievienota.
+        en: Only that the battery is connected.
+        ru: Только то, что аккумулятор подключён.
+    - id: d
+      text:
+        lv: Tikai sērijas numurs.
+        en: Serial number only.
+        ru: Только серийный номер.
   correctOptionId: b
   explanation:
-    lv: 'Li-Po baterijas ir Atvērtās kategorijas drona kritiskais elements. Uzpūsta baterija var aizdegties; pārāk auksta vai karsta — nedos paredzamo jaudu.
-
-      '
-    en: 'Li-Po batteries are the critical element of an Open-category drone. A swollen battery can ignite; one that is too cold or too hot will not deliver predictable power.
-
-      '
-    ru: 'Li-Po аккумуляторы — критический элемент дрона Открытой категории. Вздутый может загореться; слишком холодный или горячий не даст предсказуемую мощность.
-
-      '
+    lv: |
+      Li-Po baterijas ir Atvērtās kategorijas drona kritiskais elements. Uzpūsta baterija var aizdegties; pārāk auksta vai karsta — nedos paredzamo jaudu.
+    en: |
+      Li-Po batteries are the critical element of an Open-category drone. A swollen battery can ignite; one that is too cold or too hot will not deliver predictable power.
+    ru: |
+      Li-Po аккумуляторы — критический элемент дрона Открытой категории. Вздутый может загореться; слишком холодный или горячий не даст предсказуемую мощность.
   distractorRationales:
     a:
       lv: Tikai uzlādes līmenis ir nepietiekami — uzpūsta vai pārāk auksta baterija ar 100 % uzlādi joprojām ir bīstama.
@@ -1350,47 +1321,45 @@
       lv: Sērijas numurs ir uzskaites informācija, ne drošības pārbaude. Tas neuzrāda fizisko stāvokli.
       en: The serial number is inventory metadata, not a safety check. It does not reveal physical condition.
       ru: Серийный номер — учётная метаданная, а не проверка безопасности. Он не показывает физическое состояние.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Operational procedures; manufacturer manuals
+  sourceRef: "EASA Easy Access Rules — Operational procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; manufacturer manuals | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Operational procedures; manufacturer manuals
 - id: op-027
   stem:
     lv: Parasts lidojums sāk pāriet neparastā situācijā. Ko UAS pilots pirmām kārtām dara, ja zaudē vadības saiti (lost link)?
     en: A normal flight begins to move toward an abnormal situation. What is the pilot's first action when the control link is lost?
     ru: Обычный полёт начинает переходить в нестандартную ситуацию. Какое первое действие пилота при потере канала управления?
   options:
-  - id: a
-    text:
-      lv: Atvieno baterijas paku tālvadības pultī.
-      en: Disconnect the battery in the remote controller.
-      ru: Отключить аккумулятор в пульте управления.
-  - id: b
-    text:
-      lv: Restartē mobilo lietotni, lai atjaunotu saiti.
-      en: Restart the mobile app to restore the link.
-      ru: Перезапустить мобильное приложение, чтобы восстановить связь.
-  - id: c
-    text:
-      lv: Paļaujas uz UAS iepriekš iestatīto fail-safe (RTH vai kontrolēta nolaišanās).
-      en: Rely on the UAS's pre-set fail-safe (RTH or controlled descent).
-      ru: Полагаться на заранее заданный fail-safe UAS (RTH или контролируемый спуск).
-  - id: d
-    text:
-      lv: Skrien zem drona un mēģina to noķert.
-      en: Run beneath the drone and try to catch it.
-      ru: Бежать под дрон и пытаться его поймать.
+    - id: a
+      text:
+        lv: Atvieno baterijas paku tālvadības pultī.
+        en: Disconnect the battery in the remote controller.
+        ru: Отключить аккумулятор в пульте управления.
+    - id: b
+      text:
+        lv: Restartē mobilo lietotni, lai atjaunotu saiti.
+        en: Restart the mobile app to restore the link.
+        ru: Перезапустить мобильное приложение, чтобы восстановить связь.
+    - id: c
+      text:
+        lv: Paļaujas uz UAS iepriekš iestatīto fail-safe (RTH vai kontrolēta nolaišanās).
+        en: Rely on the UAS's pre-set fail-safe (RTH or controlled descent).
+        ru: Полагаться на заранее заданный fail-safe UAS (RTH или контролируемый спуск).
+    - id: d
+      text:
+        lv: Skrien zem drona un mēģina to noķert.
+        en: Run beneath the drone and try to catch it.
+        ru: Бежать под дрон и пытаться его поймать.
   correctOptionId: c
   explanation:
-    lv: 'Lost link gadījumā UAS izmanto iepriekš iestatīto fail-safe — RTH vai kontrolētu nolaišanos. Pilots pārliecinās, ka šie iestatījumi ir pareizi pirms lidojuma.
-
-      '
-    en: 'On lost link the UAS executes its pre-set fail-safe — RTH or controlled descent. The pilot validates these settings before flight.
-
-      '
-    ru: 'При потере связи UAS выполняет заранее заданный fail-safe — RTH или контролируемый спуск. Пилот должен проверять эти настройки до полёта.
-
-      '
+    lv: |
+      Lost link gadījumā UAS izmanto iepriekš iestatīto fail-safe — RTH vai kontrolētu nolaišanos. Pilots pārliecinās, ka šie iestatījumi ir pareizi pirms lidojuma.
+    en: |
+      On lost link the UAS executes its pre-set fail-safe — RTH or controlled descent. The pilot validates these settings before flight.
+    ru: |
+      При потере связи UAS выполняет заранее заданный fail-safe — RTH или контролируемый спуск. Пилот должен проверять эти настройки до полёта.
   distractorRationales:
     a:
       lv: Pults baterijas atvienošana nepalielinās saiti — drons turpina sekot tam pašam fail-safe scenārijam. Tas pat traucē iespēju atjaunot kontaktu.
@@ -1404,47 +1373,45 @@
       lv: Mēģinājums skriet zem drona ir tiešs apdraudējums pilotam — krītoša drona trajektorija nav prognozējama.
       en: Trying to run beneath the drone is a direct hazard to the pilot — a falling drone trajectory is not predictable.
       ru: Попытка бежать под дрон — прямая угроза пилоту, траектория падающего аппарата непредсказуема.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures
+  sourceRef: "EASA Easy Access Rules — Emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures
 - id: op-028
   stem:
     lv: Pilots sagatavo atgūšanas iespējas vēl pirms lidaparāts paceļas. Kāds ir Follow-Me režīma maksimālais attālums no pilota A1 apakškategorijā?
     en: The pilot is preparing recovery options before the aircraft leaves the ground. What is the maximum Follow-Me distance from the pilot in A1?
     ru: Пилот готовит варианты восстановления ещё до взлёта аппарата. Какова максимальная дистанция режима Follow-Me от пилота в A1?
   options:
-  - id: a
-    text:
-      lv: 250 m.
-      en: 250 m.
-      ru: 250 м.
-  - id: b
-    text:
-      lv: 500 m.
-      en: 500 m.
-      ru: 500 м.
-  - id: c
-    text:
-      lv: 120 m.
-      en: 120 m.
-      ru: 120 м.
-  - id: d
-    text:
-      lv: 50 m.
-      en: 50 m.
-      ru: 50 м.
+    - id: a
+      text:
+        lv: 250 m.
+        en: 250 m.
+        ru: 250 м.
+    - id: b
+      text:
+        lv: 500 m.
+        en: 500 m.
+        ru: 500 м.
+    - id: c
+      text:
+        lv: 120 m.
+        en: 120 m.
+        ru: 120 м.
+    - id: d
+      text:
+        lv: 50 m.
+        en: 50 m.
+        ru: 50 м.
   correctOptionId: d
   explanation:
-    lv: 'Atvērtajā A1 apakškategorijā Follow-Me režīma maksimālais attālums ir 50 m no tālvadības pilota.
-
-      '
-    en: 'In Open A1 the Follow-Me distance is capped at 50 m from the remote pilot.
-
-      '
-    ru: 'В Открытой A1 максимальное расстояние Follow-Me — 50 м от пилота.
-
-      '
+    lv: |
+      Atvērtajā A1 apakškategorijā Follow-Me režīma maksimālais attālums ir 50 m no tālvadības pilota.
+    en: |
+      In Open A1 the Follow-Me distance is capped at 50 m from the remote pilot.
+    ru: |
+      В Открытой A1 максимальное расстояние Follow-Me — 50 м от пилота.
   distractorRationales:
     a:
       lv: 250 m joprojām pārsniedz Follow-Me limitu. Iespējams, ka VLOS šajā attālumā vēl saglabājas, bet Follow-Me konkrēti — 50 m.
@@ -1458,47 +1425,45 @@
       lv: 120 m ir augstuma robeža, nevis Follow-Me attāluma robeža. Tie ir divi atšķirīgi parametri.
       en: 120 m is the altitude limit, not the Follow-Me distance limit. These are two different parameters.
       ru: 120 м — это предел высоты, а не дистанция Follow-Me. Это два разных параметра.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.020(1)(a) — follow-me mode
+  sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020(1)(a) — follow-me mode | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg (EU) 2019/947 UAS.OPEN.020(1)(a) — follow-me mode
 - id: op-029
   stem:
     lv: Starta vietā pilots pārvērš kontrolsarakstu operatīvā lēmumā. Kā uzglabāt Li-Po bateriju, ja to neplāno lietot tuvākajās 2 nedēļās?
     en: At the launch site, the pilot turns the checklist into an operational decision. How to store a Li-Po battery if it will not be used for the next 2 weeks?
     ru: На площадке запуска пилот превращает чек-лист в операционное решение. Как хранить Li-Po аккумулятор, если он не будет использоваться 2 недели?
   options:
-  - id: a
-    text:
-      lv: Uzlādētu līdz 50–60 % (storage charge).
-      en: Charged to 50–60 % (storage charge).
-      ru: Заряженным до 50–60 % (storage charge).
-  - id: b
-    text:
-      lv: Pilnībā izlādētu līdz 0 %.
-      en: Fully discharged to 0 %.
-      ru: Полностью разряженным до 0 %.
-  - id: c
-    text:
-      lv: Uzlādētu līdz 80–90 % — universāls līmenis jebkurai uzglabāšanai.
-      en: Charged to 80–90 % — a universal level for any storage period.
-      ru: Заряженным до 80–90 % — универсальный уровень для любого хранения.
-  - id: d
-    text:
-      lv: Pilnībā uzlādētu līdz 100 %.
-      en: Fully charged to 100 %.
-      ru: Полностью заряженным до 100 %.
+    - id: a
+      text:
+        lv: Uzlādētu līdz 50–60 % (storage charge).
+        en: Charged to 50–60 % (storage charge).
+        ru: Заряженным до 50–60 % (storage charge).
+    - id: b
+      text:
+        lv: Pilnībā izlādētu līdz 0 %.
+        en: Fully discharged to 0 %.
+        ru: Полностью разряженным до 0 %.
+    - id: c
+      text:
+        lv: Uzlādētu līdz 80–90 % — universāls līmenis jebkurai uzglabāšanai.
+        en: Charged to 80–90 % — a universal level for any storage period.
+        ru: Заряженным до 80–90 % — универсальный уровень для любого хранения.
+    - id: d
+      text:
+        lv: Pilnībā uzlādētu līdz 100 %.
+        en: Fully charged to 100 %.
+        ru: Полностью заряженным до 100 %.
   correctOptionId: a
   explanation:
-    lv: 'Li-Po šūnas degradē, ja tās ilgstoši turot ārpus 3,7–3,85 V/šūnu diapazona. Storage charge (50–60 %) maksimizē kalpošanas laiku.
-
-      '
-    en: 'Li-Po cells degrade if held for long periods outside the 3.7–3.85 V/cell range. Storage charge (50–60 %) maximises shelf life.
-
-      '
-    ru: 'Li-Po элементы деградируют при долгом хранении вне 3,7–3,85 V на ячейку. Storage charge (50–60 %) максимизирует срок службы.
-
-      '
+    lv: |
+      Li-Po šūnas degradē, ja tās ilgstoši turot ārpus 3,7–3,85 V/šūnu diapazona. Storage charge (50–60 %) maksimizē kalpošanas laiku.
+    en: |
+      Li-Po cells degrade if held for long periods outside the 3.7–3.85 V/cell range. Storage charge (50–60 %) maximises shelf life.
+    ru: |
+      Li-Po элементы деградируют при долгом хранении вне 3,7–3,85 V на ячейку. Storage charge (50–60 %) максимизирует срок службы.
   distractorRationales:
     b:
       lv: 0 % izlāde noved šūnu zem drošā minimuma. Šūna kļūst neatgriezeniski bojāta, dažreiz neuzlādējama.
@@ -1512,47 +1477,45 @@
       lv: 100 % uzlāde ilgstoši kaitē šūnām un palielina ugunsgrēka risku. Pilna uzlāde ir lidojuma stāvoklis, ne uzglabāšana.
       en: 100 % charge for long periods damages cells and increases fire risk. Full charge is for flying, not storage.
       ru: Полный заряд при долгом хранении вредит ячейкам и повышает риск пожара. 100 % — для полёта, а не для хранения.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Manufacturer guidance (DJI / Autel); IEEE 1725 battery guidelines
+  sourceRef: "Manufacturer guidance (DJI / Autel) | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; IEEE 1725 battery guidelines"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Manufacturer guidance (DJI / Autel); IEEE 1725 battery guidelines
 - id: op-030
   stem:
     lv: Parasts lidojums sāk pāriet neparastā situācijā. Ko pirmām kārtām dara, ja UAS lidojuma laikā parādās "low battery" brīdinājums?
     en: A normal flight begins to move toward an abnormal situation. What is the first action when a "low battery" warning appears in flight?
     ru: Обычный полёт начинает переходить в нестандартную ситуацию. Какое первое действие при появлении предупреждения «low battery» в полёте?
   options:
-  - id: a
-    text:
-      lv: Aktivē FPV režīmu, lai sasniegtu mērķi ātrāk.
-      en: Switch to FPV to reach the target faster.
-      ru: Включить FPV, чтобы быстрее достичь цели.
-  - id: b
-    text:
-      lv: Pārtrauc misiju un nolaiž drošā vietā.
-      en: Abort the mission and land at a safe spot.
-      ru: Прервать миссию и сесть в безопасном месте.
-  - id: c
-    text:
-      lv: Pazemina lidojuma augstumu, lai ietaupītu enerģiju.
-      en: Reduce flight altitude to save energy.
-      ru: Снизить высоту, чтобы сэкономить энергию.
-  - id: d
-    text:
-      lv: Turpina misiju — drons pats nolaidīsies.
-      en: Continue the mission — the drone will land itself.
-      ru: Продолжать миссию — дрон сядет сам.
+    - id: a
+      text:
+        lv: Aktivē FPV režīmu, lai sasniegtu mērķi ātrāk.
+        en: Switch to FPV to reach the target faster.
+        ru: Включить FPV, чтобы быстрее достичь цели.
+    - id: b
+      text:
+        lv: Pārtrauc misiju un nolaiž drošā vietā.
+        en: Abort the mission and land at a safe spot.
+        ru: Прервать миссию и сесть в безопасном месте.
+    - id: c
+      text:
+        lv: Pazemina lidojuma augstumu, lai ietaupītu enerģiju.
+        en: Reduce flight altitude to save energy.
+        ru: Снизить высоту, чтобы сэкономить энергию.
+    - id: d
+      text:
+        lv: Turpina misiju — drons pats nolaidīsies.
+        en: Continue the mission — the drone will land itself.
+        ru: Продолжать миссию — дрон сядет сам.
   correctOptionId: b
   explanation:
-    lv: '"Low battery" nozīmē, ka pilots zaudē rezervi rīkoties; misija jāpārtrauc un drons jānolaiž drošā vietā vai jāatgriež RTH.
-
-      '
-    en: '"Low battery" means the pilot is losing manoeuvre reserves; the mission must be aborted and the drone landed safely or returned via RTH.
-
-      '
-    ru: '«Low battery» означает потерю запаса манёвра; миссия прерывается и дрон садится в безопасном месте или возвращается через RTH.
-
-      '
+    lv: |
+      "Low battery" nozīmē, ka pilots zaudē rezervi rīkoties; misija jāpārtrauc un drons jānolaiž drošā vietā vai jāatgriež RTH.
+    en: |
+      "Low battery" means the pilot is losing manoeuvre reserves; the mission must be aborted and the drone landed safely or returned via RTH.
+    ru: |
+      «Low battery» означает потерю запаса манёвра; миссия прерывается и дрон садится в безопасном месте или возвращается через RTH.
   distractorRationales:
     a:
       lv: FPV nepalielina lidojuma diapazonu — tas patērē papildu enerģiju (video saites pārraidītājs) un nepalīdz atgriezties drošā vietā.
@@ -1566,47 +1529,45 @@
       lv: Drons nolaidīsies pats tikai pie kritiskā brīdinājuma. "Low battery" ir agrāks signāls, kas dod pilotam laiku pieņemt lēmumu — tas nav signāls turpināt.
       en: The drone lands itself only on the critical warning. "Low battery" is an earlier signal giving the pilot decision time — not a signal to continue.
       ru: Дрон сядет сам только на критическом предупреждении. «Low battery» — более раннее, дающее пилоту время принять решение, а не сигнал продолжать.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures
+  sourceRef: "EASA Easy Access Rules — Emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures
 - id: op-031
   stem:
     lv: Pilots sagatavo atgūšanas iespējas vēl pirms lidaparāts paceļas. Pilots plāno lidojumu virs augļu dārza ar 8 m augstiem kokiem. Atgriešanās maršruts šķērso elektrolīnijas 15 m augstumā. Kādam minimumam jāatbilst RTH augstumam?
     en: The pilot is preparing recovery options before the aircraft leaves the ground. A pilot plans a flight over an orchard with 8 m trees. The return route crosses power lines at 15 m height. What is the minimum RTH altitude that must be set?
     ru: Пилот готовит варианты восстановления ещё до взлёта аппарата. Пилот планирует полёт над садом с деревьями 8 м. Маршрут возврата пересекает линии электропередачи высотой 15 м. Какой минимальный RTH-высоты необходимо установить?
   options:
-  - id: a
-    text:
-      lv: Augstumam nav nozīmes, ja GPS darbojas.
-      en: Altitude does not matter if GPS is working.
-      ru: Высота не имеет значения, если GPS работает.
-  - id: b
-    text:
-      lv: 8 m — augstākie koki maršrutā.
-      en: 8 m — the tallest trees on the route.
-      ru: 8 м — самые высокие деревья на маршруте.
-  - id: c
-    text:
-      lv: 15 m — augstākais šķērslis atgriešanās ceļā.
-      en: 15 m — the tallest obstacle on the return path.
-      ru: 15 м — самое высокое препятствие на пути возврата.
-  - id: d
-    text:
-      lv: 50 m — standarta drošais RTH augstums.
-      en: 50 m — a standard safe RTH altitude.
-      ru: 50 м — стандартная безопасная высота RTH.
+    - id: a
+      text:
+        lv: Augstumam nav nozīmes, ja GPS darbojas.
+        en: Altitude does not matter if GPS is working.
+        ru: Высота не имеет значения, если GPS работает.
+    - id: b
+      text:
+        lv: 8 m — augstākie koki maršrutā.
+        en: 8 m — the tallest trees on the route.
+        ru: 8 м — самые высокие деревья на маршруте.
+    - id: c
+      text:
+        lv: 15 m — augstākais šķērslis atgriešanās ceļā.
+        en: 15 m — the tallest obstacle on the return path.
+        ru: 15 м — самое высокое препятствие на пути возврата.
+    - id: d
+      text:
+        lv: 50 m — standarta drošais RTH augstums.
+        en: 50 m — a standard safe RTH altitude.
+        ru: 50 м — стандартная безопасная высота RTH.
   correctOptionId: c
   explanation:
-    lv: 'RTH augstums jāiestata virs augstākā šķēršļa visā atgriešanās ceļā. Augstākais šķērslis šajā maršrutā ir elektrolīnijas 15 m augstumā — tādēļ RTH augstumam jābūt virs 15 m. Praktiski ieteicams pievienot drošības rezervi (piemēram, 20–25 m) neparedzētu kļūdu gadījumā.
-
-      '
-    en: 'RTH altitude must be set above the tallest obstacle along the entire return path. The tallest obstacle on this route is the power lines at 15 m — therefore RTH altitude must be above 15 m. In practice a safety margin (e.g. 20–25 m) is recommended to allow for position errors.
-
-      '
-    ru: 'Высота RTH должна быть установлена выше самого высокого препятствия на всём пути возврата. Самое высокое препятствие на этом маршруте — линии электропередачи на 15 м, поэтому RTH должна быть выше 15 м. На практике рекомендуется добавить запас (например, 20–25 м).
-
-      '
+    lv: |
+      RTH augstums jāiestata virs augstākā šķēršļa visā atgriešanās ceļā. Augstākais šķērslis šajā maršrutā ir elektrolīnijas 15 m augstumā — tādēļ RTH augstumam jābūt virs 15 m. Praktiski ieteicams pievienot drošības rezervi (piemēram, 20–25 m) neparedzētu kļūdu gadījumā.
+    en: |
+      RTH altitude must be set above the tallest obstacle along the entire return path. The tallest obstacle on this route is the power lines at 15 m — therefore RTH altitude must be above 15 m. In practice a safety margin (e.g. 20–25 m) is recommended to allow for position errors.
+    ru: |
+      Высота RTH должна быть установлена выше самого высокого препятствия на всём пути возврата. Самое высокое препятствие на этом маршруте — линии электропередачи на 15 м, поэтому RTH должна быть выше 15 м. На практике рекомендуется добавить запас (например, 20–25 м).
   distractorRationales:
     a:
       lv: GPS nodrošina navigāciju RTH laikā, bet negarantē šķērsļu izvairīšanos. Bez pareizi iestatīta RTH augstuma drons var trāpīt elektrolīnijās, ko nevar noteikt GPS.
@@ -1620,36 +1581,37 @@
       lv: 50 m var būt pārmērīgi dažos apstākļos un nepietiekoši citos. RTH augstums jāiestata pamatojoties uz reālo šķērsļu profilu, nevis uz "standarta" vērtību.
       en: 50 m may be excessive in some environments and insufficient in others. RTH altitude must be set based on the actual obstacle profile, not a "standard" value.
       ru: 50 м может быть избыточным в одних условиях и недостаточным в других. Высота RTH должна устанавливаться на основе реального профиля препятствий, а не «стандартного» значения.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; pre-flight checklist
+  sourceRef: "EASA Easy Access Rules — Emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; pre-flight checklist"
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — EASA Easy Access Rules — Emergency procedures; pre-flight checklist
 - id: op-032
   stem:
     lv: Komanda gatavojas īsam lidojumam pie Daugavas Rīgā, klients steidzina pacelšanos. Kura secība ir drošākā?
     en: A crew prepares for a short flight by the Daugava in Riga, and the client pushes for take-off. Which sequence is safest?
     ru: Команда готовится к короткому полёту у Даугавы в Риге, клиент торопит взлёт. Какая последовательность безопаснее?
   options:
-  - id: a
-    text:
-      lv: Pacelties un karti/vēju pārbaudīt lidojuma laikā.
-      en: Take off and check the map/wind during flight.
-      ru: Взлететь и проверить карту/ветер в полёте.
-  - id: b
-    text:
-      lv: Pārbaudīt tikai baterijas procentus.
-      en: Check only battery percentage.
-      ru: Проверить только процент батареи.
-  - id: c
-    text:
-      lv: Ļaut klientam izvēlēties pacelšanās vietu.
-      en: Let the client choose the take-off point.
-      ru: Позволить клиенту выбрать место взлёта.
-  - id: d
-    text:
-      lv: Pārbaudīt zonas, laikapstākļus, cilvēkus, UAS stāvokli, mājas punktu/RTH un tikai tad pacelties.
-      en: Check zones, weather, people, UAS condition, home point/RTH, and only then take off.
-      ru: Проверить зоны, погоду, людей, состояние БВС, home point/RTH и только потом взлетать.
+    - id: a
+      text:
+        lv: Pacelties un karti/vēju pārbaudīt lidojuma laikā.
+        en: Take off and check the map/wind during flight.
+        ru: Взлететь и проверить карту/ветер в полёте.
+    - id: b
+      text:
+        lv: Pārbaudīt tikai baterijas procentus.
+        en: Check only battery percentage.
+        ru: Проверить только процент батареи.
+    - id: c
+      text:
+        lv: Ļaut klientam izvēlēties pacelšanās vietu.
+        en: Let the client choose the take-off point.
+        ru: Позволить клиенту выбрать место взлёта.
+    - id: d
+      text:
+        lv: Pārbaudīt zonas, laikapstākļus, cilvēkus, UAS stāvokli, mājas punktu/RTH un tikai tad pacelties.
+        en: Check zones, weather, people, UAS condition, home point/RTH, and only then take off.
+        ru: Проверить зоны, погоду, людей, состояние БВС, home point/RTH и только потом взлетать.
   correctOptionId: d
   explanation:
     lv: Īss pilsētas lidojums joprojām prasa pilnu pirmslidojuma disciplīnu; steiga nav attaisnojums izlaist drošības pārbaudes.
@@ -1668,36 +1630,37 @@
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
       ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
-  sourceRef: docs/knowledge/latvia-caa/web-snapshots/07-open-category.md — pilot responsibility in Open category
+  sourceRef: "pilot responsibility in Open category | https://droni.caa.gov.lv/darbibas-kategorijas/atverta-kategorija/"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/latvia-caa/web-snapshots/07-open-category.md — pilot responsibility in Open category
 - id: op-033
   stem:
     lv: Lidojot starp ēkām Jelgavā, aplikācija ziņo par GNSS zudumu un drons dreifē. Kā reaģēt?
     en: While flying between buildings in Jelgava, the app reports GNSS loss and the drone drifts. How should the pilot react?
     ru: При полёте между зданиями в Елгаве приложение сообщает о потере GNSS, дрон дрейфует. Как реагировать?
   options:
-  - id: a
-    text:
-      lv: Pārtraukt uzdevumu, saglabāt VLOS, pārņemt kontroli pēc procedūras un droši nosēdināt/atgriezt.
-      en: Stop the task, maintain VLOS, take control by procedure and land/return safely.
-      ru: Прекратить задачу, сохранить VLOS, взять управление по процедуре и безопасно посадить/вернуть.
-  - id: b
-    text:
-      lv: Aktivizēt RTH bez vērtēšanas, jo tas vienmēr strādā bez GNSS.
-      en: Activate RTH without assessment because it always works without GNSS.
-      ru: Включить RTH без оценки, потому что он всегда работает без GNSS.
-  - id: c
-    text:
-      lv: Turpināt filmēt, ja video stabilizācija darbojas.
-      en: Continue filming if video stabilisation works.
-      ru: Продолжать съёмку, если стабилизация видео работает.
-  - id: d
-    text:
-      lv: Lidot augstāk virs ēkām, lai saglabātu kadru.
-      en: Climb above buildings to keep the shot.
-      ru: Подняться выше зданий, чтобы сохранить кадр.
+    - id: a
+      text:
+        lv: Pārtraukt uzdevumu, saglabāt VLOS, pārņemt kontroli pēc procedūras un droši nosēdināt/atgriezt.
+        en: Stop the task, maintain VLOS, take control by procedure and land/return safely.
+        ru: Прекратить задачу, сохранить VLOS, взять управление по процедуре и безопасно посадить/вернуть.
+    - id: b
+      text:
+        lv: Aktivizēt RTH bez vērtēšanas, jo tas vienmēr strādā bez GNSS.
+        en: Activate RTH without assessment because it always works without GNSS.
+        ru: Включить RTH без оценки, потому что он всегда работает без GNSS.
+    - id: c
+      text:
+        lv: Turpināt filmēt, ja video stabilizācija darbojas.
+        en: Continue filming if video stabilisation works.
+        ru: Продолжать съёмку, если стабилизация видео работает.
+    - id: d
+      text:
+        lv: Lidot augstāk virs ēkām, lai saglabātu kadru.
+        en: Climb above buildings to keep the shot.
+        ru: Подняться выше зданий, чтобы сохранить кадр.
   correctOptionId: a
   explanation:
     lv: GNSS zudums ir signāls pārtraukt uzdevumu. Kontrole un droša nosēšanās ir svarīgāka par kadru.
@@ -1716,36 +1679,37 @@
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
       ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — remote pilot operational responsibilities
+  sourceRef: "remote pilot operational responsibilities | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 4
   cognitiveLevel: analyze
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — remote pilot operational responsibilities
 - id: op-034
   stem:
     lv: Dronam virs Gaujas senlejas paliek 24% baterijas, tas ir 500 m attālumā, klients prasa vēl trīs minūtes. Ko darīt?
     en: A drone over the Gauja valley has 24% battery left, is 500 m away, and the client asks for three more minutes. What should be done?
     ru: У дрона над долиной Гауи осталось 24% батареи, он в 500 м, клиент просит ещё три минуты. Что делать?
   options:
-  - id: a
-    text:
-      lv: Turpināt līdz 10%, ja kadrs ir svarīgs.
-      en: Continue to 10% if the shot is important.
-      ru: Продолжать до 10%, если кадр важен.
-  - id: b
-    text:
-      lv: Pārtraukt uzdevumu un sākt drošu atgriešanos/nolaišanos ar rezervi.
-      en: Stop the task and begin safe return/landing with reserve.
-      ru: Прекратить задачу и начать безопасный возврат/посадку с резервом.
-  - id: c
-    text:
-      lv: Lidot tālāk pa ieleju, jo vējš palīdzēs atpakaļceļā.
-      en: Fly further down the valley because wind will help on return.
-      ru: Лететь дальше по долине, потому что ветер поможет на обратном пути.
-  - id: d
-    text:
-      lv: Atdot vadību klientam, lai viņš pabeidz kadru.
-      en: Hand control to the client to finish the shot.
-      ru: Передать управление клиенту, чтобы он закончил кадр.
+    - id: a
+      text:
+        lv: Turpināt līdz 10%, ja kadrs ir svarīgs.
+        en: Continue to 10% if the shot is important.
+        ru: Продолжать до 10%, если кадр важен.
+    - id: b
+      text:
+        lv: Pārtraukt uzdevumu un sākt drošu atgriešanos/nolaišanos ar rezervi.
+        en: Stop the task and begin safe return/landing with reserve.
+        ru: Прекратить задачу и начать безопасный возврат/посадку с резервом.
+    - id: c
+      text:
+        lv: Lidot tālāk pa ieleju, jo vējš palīdzēs atpakaļceļā.
+        en: Fly further down the valley because wind will help on return.
+        ru: Лететь дальше по долине, потому что ветер поможет на обратном пути.
+    - id: d
+      text:
+        lv: Atdot vadību klientam, lai viņš pabeidz kadru.
+        en: Hand control to the client to finish the shot.
+        ru: Передать управление клиенту, чтобы он закончил кадр.
   correctOptionId: b
   explanation:
     lv: Baterijas lēmums jāpieņem pēc attāluma, vēja un rezerves, nevis pēc klienta spiediena.
@@ -1764,36 +1728,37 @@
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
       ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — safe operation and remote pilot duties
+  sourceRef: "safe operation and remote pilot duties | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — safe operation and remote pilot duties
 - id: op-035
   stem:
     lv: Pie metāla angāra Ventspilī aplikācija prasa kompasa kalibrāciju. Kāds risinājums ir pareizākais?
     en: Near a metal hangar in Ventspils, the app asks for compass calibration. What is the best solution?
     ru: У металлического ангара в Вентспилсе приложение просит калибровку компаса. Какое решение лучше?
   options:
-  - id: a
-    text:
-      lv: Kalibrēt tieši pie angāra, jo tur ir starts.
-      en: Calibrate right by the hangar because that is the launch point.
-      ru: Калибровать прямо у ангара, потому что там старт.
-  - id: b
-    text:
-      lv: Ignorēt brīdinājumu, ja iepriekš viss strādāja.
-      en: Ignore the warning if it worked before.
-      ru: Игнорировать предупреждение, если раньше всё работало.
-  - id: c
-    text:
-      lv: Pārvietoties prom no metāla/traucējumiem, izpildīt ražotāja procedūru vai mainīt starta vietu.
-      en: Move away from metal/interference, follow manufacturer procedure or change launch site.
-      ru: Отойти от металла/помех, выполнить процедуру производителя или сменить место старта.
-  - id: d
-    text:
-      lv: Kalibrēt kompasu katru reizi jebkurā vietā.
-      en: Calibrate the compass every time anywhere.
-      ru: Калибровать компас каждый раз в любом месте.
+    - id: a
+      text:
+        lv: Kalibrēt tieši pie angāra, jo tur ir starts.
+        en: Calibrate right by the hangar because that is the launch point.
+        ru: Калибровать прямо у ангара, потому что там старт.
+    - id: b
+      text:
+        lv: Ignorēt brīdinājumu, ja iepriekš viss strādāja.
+        en: Ignore the warning if it worked before.
+        ru: Игнорировать предупреждение, если раньше всё работало.
+    - id: c
+      text:
+        lv: Pārvietoties prom no metāla/traucējumiem, izpildīt ražotāja procedūru vai mainīt starta vietu.
+        en: Move away from metal/interference, follow manufacturer procedure or change launch site.
+        ru: Отойти от металла/помех, выполнить процедуру производителя или сменить место старта.
+    - id: d
+      text:
+        lv: Kalibrēt kompasu katru reizi jebkurā vietā.
+        en: Calibrate the compass every time anywhere.
+        ru: Калибровать компас каждый раз в любом месте.
   correctOptionId: c
   explanation:
     lv: Kalibrācija magnētisku traucējumu zonā var pasliktināt drošību. Vispirms jānoņem traucējums vai jāmaina vieta.
@@ -1812,36 +1777,37 @@
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
       ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pre-flight UAS condition checks
+  sourceRef: "pre-flight UAS condition checks | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pre-flight UAS condition checks
 - id: op-036
   stem:
     lv: Pie meža malas Latgalē drons īslaicīgi nereaģē pēc signāla zuduma, bet VLOS vēl ir. Kāds process pareizs?
     en: Near a forest edge in Latgale, the drone briefly stops responding after signal loss, but VLOS remains. What process is correct?
     ru: У края леса в Латгалии дрон кратко не реагирует после потери сигнала, но VLOS сохраняется. Какой процесс верный?
   options:
-  - id: a
-    text:
-      lv: Uzreiz izslēgt kontrolieri, lai drons izvēlas režīmu.
-      en: Immediately switch off the controller so the drone chooses a mode.
-      ru: Сразу выключить пульт, чтобы дрон выбрал режим.
-  - id: b
-    text:
-      lv: Skriet pakaļ dronam, neskatoties uz apkārtni.
-      en: Run after the drone without watching surroundings.
-      ru: Бежать за дроном, не следя за окружением.
-  - id: c
-    text:
-      lv: Turpināt klienta uzdevumu, ja video saite vēl ir.
-      en: Continue the client task if video link remains.
-      ru: Продолжать задачу клиента, если видеосвязь остаётся.
-  - id: d
-    text:
-      lv: Pārtraukt uzdevumu, saglabāt vizuālo kontaktu, lietot lost-link procedūru un avārijas funkcijas tikai riska mazināšanai.
-      en: Stop the task, keep visual contact, use the lost-link procedure and emergency functions only to reduce risk.
-      ru: Прекратить задачу, сохранить визуальный контакт, применить lost-link процедуру и аварийные функции только для снижения риска.
+    - id: a
+      text:
+        lv: Uzreiz izslēgt kontrolieri, lai drons izvēlas režīmu.
+        en: Immediately switch off the controller so the drone chooses a mode.
+        ru: Сразу выключить пульт, чтобы дрон выбрал режим.
+    - id: b
+      text:
+        lv: Skriet pakaļ dronam, neskatoties uz apkārtni.
+        en: Run after the drone without watching surroundings.
+        ru: Бежать за дроном, не следя за окружением.
+    - id: c
+      text:
+        lv: Turpināt klienta uzdevumu, ja video saite vēl ir.
+        en: Continue the client task if video link remains.
+        ru: Продолжать задачу клиента, если видеосвязь остаётся.
+    - id: d
+      text:
+        lv: Pārtraukt uzdevumu, saglabāt vizuālo kontaktu, lietot lost-link procedūru un avārijas funkcijas tikai riska mazināšanai.
+        en: Stop the task, keep visual contact, use the lost-link procedure and emergency functions only to reduce risk.
+        ru: Прекратить задачу, сохранить визуальный контакт, применить lost-link процедуру и аварийные функции только для снижения риска.
   correctOptionId: d
   explanation:
     lv: Avārijas režīmi nav panikas pogas. Tie jālieto pēc procedūras un tikai tad, ja samazina risku cilvēkiem un īpašumam.
@@ -1860,36 +1826,37 @@
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
       ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — lost-link and emergency procedures
+  sourceRef: "lost-link and emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 4
   cognitiveLevel: analyze
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — lost-link and emergency procedures
 - id: op-037
   stem:
     lv: Propellers pieskaras elektrolīnijas balstam laukos; cilvēki nav cietuši, bet iespējams infrastruktūras bojājums. Ko darīt pēc nosēdināšanas?
     en: A propeller contacts a power-line support in a rural area; no one is hurt, but infrastructure damage is possible. What after landing?
     ru: Пропеллер задел опору электролинии в сельской местности; люди не пострадали, но возможен ущерб инфраструктуре. Что после посадки?
   options:
-  - id: a
-    text:
-      lv: Nodrošināt vietu, nepieskarties infrastruktūrai, informēt atbildīgo turētāju un izvērtēt ziņošanu CAA/incidenta kārtībā.
-      en: Secure the area, do not touch infrastructure, inform the responsible operator and assess CAA/incident reporting.
-      ru: Обеспечить место, не трогать инфраструктуру, сообщить ответственному владельцу и оценить сообщение в CAA/по процедуре инцидента.
-  - id: b
-    text:
-      lv: Aizbraukt, ja drons joprojām darbojas.
-      en: Leave if the drone still works.
-      ru: Уехать, если дрон ещё работает.
-  - id: c
-    text:
-      lv: Pašam pārbaudīt balstu tuvumā.
-      en: Inspect the support yourself up close.
-      ru: Самостоятельно осмотреть опору вблизи.
-  - id: d
-    text:
-      lv: Ziņot tikai klientam, jo nav cietušo.
-      en: Report only to the client because nobody is injured.
-      ru: Сообщить только клиенту, потому что пострадавших нет.
+    - id: a
+      text:
+        lv: Nodrošināt vietu, nepieskarties infrastruktūrai, informēt atbildīgo turētāju un izvērtēt ziņošanu CAA/incidenta kārtībā.
+        en: Secure the area, do not touch infrastructure, inform the responsible operator and assess CAA/incident reporting.
+        ru: Обеспечить место, не трогать инфраструктуру, сообщить ответственному владельцу и оценить сообщение в CAA/по процедуре инцидента.
+    - id: b
+      text:
+        lv: Aizbraukt, ja drons joprojām darbojas.
+        en: Leave if the drone still works.
+        ru: Уехать, если дрон ещё работает.
+    - id: c
+      text:
+        lv: Pašam pārbaudīt balstu tuvumā.
+        en: Inspect the support yourself up close.
+        ru: Самостоятельно осмотреть опору вблизи.
+    - id: d
+      text:
+        lv: Ziņot tikai klientam, jo nav cietušo.
+        en: Report only to the client because nobody is injured.
+        ru: Сообщить только клиенту, потому что пострадавших нет.
   correctOptionId: a
   explanation:
     lv: Iespējams infrastruktūras bojājums ir drošības un ziņošanas jautājums. Operators nedrīkst pats radīt papildu elektroapdraudējumu.
@@ -1908,36 +1875,37 @@
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
       ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
-  sourceRef: docs/knowledge/latvia-caa/web-snapshots/17-incident-reporting.md — incident reporting and safety follow-up
+  sourceRef: "incident reporting and safety follow-up | https://www.caa.gov.lv/en/services/reporting-occurrences-civil-aviation"
   difficulty: 4
   cognitiveLevel: analyze
   scenarioType: decision
+  internalRef: docs/knowledge/latvia-caa/web-snapshots/17-incident-reporting.md — incident reporting and safety follow-up
 - id: op-038
   stem:
     lv: Maršruts gar augstsprieguma līniju Zemgalē dod labu kadru, bet avārijas nolaišanās zonas ir otrā līnijas pusē. Kā plānot?
     en: A route along a high-voltage line in Zemgale gives a good shot, but emergency landing areas are on the other side. How should it be planned?
     ru: Маршрут вдоль высоковольтной линии в Земгале даёт хороший кадр, но зоны аварийной посадки на другой стороне. Как планировать?
   options:
-  - id: a
-    text:
-      lv: Lidot zem vadiem, lai vieglāk šķērsotu līniju.
-      en: Fly under the wires to cross more easily.
-      ru: Лететь под проводами, чтобы легче пересечь линию.
-  - id: b
-    text:
-      lv: Pārplānot maršrutu ar drošu distanci un avārijas nolaišanos bez šķēršļu šķērsošanas.
-      en: Replan with safe distance and emergency landing without crossing obstacles.
-      ru: Перепланировать с безопасной дистанцией и аварийной посадкой без пересечения препятствий.
-  - id: c
-    text:
-      lv: Atstāt plānu, jo vadi kamerā ir labi redzami.
-      en: Keep the plan because wires are visible on camera.
-      ru: Оставить план, потому что провода видны в камере.
-  - id: d
-    text:
-      lv: Paļauties uz sensoriem, jo tie vienmēr atpazīst vadus.
-      en: Rely on sensors because they always detect wires.
-      ru: Положиться на датчики, потому что они всегда обнаруживают провода.
+    - id: a
+      text:
+        lv: Lidot zem vadiem, lai vieglāk šķērsotu līniju.
+        en: Fly under the wires to cross more easily.
+        ru: Лететь под проводами, чтобы легче пересечь линию.
+    - id: b
+      text:
+        lv: Pārplānot maršrutu ar drošu distanci un avārijas nolaišanos bez šķēršļu šķērsošanas.
+        en: Replan with safe distance and emergency landing without crossing obstacles.
+        ru: Перепланировать с безопасной дистанцией и аварийной посадкой без пересечения препятствий.
+    - id: c
+      text:
+        lv: Atstāt plānu, jo vadi kamerā ir labi redzami.
+        en: Keep the plan because wires are visible on camera.
+        ru: Оставить план, потому что провода видны в камере.
+    - id: d
+      text:
+        lv: Paļauties uz sensoriem, jo tie vienmēr atpazīst vadus.
+        en: Rely on sensors because they always detect wires.
+        ru: Положиться на датчики, потому что они всегда обнаруживают провода.
   correctOptionId: b
   explanation:
     lv: Plānā jābūt drošai izejai. Vadi var būt grūti uztverami sensoriem un atstāt maz manevra telpas.
@@ -1956,36 +1924,37 @@
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
       ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — contingency planning and operational risk mitigation
+  sourceRef: "contingency planning and operational risk mitigation | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 4
   cognitiveLevel: analyze
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — contingency planning and operational risk mitigation
 - id: op-039
   stem:
     lv: Ražotāja aplikācija rāda “allowed”, bet lidojums ir 800 m no lidlauka malas Latvijā. Kas ir nākamais solis?
     en: The manufacturer app shows “allowed”, but the flight is 800 m from an aerodrome boundary in Latvia. What is the next step?
     ru: Приложение производителя показывает “allowed”, но полёт в 800 м от границы аэродрома в Латвии. Какой следующий шаг?
   options:
-  - id: a
-    text:
-      lv: Paļauties uz ražotāja aplikāciju kā uz oficiālo avotu.
-      en: Rely on the manufacturer app as the official source.
-      ru: Положиться на приложение производителя как на официальный источник.
-  - id: b
-    text:
-      lv: Lidot zem 30 m, lai zonas vairs neattiektos.
-      en: Fly below 30 m so zones no longer apply.
-      ru: Лететь ниже 30 м, чтобы зоны не применялись.
-  - id: c
-    text:
-      lv: Pārbaudīt oficiālās Latvijas UAS ģeogrāfiskās zonas un vajadzīgos nosacījumus/atļaujas.
-      en: Check official Latvian UAS geographical zones and required conditions/permissions.
-      ru: Проверить официальные географические зоны БВС Латвии и нужные условия/разрешения.
-  - id: d
-    text:
-      lv: Pietiek ar ēkas īpašnieka atļauju.
-      en: Building owner permission is enough.
-      ru: Достаточно разрешения владельца здания.
+    - id: a
+      text:
+        lv: Paļauties uz ražotāja aplikāciju kā uz oficiālo avotu.
+        en: Rely on the manufacturer app as the official source.
+        ru: Положиться на приложение производителя как на официальный источник.
+    - id: b
+      text:
+        lv: Lidot zem 30 m, lai zonas vairs neattiektos.
+        en: Fly below 30 m so zones no longer apply.
+        ru: Лететь ниже 30 м, чтобы зоны не применялись.
+    - id: c
+      text:
+        lv: Pārbaudīt oficiālās Latvijas UAS ģeogrāfiskās zonas un vajadzīgos nosacījumus/atļaujas.
+        en: Check official Latvian UAS geographical zones and required conditions/permissions.
+        ru: Проверить официальные географические зоны БВС Латвии и нужные условия/разрешения.
+    - id: d
+      text:
+        lv: Pietiek ar ēkas īpašnieka atļauju.
+        en: Building owner permission is enough.
+        ru: Достаточно разрешения владельца здания.
   correctOptionId: c
   explanation:
     lv: Ražotāja ģeozonas ir palīgs, nevis oficiāls tiesiskais avots. Latvijā jāskatās oficiālās zonas un to nosacījumi.
@@ -2004,36 +1973,37 @@
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
       ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
-  sourceRef: docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — Latvian UAS geographical zones
+  sourceRef: "Latvian UAS geographical zones | https://droni.caa.gov.lv/bgkis/ugz/lidojumu-pieteiksana-un-saskanosana-uas-geografiskajas-zonas/"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: map
+  internalRef: docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — Latvian UAS geographical zones
 - id: op-040
   stem:
     lv: Pirms pacelšanās pie jūras Liepājā RTH augstums palicis no iepriekšējā meža lidojuma, mājas punkts nav apstiprināts. Ko darīt?
     en: Before take-off by the sea in Liepāja, RTH altitude remains from a previous forest flight and home point is not confirmed. What should be done?
     ru: Перед взлётом у моря в Лиепае высота RTH осталась от прошлого лесного полёта, home point не подтверждена. Что делать?
   options:
-  - id: a
-    text:
-      lv: Pacelties, jo RTH svarīgs tikai pie zemas baterijas.
-      en: Take off because RTH matters only on low battery.
-      ru: Взлетать, потому что RTH важен только при низкой батарее.
-  - id: b
-    text:
-      lv: Atstāt veco RTH augstumu, jo augstāks vienmēr drošāks.
-      en: Keep the old RTH altitude because higher is always safer.
-      ru: Оставить старую высоту RTH, потому что выше всегда безопаснее.
-  - id: c
-    text:
-      lv: Pārvietot mājas punktu pēc pacelšanās virs ūdens.
-      en: Move the home point after take-off over water.
-      ru: Перенести home point после взлёта над водой.
-  - id: d
-    text:
-      lv: Neuzsākt lidojumu, līdz mājas punkts, GNSS, RTH augstums/maršruts un baterijas rezerve ir pārbaudīti konkrētajai vietai.
-      en: Do not start until home point, GNSS, RTH altitude/route and battery reserve are checked for the site.
-      ru: Не начинать полёт, пока home point, GNSS, высота/маршрут RTH и резерв батареи не проверены для места.
+    - id: a
+      text:
+        lv: Pacelties, jo RTH svarīgs tikai pie zemas baterijas.
+        en: Take off because RTH matters only on low battery.
+        ru: Взлетать, потому что RTH важен только при низкой батарее.
+    - id: b
+      text:
+        lv: Atstāt veco RTH augstumu, jo augstāks vienmēr drošāks.
+        en: Keep the old RTH altitude because higher is always safer.
+        ru: Оставить старую высоту RTH, потому что выше всегда безопаснее.
+    - id: c
+      text:
+        lv: Pārvietot mājas punktu pēc pacelšanās virs ūdens.
+        en: Move the home point after take-off over water.
+        ru: Перенести home point после взлёта над водой.
+    - id: d
+      text:
+        lv: Neuzsākt lidojumu, līdz mājas punkts, GNSS, RTH augstums/maršruts un baterijas rezerve ir pārbaudīti konkrētajai vietai.
+        en: Do not start until home point, GNSS, RTH altitude/route and battery reserve are checked for the site.
+        ru: Не начинать полёт, пока home point, GNSS, высота/маршрут RTH и резерв батареи не проверены для места.
   correctOptionId: d
   explanation:
     lv: RTH ir vietai specifisks avārijas plāns. Veci iestatījumi var radīt nepareizu atgriešanās maršrutu vai augstumu.
@@ -2052,7 +2022,8 @@
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
       ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
-  sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pre-flight and contingency planning
+  sourceRef: "pre-flight and contingency planning | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
+  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pre-flight and contingency planning

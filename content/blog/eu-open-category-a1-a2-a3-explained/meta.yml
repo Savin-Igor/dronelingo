@@ -13,10 +13,15 @@ excerpt:
 publishedAt: 2026-05-14
 updatedAt: 2026-05-15
 lastVerifiedAt: 2026-05-15
-tags: [open-category, regulations, easa, getting-started]
+tags:
+  - open-category
+  - regulations
+  - easa
+  - getting-started
 heroImage: hero.png
 heroImageAlt:
   lv: Trīs droni dažādu izmēru rindā uz Baltijas zaļas pļavas, katram blakus mazs cyan UI nozīme A1, A2, A3.
   en: Three drones of different sizes lined up on a Baltic green meadow, each labelled with a small cyan UI badge — A1, A2, A3.
   ru: Три дрона разного размера в ряд на балтийском зелёном лугу; рядом с каждым небольшой cyan UI-бейдж A1, A2, A3.
-sourceRef: docs/knowledge/latvia-caa/web-snapshots/07-open-category.md; docs/knowledge/latvia-caa/web-snapshots/02-a1-a3-online-exam.md; docs/knowledge/latvia-caa/web-snapshots/03-a2-theoretical-exam.md; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf
+sourceRef: "CAA Latvia open category guidance | https://droni.caa.gov.lv/darbibas-kategorijas/atverta-kategorija/; CAA Latvia A1/A3 online exam | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/; CAA Latvia A2 theoretical exam | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a2-apakskategorijas-teoretisko-zinasanu-eksamens/; EASA Easy Access Rules for UAS (2024-07) | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
+internalRef: docs/knowledge/latvia-caa/web-snapshots/07-open-category.md; docs/knowledge/latvia-caa/web-snapshots/02-a1-a3-online-exam.md; docs/knowledge/latvia-caa/web-snapshots/03-a2-theoretical-exam.md; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf

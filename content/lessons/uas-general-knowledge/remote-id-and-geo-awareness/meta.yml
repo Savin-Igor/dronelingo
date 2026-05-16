@@ -4,7 +4,7 @@ title:
   lv: Remote ID un geo-awareness
   en: Remote ID and geo-awareness
   ru: Remote ID и geo-awareness
-sourceRef: "docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — class requirements for C1/C2/C3; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — UAS geozones and map sources"
+sourceRef: "class requirements for C1/C2/C3 | https://eur-lex.europa.eu/eli/reg_del/2019/945/oj/eng; UAS geozones and map sources | https://droni.caa.gov.lv/bgkis/ugz/lidojumu-pieteiksana-un-saskanosana-uas-geografiskajas-zonas/"
 blocks:
   - missionBriefing
   - cinematicScene
@@ -15,3 +15,4 @@ blocks:
   - commonMistakes
   - miniQuiz
   - debrief
+internalRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — class requirements for C1/C2/C3; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — UAS geozones and map sources

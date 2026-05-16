@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { SourceCitationList } from "@/components/content/SourceCitationList";
 import {
   readLatestExamResult,
   type StoredExamResult,
@@ -220,9 +221,11 @@ export function ExamResultView() {
                       <p className="mt-3 text-sm leading-relaxed text-telemetry">
                         {m.explanation}
                       </p>
-                      <p className="mt-2 font-mono text-xs text-muted">
-                        {t("source")}: {m.sourceRef}
-                      </p>
+                      <SourceCitationList
+                        sourceRef={m.sourceRef}
+                        label={`${t("source")}:`}
+                        className="mt-2 font-mono text-xs text-muted"
+                      />
                     </div>
                   </details>
                 </li>

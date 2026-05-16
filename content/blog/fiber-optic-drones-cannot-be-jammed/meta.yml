@@ -14,4 +14,9 @@ publishedAt: 2026-05-15
 updatedAt: 2026-05-15
 lastVerifiedAt: 2026-05-15
 tags: [fiber-optic, fpv, ew, military, counter-uas]
-sourceRef: https://www.army.mil/article/287737; https://www.defensedaily.com/nato-seeks-solutions-to-counter-fiber-optic-controlled-fpv-drones-nato-in-june-plans-to-host-an-innovation-challenge-for-solutions-that-can-counter-drones-that-rely-on-fiber-optic-cable-for-control-by/international/; https://www.act.nato.int/wp-content/uploads/2025/05/rfip025048.pdf; https://www.rusi.org/explore-our-research/publications/rusi-defence-systems/nato-should-not-replace-traditional-firepower-drones
+heroImage: hero.png
+heroImageAlt:
+  lv: Redakcionāla hero aina ar mazu FPV dronu, kas pāri miglainai frontes ainavai velk tievu optisko šķiedru; fonā RF traucēšanas antena izskatās neefektīva auksti zilganpelēkā, tumša slānekļa tonī.
+  en: Editorial hero scene of a small FPV drone trailing a thin fiber optic cable across a misty contested landscape, with an RF jamming antenna in the background rendered as ineffective in a cool blue-grey slate palette.
+  ru: "Редакционная hero-сцена: маленький FPV-дрон тянет тонкий оптоволоконный кабель над туманным спорным ландшафтом, а на заднем плане антенна РЭБ выглядит неэффективной в холодной синевато-серой палитре."
+sourceRef: "U.S. Army article | https://www.army.mil/article/287737; Defense Daily report | https://www.defensedaily.com/nato-seeks-solutions-to-counter-fiber-optic-controlled-fpv-drones-nato-in-june-plans-to-host-an-innovation-challenge-for-solutions-that-can-counter-drones-that-rely-on-fiber-optic-cable-for-control-by/international/; NATO ACT paper | https://www.act.nato.int/wp-content/uploads/2025/05/rfip025048.pdf; RUSI analysis | https://www.rusi.org/explore-our-research/publications/rusi-defence-systems/nato-should-not-replace-traditional-firepower-drones"

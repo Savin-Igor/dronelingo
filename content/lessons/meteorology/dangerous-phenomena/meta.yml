@@ -4,7 +4,7 @@ title:
   lv: Bīstamie meteoroloģiskie apstākļi
   en: Dangerous weather phenomena
   ru: Опасные метеорологические явления
-sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf; docs/knowledge/training-guides/syllabus/A2-detailed-syllabus.md; docs/knowledge/test-samples/A2-question-bank.md"
+sourceRef: "EASA Easy Access Rules for UAS (2024-07) | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; A2 detailed syllabus | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a2-apakskategorijas-teoretisko-zinasanu-eksamens/; CAA Latvia A2 exam sample structure | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a2-apakskategorijas-teoretisko-zinasanu-eksamens/"
 blocks:
   - missionBriefing
   - cinematicScene
@@ -15,3 +15,4 @@ blocks:
   - commonMistakes
   - miniQuiz
   - debrief
+internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf; docs/knowledge/training-guides/syllabus/A2-detailed-syllabus.md; docs/knowledge/test-samples/A2-question-bank.md

@@ -13,10 +13,15 @@ excerpt:
 publishedAt: 2026-05-14
 updatedAt: 2026-05-15
 lastVerifiedAt: 2026-05-15
-tags: [exam, latvia, preparation, a1-a3]
+tags:
+  - exam
+  - latvia
+  - preparation
+  - a1-a3
 heroImage: hero.png
 heroImageAlt:
   lv: Klēpjdators ar stilizētu eksāmena interfeisu uz ekrāna — galvene "Jautājums 12 no 40", taimers "32:14", četras atbilžu pogas; blakus notepad un drons.
   en: A laptop showing a stylized exam interface — "Question 12 of 40" header, "32:14" timer, four answer-option pill buttons; a notepad and a small drone nearby.
   ru: Ноутбук со стилизованным интерфейсом экзамена — заголовок «Вопрос 12 из 40», таймер «32:14», четыре кнопки вариантов; рядом блокнот и маленький дрон.
-sourceRef: docs/knowledge/latvia-caa/web-snapshots/02-a1-a3-online-exam.md; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf
+sourceRef: "CAA Latvia A1/A3 online exam | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/; CAA Latvia operator registration | https://droni.caa.gov.lv/registracija/; EASA Easy Access Rules for UAS (2024-07) | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
+internalRef: docs/knowledge/latvia-caa/web-snapshots/02-a1-a3-online-exam.md; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf

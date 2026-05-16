@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { SourceCitationList } from "@/components/content/SourceCitationList";
 import type { BlogPostMeta } from "@/lib/blog";
 
 type Props = {
@@ -22,7 +23,10 @@ export function BlogPostFooter({ post, copy }: Props) {
           <span className="uppercase tracking-widest text-cyan-pulse">
             {copy.sourceLabel}
           </span>
-          <p className="mt-2 break-words text-telemetry">{post.sourceRef}</p>
+          <SourceCitationList
+            sourceRef={post.sourceRef}
+            className="mt-2 break-words text-telemetry"
+          />
         </div>
       )}
 

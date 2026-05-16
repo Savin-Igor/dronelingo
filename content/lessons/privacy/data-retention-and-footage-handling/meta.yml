@@ -4,4 +4,5 @@ title:
   lv: Datu glabāšana un materiālu apstrāde
   en: Data retention and footage handling
   ru: Хранение данных и обращение с материалами
-sourceRef: "docs/knowledge/eu-regulations/ — GDPR principles; docs/knowledge/latvia-caa/web-snapshots/ and training materials — privacy handling in UAS operations"
+sourceRef: "GDPR principles | https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng; privacy handling in UAS operations"
+internalRef: docs/knowledge/eu-regulations/ — GDPR principles; docs/knowledge/latvia-caa/web-snapshots/ and training materials — privacy handling in UAS operations

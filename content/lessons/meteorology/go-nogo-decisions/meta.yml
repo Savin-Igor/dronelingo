@@ -4,7 +4,7 @@ title:
   lv: Iet/neiet lēmumi laika apstākļos
   en: Weather go/no-go decisions
   ru: Принятие решения о полёте в зависимости от погоды
-sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf; docs/knowledge/training-guides/syllabus/A2-detailed-syllabus.md; docs/knowledge/latvia-caa/web-snapshots/07-open-category.md"
+sourceRef: "EASA Easy Access Rules for UAS (2024-07) | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; A2 detailed syllabus | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a2-apakskategorijas-teoretisko-zinasanu-eksamens/; CAA Latvia open category guidance | https://droni.caa.gov.lv/darbibas-kategorijas/atverta-kategorija/"
 blocks:
   - missionBriefing
   - cinematicScene
@@ -15,3 +15,4 @@ blocks:
   - commonMistakes
   - miniQuiz
   - debrief
+internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf; docs/knowledge/training-guides/syllabus/A2-detailed-syllabus.md; docs/knowledge/latvia-caa/web-snapshots/07-open-category.md

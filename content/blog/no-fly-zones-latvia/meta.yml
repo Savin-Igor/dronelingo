@@ -19,4 +19,5 @@ heroImageAlt:
   lv: Stilizēta Latvijas karte ar krāsu kodētām aizliegtām zonām — sarkani CTR apļi virs lidostām, zaļas hatching dabas parkos, purpura militārās heksaģenes.
   en: Stylized map of Latvia with colour-coded restricted zones — red CTR circles over airports, green hatched patches over nature parks, purple military hexagons.
   ru: Стилизованная карта Латвии с цветовой маркировкой зон — красные круги CTR над аэропортами, зелёная штриховка природных парков, фиолетовые военные шестиугольники.
-sourceRef: docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md; docs/knowledge/latvia-caa/2024_11_27-CAA-Par_UAS_geografiskajam_zonam.pdf; docs/knowledge/latvia-caa/UAS-CBO-LVA-Local_conditions-V1_2-2024_04_30.pdf
+sourceRef: "CAA Latvia UAS geographical zones | https://droni.caa.gov.lv/bgkis/ugz/lidojumu-pieteiksana-un-saskanosana-uas-geografiskajas-zonas/; CAA Latvia UAS geographical zones guidance | https://droni.caa.gov.lv/vadlinijas/2024_11_27-CAA-Par_UAS_geografiskajam_zonam.pdf; CAA Latvia local conditions for UAS operations | https://droni.caa.gov.lv/vadlinijas/UAS-CBO-LVA-Local_conditions-V1_2-2024_04_30.pdf"
+internalRef: "docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md; docs/knowledge/latvia-caa/2024_11_27-CAA-Par_UAS_geografiskajam_zonam.pdf; docs/knowledge/latvia-caa/UAS-CBO-LVA-Local_conditions-V1_2-2024_04_30.pdf"

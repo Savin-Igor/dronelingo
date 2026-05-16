@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
+import { SourceCitationList } from "@/components/content/SourceCitationList";
 import { type DiagnosticQuestion } from "@/lib/diagnostic";
 import { recordAnswer } from "@/lib/srs";
 
@@ -187,9 +188,11 @@ export function DiagnosticSession({
             <p className="mt-2 leading-relaxed text-telemetry">
               {current.explanation}
             </p>
-            <p className="mt-3 font-mono text-xs text-muted">
-              {t("source")}: {current.sourceRef}
-            </p>
+            <SourceCitationList
+              sourceRef={current.sourceRef}
+              label={`${t("source")}:`}
+              className="mt-3 font-mono text-xs text-muted"
+            />
           </div>
         )}
 

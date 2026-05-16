@@ -4,7 +4,7 @@ title:
   lv: Publiska filmēšana un piekrišana
   en: Public filming and consent
   ru: Публичная съёмка и согласие
-sourceRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR and identifiable persons; docs/knowledge/latvia-caa/web-snapshots/14-normativais-regulejums.md — Latvian privacy and critical-infrastructure context"
+sourceRef: "GDPR and identifiable persons | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/; Latvian privacy and critical-infrastructure context | https://droni.caa.gov.lv/normativais-regulejums/"
 blocks:
   - missionBriefing
   - cinematicScene
@@ -15,3 +15,4 @@ blocks:
   - commonMistakes
   - miniQuiz
   - debrief
+internalRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR and identifiable persons; docs/knowledge/latvia-caa/web-snapshots/14-normativais-regulejums.md — Latvian privacy and critical-infrastructure context

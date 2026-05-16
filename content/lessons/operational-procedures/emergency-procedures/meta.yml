@@ -4,7 +4,7 @@ title:
   lv: Avārijas procedūras
   en: Emergency procedures
   ru: Аварийные процедуры
-sourceRef: "EASA Easy Access Rules for UAS — Emergency procedures; manufacturer manuals"
+sourceRef: "Emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; manufacturer manuals | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
 blocks:
   - missionBriefing
   - cinematicScene

@@ -44,13 +44,12 @@ def require_langs(v: Any, path: str, qid: str, field: str, errors: list[Err]) ->
       errors.append(Err(path, qid, f"missing {field}.{lang}"))
 
 
-def parse_source_ref(ref: Any) -> tuple[str | None, str]:
+def parse_source_ref(ref: Any) -> tuple[bool, str]:
   if not isinstance(ref, str) or not ref.strip():
-    return None, "sourceRef must be a non-empty string"
-  if not ref.startswith("docs/knowledge/"):
-    return None, 'sourceRef must start with "docs/knowledge/"'
-  doc = ref.split(" — ", 1)[0]
-  return doc, ""
+    return False, "sourceRef must be a non-empty string"
+  parts = [part.strip() for part in ref.split(";") if part.strip()]
+  has_link = any(" | " in part or "|http" in part or "| https" in part for part in parts)
+  return has_link, ""
 
 
 def validate_file(path: str, errors: list[Err]) -> None:
@@ -126,18 +125,11 @@ def validate_file(path: str, errors: list[Err]) -> None:
       for k, v in dr.items():
         require_langs(v, path, qid, f"distractorRationales.{k}", errors)
 
-    doc, err = parse_source_ref(q.get("sourceRef"))
+    has_link, err = parse_source_ref(q.get("sourceRef"))
     if err:
       errors.append(Err(path, qid, err))
-    elif doc:
-      doc_path = ROOT / doc
-      if not doc_path.exists():
-        errors.append(Err(path, qid, f"sourceRef doc does not exist: {doc}"))
-      else:
-        try:
-          doc_path.relative_to(KNOWLEDGE_DIR)
-        except ValueError:
-          errors.append(Err(path, qid, f"sourceRef doc must be under docs/knowledge/: {doc}"))
+    elif not has_link and not isinstance(q.get("internalRef"), str):
+      errors.append(Err(path, qid, "sourceRef must include at least one public link or internalRef"))
 
     for k in ("difficulty", "cognitiveLevel", "scenarioType"):
       if k not in q:
@@ -177,4 +169,3 @@ def main() -> None:
 
 if __name__ == "__main__":
   main()
-

@@ -4,7 +4,7 @@ title:
   lv: Pēclidojuma disciplīna un žurnāli
   en: Post-flight discipline and logs
   ru: Послеполётная дисциплина и журналы
-sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pilot responsibilities after flight; docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — battery and operational discipline"
+sourceRef: "pilot responsibilities after flight | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; battery and operational discipline | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/"
 blocks:
   - missionBriefing
   - cinematicScene
@@ -15,3 +15,4 @@ blocks:
   - commonMistakes
   - miniQuiz
   - debrief
+internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pilot responsibilities after flight; docs/knowledge/training-guides/Montenegro-CAA-A1-A3-theoretical-knowledge-training.pdf — battery and operational discipline

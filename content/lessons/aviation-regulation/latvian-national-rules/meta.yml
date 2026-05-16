@@ -4,7 +4,7 @@ title:
   lv: Latvijas nacionālie noteikumi un portāli
   en: Latvian national rules and portals
   ru: Латвийские национальные правила и порталы
-sourceRef: "docs/knowledge/latvia-caa/web-snapshots/14-normativais-regulejums.md — Latvian regulatory stack; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md — operator registration; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — geozones and BGKIS"
+sourceRef: "Latvian regulatory stack | https://droni.caa.gov.lv/normativais-regulejums/; operator registration | https://droni.caa.gov.lv/registracija/; geozones and BGKIS | https://droni.caa.gov.lv/bgkis/ugz/lidojumu-pieteiksana-un-saskanosana-uas-geografiskajas-zonas/"
 blocks:
   - missionBriefing
   - cinematicScene
@@ -15,3 +15,4 @@ blocks:
   - commonMistakes
   - miniQuiz
   - debrief
+internalRef: docs/knowledge/latvia-caa/web-snapshots/14-normativais-regulejums.md — Latvian regulatory stack; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md — operator registration; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — geozones and BGKIS

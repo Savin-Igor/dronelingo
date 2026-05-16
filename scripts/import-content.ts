@@ -57,6 +57,7 @@ const LessonMetaYaml = z.object({
   ord: z.number().int().nonnegative(),
   title: Multilingual,
   sourceRef: z.string().min(1).optional(),
+  internalRef: z.string().min(1).optional(),
   // Declared list of academy blocks present in this lesson's MDX. Used for
   // analytics on how many of the 9 blocks the lesson actually exposes;
   // ≥5 of 9 is the acceptance bar from the vision document.
@@ -92,6 +93,7 @@ const QuestionYaml = z.object({
   // the correctOptionId must NOT appear here.
   distractorRationales: z.record(z.string(), Multilingual).optional(),
   sourceRef: z.string().min(1),
+  internalRef: z.string().min(1).optional(),
   difficulty: z.number().int().min(1).max(5).optional(),
   cognitiveLevel: CognitiveLevel.optional(),
   scenarioType: ScenarioType.optional(),

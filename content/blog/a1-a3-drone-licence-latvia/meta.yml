@@ -13,10 +13,16 @@ excerpt:
 publishedAt: 2026-05-14
 updatedAt: 2026-05-15
 lastVerifiedAt: 2026-05-15
-tags: [licence, latvia, getting-started, easa, open-category]
+tags:
+  - licence
+  - latvia
+  - getting-started
+  - easa
+  - open-category
 heroImage: hero.png
 heroImageAlt:
   lv: Mazs kvadrokopters lido virs Latvijas zaļiem laukiem ar caurspīdīgu EASA A1/A3 apliecības emblēmas pārklājumu uz attēla labās puses.
   en: A small quadcopter hovering over Latvian green fields with a transparent EASA A1/A3 certificate badge overlay on the right side of the frame.
   ru: Маленький квадрокоптер летит над зелёными полями Латвии; в правой части кадра — прозрачная эмблема сертификата EASA A1/A3.
-sourceRef: docs/knowledge/latvia-caa/web-snapshots/02-a1-a3-online-exam.md; docs/knowledge/latvia-caa/web-snapshots/07-open-category.md; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf
+sourceRef: "CAA Latvia A1/A3 online exam | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/; CAA Latvia open category guidance | https://droni.caa.gov.lv/darbibas-kategorijas/atverta-kategorija/; CAA Latvia operator registration | https://droni.caa.gov.lv/registracija/; EASA Easy Access Rules for UAS (2024-07) | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
+internalRef: docs/knowledge/latvia-caa/web-snapshots/02-a1-a3-online-exam.md; docs/knowledge/latvia-caa/web-snapshots/07-open-category.md; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf

@@ -4,4 +4,5 @@ title:
   lv: Pārrobežu un koplietotas operācijas
   en: Cross-border and shared operations
   ru: Трансграничные и совместные операции
-sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/latvia-caa/web-snapshots/ — operator and insurance practice in Latvia"
+sourceRef: "operator responsibilities | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; operator and insurance practice in Latvia | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/"
+internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/latvia-caa/web-snapshots/ — operator and insurance practice in Latvia

@@ -13,10 +13,15 @@ excerpt:
 publishedAt: 2026-05-14
 updatedAt: 2026-05-15
 lastVerifiedAt: 2026-05-15
-tags: [regulations, easa, eu, open-category]
+tags:
+  - regulations
+  - easa
+  - eu
+  - open-category
 heroImage: hero.png
 heroImageAlt:
   lv: Stilizēta cyan infografika ar centrālu apli "Reg (EU) 2019/947" un izstarojošām līnijām uz mazām ikonām — Open kategorija, Specific kategorija, Certified, C-klases, VLOS, 120 m AGL.
   en: Stylized cyan infographic with a central "Reg (EU) 2019/947" hub and lines radiating to small icons — Open category, Specific category, Certified, C-classes, VLOS, 120 m AGL.
   ru: Стилизованная cyan-инфографика с центральным узлом «Reg (EU) 2019/947» и лучами к мелким иконкам — категория Open, Specific, Certified, C-классы, VLOS, 120 м AGL.
-sourceRef: docs/knowledge/latvia-caa/web-snapshots/07-open-category.md; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md; docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf; docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf
+sourceRef: "CAA Latvia open category guidance | https://droni.caa.gov.lv/darbibas-kategorijas/atverta-kategorija/; CAA Latvia operator registration | https://droni.caa.gov.lv/registracija/; Regulation (EU) 2019/947 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0947; Regulation (EU) 2019/945 | https://eur-lex.europa.eu/eli/reg_del/2019/945/oj/eng"
+internalRef: docs/knowledge/latvia-caa/web-snapshots/07-open-category.md; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md; docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf; docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf

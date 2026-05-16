@@ -14,4 +14,9 @@ publishedAt: 2026-05-15
 updatedAt: 2026-05-15
 lastVerifiedAt: 2026-05-15
 tags: [fpv, warfare, military, ew, autonomy]
-sourceRef: https://www.rusi.org/explore-our-research/publications/rusi-defence-systems/nato-should-not-replace-traditional-firepower-drones; https://www.csis.org/analysis/how-ukraines-spider-web-operation-redefines-asymmetric-warfare; https://www.army.mil/article/287737; https://www.act.nato.int/wp-content/uploads/2025/05/rfip025048.pdf; https://www.defensedaily.com/nato-seeks-solutions-to-counter-fiber-optic-controlled-fpv-drones-nato-in-june-plans-to-host-an-innovation-challenge-for-solutions-that-can-counter-drones-that-rely-on-fiber-optic-cable-for-control-by/international/
+heroImage: hero.png
+heroImageAlt:
+  lv: Redakcionāla hero aina ar vienu FPV kvadrokopteru zemā pagriezienā virs kaujas lauka koku līnijas krēslā, priekšplānā siluetā karavīrs ar pulti un FPV brillēm, tālumā dūmi auksti zilganpelēkā dokumentālā tonī.
+  en: Editorial hero scene of a single FPV quadcopter banking low over a battlefield treeline at dusk, a foreground soldier silhouette with controller and goggles, and smoke in the distance in a cool blue-grey documentary tone.
+  ru: "Редакционная hero-сцена с одним FPV-квадрокоптером в низком развороте над линией деревьев на поле боя в сумерках; на переднем плане силуэт бойца с пультом и очками, вдали дым в холодной синевато-серой документальной тональности."
+sourceRef: "RUSI analysis | https://www.rusi.org/explore-our-research/publications/rusi-defence-systems/nato-should-not-replace-traditional-firepower-drones; CSIS analysis | https://www.csis.org/analysis/how-ukraines-spider-web-operation-redefines-asymmetric-warfare; U.S. Army article | https://www.army.mil/article/287737; NATO ACT paper | https://www.act.nato.int/wp-content/uploads/2025/05/rfip025048.pdf; Defense Daily report | https://www.defensedaily.com/nato-seeks-solutions-to-counter-fiber-optic-controlled-fpv-drones-nato-in-june-plans-to-host-an-innovation-challenge-for-solutions-that-can-counter-drones-that-rely-on-fiber-optic-cable-for-control-by/international/"

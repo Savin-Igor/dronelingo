@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { useTranslations } from "next-intl";
 
+import { SourceCitationList } from "@/components/content/SourceCitationList";
 import { isDue, readSRS, recordAnswer, type SRSMap } from "@/lib/srs";
 
 export type TrainerQuestion = {
@@ -424,9 +425,11 @@ export function Trainer({
               <p className="mt-2 leading-relaxed text-telemetry">
                 {current.explanation}
               </p>
-              <p className="mt-3 font-mono text-xs text-muted">
-                {t("source")}: {current.sourceRef}
-              </p>
+              <SourceCitationList
+                sourceRef={current.sourceRef}
+                label={`${t("source")}:`}
+                className="mt-3 font-mono text-xs text-muted"
+              />
             </m.div>
           </LazyMotion>
         )}

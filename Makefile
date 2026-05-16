@@ -3,7 +3,7 @@
   db-up db-down \
   migrate migrate-deploy push studio backup import-content \
   build clean \
-  check test test-e2e validate-questions \
+  check test test-e2e validate-questions validate-source-refs \
   release deploy help
 
 DC = docker compose -f docker-compose.dev.yml
@@ -65,8 +65,8 @@ import-content: ## Import content/ (topics, lessons, questions) into local DB
 build: ## Build production Docker image locally
 	docker build -t dronelingo:local .
 
-check: ## TypeScript + ESLint
-	npm run type-check && npm run lint
+check: ## TypeScript + ESLint + source ref validation
+	npm run type-check && npm run lint && $(MAKE) validate-source-refs
 
 test: ## Run Vitest unit tests
 	npm test
@@ -74,8 +74,11 @@ test: ## Run Vitest unit tests
 test-e2e: ## Run Playwright e2e tests (dev server must be running or will be started)
 	npm run test:e2e
 
-validate-questions: ## Validate content/questions/*.yml (structure + sourceRef docs/knowledge/)
+validate-questions: ## Validate content/questions/*.yml structure
 	python3 scripts/validate-questions.py
+
+validate-source-refs: ## Validate public sourceRef links across questions, lessons, and blog meta
+	npx tsx scripts/validate-source-refs.ts
 
 ##@ Production
 

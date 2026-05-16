@@ -6,7 +6,7 @@ title:
   lv: AI vadīti autonomie droni 2026. gadā
   en: AI-Powered Autonomous Drones in 2026
   ru: AI-управляемые автономные дроны в 2026 году
-authorBio:
+authorBio: null
 excerpt:
   lv: 2026. gadā autonomie droni vairs nav tikai slaids prezentācijā. Jautājums ir cits — kur autonomija jau strādā, kur sākas cilvēka kontrole un kur tirgus vēl joprojām pārdod hype.
   en: In 2026, autonomous drones are no longer just a slide deck promise. The real question is where autonomy already works, where human control still matters, and where the market is still selling hype.
@@ -14,5 +14,15 @@ excerpt:
 publishedAt: 2026-05-15
 updatedAt: 2026-05-15
 lastVerifiedAt: 2026-05-15
-tags: [autonomy, ai, uav, defense, inspection]
-sourceRef: https://shield.ai/hivemind/; https://www.shield.ai/x-62a-vista/; https://www.skydio.com/x10d; https://www.skydio.com/dock-for-x10; https://helsing.ai/news/resilience-factory-and-helsing-to-produce-6-000-hx-2-strike-drones-for-ukraine/; https://www.twz.com/air/first-look-at-usafs-semi-secret-autonomous-f-16-test-jet; https://www.twz.com/air/marines-test-autonomous-flights-with-a-surrogate-for-future-collaborative-combat-aircraft
+tags:
+  - autonomy
+  - ai
+  - uav
+  - defense
+  - inspection
+heroImage: hero.png
+heroImageAlt:
+  lv: Redakcionāla hero aina ar autonomu fiksēta spārna un kvadrokopteru dronu spietu virs piekrastes rītausmā, priekšplānā planšete ar lēmumu grafu un telemetrijas pārklājumu auksti zilganpelēkā tonī.
+  en: Editorial hero scene with an autonomous swarm of fixed-wing and quadcopter drones over a dawn coastline, a foreground command tablet showing a decision graph and telemetry in a cool blue-grey palette.
+  ru: "Редакционная hero-сцена с роем автономных БПЛА самолётного типа и квадрокоптеров над побережьем на рассвете; на переднем плане планшет с графом решений и телеметрией в холодной синевато-серой палитре."
+sourceRef: "Shield AI | https://shield.ai/hivemind/; Shield AI | https://www.shield.ai/x-62a-vista/; Skydio | https://www.skydio.com/x10d; Skydio | https://www.skydio.com/dock-for-x10; Helsing | https://helsing.ai/news/resilience-factory-and-helsing-to-produce-6-000-hx-2-strike-drones-for-ukraine/; The War Zone | https://www.twz.com/air/first-look-at-usafs-semi-secret-autonomous-f-16-test-jet; The War Zone | https://www.twz.com/air/marines-test-autonomous-flights-with-a-surrogate-for-future-collaborative-combat-aircraft"

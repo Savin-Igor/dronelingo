@@ -13,10 +13,15 @@ excerpt:
 publishedAt: 2026-05-14
 updatedAt: 2026-05-15
 lastVerifiedAt: 2026-05-15
-tags: [shopping, c-classes, beginners, drones]
+tags:
+  - shopping
+  - c-classes
+  - beginners
+  - drones
 heroImage: hero.png
 heroImageAlt:
   lv: Četri droni pieaugošā izmēra rindā uz tīras koka virsmas, katram blakus mazs UI uzraksts ar svara klasi C0, C1, C2, C3.
   en: A row of four hobby drones in increasing size on a clean wooden surface, each labelled with a small UI weight-class tag C0, C1, C2, C3.
   ru: Четыре дрона по нарастанию размера в ряд на чистом деревянном столе; рядом с каждым небольшая UI-метка веса C0, C1, C2, C3.
-sourceRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf; docs/knowledge/latvia-caa/web-snapshots/07-open-category.md; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md
+sourceRef: "Regulation (EU) 2019/945 | https://eur-lex.europa.eu/eli/reg_del/2019/945/oj/eng; CAA Latvia open category guidance | https://droni.caa.gov.lv/darbibas-kategorijas/atverta-kategorija/; CAA Latvia operator registration | https://droni.caa.gov.lv/registracija/"
+internalRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf; docs/knowledge/latvia-caa/web-snapshots/07-open-category.md; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md

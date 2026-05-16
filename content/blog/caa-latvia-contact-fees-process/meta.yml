@@ -13,10 +13,16 @@ excerpt:
 publishedAt: 2026-05-14
 updatedAt: 2026-05-15
 lastVerifiedAt: 2026-05-15
-tags: [caa, latvia, fees, contacts, reference]
+tags:
+  - caa
+  - latvia
+  - fees
+  - contacts
+  - reference
 heroImage: hero.png
 heroImageAlt:
   lv: Plakana kompozīcija uz galda — Latvijas karoga piespraude, oficiāls aploksne ar "CAA" iespiedumu, drukāta veidlapa, pildspalva, viedtālrunis ar portāla ekrānu, mazs drons stūrī.
   en: Flat-lay desk scene with a Latvian flag pin, an official envelope with subtle "CAA" embossing, a printed form with stamped boxes, a fountain pen, a smartphone showing a portal screen, a small drone in one corner.
   ru: Плоская композиция на столе — значок флага Латвии, официальный конверт с тиснением «CAA», печатный бланк с штампованными графами, перьевая ручка, смартфон с экраном портала, маленький дрон в углу.
-sourceRef: docs/knowledge/latvia-caa/web-snapshots/13-contacts.md; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md; docs/knowledge/latvia-caa/web-snapshots/03-a2-theoretical-exam.md; docs/knowledge/latvia-caa/web-snapshots/17-incident-reporting.md
+sourceRef: "CAA Latvia contacts | https://droni.caa.gov.lv/kontakti/; CAA Latvia operator registration | https://droni.caa.gov.lv/registracija/; CAA Latvia A2 theoretical exam | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a2-apakskategorijas-teoretisko-zinasanu-eksamens/; CAA Latvia occurrence reporting | https://www.caa.gov.lv/en/services/reporting-occurrences-civil-aviation"
+internalRef: docs/knowledge/latvia-caa/web-snapshots/13-contacts.md; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md; docs/knowledge/latvia-caa/web-snapshots/03-a2-theoretical-exam.md; docs/knowledge/latvia-caa/web-snapshots/17-incident-reporting.md

@@ -13,10 +13,15 @@ excerpt:
 publishedAt: 2026-05-14
 updatedAt: 2026-05-15
 lastVerifiedAt: 2026-05-15
-tags: [registration, latvia, getting-started, caa]
+tags:
+  - registration
+  - latvia
+  - getting-started
+  - caa
 heroImage: hero.png
 heroImageAlt:
   lv: Darba galds ar klēpjdatoru, kurā redzams e.caa.gov.lv portāls, drons ar redzamu LVA operatora numura uzlīmi, kafijas krūze un ID kartīte.
   en: A desk with a laptop showing the e.caa.gov.lv portal, a drone with a visible LVA operator-number sticker, a coffee mug, and an ID card.
   ru: Стол с ноутбуком, на экране портал e.caa.gov.lv, дрон с видимой наклейкой номера оператора LVA, кружка кофе и удостоверение личности.
-sourceRef: docs/knowledge/latvia-caa/web-snapshots/08-registracija.md; docs/knowledge/latvia-caa/web-snapshots/02-a1-a3-online-exam.md; docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf
+sourceRef: "CAA Latvia operator registration | https://droni.caa.gov.lv/registracija/; CAA Latvia A1/A3 online exam | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/; Regulation (EU) 2019/947 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0947"
+internalRef: docs/knowledge/latvia-caa/web-snapshots/08-registracija.md; docs/knowledge/latvia-caa/web-snapshots/02-a1-a3-online-exam.md; docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf

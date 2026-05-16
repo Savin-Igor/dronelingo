@@ -4,4 +4,5 @@ title:
   lv: Operatora reģistrācija un marķēšana
   en: Operator registration and marking
   ru: Регистрация оператора и маркировка
-sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator registration; docs/knowledge/latvia-caa/web-snapshots/ — Latvia CAA registration guidance"
+sourceRef: "operator registration | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; Latvia CAA registration guidance | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/"
+internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator registration; docs/knowledge/latvia-caa/web-snapshots/ — Latvia CAA registration guidance

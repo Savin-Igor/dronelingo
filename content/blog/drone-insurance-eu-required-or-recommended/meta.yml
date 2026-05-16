@@ -13,10 +13,15 @@ excerpt:
 publishedAt: 2026-05-14
 updatedAt: 2026-05-15
 lastVerifiedAt: 2026-05-15
-tags: [insurance, regulations, eu, commercial]
+tags:
+  - insurance
+  - regulations
+  - eu
+  - commercial
 heroImage: hero.png
 heroImageAlt:
   lv: Drons uz koka galda blakus drukātai apdrošināšanas polisei "DRONE INSURANCE POLICY" ar zilu zīmoga nospiedumu, kalkulators un ES karoga piespraude.
   en: A drone on a wooden desk next to a printed "DRONE INSURANCE POLICY" with a blue stamp imprint, a calculator, and an EU flag pin.
   ru: Дрон на деревянном столе рядом с напечатанным «DRONE INSURANCE POLICY» с синим штампом, калькулятор и значок флага ЕС.
-sourceRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md; docs/knowledge/latvia-caa/UAS-CBO-LVA-Local_conditions-V1_2-2024_04_30.pdf; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf
+sourceRef: "CAA Latvia insurance requirements | https://droni.caa.gov.lv/apdrosinasanas-prasibas/; CAA Latvia local conditions for UAS operations | https://droni.caa.gov.lv/vadlinijas/UAS-CBO-LVA-Local_conditions-V1_2-2024_04_30.pdf; EASA Easy Access Rules for UAS (2024-07) | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
+internalRef: docs/knowledge/latvia-caa/web-snapshots/12-insurance.md; docs/knowledge/latvia-caa/UAS-CBO-LVA-Local_conditions-V1_2-2024_04_30.pdf; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf

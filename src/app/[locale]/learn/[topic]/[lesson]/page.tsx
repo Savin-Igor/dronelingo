@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { AccessGate } from "@/components/access/AccessGate";
+import { SourceCitationList } from "@/components/content/SourceCitationList";
 import { BreadcrumbSchema } from "@/components/learn/Breadcrumb";
 import { MarkLessonVisited } from "@/components/learn/MarkLessonVisited";
 import { lessonComponents } from "@/components/lesson";
@@ -110,9 +111,10 @@ export default async function LessonPage({
         )}
 
         {lesson.sourceRef ? (
-          <p className="mt-12 border-t border-horizon pt-6 font-mono text-xs text-muted">
-            {lesson.sourceRef}
-          </p>
+          <SourceCitationList
+            sourceRef={lesson.sourceRef}
+            className="mt-12 border-t border-horizon pt-6 font-mono text-xs text-muted"
+          />
         ) : null}
 
         <nav

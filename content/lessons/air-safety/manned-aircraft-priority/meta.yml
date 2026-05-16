@@ -4,7 +4,7 @@ title:
   lv: Prioritāte pilotējamam gaisa kuģim
   en: Giving way to manned aircraft
   ru: Приоритет пилотируемого воздушного судна
-sourceRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Open-category pilot responsibilities and conflict avoidance; docs/knowledge/training-guides/EASA-open-category-rules.pdf — practical safety guidance"
+sourceRef: "Open-category pilot responsibilities and conflict avoidance | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; practical safety guidance | https://droni.caa.gov.lv/darbibas-kategorijas/atverta-kategorija/"
 blocks:
   - missionBriefing
   - cinematicScene
@@ -15,3 +15,4 @@ blocks:
   - commonMistakes
   - miniQuiz
   - debrief
+internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Open-category pilot responsibilities and conflict avoidance; docs/knowledge/training-guides/EASA-open-category-rules.pdf — practical safety guidance

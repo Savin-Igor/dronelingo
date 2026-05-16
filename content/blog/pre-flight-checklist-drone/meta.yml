@@ -19,4 +19,5 @@ heroImageAlt:
   lv: Plakanā kompozīcija no augšas uz tumša koka galda — drons ar kontrolieri, viedtālrunis ar laikapstākļu lietotni, rezerves akumulators, rezerves propelleri, drukāts saraksts ar atzīmju kvadrātiem.
   en: Flat-lay top-down view on dark wood — drone with controller, phone showing a weather app, spare battery, spare propellers, printed checklist with checkboxes.
   ru: Плоская композиция сверху на тёмной древесине — дрон с пультом, смартфон с погодным приложением, запасной аккумулятор, запасные пропеллеры, печатный чеклист с галочками.
-sourceRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf; docs/knowledge/latvia-caa/web-snapshots/07-open-category.md; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md
+sourceRef: "EASA Easy Access Rules for UAS (2024-07) | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; CAA Latvia open category guidance | https://droni.caa.gov.lv/darbibas-kategorijas/atverta-kategorija/; CAA Latvia UAS geographical zones | https://droni.caa.gov.lv/bgkis/ugz/lidojumu-pieteiksana-un-saskanosana-uas-geografiskajas-zonas/"
+internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf; docs/knowledge/latvia-caa/web-snapshots/07-open-category.md; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md"
