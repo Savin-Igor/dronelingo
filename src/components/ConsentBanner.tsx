@@ -16,6 +16,13 @@ export function ConsentBanner() {
     if (value !== "accepted") setShown(true);
   }, []);
 
+  useEffect(() => {
+    document.body.style.paddingBottom = shown ? "6rem" : "";
+    return () => {
+      document.body.style.paddingBottom = "";
+    };
+  }, [shown]);
+
   function accept() {
     window.localStorage.setItem(STORAGE_KEY, "accepted");
     setShown(false);
