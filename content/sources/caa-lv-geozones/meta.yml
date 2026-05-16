@@ -1,0 +1,12 @@
+id: caa-lv-geozones
+kind: caa-operational
+officialTitle:
+  en: "CAA Latvia — UAS Geographical Zones (BGKIS)"
+  lv: "CAA Latvia — UAS ģeogrāfiskās zonas (BGKIS)"
+  ru: "CAA Латвии — Географические зоны БВС (BGKIS)"
+shortTitle:
+  en: "Where you can fly in Latvia — restricted and no-fly zones"
+  lv: "Kur var lidot Latvijā — ierobežotās un aizliegtās zonas"
+  ru: "Где можно летать в Латвии — ограниченные и запретные зоны"
+canonicalUrl: "https://droni.caa.gov.lv/bgkis/ugz/lidojumu-pieteiksana-un-saskanosana-uas-geografiskajas-zonas/"
+lastVerifiedAt: "2026-05-16"

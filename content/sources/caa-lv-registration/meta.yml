@@ -1,0 +1,12 @@
+id: caa-lv-registration
+kind: caa-operational
+officialTitle:
+  en: "CAA Latvia — UAS Operator Registration"
+  lv: "CAA Latvia — UAS ekspluatanta reģistrācija"
+  ru: "CAA Латвии — Регистрация оператора БВС"
+shortTitle:
+  en: "Operator registration at e.caa.gov.lv"
+  lv: "Ekspluatanta reģistrācija e.caa.gov.lv"
+  ru: "Регистрация оператора на e.caa.gov.lv"
+canonicalUrl: "https://droni.caa.gov.lv/registracija/"
+lastVerifiedAt: "2026-05-16"

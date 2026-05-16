@@ -1,0 +1,12 @@
+id: easa-easy-access-rules
+kind: easa-guidance
+officialTitle:
+  en: "Easy Access Rules for Unmanned Aircraft Systems"
+  lv: "Viegli pieejamie noteikumi bezpilota gaisa kuģu sistēmām"
+  ru: "Упрощённые правила для беспилотных авиационных систем"
+shortTitle:
+  en: "EASA consolidated UAS rules + AMC/GM"
+  lv: "EASA konsolidētie UAS noteikumi + AMC/GM"
+  ru: "Сводные правила EASA + AMC/GM"
+canonicalUrl: "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
+lastVerifiedAt: "2026-05-16"

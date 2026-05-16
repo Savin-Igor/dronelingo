@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { listAllPosts } from "@/lib/blog";
 import { SITE_URL } from "@/lib/seo";
+import { listAllSources } from "@/lib/sources";
 
 const PUBLIC_PATHS = [
   "",
@@ -45,6 +46,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: path === "" || path === "/learn" ? "weekly" : "monthly",
         priority: PRIORITY[path] ?? 0.5,
+        alternates: { languages },
+      });
+    }
+  }
+
+  for (const source of listAllSources()) {
+    const path = `/regulations/${source.id}`;
+    const languages: Record<string, string> = {};
+    for (const locale of routing.locales) {
+      languages[locale] = `${SITE_URL}/${locale}${path}`;
+    }
+    for (const locale of routing.locales) {
+      entries.push({
+        url: `${SITE_URL}/${locale}${path}`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.5,
         alternates: { languages },
       });
     }
