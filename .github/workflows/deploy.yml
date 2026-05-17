@@ -67,6 +67,21 @@ jobs:
     if: needs.build.result == 'success'
 
     steps:
+      - uses: actions/checkout@v4
+
+      # Sync docker-compose.yml to the VPS before the deploy script runs.
+      # `docker compose pull/up` reads the LOCAL compose file on the host,
+      # so any change to mem_limit / volumes / env / image tag references
+      # needs to land here, not just in the repo.
+      - uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HETZNER_HOST }}
+          username: ${{ secrets.HETZNER_USER }}
+          key: ${{ secrets.HETZNER_SSH_KEY }}
+          source: docker-compose.yml
+          target: /opt/dronelingo/
+          overwrite: true
+
       - uses: appleboy/ssh-action@v1
         env:
           IMAGE_TAG: ${{ needs.build.outputs.version }}
