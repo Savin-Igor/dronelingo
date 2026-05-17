@@ -1,12 +1,15 @@
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { auth } from "@/auth";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { MobileDrawer } from "./MobileDrawer";
 import { NavLinks } from "./NavLinks";
 import { UserMenu } from "./auth/UserMenu";
+import { SearchInput } from "./search/SearchInput";
 
 export async function Header() {
   const session = await auth();
+  const t = await getTranslations("search");
 
   return (
     <header className="sticky top-0 z-30 border-b border-horizon bg-cockpit/90 backdrop-blur-xl">
@@ -27,6 +30,9 @@ export async function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
+          <div className="hidden md:block">
+            <SearchInput placeholder={t("placeholder")} />
+          </div>
           <div className="hidden sm:block">
             <LocaleSwitcher />
           </div>

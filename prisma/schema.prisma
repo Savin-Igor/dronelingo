@@ -209,3 +209,40 @@ model InvoiceRequest {
   @@index([email])
   @@index([status])
 }
+
+// Polymorphic search index over lessons, questions, blog, sources, static pages.
+// The migration that creates this table also:
+//   - CREATE EXTENSION vector;
+//   - adds a generated `tsv` tsvector column (GIN-indexed) for lexical FTS;
+//   - adds a `vector(384)` `embedding` column (HNSW-indexed) for semantic search.
+// Prisma does not natively support tsvector or pgvector columns, so they live
+// in raw SQL and are queried via $queryRaw. See docs/search-architecture.md.
+model SearchChunk {
+  id           String   @id @default(cuid())
+  // 'lesson' | 'question' | 'blog' | 'source' | 'static'
+  contentType  String
+  // topicSlug/lessonSlug, externalId, blogDirSlug, sourceId, staticPage
+  contentId    String
+  // 'lv' | 'en' | 'ru' (Tier-1 locales only)
+  locale       String
+  // Slugified heading anchor; empty string "" for anchor-less chunks
+  // (questions, top-level pages). Stored as a string instead of nullable
+  // so compound unique key (contentType, contentId, locale, anchor) is
+  // queryable — Prisma compound `where` requires non-null fields, and
+  // Postgres treats multiple NULLs as distinct which breaks dedup.
+  anchor       String   @default("")
+  // Fully resolved internal URL (per-locale slug already applied for blog)
+  url          String
+  // Lesson title + section heading, or question stem prefix, etc.
+  title        String
+  body         String   @db.Text
+  // sha256(body + modelVersion) — short-circuit re-embedding of unchanged text
+  sourceHash   String
+  // Pin so model upgrades trigger a full reindex (e.g. "e5-small-v1")
+  modelVersion String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@unique([contentType, contentId, locale, anchor])
+  @@index([contentType, locale])
+}
