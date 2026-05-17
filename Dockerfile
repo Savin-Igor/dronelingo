@@ -69,5 +69,10 @@ RUN chmod +x /docker-entrypoint.sh
 USER nextjs
 EXPOSE 3000
 ENV PORT=3000
+# Bind on all interfaces so the in-container healthcheck (wget localhost:3000)
+# can reach the server. Without this, Docker injects HOSTNAME=<container-id>
+# and Next.js standalone binds only to that hostname, leaving 127.0.0.1
+# unanswered and the healthcheck permanently unhealthy.
+ENV HOSTNAME=0.0.0.0
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["node", "server.js"]
