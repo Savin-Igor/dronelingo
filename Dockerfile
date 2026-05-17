@@ -10,8 +10,11 @@
 # This file is committed before the application code lands. CI will fail with
 # "no package.json" until the first code commit — that's the intended signal.
 
-FROM node:24-alpine AS base
-RUN apk add --no-cache libc6-compat
+# node:24-bookworm-slim — Debian (glibc), required for the @xenova/transformers
+# ONNX Runtime native bindings. Alpine + musl-libc + libc6-compat shim crashes
+# at `require("@xenova/transformers")` with `Ort::Exception` because ONNX
+# distributes glibc-only prebuilt binaries.
+FROM node:24-bookworm-slim AS base
 WORKDIR /app
 
 # ── Stage 1: deps — install with cache-friendly layer ──────────────────────
@@ -36,13 +39,14 @@ ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
 RUN npx prisma generate
 RUN npm run build
 
-# ── Stage 3: runner — minimal alpine, non-root ─────────────────────────────
+# ── Stage 3: runner — minimal Debian, non-root ─────────────────────────────
 FROM base AS runner
 ENV NODE_ENV=production
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser  --system --uid 1001 nextjs
-# wget for the orchestrator healthcheck (smaller than curl on alpine).
-RUN apk add --no-cache wget
+RUN groupadd --system --gid 1001 nodejs \
+ && useradd  --system --uid 1001 --gid 1001 --no-create-home --shell /usr/sbin/nologin nextjs
+# wget for the orchestrator healthcheck.
+RUN apt-get update && apt-get install -y --no-install-recommends wget \
+ && rm -rf /var/lib/apt/lists/*
 
 # Next.js standalone output (set output: 'standalone' in next.config).
 COPY --from=builder /app/public ./public
