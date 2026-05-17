@@ -5,7 +5,9 @@
   index-search index-search-dry \
   build clean \
   check test test-e2e validate-questions validate-source-refs validate-source-policy \
-  release deploy help
+  release deploy \
+  blog blog-search blog-write \
+  help
 
 DC = docker compose -f docker-compose.dev.yml
 
@@ -105,6 +107,16 @@ deploy: ## Manual SSH deploy of latest image (skips CI). Use only for hotfix.  [
 	  docker compose pull app && \
 	  docker compose up -d --no-deps app && \
 	  docker image prune -f'
+
+##@ Blog automation
+
+blog-search: ## Search drone news and update .news-queue.json (requires Claude Code)
+	claude -p "$$(cat scripts/blog-search-prompt.txt)" --dangerously-skip-permissions
+
+blog-write: ## Write one blog post from queue → hero image → draft PR (requires Claude Code)
+	claude -p "$$(cat scripts/blog-write-prompt.txt)" --dangerously-skip-permissions
+
+blog: blog-search blog-write ## Full pipeline: search news + write post + draft PR
 
 ##@ Help
 
