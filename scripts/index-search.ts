@@ -35,7 +35,11 @@ import {
 import { embed, toPgVector, MODEL_VERSION } from "@/lib/search/embeddings";
 
 const DRY = process.argv.includes("--dry");
-const BATCH_SIZE = 32;
+// 4 is the sweet spot on a 4 GB VPS with no swap: bigger batches leak
+// ONNX Runtime memory across iterations and trigger cgroup OOM after
+// ~32 embeddings. Override with SEARCH_INDEX_BATCH on workstations
+// with more headroom (dev machine: 32 works fine).
+const BATCH_SIZE = Number(process.env.SEARCH_INDEX_BATCH ?? 4);
 
 const prisma = new PrismaClient();
 
