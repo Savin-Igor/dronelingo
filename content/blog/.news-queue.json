@@ -1,0 +1,88 @@
+{
+  "lastSearched": "2026-05-17",
+  "candidates": [
+    {
+      "id": "eu-aviation-strategy-consultation-2026",
+      "title": "European Commission Opens EU Aviation Strategy Consultation, Drone Operators Have Until May 21 To Weigh In",
+      "url": "https://dronexl.co/2026/04/30/eu-aviation-aeronautics-strategy-consultation-drones-may-21/",
+      "source_name": "DroneXL",
+      "published_date": "2026-04-30",
+      "summary": "The European Commission has opened a public consultation on a new EU Aviation and Aeronautics Strategy, covering drones, counter-UAS, and anti-jamming measures. The deadline for drone operators and industry stakeholders to submit feedback is May 21, 2026. The outcome will shape EU drone regulation for the coming years.",
+      "relevance_score": 9,
+      "topics": ["regulation", "easa", "eu"],
+      "status": "pending",
+      "added_date": "2026-05-17"
+    },
+    {
+      "id": "matternet-nhs-drone-delivery-london",
+      "title": "Matternet Begins Drone Delivery Operations for NHS Across Central London",
+      "url": "https://www.commercialuavnews.com/matternet-launches-uk-drone-delivery-operations-nhs",
+      "source_name": "Commercial UAV News",
+      "published_date": "2026-04-26",
+      "summary": "Matternet and Apian have launched commercial drone delivery operations for the NHS in London, transporting medical samples between hospital campuses. This is one of the first large-scale urban drone logistics deployments in Europe, operating under existing regulatory frameworks.",
+      "relevance_score": 8,
+      "topics": ["commercial", "delivery", "eu"],
+      "status": "pending",
+      "added_date": "2026-05-17"
+    },
+    {
+      "id": "easa-simplifying-authorisation-low-risk",
+      "title": "EASA Seeks Industry Feedback on Simplifying Authorisation Rules for Low Risk Drone Operations",
+      "url": "https://www.unmannedairspace.info/latest-news-and-information/easa-seeks-industry-feedback-on-simplifying-authorisation-rules-for-low-risk-operations/",
+      "source_name": "Unmanned Airspace",
+      "published_date": "2026-04-15",
+      "summary": "EASA plans to simplify Regulation (EU) 2019/947 to reduce administrative burden on National Aviation Authorities and operators in the specific category. The agency is seeking industry input on streamlining authorisation procedures for low-risk UAS operations across EU member states.",
+      "relevance_score": 7,
+      "topics": ["regulation", "easa", "eu", "certification"],
+      "status": "pending",
+      "added_date": "2026-05-17"
+    },
+    {
+      "id": "manna-uber-europe-drone-delivery-50m",
+      "title": "Manna Raises $50M Series B, Partners with Uber for First European Drone Delivery Launch",
+      "url": "https://www.stattimes.com/drones/manna-raises-50m-series-b-to-expand-air-delivery-in-us-europe-1358683",
+      "source_name": "Stat Times",
+      "published_date": "2026-04-17",
+      "summary": "Irish drone startup Manna has raised $50 million Series B and announced a partnership with Uber for the first European consumer drone delivery service launching in Ireland. The company plans 40 bases and targets last-mile logistics scale across the US and Europe.",
+      "relevance_score": 7,
+      "topics": ["commercial", "delivery", "eu"],
+      "status": "pending",
+      "added_date": "2026-05-17"
+    },
+    {
+      "id": "ned-marine-drone-rov-inspection-launch",
+      "title": "Dutch Specialist Ned Marine Launches Drone and Subsea ROV Inspection Services",
+      "url": "https://www.marinetechnologynews.com/news/marine-launches-drone-subsea-662136",
+      "source_name": "Marine Technology News",
+      "published_date": "2026-05-12",
+      "summary": "Dutch non-destructive testing specialist Ned Marine has launched combined drone and remotely operated vehicle inspection services for offshore and marine infrastructure. The service targets offshore wind, oil & gas, and port facilities across Northern Europe.",
+      "relevance_score": 7,
+      "topics": ["industrial", "inspection", "eu"],
+      "status": "pending",
+      "added_date": "2026-05-17"
+    }
+  ],
+  "published": [
+    "a1-a3-drone-licence-latvia",
+    "ai-powered-autonomous-drones-2026",
+    "anti-drone-systems-electronic-warfare",
+    "bee-inspired-drone-navigation-without-gps",
+    "best-thermal-drones-search-and-rescue",
+    "caa-latvia-contact-fees-process",
+    "choosing-first-drone-weight-classes",
+    "drone-exam-latvia-what-to-expect",
+    "drone-insurance-eu-required-or-recommended",
+    "drone-registration-latvia-step-by-step",
+    "drone-swarms-future-autonomous-warfare",
+    "eu-open-category-a1-a2-a3-explained",
+    "eu-regulation-2019-947-simplified",
+    "fiber-optic-drones-cannot-be-jammed",
+    "fpv-drones-changed-modern-warfare",
+    "how-drones-are-used-in-oil-and-gas-industry",
+    "industrial-drone-inspection-future-infrastructure-monitoring",
+    "military-drone-trends-dominate-2026",
+    "no-fly-zones-latvia",
+    "pre-flight-checklist-drone",
+    "rise-of-autonomous-combat-uavs"
+  ]
+}
