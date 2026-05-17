@@ -18,7 +18,7 @@ jobs:
 
     services:
       postgres:
-        image: postgres:16-alpine
+        image: pgvector/pgvector:pg16
         env:
           POSTGRES_DB: dronelingo_test
           POSTGRES_USER: postgres
@@ -33,8 +33,8 @@ jobs:
 
     env:
       DATABASE_URL: postgresql://postgres:postgres@localhost:5432/dronelingo_test
-      NEXTAUTH_SECRET: test-secret-min-32-chars-long-here
-      NEXTAUTH_URL: http://localhost:3000
+      AUTH_SECRET: test-secret-min-32-chars-long-here
+      AUTH_URL: http://localhost:3000
       SKIP_ENV_VALIDATION: "true"
 
     steps:
