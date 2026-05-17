@@ -14,5 +14,9 @@ publishedAt: 2026-05-16
 updatedAt: 2026-05-16
 lastVerifiedAt: 2026-05-16
 heroImage: hero.png
+heroImageAlt:
+  en: "Infrastructure inspection drone alongside a suspension bridge, engineer reviewing data on laptop below, overcast sky"
+  lv: "Infrastructure inspection drone alongside a suspension bridge, engineer reviewing data on laptop below, overcast sky"
+  ru: "Infrastructure inspection drone alongside a suspension bridge, engineer reviewing data on laptop below, overcast sky"
 tags: [inspection, infrastructure, enterprise, drones, industry]
 sourceRef: "DJI Matrice 4 Series specs | https://enterprise.dji.com/matrice-4-series/specs; DJI Dock 3 announcement | https://www.dji.com/pr/media-center/announcements/dji-release-dock-3; Skydio X10 technical specs | https://www.skydio.com/x10/technical-specs; Skydio Dock | https://www.skydio.com/dock; Flyability Elios 3 launch | https://www.flyability.com/news/elios-3-launch; Flyability official site | https://www.flyability.com/"
