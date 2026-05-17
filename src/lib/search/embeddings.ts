@@ -3,8 +3,9 @@
 //
 // The pipeline downloads model weights on first use (~120 MB) into the
 // HuggingFace cache directory. The download is a one-time cost per host.
-
-import { pipeline, type FeatureExtractionPipeline } from "@xenova/transformers";
+//
+// Dynamic import prevents the ONNX Runtime native binary from being
+// evaluated during `next build`, which crashes on memory-limited CI runners.
 
 export const EMBEDDING_MODEL = "Xenova/multilingual-e5-small";
 
@@ -14,14 +15,15 @@ export const MODEL_VERSION = "multilingual-e5-small-v1";
 
 export const EMBEDDING_DIM = 384;
 
-let pipelinePromise: Promise<FeatureExtractionPipeline> | null = null;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+let pipelinePromise: Promise<any> | null = null;
 
-function getPipeline(): Promise<FeatureExtractionPipeline> {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function getPipeline(): Promise<any> {
   if (!pipelinePromise) {
-    pipelinePromise = pipeline(
-      "feature-extraction",
-      EMBEDDING_MODEL,
-    ) as Promise<FeatureExtractionPipeline>;
+    pipelinePromise = import("@xenova/transformers").then(({ pipeline }) =>
+      pipeline("feature-extraction", EMBEDDING_MODEL),
+    );
   }
   return pipelinePromise;
 }
