@@ -28,6 +28,10 @@ FROM base AS builder
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 ENV SKIP_ENV_VALIDATION=true
+# Bake production URL into the client bundle at build time.
+# NEXT_PUBLIC_* vars must be present during `next build`, not just at runtime.
+ARG NEXT_PUBLIC_SITE_URL=https://dronelingo.eu
+ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
 # Prisma generate is idempotent and runs from the schema in prisma/.
 RUN npx prisma generate
 RUN npm run build
