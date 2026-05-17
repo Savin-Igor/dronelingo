@@ -22,11 +22,19 @@ services:
     ports:
       - "127.0.0.1:3030:3000"
     env_file: .env
+    environment:
+      # Persist the @xenova/transformers model cache (~120 MB) across deploys.
+      # Read by src/lib/search/embeddings.ts on pipeline init.
+      TRANSFORMERS_CACHE: /app/.cache/transformers
     depends_on:
       db:
         condition: service_healthy
     entrypoint: ["/docker-entrypoint.sh"]
     command: ["node", "server.js"]
+    volumes:
+      # Model weights survive container recreation. Path lives on the
+      # Hetzner Volume alongside Postgres data and backups.
+      - /mnt/data/dronelingo/model-cache:/app/.cache/transformers
     # /api/health probes Postgres SELECT 1 and returns 503 when DB is unreachable —
     # covers liveness + readiness in one endpoint. Add this route to the app.
     healthcheck:
@@ -36,7 +44,10 @@ services:
       start_period: 30s
       retries: 3
     # Resource caps for a 4 GB shared VPS (alongside MezaData and ALTEKO).
-    mem_limit: 512m
+    # Bumped to 768m to accommodate @xenova/transformers (~120 MB model
+    # in memory + ONNX runtime overhead) when /api/search runs the vector
+    # retriever.
+    mem_limit: 768m
     cpus: 0.75
 
   db:

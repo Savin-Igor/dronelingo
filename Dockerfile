@@ -56,6 +56,14 @@ COPY --from=builder --chown=nextjs:nodejs /app/content ./content
 # Import script — runs after `prisma migrate deploy`.
 COPY --from=builder --chown=nextjs:nodejs /app/scripts/import-content.ts ./scripts/import-content.ts
 
+# Search indexer + source tree it imports (runs on demand via
+# `docker compose exec app npx tsx scripts/index-search.ts`).
+# Bundled here so prod can rebuild the SearchChunk table without a
+# separate dev box. tsconfig.json carries the `@/` path alias resolution.
+COPY --from=builder --chown=nextjs:nodejs /app/scripts/index-search.ts ./scripts/index-search.ts
+COPY --from=builder --chown=nextjs:nodejs /app/src ./src
+COPY --from=builder --chown=nextjs:nodejs /app/tsconfig.json ./tsconfig.json
+
 # Prisma schema needed for `prisma migrate deploy` at container start.
 COPY --from=builder /app/prisma ./prisma
 

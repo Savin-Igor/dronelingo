@@ -254,6 +254,75 @@ docker compose up -d --no-deps app
 
 ---
 
+## One-time migration: postgres:16-alpine → pgvector/pgvector:pg16
+
+Required exactly **once**, before the first deploy that ships the
+search subsystem (see `docs/search-architecture.md`). After this the
+normal tag-driven deploy works as usual.
+
+The two images use different `postgres` user UIDs:
+
+- `postgres:16-alpine` — uid **70**
+- `pgvector/pgvector:pg16` — uid **999**
+
+The data directory at `/mnt/data/dronelingo/postgres` is owned by the
+old uid. The new image refuses to start on a data dir it cannot read,
+so we chown the files before the image switch.
+
+```bash
+ssh palpalych
+cd /opt/dronelingo
+
+# 1. Manual backup BEFORE touching anything (deploy.yml also runs pg_dump,
+#    but only if the db container is still up).
+docker compose exec -T db pg_dump -U postgres dronelingo \
+  | gzip > /mnt/data/dronelingo/backups/pre-pgvector-$(date -u +%Y%m%d-%H%M%S).sql.gz
+
+# 2. Stop only the db container (app stays up, will go unhealthy briefly).
+docker compose stop db
+
+# 3. Recursively chown the data dir to the new postgres uid.
+sudo chown -R 999:999 /mnt/data/dronelingo/postgres
+
+# 4. Pre-create the model-cache dir so docker doesn't make it root-owned.
+sudo mkdir -p /mnt/data/dronelingo/model-cache
+sudo chown 1001:1001 /mnt/data/dronelingo/model-cache  # uid of nextjs user in app image
+```
+
+Now cut the release tag from a dev machine:
+
+```bash
+make release v=0.x.0
+```
+
+`deploy.yml` pulls the pgvector image, recreates db on the (now
+correctly-owned) data dir, runs `prisma migrate deploy` (which
+applies the SearchChunk migration and `CREATE EXTENSION vector`),
+then waits for `/api/health`.
+
+After the health gate passes, populate the search index:
+
+```bash
+ssh palpalych
+cd /opt/dronelingo
+docker compose exec -T app npx tsx scripts/index-search.ts
+```
+
+First indexing run downloads ~120 MB of model weights into the
+persistent volume; subsequent runs reuse them. Expect ~5 minutes for
+the full corpus (~2700 chunks). Re-run after any content release to
+pick up new lessons/blog/sources.
+
+If anything is wrong, rollback as documented above and restore from
+the manual backup:
+
+```bash
+gunzip -c /mnt/data/dronelingo/backups/pre-pgvector-*.sql.gz \
+  | docker compose exec -T db psql -U postgres dronelingo
+```
+
+---
+
 ## Что нужно сделать до первого deploy
 
 1. **Инициализировать Next.js проект** — `npm create next-app@latest`, добавить Prisma, NextAuth, Tailwind. См. соответствующий issue.

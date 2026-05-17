@@ -21,8 +21,16 @@ let pipelinePromise: Promise<any> | null = null;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function getPipeline(): Promise<any> {
   if (!pipelinePromise) {
-    pipelinePromise = import("@xenova/transformers").then(({ pipeline }) =>
-      pipeline("feature-extraction", EMBEDDING_MODEL),
+    pipelinePromise = import("@xenova/transformers").then(
+      ({ env: xenovaEnv, pipeline }) => {
+        // Point the cache at a persistent volume in production so model
+        // weights survive container restarts. Falls back to the package
+        // default (node_modules/@xenova/transformers/src/.cache/) in dev.
+        if (process.env.TRANSFORMERS_CACHE) {
+          xenovaEnv.cacheDir = process.env.TRANSFORMERS_CACHE;
+        }
+        return pipeline("feature-extraction", EMBEDDING_MODEL);
+      },
     );
   }
   return pipelinePromise;
