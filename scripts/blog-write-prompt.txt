@@ -1,0 +1,112 @@
+You are running a one-time blog post generation for dronelingo.eu.
+
+Working directory: /home/isavins/Desktop/dronelingo.eu
+Queue: content/blog/.news-queue.json
+
+## Step 1 — Pick best candidate
+Read content/blog/.news-queue.json.
+Find candidates with status="pending" AND relevance_score >= 5.
+Pick the one with the highest score.
+
+If none found: print "Queue empty — run make blog-search first." and stop.
+
+## Step 2 — Scrape full article
+Use mcp__firecrawl__firecrawl_scrape on the candidate URL.
+Get full markdown content.
+
+## Step 3 — Generate en_slug
+Create a kebab-case English slug (3–6 words):
+- Descriptive of the topic
+- Must NOT exist as a directory in content/blog/
+- Must NOT be in the published[] array
+
+## Step 4 — Write articles via codex CLI
+Run this bash command (codex is locally installed, exec = non-interactive mode):
+
+codex exec -a never "You are writing a trilingual blog post for dronelingo.eu — an EASA A1/A3 drone certification platform.
+
+Source article: <title>
+Source: <source_name> — <source_url>
+Key facts: <list 8-12 key factual claims from the scraped content>
+
+Write ALL of the following files to content/blog/<en-slug>/:
+
+1. en.mdx — English article, 1500-2500 words, analytical tone, 4-6 H2 sections,
+   start directly with first paragraph (no frontmatter, no H1), end with: *Sources: <source_name> | <url>*
+
+2. lv.mdx — Native Latvian, 1200-2000 words, same structure. Write from the facts above,
+   NOT translated from English. Full diacritics mandatory: ā ē ī ū ļ ņ ķ ģ š č ž
+
+3. ru.mdx — Native Russian, 1200-2000 words, same structure. Write from the facts above,
+   NOT translated from English.
+
+4. meta.yml — YAML with this exact structure:
+slug:
+  lv: <latvian-kebab-slug>
+  en: <en-slug>
+  ru: <russian-transliteration-slug>
+title:
+  lv: <native Latvian title, max 70 chars>
+  en: <English title, max 70 chars>
+  ru: <native Russian title, max 70 chars>
+authorBio: null
+excerpt:
+  lv: <2 sentence Latvian summary, max 200 chars>
+  en: <2 sentence English summary, max 200 chars>
+  ru: <2 sentence Russian summary, max 200 chars>
+publishedAt: <today YYYY-MM-DD>
+updatedAt: <today YYYY-MM-DD>
+lastVerifiedAt: <today YYYY-MM-DD>
+heroImage: hero.png
+heroImageAlt:
+  en: <1 sentence alt text for the hero image>
+  lv: <same in Latvian>
+  ru: <same in Russian>
+tags:
+  - <3-6 tags from: autonomy navigation gps-denied computer-vision uav industrial inspection regulation easa latvia eu certification commercial safety technology research>
+sourceRef: '<source_name> | <url>'
+
+5. seo.yml — YAML:
+primaryKeyword: <main search phrase>
+secondaryKeywords:
+  - <5 long-tail phrases>
+seoTitles:
+  - <3 title variants, max 60 chars each>
+socialTeaser:
+  lv: <1-2 sentence hook in Latvian, max 240 chars>
+  en: <1-2 sentence hook in English, max 240 chars>
+  ru: <1-2 sentence hook in Russian, max 240 chars>
+
+Create the directory content/blog/<en-slug>/ and write all 5 files."
+
+If codex exits with non-zero status: print the error and stop. Do not create a partial PR.
+
+## Step 5 — Generate hero image
+Create directory: mkdir -p public/blog/<en-slug>
+
+Use mcp__nanobanana__generate_image:
+- prompt: professional drone editorial photography matching the article topic, specific scene, natural lighting, 16:9 landscape, photorealistic, no text, no logos
+- aspect_ratio: "16:9"
+- output_path: "/home/isavins/Desktop/dronelingo.eu/public/blog/<en-slug>/hero.png"
+- resolution: "high"
+- model_tier: "nb2"
+- negative_prompt: "text, watermark, logo, military weapons, violence, people"
+
+## Step 6 — Update queue
+Set candidate status="written". Add en_slug to published[]. Write queue back.
+
+## Step 7 — Commit and PR
+git checkout -b blog/auto-$(date +%Y-%m-%d)-<en-slug>
+git add content/blog/<en-slug>/ public/blog/<en-slug>/ content/blog/.news-queue.json
+git commit -m "feat(blog): add post <en-slug>"
+git push origin blog/auto-$(date +%Y-%m-%d)-<en-slug>
+
+gh label create "auto-blog" --color "0075ca" --description "Auto-generated blog post" 2>/dev/null || true
+
+gh pr create \
+  --title "[AUTO] <article title>" \
+  --body "$(printf 'Auto-generated post\n\nSource: <source_name>\nURL: <source_url>\nSlug: <en-slug>\n\n**Review checklist:**\n- [ ] Factual accuracy\n- [ ] LV diacritics (ā ē ī ū ļ ņ ķ ģ š č ž)\n- [ ] Hero image OK\n- [ ] meta.yml titles and slugs correct')" \
+  --label "auto-blog" \
+  --draft
+
+Print the PR URL.

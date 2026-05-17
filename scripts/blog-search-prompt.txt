@@ -1,0 +1,61 @@
+You are running a one-time drone news search for dronelingo.eu blog automation.
+
+Working directory: /home/isavins/Desktop/dronelingo.eu
+Queue file: content/blog/.news-queue.json
+
+## Queue JSON format
+{
+  "lastSearched": "YYYY-MM-DD",
+  "candidates": [
+    {
+      "id": "kebab-case-unique-id",
+      "title": "...",
+      "url": "https://...",
+      "source_name": "...",
+      "published_date": "YYYY-MM-DD",
+      "summary": "2-3 sentence factual summary",
+      "relevance_score": 8,
+      "topics": ["industrial", "tech"],
+      "status": "pending",
+      "added_date": "YYYY-MM-DD"
+    }
+  ],
+  "published": ["existing-slug-1"]
+}
+
+## Step 1 — Run Firecrawl searches
+Use mcp__firecrawl__firecrawl_search for each query (limit 5 results each):
+1. query: "drone technology news 2026"
+2. query: "UAV industrial inspection commercial 2026"
+3. query: "EASA drone regulation update"
+4. query: "autonomous drone research"
+5. query: "commercial UAV news dronedj"
+6. query: "drone Latvia EU regulation"
+
+For each result extract: title, URL, published date (estimate today if unclear), 2-3 sentence factual summary.
+
+## Step 2 — Score each result (0–10)
+- Industrial / tech / commercial focus: +3
+- EU or Latvia geographic angle: +2
+- Novel research or product (not a repost): +2
+- Published within 48h: +2
+- Strong unique editorial angle: +1
+- Military-only (no commercial angle): -3
+- Pure press release / vendor marketing: -2
+
+Keep only candidates with score >= 4.
+
+## Step 3 — Deduplicate
+Read content/blog/.news-queue.json.
+Skip any URL already in candidates[].url.
+Skip titles >80% similar to existing candidates.
+The published[] array has already-written slugs — avoid same topics.
+
+## Step 4 — Update and commit
+Add new candidates to candidates[]. Set lastSearched to today (YYYY-MM-DD).
+Write back to content/blog/.news-queue.json.
+git add content/blog/.news-queue.json
+git commit -m "chore(blog): news queue update $(date +%Y-%m-%d)"
+git push origin main
+
+Print: how many new candidates added, total pending.

@@ -1,0 +1,28 @@
+slug:
+  lv: dronu-navigacija-pec-bitem-bez-gps-un-kartem
+  en: bee-inspired-drone-navigation-without-gps
+  ru: navigatsiya-dronov-po-pchelinomu-bez-gps-i-kart
+title:
+  lv: Kā droni atrod ceļu mājup bez GPS un kartēm, iedvesmojoties no bitēm
+  en: How Bee-Inspired Drones Find Their Way Home Without GPS or Maps
+  ru: Как дроны находят дорогу домой без GPS и карт, вдохновляясь пчёлами
+authorBio: null
+excerpt:
+  lv: Bee-Nav no TU Delft nav “maģisks autopilots”. Tas ir viegls atgriešanās mājup risinājums GPS liegtiem lidojumiem, kas apvieno īsu mācību lidojumu, odometriju un kompaktu vizuālo atmiņu.
+  en: TU Delft’s Bee-Nav is not a magic autopilot. It is a lightweight return-home strategy for GPS-denied flight that combines a short learning flight, odometry, and compact visual memory.
+  ru: Bee-Nav от TU Delft — не «магический автопилот», а лёгкая стратегия возврата домой для полётов без GPS, которая сочетает короткий обучающий облёт, одометрию и компактную визуальную память.
+publishedAt: 2026-05-17
+updatedAt: 2026-05-17
+lastVerifiedAt: 2026-05-17
+tags:
+  - autonomy
+  - navigation
+  - gps-denied
+  - computer-vision
+  - uav
+heroImage: hero.png
+heroImageAlt:
+  lv: Redakcionāla hero aina ar nelielu pētniecisku kvadrokopteri, kas zelta stundā atgriežas pie nolaišanās laukuma atklātā laukā; tuvumā lido dažas bites, bet kadrā redzami smalki vizuālās atmiņas un homing trajektoriju pārklājumi vēsi zilganpelēkā un dabīgi zaļā paletē.
+  en: Editorial hero scene of a small research quadcopter returning to its landing pad over an open field at golden hour, with a few honeybees nearby and subtle visual-memory and homing-trajectory overlays in a cool blue-grey and natural green palette.
+  ru: Редакционная hero-сцена: небольшой исследовательский квадрокоптер возвращается к посадочной площадке над открытым полем в золотой час; рядом видны несколько пчёл и тонкие наложения визуальной памяти и траектории возврата в холодной синевато-серой и естественно-зелёной палитре.
+sourceRef: "Nature | https://www.nature.com/articles/s41586-026-10461-3; Nature News & Views | https://www.nature.com/articles/d41586-026-01321-1; EurekAlert / TU Delft | https://www.eurekalert.org/news-releases/1127945; MAVLab preprint page | https://mavlab.tudelft.nl/learning_to_home/"
