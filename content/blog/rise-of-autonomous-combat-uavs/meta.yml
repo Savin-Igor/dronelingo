@@ -13,5 +13,10 @@ excerpt:
 publishedAt: 2026-05-17
 updatedAt: 2026-05-17
 lastVerifiedAt: 2026-05-17
+heroImage: hero.png
+heroImageAlt:
+  en: "Autonomous combat UAV on runway apron, ground control station operator in background with autonomous flight planning screens"
+  lv: "Autonomous combat UAV on runway apron, ground control station operator in background with autonomous flight planning screens"
+  ru: "Autonomous combat UAV on runway apron, ground control station operator in background with autonomous flight planning screens"
 tags: [military, autonomy, combat-uav, cca, defense]
 sourceRef: https://www.ga.com/ga-asi-welcomes-usaf-designation-for-new-cca-yfq-42a; https://www.af.mil/News/Article-Display/Article/4405471/air-force-validates-open-architecture-expands-collaborative-combat-aircraft-eco/; https://www.navair.navy.mil/news/Navy-demonstrates-AI-enabled-autonomy-future-collaborative-combat-aircraft/Mon-01122026-0913; https://www.anduril.com/

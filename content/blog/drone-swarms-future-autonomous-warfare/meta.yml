@@ -13,5 +13,10 @@ excerpt:
 publishedAt: 2026-05-16
 updatedAt: 2026-05-16
 lastVerifiedAt: 2026-05-16
+heroImage: hero.png
+heroImageAlt:
+  en: "Coordinated drone swarm in formation over open terrain, dozens of fixed-wing and quadcopter drones against a dramatic grey sky"
+  lv: "Coordinated drone swarm in formation over open terrain, dozens of fixed-wing and quadcopter drones against a dramatic grey sky"
+  ru: "Coordinated drone swarm in formation over open terrain, dozens of fixed-wing and quadcopter drones against a dramatic grey sky"
 tags: [military, autonomy, swarms, drones, defense]
 sourceRef: "DARPA OFFSET program | https://www.darpa.mil/research/programs/offensive-swarm-enabled-tactics; NATO autonomy implementation summary | https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2022/10/13/summary-of-natos-autonomy-implementation-plan; DIU Replicator initiative | https://www.diu.mil/replicator; U.S. Marine Corps drone task force | https://www.marines.mil/News/News-Display/Article/4299458/marine-corps-initiates-drone-task-force-summits-to-accelerate-uas-lethality/; Anduril official site | https://www.anduril.com/home"

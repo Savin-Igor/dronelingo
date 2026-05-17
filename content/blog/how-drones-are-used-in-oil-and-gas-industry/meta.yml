@@ -13,5 +13,10 @@ excerpt:
 publishedAt: 2026-05-16
 updatedAt: 2026-05-16
 lastVerifiedAt: 2026-05-16
+heroImage: hero.png
+heroImageAlt:
+  en: "Industrial drone inspection at an oil refinery: operator in high-visibility vest monitors drone flying past flare stack and pipework"
+  lv: "Industrial drone inspection at an oil refinery: operator in high-visibility vest monitors drone flying past flare stack and pipework"
+  ru: "Industrial drone inspection at an oil refinery: operator in high-visibility vest monitors drone flying past flare stack and pipework"
 tags: [oil-and-gas, inspection, enterprise, drones, industry]
 sourceRef: "DJI pipeline inspection | https://enterprise.dji.com/inspection/pipeline-inspection; Skydio oil and gas solutions | https://www.skydio.com/solutions/oil-and-gas; Flyability official site | https://www.flyability.com/; Chevron pipeline aerial patrol | https://www.chevron.com/newsroom/2024/q2/pipeline-aerial-patrol-reaches-new-heights; Chevron tank inspection robotics | https://www.chevron.com/newsroom/2024/q3/using-robots-to-help-keep-workers-safe-during-tank-inspections"

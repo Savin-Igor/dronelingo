@@ -71,9 +71,23 @@ Container entrypoint (`scripts/docker-entrypoint.sh`) при каждом ста
 
 ### nginx vhost
 
-Конфиг на сервере: `/etc/nginx/sites-available/dronelingo.eu`.
-- 80/443 → Certbot/Let's Encrypt SSL
-- `proxy_pass http://127.0.0.1:3030`
+Конфиг на сервере: `/etc/nginx/sites-available/dronelingo.eu` (и идентичная копия в `/etc/nginx/sites-enabled/dronelingo.eu` — на этом VPS sites-enabled держит файлы, а не симлинки; при ручных правках надо синхронизировать обе копии).
+
+Три server-блока:
+
+1. `https://dronelingo.eu` (apex, canonical) — `proxy_pass http://127.0.0.1:3030`. SSL терминирует Certbot/Let's Encrypt. Шлёт upstream:
+   - `Host`, `X-Real-IP`, `X-Forwarded-For`, `X-Forwarded-Proto`
+   - `X-Forwarded-Host $host` и `X-Forwarded-Port 443` — обязательны: без них Next.js standalone тащит внутренний listen-порт контейнера (`:3000`) в абсолютные URL редиректов (next-intl locale-redirect и т.п.).
+2. `https://www.dronelingo.eu` → 301 на apex. Тот же SAN-сертификат.
+3. `http://` (apex и www) → 301 на `https://dronelingo.eu` (managed by Certbot).
+
+HSTS включён на обоих https-блоках:
+```
+add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+```
+1 год, без `preload` — обратимо. Если когда-то решим заводить субдомен на http, надо будет сначала задизейблить `includeSubDomains` и подождать TTL, прежде чем он начнёт работать без TLS.
+
+При правке: всегда `sudo nginx -t` перед `sudo systemctl reload nginx`. Бэкапы класть **вне** `sites-enabled/` (например в `/root/`), иначе nginx подхватит `.bak` файл как живой конфиг и ругнётся на conflicting server name.
 
 ---
 
