@@ -44,10 +44,11 @@ services:
       start_period: 30s
       retries: 3
     # Resource caps for a 4 GB shared VPS (alongside MezaData and ALTEKO).
-    # Bumped to 768m to accommodate @xenova/transformers (~120 MB model
-    # in memory + ONNX runtime overhead) when /api/search runs the vector
-    # retriever.
-    mem_limit: 768m
+    # 1024m is required because the @xenova/transformers ONNX runtime
+    # mmaps the model aggressively when /api/search runs the vector
+    # retriever — cgroup hits OOM at ~768m even though RSS stays lower
+    # (kernel accounts mmapped pages too).
+    mem_limit: 1024m
     cpus: 0.75
 
   db:
