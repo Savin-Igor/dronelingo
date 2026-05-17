@@ -10,7 +10,7 @@
       "summary": "The European Commission has opened a public consultation on a new EU Aviation and Aeronautics Strategy, covering drones, counter-UAS, and anti-jamming measures. The deadline for drone operators and industry stakeholders to submit feedback is May 21, 2026. The outcome will shape EU drone regulation for the coming years.",
       "relevance_score": 9,
       "topics": ["regulation", "easa", "eu"],
-      "status": "pending",
+      "status": "written",
       "added_date": "2026-05-17"
     },
     {
@@ -74,6 +74,7 @@
     "drone-insurance-eu-required-or-recommended",
     "drone-registration-latvia-step-by-step",
     "drone-swarms-future-autonomous-warfare",
+    "eu-aviation-strategy-drone-consultation",
     "eu-open-category-a1-a2-a3-explained",
     "eu-regulation-2019-947-simplified",
     "fiber-optic-drones-cannot-be-jammed",
