@@ -40,7 +40,9 @@ services:
     cpus: 0.75
 
   db:
-    image: postgres:16-alpine
+    # pgvector/pgvector:pg16 = postgres:16 + pgvector extension preloaded.
+    # Required for the SearchChunk vector column (see docs/search-architecture.md).
+    image: pgvector/pgvector:pg16
     restart: unless-stopped
     environment:
       POSTGRES_DB: dronelingo

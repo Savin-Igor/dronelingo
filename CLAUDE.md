@@ -36,6 +36,8 @@ All work goes through `make` (see `make help`).
 | `make studio` | Open Prisma Studio |
 | `make backup` | `pg_dump` local DB to `./backups/` |
 | `make import-content` | Re-import `content/` (topics/lessons/questions) into local DB |
+| `make index-search` | Build search chunks + embeddings (downloads ~120 MB model on first run) |
+| `make index-search-dry` | Build chunks only; leaves `embedding` NULL (no model download) |
 | `make check` | `npm run type-check && npm run lint` |
 | `make build` | Build production Docker image locally (`dronelingo:local`) |
 | `make release v=0.1.0` | Tag + push → triggers GitHub Actions deploy |
@@ -74,9 +76,11 @@ Health is centralized in `/api/health` — it must `SELECT 1` on Postgres and re
 
 ### Stack (in place)
 
-Next.js 15 (App Router, standalone) + Prisma 6 + PostgreSQL 16 +
-Tailwind v4 + next-intl v4 + next-mdx-remote/rsc + `@t3-oss/env-nextjs`
-+ zod. NextAuth installed (waits on #3). Stripe is **stubbed** —
+Next.js 15 (App Router, standalone) + Prisma 6 + PostgreSQL 16
+(`pgvector/pgvector:pg16` image — pgvector + tsvector FTS) + Tailwind v4 +
+next-intl v4 + next-mdx-remote/rsc + `@t3-oss/env-nextjs` + zod +
+`@xenova/transformers` (local `multilingual-e5-small` 384-d embeddings).
+NextAuth installed (waits on #3). Stripe is **stubbed** —
 payment flow is `processPayment({ amount, currency, userRef })` via
 `src/lib/payment/stub.ts` (StubProvider) returning
 `stub_<hex>` references after a 600 ms delay; ready to swap for real
@@ -144,6 +148,8 @@ Per the global instructions in `~/.claude/CLAUDE.md`:
 | `/faq`, `/privacy`, `/terms` | Static MDX read by `src/lib/static-page.ts`; privacy+terms marked draft |
 | `/api/health` | `SELECT 1` + content counts (topics/lessons/questions); 503 on DB failure |
 | `/[locale]/[...rest]` | Catch-all → localised 404 |
+| `/[locale]/search?q=…` | Hybrid search results (FTS + pgvector via `/api/search`); `noindex` |
+| `/api/search` | POST {q, locale} → hybrid RRF results with anchor-aware URLs |
 | `/robots.txt`, `/sitemap.xml`, `/manifest.webmanifest` | SEO + PWA infra |
 
 ## Notes for future work

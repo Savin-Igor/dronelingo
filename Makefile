@@ -2,6 +2,7 @@
   dev dev-setup stop logs shell \
   db-up db-down \
   migrate migrate-deploy push studio backup import-content \
+  index-search index-search-dry \
   build clean \
   check test test-e2e validate-questions validate-source-refs validate-source-policy \
   release deploy help
@@ -59,6 +60,12 @@ backup: ## Backup local DB to ./backups/
 
 import-content: ## Import content/ (topics, lessons, questions) into local DB
 	set -a && . ./.env.local && set +a && npx tsx scripts/import-content.ts
+
+index-search: ## Build search chunks + embeddings (downloads ~120 MB model on first run)
+	set -a && . ./.env.local && set +a && npx tsx scripts/index-search.ts
+
+index-search-dry: ## Build search chunks only; leaves embeddings NULL (no model download)
+	set -a && . ./.env.local && set +a && npx tsx scripts/index-search.ts --dry
 
 ##@ Build
 

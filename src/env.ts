@@ -22,6 +22,14 @@ export const env = createEnv({
     INVOICE_BIC: z.string().optional(),
     INVOICE_BANK_NAME: z.string().optional(),
     INVOICE_BENEFICIARY: z.string().optional(),
+    // When false, /api/search skips the vector retriever and returns
+    // lexical-only results. Lets us deploy schema + UI before the first
+    // `make index-search` finishes embedding the corpus.
+    SEARCH_VECTOR_ENABLED: z
+      .string()
+      .optional()
+      .default("true")
+      .transform((v) => v === "true"),
   },
   client: {
     NEXT_PUBLIC_SITE_URL: z.string().url().default("https://dronelingo.eu"),
@@ -47,6 +55,7 @@ export const env = createEnv({
     INVOICE_BIC: process.env.INVOICE_BIC,
     INVOICE_BANK_NAME: process.env.INVOICE_BANK_NAME,
     INVOICE_BENEFICIARY: process.env.INVOICE_BENEFICIARY,
+    SEARCH_VECTOR_ENABLED: process.env.SEARCH_VECTOR_ENABLED,
     NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
     NEXT_PUBLIC_PLAUSIBLE_DOMAIN: process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN,
     NEXT_PUBLIC_STRIPE_ENABLED: process.env.NEXT_PUBLIC_STRIPE_ENABLED,

@@ -242,6 +242,19 @@
   "a11y": {
     "skipToContent": "Pāriet uz saturu"
   },
+  "search": {
+    "title": "Meklēšana",
+    "description": "Meklē nodarbībās, jautājumos, blogā un normatīvajos avotos.",
+    "placeholder": "Meklēt…",
+    "instructions": "Ievadi vaicājumu, lai meklētu nodarbībās, jautājumos, blogā un normatīvajos avotos.",
+    "resultsFor": "{count, plural, =0 {Nav rezultātu vaicājumam \"{q}\".} one {1 rezultāts vaicājumam \"{q}\".} other {{count} rezultāti vaicājumam \"{q}\".}}",
+    "noResults": "Nav sakritību. Mēģini citu atslēgvārdu vai pārbaudi pareizrakstību.",
+    "typeSource": "Normatīvs",
+    "typeLesson": "Nodarbība",
+    "typeBlog": "Blogs",
+    "typeQuestion": "Jautājums",
+    "typeStatic": "Lapa"
+  },
   "notFound": {
     "title": "Lapa nav atrasta",
     "body": "Šis maršruts neeksistē. Iespējams, tas tika pārvietots vai dzēsts.",
