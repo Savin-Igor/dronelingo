@@ -121,8 +121,11 @@ component cannot silently disappear from the index.
 
 ### Sources
 
-- Already authored with `## Heading {#anchor-id}` markers. The chunker
-  splits on those boundaries verbatim.
+- Auto-slugify `##` headings the same way lessons and blog do
+  (rehype-slug round-tripping). Legacy `## Heading {#anchor-id}`
+  markers — when present — still win, but they were stripped from
+  the corpus in commit 07c6ede because MDX parses `{}` as JSX
+  expressions and errored at render time.
 - `url = /{locale}/regulations/{sourceId}#{anchor}`.
 - Per-type retrieval boost is highest (×1.3) because sources are the
   authoritative answer family for regulatory queries.

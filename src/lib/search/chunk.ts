@@ -198,8 +198,11 @@ export function chunkBlog(input: BlogChunkInput): SearchChunkInput[] {
 // ----------------------------------------------------------------------
 
 /**
- * Sources use explicit `## Heading {#anchor-id}` markers — split on those
- * verbatim. Authors control the anchor; we do not re-slugify.
+ * Sources are plain markdown (no JSX). They previously used explicit
+ * `## Heading {#anchor-id}` markers, but those were removed (MDX parses
+ * `{}` as JSX expressions and errored at render time — see commit
+ * 07c6ede). Now we auto-slugify like the other families and rely on
+ * rehype-slug to produce matching ids at render time.
  */
 export type SourceChunkInput = {
   locale: string;
@@ -209,12 +212,10 @@ export type SourceChunkInput = {
 };
 
 export function chunkSource(input: SourceChunkInput): SearchChunkInput[] {
-  // Don't run mdxToText on sources — they're plain markdown (no JSX), and
-  // we need the explicit `{#anchor}` markers preserved.
-  const text = input.mdx;
   const out: SearchChunkInput[] = [];
   const baseUrl = `/${input.locale}/regulations/${input.sourceId}`;
-  const lines = text.split("\n");
+  const slugger = newSlugger();
+  const lines = input.mdx.split("\n");
   let currentHeading: string | null = null;
   let currentAnchor = "";
   let buffer = "";
@@ -234,11 +235,13 @@ export function chunkSource(input: SourceChunkInput): SearchChunkInput[] {
   };
 
   for (const line of lines) {
+    // Tolerate legacy `## Heading {#anchor}` lines too — if the marker is
+    // still present we respect it; otherwise we slugify the heading text.
     const h2 = /^##\s+(.+?)(?:\s*\{#([a-z0-9-]+)\})?\s*$/.exec(line);
     if (h2) {
       flush();
       currentHeading = h2[1].trim();
-      currentAnchor = h2[2] ?? "";
+      currentAnchor = h2[2] ?? slugifyHeading(slugger, currentHeading);
       continue;
     }
     if (currentHeading) buffer += line + "\n";

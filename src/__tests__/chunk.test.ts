@@ -113,7 +113,7 @@ describe("chunkSource", () => {
     expect(chunks[1].body).toContain("War risks excluded.");
   });
 
-  it("falls back to no anchor when a heading lacks {#id}", () => {
+  it("auto-slugifies headings that lack an explicit {#id} marker", () => {
     const chunks = chunkSource({
       locale: "en",
       sourceId: "caa-lv-insurance",
@@ -121,8 +121,10 @@ describe("chunkSource", () => {
       mdx: "## Plain heading\n\nProse.",
     });
     expect(chunks).toHaveLength(1);
-    expect(chunks[0].anchor).toBe("");
-    expect(chunks[0].url).toBe("/en/regulations/caa-lv-insurance");
+    expect(chunks[0].anchor).toBe("plain-heading");
+    expect(chunks[0].url).toBe(
+      "/en/regulations/caa-lv-insurance#plain-heading",
+    );
   });
 });
 
