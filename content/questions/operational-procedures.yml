@@ -434,7 +434,7 @@
       text:
         lv: Pabeigt filmēšanu — otrs brīdinājums ir drošības rezerve.
         en: Complete the filming — the second warning is a safety buffer.
-        ru: Завершить съёмку — второе предупреждение является запасом безопасности.
+        ru: Завершить съёмку — второе предупреждение считается запасом безопасности.
     - id: d
       text:
         lv: Aktivēt Performance režīmu, lai ātrāk atgrieztos pēc filmēšanas pabeigšanas.
@@ -664,7 +664,7 @@
     c:
       lv: 30 m no torņiem nav regulatīvā prasība. Problēma ir pati kabeļu līnija, ne tornis — kabeļiem jāpievērš galvenā uzmanība.
       en: 30 m from pylons is not a regulatory requirement. The cable span itself is the hazard, not the pylon — cables need the primary clearance.
-      ru: 30 м от опор не является нормативным требованием. Сам пролёт кабелей является источником опасности, а не опора — кабели требуют основного зазора.
+      ru: 30 м от опор не входят в нормативное требование. Опасен сам пролёт кабелей, а не опора — основной зазор нужен именно от кабелей.
     d:
       lv: Elektrolīnijas nav UAS ģeogrāfiskā zona, kam nepieciešama CAA atļauja. Tas ir telpiskās situācijas apzināšanās jautājums, ko pilots risina pats.
       en: Power lines are not a UAS geographical zone requiring CAA authorisation. This is a situational awareness matter for the pilot to manage.
@@ -764,7 +764,7 @@
     a:
       lv: GLONASS ir papildu uzlabojums precizitātei, bet RTH darbojas ar jebkura GNSS signāla bloķēšanu (GPS ir pietiekams). GLONASS nav RTH priekšnosacījums.
       en: GLONASS is an additional enhancement for precision, but RTH works with any GNSS fix (GPS is sufficient). GLONASS is not a prerequisite for RTH.
-      ru: ГЛОНАСС — дополнительное улучшение точности, но RTH работает с любым сигналом GNSS (GPS достаточно). ГЛОНАСС не является обязательным условием для RTH.
+      ru: ГЛОНАСС дополнительно повышает точность, но RTH работает с любым сигналом GNSS; GPS достаточно. Для RTH ГЛОНАСС не обязателен.
     b:
       lv: A2 sertifikāts ir pilota kompetences dokuments, kas nav saistīts ar RTH funkcionalitāti. RTH ir tehnoloģisks drona raksturlielums.
       en: An A2 certificate is a pilot competence document unrelated to RTH functionality. RTH is a technological feature of the drone.
@@ -824,7 +824,7 @@
     c:
       lv: Arī sertifikātam un reģistrācijas apliecinājumam jābūt uzrādāmam inspekcijas laikā. Tiešsaistes pārbaudes iespēja nav atvainojums to nešanai.
       en: The certificate and registration proof must also be producible at inspection. Online verification capability is not an excuse for not carrying them.
-      ru: Сертификат и подтверждение регистрации также должны быть предъявлены при инспекции. Возможность онлайн-проверки не является оправданием для их отсутствия.
+      ru: Сертификат и подтверждение регистрации также должны быть предъявлены при инспекции. Возможность онлайн-проверки не оправдывает их отсутствие.
   sourceRef: "Reg 2019/947 Art. UAS.OPEN.060 | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; inspection obligations"
   difficulty: 1
   cognitiveLevel: recall
@@ -868,7 +868,7 @@
     b:
       lv: Dokumentēšana ir svarīga, bet tā ir sekundāra prioritāte. Drošības pasākumi ir pirmajā vietā.
       en: Documentation is important but is a secondary priority. Safety measures come first.
-      ru: Документирование важно, но является второстепенным приоритетом. Меры безопасности на первом месте.
+      ru: Документирование важно, но это вторично. Меры безопасности на первом месте.
     c:
       lv: Izslēdzot vadību, drons aktivizēs fail-safe, bet tas ne vienmēr nozīmē nekavējošu drošu nosēšanos pilsētā. Manuālā atgūšana ir labāka pirmā darbība.
       en: Switching off the controller activates fail-safe, but this does not always mean an immediate safe landing in a city. Manual recovery is the better first action.
@@ -876,7 +876,7 @@
     d:
       lv: Brīdināšana ir noderīga, bet tas nav pirmais solis. Aktīva kontroles atgūšana ir prioritāte.
       en: Warning people is useful, but it is not the first step. Active control recovery is the priority.
-      ru: Предупреждение людей полезно, но не является первым шагом. Активное восстановление управления является приоритетом.
+      ru: Предупреждение людей полезно, но это не первый шаг. Приоритет — восстановить управление.
   sourceRef: "Reg 2019/947 UAS.OPEN.060 — emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; EASA UAS operational guidelines"
   difficulty: 2
   cognitiveLevel: apply
@@ -1000,7 +1000,7 @@
       text:
         lv: Aizvērt somā, lai temperatūra saglabātos vienmērīga.
         en: Seal it in the carrying bag so temperature stays stable.
-        ru: Закрыть её в кейсе, чтобы температура держалась стабильно.
+        ru: Закрыть её в сумке, чтобы температура держалась стабильно.
     - id: d
       text:
         lv: Ļaut tai atdzist uz ugunsdrošas virsmas pirms uzlādes vai iepakošanas.
@@ -1023,7 +1023,7 @@
     c:
       lv: Aizvērta soma siltumu notur, nevis novada.
       en: Closed storage traps heat instead of dissipating it.
-      ru: Закрытый кейс удерживает тепло, а не отводит его.
+      ru: Закрытая сумка удерживает тепло, а не отводит его.
   sourceRef: "pilot responsibilities after flight | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; battery and operational discipline | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/"
   difficulty: 2
   cognitiveLevel: apply
@@ -1059,7 +1059,7 @@
   explanation:
     lv: Īss, faktisks žurnāls saglabā operatīvo atmiņu. Atkārtoti brīdinājumi, propelleru bojājumi, bateriju uzvedība un vietas īpatnības kļūst redzamas tikai tad, ja tās konsekventi pieraksta.
     en: A short, factual log preserves memory. Repeated warnings, propeller damage, battery behaviour, and site-specific issues become visible only when written down consistently.
-    ru: Короткий фактический журнал сохраняет операционную память. Повторяющиеся warning’и, поведение батарей, мелкие повреждения и особенности площадок становятся видны только при последовательной фиксации.
+    ru: Короткий фактический журнал сохраняет рабочую память пилота. Повторяющиеся предупреждения, поведение батарей, мелкие повреждения и особенности площадок становятся видны только при последовательной фиксации.
   distractorRationales:
     b:
       lv: Pēclidojuma žurnāls un pirmslidojuma pārbaude risina dažādas problēmas.
@@ -1068,7 +1068,7 @@
     c:
       lv: Personīgais žurnāls nav tas pats, kas oficiāls ziņojums regulatoram.
       en: A personal log is not the same thing as an official occurrence report.
-      ru: Личный журнал — не то же самое, что официальный occurrence report.
+      ru: Личный журнал — не то же самое, что официальный отчёт об инциденте.
     d:
       lv: Žurnāls bez inspekcijas izlaiž fiziskās problēmas; inspekcija bez žurnāla zaudē vēsturi.
       en: Logging without inspection misses physical issues; inspection without logging loses history.
@@ -1219,7 +1219,7 @@
     c:
       lv: Ideja ir operatīvā drošība, nevis konkrēta prasība par konusiem.
       en: The idea is operational safety, not a specific cone mandate.
-      ru: Смысл в операционной безопасности, а не в обязательном использовании конусов.
+      ru: Смысл в практической безопасности, а не в обязательном использовании конусов.
   sourceRef: "operator responsibilities and risk awareness | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; field procedures and practical safety guidance | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/"
   difficulty: 2
   cognitiveLevel: apply
@@ -1268,7 +1268,7 @@
     d:
       lv: Skatiens no mašīnas nav vietas apskate.
       en: A quick glance from the car is not a site survey.
-      ru: Взгляд из машины не является осмотром площадки.
+      ru: Взгляд из машины — не осмотр площадки.
   sourceRef: "operator responsibilities and risk awareness | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; field procedures and practical safety guidance | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/"
   difficulty: 2
   cognitiveLevel: apply
@@ -1278,7 +1278,7 @@
   stem:
     lv: Starta vietā pilots pārvērš kontrolsarakstu operatīvā lēmumā. Kas obligāti jāpārbauda pirms katra lidojuma attiecībā uz baterijām?
     en: At the launch site, the pilot turns the checklist into an operational decision. What must be verified for the batteries before every flight?
-    ru: На площадке запуска пилот превращает чек-лист в операционное решение. Что обязательно проверять у аккумуляторов перед каждым полётом?
+    ru: На площадке запуска пилот превращает чек-лист в решение по полёту. Что обязательно проверять у аккумуляторов перед каждым полётом?
   options:
     - id: a
       text:
@@ -1434,7 +1434,7 @@
   stem:
     lv: Starta vietā pilots pārvērš kontrolsarakstu operatīvā lēmumā. Kā uzglabāt Li-Po bateriju, ja to neplāno lietot tuvākajās 2 nedēļās?
     en: At the launch site, the pilot turns the checklist into an operational decision. How to store a Li-Po battery if it will not be used for the next 2 weeks?
-    ru: На площадке запуска пилот превращает чек-лист в операционное решение. Как хранить Li-Po аккумулятор, если он не будет использоваться 2 недели?
+    ru: На площадке запуска пилот превращает чек-лист в решение по полёту. Как хранить Li-Po аккумулятор, если он не будет использоваться 2 недели?
   options:
     - id: a
       text:
@@ -1621,15 +1621,15 @@
     a:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     b:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     c:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
   sourceRef: "pilot responsibility in Open category | https://droni.caa.gov.lv/darbibas-kategorijas/atverta-kategorija/"
   difficulty: 3
   cognitiveLevel: apply
@@ -1670,15 +1670,15 @@
     b:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     c:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     d:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
   sourceRef: "remote pilot operational responsibilities | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 4
   cognitiveLevel: analyze
@@ -1719,15 +1719,15 @@
     a:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     c:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     d:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
   sourceRef: "safe operation and remote pilot duties | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 3
   cognitiveLevel: apply
@@ -1768,15 +1768,15 @@
     a:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     b:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     d:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
   sourceRef: "pre-flight UAS condition checks | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 3
   cognitiveLevel: apply
@@ -1817,15 +1817,15 @@
     a:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     b:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     c:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
   sourceRef: "lost-link and emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 4
   cognitiveLevel: analyze
@@ -1866,15 +1866,15 @@
     b:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     c:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     d:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
   sourceRef: "incident reporting and safety follow-up | https://www.caa.gov.lv/en/services/reporting-occurrences-civil-aviation"
   difficulty: 4
   cognitiveLevel: analyze
@@ -1915,15 +1915,15 @@
     a:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     c:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     d:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
   sourceRef: "contingency planning and operational risk mitigation | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 4
   cognitiveLevel: analyze
@@ -1964,15 +1964,15 @@
     a:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     b:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     d:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
   sourceRef: "Latvian UAS geographical zones | https://droni.caa.gov.lv/bgkis/ugz/lidojumu-pieteiksana-un-saskanosana-uas-geografiskajas-zonas/"
   difficulty: 3
   cognitiveLevel: apply
@@ -2013,15 +2013,15 @@
     a:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     b:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
     c:
       lv: Šis variants palielina operacionālo risku vai izlaiž obligātu drošības lēmuma punktu.
       en: This option increases operational risk or skips a required safety decision point.
-      ru: Этот вариант повышает операционный риск или пропускает обязательную точку принятия решения по безопасности.
+      ru: Этот вариант повышает риск или пропускает обязательную точку решения по безопасности.
   sourceRef: "pre-flight and contingency planning | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 3
   cognitiveLevel: apply
