@@ -1,0 +1,28 @@
+slug:
+  lv: dzeltenais-oranzais-dronu-trauksmes-lidotaja-soli
+  en: latvia-yellow-orange-drone-alert-pilot-sop
+  ru: zhyoltyy-i-oranzhevyy-trevoga-droniki-shagi-pilota
+title:
+  lv: Dzeltenā un Oranžā trauksme Latvijā — ko darīt drona pilotam
+  en: Latvia's Yellow and Orange Drone Alerts — What Pilots Need to Do
+  ru: Жёлтая и оранжевая тревога в Латвии — что делать дрон-пилоту
+authorBio: null
+excerpt:
+  lv: NBS no 2026. gada 23. maija sūta šūnu raidsistēmas trauksmes divās pakāpēs. Dzeltenā informē par iespējamu apdraudējumu; oranžā nozīmē nekavējoties rīkoties. Šeit izskaidrojam abas pakāpes un piedāvājam mūsu lasījumu pilotiem.
+  en: NBS has been sending cell-broadcast alerts in two tiers since 23 May 2026. Yellow informs about a possible threat; Orange means act immediately. Here is what each level means and our reading of it for drone pilots.
+  ru: "С 23 мая 2026 года NBS рассылает сотовые оповещения двух уровней. Жёлтый информирует о возможной угрозе; оранжевый требует немедленных действий. Разбираем оба уровня и предлагаем наше прочтение для дрон-пилотов."
+publishedAt: 2026-05-28
+updatedAt: 2026-05-28
+lastVerifiedAt: 2026-05-28
+tags:
+  - operations
+  - safety
+  - latvia
+  - regulations
+  - emergency-procedures
+heroImage: hero.png
+heroImageAlt:
+  lv: "Redakcionāla hero aina: drona pilots ar pulti novēro bezspiedienu ieroci zem mākoņainām debesīm; viedtālruņa ekrānā redzams oranžas trauksmes paziņojums, fona krāsas — tumši pelēks un oranžs."
+  en: "Editorial hero scene: a drone pilot with a controller watches an aircraft under overcast skies while a smartphone screen shows an orange alert notification, in a dark grey and amber colour palette."
+  ru: "Редакционная hero-сцена: пилот дрона с пультом управления наблюдает за аппаратом под пасмурным небом, на экране смартфона — оранжевое оповещение; палитра тёмно-серая и янтарная."
+sourceRef: "LSM English (22.05.2026) | https://eng.lsm.lv/article/society/defence/22.05.2026-future-drone-alerts-in-latvia-will-adopt-a-new-warning-hierarchy.a648396/"
