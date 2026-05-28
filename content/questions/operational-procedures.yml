@@ -551,7 +551,7 @@
     en: |
       On fly-away the first action is to attempt a flight mode switch (e.g. to Attitude or manual) to bypass the GPS or autopilot issue and regain partial control. Calling the airport and documenting come later. The kill switch is a last resort in a hopeless situation — it stops the propellers in flight.
     ru: |
-      При fly-away первое действие — попытка сменить режим полёта (например, на Attitude или ручной), чтобы обойти проблему GPS или автопилота и восстановить частичное управление. Звонок в аэропорт и документирование — позже. Kill Switch — крайняя мера в безнадёжной ситуации.
+      При неконтролируемом улёте первое действие — попытка сменить режим полёта (например, на Attitude или ручной), чтобы обойти проблему GPS или автопилота и восстановить частичное управление. Звонок в аэропорт и документирование — позже. Kill Switch — крайняя мера в безнадёжной ситуации.
   distractorRationales:
     a:
       lv: Zvans uz lidostu ir attiecīgs, ja sadursme ar pilotētu gaisa kuģi ir iespējama — bet tas nav PIRMĀ darbība. Pirmkārt, mēģini atgūt vadību.
@@ -560,11 +560,11 @@
     b:
       lv: Dokumentēšana un gaidīšana ir pasīva pieeja fly-away situācijai — vadības atgūšana ir prioritāte, kamēr drons vēl ir VLOS diapazonā.
       en: Documenting and waiting is a passive response to a fly-away — regaining control is the priority while the drone is still within VLOS range.
-      ru: Документирование и ожидание — пассивная реакция на fly-away. Восстановление управления — приоритет, пока дрон в зоне VLOS.
+      ru: Документирование и ожидание — пассивная реакция на неконтролируемый улёт. Восстановление управления — приоритет, пока дрон в зоне VLOS.
     d:
       lv: Kill Switch aptur propellerus lidojuma laikā — drons krīt nekontrolēti. Tas ir pēdējs risinājums, nevis pirmā darbība fly-away situācijā.
       en: The kill switch stops the propellers in flight — the drone falls uncontrolled. It is a last resort, not the first action in a fly-away.
-      ru: Kill Switch останавливает пропеллеры в полёте — дрон падает неуправляемо. Это крайняя мера, а не первое действие при fly-away.
+      ru: Kill Switch останавливает пропеллеры в полёте — дрон падает неуправляемо. Это крайняя мера, а не первое действие при неконтролируемом улёте.
   sourceRef: "EASA Easy Access Rules — Emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; fly-away response"
   difficulty: 2
   cognitiveLevel: apply

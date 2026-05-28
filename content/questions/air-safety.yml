@@ -88,7 +88,7 @@
     a:
       lv: Novērotāja loma ir operatīva, ne loģistiska. Aprīkojuma pārvietošana nav saistīta ar VLOS uzturēšanu.
       en: The observer's role is operational, not logistical. Carrying gear is unrelated to maintaining VLOS.
-      ru: Роль наблюдателя — операционная, а не логистическая. Перенос снаряжения не связан с поддержанием VLOS.
+      ru: Роль наблюдателя — рабочая, а не логистическая. Перенос снаряжения не связан с поддержанием VLOS.
     c:
       lv: Video atskaņošana ir post-flight darbība. Novērotāja prasība attiecas uz lidojuma laiku, ne uz vēlāku materiāla pārskatīšanu.
       en: Video replay is a post-flight activity. The observer requirement applies during the flight, not to later footage review.
@@ -356,7 +356,7 @@
     d:
       lv: Organizatora atļauja ir privātpersonas piekrišana, nevis regulatīvā atļauja. Regulā nav paredzēta iespēja atcelt šo aizliegumu ar privātu atļauju.
       en: An organiser's permission is private consent, not a regulatory authorisation. The regulation provides no mechanism to waive this prohibition via private permission.
-      ru: Разрешение организатора — это частное согласие, а не регуляторное разрешение. Правила не предусматривают отмены этого запрета частным образом.
+      ru: Разрешение организатора — это частное согласие, а не официальное разрешение регулятора. Правила не позволяют отменить этот запрет частным образом.
   sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.010(1) | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; UAS.OPEN.020/030/040 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0947"
   difficulty: 2
   cognitiveLevel: apply
@@ -664,7 +664,7 @@
     c:
       lv: Brīdināšana ar kliedzēšanu nav regulatīva prasība nolaišanās vietas izvēlei. Izvēle balstās uz drošību, nevis brīdināšanas procedūru.
       en: Warning by shouting is not a regulatory requirement for landing-spot selection. The choice is based on safety, not a warning procedure.
-      ru: Предупреждение криком не является нормативным требованием при выборе места посадки. Выбор основан на безопасности, а не на процедуре предупреждения.
+      ru: Предупреждение криком не относится к нормативным требованиям при выборе места посадки. Выбор основывается на безопасности, а не на процедуре предупреждения.
     d:
       lv: Atgriešanās pie sākuma punkta ar 8 % bateriju 100 m attālumā var nebūt iespējama. Ārkārtas situācijā tuvākā droša vieta ir pareizā izvēle.
       en: Returning to the launch point at 8 % battery 100 m away may not be achievable. In an emergency the nearest safe spot is the correct choice.
@@ -759,7 +759,7 @@
     en: |
       Reg 2019/947 AMC1 defines "uninvolved person" as a person not involved in the UAS operation. It includes everyone who is not part of the operating crew — the pilot, observer, and any other person who is briefed and filling a role in the flight. Distance or certification do not affect this definition.
     ru: |
-      AMC1 Регл. 2019/947 определяет «непричастное лицо» как лицо, не участвующее в операции UAS. Это включает всех, кто не является частью лётного экипажа — пилота, наблюдателя и любого другого лица, проинструктированного и выполняющего роль в полёте. Расстояние или сертификация не влияют на это определение.
+      AMC1 Регл. 2019/947 определяет «непричастное лицо» как лицо, не участвующее в операции UAS. Это включает всех, кто не входит в лётный экипаж — пилота, наблюдателя и любого другого человека, проинструктированного и выполняющего роль в полёте. Расстояние или сертификация на это определение не влияют.
   distractorRationales:
     a:
       lv: Ģimenes locekļi nav izslēgti no "nepiederoša personas" definīcijas — tie ir nepiederošas personas, ja nav iesaistīti operācijā.
@@ -768,7 +768,7 @@
     b:
       lv: Attālums nenosaka, vai persona ir "piederīga" vai "nepiederīga". To nosaka dalība operācijā.
       en: Distance does not determine whether a person is "involved" or "uninvolved". Participation in the operation determines this.
-      ru: Расстояние не определяет, является ли лицо «причастным» или «непричастным». Это определяет участие в операции.
+      ru: Расстояние не определяет, считается ли лицо «причастным» или «непричастным». Это зависит от участия в операции.
     d:
       lv: EASA sertifikāts ir pilota kompetences rādītājs, nevis kritērijs, lai klasificētu personu kā "nepiederošu".
       en: An EASA certificate is a pilot competence indicator, not a criterion to classify a person as "uninvolved".
@@ -876,7 +876,7 @@
     d:
       lv: Automātiska sadursmes novēršana nav obligāta Atvērtās kategorijas UAS. VLOS lidojumā atbildība ir pilota, ne sistēmas.
       en: Automated collision avoidance is not mandatory for Open-category UAS. In VLOS flight the responsibility is the pilot's, not the system's.
-      ru: Автоматическое предотвращение столкновений не является обязательным для UAS Открытой категории. В полёте VLOS ответственность лежит на пилоте, а не системе.
+      ru: Автоматическое предотвращение столкновений не обязательно для UAS Открытой категории. В полёте VLOS ответственность лежит на пилоте, а не на системе.
   sourceRef: "Reg 2019/947 Art. UAS.OPEN.060 — pilot responsibilities | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 2
   cognitiveLevel: apply
@@ -1175,7 +1175,7 @@
     en: |
       Fly-away risk is reduced by checking status and fail-safe settings (e.g., RTH altitude), plus good site selection and VLOS.
     ru: |
-      Риск fly-away снижается проверкой состояния и fail-safe настроек (например, высоты RTH), а также выбором места и VLOS.
+      Риск неконтролируемого улёта снижается проверкой состояния и fail-safe настроек (например, высоты RTH), а также выбором места и VLOS.
   distractorRationales:
     a:
       lv: Geozonu brīdinājumi palīdz izvairīties no pārkāpumiem un bīstamām zonām.
@@ -1496,7 +1496,7 @@
     c:
       lv: Skriešana var pasliktināt situāciju (zaudē VLOS, satiksme, šķēršļi) un nav strukturēts plāns.
       en: Running can worsen the situation (lose VLOS, traffic, obstacles) and isn’t a structured plan.
-      ru: Бег может ухудшить ситуацию (потеря VLOS, транспорт, препятствия) и не является планом.
+      ru: Бег может ухудшить ситуацию (потеря VLOS, транспорт, препятствия) и не считается планом.
     d:
       lv: Apdrošināšana nemazina tūlītējo risku lidojuma laikā.
       en: Insurance does not reduce immediate operational risk during flight.

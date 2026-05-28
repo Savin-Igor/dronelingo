@@ -83,7 +83,7 @@
     en: |
       18 KT × 0.514 ≈ 9.3 m/s. This does NOT technically exceed the 10 m/s limit, but at 9.3 m/s the drone is operating extremely close to its rated maximum. Any additional gust spike can exceed the limit. The safest answer is d — operating at 93% of the rated maximum in gusty conditions is not safe practice.
     ru: |
-      18 KT × 0,514 ≈ 9,3 м/с. Технически это НЕ превышает предел 10 м/с, но при 9,3 м/с дрон работает крайне близко к расчётному максимуму. Любой дополнительный пик порыва может его превысить. Правильный ответ d — работа при 93% расчётного максимума в порывистых условиях не является безопасной практикой.
+      18 KT × 0,514 ≈ 9,3 м/с. Технически это НЕ превышает предел 10 м/с, но при 9,3 м/с дрон работает крайне близко к расчётному максимуму. Любой дополнительный пик порыва может его превысить. Правильный ответ d — работа при 93% расчётного максимума в порывистых условиях не считается безопасной практикой.
   distractorRationales:
     a:
       lv: Vidējais vējš nenorāda pīķa slodzes — brāzmas ir pīķi. Pie 9,3 m/s brāzmām tuvumā pie 10 m/s limita drona vadāmības rezerve ir minimāla.
@@ -668,7 +668,7 @@
     d:
       lv: TCU (torējoše kumuluss) norāda attīstošos kumulusus, kas var izveidoties kumulonimbā — bet TCU pats nav kumulonimbs. Pieredzējušam pilotam TCU jāuzskata par brīdinājumu.
       en: TCU (towering cumulus) indicates developing cumulus that may become a cumulonimbus — but TCU itself is not a cumulonimbus. An experienced pilot treats TCU as a warning.
-      ru: TCU (мощно-кучевое) указывает на развивающийся кумулюс, который может стать кучево-дождевым, но сам по себе не является им. Опытный пилот воспринимает TCU как предупреждение.
+      ru: TCU (мощно-кучевое) указывает на развивающийся кумулюс, который может стать кучево-дождевым, но сам по себе им не считается. Опытный пилот воспринимает TCU как предупреждение.
   sourceRef: "ICAO Annex 3 — METAR cloud type codes | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/; CB and TCU"
   difficulty: 2
   cognitiveLevel: recall
@@ -768,7 +768,7 @@
     b:
       lv: Ūdens sporta NOTAM var būt aktuāls par drošu attālumu, bet tas nav galvenais drošības apsvērums šajā situācijā — tā ir apledojuma riski.
       en: Water sports NOTAMs may be relevant for safe distances, but are not the primary safety consideration in this scenario — icing is.
-      ru: NOTAM для водных видов спорта может быть актуален для безопасного расстояния, но не является основным соображением безопасности в этом сценарии — это обледенение.
+      ru: NOTAM для водных видов спорта может влиять на безопасное расстояние, но в этом сценарии он не главный фактор безопасности — главный риск здесь обледенение.
     d:
       lv: +3°C ir tuvu 0°C, un ūdens virsma var samazināt faktisko gaisa temperatūru zem 0°C tieši pie ezera. Apledojums iespējams pat pie +5°C pārsaldētu pilienu klātbūtnē.
       en: +3°C is close to 0°C, and the water surface can reduce the actual air temperature below 0°C right over the lake. Icing is possible even at +5°C in the presence of supercooled droplets.
@@ -1162,7 +1162,7 @@
     a:
       lv: Laikapstākļu prognoze nav juridiska atļauja.
       en: A forecast is not a legal authorisation.
-      ru: Прогноз погоды не является разрешением на полёт.
+      ru: Прогноз погоды не заменяет разрешение на полёт.
     b:
       lv: Prognoze palīdz, bet neaizvieto reālo apstākļu novērtējumu uz vietas.
       en: Forecasts help, but they do not replace looking at real conditions.
@@ -1359,7 +1359,7 @@
     en: |
       18 KT × 0.514 ≈ 9.3 m/s. This does NOT technically exceed the 10 m/s limit, but at 9.3 m/s the drone is operating extremely close to its rated maximum. Any additional gust spike can exceed the limit. The safest answer is d — operating at 93% of the rated maximum in gusty conditions is not safe practice.
     ru: |
-      18 KT × 0,514 ≈ 9,3 м/с. Технически это НЕ превышает предел 10 м/с, но при 9,3 м/с дрон работает крайне близко к расчётному максимуму. Любой дополнительный пик порыва может его превысить. Правильный ответ d — работа при 93% расчётного максимума в порывистых условиях не является безопасной практикой.
+      18 KT × 0,514 ≈ 9,3 м/с. Технически это НЕ превышает предел 10 м/с, но при 9,3 м/с дрон работает крайне близко к расчётному максимуму. Любой дополнительный пик порыва может его превысить. Правильный ответ d — работа при 93% расчётного максимума в порывистых условиях не считается безопасной практикой.
   distractorRationales:
     a:
       lv: Augstums nemaina brāzmu slodzi. Gust novērtējums attiecas uz visu darbības diapazonu, ne tikai augstu augstumu.
@@ -1836,7 +1836,7 @@
     b:
       lv: Vienkārša “dubultošanās” formula nav uzticams vēja modelis.
       en: A simple “doubling” rule is not a reliable wind model.
-      ru: Простое правило «удвоения» не является надёжной моделью ветра.
+      ru: Простое правило «удвоения» не считается надёжной моделью ветра.
     c:
       lv: METAR nemēra vēju darba augstumā; to nevar lasīt kā tiešu 80 m prognozi.
       en: METAR does not measure the wind at operating height; it cannot be treated as a direct 80 m forecast.
@@ -1940,7 +1940,7 @@
     c:
       lv: TCU (torējoše kumuluss) norāda attīstošos kumulusus, kas var izveidoties kumulonimbā — bet TCU pats nav kumulonimbs. Pieredzējušam pilotam TCU jāuzskata par brīdinājumu.
       en: TCU (towering cumulus) indicates developing cumulus that may become a cumulonimbus — but TCU itself is not a cumulonimbus. An experienced pilot treats TCU as a warning.
-      ru: TCU (мощно-кучевое) указывает на развивающийся кумулюс, который может стать кучево-дождевым, но сам по себе не является им. Опытный пилот воспринимает TCU как предупреждение.
+      ru: TCU (мощно-кучевое) указывает на развивающийся кумулюс, который может стать кучево-дождевым, но сам по себе им не считается. Опытный пилот воспринимает TCU как предупреждение.
     d:
       lv: BKN nozīmē "plaukumi" — 5–7 mākoņu astotdaļas debesu pārklājuma. Tas nenorāda mākoņu veidu.
       en: BKN means "broken" — 5–7 eighths cloud cover. It indicates coverage amount, not cloud type.
@@ -2048,7 +2048,7 @@
     c:
       lv: Ūdens sporta NOTAM var būt aktuāls par drošu attālumu, bet tas nav galvenais drošības apsvērums šajā situācijā — tā ir apledojuma riski.
       en: Water sports NOTAMs may be relevant for safe distances, but are not the primary safety consideration in this scenario — icing is.
-      ru: NOTAM для водных видов спорта может быть актуален для безопасного расстояния, но не является основным соображением безопасности в этом сценарии — это обледенение.
+      ru: NOTAM для водных видов спорта может влиять на безопасное расстояние, но в этом сценарии он не главный фактор безопасности — главный риск здесь обледенение.
   sourceRef: "ICAO Doc 8896 — icing conditions | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/; A2 syllabus meteorology | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a2-apakskategorijas-teoretisko-zinasanu-eksamens/"
   difficulty: 4
   cognitiveLevel: analyze

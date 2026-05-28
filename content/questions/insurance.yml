@@ -200,7 +200,7 @@
     c:
       lv: 1 000 000 EUR ir tuvu pareizajai summai pēc valūtas konvertācijas, bet regulā minimums ir definēts SDR vienībās — 750 000 SDR.
       en: €1 000 000 is close after currency conversion, but the regulatory minimum is defined in SDR units — 750 000 SDR.
-      ru: 1 000 000 EUR близко после конвертации, но регуляторный минимум определён в SDR — 750 000 SDR.
+      ru: 1 000 000 EUR близко по сумме после конвертации, но регуляторный минимум определён в SDR — 750 000 SDR.
   sourceRef: "Reg (EC) 785/2004 — air carriers' liability minima | https://droni.caa.gov.lv/apdrosinasanas-prasibas/"
   difficulty: 3
   cognitiveLevel: recall
@@ -352,7 +352,7 @@
     b:
       lv: 1 000 000 EUR nav regulatīvi noteikts minimums Latvijas tiesībās šajā masas kategorijā. Regulā noteikts 750 000 SDR.
       en: €1 000 000 is not a regulatory minimum under Latvian law for this mass category. The regulation states 750 000 SDR.
-      ru: 1 000 000 EUR не является нормативным минимумом в соответствии с латвийским законодательством для данной весовой категории. В регламенте указано 750 000 SDR.
+      ru: 1 000 000 EUR не считается нормативным минимумом по латвийскому законодательству для этой весовой категории. В регламенте указано 750 000 SDR.
     d:
       lv: Obligātā apdrošināšana ir prasīta visiem UAS ≥ 250 g neatkarīgi no darbības vietas — pilsēta vai lauki.
       en: Mandatory insurance is required for all UAS ≥ 250 g regardless of the operating area — urban or rural.
@@ -434,7 +434,7 @@
       text:
         lv: Neviena — infrastruktūras bojājums nav apdrošināms.
         en: Neither — infrastructure damage is not insurable.
-        ru: Никакой — ущерб инфраструктуре не является страховым случаем.
+        ru: Никакой — ущерб инфраструктуре не считается страховым случаем.
     - id: d
       text:
         lv: Hull polise sedz dronam, obligātā polise sedz pašvaldības prasībai.
@@ -447,7 +447,7 @@
     en: |
       The third-party liability policy covers third-party property and bodily harm losses. The municipality's property — the streetlamp post — repair is a third-party property loss covered by the mandatory policy. Hull insurance covers the drone itself, not damage to external structures.
     ru: |
-      Полис страхования гражданской ответственности покрывает имущественный и телесный вред третьих лиц. Ремонт имущества муниципалитета — фонарного столба — является имущественным ущербом третьих лиц, покрываемым обязательным полисом. Hull-страхование покрывает сам дрон, а не ущерб внешним конструкциям.
+      Полис страхования гражданской ответственности покрывает имущественный и телесный вред третьих лиц. Ремонт имущества муниципалитета — фонарного столба — относится к имущественному ущербу третьих лиц и покрывается обязательным полисом. Hull-страхование покрывает сам дрон, а не ущерб внешним конструкциям.
   distractorRationales:
     b:
       lv: Hull polise sedz bojājumus pašam UAS, nevis ārējai infrastruktūrai. Pašvaldības prasība ir trešās personas prasība.
@@ -456,7 +456,7 @@
     c:
       lv: Infrastruktūras bojājums ir apdrošināms kā trešo personu mantisks zaudējums. Civiltiesiskās atbildības polises tieši paredzētas šādiem gadījumiem.
       en: Infrastructure damage is insurable as third-party property loss. Third-party liability policies are specifically designed for such cases.
-      ru: Ущерб инфраструктуре является страховым случаем как имущественный ущерб третьей стороны. Полисы страхования гражданской ответственности предназначены именно для таких случаев.
+      ru: Ущерб инфраструктуре считается страховым случаем как имущественный ущерб третьей стороны. Полисы страхования гражданской ответственности как раз и предназначены для таких случаев.
     d:
       lv: Atbilde D pareizi identificē abu polisu lomus, bet daļa "hull sedz dronam" nav piemērojama šajā scenārijā, kur drons nav bojāts. Jautājums ir par pašvaldības prasību — to sedz obligātā polise.
       en: Answer D correctly identifies both policies' roles, but the "hull covers the drone" part is not applicable in this scenario where the drone is not damaged. The question is about the municipality's claim — covered by the mandatory policy.
@@ -499,16 +499,16 @@
     en: |
       Insurance must be in force at the moment of flight — there is no grace period for expired policies. If the policy has expired, the pilot must not fly. Solution: (1) cancel the flight; or (2) purchase a temporary policy before the flight begins. Many insurers offer daily or weekly temporary policies online. "In renewal" or a friend's policy does not work as a legal basis.
     ru: |
-      Страховка должна действовать в момент полёта — периода льгот для истёкших полисов нет. Если полис истёк, пилот не может летать. Решение: (1) отменить полёт; или (2) приобрести временный полис до начала полёта. Многие страховщики предлагают дневные или недельные временные полисы онлайн. «В процессе продления» или полис друга не является правовым основанием.
+      Страховка должна действовать в момент полёта — периода льгот для истёкших полисов нет. Если полис истёк, пилот не может летать. Решение: (1) отменить полёт; или (2) приобрести временный полис до начала полёта. Многие страховщики предлагают дневные или недельные временные полисы онлайн. «В процессе продления» или полис друга не дают правового основания для полёта.
   distractorRationales:
     a:
       lv: Drauga polise nav operators polise konkrētajam operatoram. Katram operatoram jābūt savai derīgai poliserei.
       en: A friend's policy is not the operator's policy for the specific operator. Each operator must have their own valid policy.
-      ru: Полис друга не является полисом оператора для конкретного оператора. Каждый оператор должен иметь свой действующий полис.
+      ru: Полис друга не заменяет полис конкретного оператора. Каждый оператор должен иметь свой действующий полис.
     c:
       lv: '"Atjaunošanā" nav juridisks ekvivalents derīgai poliserei. Inspekcijā "atjaunošanā" neapmierina prasības.'
       en: '"In renewal" is not a legal equivalent of a valid policy. In an inspection "in renewal" does not satisfy requirements.'
-      ru: «В процессе продления» не является юридическим эквивалентом действующего полиса. При инспекции «в процессе продления» не удовлетворяет требованиям.
+      ru: «В процессе продления» не равно действующему полису. При инспекции такой статус не удовлетворяет требованиям.
     d:
       lv: Nav "nozīmīguma" sliekšņa polises derīgumam. Polise vai nu ir derīga, vai nav — vienas dienas kavēšanās nav atļauta.
       en: There is no "significance" threshold for policy validity. The policy is either valid or it is not — one day's lapse is not permitted.
@@ -664,7 +664,7 @@
     c:
       lv: Tieši otrādi — obligātā ir civiltiesiskās atbildības polise; hull ir brīvprātīga.
       en: It is exactly the opposite — mandatory is the third-party liability policy; hull is voluntary.
-      ru: Всё наоборот — обязательным является полис страхования гражданской ответственности; hull — добровольный.
+      ru: Всё наоборот — обязательным считается полис страхования гражданской ответственности; hull — добровольный.
     d:
       lv: Nav nošķiršanas starp "avārijas" un "profesionālajiem" pilotiem polises tipos. Nošķiršana ir starp pašu UAS bojājumu un trešo personu zaudējumiem.
       en: There is no distinction between "accidental" and "professional" pilots in policy types. The distinction is between own UAS damage and third-party losses.
@@ -707,7 +707,7 @@
     en: |
       Mandatory third-party liability insurance is the UAS operator's personal obligation — it cannot be replaced by an event organiser's policy. In an inspection the operator shows their own policy. The organiser's insurance may be an addition or a commercial arrangement, but it does not change the operator's regulatory obligation.
     ru: |
-      Обязательное страхование гражданской ответственности является личным обязательством оператора UAS — оно не может быть заменено полисом организатора мероприятия. При инспекции оператор предъявляет свой собственный полис. Страховка организатора может быть дополнением или коммерческим соглашением, но не меняет нормативного обязательства оператора.
+      Обязательное страхование гражданской ответственности — личная обязанность оператора UAS. Оно не может быть заменено полисом организатора мероприятия. При инспекции оператор предъявляет свой собственный полис. Страховка организатора может быть дополнением или коммерческим соглашением, но не меняет нормативной обязанности оператора.
   distractorRationales:
     a:
       lv: Organizatora polise neaizvieto operators personisko regulatīvo pienākumu par obligāto apdrošināšanu.
@@ -716,7 +716,7 @@
     c:
       lv: Obligātā polise ir jāoperatoram neatkarīgi no organizatora polises seguma apmēra. Seguma apmēra salīdzinājums nav kritērijs.
       en: The mandatory policy is required for the operator regardless of the organiser's coverage amount. Coverage amount comparison is not a criterion.
-      ru: Обязательный полис необходим оператору независимо от размера покрытия организатора. Сравнение размеров покрытия не является критерием.
+      ru: Обязательный полис необходим оператору независимо от размера покрытия организатора. Сравнение размеров покрытия здесь не критерий.
     d:
       lv: Atbildību par obligāto apdrošināšanu nevar nodot ar rakstisku vienošanos. Tā ir personiska regulatīvā prasība.
       en: Liability for mandatory insurance cannot be transferred by written agreement. It is a personal regulatory requirement.
@@ -921,7 +921,7 @@
     c:
       lv: Sociālo tīklu ieraksts nav uzticams tehnisks ieraksts.
       en: A social-media post is not a reliable technical record.
-      ru: Пост в соцсетях не является надёжной технической записью.
+      ru: Пост в соцсетях не считается надёжной технической записью.
     d:
       lv: Iepakojums var identificēt modeli, bet ne konkrētās baterijas ekspluatācijas stāvokli.
       en: Packaging may identify the product model, but not the in-service condition of that battery.
@@ -970,7 +970,7 @@
     b:
       lv: Svarīgie dati vispirms jāsaglabā; privātuma apstrāde seko juridiskajam procesam.
       en: Relevant data should be preserved first; privacy handling follows the legal and operational process.
-      ru: Сначала нужно сохранить значимые данные; вопросы приватности решаются в рамках правового и операционного процесса.
+      ru: Сначала нужно сохранить значимые данные; вопросы приватности решаются уже в рамках правового и операционного процесса.
     d:
       lv: Remonts pirms dokumentēšanas iznīcina pierādījumus.
       en: Repairing first destroys evidence and should not happen before documentation.
@@ -1010,16 +1010,16 @@
   explanation:
     lv: "Apdrošināšanas un atbildības analīze sākas ar īsto operatora struktūru: kurš kontrolē misiju, kurš lido, kam pieder lidaparāts un kura polise šo vienošanos patiešām sedz."
     en: "Insurance and liability analysis starts with the real operator structure: who controls the mission, who flies, whose aircraft is used, and which policy actually covers that arrangement."
-    ru: "Страховой и liability-анализ начинается с реальной структуры операции: кто контролирует миссию, кто летит, чей аппарат используется и какой полис действительно покрывает именно эту схему."
+    ru: "Страховой анализ и разбор ответственности начинаются с реальной структуры операции: кто контролирует миссию, кто летит, чей аппарат используется и какой полис действительно покрывает именно эту схему."
   distractorRationales:
     a:
       lv: Rēķins var neatspoguļot īsto operatīvo kontroli.
       en: The invoice may not reflect the real operational control.
-      ru: Счёт может не отражать реальный operational control.
+      ru: Счёт может не отражать, кто реально контролировал операцию.
     b:
       lv: Radošās gaidas nenosaka apdrošināšanas segumu.
       en: Creative expectations do not determine coverage.
-      ru: Креативные ожидания не определяют coverage.
+      ru: Креативные ожидания не определяют страховое покрытие.
     c:
       lv: Lidaparāta krāsa nav saistīta ar apdrošināšanas struktūru.
       en: Aircraft colour is irrelevant to insurance structure.
@@ -1033,13 +1033,13 @@
   stem:
     lv: Kāpēc frīlansa vai apakšuzņēmēja pilots ir īpašs apdrošināšanas pārbaudes punkts?
     en: Why is using a freelance or subcontract pilot a special insurance check point?
-    ru: Почему использование freelance или subcontract pilot — особая точка страховой проверки?
+    ru: Почему использование пилота-фрилансера или пилота-субподрядчика требует отдельной страховой проверки?
   options:
     - id: a
       text:
         lv: Tāpēc, ka dažas polises sedz tikai nosauktus vai īpaši autorizētus pilotus un var automātiski neiekļaut deleģētu komerciālu izmantošanu.
         en: Because some policies cover only named or specifically authorised pilots and may not include delegated commercial use automatically.
-        ru: Потому что некоторые полисы покрывают только named или специально authorised pilots и не всегда автоматически включают делегированное коммерческое использование.
+        ru: Потому что некоторые полисы покрывают только заранее указанных или специально допущенных пилотов и не всегда автоматически включают делегированное коммерческое использование.
     - id: b
       text:
         lv: Tāpēc, ka kvalificēti piloti vienmēr pēc noklusējuma ir izslēgti.
@@ -1059,16 +1059,16 @@
   explanation:
     lv: Pilota kvalifikācija pati par sevi neatbild uz polises tvērumu. Dažām polisēm vajag nosauktus pilotus vai skaidri autorizētu izmantošanu, īpaši komerciālās vai deleģētās struktūrās.
     en: Pilot qualification alone does not answer policy scope. Some policies require named pilots or explicit authorised-use wording, especially in commercial or delegated structures.
-    ru: Квалификация пилота сама по себе не отвечает на вопрос охвата полиса. Некоторые полисы требуют named pilots или явную авторизацию использования, особенно в коммерческих и делегированных структурах.
+    ru: Квалификация пилота сама по себе не отвечает на вопрос охвата полиса. Некоторые полисы требуют заранее указанных пилотов или явного допуска к использованию, особенно в коммерческих и делегированных структурах.
   distractorRationales:
     b:
       lv: Kvalificēti piloti nav automātiski izslēgti; jautājums ir polises formulējumā.
       en: Qualified pilots are not automatically excluded; the issue is policy wording, not a universal ban.
-      ru: Qualified pilots не исключаются автоматически; вопрос в wording полиса, а не в универсальном запрете.
+      ru: Квалифицированные пилоты не исключаются автоматически; вопрос в формулировках полиса, а не в универсальном запрете.
     c:
       lv: Apakšuzņēmēja pilots drīkst lidot, ja regulatīvā un apdrošināšanas struktūra ir pareiza.
       en: Subcontract pilots may legally fly if the regulatory and insurance structure is correct.
-      ru: Субподрядный пилот может летать законно, если regulatory и insurance structure настроены правильно.
+      ru: Субподрядный пилот может летать законно, если регуляторная и страховая структура выстроены правильно.
     d:
       lv: Pilota kompetence neaizvieto apdrošināšanas prasības.
       en: Pilot competence does not replace insurance coverage requirements.
@@ -1113,7 +1113,7 @@
     a:
       lv: Atpūtas izmantošana Latvijā nav izņēmums. Atbrīvoti tikai C0 UAS zem 250 g.
       en: Recreational use is not an exemption in Latvia. Only C0 drones under 250 g are exempt.
-      ru: В Латвии рекреационное использование не является основанием для освобождения. Исключение только для C0 менее 250 г.
+      ru: В Латвии рекреационное использование не даёт освобождения. Исключение только для C0 менее 250 г.
     c:
       lv: 750 000 SDR attiecas uz C3/C4 UAS 20–25 kg klāstā. 1,2 kg UAS ir krietni zem šī sliekšņa.
       en: 750 000 SDR applies to C3/C4 drones in the 20–25 kg range. A 1.2 kg drone is well below this threshold.
@@ -1206,7 +1206,7 @@
   explanation:
     lv: Korpusa apdrošināšana sedz aparātu (UAS) mīnus pašrisks. Kino kamera ir lietderīgā krava un prasa atsevišķu kravas apdrošināšanas polisi vai piesaisti. Korpuss automātiski neattiecas uz piestiprinātu aprīkojumu. Pilota kļūda parasti nav izslēgts gadījums vairumā korpusa polišu — fly-away un sabrukumi ir kodola segumi.
     en: Hull insurance covers the aircraft (drone) minus the deductible. The cinema camera is payload and requires a separate payload insurance policy or rider. Hull does not automatically extend to mounted equipment. Pilot error is typically not an exclusion in most hull policies — fly-away and crashes are the core covered events.
-    ru: Страховка корпуса покрывает дрон (аппарат) за вычетом франшизы. Кинокамера — груз и требует отдельного полиса. Ошибка пилота, как правило, не является исключением в страховке корпуса — крушения и fly-away являются основными покрываемыми рисками.
+    ru: Страховка корпуса покрывает дрон (аппарат) за вычетом франшизы. Кинокамера — груз и требует отдельного полиса. Ошибка пилота, как правило, не исключается из страховки корпуса — крушения и неконтролируемый улёт относятся к основным покрываемым рискам.
   distractorRationales:
     a:
       lv: Formulējums daļēji pareizs — korpuss sedz UAS — bet izlaiž pašrisku, kas samazina izmaksu.
@@ -1215,7 +1215,7 @@
     b:
       lv: Korpusa apdrošināšana ir tieši paredzēta sabrukuma un fly-away gadījumiem, ieskaitot pilota kļūdas. Tīši bojājumi vai rupja neuzmanība var būt izslēgti, bet sabrukumi ir kodola segums.
       en: Hull insurance is specifically designed to cover crash and fly-away events, including pilot error. Intentional damage or gross negligence may be excluded, but crashes are a core covered peril.
-      ru: Страховка корпуса разработана именно для покрытия крушений и fly-away, включая случаи ошибки пилота. Исключения касаются умышленного ущерба или грубой халатности.
+      ru: Страховка корпуса как раз и предназначена для крушений и неконтролируемого улёта, включая случаи ошибки пилота. Исключения касаются умышленного ущерба или грубой халатности.
     c:
       lv: Korpusa polises sedz pašu aparātu. Lietderīgā krava (kamera, sensors, gimbāls) prasa atsevišķu apdrošināšanu, ja vien tā nav skaidri iekļauta polises grafikā.
       en: Hull policies cover the aircraft itself. Payload (camera, sensor, gimbal) requires separate insurance unless explicitly included in the policy schedule.
@@ -1468,7 +1468,7 @@
     b:
       lv: 1 000 000 EUR ir tuvu pareizajai summai pēc valūtas konvertācijas, bet regulā minimums ir definēts SDR vienībās — 750 000 SDR.
       en: €1 000 000 is close after currency conversion, but the regulatory minimum is defined in SDR units — 750 000 SDR.
-      ru: 1 000 000 EUR близко после конвертации, но регуляторный минимум определён в SDR — 750 000 SDR.
+      ru: 1 000 000 EUR близко по сумме после конвертации, но регуляторный минимум определён в SDR — 750 000 SDR.
     c:
       lv: 100 000 EUR ir nepietiekami pat Atvērtās kategorijas augstākajām masām (20–25 kg) — Specifiskās slieksnis ir krietni augstāks.
       en: €100 000 is insufficient even for upper-mass Open category (20–25 kg) — the Specific threshold is much higher.

@@ -452,7 +452,7 @@
     b:
       lv: Apdrošināšana nav IMSAFE pašpārbaudes elements. IMSAFE koncentrējas uz pilota fizisko un garīgo stāvokli.
       en: Insurance is not an IMSAFE element. IMSAFE focuses on the pilot's physical and mental condition.
-      ru: Страхование не является элементом IMSAFE. IMSAFE фокусируется на физическом и психическом состоянии пилота.
+      ru: Страхование не входит в IMSAFE. IMSAFE фокусируется на физическом и психическом состоянии пилота.
     c:
       lv: Incidenti nav IMSAFE kategorija. Incidentu ziņošana ir atsevišķa drošības procedūra.
       en: Incidents are not an IMSAFE category. Incident reporting is a separate safety procedure.
@@ -460,7 +460,7 @@
     d:
       lv: Iedvesma nav IMSAFE kategorija. IMSAFE mēra stāvokļus, kas var pasliktināt sniegumu, nevis motivāciju.
       en: Inspiration is not an IMSAFE category. IMSAFE measures conditions that can impair performance, not motivation.
-      ru: Вдохновение не является категорией IMSAFE. IMSAFE измеряет состояния, которые могут ухудшить производительность, а не мотивацию.
+      ru: Вдохновение не входит в категории IMSAFE. IMSAFE оценивает состояния, которые могут ухудшить работоспособность, а не мотивацию.
   sourceRef: "EASA Easy Access Rules UAS 2024 — human performance | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; IMSAFE checklist | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 1
   cognitiveLevel: recall
@@ -504,7 +504,7 @@
     a:
       lv: Motivācija nav IMSAFE kategorija. IMSAFE koncentrējas uz fiziskajiem un psihiskajiem stāvokļiem, kas pasliktina sniegumu.
       en: Motivation is not an IMSAFE category. IMSAFE focuses on physical and mental states that impair performance.
-      ru: Мотивация не является категорией IMSAFE. IMSAFE фокусируется на физических и психических состояниях, ухудшающих производительность.
+      ru: Мотивация не входит в категории IMSAFE. IMSAFE фокусируется на физических и психических состояниях, ухудшающих работоспособность.
     c:
       lv: Meteoroloģija ir ārējs faktors, nevis IMSAFE personiskās pārbaudes elements.
       en: Meteorology is an external factor, not an element of the personal IMSAFE check.
@@ -512,7 +512,7 @@
     d:
       lv: Manevrs nav IMSAFE kategorija. IMSAFE ir pašpārbaude, kas novērtē pilota stāvokli.
       en: Manoeuvre is not an IMSAFE category. IMSAFE is a self-check evaluating the pilot's condition.
-      ru: Манёвр не является категорией IMSAFE. IMSAFE — самопроверка, оценивающая состояние пилота.
+      ru: Манёвр не входит в категории IMSAFE. IMSAFE — это самопроверка состояния пилота.
   sourceRef: "EASA Easy Access Rules UAS 2024 — human performance | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; IMSAFE checklist | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 1
   cognitiveLevel: recall
@@ -612,7 +612,7 @@
     b:
       lv: Adrenalīns no slāpēm nav dokumentēts mehānisms koncentrācijas uzlabošanai. Slāpes ir diskomforts, kas parasti novērš uzmanību.
       en: Adrenaline from thirst is not a documented mechanism for improving concentration. Thirst is a distraction, not a stimulant.
-      ru: Адреналин от жажды не является задокументированным механизмом улучшения концентрации. Жажда отвлекает, а не стимулирует.
+      ru: Адреналин от жажды не считается подтверждённым механизмом улучшения концентрации. Жажда отвлекает, а не помогает.
     c:
       lv: 5 % dehidratācija ir smaga klīniskā dehidratācija. Kognitīvā pasliktināšanās sākas daudz agrāk — pie 1–2 %.
       en: 5 % dehydration is severe clinical dehydration. Cognitive impairment begins far earlier — at 1–2 %.
@@ -712,7 +712,7 @@
     a:
       lv: 2000 m nav augsti tikai pēc absolūtiem standartiem, bet skābekļa daļējais spiediens jau ir par ~20 % zemāks nekā jūras līmenī, un jutīgām personām tas ir nozīmīgi.
       en: 2000 m is not high only by absolute standards, but the partial oxygen pressure is already ~20 % lower than at sea level, which is significant for sensitive individuals.
-      ru: 2000 м не является большой высотой по абсолютным стандартам, но парциальное давление кислорода уже на ~20 % ниже, чем на уровне моря, что значимо для чувствительных людей.
+      ru: 2000 м не считается большой высотой по абсолютным стандартам, но парциальное давление кислорода уже на ~20 % ниже, чем на уровне моря, что значимо для чувствительных людей.
     c:
       lv: Skābekļa līmenis gaisā ir aptuveni 21 % neatkarīgi no augstuma, bet daļējais spiediens (un tādejādi absorbcija) samazinās ar augstumu.
       en: The oxygen percentage in air is approximately 21 % regardless of altitude, but the partial pressure (and thus absorption) decreases with altitude.
@@ -768,11 +768,11 @@
     b:
       lv: 120 m ir maksimālais Atvērtās kategorijas augstums, nevis paaugstināmais limits. Augstuma palielināšana virs 120 m ir pārkāpums.
       en: 120 m is the Open-category maximum altitude, not a raiseable limit. Increasing altitude above 120 m is a violation.
-      ru: 120 м — максимальная высота Открытой категории, а не поднимаемый предел. Подъём выше 120 м является нарушением.
+      ru: 120 м — максимальная высота Открытой категории, а не ориентир для набора высоты. Подъём выше 120 м считается нарушением.
     d:
       lv: Cilvēku aizdzīšana nav pilotam tiesībā. Pareizā darbība ir mainīt trajektoriju vai nosēsties, ne censties kontrolēt cilvēku kustību.
       en: Shouting people away is not the pilot's right. The correct action is to adjust trajectory or land, not to try to control people's movement.
-      ru: Кричать на людей, чтобы они ушли, не является правом пилота. Правильное действие — скорректировать траекторию или приземлиться, а не пытаться контролировать движение людей.
+      ru: Кричать на людей, чтобы они ушли, не относится к правам пилота. Правильное действие — скорректировать траекторию или приземлиться, а не пытаться контролировать движение людей.
   sourceRef: "Reg 2019/947 UAS.OPEN.060 — situational awareness and operational response | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 2
   cognitiveLevel: apply
@@ -816,15 +816,15 @@
     a:
       lv: '"Vide" (Environment) nav IMSAFE kategorija. IMSAFE koncentrējas uz pilota iekšējo stāvokli, nevis ārējo vidi.'
       en: "\"Environment\" is not an IMSAFE category. IMSAFE focuses on the pilot's internal state, not the external environment."
-      ru: «Окружающая среда» (Environment) не является категорией IMSAFE. IMSAFE фокусируется на внутреннем состоянии пилота, а не на внешней среде.
+      ru: «Окружающая среда» (Environment) не входит в категории IMSAFE. IMSAFE фокусируется на внутреннем состоянии пилота, а не на внешней среде.
     b:
       lv: '"Ekipējums" (Equipment) nav IMSAFE kategorija. IMSAFE ir pilota pašpārbaude, ne aprīkojuma pārbaude.'
       en: '"Equipment" is not an IMSAFE category. IMSAFE is a pilot self-check, not an equipment check.'
-      ru: «Оборудование» (Equipment) не является категорией IMSAFE. IMSAFE — самопроверка пилота, а не проверка оборудования.
+      ru: «Оборудование» (Equipment) не входит в категории IMSAFE. IMSAFE — это самопроверка пилота, а не проверка оборудования.
     c:
       lv: '"Ārkārtas procedūras" (Emergency) nav IMSAFE kategorija. Ārkārtas procedūru pārzināšana ir preflight plānošanas jautājums, nevis emocionālais faktors.'
       en: '"Emergency" is not an IMSAFE category. Emergency procedure knowledge is a preflight planning matter, not an emotional factor.'
-      ru: «Аварийные процедуры» (Emergency) не является категорией IMSAFE. Знание аварийных процедур — вопрос предполётного планирования, а не эмоциональный фактор.
+      ru: «Аварийные процедуры» (Emergency) не входят в категории IMSAFE. Знание аварийных процедур — вопрос предполётного планирования, а не эмоциональный фактор.
   sourceRef: "EASA Easy Access Rules UAS 2024 — human performance | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; emotion"
   difficulty: 1
   cognitiveLevel: recall
@@ -1728,11 +1728,11 @@
     a:
       lv: Iedvesma nav IMSAFE kategorija. IMSAFE mēra stāvokļus, kas var pasliktināt sniegumu, nevis motivāciju.
       en: Inspiration is not an IMSAFE category. IMSAFE measures conditions that can impair performance, not motivation.
-      ru: Вдохновение не является категорией IMSAFE. IMSAFE измеряет состояния, которые могут ухудшить производительность, а не мотивацию.
+      ru: Вдохновение не входит в категории IMSAFE. IMSAFE оценивает состояния, которые могут ухудшить работоспособность, а не мотивацию.
     c:
       lv: Apdrošināšana nav IMSAFE pašpārbaudes elements. IMSAFE koncentrējas uz pilota fizisko un garīgo stāvokli.
       en: Insurance is not an IMSAFE element. IMSAFE focuses on the pilot's physical and mental condition.
-      ru: Страхование не является элементом IMSAFE. IMSAFE фокусируется на физическом и психическом состоянии пилота.
+      ru: Страхование не входит в IMSAFE. IMSAFE фокусируется на физическом и психическом состоянии пилота.
     d:
       lv: Incidenti nav IMSAFE kategorija. Incidentu ziņošana ir atsevišķa drošības procedūra.
       en: Incidents are not an IMSAFE category. Incident reporting is a separate safety procedure.
@@ -1780,7 +1780,7 @@
     a:
       lv: Manevrs nav IMSAFE kategorija. IMSAFE ir pašpārbaude, kas novērtē pilota stāvokli.
       en: Manoeuvre is not an IMSAFE category. IMSAFE is a self-check evaluating the pilot's condition.
-      ru: Манёвр не является категорией IMSAFE. IMSAFE — самопроверка, оценивающая состояние пилота.
+      ru: Манёвр не входит в категории IMSAFE. IMSAFE — это самопроверка состояния пилота.
     b:
       lv: Meteoroloģija ir ārējs faktors, nevis IMSAFE personiskās pārbaudes elements.
       en: Meteorology is an external factor, not an element of the personal IMSAFE check.
@@ -1788,7 +1788,7 @@
     d:
       lv: Motivācija nav IMSAFE kategorija. IMSAFE koncentrējas uz fiziskajiem un psihiskajiem stāvokļiem, kas pasliktina sniegumu.
       en: Motivation is not an IMSAFE category. IMSAFE focuses on physical and mental states that impair performance.
-      ru: Мотивация не является категорией IMSAFE. IMSAFE фокусируется на физических и психических состояниях, ухудшающих производительность.
+      ru: Мотивация не входит в категории IMSAFE. IMSAFE фокусируется на физических и психических состояниях, ухудшающих работоспособность.
   sourceRef: "EASA Easy Access Rules UAS 2024 — human performance | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; IMSAFE checklist | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 2
   cognitiveLevel: apply
@@ -1888,7 +1888,7 @@
     c:
       lv: Adrenalīns no slāpēm nav dokumentēts mehānisms koncentrācijas uzlabošanai. Slāpes ir diskomforts, kas parasti novērš uzmanību.
       en: Adrenaline from thirst is not a documented mechanism for improving concentration. Thirst is a distraction, not a stimulant.
-      ru: Адреналин от жажды не является задокументированным механизмом улучшения концентрации. Жажда отвлекает, а не стимулирует.
+      ru: Адреналин от жажды не считается подтверждённым механизмом улучшения концентрации. Жажда отвлекает, а не помогает.
     d:
       lv: 5 % dehidratācija ir smaga klīniskā dehidratācija. Kognitīvā pasliktināšanās sākas daudz agrāk — pie 1–2 %.
       en: 5 % dehydration is severe clinical dehydration. Cognitive impairment begins far earlier — at 1–2 %.
@@ -1988,7 +1988,7 @@
     a:
       lv: 2000 m nav augsti tikai pēc absolūtiem standartiem, bet skābekļa daļējais spiediens jau ir par ~20 % zemāks nekā jūras līmenī, un jutīgām personām tas ir nozīmīgi.
       en: 2000 m is not high only by absolute standards, but the partial oxygen pressure is already ~20 % lower than at sea level, which is significant for sensitive individuals.
-      ru: 2000 м не является большой высотой по абсолютным стандартам, но парциальное давление кислорода уже на ~20 % ниже, чем на уровне моря, что значимо для чувствительных людей.
+      ru: 2000 м не считается большой высотой по абсолютным стандартам, но парциальное давление кислорода уже на ~20 % ниже, чем на уровне моря, что значимо для чувствительных людей.
     b:
       lv: Augstums ietekmē gan dronu (mazāka pacelšanās jauda, ātrāka baterijas izlāde), gan pilotu (kognitīvā pasliktināšanās). Abi jāņem vērā.
       en: Altitude affects both the drone (reduced lift, faster battery drain) and the pilot (cognitive impairment). Both must be considered.
@@ -2040,7 +2040,7 @@
     a:
       lv: Cilvēku aizdzīšana nav pilotam tiesībā. Pareizā darbība ir mainīt trajektoriju vai nosēsties, ne censties kontrolēt cilvēku kustību.
       en: Shouting people away is not the pilot's right. The correct action is to adjust trajectory or land, not to try to control people's movement.
-      ru: Кричать на людей, чтобы они ушли, не является правом пилота. Правильное действие — скорректировать траекторию или приземлиться, а не пытаться контролировать движение людей.
+      ru: Кричать на людей, чтобы они ушли, не относится к правам пилота. Правильное действие — скорректировать траекторию или приземлиться, а не пытаться контролировать движение людей.
     b:
       lv: Lidojuma plāns ir veidots pirms lidojuma situācijai. Mainīgā situācija prasa lēmumu pārskatīšanu.
       en: The flight plan was made for the pre-flight situation. A changed situation requires decision review.
