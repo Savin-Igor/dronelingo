@@ -106,7 +106,7 @@
   stem:
     lv: Kāds ir galvenais ieguvums no "just culture" pieejas atgadījumu ziņošanā?
     en: What is the main benefit of "just culture" in occurrence reporting?
-    ru: Какова главная цель подхода «just culture» в уведомлениях о происшествиях?
+    ru: В чём главная польза подхода «just culture» при уведомлениях о происшествиях?
   options:
     - id: a
       text:
@@ -135,7 +135,7 @@
     en: |
       The "just culture" principle in Reg 376/2014 promotes open reporting — the reporter is not prosecuted unless the event resulted from deliberate misconduct.
     ru: |
-      Принцип «just culture» в Регл. 376/2014 стимулирует открытое информирование — заявителя не преследуют, если событие не результат умышленных действий.
+      Принцип «just culture» в Регл. 376/2014 стимулирует открытое информирование: заявителя не преследуют, если событие не стало результатом умышленных действий.
   distractorRationales:
     a:
       lv: Tieši pretēji — ziņotāja personība tiek aizsargāta, ne publiskota. Konfidencialitāte ir daļa no atklātās ziņošanas kultūras.
@@ -144,7 +144,7 @@
     b:
       lv: Finansiāla balva nav daļa no just culture mehānisma. Princips ir tiesisks, ne stimulējošs.
       en: A financial reward is not part of the just culture mechanism. The principle is legal protection, not incentive.
-      ru: Финансовое вознаграждение не входит в механизм just culture. Принцип — правовая защита, не стимул.
+      ru: Финансовое вознаграждение не входит в механизм just culture. Это правовая защита, а не стимул.
     d:
       lv: Just culture nav pilna imunitāte. Tīša neuzmanība un rupja pārkāpšana joprojām paliek sodāmas.
       en: Just culture is not blanket immunity. Deliberate misconduct and gross negligence remain prosecutable.
@@ -187,12 +187,12 @@
     en: |
       GPS spoofing feeds the UAS GPS receiver false position signals. This is distinct from jamming, which suppresses the signal entirely.
     ru: |
-      GPS spoofing подменяет GPS-приёмнику сигналы ложной позиции. Это отличается от jamming, который полностью подавляет сигнал.
+      GPS spoofing подаёт GPS-приёмнику сигналы ложной позиции. Это отличается от глушения, которое полностью подавляет сигнал.
   distractorRationales:
     a:
       lv: "GPS signāla pilnīga slāpēšana ir jamming, ne spoofing. Galvenā atšķirība: spoofings dod viltus pozīciju, jamming dzēš jebkuru."
       en: "Complete suppression of the GPS signal is jamming, not spoofing. Key difference: spoofing gives a fake position; jamming erases all of it."
-      ru: "Полное подавление GPS — это jamming, а не spoofing. Главная разница: spoofing подменяет позицию, jamming стирает её совсем."
+      ru: "Полное подавление GPS — это глушение, а не spoofing. Главная разница: spoofing подменяет позицию, а глушение убирает сигнал совсем."
     b:
       lv: Akumulatora pārkaršana ir aparatūras kļūme, ne kiberuzbrukums. Tā neattiecas uz GNSS.
       en: Battery overheating is a hardware failure, not a cyber attack. It is unrelated to GNSS.
@@ -348,7 +348,7 @@
     a:
       lv: Fail-safe aktivēšana nav pati par sevi obligāts ziņošanas ierosinātājs. Obligātie ierosinātāji ir ievainojumi, pilotētu gaisa kuģu sadursme vai kritiskās infrastruktūras sadursme.
       en: Fail-safe activation is not itself a mandatory reporting trigger. The mandatory triggers are injury, manned aircraft near-miss/collision, or critical infrastructure collision.
-      ru: Активация fail-safe сама по себе не является обязательным триггером уведомления. Обязательные триггеры — травма, сближение/столкновение с пилотируемым судном или критической инфраструктурой.
+      ru: Активация fail-safe сама по себе не запускает обязательное уведомление. Обязательные триггеры — травма, сближение/столкновение с пилотируемым судном или критической инфраструктурой.
     b:
       lv: '"Bez sekām" nenozīmē "bez nozīmes drošībā". Datu saites zudums ir drošībai nozīmīgs notikums, kura ziņošana veicina drošības datu bāzes uzlabošanu.'
       en: '"No consequences" does not mean "no safety significance". A data link loss is a safety-relevant event whose voluntary reporting contributes to safety database improvement.'
@@ -395,12 +395,12 @@
     en: |
       Radio signal jamming is prohibited for private persons throughout the EU under Directive 2014/53/EU (RED) and national communications law (in Latvia — the Electronic Communications Law). Only authorised services (military, security agencies, State Police) may use counter-drone jamming equipment with special permission. Protection of private property is not a justification for signal jamming.
     ru: |
-      Глушение радиосигналов запрещено для частных лиц по всему ЕС в соответствии с Директивой 2014/53/EU (RED) и национальным законодательством о связи (в Латвии — Закон об электронной связи). Только уполномоченные службы (военные, службы безопасности, Государственная полиция) могут использовать противодроновое оборудование глушения с особым разрешением. Защита частной собственности не является оправданием для глушения сигналов.
+      Глушение радиосигналов запрещено для частных лиц по всему ЕС в соответствии с Директивой 2014/53/EU (RED) и национальным законодательством о связи (в Латвии — Закон об электронной связи). Только уполномоченные службы (военные, службы безопасности, Государственная полиция) могут использовать противодроновое оборудование глушения с особым разрешением. Защита частной собственности не оправдывает глушение сигналов.
   distractorRationales:
     a:
       lv: Privāts pētnieks nav pilnvarotais dienests. Pētīšanas mērķis neatbrīvo no aizlieguma traucēt radiosignālus.
       en: A private researcher is not an authorised service. Research purpose does not exempt from the prohibition on radio signal interference.
-      ru: Частный исследователь не является уполномоченной службой. Исследовательская цель не освобождает от запрета радиопомех.
+      ru: Частный исследователь не относится к уполномоченным службам. Исследовательская цель не освобождает от запрета радиопомех.
     b:
       lv: Drons var legāli lidot virs privāta īpašuma no publiskas gaisa telpas. Tas neautorizē signāla traucēšanu.
       en: A drone may legally fly over private property from public airspace. This does not authorise signal jamming.
@@ -408,7 +408,7 @@
     c:
       lv: Īpašuma aizsardzība nav tiesisks pamats radiosignālu traucēšanai. Tiesiskais ceļš ir ziņot policijai vai CAA Latvia.
       en: Property protection is not a legal basis for radio signal jamming. The legal path is to report to the police or CAA Latvia.
-      ru: Защита собственности не является правовым основанием для глушения радиосигналов. Законный путь — сообщить в полицию или CAA Latvia.
+      ru: Защита собственности не даёт правового основания для глушения радиосигналов. Законный путь — сообщить в полицию или CAA Latvia.
   sourceRef: "Directive 2014/53/EU (RED) | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; Latvia Electronic Communications Law; EASA UAS security"
   difficulty: 2
   cognitiveLevel: apply
@@ -556,7 +556,7 @@
     a:
       lv: Baterijas statusa izsekošana ir vadības lietotnē, nevis Remote ID mērķis. Remote ID ir identifikācijas sistēma, nevis telemetrijas kanāls.
       en: Battery status tracking is in the control app, not the purpose of Remote ID. Remote ID is an identification system, not a telemetry channel.
-      ru: Отслеживание статуса батареи — в приложении управления, а не цель Remote ID. Remote ID — система идентификации, а не канал телеметрии.
+      ru: Отслеживание статуса батареи идёт через приложение управления, а не через Remote ID. Remote ID — система идентификации, а не канал телеметрии.
     b:
       lv: Automātiskā novēršana no aizliegtām zonām ir geo-awareness un geofencing funkcija, nevis Remote ID. Tās ir divas dažādas sistēmas.
       en: Automatic prevention from prohibited zones is a geo-awareness and geofencing function, not Remote ID. These are two separate systems.
@@ -564,7 +564,7 @@
     d:
       lv: Remote ID ir pārraides sistēma, nevis šifrēšanas sistēma. Tā pārraida datus nepārprotami, lai dienesti varētu tos nolasīt.
       en: Remote ID is a broadcast system, not an encryption system. It broadcasts data openly so services can read it.
-      ru: Remote ID — система трансляции, а не шифрования. Она транслирует данные открыто, чтобы службы могли их считывать.
+      ru: Remote ID — система трансляции, а не шифрования. Она передаёт данные открыто, чтобы службы могли их считывать.
   sourceRef: "Reg 2019/945 — Direct Remote ID requirements | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; EASA UAS security framework"
   difficulty: 2
   cognitiveLevel: recall
@@ -1005,12 +1005,12 @@
       text:
         lv: Pirms pacelšanās pārbaudīt home point un RTH augstumu.
         en: Confirming the home point and RTH altitude before takeoff.
-        ru: До взлёта проверить home point и высоту RTH.
+        ru: До взлёта проверить домашнюю точку и высоту RTH.
   correctOptionId: d
   explanation:
     lv: Return-to-home balstās uz pareizu home point un atbilstošu RTH augstumu. Ja kāds no tiem ir kļūdains, automātika var lidot uz nepareizu vietu vai nepareizā augstumā.
     en: Return-to-home depends on a correct home point and sensible RTH altitude. If either is wrong, the automation may guide the aircraft into the wrong place or route.
-    ru: Return-to-home зависит от правильного home point и адекватной высоты RTH. Если один из параметров неверен, автоматика может отправить аппарат в неправильное место или по опасной траектории.
+    ru: Return-to-home зависит от правильной домашней точки и адекватной высоты RTH. Если один из параметров неверен, автоматика может отправить аппарат в неправильное место или по опасной траектории.
   distractorRationales:
     a:
       lv: Spilgtums ietekmē salasāmību, nevis navigācijas loģiku.
@@ -1191,7 +1191,7 @@
       text:
         lv: Tas pārsvarā ir formāls jautājums bez operatīvas vērtības.
         en: It is mainly a formal issue with no operational value.
-        ru: Это в основном формальность без operational value.
+        ru: Это в основном формальность без практической пользы.
     - id: c
       text:
         lv: Tikai ja drons sver vairāk par 4 kg.
@@ -1201,12 +1201,12 @@
       text:
         lv: Jo atbildība par lidaparātu, baterijām, pulti un datu nesējiem atbalsta drošību, security un privātumu.
         en: Because accountability for aircraft, batteries, controller, and media supports safety, security, and privacy.
-        ru: Потому что контроль за аппаратом, батареями, пультом и носителями поддерживает safety, security и privacy.
+        ru: Потому что контроль за аппаратом, батареями, пультом и носителями поддерживает безопасность полёта, защиту от вмешательства и приватность.
   correctOptionId: d
   explanation:
     lv: "Kontrolēta apiešanās ir operatīvi svarīga: nezināms stāvoklis rada drošības risku, bez uzraudzības atstāts aprīkojums rada security risku, bet vaļīgi datu nesēji — privātuma risku."
     en: "Controlled handling matters operationally: unknown state creates safety risk, unattended gear creates security risk, and loose media creates privacy risk."
-    ru: "Контролируемое обращение имеет прямую полевую ценность: неизвестное состояние создаёт safety risk, оставленное оборудование — security risk, а свободные носители — privacy risk."
+    ru: "Контролируемое обращение имеет прямую полевую ценность: неизвестное состояние создаёт риск для полёта, оставленное оборудование — риск вмешательства, а свободные носители — риск для приватности."
   distractorRationales:
     a:
       lv: Tas ir svarīgi arī ikdienas darbā, ne tikai pēc noziegumiem.
@@ -1278,7 +1278,7 @@
   stem:
     lv: UAS operācijas laikā vai pēc tās parādās drošības anomālija. Cik stundu laikā jāziņo par tuvtrāpījumu ar pilotētu gaisa kuģi?
     en: A security anomaly appears during or after a UAS operation. Within how many hours must a near-miss with a manned aircraft be reported?
-    ru: Во время или после операции UAS появляется security-аномалия. В течение скольких часов нужно сообщить о сближении с пилотируемым воздушным судном?
+    ru: Во время или после операции UAS возникает аномалия безопасности. В течение скольких часов нужно сообщить о сближении с пилотируемым воздушным судном?
   options:
     - id: a
       text:
@@ -1330,7 +1330,7 @@
   stem:
     lv: Operators izlemj, vai tehnisks notikums ir tikai neērtība vai ziņojams drošības jautājums. Kur Latvijā iesniedz UAS atgadījumu ziņojumu?
     en: The operator is deciding whether a technical event is just inconvenience or a reportable security issue. Where in Latvia is a UAS occurrence report submitted?
-    ru: Оператор решает, является ли техническое событие просто неудобством или security-событием для сообщения. Куда в Латвии подаётся уведомление о происшествии UAS?
+    ru: Оператор решает, считать ли техническое событие просто неудобством или поводом для сообщения о проблеме безопасности. Куда в Латвии подаётся уведомление о происшествии UAS?
   options:
     - id: a
       text:
@@ -1382,7 +1382,7 @@
   stem:
     lv: Pirms aprīkojuma pieslēgšanas vai žurnālu nodošanas pilots pārbauda drošības ietekmi. Kāds ir galvenais ieguvums no "just culture" pieejas atgadījumu ziņošanā?
     en: Before connecting equipment or sharing logs, the pilot checks the security impact. What is the main benefit of "just culture" in occurrence reporting?
-    ru: Перед подключением оборудования или передачей логов пилот проверяет security-последствия. Какова главная цель подхода «just culture» в уведомлениях о происшествиях?
+    ru: Перед подключением оборудования или передачей логов пилот оценивает последствия для безопасности. В чём главная польза подхода «just culture» при уведомлениях о происшествиях?
   options:
     - id: a
       text:
@@ -1411,7 +1411,7 @@
     en: |
       The "just culture" principle in Reg 376/2014 promotes open reporting — the reporter is not prosecuted unless the event resulted from deliberate misconduct.
     ru: |
-      Принцип «just culture» в Регл. 376/2014 стимулирует открытое информирование — заявителя не преследуют, если событие не результат умышленных действий.
+      Принцип «just culture» в Регл. 376/2014 стимулирует открытое информирование: заявителя не преследуют, если событие не стало результатом умышленных действий.
   distractorRationales:
     a:
       lv: Just culture nav pilna imunitāte. Tīša neuzmanība un rupja pārkāpšana joprojām paliek sodāmas.
@@ -1424,7 +1424,7 @@
     c:
       lv: Finansiāla balva nav daļa no just culture mehānisma. Princips ir tiesisks, ne stimulējošs.
       en: A financial reward is not part of the just culture mechanism. The principle is legal protection, not incentive.
-      ru: Финансовое вознаграждение не входит в механизм just culture. Принцип — правовая защита, не стимул.
+      ru: Финансовое вознаграждение не входит в механизм just culture. Это правовая защита, а не стимул.
   sourceRef: "Reg (EU) 376/2014 Art. 16 — protection of reporters | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 3
   cognitiveLevel: apply
@@ -1434,7 +1434,7 @@
   stem:
     lv: UAS operācijas laikā vai pēc tās parādās drošības anomālija. Ko nozīmē GPS spoofing ar UAS uzbrukuma kontekstā?
     en: A security anomaly appears during or after a UAS operation. What does GPS spoofing mean in the context of a UAS attack?
-    ru: Во время или после операции UAS появляется security-аномалия. Что такое GPS spoofing в контексте атаки на UAS?
+    ru: Во время или после операции UAS возникает аномалия безопасности. Что такое GPS spoofing в контексте атаки на UAS?
   options:
     - id: a
       text:
@@ -1463,7 +1463,7 @@
     en: |
       GPS spoofing feeds the UAS GPS receiver false position signals. This is distinct from jamming, which suppresses the signal entirely.
     ru: |
-      GPS spoofing подменяет GPS-приёмнику сигналы ложной позиции. Это отличается от jamming, который полностью подавляет сигнал.
+      GPS spoofing подаёт GPS-приёмнику сигналы ложной позиции. Это отличается от глушения, которое полностью подавляет сигнал.
   distractorRationales:
     b:
       lv: Firmware atjaunošana ir parasta apkopes darbība, nevis uzbrukums. Tā var būt drošības vektors, ja izmantots neoficiāls avots, bet pats process nav spoofing.
@@ -1472,7 +1472,7 @@
     c:
       lv: "GPS signāla pilnīga slāpēšana ir jamming, ne spoofing. Galvenā atšķirība: spoofings dod viltus pozīciju, jamming dzēš jebkuru."
       en: "Complete suppression of the GPS signal is jamming, not spoofing. Key difference: spoofing gives a fake position; jamming erases all of it."
-      ru: "Полное подавление GPS — это jamming, а не spoofing. Главная разница: spoofing подменяет позицию, jamming стирает её совсем."
+      ru: "Полное подавление GPS — это глушение, а не spoofing. Главная разница: spoofing подменяет позицию, а глушение убирает сигнал совсем."
     d:
       lv: Akumulatora pārkaršana ir aparatūras kļūme, ne kiberuzbrukums. Tā neattiecas uz GNSS.
       en: Battery overheating is a hardware failure, not a cyber attack. It is unrelated to GNSS.
@@ -1486,7 +1486,7 @@
   stem:
     lv: Operators izlemj, vai tehnisks notikums ir tikai neērtība vai ziņojams drošības jautājums. Kura no šīm ir laba prakse UAS kiberdrošībā?
     en: The operator is deciding whether a technical event is just inconvenience or a reportable security issue. Which of the following is good UAS cyber security practice?
-    ru: Оператор решает, является ли техническое событие просто неудобством или security-событием для сообщения. Что из перечисленного — хорошая практика кибербезопасности UAS?
+    ru: Оператор решает, считать ли техническое событие просто неудобством или поводом для сообщения о проблеме безопасности. Что из перечисленного — хорошая практика кибербезопасности UAS?
   options:
     - id: a
       text:
@@ -1538,7 +1538,7 @@
   stem:
     lv: Pirms aprīkojuma pieslēgšanas vai žurnālu nodošanas pilots pārbauda drošības ietekmi. Lidojuma laikā kartes attēls pārvēršas pelēks un satelītu skaits krīt uz nulli. Drons aktivē RTH. Kāds ir visticamākais kiberuzbrukuma veids?
     en: Before connecting equipment or sharing logs, the pilot checks the security impact. Mid-flight, the map display goes grey and the satellite count drops to zero. The drone activates RTH. What cyber threat is most likely?
-    ru: Перед подключением оборудования или передачей логов пилот проверяет security-последствия. В середине полёта карта сереет, количество спутников падает до нуля. Дрон активирует RTH. Какая кибератака наиболее вероятна?
+    ru: Перед подключением оборудования или передачей логов пилот оценивает последствия для безопасности. В середине полёта карта сереет, количество спутников падает до нуля. Дрон активирует RTH. Какая кибератака наиболее вероятна?
   options:
     - id: a
       text:
@@ -1567,7 +1567,7 @@
     en: |
       A grey map and satellite count dropping to zero are signatures of GNSS jamming — the signal is fully suppressed. Spoofing, by contrast, shows a false position (not signal loss) — the map shows a location, but it is wrong. RTH activating without GPS is the drone's designed response to position loss.
     ru: |
-      Серая карта и падение числа спутников до нуля — признаки GNSS jamming: сигнал полностью подавлен. Spoofing, напротив, показывает ложную позицию (не потерю сигнала) — карта показывает местоположение, но неверное. Активация RTH без GPS — штатная реакция дрона на потерю позиции.
+      Серая карта и падение числа спутников до нуля — признаки GNSS jamming: сигнал полностью подавлен. Spoofing, напротив, показывает ложную позицию, а не потерю сигнала: карта показывает местоположение, но неверное. Активация RTH без GPS — штатная реакция дрона на потерю позиции.
   distractorRationales:
     a:
       lv: Wi-Fi uzbrukums var traucēt vadības saiti, bet ne GPS satelītu signālu. Pelēka karte un satelītu zudums ir GPS slāņa problēma, nevis vadības saites problēma.
@@ -1576,7 +1576,7 @@
     b:
       lv: Spoofing parāda viltotu pozīciju, nevis signāla zudumu. Kartes pelēkošana un satelītu krišanās uz nulli norāda uz pilnīgu signāla zudumu — tas ir jamming.
       en: Spoofing shows a false position, not signal loss. A greying map and satellite count dropping to zero indicate total signal loss — that is jamming.
-      ru: Spoofing показывает ложную позицию, а не потерю сигнала. Потемнение карты и падение спутников до нуля указывают на полную потерю сигнала — это jamming.
+      ru: Spoofing показывает ложную позицию, а не потерю сигнала. Потемнение карты и падение спутников до нуля указывают на полную потерю сигнала — это глушение.
     d:
       lv: Firmware uzlaušana ietekmē drona uzvedību vai drošības iestatījumus, bet parasti neizraisa tūlītēju GPS signāla zudumu un pelēku karti.
       en: Firmware hacking affects drone behaviour or safety settings but does not typically cause an immediate GPS signal loss and grey map.
@@ -1590,7 +1590,7 @@
   stem:
     lv: UAS operācijas laikā vai pēc tās parādās drošības anomālija. Lidojuma laikā drons zaudē datu saiti 30 sekundes. Fail-safe aktivējas un drons drošā kārtā atgriežas. Nav ievainojumu, nav pilotētu gaisa kuģu tuvumā. Kāds ir ziņošanas pienākums?
     en: A security anomaly appears during or after a UAS operation. Mid-flight the drone loses the data link for 30 seconds. Fail-safe activates and the drone returns safely. No injuries, no manned aircraft nearby. What is the reporting obligation?
-    ru: Во время или после операции UAS появляется security-аномалия. В середине полёта дрон теряет канал данных на 30 секунд. Fail-safe активируется, дрон возвращается безопасно. Травм нет, пилотируемых воздушных судов рядом нет. Каково обязательство по уведомлению?
+    ru: Во время или после операции UAS возникает аномалия безопасности. В середине полёта дрон теряет канал данных на 30 секунд. Fail-safe активируется, дрон возвращается безопасно. Травм нет, пилотируемых воздушных судов рядом нет. Каково обязательство по уведомлению?
   options:
     - id: a
       text:
@@ -1628,7 +1628,7 @@
     b:
       lv: Fail-safe aktivēšana nav pati par sevi obligāts ziņošanas ierosinātājs. Obligātie ierosinātāji ir ievainojumi, pilotētu gaisa kuģu sadursme vai kritiskās infrastruktūras sadursme.
       en: Fail-safe activation is not itself a mandatory reporting trigger. The mandatory triggers are injury, manned aircraft near-miss/collision, or critical infrastructure collision.
-      ru: Активация fail-safe сама по себе не является обязательным триггером уведомления. Обязательные триггеры — травма, сближение/столкновение с пилотируемым судном или критической инфраструктурой.
+      ru: Активация fail-safe сама по себе не запускает обязательное уведомление. Обязательные триггеры — травма, сближение/столкновение с пилотируемым судном или критической инфраструктурой.
     c:
       lv: Ziņošanas pienākums nav atkarīgs no fail-safe konfigurācijas. Šajā gadījumā fail-safe darbojās pareizi — tas nemazina brīvprātīgās ziņošanas vērtību.
       en: The reporting obligation does not depend on fail-safe configuration. In this case the fail-safe worked correctly — this does not reduce the value of voluntary reporting.
@@ -1642,7 +1642,7 @@
   stem:
     lv: Operators izlemj, vai tehnisks notikums ir tikai neērtība vai ziņojams drošības jautājums. Pilots vēro, ka kāds mēģina pārtvert viņa drona vadības signālu ar radio interferences iekārtu. Kāda ir tiesiskā situācija?
     en: The operator is deciding whether a technical event is just inconvenience or a reportable security issue. A pilot observes someone attempting to intercept their drone's control signal with a radio interference device. What is the legal situation?
-    ru: Оператор решает, является ли техническое событие просто неудобством или security-событием для сообщения. Пилот наблюдает, как кто-то пытается перехватить сигнал управления его дроном с помощью устройства радиопомех. Какова правовая ситуация?
+    ru: Оператор решает, считать ли техническое событие просто неудобством или поводом для сообщения о проблеме безопасности. Пилот наблюдает, как кто-то пытается перехватить сигнал управления его дроном с помощью устройства радиопомех. Какова правовая ситуация?
   options:
     - id: a
       text:
@@ -1671,7 +1671,7 @@
     en: |
       Radio signal jamming is prohibited for private persons throughout the EU under Directive 2014/53/EU (RED) and national communications law (in Latvia — the Electronic Communications Law). Only authorised services (military, security agencies, State Police) may use counter-drone jamming equipment with special permission. Protection of private property is not a justification for signal jamming.
     ru: |
-      Глушение радиосигналов запрещено для частных лиц по всему ЕС в соответствии с Директивой 2014/53/EU (RED) и национальным законодательством о связи (в Латвии — Закон об электронной связи). Только уполномоченные службы (военные, службы безопасности, Государственная полиция) могут использовать противодроновое оборудование глушения с особым разрешением. Защита частной собственности не является оправданием для глушения сигналов.
+      Глушение радиосигналов запрещено для частных лиц по всему ЕС в соответствии с Директивой 2014/53/EU (RED) и национальным законодательством о связи (в Латвии — Закон об электронной связи). Только уполномоченные службы (военные, службы безопасности, Государственная полиция) могут использовать противодроновое оборудование глушения с особым разрешением. Защита частной собственности не оправдывает глушение сигналов.
   distractorRationales:
     b:
       lv: Drons var legāli lidot virs privāta īpašuma no publiskas gaisa telpas. Tas neautorizē signāla traucēšanu.
@@ -1680,11 +1680,11 @@
     c:
       lv: Privāts pētnieks nav pilnvarotais dienests. Pētīšanas mērķis neatbrīvo no aizlieguma traucēt radiosignālus.
       en: A private researcher is not an authorised service. Research purpose does not exempt from the prohibition on radio signal interference.
-      ru: Частный исследователь не является уполномоченной службой. Исследовательская цель не освобождает от запрета радиопомех.
+      ru: Частный исследователь не относится к уполномоченным службам. Исследовательская цель не освобождает от запрета радиопомех.
     d:
       lv: Īpašuma aizsardzība nav tiesisks pamats radiosignālu traucēšanai. Tiesiskais ceļš ir ziņot policijai vai CAA Latvia.
       en: Property protection is not a legal basis for radio signal jamming. The legal path is to report to the police or CAA Latvia.
-      ru: Защита собственности не является правовым основанием для глушения радиосигналов. Законный путь — сообщить в полицию или CAA Latvia.
+      ru: Защита собственности не даёт правового основания для глушения радиосигналов. Законный путь — сообщить в полицию или CAA Latvia.
   sourceRef: "Directive 2014/53/EU (RED) | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; Latvia Electronic Communications Law; EASA UAS security"
   difficulty: 3
   cognitiveLevel: apply
@@ -1694,7 +1694,7 @@
   stem:
     lv: Pirms aprīkojuma pieslēgšanas vai žurnālu nodošanas pilots pārbauda drošības ietekmi. Pēc lidojuma pilots konstatē, ka drona GPS žurnāls rāda neizskaidrojamu pozīciju novirzi 2 km prom no faktiskās lidojuma vietas. Kas ir visticamākais skaidrojums un kāda ir tūlītējā darbība?
     en: Before connecting equipment or sharing logs, the pilot checks the security impact. After a flight a pilot notices the drone's GPS log shows an unexplained position drift 2 km from the actual flight location. What is the most likely explanation and what is the immediate action?
-    ru: Перед подключением оборудования или передачей логов пилот проверяет security-последствия. После полёта пилот замечает, что журнал GPS дрона показывает необъяснимое отклонение позиции на 2 км от фактического места полёта. Каков наиболее вероятный объяснение и каковы немедленные действия?
+    ru: Перед подключением оборудования или передачей логов пилот оценивает последствия для безопасности. После полёта пилот замечает, что журнал GPS дрона показывает необъяснимое отклонение позиции на 2 км от фактического места полёта. Каково наиболее вероятное объяснение и каковы немедленные действия?
   options:
     - id: a
       text:
@@ -1772,12 +1772,12 @@
   explanation:
     lv: Nezināma piekļuve datu nesējam ir security un privātuma risks. Pareizā rīcība ir saglabāt pierādāmību, izolēt karti, dokumentēt notikumu un novērtēt ziņošanas pienākumus.
     en: Unknown access to storage media is a security and privacy risk. The correct response is to preserve accountability, isolate the card, document the event and assess reporting duties.
-    ru: "Неизвестный доступ к носителю данных является риском security и privacy. Правильное действие: сохранить подотчётность, изолировать карту, задокументировать событие и оценить обязанности уведомления."
+    ru: "Неизвестный доступ к носителю данных создаёт риск для безопасности и приватности. Правильное действие: сохранить подотчётность, изолировать карту, задокументировать событие и оценить обязанности уведомления."
   distractorRationales:
     a:
       lv: Dzēšana iznīcina pierādījumus un var pasliktināt gan security, gan privātuma situāciju.
       en: Erasure destroys evidence and can make both security and privacy handling worse.
-      ru: Удаление уничтожает доказательства и может ухудшить обработку security и privacy-ситуации.
+      ru: Удаление уничтожает доказательства и может ухудшить разбор ситуации с безопасностью и приватностью.
     b:
       lv: Tas ignorē iespējamu piekļuvi un pārrauj glabāšanas ķēdi.
       en: This ignores possible access and breaks chain-of-custody control.
@@ -1795,7 +1795,7 @@
   stem:
     lv: Operators izlemj, vai tehnisks notikums ir tikai neērtība vai ziņojams drošības jautājums. Kāds ir Direct Remote ID mērķis drošības perspektīvā?
     en: The operator is deciding whether a technical event is just inconvenience or a reportable security issue. What is the purpose of Direct Remote ID from a security perspective?
-    ru: Оператор решает, является ли техническое событие просто неудобством или security-событием для сообщения. Какова цель Direct Remote ID с точки зрения безопасности?
+    ru: Оператор решает, считать ли техническое событие просто неудобством или поводом для сообщения о проблеме безопасности. Какова цель Direct Remote ID с точки зрения безопасности?
   options:
     - id: a
       text:
@@ -1847,7 +1847,7 @@
   stem:
     lv: Pirms aprīkojuma pieslēgšanas vai žurnālu nodošanas pilots pārbauda drošības ietekmi. Kāda ir "tīkla Remote ID" (Network Remote ID) atšķirība no "tiešā Remote ID" (Direct Remote ID)?
     en: Before connecting equipment or sharing logs, the pilot checks the security impact. What is the difference between "Network Remote ID" and "Direct Remote ID"?
-    ru: Перед подключением оборудования или передачей логов пилот проверяет security-последствия. В чём разница между «Network Remote ID» и «Direct Remote ID»?
+    ru: Перед подключением оборудования или передачей логов пилот оценивает последствия для безопасности. В чём разница между «Network Remote ID» и «Direct Remote ID»?
   options:
     - id: a
       text:
@@ -1899,7 +1899,7 @@
   stem:
     lv: UAS operācijas laikā vai pēc tās parādās drošības anomālija. Pilots lido pāri lielpilsētas centram. Tā kā Remote ID ir aktīvs, pilnvarota institūcija var identificēt operatoru. Kādu datu kopumu Remote ID nepārraida?
     en: A security anomaly appears during or after a UAS operation. A pilot flies over a city centre. With Remote ID active, an authorised authority can identify the operator. What data set does Remote ID NOT broadcast?
-    ru: Во время или после операции UAS появляется security-аномалия. Пилот летит над центром мегаполиса. При активном Remote ID уполномоченный орган может идентифицировать оператора. Какой набор данных Remote ID НЕ транслирует?
+    ru: Во время или после операции UAS появляется аномалия безопасности. Пилот летит над центром мегаполиса. При активном Remote ID уполномоченный орган может идентифицировать оператора. Какой набор данных Remote ID НЕ транслирует?
   options:
     - id: a
       text:
@@ -1951,7 +1951,7 @@
   stem:
     lv: Operators izlemj, vai tehnisks notikums ir tikai neērtība vai ziņojams drošības jautājums. Pilots saņem paziņojumu par jaunu firmware versiju no neoficiāla avota (foruma). Versijā tiek solīti "papildu lidojuma augstumi" un "atbloķētas zonas". Ko pilotam jādara?
     en: The operator is deciding whether a technical event is just inconvenience or a reportable security issue. A pilot receives a notification of a new firmware version from an unofficial source (a forum). The version promises "extended flight altitudes" and "unlocked zones". What should the pilot do?
-    ru: Оператор решает, является ли техническое событие просто неудобством или security-событием для сообщения. Пилот получает уведомление о новой версии прошивки из неофициального источника (форума). Версия обещает «расширенные высоты полёта» и «разблокированные зоны». Что должен сделать пилот?
+    ru: Оператор решает, считать ли техническое событие просто неудобством или поводом для сообщения о проблеме безопасности. Пилот получает уведомление о новой версии прошивки из неофициального источника (форума). Версия обещает «расширенные высоты полёта» и «разблокированные зоны». Что должен сделать пилот?
   options:
     - id: a
       text:
@@ -1967,7 +1967,7 @@
       text:
         lv: Nelejupielādēt — neoficiāla firmware ir kiberdrošības risks un var atcelt C klases sertifikāciju, turklāt "atbloķētās zonas" ir nelegālas.
         en: Do not download — unofficial firmware is a cybersecurity risk and may void the C-class certification; additionally "unlocked zones" are illegal.
-        ru: Не скачивать — неофициальная прошивка является киберрисковой и может аннулировать сертификацию C-класса; кроме того, «разблокированные зоны» незаконны.
+        ru: Не скачивать — неофициальная прошивка создаёт киберриск и может аннулировать сертификацию C-класса; кроме того, «разблокированные зоны» незаконны.
     - id: d
       text:
         lv: Lejupielādēt un instalēt — papildu iespējas uzlabo lidojuma efektivitāti.
@@ -2003,7 +2003,7 @@
   stem:
     lv: Pirms aprīkojuma pieslēgšanas vai žurnālu nodošanas pilots pārbauda drošības ietekmi. Pilots veic inspekcijas lidojumu aiz rūpnīcas. Drona kamera fiksē, ka darbinieki apspriež ražošanas procesu, un lidojumā tiek uzņemts konfidenciāls dokumentu mape. Kāds ir operators pienākums?
     en: Before connecting equipment or sharing logs, the pilot checks the security impact. A pilot conducts an inspection flight behind a factory. The drone camera captures workers discussing a manufacturing process, and a folder of confidential documents is recorded during the flight. What is the operator's obligation?
-    ru: Перед подключением оборудования или передачей логов пилот проверяет security-последствия. Пилот проводит инспекционный полёт за заводом. Камера дрона фиксирует работников, обсуждающих производственный процесс, и в ходе полёта записывается папка конфиденциальных документов. Каково обязательство оператора?
+    ru: Перед подключением оборудования или передачей логов пилот оценивает последствия для безопасности. Пилот проводит инспекционный полёт за заводом. Камера дрона фиксирует работников, обсуждающих производственный процесс, и в ходе полёта записывается папка конфиденциальных документов. Каково обязательство оператора?
   options:
     - id: a
       text:

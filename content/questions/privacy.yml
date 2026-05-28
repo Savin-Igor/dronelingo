@@ -1015,11 +1015,11 @@
     a:
       lv: Personiska interese nav pietiekams glabāšanas pamats privātuma jutīgam materiālam.
       en: Personal curiosity is not a strong retention basis for privacy-sensitive footage.
-      ru: Личный интерес не является сильным основанием для хранения приватностно чувствительного материала.
+      ru: Личный интерес — слабое основание для хранения приватностно чувствительного материала.
     b:
       lv: Slikta failu disciplīna nav juridisks vai ētisks glabāšanas iemesls.
       en: Poor file discipline is not a legal or ethical retention reason.
-      ru: Плохая файловая дисциплина не является правовым или этическим основанием хранения.
+      ru: Плохая файловая дисциплина не даёт ни правового, ни этического основания для хранения.
     c:
       lv: Lēta glabāšana neattaisno nevajadzīgu personas datu turēšanu.
       en: Cheap storage does not justify retaining unnecessary personal data.
@@ -1033,13 +1033,13 @@
   stem:
     lv: Kāda ir labāka noklusējuma plūsma pēc klienta filmēšanas?
     en: What is the better default workflow after a client shoot?
-    ru: Какой workflow по умолчанию лучше после клиентской съёмки?
+    ru: Какой порядок действий по умолчанию лучше после клиентской съёмки?
   options:
     - id: a
       text:
         lv: Atdalīt gala materiālu no izejmateriāla un atstāt tikai to, kam vēl ir skaidrs mērķis.
         en: Separate deliverables from raw material and retain only what still has a defined purpose.
-        ru: Отделить deliverables от сырого материала и оставить только то, у чего ещё есть ясная цель.
+        ru: Отделить итоговый материал от сырого и оставить только то, у чего ещё есть ясная цель.
     - id: b
       text:
         lv: Automātiski iedot klientam visu neapstrādāto kartes saturu.
@@ -1059,7 +1059,7 @@
   explanation:
     lv: "Labākā plūsma ir mērķī balstīta glabāšana: atstāt tikai to, kas vajadzīgs nodošanai, pierādīšanai vai drošības vajadzībām, un noņemt materiālu, kam vairs nav derīga mērķa."
     en: "The better workflow is purpose-based retention: isolate what is needed for delivery, proof, or evidence, and remove material that no longer has a valid purpose."
-    ru: "Лучший workflow — хранение по цели: оставить только то, что нужно для передачи, доказательства или безопасности, и удалить материал без действительной цели."
+    ru: "Лучший порядок — хранение по цели: оставить только то, что нужно для передачи, доказательства или безопасности, и удалить материал без действительной цели."
   distractorRationales:
     b:
       lv: Klientam parasti vajag saskaņoto rezultātu, nevis nekontrolētu datu masu.
@@ -1072,7 +1072,7 @@
     d:
       lv: Bezgalīga glabāšana palielina privātuma un drošības risku.
       en: Infinite retention increases privacy and security exposure.
-      ru: Бесконечное хранение увеличивает приватностный и security-риск.
+      ru: Бесконечное хранение увеличивает риск для приватности и безопасности.
   sourceRef: "GDPR principles | https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng; privacy handling in UAS operations"
   difficulty: 2
   cognitiveLevel: apply
@@ -1131,7 +1131,7 @@
   stem:
     lv: Kurš no šiem ir derīgs tiesiskais pamats komerciālam UAS operatoram filmēt identificējamus indivīdus bez viņu skaidras piekrišanas?
     en: Which of the following is a valid lawful basis for a commercial drone operator to film identifiable individuals without their explicit consent?
-    ru: Какое из следующих является допустимым правовым основанием для коммерческого пилота дрона, снимающего идентифицируемых людей без явного согласия?
+    ru: Какое из следующих допустимо как правовое основание GDPR для коммерческого пилота дрона, снимающего идентифицируемых людей без явного согласия?
   options:
     - id: a
       text:
@@ -1142,7 +1142,7 @@
       text:
         lv: Operators ir reģistrēta uzņēmējdarbības struktūra.
         en: The operator is a registered business entity.
-        ru: Пилот является зарегистрированным юридическим лицом.
+        ru: Пилот зарегистрирован как юридическое лицо.
     - id: c
       text:
         lv: Leģitīma interese, kur privātuma ietekme ir proporcionāla un dokumentēta.
@@ -1746,7 +1746,7 @@
   stem:
     lv: Legāls lidojums operatoram joprojām rada atsevišķu privātuma lēmumu. UAS operators apstrādā lidojuma žurnāla datus, kas satur GPS pozīcijas un laika zīmogus. Vai tie ir uzskatāmi par personas datiem?
     en: A legal flight still creates a separate privacy decision for the operator. A UAS operator processes flight log data containing GPS positions and time stamps. Are these considered personal data?
-    ru: Законный полёт всё равно создаёт отдельное privacy-решение для оператора. Оператор UAS обрабатывает данные журнала полётов, содержащие GPS-координаты и метки времени. Считаются ли они персональными данными?
+    ru: Законный полёт всё равно требует отдельного решения по приватности. Оператор UAS обрабатывает данные журнала полётов с GPS-координатами и метками времени. Считаются ли они персональными данными?
   options:
     - id: a
       text:
@@ -1902,7 +1902,7 @@
   stem:
     lv: Legāls lidojums operatoram joprojām rada atsevišķu privātuma lēmumu. Kāds GDPR tiesiskais pamats ir vispiemērotākais drona uzņemšanai pilsētas sporta sacensībās komerciālam lietojumam?
     en: A legal flight still creates a separate privacy decision for the operator. What GDPR lawful basis is most appropriate for drone filming at a city sports competition for commercial use?
-    ru: Законный полёт всё равно создаёт отдельное privacy-решение для оператора. Какое правовое основание GDPR наиболее подходит для коммерческой съёмки с дрона на городских спортивных соревнованиях?
+    ru: Законный полёт всё равно требует отдельного решения по приватности. Какое правовое основание GDPR наиболее подходит для коммерческой съёмки с дрона на городских спортивных соревнованиях?
   options:
     - id: a
       text:
@@ -1913,7 +1913,7 @@
       text:
         lv: Art. 6(1)(f) — leģitīmās intereses ar iepriekšēju LIA un pastāvīgu informēšanu (GDPR ietvars sporta sacensībām ir leģitīmas intereses).
         en: Art. 6(1)(f) — legitimate interests with a prior LIA and prominent informing (GDPR framework for sports events is legitimate interests).
-        ru: Ст. 6(1)(f) — законные интересы с предварительной оценкой LIA и видимым информированием (структура GDPR для спортивных мероприятий — законные интересы).
+        ru: Ст. 6(1)(f) — законные интересы с предварительной оценкой LIA и видимым информированием.
     - id: c
       text:
         lv: Nav vajadzīgs tiesiskais pamats — sporta sacensības ir publisks pasākums.
