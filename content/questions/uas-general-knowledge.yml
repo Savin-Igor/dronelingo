@@ -510,7 +510,7 @@
       en: C4 operates in A3 — which requires ≥150 m from inhabited areas. C4 is not an urban class; it is least suitable for cities.
       ru: C4 работает в A3, что требует ≥150 м от населённых пунктов. C4 — не городской класс; он наименее подходит для городов.
     d:
-      lv: Operatora reģistrācija ir atkarīga no masas un ekrāna, nevis UAS klases. C4 operators ir jāreģistrē, ja drona masa prasa to (≥250 g vai aprīkots ar kameru).
+      lv: Operatora reģistrācija ir atkarīga no masas un kameras, nevis UAS klases. C4 operatoram jāreģistrējas, ja to prasa drona masa vai aprīkojums (≥250 g vai kamera).
       en: Operator registration depends on mass and payload, not UAS class. C4 operators must register if the drone mass requires it (≥250 g or equipped with a camera).
       ru: Регистрация оператора зависит от массы и нагрузки, а не от класса UAS. Операторы C4 должны регистрироваться, если масса дрона требует этого (≥250 г или оснащён камерой).
   sourceRef: "Reg (EU) 2019/945 Annex Part 5 — C4 requirements | https://eur-lex.europa.eu/eli/reg_del/2019/945/oj/eng"
@@ -578,7 +578,7 @@
   options:
     - id: a
       text:
-        lv: Tikai Direct Remote ID — citas iezīmes nav obligātas.
+        lv: Tikai tiešā attālā identifikācija (Direct Remote ID) — citas iezīmes nav obligātas.
         en: Only Direct Remote ID — no other features are mandatory.
         ru: Только Direct Remote ID — другие функции не обязательны.
     - id: b
@@ -593,13 +593,13 @@
         ru: Только fail-safe и ограничение шума — Remote ID не обязателен для C1.
     - id: d
       text:
-        lv: Direct Remote ID, geo-awareness, fail-safe (RTH vai nosēšanās), maksimālais ātrums ≤ 19 m/s, maksimālais troksnis ≤ 70 dB(A).
+        lv: Tiešā attālā identifikācija (Direct Remote ID), ģeozināšana, fail-safe funkcija (RTH vai nosēšanās), maksimālais ātrums ≤ 19 m/s un maksimālais troksnis ≤ 70 dB(A).
         en: Direct Remote ID, geo-awareness, fail-safe (RTH or landing), maximum speed ≤ 19 m/s, maximum noise ≤ 70 dB(A).
         ru: Direct Remote ID, гео-осведомлённость, fail-safe (RTH или посадка), максимальная скорость ≤ 19 м/с, максимальный шум ≤ 70 дБ(А).
   correctOptionId: d
   explanation:
     lv: |
-      Regula 2019/945 Part 2 (C1) nosaka: Direct Remote ID, geo-awareness sistēmu, fail-safe (RTH vai droša nosēšanās), max ātrums 19 m/s, troksnis ≤ 70 dB(A) un kinētiskās enerģijas limitu (pie max ātruma < 80 J). C1 nav obligāts zema ātruma režīms (tas ir C2 prasība).
+      Regula 2019/945 Part 2 (C1) nosaka šādas prasības: tiešā attālā identifikācija, ģeozināšanas sistēma, fail-safe funkcija (RTH vai droša nosēšanās), maksimālais ātrums 19 m/s, troksnis ≤ 70 dB(A) un kinētiskās enerģijas limits (pie maksimālā ātruma < 80 J). C1 klasē zema ātruma režīms nav obligāts; tā ir C2 prasība.
     en: |
       Reg 2019/945 Part 2 (C1) requires: Direct Remote ID, geo-awareness system, fail-safe (RTH or safe landing), max speed 19 m/s, noise ≤ 70 dB(A), and kinetic energy limit (at max speed < 80 J). C1 does not require a low-speed mode (that is a C2 requirement).
     ru: |
@@ -614,7 +614,7 @@
       en: Low-speed mode is a C2 requirement, not C1. C1 has a speed and kinetic energy limit, not a low-speed mode.
       ru: Режим малой скорости — требование C2, а не C1. C1 имеет ограничение скорости и кинетической энергии, а не режим малой скорости.
     c:
-      lv: Direct Remote ID ir obligāts C1. Arī geo-awareness ir obligāts, nevis opcija.
+      lv: Tiešā attālā identifikācija C1 klasē ir obligāta. Obligāta ir arī ģeozināšana, nevis tikai izvēles iespēja.
       en: Direct Remote ID is mandatory for C1. Geo-awareness is also mandatory, not optional.
       ru: Direct Remote ID обязателен для C1. Гео-осведомлённость также обязательна, а не опциональна.
   sourceRef: "Reg 2019/945 Part 2 — C1 class technical requirements | https://eur-lex.europa.eu/eli/reg_del/2019/945/oj/eng"
@@ -744,7 +744,7 @@
         ru: Да, но только в подкатегории A3.
     - id: c
       text:
-        lv: Nē — Direct Remote ID ir obligāts C1 klases UAS saskaņā ar Reg 2019/945.
+        lv: Nē — tiešā attālā identifikācija (Direct Remote ID) ir obligāta C1 klases UAS saskaņā ar Regulu 2019/945.
         en: No — Direct Remote ID is mandatory for C1 class UAS under Reg 2019/945.
         ru: Нет — Direct Remote ID обязателен для UAS класса C1 согласно Регл. 2019/945.
     - id: d
@@ -755,7 +755,7 @@
   correctOptionId: c
   explanation:
     lv: |
-      Direct Remote ID ir obligāts C1 klases prasībās (Reg 2019/945 Part 2). C1 drons bez Remote ID neatbilst klases prasībām un neatbilstošs drons nedrīkst tikt lietots kā C1 klases UAS. C0 ir vienīgā klase, kas ir atbrīvota no Remote ID prasības. Tīkla Remote ID ir papildu, ne aizstājošs risinājums.
+      Tiešā attālā identifikācija ir obligāta C1 klases prasība (Regulas 2019/945 2. daļa). C1 drons bez attālās identifikācijas neatbilst klases prasībām un to nedrīkst lietot kā C1 klases UAS. C0 ir vienīgā klase, kas ir atbrīvota no attālās identifikācijas prasības. Tīkla Remote ID ir papildu, nevis aizstājošs risinājums.
     en: |
       Direct Remote ID is a mandatory C1 class requirement (Reg 2019/945 Part 2). A C1 drone without Remote ID does not meet the class requirements and a non-compliant drone cannot be used as a C1-class UAS. C0 is the only class exempt from the Remote ID requirement. Network Remote ID is an additional, not a replacement solution.
     ru: |
@@ -832,7 +832,7 @@
   internalRef: docs/knowledge/eu-regulations/EU-2019-945-delegated-regulation-EN.pdf — Reg 2019/945 Part 2 — C1 geo-awareness; Reg 2019/947 Art. 13 — geo-awareness
 - id: ug-017
   stem:
-    lv: Pilots iepērk jaunu dronu ar C1 zīmolu un pārbauda reģistrācijas numuru uz drona. Kā operators numurs jānorāda uz drona?
+    lv: Pilots iegādājas jaunu dronu ar C1 marķējumu un pārbauda reģistrācijas numuru uz drona. Kā operatora numurs jānorāda uz drona?
     en: A pilot purchases a new drone with a C1 marking and checks the registration number on the drone. How must the operator number be displayed on the drone?
     ru: Пилот покупает новый дрон с маркировкой C1 и проверяет регистрационный номер на дроне. Как должен отображаться номер оператора на дроне?
   options:
@@ -859,14 +859,14 @@
   correctOptionId: a
   explanation:
     lv: |
-      Reg 2019/947 Art. 14(6) prasa, lai operators reģistrācijas numurs būtu norādīts uz UAS ar neatņemamu uzlīmi vai gravējumu, kas lasāms bez speciāla aprīkojuma. Tas papildina Remote ID pārraidi — abi ir obligāti. Uzlīmei jābūt skaidri salasāmai, izturīgai un neatdalāmai.
+      Regulas 2019/947 14. panta 6. punkts prasa, lai operatora reģistrācijas numurs uz UAS būtu norādīts ar neatņemamu uzlīmi vai gravējumu, ko var nolasīt bez speciāla aprīkojuma. Tas papildina attālās identifikācijas pārraidi — abas prasības ir obligātas. Uzlīmei jābūt skaidri salasāmai, izturīgai un neatdalāmai.
     en: |
       Reg 2019/947 Art. 14(6) requires the operator registration number to be displayed on the UAS by a non-removable label or engraving, readable without special equipment. This supplements Remote ID transmission — both are required. The label must be clearly legible, durable, and non-removable.
     ru: |
       Ст. 14(6) Регл. 2019/947 требует, чтобы регистрационный номер оператора был нанесён на UAS несъёмной наклейкой или гравировкой, читаемой без специального оборудования. Это дополняет передачу Remote ID — оба обязательны. Наклейка должна быть чётко читаемой, долговечной и несъёмной.
   distractorRationales:
     b:
-      lv: Remote ID un fiziskā marķēšana ir abi obligāti, nevis savstarpēji aizstājami. Fiziskā uzlīme ir prasīta papildinājumā Remote ID.
+      lv: Attālā identifikācija un fiziskā marķēšana ir obligātas abas, nevis savstarpēji aizstājamas. Fiziskā uzlīme ir prasīta papildus attālajai identifikācijai.
       en: Remote ID and physical marking are both required, not mutually exclusive. The physical label is required in addition to Remote ID.
       ru: Remote ID и физическая маркировка — оба обязательны, а не взаимозаменяемы. Физическая наклейка требуется в дополнение к Remote ID.
     c:

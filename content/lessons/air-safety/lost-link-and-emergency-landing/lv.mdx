@@ -55,7 +55,7 @@ Biežākā kļūda ir gaidīt pilnīgu pārliecību, ka kļūme ir "īstā". Kad
 
 Return-to-home var būt noderīgs, ja:
 
-- home point ir pareizs;
+- sākuma punkts ir pareizs;
 - GNSS ir uzticams;
 - ceļš atpakaļ ir brīvs no šķēršļiem;
 - lidaparāts joprojām uzvedas normāli.
@@ -80,7 +80,7 @@ Pareizā darbība ir pārtraukt filmēšanu, samazināt attālumu, izvairīties 
 <CommonMistakes>
 - Turpināt misiju, jo bilde vienu reizi atgriezās.
 - Mēģināt meklēt iestatījumus, kamēr lidaparāts vēl ir gaisā.
-- Akli uzticēties return-to-home, ja GNSS vai home point kvalitāte ir apšaubāma.
+- Akli uzticēties return-to-home, ja GNSS vai sākuma punkta kvalitāte ir apšaubāma.
 - Atlikt nolaišanos, jo klientam vajag "vēl vienu pārlidojumu".
 </CommonMistakes>
 
@@ -106,13 +106,13 @@ Pareizā darbība ir pārtraukt filmēšanu, samazināt attālumu, izvairīties 
     id: "as-ll2",
     stem: "Kad return-to-home ir slikts noklusējuma risinājums?",
     options: [
-      { id: "a", text: "Kad GNSS vai home point uzticamība ir apšaubāma un ceļā var būt šķēršļi." },
+      { id: "a", text: "Kad GNSS vai sākuma punkta uzticamība ir apšaubāma un ceļā var būt šķēršļi." },
       { id: "b", text: "Kad lidaparāts jau ir tuvu un stabili virs drošas nolaišanās vietas." },
       { id: "c", text: "Kad pilots saglabā VLOS." },
       { id: "d", text: "Kad baterija ir virs 50%." },
     ],
     correctOptionId: "a",
-    explanation: "RTH balstās uz uzticamu pozicionēšanu, pareizu home point un drošu maršrutu. Ja šie pieņēmumi ir vāji, akla paļaušanās uz automātiku var ārkārtas situāciju tikai saasināt.",
+    explanation: "RTH balstās uz uzticamu pozicionēšanu, pareizi fiksētu sākuma punktu un drošu maršrutu. Ja šie pieņēmumi ir vāji, akla paļaušanās uz automātiku var ārkārtas situāciju tikai saasināt.",
     distractorRationales: {
       b: "Ja lidaparāts jau ir tuvu drošai vietai, tieša nolaišanās bieži ir labāka par papildu automātiku.",
       c: "VLOS vien nenozīmē, ka RTH ir slikts; problēma ir datu kvalitāte un maršruta drošums.",

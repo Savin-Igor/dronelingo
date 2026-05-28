@@ -718,7 +718,7 @@
       en: The C3/A3 threshold is below 25 kg MTOM. 24 kg is below that threshold; the issue would arise at 25 kg or more.
       ru: Порог C3/A3 — ниже 25 кг MTOM. 24 кг ниже этого порога; проблема возникла бы при 25 кг или больше.
     d:
-      lv: Operators reģistrācija ir prasība visiem operatoriem ar UAS ≥ 250 g, bet tā nav papildu nosacījums 200 m attālumam. Atbilde "jā" ir pareiza ar nosacījumu — operators reģistrācija ir neatkarīga prasība.
+      lv: Operatora reģistrācija ir prasība visiem operatoriem, kuru UAS sver ≥250 g, taču tā nav papildu nosacījums 200 m attālumam. Atbilde "jā" ir pareiza, vienlaikus atceroties, ka operatora reģistrācija ir neatkarīga prasība.
       en: Operator registration is required for all operators with UAS ≥ 250 g, but it is not an additional condition for the 200 m distance. The "yes" answer is correct as stated — operator registration is an independent requirement.
       ru: Регистрация оператора требуется для всех операторов с UAS ≥ 250 г, но это не дополнительное условие для расстояния 200 м. Ответ «да» верен — регистрация оператора является независимым требованием.
   sourceRef: "Reg 2019/947 Art. UAS.OPEN.040 A3 — residential area distance | https://droni.caa.gov.lv/bgkis/ugz/lidojumu-pieteiksana-un-saskanosana-uas-geografiskajas-zonas/; Reg 2019/945 C3 class | https://eur-lex.europa.eu/eli/reg_del/2019/945/oj/eng"

@@ -502,7 +502,7 @@
       Страховка должна действовать в момент полёта — периода льгот для истёкших полисов нет. Если полис истёк, пилот не может летать. Решение: (1) отменить полёт; или (2) приобрести временный полис до начала полёта. Многие страховщики предлагают дневные или недельные временные полисы онлайн. «В процессе продления» или полис друга не дают правового основания для полёта.
   distractorRationales:
     a:
-      lv: Drauga polise nav operators polise konkrētajam operatoram. Katram operatoram jābūt savai derīgai poliserei.
+      lv: Drauga polise nav konkrētā operatora polise. Katram operatoram jābūt savai derīgai polisei.
       en: A friend's policy is not the operator's policy for the specific operator. Each operator must have their own valid policy.
       ru: Полис друга не заменяет полис конкретного оператора. Каждый оператор должен иметь свой действующий полис.
     c:
@@ -536,7 +536,7 @@
         ru: Франшиза — это остаточная стоимость дрона после аварии.
     - id: c
       text:
-        lv: Pašrisks ir operators pats samaksā summa katrā prasībā pirms apdrošinātājs izmaksā atlikumu.
+        lv: Pašrisks ir summa, ko operators sedz pats katrā prasībā, pirms apdrošinātājs izmaksā atlikušo daļu.
         en: The deductible is the amount the operator pays themselves on each claim before the insurer pays the remainder.
         ru: Франшиза — сумма, которую оператор оплачивает сам при каждом страховом случае, после чего страховщик выплачивает остаток.
     - id: d
@@ -554,7 +554,7 @@
       Франшиза — это определённая сумма, которую оператор оплачивает сам при каждом страховом случае. Например, при франшизе €200 и ущербе дрону €1 500: страховщик выплачивает €1 300 (1 500 – 200). Более высокая франшиза обычно означает более низкую годовую премию. Франшиза — не годовой взнос и не государственно установленная сумма.
   distractorRationales:
     a:
-      lv: Gada prēmija ir apdrošināšanas maksa par polisi visu gadu. Pašrisks ir atšķirīgs — tas ir operators dalījums katrā konkrētā prasībā.
+      lv: Gada prēmija ir maksa par polisi visam gadam. Pašrisks ir kas cits — tā ir operatora daļa katrā konkrētā prasībā.
       en: The annual premium is the insurance fee for the policy throughout the year. The deductible is different — it is the operator's contribution on each specific claim.
       ru: Годовой взнос — плата за страхование на весь год. Франшиза отличается — это вклад оператора в каждый конкретный страховой случай.
     b:
@@ -682,7 +682,7 @@
   options:
     - id: a
       text:
-        lv: Nē — organizatora papildu apdrošināšana aizvieto operators obligāto polisi.
+        lv: Nē — organizatora papildu apdrošināšana neaizstāj operatora obligāto polisi.
         en: No — the organiser's additional insurance replaces the operator's mandatory policy.
         ru: Нет — дополнительная страховка организатора заменяет обязательный полис оператора.
     - id: b
@@ -703,14 +703,14 @@
   correctOptionId: b
   explanation:
     lv: |
-      Obligātā civiltiesiskās atbildības apdrošināšana ir UAS operatora personiskais pienākums — to nevar aizstāt ar pasākuma organizatora polisi. Inspekcijā operators uzrāda savu polisi. Organizatora apdrošināšana var būt papildinājums vai komerciālā vienošanās, bet nemaina operators regulatīvo pienākumu.
+      Obligātā civiltiesiskās atbildības apdrošināšana ir UAS operatora personisks pienākums, un to nevar aizstāt ar pasākuma organizatora polisi. Inspekcijā operators uzrāda savu polisi. Organizatora apdrošināšana var būt papildinājums vai komerciāla vienošanās, bet tā nemaina operatora normatīvo pienākumu.
     en: |
       Mandatory third-party liability insurance is the UAS operator's personal obligation — it cannot be replaced by an event organiser's policy. In an inspection the operator shows their own policy. The organiser's insurance may be an addition or a commercial arrangement, but it does not change the operator's regulatory obligation.
     ru: |
       Обязательное страхование гражданской ответственности — личная обязанность оператора UAS. Оно не может быть заменено полисом организатора мероприятия. При инспекции оператор предъявляет свой собственный полис. Страховка организатора может быть дополнением или коммерческим соглашением, но не меняет нормативной обязанности оператора.
   distractorRationales:
     a:
-      lv: Organizatora polise neaizvieto operators personisko regulatīvo pienākumu par obligāto apdrošināšanu.
+      lv: Organizatora polise neaizstāj operatora personisko normatīvo pienākumu par obligāto apdrošināšanu.
       en: The organiser's policy does not replace the operator's personal regulatory obligation for mandatory insurance.
       ru: Полис организатора не заменяет личное нормативное обязательство оператора по обязательному страхованию.
     c:
@@ -734,7 +734,7 @@
   options:
     - id: a
       text:
-        lv: UAS reģistrāciju un operators identifikāciju ES.
+        lv: UAS reģistrāciju un operatora identifikāciju ES.
         en: UAS registration and operator identification in the EU.
         ru: Регистрацию UAS и идентификацию оператора в ЕС.
     - id: b
@@ -1204,7 +1204,7 @@
         ru: Стоимость дрона за вычетом €300 франшизы — камера требует отдельной страховки груза.
   correctOptionId: d
   explanation:
-    lv: Korpusa apdrošināšana sedz aparātu (UAS) mīnus pašrisks. Kino kamera ir lietderīgā krava un prasa atsevišķu kravas apdrošināšanas polisi vai piesaisti. Korpuss automātiski neattiecas uz piestiprinātu aprīkojumu. Pilota kļūda parasti nav izslēgts gadījums vairumā korpusa polišu — fly-away un sabrukumi ir kodola segumi.
+    lv: Korpusa apdrošināšana sedz pašu aparātu (UAS), atskaitot pašrisku. Kino kamera ir lietderīgā krava un prasa atsevišķu kravas polisi vai papildu segumu. Korpusa apdrošināšana automātiski neattiecas uz piestiprinātu aprīkojumu. Pilota kļūda parasti nav izslēgts gadījums vairumā korpusa polišu — nekontrolēta aizlidošana un avārijas ir tipiski pamatsegumi.
     en: Hull insurance covers the aircraft (drone) minus the deductible. The cinema camera is payload and requires a separate payload insurance policy or rider. Hull does not automatically extend to mounted equipment. Pilot error is typically not an exclusion in most hull policies — fly-away and crashes are the core covered events.
     ru: Страховка корпуса покрывает дрон (аппарат) за вычетом франшизы. Кинокамера — груз и требует отдельного полиса. Ошибка пилота, как правило, не исключается из страховки корпуса — крушения и неконтролируемый улёт относятся к основным покрываемым рискам.
   distractorRationales:
@@ -1213,7 +1213,7 @@
       en: The formulation is partially correct — hull covers the drone — but omits the deductible, which reduces the payout.
       ru: Формулировка неточная — корпус покрывает дрон, но не вычитает только франшизу. Более полный ответ указывает на франшизу.
     b:
-      lv: Korpusa apdrošināšana ir tieši paredzēta sabrukuma un fly-away gadījumiem, ieskaitot pilota kļūdas. Tīši bojājumi vai rupja neuzmanība var būt izslēgti, bet sabrukumi ir kodola segums.
+      lv: Korpusa apdrošināšana ir tieši paredzēta avārijām un nekontrolētas aizlidošanas gadījumiem, arī tad, ja pie vainas ir pilota kļūda. Tīši bojājumi vai rupja neuzmanība var būt izslēgti, bet avārijas ir pamatsegums.
       en: Hull insurance is specifically designed to cover crash and fly-away events, including pilot error. Intentional damage or gross negligence may be excluded, but crashes are a core covered peril.
       ru: Страховка корпуса как раз и предназначена для крушений и неконтролируемого улёта, включая случаи ошибки пилота. Исключения касаются умышленного ущерба или грубой халатности.
     c:

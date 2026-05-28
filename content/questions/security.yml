@@ -183,7 +183,7 @@
   correctOptionId: d
   explanation:
     lv: |
-      GPS spoofing maldina UAS GPS uztvērēju ar viltus pozīciju signāliem. Tas ir atšķirībā no jamming, kas dzēš signālu pavisam.
+      GPS signāla viltošana maldina UAS GPS uztvērēju ar nepatiesiem pozīcijas signāliem. Tas atšķiras no slāpēšanas, kas signālu pilnībā pārtrauc.
     en: |
       GPS spoofing feeds the UAS GPS receiver false position signals. This is distinct from jamming, which suppresses the signal entirely.
     ru: |
@@ -198,7 +198,7 @@
       en: Battery overheating is a hardware failure, not a cyber attack. It is unrelated to GNSS.
       ru: Перегрев аккумулятора — аппаратный отказ, а не кибератака. К GNSS он отношения не имеет.
     c:
-      lv: Firmware atjaunošana ir parasta apkopes darbība, nevis uzbrukums. Tā var būt drošības vektors, ja izmantots neoficiāls avots, bet pats process nav spoofing.
+      lv: Programmaparatūras atjaunināšana ir parasta apkopes darbība, nevis uzbrukums. Tā var kļūt par risku, ja izmantots neoficiāls avots, bet pats process nav GPS signāla viltošana.
       en: A firmware update is routine maintenance, not an attack. It can be a vector if the source is unofficial, but the act itself is not spoofing.
       ru: Обновление прошивки — обычное обслуживание, а не атака. Оно может быть вектором при неофициальном источнике, но сам процесс — не spoofing.
   sourceRef: "ENISA threat report — GNSS spoofing/jamming | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
@@ -214,7 +214,7 @@
   options:
     - id: a
       text:
-        lv: Mainīt rūpnīcas paroli un atjaunināt firmware oficiāli.
+        lv: Nomainīt rūpnīcas paroli un atjaunināt programmaparatūru tikai no oficiāla avota.
         en: Change the factory password and update firmware officially.
         ru: Сменить заводской пароль и обновлять прошивку официально.
     - id: b
@@ -224,7 +224,7 @@
         ru: Подключать дрон к незнакомой Wi-Fi сети.
     - id: c
       text:
-        lv: Lejupielādēt firmware no foruma.
+        lv: Lejupielādēt programmaparatūru no foruma.
         en: Download firmware from a forum.
         ru: Скачивать прошивку с форума.
     - id: d
@@ -235,7 +235,7 @@
   correctOptionId: a
   explanation:
     lv: |
-      Rūpnīcas paroles maiņa un oficiālu firmware atjauninājumu izmantošana ir pamata higiēna. Foruma firmware un nezināmi tīkli ir uzbrukumu vektori.
+      Rūpnīcas paroles maiņa un oficiālu programmaparatūras atjauninājumu izmantošana ir pamata digitālā higiēna. Programmaparatūra no foruma un nezināmi tīkli ir uzbrukuma ceļi.
     en: |
       Changing the factory password and using official firmware updates is basic hygiene. Forum firmware and unknown networks are attack vectors.
     ru: |
@@ -246,7 +246,7 @@
       en: An unknown Wi-Fi can be an attack vector — an untrusted network may intercept or modify traffic.
       ru: "Незнакомый Wi-Fi — потенциальный вектор атаки: ненадёжная сеть может перехватить или подменить трафик."
     c:
-      lv: Foruma firmware nav verificēts ražotājam — tas var saturēt aizmugures durvis vai ļaunatūru.
+      lv: Programmaparatūra no foruma nav ražotāja pārbaudīta, tāpēc tajā var būt aizmugures durvis vai ļaunatūra.
       en: Forum firmware is not verified by the manufacturer — it may contain backdoors or malware.
       ru: Прошивка с форума не верифицирована производителем — она может содержать бэкдоры или вредоносный код.
     d:
@@ -422,7 +422,7 @@
   options:
     - id: a
       text:
-        lv: Iespējams GPS spoofing uzbrukums — jāziņo incidentu (brīvprātīgs ziņojums), jāpārbauda, vai sistēma nav kompromitēta, un jāizmanto tikai officiāla firmware.
+        lv: Iespējams GPS signāla viltošanas uzbrukums — jāiesniedz brīvprātīgs ziņojums par incidentu, jāpārbauda, vai sistēma nav kompromitēta, un jāizmanto tikai oficiāla programmaparatūra.
         en: Possible GPS spoofing attack — file an occurrence report (voluntary), check if the system is compromised, use only official firmware.
         ru: Возможная атака GPS spoofing — подать добровольное уведомление об инциденте, проверить компрометацию системы, использовать только официальную прошивку.
     - id: b
@@ -443,7 +443,7 @@
   correctOptionId: a
   explanation:
     lv: |
-      2 km pozīcijas novirze ir neparasta un var norādīt uz GPS spoofing — viltotu signālu pārraidi, kas maldina GPS uztvērēju. Tūlītējas darbības: (1) brīvprātīgs ziņojums e.caa.gov.lv/incidents; (2) sistēmas pārbaude; (3) firmware atjaunināšana tikai no ražotāja. Normāla GPS novirze nesasniedz 2 km; tā ir centimetri vai metri pilsētas zonās.
+      2 km pozīcijas novirze ir neparasta un var norādīt uz GPS signāla viltošanu — viltotu signālu pārraidi, kas maldina GPS uztvērēju. Tūlītējās darbības: (1) brīvprātīgs ziņojums vietnē e.caa.gov.lv/incidents; (2) sistēmas pārbaude; (3) programmaparatūras atjaunināšana tikai no ražotāja. Normāla GPS novirze nesasniedz 2 km; tā parasti ir centimetru vai metru robežās.
     en: |
       A 2 km position drift is unusual and may indicate GPS spoofing — fake signal broadcasting that misleads the GPS receiver. Immediate actions: (1) voluntary report at e.caa.gov.lv/incidents; (2) system integrity check; (3) firmware update only from the manufacturer. Normal GPS drift does not reach 2 km; it is centimetres or metres in urban areas.
     ru: |
@@ -676,7 +676,7 @@
   internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/945 — Direct Remote ID data fields
 - id: se-014
   stem:
-    lv: Pilots saņem paziņojumu par jaunu firmware versiju no neoficiāla avota (foruma). Versijā tiek solīti "papildu lidojuma augstumi" un "atbloķētas zonas". Ko pilotam jādara?
+    lv: Pilots saņem paziņojumu par jaunu programmaparatūras versiju no neoficiāla avota (foruma). Versijā tiek solīti "papildu lidojuma augstumi" un "atbloķētas zonas". Ko pilotam jādara?
     en: A pilot receives a notification of a new firmware version from an unofficial source (a forum). The version promises "extended flight altitudes" and "unlocked zones". What should the pilot do?
     ru: Пилот получает уведомление о новой версии прошивки из неофициального источника (форума). Версия обещает «расширенные высоты полёта» и «разблокированные зоны». Что должен сделать пилот?
   options:
@@ -687,12 +687,12 @@
         ru: Скачать и установить — расширенные возможности улучшают эффективность полёта.
     - id: b
       text:
-        lv: Nelejupielādēt — neoficiāla firmware ir kiberdrošības risks un var atcelt C klases sertifikāciju, turklāt "atbloķētās zonas" ir nelegālas.
+        lv: Nelejupielādēt — neoficiāla programmaparatūra rada kiberdrošības risku un var padarīt C klases sertifikāciju nederīgu, turklāt "atbloķētās zonas" ir nelikumīgas.
         en: Do not download — unofficial firmware is a cybersecurity risk and may void the C-class certification; additionally "unlocked zones" are illegal.
         ru: Не скачивать — неофициальная прошивка создаёт киберриск и может аннулировать сертификацию C-класса; кроме того, «разблокированные зоны» незаконны.
     - id: c
       text:
-        lv: Lejupielādēt, ja firmware ir bez maksas.
+        lv: Lejupielādēt, ja programmaparatūra ir bez maksas.
         en: Download if the firmware is free.
         ru: Скачать, если прошивка бесплатна.
     - id: d
@@ -703,18 +703,18 @@
   correctOptionId: b
   explanation:
     lv: |
-      Neoficiāla firmware ir aizliegta vairāku iemeslu dēļ: (1) drošības risks — var saturēt ļaunatūru vai backdoors; (2) C klases sertifikācija var tikt atcelta — C klase prasa atbilstību ražotāja specifikācijām; (3) "atbloķētās zonas" nozīmē geo-awareness un geofencing apiešanu, kas ir nelegāli; (4) papildu augstumi pārsniedz regulatīvos limitus. Vienmēr izmantot tikai ražotāja oficiālo firmware.
+      Neoficiāla programmaparatūra ir aizliegta vairāku iemeslu dēļ: (1) tā var saturēt ļaunatūru vai aizmugures piekļuvi; (2) C klases sertifikācija prasa atbilstību ražotāja specifikācijām, un šo atbilstību var zaudēt; (3) "atbloķētās zonas" nozīmē ģeozināšanas un ģeonožogojuma apiešanu, kas ir nelikumīga; (4) papildu augstumi pārsniedz normatīvos ierobežojumus. Jāizmanto tikai ražotāja oficiālā programmaparatūra.
     en: |
       Unofficial firmware is prohibited for several reasons: (1) security risk — may contain malware or backdoors; (2) C-class certification may be voided — C-class requires compliance with manufacturer specifications; (3) "unlocked zones" means bypassing geo-awareness and geofencing, which is illegal; (4) extended altitudes exceed regulatory limits. Always use only manufacturer official firmware.
     ru: |
       Неофициальная прошивка запрещена по нескольким причинам: (1) риск безопасности — может содержать вредоносное ПО или бэкдоры; (2) сертификация C-класса может быть аннулирована — C-класс требует соответствия спецификациям производителя; (3) «разблокированные зоны» означают обход гео-осведомлённости и геозон, что незаконно; (4) расширенные высоты превышают нормативные лимиты. Всегда использовать только официальную прошивку производителя.
   distractorRationales:
     a:
-      lv: '"Papildu iespējas" no neoficiāla avota nav likumīgas un var apdraudēt drošību. "Efektivitāte" nav attaisnojums nelegālai firmware.'
+      lv: '"Papildu iespējas" no neoficiāla avota nav likumīgas un var apdraudēt drošību. "Efektivitāte" nav attaisnojums nelegālai programmaparatūrai.'
       en: '"Extended capabilities" from an unofficial source are not legal and may compromise security. "Efficiency" is not a justification for illegal firmware.'
       ru: «Расширенные возможности» из неофициального источника незаконны и могут поставить под угрозу безопасность. «Эффективность» не оправдывает нелегальную прошивку.
     c:
-      lv: Cena (bezmaksas/maksas) nav kritērijs firmware drošībai vai legalitātei. Ļaunatūra nereti ir bezmaksas.
+      lv: Cena nav kritērijs programmaparatūras drošībai vai likumībai. Ļaunatūra bieži ir pieejama bez maksas.
       en: Price (free/paid) is not a criterion for firmware safety or legality. Malware is often free.
       ru: Цена (бесплатно или платно) не говорит ни о безопасности, ни о законности прошивки. Вредоносное ПО часто распространяется бесплатно.
     d:
@@ -1003,12 +1003,12 @@
         ru: После посадки отформатировать SD-карту.
     - id: d
       text:
-        lv: Pirms pacelšanās pārbaudīt home point un RTH augstumu.
+        lv: Pirms pacelšanās pārbaudīt sākuma punktu un RTH augstumu.
         en: Confirming the home point and RTH altitude before takeoff.
         ru: До взлёта проверить домашнюю точку и высоту RTH.
   correctOptionId: d
   explanation:
-    lv: Return-to-home balstās uz pareizu home point un atbilstošu RTH augstumu. Ja kāds no tiem ir kļūdains, automātika var lidot uz nepareizu vietu vai nepareizā augstumā.
+    lv: Return-to-home balstās uz pareizi fiksētu sākuma punktu un atbilstošu RTH augstumu. Ja kāds no tiem ir kļūdains, automātika var aizvest dronu uz nepareizu vietu vai nepareizā augstumā.
     en: Return-to-home depends on a correct home point and sensible RTH altitude. If either is wrong, the automation may guide the aircraft into the wrong place or route.
     ru: Return-to-home зависит от правильной домашней точки и адекватной высоты RTH. Если один из параметров неверен, автоматика может отправить аппарат в неправильное место или по опасной траектории.
   distractorRationales:
@@ -1047,7 +1047,7 @@
         ru: Потому что правила EASA вообще запрещают обновления.
     - id: c
       text:
-        lv: Tāpēc, ka atjauninājums vienmēr izslēdz remote ID.
+        lv: Tāpēc, ka atjauninājums vienmēr izslēdz attālo identifikāciju.
         en: Because updated firmware disables remote ID.
         ru: Потому что обновление всегда отключает remote ID.
     - id: d
@@ -1066,7 +1066,7 @@
       en: Updates are allowed; the issue is timing and testing.
       ru: Обновления не запрещены; вопрос в моменте и тестировании.
     c:
-      lv: Nav vispārīga noteikuma, ka atjauninājumi izslēdz remote ID.
+      lv: Nav vispārīga noteikuma, ka atjauninājumi izslēdz attālo identifikāciju.
       en: There is no general rule that firmware updates disable remote ID.
       ru: Нет общего правила, что обновления отключают remote ID.
     d:
@@ -1199,12 +1199,12 @@
         ru: Только если дрон тяжелее 4 кг.
     - id: d
       text:
-        lv: Jo atbildība par lidaparātu, baterijām, pulti un datu nesējiem atbalsta drošību, security un privātumu.
+        lv: Jo atbildība par lidaparātu, baterijām, pulti un datu nesējiem stiprina drošību, aizsardzību un privātumu.
         en: Because accountability for aircraft, batteries, controller, and media supports safety, security, and privacy.
         ru: Потому что контроль за аппаратом, батареями, пультом и носителями поддерживает безопасность полёта, защиту от вмешательства и приватность.
   correctOptionId: d
   explanation:
-    lv: "Kontrolēta apiešanās ir operatīvi svarīga: nezināms stāvoklis rada drošības risku, bez uzraudzības atstāts aprīkojums rada security risku, bet vaļīgi datu nesēji — privātuma risku."
+    lv: "Kontrolēta apiešanās ir operatīvi svarīga: nezināms stāvoklis rada drošības risku, bez uzraudzības atstāts aprīkojums rada zādzības vai manipulācijas risku, bet vaļīgi datu nesēji — privātuma risku."
     en: "Controlled handling matters operationally: unknown state creates safety risk, unattended gear creates security risk, and loose media creates privacy risk."
     ru: "Контролируемое обращение имеет прямую полевую ценность: неизвестное состояние создаёт риск для полёта, оставленное оборудование — риск вмешательства, а свободные носители — риск для приватности."
   distractorRationales:
@@ -1490,12 +1490,12 @@
   options:
     - id: a
       text:
-        lv: Lejupielādēt firmware no foruma.
+        lv: Lejupielādēt programmaparatūru no foruma.
         en: Download firmware from a forum.
         ru: Скачивать прошивку с форума.
     - id: b
       text:
-        lv: Mainīt rūpnīcas paroli un atjaunināt firmware oficiāli.
+        lv: Nomainīt rūpnīcas paroli un atjaunināt programmaparatūru tikai no oficiāla avota.
         en: Change the factory password and update firmware officially.
         ru: Сменить заводской пароль и обновлять прошивку официально.
     - id: c
@@ -1511,14 +1511,14 @@
   correctOptionId: b
   explanation:
     lv: |
-      Rūpnīcas paroles maiņa un oficiālu firmware atjauninājumu izmantošana ir pamata higiēna. Foruma firmware un nezināmi tīkli ir uzbrukumu vektori.
+      Rūpnīcas paroles maiņa un oficiālu programmaparatūras atjauninājumu izmantošana ir pamata digitālā higiēna. Programmaparatūra no foruma un nezināmi tīkli ir uzbrukuma ceļi.
     en: |
       Changing the factory password and using official firmware updates is basic hygiene. Forum firmware and unknown networks are attack vectors.
     ru: |
       Смена заводского пароля и официальные обновления прошивки — базовая гигиена. Прошивки с форумов и незнакомые сети — векторы атак.
   distractorRationales:
     a:
-      lv: Foruma firmware nav verificēts ražotājam — tas var saturēt aizmugures durvis vai ļaunatūru.
+      lv: Programmaparatūra no foruma nav ražotāja pārbaudīta, tāpēc tajā var būt aizmugures durvis vai ļaunatūra.
       en: Forum firmware is not verified by the manufacturer — it may contain backdoors or malware.
       ru: Прошивка с форума не верифицирована производителем — она может содержать бэкдоры или вредоносный код.
     c:
@@ -1703,7 +1703,7 @@
         ru: Неисправность батареи — заменить батарею.
     - id: b
       text:
-        lv: Iespējams GPS spoofing uzbrukums — jāziņo incidentu (brīvprātīgs ziņojums), jāpārbauda, vai sistēma nav kompromitēta, un jāizmanto tikai officiāla firmware.
+        lv: Iespējams GPS signāla viltošanas uzbrukums — jāiesniedz brīvprātīgs ziņojums par incidentu, jāpārbauda, vai sistēma nav kompromitēta, un jāizmanto tikai oficiāla programmaparatūra.
         en: Possible GPS spoofing attack — file an occurrence report (voluntary), check if the system is compromised, use only official firmware.
         ru: Возможная атака GPS spoofing — подать добровольное уведомление об инциденте, проверить компрометацию системы, использовать только официальную прошивку.
     - id: c
@@ -1744,7 +1744,7 @@
   internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — ENISA threat report — GNSS spoofing; CAA Latvia occurrence reporting
 - id: se-035
   stem:
-    lv: Pēc inspekcijas lidojuma pilots atrod vaļīgu SD karti blakus atvērtam koferim, un nav skaidrs, kurš tai piekļuva. Kāda ir pareizā security rīcība?
+    lv: Pēc inspekcijas lidojuma pilots atrod vaļīgu SD karti blakus atvērtam koferim, un nav skaidrs, kurš tai piekļuva. Kāda ir pareizā drošības rīcība?
     en: After an inspection flight, the pilot finds a loose SD card beside an open case and cannot confirm who accessed it. What is the correct security action?
     ru: После инспекционного полёта пилот находит свободно лежащую SD-карту рядом с открытым кейсом и не может подтвердить, кто имел к ней доступ. Какое действие по безопасности правильное?
   options:
@@ -1770,12 +1770,12 @@
         ru: Быстро отправить все файлы клиенту, чтобы ответственность перешла клиенту.
   correctOptionId: c
   explanation:
-    lv: Nezināma piekļuve datu nesējam ir security un privātuma risks. Pareizā rīcība ir saglabāt pierādāmību, izolēt karti, dokumentēt notikumu un novērtēt ziņošanas pienākumus.
+    lv: Nezināma piekļuve datu nesējam rada drošības un privātuma risku. Pareizā rīcība ir saglabāt pierādāmību, izolēt karti, dokumentēt notikumu un novērtēt ziņošanas pienākumus.
     en: Unknown access to storage media is a security and privacy risk. The correct response is to preserve accountability, isolate the card, document the event and assess reporting duties.
     ru: "Неизвестный доступ к носителю данных создаёт риск для безопасности и приватности. Правильное действие: сохранить подотчётность, изолировать карту, задокументировать событие и оценить обязанности уведомления."
   distractorRationales:
     a:
-      lv: Dzēšana iznīcina pierādījumus un var pasliktināt gan security, gan privātuma situāciju.
+      lv: Dzēšana iznīcina pierādījumus un var pasliktināt gan drošības, gan privātuma situāciju.
       en: Erasure destroys evidence and can make both security and privacy handling worse.
       ru: Удаление уничтожает доказательства и может ухудшить разбор ситуации с безопасностью и приватностью.
     b:
@@ -1949,13 +1949,13 @@
   internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/945 — Direct Remote ID data fields
 - id: se-039
   stem:
-    lv: Operators izlemj, vai tehnisks notikums ir tikai neērtība vai ziņojams drošības jautājums. Pilots saņem paziņojumu par jaunu firmware versiju no neoficiāla avota (foruma). Versijā tiek solīti "papildu lidojuma augstumi" un "atbloķētas zonas". Ko pilotam jādara?
+    lv: Operators izvērtē, vai tehnisks notikums ir tikai neērtība vai jau ziņojams drošības incidents. Pilots saņem paziņojumu par jaunu programmaparatūras versiju no neoficiāla avota (foruma). Versijā tiek solīti "papildu lidojuma augstumi" un "atbloķētas zonas". Ko pilotam jādara?
     en: The operator is deciding whether a technical event is just inconvenience or a reportable security issue. A pilot receives a notification of a new firmware version from an unofficial source (a forum). The version promises "extended flight altitudes" and "unlocked zones". What should the pilot do?
     ru: Оператор решает, считать ли техническое событие просто неудобством или поводом для сообщения о проблеме безопасности. Пилот получает уведомление о новой версии прошивки из неофициального источника (форума). Версия обещает «расширенные высоты полёта» и «разблокированные зоны». Что должен сделать пилот?
   options:
     - id: a
       text:
-        lv: Lejupielādēt, ja firmware ir bez maksas.
+        lv: Lejupielādēt, ja programmaparatūra ir bez maksas.
         en: Download if the firmware is free.
         ru: Скачать, если прошивка бесплатна.
     - id: b
@@ -1965,7 +1965,7 @@
         ru: Скачать, но только в целях тестирования.
     - id: c
       text:
-        lv: Nelejupielādēt — neoficiāla firmware ir kiberdrošības risks un var atcelt C klases sertifikāciju, turklāt "atbloķētās zonas" ir nelegālas.
+        lv: Nelejupielādēt — neoficiāla programmaparatūra rada kiberdrošības risku un var padarīt C klases sertifikāciju nederīgu, turklāt "atbloķētās zonas" ir nelikumīgas.
         en: Do not download — unofficial firmware is a cybersecurity risk and may void the C-class certification; additionally "unlocked zones" are illegal.
         ru: Не скачивать — неофициальная прошивка создаёт киберриск и может аннулировать сертификацию C-класса; кроме того, «разблокированные зоны» незаконны.
     - id: d
@@ -1976,14 +1976,14 @@
   correctOptionId: c
   explanation:
     lv: |
-      Neoficiāla firmware ir aizliegta vairāku iemeslu dēļ: (1) drošības risks — var saturēt ļaunatūru vai backdoors; (2) C klases sertifikācija var tikt atcelta — C klase prasa atbilstību ražotāja specifikācijām; (3) "atbloķētās zonas" nozīmē geo-awareness un geofencing apiešanu, kas ir nelegāli; (4) papildu augstumi pārsniedz regulatīvos limitus. Vienmēr izmantot tikai ražotāja oficiālo firmware.
+      Neoficiāla programmaparatūra ir aizliegta vairāku iemeslu dēļ: (1) tā var saturēt ļaunatūru vai aizmugures piekļuvi; (2) C klases sertifikācija prasa atbilstību ražotāja specifikācijām, un šo atbilstību var zaudēt; (3) "atbloķētās zonas" nozīmē ģeozināšanas un ģeonožogojuma apiešanu, kas ir nelikumīga; (4) papildu augstumi pārsniedz normatīvos ierobežojumus. Jāizmanto tikai ražotāja oficiālā programmaparatūra.
     en: |
       Unofficial firmware is prohibited for several reasons: (1) security risk — may contain malware or backdoors; (2) C-class certification may be voided — C-class requires compliance with manufacturer specifications; (3) "unlocked zones" means bypassing geo-awareness and geofencing, which is illegal; (4) extended altitudes exceed regulatory limits. Always use only manufacturer official firmware.
     ru: |
       Неофициальная прошивка запрещена по нескольким причинам: (1) риск безопасности — может содержать вредоносное ПО или бэкдоры; (2) сертификация C-класса может быть аннулирована — C-класс требует соответствия спецификациям производителя; (3) «разблокированные зоны» означают обход гео-осведомлённости и геозон, что незаконно; (4) расширенные высоты превышают нормативные лимиты. Всегда использовать только официальную прошивку производителя.
   distractorRationales:
     a:
-      lv: Cena (bezmaksas/maksas) nav kritērijs firmware drošībai vai legalitātei. Ļaunatūra nereti ir bezmaksas.
+      lv: Cena nav kritērijs programmaparatūras drošībai vai likumībai. Ļaunatūra bieži ir pieejama bez maksas.
       en: Price (free/paid) is not a criterion for firmware safety or legality. Malware is often free.
       ru: Цена (бесплатно или платно) не говорит ни о безопасности, ни о законности прошивки. Вредоносное ПО часто распространяется бесплатно.
     b:
@@ -1991,7 +1991,7 @@
       en: '"Only for testing" does not change the fact that potentially malicious software is installed in the system. If the system is compromised, testing does not make it safer.'
       ru: «Только для тестирования» не меняет того факта, что в системе установлено потенциально вредоносное ПО. Если система скомпрометирована, тестирование не делает её безопаснее.
     d:
-      lv: '"Papildu iespējas" no neoficiāla avota nav likumīgas un var apdraudēt drošību. "Efektivitāte" nav attaisnojums nelegālai firmware.'
+      lv: '"Papildu iespējas" no neoficiāla avota nav likumīgas un var apdraudēt drošību. "Efektivitāte" nav attaisnojums nelegālai programmaparatūrai.'
       en: '"Extended capabilities" from an unofficial source are not legal and may compromise security. "Efficiency" is not a justification for illegal firmware.'
       ru: «Расширенные возможности» из неофициального источника незаконны и могут поставить под угрозу безопасность. «Эффективность» не оправдывает нелегальную прошивку.
   sourceRef: "ENISA Good Practices for UAS cyber security | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; manufacturer compliance"
@@ -2001,7 +2001,7 @@
   internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — ENISA Good Practices for UAS cyber security; Reg 2019/945 — manufacturer compliance
 - id: se-040
   stem:
-    lv: Pirms aprīkojuma pieslēgšanas vai žurnālu nodošanas pilots pārbauda drošības ietekmi. Pilots veic inspekcijas lidojumu aiz rūpnīcas. Drona kamera fiksē, ka darbinieki apspriež ražošanas procesu, un lidojumā tiek uzņemts konfidenciāls dokumentu mape. Kāds ir operators pienākums?
+    lv: Pirms aprīkojuma pieslēgšanas vai žurnālu nodošanas pilots izvērtē drošības ietekmi. Pilots veic inspekcijas lidojumu aiz rūpnīcas. Drona kamera fiksē, ka darbinieki apspriež ražošanas procesu, un kadrā nonāk konfidenciālu dokumentu mape. Kāds ir operatora pienākums?
     en: Before connecting equipment or sharing logs, the pilot checks the security impact. A pilot conducts an inspection flight behind a factory. The drone camera captures workers discussing a manufacturing process, and a folder of confidential documents is recorded during the flight. What is the operator's obligation?
     ru: Перед подключением оборудования или передачей логов пилот оценивает последствия для безопасности. Пилот проводит инспекционный полёт за заводом. Камера дрона фиксирует работников, обсуждающих производственный процесс, и в ходе полёта записывается папка конфиденциальных документов. Каково обязательство оператора?
   options:
@@ -2043,7 +2043,7 @@
       en: A commercial purpose does not authorise the use of all footage. Authorisation was given for a specific inspection task, not for confidential data.
       ru: Коммерческая цель не авторизует использование всего материала. Авторизация была дана для конкретного инспекционного задания, а не для конфиденциальных данных.
     c:
-      lv: '"Legāli iegūts" neautorizē operators personisko izmantošanu. Materiāls iegūts klients rīkojumā un piegādājams tikai autorisētajam pasūtītājam.'
+      lv: '"Legāli iegūts" nedod operatoram tiesības materiālu izmantot personīgi. Materiāls iegūts klienta uzdevumā un nododams tikai pilnvarotajam pasūtītājam.'
       en: "\"Legally obtained\" does not authorise the operator's personal use. The footage was obtained under a client's order and must be delivered only to the authorised client."
       ru: «Законно полученный» не авторизует личное использование оператором. Материал получен по заданию клиента и должен быть передан только авторизованному клиенту.
   sourceRef: "GDPR Art. 6 | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; trade secret protection; ENISA UAS data security | https://www.enisa.europa.eu/topics/cybersecurity-of-critical-sectors/transport"

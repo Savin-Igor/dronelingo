@@ -558,11 +558,11 @@
       en: Calling the airport is relevant if collision with manned aircraft is possible — but it is not the FIRST action. First attempt to regain control.
       ru: Звонок в аэропорт уместен при угрозе столкновения с пилотируемым воздушным судном, но это не ПЕРВОЕ действие. Сначала попытайтесь восстановить управление.
     b:
-      lv: Dokumentēšana un gaidīšana ir pasīva pieeja fly-away situācijai — vadības atgūšana ir prioritāte, kamēr drons vēl ir VLOS diapazonā.
+      lv: Dokumentēšana un gaidīšana ir pasīva pieeja nekontrolētas aizlidošanas situācijā — kamēr drons vēl ir VLOS robežās, prioritāte ir atgūt vadību.
       en: Documenting and waiting is a passive response to a fly-away — regaining control is the priority while the drone is still within VLOS range.
       ru: Документирование и ожидание — пассивная реакция на неконтролируемый улёт. Восстановление управления — приоритет, пока дрон в зоне VLOS.
     d:
-      lv: Kill Switch aptur propellerus lidojuma laikā — drons krīt nekontrolēti. Tas ir pēdējs risinājums, nevis pirmā darbība fly-away situācijā.
+      lv: Kill Switch aptur propellerus lidojuma laikā, un drons krīt nekontrolēti. Tas ir pēdējais līdzeklis, nevis pirmā darbība nekontrolētas aizlidošanas situācijā.
       en: The kill switch stops the propellers in flight — the drone falls uncontrolled. It is a last resort, not the first action in a fly-away.
       ru: Kill Switch останавливает пропеллеры в полёте — дрон падает неуправляемо. Это крайняя мера, а не первое действие при неконтролируемом улёте.
   sourceRef: "EASA Easy Access Rules — Emergency procedures | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; fly-away response"
@@ -744,7 +744,7 @@
         ru: Пилот должен иметь сертификат A2.
     - id: c
       text:
-        lv: Sākuma punktam jābūt ierakstītam pirms lidojuma, un RTH augstumam jābūt iestatītam augstākam par visiem apkārtējiem šķēršļiem.
+        lv: Sākuma punktam jābūt saglabātam pirms lidojuma, un RTH augstumam jābūt iestatītam augstāk par visiem apkārtējiem šķēršļiem.
         en: The home point must be recorded before flight, and RTH altitude must be set above all surrounding obstacles.
         ru: Домашняя точка должна быть записана до полёта, а высота RTH должна быть установлена выше всех окружающих препятствий.
     - id: d
@@ -755,7 +755,7 @@
   correctOptionId: c
   explanation:
     lv: |
-      RTH izmanto GPS, lai atgrieztos sākuma punktā. Sākuma punktam jābūt fiksētam GPS fiksācijā pirms pacelšanās. RTH augstumam jābūt iestatītam augstākam par visiem šķēršļiem atgriešanās trajektorijā — pretējā gadījumā drons var atgriezties zemā augstumā un ietriekties šķērslī.
+      RTH izmanto GPS, lai atgrieztos sākuma punktā. Sākuma punktam jābūt fiksētam pirms pacelšanās, kad GNSS signāls ir stabils. RTH augstumam jābūt iestatītam augstāk par visiem šķēršļiem atgriešanās trajektorijā, citādi drons var atgriezties pārāk zemā augstumā un ietriekties šķērslī.
     en: |
       RTH uses GPS to navigate back to the home point. The home point must be captured at GPS lock before takeoff. RTH altitude must be set above all obstacles in the return path — otherwise the drone may return at low altitude and strike an obstacle.
     ru: |
@@ -780,18 +780,18 @@
   internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Reg 2019/947 UAS.OPEN.060 — fail-safe and operational procedures; EASA UAS preflight guidelines
 - id: op-016
   stem:
-    lv: Operators plāno komerciālu video kadri veidošanu ar dronu publiski pieejamā parkā. Kādu dokumentu operators glabā ar sevi lidojuma laikā?
+    lv: Operators plāno komerciālu videomateriāla uzņemšanu ar dronu publiski pieejamā parkā. Kādi dokumenti operatoram jāglabā pie sevis lidojuma laikā?
     en: An operator plans commercial video filming with a drone in a publicly accessible park. What document must the operator carry during the flight?
     ru: Оператор планирует коммерческую видеосъёмку с дроном в общедоступном парке. Какой документ оператор должен иметь при себе во время полёта?
   options:
     - id: a
       text:
-        lv: Operators galvojuma dokuments no parka pārvaldes.
+        lv: Parka pārvaldes garantijas dokuments.
         en: A guarantee document from the park management.
         ru: Гарантийный документ от администрации парка.
     - id: b
       text:
-        lv: Neviens dokuments nav nepieciešams parkā — tas ir publisks gaisa telpa.
+        lv: Parkā dokumenti nav vajadzīgi, jo tā ir publiska gaisa telpa.
         en: No documents are required in a park — it is public airspace.
         ru: Никакие документы в парке не нужны — это общедоступное воздушное пространство.
     - id: c
@@ -801,13 +801,13 @@
         ru: Только действующий полис страхования — сертификат и регистрацию можно проверить онлайн.
     - id: d
       text:
-        lv: Derīga civiltiesiskās atbildības apdrošināšanas polise, pilota kompetences apliecība un UAS operators reģistrācijas apliecība.
+        lv: Derīga civiltiesiskās atbildības apdrošināšanas polise, pilota kompetences apliecība un UAS operatora reģistrācijas apliecinājums.
         en: A valid third-party liability insurance policy, remote pilot competence certificate, and UAS operator registration proof.
         ru: Действующий полис страхования гражданской ответственности, свидетельство о компетентности дистанционного пилота и подтверждение регистрации оператора UAS.
   correctOptionId: d
   explanation:
     lv: |
-      Pilots brīdī, kad lido komerciālā operācijā, glabā pie sevis: (1) derīgu civiltiesiskās atbildības apdrošināšanas polisi, (2) pilota kompetences apliecību (A1/A3 vai A2), (3) UAS operators reģistrācijas numura pierādījumu. Inspekcijas gadījumā tas jāuzrāda pārstāvim. Bez dokumentācijas uzrādīšanas operators var saņemt administratīvo sodu.
+      Komerciālas operācijas laikā pilotam jāglabā pie sevis: (1) derīga civiltiesiskās atbildības apdrošināšanas polise, (2) pilota kompetences apliecība (A1/A3 vai A2), (3) UAS operatora reģistrācijas numura apliecinājums. Inspekcijas gadījumā šie dokumenti jāuzrāda pārstāvim. Ja operators tos nevar uzrādīt, viņš var saņemt administratīvo sodu.
     en: |
       The pilot in commercial operation carries: (1) a valid third-party liability insurance policy, (2) a pilot competence certificate (A1/A3 or A2), (3) proof of UAS operator registration number. In an inspection these must be shown to the authority. Without documentation the operator may receive an administrative fine.
     ru: |

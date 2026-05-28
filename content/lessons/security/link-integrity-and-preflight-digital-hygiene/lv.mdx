@@ -1,7 +1,7 @@
 # Datu saites integritāte un digitālā pirmslidojuma higiēna
 
-<MissionBriefing objective="Pēc šīs nodarbības tu pratīsi samazināt novēršamus digitālos riskus pirms pacelšanās: uzticamas ierīces, bezsaistes kartes, disciplinēti atjauninājumi, home point pārbaude un pults higiēna.">
-Daudzi incidenti, kas izskatās pēc "tehniskas kļūmes", sākas agrāk: nepareizs planšetdators, veca karte, agresīvas fona lietotnes, nedroši atjauninājumi vai nepārbaudīts home point.
+<MissionBriefing objective="Pēc šīs nodarbības tu pratīsi samazināt novēršamus digitālos riskus pirms pacelšanās: uzticamas ierīces, bezsaistes kartes, disciplinēti atjauninājumi, sākuma punkta pārbaude un pults higiēna.">
+Daudzi incidenti, kas izskatās pēc "tehniskas kļūmes", sākas agrāk: nepareizs planšetdators, novecojusi karte, agresīvas fona lietotnes, nedroši atjauninājumi vai nepārbaudīts sākuma punkts.
 </MissionBriefing>
 
 <CinematicScene
@@ -25,7 +25,7 @@ Lidaparāts ir tik uzticams, cik uzticama ir digitālā ķēde aiz tā:
 Ja viens posms ir nestabils, visa operācija zem spiediena kļūst grūtāk vadāma.
 
 <Artefact
-  description="Piecu punktu digitālais pirmslidojuma kontrolsaraksts: uzticama ierīce, aktuāla oficiāla programmatūra, svaiga karte un gaisa telpas pārbaude, pārbaudīts home point un RTH augstums, izslēgtas liekās lietotnes."
+  description="Piecu punktu digitālais pirmslidojuma kontrolsaraksts: uzticama ierīce, aktuāla oficiāla programmatūra, svaiga karte un gaisa telpas pārbaude, pārbaudīts sākuma punkts un RTH augstums, izslēgtas liekās lietotnes."
   caption="Kontrolsaraksts · digitālais-pirmslidojums-5"
 >
   <div className="grid gap-3 md:grid-cols-5 text-sm">
@@ -33,7 +33,7 @@ Ja viens posms ir nestabils, visa operācija zem spiediena kļūst grūtāk vad�
       ["Uzticama ierīce", "Izmanto vienu pārbaudītu telefonu vai planšeti, nevis nejaušu rezervi."],
       ["Oficiāla programmatūra", "Atjaunini tikai oficiālajā kanālā un nebraucot uz darbu."],
       ["Svaiga karte", "Pirms izbraukšanas atjauno gaisa telpu un bāzes kartes, ja pārklājums būs vājš."],
-      ["Home Point", "Pirms pacelšanās apstiprini home point, GNSS kvalitāti un RTH augstumu."],
+      ["Sākuma punkts", "Pirms pacelšanās apstiprini sākuma punktu, GNSS kvalitāti un RTH augstumu."],
       ["Kluss ekrāns", "Aizver nebūtiskas lietotnes, zvanus un automātisko sinhronizāciju."],
     ].map(([title, text]) => (
       <div key={title} className="border border-horizon bg-hull/60 p-4">
@@ -55,31 +55,31 @@ Atjauninājums var labot drošības riskus, bet misijas diena nav īstais brīdi
 **3. Atjauno kartes pirms došanās bezsaistē.**  
 Lauku objektos vājš pārklājums ir biežs. Ja karte un gaisa telpas slāņi nav atjaunoti iepriekš, pilots zaudē kontekstu tieši tad, kad tas visvairāk vajadzīgs.
 
-**4. Pārbaudi home point un RTH loģiku.**  
-Nepareizs home point pārvērš automātisko atgriešanos no drošības funkcijas par riska pastiprinātāju.
+**4. Pārbaudi sākuma punktu un RTH loģiku.**  
+Nepareizi fiksēts sākuma punkts pārvērš automātisko atgriešanos no drošības funkcijas par riska pastiprinātāju.
 
 **5. Samazini lietotņu troksni.**  
 Paziņojumi, mākoņa sinhronizācija, baterijas optimizācija un zvani pārtrauc uzmanību un dažkārt pasliktina lietotnes stabilitāti.
 
-## Home point ir drošības iestatījums, nevis formalitāte
+## Sākuma punkts ir drošības iestatījums, nevis formalitāte
 
-Piloti bieži home point apstiprinājumu uztver kā rutīnas paziņojumu, ko vienkārši izspiest cauri. Tā ir kļūda. Ja pacelšanās notika pirms stabila GNSS vai UAS tika pārvietots pēc sākotnējā fiksējuma, return-to-home var mēģināt lidot uz nepareizu vietu.
+Piloti bieži sākuma punkta apstiprinājumu uztver kā rutīnas paziņojumu, ko vienkārši izspiest cauri. Tā ir kļūda. Ja pacelšanās notika pirms stabila GNSS vai UAS tika pārvietots pēc sākotnējā fiksējuma, return-to-home var mēģināt lidot uz nepareizu vietu.
 
-<Scenario title="Tu ierodies lauku inspekcijas vietā ar vāju pārklājumu. Pilota planšete nav atjaunojusi kartes kopš vakardienas, viena lietotne pastāvīgi sūta paziņojumus, un home point ziņojums tika ātri apstiprināts. Lidojums ir legāls. Vai tas ir gatavs?">
+<Scenario title="Tu ierodies lauku inspekcijas vietā ar vāju pārklājumu. Pilota planšete nav atjaunojusi kartes kopš vakardienas, viena lietotne pastāvīgi sūta paziņojumus, un sākuma punkta ziņojums tika ātri apstiprināts. Lidojums ir legāls. Vai tas ir gatavs?">
 Nē. Lidojums var būt legāli iespējams, bet digitālais sagatavojums ir vājš.
 
 Pareizā darbība ir apstāties pirms pacelšanās:
 
 1. atjaunot vai apstiprināt nepieciešamo gaisa telpas kontekstu;
 2. aizvērt nebūtiskās lietotnes un apklusināt paziņojumus;
-3. pārbaudīt GNSS kvalitāti, home point un RTH augstumu;
+3. pārbaudīt GNSS kvalitāti, sākuma punktu un RTH augstumu;
 4. iedarbināt motorus tikai tad, kad digitālā ķēde ir stabila.
 
 Tā nav birokrātija. Tā ir riska samazināšana, pirms lidaparāts atstāj zemi.
 </Scenario>
 
 <MemoryAnchor
-  rule="Zināma ierīce, oficiāla programmatūra, svaiga karte, pareizs home point, kluss ekrāns."
+  rule="Zināma ierīce, oficiāla programmatūra, svaiga karte, pareizs sākuma punkts, kluss ekrāns."
   hint="Ja planšete ir trokšņaina vai nepazīstama, pilots būs lēnāks brīdī, kad situācija kļūs ātra."
 />
 
@@ -87,7 +87,7 @@ Tā nav birokrātija. Tā ir riska samazināšana, pirms lidaparāts atstāj zem
 - Atjaunināt programmatūru mašīnā pa ceļam uz misiju.
 - Lidot ar nepazīstamu rezerves telefonu, jo "tam vajadzētu būt tādam pašam".
 - Ignorēt novecojušas kartes un trūkstošus slāņus vāja pārklājuma vietās.
-- Pieņemt home point, nepārbaudot, kur tas patiesībā ielikts.
+- Pieņemt sākuma punktu, nepārbaudot, kur tas patiesībā ielikts.
 - Atstāt paziņojumus, zvanus un fona sinhronizāciju aktīvu lidojuma laikā.
 </CommonMistakes>
 
@@ -97,12 +97,12 @@ Tā nav birokrātija. Tā ir riska samazināšana, pirms lidaparāts atstāj zem
     stem: "Kura digitālā pirmslidojuma darbība visvairāk samazina risku, ka return-to-home nostrādās nepareizi?",
     options: [
       { id: "a", text: "Palielināt ekrāna spilgtumu." },
-      { id: "b", text: "Pirms pacelšanās pārbaudīt home point un RTH augstumu." },
+      { id: "b", text: "Pirms pacelšanās pārbaudīt sākuma punktu un RTH augstumu." },
       { id: "c", text: "Pēc nolaišanās formatēt SD karti." },
       { id: "d", text: "Atvērt ziņapmaiņas lietotni, lai informētu klientu." },
     ],
     correctOptionId: "b",
-    explanation: "Return-to-home balstās uz pareizu home point un atbilstošu RTH augstumu. Ja kāds no tiem ir kļūdains, automātika var lidot uz nepareizu vietu vai nepareizā augstumā.",
+    explanation: "Return-to-home balstās uz pareizi fiksētu sākuma punktu un atbilstošu RTH augstumu. Ja kāds no tiem ir kļūdains, automātika var lidot uz nepareizu vietu vai nepareizā augstumā.",
     distractorRationales: {
       a: "Spilgtums ietekmē salasāmību, nevis navigācijas loģiku.",
       c: "SD kartes formatēšana nav saistīta ar RTH drošību.",
@@ -115,14 +115,14 @@ Tā nav birokrātija. Tā ir riska samazināšana, pirms lidaparāts atstāj zem
     options: [
       { id: "a", text: "Tāpēc, ka EASA noteikumi vispār aizliedz atjauninājumus." },
       { id: "b", text: "Tāpēc, ka tas ievieš programmatūras izmaiņas reālā operācijā bez kontrolēta testa." },
-      { id: "c", text: "Tāpēc, ka atjauninājums vienmēr izslēdz remote ID." },
+      { id: "c", text: "Tāpēc, ka atjauninājums vienmēr izslēdz attālo identifikāciju." },
       { id: "d", text: "Tāpēc, ka BGKIS atļauja pēc atjauninājuma vairs neder." },
     ],
     correctOptionId: "b",
     explanation: "Pat labs atjauninājums var mainīt uzvedību. Misijas diena nav īstais laiks ieviest nepārbaudītu programmatūras stāvokli reālā lidojumā.",
     distractorRationales: {
       a: "Atjauninājumi ir atļauti; problēma ir laiks un testēšana.",
-      c: "Nav vispārīga noteikuma, ka atjauninājumi izslēdz remote ID.",
+      c: "Nav vispārīga noteikuma, ka atjauninājumi izslēdz attālo identifikāciju.",
       d: "BGKIS statuss nav saistīts ar ikdienas programmatūras atjauninājumiem.",
     },
   },

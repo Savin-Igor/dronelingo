@@ -1144,7 +1144,7 @@
   internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Open category limitations — assemblies of people
 - id: as-023
   stem:
-    lv: Kura rīcība vislabāk palīdz samazināt risku “fly-away” (nekontrolēta aizlidošana)?
+    lv: Kura rīcība vislabāk palīdz samazināt nekontrolētas aizlidošanas risku?
     en: Which action best helps reduce “fly-away” risk?
     ru: Какое действие лучше всего снижает риск «fly-away» (неконтролируемого улёта)?
   options:
@@ -1171,7 +1171,7 @@
   correctOptionId: c
   explanation:
     lv: |
-      Fly-away risks samazinās ar labu iestatījumu pārbaudi un “fail-safe” parametriem (piem., RTH augstums), kā arī ar vietas izvēli un VLOS.
+      Nekontrolētas aizlidošanas risks samazinās, ja pārbauda iestatījumus un fail-safe parametrus (piemēram, RTH augstumu), kā arī rūpīgi izvēlas vietu un saglabā VLOS.
     en: |
       Fly-away risk is reduced by checking status and fail-safe settings (e.g., RTH altitude), plus good site selection and VLOS.
     ru: |
@@ -2248,12 +2248,12 @@
         ru: Когда пилот сохраняет VLOS.
     - id: d
       text:
-        lv: Kad GNSS vai home point uzticamība ir apšaubāma un ceļā var būt šķēršļi.
+        lv: Kad GNSS vai sākuma punkta uzticamība ir apšaubāma un maršrutā var būt šķēršļi.
         en: When GNSS or home-point reliability is uncertain and obstacles may be involved.
         ru: Когда надёжность GNSS или home point сомнительна, а по маршруту могут быть препятствия.
   correctOptionId: d
   explanation:
-    lv: RTH balstās uz uzticamu pozicionēšanu, pareizu home point un drošu maršrutu. Ja šie pieņēmumi ir vāji, akla paļaušanās uz automātiku var ārkārtas situāciju tikai saasināt.
+    lv: RTH balstās uz uzticamu pozicionēšanu, pareizi fiksētu sākuma punktu un drošu maršrutu. Ja šie priekšnosacījumi nav izpildīti, akla paļaušanās uz automātiku var ārkārtas situāciju tikai saasināt.
     en: RTH depends on reliable positioning, a correct home point, and an obstacle-safe path. If those assumptions are weak, blind trust in automation can worsen the emergency.
     ru: RTH зависит от надёжного позиционирования, правильного home point и безопасного маршрута. Если эти предпосылки слабы, слепая вера в автоматику может только ухудшить аварийную ситуацию.
   distractorRationales:

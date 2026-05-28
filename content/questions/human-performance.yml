@@ -791,7 +791,7 @@
         ru: Окружающая среда (Environment) — густые леса в поле зрения пилота.
     - id: b
       text:
-        lv: Ekipējums (Equipment) — novecojis vadības pults firmware.
+        lv: Ekipējums (Equipment) — novecojusi pults programmaparatūra.
         en: Equipment — outdated controller firmware.
         ru: Оборудование (Equipment) — устаревшая прошивка пульта управления.
     - id: c

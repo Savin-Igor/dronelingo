@@ -859,18 +859,18 @@
   correctOptionId: a
   explanation:
     lv: |
-      Operators reģistrācija Latvijā notiek pilnībā tiešsaistē caur e.caa.gov.lv. Pirmais solis ir konta izveide portālā, personas datu ievade un operators pieteikuma iesniegšana. Sertifikāts un apdrošināšana ir atsevišķas, paralēlas prasības, bet tie nav operators reģistrācijas priekšnoteikums.
+      Operatora reģistrācija Latvijā notiek pilnībā tiešsaistē portālā e.caa.gov.lv. Pirmais solis ir izveidot kontu, ievadīt personas datus un iesniegt operatora pieteikumu. Sertifikāts un apdrošināšana ir atsevišķas, paralēlas prasības, taču tās nav operatora reģistrācijas priekšnoteikums.
     en: |
       Operator registration in Latvia is done entirely online via e.caa.gov.lv. The first step is creating an account in the portal, entering personal data, and submitting the operator application. The certificate and insurance are separate, parallel requirements, but they are not prerequisites for operator registration.
     ru: |
       Регистрация оператора в Латвии осуществляется полностью онлайн через e.caa.gov.lv. Первый шаг — создание учётной записи на портале, ввод персональных данных и подача заявки оператора. Сертификат и страхование — отдельные, параллельные требования, но они не являются предварительными условиями для регистрации оператора.
   distractorRationales:
     b:
-      lv: A1/A3 pārbaudījums ir pilota kompetences apliecināšana, nevis operators reģistrācijas priekšnoteikums. Reg 2019/947 Art. 14 atļauj operators reģistrāciju neatkarīgi no pilota sertifikāta.
+      lv: A1/A3 pārbaudījums apliecina pilota kompetenci, nevis ir operatora reģistrācijas priekšnoteikums. Regulas 2019/947 14. pants ļauj operatoram reģistrēties neatkarīgi no pilota sertifikāta.
       en: The A1/A3 test is pilot competence demonstration, not a prerequisite for operator registration. Reg 2019/947 Art. 14 allows operator registration independently of the pilot certificate.
       ru: Тест A1/A3 — подтверждение компетентности пилота, а не предварительное условие регистрации оператора. Ст. 14 Регл. 2019/947 разрешает регистрацию оператора независимо от сертификата пилота.
     c:
-      lv: Apdrošināšanas iegāde ir atsevišķa prasība, ne pirmais operators reģistrācijas solis. Reģistrācija un apdrošināšana var notikt paralēli.
+      lv: Apdrošināšanas iegāde ir atsevišķa prasība, nevis pirmais operatora reģistrācijas solis. Reģistrācija un apdrošināšana var notikt paralēli.
       en: Purchasing insurance is a separate requirement, not the first operator registration step. Registration and insurance can happen in parallel.
       ru: Приобретение страховки — отдельное требование, а не первый шаг регистрации оператора. Регистрация и страхование могут происходить параллельно.
     d:

@@ -1,13 +1,13 @@
-# GNSS, kompass un home point
+# GNSS, kompass un sākuma punkts
 
-<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, ko dara GNSS un kompass, kāpēc tie nav savstarpēji aizvietojami un kā nepareizs home point pārvērš drošības funkciju par risku.">
-Piloti bieži runā par "GPS problēmām" tā, it kā viena sistēma izskaidrotu visu. Patiesībā pozīcija, virziens un home point loģika ir saistīti, bet atšķirīgi. To sajaukšana noved pie sliktiem lēmumiem.
+<MissionBriefing objective="Pēc šīs nodarbības tu zināsi, ko dara GNSS un kompass, kāpēc tie nav savstarpēji aizvietojami un kā nepareizs sākuma punkts pārvērš drošības funkciju par risku.">
+Piloti bieži runā par "GPS problēmām" tā, it kā viena sistēma izskaidrotu visu. Patiesībā pozīcija, virziens un sākuma punkta loģika ir saistīti, bet atšķirīgi. To sajaukšana noved pie sliktiem lēmumiem.
 </MissionBriefing>
 
 <CinematicScene
   src="/lessons/gnss-compass-and-home-point-scene-1.png"
   prompt="Systems diagram: drone receiving GNSS position from satellites, compass giving heading, home point stored near takeoff site, arrows showing how return-to-home depends on all three"
-  alt="Vizuāls skaidrojums, kā GNSS, kompass un home point loģika darbojas kopā dronā"
+  alt="Vizuāls skaidrojums, kā GNSS, kompass un sākuma punkta loģika darbojas kopā dronā"
   caption="Treniņa aina · navigācijas pamatelementi"
 />
 
@@ -17,23 +17,23 @@ Lidaparāts izmanto vairākas navigācijas atsauces:
 
 - **GNSS** dod pozīciju;
 - **kompass** dod virziena orientāciju;
-- **home point** glabā atgriešanās atsauces vietu.
+- **sākuma punkts** glabā atgriešanās atsauces vietu.
 
 Šīs funkcijas mijiedarbojas, bet nav viena un tā pati lieta.
 
 Ja GNSS ir kļūdains, lidaparāts var domāt, ka atrodas citur.  
 Ja kompass ir kļūdains, lidaparāts var zināt, kur tas ir, bet kļūdīties par to, uz kuru pusi tas ir pagriezts.  
-Ja home point ir nepareizs, return-to-home var vest uz nepareizu vietu, pat ja pozīcija citādi ir laba.
+Ja sākuma punkts ir nepareizs, return-to-home var vest uz nepareizu vietu, pat ja pozīcija citādi ir laba.
 
 <Artefact
-  description="Trīs karšu salīdzinājums: GNSS atbild uz jautājumu kur es esmu, kompass uz kuru pusi esmu vērsts, home point kur man jāatgriežas."
+  description="Trīs karšu salīdzinājums: GNSS atbild uz jautājumu, kur es esmu, kompass — uz kuru pusi esmu vērsts, bet sākuma punkts — kur man jāatgriežas."
   caption="Kartes · navigācijas-atsauču-atdalīšana"
 >
   <div className="grid gap-3 md:grid-cols-3 text-sm">
     {[
       ["GNSS", "Kur es esmu? Pozīcija virs zemes."],
       ["Kompass", "Uz kuru pusi esmu vērsts? Virziena orientācija."],
-      ["Home Point", "Kur man jāatgriežas? Saglabāta atkopšanās atsauce."],
+      ["Sākuma punkts", "Kur man jāatgriežas? Saglabāta atgriešanās atsauce."],
     ].map(([title, text]) => (
       <div key={title} className="border border-horizon bg-hull/60 p-4">
         <p className="font-mono text-xs uppercase tracking-widest text-cyan-pulse">{title}</p>
@@ -43,9 +43,9 @@ Ja home point ir nepareizs, return-to-home var vest uz nepareizu vietu, pat ja p
   </div>
 </Artefact>
 
-## Kāpēc home point jāpārbauda atsevišķi
+## Kāpēc sākuma punkts jāpārbauda atsevišķi
 
-Piloti dažkārt pieņem, ka home point ir pareizs, jo lietotne reiz parādīja paziņojumu. Tā ir vāja prakse.
+Piloti dažkārt pieņem, ka sākuma punkts ir pareizs, jo lietotne reiz parādīja paziņojumu. Tā ir vāja prakse.
 
 Jāpārbauda:
 
@@ -73,20 +73,20 @@ Saukt abus par "GPS problēmām" nozīmē apslēpt īsto cēloni.
 
 Tādas funkcijas kā position hold un return-to-home balstās uz pareiziem ievaddatiem. Piloti, kas nesaprot šo ievadu atšķirību, biežāk uzticas automātikai brīdī, kad tā vismazāk ir uzticama.
 
-<Scenario title="Tu pacelies atklātā vietā. Lietotne apstiprina home point, bet lidaparāts tika ieslēgts vēl pie automašīnas un pēc tam pārvietots dažus metrus pirms īstās pacelšanās. Vēlāk lidaparātam jāatgriežas automātiski. Kāds ir risks?">
-Risks ir tāds, ka saglabātais home point var neatbilst labākajai faktiskajai atgriešanās vietai.
+<Scenario title="Tu pacelies atklātā vietā. Lietotne apstiprina sākuma punktu, bet lidaparāts tika ieslēgts vēl pie automašīnas un pēc tam pārvietots dažus metrus pirms īstās pacelšanās. Vēlāk lidaparātam jāatgriežas automātiski. Kāds ir risks?">
+Risks ir tāds, ka saglabātais sākuma punkts var neatbilst labākajai faktiskajai atgriešanās vietai.
 
-Pat ja GNSS vēlāk izskatās normāls, return-to-home var mēģināt lidot uz mazāk drošu vai vienkārši nepareizu atsauces punktu. Tāpēc home point apstiprinājums nav paziņojums, ko vienkārši izklikšķināt; tā ir navigācijas drošības pārbaude.
+Pat ja GNSS vēlāk izskatās normāls, return-to-home var mēģināt lidot uz mazāk drošu vai vienkārši nepareizu atsauces punktu. Tāpēc sākuma punkta apstiprinājums nav paziņojums, ko vienkārši izklikšķināt; tā ir navigācijas drošības pārbaude.
 </Scenario>
 
 <MemoryAnchor
-  rule="GNSS = kur. Kompass = uz kuru pusi. Home point = kur atpakaļ."
+  rule="GNSS = kur. Kompass = uz kuru pusi. Sākuma punkts = kur atpakaļ."
   hint="Ja sajauksi šīs trīs lietas, tu uzticēsies nepareizajam elementam nepareizajā brīdī."
 />
 
 <CommonMistakes>
 - Katru navigācijas anomāliju saukt par GPS problēmu.
-- Pieņemt home point apstiprinājumu, nepārbaudot, vai tas fiziski ir loģisks.
+- Pieņemt sākuma punkta apstiprinājumu, nepārbaudot, vai tas fiziski ir loģisks.
 - Aizmirst, ka return-to-home balstās uz saglabātu atsauces loģiku, nevis maģiju.
 - Kalibrēt vai meklēt problēmu, pirms saprasts, kura sistēma izskatās kļūdaina.
 </CommonMistakes>
@@ -97,12 +97,12 @@ Pat ja GNSS vēlāk izskatās normāls, return-to-home var mēģināt lidot uz m
     stem: "Kura sistēma primāri atbild uz jautājumu 'kur lidaparātam jāatgriežas'?",
     options: [
       { id: "a", text: "Kompass." },
-      { id: "b", text: "Home point." },
+      { id: "b", text: "Sākuma punkts." },
       { id: "c", text: "Baterijas vadības sistēma." },
       { id: "d", text: "Propelleru ātruma vadība." },
     ],
     correctOptionId: "b",
-    explanation: "Home point ir saglabātā atgriešanās atsauce, ko izmanto return-to-home loģika. Tā ir atsevišķa no GNSS pozīcijas un kompasa virziena.",
+    explanation: "Sākuma punkts ir saglabātā atgriešanās atsauce, ko izmanto return-to-home loģika. Tā ir atsevišķa no GNSS pozīcijas un kompasa virziena.",
     distractorRationales: {
       a: "Kompass dod virzienu, nevis atgriešanās galamērķi.",
       c: "Baterijas vadība ietekmē izturību, nevis atgriešanās atsauces vietu.",
@@ -131,5 +131,5 @@ Pat ja GNSS vēlāk izskatās normāls, return-to-home var mēģināt lidot uz m
 <Debrief unlocks={["ug-004"]}>
 Tu tagad saproti trīs galvenās navigācijas atsauces aiz tipiskās patērētāju dronu automātikas. Tas palīdz mazāk kļūdaini lasīt brīdinājumus un agrāk pamanīt sliktus pieņēmumus pirms pacelšanās.
 
-Tālāk: sasaisti šo izpratni ar remote ID, geo-awareness un bateriju disciplīnu, lai lidaparāts tiktu saprasts kā sistēma, nevis kā kamera ar propelleriem.
+Tālāk: sasaisti šo izpratni ar attālo identifikāciju, ģeozināšanu un bateriju disciplīnu, lai lidaparāts tiktu saprasts kā sistēma, nevis kā kamera ar propelleriem.
 </Debrief>
