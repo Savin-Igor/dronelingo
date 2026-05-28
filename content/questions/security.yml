@@ -603,7 +603,7 @@
     en: |
       Direct Remote ID broadcasts data locally via Bluetooth or Wi-Fi — any nearby smartphone can read it. Network Remote ID sends data over the internet to a UTM (UAS Traffic Management) server — enabling centralised flight monitoring. Reg 2019/947 requires Direct Remote ID for C1/C2/C3 classes; Network Remote ID is an addition.
     ru: |
-      Direct Remote ID транслирует данные локально через Bluetooth или Wi-Fi — любой ближайший смартфон может их считать. Network Remote ID отправляет данные через интернет на сервер UTM (управление движением UAS) — обеспечивая централизованный мониторинг полётов. Регл. 2019/947 требует Direct Remote ID для классов C1/C2/C3; Network Remote ID является дополнением.
+      Direct Remote ID транслирует данные локально через Bluetooth или Wi-Fi — их может считать любой смартфон поблизости. Network Remote ID отправляет данные через интернет на сервер UTM (управление движением UAS), что даёт централизованный мониторинг полётов. Регл. 2019/947 требует Direct Remote ID для классов C1/C2/C3; Network Remote ID идёт как дополнение.
   distractorRationales:
     a:
       lv: Apraksts ir otrādi. Direct pārraida lokāli; Network sūta uz serveri.
@@ -660,15 +660,15 @@
     b:
       lv: UAS GPS pozīcija ir Remote ID pārraides pamatinformācija.
       en: UAS GPS position is core information in Remote ID broadcast.
-      ru: Позиция GPS UAS является основной информацией в трансляции Remote ID.
+      ru: Позиция GPS UAS входит в базовый набор данных Remote ID.
     c:
       lv: Operators reģistrācijas numurs ir Remote ID pārraides obligāta daļa — tas ļauj identificēt operatoru.
       en: The operator registration number is a mandatory part of Remote ID broadcast — it enables operator identification.
-      ru: Регистрационный номер оператора является обязательной частью трансляции Remote ID — он позволяет идентифицировать оператора.
+      ru: Регистрационный номер оператора обязателен в трансляции Remote ID — по нему можно идентифицировать оператора.
     d:
       lv: UAS lidojuma augstums ir Remote ID pārraides daļa.
       en: UAS flight altitude is part of Remote ID broadcast.
-      ru: Высота полёта UAS является частью трансляции Remote ID.
+      ru: Высота полёта UAS тоже входит в трансляцию Remote ID.
   sourceRef: "Reg 2019/945 — Direct Remote ID data fields | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 2
   cognitiveLevel: recall
@@ -689,7 +689,7 @@
       text:
         lv: Nelejupielādēt — neoficiāla firmware ir kiberdrošības risks un var atcelt C klases sertifikāciju, turklāt "atbloķētās zonas" ir nelegālas.
         en: Do not download — unofficial firmware is a cybersecurity risk and may void the C-class certification; additionally "unlocked zones" are illegal.
-        ru: Не скачивать — неофициальная прошивка является киберрисковой и может аннулировать сертификацию C-класса; кроме того, «разблокированные зоны» незаконны.
+        ru: Не скачивать — неофициальная прошивка создаёт киберриск и может аннулировать сертификацию C-класса; кроме того, «разблокированные зоны» незаконны.
     - id: c
       text:
         lv: Lejupielādēt, ja firmware ir bez maksas.
@@ -712,11 +712,11 @@
     a:
       lv: '"Papildu iespējas" no neoficiāla avota nav likumīgas un var apdraudēt drošību. "Efektivitāte" nav attaisnojums nelegālai firmware.'
       en: '"Extended capabilities" from an unofficial source are not legal and may compromise security. "Efficiency" is not a justification for illegal firmware.'
-      ru: «Расширенные возможности» из неофициального источника незаконны и могут поставить под угрозу безопасность. «Эффективность» не является оправданием для нелегальной прошивки.
+      ru: «Расширенные возможности» из неофициального источника незаконны и могут поставить под угрозу безопасность. «Эффективность» не оправдывает нелегальную прошивку.
     c:
       lv: Cena (bezmaksas/maksas) nav kritērijs firmware drošībai vai legalitātei. Ļaunatūra nereti ir bezmaksas.
       en: Price (free/paid) is not a criterion for firmware safety or legality. Malware is often free.
-      ru: Цена (бесплатно/платно) не является критерием безопасности или законности прошивки. Вредоносное ПО часто бесплатно.
+      ru: Цена (бесплатно или платно) не говорит ни о безопасности, ни о законности прошивки. Вредоносное ПО часто распространяется бесплатно.
     d:
       lv: '"Tikai testēšanai" nenomaina faktu, ka sistēmā ir instalēta potenciāli ļaunprātīga programma. Ja sistēma ir kompromitēta, testēšana to nepadara drošāku.'
       en: '"Only for testing" does not change the fact that potentially malicious software is installed in the system. If the system is compromised, testing does not make it safer.'
@@ -736,7 +736,7 @@
       text:
         lv: Nav pienākuma — inspekcijas lidojums ir leģitīms komerciāls mērķis.
         en: No obligation — an inspection flight is a legitimate commercial purpose.
-        ru: Никаких обязательств — инспекционный полёт является законной коммерческой целью.
+        ru: Никаких обязательств — инспекционный полёт сам по себе законная коммерческая цель.
     - id: b
       text:
         lv: Operators drīkst izmantot materiālu savām vajadzībām — tas ir legāli iegūts inspekcijas laikā.
@@ -816,7 +816,7 @@
     a:
       lv: Privātpersonu C-UAS izmantošana ir nelikumīga Latvijā. Īpašuma aizsardzība ir tiesisks mērķis, bet neautorizē signāla traucēšanu vai fizisku neitralizāciju.
       en: Private use of C-UAS is illegal in Latvia. Property protection is a legal goal, but does not authorise signal jamming or physical neutralisation.
-      ru: Частное использование C-UAS в Латвии незаконно. Защита собственности является законной целью, но не авторизует глушение сигналов или физическую нейтрализацию.
+      ru: Частное использование C-UAS в Латвии незаконно. Защита собственности может быть законной целью, но не даёт права глушить сигналы или физически нейтрализовать дрон.
     b:
       lv: C-UAS ir regulētas gan militāri, gan civili. Civilo izmantošanu regulē tiesībsargājošo iestāžu tiesiskais regulējums.
       en: C-UAS are regulated both militarily and civilly. Civil use is regulated by law enforcement agency legal frameworks.
@@ -868,7 +868,7 @@
     b:
       lv: Atbildība nav vienmēr ekskluzīva pilotam. Organizatora nedrošas vides nodrošināšana var radīt kopīgu atbildību.
       en: Liability is not always exclusive to the pilot. An organiser's failure to provide a safe environment can create shared liability.
-      ru: Ответственность не всегда является исключительной для пилота. Неспособность организатора обеспечить безопасную среду может создать совместную ответственность.
+      ru: Ответственность не всегда лежит только на пилоте. Если организатор не обеспечил безопасную среду, возможна совместная ответственность.
     c:
       lv: Atbildības atteikums starp sacensību dalībniekiem neattiecas uz trešajām personām. Trešās personas (fotoaparāta īpašnieks) nav parakstījis atteikumu.
       en: Liability waivers between race participants do not apply to third parties. The third party (camera owner) has not signed a waiver.
@@ -912,7 +912,7 @@
   explanation:
     lv: Pēkšņa pozīcijas pārlēkšana uz ģeogrāfiski neticamu vietu (kilometros prom no reālās) ar UAS vizuāli apstiprinātu klātbūtni ir GNSS spoofinga raksturīgs simptoms. GPS zudums (traucēšana) rada 'pelēko karti' un satelītu skaita kritumu, ne viltus pozīcijas pārlēkšanu. Kompasa traucējumi ietekmē kursu, ne GPS pozīciju.
     en: A sudden position jump to a geographically implausible location (kilometres away from the actual position) while the drone remains visually confirmed is the signature symptom of GNSS spoofing. GPS loss (jamming) produces a 'grey map' and satellite count drop, not a false location jump. Compass interference affects heading, not GPS position.
-    ru: Внезапный скачок позиции в географически невозможное место — на километры от реального визуального положения — является типичным признаком GNSS-спуфинга. Потеря GPS или глушение обычно дают серую карту и падение числа спутников, а не ложную позицию. Помехи компаса влияют на курс, а не на GPS-координаты.
+    ru: Внезапный скачок позиции в географически невозможную точку, на километры от реального визуального положения, типичен для GNSS-спуфинга. Потеря GPS или глушение обычно дают серую карту и падение числа спутников, а не ложную позицию. Помехи компаса влияют на курс, а не на GPS-координаты.
   distractorRationales:
     a:
       lv: GPS signāla zudums (traucēšana) noved pie pozīcijas pazaudēšanas — karte kļūst pelēka vai parāda 'GPS lost'. Pārlēkšana uz konkrētu viltus vietu norāda uz aktīvu spoofingu, ne zudumu.
@@ -1093,7 +1093,7 @@
       text:
         lv: Obligāts ziņojums 72 stundu laikā — bīstama tuvošanās pilotētam gaisa kuģim ir obligātais trigeris.
         en: Mandatory report within 72 hours — a near-miss with a manned aircraft is a mandatory trigger.
-        ru: Обязательное в течение 72 часов — опасное сближение с пилотируемым судном является обязательным триггером.
+        ru: Обязательное в течение 72 часов — опасное сближение с пилотируемым судном входит в обязательные триггеры.
     - id: c
       text:
         lv: Tikai brīvprātīgs ziņojums — pilots pats izvēlas, vai iesniegt.
@@ -1108,7 +1108,7 @@
   explanation:
     lv: Bīstama tuvošanās pilotētam gaisa kuģim ir viens no trim obligātajiem ziņošanas trigeriem pēc ES Regulas 376/2014 un Latvijas īstenošanas. Pilotētā kuģa apkalpei bijis jākoriģē kurss UAS dēļ — tas sasniedz slieksni. Piemērojams 72 stundu termiņš. Sadursme obligātā trigera aktivizācijai nav nepieciešama.
     en: A near-miss with a manned aircraft is one of the three mandatory reporting triggers under EU Regulation 376/2014 and Latvian implementation. The manned aircraft crew had to manoeuvre to avoid the UAS — this meets the threshold. The 72-hour deadline applies. No collision is required for the mandatory trigger to activate.
-    ru: Опасное сближение с пилотируемым воздушным судном является одним из трёх обязательных триггеров по Регламенту ЕС 376/2014. Экипаж самолёта был вынужден маневрировать для уклонения — это достигает порога. Срок — 72 часа. Для обязательного триггера столкновение не требуется.
+    ru: Опасное сближение с пилотируемым воздушным судном входит в три обязательных триггера по Регламенту ЕС 376/2014. Экипаж самолёта был вынужден маневрировать для уклонения — порог достигнут. Срок — 72 часа. Для обязательного триггера столкновение не требуется.
   distractorRationales:
     a:
       lv: Bīstamas tuvošanās slieksnim sadursme nav nepieciešama. Pilotētā gaisa kuģa kursa korekcija UAS dēļ jau ir ziņojama.
@@ -1746,7 +1746,7 @@
   stem:
     lv: Pēc inspekcijas lidojuma pilots atrod vaļīgu SD karti blakus atvērtam koferim, un nav skaidrs, kurš tai piekļuva. Kāda ir pareizā security rīcība?
     en: After an inspection flight, the pilot finds a loose SD card beside an open case and cannot confirm who accessed it. What is the correct security action?
-    ru: После инспекционного полёта пилот находит свободно лежащую SD-карту рядом с открытым кейсом и не может подтвердить, кто имел к ней доступ. Какое security-действие правильное?
+    ru: После инспекционного полёта пилот находит свободно лежащую SD-карту рядом с открытым кейсом и не может подтвердить, кто имел к ней доступ. Какое действие по безопасности правильное?
   options:
     - id: a
       text:
@@ -1876,7 +1876,7 @@
     en: |
       Direct Remote ID broadcasts data locally via Bluetooth or Wi-Fi — any nearby smartphone can read it. Network Remote ID sends data over the internet to a UTM (UAS Traffic Management) server — enabling centralised flight monitoring. Reg 2019/947 requires Direct Remote ID for C1/C2/C3 classes; Network Remote ID is an addition.
     ru: |
-      Direct Remote ID транслирует данные локально через Bluetooth или Wi-Fi — любой ближайший смартфон может их считать. Network Remote ID отправляет данные через интернет на сервер UTM (управление движением UAS) — обеспечивая централизованный мониторинг полётов. Регл. 2019/947 требует Direct Remote ID для классов C1/C2/C3; Network Remote ID является дополнением.
+      Direct Remote ID транслирует данные локально через Bluetooth или Wi-Fi — их может считать любой смартфон поблизости. Network Remote ID отправляет данные через интернет на сервер UTM (управление движением UAS), что даёт централизованный мониторинг полётов. Регл. 2019/947 требует Direct Remote ID для классов C1/C2/C3; Network Remote ID идёт как дополнение.
   distractorRationales:
     b:
       lv: Apraksts ir otrādi. Direct pārraida lokāli; Network sūta uz serveri.
@@ -1933,15 +1933,15 @@
     a:
       lv: UAS GPS pozīcija ir Remote ID pārraides pamatinformācija.
       en: UAS GPS position is core information in Remote ID broadcast.
-      ru: Позиция GPS UAS является основной информацией в трансляции Remote ID.
+      ru: Позиция GPS UAS входит в базовый набор данных Remote ID.
     c:
       lv: UAS lidojuma augstums ir Remote ID pārraides daļa.
       en: UAS flight altitude is part of Remote ID broadcast.
-      ru: Высота полёта UAS является частью трансляции Remote ID.
+      ru: Высота полёта UAS тоже входит в трансляцию Remote ID.
     d:
       lv: Operators reģistrācijas numurs ir Remote ID pārraides obligāta daļa — tas ļauj identificēt operatoru.
       en: The operator registration number is a mandatory part of Remote ID broadcast — it enables operator identification.
-      ru: Регистрационный номер оператора является обязательной частью трансляции Remote ID — он позволяет идентифицировать оператора.
+      ru: Регистрационный номер оператора обязателен в трансляции Remote ID — по нему можно идентифицировать оператора.
   sourceRef: "Reg 2019/945 — Direct Remote ID data fields | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
   difficulty: 3
   cognitiveLevel: apply
@@ -1985,7 +1985,7 @@
     a:
       lv: Cena (bezmaksas/maksas) nav kritērijs firmware drošībai vai legalitātei. Ļaunatūra nereti ir bezmaksas.
       en: Price (free/paid) is not a criterion for firmware safety or legality. Malware is often free.
-      ru: Цена (бесплатно/платно) не является критерием безопасности или законности прошивки. Вредоносное ПО часто бесплатно.
+      ru: Цена (бесплатно или платно) не говорит ни о безопасности, ни о законности прошивки. Вредоносное ПО часто распространяется бесплатно.
     b:
       lv: '"Tikai testēšanai" nenomaina faktu, ka sistēmā ir instalēta potenciāli ļaunprātīga programma. Ja sistēma ir kompromitēta, testēšana to nepadara drošāku.'
       en: '"Only for testing" does not change the fact that potentially malicious software is installed in the system. If the system is compromised, testing does not make it safer.'
@@ -1993,7 +1993,7 @@
     d:
       lv: '"Papildu iespējas" no neoficiāla avota nav likumīgas un var apdraudēt drošību. "Efektivitāte" nav attaisnojums nelegālai firmware.'
       en: '"Extended capabilities" from an unofficial source are not legal and may compromise security. "Efficiency" is not a justification for illegal firmware.'
-      ru: «Расширенные возможности» из неофициального источника незаконны и могут поставить под угрозу безопасность. «Эффективность» не является оправданием для нелегальной прошивки.
+      ru: «Расширенные возможности» из неофициального источника незаконны и могут поставить под угрозу безопасность. «Эффективность» не оправдывает нелегальную прошивку.
   sourceRef: "ENISA Good Practices for UAS cyber security | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; manufacturer compliance"
   difficulty: 3
   cognitiveLevel: apply
@@ -2014,7 +2014,7 @@
       text:
         lv: Nav pienākuma — inspekcijas lidojums ir leģitīms komerciāls mērķis.
         en: No obligation — an inspection flight is a legitimate commercial purpose.
-        ru: Никаких обязательств — инспекционный полёт является законной коммерческой целью.
+        ru: Никаких обязательств — инспекционный полёт сам по себе законная коммерческая цель.
     - id: c
       text:
         lv: Operators drīkst izmantot materiālu savām vajadzībām — tas ir legāli iegūts inspekcijas laikā.

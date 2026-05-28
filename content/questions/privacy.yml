@@ -83,7 +83,7 @@
     en: |
       Under GDPR personal data is any information that allows identifying a person — directly or indirectly. A plate is registered to a natural person and therefore is personal data.
     ru: |
-      По GDPR персональные данные — любая информация, позволяющая идентифицировать лицо прямо или косвенно. Номер привязан к физическому лицу и потому является персональными данными.
+      По GDPR персональные данные — любая информация, позволяющая идентифицировать лицо прямо или косвенно. Номер привязан к физическому лицу и потому считается персональными данными.
   distractorRationales:
     a:
       lv: Datu publiskums neizslēdz to no GDPR. Publiska informācija paliek personas dati, ja to var attiecināt uz indivīdu.
@@ -447,7 +447,7 @@
     en: |
       GDPR Art. 17 provides the right to erasure ("right to be forgotten"). A person's image in their private garden is personal data. If there is no legal basis (consent, legitimate interests, etc.) for processing the personal data, the operator is obliged to delete the footage upon request. Using public airspace does not cancel GDPR obligations.
     ru: |
-      Ст. 17 GDPR предусматривает право на стирание («право быть забытым»). Изображение человека в его частном саду является персональными данными. Если нет правового основания (согласие, законные интересы и т.д.) для обработки персональных данных, оператор обязан удалить запись по запросу. Использование общедоступного воздушного пространства не отменяет обязательства по GDPR.
+      Ст. 17 GDPR предусматривает право на стирание («право быть забытым»). Изображение человека в его частном саду относится к персональным данным. Если нет правового основания (согласие, законные интересы и т.д.) для обработки персональных данных, оператор обязан удалить запись по запросу. Использование общедоступного воздушного пространства не отменяет обязательств по GDPR.
   distractorRationales:
     b:
       lv: Publiskā gaisa telpa ir par lidojuma atļauju; GDPR attiecas uz personas datu apstrādi neatkarīgi no tā, no kurienes tas tika ierakstīts.
@@ -456,11 +456,11 @@
     c:
       lv: Glabāšana bez tiesiska pamata un bez dzēšanas pēc pieprasījuma ir GDPR pārkāpums. Personas dati bez tiesiska pamata jādzēš pēc pieprasījuma.
       en: Retaining data without a legal basis and without deleting upon request is a GDPR violation. Personal data without legal basis must be deleted upon request.
-      ru: Хранение данных без правового основания и без удаления по запросу является нарушением GDPR. Персональные данные без правового основания должны быть удалены по запросу.
+      ru: Хранение данных без правового основания и без удаления по запросу нарушает GDPR. Персональные данные без правового основания должны быть удалены по запросу.
     d:
       lv: Kaitējums nav priekšnoteikums dzēšanas tiesībām GDPR Art. 17. Pietiek ar personas pieprasījumu un tiesiska pamata neesamību.
       en: Harm is not a prerequisite for erasure rights under GDPR Art. 17. A person's request and the absence of a legal basis are sufficient.
-      ru: Причинённый вред не является предварительным условием для права на стирание по ст. 17 GDPR. Достаточно запроса лица и отсутствия правового основания.
+      ru: Причинённый вред не нужен как предварительное условие для права на стирание по ст. 17 GDPR. Достаточно запроса лица и отсутствия правового основания.
   sourceRef: "GDPR Art. 17 — right to erasure | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/; lawful basis"
   difficulty: 2
   cognitiveLevel: apply
@@ -504,7 +504,7 @@
     a:
       lv: GDPR neierobežo "personas datu" jēdzienu ar vārdu vai attēlu. Jebkura informācija, kas ļauj identificēt personu (ieskaitot atrašanās vietu), ir personas dati.
       en: GDPR does not limit the concept of "personal data" to names or images. Any information enabling identification of a person (including location) is personal data.
-      ru: GDPR не ограничивает понятие «персональных данных» именами или изображениями. Любая информация, позволяющая идентифицировать лицо (включая местоположение), является персональными данными.
+      ru: GDPR не ограничивает понятие «персональных данных» именами или изображениями. Любая информация, позволяющая идентифицировать лицо, включая местоположение, считается персональными данными.
     c:
       lv: Personas dati nav atkarīgi tikai no pilota vārda esamības. Atrašanās vieta + laiks var būt pietiekami identifikācijai bez vārda.
       en: Personal data does not depend solely on the pilot's name being present. Location + time can be sufficient for identification without a name.
@@ -655,7 +655,7 @@
     en: |
       GDPR Art. 6(1)(f) (legitimate interests) is the most typical basis for commercial filming at public sports events. It requires: (1) a Legitimate Interests Assessment (LIA) — commercial purpose weighed against individuals' interests; (2) visible informing at the event venue (posters, PA system). Individual consent from each participant is not practically feasible at a large event.
     ru: |
-      Ст. 6(1)(f) GDPR (законные интересы) является наиболее типичным основанием для коммерческой съёмки на публичных спортивных мероприятиях. Требуется: (1) Оценка законных интересов (LIA) — коммерческая цель взвешивается против интересов лиц; (2) видимое информирование на месте мероприятия (плакаты, громкоговоритель). Индивидуальное согласие каждого участника практически нецелесообразно на крупном мероприятии.
+      Ст. 6(1)(f) GDPR (законные интересы) — наиболее типичное основание для коммерческой съёмки на публичных спортивных мероприятиях. Требуется: (1) Оценка законных интересов (LIA) — коммерческая цель взвешивается против интересов лиц; (2) видимое информирование на месте мероприятия (плакаты, громкоговоритель). Индивидуальное согласие каждого участника практически нецелесообразно на крупном мероприятии.
   distractorRationales:
     b:
       lv: Art. 6(1)(b) attiecas uz līgumattiecībās esošo pušu datu apstrādi — sporta dalībnieki nav operators līgumdarba puse.
@@ -678,7 +678,7 @@
   stem:
     lv: Kas ir "datu pārzinis" (data controller) GDPR izpratnē drona operācijas kontekstā?
     en: Who is the "data controller" under GDPR in the context of a drone operation?
-    ru: Кто является «контролёром данных» (data controller) по GDPR в контексте операции с дроном?
+    ru: Кто считается «контролёром данных» (data controller) по GDPR в контексте операции с дроном?
   options:
     - id: a
       text:
@@ -707,7 +707,7 @@
     en: |
       GDPR Art. 4(7) defines the "controller" as the natural or legal person that determines the purposes and means of processing personal data. In a drone operation this is the operator — the one who decides WHAT to film, HOW to film, and WHAT to do with the footage. The actual pilot may be a data processor if the operator is a separate legal person.
     ru: |
-      Ст. 4(7) GDPR определяет «контролёра» как физическое или юридическое лицо, определяющее цели и средства обработки персональных данных. В операции с дроном это оператор — тот, кто решает, ЧТО снимать, КАК снимать и ЧТО делать с материалом. Фактический пилот может быть обработчиком данных, если оператор является отдельным юридическим лицом.
+      Ст. 4(7) GDPR определяет «контролёра» как физическое или юридическое лицо, которое определяет цели и средства обработки персональных данных. В операции с дроном это оператор — тот, кто решает, ЧТО снимать, КАК снимать и ЧТО делать с материалом. Фактический пилот может быть обработчиком данных, если оператор оформлен как отдельное юридическое лицо.
   distractorRationales:
     a:
       lv: CAA Latvia ir regulators, kas uzrauga lidojumu atbilstību — tā nav persona, kas nosaka filmēšanas mērķus un metodes.
@@ -759,12 +759,12 @@
     en: |
       GDPR Art. 30 requires controllers to maintain a register of processing activities. The exception (< 250 employees) is limited — it does not apply if the processing is likely to result in risk to individuals' rights and freedoms. Filming people in a city is risky processing that excludes the exception. A commercial operator typically also exceeds the 250 employee threshold or does not benefit from the exception.
     ru: |
-      Ст. 30 GDPR требует от контролёров вести реестр операций обработки. Исключение (< 250 сотрудников) ограничено — оно не применяется, если обработка может представлять риск для прав и свобод лиц. Съёмка людей в городе является рискованной обработкой, исключающей это исключение. Коммерческий оператор обычно также превышает порог в 250 сотрудников или не пользуется исключением.
+      Ст. 30 GDPR требует от контролёров вести реестр операций обработки. Исключение (< 250 сотрудников) ограничено — оно не применяется, если обработка может представлять риск для прав и свобод лиц. Съёмка людей в городе относится к рискованной обработке, поэтому исключение не действует. Коммерческий оператор обычно также превышает порог в 250 сотрудников или не пользуется исключением.
   distractorRationales:
     a:
       lv: 250 darbinieku izņēmums tieši nesedz apstrādes operācijas, kas rada risku. Filmēšana apdzīvotos rajonos ir riska operācija.
       en: The 250 employee exception does not cover processing operations that pose a risk. Filming in populated areas is a risk operation.
-      ru: Исключение для 250 сотрудников не распространяется на операции обработки, создающие риск. Съёмка в населённых районах является рискованной операцией.
+      ru: Исключение для 250 сотрудников не распространяется на операции обработки, создающие риск. Съёмка в населённых районах относится к рискованным операциям.
     b:
       lv: Drona filmēšana nav atbrīvota no Art. 30. Tā ir personas datu apstrāde, kurai piemērojamas GDPR prasības.
       en: Drone filming is not exempt from Art. 30. It is personal data processing subject to GDPR requirements.
@@ -798,7 +798,7 @@
       text:
         lv: Atpūtas pilots nekad nav GDPR pārzinis.
         en: A recreational pilot is never a GDPR controller.
-        ru: Рекреационный пилот никогда не является контролёром по GDPR.
+        ru: Рекреационный пилот никогда не считается контролёром по GDPR.
     - id: d
       text:
         lv: Mājas izņēmums var attiekties, ja filmēšana ir tīri personiskai, ne sabiedriskai publiskošanai; ja materiāls tiek publicēts tiešsaistē — GDPR piemērojams pilnā mērā.
@@ -816,7 +816,7 @@
     a:
       lv: Mājas izņēmums nav absolūts. Tas attiecas tikai uz tīri personisko sfēru — sabiedriska izplatīšana to anulē.
       en: The household exemption is not absolute. It applies only to the purely personal sphere — public dissemination nullifies it.
-      ru: Исключение для домохозяйств не является абсолютным. Оно применяется только к сугубо личной сфере — публичное распространение его аннулирует.
+      ru: Исключение для домохозяйств не абсолютно. Оно применяется только к сугубо личной сфере — публичное распространение его аннулирует.
     b:
       lv: Atpūtas filmētājam nav obligāti jāreģistrējas DVI kā pārzinim — reģistrācija ir komerciālo operatoru jautājums ar liela mēroga vai augsta riska apstrādi.
       en: A recreational filmmaker is not required to register with DVI as a controller — registration is a matter for commercial operators with large-scale or high-risk processing.
@@ -863,7 +863,7 @@
     en: |
       Datu valsts inspekcija (DVI) is Latvia's national data protection supervisory authority (the "supervisory authority" required by GDPR Art. 51). Complaints about personal data protection violations, including drone filming, are submitted to DVI. CAA Latvia oversees aviation safety, not data protection.
     ru: |
-      Datu valsts inspekcija (DVI) является национальным надзорным органом по защите данных Латвии («надзорный орган», требуемый ст. 51 GDPR). Жалобы на нарушения защиты персональных данных, включая съёмку с дрона, подаются в DVI. CAA Latvia осуществляет надзор за авиационной безопасностью, а не защитой данных.
+      Datu valsts inspekcija (DVI) — национальный надзорный орган Латвии по защите данных («надзорный орган», требуемый ст. 51 GDPR). Жалобы на нарушения защиты персональных данных, включая съёмку с дрона, подаются в DVI. CAA Latvia осуществляет надзор за авиационной безопасностью, а не защитой данных.
   distractorRationales:
     b:
       lv: CAA Latvia ir aviācijas drošības iestāde — tā nesaņem GDPR sūdzības par drona filmēšanu.
@@ -1170,7 +1170,7 @@
     d:
       lv: Publiska pieejamība nav GDPR izņēmums. Identificējamas personas publiskās telpās saglabā savas datu aizsardzības tiesības.
       en: Public accessibility is not a GDPR exemption. Identifiable persons in public spaces retain their data protection rights.
-      ru: Доступность места не является основанием GDPR. Идентифицируемые люди в публичных местах сохраняют права на защиту данных.
+      ru: Доступность места не даёт основания по GDPR. Идентифицируемые люди в публичных местах сохраняют права на защиту данных.
   sourceRef: "privacy-aware operation basics | https://droni.caa.gov.lv/darbibas-kategorijas/atverta-kategorija/"
   difficulty: 2
   cognitiveLevel: apply
@@ -1229,7 +1229,7 @@
   stem:
     lv: Kas bieži ir drošākais risinājums, ja citādi noderīgā kadrā nejauši ir identificējami cilvēki?
     en: What is often the safest route when incidental identifiable people appear in otherwise useful footage?
-    ru: Что часто является самым безопасным решением, если в полезный кадр случайно попали идентифицируемые люди?
+    ru: Какое решение часто самое безопасное, если в полезный кадр случайно попали идентифицируемые люди?
   options:
     - id: a
       text:
@@ -1359,7 +1359,7 @@
     en: |
       Under GDPR personal data is any information that allows identifying a person — directly or indirectly. A plate is registered to a natural person and therefore is personal data.
     ru: |
-      По GDPR персональные данные — любая информация, позволяющая идентифицировать лицо прямо или косвенно. Номер привязан к физическому лицу и потому является персональными данными.
+      По GDPR персональные данные — любая информация, позволяющая идентифицировать лицо прямо или косвенно. Номер привязан к физическому лицу и потому считается персональными данными.
   distractorRationales:
     a:
       lv: Numura statuss kā personas dati nav atkarīgs no reģistrācijas veida — gan privātās, gan komerciālās reģistrācijas attiecināmas uz personu.
@@ -1723,12 +1723,12 @@
     en: |
       GDPR Art. 17 provides the right to erasure ("right to be forgotten"). A person's image in their private garden is personal data. If there is no legal basis (consent, legitimate interests, etc.) for processing the personal data, the operator is obliged to delete the footage upon request. Using public airspace does not cancel GDPR obligations.
     ru: |
-      Ст. 17 GDPR предусматривает право на стирание («право быть забытым»). Изображение человека в его частном саду является персональными данными. Если нет правового основания (согласие, законные интересы и т.д.) для обработки персональных данных, оператор обязан удалить запись по запросу. Использование общедоступного воздушного пространства не отменяет обязательства по GDPR.
+      Ст. 17 GDPR предусматривает право на стирание («право быть забытым»). Изображение человека в его частном саду относится к персональным данным. Если нет правового основания (согласие, законные интересы и т.д.) для обработки персональных данных, оператор обязан удалить запись по запросу. Использование общедоступного воздушного пространства не отменяет обязательств по GDPR.
   distractorRationales:
     a:
       lv: Kaitējums nav priekšnoteikums dzēšanas tiesībām GDPR Art. 17. Pietiek ar personas pieprasījumu un tiesiska pamata neesamību.
       en: Harm is not a prerequisite for erasure rights under GDPR Art. 17. A person's request and the absence of a legal basis are sufficient.
-      ru: Причинённый вред не является предварительным условием для права на стирание по ст. 17 GDPR. Достаточно запроса лица и отсутствия правового основания.
+      ru: Причинённый вред не нужен как предварительное условие для права на стирание по ст. 17 GDPR. Достаточно запроса лица и отсутствия правового основания.
     c:
       lv: Publiskā gaisa telpa ir par lidojuma atļauju; GDPR attiecas uz personas datu apstrādi neatkarīgi no tā, no kurienes tas tika ierakstīts.
       en: Public airspace is about flight permission; GDPR applies to personal data processing regardless of where the recording was made from.
@@ -1736,7 +1736,7 @@
     d:
       lv: Glabāšana bez tiesiska pamata un bez dzēšanas pēc pieprasījuma ir GDPR pārkāpums. Personas dati bez tiesiska pamata jādzēš pēc pieprasījuma.
       en: Retaining data without a legal basis and without deleting upon request is a GDPR violation. Personal data without legal basis must be deleted upon request.
-      ru: Хранение данных без правового основания и без удаления по запросу является нарушением GDPR. Персональные данные без правового основания должны быть удалены по запросу.
+      ru: Хранение данных без правового основания и без удаления по запросу нарушает GDPR. Персональные данные без правового основания должны быть удалены по запросу.
   sourceRef: "GDPR Art. 17 — right to erasure | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/; lawful basis"
   difficulty: 3
   cognitiveLevel: apply
@@ -1788,7 +1788,7 @@
     d:
       lv: GDPR neierobežo "personas datu" jēdzienu ar vārdu vai attēlu. Jebkura informācija, kas ļauj identificēt personu (ieskaitot atrašanās vietu), ir personas dati.
       en: GDPR does not limit the concept of "personal data" to names or images. Any information enabling identification of a person (including location) is personal data.
-      ru: GDPR не ограничивает понятие «персональных данных» именами или изображениями. Любая информация, позволяющая идентифицировать лицо (включая местоположение), является персональными данными.
+      ru: GDPR не ограничивает понятие «персональных данных» именами или изображениями. Любая информация, позволяющая идентифицировать лицо, включая местоположение, считается персональными данными.
   sourceRef: "GDPR Art. 4(1) — personal data definition | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/; location data"
   difficulty: 3
   cognitiveLevel: apply
@@ -1931,7 +1931,7 @@
     en: |
       GDPR Art. 6(1)(f) (legitimate interests) is the most typical basis for commercial filming at public sports events. It requires: (1) a Legitimate Interests Assessment (LIA) — commercial purpose weighed against individuals' interests; (2) visible informing at the event venue (posters, PA system). Individual consent from each participant is not practically feasible at a large event.
     ru: |
-      Ст. 6(1)(f) GDPR (законные интересы) является наиболее типичным основанием для коммерческой съёмки на публичных спортивных мероприятиях. Требуется: (1) Оценка законных интересов (LIA) — коммерческая цель взвешивается против интересов лиц; (2) видимое информирование на месте мероприятия (плакаты, громкоговоритель). Индивидуальное согласие каждого участника практически нецелесообразно на крупном мероприятии.
+      Ст. 6(1)(f) GDPR (законные интересы) — наиболее типичное основание для коммерческой съёмки на публичных спортивных мероприятиях. Требуется: (1) Оценка законных интересов (LIA) — коммерческая цель взвешивается против интересов лиц; (2) видимое информирование на месте мероприятия (плакаты, громкоговоритель). Индивидуальное согласие каждого участника практически нецелесообразно на крупном мероприятии.
   distractorRationales:
     a:
       lv: Individuāla piekrišana ikvienam dalībniekam lielā sporta pasākumā nav praktiski iespējama un ir nevajadzīga, ja leģitīmās intereses ir pienācīgi novērtētas.
@@ -1954,7 +1954,7 @@
   stem:
     lv: Klients pieprasa materiālu, kurā var būt identificējami cilvēki vai aizsargāts īpašums. Kas ir "datu pārzinis" (data controller) GDPR izpratnē drona operācijas kontekstā?
     en: A client asks for footage that may include identifiable people or protected property. Who is the "data controller" under GDPR in the context of a drone operation?
-    ru: Клиент просит материал, где могут быть идентифицируемые люди или защищённый объект. Кто является «контролёром данных» (data controller) по GDPR в контексте операции с дроном?
+    ru: Клиент просит материал, где могут быть идентифицируемые люди или защищённый объект. Кто считается «контролёром данных» (data controller) по GDPR в контексте операции с дроном?
   options:
     - id: a
       text:
@@ -1983,7 +1983,7 @@
     en: |
       GDPR Art. 4(7) defines the "controller" as the natural or legal person that determines the purposes and means of processing personal data. In a drone operation this is the operator — the one who decides WHAT to film, HOW to film, and WHAT to do with the footage. The actual pilot may be a data processor if the operator is a separate legal person.
     ru: |
-      Ст. 4(7) GDPR определяет «контролёра» как физическое или юридическое лицо, определяющее цели и средства обработки персональных данных. В операции с дроном это оператор — тот, кто решает, ЧТО снимать, КАК снимать и ЧТО делать с материалом. Фактический пилот может быть обработчиком данных, если оператор является отдельным юридическим лицом.
+      Ст. 4(7) GDPR определяет «контролёра» как физическое или юридическое лицо, которое определяет цели и средства обработки персональных данных. В операции с дроном это оператор — тот, кто решает, ЧТО снимать, КАК снимать и ЧТО делать с материалом. Фактический пилот может быть обработчиком данных, если оператор оформлен как отдельное юридическое лицо.
   distractorRationales:
     a:
       lv: CAA Latvia ir regulators, kas uzrauga lidojumu atbilstību — tā nav persona, kas nosaka filmēšanas mērķus un metodes.
@@ -2035,7 +2035,7 @@
     en: |
       GDPR Art. 30 requires controllers to maintain a register of processing activities. The exception (< 250 employees) is limited — it does not apply if the processing is likely to result in risk to individuals' rights and freedoms. Filming people in a city is risky processing that excludes the exception. A commercial operator typically also exceeds the 250 employee threshold or does not benefit from the exception.
     ru: |
-      Ст. 30 GDPR требует от контролёров вести реестр операций обработки. Исключение (< 250 сотрудников) ограничено — оно не применяется, если обработка может представлять риск для прав и свобод лиц. Съёмка людей в городе является рискованной обработкой, исключающей это исключение. Коммерческий оператор обычно также превышает порог в 250 сотрудников или не пользуется исключением.
+      Ст. 30 GDPR требует от контролёров вести реестр операций обработки. Исключение (< 250 сотрудников) ограничено — оно не применяется, если обработка может представлять риск для прав и свобод лиц. Съёмка людей в городе относится к рискованной обработке, поэтому исключение не действует. Коммерческий оператор обычно также превышает порог в 250 сотрудников или не пользуется исключением.
   distractorRationales:
     a:
       lv: GDPR prasības nebalstās uz apgrozījuma slieksni. Tās balstās uz personas datu apstrādes faktu un tā riskiem.
@@ -2044,7 +2044,7 @@
     b:
       lv: 250 darbinieku izņēmums tieši nesedz apstrādes operācijas, kas rada risku. Filmēšana apdzīvotos rajonos ir riska operācija.
       en: The 250 employee exception does not cover processing operations that pose a risk. Filming in populated areas is a risk operation.
-      ru: Исключение для 250 сотрудников не распространяется на операции обработки, создающие риск. Съёмка в населённых районах является рискованной операцией.
+      ru: Исключение для 250 сотрудников не распространяется на операции обработки, создающие риск. Съёмка в населённых районах относится к рискованным операциям.
     c:
       lv: Drona filmēšana nav atbrīvota no Art. 30. Tā ir personas datu apstrāde, kurai piemērojamas GDPR prasības.
       en: Drone filming is not exempt from Art. 30. It is personal data processing subject to GDPR requirements.
