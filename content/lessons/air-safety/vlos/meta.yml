@@ -5,6 +5,7 @@ title:
   en: Visual line of sight (VLOS)
   ru: Прямая видимость (VLOS)
 sourceRef: "UAS.OPEN.060(3) | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0947"
+internalRef: "docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf — UAS.OPEN.060(3) VLOS; docs/knowledge/easa/EASA-AMC-GM-Reg-2019-947-latest.pdf — FPV observer conditions"
 blocks:
   - missionBriefing
   - cinematicScene

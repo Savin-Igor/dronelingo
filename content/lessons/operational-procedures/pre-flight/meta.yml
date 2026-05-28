@@ -5,3 +5,14 @@ title:
   en: Pre-flight check
   ru: Предполётная проверка
 sourceRef: "Reg (EU) 2019/947 Art. UAS.OPEN.060(1) | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0947; Operational procedures"
+internalRef: "docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf — UAS.OPEN.060(1); docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — pre-flight checks and go/no-go discipline"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

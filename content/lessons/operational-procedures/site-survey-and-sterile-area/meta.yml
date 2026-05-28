@@ -5,4 +5,14 @@ title:
   en: Site survey and sterile operating area
   ru: Осмотр площадки и стерильная рабочая зона
 sourceRef: "operator responsibilities and risk awareness | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; field procedures and practical safety guidance | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/"
-internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities and risk awareness; docs/knowledge/training-guides/ — field procedures and practical safety guidance
+internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities and risk awareness; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — field procedures and practical safety guidance"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

@@ -5,3 +5,13 @@ title:
   en: UAS cyber security
   ru: Кибербезопасность UAS
 sourceRef: "ENISA Good Practices for UAS cyber security | https://www.enisa.europa.eu/topics/cybersecurity-of-critical-sectors/transport; GNSS spoofing/jamming | https://www.enisa.europa.eu/topics/cybersecurity-of-critical-sectors/transport"
+internalRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — UAS security awareness and digital hygiene"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

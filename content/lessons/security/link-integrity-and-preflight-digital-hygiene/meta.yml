@@ -5,4 +5,14 @@ title:
   en: Link integrity and preflight digital hygiene
   ru: Целостность канала связи и цифровая предполётная гигиена
 sourceRef: "operator responsibilities | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; practical UAS preflight and cyber hygiene guidance | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/"
-internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/training-guides/ — practical UAS preflight and cyber hygiene guidance
+internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — practical UAS preflight and cyber hygiene guidance"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

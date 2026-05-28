@@ -5,3 +5,13 @@ title:
   en: GDPR basics for drones
   ru: Основы GDPR для дронов
 sourceRef: "Reg (EU) 2016/679 (GDPR) Art. 4, 6 | https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng; Datu valsts inspekcija (Latvian DPA) guidance for drones | https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng"
+internalRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR and identifiable persons; docs/knowledge/latvia-caa/web-snapshots/14-normativais-regulejums.md — Latvian privacy context"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

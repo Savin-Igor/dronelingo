@@ -5,3 +5,14 @@ title:
   en: Altitude limits and BGKIS applications
   ru: Высотные ограничения и заявки BGKIS
 sourceRef: "Reg (EU) 2019/947 UAS.OPEN.010(2) | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0947; CAA Latvia BGKIS rules effective 2025-01-01 | https://droni.caa.gov.lv/bgkis/ugz/lidojumu-pieteiksana-un-saskanosana-uas-geografiskajas-zonas/"
+internalRef: "docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf — UAS.OPEN.010(2) altitude limit; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — BGKIS rules effective 2025-01-01"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

@@ -16,8 +16,8 @@ lastVerifiedAt: 2026-05-16
 heroImage: hero.png
 heroImageAlt:
   en: "SAR drone operation at night in forest: rescue worker reviewing thermal camera feed on tablet showing heat signature, drone hovering above"
-  lv: "SAR drone operation at night in forest: rescue worker reviewing thermal camera feed on tablet showing heat signature, drone hovering above"
-  ru: "SAR drone operation at night in forest: rescue worker reviewing thermal camera feed on tablet showing heat signature, drone hovering above"
+  lv: "SAR drona operācija naktī mežā: glābējs planšetē pārskata termokameras attēlu ar siltuma signatūru, virs viņa lidinās drons"
+  ru: "Ночная SAR-операция дрона в лесу: спасатель изучает на планшете тепловизионный поток с тепловой сигнатурой, а дрон зависает сверху"
 tags:
   - thermal
   - sar

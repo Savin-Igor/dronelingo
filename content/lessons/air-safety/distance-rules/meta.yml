@@ -5,3 +5,14 @@ title:
   en: Distance from uninvolved persons
   ru: Расстояние до посторонних лиц
 sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020/030/040 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0947; Subcategories | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0947"
+internalRef: "docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf — UAS.OPEN.020/UAS.OPEN.030/UAS.OPEN.040; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — distance from uninvolved persons and assemblies"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

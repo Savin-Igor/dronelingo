@@ -1224,7 +1224,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities and risk awareness; docs/knowledge/training-guides/ — field procedures and practical safety guidance
+  internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities and risk awareness; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — field procedures and practical safety guidance"
 - id: op-025
   stem:
     lv: Kura darbība vislabāk parāda pareizu vietas apskati pirms starta?
@@ -1273,7 +1273,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities and risk awareness; docs/knowledge/training-guides/ — field procedures and practical safety guidance
+  internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities and risk awareness; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — field procedures and practical safety guidance"
 - id: op-026
   stem:
     lv: Starta vietā pilots pārvērš kontrolsarakstu operatīvā lēmumā. Kas obligāti jāpārbauda pirms katra lidojuma attiecībā uz baterijām?

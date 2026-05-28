@@ -5,3 +5,13 @@ title:
   en: Occurrence reporting
   ru: Уведомления о происшествиях
 sourceRef: "occurrence reporting in civil aviation | https://www.caa.gov.lv/en/services/reporting-occurrences-civil-aviation; e.caa.gov.lv/incidents | https://e.caa.gov.lv/incidents"
+internalRef: "docs/knowledge/latvia-caa/web-snapshots/17-incident-reporting.md — occurrence reporting in civil aviation"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

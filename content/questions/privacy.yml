@@ -1028,7 +1028,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/eu-regulations/ — GDPR principles; docs/knowledge/latvia-caa/web-snapshots/ and training materials — privacy handling in UAS operations
+  internalRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR principles and privacy handling in UAS operations; docs/knowledge/latvia-caa/web-snapshots/14-normativais-regulejums.md — Latvian privacy context"
 - id: pr-021
   stem:
     lv: Kāda ir labāka noklusējuma plūsma pēc klienta filmēšanas?
@@ -1077,7 +1077,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/eu-regulations/ — GDPR principles; docs/knowledge/latvia-caa/web-snapshots/ and training materials — privacy handling in UAS operations
+  internalRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — GDPR principles and privacy handling in UAS operations; docs/knowledge/latvia-caa/web-snapshots/14-normativais-regulejums.md — Latvian privacy context"
 - id: pr-022
   stem:
     lv: UAS pilots filmē piekrastes ainavu tūrisma klientam. Vienā kadrā redzami trīs pārgājējus — viņu sejas skaidras. Piekrišanas pilotam nav. Kas obligāti jādara pirms klipa publicēšanas?

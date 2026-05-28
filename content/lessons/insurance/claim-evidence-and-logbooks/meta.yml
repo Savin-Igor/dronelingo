@@ -5,4 +5,14 @@ title:
   en: Claims, evidence and logbooks
   ru: Страховые требования, доказательства и журналы
 sourceRef: "reporting and operator guidance | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/; practical post-flight documentation and safety recordkeeping | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/"
-internalRef: docs/knowledge/latvia-caa/web-snapshots/ — reporting and operator guidance; docs/knowledge/training-guides/ — practical post-flight documentation and safety recordkeeping
+internalRef: "docs/knowledge/latvia-caa/web-snapshots/17-incident-reporting.md — reporting and operator guidance; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — practical post-flight documentation and safety recordkeeping"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

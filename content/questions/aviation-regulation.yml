@@ -1230,7 +1230,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator registration; docs/knowledge/latvia-caa/web-snapshots/ — Latvia CAA registration guidance
+  internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator registration; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md — Latvia CAA registration guidance"
 - id: ar-025
   stem:
     lv: Uzņēmumam pieder vairāki droni, ar kuriem lido dažādi darbinieki. Kurš apgalvojums ir pareizs?
@@ -1279,7 +1279,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator registration; docs/knowledge/latvia-caa/web-snapshots/ — Latvia CAA registration guidance
+  internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator registration; docs/knowledge/latvia-caa/web-snapshots/08-registracija.md — Latvia CAA registration guidance"
 - id: ar-026
   stem:
     lv: UAS ir marķēts C2, un pilotam ir tikai A1/A3 sertifikāts. Kura apakškategorija ir minimālā, kurā viņš drīkst lidot, un kāds attālums no nepiederošām personām piemērojams?

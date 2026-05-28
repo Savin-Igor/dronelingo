@@ -6,3 +6,13 @@ title:
   ru: Рабочая нагрузка и ворота решений
 sourceRef: "human performance | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a1-a3-tiessaistes-apmacibu-kurss-un-eksamens/; pilot responsibility and safe conduct | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
 internalRef: docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — human performance; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — pilot responsibility and safe conduct
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

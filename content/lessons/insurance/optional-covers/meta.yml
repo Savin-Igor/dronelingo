@@ -5,3 +5,14 @@ title:
   en: Optional insurance covers
   ru: Дополнительные виды страхования
 sourceRef: "Reg (EC) 785/2004 | https://eur-lex.europa.eu/eli/reg/2004/785/oj/eng; commercial insurance product offerings | https://droni.caa.gov.lv/apdrosinasanas-prasibas/; CAA Latvia guidance"
+internalRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — mandatory and optional insurance cover in Latvia"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

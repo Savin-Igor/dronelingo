@@ -5,3 +5,13 @@ title:
   en: UAS geographical zones in Latvia
   ru: Геозоны UAS в Латвии
 sourceRef: "Reg (EU) 2019/947 Art. 15 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0947; airspace.lv/drones | https://airspace.lv/drones; ais.lgs.lv/page/UAS_geozones | https://ais.lgs.lv/page/UAS_geozones"
+internalRef: "docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf — Art. 15 UAS geographical zones; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — airspace.lv/drones and ais.lgs.lv/page/UAS_geozones"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

@@ -5,3 +5,13 @@ title:
   en: Latvia mandatory insurance minima
   ru: Обязательные минимумы страхования в Латвии
 sourceRef: "par UAS civiltiesisko apdrošināšanu | https://eur-lex.europa.eu/eli/reg/2004/785/oj/eng; Reg (EC) 785/2004 | https://eur-lex.europa.eu/eli/reg/2004/785/oj/eng"
+internalRef: "docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — Latvian UAS insurance minimums and exemptions"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

@@ -1028,7 +1028,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/training-guides/ — practical UAS preflight and cyber hygiene guidance
+  internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — practical UAS preflight and cyber hygiene guidance"
 - id: se-021
   stem:
     lv: Kāpēc nepārbaudīts programmatūras atjauninājums misijas dienā ir slikta prakse?
@@ -1077,7 +1077,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/training-guides/ — practical UAS preflight and cyber hygiene guidance
+  internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — practical UAS preflight and cyber hygiene guidance"
 - id: se-022
   stem:
     lv: UAS pilota aparāts nokļūst 50 m attālumā no nelielas pilotētas lidmašīnas tās tuvošanās posmā. Sadursmes nav. Pilotētā kuģa apkalpei bijis nedaudz jākoriģē kurss. Kāds ir pilota ziņošanas pienākums?
@@ -1224,7 +1224,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/training-guides/ — practical operator security and data handling; docs/knowledge/latvia-caa/web-snapshots/ — operator responsibilities
+  internalRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — practical operator security and data handling; docs/knowledge/latvia-caa/web-snapshots/07-open-category.md — operator responsibilities"
 - id: se-025
   stem:
     lv: Kura prakse vislabāk aizsargā ierakstīto materiālu laukā?
@@ -1273,7 +1273,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/training-guides/ — practical operator security and data handling; docs/knowledge/latvia-caa/web-snapshots/ — operator responsibilities
+  internalRef: "docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — practical operator security and data handling; docs/knowledge/latvia-caa/web-snapshots/07-open-category.md — operator responsibilities"
 - id: se-026
   stem:
     lv: UAS operācijas laikā vai pēc tās parādās drošības anomālija. Cik stundu laikā jāziņo par tuvtrāpījumu ar pilotētu gaisa kuģi?

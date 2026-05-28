@@ -5,3 +5,13 @@ title:
   en: Batteries and storage
   ru: Аккумуляторы и хранение
 sourceRef: "battery safety | https://www.iata.org/contentassets/05e6d8742b0047259bf3a700bc9d42b9/lithium-battery-guidance-document.pdf; IATA Lithium Battery Guidance | https://www.iata.org/contentassets/05e6d8742b0047259bf3a700bc9d42b9/lithium-battery-guidance-document.pdf; manufacturer manuals | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
+internalRef: "docs/knowledge/training-guides/syllabus/A2-detailed-syllabus.md — Li-Po cell voltage and storage; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — storage at 50–60 %, charging temperature, and fire-safe transport"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

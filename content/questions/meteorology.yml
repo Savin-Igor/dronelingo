@@ -2281,7 +2281,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/eu-regulations/Reg-2019-947.pdf — Art. UAS.OPEN.060; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — VLOS definition
+  internalRef: "docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf — Art. UAS.OPEN.060; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — VLOS definition"
 - id: met-045
   image: met-045-rotor.png
   imageAlt:
@@ -2452,7 +2452,7 @@
   difficulty: 3
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/eu-regulations/Reg-2019-947.pdf — UAS.OPEN.060; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — VLOS, FPV with observer
+  internalRef: "docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf — UAS.OPEN.060; docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — VLOS, FPV with observer"
 - id: met-048
   image: met-048-cirrus.png
   imageAlt:
@@ -3079,7 +3079,7 @@
   difficulty: 3
   cognitiveLevel: analyze
   scenarioType: decision
-  internalRef: docs/knowledge/eu-regulations/Reg-2019-947.pdf — UAS.OPEN.060 (VLOS); docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — see-and-avoid guidance
+  internalRef: "docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf — UAS.OPEN.060 (VLOS); docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — see-and-avoid guidance"
 - id: met-059
   image: met-059-microburst.png
   imageAlt:

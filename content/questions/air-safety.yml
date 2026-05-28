@@ -2224,7 +2224,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — remote pilot responsibilities and emergency handling; docs/knowledge/training-guides/ — practical UAS emergency procedures
+  internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — remote pilot responsibilities and emergency handling; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — practical UAS emergency procedures"
 - id: as-044
   stem:
     lv: Kad return-to-home ir slikts noklusējuma risinājums?
@@ -2273,7 +2273,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — remote pilot responsibilities and emergency handling; docs/knowledge/training-guides/ — practical UAS emergency procedures
+  internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — remote pilot responsibilities and emergency handling; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — practical UAS emergency procedures"
 - id: as-045
   stem:
     lv: Kāds ir drošākais pirmais princips, kad pie darbības zonas parādās pilotējams gaisa kuģis?

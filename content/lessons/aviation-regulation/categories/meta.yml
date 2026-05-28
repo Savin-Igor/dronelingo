@@ -5,3 +5,13 @@ title:
   en: Open, Specific and Certified categories
   ru: Открытая, Специальная и Сертифицированная категории
 sourceRef: "Reg (EU) 2019/947 Art. 3 and Annex | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0947; Part A"
+internalRef: "docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf — Art. 3 and Annex Part A"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

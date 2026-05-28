@@ -5,3 +5,13 @@ title:
   en: A1, A2 and A3 subcategories in detail
   ru: Подкатегории A1, A2 и A3 в деталях
 sourceRef: "Reg (EU) 2019/947 UAS.OPEN.020/030/040 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0947; Subcategories | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0947"
+internalRef: "docs/knowledge/eu-regulations/EU-2019-947-implementing-regulation-EN.pdf — UAS.OPEN.020/UAS.OPEN.030/UAS.OPEN.040; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — Open subcategories A1/A2/A3"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

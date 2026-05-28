@@ -1588,7 +1588,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Open category operating environment; docs/knowledge/latvia-caa/web-snapshots/ — airspace.lv and Latvia CAA zone guidance
+  internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Open category operating environment; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — airspace.lv and Latvia CAA zone guidance"
 - id: al-032
   stem:
     lv: Vakar pārbaudīji teritoriju, un tā bija zaļa. Šodien tā ir īslaicīgi ierobežota publiska pasākuma dēļ. Kurš statuss nosaka lidojumu?
@@ -1637,7 +1637,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Open category operating environment; docs/knowledge/latvia-caa/web-snapshots/ — airspace.lv and Latvia CAA zone guidance
+  internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Open category operating environment; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — airspace.lv and Latvia CAA zone guidance"
 - id: al-033
   stem:
     lv: Pilots lidojuma rītā pārbauda Latvijas UAS zonas. Kur Latvijā ir vienīgais juridiski saistošais avots par UAS ģeogrāfiskām zonām?

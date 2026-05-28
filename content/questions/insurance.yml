@@ -930,7 +930,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/latvia-caa/web-snapshots/ — reporting and operator guidance; docs/knowledge/training-guides/ — practical post-flight documentation and safety recordkeeping
+  internalRef: "docs/knowledge/latvia-caa/web-snapshots/17-incident-reporting.md — reporting and operator guidance; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — practical post-flight documentation and safety recordkeeping"
 - id: in-019
   stem:
     lv: Kāda ir labākā tūlītējā darbība pēc drona trieciena bez cietušajiem, tiklīdz vieta ir droša?
@@ -979,7 +979,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/latvia-caa/web-snapshots/ — reporting and operator guidance; docs/knowledge/training-guides/ — practical post-flight documentation and safety recordkeeping
+  internalRef: "docs/knowledge/latvia-caa/web-snapshots/17-incident-reporting.md — reporting and operator guidance; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — practical post-flight documentation and safety recordkeeping"
 - id: in-020
   stem:
     lv: Kāds ir svarīgākais pirmais apdrošināšanas jautājums koplietotā vai pārrobežu dronu operācijā?
@@ -1028,7 +1028,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/latvia-caa/web-snapshots/ — operator and insurance practice in Latvia
+  internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — operator and insurance practice in Latvia"
 - id: in-021
   stem:
     lv: Kāpēc frīlansa vai apakšuzņēmēja pilots ir īpašs apdrošināšanas pārbaudes punkts?
@@ -1077,7 +1077,7 @@
   difficulty: 2
   cognitiveLevel: apply
   scenarioType: decision
-  internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/latvia-caa/web-snapshots/ — operator and insurance practice in Latvia
+  internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — operator responsibilities; docs/knowledge/latvia-caa/web-snapshots/12-insurance.md — operator and insurance practice in Latvia"
 - id: in-022
   stem:
     lv: Atpūtas pilots brīvdienās lido ar 1,2 kg C2 UAS virs neapdzīvota lauksaimniecības lauka. Kāda apdrošināšana Latvijā likumā prasīta kā minimums?

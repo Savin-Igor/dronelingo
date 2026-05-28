@@ -5,6 +5,7 @@ title:
   en: Weather basics for drone pilots
   ru: Основы метеорологии для пилотов дронов
 sourceRef: "AMC1 UAS.OPEN.030 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0947; A2 syllabus Theme 1: Meteorology | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/a2-apakskategorijas-teoretisko-zinasanu-eksamens/"
+internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — AMC1 UAS.OPEN.030 weather conditions; docs/knowledge/training-guides/syllabus/A2-detailed-syllabus.md — Theme 1 Meteorology"
 blocks:
   - missionBriefing
   - cinematicScene

@@ -5,4 +5,14 @@ title:
   en: Lost link and emergency landing
   ru: Потеря связи и аварийная посадка
 sourceRef: "remote pilot responsibilities and emergency handling | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; practical UAS emergency procedures | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/"
-internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — remote pilot responsibilities and emergency handling; docs/knowledge/training-guides/ — practical UAS emergency procedures
+internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — remote pilot responsibilities and emergency handling; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — practical UAS emergency procedures"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

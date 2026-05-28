@@ -4,4 +4,14 @@ title:
   lv: Kritiskās infrastruktūras objekti
   en: Critical-infrastructure sites
   ru: Объекты критической инфраструктуры
-sourceRef: "Latvian Critical Infrastructure Protection Law | https://droni.caa.gov.lv/normativais-regulejums/; CAA Latvia guidance; signage 'BEZ SASKAŅOŠANAS FOTOGRAFĒT, FILMĒT AIZLIEGTS"
+sourceRef: "Latvian regulatory stack | https://droni.caa.gov.lv/normativais-regulejums/; critical-infrastructure filming sign rule | https://droni.caa.gov.lv/normativais-regulejums/"
+internalRef: "docs/knowledge/latvia-caa/web-snapshots/14-normativais-regulejums.md — critical-infrastructure filming prohibition and sign rule"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

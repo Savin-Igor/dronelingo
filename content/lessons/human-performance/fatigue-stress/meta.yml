@@ -5,3 +5,13 @@ title:
   en: Fatigue and stress for the UAS pilot
   ru: Усталость и стресс пилота UAS
 sourceRef: "Manual for Fatigue Management; Human Performance | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
+internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — human performance limitations; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — fatigue and self-assessment"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

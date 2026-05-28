@@ -5,3 +5,13 @@ title:
   en: IMSAFE self-check before flight
   ru: Самопроверка IMSAFE перед полётом
 sourceRef: "Human performance limitations | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; ICAO Doc 9683 (Human Factors Training Manual)"
+internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — human performance limitations; docs/knowledge/training-guides/syllabus/A1-A3-detailed-syllabus.md — IMSAFE-style self-check before flight"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief

@@ -5,4 +5,14 @@ title:
   en: NOTAMs and temporary restrictions
   ru: NOTAM и временные ограничения
 sourceRef: "Open category operating environment | https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu; airspace.lv and Latvia CAA zone guidance | https://droni.caa.gov.lv/talvadibas-pilotu-kvalifikacija/"
-internalRef: docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Open category operating environment; docs/knowledge/latvia-caa/web-snapshots/ — airspace.lv and Latvia CAA zone guidance
+internalRef: "docs/knowledge/easa/EASA-Easy-Access-Rules-UAS-2024-07.pdf — Open category operating environment; docs/knowledge/latvia-caa/web-snapshots/11-geographical-zones.md — airspace.lv and Latvia CAA zone guidance"
+blocks:
+  - missionBriefing
+  - cinematicScene
+  - core
+  - artefact
+  - scenario
+  - memoryAnchor
+  - commonMistakes
+  - miniQuiz
+  - debrief
